@@ -65,6 +65,10 @@ TOOLCHAIN=$($PARSE_TOML "$CONFIG_FILE" lean.toolchain)
 MATHLIB_TAG=$($PARSE_TOML "$CONFIG_FILE" lean.mathlib_tag)
 THEOREMS_JSON=$($PARSE_TOML "$CONFIG_FILE" theorems)
 
+# Parse optional tool versions for verification dependencies
+export SAFE_VERIFY_REV=$($PARSE_TOML "$CONFIG_FILE" tools.safe_verify_rev 2>/dev/null || echo "")
+export LEAN4CHECKER_REV=$($PARSE_TOML "$CONFIG_FILE" tools.lean4checker_rev 2>/dev/null || echo "")
+
 echo "Entry: $ENTRY_ID"
 echo "Repo: $REPO_URL"
 echo "Commit: ${COMMIT:0:12}..."
@@ -101,7 +105,8 @@ else
     exit 2
 fi
 
-cd "$REPO_DIR"
+# NOTE: We do NOT cd into REPO_DIR to avoid CWD corruption if work/ gets cleaned.
+# All lake commands below use subshells: (cd "$REPO_DIR" && lake ...)
 
 # --- Determine olean path ---
 # Lake stores oleans under .lake/build/lib/ — find the right subdirectory
@@ -150,7 +155,7 @@ for ((i=0; i<NUM_GROUPS; i++)); do
     # 2a. lean4checker on impl module
     echo "  Running lean4checker on $IMPL_MODULE..."
     if [[ -f "$IMPL_OLEAN" ]]; then
-        if lake exe lean4checker "$IMPL_MODULE" 2>&1; then
+        if (cd "$REPO_DIR" && lake exe lean4checker "$IMPL_MODULE") 2>&1; then
             CHECKER_RESULT="pass"
             echo "  lean4checker: PASS"
         else
@@ -167,7 +172,7 @@ for ((i=0; i<NUM_GROUPS; i++)); do
     # 2b. SafeVerify on spec/impl pair
     echo "  Running safe_verify..."
     if [[ -f "$SPEC_OLEAN" ]] && [[ -f "$IMPL_OLEAN" ]]; then
-        if lake exe safe_verify "$SPEC_OLEAN" "$IMPL_OLEAN" 2>&1; then
+        if (cd "$REPO_DIR" && lake exe safe_verify "$SPEC_OLEAN" "$IMPL_OLEAN") 2>&1; then
             SAFE_VERIFY_RESULT="pass"
             echo "  safe_verify: PASS"
         else
@@ -220,7 +225,7 @@ if [[ "$LEVEL" -ge 2 ]]; then
                 name=$(basename "$config" .json)
                 echo ""
                 echo "  Comparator: $name"
-                if lake env "$COMPARATOR" "$config" 2>&1; then
+                if (cd "$REPO_DIR" && lake env "$COMPARATOR" "$config") 2>&1; then
                     echo "  Comparator $name: PASS"
                 else
                     echo "  Comparator $name: FAIL"

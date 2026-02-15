@@ -1,0 +1,42 @@
+[project]
+id = "stat-learning"
+name = "Lean Statistical Learning Theory"
+description = "Gaussian Lipschitz concentration, Dudley's entropy integral, Efron-Stein inequality, and Gaussian Poincaré inequality"
+url = "https://github.com/YuanheZ/lean-stat-learning-theory"
+commit = "7b82b1323c80f0c21ca449fd12e1c24315ae9782"
+branch = "main"
+
+[lean]
+toolchain = "leanprover/lean4:v4.27.0-rc1"
+mathlib_tag = "v4.27.0"
+
+[[theorems]]
+spec_module = "Registry.StatLearning.GaussianLipschitzConcentration"
+impl_module = "SLT.GaussianLipConcen"
+names = ["GaussianLipConcen.gaussian_lipschitz_concentration"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.StatLearning.Dudley"
+impl_module = "SLT.Dudley"
+names = ["dudley"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.StatLearning.EfronStein"
+impl_module = "SLT.EfronStein"
+names = ["efronStein"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.StatLearning.GaussianPoincare"
+impl_module = "SLT.GaussianPoincare.Limit"
+names = ["GaussianPoincare.gaussianPoincare"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[build]
+strategy = "copy"
+
+[tools]
+safe_verify_rev = "v4.27.0"
+lean4checker_rev = "v4.27.0"

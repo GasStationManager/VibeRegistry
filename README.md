@@ -14,6 +14,7 @@ The registry itself never contains proof code. It contains:
 | Entry | Theorems | Lean | Verification | Status |
 |-------|----------|------|--------------|--------|
 | [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration | v4.27.0 | Level 1 | Verified |
+| [Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare | v4.27.0-rc1 | Level 1 | Verified |
 
 ## Verification Levels
 
@@ -71,11 +72,14 @@ VibeRegistry/
 
 ### Spec file rules
 
-1. Import only from Mathlib (and other spec files within the same entry)
-2. Definitions must come from Mathlib or be defined in the spec file — never imported from the external repo
-3. Theorem statements end with `:= by sorry`
-4. Each spec directory must `lake build` cleanly as a standalone project
-5. Human-vetted by a maintainer for mathematical correctness
+1. Import from Mathlib and (when using copy strategy) from impl helper modules that provide definitions used in theorem statements
+2. Avoid importing the impl module that defines the theorem being spec'd — this would create a name conflict
+3. Minimize spec-local definitions; prefer importing them from impl helper modules so SafeVerify sees identical types
+4. Theorem statements end with `:= by sorry`
+5. Match the impl's universe variables exactly (e.g., `universe u v` if the impl uses explicit universes)
+6. Avoid `local notation` — it creates private declarations that won't match the impl's
+7. Each spec module must `lake build` cleanly; spec modules are built individually (not combined)
+8. Human-vetted by a maintainer for mathematical correctness
 
 ## Security Model
 

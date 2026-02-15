@@ -6,3 +6,8 @@ description = "Registry of verified AI-assisted Lean 4 proofs"
 id = "artificial-theorems"
 config = "entries/artificial-theorems.toml"
 status = "verified"
+
+[[entries]]
+id = "stat-learning"
+config = "entries/stat-learning.toml"
+status = "verified"
