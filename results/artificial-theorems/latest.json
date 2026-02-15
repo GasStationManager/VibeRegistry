@@ -1,0 +1,11 @@
+{
+  "entry_id": "artificial-theorems",
+  "timestamp": "2026-02-15T12:26:59Z",
+  "commit": "45c04e9408515bce6980e6a2c83da11bd8a968e4",
+  "lean_toolchain": "leanprover/lean4:v4.27.0",
+  "mathlib_tag": "v4.27.0",
+  "verification_level": 1,
+  "build_strategy": "copy",
+  "theorems": [{"name":"QLS.Stoch.robbinsSiegmund_expBound","spec_module":"Registry.ArtificialTheorems.Opt.RobbinsSiegmund","impl_module":"ArtificialTheorems.Opt.RobbinsSiegmund","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"QLS.Stoch.robbinsSiegmund_full","spec_module":"Registry.ArtificialTheorems.Opt.RobbinsSiegmund","impl_module":"ArtificialTheorems.Opt.RobbinsSiegmund","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"convergence_stochastic_gradient_method","spec_module":"Registry.ArtificialTheorems.Opt.SGD","impl_module":"ArtificialTheorems.Opt.SGD","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"SGDUniqueMin.convergence_simplified","spec_module":"Registry.ArtificialTheorems.Opt.SGDUniqueMin","impl_module":"ArtificialTheorems.Opt.SGDUniqueMin","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"VALUE_ITERATION_CONVERGENCE_COMPLETE","spec_module":"Registry.ArtificialTheorems.RL.ValueIterationComplete","impl_module":"ArtificialTheorems.RL.ValueIterationComplete","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"ApproxValueIterationInt.INT_VALUE_ITERATION_APPROX","spec_module":"Registry.ArtificialTheorems.RL.ApproxValueIterationInt","impl_module":"ArtificialTheorems.RL.ApproxValueIterationInt","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"ApproxValueIterationInt.INT_VALUE_ITERATION_EVENTUAL_BALL","spec_module":"Registry.ArtificialTheorems.RL.ApproxValueIterationInt","impl_module":"ArtificialTheorems.RL.ApproxValueIterationInt","lean4checker":"pass","safe_verify":"pass","comparator":"skip"}],
+  "overall": "pass"
+}

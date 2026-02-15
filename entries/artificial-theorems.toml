@@ -1,0 +1,48 @@
+[project]
+id = "artificial-theorems"
+name = "ArtificialTheorems"
+description = "AI/ML theoretical foundations: Robbins-Siegmund, SGD convergence, Value Iteration"
+url = "https://github.com/GasStationManager/ArtificialTheorems"
+commit = "45c04e9408515bce6980e6a2c83da11bd8a968e4"
+branch = "main"
+
+[lean]
+toolchain = "leanprover/lean4:v4.27.0"
+mathlib_tag = "v4.27.0"
+
+[[theorems]]
+spec_module = "Registry.ArtificialTheorems.Opt.RobbinsSiegmund"
+impl_module = "ArtificialTheorems.Opt.RobbinsSiegmund"
+names = ["QLS.Stoch.robbinsSiegmund_expBound", "QLS.Stoch.robbinsSiegmund_full"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.ArtificialTheorems.Opt.SGD"
+impl_module = "ArtificialTheorems.Opt.SGD"
+names = ["convergence_stochastic_gradient_method"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.ArtificialTheorems.Opt.SGDUniqueMin"
+impl_module = "ArtificialTheorems.Opt.SGDUniqueMin"
+names = ["SGDUniqueMin.convergence_simplified"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.ArtificialTheorems.RL.ValueIterationComplete"
+impl_module = "ArtificialTheorems.RL.ValueIterationComplete"
+names = ["VALUE_ITERATION_CONVERGENCE_COMPLETE"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.ArtificialTheorems.RL.ApproxValueIterationInt"
+impl_module = "ArtificialTheorems.RL.ApproxValueIterationInt"
+names = ["ApproxValueIterationInt.INT_VALUE_ITERATION_APPROX", "ApproxValueIterationInt.INT_VALUE_ITERATION_EVENTUAL_BALL"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[build]
+strategy = "copy"
+
+[tools]
+safe_verify_repo = "https://github.com/GasStationManager/SafeVerify"
+safe_verify_ref = "v4.27.0"

@@ -1,0 +1,8 @@
+[registry]
+name = "VibeRegistry"
+description = "Registry of verified AI-assisted Lean 4 proofs"
+
+[[entries]]
+id = "artificial-theorems"
+config = "entries/artificial-theorems.toml"
+status = "verified"

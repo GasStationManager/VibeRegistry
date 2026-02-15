@@ -1,0 +1,15 @@
+# Build artifacts
+work/
+.lake/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
