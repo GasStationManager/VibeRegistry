@@ -310,6 +310,26 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
         rm -rf "$COMP_CONFIG_DIR"
         python3 "$SCRIPT_DIR/generate_comparator_configs.py" "$CONFIG_FILE" "$COMP_CONFIG_DIR"
 
+        # --- Filter configs to theorem-only names ---
+        # Comparator only accepts thmInfo/axiomInfo constants. Helper defs
+        # (def, structure, etc.) cause "constant kind don't match" errors.
+        # Use lean4export to detect and remove non-theorem names from configs.
+        LEAN4EXPORT_FOR_FILTER="${LEAN4EXPORT_BIN:-}"
+        if [[ -z "$LEAN4EXPORT_FOR_FILTER" ]]; then
+            # lean4export may not be in env yet; find it from tools
+            if [[ -f "$PROJECT_DIR/work/tools/lean4export/.lake/build/bin/lean4export" ]]; then
+                LEAN4EXPORT_FOR_FILTER="$PROJECT_DIR/work/tools/lean4export/.lake/build/bin/lean4export"
+            fi
+        fi
+        if [[ -n "$LEAN4EXPORT_FOR_FILTER" ]]; then
+            echo ""
+            echo "Filtering comparator configs to theorem-only names..."
+            python3 "$SCRIPT_DIR/lib/filter_comparator_theorems.py" \
+                "$REPO_DIR" "$LEAN4EXPORT_FOR_FILTER" "$COMP_CONFIG_DIR"
+        else
+            echo "WARNING: lean4export not available, skipping theorem filtering"
+        fi
+
         # --- Build mapping: config filename -> group index ---
         # generate_comparator_configs.py names files by last part of impl_module, lowercased
         # e.g., ArtificialTheorems.Opt.SGD -> sgd.json
