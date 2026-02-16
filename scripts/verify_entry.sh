@@ -460,6 +460,9 @@ echo "$RESULT_JSON" > "$RESULTS_DIR/latest.json"
 mkdir -p "$RESULTS_DIR/history"
 cp "$RESULTS_DIR/latest.json" "$RESULTS_DIR/history/$(date -u +%Y%m%d_%H%M%S).json"
 
+# Enrich results with sign-off data (if any signoffs exist in the entry TOML)
+python3 "$SCRIPT_DIR/lib/enrich_results_with_signoffs.py" "$RESULTS_DIR/latest.json" "$CONFIG_FILE" 2>/dev/null || true
+
 echo "Results written to: $RESULTS_DIR/latest.json"
 
 echo ""

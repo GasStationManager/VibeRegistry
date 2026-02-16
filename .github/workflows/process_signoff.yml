@@ -1,0 +1,66 @@
+name: Process Sign-off
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: signoff-processing
+  cancel-in-progress: false
+
+jobs:
+  process:
+    if: github.event.label.name == 'signoff'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Process sign-off
+        id: signoff
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python3 scripts/process_signoff.py
+
+      - name: Create PR
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          BRANCH="signoff/issue-${ISSUE_NUMBER}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add entries/
+          git commit -m "Record sign-off from issue #${ISSUE_NUMBER}"
+          git push origin "$BRANCH"
+          PR_URL=$(gh pr create \
+            --title "Sign-off from issue #${ISSUE_NUMBER}" \
+            --body "Records the sign-off submitted in #${ISSUE_NUMBER}." \
+            --head "$BRANCH" \
+            --base main)
+          gh issue comment "$ISSUE_NUMBER" \
+            --body "Sign-off processed. PR created: ${PR_URL}"
+
+      - name: Comment on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" \
+            --body "Sign-off processing failed. Please check the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details."

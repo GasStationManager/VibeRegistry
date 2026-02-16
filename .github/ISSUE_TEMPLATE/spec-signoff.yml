@@ -1,0 +1,67 @@
+name: Spec Sign-off
+description: Submit a domain expert sign-off attesting that spec files faithfully capture the intended mathematics.
+title: "Sign-off: [ENTRY_ID]"
+labels: ["signoff"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Spec Sign-off
+
+        Use this form to attest that one or more spec files faithfully capture
+        the intended mathematical statements. Automated verification proves the
+        implementation matches the spec; your sign-off confirms the spec itself
+        is mathematically correct.
+
+  - type: dropdown
+    id: entry_id
+    attributes:
+      label: Entry ID
+      description: Which registry entry are you signing off on?
+      options:
+        - artificial-theorems
+        - stat-learning
+    validations:
+      required: true
+
+  - type: textarea
+    id: spec_files
+    attributes:
+      label: Spec files reviewed
+      description: |
+        List the spec files you reviewed, one per line.
+        Paths are relative to `specs/<entry>/` (e.g., `Registry/StatLearning/Dudley.lean`).
+      placeholder: |
+        Registry/StatLearning/Dudley.lean
+        Registry/StatLearning/EfronStein.lean
+    validations:
+      required: true
+
+  - type: input
+    id: literature_ref
+    attributes:
+      label: Literature reference
+      description: The textbook, paper, or standard reference these specs correspond to.
+      placeholder: "Boucheron et al. (2013) Concentration Inequalities, Theorem 5.6"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict
+      description: Do the spec files faithfully capture the intended mathematics?
+      options:
+        - Approved
+        - Rejected
+    validations:
+      required: true
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: Any additional comments, caveats, or notes about the review.
+      placeholder: "Optional comments..."
+    validations:
+      required: false

@@ -11,10 +11,10 @@ The registry itself never contains proof code. It contains:
 
 ## Registry Entries
 
-| Entry | Theorems | Lean | Verification | Status |
-|-------|----------|------|--------------|--------|
-| [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration (7 theorems) | v4.27.0 | Level 2 | Verified |
-| [Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare (16 declarations) | v4.27.0-rc1 | Level 2 | Verified |
+| Entry | Theorems | Lean | Verification | Sign-offs | Status |
+|-------|----------|------|--------------|-----------|--------|
+| [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration (7 theorems) | v4.27.0 | Level 2 | — | Verified |
+| [Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare (16 declarations) | v4.27.0-rc1 | Level 2 | — | Verified |
 
 ## Verification Levels
 
@@ -130,6 +130,17 @@ The registry supports two build strategies for combining spec and impl oleans:
 
 - **copy** (Phase 1): Copies spec files into the cloned external repo, patches its lakefile, and builds everything together. Simple and reliable.
 - **workspace** (Phase 2): Uses Lake workspaces to reference both projects. Cleaner separation but trickier Lake semantics.
+
+## Submitting a Sign-off
+
+Domain experts can attest that spec files faithfully capture the intended mathematics by submitting a sign-off:
+
+1. Open a [new sign-off issue](../../issues/new?template=spec-signoff.yml)
+2. Select the entry and list the spec files you reviewed
+3. Provide a literature reference and your verdict
+4. Submit — a GitHub Action will process the sign-off and create a PR
+
+Sign-offs are recorded in the entry's TOML config and included in verification results. If spec files change after a sign-off, it is automatically marked stale. Run `python3 scripts/check_signoff_staleness.py entries/<entry>.toml` to check.
 
 ## License
 
