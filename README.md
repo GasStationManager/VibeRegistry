@@ -13,8 +13,8 @@ The registry itself never contains proof code. It contains:
 
 | Entry | Theorems | Lean | Verification | Status |
 |-------|----------|------|--------------|--------|
-| [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration | v4.27.0 | Level 1 | Verified |
-| [Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare | v4.27.0-rc1 | Level 1 | Verified |
+| [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration (7 theorems) | v4.27.0 | Level 2 | Verified |
+| [Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare (16 declarations) | v4.27.0-rc1 | Level 2 | Verified |
 
 ## Verification Levels
 
