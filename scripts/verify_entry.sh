@@ -253,6 +253,58 @@ if [[ "$LEVEL" -ge 2 ]]; then
         done
         echo "Impl olean cleanup complete."
 
+        # --- Convert verification tool deps to path type ---
+        # build_copy.sh injects lean4checker and SafeVerify as git dependencies.
+        # Inside landrun's Landlock sandbox, network is blocked, so Lake's
+        # `git fetch` on these packages fails fatally. Converting to path deps
+        # prevents Lake from running git operations on them.
+        echo ""
+        echo "Converting verification tool deps to path type..."
+        python3 -c "
+import json, sys
+
+# Update lake-manifest.json
+manifest_path = sys.argv[1] + '/lake-manifest.json'
+with open(manifest_path) as f:
+    m = json.load(f)
+changed = False
+for p in m['packages']:
+    if p['name'] in ('lean4checker', 'SafeVerify') and p.get('type') == 'git':
+        p['type'] = 'path'
+        p['dir'] = '.lake/packages/' + p['name']
+        for key in ('url', 'rev', 'inputRev', 'subDir'):
+            p.pop(key, None)
+        changed = True
+        print(f\"  Manifest: converted {p['name']} to path type\")
+if changed:
+    with open(manifest_path, 'w') as f:
+        json.dump(m, f, indent=2)
+        f.write('\n')
+
+# Update lakefile
+for ext in ('lakefile.lean', 'lakefile.toml'):
+    lf_path = sys.argv[1] + '/' + ext
+    try:
+        with open(lf_path) as f:
+            content = f.read()
+    except FileNotFoundError:
+        continue
+
+    import re
+    # .lean format: require X from git \"url\" @ \"rev\"
+    for pkg in ('SafeVerify', 'lean4checker'):
+        old = rf'require {pkg} from git\s*\n\s*\"[^\"]+\"\s*@\s*\"[^\"]+\"'
+        new = f'require {pkg} from \".lake/packages/{pkg}\"'
+        content_new = re.sub(old, new, content)
+        if content_new != content:
+            print(f'  Lakefile: converted {pkg} to path type')
+            content = content_new
+    # .toml format: [[require]]\nname = \"X\"\nscope...\nsource.type = \"git\"
+    # (less common, skip for now)
+    with open(lf_path, 'w') as f:
+        f.write(content)
+" "$REPO_DIR"
+
         # --- Generate comparator configs ---
         COMP_CONFIG_DIR="$WORK_DIR/comparator_configs"
         rm -rf "$COMP_CONFIG_DIR"
@@ -269,9 +321,21 @@ if [[ "$LEVEL" -ge 2 ]]; then
             CONFIG_TO_GROUP["$CONFIG_NAME"]=$i
         done
 
-        # --- Ensure landrun and lean4export are in PATH for comparator ---
+        # --- Ensure tools are in PATH for comparator ---
         # Comparator internally invokes landrun (for sandboxed builds/exports)
         # and lean4export (for kernel-level proof export). Both must be in PATH.
+        #
+        # CRITICAL: We also prepend the actual toolchain bin/ to PATH so that
+        # `lake` resolves to the real binary, not elan's proxy. Elan's proxy
+        # fails inside landrun's Landlock sandbox because it tries to exec
+        # the real binary from the toolchain, which requires execute permission
+        # that landrun can't grant through the proxy indirection.
+        LEAN_PREFIX=$(cd "$REPO_DIR" && lean --print-prefix)
+        if [[ -d "$LEAN_PREFIX/bin" ]]; then
+            export PATH="$LEAN_PREFIX/bin:$PATH"
+            echo "Toolchain bin added to PATH: $LEAN_PREFIX/bin"
+        fi
+
         LANDRUN="${LANDRUN_BIN:-}"
         if [[ -n "$LANDRUN" ]] && [[ -f "$LANDRUN" ]]; then
             LANDRUN_DIR=$(dirname "$LANDRUN")

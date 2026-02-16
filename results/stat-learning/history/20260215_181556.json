@@ -1,0 +1,11 @@
+{
+  "entry_id": "stat-learning",
+  "timestamp": "2026-02-15T18:12:25Z",
+  "commit": "7b82b1323c80f0c21ca449fd12e1c24315ae9782",
+  "lean_toolchain": "leanprover/lean4:v4.27.0-rc1",
+  "mathlib_tag": "v4.27.0",
+  "verification_level": 1,
+  "build_strategy": "copy",
+  "theorems": [{"name":"GaussianLipConcen.gaussian_lipschitz_concentration","spec_module":"Registry.StatLearning.GaussianLipschitzConcentration","impl_module":"SLT.GaussianLipConcen","lean4checker":"pass","safe_verify":"fail","comparator":"skip"},{"name":"dudley","spec_module":"Registry.StatLearning.Dudley","impl_module":"SLT.Dudley","lean4checker":"pass","safe_verify":"fail","comparator":"skip"},{"name":"efronStein","spec_module":"Registry.StatLearning.EfronStein","impl_module":"SLT.EfronStein","lean4checker":"pass","safe_verify":"fail","comparator":"skip"},{"name":"GaussianPoincare.gaussianPoincare","spec_module":"Registry.StatLearning.GaussianPoincare","impl_module":"SLT.GaussianPoincare.Limit","lean4checker":"pass","safe_verify":"fail","comparator":"skip"}],
+  "overall": "fail"
+}
