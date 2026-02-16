@@ -3,7 +3,7 @@ id = "artificial-theorems"
 name = "ArtificialTheorems"
 description = "AI/ML theoretical foundations: Robbins-Siegmund, SGD convergence, Value Iteration"
 url = "https://github.com/GasStationManager/ArtificialTheorems"
-commit = "325588c1dbb6b3ad1de4a75be0d25d9df73b71fa"
+commit = "b17d21e3568881aa7b2dd387793de3bff655a4da"
 branch = "main"
 
 [lean]
