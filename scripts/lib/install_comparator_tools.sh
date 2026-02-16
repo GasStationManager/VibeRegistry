@@ -56,7 +56,7 @@ install_comparator_tools() {
             echo "--- Installing landrun ---"
             rm -rf "$landrun_dir"
             git clone --depth 1 https://github.com/Zouuup/landrun.git "$landrun_dir"
-            (cd "$landrun_dir" && go build -o landrun .)
+            (cd "$landrun_dir" && go build -o landrun ./cmd/landrun)
             echo "landrun built: $landrun_dir/landrun"
         else
             echo "landrun: using cached build"

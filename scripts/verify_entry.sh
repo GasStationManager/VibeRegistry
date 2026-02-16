@@ -269,14 +269,25 @@ if [[ "$LEVEL" -ge 2 ]]; then
             CONFIG_TO_GROUP["$CONFIG_NAME"]=$i
         done
 
-        # --- Determine sandboxing command ---
-        SANDBOX_CMD=""
+        # --- Ensure landrun and lean4export are in PATH for comparator ---
+        # Comparator internally invokes landrun (for sandboxed builds/exports)
+        # and lean4export (for kernel-level proof export). Both must be in PATH.
         LANDRUN="${LANDRUN_BIN:-}"
         if [[ -n "$LANDRUN" ]] && [[ -f "$LANDRUN" ]]; then
-            echo ""
-            echo "Sandboxing enabled via landrun: $LANDRUN"
-            # landrun restricts filesystem access; allow read to repo and tools
-            SANDBOX_CMD="$LANDRUN --ro-bind / -- "
+            LANDRUN_DIR=$(dirname "$LANDRUN")
+            export PATH="$LANDRUN_DIR:$PATH"
+            echo "landrun added to PATH: $LANDRUN_DIR"
+        else
+            echo "WARNING: landrun not available — comparator will fail without it"
+        fi
+
+        LEAN4EXPORT="${LEAN4EXPORT_BIN:-}"
+        if [[ -n "$LEAN4EXPORT" ]] && [[ -f "$LEAN4EXPORT" ]]; then
+            LEAN4EXPORT_DIR=$(dirname "$LEAN4EXPORT")
+            export PATH="$LEAN4EXPORT_DIR:$PATH"
+            echo "lean4export added to PATH: $LEAN4EXPORT_DIR"
+        else
+            echo "WARNING: lean4export not available — comparator will fail without it"
         fi
 
         # --- Run comparator per config ---
@@ -299,32 +310,18 @@ if [[ "$LEVEL" -ge 2 ]]; then
             fi
 
             # Run comparator via lake env (sets up LEAN_PATH)
-            if [[ -n "$SANDBOX_CMD" ]]; then
-                if (cd "$REPO_DIR" && $SANDBOX_CMD lake env "$COMPARATOR" "$config") 2>&1; then
-                    echo "  Comparator $config_name: PASS (sandboxed)"
-                    if [[ -n "$group_idx" ]]; then
-                        GROUP_COMPARATOR[$group_idx]="pass"
-                    fi
-                else
-                    echo "  Comparator $config_name: FAIL (sandboxed)"
-                    if [[ -n "$group_idx" ]]; then
-                        GROUP_COMPARATOR[$group_idx]="fail"
-                    fi
-                    FAILED=1
+            # Comparator internally uses landrun for sandboxing
+            if (cd "$REPO_DIR" && lake env "$COMPARATOR" "$config") 2>&1; then
+                echo "  Comparator $config_name: PASS"
+                if [[ -n "$group_idx" ]]; then
+                    GROUP_COMPARATOR[$group_idx]="pass"
                 fi
             else
-                if (cd "$REPO_DIR" && lake env "$COMPARATOR" "$config") 2>&1; then
-                    echo "  Comparator $config_name: PASS"
-                    if [[ -n "$group_idx" ]]; then
-                        GROUP_COMPARATOR[$group_idx]="pass"
-                    fi
-                else
-                    echo "  Comparator $config_name: FAIL"
-                    if [[ -n "$group_idx" ]]; then
-                        GROUP_COMPARATOR[$group_idx]="fail"
-                    fi
-                    FAILED=1
+                echo "  Comparator $config_name: FAIL"
+                if [[ -n "$group_idx" ]]; then
+                    GROUP_COMPARATOR[$group_idx]="fail"
                 fi
+                FAILED=1
             fi
         done
     fi
