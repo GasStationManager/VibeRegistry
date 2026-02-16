@@ -11,6 +11,36 @@ toolchain = "leanprover/lean4:v4.27.0-rc1"
 mathlib_tag = "v4.27.0"
 
 [[theorems]]
+spec_module = "Registry.StatLearning.GaussianMeasure"
+impl_module = "SLT.GaussianMeasure"
+names = ["GaussianMeasure.stdGaussianPi", "GaussianMeasure.stdGaussianE"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.StatLearning.CoveringNumber"
+impl_module = "SLT.CoveringNumber"
+names = ["IsENet", "coveringNumber"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.StatLearning.MetricEntropy"
+impl_module = "SLT.MetricEntropy"
+names = ["metricEntropyOfNat", "metricEntropy", "sqrtEntropy", "dudleyIntegrand", "entropyIntegralENNReal", "entropyIntegral"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.StatLearning.SubGaussian"
+impl_module = "SLT.SubGaussian"
+names = ["IsSubGaussianProcess"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.StatLearning.EfronSteinApp"
+impl_module = "SLT.GaussianPoincare.EfronSteinApp"
+names = ["EfronSteinApp.CompactlySupportedSmooth"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
 spec_module = "Registry.StatLearning.GaussianLipschitzConcentration"
 impl_module = "SLT.GaussianLipConcen"
 names = ["GaussianLipConcen.gaussian_lipschitz_concentration"]

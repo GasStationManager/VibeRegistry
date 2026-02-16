@@ -72,9 +72,9 @@ VibeRegistry/
 
 ### Spec file rules
 
-1. Import from Mathlib and (when using copy strategy) from impl helper modules that provide definitions used in theorem statements
-2. Avoid importing the impl module that defines the theorem being spec'd — this would create a name conflict
-3. Minimize spec-local definitions; prefer importing them from impl helper modules so SafeVerify sees identical types
+1. Import only from Mathlib and other spec files within the same entry
+2. Mirror impl module structure: export definitions into separate spec files matching the impl's module layout
+3. Spec files for definitions are SafeVerify-checked against their corresponding impl oleans, just like theorem specs
 4. Theorem statements end with `:= by sorry`
 5. Match the impl's universe variables exactly (e.g., `universe u v` if the impl uses explicit universes)
 6. Avoid `local notation` — it creates private declarations that won't match the impl's

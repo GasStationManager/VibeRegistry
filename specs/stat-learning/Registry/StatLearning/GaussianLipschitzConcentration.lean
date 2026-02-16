@@ -4,14 +4,16 @@ Boucheron et al. (2013), Theorem 5.6
 -/
 
 import Mathlib
-import SLT.GaussianMeasure
+import Registry.StatLearning.GaussianMeasure
 
-open MeasureTheory ProbabilityTheory Real Finset BigOperators Function GaussianMeasure
+open MeasureTheory ProbabilityTheory Real Finset BigOperators Function
 open scoped ENNReal NNReal
 
 namespace GaussianLipConcen
 
 variable {n : ℕ}
+
+open GaussianMeasure
 
 /-- **Gaussian Lipschitz Concentration Inequality**
 

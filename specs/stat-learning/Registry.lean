@@ -1,3 +1,8 @@
+import Registry.StatLearning.GaussianMeasure
+import Registry.StatLearning.CoveringNumber
+import Registry.StatLearning.MetricEntropy
+import Registry.StatLearning.SubGaussian
+import Registry.StatLearning.EfronSteinApp
 import Registry.StatLearning.GaussianLipschitzConcentration
 import Registry.StatLearning.Dudley
 import Registry.StatLearning.EfronStein

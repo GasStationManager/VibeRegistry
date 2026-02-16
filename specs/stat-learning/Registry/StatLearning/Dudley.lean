@@ -4,9 +4,9 @@ Boucheron et al. (2013), Corollary 13.2
 -/
 
 import Mathlib
-import SLT.CoveringNumber
-import SLT.MetricEntropy
-import SLT.SubGaussian
+import Registry.StatLearning.CoveringNumber
+import Registry.StatLearning.MetricEntropy
+import Registry.StatLearning.SubGaussian
 
 noncomputable section
 

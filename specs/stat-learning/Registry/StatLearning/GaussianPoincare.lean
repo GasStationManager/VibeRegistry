@@ -4,15 +4,16 @@ Boucheron et al. (2013), Theorem 3.20
 -/
 
 import Mathlib
-import SLT.GaussianPoincare.EfronSteinApp
+import Registry.StatLearning.EfronSteinApp
 
 noncomputable section
 
 open MeasureTheory ProbabilityTheory Real Filter Set Function Topology Complex
 open scoped ENNReal Topology BoundedContinuousFunction
-open EfronSteinApp
 
 namespace GaussianPoincare
+
+open EfronSteinApp
 
 /-- The standard real Gaussian N(0,1) as a ProbabilityMeasure. -/
 abbrev stdGaussian : ProbabilityMeasure ℝ :=
