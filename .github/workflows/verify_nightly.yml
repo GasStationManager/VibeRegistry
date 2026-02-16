@@ -1,0 +1,91 @@
+name: Nightly Level 2 Verification
+
+on:
+  schedule:
+    # Weekly on Sundays at 02:00 UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        entry: [artificial-theorems, stat-learning]
+    name: Level 2 - ${{ matrix.entry }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Install landrun
+        run: |
+          git clone --depth 1 https://github.com/Zouuup/landrun.git /tmp/landrun
+          cd /tmp/landrun && go build -o landrun .
+          echo "LANDRUN_BIN=/tmp/landrun/landrun" >> "$GITHUB_ENV"
+
+      - name: Install lean4export and comparator
+        run: |
+          TOOLCHAIN_FILE="specs/${{ matrix.entry }}/lean-toolchain"
+          source scripts/lib/install_comparator_tools.sh
+          install_comparator_tools "$TOOLCHAIN_FILE" "${{ runner.temp }}/tools"
+          echo "COMPARATOR_BIN=$COMPARATOR_BIN" >> "$GITHUB_ENV"
+          echo "LEAN4EXPORT_BIN=$LEAN4EXPORT_BIN" >> "$GITHUB_ENV"
+
+      - name: Verify ${{ matrix.entry }} (Level 2)
+        run: |
+          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --level 2
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-${{ matrix.entry }}
+          path: results/${{ matrix.entry }}/latest.json
+
+  commit-results:
+    needs: verify
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all results
+        uses: actions/download-artifact@v4
+        with:
+          path: downloaded-results
+
+      - name: Update results
+        run: |
+          for dir in downloaded-results/results-*/; do
+            entry=$(basename "$dir" | sed 's/^results-//')
+            mkdir -p "results/$entry"
+            if [[ -f "$dir/latest.json" ]]; then
+              cp "$dir/latest.json" "results/$entry/latest.json"
+              mkdir -p "results/$entry/history"
+              cp "$dir/latest.json" "results/$entry/history/$(date -u +%Y%m%d_%H%M%S).json"
+            fi
+          done
+
+      - name: Commit results if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results/
+          if git diff --cached --quiet; then
+            echo "No changes to results"
+          else
+            git commit -m "Update nightly Level 2 verification results"
+            git push
+          fi

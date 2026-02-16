@@ -1,0 +1,157 @@
+name: Verify Registry Entries
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'entries/**'
+      - 'specs/**'
+      - 'scripts/**'
+  pull_request:
+    paths:
+      - 'entries/**'
+      - 'specs/**'
+      - 'scripts/**'
+  workflow_dispatch:
+    inputs:
+      level:
+        description: 'Verification level (1=SafeVerify, 2=Comparator)'
+        required: false
+        default: '1'
+        type: choice
+        options:
+          - '1'
+          - '2'
+      entry:
+        description: 'Specific entry to verify (blank = auto-detect or all)'
+        required: false
+        default: ''
+        type: string
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      entries: ${{ steps.detect.outputs.entries }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect changed entries
+        id: detect
+        run: |
+          # For workflow_dispatch with specific entry, use that
+          if [[ -n "${{ github.event.inputs.entry }}" ]]; then
+            echo 'entries=["${{ github.event.inputs.entry }}"]' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # For workflow_dispatch without specific entry, verify all
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            entries=$(ls entries/*.toml 2>/dev/null | xargs -I{} basename {} .toml | jq -R . | jq -sc .)
+            echo "entries=$entries" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # For push/PR, detect which entries have changed files
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+          else
+            BASE="${{ github.event.before }}"
+          fi
+
+          # If BASE is empty (first push), verify all
+          if [[ -z "$BASE" ]] || [[ "$BASE" == "0000000000000000000000000000000000000000" ]]; then
+            entries=$(ls entries/*.toml 2>/dev/null | xargs -I{} basename {} .toml | jq -R . | jq -sc .)
+            echo "entries=$entries" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          CHANGED_FILES=$(git diff --name-only "$BASE" HEAD)
+          echo "Changed files:"
+          echo "$CHANGED_FILES"
+
+          # If scripts changed, verify all entries
+          if echo "$CHANGED_FILES" | grep -q '^scripts/'; then
+            entries=$(ls entries/*.toml 2>/dev/null | xargs -I{} basename {} .toml | jq -R . | jq -sc .)
+            echo "entries=$entries" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Otherwise, detect which entries have changed
+          ENTRIES=()
+          for config in entries/*.toml; do
+            entry_id=$(basename "$config" .toml)
+            if echo "$CHANGED_FILES" | grep -qE "^(entries/${entry_id}\.toml|specs/${entry_id}/)"; then
+              ENTRIES+=("$entry_id")
+            fi
+          done
+
+          if [[ ${#ENTRIES[@]} -eq 0 ]]; then
+            echo 'entries=[]' >> "$GITHUB_OUTPUT"
+          else
+            entries=$(printf '%s\n' "${ENTRIES[@]}" | jq -R . | jq -sc .)
+            echo "entries=$entries" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Print detected entries
+        run: |
+          echo "Entries to verify: ${{ steps.detect.outputs.entries }}"
+
+  verify:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.entries != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        entry: ${{ fromJson(needs.detect-changes.outputs.entries) }}
+    name: Verify ${{ matrix.entry }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Determine verification level
+        id: level
+        run: |
+          LEVEL="${{ github.event.inputs.level }}"
+          echo "level=${LEVEL:-1}" >> "$GITHUB_OUTPUT"
+
+      # Level 2 dependencies (only when needed)
+      - name: Install Go
+        if: steps.level.outputs.level == '2'
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Install landrun
+        if: steps.level.outputs.level == '2'
+        run: |
+          git clone --depth 1 https://github.com/Zouuup/landrun.git /tmp/landrun
+          cd /tmp/landrun && go build -o landrun .
+          echo "LANDRUN_BIN=/tmp/landrun/landrun" >> "$GITHUB_ENV"
+
+      - name: Install lean4export and comparator
+        if: steps.level.outputs.level == '2'
+        run: |
+          TOOLCHAIN_FILE="specs/${{ matrix.entry }}/lean-toolchain"
+          source scripts/lib/install_comparator_tools.sh
+          install_comparator_tools "$TOOLCHAIN_FILE" "${{ runner.temp }}/tools"
+          echo "COMPARATOR_BIN=$COMPARATOR_BIN" >> "$GITHUB_ENV"
+          echo "LEAN4EXPORT_BIN=$LEAN4EXPORT_BIN" >> "$GITHUB_ENV"
+
+      - name: Verify ${{ matrix.entry }}
+        run: |
+          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --level "${{ steps.level.outputs.level }}"
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-${{ matrix.entry }}
+          path: results/${{ matrix.entry }}/latest.json

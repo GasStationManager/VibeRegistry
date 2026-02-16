@@ -60,6 +60,36 @@ VibeRegistry/
 ./scripts/verify_all.sh --level 1
 ```
 
+### Level 2 verification (Comparator)
+
+Level 2 adds `lean4export` + `comparator` for kernel-level proof export and independent checking, optionally sandboxed with `landrun`.
+
+Tools are auto-installed if missing, but you can install them manually:
+
+```bash
+# Install tools (requires Go for landrun)
+source scripts/lib/install_comparator_tools.sh
+install_comparator_tools specs/artificial-theorems/lean-toolchain work/tools
+
+# Run Level 2
+./scripts/verify_entry.sh entries/artificial-theorems.toml --level 2
+```
+
+Or set tool paths directly:
+
+```bash
+export COMPARATOR_BIN=/path/to/comparator
+export LEAN4EXPORT_BIN=/path/to/lean4export
+export LANDRUN_BIN=/path/to/landrun  # optional
+./scripts/verify_entry.sh entries/artificial-theorems.toml --level 2
+```
+
+### CI
+
+- **On push/PR**: Level 1 verification runs automatically for changed entries
+- **Nightly (weekly)**: Level 2 verification runs for all entries with landrun sandboxing
+- **Manual dispatch**: Run any level via GitHub Actions workflow_dispatch
+
 ### Add a new entry
 
 1. **Identify** the external repo's Lean/Mathlib version

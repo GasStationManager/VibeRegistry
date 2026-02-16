@@ -6,6 +6,11 @@
 # Level 1 (default): lean4checker + SafeVerify
 # Level 2: Level 1 + Comparator (sandboxed)
 #
+# Environment variables (optional):
+#   COMPARATOR_BIN   Path to comparator binary (auto-installed if missing)
+#   LEAN4EXPORT_BIN  Path to lean4export binary (auto-installed if missing)
+#   LANDRUN_BIN      Path to landrun binary (optional sandboxing)
+#
 # Exit codes:
 #   0 - All verifications passed
 #   1 - Some verifications failed
@@ -125,17 +130,27 @@ echo "Step 2: Level 1 Verification"
 echo "========================================="
 
 FAILED=0
-RESULTS=()
 TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
-# Parse theorem groups
+# Parse theorem groups into arrays for per-group result tracking
 NUM_GROUPS=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; print(len(json.loads(sys.stdin.read())))")
 
+declare -a GROUP_SPEC_MODULES GROUP_IMPL_MODULES GROUP_NAMES_JSON
+declare -a GROUP_CHECKER GROUP_SAFEVERIFY GROUP_COMPARATOR
+
 for ((i=0; i<NUM_GROUPS; i++)); do
-    SPEC_MODULE=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; d=json.loads(sys.stdin.read()); print(d[$i]['spec_module'])")
-    IMPL_MODULE=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; d=json.loads(sys.stdin.read()); print(d[$i]['impl_module'])")
-    NAMES_JSON=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; d=json.loads(sys.stdin.read()); print(json.dumps(d[$i]['names']))")
-    AXIOMS_JSON=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; d=json.loads(sys.stdin.read()); print(json.dumps(d[$i].get('permitted_axioms', [])))")
+    GROUP_SPEC_MODULES[$i]=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; d=json.loads(sys.stdin.read()); print(d[$i]['spec_module'])")
+    GROUP_IMPL_MODULES[$i]=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; d=json.loads(sys.stdin.read()); print(d[$i]['impl_module'])")
+    GROUP_NAMES_JSON[$i]=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; d=json.loads(sys.stdin.read()); print(json.dumps(d[$i]['names']))")
+    GROUP_CHECKER[$i]="skip"
+    GROUP_SAFEVERIFY[$i]="skip"
+    GROUP_COMPARATOR[$i]="skip"
+done
+
+for ((i=0; i<NUM_GROUPS; i++)); do
+    SPEC_MODULE="${GROUP_SPEC_MODULES[$i]}"
+    IMPL_MODULE="${GROUP_IMPL_MODULES[$i]}"
+    NAMES_JSON="${GROUP_NAMES_JSON[$i]}"
 
     echo ""
     echo "-----------------------------------------"
@@ -148,24 +163,20 @@ for ((i=0; i<NUM_GROUPS; i++)); do
     IMPL_OLEAN="$BUILD_LIB/$(echo "$IMPL_MODULE" | tr '.' '/').olean"
     SPEC_OLEAN="$BUILD_LIB/$(echo "$SPEC_MODULE" | tr '.' '/').olean"
 
-    CHECKER_RESULT="skip"
-    SAFE_VERIFY_RESULT="skip"
-    COMPARATOR_RESULT="skip"
-
     # 2a. lean4checker on impl module
     echo "  Running lean4checker on $IMPL_MODULE..."
     if [[ -f "$IMPL_OLEAN" ]]; then
         if (cd "$REPO_DIR" && lake exe lean4checker "$IMPL_MODULE") 2>&1; then
-            CHECKER_RESULT="pass"
+            GROUP_CHECKER[$i]="pass"
             echo "  lean4checker: PASS"
         else
-            CHECKER_RESULT="fail"
+            GROUP_CHECKER[$i]="fail"
             echo "  lean4checker: FAIL"
             FAILED=1
         fi
     else
         echo "  WARNING: Impl olean not found: $IMPL_OLEAN"
-        CHECKER_RESULT="fail"
+        GROUP_CHECKER[$i]="fail"
         FAILED=1
     fi
 
@@ -173,10 +184,10 @@ for ((i=0; i<NUM_GROUPS; i++)); do
     echo "  Running safe_verify..."
     if [[ -f "$SPEC_OLEAN" ]] && [[ -f "$IMPL_OLEAN" ]]; then
         if (cd "$REPO_DIR" && lake exe safe_verify "$SPEC_OLEAN" "$IMPL_OLEAN") 2>&1; then
-            SAFE_VERIFY_RESULT="pass"
+            GROUP_SAFEVERIFY[$i]="pass"
             echo "  safe_verify: PASS"
         else
-            SAFE_VERIFY_RESULT="fail"
+            GROUP_SAFEVERIFY[$i]="fail"
             echo "  safe_verify: FAIL"
             FAILED=1
         fi
@@ -187,16 +198,9 @@ for ((i=0; i<NUM_GROUPS; i++)); do
         if [[ ! -f "$IMPL_OLEAN" ]]; then
             echo "  WARNING: Impl olean not found: $IMPL_OLEAN"
         fi
-        SAFE_VERIFY_RESULT="fail"
+        GROUP_SAFEVERIFY[$i]="fail"
         FAILED=1
     fi
-
-    # Build per-theorem results
-    NAMES_COUNT=$(echo "$NAMES_JSON" | python3 -c "import sys,json; print(len(json.loads(sys.stdin.read())))")
-    for ((j=0; j<NAMES_COUNT; j++)); do
-        NAME=$(echo "$NAMES_JSON" | python3 -c "import sys,json; print(json.loads(sys.stdin.read())[$j])")
-        RESULTS+=("{\"name\":\"$NAME\",\"spec_module\":\"$SPEC_MODULE\",\"impl_module\":\"$IMPL_MODULE\",\"lean4checker\":\"$CHECKER_RESULT\",\"safe_verify\":\"$SAFE_VERIFY_RESULT\",\"comparator\":\"$COMPARATOR_RESULT\"}")
-    done
 done
 
 # --- Level 2: Comparator (if requested) ---
@@ -206,35 +210,142 @@ if [[ "$LEVEL" -ge 2 ]]; then
     echo "Step 3: Level 2 Verification (Comparator)"
     echo "========================================="
 
-    # Generate comparator configs
-    COMP_CONFIG_DIR="$WORK_DIR/comparator_configs"
-    python3 "$SCRIPT_DIR/generate_comparator_configs.py" "$CONFIG_FILE" "$COMP_CONFIG_DIR"
-
-    # Find comparator binary
+    # Auto-install tools if not available
     COMPARATOR="${COMPARATOR_BIN:-}"
     if [[ -z "$COMPARATOR" ]] && command -v comparator &> /dev/null; then
         COMPARATOR="comparator"
     fi
 
     if [[ -z "$COMPARATOR" ]]; then
-        echo "WARNING: Comparator binary not found. Skipping Level 2."
-        echo "Set COMPARATOR_BIN or install comparator in PATH."
-    else
+        echo "Comparator not found, attempting auto-install..."
+        source "$SCRIPT_DIR/lib/install_comparator_tools.sh"
+        TOOLS_DIR="$PROJECT_DIR/work/tools"
+        if install_comparator_tools "$SPEC_DIR/lean-toolchain" "$TOOLS_DIR"; then
+            COMPARATOR="$COMPARATOR_BIN"
+        else
+            echo "WARNING: Auto-install failed. Skipping Level 2."
+        fi
+    fi
+
+    if [[ -n "$COMPARATOR" ]]; then
+        # --- Security-critical: Remove impl oleans before comparator ---
+        # Comparator re-exports and independently verifies proofs.
+        # Impl oleans must be removed so the build re-compiles from source
+        # under comparator's supervision.
+        echo ""
+        echo "Cleaning impl oleans (security-critical)..."
+        declare -A CLEAN_DIRS
+        for ((i=0; i<NUM_GROUPS; i++)); do
+            IMPL_MODULE="${GROUP_IMPL_MODULES[$i]}"
+            # Extract top-level directory: ArtificialTheorems.Opt.SGD -> ArtificialTheorems
+            TOP_DIR=$(echo "$IMPL_MODULE" | cut -d'.' -f1)
+            CLEAN_DIRS["$TOP_DIR"]=1
+        done
+
+        for dir in "${!CLEAN_DIRS[@]}"; do
+            local_path="$BUILD_LIB/$dir"
+            if [[ -d "$local_path" ]]; then
+                echo "  Removing: $local_path"
+                rm -rf "$local_path"
+            else
+                echo "  Not found (already clean): $local_path"
+            fi
+        done
+        echo "Impl olean cleanup complete."
+
+        # --- Generate comparator configs ---
+        COMP_CONFIG_DIR="$WORK_DIR/comparator_configs"
+        rm -rf "$COMP_CONFIG_DIR"
+        python3 "$SCRIPT_DIR/generate_comparator_configs.py" "$CONFIG_FILE" "$COMP_CONFIG_DIR"
+
+        # --- Build mapping: config filename -> group index ---
+        # generate_comparator_configs.py names files by last part of impl_module, lowercased
+        # e.g., ArtificialTheorems.Opt.SGD -> sgd.json
+        declare -A CONFIG_TO_GROUP
+        for ((i=0; i<NUM_GROUPS; i++)); do
+            IMPL_MODULE="${GROUP_IMPL_MODULES[$i]}"
+            LAST_PART=$(echo "$IMPL_MODULE" | awk -F'.' '{print $NF}')
+            CONFIG_NAME=$(echo "$LAST_PART" | tr '[:upper:]' '[:lower:]')
+            CONFIG_TO_GROUP["$CONFIG_NAME"]=$i
+        done
+
+        # --- Determine sandboxing command ---
+        SANDBOX_CMD=""
+        LANDRUN="${LANDRUN_BIN:-}"
+        if [[ -n "$LANDRUN" ]] && [[ -f "$LANDRUN" ]]; then
+            echo ""
+            echo "Sandboxing enabled via landrun: $LANDRUN"
+            # landrun restricts filesystem access; allow read to repo and tools
+            SANDBOX_CMD="$LANDRUN --ro-bind / -- "
+        fi
+
+        # --- Run comparator per config ---
         for config in "$COMP_CONFIG_DIR"/*.json; do
-            if [[ -f "$config" ]]; then
-                name=$(basename "$config" .json)
-                echo ""
-                echo "  Comparator: $name"
-                if (cd "$REPO_DIR" && lake env "$COMPARATOR" "$config") 2>&1; then
-                    echo "  Comparator $name: PASS"
+            if [[ ! -f "$config" ]]; then
+                continue
+            fi
+
+            config_name=$(basename "$config" .json)
+            echo ""
+            echo "-----------------------------------------"
+            echo "Comparator: $config_name"
+            echo "-----------------------------------------"
+
+            # Find the group index for this config
+            group_idx="${CONFIG_TO_GROUP[$config_name]:-}"
+            if [[ -z "$group_idx" ]]; then
+                echo "  WARNING: Cannot match config '$config_name' to a theorem group"
+                echo "  Running comparator anyway..."
+            fi
+
+            # Run comparator via lake env (sets up LEAN_PATH)
+            if [[ -n "$SANDBOX_CMD" ]]; then
+                if (cd "$REPO_DIR" && $SANDBOX_CMD lake env "$COMPARATOR" "$config") 2>&1; then
+                    echo "  Comparator $config_name: PASS (sandboxed)"
+                    if [[ -n "$group_idx" ]]; then
+                        GROUP_COMPARATOR[$group_idx]="pass"
+                    fi
                 else
-                    echo "  Comparator $name: FAIL"
+                    echo "  Comparator $config_name: FAIL (sandboxed)"
+                    if [[ -n "$group_idx" ]]; then
+                        GROUP_COMPARATOR[$group_idx]="fail"
+                    fi
+                    FAILED=1
+                fi
+            else
+                if (cd "$REPO_DIR" && lake env "$COMPARATOR" "$config") 2>&1; then
+                    echo "  Comparator $config_name: PASS"
+                    if [[ -n "$group_idx" ]]; then
+                        GROUP_COMPARATOR[$group_idx]="pass"
+                    fi
+                else
+                    echo "  Comparator $config_name: FAIL"
+                    if [[ -n "$group_idx" ]]; then
+                        GROUP_COMPARATOR[$group_idx]="fail"
+                    fi
                     FAILED=1
                 fi
             fi
         done
     fi
 fi
+
+# --- Build per-theorem results from per-group arrays ---
+RESULTS=()
+for ((i=0; i<NUM_GROUPS; i++)); do
+    SPEC_MODULE="${GROUP_SPEC_MODULES[$i]}"
+    IMPL_MODULE="${GROUP_IMPL_MODULES[$i]}"
+    NAMES_JSON="${GROUP_NAMES_JSON[$i]}"
+    CHECKER_RESULT="${GROUP_CHECKER[$i]}"
+    SAFE_VERIFY_RESULT="${GROUP_SAFEVERIFY[$i]}"
+    COMPARATOR_RESULT="${GROUP_COMPARATOR[$i]}"
+
+    NAMES_COUNT=$(echo "$NAMES_JSON" | python3 -c "import sys,json; print(len(json.loads(sys.stdin.read())))")
+    for ((j=0; j<NAMES_COUNT; j++)); do
+        NAME=$(echo "$NAMES_JSON" | python3 -c "import sys,json; print(json.loads(sys.stdin.read())[$j])")
+        RESULTS+=("{\"name\":\"$NAME\",\"spec_module\":\"$SPEC_MODULE\",\"impl_module\":\"$IMPL_MODULE\",\"lean4checker\":\"$CHECKER_RESULT\",\"safe_verify\":\"$SAFE_VERIFY_RESULT\",\"comparator\":\"$COMPARATOR_RESULT\"}")
+    done
+done
 
 # --- Write results ---
 echo ""
@@ -273,7 +384,7 @@ echo "Results written to: $RESULTS_DIR/latest.json"
 echo ""
 echo "========================================="
 if [[ $FAILED -eq 0 ]]; then
-    echo "VERIFICATION PASSED"
+    echo "VERIFICATION PASSED (Level $LEVEL)"
     exit 0
 else
     echo "VERIFICATION FAILED"
