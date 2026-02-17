@@ -46,3 +46,13 @@ strategy = "copy"
 [tools]
 safe_verify_repo = "https://github.com/GasStationManager/SafeVerify"
 safe_verify_ref = "v4.27.0"
+
+[[signoffs]]
+github_user = "GasStationManager"
+spec_files = ["Registry/ArtificialTheorems/Opt/RobbinsSiegmund.lean"]
+spec_version = "v1_mathlib-v4.27.0"
+date = "2026-02-17"
+issue = 1
+status = "current"
+spec_hash = "sha256:0ce62265367ec913a032e826b74a42c799e2d40c4f2fb3e7224a5b08316cb780"
+comment = "S. Gadat, Lecture notes on Stochastic Optimization Algorithms, http://perso.math.univ-toulouse.fr/gadat/files/2012/12/cours_Algo_Stos_M2R5.pdf"
