@@ -1,10 +1,16 @@
-# VibeRegistry
+# VibeRegistry: Verified Registry of AI-assisted Lean Proofs
 
-A registry that catalogs AI-assisted Lean 4 proofs from external repositories, provides human-vetted formal theorem specifications, and runs automated verification to certify that implementations match their specs.
+VibeRegistry is a registry that catalogs AI-assisted Lean 4 proofs from external repositories, provides human-vetted formal theorem specifications, and runs automated secure verification to certify that implementations match their specs.
+
+As AI-generated / AI-assisted formalizations of mathematical proofs become more common, we hope this registry can:
+- increase awareness of tools that check against known pitfalls (comparator, SafeVerify);
+- provide a place for human experts to vett and sign-off on specifications;
+- serve as a trusted source of verification status of public repositories;
+- promote safe re-use of autoformalized libraries of theorems
 
 ## Core Invariant
 
-The registry itself never contains proof code. It contains:
+The registry itself does not contain proof code. It contains:
 1. **Theorem specifications** — human-vetted `.lean` files with `sorry`-ed statements
 2. **Metadata** — TOML configs pointing to external repos at pinned commits
 3. **Automation** — scripts to fetch, build, and verify proofs against the specs
@@ -126,12 +132,6 @@ export LANDRUN_BIN=/path/to/landrun  # optional
 | `landrun` sandbox | Build-time filesystem attacks | 2 |
 | `comparator` | Environment manipulation, kernel-level verification | 2 |
 
-## Build Strategies
-
-The registry supports two build strategies for combining spec and impl oleans:
-
-- **copy** (Phase 1): Copies spec files into the cloned external repo, patches its lakefile, and builds everything together. Simple and reliable.
-- **workspace** (Phase 2): Uses Lake workspaces to reference both projects. Cleaner separation but trickier Lake semantics.
 
 ## Submitting a Sign-off
 
@@ -144,6 +144,4 @@ Domain experts can attest that spec files faithfully capture the intended mathem
 
 Sign-offs are recorded in the entry's TOML config and included in verification results. If spec files change after a sign-off, it is automatically marked stale. Run `python3 scripts/check_signoff_staleness.py entries/<entry>.toml` to check.
 
-## License
 
-See [LICENSE](LICENSE).
