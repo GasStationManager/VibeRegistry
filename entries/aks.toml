@@ -21,5 +21,5 @@ strategy = "copy"
 targets = "AKS Challenge"
 
 [tools]
-safe_verify_repo = "https://github.com/GasStationManager/SafeVerify"
-safe_verify_ref = "main"
+safe_verify_rev = "main"
+lean4checker_rev = "v4.29.0-rc4"
