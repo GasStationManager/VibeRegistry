@@ -11,3 +11,8 @@ status = "verified"
 id = "stat-learning"
 config = "entries/stat-learning.toml"
 status = "verified"
+
+[[entries]]
+id = "aks"
+config = "entries/aks.toml"
+status = "pending"

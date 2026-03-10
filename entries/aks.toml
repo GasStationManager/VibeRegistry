@@ -1,0 +1,24 @@
+[project]
+id = "aks"
+name = "AKS Sorting Networks"
+description = "O(log n)-depth, O(n log n)-size sorting networks via the AKS construction"
+url = "https://github.com/girving/aks"
+commit = "f172ac6c2e46cf30b3aae7e4d19704905133b2bc"
+branch = "main"
+
+[lean]
+toolchain = "leanprover/lean4:v4.29.0-rc4"
+mathlib_tag = "master"
+
+[[theorems]]
+spec_module = "Registry.AKS.Challenge"
+impl_module = "AKS.Seiferas"
+names = ["networks_exist"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[build]
+strategy = "copy"
+
+[tools]
+safe_verify_repo = "https://github.com/GasStationManager/SafeVerify"
+safe_verify_ref = "main"
