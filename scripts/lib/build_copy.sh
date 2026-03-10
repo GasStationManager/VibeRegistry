@@ -189,8 +189,17 @@ PYEOF
     echo "Fetching Mathlib cache..."
     (cd "$repo_dir" && lake exe cache get) || echo "WARNING: cache get failed, building from source"
 
-    echo "Building impl (default targets)..."
-    (cd "$repo_dir" && lake build)
+    # Check for build_targets in TOML config (passed via env var)
+    if [[ -n "${BUILD_TARGETS:-}" ]]; then
+        echo "Building specified targets: $BUILD_TARGETS"
+        for target in $BUILD_TARGETS; do
+            echo "  Building $target..."
+            (cd "$repo_dir" && lake build "$target")
+        done
+    else
+        echo "Building impl (default targets)..."
+        (cd "$repo_dir" && lake build)
+    fi
     echo "Building Registry specs..."
     # Build each spec module individually rather than the combined Registry target.
     # Spec modules may import impl (SLT) modules, which can cause name conflicts when

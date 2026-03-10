@@ -18,6 +18,7 @@ permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
 
 [build]
 strategy = "copy"
+targets = "AKS Challenge"
 
 [tools]
 safe_verify_repo = "https://github.com/GasStationManager/SafeVerify"

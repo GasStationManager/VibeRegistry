@@ -73,6 +73,7 @@ THEOREMS_JSON=$($PARSE_TOML "$CONFIG_FILE" theorems)
 # Parse optional tool versions for verification dependencies
 export SAFE_VERIFY_REV=$($PARSE_TOML "$CONFIG_FILE" tools.safe_verify_rev 2>/dev/null || echo "")
 export LEAN4CHECKER_REV=$($PARSE_TOML "$CONFIG_FILE" tools.lean4checker_rev 2>/dev/null || echo "")
+export BUILD_TARGETS=$($PARSE_TOML "$CONFIG_FILE" build.targets 2>/dev/null || echo "")
 
 echo "Entry: $ENTRY_ID"
 echo "Repo: $REPO_URL"
