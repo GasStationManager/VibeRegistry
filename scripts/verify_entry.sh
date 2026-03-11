@@ -73,6 +73,7 @@ THEOREMS_JSON=$($PARSE_TOML "$CONFIG_FILE" theorems)
 # Parse optional tool versions for verification dependencies
 export SAFE_VERIFY_REV=$($PARSE_TOML "$CONFIG_FILE" tools.safe_verify_rev 2>/dev/null || echo "")
 export LEAN4CHECKER_REV=$($PARSE_TOML "$CONFIG_FILE" tools.lean4checker_rev 2>/dev/null || echo "")
+export BUILD_TARGETS=$($PARSE_TOML "$CONFIG_FILE" build.targets 2>/dev/null || echo "")
 
 echo "Entry: $ENTRY_ID"
 echo "Repo: $REPO_URL"
@@ -228,31 +229,6 @@ if [[ "$LEVEL" -ge 2 ]]; then
     fi
 
     if [[ -n "$COMPARATOR" ]]; then
-        # --- Security-critical: Remove impl oleans before comparator ---
-        # Comparator re-exports and independently verifies proofs.
-        # Impl oleans must be removed so the build re-compiles from source
-        # under comparator's supervision.
-        echo ""
-        echo "Cleaning impl oleans (security-critical)..."
-        declare -A CLEAN_DIRS
-        for ((i=0; i<NUM_GROUPS; i++)); do
-            IMPL_MODULE="${GROUP_IMPL_MODULES[$i]}"
-            # Extract top-level directory: ArtificialTheorems.Opt.SGD -> ArtificialTheorems
-            TOP_DIR=$(echo "$IMPL_MODULE" | cut -d'.' -f1)
-            CLEAN_DIRS["$TOP_DIR"]=1
-        done
-
-        for dir in "${!CLEAN_DIRS[@]}"; do
-            local_path="$BUILD_LIB/$dir"
-            if [[ -d "$local_path" ]]; then
-                echo "  Removing: $local_path"
-                rm -rf "$local_path"
-            else
-                echo "  Not found (already clean): $local_path"
-            fi
-        done
-        echo "Impl olean cleanup complete."
-
         # --- Convert verification tool deps to path type ---
         # build_copy.sh injects lean4checker and SafeVerify as git dependencies.
         # Inside landrun's Landlock sandbox, network is blocked, so Lake's
@@ -329,6 +305,37 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
         else
             echo "WARNING: lean4export not available, skipping theorem filtering"
         fi
+
+        # --- Security-critical: Remove impl oleans before comparator ---
+        # Comparator re-exports and independently verifies proofs.
+        # Impl oleans must be removed so the build re-compiles from source
+        # under comparator's supervision.
+        #
+        # IMPORTANT: this must happen after theorem filtering above, because
+        # the filter uses lean4export on the challenge module. Cleaning the
+        # impl tree first can delete transitive imports needed just to load the
+        # challenge module, causing the filter to drop configs and silently skip
+        # comparator verification.
+        echo ""
+        echo "Cleaning impl oleans (security-critical)..."
+        declare -A CLEAN_DIRS
+        for ((i=0; i<NUM_GROUPS; i++)); do
+            IMPL_MODULE="${GROUP_IMPL_MODULES[$i]}"
+            # Extract top-level directory: ArtificialTheorems.Opt.SGD -> ArtificialTheorems
+            TOP_DIR=$(echo "$IMPL_MODULE" | cut -d'.' -f1)
+            CLEAN_DIRS["$TOP_DIR"]=1
+        done
+
+        for dir in "${!CLEAN_DIRS[@]}"; do
+            local_path="$BUILD_LIB/$dir"
+            if [[ -d "$local_path" ]]; then
+                echo "  Removing: $local_path"
+                rm -rf "$local_path"
+            else
+                echo "  Not found (already clean): $local_path"
+            fi
+        done
+        echo "Impl olean cleanup complete."
 
         # --- Build mapping: config filename -> group index ---
         # generate_comparator_configs.py names files by last part of impl_module, lowercased
