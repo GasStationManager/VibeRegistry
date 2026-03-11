@@ -22,6 +22,7 @@ The registry itself does not contain proof code. It contains:
 |-------|----------|------|--------------|-----------|--------|
 | [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration (7 theorems) | v4.27.0 | Level 2 | 1 sign-off | Verified |
 | [Lean Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare (16 theorems) | v4.27.0-rc1 | Level 2 | — | Verified |
+| [AKS Sorting Networks](https://github.com/girving/aks) | 1 theorems | v4.29.0-rc4 | — | — | Pending |
 <!-- END REGISTRY TABLE -->
 
 ## Verification Levels
