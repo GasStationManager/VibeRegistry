@@ -4,31 +4,57 @@
   Source: https://github.com/girving/aks/blob/main/Challenge.lean
   Theorem: `networks_exist` from `AKS/Seiferas.lean`
 
-  Imports match AKS.Seiferas's direct imports so that SafeVerify's import
-  superset check passes. Definitions are restated here for human review;
-  SafeVerify checks they match the impl's definitions exactly.
+  Proves existence of comparator sorting networks with O(log n) depth
+  and O(n log n) size, formalizing the AKS sorting network construction.
 -/
 
-import AKS.Bags.Depth
-import AKS.Sort.ZeroOne
+import Mathlib.Algebra.Group.Nat.Defs
+import Mathlib.Data.Nat.Log
+import Mathlib.Order.Fin.Basic
 
-/-! **Comparator network definitions (restated for review)** -/
+/-! **Comparator network definitions: depth, size, and sorting** -/
 
--- These definitions are defined in AKS.Sort.Defs and imported transitively.
--- They are restated here as comments for human reviewers:
---
--- structure Comparator (n : ℕ) where
---   i : Fin n
---   j : Fin n
---   h : i < j
---
--- @[ext] structure ComparatorNetwork (n : ℕ) where
---   comparators : List (Comparator n)
---
--- def ComparatorNetwork.depth (net : ComparatorNetwork n) : ℕ := ...
--- def ComparatorNetwork.size (net : ComparatorNetwork n) : ℕ := ...
--- def ComparatorNetwork.exec (net : ComparatorNetwork n) (v : Fin n → α) : Fin n → α := ...
--- def ComparatorNetwork.Sorts (net : ComparatorNetwork n) : Prop := ...
+/-- A comparator on `n` wires swaps positions `i` and `j` if out of order. -/
+structure Comparator (n : ℕ) where
+  i : Fin n
+  j : Fin n
+  h : i < j
+
+/-- Apply a single comparator to a vector. -/
+def Comparator.apply {n : ℕ} {α : Type*} [LinearOrder α]
+    (c : Comparator n) (v : Fin n → α) : Fin n → α :=
+  fun k ↦
+    if k = c.i then min (v c.i) (v c.j)
+    else if k = c.j then max (v c.i) (v c.j)
+    else v k
+
+/-- A comparator network is a sequence of comparators applied in order. -/
+@[ext] structure ComparatorNetwork (n : ℕ) where
+  comparators : List (Comparator n)
+
+/-- The size of a network is the total number of comparators. -/
+def ComparatorNetwork.size {n : ℕ} (net : ComparatorNetwork n) : ℕ :=
+  net.comparators.length
+
+def depthStep {n : ℕ} (state : (Fin n → ℕ) × ℕ) (c : Comparator n) :
+    (Fin n → ℕ) × ℕ :=
+  let wt := state.1
+  let t := max (wt c.i) (wt c.j) + 1
+  (Function.update (Function.update wt c.i t) c.j t, max state.2 t)
+
+/-- The depth of a comparator network, computed via greedy critical-path scheduling. -/
+def ComparatorNetwork.depth {n : ℕ} (net : ComparatorNetwork n) : ℕ :=
+  (net.comparators.foldl depthStep (fun _ ↦ 0, 0)).2
+
+/-- Execute an entire comparator network on an input vector. -/
+def ComparatorNetwork.exec {n : ℕ} {α : Type*} [LinearOrder α]
+    (net : ComparatorNetwork n) (v : Fin n → α) : Fin n → α :=
+  net.comparators.foldl (fun acc c ↦ c.apply acc) v
+
+/-- A network is a *sorting network* if it sorts every input. -/
+def ComparatorNetwork.Sorts {n : ℕ} (net : ComparatorNetwork n) : Prop :=
+  ∀ (α : Type*) [LinearOrder α] (v : Fin n → α),
+    Monotone (net.exec v)
 
 /-! **O(log n)-depth, O(n log n)-size networks exist** -/
 
