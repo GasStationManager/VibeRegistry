@@ -1,4 +1,4 @@
-name: Nightly Level 2 Verification
+name: Weekly Level 2 Verification
 
 on:
   schedule:
@@ -7,12 +7,31 @@ on:
   workflow_dispatch:
 
 jobs:
+  detect-entries:
+    runs-on: ubuntu-latest
+    outputs:
+      entries: ${{ steps.detect.outputs.entries }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Discover registry entries
+        id: detect
+        run: |
+          entries=$(ls entries/*.toml 2>/dev/null | xargs -I{} basename {} .toml | sort | jq -R . | jq -sc .)
+          echo "entries=$entries" >> "$GITHUB_OUTPUT"
+
+      - name: Print discovered entries
+        run: |
+          echo "Entries to verify: ${{ steps.detect.outputs.entries }}"
+
   verify:
+    needs: detect-entries
+    if: needs.detect-entries.outputs.entries != '[]'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        entry: [artificial-theorems, stat-learning]
+        entry: ${{ fromJson(needs.detect-entries.outputs.entries) }}
     name: Level 2 - ${{ matrix.entry }}
     steps:
       - uses: actions/checkout@v4
@@ -81,6 +100,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to results"
           else
-            git commit -m "Update nightly Level 2 verification results"
+            git commit -m "Update weekly Level 2 verification results"
             git push
           fi
