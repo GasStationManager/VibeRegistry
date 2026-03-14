@@ -91,7 +91,7 @@ jobs:
           if [[ ${#ENTRIES[@]} -eq 0 ]]; then
             echo 'entries=[]' >> "$GITHUB_OUTPUT"
           else
-            entries=$(printf '%s\n' "${ENTRIES[@]}" | jq -R . | jq -sc .)
+            entries=$(printf '%s\n' "${ENTRIES[@]}" | sort -u | jq -R . | jq -sc .)
             echo "entries=$entries" >> "$GITHUB_OUTPUT"
           fi
 
@@ -148,4 +148,46 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: results-${{ matrix.entry }}
+          path: results/${{ matrix.entry }}/latest.json
+
+  verify-level2-on-main:
+    needs: detect-changes
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && needs.detect-changes.outputs.entries != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        entry: ${{ fromJson(needs.detect-changes.outputs.entries) }}
+    name: Verify changed entry ${{ matrix.entry }} (Level 2)
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Install Level 2 tools (landrun, lean4export, comparator)
+        run: |
+          TOOLCHAIN_FILE="specs/${{ matrix.entry }}/lean-toolchain"
+          source scripts/lib/install_comparator_tools.sh
+          install_comparator_tools "$TOOLCHAIN_FILE" "${{ runner.temp }}/tools"
+          echo "COMPARATOR_BIN=$COMPARATOR_BIN" >> "$GITHUB_ENV"
+          echo "LEAN4EXPORT_BIN=$LEAN4EXPORT_BIN" >> "$GITHUB_ENV"
+          echo "LANDRUN_BIN=$LANDRUN_BIN" >> "$GITHUB_ENV"
+
+      - name: Verify changed entry ${{ matrix.entry }} (Level 2)
+        run: |
+          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --level 2
+
+      - name: Upload Level 2 results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-level2-${{ matrix.entry }}
           path: results/${{ matrix.entry }}/latest.json
