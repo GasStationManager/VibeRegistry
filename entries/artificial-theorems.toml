@@ -1,9 +1,9 @@
 [project]
 id = "artificial-theorems"
 name = "ArtificialTheorems"
-description = "AI/ML theoretical foundations: Robbins-Siegmund, SGD convergence, Value Iteration"
+description = "AI/ML theoretical foundations: Universal Approximation (Cybenko 1989), Robbins-Siegmund, SGD convergence, Value Iteration"
 url = "https://github.com/GasStationManager/ArtificialTheorems"
-commit = "b17d21e3568881aa7b2dd387793de3bff655a4da"
+commit = "9c0f970db29553e3c32bccb25fd13c3f54dc3a8e"
 branch = "main"
 
 [lean]
@@ -39,6 +39,13 @@ spec_module = "Registry.ArtificialTheorems.RL.ApproxValueIterationInt"
 impl_module = "ArtificialTheorems.RL.ApproxValueIterationInt"
 names = ["ApproxValueIterationInt.INT_VALUE_ITERATION_APPROX", "ApproxValueIterationInt.INT_VALUE_ITERATION_EVENTUAL_BALL"]
 permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.ArtificialTheorems.Approx.UniversalApprox"
+impl_module = "ArtificialTheorems.Approx.UniversalApprox"
+names = ["universal_approximation_cybenko"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+note = "Assumes HasJordanDecomposition (Jordan decomposition of functionals on C(K,ℝ)); classical result not in Mathlib v4.27.0 (Rudin RCA Thm 6.19+6.12)"
 
 [build]
 strategy = "copy"
