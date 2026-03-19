@@ -3,3 +3,4 @@ import Registry.ArtificialTheorems.Opt.SGD
 import Registry.ArtificialTheorems.Opt.SGDUniqueMin
 import Registry.ArtificialTheorems.RL.ValueIterationComplete
 import Registry.ArtificialTheorems.RL.ApproxValueIterationInt
+import Registry.ArtificialTheorems.Approx.UniversalApprox
