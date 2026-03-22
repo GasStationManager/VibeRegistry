@@ -1,0 +1,11 @@
+{
+  "entry_id": "artificial-theorems",
+  "timestamp": "2026-03-22T23:20:00Z",
+  "commit": "9c0f970db29553e3c32bccb25fd13c3f54dc3a8e",
+  "lean_toolchain": "leanprover/lean4:v4.27.0",
+  "mathlib_tag": "v4.27.0",
+  "verification_level": 1,
+  "build_strategy": "copy",
+  "theorems": [{"name":"QLS.Stoch.robbinsSiegmund_expBound","spec_module":"Registry.ArtificialTheorems.Opt.RobbinsSiegmund","impl_module":"ArtificialTheorems.Opt.RobbinsSiegmund","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"QLS.Stoch.robbinsSiegmund_full","spec_module":"Registry.ArtificialTheorems.Opt.RobbinsSiegmund","impl_module":"ArtificialTheorems.Opt.RobbinsSiegmund","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"convergence_stochastic_gradient_method","spec_module":"Registry.ArtificialTheorems.Opt.SGD","impl_module":"ArtificialTheorems.Opt.SGD","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"SGDUniqueMin.convergence_simplified","spec_module":"Registry.ArtificialTheorems.Opt.SGDUniqueMin","impl_module":"ArtificialTheorems.Opt.SGDUniqueMin","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"VALUE_ITERATION_CONVERGENCE_COMPLETE","spec_module":"Registry.ArtificialTheorems.RL.ValueIterationComplete","impl_module":"ArtificialTheorems.RL.ValueIterationComplete","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"ApproxValueIterationInt.INT_VALUE_ITERATION_APPROX","spec_module":"Registry.ArtificialTheorems.RL.ApproxValueIterationInt","impl_module":"ArtificialTheorems.RL.ApproxValueIterationInt","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"ApproxValueIterationInt.INT_VALUE_ITERATION_EVENTUAL_BALL","spec_module":"Registry.ArtificialTheorems.RL.ApproxValueIterationInt","impl_module":"ArtificialTheorems.RL.ApproxValueIterationInt","lean4checker":"pass","safe_verify":"pass","comparator":"skip"},{"name":"universal_approximation_cybenko","spec_module":"Registry.ArtificialTheorems.Approx.UniversalApprox","impl_module":"ArtificialTheorems.Approx.UniversalApprox","lean4checker":"pass","safe_verify":"pass","comparator":"skip"}],
+  "overall": "pass"
+}

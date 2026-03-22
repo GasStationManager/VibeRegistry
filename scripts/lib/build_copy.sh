@@ -137,35 +137,49 @@ if isinstance(manifest.get("name"), str) and "-" in manifest["name"]:
 
 names = [p["name"] for p in manifest.get("packages", [])]
 
-if sv_rev and "SafeVerify" not in names:
-    manifest["packages"].append({
-        "type": "git",
-        "subDir": None,
-        "scope": "",
-        "rev": sv_rev,
-        "name": "SafeVerify",
-        "manifestFile": "lake-manifest.json",
-        "inputRev": sv_rev,
-        "inherited": False,
-        "configFile": "lakefile.lean",
-        "url": "https://github.com/GasStationManager/SafeVerify.git"
-    })
-    print(f"  Added SafeVerify @ {sv_rev}")
+if sv_rev:
+    existing = next((p for p in manifest["packages"] if p["name"] == "SafeVerify"), None)
+    if existing:
+        existing["rev"] = sv_rev
+        existing["inputRev"] = sv_rev
+        existing["url"] = "https://github.com/GasStationManager/SafeVerify.git"
+        print(f"  Updated SafeVerify → {sv_rev}")
+    else:
+        manifest["packages"].append({
+            "type": "git",
+            "subDir": None,
+            "scope": "",
+            "rev": sv_rev,
+            "name": "SafeVerify",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": sv_rev,
+            "inherited": False,
+            "configFile": "lakefile.lean",
+            "url": "https://github.com/GasStationManager/SafeVerify.git"
+        })
+        print(f"  Added SafeVerify @ {sv_rev}")
 
-if lc_rev and "lean4checker" not in names:
-    manifest["packages"].append({
-        "type": "git",
-        "subDir": None,
-        "scope": "",
-        "rev": lc_rev,
-        "name": "lean4checker",
-        "manifestFile": "lake-manifest.json",
-        "inputRev": lc_rev,
-        "inherited": False,
-        "configFile": "lakefile.toml",
-        "url": "https://github.com/leanprover/lean4checker.git"
-    })
-    print(f"  Added lean4checker @ {lc_rev}")
+if lc_rev:
+    existing = next((p for p in manifest["packages"] if p["name"] == "lean4checker"), None)
+    if existing:
+        existing["rev"] = lc_rev
+        existing["inputRev"] = lc_rev
+        existing["url"] = "https://github.com/leanprover/lean4checker.git"
+        print(f"  Updated lean4checker → {lc_rev}")
+    else:
+        manifest["packages"].append({
+            "type": "git",
+            "subDir": None,
+            "scope": "",
+            "rev": lc_rev,
+            "name": "lean4checker",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": lc_rev,
+            "inherited": False,
+            "configFile": "lakefile.toml",
+            "url": "https://github.com/leanprover/lean4checker.git"
+        })
+        print(f"  Added lean4checker @ {lc_rev}")
 
 with open(manifest_path, "w") as f:
     json.dump(manifest, f, indent=2)

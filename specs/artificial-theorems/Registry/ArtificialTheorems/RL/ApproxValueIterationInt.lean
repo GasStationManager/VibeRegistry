@@ -13,13 +13,27 @@ Proves approximate convergence:
 -/
 
 import Mathlib
-import Registry.ArtificialTheorems.RL.ValueIterationComplete
 
 open Metric Filter Topology
 
-namespace ApproxValueIterationInt
+/-! ### Definitions from Registry.ArtificialTheorems.RL.ValueIterationComplete -/
+
+structure MDP (S : Type) (A : Type) [Fintype S] where
+  P : S → A → S → ℚ
+  R : S → A → ℚ
+  P_nonneg : ∀ s a s', 0 ≤ P s a s'
+  P_sum_one : ∀ s a, (Finset.univ : Finset S).sum (P s a) = 1
 
 variable {S A : Type} [Fintype S] [Fintype A] [Nonempty S] [Nonempty A] [DecidableEq A]
+
+-- Real Bellman operator
+noncomputable def bellmanOperatorReal (mdp : MDP S A) (γ : ℝ) (v : S → ℝ) : S → ℝ :=
+  fun s => Finset.univ.sup' Finset.univ_nonempty fun a =>
+    (mdp.R s a : ℝ) + γ * Finset.univ.sum fun s' => (mdp.P s a s' : ℝ) * v s'
+
+/-! ### ApproxValueIterationInt spec -/
+
+namespace ApproxValueIterationInt
 
 open scoped BigOperators
 
