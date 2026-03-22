@@ -1,10 +1,10 @@
 {
   "entry_id": "artificial-theorems",
-  "timestamp": "2026-03-22T03:15:29Z",
+  "timestamp": "2026-03-22T22:30:00Z",
   "commit": "9c0f970db29553e3c32bccb25fd13c3f54dc3a8e",
   "lean_toolchain": "leanprover/lean4:v4.27.0",
   "mathlib_tag": "v4.27.0",
-  "verification_level": 2,
+  "verification_level": 1,
   "build_strategy": "copy",
   "theorems": [
     {
@@ -13,7 +13,7 @@
       "impl_module": "ArtificialTheorems.Opt.RobbinsSiegmund",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass",
+      "comparator": "skip",
       "signoffs": [
         {
           "github_user": "GasStationManager",
@@ -29,7 +29,7 @@
       "impl_module": "ArtificialTheorems.Opt.RobbinsSiegmund",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass",
+      "comparator": "skip",
       "signoffs": [
         {
           "github_user": "GasStationManager",
@@ -45,7 +45,7 @@
       "impl_module": "ArtificialTheorems.Opt.SGD",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass",
+      "comparator": "skip",
       "signoffs": []
     },
     {
@@ -54,7 +54,7 @@
       "impl_module": "ArtificialTheorems.Opt.SGDUniqueMin",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass",
+      "comparator": "skip",
       "signoffs": []
     },
     {
@@ -63,7 +63,7 @@
       "impl_module": "ArtificialTheorems.RL.ValueIterationComplete",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass",
+      "comparator": "skip",
       "signoffs": []
     },
     {
@@ -72,7 +72,7 @@
       "impl_module": "ArtificialTheorems.RL.ApproxValueIterationInt",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass",
+      "comparator": "skip",
       "signoffs": []
     },
     {
@@ -81,7 +81,7 @@
       "impl_module": "ArtificialTheorems.RL.ApproxValueIterationInt",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass",
+      "comparator": "skip",
       "signoffs": []
     },
     {
@@ -90,7 +90,7 @@
       "impl_module": "ArtificialTheorems.Approx.UniversalApprox",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass",
+      "comparator": "skip",
       "signoffs": []
     }
   ],
