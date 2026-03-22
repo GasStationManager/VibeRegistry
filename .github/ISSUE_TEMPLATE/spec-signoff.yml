@@ -21,6 +21,8 @@ body:
       options:
         - artificial-theorems
         - stat-learning
+        - aks
+        - archon-first-proof
     validations:
       required: true
 

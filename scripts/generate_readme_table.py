@@ -38,6 +38,8 @@ def describe_theorems(entry_id, config):
     descriptions = {
         "artificial-theorems": "Robbins-Siegmund, SGD convergence, Value Iteration",
         "stat-learning": "Gaussian concentration, Dudley's integral, Efron-Stein, Poincare",
+        "aks": "O(log n)-depth sorting networks",
+        "archon-first-proof": "Harmonic-mean inequality, epsilon-light graph subsets",
     }
     count = count_theorems(config)
     desc = descriptions.get(entry_id, "")

@@ -16,3 +16,8 @@ status = "verified"
 id = "aks"
 config = "entries/aks.toml"
 status = "pending"
+
+[[entries]]
+id = "archon-first-proof"
+config = "entries/archon-first-proof.toml"
+status = "pending"

@@ -1,0 +1,31 @@
+[project]
+id = "archon-first-proof"
+name = "Archon FirstProof Results"
+description = "Harmonic-mean inequality for polynomial convolution (MSS interlacing), epsilon-light graph subsets (BSS coloring)"
+url = "https://github.com/frenzymath/Archon-FirstProof-Results"
+commit = "35550f2bc0a58289bbe2342a64f10a46ada0f52f"
+branch = "main"
+
+[lean]
+toolchain = "leanprover/lean4:v4.28.0"
+mathlib_tag = "v4.28.0"
+
+[[theorems]]
+spec_module = "Registry.ArchonFirstProof.Problem4"
+impl_module = "FirstProof.FirstProof4.Problem4"
+names = ["Problem4.harmonic_mean_inequality_full"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.ArchonFirstProof.Problem6"
+impl_module = "FirstProof.FirstProof6.Problem6"
+names = ["Problem6.exists_eps_light_subset"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[build]
+strategy = "copy"
+targets = "FirstProof Registry"
+
+[tools]
+safe_verify_rev = "main"
+lean4checker_rev = "v4.28.0"

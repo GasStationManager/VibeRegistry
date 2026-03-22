@@ -1,0 +1,11 @@
+{
+  "entry_id": "archon-first-proof",
+  "timestamp": "2026-03-22T02:18:15Z",
+  "commit": "35550f2bc0a58289bbe2342a64f10a46ada0f52f",
+  "lean_toolchain": "leanprover/lean4:v4.28.0",
+  "mathlib_tag": "v4.28.0",
+  "verification_level": 1,
+  "build_strategy": "copy",
+  "theorems": [{"name":"Problem4.harmonic_mean_inequality_full","spec_module":"Registry.ArchonFirstProof.Problem4","impl_module":"FirstProof.FirstProof4.Problem4","lean4checker":"pass","safe_verify":"fail","comparator":"skip"},{"name":"Problem6.exists_eps_light_subset","spec_module":"Registry.ArchonFirstProof.Problem6","impl_module":"FirstProof.FirstProof6.Problem6","lean4checker":"pass","safe_verify":"fail","comparator":"skip"}],
+  "overall": "fail"
+}

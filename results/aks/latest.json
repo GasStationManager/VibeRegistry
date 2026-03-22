@@ -1,10 +1,10 @@
 {
   "entry_id": "aks",
-  "timestamp": "2026-03-22T03:14:01Z",
+  "timestamp": "2026-03-22T22:00:58Z",
   "commit": "f172ac6c2e46cf30b3aae7e4d19704905133b2bc",
   "lean_toolchain": "leanprover/lean4:v4.29.0-rc4",
   "mathlib_tag": "master",
-  "verification_level": 2,
+  "verification_level": 1,
   "build_strategy": "copy",
   "theorems": [
     {
@@ -13,7 +13,7 @@
       "impl_module": "AKS.Seiferas",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass"
+      "comparator": "skip"
     }
   ],
   "overall": "pass",
