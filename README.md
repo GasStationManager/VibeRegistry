@@ -20,7 +20,7 @@ The registry itself does not contain proof code. It contains:
 <!-- BEGIN REGISTRY TABLE -->
 | Entry | Theorems | Lean | Verification | Sign-offs | Status |
 |-------|----------|------|--------------|-----------|--------|
-| [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration (8 theorems) | v4.27.0 | Level 2 | 1 sign-off | Verified |
+| [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration (8 theorems) | v4.27.0 | Level 1 | 1 sign-off | Verified |
 | [Lean Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare (16 theorems) | v4.27.0-rc1 | Level 2 | — | Verified |
 | [AKS Sorting Networks](https://github.com/girving/aks) | O(log n)-depth sorting networks (1 theorems) | v4.29.0-rc4 | Level 1 | — | Verified |
 | [Archon FirstProof Results](https://github.com/frenzymath/Archon-FirstProof-Results) | Harmonic-mean inequality, epsilon-light graph subsets (2 theorems) | v4.28.0 | Level 1 | — | Verified |
