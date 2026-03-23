@@ -3,7 +3,11 @@ Efron-Stein Application Definitions - Specification
 Definition from SLT.GaussianPoincare.EfronSteinApp
 -/
 
-import Mathlib
+import Mathlib.Analysis.Calculus.ContDiff.Basic
+import Mathlib.Topology.Algebra.Support
+import Mathlib.Analysis.Normed.Group.Bounded
+import Mathlib.Probability.Moments.Variance
+import Mathlib.MeasureTheory.Constructions.Pi
 
 namespace EfronSteinApp
 

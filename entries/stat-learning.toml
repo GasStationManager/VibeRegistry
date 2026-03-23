@@ -68,5 +68,5 @@ permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
 strategy = "copy"
 
 [tools]
-safe_verify_rev = "v4.27.0"
+safe_verify_rev = "main"
 lean4checker_rev = "v4.27.0"

@@ -3,7 +3,8 @@ Efron-Stein Inequality - Specification
 Boucheron et al. (2013), Theorem 3.1
 -/
 
-import Mathlib
+import Mathlib.Probability.Moments.Variance
+import Mathlib.MeasureTheory.Constructions.Pi
 
 open MeasureTheory ProbabilityTheory
 

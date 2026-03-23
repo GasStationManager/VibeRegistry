@@ -3,7 +3,8 @@ Sub-Gaussian Process Definition - Specification
 Definition from SLT.SubGaussian
 -/
 
-import Mathlib
+import Mathlib.Probability.Moments.Basic
+import Mathlib.Topology.MetricSpace.Basic
 
 universe u v
 

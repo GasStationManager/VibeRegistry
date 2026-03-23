@@ -3,7 +3,8 @@ Covering Number Definitions - Specification
 Definitions from SLT.CoveringNumber
 -/
 
-import Mathlib
+import Mathlib.Topology.MetricSpace.Basic
+import Mathlib.Data.Finset.Card
 
 open Set Metric
 

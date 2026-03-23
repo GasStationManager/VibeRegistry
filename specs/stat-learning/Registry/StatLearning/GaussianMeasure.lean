@@ -3,7 +3,8 @@ Gaussian Measure Definitions - Specification
 Definitions from SLT.GaussianMeasure
 -/
 
-import Mathlib
+import Mathlib.Probability.Distributions.Gaussian.Real
+import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
 
 open MeasureTheory ProbabilityTheory Real
 

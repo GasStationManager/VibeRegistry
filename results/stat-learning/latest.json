@@ -1,10 +1,10 @@
 {
   "entry_id": "stat-learning",
-  "timestamp": "2026-03-22T03:17:30Z",
+  "timestamp": "2026-03-23T00:49:57Z",
   "commit": "7b82b1323c80f0c21ca449fd12e1c24315ae9782",
   "lean_toolchain": "leanprover/lean4:v4.27.0-rc1",
   "mathlib_tag": "v4.27.0",
-  "verification_level": 2,
+  "verification_level": 1,
   "build_strategy": "copy",
   "theorems": [
     {
@@ -109,7 +109,7 @@
       "impl_module": "SLT.GaussianLipConcen",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass"
+      "comparator": "skip"
     },
     {
       "name": "dudley",
@@ -117,7 +117,7 @@
       "impl_module": "SLT.Dudley",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass"
+      "comparator": "skip"
     },
     {
       "name": "efronStein",
@@ -125,7 +125,7 @@
       "impl_module": "SLT.EfronStein",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass"
+      "comparator": "skip"
     },
     {
       "name": "GaussianPoincare.gaussianPoincare",
@@ -133,7 +133,7 @@
       "impl_module": "SLT.GaussianPoincare.Limit",
       "lean4checker": "pass",
       "safe_verify": "pass",
-      "comparator": "pass"
+      "comparator": "skip"
     }
   ],
   "overall": "pass",

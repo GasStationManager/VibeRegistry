@@ -3,8 +3,10 @@ Metric Entropy Definitions - Specification
 Definitions from SLT.MetricEntropy
 -/
 
-import Mathlib
-import Registry.StatLearning.CoveringNumber
+import Mathlib.Analysis.SpecialFunctions.Log.Basic
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+import Mathlib.Topology.MetricSpace.Basic
+import Mathlib.Data.Finset.Card
 
 noncomputable section
 
@@ -12,6 +14,19 @@ open Set Metric Real MeasureTheory
 open scoped ENNReal
 
 variable {A : Type*} [PseudoMetricSpace A]
+
+/-! ### Definitions from Registry.StatLearning.CoveringNumber -/
+
+/-- `t` is an `eps`-net for `s` if every point of `s` lies in a closed ball of radius `eps`
+centered at some element of `t`. -/
+def IsENet (t : Finset A) (eps : ℝ) (s : Set A) : Prop :=
+  s ⊆ ⋃ x ∈ t, closedBall x eps
+
+/-- Covering number: the minimal cardinality of a finite `eps`-net, as `WithTop Nat`. -/
+noncomputable def coveringNumber (eps : ℝ) (s : Set A) : WithTop Nat :=
+  sInf {n : WithTop Nat | ∃ t : Finset A, IsENet t eps s ∧ (t.card : WithTop Nat) = n}
+
+/-! ### MetricEntropy definitions -/
 
 /-- Helper to compute metric entropy given a natural number. -/
 def metricEntropyOfNat (n : ℕ) : ℝ :=

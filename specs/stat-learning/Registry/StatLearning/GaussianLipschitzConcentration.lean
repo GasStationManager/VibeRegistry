@@ -3,11 +3,27 @@ Gaussian Lipschitz Concentration - Specification
 Boucheron et al. (2013), Theorem 5.6
 -/
 
-import Mathlib
-import Registry.StatLearning.GaussianMeasure
+import Mathlib.Probability.Distributions.Gaussian.Real
+import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
 
 open MeasureTheory ProbabilityTheory Real Finset BigOperators Function
 open scoped ENNReal NNReal
+
+/-! ### Definitions from Registry.StatLearning.GaussianMeasure -/
+
+namespace GaussianMeasure
+
+/-- Standard Gaussian product measure: the product of n independent standard Gaussians N(0,1) -/
+noncomputable def stdGaussianPi (n : ℕ) : Measure (Fin n → ℝ) :=
+  Measure.pi fun _ : Fin n => gaussianReal 0 1
+
+/-- The standard Gaussian on EuclideanSpace as pushforward of stdGaussianPi via the equivalence. -/
+noncomputable def stdGaussianE (n : ℕ) : Measure (EuclideanSpace ℝ (Fin n)) :=
+  Measure.map (EuclideanSpace.equiv (Fin n) ℝ).symm (stdGaussianPi n)
+
+end GaussianMeasure
+
+/-! ### GaussianLipConcen spec -/
 
 namespace GaussianLipConcen
 
