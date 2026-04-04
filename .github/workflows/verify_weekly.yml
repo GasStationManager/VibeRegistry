@@ -28,6 +28,7 @@ jobs:
     needs: detect-entries
     if: needs.detect-entries.outputs.entries != '[]'
     runs-on: ubuntu-latest
+    timeout-minutes: 480
     strategy:
       fail-fast: false
       matrix:
@@ -57,7 +58,7 @@ jobs:
 
       - name: Verify ${{ matrix.entry }} (Level 2)
         run: |
-          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --level 2
+          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --level 2 --skip-level-1
 
       - name: Upload results
         if: always()

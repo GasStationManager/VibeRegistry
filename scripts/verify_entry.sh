@@ -1,10 +1,11 @@
 #!/bin/bash
 # Verify a single registry entry.
 #
-# Usage: ./scripts/verify_entry.sh entries/<entry>.toml [--level 1|2]
+# Usage: ./scripts/verify_entry.sh entries/<entry>.toml [--level 1|2] [--skip-level-1]
 #
 # Level 1 (default): lean4checker + SafeVerify
 # Level 2: Level 1 + Comparator (sandboxed)
+# --skip-level-1: Skip lean4checker + SafeVerify (useful when Level 1 is already covered by other CI)
 #
 # Environment variables (optional):
 #   COMPARATOR_BIN   Path to comparator binary (auto-installed if missing)
@@ -30,6 +31,7 @@ fi
 
 CONFIG_FILE="$1"
 LEVEL=1
+SKIP_LEVEL_1=0
 
 shift
 while [[ $# -gt 0 ]]; do
@@ -37,6 +39,10 @@ while [[ $# -gt 0 ]]; do
         --level)
             LEVEL="$2"
             shift 2
+            ;;
+        --skip-level-1)
+            SKIP_LEVEL_1=1
+            shift
             ;;
         *)
             echo "Unknown argument: $1"
@@ -124,12 +130,6 @@ fi
 echo ""
 echo "Build lib path: $BUILD_LIB"
 
-# --- Level 1: lean4checker + SafeVerify ---
-echo ""
-echo "========================================="
-echo "Step 2: Level 1 Verification"
-echo "========================================="
-
 FAILED=0
 TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
@@ -147,6 +147,13 @@ for ((i=0; i<NUM_GROUPS; i++)); do
     GROUP_SAFEVERIFY[$i]="skip"
     GROUP_COMPARATOR[$i]="skip"
 done
+
+# --- Level 1: lean4checker + SafeVerify ---
+if [[ "$SKIP_LEVEL_1" -eq 0 ]]; then
+echo ""
+echo "========================================="
+echo "Step 2: Level 1 Verification"
+echo "========================================="
 
 for ((i=0; i<NUM_GROUPS; i++)); do
     SPEC_MODULE="${GROUP_SPEC_MODULES[$i]}"
@@ -203,6 +210,13 @@ for ((i=0; i<NUM_GROUPS; i++)); do
         FAILED=1
     fi
 done
+
+else
+    echo ""
+    echo "========================================="
+    echo "Skipping Level 1 (--skip-level-1)"
+    echo "========================================="
+fi
 
 # --- Level 2: Comparator (if requested) ---
 if [[ "$LEVEL" -ge 2 ]]; then
