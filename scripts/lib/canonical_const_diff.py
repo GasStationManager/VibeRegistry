@@ -94,9 +94,19 @@ def canonical_expr(names, exprs, levels, idx, depth=0, max_depth=200):
         return f"#{idx}"
     e = exprs[idx]
     if "bvar" in e:
-        return f"#bvar{e['bvar'].get('id', '?')}"
+        b = e["bvar"]
+        if isinstance(b, int):
+            return f"#bvar{b}"
+        return f"#bvar{b.get('id', '?')}"
     if "sort" in e:
-        return f"(Sort {resolve_level(levels, e['sort'].get('univ', 0))})"
+        s = e["sort"]
+        if isinstance(s, int):
+            return f"(Sort {resolve_level(levels, s)})"
+        return f"(Sort {resolve_level(levels, s.get('univ', 0))})"
+    if "fvar" in e:
+        return f"#fvar{e['fvar']}"
+    if "mvar" in e:
+        return f"#mvar{e['mvar']}"
     if "const" in e:
         c = e["const"]
         name = resolve_name(names, c["name"])
