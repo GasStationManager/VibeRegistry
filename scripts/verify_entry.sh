@@ -444,7 +444,7 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
                     echo "--- Spec export size: $(wc -l < "$SPEC_OUT") lines, Impl export size: $(wc -l < "$IMPL_OUT") lines ---"
                     echo "--- canonical form comparison (names resolved, index noise removed) ---"
                     python3 "$PROJECT_DIR/scripts/lib/canonical_const_diff.py" \
-                        "$FAILING_CONST" "$SPEC_OUT" "$IMPL_OUT" 2>&1 | head -500 || true
+                        "$FAILING_CONST" "$SPEC_OUT" "$IMPL_OUT" 2>&1 | head -3000 || true
                     echo "=== END DIAGNOSTIC ==="
                     rm -f "$SPEC_OUT" "$IMPL_OUT"
                 fi

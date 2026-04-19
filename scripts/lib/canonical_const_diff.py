@@ -217,15 +217,17 @@ def main():
         print(f"FATAL: '{target}' not found in impl export", file=sys.stderr)
         sys.exit(1)
 
-    print(f"=== SPEC canonical form of {target} ===")
-    print(spec_canon)
-    print(f"=== IMPL canonical form of {target} ===")
-    print(impl_canon)
-    print(f"=== UNIFIED DIFF (spec -> impl) ===")
-    for line in unified_diff(
-            spec_canon.splitlines(keepends=True),
-            impl_canon.splitlines(keepends=True),
-            fromfile="spec", tofile="impl", lineterm=""):
+    print(f"=== UNIFIED DIFF (spec vs impl) for {target} ===")
+    spec_lines = spec_canon.splitlines(keepends=True)
+    impl_lines = impl_canon.splitlines(keepends=True)
+    print(f"Spec canonical form: {len(spec_lines)} lines")
+    print(f"Impl canonical form: {len(impl_lines)} lines")
+    diff_lines = list(unified_diff(
+        spec_lines, impl_lines,
+        fromfile="spec", tofile="impl", n=3, lineterm=""))
+    print(f"Diff lines: {len(diff_lines)}")
+    print("")
+    for line in diff_lines:
         print(line.rstrip("\n"))
 
 
