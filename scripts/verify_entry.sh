@@ -442,8 +442,9 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
                     (cd "$REPO_DIR" && lake env "$LEAN4EXPORT" "$CHALLENGE_MODULE" -- "$FAILING_CONST" > "$SPEC_OUT" 2>&1) || echo "  (spec export failed)"
                     (cd "$REPO_DIR" && lake env "$LEAN4EXPORT" "$SOLUTION_MODULE" -- "$FAILING_CONST" > "$IMPL_OUT" 2>&1) || echo "  (impl export failed)"
                     echo "--- Spec export size: $(wc -l < "$SPEC_OUT") lines, Impl export size: $(wc -l < "$IMPL_OUT") lines ---"
-                    echo "--- diff (spec vs impl), truncated to 200 lines ---"
-                    diff -u "$SPEC_OUT" "$IMPL_OUT" | head -200 || true
+                    echo "--- canonical form comparison (names resolved, index noise removed) ---"
+                    python3 "$PROJECT_DIR/scripts/lib/canonical_const_diff.py" \
+                        "$FAILING_CONST" "$SPEC_OUT" "$IMPL_OUT" 2>&1 | head -500 || true
                     echo "=== END DIAGNOSTIC ==="
                     rm -f "$SPEC_OUT" "$IMPL_OUT"
                 fi
