@@ -81,12 +81,14 @@ def resolve_level(levels, idx):
     return f"<level:{idx}>"
 
 
-def canonical_expr(names, exprs, levels, idx, depth=0, max_depth=200):
+def canonical_expr(names, exprs, levels, idx, depth=0, max_depth=200, indent_level=0):
     """Recursively convert an expression to a canonical string form.
 
     Names are resolved; bound variable names are preserved; structure is made
-    explicit. Output is Lisp-like for easy visual diffing.
+    explicit. Output is Lisp-like, pretty-printed with one line per Pi/Lam/App-spine
+    element so the diff localizes the actual divergence.
     """
+    ind = "  " * (indent_level + 1)
     if depth > max_depth:
         return "<...>"
     if idx not in exprs:
@@ -115,27 +117,36 @@ def canonical_expr(names, exprs, levels, idx, depth=0, max_depth=200):
             return f"(Const {name} {{{us}}})"
         return f"(Const {name})"
     if "app" in e:
-        fn = canonical_expr(names, exprs, levels, e["app"]["fn"], depth + 1, max_depth)
-        arg = canonical_expr(names, exprs, levels, e["app"]["arg"], depth + 1, max_depth)
-        return f"(App {fn} {arg})"
+        # Flatten left-associative App chains for readability
+        spine = []
+        cur_idx = idx
+        while cur_idx in exprs and "app" in exprs[cur_idx]:
+            spine.append(exprs[cur_idx]["app"]["arg"])
+            cur_idx = exprs[cur_idx]["app"]["fn"]
+        head = canonical_expr(names, exprs, levels, cur_idx, depth + 1, max_depth, indent_level + 1)
+        args = [canonical_expr(names, exprs, levels, a, depth + 1, max_depth, indent_level + 1)
+                for a in reversed(spine)]
+        if len(args) <= 1 and all(len(a) < 60 for a in args) and len(head) < 60:
+            return f"(App {head} {' '.join(args)})"
+        return "(App " + head + "\n" + "\n".join(ind + a for a in args) + ")"
     if "lam" in e:
         bi = e["lam"].get("binderInfo", "default")
         nm = resolve_name(names, e["lam"].get("name", 0))
-        ty = canonical_expr(names, exprs, levels, e["lam"]["type"], depth + 1, max_depth)
-        body = canonical_expr(names, exprs, levels, e["lam"]["body"], depth + 1, max_depth)
-        return f"(Lam [{bi}] {nm} : {ty} => {body})"
+        ty = canonical_expr(names, exprs, levels, e["lam"]["type"], depth + 1, max_depth, indent_level + 1)
+        body = canonical_expr(names, exprs, levels, e["lam"]["body"], depth + 1, max_depth, indent_level + 1)
+        return f"(Lam [{bi}] {nm} :\n{ind}{ty}\n{ind}=>\n{ind}{body})"
     if "forallE" in e:
         bi = e["forallE"].get("binderInfo", "default")
         nm = resolve_name(names, e["forallE"].get("name", 0))
-        ty = canonical_expr(names, exprs, levels, e["forallE"]["type"], depth + 1, max_depth)
-        body = canonical_expr(names, exprs, levels, e["forallE"]["body"], depth + 1, max_depth)
-        return f"(Pi [{bi}] {nm} : {ty} -> {body})"
+        ty = canonical_expr(names, exprs, levels, e["forallE"]["type"], depth + 1, max_depth, indent_level + 1)
+        body = canonical_expr(names, exprs, levels, e["forallE"]["body"], depth + 1, max_depth, indent_level + 1)
+        return f"(Pi [{bi}] {nm} :\n{ind}{ty}\n{ind}->\n{ind}{body})"
     if "letE" in e:
         nm = resolve_name(names, e["letE"].get("name", 0))
-        ty = canonical_expr(names, exprs, levels, e["letE"]["type"], depth + 1, max_depth)
-        val = canonical_expr(names, exprs, levels, e["letE"]["value"], depth + 1, max_depth)
-        body = canonical_expr(names, exprs, levels, e["letE"]["body"], depth + 1, max_depth)
-        return f"(Let {nm} : {ty} := {val} in {body})"
+        ty = canonical_expr(names, exprs, levels, e["letE"]["type"], depth + 1, max_depth, indent_level + 1)
+        val = canonical_expr(names, exprs, levels, e["letE"]["value"], depth + 1, max_depth, indent_level + 1)
+        body = canonical_expr(names, exprs, levels, e["letE"]["body"], depth + 1, max_depth, indent_level + 1)
+        return f"(Let {nm} :\n{ind}{ty}\n{ind}:=\n{ind}{val}\n{ind}in\n{ind}{body})"
     if "lit" in e:
         lit = e["lit"]
         if "n" in lit:
