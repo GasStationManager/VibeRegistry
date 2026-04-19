@@ -115,11 +115,12 @@ export LANDRUN_BIN=/path/to/landrun  # optional
 1. Import only from Mathlib and other spec files within the same entry
 2. Mirror impl module structure: export definitions into separate spec files matching the impl's module layout
 3. Spec files for definitions are SafeVerify-checked against their corresponding impl oleans, just like theorem specs
-4. Theorem statements end with `:= by sorry`
+4. Theorem statements end with `:= by sorry` — with one exception, see rule 9
 5. Match the impl's universe variables exactly (e.g., `universe u v` if the impl uses explicit universes)
 6. Avoid `local notation` — it creates private declarations that won't match the impl's
 7. Each spec module must `lake build` cleanly; spec modules are built individually (not combined)
 8. Human-vetted by a maintainer for mathematical correctness
+9. **Transitive-dep exception**: if a spec definition uses `.choose` (or otherwise references the proof term) of a lemma, the Comparator's Phase 2 check compares that lemma's full `ConstantInfo` including its proof value. A spec `sorry` will never match the impl's real proof, so in that case the lemma's proof must be replicated in the spec. Keep it short and mathematically straightforward — sign-off reviewers need to check the proof manually. Additionally, match the impl's transitive imports (e.g. `Mathlib.RingTheory.SimpleRing.Principal`) so typeclass resolution picks the same instance paths the impl does; otherwise `Expr` terms will differ structurally even when types agree. Example: `extract_ordered_real_roots` in `specs/archon-first-proof/Registry/ArchonFirstProof/Problem4.lean`.
 
 ## Security Model
 

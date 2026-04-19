@@ -20,9 +20,13 @@ import Mathlib.Algebra.BigOperators.Field
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Algebra.Polynomial.BigOperators
 import Mathlib.Analysis.CStarAlgebra.Classes
+import Mathlib.Analysis.Complex.Convex
 import Mathlib.Analysis.Complex.Polynomial.GaussLucas
+import Mathlib.Analysis.Polynomial.Basic
 import Mathlib.Analysis.RCLike.Basic
 import Mathlib.Data.Int.Star
+import Mathlib.Data.Real.StarOrdered
+import Mathlib.RingTheory.SimpleRing.Principal
 
 open Polynomial BigOperators Nat Classical
 
@@ -68,12 +72,48 @@ def PhiN (roots : Fin n → ℝ) : ℝ :=
 
 /-- Extraction of ordered real roots: if a monic separable polynomial of degree m
     has all complex roots with zero imaginary part, then it has m distinct ordered
-    real roots. -/
+    real roots.
+
+    NOTE: Proof body replicated from the impl (FirstProof.FirstProof4.Auxiliary.SignSquarefree)
+    so that the comparator's transitive Phase 2 check matches. This is a narrow exception
+    to the "spec files use `sorry` only" rule, needed because `invPhiN_poly` uses
+    `extract_ordered_real_roots.choose` in its body — the constant's full ConstantInfo
+    (including proof value) is therefore compared at the kernel level. -/
 lemma extract_ordered_real_roots (f : ℝ[X]) (m : ℕ)
     (hf_monic : f.Monic) (hf_deg : f.natDegree = m)
     (hf_real : ∀ z : ℂ, (f.map (algebraMap ℝ ℂ)).IsRoot z → z.im = 0)
     (hf_sep : Squarefree f) :
-    ∃ (μ : Fin m → ℝ), StrictMono μ ∧ (∀ i, f.IsRoot (μ i)) := by sorry
+    ∃ (μ : Fin m → ℝ), StrictMono μ ∧ (∀ i, f.IsRoot (μ i)) := by
+  have hf_sep' : f.Separable := PerfectField.separable_iff_squarefree.mpr hf_sep
+  have hfc_splits : (f.map (algebraMap ℝ ℂ)).Splits := IsAlgClosed.splits _
+  have hfc_range :
+      ∀ a ∈ (f.map (algebraMap ℝ ℂ)).roots,
+        a ∈ (algebraMap ℝ ℂ).range := by
+    intro z hz
+    have hne : f.map (algebraMap ℝ ℂ) ≠ 0 :=
+      Polynomial.map_ne_zero (Polynomial.Monic.ne_zero hf_monic)
+    have hroot : (f.map (algebraMap ℝ ℂ)).IsRoot z := (Polynomial.mem_roots hne).mp hz
+    have him : z.im = 0 := hf_real z hroot
+    exact ⟨z.re, Complex.ext (by simp [Complex.ofReal_re]) (by simp [him, Complex.ofReal_im])⟩
+  have hf_splits : f.Splits :=
+    hfc_splits.of_splits_map (algebraMap ℝ ℂ) hfc_range
+  have hcard : f.roots.card = m := by
+    rw [← hf_deg]; exact hf_splits.natDegree_eq_card_roots.symm
+  have hnodup : f.roots.Nodup := Polynomial.nodup_roots hf_sep'
+  set L := f.roots.sort (· ≤ ·) with hL_def
+  have hL_length : L.length = m := by rw [Multiset.length_sort, hcard]
+  have hL_sorted_le : L.SortedLE := (Multiset.pairwise_sort f.roots (· ≤ ·)).sortedLE
+  have hL_nodup : L.Nodup := by
+    rw [← Multiset.coe_nodup, Multiset.sort_eq]; exact hnodup
+  have hL_sorted_lt : L.SortedLT := hL_sorted_le.sortedLT_of_nodup hL_nodup
+  have hL_strictMono : StrictMono L.get := hL_sorted_lt.strictMono_get
+  refine ⟨fun i ↦ L.get (i.cast hL_length.symm), ?_, ?_⟩
+  · intro i j hij; exact hL_strictMono (by simpa using hij)
+  · intro i
+    have hmem : L.get (i.cast hL_length.symm) ∈ L := List.get_mem L _
+    have hmem' : L.get (i.cast hL_length.symm) ∈ f.roots := by
+      rwa [← Multiset.mem_sort (r := (· ≤ ·))]
+    rwa [Polynomial.mem_roots (Polynomial.Monic.ne_zero hf_monic)] at hmem'
 
 /-! ### Definition from InvPhiN.lean -/
 

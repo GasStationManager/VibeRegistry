@@ -416,7 +416,8 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
 
             # Run comparator via lake env (sets up LEAN_PATH)
             # Comparator internally uses landrun for sandboxing
-            if (cd "$REPO_DIR" && lake env "$COMPARATOR" "$config") 2>&1; then
+            COMPARATOR_LOG=$(mktemp)
+            if (cd "$REPO_DIR" && lake env "$COMPARATOR" "$config") 2>&1 | tee "$COMPARATOR_LOG"; then
                 echo "  Comparator $config_name: PASS"
                 if [[ -n "$group_idx" ]]; then
                     GROUP_COMPARATOR[$group_idx]="pass"
@@ -427,7 +428,28 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
                     GROUP_COMPARATOR[$group_idx]="fail"
                 fi
                 FAILED=1
+
+                # Diagnostic: if the failure was a const mismatch, dump both
+                # exports so we can see exactly what diverged at the kernel level.
+                FAILING_CONST=$(grep -oP "Const does not match between challenge and target '\K[^']+" "$COMPARATOR_LOG" | head -1)
+                if [[ -n "$FAILING_CONST" ]] && [[ -n "$LEAN4EXPORT" ]] && [[ -f "$LEAN4EXPORT" ]]; then
+                    echo ""
+                    echo "=== DIAGNOSTIC: export diff for $FAILING_CONST ==="
+                    CHALLENGE_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['challenge_module'])" 2>/dev/null)
+                    SOLUTION_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['solution_module'])" 2>/dev/null)
+                    SPEC_OUT=$(mktemp)
+                    IMPL_OUT=$(mktemp)
+                    (cd "$REPO_DIR" && lake env "$LEAN4EXPORT" "$CHALLENGE_MODULE" -- "$FAILING_CONST" > "$SPEC_OUT" 2>&1) || echo "  (spec export failed)"
+                    (cd "$REPO_DIR" && lake env "$LEAN4EXPORT" "$SOLUTION_MODULE" -- "$FAILING_CONST" > "$IMPL_OUT" 2>&1) || echo "  (impl export failed)"
+                    echo "--- Spec export size: $(wc -l < "$SPEC_OUT") lines, Impl export size: $(wc -l < "$IMPL_OUT") lines ---"
+                    echo "--- canonical form comparison (names resolved, index noise removed) ---"
+                    python3 "$PROJECT_DIR/scripts/lib/canonical_const_diff.py" \
+                        "$FAILING_CONST" "$SPEC_OUT" "$IMPL_OUT" 2>&1 | head -3000 || true
+                    echo "=== END DIAGNOSTIC ==="
+                    rm -f "$SPEC_OUT" "$IMPL_OUT"
+                fi
             fi
+            rm -f "$COMPARATOR_LOG"
         done
     fi
 fi
