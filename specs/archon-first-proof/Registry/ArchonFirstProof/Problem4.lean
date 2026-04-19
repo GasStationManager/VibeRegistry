@@ -20,9 +20,13 @@ import Mathlib.Algebra.BigOperators.Field
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Algebra.Polynomial.BigOperators
 import Mathlib.Analysis.CStarAlgebra.Classes
+import Mathlib.Analysis.Complex.Convex
 import Mathlib.Analysis.Complex.Polynomial.GaussLucas
+import Mathlib.Analysis.Polynomial.Basic
 import Mathlib.Analysis.RCLike.Basic
 import Mathlib.Data.Int.Star
+import Mathlib.Data.Real.StarOrdered
+import Mathlib.RingTheory.SimpleRing.Principal
 
 open Polynomial BigOperators Nat Classical
 
