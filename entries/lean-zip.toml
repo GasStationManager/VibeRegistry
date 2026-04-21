@@ -1,0 +1,39 @@
+[project]
+id = "lean-zip"
+name = "lean-zip"
+description = "Lean 4 bindings for zlib compression, with a formally verified DEFLATE core (RFC 1951 inflate + deflate roundtrip)"
+url = "https://github.com/kim-em/lean-zip"
+commit = "e76f0813faa2893f09b83d027e52754041febc35"
+branch = "master"
+
+[lean]
+toolchain = "leanprover/lean4:v4.29.1"
+
+[[theorems]]
+spec_module = "Registry.LeanZip.DeflateRoundtrip"
+impl_module = "Zip.Spec.DeflateRoundtrip"
+names = [
+  "Zip.Native.Deflate.inflate_deflateRaw",
+  "Zip.Native.Deflate.deflateRaw_pad",
+  "Zip.Native.Deflate.deflateRaw_goR_pad",
+]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[build]
+strategy = "copy"
+targets = "Zip Registry"
+
+# Notes on current limitations:
+#
+# 1. lean4checker has no v4.29.1 tag (latest stable is v4.28.0, latest RC is
+#    v4.29.0-rc8). Level 1 depends on lean4checker, but the weekly workflow
+#    already passes --skip-level-1, so we omit the [tools] section. Re-add
+#    when upstream tags catch up to the impl's Lean version.
+#
+# 2. Level 2 (comparator) is currently BROKEN for this entry: after the
+#    non-Mathlib build path (cache-get failed) the comparator's internal
+#    sandboxed `lake build` hits "compiled configuration is invalid; run
+#    with '-R' to reconfigure". The comparator tool hardcodes `lake build`
+#    without -R, so we can't pass it from outside. Tracking upstream fix
+#    at leanprover/comparator. Spec/entry files are correct and will work
+#    once that is resolved.
