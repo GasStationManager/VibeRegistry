@@ -21,3 +21,11 @@ status = "pending"
 id = "archon-first-proof"
 config = "entries/archon-first-proof.toml"
 status = "pending"
+
+[[entries]]
+id = "lean-zip"
+config = "entries/lean-zip.toml"
+status = "pending-infrastructure"
+# First systems-library entry. Spec + entry files are correct, but Level 2
+# verification is blocked on a lake/comparator interaction; see
+# entries/lean-zip.toml for details.
