@@ -1,0 +1,40 @@
+[project]
+id = "degiorgi"
+name = "DeGiorgi-Nash-Moser elliptic regularity"
+description = "Lean 4 formalization of the De Giorgi-Nash-Moser theory for uniformly elliptic divergence-form equations: local boundedness, weak Harnack, Harnack, and Hölder regularity. ~56K LoC, sorry-free, axiom-free, LLM-assisted."
+url = "https://github.com/scottnarmstrong/DeGiorgi"
+commit = "4c1b3077d3782b24065184df4ba59501b2e56fc7"
+branch = "main"
+
+[lean]
+toolchain = "leanprover/lean4:v4.29.0-rc6"
+mathlib_tag = "v4.29.0-rc6"
+
+[[theorems]]
+spec_module = "Registry.DeGiorgi.Harnack"
+impl_module = "DeGiorgi.Harnack"
+names = ["DeGiorgi.harnack"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[build]
+strategy = "copy"
+
+[tools]
+safe_verify_rev = "main"
+lean4checker_rev = "v4.29.0-rc6"
+
+# Notes:
+#
+# Prototype entry covering only the `DeGiorgi.harnack` headline theorem.
+# The project's own `manifest.json` enumerates seven headline theorems
+# across five chapters; the remaining six (linfty_subsolution_DeGiorgi_normalized,
+# weak_harnack, weak_harnack_on_ball, harnack_of_homogeneousWeakSolution,
+# holder_Moser, holder_Moser_of_homogeneousWeakSolution) will be added
+# once this prototype validates end-to-end through Levels 1 and 2.
+#
+# Spec strategy is hybrid (lean-zip-style + math-library-style): the spec
+# imports upstream DeGiorgi modules to access supporting structures and
+# constants, but restates `C_harnack` verbatim because that constant lives
+# in the same .lean file as the theorem (so the spec can't import it
+# without colliding with its own `harnack` declaration). See
+# `specs/degiorgi/Registry/DeGiorgi/Harnack.lean` for details.
