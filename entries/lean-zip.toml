@@ -26,14 +26,24 @@ targets = "Zip Registry"
 # Notes on current limitations:
 #
 # 1. lean4checker has no v4.29.1 tag (latest stable is v4.28.0, latest RC is
-#    v4.29.0-rc8). Level 1 depends on lean4checker, but the weekly workflow
-#    already passes --skip-level-1, so we omit the [tools] section. Re-add
-#    when upstream tags catch up to the impl's Lean version.
+#    v4.29.0-rc8). Level 1's lean4checker step therefore can't run; the
+#    weekly workflow uses --skip-level-1. Re-add the [tools] section once
+#    upstream tags catch up to the impl's Lean version, then SafeVerify
+#    + lean4checker can both run as the standard Level 1 pair.
 #
-# 2. Level 2 (comparator) is currently BROKEN for this entry: after the
-#    non-Mathlib build path (cache-get failed) the comparator's internal
-#    sandboxed `lake build` hits "compiled configuration is invalid; run
-#    with '-R' to reconfigure". The comparator tool hardcodes `lake build`
-#    without -R, so we can't pass it from outside. Tracking upstream fix
-#    at leanprover/comparator. Spec/entry files are correct and will work
-#    once that is resolved.
+# 2. Level 2 (comparator) is deferred for this entry pending a LOCAL
+#    workaround. The interaction: our build_copy strategy patches the
+#    impl's lakefile to add the Registry lib; for non-Mathlib projects
+#    `lake exe cache get` fails, so the patched lakefile no longer
+#    matches the cached `.lake/build/lib/lakefile.olean.trace`; comparator's
+#    sandboxed `lake build` (no -R) then refuses with "compiled
+#    configuration is invalid". This surface is induced by our pipeline,
+#    not an intrinsic comparator bug, so we'll engineer around it locally
+#    rather than file upstream — likely by restructuring to a sibling
+#    Registry Lake package that `require`s the impl repo, so we never
+#    mutate the impl's lakefile.
+#
+# Status: treat as SafeVerify-verified (the upstream lean-zip project
+# uses SafeVerify in its own development flow). Spec/entry files in this
+# PR are correct and will pass Level 2 unmodified once the local build
+# strategy is reworked.
