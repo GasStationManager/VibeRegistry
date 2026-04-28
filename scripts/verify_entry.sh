@@ -73,7 +73,7 @@ REPO_URL=$($PARSE_TOML "$CONFIG_FILE" project.url)
 COMMIT=$($PARSE_TOML "$CONFIG_FILE" project.commit)
 STRATEGY=$($PARSE_TOML "$CONFIG_FILE" build.strategy)
 TOOLCHAIN=$($PARSE_TOML "$CONFIG_FILE" lean.toolchain)
-MATHLIB_TAG=$($PARSE_TOML "$CONFIG_FILE" lean.mathlib_tag)
+MATHLIB_TAG=$($PARSE_TOML "$CONFIG_FILE" lean.mathlib_tag 2>/dev/null || echo "")
 THEOREMS_JSON=$($PARSE_TOML "$CONFIG_FILE" theorems)
 
 # Parse optional tool versions for verification dependencies
@@ -281,6 +281,7 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
         continue
 
     import re
+    original = content
     # .lean format: require X from git \"url\" @ \"rev\"
     for pkg in ('SafeVerify', 'lean4checker'):
         old = rf'require {pkg} from git\s*\n\s*\"[^\"]+\"\s*@\s*\"[^\"]+\"'
@@ -291,8 +292,11 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
             content = content_new
     # .toml format: [[require]]\nname = \"X\"\nscope...\nsource.type = \"git\"
     # (less common, skip for now)
-    with open(lf_path, 'w') as f:
-        f.write(content)
+    # Only write when content changed; an unconditional write bumps mtime
+    # and can invalidate Lake's compiled-config cache for later lake calls.
+    if content != original:
+        with open(lf_path, 'w') as f:
+            f.write(content)
 " "$REPO_DIR"
 
         # --- Generate comparator configs ---

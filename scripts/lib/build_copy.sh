@@ -201,18 +201,28 @@ PYEOF
     # 5. Fetch Mathlib cache and build
     # IMPORTANT: Use subshell for cd to avoid corrupting parent shell CWD
     echo "Fetching Mathlib cache..."
-    (cd "$repo_dir" && lake exe cache get) || echo "WARNING: cache get failed, building from source"
+    local cache_ok=1
+    (cd "$repo_dir" && lake exe cache get) || { cache_ok=0; echo "WARNING: cache get failed, building from source"; }
+
+    # If cache get failed (e.g. non-Mathlib project), the compiled lake config
+    # is stale relative to the patched lakefile. Force reconfigure on every
+    # subsequent lake build via `-R` until we have a cleaner mechanism.
+    local RECONFIG_FLAG=""
+    if [[ "$cache_ok" -eq 0 ]]; then
+        RECONFIG_FLAG="-R"
+        echo "Non-Mathlib project: passing -R to all lake build calls."
+    fi
 
     # Check for build_targets in TOML config (passed via env var)
     if [[ -n "${BUILD_TARGETS:-}" ]]; then
         echo "Building specified targets: $BUILD_TARGETS"
         for target in $BUILD_TARGETS; do
             echo "  Building $target..."
-            (cd "$repo_dir" && lake build "$target")
+            (cd "$repo_dir" && lake build $RECONFIG_FLAG "$target")
         done
     else
         echo "Building impl (default targets)..."
-        (cd "$repo_dir" && lake build)
+        (cd "$repo_dir" && lake build $RECONFIG_FLAG)
     fi
     echo "Building Registry specs..."
     # Build each spec module individually rather than the combined Registry target.
@@ -224,7 +234,7 @@ PYEOF
         | sort)
     for mod in $spec_modules; do
         echo "  Building $mod..."
-        (cd "$repo_dir" && lake build "$mod")
+        (cd "$repo_dir" && lake build $RECONFIG_FLAG "$mod")
     done
     echo "Build complete."
 

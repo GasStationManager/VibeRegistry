@@ -21,3 +21,12 @@ status = "pending"
 id = "archon-first-proof"
 config = "entries/archon-first-proof.toml"
 status = "pending"
+
+[[entries]]
+id = "lean-zip"
+config = "entries/lean-zip.toml"
+status = "pending-infrastructure"
+# First systems-library entry. SafeVerify-verified upstream; Level 2 in our
+# pipeline is deferred pending a local rework of the build_copy strategy
+# (avoid mutating the impl's lakefile so comparator's sandboxed `lake build`
+# doesn't trip the trace-mismatch check). See entries/lean-zip.toml.
