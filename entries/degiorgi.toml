@@ -1,0 +1,50 @@
+[project]
+id = "degiorgi"
+name = "DeGiorgi-Nash-Moser elliptic regularity"
+description = "Lean 4 formalization of the De Giorgi-Nash-Moser theory for uniformly elliptic divergence-form equations: local boundedness, weak Harnack, Harnack, and Hölder regularity. ~56K LoC, sorry-free, axiom-free, LLM-assisted."
+url = "https://github.com/scottnarmstrong/DeGiorgi"
+commit = "4c1b3077d3782b24065184df4ba59501b2e56fc7"
+branch = "main"
+
+[lean]
+toolchain = "leanprover/lean4:v4.29.0-rc6"
+mathlib_tag = "v4.29.0-rc6"
+
+[[theorems]]
+spec_module = "Registry.DeGiorgi.Harnack"
+impl_module = "DeGiorgi.Harnack"
+names = ["DeGiorgi.harnack"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[build]
+strategy = "copy"
+
+[tools]
+safe_verify_rev = "main"
+lean4checker_rev = "v4.29.0-rc6"
+
+# Notes:
+#
+# Prototype entry covering only the `DeGiorgi.harnack` headline theorem.
+# The project's own `manifest.json` enumerates seven headline theorems
+# across five chapters; the remaining six (linfty_subsolution_DeGiorgi_normalized,
+# weak_harnack, weak_harnack_on_ball, harnack_of_homogeneousWeakSolution,
+# holder_Moser, holder_Moser_of_homogeneousWeakSolution) will be added
+# once this prototype validates end-to-end through Levels 1 and 2.
+#
+# Spec strategy: the spec imports upstream DeGiorgi modules for supporting
+# structures (`AmbientSpace`, `NormalizedEllipticCoeff`, `IsSolution`) but
+# cannot import `DeGiorgi.Harnack` itself — that would collide with the
+# spec's own declaration of `harnack`. `C_harnack` is defined inside that
+# file, so the spec restates its signature with a `sorry` body. SafeVerify's
+# `equivDefn` skips value comparison when the spec's def has `sorryAx` in
+# its axioms (Util.lean:22-31), so the impl's actual numeric formula is
+# accepted without value-mismatch noise.
+#
+# Semantic implication: the verified claim is existential in `C_harnack` —
+# "there exists `C_harnack : ℕ → ℝ` such that the Harnack inequality holds."
+# This matches the textbook formulation. If we later add downstream
+# theorems whose proofs depend on the *specific* numeric value of
+# `C_harnack` (e.g., `holder_Moser`, which uses `|C_harnack d|` inside
+# `C_holder_Moser`), we'll need to switch to a wrapper-file strategy that
+# preserves the literal formula.
