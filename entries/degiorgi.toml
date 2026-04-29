@@ -32,9 +32,19 @@ lean4checker_rev = "v4.29.0-rc6"
 # holder_Moser, holder_Moser_of_homogeneousWeakSolution) will be added
 # once this prototype validates end-to-end through Levels 1 and 2.
 #
-# Spec strategy is hybrid (lean-zip-style + math-library-style): the spec
-# imports upstream DeGiorgi modules to access supporting structures and
-# constants, but restates `C_harnack` verbatim because that constant lives
-# in the same .lean file as the theorem (so the spec can't import it
-# without colliding with its own `harnack` declaration). See
-# `specs/degiorgi/Registry/DeGiorgi/Harnack.lean` for details.
+# Spec strategy: the spec imports upstream DeGiorgi modules for supporting
+# structures (`AmbientSpace`, `NormalizedEllipticCoeff`, `IsSolution`) but
+# cannot import `DeGiorgi.Harnack` itself — that would collide with the
+# spec's own declaration of `harnack`. `C_harnack` is defined inside that
+# file, so the spec restates its signature with a `sorry` body. SafeVerify's
+# `equivDefn` skips value comparison when the spec's def has `sorryAx` in
+# its axioms (Util.lean:22-31), so the impl's actual numeric formula is
+# accepted without value-mismatch noise.
+#
+# Semantic implication: the verified claim is existential in `C_harnack` —
+# "there exists `C_harnack : ℕ → ℝ` such that the Harnack inequality holds."
+# This matches the textbook formulation. If we later add downstream
+# theorems whose proofs depend on the *specific* numeric value of
+# `C_harnack` (e.g., `holder_Moser`, which uses `|C_harnack d|` inside
+# `C_holder_Moser`), we'll need to switch to a wrapper-file strategy that
+# preserves the literal formula.
