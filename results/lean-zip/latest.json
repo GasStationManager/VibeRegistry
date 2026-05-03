@@ -1,0 +1,41 @@
+{
+  "entry_id": "lean-zip",
+  "timestamp": "2026-05-03T03:13:08Z",
+  "commit": "e76f0813faa2893f09b83d027e52754041febc35",
+  "lean_toolchain": "leanprover/lean4:v4.29.1",
+  "mathlib_tag": "",
+  "verification_level": 2,
+  "build_strategy": "copy",
+  "theorems": [
+    {
+      "name": "Zip.Native.Deflate.inflate_deflateRaw",
+      "spec_module": "Registry.LeanZip.DeflateRoundtrip",
+      "impl_module": "Zip.Spec.DeflateRoundtrip",
+      "lean4checker": "skip",
+      "safe_verify": "skip",
+      "comparator": "skip"
+    },
+    {
+      "name": "Zip.Native.Deflate.deflateRaw_pad",
+      "spec_module": "Registry.LeanZip.DeflateRoundtrip",
+      "impl_module": "Zip.Spec.DeflateRoundtrip",
+      "lean4checker": "skip",
+      "safe_verify": "skip",
+      "comparator": "skip"
+    },
+    {
+      "name": "Zip.Native.Deflate.deflateRaw_goR_pad",
+      "spec_module": "Registry.LeanZip.DeflateRoundtrip",
+      "impl_module": "Zip.Spec.DeflateRoundtrip",
+      "lean4checker": "skip",
+      "safe_verify": "skip",
+      "comparator": "skip"
+    }
+  ],
+  "overall": "pass",
+  "signoff_summary": {
+    "total": 0,
+    "current": 0,
+    "stale": 0
+  }
+}
