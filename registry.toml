@@ -30,3 +30,12 @@ status = "pending-infrastructure"
 # pipeline is deferred pending a local rework of the build_copy strategy
 # (avoid mutating the impl's lakefile so comparator's sandboxed `lake build`
 # doesn't trip the trace-mismatch check). See entries/lean-zip.toml.
+
+[[entries]]
+id = "degiorgi"
+config = "entries/degiorgi.toml"
+status = "pending"
+# Prototype entry for the DeGiorgi-Nash-Moser elliptic-regularity development
+# (scottnarmstrong/DeGiorgi). Initially covering only the `harnack` headline
+# theorem; remaining six theorems from the project's manifest.json will be
+# added once this validates end-to-end.
