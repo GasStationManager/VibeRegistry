@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-08-21T17:41:03Z",
+  "generated_at": "2026-08-21T18:33:27Z",
   "counts": {
    "total": 628,
    "registry": 30,
@@ -758,7 +758,10 @@
    "doc": "Unified DEFLATE roundtrip: inflate ∘ deflateRaw = identity.\n    Generalized to any `maxOutputSize` large enough to hold the input.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "fail",
+    "nanoda": "not-reached"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/kim-em/lean-zip/blob/e76f0813faa2893f09b83d027e52754041febc35"
@@ -783,7 +786,10 @@
    "doc": "The output of `deflateRaw` decomposes into content bits plus short padding.\n    Needed by `inflateRaw_endPos_ge` to establish that the native decoder\n    consumes all of the deflated byte array.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "fail",
+    "nanoda": "not-reached"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/kim-em/lean-zip/blob/e76f0813faa2893f09b83d027e52754041febc35"
@@ -808,7 +814,10 @@
    "doc": "For the encoder's output, `decode.goR` returns a short remaining (< 8 bits).\n    Connects encoder structure to decoder bit consumption.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "fail",
+    "nanoda": "not-reached"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/kim-em/lean-zip/blob/e76f0813faa2893f09b83d027e52754041febc35"
