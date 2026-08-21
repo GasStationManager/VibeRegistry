@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "selberg-sieve4",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SelbergSieve4",
+  "version": 1,
+  "title": "Selberg Sieve",
+  "abstract": "Formalizes the Selberg sieve with applications to prime-counting bounds and a Brun-Titchmarsh-style estimate.",
+  "authors": [
+    "Arend Mellendijk"
+  ],
+  "repository": "https://github.com/amellendijk/selberg-sieve4",
+  "commit": "",
+  "entry_module": "LeanPool.SelbergSieve4",
+  "declarations": [
+    "fundamental_theorem_simple",
+    "primeCounting_isBigO_atTop",
+    "primesBetween_le",
+    "primeCounting_le_mul"
+  ],
+  "informal": {
+    "fundamental_theorem_simple": "Proves the simple Selberg sieve upper-bound theorem.",
+    "primeCounting_isBigO_atTop": "Derives the asymptotic prime-counting upper bound.",
+    "primeCounting_le_mul": "Gives an eventual explicit constant upper bound for the prime-counting function.",
+    "primesBetween_le": "Bounds the number of primes in an interval using the sieve estimate."
+  },
+  "classification": {
+    "msc2020": [
+      "11N35",
+      "11N05",
+      "11N13"
+    ],
+    "tags": [
+      "number-theory",
+      "analytic-number-theory",
+      "sieve-theory",
+      "prime-counting"
+    ],
+    "branch": "analytic number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:f878f1f3681f412356efed7424c88d9b4f7e4def9bd65e282b76281d632a11d6"
+}

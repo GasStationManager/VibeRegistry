@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-18-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-18-000001",
+  "version": 1,
+  "title": "LionSR/LDT-comparator",
+  "abstract": "This project formalizes the main soundness theorem for the quantum low individual degree test. It proves that a projective two-prover strategy which passes the test admits polynomial measurements that are consistent with one another and with the provers' point measurements, with an explicit error bound.",
+  "authors": [
+    "Sirui Lu",
+    "Ruixuan Deng",
+    "Zhengfeng Ji"
+  ],
+  "repository": "https://github.com/LionSR/LDT-comparator",
+  "commit": "15f1d5b2797c67ceb9d278d0a4d576772b937e9a",
+  "project_path": null,
+  "declarations": [
+    "MIPStarRE.LDT.Test.mainFormal"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "81P45",
+      "68Q15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-18T15:09:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "15f1d5b2797c67ceb9d278d0a4d576772b937e9a",
+        "fork_repository": "PalomarArchive/LionSR--LDT-comparator--d4a9ec4f2c03",
+        "source_repository": "LionSR/LDT-comparator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:401fed148055e804f1eecd411516209d985911e39ee19b344e5f8b072b2bbdbb"
+}

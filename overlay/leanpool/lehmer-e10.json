@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lehmer-e10",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LehmerE10",
+  "version": 1,
+  "title": "Lehmer's Polynomial and the E10 Coxeter Element",
+  "abstract": "Proves that Lehmer's degree-10 polynomial — the integer polynomial of smallest known Mahler measure above 1 — is irreducible over the integers, and that it is the characteristic polynomial of a Coxeter element of the E10 Weyl group (the rank-10 instance of McMullen). Against Mathlib's Mahler-measure API it computes M(L) exactly as the Salem root with the unconditional bounds 1 < M(L) < 7/5, states Lehmer's conjecture as a defined Prop (never assumed) with the strong form implying the gap form, and contrasts the E8 Coxeter element (order exactly 30) with the E10 element (infinite order in GL(10,Z)): the E-series crosses from torsion to a Salem matrix at rank 10, and the crossing value is Lehmer's number.",
+  "authors": [
+    "Dillon Ryan"
+  ],
+  "repository": "https://github.com/dillon-11/lehmer-E10",
+  "commit": "",
+  "entry_module": "LeanPool.LehmerE10",
+  "declarations": [
+    "LehmerE10.main_theorem",
+    "LehmerE10.lehmer_mahlerMeasure"
+  ],
+  "informal": {
+    "LehmerE10.main_theorem": "Lehmer's polynomial L(x) = x^10 + x^9 - x^7 - x^6 - x^5 - x^4 - x^3 + x + 1 is irreducible over the integers, and the characteristic polynomial of a Coxeter element of the E10 Weyl group equals L.",
+    "LehmerE10.lehmer_mahlerMeasure": "The Mahler measure of L equals its Salem root mu, with the unconditional bounds 1 < M(L) < 7/5."
+  },
+  "classification": {
+    "msc2020": [
+      "11R06",
+      "11C08",
+      "20F55"
+    ],
+    "tags": [
+      "number-theory",
+      "mahler-measure",
+      "salem-numbers",
+      "coxeter-groups"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:9dc7e1e8467a5bd0f65103fe861ec21e26e5f082f5e6ba1a9635acf0988f6dea"
+}

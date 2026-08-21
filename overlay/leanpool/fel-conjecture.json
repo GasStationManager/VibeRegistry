@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "fel-conjecture",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FelConjecture",
+  "version": 1,
+  "title": "Fel's Conjecture on Syzygies of Numerical Semigroups",
+  "abstract": "Formalizes Fel's conjectural formula for syzygies of numerical semigroups.",
+  "authors": [
+    "Evan Chen",
+    "Kenny Lau",
+    "Ken Ono",
+    "Jujian Zhang"
+  ],
+  "repository": "https://github.com/AxiomMath/fel-polynomial",
+  "commit": "",
+  "entry_module": "LeanPool.FelConjecture",
+  "declarations": [
+    "fels_conjecture"
+  ],
+  "informal": {
+    "fels_conjecture": "Proves Fel's conjecture for the polynomial attached to numerical-semigroup syzygies."
+  },
+  "classification": {
+    "msc2020": [
+      "20M14",
+      "13D02"
+    ],
+    "tags": [
+      "number-theory",
+      "combinatorics",
+      "polynomials"
+    ],
+    "branch": "commutative algebra"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:4d042ef3b48766a0b585bd8ccf582d30cdd8415af35765e2b40b7dc56da89181"
+}

@@ -1,0 +1,61 @@
+{
+  "source": "leanpool",
+  "upstream_id": "gkp-density-one",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/GKPCarry",
+  "version": 1,
+  "title": "Density-One GKP Divisibility and Its Carry-Language Characterization",
+  "abstract": "Proves that the exponents k satisfying the Graham--Knuth--Patashnik divisibility condition have natural density one. The proof gives an exact all-depth modular sieve, quantitative bounds for possible failures in initial intervals, and a density-zero limit for the failure proportion. It also develops the Kummer digit-sum bridge, the binary-popcount reduction, and a verified ternary carry automaton. The universal GKP conjecture remains open because the possible density-zero failure set may be nonempty.",
+  "authors": [
+    "Egor Lyfar"
+  ],
+  "repository": "https://github.com/lyfar/gkp-carry-lean",
+  "commit": "",
+  "entry_module": "LeanPool.GKPCarry",
+  "declarations": [
+    "GKPCarry.tendsto_gkpSuccessProportion_one",
+    "GKPCarry.card_gkpFailureExponentsBelow_le",
+    "GKPCarry.gkp_exact_modular_sieve",
+    "GKPCarry.gkpConjecture_iff_badCarryLanguageExclusion",
+    "GKPCarry.nine_dvd_centralBinom_iff_two_le_ternaryDoubleCarryCount",
+    "GKPCarry.badCarryLanguage_true_iff_shape",
+    "GKPCarry.card_badCarryWords",
+    "GKPCarry.nine_dvd_centralBinom_four_pow_in_finite_range"
+  ],
+  "informal": {
+    "GKPCarry.tendsto_gkpSuccessProportion_one": "The proportion of exponents k below N for which nine divides the central binomial coefficient indexed by 2^k tends to one as N tends to infinity.",
+    "GKPCarry.card_gkpFailureExponentsBelow_le": "At each ternary depth n+3, the number of possible failures below N is at most (N divided by 2*3^(n+2), plus one) times (n+9)*2^n.",
+    "GKPCarry.gkp_exact_modular_sieve": "At depth n+3, exactly (n+9)*2^n of the 2*3^(n+2) exponent classes remain uncertified; every other class gives divisibility by nine and avoids the deficient carry language for all exponents in that class.",
+    "GKPCarry.gkpConjecture_iff_badCarryLanguageExclusion": "The GKP conjecture is equivalent to the assertion that every nonexceptional power of two avoids the explicitly defined deficient-carry regular language. This is an exact reformulation and does not prove the remaining avoidance assertion.",
+    "GKPCarry.nine_dvd_centralBinom_iff_two_le_ternaryDoubleCarryCount": "For every natural number n, its central binomial coefficient is divisible by nine exactly when doubling the canonical ternary expansion of n creates at least two carries.",
+    "GKPCarry.badCarryLanguage_true_iff_shape": "The deficient-carry automaton accepts exactly three concrete little-endian ternary word shapes: all digits zero or one; a unique top digit two; or a unique two followed by a higher zero with all other digits zero or one.",
+    "GKPCarry.card_badCarryWords": "Among all ternary words of length n+2, exactly (n+7) times 2^n create fewer than two carries when doubled.",
+    "GKPCarry.nine_dvd_centralBinom_four_pow_in_finite_range": "For every m from 27 through 6560, nine divides the central binomial coefficient indexed by 4^m; this is a bounded computational corollary, not the headline result."
+  },
+  "classification": {
+    "msc2020": [
+      "11A63",
+      "11B65",
+      "68Q45"
+    ],
+    "tags": [
+      "number-theory",
+      "finite-automata",
+      "asymptotic-density"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:7dd973ff346cb113533a87b39e633cbdda5e33e695f00568554f32dada34671e"
+}

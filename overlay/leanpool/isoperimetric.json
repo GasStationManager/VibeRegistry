@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "isoperimetric",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Isoperimetric",
+  "version": 1,
+  "title": "Prekopa-Leindler, Brunn-Minkowski, and the isoperimetric inequality",
+  "abstract": "Formalizes the Prekopa-Leindler inequality, Brunn-Minkowski inequality, and an isoperimetric inequality.",
+  "authors": [
+    "Jonathan Ho"
+  ],
+  "repository": "https://github.com/hojonathanho/isoperimetric",
+  "commit": "",
+  "entry_module": "LeanPool.Isoperimetric",
+  "declarations": [
+    "prekopa_leindler",
+    "brunn_minkowski",
+    "isoperimetric_inequality"
+  ],
+  "informal": {
+    "prekopa_leindler": "Proves the Prekopa-Leindler inequality.",
+    "brunn_minkowski": "Proves the Brunn-Minkowski inequality.",
+    "isoperimetric_inequality": "Proves the isoperimetric inequality derived from Brunn-Minkowski."
+  },
+  "classification": {
+    "msc2020": [
+      "28A75",
+      "52A40",
+      "49Q20"
+    ],
+    "tags": [
+      "measure-theory",
+      "geometric-inequalities"
+    ],
+    "branch": "geometric analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:1b6ec782bd001836ee125feb659aa4a23903edc31f1cef0903edf0d683e8c5ad"
+}

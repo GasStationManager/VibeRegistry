@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "partial-combinatory-algebras",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PartialCombinatoryAlgebras",
+  "version": 1,
+  "title": "Partial Combinatory Algebras",
+  "abstract": "Formalises partial combinatory algebras with the K/S combinators, programming combinators, the free combinatory algebra, and the graph model.",
+  "authors": [
+    "Andrej Bauer"
+  ],
+  "repository": "https://github.com/andrejbauer/partial-combinatory-algebras",
+  "commit": "",
+  "entry_module": "LeanPool.PartialCombinatoryAlgebras",
+  "declarations": [
+    "LeanPool.PartialCombinatoryAlgebras.PCA",
+    "LeanPool.PartialCombinatoryAlgebras.CA",
+    "LeanPool.PartialCombinatoryAlgebras.FreeCA",
+    "LeanPool.PartialCombinatoryAlgebras.GraphModel.isCA"
+  ],
+  "informal": {
+    "LeanPool.PartialCombinatoryAlgebras.PCA": "Defines the class of partial combinatory algebras (PCAs) with K and S combinators.",
+    "LeanPool.PartialCombinatoryAlgebras.CA": "Defines total combinatory algebras and exhibits every total combinatory algebra as a PCA.",
+    "LeanPool.PartialCombinatoryAlgebras.FreeCA": "Constructs the free total combinatory algebra as a quotient of formal expressions.",
+    "LeanPool.PartialCombinatoryAlgebras.GraphModel.isCA": "Constructs the graph-model combinatory algebra on the powerset of any Listing-typed carrier."
+  },
+  "classification": {
+    "msc2020": [
+      "03B40",
+      "03D75"
+    ],
+    "tags": [
+      "combinatory-algebra",
+      "lambda-calculus",
+      "computability"
+    ],
+    "branch": "logic and computability"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:c547a07ada4824732f17211c7637228f57eaa040324d70ccbe34ace985319245"
+}

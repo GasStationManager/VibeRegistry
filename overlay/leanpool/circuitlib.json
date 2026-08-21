@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "circuitlib",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Circuitlib",
+  "version": 1,
+  "title": "circuitlib: a circuit verification library for Lean 4",
+  "abstract": "A categorical semantics framework for digital circuits over Belnap's four-valued logic, following Ghica-Kaye-Sprunger. Its main theorems prove that combinational circuits (monotone functions on wire vectors) and sequential circuits (causal monotone stream functions) form symmetric monoidal categories, with a verified full adder as demonstration.",
+  "authors": [
+    "Matt Hunzinger"
+  ],
+  "repository": "https://github.com/matthunz/circuitlib",
+  "commit": "",
+  "entry_module": "LeanPool.Circuitlib",
+  "declarations": [
+    "Circuit.SequentialCircuitCategory.instSymmetricCategory",
+    "Circuit.CombinationalCircuitCategory.instSymmetricCategory",
+    "Circuit.SequentialCircuitCategory.tensorHom_causal",
+    "Circuit.BelnapLevel.instSemilatticeSup",
+    "Circuit.CombinationalCircuit.adder_def"
+  ],
+  "informal": {
+    "Circuit.SequentialCircuitCategory.instSymmetricCategory": "The category of sequential circuits, whose morphisms are causal monotone stream functions as in Ghica-Kaye-Sprunger's denotational semantics, is symmetric monoidal, with all coherence laws (pentagon, triangle, hexagons, symmetry) proven.",
+    "Circuit.CombinationalCircuitCategory.instSymmetricCategory": "The category of combinational circuits, with wire counts as objects and monotone wire-vector functions as morphisms, is symmetric monoidal under juxtaposition of wire bundles.",
+    "Circuit.SequentialCircuitCategory.tensorHom_causal": "Causality is preserved by parallel composition, the key lemma making sequential circuits closed under the tensor product.",
+    "Circuit.BelnapLevel.instSemilatticeSup": "Belnap's four truth values under the information order form a join-semilattice, the wire-value semantics in which every circuit denotes a monotone function.",
+    "Circuit.CombinationalCircuit.adder_def": "Correctness of a full adder assembled categorically from two half adders, gates, braidings, and whiskerings, computing the Boolean sum and carry bits; a demonstration of the framework."
+  },
+  "classification": {
+    "msc2020": [
+      "18M05",
+      "68Q60",
+      "94C11"
+    ],
+    "tags": [
+      "circuits",
+      "hardware",
+      "category-theory",
+      "combinational",
+      "sequential"
+    ],
+    "branch": "categorical circuit semantics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:7f28a4226b58cf39f2d9d70a227d40097dbd55b8ede304c696a7f41cc7156db9"
+}

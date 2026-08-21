@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "sardmoreira",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SardMoreira",
+  "version": 1,
+  "title": "Moreira's version of Sard's theorem",
+  "abstract": "Formalizes Moreira's strengthening of Sard's theorem, bounding the Hausdorff dimension of critical-value images of C^{k+alpha} maps.",
+  "authors": [
+    "Yury G. Kudryashov"
+  ],
+  "repository": "https://github.com/urkud/SardMoreira",
+  "commit": "",
+  "entry_module": "LeanPool.SardMoreira",
+  "declarations": [
+    "dimH_image_le_sardMoreiraBound_of_finrank_le",
+    "hausdorffMeasure_sardMoreiraBound_image_null_of_finrank_le"
+  ],
+  "informal": {
+    "hausdorffMeasure_sardMoreiraBound_image_null_of_finrank_le": "Proves Hausdorff-measure nullity for images of points where the derivative rank is bounded by p, at Moreira's Sard bound.",
+    "dimH_image_le_sardMoreiraBound_of_finrank_le": "Converts the measure-null theorem into the headline Hausdorff-dimension upper bound for critical-value images."
+  },
+  "classification": {
+    "msc2020": [
+      "28A78",
+      "58C25"
+    ],
+    "tags": [
+      "analysis",
+      "measure-theory",
+      "sard-theorem",
+      "hausdorff-measure"
+    ],
+    "branch": "geometric measure theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:82371ad26c935b8ba68c265571bd74da7cee6157ba1a2cead7d8c135a9643a3f"
+}

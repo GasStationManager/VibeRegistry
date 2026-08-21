@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "partial-regularity",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PartialRegularity",
+  "version": 1,
+  "title": "Almost all primes are partially regular",
+  "abstract": "Formalizes an asymptotic theorem about partial regularity of primes via Bernoulli-number irregularity.",
+  "authors": [
+    "Evan Chen",
+    "Kenny Lau",
+    "Seewoo Lee",
+    "Ken Ono",
+    "Jujian Zhang"
+  ],
+  "repository": "https://github.com/AxiomMath/partial-regularity",
+  "commit": "",
+  "entry_module": "LeanPool.PartialRegularity",
+  "declarations": [
+    "LeanPool.PartialRegularity.Extension.irregularPrimes_isBigO"
+  ],
+  "informal": {
+    "LeanPool.PartialRegularity.Extension.irregularPrimes_isBigO": "Proves the asymptotic big-O bound behind the partial-regularity theorem."
+  },
+  "classification": {
+    "msc2020": [
+      "11B68",
+      "11N05"
+    ],
+    "tags": [
+      "number-theory",
+      "asymptotics"
+    ],
+    "branch": "analytic number theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:58a9bd33cb3e67632bd0295568af9f6f3f3547a3361e64be24f3e832cb97ff81"
+}

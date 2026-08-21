@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-19-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-19-000002",
+  "version": 2,
+  "title": "elliotglazer/erdos501",
+  "abstract": "Erdős problem #501 (Erdős 1961; Erdős–Hajnal 1971, Problem 38): for every real x let A_x be a bounded set of reals of Lebesgue outer measure < 1; must there be an infinite independent set, i.e. an infinite X ⊆ ℝ with x ∉ A_y for all distinct x, y ∈ X?  And if the sets A_x are closed of measure < 1, must there be an independent set of size 3?  This repository formalizes both answers.  Second question: yes — closed sets of measure < 1 admit an infinite independent set (Newelski–Pawlikowski–Seredyński 1987; no boundedness is needed), hence one of size 3.  First question: independent of ZFC.  Under CH (as ℵ₁ = 𝔠) Hechler's 1972 construction gives a family of bounded sets of outer measure < 1 (in fact countable and null) with no infinite independent set — a Mathlib-level theorem — and the negation of the first question holds in the Boolean-valued model of the collapse algebra Col(ω₁, 𝒫(ω)); after adding 𝔠⁺ random reals (Glazer and Sol 2026, adapting the paper's ω₂ random reals over a CH ground) the first question has a positive answer, so it holds in the Boolean-valued model of the random algebra with 𝔠⁺ coordinates.  Both Boolean-valued models are built in a Lean 4 port of Han–van Doorn's Flypitch (the framework of their independence-of-CH proof), and Flypitch's completeness theorem turns them into two-valued models.  The comparator challenge states the results in Mathlib alone: the language of set theory, the theory ZFC (Flypitch's axiomatization: extensionality, empty set, ordered pairs, union, power set, infinity, regularity, Zorn's lemma, strong collection) and the sentence Erdos501 (\"every complete ordered field has the Erdős property\") are defined in Mathlib's ModelTheory, and independence is stated semantically as ¬ (ZFC ⊨ᵇ Erdos501) ∧ ¬ (ZFC ⊨ᵇ ∼Erdos501); a faithfulness theorem shows that in Mathlib's ZFSet the sentence is equivalent to the Mathlib statement of the first question, verbatim the proposition of google-deepmind/formal-conjectures.  All targets are proved from propext, Classical.choice and Quot.sound only.  As far as we know this is the first Erdős problem whose resolution is a formally verified independence result.",
+  "authors": [
+    "Elliot Glazer",
+    "Sol"
+  ],
+  "repository": "https://github.com/elliotglazer/erdos501",
+  "commit": "218d1c1e46f77d4db80e566d1721782e85b94a17",
+  "project_path": null,
+  "declarations": [
+    "erdos501_closed_infinite",
+    "erdos501_closed_size3",
+    "erdos501_hechler_of_CH",
+    "erdos501_not_refutable",
+    "erdos501_not_provable",
+    "erdos501_independent",
+    "erdos501_sentence_faithful"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.CO"
+    ],
+    "msc2020": [
+      "03E35",
+      "03E75",
+      "03E40",
+      "03E50",
+      "05D10",
+      "28A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T00:53:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "218d1c1e46f77d4db80e566d1721782e85b94a17",
+        "fork_repository": "PalomarArchive/elliotglazer--erdos501--a846048a857c",
+        "source_repository": "elliotglazer/erdos501"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b624d354870bbb14b403be1b98f8f9fb13416f36d83339202d4822a41d5e54fb"
+}

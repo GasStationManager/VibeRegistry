@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "pointwise-birkhoff",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PointwiseBirkhoff",
+  "version": 1,
+  "title": "Pointwise Birkhoff Ergodic Theorem",
+  "abstract": "Formalizes the pointwise Birkhoff ergodic theorem for integrable real-valued observables.",
+  "authors": [
+    "Lua Viana Reis",
+    "Oliver Butterley",
+    "Pietro Monticone"
+  ],
+  "repository": "https://github.com/lua-vr/pointwise-birkhoff",
+  "commit": "",
+  "entry_module": "LeanPool.PointwiseBirkhoff",
+  "declarations": [
+    "LeanPool.PointwiseBirkhoff.birkhoffErgodicTheorem'",
+    "LeanPool.PointwiseBirkhoff.birkhoffErgodicTheorem"
+  ],
+  "informal": {
+    "LeanPool.PointwiseBirkhoff.birkhoffErgodicTheorem'": "Proves almost-everywhere convergence of Birkhoff averages to invariant conditional expectation for any integrable real-valued observable.",
+    "LeanPool.PointwiseBirkhoff.birkhoffErgodicTheorem": "Proves the measurable-observable version of the pointwise Birkhoff ergodic theorem."
+  },
+  "classification": {
+    "msc2020": [
+      "37A30",
+      "28D05"
+    ],
+    "tags": [
+      "ergodic-theory",
+      "measure-theory",
+      "probability"
+    ],
+    "branch": "ergodic theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:214b3224f14adeb42525ae53c7f7e313750b8e5c60a747d5a845797e6df68a53"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "moser-lattice-colorings",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MoserLatticeColorings",
+  "version": 1,
+  "title": "Geometric Four-Colorings of the Moser Lattice and Ring",
+  "abstract": "Formalizes the two explicit parity colorings from Dúcz's 2026 note on the Moser lattice. The development derives the exact quadratic norm formula, proves that the integer-coordinate embedding is faithful, proves both colorings proper and geometric on the entire lattice, and descends them through localization by powers of three to the Moser ring. As a structural corollary, every unit-distance graph realized entirely in the Moser ring is four-colorable. The uniqueness classification of geometric four-colorings and the chromatic number of the full Euclidean plane are not claimed.",
+  "authors": [
+    "Egor Lyfar"
+  ],
+  "repository": "https://github.com/lyfar/moser-lattice-colorings-lean",
+  "commit": "",
+  "entry_module": "LeanPool.MoserLatticeColorings",
+  "declarations": [
+    "LeanPool.MoserLatticeColorings.MoserRing.both_colorings_are_geometric",
+    "LeanPool.MoserLatticeColorings.MoserRing.graph_colorable_four_of_moserRing_realization"
+  ],
+  "informal": {
+    "LeanPool.MoserLatticeColorings.MoserRing.both_colorings_are_geometric": "The two parity maps defined by Dúcz descend to proper four-colorings of the full Moser ring, and equality of colors for each map depends only on Euclidean distance.",
+    "LeanPool.MoserLatticeColorings.MoserRing.graph_colorable_four_of_moserRing_realization": "Every abstract graph with a realization in the Moser ring that sends each edge to a unit-distance pair is four-colorable."
+  },
+  "classification": {
+    "msc2020": [
+      "05C15"
+    ],
+    "tags": [
+      "combinatorics",
+      "graph-coloring",
+      "discrete-geometry",
+      "unit-distance-graphs",
+      "moser-lattice"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:959adb7b50277b33aa5a6f77863bd2d14da2aefc4cceb9525add72514850b5f6"
+}

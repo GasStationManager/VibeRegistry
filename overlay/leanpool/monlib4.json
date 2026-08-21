@@ -1,0 +1,78 @@
+{
+  "source": "leanpool",
+  "upstream_id": "monlib4",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Monlib4",
+  "version": 1,
+  "title": "Monlib4 Operator-Algebra and Quantum-Set Core",
+  "abstract": "Formalizes monlib4's finite matrix-algebra inner-automorphism theorem, unitary inner automorphisms, star-preserving linear maps, the structural core of quantum sets, the core Schur-product definition of quantum graphs, and a self-contained digit-sum divisibility theorem.",
+  "authors": [
+    "Monica Omar"
+  ],
+  "repository": "https://github.com/themathqueen/monlib4",
+  "commit": "",
+  "entry_module": "LeanPool.Monlib4",
+  "declarations": [
+    "Matrix.aut_mat_inner",
+    "QuantumSet",
+    "schurMul",
+    "QuantumGraph",
+    "Matrix.automorphism_matrix_inner",
+    "Matrix.aut_mat_inner'",
+    "Matrix.aut_mat_inner_trace_preserving",
+    "Matrix.innerAut",
+    "Matrix.innerAut_apply_trace_eq",
+    "Matrix.innerAut.spectrum_eq",
+    "LinearMap.IsReal",
+    "LinearMap.real",
+    "Complex.quantumSet",
+    "QuantumGraph.Real",
+    "nat_repr_mod_eq_sum_repr_mod",
+    "nat_dvd_repr_iff_nat_dvd_sum_repr"
+  ],
+  "informal": {
+    "Matrix.automorphism_matrix_inner": "Shows that any automorphism of a finite nontrivial matrix algebra is implemented by an invertible intertwining matrix.",
+    "Matrix.aut_mat_inner": "Packages matrix-algebra automorphisms as inner automorphisms induced by a linear equivalence of the underlying coordinate space.",
+    "Matrix.aut_mat_inner'": "Packages matrix-algebra automorphisms as conjugation by an element of `GL n 𝕜`.",
+    "Matrix.aut_mat_inner_trace_preserving": "Proves that automorphisms of finite matrix algebras preserve trace.",
+    "Matrix.innerAut": "Defines the linear map induced by conjugation with a unitary matrix.",
+    "Matrix.innerAut_apply_trace_eq": "Proves that unitary inner automorphisms preserve matrix trace.",
+    "Matrix.innerAut.spectrum_eq": "Proves that unitary inner automorphisms preserve the spectrum of the associated linear operator.",
+    "LinearMap.IsReal": "Defines star-preserving, or real, function-like maps.",
+    "LinearMap.real": "Defines the star-conjugate involution on linear maps.",
+    "QuantumSet": "Defines the monlib4 quantum-set structure with modular automorphisms and a fixed orthonormal basis.",
+    "Complex.quantumSet": "Instantiates the complex numbers as the base quantum set.",
+    "schurMul": "Defines the Schur product of linear maps using multiplication, tensoring, and coalgebra comultiplication.",
+    "QuantumGraph": "Defines quantum graphs as Schur-idempotent endomorphisms.",
+    "QuantumGraph.Real": "Defines real quantum graphs as Schur-idempotent, star-preserving endomorphisms.",
+    "nat_repr_mod_eq_sum_repr_mod": "Proves that the value represented by digits in base `a + 1` has the same remainder modulo `a` as the sum of those digits.",
+    "nat_dvd_repr_iff_nat_dvd_sum_repr": "Proves the generalized digit-sum divisibility criterion for base `a + 1` modulo `a`."
+  },
+  "classification": {
+    "msc2020": [
+      "15A69",
+      "16W20"
+    ],
+    "tags": [
+      "linear-algebra",
+      "operator-algebras",
+      "quantum-sets",
+      "quantum-graphs",
+      "representation-theory"
+    ],
+    "branch": "operator algebras and quantum graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:c00125a02023df90955a119f108b0f9b473e4848ea41d24cb63821a345258237"
+}

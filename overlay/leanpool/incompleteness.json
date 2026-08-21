@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "incompleteness",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Incompleteness",
+  "version": 1,
+  "title": "Gödel's First and Second Incompleteness Theorems",
+  "abstract": "Formalizes Gödel's first and second incompleteness theorems for first-order arithmetic, building on formalized arithmetization and provability-logic infrastructure.",
+  "authors": [
+    "Palalansoukî"
+  ],
+  "repository": "https://github.com/FormalizedFormalLogic/Incompleteness",
+  "commit": "",
+  "entry_module": "LeanPool.Incompleteness",
+  "declarations": [
+    "LeanPool.Incompleteness.goedelFirst",
+    "LeanPool.Incompleteness.goedelSecond"
+  ],
+  "informal": {
+    "LeanPool.Incompleteness.goedelFirst": "Proves Gödel's first incompleteness theorem: a Sigma1-sound Delta1-definable theory extending arithmetic is incomplete.",
+    "LeanPool.Incompleteness.goedelSecond": "Proves Gödel's second incompleteness theorem: such a theory cannot prove its own consistency."
+  },
+  "classification": {
+    "msc2020": [
+      "03F40",
+      "03F30"
+    ],
+    "tags": [
+      "incompleteness",
+      "provability",
+      "first-order-arithmetic",
+      "mathematical-logic"
+    ],
+    "branch": "mathematical logic"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:dcd5c68dfc20ae71f378e29d65b8b53ce3398ce74016276ded058b7600b36795"
+}

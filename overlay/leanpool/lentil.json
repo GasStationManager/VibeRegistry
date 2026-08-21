@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lentil",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Lentil",
+  "version": 1,
+  "title": "Lentil: Temporal Logic of Actions in Lean 4",
+  "abstract": "A shallow embedding of Leslie Lamport's Temporal Logic of Actions (TLA) in Lean 4, with the temporal modalities, standard propositional and temporal proof rules, weak-fairness and leads-to reasoning, and an interactive proof mode for TLA judgments.",
+  "authors": [
+    "Qiyuan Zhao"
+  ],
+  "repository": "https://github.com/verse-lab/Lentil",
+  "commit": "",
+  "entry_module": "LeanPool.Lentil",
+  "declarations": [
+    "TLA.always",
+    "TLA.eventually",
+    "TLA.always_induction",
+    "TLA.wf1",
+    "TLA.wf_as_leads_to",
+    "TLA.leads_to_trans"
+  ],
+  "informal": {
+    "TLA.always": "Defines the TLA \"always\" (box) temporal modality, asserting a predicate holds on every suffix of an execution.",
+    "TLA.eventually": "Defines the TLA \"eventually\" (diamond) temporal modality, asserting a predicate holds on some suffix of an execution.",
+    "TLA.always_induction": "The always-induction rule, equating `□ p` with `p` together with `□ (p → ◯ p)`.",
+    "TLA.wf1": "The WF1 weak-fairness proof rule deriving a leads-to property from a next-state action under weak fairness.",
+    "TLA.wf_as_leads_to": "Characterizes weak fairness of an action as a leads-to property between its enabledness and its occurrence.",
+    "TLA.leads_to_trans": "Transitivity of the leads-to relation."
+  },
+  "classification": {
+    "msc2020": [
+      "03B44",
+      "68Q60"
+    ],
+    "tags": [
+      "temporal-logic",
+      "tla",
+      "formal-verification",
+      "proof-mode"
+    ],
+    "branch": "temporal logic"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:be089b8f5f61a9750c0b3b58380e026c8906b361aaf0eb4ad233f7000ad773ad"
+}

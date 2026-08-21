@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "erdos137",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Erdos137",
+  "version": 1,
+  "title": "Erdős Problem #137: powerful products of consecutive integers",
+  "abstract": "Formalizes the abc-conditional finiteness results for Erdős Problem #137 (Erdős–Selfridge): a number N is powerful if every prime dividing N has its square dividing N, and the question is whether the product F(k,n) = n(n+1)⋯(n+k-1) of k ≥ 3 consecutive integers can be powerful for infinitely many n. Each route isolates its abc input (a radical lower bound) as a single explicit hypothesis and proves everything else outright, concluding that, conditionally, F(k,n) is powerful for only finitely many n for each fixed k ≥ 3.",
+  "authors": [
+    "Scott D. Hughes"
+  ],
+  "repository": "https://github.com/scottdhughes/erdos137",
+  "commit": "",
+  "entry_module": "LeanPool.Erdos137",
+  "declarations": [
+    "Erdos137.erdos137_finite",
+    "Erdos137.erdos137_eventually_not_powerful",
+    "Erdos137.lemma_star",
+    "Erdos137.powerful_rad_sq_le"
+  ],
+  "informal": {
+    "Erdos137.erdos137_finite": "Under the Granville–Langevin radical bound RadLB k (an abc-conditional hypothesis) and k ≥ 3, the set of n ≥ 1 for which F(k,n) is powerful is finite.",
+    "Erdos137.erdos137_eventually_not_powerful": "Under RadLB k and k ≥ 3, there is a threshold beyond which F(k,n) is never powerful.",
+    "Erdos137.lemma_star": "Unconditionally, the radical squared times the powerful part of m is at most m squared (rad m ^ 2 * B2 m ≤ m ^ 2).",
+    "Erdos137.powerful_rad_sq_le": "A nonzero powerful number N satisfies rad N ^ 2 ≤ N."
+  },
+  "classification": {
+    "msc2020": [
+      "11A51",
+      "11N25"
+    ],
+    "tags": [
+      "number-theory",
+      "powerful-numbers",
+      "erdos-problems"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:5730346dd04539099a4006da082a407fe8621ccf6f0dc549100413e94cc7653a"
+}

@@ -1,0 +1,62 @@
+{
+  "source": "leanpool",
+  "upstream_id": "neukirch",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Neukirch",
+  "version": 1,
+  "title": "Neukirch's Algebraic Number Theory: Hilbert ramification theory",
+  "abstract": "Formalizes Hilbert's ramification theory for Galois extensions of number fields, including the fundamental identity and the decomposition and inertia groups, ported from the jjdishere/neukirch project.",
+  "authors": [
+    "Hu Yongle"
+  ],
+  "repository": "https://github.com/jjdishere/neukirch",
+  "commit": "",
+  "entry_module": "LeanPool.Neukirch",
+  "declarations": [
+    "NumberField.ramificationIdx_mul_inertiaDegOfIsGalois",
+    "NumberField.finrank_eq_ramificationIdx_mul_inertiaDeg",
+    "NumberField.IsMaximal_conjugates",
+    "NumberField.DecompositionGroup_card_eq_ramificationIdx_mul_inertiaDeg",
+    "NumberField.InertiaFieldAutEquivResidueFieldAut",
+    "NumberField.InertiaGroup_card_eq_ramificationIdx",
+    "Ideal.ramificationIdx_algebra_tower_of_eq",
+    "Ideal.inertiaDeg_algebra_tower_of_eq"
+  ],
+  "informal": {
+    "NumberField.ramificationIdx_mul_inertiaDegOfIsGalois": "Proves the fundamental identity g·e·f = [L : K] for a Galois extension of number fields.",
+    "NumberField.finrank_eq_ramificationIdx_mul_inertiaDeg": "Shows that when P is the unique prime over p, the degree [L : K] equals the ramification index times the inertia degree.",
+    "NumberField.IsMaximal_conjugates": "Proves the Galois group acts transitively on the primes lying over a fixed prime.",
+    "NumberField.DecompositionGroup_card_eq_ramificationIdx_mul_inertiaDeg": "Computes the order of the decomposition group as the product of the ramification index and inertia degree.",
+    "NumberField.InertiaFieldAutEquivResidueFieldAut": "Identifies the Galois group of the inertia field over K with the Galois group of the residue field extension.",
+    "NumberField.InertiaGroup_card_eq_ramificationIdx": "Computes the order of the inertia group as the ramification index of p in L.",
+    "Ideal.ramificationIdx_algebra_tower_of_eq": "Proves multiplicativity of the ramification index in a tower of Dedekind domains.",
+    "Ideal.inertiaDeg_algebra_tower_of_eq": "Proves multiplicativity of the inertia degree in a tower of Dedekind domains."
+  },
+  "classification": {
+    "msc2020": [
+      "11R32",
+      "11S15",
+      "13B25"
+    ],
+    "tags": [
+      "number-theory",
+      "algebraic-number-theory",
+      "ramification",
+      "galois-theory"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:193b720aef8d5344d7c5c661ca3845bb2101091f6c85f8ca2eee3255b1521797"
+}

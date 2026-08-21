@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "riemann-mapping-theorem",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/RiemannMappingTheorem",
+  "version": 1,
+  "title": "Riemann Mapping Theorem",
+  "abstract": "Formalizes a proof of the Riemann mapping theorem for proper simply connected plane domains with primitives.",
+  "authors": [
+    "Vincent Beffara"
+  ],
+  "repository": "https://github.com/vbeffara/RMT4",
+  "commit": "",
+  "entry_module": "LeanPool.RiemannMappingTheorem",
+  "declarations": [
+    "RMT",
+    "main",
+    "montel",
+    "hurwitz"
+  ],
+  "informal": {
+    "RMT": "Proves the Riemann mapping theorem for the project's domain hypotheses.",
+    "main": "Constructs a conformal map from a good domain onto the unit disk.",
+    "montel": "Proves a Montel compactness theorem for uniformly bounded holomorphic families.",
+    "hurwitz": "Proves the Hurwitz theorem used to preserve injectivity under limits."
+  },
+  "classification": {
+    "msc2020": [
+      "30C35",
+      "30C20"
+    ],
+    "tags": [
+      "complex-analysis",
+      "conformal-maps",
+      "schwarz-lemma"
+    ],
+    "branch": "complex analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:5c182b292f4bbffcc38cc443913d48fbd37b34115afc0e63ecc5652f72b34d24"
+}

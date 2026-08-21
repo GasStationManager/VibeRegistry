@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "redhill",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Redhill",
+  "version": 1,
+  "title": "Improved Lower Bounds for Strong n-Conjectures",
+  "abstract": "Formalizes the disproof of Ramaekers's conjecture, constructing tuple families whose abc-style quality stays bounded above 1, and proves Browkin-Brzezinski lower bounds on the quality of the n-conjecture tuples.",
+  "authors": [
+    "Jeremy Tan"
+  ],
+  "repository": "https://github.com/Parcly-Taxel/Redhill",
+  "commit": "",
+  "entry_module": "LeanPool.Redhill",
+  "declarations": [
+    "not_ramaekersConjecture_ge_six",
+    "le_quality_nConjectureTuples",
+    "RamaekersConjecture",
+    "not_ramaekersConjecture_odd_ge_five",
+    "not_ramaekersConjecture_five"
+  ],
+  "informal": {
+    "RamaekersConjecture": "Defines Ramaekers's conjecture for fixed n as the statement that the quality of the relevant tuple set equals 1.",
+    "not_ramaekersConjecture_ge_six": "Proves Ramaekers's conjecture fails for every n at least 6 (the general case, Theorem 1.14).",
+    "not_ramaekersConjecture_odd_ge_five": "Proves Ramaekers's conjecture fails for every odd n at least 5 (the odd case via Pell equations, Theorem 1.13).",
+    "not_ramaekersConjecture_five": "Proves Ramaekers's conjecture fails for n equal to 5 (the Konyagin prelude bound).",
+    "le_quality_nConjectureTuples": "Proves the Browkin-Brzezinski 1994 lower bound 2n-5 on the quality of the n-conjecture tuples (Theorem 1.3)."
+  },
+  "classification": {
+    "msc2020": [
+      "11A41",
+      "11D75"
+    ],
+    "tags": [
+      "number-theory",
+      "abc-conjecture",
+      "n-conjecture",
+      "ramaekers-conjecture"
+    ],
+    "branch": "number theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:bc74a42e2c150b58e1336784b0bd7b3907108e6ea1fc86f642a51b27b277834c"
+}

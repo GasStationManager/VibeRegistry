@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "pumping-cfg",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PumpingCfg",
+  "version": 1,
+  "title": "Pumping Lemma for Context-Free Grammars",
+  "abstract": "Formalizes the pumping lemma for context-free languages via parse trees of Chomsky-normal-form grammars and a pigeonhole argument.",
+  "authors": [
+    "Alexander Loitzl",
+    "Martin Dvorak"
+  ],
+  "repository": "https://github.com/AlexLoitzl/pumping_cfg",
+  "commit": "",
+  "entry_module": "LeanPool.PumpingCfg",
+  "declarations": [
+    "Language.IsContextFree.pumping",
+    "ChomskyNormalFormGrammar.pumping"
+  ],
+  "informal": {
+    "Language.IsContextFree.pumping": "Every context-free language admits a pumping length p such that any word of length at least p decomposes as u v x y z with vy nonempty, vxy of length at most p, and u vⁱ x yⁱ z in the language for every i.",
+    "ChomskyNormalFormGrammar.pumping": "The pumping lemma at the level of a Chomsky-normal-form grammar, obtained from a sufficiently tall parse tree with a repeated nonterminal."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q45"
+    ],
+    "tags": [
+      "formal-languages",
+      "context-free-grammars",
+      "computability",
+      "pumping-lemma"
+    ],
+    "branch": "formal language theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:c0f262e817030deaf5a881a3d58915ac5df28d838b0a5a547c9a2c716127f6ec"
+}

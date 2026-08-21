@@ -1,0 +1,61 @@
+{
+  "source": "leanpool",
+  "upstream_id": "frontiermath-open-hypergraphs",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FrontierMathOpenHypergraphs",
+  "version": 1,
+  "title": "FrontierMath Ramsey Hypergraphs",
+  "abstract": "Formalizes lower bounds for the Brian-Larson hypergraph extremal function H(n), including a uniform 26/25 improvement over the recursive benchmark k_n for n ≥ 15 and a Lubell-frame asymptotic lower bound.",
+  "authors": [
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/math-inc/FrontierMathOpen-Hypergraphs",
+  "commit": "",
+  "entry_module": "LeanPool.FrontierMathOpenHypergraphs",
+  "declarations": [
+    "HypergraphLowerBound.thm_main_H_lower_bound",
+    "HypergraphLowerBound.uniform_26_25",
+    "HypergraphLowerBound.frame_recurrence",
+    "HypergraphLowerBound.lubell_is_frame",
+    "HypergraphLowerBound.fixed_t_bound",
+    "HypergraphLowerBound.asymptotic_lower_bound",
+    "HypergraphLowerBound.thm_asymptotic"
+  ],
+  "informal": {
+    "HypergraphLowerBound.thm_main_H_lower_bound": "Proves H(n) ≥ 26 * k(n) / 25 for every n ≥ 15.",
+    "HypergraphLowerBound.uniform_26_25": "Proves the uniform recursive construction bound A(n) ≥ 26 * k(n) / 25 for every n ≥ 15.",
+    "HypergraphLowerBound.frame_recurrence": "The substitution-frame recurrence that combines block witnesses and a valid support frame into a larger witness.",
+    "HypergraphLowerBound.lubell_is_frame": "Proves that the Lubell support family forms a valid frame for every arity t ≥ 2.",
+    "HypergraphLowerBound.fixed_t_bound": "Derives a fixed-t lower bound for the exact witness supremum from Lubell frames.",
+    "HypergraphLowerBound.asymptotic_lower_bound": "Proves the asymptotic lower bound liminf H(n) / k(n) ≥ 2 * log 2.",
+    "HypergraphLowerBound.thm_asymptotic": "States the asymptotic consequence in terms of H(n) divided by n log n."
+  },
+  "classification": {
+    "msc2020": [
+      "05C65",
+      "05D10",
+      "03E02"
+    ],
+    "tags": [
+      "combinatorics",
+      "hypergraphs",
+      "ramsey-theory",
+      "extremal-combinatorics",
+      "frontiermath"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:e29b7c7f97d576b3ed72b968ca52f31df058e2442b68024fbb9020e451885cec"
+}

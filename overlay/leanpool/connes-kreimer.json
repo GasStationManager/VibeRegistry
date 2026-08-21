@@ -1,0 +1,56 @@
+{
+  "source": "leanpool",
+  "upstream_id": "connes-kreimer",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ConnesKreimer",
+  "version": 1,
+  "title": "Connes-Kreimer Hopf algebra of rooted trees",
+  "abstract": "Formalizes the planar Connes-Kreimer/Foissy Hopf algebra of rooted trees, its cut coproduct, bialgebra and Hopf algebra structures, the commutative quotient, Adams operators, and the Eulerian idempotent on the quotient.",
+  "authors": [
+    "Carles Marín"
+  ],
+  "repository": "https://github.com/karlesmarin/connes-kreimer-lean",
+  "commit": "",
+  "entry_module": "LeanPool.ConnesKreimer",
+  "declarations": [
+    "CK.instCKHopf",
+    "CK.instHabHopf",
+    "CK.eulerian1_idem_ab",
+    "CK.coassoc_map",
+    "PowerSeries.logOf_mul"
+  ],
+  "informal": {
+    "CK.instCKHopf": "Constructs the planar rooted-tree Connes-Kreimer/Foissy Hopf algebra as a Mathlib `HopfAlgebra`.",
+    "CK.instHabHopf": "Constructs the Hopf algebra structure on the commutative quotient of the planar rooted-tree algebra.",
+    "CK.eulerian1_idem_ab": "Proves that the first Eulerian idempotent is idempotent on the commutative quotient.",
+    "CK.coassoc_map": "Lifts the list-level cut coassociativity proof to equality of linear maps for the coproduct.",
+    "PowerSeries.logOf_mul": "Proves additivity of `PowerSeries.logOf` for power series with constant coefficient one."
+  },
+  "classification": {
+    "msc2020": [
+      "16T05",
+      "05C05",
+      "81T15"
+    ],
+    "tags": [
+      "hopf-algebras",
+      "rooted-trees",
+      "renormalization",
+      "combinatorics"
+    ],
+    "branch": "algebraic combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:a022869e66128bde968c2a64271c649312bcee0e13d0a677ec260b9c0755564f"
+}

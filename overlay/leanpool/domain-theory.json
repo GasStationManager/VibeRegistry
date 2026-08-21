@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "domain-theory",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/DomainTheory",
+  "version": 1,
+  "title": "DomainTheory",
+  "abstract": "Formalizes Dana Scott's domain theory through Scott information systems and PRG-19 neighbourhood systems, including approximable maps, products, function spaces, fixed points, recursive presentations, and initial-algebra constructions for denotational semantics.",
+  "authors": [
+    "Catskills Research Company"
+  ],
+  "repository": "https://github.com/catskillsresearch/domain_theory",
+  "commit": "",
+  "entry_module": "LeanPool.DomainTheory",
+  "declarations": [
+    "InfoSys",
+    "Domain.Neighborhood.NeighborhoodSystem",
+    "Domain.Neighborhood.ApproximableMap",
+    "Domain.Neighborhood.trianglelefteq_of_isInitial",
+    "ScottMap.fix_eq"
+  ],
+  "informal": {
+    "InfoSys": "Defines Scott information systems, with a distinguished bottom token, finite consistency predicate, entailment relation, and Scott's six axioms.",
+    "Domain.Neighborhood.NeighborhoodSystem": "Defines PRG-19 neighbourhood systems, Scott's neighbourhood presentation of domains.",
+    "Domain.Neighborhood.ApproximableMap": "Defines approximable maps between neighbourhood systems as relations preserving finite approximations.",
+    "Domain.Neighborhood.trianglelefteq_of_isInitial": "Proves that an initial algebra for a functor embeds into every other solution through Scott's subdomain relation.",
+    "ScottMap.fix_eq": "Proves the fixed-point equation for Scott-continuous self maps on complete lattices."
+  },
+  "classification": {
+    "msc2020": [
+      "03B70",
+      "06B35",
+      "68Q55"
+    ],
+    "tags": [
+      "domain-theory",
+      "denotational-semantics",
+      "information-systems"
+    ],
+    "branch": "domain theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:d2920e69e03db67b52ece84833ef1bfbc6f9d2ee07425b2ee6ab65e7957ecd1d"
+}

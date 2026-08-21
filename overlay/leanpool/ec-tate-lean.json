@@ -1,0 +1,64 @@
+{
+  "source": "leanpool",
+  "upstream_id": "ec-tate-lean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/EcTateLean",
+  "version": 1,
+  "title": "Weierstrass models and singular points for Tate's algorithm",
+  "abstract": "Formalizes Weierstrass models of elliptic curves over a commutative ring, their b- and c-invariants and discriminant, the change-of-coordinates group action, the discriminant's membership in the Jacobian ideal, and the construction of the singular point of a singular model over a perfect field, together with the Kronecker symbol and the Kodaira type enumeration.",
+  "authors": [
+    "Sacha H.",
+    "Sander R. Dahmen",
+    "Anne Baanen",
+    "Alex J. Best"
+  ],
+  "repository": "https://github.com/KisaraBlue/ec-tate-lean",
+  "commit": "",
+  "entry_module": "LeanPool.EcTateLean",
+  "declarations": [
+    "Model",
+    "Model.Field.isSingularPoint_singularPoint",
+    "Model.discr_identity",
+    "Model.rst_discr",
+    "Model.discr_in_jacobian_ideal",
+    "Model.discr_eq_zero_of_singular",
+    "Model.Field.move_singular_point_to_origin",
+    "Kodaira"
+  ],
+  "informal": {
+    "Model": "Defines a Weierstrass model of a possibly singular elliptic curve by its five a-invariants.",
+    "Model.discr_identity": "Proves the identity relating the discriminant to the c-invariants, 1728 * discr = c4^3 - c6^2.",
+    "Model.rst_discr": "Proves that the discriminant is invariant under the rst change-of-coordinates transformation.",
+    "Model.discr_in_jacobian_ideal": "Expresses the discriminant as an explicit combination of the Weierstrass polynomial and its partial derivatives, witnessing membership in the Jacobian ideal.",
+    "Model.discr_eq_zero_of_singular": "Proves that a model with a singular point has vanishing discriminant.",
+    "Model.Field.isSingularPoint_singularPoint": "Proves that the explicitly constructed singular point of a singular model over a perfect field is indeed a singular point (Connell, Proposition 1.5.4).",
+    "Model.Field.move_singular_point_to_origin": "Proves that the change of coordinates moving the singular point places it at the origin.",
+    "Kodaira": "Enumerates the Kodaira reduction types, including the extra types arising over imperfect residue fields of characteristic 2 or 3."
+  },
+  "classification": {
+    "msc2020": [
+      "11G05",
+      "11G07",
+      "14H52"
+    ],
+    "tags": [
+      "number-theory",
+      "elliptic-curves",
+      "algebraic-geometry"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:3570f361b4fa5cb7a11bd997b34f218a5977777ad42c405b0a02ecc9993fac13"
+}

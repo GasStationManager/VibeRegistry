@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "abc-exceptions",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ABCExceptions",
+  "version": 1,
+  "title": "Exceptional Set in the abc Conjecture",
+  "abstract": "Formalizes reductions and optimization bounds for a power-saving estimate on exceptional triples in the abc conjecture.",
+  "authors": [
+    "Bhavik Mehta",
+    "Arend Mellendijk"
+  ],
+  "repository": "https://github.com/b-mehta/ABC-Exceptions",
+  "commit": "",
+  "entry_module": "LeanPool.ABCExceptions",
+  "declarations": [
+    "abcConjecture_iff_countTriples",
+    "thm_4_point_3",
+    "refinedCountTriplesStar_isBigO_B"
+  ],
+  "informal": {
+    "abcConjecture_iff_countTriples": "Recasts the abc conjecture as a uniform big-O bound for bounded exceptional triples.",
+    "refinedCountTriplesStar_isBigO_B": "Bounds the refined exceptional-triple count by the dyadic structured-box supremum.",
+    "thm_4_point_3": "Derives the Section 4 optimization bound from the determinant, geometry, and Fourier hypotheses."
+  },
+  "classification": {
+    "msc2020": [
+      "11D75",
+      "11N37"
+    ],
+    "tags": [
+      "number-theory",
+      "analytic-number-theory",
+      "abc-conjecture"
+    ],
+    "branch": "analytic number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:2cda0bc3f7df62aca8372e892741f130f15b626ed7be94343fae1bde6b46a89a"
+}

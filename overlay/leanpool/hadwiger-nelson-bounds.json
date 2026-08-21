@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "hadwiger-nelson-bounds",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/HadwigerNelsonBounds",
+  "version": 1,
+  "title": "Known Bounds for the Hadwiger-Nelson Problem",
+  "abstract": "Formalizes the currently known bounds 5 <= chi(R^2) <= 7 for the chromatic number of the Euclidean plane. The upper bound constructs an explicit Isbell-style seven-coloring. The lower bound checks Parts' 481-vertex coloring certificate, develops a finite doubled triangular-lattice forcing gadget, proves its exact Euclidean embedding, and closes the four-color contradiction with a spindle construction. The exact chromatic number remains open.",
+  "authors": [
+    "Egor Lyfar"
+  ],
+  "repository": "https://github.com/lyfar/hadwiger-nelson-bounds-lean",
+  "commit": "",
+  "entry_module": "LeanPool.HadwigerNelsonBounds",
+  "declarations": [
+    "HadwigerNelsonBounds.hadwiger_nelson_known_bounds",
+    "HadwigerNelsonBounds.unitDistanceGraph_not_colorable_four",
+    "HadwigerNelsonBounds.chromaticNumber_le_seven"
+  ],
+  "informal": {
+    "HadwigerNelsonBounds.hadwiger_nelson_known_bounds": "The chromatic number of the unit-distance graph on the Euclidean plane lies between five and seven, inclusive.",
+    "HadwigerNelsonBounds.unitDistanceGraph_not_colorable_four": "The unit-distance graph on the Euclidean plane admits no proper coloring with four colors.",
+    "HadwigerNelsonBounds.chromaticNumber_le_seven": "An explicit Isbell-style coloring proves that the unit-distance graph on the Euclidean plane is colorable with seven colors."
+  },
+  "classification": {
+    "msc2020": [
+      "05C15",
+      "52C10"
+    ],
+    "tags": [
+      "graph-theory",
+      "geometric-graph-theory",
+      "graph-coloring",
+      "hadwiger-nelson"
+    ],
+    "branch": "graph theory and discrete geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:1f9d6bf380b0e1b510ae1b62d2dc4f5db434ef392c12373d8a35c918eccabed1"
+}

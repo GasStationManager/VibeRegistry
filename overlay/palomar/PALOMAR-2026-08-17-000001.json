@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-17-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-17-000001",
+  "version": 1,
+  "title": "rkirov/jordan_pick",
+  "abstract": "jordan_pick — Radó's theorem (Lean 4 / Mathlib)",
+  "authors": [
+    "Rado Kirov"
+  ],
+  "repository": "https://github.com/rkirov/jordan_pick",
+  "commit": "ccbcc61444864ceb7990ab6b1abb5238c4fc6243",
+  "project_path": "submission/rado_riemannSurface",
+  "declarations": [
+    "rado_riemannSurface"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV",
+      "math.GN"
+    ],
+    "msc2020": [
+      "30F20",
+      "30F15",
+      "30F25",
+      "30F99",
+      "54D65",
+      "32Q55",
+      "31A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-17T06:39:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ccbcc61444864ceb7990ab6b1abb5238c4fc6243",
+        "fork_repository": "PalomarArchive/rkirov--jordan_pick--96177826a785",
+        "source_repository": "rkirov/jordan_pick"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8775f49a02101bca857d6fd5174a1093f13e194a912f22b09e2d063b04f30e2f"
+}

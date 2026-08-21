@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "hsd-interior-point-lp",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/HSDInteriorPointLP",
+  "version": 1,
+  "title": "Homogeneous self-dual interior-point method for linear programming",
+  "abstract": "Formalizes a homogeneous self-dual interior-point method for linear programming, including primal-dual data, Newton block solvability from full row rank, fixed Ye-Todd-Mizuno predictor/corrector local estimates, contraction bounds, and logarithmic stopping certificates for generated iterates.",
+  "authors": [
+    "Makoto Yamashita"
+  ],
+  "repository": "https://github.com/makoto-yamashita/proof-on-a-homogeneous-self-dual-interior-point-method-for-linear-programming",
+  "commit": "",
+  "entry_module": "LeanPool.HSDInteriorPointLP",
+  "declarations": [
+    "HSDInteriorPointLP.YTM_fixed_local_theory_from_paper",
+    "HSDInteriorPointLP.HSDGeneratedAlgorithm.gap_stop_even_at_logPairBound",
+    "HSDInteriorPointLP.HSDGeneratedAlgorithm.mu_stop_even_at_logPairBound",
+    "HSDInteriorPointLP.HLP_newton_block_system_solvable_from_full_row_rank",
+    "HSDInteriorPointLP.YTM_contraction_power_le_exp"
+  ],
+  "informal": {
+    "HSDInteriorPointLP.YTM_fixed_local_theory_from_paper": "Packages the fixed Ye-Todd-Mizuno local theory, combining predictor and corrector estimates for the tight and wide central neighborhoods.",
+    "HSDInteriorPointLP.HSDGeneratedAlgorithm.gap_stop_even_at_logPairBound": "Proves that the generated even iterate satisfies the gap stopping test at the logarithmic pair bound.",
+    "HSDInteriorPointLP.HSDGeneratedAlgorithm.mu_stop_even_at_logPairBound": "Proves that the generated even iterate satisfies the duality-measure stopping test at the scaled logarithmic pair bound.",
+    "HSDInteriorPointLP.HLP_newton_block_system_solvable_from_full_row_rank": "Shows solvability of the Newton block system from the full-row-rank assumption through finite-dimensional linear algebra.",
+    "HSDInteriorPointLP.YTM_contraction_power_le_exp": "Bounds the fixed YTM contraction power by the corresponding exponential decay estimate."
+  },
+  "classification": {
+    "msc2020": [
+      "90C05",
+      "90C51"
+    ],
+    "tags": [
+      "linear-programming",
+      "interior-point-methods",
+      "optimization",
+      "homogeneous-self-dual"
+    ],
+    "branch": "linear optimization"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:d1398d96dab3f251fad438d1cb3597d6a2a81547a46217a3b6c6f13ea82d7974"
+}

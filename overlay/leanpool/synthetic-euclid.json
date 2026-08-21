@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "synthetic-euclid",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SyntheticEuclid4",
+  "version": 1,
+  "title": "Synthetic Euclidean geometry: Euclid's Elements Book I",
+  "abstract": "Formalizes Book I of Euclid's Elements via an axiomatic synthetic-geometry system (incidence, betweenness, congruence, and area), culminating in the Pythagorean theorem and its converse.",
+  "authors": [
+    "André Hernandez-Espiet",
+    "Vladimir Sedlacek"
+  ],
+  "repository": "https://github.com/ah1112/synthetic_euclid_4",
+  "commit": "",
+  "entry_module": "LeanPool.SyntheticEuclid4",
+  "declarations": [
+    "SyntheticEuclid4.pythagoras",
+    "SyntheticEuclid4.pythagoras_converse",
+    "SyntheticEuclid4.IncidenceGeometry",
+    "SyntheticEuclid4.square_of_len",
+    "SyntheticEuclid4.pythagoras_construct"
+  ],
+  "informal": {
+    "SyntheticEuclid4.IncidenceGeometry": "The axiomatic class of synthetic Euclidean geometry, bundling points, lines, circles, and the incidence, betweenness, congruence, and area primitives with Euclid's axioms.",
+    "SyntheticEuclid4.square_of_len": "Constructs a square on a given segment off a given line.",
+    "SyntheticEuclid4.pythagoras_construct": "Constructs the three squares and parallelograms on the sides of a triangle used in the proof of the Pythagorean theorem.",
+    "SyntheticEuclid4.pythagoras": "Euclid I.47, the Pythagorean theorem, that the square on the hypotenuse of a right triangle equals the sum of the squares on the other two sides.",
+    "SyntheticEuclid4.pythagoras_converse": "Euclid I.48, the converse of the Pythagorean theorem, that a triangle whose square areas satisfy the Pythagorean relation has a right angle."
+  },
+  "classification": {
+    "msc2020": [
+      "51M04"
+    ],
+    "tags": [
+      "euclidean-geometry",
+      "synthetic-geometry",
+      "pythagorean-theorem"
+    ],
+    "branch": "synthetic euclidean geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:28d97d38933fe27881f35816f8ad33ead737dd7a96dc1be2aa1fb9d10fc364d9"
+}

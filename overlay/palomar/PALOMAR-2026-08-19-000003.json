@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-19-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-19-000003",
+  "version": 1,
+  "title": "WillWhistler/Regts-Sevenster",
+  "abstract": "A Lean 4 formalization of the Regts–Sevenster conjecture, proved in both directions and resting on no assumption. A complex-valued graph parameter that is normalized at the empty graph and invariant under isomorphism has exponentially bounded edge-connection rank if and only if it is the partition function of a mixed edge-colouring model; and when the rank base is R the model may be taken with k even and ℓ odd colours satisfying k, 2ℓ ≤ ⌊2eR⌋. Nothing is assumed. Deligne's theorem on tensor categories, on which the forward direction rests, is itself proved in the development — in the fibre-functor form that is the substance of Deligne's own proof, and by a route through simple algebras in the ind-completion rather than his descent argument — and each of its hypotheses is discharged for a concretely constructed rigid symmetric monoidal envelope of the parameter's skein category. The symmetric-group character theory the argument needs is proved from Mathlib's linear algebra rather than cited, and the converse direction reproves Regts and Sevenster's own theorem. Every theorem of record depends only on propext, Classical.choice and Quot.sound, pinned in-tree so that a change to the axiom set is a build failure rather than a review task.",
+  "authors": [
+    "William Whistler"
+  ],
+  "repository": "https://github.com/WillWhistler/Regts-Sevenster",
+  "commit": "504ec6aada68b4472f32c4ad46452ff86614f732",
+  "project_path": null,
+  "declarations": [
+    "Certified.regts_sevenster",
+    "Certified.regts_sevenster_quant",
+    "Certified.regts_sevenster_converse",
+    "Certified.edgeRankBounded_of_mixedBounded",
+    "Certified.regts_sevenster_characterisation",
+    "Certified.regts_sevenster_quant_characterisation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.CT"
+    ],
+    "msc2020": [
+      "05C31",
+      "05C50",
+      "18M05",
+      "18M25",
+      "20C30",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-19T14:08:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "504ec6aada68b4472f32c4ad46452ff86614f732",
+        "fork_repository": "PalomarArchive/WillWhistler--Regts-Sevenster--a4b9e3ae19a0",
+        "source_repository": "WillWhistler/Regts-Sevenster"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2e23af6fd69db065b1335ce764a6b1aa82f28ec83d10b738a2051faf6101be19"
+}

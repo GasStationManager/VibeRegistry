@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "sumsthreesquares",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SumsThreeSquares",
+  "version": 1,
+  "title": "Sums of Three Squares",
+  "abstract": "Formalizes a blueprint step in the three-squares theorem using quadratic forms and geometry of numbers.",
+  "authors": [
+    "Bhavik Mehta",
+    "Pietro Monticone",
+    "Abel Donate Munoz"
+  ],
+  "repository": "https://github.com/pitmonticone/SumsThreeSquares",
+  "commit": "",
+  "entry_module": "LeanPool.SumsThreeSquares",
+  "declarations": [
+    "LeanPool.SumsThreeSquares.blueprint_case_mod8_eq3"
+  ],
+  "informal": {
+    "LeanPool.SumsThreeSquares.blueprint_case_mod8_eq3": "Proves the mod-8-equals-3 blueprint case for the three-squares theorem."
+  },
+  "classification": {
+    "msc2020": [
+      "11E25",
+      "11H06"
+    ],
+    "tags": [
+      "number-theory",
+      "quadratic-forms",
+      "geometry-of-numbers"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:e017f4aaee139c39dc40bec881bef72fa10360c2d8fbb651d3e07ad57741b19a"
+}

@@ -1,0 +1,58 @@
+{
+  "source": "leanpool",
+  "upstream_id": "frieze-patterns",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FriezePatterns",
+  "version": 1,
+  "title": "Maxima of Coxeter frieze patterns are Fibonacci numbers",
+  "abstract": "Formalizes the claim that the sequence of maxima of values of (Coxeter) arithmetic frieze patterns is the Fibonacci sequence, using a correspondence between arithmetic frieze patterns and n-flutes.",
+  "authors": [
+    "Antoine de Saint-Germain",
+    "Akselai",
+    "Jon Cheah",
+    "Bockman Cheung",
+    "Eaton Liu"
+  ],
+  "repository": "https://github.com/Antoine-dSG/frieze_patterns",
+  "commit": "",
+  "entry_module": "LeanPool.FriezePatterns",
+  "declarations": [
+    "main3",
+    "FluteBounded",
+    "glideSymm",
+    "translationInvariance"
+  ],
+  "informal": {
+    "main3": "Proves that the maximum value of an arithmetic frieze pattern of width n is exactly the n-th Fibonacci number, and that this bound is attained.",
+    "FluteBounded": "Proves that every entry of an n-flute is bounded above by the n-th Fibonacci number.",
+    "glideSymm": "Proves the glide-reflection symmetry of Coxeter frieze patterns.",
+    "translationInvariance": "Proves the (n+1)-periodicity (horizontal translation invariance) of Coxeter frieze patterns."
+  },
+  "classification": {
+    "msc2020": [
+      "05E15",
+      "11B39",
+      "13F60"
+    ],
+    "tags": [
+      "combinatorics",
+      "frieze-patterns",
+      "fibonacci",
+      "coxeter"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:41e8791857f4acf8d79c7c991f234b98c819c11e0a39bdebffc7463c7735a0c5"
+}

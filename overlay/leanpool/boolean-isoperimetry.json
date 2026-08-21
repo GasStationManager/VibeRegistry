@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "boolean-isoperimetry",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BooleanIsoperimetry",
+  "version": 1,
+  "title": "Boolean Isoperimetry and Conway--Guy Coherent Gaps",
+  "abstract": "Formalizes Harper's vertex-isoperimetric theorem for the Boolean cube: among all families of a fixed cardinality, the simplicial initial segment has the smallest closed radius-one Hamming neighborhood. Develops the supporting binomial-cascade identities, Kruskal--Katona shadow bounds, coordinate compressions, and the final dimension induction. Applies the coherent-gap certificate method to prove normalized consecutive-gap rigidity for the Conway--Guy sequence from its exact recurrence.",
+  "authors": [
+    "Alexey Milovanov",
+    "Egor Lyfar"
+  ],
+  "repository": "https://github.com/AlexeyMilovanov/BooleanIsoperimetry",
+  "commit": "",
+  "entry_module": "LeanPool.BooleanIsoperimetry",
+  "declarations": [
+    "BooleanIsoperimetry.harper_theorem",
+    "BooleanIsoperimetry.conwayGuyGapRigidity"
+  ],
+  "informal": {
+    "BooleanIsoperimetry.harper_theorem": "For every family of vertices in an n-dimensional Boolean cube, the simplicial initial segment of the same cardinality has a closed radius-one Hamming neighborhood no larger than that of the family.",
+    "BooleanIsoperimetry.conwayGuyGapRigidity": "In every dimension, any real row whose consecutive subset-sum gaps relative to the Conway--Guy reference row are at least one dominates that row coordinatewise."
+  },
+  "classification": {
+    "msc2020": [
+      "05D05",
+      "05C35"
+    ],
+    "tags": [
+      "additive-combinatorics",
+      "isoperimetry",
+      "boolean-cube",
+      "subset-sums",
+      "coherent-orders"
+    ],
+    "branch": "extremal and additive combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:2e2e80347354a141a9ff26d5a12921fc1aa2a2134c0fecc94f0f3bb5929972da"
+}

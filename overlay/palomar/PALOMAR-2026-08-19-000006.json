@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-19-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-19-000006",
+  "version": 1,
+  "title": "stalex444/arithmetic-of-time",
+  "abstract": "A kernel-checked chirality package for the Padovan substitution (0 ↦ 1, 1 ↦ 2, 2 ↦ 01 on Fin 3; its incidence matrix has characteristic polynomial x³ − x − 1, an orientation fact that is not used or compared). Three compared theorems, all at the iterate-factor level — they quantify over factors of the concrete words S^[n] [x], never over an abstract subshift. (1) The successor invariant: in every positive iterate from any seed, the letter 0 (\"a\") is immediately followed by 1 (\"b\"). (2) Chirality: the word 20 (\"ca\") is a factor of an iterate while its reversal 02 (\"ac\") is a factor of no iterate from any seed — the factor language reads differently backwards — proved from the invariant, with no enumeration on the ac side. (3) No palindromic factor: no factor of length ≥ 4 of any iterate from any seed (including the zeroth iterate) is a palindrome, via a complete length-≤5 window certificate for the seed a together with the index shift S [0] = [1], S [1] = [2], which exhibits every seed's iterate as a seed-a iterate.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/arithmetic-of-time",
+  "commit": "c48eb12817dd1d7ff3dc4d92306c7a4f249e6d7d",
+  "project_path": null,
+  "declarations": [
+    "ArithmeticOfTime.padovan_a_forces_b",
+    "ArithmeticOfTime.padovan_chirality",
+    "ArithmeticOfTime.padovan_no_long_palindrome"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.DS"
+    ],
+    "msc2020": [
+      "68R15",
+      "37B10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-19T23:11:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c48eb12817dd1d7ff3dc4d92306c7a4f249e6d7d",
+        "fork_repository": "PalomarArchive/stalex444--arithmetic-of-time--b101f6bdb410",
+        "source_repository": "stalex444/arithmetic-of-time"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1e6b00247e377586e644aa0c1c1b0b3652f076aa0b1ca8de70a99e8a9aa60dd3"
+}

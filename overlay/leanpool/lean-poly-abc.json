@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean-poly-abc",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LeanPolyABC",
+  "version": 1,
+  "title": "Polynomial ABC (Mason–Stothers) and its corollaries",
+  "abstract": "Formalizes the Mason–Stothers theorem (the polynomial ABC theorem) and derives the polynomial Fermat's Last Theorem, the Fermat–Catalan inequality, Davenport's theorem, and a no-parametrization corollary.",
+  "authors": [
+    "Seewoo Lee"
+  ],
+  "repository": "https://github.com/seewoo5/lean-poly-abc",
+  "commit": "",
+  "entry_module": "LeanPool.LeanPolyABC",
+  "declarations": [
+    "LeanPolyABC.Polynomial.abc",
+    "LeanPolyABC.Polynomial.flt",
+    "LeanPolyABC.Polynomial.flt_catalan"
+  ],
+  "informal": {
+    "LeanPolyABC.Polynomial.abc": "Mason–Stothers — for coprime non-constant polynomials with a+b=c, the max degree is below the degree of the radical of abc.",
+    "LeanPolyABC.Polynomial.flt": "The polynomial Fermat's Last Theorem — no nontrivial coprime polynomial solutions of aⁿ+bⁿ=cⁿ for n ≥ 3.",
+    "LeanPolyABC.Polynomial.flt_catalan": "The polynomial Fermat–Catalan inequality bounding solutions of aᵖ+bᵍ=cʳ."
+  },
+  "classification": {
+    "msc2020": [
+      "11C08",
+      "12E05"
+    ],
+    "tags": [
+      "number-theory",
+      "polynomials",
+      "algebra",
+      "mason-stothers"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:dbc4fbdfc62ab74f6b4d79a8646ad52041d75b7a3b4f879e7b93cbec8a037e9d"
+}

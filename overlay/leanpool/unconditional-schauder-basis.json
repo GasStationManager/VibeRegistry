@@ -1,0 +1,47 @@
+{
+  "source": "leanpool",
+  "upstream_id": "unconditional-schauder-basis",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/UnconditionalSchauderBasis",
+  "version": 1,
+  "title": "Unconditional Schauder Bases",
+  "abstract": "Develops an API for Schauder bases and unconditional Schauder bases of complete normed spaces, including ordered partial-sum convergence, rearrangement criteria for unconditionality, and an arbitrary-index variant built on unconditional summability, then proves a finite sign criterion: a family with dense closed span, nonzero vectors, and a uniform finite sign bound is the basis of an unconditional Schauder basis.",
+  "authors": [
+    "Daniel Smania"
+  ],
+  "repository": "https://github.com/SmaniaD/UnconditionalSchauderBasis",
+  "commit": "",
+  "entry_module": "LeanPool.UnconditionalSchauderBasis",
+  "declarations": [
+    "UnconditionalCriterion.exists_unconditionalSchauderBasis_of_finiteSignBound",
+    "UnconditionalCriterion.exists_unconditionalSchauderBasisAbstractIndex_of_finiteSignBound"
+  ],
+  "informal": {
+    "UnconditionalCriterion.exists_unconditionalSchauderBasis_of_finiteSignBound": "Finite sign criterion for sequences: if `x : ℕ → E` has dense closed linear span, every `x n` is nonzero, and finite sign changes are uniformly bounded by `C`, then `x` is the basis sequence of an unconditional Schauder basis.",
+    "UnconditionalCriterion.exists_unconditionalSchauderBasisAbstractIndex_of_finiteSignBound": "Abstract-index form of the finite sign criterion: under the same dense span, nonzero, and uniform finite sign bound hypotheses for an arbitrarily indexed family, there is an abstractly indexed unconditional Schauder basis whose basis family is exactly `x`."
+  },
+  "classification": {
+    "msc2020": [
+      "46B15"
+    ],
+    "tags": [
+      "functional-analysis",
+      "banach-spaces",
+      "schauder-bases"
+    ],
+    "branch": "functional analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:925f685f840d91a5027c89938ea736cf3103ba9a0dc1bb2ec67fc78a80524ad1"
+}

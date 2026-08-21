@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "polylean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Polylean",
+  "version": 1,
+  "title": "Polylean Unit Conjecture Counterexample",
+  "abstract": "Formalizes Gardam's counterexample to Kaplansky's Unit Conjecture, including the Promislow group, group rings, torsion-freeness of the group, and the non-trivial unit in 𝔽₂[P].",
+  "authors": [
+    "Siddhartha Gadgil",
+    "Anand Rao"
+  ],
+  "repository": "https://github.com/siddhartha-gadgil/Polylean",
+  "commit": "",
+  "entry_module": "LeanPool.Polylean",
+  "declarations": [
+    "LeanPool.Polylean.P.torsionFree",
+    "LeanPool.Polylean.Gardam.GardamTheorem"
+  ],
+  "informal": {
+    "LeanPool.Polylean.P.torsionFree": "Proves that the Promislow group used in Gardam's construction is torsion-free.",
+    "LeanPool.Polylean.Gardam.GardamTheorem": "Proves Gardam's counterexample to Kaplansky's Unit Conjecture by constructing a non-trivial unit in the group ring 𝔽₂[P]."
+  },
+  "classification": {
+    "msc2020": [
+      "16S34",
+      "20F65"
+    ],
+    "tags": [
+      "algebra",
+      "group-theory",
+      "ring-theory",
+      "unit-conjecture"
+    ],
+    "branch": "algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:d7e98297ffc509379006ad5102633255b4e37367b1d6629c9b6ea3c51a56d4ab"
+}

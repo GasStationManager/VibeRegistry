@@ -1,0 +1,47 @@
+{
+  "source": "leanpool",
+  "upstream_id": "pcf-theory",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PCFTheory",
+  "version": 1,
+  "title": "PCF Theory",
+  "abstract": "Formalizes foundational results from Shelah's Possible Cofinality theory, including the existence of club-guessing sequences.",
+  "authors": [
+    "YnirPaz"
+  ],
+  "repository": "https://github.com/YnirPaz/PCF-Theory",
+  "commit": "",
+  "entry_module": "LeanPool.PCFTheory",
+  "declarations": [
+    "Ordinal.exists_isClubGuessing_of_cof_uncountable"
+  ],
+  "informal": {
+    "Ordinal.exists_isClubGuessing_of_cof_uncountable": "Proves the existence of a club-guessing sequence on a stationary set whose elements share a common uncountable cofinality bounded by the cofinality of the ambient ordinal."
+  },
+  "classification": {
+    "msc2020": [
+      "03E04",
+      "03E10",
+      "03E55"
+    ],
+    "tags": [
+      "set-theory",
+      "cardinal-arithmetic",
+      "club-guessing"
+    ],
+    "branch": "set theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:e49c3a306404c37e88915321a5138aadf3b26db31d0fd36bf2052ab867159979"
+}

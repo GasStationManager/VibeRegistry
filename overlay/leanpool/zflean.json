@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "zflean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ZFLean",
+  "version": 1,
+  "title": "ZFLean",
+  "abstract": "Develops a practical ZFC set-theory framework with von Neumann naturals, integers, rationals, functions, embeddings, isomorphisms, booleans, and sums.",
+  "authors": [
+    "Vincent Trélat"
+  ],
+  "repository": "https://github.com/VTrelat/ZFLean",
+  "commit": "",
+  "entry_module": "LeanPool.ZFLean",
+  "declarations": [
+    "ZFSet.isIso_of_biembedding",
+    "ZFSet.ZFNat.induction",
+    "ZFSet.ZFInt.induction"
+  ],
+  "informal": {
+    "ZFSet.isIso_of_biembedding": "Proves a Cantor-Bernstein theorem for ZF sets.",
+    "ZFSet.ZFNat.induction": "Provides induction for the von Neumann natural numbers.",
+    "ZFSet.ZFInt.induction": "Provides induction for the quotient construction of ZF integers."
+  },
+  "classification": {
+    "msc2020": [
+      "03E30",
+      "03B35"
+    ],
+    "tags": [
+      "set-theory",
+      "zfc",
+      "foundations"
+    ],
+    "branch": "set theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:4f5c08423d8141ee892a2af15237eac4562d9a8285b230d324fb77e7aa59a43e"
+}

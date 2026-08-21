@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "shannon-1948-formalization",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Shannon1948Formalization",
+  "version": 1,
+  "title": "Shannon Entropy Characterization",
+  "abstract": "Formalizes Shannon's finite-alphabet characterization theorem for entropy from the 1948 paper.",
+  "authors": [
+    "Samuel Schlesinger"
+  ],
+  "repository": "https://github.com/SamuelSchlesinger/shannon-1948-formalization",
+  "commit": "",
+  "entry_module": "LeanPool.Shannon1948Formalization",
+  "declarations": [
+    "LeanPool.Shannon1948Formalization.entropyNat_unique",
+    "LeanPool.Shannon1948Formalization.entropyBase_unique",
+    "LeanPool.Shannon1948Formalization.entropyNat_shannonAxioms",
+    "LeanPool.Shannon1948Formalization.chain_rule",
+    "LeanPool.Shannon1948Formalization.entropyNat_joint_le_add"
+  ],
+  "informal": {
+    "LeanPool.Shannon1948Formalization.entropyNat_unique": "Proves that any finite-alphabet uncertainty functional satisfying Shannon's conditions equals natural-log entropy up to a positive scale.",
+    "LeanPool.Shannon1948Formalization.entropyBase_unique": "Restates the characterization for any logarithm base greater than one.",
+    "LeanPool.Shannon1948Formalization.entropyNat_shannonAxioms": "Proves the converse, showing that Shannon entropy satisfies the formal condition bundle.",
+    "LeanPool.Shannon1948Formalization.chain_rule": "Proves the finite joint-entropy chain rule.",
+    "LeanPool.Shannon1948Formalization.entropyNat_joint_le_add": "Proves subadditivity of finite joint entropy."
+  },
+  "classification": {
+    "msc2020": [
+      "94A17",
+      "60C05"
+    ],
+    "tags": [
+      "information-theory",
+      "entropy",
+      "probability"
+    ],
+    "branch": "information theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:fefaee4a3c16ca604df274a1e1f4824a78117e8ad72b2507b3aeb8c4abb9c340"
+}

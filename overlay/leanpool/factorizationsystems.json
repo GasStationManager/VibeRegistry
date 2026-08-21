@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "factorizationsystems",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FactorizationSystems",
+  "version": 1,
+  "title": "Factorization Systems",
+  "abstract": "Formalizes factorization systems, orthogonality, orthogonal complements, and the standard construction from weak factorization plus orthogonality.",
+  "authors": [
+    "Ivan Kobe"
+  ],
+  "repository": "https://github.com/ivankobe/FactorizationSystems",
+  "commit": "",
+  "entry_module": "LeanPool.FactorizationSystems",
+  "declarations": [
+    "CategoryTheory.FactorizationSystemCharacterization",
+    "CategoryTheory.FactorizationSystem",
+    "CategoryTheory.orthogonal",
+    "CategoryTheory.right_orthogonal_complement"
+  ],
+  "informal": {
+    "CategoryTheory.FactorizationSystem": "Defines factorization systems on a category with specified left and right classes.",
+    "CategoryTheory.FactorizationSystemCharacterization": "Constructs a factorization system from repleteness, weak factorizations, and orthogonality.",
+    "CategoryTheory.orthogonal": "Defines orthogonality of two morphisms by existence and uniqueness of diagonal fillers.",
+    "CategoryTheory.right_orthogonal_complement": "Defines the right orthogonal complement of a morphism property."
+  },
+  "classification": {
+    "msc2020": [
+      "18A32",
+      "18A40"
+    ],
+    "tags": [
+      "category-theory",
+      "factorization-systems",
+      "orthogonality"
+    ],
+    "branch": "category theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:7ab65aeb3485edcd2cecde287ee51b91f11ffd003525cd852124f34864508e46"
+}

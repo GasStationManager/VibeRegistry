@@ -1,0 +1,62 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean4-itree",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Lean4Itree",
+  "version": 1,
+  "title": "Coinductive Interaction Trees using QPFs",
+  "abstract": "Formalizes coinductive interaction trees as the M-type of a polynomial functor (via Mathlib QPFs), proving the lawful functor and monad structure, a bisimulation equality coinciding with propositional equality, and iteration and effect-handler interpretation combinators, supported by a vendored parameterized-coinduction (Paco) library.",
+  "authors": [
+    "Paul Mure",
+    "Joonhyup Lee"
+  ],
+  "repository": "https://github.com/mit-plv/lean4-itree",
+  "commit": "",
+  "entry_module": "LeanPool.Lean4Itree",
+  "declarations": [
+    "Lean4Itree.ITree",
+    "Lean4Itree.ITree.ieq_iff_eq",
+    "Lean4Itree.plfp_acc",
+    "Lean4Itree.ITree.IEq",
+    "Lean4Itree.ITree.bind_assoc",
+    "Lean4Itree.ITree.iter",
+    "Lean4Itree.ITree.interp"
+  ],
+  "informal": {
+    "Lean4Itree.ITree": "Defines the coinductive interaction tree as the final coalgebra (M-type) of the interaction-tree polynomial functor.",
+    "Lean4Itree.ITree.IEq": "Defines bisimulation equality between interaction trees as a coinductive fixed point.",
+    "Lean4Itree.ITree.ieq_iff_eq": "Proves that bisimulation equality of interaction trees coincides with propositional equality.",
+    "Lean4Itree.ITree.bind_assoc": "Proves associativity of monadic bind for interaction trees, part of the LawfulMonad instance.",
+    "Lean4Itree.ITree.iter": "Defines the iteration combinator producing an interaction tree from a step function.",
+    "Lean4Itree.ITree.interp": "Defines interpretation of an interaction tree against an effect handler into an arbitrary iterable monad.",
+    "Lean4Itree.plfp_acc": "Proves the accumulation principle for the parameterized least fixed point underlying the Paco coinduction library."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q55",
+      "18C50",
+      "68N18"
+    ],
+    "tags": [
+      "coinduction",
+      "interaction-trees",
+      "monads",
+      "qpf",
+      "semantics"
+    ],
+    "branch": "coinduction and semantics"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:4242931c798813a292d1b0fa4cdd0b58dd8485b402a0d37d99b622022d5a41f0"
+}

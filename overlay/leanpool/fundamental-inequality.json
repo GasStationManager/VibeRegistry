@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "fundamental-inequality",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FundamentalInequality",
+  "version": 1,
+  "title": "The Fundamental Inequality of Valued Fields",
+  "abstract": "Defines the ramification index and residue degree of an extension of valued fields and proves the fundamental inequality e * f ≤ finrank K L for finite extensions, via the valuation independence of products of coset representatives and residue-field basis lifts.",
+  "authors": [
+    "Alessandro Linzi"
+  ],
+  "repository": "https://github.com/linzialessandro/FundamentalInequality",
+  "commit": "",
+  "entry_module": "LeanPool.FundamentalInequality",
+  "declarations": [
+    "Valuation.fundamentalInequality",
+    "Valuation.ramificationIndex",
+    "Valuation.residueDegree",
+    "Valuation.valuation_independence"
+  ],
+  "informal": {
+    "Valuation.ramificationIndex": "Defines the ramification index e(w/v) as the relative index of the value group of the restricted valuation inside the value group of the extension.",
+    "Valuation.residueDegree": "Defines the residue degree f(w/v) as the rank of the residue field extension.",
+    "Valuation.valuation_independence": "Elements with valuations in distinct cosets and residues that are linearly independent give products that are linearly independent over the base field.",
+    "Valuation.fundamentalInequality": "The fundamental inequality e(w/v) * f(w/v) ≤ finrank K L for finite extensions of valued fields."
+  },
+  "classification": {
+    "msc2020": [
+      "12J20"
+    ],
+    "tags": [
+      "valued-fields",
+      "number-theory",
+      "valuation-theory"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:230dec59cd75efce6fcec11e357573cb35211646b96f1afd88ab20c4d016df01"
+}

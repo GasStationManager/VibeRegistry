@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "chudnovsky",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Chudnovsky",
+  "version": 1,
+  "title": "A Detailed Proof of the Chudnovsky Formula",
+  "abstract": "Formalizes the Chudnovsky brothers' rapidly convergent series for 1/π, proving Mathlib's `chudnovskySum = π⁻¹`. Follows Milla's elementary complex-analytic proof: Weierstrass and Eisenstein theory, Liouville and parallelogram-residue calculus, the Kummer hypergeometric bridge and the main modular identity relating the j-invariant to the lattice periods, Baker's division-value machinery, and the singular-moduli inputs at the CM point τ = (1 + √-163)/2 — integrality of j(τ) via modular polynomials and Kronecker's congruence, and rationality of the Weierstrass s₂ invariant via Masser's Appendix A.1.",
+  "authors": [
+    "Xuanji Li"
+  ],
+  "repository": "https://github.com/ldct/lean-eval-chudnovsky",
+  "commit": "",
+  "entry_module": "LeanPool.Chudnovsky",
+  "declarations": [
+    "Chudnovsky.chudnovskySum_eq_pi_inv"
+  ],
+  "informal": {
+    "Chudnovsky.chudnovskySum_eq_pi_inv": "Proves the Chudnovsky series identity, i.e. Mathlib's `chudnovskySum = π⁻¹`: the series (12 / 640320^(3/2)) · ∑ₙ (-1)ⁿ (6n)! (545140134 n + 13591409) / ((3n)! (n!)³ 640320^(3n)) sums to 1/π."
+  },
+  "classification": {
+    "msc2020": [
+      "11Y60",
+      "11F03",
+      "33C05"
+    ],
+    "tags": [
+      "number-theory",
+      "pi",
+      "chudnovsky",
+      "modular-forms",
+      "complex-multiplication"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:1cf67b1479ed90709d06eca31ed2bad07c25e1f4fe4adca9478d2d5a5e0878ae"
+}

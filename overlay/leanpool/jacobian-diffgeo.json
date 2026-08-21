@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "jacobian-diffgeo",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/JacobianDiffgeo",
+  "version": 1,
+  "title": "The Jacobian of a Compact Riemann Surface",
+  "abstract": "Constructs the Jacobian of a compact Riemann surface as the period-lattice quotient of the dual of holomorphic 1-forms, and proves the surrounding theory it needs: the genus as the dimension of the space of holomorphic 1-forms, discreteness and full rank 2g of the period lattice, the Abel-Jacobi map and its injectivity in positive genus, functoriality (pushforward, pullback, degree, and the projection formula), Riemann-Roch, Serre duality via Laurent tails, the residue theorem, the Dolbeault-Cech comparison, and finite dimensionality of the first cohomology by a Schwartz/Montel argument. The headline no-hack guard is that the genus vanishes exactly when the surface is homeomorphic to the sphere.",
+  "authors": [
+    "Rado Kirov"
+  ],
+  "repository": "https://github.com/rkirov/jacobian-fable",
+  "commit": "",
+  "entry_module": "LeanPool.JacobianDiffgeo",
+  "declarations": [
+    "genus_eq_zero_iff_homeo",
+    "Jacobian.ofCurve_inj",
+    "Jacobian.pushforward_pullback"
+  ],
+  "informal": {
+    "genus_eq_zero_iff_homeo": "A compact connected Riemann surface has genus zero if and only if it is homeomorphic to the 2-sphere.",
+    "Jacobian.ofCurve_inj": "The Abel-Jacobi map of a compact Riemann surface of positive genus is injective: two points with the same image coincide.",
+    "Jacobian.pushforward_pullback": "For a non-constant holomorphic map between compact Riemann surfaces, the pushforward composed with the pullback on Jacobians is multiplication by the degree of the map."
+  },
+  "classification": {
+    "msc2020": [
+      "14H40",
+      "30F30",
+      "32G20"
+    ],
+    "tags": [
+      "riemann-surfaces",
+      "complex-geometry",
+      "abel-jacobi",
+      "riemann-roch",
+      "serre-duality"
+    ],
+    "branch": "complex analysis and geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:17bd8d9fa0d83a78f29749fd895a1dfb894f36442820424264aee8d8198c0c07"
+}

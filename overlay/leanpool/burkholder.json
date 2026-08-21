@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "burkholder",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Burkholder",
+  "version": 1,
+  "title": "Burkholder Martingale Transform Inequality",
+  "abstract": "Formalizes Burkholder's sharp Lp inequality for real-valued martingale transforms: if `f` is a discrete martingale and `w` a predictable multiplier bounded by `1`, then the Lp norm of the transform `w ⋆ₘ f` is at most `(pStar p - 1)` times the Lp norm of `f`, where `pStar p` is the maximum of `p` and its conjugate exponent. The proof builds the Burkholder special function as a majorant of the relevant payoff in each exponent regime (`1 < p < 2`, `p = 2`, `p > 2`).",
+  "authors": [
+    "Daniel Smania"
+  ],
+  "repository": "https://github.com/SmaniaD/Burkholder",
+  "commit": "",
+  "entry_module": "LeanPool.Burkholder",
+  "declarations": [
+    "MeasureTheory.Lp_Burkholder_inequality_martingaleTransform",
+    "MeasureTheory.martingaleTransform_martingale",
+    "Majorants.exists_majorant_p_g_1"
+  ],
+  "informal": {
+    "MeasureTheory.Lp_Burkholder_inequality_martingaleTransform": "The sharp Lp Burkholder inequality: for a discrete martingale `f` and a predictable multiplier `w` with `|w n| ≤ 1`, the Lp norm of the martingale transform `(w ⋆ₘ f) n` is bounded by `(pStar p - 1)` times the Lp norm of `f n`.",
+    "MeasureTheory.martingaleTransform_martingale": "The martingale transform of a martingale by a strongly predictable bounded multiplier is itself a martingale.",
+    "Majorants.exists_majorant_p_g_1": "For every exponent `p > 1` there exists a Burkholder majorant, the special function dominating the payoff and driving the inequality."
+  },
+  "classification": {
+    "msc2020": [
+      "60G42"
+    ],
+    "tags": [
+      "probability",
+      "martingales",
+      "burkholder-inequality"
+    ],
+    "branch": "probability"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:2d0a6cc1ae6a0e216e29aa9381417445bf8a79c0309a03fb9ef9f02f01dd67fa"
+}

@@ -1,0 +1,56 @@
+{
+  "source": "leanpool",
+  "upstream_id": "zeta-h123",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ZetaH123",
+  "version": 1,
+  "title": "Thakur's hypotheses on power sums of F_q[t]",
+  "abstract": "Formalizes four components of Thakur's hypotheses on power sums over finite polynomial rings, including uniqueness and monotonicity results for the carry-free digit optimization problems and the Laurent-series expansion of finite-field power sums.",
+  "authors": [
+    "Evan Chen",
+    "Kenny Lau",
+    "Ken Ono",
+    "Jujian Zhang"
+  ],
+  "repository": "https://github.com/AxiomMath/zeta-h123",
+  "commit": "",
+  "entry_module": "LeanPool.ZetaH123",
+  "declarations": [
+    "ZetaH123.H1.main_theorem",
+    "ZetaH123.Lem41.main",
+    "ZetaH123.H2.main",
+    "ZetaH123.H3.main_theorem"
+  ],
+  "informal": {
+    "ZetaH123.H1.main_theorem": "Proves uniqueness of the admissible base-q decomposition maximizing the H1 power-sum weight functional.",
+    "ZetaH123.H2.main": "Proves the H2 unique-minimizer statement for the recursive digit/carry-free optimization problem defining the values s_d(k).",
+    "ZetaH123.H3.main_theorem": "Proves the H3 monotonicity statement that s_d(k) is strictly less than s_d(k+1) when p does not divide k.",
+    "ZetaH123.Lem41.main": "Proves the Lemma 4.1 Laurent-series expansion for S_d(k), with nonzero coefficients indexed by the carry-free tuples."
+  },
+  "classification": {
+    "msc2020": [
+      "11M38",
+      "11T55",
+      "11G09"
+    ],
+    "tags": [
+      "number-theory",
+      "function-fields",
+      "zeta-functions"
+    ],
+    "branch": "number theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:92360eda24aa558c97ab518f55f7a2e0c77093bcfd8d1651df2255dcdb8206a2"
+}

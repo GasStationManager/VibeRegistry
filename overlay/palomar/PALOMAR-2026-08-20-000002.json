@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-20-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-20-000002",
+  "version": 1,
+  "title": "yuanchenyang/lean_low_rank_univariate_sos",
+  "abstract": "A Lean 4 formalization of the main theorem of Legat, Yuan and Parrilo, \"Low-Rank Univariate Sum of Squares Has No Spurious Local Minima\" (SIAM J. Optim. 33(3), 2023). For a real univariate polynomial p and a pair of polynomials u = (u₁, u₂), consider the quadratically penalized Burer–Monteiro objective f_p(u) = ‖σ(u) - p‖² with σ(u) = u₁² + u₂², the norm coming from any inner product on ℝ[x]. The formalized theorem states that if p is a sum of two squares (which is the case for any nonnegative  univariate polynomial) and u is a second-order critical point of f_p (vanishing gradient and positive semidefinite Hessian, Definition 3.1 of the paper), then σ(u) = p, equivalently f_p(u) = 0; hence every SOCP, and in particular every local minimum, is a global minimum. The development follows the paper's proof: the gcd decomposition u = a·u₀ with u₀ coprime, the observation that σ(u₀) has no real roots, a Bézout-based \"hgroup\" lemma writing a sum of squares p as g·q + s·σ(u₀) with s a sum of squares when g and σ(u₀) are coprime, the factor-peeling argument that replaces the quadratic factors of a shared with σ(u₀) by X², and the final certificate argument combining the first- and second-order conditions.",
+  "authors": [
+    "Chenyang Yuan"
+  ],
+  "repository": "https://github.com/yuanchenyang/lean_low_rank_univariate_sos",
+  "commit": "1fccd921a4530a088ab6e230f832041ab3c5c7f3",
+  "project_path": null,
+  "declarations": [
+    "LowRankUnivariateSOS.rankTwo_no_spurious_socp"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC",
+      "math.AG"
+    ],
+    "msc2020": [
+      "90C23",
+      "90C26",
+      "90C22",
+      "12D15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T00:36:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1fccd921a4530a088ab6e230f832041ab3c5c7f3",
+        "fork_repository": "PalomarArchive/yuanchenyang--lean_low_rank_univariate_sos--99a6cdb210e0",
+        "source_repository": "yuanchenyang/lean_low_rank_univariate_sos"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1b791abaa6528cecf49e751137bdd204ac9140cc7447d59d3205164ab1c5d222"
+}

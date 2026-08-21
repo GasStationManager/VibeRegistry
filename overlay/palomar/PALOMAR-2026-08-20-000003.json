@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-20-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-20-000003",
+  "version": 1,
+  "title": "catskillsresearch/cardb",
+  "abstract": "A Lean formalization of an exact enumeration identity and two consequences: for a finite type α, the number of families B ⊆ Set α that are topological bases equals the sum, over all topologies τ on α, of 2^(|τ| − |M_τ|), where M_τ is the canonical minimal basis of minimal open neighbourhoods (Mathlib's nhdsKer {x} at each point). Kernel-reducible enumeration gives the exact table #(0)=2, #(1)=2, #(2)=10, #(3)=142. A quantitative sandwich then shows that the discrete fiber 2^(2^N − N) dominates: for N ≥ 2 the remaining fibers contribute at most 2^(N(N−1) + 3·2^(N−2)), the ratio to the discrete term tends to 1, and for N ≥ 10 the total is at most twice the discrete term. The argument is a fiber decomposition: every finite topology is Alexandrov-discrete, the minimal neighbourhoods generate it, and the bases generating τ are exactly the families B with M_τ ⊆ B ⊆ {U | τ.IsOpen U}. The informal account is the companion note CARDB.md in this repository. The Lean source was written by AI agents under the direction and review of the author. There is no sorry outside the deliberate holes in Challenge.lean, no project-defined axiom, and Mathlib is the only Lake dependency.",
+  "authors": [
+    "Lars Warren Ericson"
+  ],
+  "repository": "https://github.com/catskillsresearch/cardb",
+  "commit": "d8c1d63052a18db0c43d44c1c77fb10ca8902ed0",
+  "project_path": null,
+  "declarations": [
+    "card_valid_bases",
+    "card_valid_bases_small",
+    "card_valid_bases_bounds",
+    "card_valid_bases_dominated",
+    "card_valid_bases_asymptotic"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN",
+      "math.CO"
+    ],
+    "msc2020": [
+      "54A05",
+      "05A15",
+      "54A10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T01:23:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d8c1d63052a18db0c43d44c1c77fb10ca8902ed0",
+        "fork_repository": "PalomarArchive/catskillsresearch--cardb--9073a5b05dee",
+        "source_repository": "catskillsresearch/cardb"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cdf591f59228d80113a1baa3d74c26fffa3b9c0d2b34333db282d416f832a47b"
+}

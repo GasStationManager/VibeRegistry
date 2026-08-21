@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "pythagorean-polynomial-parametrization",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PythagoreanPolynomialParametrization",
+  "version": 1,
+  "title": "Polynomial parametrizations of Pythagorean triples",
+  "abstract": "Formalizes Frisch and Vaserstein's result that Pythagorean triples are not parametrizable by one triple of integer-coefficient polynomials in any number of variables, but are parametrizable by a single triple of integer-valued rational polynomials, including the positive and sixteen-parameter variants.",
+  "authors": [
+    "Lazar Milikic"
+  ],
+  "repository": "https://github.com/epfl-lara/AutoformalizedProjects",
+  "commit": "",
+  "entry_module": "LeanPool.PythagoreanPolynomialParametrization",
+  "declarations": [
+    "LeanPool.PythagoreanPolynomialParametrization.exists_int_valued_parametrization",
+    "LeanPool.PythagoreanPolynomialParametrization.no_int_poly_parametrization",
+    "LeanPool.PythagoreanPolynomialParametrization.positive_triples_parametrization",
+    "LeanPool.PythagoreanPolynomialParametrization.exists_16_param_parametrization",
+    "LeanPool.PythagoreanPolynomialParametrization.single_intValued_parametrization_yields_finite_intPoly_parametrization",
+    "LeanPool.PythagoreanPolynomialParametrization.integerValued_polynomial_ring_not_uniqueFactorization"
+  ],
+  "informal": {
+    "LeanPool.PythagoreanPolynomialParametrization.no_int_poly_parametrization": "Proves that no single triple of integer-coefficient polynomials in any number of variables parametrizes all Pythagorean triples.",
+    "LeanPool.PythagoreanPolynomialParametrization.exists_int_valued_parametrization": "Gives the explicit four-variable integer-valued polynomial parametrization of all Pythagorean triples.",
+    "LeanPool.PythagoreanPolynomialParametrization.positive_triples_parametrization": "Formalizes the positive Pythagorean-triple parametrization with positive parameters and a nonnegative auxiliary parameter.",
+    "LeanPool.PythagoreanPolynomialParametrization.exists_16_param_parametrization": "Converts the positive parametrization to an unrestricted sixteen-integer-parameter parametrization using the four-square theorem.",
+    "LeanPool.PythagoreanPolynomialParametrization.single_intValued_parametrization_yields_finite_intPoly_parametrization": "Proves the cited reduction from one integer-valued polynomial tuple to finitely many integer-coefficient polynomial tuples.",
+    "LeanPool.PythagoreanPolynomialParametrization.integerValued_polynomial_ring_not_uniqueFactorization": "Records the integer-valued polynomial ring non-UFD phenomenon behind the paper's motivating discussion."
+  },
+  "classification": {
+    "msc2020": [
+      "11D09",
+      "11D85",
+      "13F20"
+    ],
+    "tags": [
+      "number-theory",
+      "pythagorean-triples",
+      "integer-valued-polynomials"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:7722d0a452c23563f01e1b7f4deb23b3491c3a11cc41ae2255f45ff1d07aade0"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "quasi-borel-spaces",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/QuasiBorelSpaces",
+  "version": 1,
+  "title": "Quasi-Borel Spaces",
+  "abstract": "Formalizes quasi-Borel spaces and quasi-Borel pre-domains, a category for higher-order probability theory.",
+  "authors": [
+    "Anthony Vandikas",
+    "Kiarash Sotoudeh"
+  ],
+  "repository": "https://github.com/YellPika/quasi-borel-spaces",
+  "commit": "",
+  "entry_module": "LeanPool.QuasiBorelSpaces",
+  "declarations": [
+    "QuasiBorelSpace",
+    "OmegaQuasiBorelSpace",
+    "QuasiBorelSpace.ProbabilityMeasure",
+    "QuasiBorelSpace.IsHom"
+  ],
+  "informal": {
+    "QuasiBorelSpace": "Defines a quasi-Borel space as a type with a set of random variables closed under constants, measurable precomposition, and gluing.",
+    "QuasiBorelSpace.IsHom": "Defines morphisms of quasi-Borel spaces as maps that preserve random variables under precomposition.",
+    "OmegaQuasiBorelSpace": "Combines the quasi-Borel and ω-complete partial order structures with the compatibility axiom of Vakar-Kammar-Staton.",
+    "QuasiBorelSpace.ProbabilityMeasure": "Defines the probability-measure monad on quasi-Borel spaces by quotienting pre-probability measures by integral equivalence."
+  },
+  "classification": {
+    "msc2020": [
+      "60A05",
+      "18C50",
+      "68Q55"
+    ],
+    "tags": [
+      "probability",
+      "category-theory",
+      "measure-theory",
+      "denotational-semantics"
+    ],
+    "branch": "probability theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:d638a34f09104279f05d45306eb30cd7556370022f2208e60f48ca663a108c59"
+}

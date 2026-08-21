@@ -1,0 +1,46 @@
+{
+  "source": "leanpool",
+  "upstream_id": "rl-theory-in-lean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/RlTheoryInLean",
+  "version": 1,
+  "title": "RL Theory in Lean",
+  "abstract": "Develops probability, Markov-chain, and stochastic-matrix infrastructure for reinforcement-learning theory.",
+  "authors": [
+    "Shangtong Zhang"
+  ],
+  "repository": "https://github.com/ShangtongZhang/rl-theory-in-lean",
+  "commit": "",
+  "entry_module": "LeanPool.RlTheoryInLean",
+  "declarations": [
+    "StochasticMatrix.stationary_distribution_exists"
+  ],
+  "informal": {
+    "StochasticMatrix.stationary_distribution_exists": "Proves existence of a stationary distribution for a stochastic matrix."
+  },
+  "classification": {
+    "msc2020": [
+      "62L20",
+      "60J10"
+    ],
+    "tags": [
+      "probability",
+      "reinforcement-learning",
+      "stochastic-matrices"
+    ],
+    "branch": "probability theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:b324bc7c77b32544d917e065080a37c09517a1f0b4333d22bbc3edbd171104c5"
+}

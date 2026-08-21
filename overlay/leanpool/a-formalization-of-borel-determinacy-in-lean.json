@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "a-formalization-of-borel-determinacy-in-lean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/AFormalizationOfBorelDeterminacyInLean",
+  "version": 1,
+  "title": "A formalization of Borel determinacy in Lean",
+  "abstract": "Formalizes Martin's theorem that every Borel Gale-Stewart game is determined.",
+  "authors": [
+    "Sven Manthe"
+  ],
+  "repository": "https://github.com/sven-manthe/A-formalization-of-Borel-determinacy-in-Lean",
+  "commit": "",
+  "entry_module": "LeanPool.AFormalizationOfBorelDeterminacyInLean",
+  "declarations": [
+    "GaleStewartGame.borel_determinacy",
+    "GaleStewartGame.Games.borel_determinacy"
+  ],
+  "informal": {
+    "GaleStewartGame.borel_determinacy": "Proves that every Borel Gale-Stewart game on a nonempty discrete alphabet is determined.",
+    "GaleStewartGame.Games.borel_determinacy": "Proves Borel determinacy for the bundled game representation used in the formalization."
+  },
+  "classification": {
+    "msc2020": [
+      "03E15",
+      "54H05",
+      "91A44"
+    ],
+    "tags": [
+      "descriptive-set-theory",
+      "game-theory",
+      "determinacy"
+    ],
+    "branch": "descriptive set theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:023a30c53e9a2664cacc7563d1bfd679d34b89c51df93a0f801cfbaf0f114da6"
+}

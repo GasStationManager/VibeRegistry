@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "zhang-yeung-inequality",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ZhangYeungInequality",
+  "version": 1,
+  "title": "The Zhang-Yeung non-Shannon information inequality",
+  "abstract": "Formalizes the Zhang-Yeung inequality, the first known non-Shannon-type entropy inequality, together with its dual and averaged forms derived through the copy lemma.",
+  "authors": [
+    "Christopher Boone"
+  ],
+  "repository": "https://github.com/cboone/zhang-yeung-inequality",
+  "commit": "",
+  "entry_module": "LeanPool.ZhangYeungInequality",
+  "declarations": [
+    "ZhangYeung.zhangYeung",
+    "ZhangYeung.zhangYeung_dual",
+    "ZhangYeung.zhangYeung_averaged"
+  ],
+  "informal": {
+    "ZhangYeung.zhangYeung": "Proves the Zhang-Yeung non-Shannon-type information inequality for four discrete random variables.",
+    "ZhangYeung.zhangYeung_dual": "Proves the dual form of the Zhang-Yeung inequality.",
+    "ZhangYeung.zhangYeung_averaged": "Proves the averaged symmetric form of the Zhang-Yeung inequality."
+  },
+  "classification": {
+    "msc2020": [
+      "94A17",
+      "94A15"
+    ],
+    "tags": [
+      "information-theory",
+      "entropy",
+      "non-shannon-inequality"
+    ],
+    "branch": "information theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:e1085e87d63a56fd3fca3a61033a6044acc8ed94df8b0ba2983d5d107b2749bd"
+}

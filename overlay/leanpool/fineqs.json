@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "fineqs",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Fineqs",
+  "version": 1,
+  "title": "FinEqs - reducing equations defining a subset of n-space over a finite field",
+  "abstract": "Formalizes the finite-field equation-reduction theorem and sharpness examples.",
+  "authors": [
+    "Stefan Barańczuk",
+    "Aristotle"
+  ],
+  "repository": "https://github.com/nasqret/fineqs",
+  "commit": "",
+  "entry_module": "LeanPool.Fineqs",
+  "declarations": [
+    "LeanPool.Fineqs.theorem_1",
+    "LeanPool.Fineqs.prop_1",
+    "LeanPool.Fineqs.corollary_2",
+    "LeanPool.Fineqs.corollary_3",
+    "LeanPool.Fineqs.remark_example"
+  ],
+  "informal": {
+    "LeanPool.Fineqs.theorem_1": "Reduces equations on a small finite set to at most n equations in the same span.",
+    "LeanPool.Fineqs.prop_1": "Shows the cardinality bound in the reduction theorem is sharp.",
+    "LeanPool.Fineqs.corollary_2": "Applies the reduction theorem to affine space over a finite field.",
+    "LeanPool.Fineqs.corollary_3": "Applies the reduction theorem to nonempty projective zero loci.",
+    "LeanPool.Fineqs.remark_example": "Shows n - 1 coordinate-function combinations have at least q common zeros."
+  },
+  "classification": {
+    "msc2020": [
+      "14G15",
+      "11T06"
+    ],
+    "tags": [
+      "number-theory",
+      "finite-fields",
+      "algebraic-geometry"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:299e9b972a4d41e07579a80d63f5016cfe4ca40d96faa1a6ddfe4f09ebca907c"
+}

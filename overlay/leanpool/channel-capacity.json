@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "channel-capacity",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ChannelCapacity",
+  "version": 1,
+  "title": "Uniqueness of Shannon Capacity-Achieving Priors",
+  "abstract": "Formalizes uniqueness of the capacity-achieving input distribution for a Markov-kernel channel in three aligned layers: a finite-alphabet theorem (compactness, continuity, and strict concavity of mutual information on Mathlib's weak topology for `ProbabilityMeasure`), a concrete discharged theorem for compact-Polish channels with a common strictly positive jointly continuous density, and a general measure-theoretic packaging that isolates the abstract well-conditioning hypotheses, plus a counterexample showing pairwise-distinct rows do not give an injective prior pushforward (the non-degeneracy required for uniqueness).",
+  "authors": [
+    "Adam Benenson"
+  ],
+  "repository": "https://github.com/abenenson/channel-capacity",
+  "commit": "",
+  "entry_module": "LeanPool.ChannelCapacity",
+  "declarations": [
+    "ChannelCapacity.exists_unique_capacity_achieving_prior_of_finite",
+    "ChannelCapacity.exists_unique_capacity_achieving_prior_discharged",
+    "ChannelCapacity.exists_unique_capacity_achieving_prior"
+  ],
+  "informal": {
+    "ChannelCapacity.exists_unique_capacity_achieving_prior_of_finite": "For a Markov kernel between finite alphabets (nonempty input) whose rows are linearly independent (`Kernel.RowMatrixFullRank`), a capacity-achieving input prior exists and is unique.",
+    "ChannelCapacity.exists_unique_capacity_achieving_prior_discharged": "For compact-Polish channels with a common strictly positive jointly continuous density, given injectivity of the prior-pushforward map and upper semicontinuity of mutual information (the latter carried as a field of `Kernel.ContinuousPositiveDensity`, not derived), the capacity-achieving prior is unique.",
+    "ChannelCapacity.exists_unique_capacity_achieving_prior": "General measure-theoretic packaging: under abstract well-conditioning hypotheses, the capacity-achieving prior is unique."
+  },
+  "classification": {
+    "msc2020": [
+      "94A17",
+      "94A15",
+      "60A10"
+    ],
+    "tags": [
+      "information-theory",
+      "channel-capacity",
+      "mutual-information",
+      "kullback-leibler",
+      "markov-kernel"
+    ],
+    "branch": "information theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:f6f21733a23a4a0481441e368c722ce9870941eaa7c7df6843b8d41bf91bbb85"
+}

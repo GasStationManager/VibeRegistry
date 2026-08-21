@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-20-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-20-000001",
+  "version": 1,
+  "title": "dcposch/jc2-lean",
+  "abstract": "Lean 4 / Mathlib formalization of the vertex-gap obstruction at (k,d2) = (2,2) (label thm:22, Theorem 3.4 in the current compilation) from the campaign paper \"A Vertex-Gap Obstruction for Low-Degree Strip Pairs in the Plane Jacobian Conjecture\": for polynomials P, Q in K[x,y] over a field K of characteristic not in {2,3,5}, supported in the normalized type-(2,2) Newton strips along (1,2) with [P,Q] = x^2, the block coefficients satisfy a3 = 0 and a2^2*a6 = 0 - so the generic chart a2*a6 != 0 of the strip family is empty (VertexGap22, plus the side-symmetric companion VertexGap22_swapped in the mirrored labels). Also formalized: the arithmetic corner-enumeration lemma behind the vertex normalization (lem:enum, Lemma 2.2; CornerEnumeration) and the side-symmetric form of the gap condition, hypothesis (ii) as corrected by the erratum recorded in Section 8 (GapConditionSideSymm).  The theorem is the mechanism that empties the generic chart of the (8,28) strip subcase in the campaign on the plane Jacobian problem at Newton-degree pair (72,108).",
+  "authors": [
+    "Dan Clemens Posch"
+  ],
+  "repository": "https://github.com/dcposch/jc2-lean",
+  "commit": "3cee8100665bc59734511500b98728628ea190db",
+  "project_path": "vertex-gap",
+  "declarations": [
+    "CornerEnumeration",
+    "GapConditionSideSymm",
+    "VertexGap22",
+    "VertexGap22_swapped"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.AC"
+    ],
+    "msc2020": [
+      "14R15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T00:09:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3cee8100665bc59734511500b98728628ea190db",
+        "fork_repository": "PalomarArchive/dcposch--jc2-lean--e2c6525da39f",
+        "source_repository": "dcposch/jc2-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:37ce67a63009216484e8b7a444ced0619d3a1aa14aa087c8c794b43009b80112"
+}

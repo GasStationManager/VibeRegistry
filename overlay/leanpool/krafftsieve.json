@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "krafftsieve",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/KrafftSieve",
+  "version": 1,
+  "title": "A Conditional Sieve Criterion for Twin Primes via Krafft Geometry",
+  "abstract": "Introduces an original conditional sieve criterion for the Twin Prime Conjecture. Using a centered modular alignment (termed the Krafft alignment), proves that if the Rayleigh-Ritz quotient over the orthogonal unit sphere satisfies muMin < 1, then a twin prime pair must exist in the corresponding interval.",
+  "authors": [
+    "Fernando Portela"
+  ],
+  "repository": "https://github.com/ElNando888/KrafftSieve",
+  "commit": "",
+  "entry_module": "LeanPool.KrafftSieve",
+  "declarations": [
+    "KrafftSieve.mu_min_lt_one_implies_tpc",
+    "KrafftSieve.krafft_sieve_guarantee_with_mu_min"
+  ],
+  "informal": {
+    "KrafftSieve.krafft_sieve_guarantee_with_mu_min": "Proves that muMin n < 1 is a sufficient condition for the existence of a twin prime pair in the corresponding interval.",
+    "KrafftSieve.mu_min_lt_one_implies_tpc": "If there are infinitely many intervals where the optimal multidimensional weight achieves a ratio strictly less than 1, then there are infinitely many twin primes. This is a conditional reduction; the hypothesis muMin n < 1 is not established here for any n."
+  },
+  "classification": {
+    "msc2020": [
+      "11N05",
+      "11N35"
+    ],
+    "tags": [
+      "analytic-number-theory",
+      "sieve-theory",
+      "twin-primes",
+      "optimization"
+    ],
+    "branch": "analytic number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:8aa8db4008e96dd17ff319ad277584a0ad97d690df0b8c0c4ea878c9f2507025"
+}

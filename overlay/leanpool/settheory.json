@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "settheory",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SetTheory",
+  "version": 1,
+  "title": "The Kunen inconsistency theorem",
+  "abstract": "Formalizes elementary embeddings of models of ZF set theory and proves the Kunen inconsistency theorem, that there is no nontrivial elementary embedding of the set-theoretic universe into itself.",
+  "authors": [
+    "Shuhao Song"
+  ],
+  "repository": "https://github.com/znssong/SetTheory",
+  "commit": "",
+  "entry_module": "LeanPool.SetTheory",
+  "declarations": [
+    "SetTheory.kunen_inconsistency_V",
+    "NontrivialElementaryEmbedding",
+    "SetTheory.kunen_inconsistency_vonNeumann",
+    "SetTheory.crit"
+  ],
+  "informal": {
+    "SetTheory.kunen_inconsistency_V": "Proves the Kunen inconsistency theorem, that every elementary embedding of the von Neumann universe V into itself is the identity.",
+    "SetTheory.kunen_inconsistency_vonNeumann": "Proves the Kunen inconsistency theorem for von Neumann levels V_μ at a successor-limit ordinal, computing the supremum of the critical-point iterates.",
+    "SetTheory.crit": "Defines the critical point of a nontrivial elementary embedding as the least ordinal it moves.",
+    "NontrivialElementaryEmbedding": "Defines a nontrivial elementary embedding of a model of ZF into itself."
+  },
+  "classification": {
+    "msc2020": [
+      "03E55",
+      "03C90"
+    ],
+    "tags": [
+      "set-theory",
+      "large-cardinals",
+      "elementary-embedding",
+      "kunen-inconsistency",
+      "model-theory"
+    ],
+    "branch": "set theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:920f7b46ac82070efe94e0a447f152e5863ff41803574a9fadeac4d92ce5e3f2"
+}

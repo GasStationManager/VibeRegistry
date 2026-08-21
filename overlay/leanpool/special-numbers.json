@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "special-numbers",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SpecialNumbers",
+  "version": 1,
+  "title": "Special Numbers",
+  "abstract": "Formalizes the Eulerian numbers, Euclid numbers, and Sylvester's sequence from Chapter 6 of Concrete Mathematics, proving Worpitzky's identity for the first and coprimality, monotonicity, and explicit doubly-exponential closed forms for the latter two.",
+  "authors": [
+    "Walter Moreira",
+    "Joe Stubbs"
+  ],
+  "repository": "https://github.com/provables/special-numbers",
+  "commit": "",
+  "entry_module": "LeanPool.SpecialNumbers",
+  "declarations": [
+    "SpecialNumbers.sylvester",
+    "SpecialNumbers.eulerian",
+    "SpecialNumbers.worpitzky",
+    "SpecialNumbers.sylvester_coprime",
+    "SpecialNumbers.sylvester_eq_floor_constant_pow",
+    "SpecialNumbers.Euclid.euclid_coprime",
+    "SpecialNumbers.Euclid.euclid_eq_floor_constant_pow"
+  ],
+  "informal": {
+    "SpecialNumbers.sylvester": "Defines Sylvester's sequence by the recurrence e(n+1) = e(n) * (e(n) - 1) + 1.",
+    "SpecialNumbers.sylvester_coprime": "Shows distinct terms of Sylvester's sequence are coprime.",
+    "SpecialNumbers.sylvester_eq_floor_constant_pow": "Gives the explicit closed form for Sylvester's sequence as a floor of a doubly-exponential power of a constant.",
+    "SpecialNumbers.Euclid.euclid_coprime": "Shows distinct Euclid numbers are coprime.",
+    "SpecialNumbers.Euclid.euclid_eq_floor_constant_pow": "Gives the explicit closed form for the Euclid numbers as a floor of a doubly-exponential power of a constant.",
+    "SpecialNumbers.eulerian": "Defines the Eulerian numbers via their standard triangular recurrence and boundary values.",
+    "SpecialNumbers.worpitzky": "Proves Worpitzky's identity, expanding the power x^n in the binomial-coefficient basis with Eulerian-number coefficients."
+  },
+  "classification": {
+    "msc2020": [
+      "11B73",
+      "11B83"
+    ],
+    "tags": [
+      "number-theory",
+      "combinatorics",
+      "integer-sequences"
+    ],
+    "branch": "integer sequences"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:3182114e1cb05f6ee1c40121060ca2acf076e999d4f02e8dc2f8af00206275a3"
+}

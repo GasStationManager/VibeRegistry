@@ -1,0 +1,60 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean-quantumalg",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LeanQuantumAlg",
+  "version": 1,
+  "title": "Lean-QuantumAlg",
+  "abstract": "Provides a Mathlib-based library of formally verified quantum-algorithm definitions, primitives, and endpoints, including QFT, QSP, quantum kernels, amplitude amplification, Grover search, phase estimation, order finding, teleportation, and a Lie-algebraic barren-plateau witness.",
+  "authors": [
+    "QudeLeap Team"
+  ],
+  "repository": "https://github.com/QudeLeap/Lean-QuantumAlg",
+  "commit": "",
+  "entry_module": "LeanPool.LeanQuantumAlg",
+  "declarations": [
+    "QuantumAlg.GroverSearch.main_success_probability",
+    "QuantumAlg.QuantumFourierTransform.main",
+    "QuantumAlg.ReflectionBasedQuantumSignalProcessing.main",
+    "QuantumAlg.TrigonometricQuantumSignalProcessing.main",
+    "QuantumAlg.QuantumKernel.main",
+    "QuantumAlg.QuantumKernelAdvantage.separation",
+    "QuantumAlg.fullControllability_hasBarrenPlateau"
+  ],
+  "informal": {
+    "QuantumAlg.QuantumFourierTransform.main": "Proves the QFT action on computational-basis states and records exact circuit counts.",
+    "QuantumAlg.ReflectionBasedQuantumSignalProcessing.main": "Characterizes reflection-based single-qubit QSP transforms in the Chebyshev basis.",
+    "QuantumAlg.TrigonometricQuantumSignalProcessing.main": "Characterizes trigonometric single-qubit QSP transforms in the YZZYZ form.",
+    "QuantumAlg.QuantumKernel.main": "Proves that fidelity quantum-kernel Gram matrices are positive semidefinite.",
+    "QuantumAlg.QuantumKernelAdvantage.separation": "States the conditional quantum-kernel learning separation from discrete-log hardness.",
+    "QuantumAlg.fullControllability_hasBarrenPlateau": "Exhibits an exponentially vanishing loss-variance family for a fully controllable dynamical Lie algebra, conditional on the assumed Ragone second-moment variance law (the Haar/Weingarten averaging identity Var = P_g(rho)*P_g(O)/dim, taken as a hypothesis rather than derived from a circuit twirl).",
+    "QuantumAlg.GroverSearch.main_success_probability": "Derives Grover search success probability from the amplitude-amplification closed form."
+  },
+  "classification": {
+    "msc2020": [
+      "81P68",
+      "81P45",
+      "68Q12"
+    ],
+    "tags": [
+      "quantum-computing",
+      "quantum-algorithms",
+      "quantum-signal-processing",
+      "quantum-kernels"
+    ],
+    "branch": "quantum computing"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:687fe38aaedd9bc66226a04c2ed36f1559e1746cfc14167b89057abb02007e24"
+}

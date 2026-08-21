@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "distance-geometry",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/DistanceGeometry",
+  "version": 1,
+  "title": "Euclidean Distance Geometry",
+  "abstract": "Develops the basepoint-centered Gram approach to finite Euclidean distance geometry. Proves both directions of Schoenberg's characterization, including a rank-controlled factorization of positive-semidefinite matrices; proves that three affinely independent centers in Euclidean three-space determine at most two points with prescribed distances; and verifies the Cayley--Menger determinant for segments and triangles, including the triangle-area identity underlying Heron's formula.",
+  "authors": [
+    "Egor Lyfar"
+  ],
+  "repository": "https://github.com/lyfar/distance-geometry-lean",
+  "commit": "",
+  "entry_module": "LeanPool.DistanceGeometry",
+  "declarations": [
+    "DistanceGeometry.schoenberg",
+    "DistanceGeometry.trilateration_le_two",
+    "DistanceGeometry.encard_setOf_forall_dist_eq_le_two",
+    "DistanceGeometry.cayleyMenger_det_heron"
+  ],
+  "informal": {
+    "DistanceGeometry.schoenberg": "For n at least one, a symmetric hollow n-by-n matrix is a squared-distance matrix of points in k-dimensional Euclidean space exactly when its basepoint-centered Gram matrix is positive semidefinite and has rank at most k.",
+    "DistanceGeometry.encard_setOf_forall_dist_eq_le_two": "In a finite-dimensional real inner-product affine space, prescribed distances to centers whose affine span has codimension one admit at most two solutions.",
+    "DistanceGeometry.trilateration_le_two": "Three affinely independent centers in three-dimensional Euclidean space admit at most two points with any prescribed triple of distances.",
+    "DistanceGeometry.cayleyMenger_det_heron": "The Cayley--Menger determinant of three planar points equals minus sixteen times the squared area of their triangle."
+  },
+  "classification": {
+    "msc2020": [
+      "51K05",
+      "52C99",
+      "15A18"
+    ],
+    "tags": [
+      "distance-geometry",
+      "euclidean-geometry",
+      "linear-algebra",
+      "cayley-menger"
+    ],
+    "branch": "geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:a63fc90df2708943813459d81efa149717bbe42df4c809dce6d9ca4550a42914"
+}

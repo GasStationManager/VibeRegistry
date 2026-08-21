@@ -1,0 +1,56 @@
+{
+  "source": "leanpool",
+  "upstream_id": "flean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Flean",
+  "version": 1,
+  "title": "Flean: Floating-Point Numbers in Lean",
+  "abstract": "Formalizes a configurable model of floating-point numbers in Lean 4, including normal and subnormal representations, conversions between rationals and floats, round-trip correctness, and rounding error bounds.",
+  "authors": [
+    "Joseph McKinsey"
+  ],
+  "repository": "https://github.com/josephmckinsey/flean",
+  "commit": "",
+  "entry_module": "LeanPool.Flean",
+  "declarations": [
+    "Flean.Float",
+    "toFloat",
+    "toRat",
+    "to_float_to_rat",
+    "roundf_close"
+  ],
+  "informal": {
+    "Flean.Float": "Defines the floating-point number type parameterized by a precision and exponent configuration, with normal, subnormal, infinite, and NaN cases.",
+    "toFloat": "Rounds a rational number to the nearest representable floating-point value under a given rounding mode.",
+    "toRat": "Interprets a floating-point value as the exact rational number it represents.",
+    "to_float_to_rat": "Proves the round-trip identity that converting a finite nonzero float to a rational and back recovers the original float.",
+    "roundf_close": "Bounds the distance between a rational and its rounded floating-point representation."
+  },
+  "classification": {
+    "msc2020": [
+      "65G50",
+      "65G30",
+      "68V20"
+    ],
+    "tags": [
+      "floating-point",
+      "numerical-analysis",
+      "ieee-754",
+      "rounding"
+    ],
+    "branch": "numerical analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:0a69f02aadcb64a600adaab4052a1d8cee6a77846b84754c644bfe5962933ec9"
+}

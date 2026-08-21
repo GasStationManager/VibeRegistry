@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "leancomplexanalysis",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LeanComplexAnalysis",
+  "version": 1,
+  "title": "Formalized Complex Analysis in Lean",
+  "abstract": "Formalizes Poisson integral formulas on the unit disc and arbitrary centered discs, Herglotz–Riesz representation, and Harnack's inequality on the unit disc, plus infrastructure for univalent function classes S and Σ.",
+  "authors": [
+    "seb488",
+    "Aristotle"
+  ],
+  "repository": "https://github.com/seb488/LeanComplexAnalysis",
+  "commit": "",
+  "entry_module": "LeanPool.LeanComplexAnalysis",
+  "declarations": [
+    "LeanPool.LeanComplexAnalysis.harnack_ineq",
+    "LeanPool.LeanComplexAnalysis.poisson_integral_of_harmonicOn_unitDisc_continuousOn_closedUnitDisc",
+    "LeanPool.LeanComplexAnalysis.poisson_integral_of_harmonicOn_disc_continuousOn_closedDisc",
+    "LeanPool.LeanComplexAnalysis.HerglotzRiesz_representation_harmonic"
+  ],
+  "informal": {
+    "LeanPool.LeanComplexAnalysis.poisson_integral_of_harmonicOn_unitDisc_continuousOn_closedUnitDisc": "Proves the Poisson integral formula for harmonic functions on the unit disc.",
+    "LeanPool.LeanComplexAnalysis.poisson_integral_of_harmonicOn_disc_continuousOn_closedDisc": "Proves the Poisson integral formula for harmonic functions on arbitrary centered discs.",
+    "LeanPool.LeanComplexAnalysis.HerglotzRiesz_representation_harmonic": "Proves that every positive harmonic function on the unit disc with value 1 at 0 has a unique Herglotz–Riesz representation by a probability measure on the unit circle.",
+    "LeanPool.LeanComplexAnalysis.harnack_ineq": "Proves Harnack's inequality for positive harmonic functions on the unit disc."
+  },
+  "classification": {
+    "msc2020": [
+      "30A99",
+      "31A05",
+      "30C55"
+    ],
+    "tags": [
+      "complex-analysis",
+      "harmonic-functions",
+      "poisson-integral",
+      "univalent-functions"
+    ],
+    "branch": "complex analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:d06a47af3c17b4c5b0d340e68d697519032227738d1828b469e8b2529ca6c4fb"
+}

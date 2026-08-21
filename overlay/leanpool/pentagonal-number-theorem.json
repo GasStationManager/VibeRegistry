@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "pentagonal-number-theorem",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PentagonalNumberTheorem",
+  "version": 1,
+  "title": "Euler's pentagonal number theorem",
+  "abstract": "Formalizes Euler's pentagonal number theorem as a generating-function identity for power series and for real/complex numbers, with a partition-recurrence corollary and a self-contained Franklin-style combinatorial proof.",
+  "authors": [
+    "Weiyi Wang"
+  ],
+  "repository": "https://github.com/wwylele/PentagonalNumberTheorem",
+  "commit": "",
+  "entry_module": "LeanPool.PentagonalNumberTheorem",
+  "declarations": [
+    "pentagonalNumberTheorem_powerSeries",
+    "Nat.Partition.sum_partition",
+    "pentagonalNumberTheorem_complex"
+  ],
+  "informal": {
+    "pentagonalNumberTheorem_powerSeries": "Proves Euler's pentagonal number theorem as a formal power series identity ∏(1-xⁿ) = Σ(-1)ᵏ x^(k(3k-1)/2).",
+    "pentagonalNumberTheorem_complex": "Proves the analytic version of the pentagonal number theorem for real or complex numbers of norm less than one.",
+    "Nat.Partition.sum_partition": "Derives Euler's pentagonal recurrence for the partition function from the pentagonal number theorem."
+  },
+  "classification": {
+    "msc2020": [
+      "11P81",
+      "05A17"
+    ],
+    "tags": [
+      "number-theory",
+      "combinatorics",
+      "partitions",
+      "power-series",
+      "pentagonal-number-theorem"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:5c58ca48301d7d75bda6594665203022f6295546752937f0513db783f8c099cf"
+}

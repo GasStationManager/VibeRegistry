@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "phaseretrieval",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PhaseRetrieval",
+  "version": 1,
+  "title": "Stable phase retrieval for Hermite-Fock expansions",
+  "abstract": "Formalizes stable phase retrieval for finite Hermite-Fock polynomials and their Gaussian L2 closure in d complex dimensions, together with the quantitative one-dimensional Fock-space local stability estimate that underlies it.",
+  "authors": [
+    "Susanna Bertolini",
+    "Jaume de Dios Pont"
+  ],
+  "repository": "https://github.com/susannabertolini/PhaseRetrieval",
+  "commit": "",
+  "entry_module": "LeanPool.PhaseRetrieval",
+  "declarations": [
+    "DimdPolyShowcaseChallenge.stable_phase_retrieval",
+    "FockSPR.orthogonalReduction_exists_phase",
+    "FockSPR.orthogonalReduction_core",
+    "FockSPR.LocalFockSPR",
+    "DimdPolyShowcaseChallenge.HermitePoly",
+    "DimdPolyShowcaseChallenge.TrueHermiteFunctions"
+  ],
+  "informal": {
+    "DimdPolyShowcaseChallenge.stable_phase_retrieval": "Proves stable phase retrieval for the Gaussian L2 closure of finite d-dimensional Hermite-Fock polynomials at a fixed level, giving a uniform stability constant bounding the phase-aligned L2 distance by the L2 distance of magnitudes.",
+    "FockSPR.orthogonalReduction_exists_phase": "Proves the phase-aligned one-dimensional Fock-space local stability estimate, producing a unit phase for which the L2 distance to one is controlled by the magnitude defect.",
+    "FockSPR.orthogonalReduction_core": "Proves the quantitative centered core estimate bounding the Gaussian Fock norm of a polynomial with small norm by the magnitude defect against one.",
+    "FockSPR.LocalFockSPR": "Proves the local Fock-space stable phase retrieval coercivity estimate for centered polynomials.",
+    "DimdPolyShowcaseChallenge.HermitePoly": "Defines the normalized one-variable complex Hermite-Fock basis polynomial.",
+    "DimdPolyShowcaseChallenge.TrueHermiteFunctions": "Defines the Gaussian L2 closure of finite Hermite-Fock polynomials at a fixed level."
+  },
+  "classification": {
+    "msc2020": [
+      "42C05",
+      "46E22",
+      "94A12"
+    ],
+    "tags": [
+      "phase-retrieval",
+      "hermite-fock",
+      "gaussian-measure",
+      "complex-analysis"
+    ],
+    "branch": "analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:bdb1de4ed3e8bde0b3b08de5e85fa30ead219f9ffc0f7084fa1d73f7dca85872"
+}

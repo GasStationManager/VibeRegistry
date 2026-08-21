@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "duality",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Duality",
+  "version": 1,
+  "title": "Duality theory in linear optimization and its extensions",
+  "abstract": "Formalizes Farkas-like theorems and strong LP duality, including extensions to a linearly ordered field with bot and top.",
+  "authors": [
+    "Martin Dvorak"
+  ],
+  "repository": "https://github.com/madvorak/duality",
+  "commit": "",
+  "entry_module": "LeanPool.Duality",
+  "declarations": [
+    "extendedFarkas",
+    "StandardLP.strongDuality",
+    "equalityFarkas",
+    "inequalityFarkas",
+    "ValidELP.strongDuality"
+  ],
+  "informal": {
+    "equalityFarkas": "Farkas' lemma for linear equalities over nonnegative variables.",
+    "inequalityFarkas": "Farkas' lemma for linear inequalities over nonnegative variables.",
+    "extendedFarkas": "Extended Farkas theorem for matrices and vectors over a linearly ordered field with bot and top.",
+    "ValidELP.strongDuality": "Strong duality theorem for extended linear programs.",
+    "StandardLP.strongDuality": "Strong duality theorem for linear programs in standard form."
+  },
+  "classification": {
+    "msc2020": [
+      "90C05",
+      "90C46"
+    ],
+    "tags": [
+      "linear-programming",
+      "optimization",
+      "farkas-lemma"
+    ],
+    "branch": "linear optimization"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:7e8951f3e5fa65bff46d0b35b834cc573bd5fd254e708e1ad5b8fd63bc4a552c"
+}

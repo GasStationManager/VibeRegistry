@@ -1,0 +1,47 @@
+{
+  "source": "leanpool",
+  "upstream_id": "erdos-97-convex-octagon",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Erdos97ConvexOctagon",
+  "version": 1,
+  "title": "The Convex-Octagon Case of Erdős Problem 97",
+  "abstract": "Proves that among eight labelled points in the Euclidean plane in convex position, at least one point has no four other points at a common distance. The development reduces a geometric counterexample to a finite incidence model, classifies normalized row patterns up to symmetry, proves geometric and algebraic obstructions, and excludes seven canonical first-row masks with a kernel-audited exhaustive search over the remaining legal row masks and checked geometric obstruction witnesses. This is the modern four-equidistant formulation; Erdős's 1946 paper posed the stronger three-equidistant version. This is the convex-octagon case only; the general Erdős Problem 97 remains open.",
+  "authors": [
+    "Egor Lyfar"
+  ],
+  "repository": "https://github.com/lyfar/erdos-97-octagon-lean",
+  "commit": "",
+  "entry_module": "LeanPool.Erdos97ConvexOctagon",
+  "declarations": [
+    "Erdos97Octagon.erdos97_convex_octagon"
+  ],
+  "informal": {
+    "Erdos97Octagon.erdos97_convex_octagon": "Among eight labelled points in the Euclidean plane in convex position, some point has no four other points at a common distance."
+  },
+  "classification": {
+    "msc2020": [
+      "51K05",
+      "52A10"
+    ],
+    "tags": [
+      "discrete-geometry",
+      "distance-geometry",
+      "erdos-problems",
+      "convexity"
+    ],
+    "branch": "discrete geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:f79cb73b6ff0bdd9252da2aa87343a726d71405cf6b42a246816fffb7fb679f6"
+}

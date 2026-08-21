@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "biswal",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Biswal",
+  "version": 1,
+  "title": "Chebyshev Quotients and Demazure Multiplicities",
+  "abstract": "Formalizes positivity results for the coefficients of Chebyshev-type polynomial quotients attached to integer partitions, modelling Demazure multiplicities. Proves that the relevant generating function is a polynomial and that its coefficients are eventually positive (Theorem 1), gives explicit Cauchy-product and matrix-inverse formulas for the coefficients (Theorem 2), and establishes their nonnegativity through a Dyck-path lattice counting model (Theorem 3).",
+  "authors": [
+    "Jujian Zhang"
+  ],
+  "repository": "https://github.com/AxiomMath/Biswal",
+  "commit": "",
+  "entry_module": "LeanPool.Biswal",
+  "declarations": [
+    "Biswal.Theorem23.thm_manifest_coeff_nonneg",
+    "Biswal.Theorem1.genFun_is_polynomial",
+    "Biswal.Theorem1.genFun_coeff_eventually_pos"
+  ],
+  "informal": {
+    "Biswal.Theorem1.genFun_is_polynomial": "Proves that the generating function attached to a partition is a polynomial whenever its parts are bounded by the parameter `m`.",
+    "Biswal.Theorem1.genFun_coeff_eventually_pos": "Proves that the coefficients of the generating function attached to a partition are eventually strictly positive.",
+    "Biswal.Theorem23.thm_manifest_coeff_nonneg": "Proves that every coefficient of the generating function is nonnegative, via the explicit Dyck-path lattice counting model."
+  },
+  "classification": {
+    "msc2020": [
+      "05E10"
+    ],
+    "tags": [
+      "algebraic-combinatorics",
+      "chebyshev",
+      "demazure"
+    ],
+    "branch": "algebraic combinatorics"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:df6f66bc12c99bc1a539eb398fbae4ec241853c8d3ac6cb2d1df67f60dab01a8"
+}

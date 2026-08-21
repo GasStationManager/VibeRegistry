@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-17-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-17-000004",
+  "version": 1,
+  "title": "jaumededios/cantor-frames-palomar",
+  "abstract": "Cantor measures with odd base do not admit Fourier frames",
+  "authors": [
+    "Jaume de Dios Pont",
+    "Lukas Liehr",
+    "Mitchell A. Taylor"
+  ],
+  "repository": "https://github.com/jaumededios/cantor-frames-palomar",
+  "commit": "e1ce015224e702a4e93ae59e8ca73616daaa8d5a",
+  "project_path": null,
+  "declarations": [
+    "CantorFramesPalomar.NoFourierFrameExists"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA"
+    ],
+    "msc2020": [
+      "28A80",
+      "42B05",
+      "46B15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-17T23:51:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e1ce015224e702a4e93ae59e8ca73616daaa8d5a",
+        "fork_repository": "PalomarArchive/jaumededios--cantor-frames-palomar--1431a78e4d9e",
+        "source_repository": "jaumededios/cantor-frames-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c54b3c3a0ad61e58bea4887ed8255ce5de4dad5bc78a48f7942cd38fdcaf5b4c"
+}

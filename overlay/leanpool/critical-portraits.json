@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "critical-portraits",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CriticalPortraits",
+  "version": 1,
+  "title": "Counting Critical Portraits",
+  "abstract": "Formalizes the census of degree-d critical portraits, modeled as level-canonical (d-1)-subsets of the cyclic group ZMod (d*m), and proves that their number equals C(d*m, d-1)/d for all d, via the Dvoretzky-Motzkin cycle lemma together with an explicit level-canonicalization bijection (injectivity and surjectivity of the delete-minimum map).",
+  "authors": [
+    "Keston Aquino-Michaels"
+  ],
+  "repository": "https://github.com/no-way-labs/lean-critical-portraits",
+  "commit": "",
+  "entry_module": "LeanPool.CriticalPortraits",
+  "declarations": [
+    "CriticalPortraits.card_portraits",
+    "CriticalPortraits.Cycle.cycle_lemma",
+    "CriticalPortraits.T_injOn",
+    "CriticalPortraits.T_surjOn"
+  ],
+  "informal": {
+    "CriticalPortraits.card_portraits": "The number of degree-d critical portraits at level m equals C(d*m, d-1)/d.",
+    "CriticalPortraits.Cycle.cycle_lemma": "The Dvoretzky-Motzkin cycle lemma: a period-n integer sequence with period-sum 1 has exactly one good cyclic shift.",
+    "CriticalPortraits.T_injOn": "The delete-minimum map is injective on critical portraits.",
+    "CriticalPortraits.T_surjOn": "The delete-minimum map surjects onto the level-canonical subsets."
+  },
+  "classification": {
+    "msc2020": [
+      "05A15",
+      "37F20"
+    ],
+    "tags": [
+      "combinatorics",
+      "cycle-lemma",
+      "critical-portraits",
+      "enumeration"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:8b3ca1d4f6de6165dd1c30c6a57401ca7cd06e3740dc927ee9902603540a4f88"
+}

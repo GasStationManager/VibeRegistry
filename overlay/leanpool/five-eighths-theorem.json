@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "five-eighths-theorem",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FiveEighthsTheorem",
+  "version": 1,
+  "title": "The 5/8 theorem",
+  "abstract": "Proves Gustafson's 5/8 theorem — the Mathlib commuting probability of a nonabelian group is at most 5/8, with the infinite case immediate from commProb being zero — via the finite-group index bounds for the center and centralizers of noncentral elements.",
+  "authors": [
+    "Xuanji Li"
+  ],
+  "repository": "https://github.com/ldct/lean-monorepo",
+  "commit": "",
+  "entry_module": "LeanPool.FiveEighthsTheorem",
+  "declarations": [
+    "FiveEighths.commProb_le_five_eighths",
+    "FiveEighths.centralFraction_le_quarter",
+    "FiveEighths.centralizerFraction_le_half"
+  ],
+  "informal": {
+    "FiveEighths.commProb_le_five_eighths": "The commuting probability of a nonabelian group is at most 5/8.",
+    "FiveEighths.centralFraction_le_quarter": "The center of a finite nonabelian group contains at most a quarter of its elements.",
+    "FiveEighths.centralizerFraction_le_half": "The centralizer of a noncentral element of a finite group contains at most half of its elements."
+  },
+  "classification": {
+    "msc2020": [
+      "20P05"
+    ],
+    "tags": [
+      "group-theory",
+      "finite-groups",
+      "commuting-probability"
+    ],
+    "branch": "group theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:2f923c9c54b99f01e4dc31e18bc015d037f04e89faca239973ac8e2648e8c561"
+}

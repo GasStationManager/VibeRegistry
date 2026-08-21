@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-18-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-18-000003",
+  "version": 1,
+  "title": "xinjiegit/ben_27_formalization",
+  "abstract": "A Lean 4 and Mathlib proof that there are absolute constants c > 0 and p₀ such that, for every prime p ≥ p₀, the minimum size m(p) of a set A ⊆ 𝔽_p with |A| ≥ 2 and no uniquely represented sum satisfies m(p) ≥ c (log p / log log p)².  Here representations are unordered two-element multisets from A, repeated summands are allowed, and \"no unique sum\" means that every such multiset has a distinct equal-sum mate.",
+  "authors": [
+    "Xinjie He"
+  ],
+  "repository": "https://github.com/xinjiegit/ben_27_formalization",
+  "commit": "f70352964007662e97a810c880abbfea1e2ea262",
+  "project_path": null,
+  "declarations": [
+    "NUS.m_lower_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B30",
+      "11B34"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-18T23:20:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f70352964007662e97a810c880abbfea1e2ea262",
+        "fork_repository": "PalomarArchive/xinjiegit--ben_27_formalization--484843286ef4",
+        "source_repository": "xinjiegit/ben_27_formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:824d48f4105e785055d1ba443c38180e8de9f40d25a240aa67dc45b29fef7791"
+}

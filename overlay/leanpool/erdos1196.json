@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "erdos1196",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Erdos1196",
+  "version": 1,
+  "title": "Primitive Sets Above x (Erdos Problem 1196)",
+  "abstract": "Formalizes Math Inc.'s proof around primitive sets above x for Erdos Problem 1196.",
+  "authors": [
+    "Math Inc."
+  ],
+  "repository": "https://github.com/math-inc/Erdos1196",
+  "commit": "",
+  "entry_module": "LeanPool.Erdos1196",
+  "declarations": [
+    "PrimitiveSetsAboveX.mainTheorem",
+    "Erdos1196.erdos_1196"
+  ],
+  "informal": {
+    "PrimitiveSetsAboveX.mainTheorem": "Proves the main primitive-sets-above-x theorem.",
+    "Erdos1196.erdos_1196": "States the formalized version of Erdos Problem 1196."
+  },
+  "classification": {
+    "msc2020": [
+      "11N25",
+      "05D05"
+    ],
+    "tags": [
+      "number-theory",
+      "combinatorics",
+      "analysis"
+    ],
+    "branch": "analytic number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "statement_hash": "sha256:dfcac23701eae220652baba2e735e9707808ed5c5d12dc97c81a6e6c0939e961"
+}
