@@ -2,6 +2,10 @@
 work/
 .lake/
 
+# Derived Mathlib name list (~2 MB, refetched by scripts/fetch_mathlib_names.py).
+# data/mathlib-names.meta.json records which snapshot was used and is committed.
+data/mathlib-names.tsv.gz
+
 # Python
 __pycache__/
 *.pyc
