@@ -3,9 +3,13 @@
 Filter comparator config files for compatibility with the comparator tool.
 
 Two filters are applied:
-1. Non-theorem filter: The comparator only accepts thmInfo and axiomInfo
-   constants. Helper definitions (def, structure, etc.) cause "constant kind
-   don't match" errors.
+1. Non-theorem filter: comparator's theorem_names only accepts thmInfo and
+   axiomInfo constants. Helper definitions (def, structure, etc.) cause
+   "constant kind don't match" errors there. With --definitions-mode compare
+   they are moved to comparator's definition_names instead of being dropped;
+   with the default drop mode they are removed, and a group left with nothing
+   but definitions has its config deleted (the caller then records the group as
+   not-applicable rather than pretending it was checked).
 2. Cross-reference filter: If theorem B's type references theorem A (e.g. via
    Classical.choose), the comparator's transitive check (Phase 2) will compare
    A's full ConstantInfo including its proof value. Since the spec has sorry
@@ -14,8 +18,9 @@ Two filters are applied:
 
 Usage:
     python3 filter_comparator_theorems.py <repo_dir> <lean4export_bin> <config_dir>
+        [--definitions-mode drop|compare]
 
-Modifies config JSON files in-place. Removes configs with no theorems left.
+Modifies config JSON files in-place. Removes configs with nothing left to check.
 """
 
 import sys
@@ -176,8 +181,13 @@ def get_type_deps(repo_dir, lean4export_bin, module, names):
     return deps
 
 
-def filter_configs(repo_dir, lean4export_bin, config_dir):
-    """Filter all comparator configs to theorem-only names."""
+def filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode="drop"):
+    """Filter comparator configs by declaration kind.
+
+    definitions_mode:
+      drop     non-theorem names are removed (legacy behaviour)
+      compare  non-theorem names move to comparator's definition_names
+    """
     configs = sorted(f for f in os.listdir(config_dir) if f.endswith(".json"))
     removed = 0
     filtered_names = 0
@@ -201,8 +211,12 @@ def filter_configs(repo_dir, lean4export_bin, config_dir):
 
         if non_thm:
             kind_info = ", ".join(f"{n} ({kinds.get(n, '?')})" for n in non_thm)
-            print(f"  {config_name}: filtered out non-theorems: {kind_info}")
-            filtered_names += len(non_thm)
+            if definitions_mode == "compare":
+                print(f"  {config_name}: comparing as definitions: {kind_info}")
+                config["definition_names"] = non_thm
+            else:
+                print(f"  {config_name}: filtered out non-theorems: {kind_info}")
+                filtered_names += len(non_thm)
 
         # Filter 2: Remove theorems whose types reference other target theorems
         if len(thm_names) > 1:
@@ -225,11 +239,13 @@ def filter_configs(repo_dir, lean4export_bin, config_dir):
                     filtered_names += 1
                 thm_names = safe_names
 
-        if not thm_names:
+        keep_definitions = bool(config.get("definition_names"))
+
+        if not thm_names and not keep_definitions:
             os.remove(config_path)
-            print(f"  {config_name}: removed (no theorems)")
+            print(f"  {config_name}: removed (nothing comparator can check)")
             removed += 1
-        elif len(thm_names) < len(names):
+        elif len(thm_names) < len(names) or keep_definitions:
             config["theorem_names"] = thm_names
             with open(config_path, "w") as f:
                 json.dump(config, f, indent=2)
@@ -239,16 +255,28 @@ def filter_configs(repo_dir, lean4export_bin, config_dir):
 
 
 def main():
-    if len(sys.argv) < 4:
-        print(f"Usage: {sys.argv[0]} <repo_dir> <lean4export_bin> <config_dir>",
-              file=sys.stderr)
+    argv = list(sys.argv[1:])
+    definitions_mode = "drop"
+    if "--definitions-mode" in argv:
+        idx = argv.index("--definitions-mode")
+        if idx + 1 >= len(argv):
+            print("ERROR: --definitions-mode needs a value (drop|compare)", file=sys.stderr)
+            sys.exit(1)
+        definitions_mode = argv[idx + 1]
+        del argv[idx:idx + 2]
+
+    if definitions_mode not in ("drop", "compare"):
+        print(f"ERROR: unknown --definitions-mode '{definitions_mode}'", file=sys.stderr)
         sys.exit(1)
 
-    repo_dir = sys.argv[1]
-    lean4export_bin = sys.argv[2]
-    config_dir = sys.argv[3]
+    if len(argv) < 3:
+        print(f"Usage: {sys.argv[0]} <repo_dir> <lean4export_bin> <config_dir> "
+              f"[--definitions-mode drop|compare]", file=sys.stderr)
+        sys.exit(1)
 
-    filter_configs(repo_dir, lean4export_bin, config_dir)
+    repo_dir, lean4export_bin, config_dir = argv[0], argv[1], argv[2]
+
+    filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode)
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-name: Weekly Level 2 Verification
+name: Weekly Full Verification
 
 on:
   schedule:
@@ -33,7 +33,7 @@ jobs:
       fail-fast: false
       matrix:
         entry: ${{ fromJson(needs.detect-entries.outputs.entries) }}
-    name: Level 2 - ${{ matrix.entry }}
+    name: Full - ${{ matrix.entry }}
     steps:
       - uses: actions/checkout@v4
 
@@ -47,7 +47,7 @@ jobs:
         with:
           go-version: '1.21'
 
-      - name: Install Level 2 tools (landrun, lean4export, comparator)
+      - name: Install comparator tools (landrun, lean4export, comparator)
         run: |
           TOOLCHAIN_FILE="specs/${{ matrix.entry }}/lean-toolchain"
           source scripts/lib/install_comparator_tools.sh
@@ -56,9 +56,16 @@ jobs:
           echo "LEAN4EXPORT_BIN=$LEAN4EXPORT_BIN" >> "$GITHUB_ENV"
           echo "LANDRUN_BIN=$LANDRUN_BIN" >> "$GITHUB_ENV"
 
-      - name: Verify ${{ matrix.entry }} (Level 2)
+      # The weekly run is the thorough one, so it always adds the second kernel.
+      - name: Install nanoda (second kernel)
         run: |
-          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --level 2 --skip-level-1
+          source scripts/lib/install_comparator_tools.sh
+          install_nanoda "${{ runner.temp }}/tools" || echo "nanoda unavailable; comparator will run Lean-kernel only"
+          echo "NANODA_BIN=$NANODA_BIN" >> "$GITHUB_ENV"
+
+      - name: Verify ${{ matrix.entry }} (comparator + nanoda)
+        run: |
+          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --with-nanoda
 
       - name: Upload results
         if: always()
@@ -101,6 +108,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to results"
           else
-            git commit -m "Update weekly Level 2 verification results"
+            git commit -m "Update weekly verification results"
             git push
           fi

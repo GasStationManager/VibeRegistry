@@ -19,6 +19,18 @@ names = [
 ]
 permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
 
+[checks]
+# Comparator is the primary check, but this entry cannot pass it yet: the copy
+# build strategy patches the impl lakefile, which breaks comparator's sandboxed
+# `lake build` for non-Mathlib projects (see the notes below). Until the sibling
+# -package rework lands, this entry reports a comparator failure rather than the
+# false "pass" the old all-checks-skipped run produced.
+comparator = true
+nanoda = false
+definitions = false
+safe_verify = false
+lean4checker = false
+
 [build]
 strategy = "copy"
 targets = "Zip Registry"

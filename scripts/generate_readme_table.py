@@ -57,15 +57,34 @@ def load_results(entry_id):
         return json.load(f)
 
 
+# Order the checks column so the primary check reads first.
+CHECK_LABELS = [
+    ("comparator", "comparator"),
+    ("nanoda", "+nanoda"),
+    ("definitions", "+defs"),
+    ("safe_verify", "+SafeVerify"),
+    ("lean4checker", "+lean4checker"),
+]
+
+
 def format_verification(results):
-    """Format verification level and status."""
+    """Format which checks ran, and the overall status."""
     if results is None:
         return "—", "Pending"
-    level = results.get("verification_level", 0)
+
     overall = results.get("overall", "unknown")
-    level_str = f"Level {level}" if level else "—"
     status = "Verified" if overall == "pass" else "Failed" if overall == "fail" else "Pending"
-    return level_str, status
+
+    checks = results.get("checks")
+    if isinstance(checks, dict):
+        ran = [label for key, label in CHECK_LABELS if checks.get(key)]
+        checks_str = " ".join(ran) if ran else "—"
+    else:
+        # Result files written before the checks model: fall back to the level.
+        level = results.get("verification_level", 0)
+        checks_str = {2: "comparator", 1: "SafeVerify"}.get(level, "—")
+
+    return checks_str, status
 
 
 def format_signoffs(config):
@@ -106,8 +125,8 @@ def generate_table():
             f"| [{name}]({url}) | {theorems_desc} | {lean_ver} | {verification} | {signoffs} | {status} |"
         )
 
-    header = "| Entry | Theorems | Lean | Verification | Sign-offs | Status |"
-    separator = "|-------|----------|------|--------------|-----------|--------|"
+    header = "| Entry | Theorems | Lean | Checks | Sign-offs | Status |"
+    separator = "|-------|----------|------|--------|-----------|--------|"
     lines = [header, separator] + rows
     return "\n".join(lines)
 

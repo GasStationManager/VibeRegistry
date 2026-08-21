@@ -14,14 +14,11 @@ on:
       - 'scripts/**'
   workflow_dispatch:
     inputs:
-      level:
-        description: 'Verification level (1=SafeVerify, 2=Comparator)'
+      checks:
+        description: 'Checks to run (comma-separated, blank = entry defaults)'
         required: false
-        default: '1'
-        type: choice
-        options:
-          - '1'
-          - '2'
+        default: ''
+        type: string
       entry:
         description: 'Specific entry to verify (blank = auto-detect or all)'
         required: false
@@ -103,6 +100,7 @@ jobs:
     needs: detect-changes
     if: needs.detect-changes.outputs.entries != '[]'
     runs-on: ubuntu-latest
+    timeout-minutes: 360
     strategy:
       fail-fast: false
       matrix:
@@ -116,21 +114,31 @@ jobs:
           curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
 
-      - name: Determine verification level
-        id: level
+      # Which checks this entry runs decides which tools we need to build.
+      - name: Resolve checks
+        id: checks
         run: |
-          LEVEL="${{ github.event.inputs.level }}"
-          echo "level=${LEVEL:-1}" >> "$GITHUB_OUTPUT"
+          ARGS=()
+          if [[ -n "${{ github.event.inputs.checks }}" ]]; then
+            ARGS+=(--checks "${{ github.event.inputs.checks }}")
+          fi
+          PLAN=$(python3 scripts/lib/resolve_checks.py "entries/${{ matrix.entry }}.toml" "${ARGS[@]+"${ARGS[@]}"}")
+          echo "$PLAN"
+          eval "$PLAN"
+          {
+            echo "comparator=$CHECK_COMPARATOR"
+            echo "nanoda=$CHECK_NANODA"
+          } >> "$GITHUB_OUTPUT"
 
-      # Level 2 dependencies (only when needed)
+      # Comparator sandboxes its builds with landrun, which needs Go.
       - name: Install Go
-        if: steps.level.outputs.level == '2'
+        if: steps.checks.outputs.comparator == '1'
         uses: actions/setup-go@v5
         with:
           go-version: '1.21'
 
-      - name: Install Level 2 tools (landrun, lean4export, comparator)
-        if: steps.level.outputs.level == '2'
+      - name: Install comparator tools (landrun, lean4export, comparator)
+        if: steps.checks.outputs.comparator == '1'
         run: |
           TOOLCHAIN_FILE="specs/${{ matrix.entry }}/lean-toolchain"
           source scripts/lib/install_comparator_tools.sh
@@ -139,55 +147,25 @@ jobs:
           echo "LEAN4EXPORT_BIN=$LEAN4EXPORT_BIN" >> "$GITHUB_ENV"
           echo "LANDRUN_BIN=$LANDRUN_BIN" >> "$GITHUB_ENV"
 
+      # Second kernel: only built when the entry actually asks for it.
+      - name: Install nanoda (second kernel)
+        if: steps.checks.outputs.nanoda == '1'
+        run: |
+          source scripts/lib/install_comparator_tools.sh
+          install_nanoda "${{ runner.temp }}/tools"
+          echo "NANODA_BIN=$NANODA_BIN" >> "$GITHUB_ENV"
+
       - name: Verify ${{ matrix.entry }}
         run: |
-          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --level "${{ steps.level.outputs.level }}"
+          ARGS=()
+          if [[ -n "${{ github.event.inputs.checks }}" ]]; then
+            ARGS+=(--checks "${{ github.event.inputs.checks }}")
+          fi
+          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" "${ARGS[@]+"${ARGS[@]}"}"
 
       - name: Upload results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: results-${{ matrix.entry }}
-          path: results/${{ matrix.entry }}/latest.json
-
-  verify-level2-on-main:
-    needs: detect-changes
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && needs.detect-changes.outputs.entries != '[]'
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        entry: ${{ fromJson(needs.detect-changes.outputs.entries) }}
-    name: Verify changed entry ${{ matrix.entry }} (Level 2)
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install elan
-        run: |
-          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
-          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-
-      - name: Install Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.21'
-
-      - name: Install Level 2 tools (landrun, lean4export, comparator)
-        run: |
-          TOOLCHAIN_FILE="specs/${{ matrix.entry }}/lean-toolchain"
-          source scripts/lib/install_comparator_tools.sh
-          install_comparator_tools "$TOOLCHAIN_FILE" "${{ runner.temp }}/tools"
-          echo "COMPARATOR_BIN=$COMPARATOR_BIN" >> "$GITHUB_ENV"
-          echo "LEAN4EXPORT_BIN=$LEAN4EXPORT_BIN" >> "$GITHUB_ENV"
-          echo "LANDRUN_BIN=$LANDRUN_BIN" >> "$GITHUB_ENV"
-
-      - name: Verify changed entry ${{ matrix.entry }} (Level 2)
-        run: |
-          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --level 2
-
-      - name: Upload Level 2 results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: results-level2-${{ matrix.entry }}
           path: results/${{ matrix.entry }}/latest.json

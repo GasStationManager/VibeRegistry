@@ -1,8 +1,10 @@
 #!/bin/bash
-# Install comparator verification tools (lean4export, comparator, optionally landrun).
+# Install comparator verification tools (lean4export, comparator, optionally
+# landrun and nanoda).
 #
 # Usage: source scripts/lib/install_comparator_tools.sh
 #        install_comparator_tools <toolchain_file> <tools_dir>
+#        install_nanoda <tools_dir>
 #
 # Arguments:
 #   toolchain_file  Path to lean-toolchain file (determines tool build version)
@@ -12,6 +14,7 @@
 #   LEAN4EXPORT_BIN  Path to lean4export binary
 #   COMPARATOR_BIN   Path to comparator binary
 #   LANDRUN_BIN      Path to landrun binary (empty if Go not available)
+#   NANODA_BIN       Path to nanoda_bin (install_nanoda only; empty without cargo)
 #
 # Caching: if tools_dir already has tools built with matching toolchain, skip rebuild.
 #
@@ -127,4 +130,51 @@ install_comparator_tools() {
     fi
 
     return 0
+}
+
+
+# --- nanoda: independent Lean kernel used as comparator's second checker ---
+#
+# nanoda is a separate Rust implementation of the Lean 4 kernel. Comparator
+# hands it the same exported proof it gives Lean's own kernel, so a proof only
+# passes if two independently written kernels both accept it. That is the point
+# of the check: a soundness bug in one kernel is unlikely to be shared by the
+# other.
+#
+# Usage: install_nanoda <tools_dir>
+# Exports NANODA_BIN (empty if cargo is unavailable or the build fails).
+install_nanoda() {
+    local tools_dir="$1"
+
+    export NANODA_BIN=""
+
+    if ! command -v cargo &> /dev/null; then
+        echo "NOTE: cargo not found, skipping nanoda (second kernel unavailable)"
+        return 1
+    fi
+
+    mkdir -p "$tools_dir"
+    local nanoda_dir="$tools_dir/nanoda"
+    local nanoda_rev="${NANODA_REV:-master}"
+
+    if [[ ! -f "$nanoda_dir/target/release/nanoda_bin" ]]; then
+        echo ""
+        echo "--- Installing nanoda ($nanoda_rev) ---"
+        rm -rf "$nanoda_dir"
+        git clone https://github.com/ammkrn/nanoda_lib.git "$nanoda_dir"
+        (cd "$nanoda_dir" && git checkout "$nanoda_rev" && cargo build --release)
+        echo "nanoda built"
+    else
+        echo "nanoda: using cached build"
+    fi
+
+    if [[ -f "$nanoda_dir/target/release/nanoda_bin" ]]; then
+        NANODA_BIN="$nanoda_dir/target/release/nanoda_bin"
+        export NANODA_BIN
+        echo "  NANODA_BIN: $NANODA_BIN"
+        return 0
+    fi
+
+    echo "WARNING: nanoda build produced no binary"
+    return 1
 }

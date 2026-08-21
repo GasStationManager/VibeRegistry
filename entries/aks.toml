@@ -16,6 +16,18 @@ impl_module = "AKS.Seiferas"
 names = ["networks_exist"]
 permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
 
+[checks]
+# Comparator is the primary check: sandboxed rebuild, kernel-level proof export,
+# statement/proof comparison, axiom allowlist. SafeVerify and lean4checker are
+# optional extras (see docs/checks.md).
+comparator = true
+# Replay comparator's export through the independent nanoda kernel as well.
+nanoda = false
+# Compare spec `def`s via comparator's definition_names (previously SafeVerify's job).
+definitions = false
+safe_verify = false
+lean4checker = false
+
 [build]
 strategy = "copy"
 targets = "AKS Challenge"
