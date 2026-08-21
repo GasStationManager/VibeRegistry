@@ -23,6 +23,7 @@ body:
         - stat-learning
         - aks
         - archon-first-proof
+        - lean-zip
     validations:
       required: true
 
