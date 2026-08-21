@@ -65,6 +65,10 @@ specs/<id>/                — self-contained Lean project
 - `[[signoffs]]` — human sign-offs (written by the sign-off Action)
 - `[[mathlib_conflict_exemptions]]` — `name` + `reason` for a deliberate
   Mathlib name collision
+- `[[spec_import_exemptions]]` — `module` + `reason` for a spec that knowingly
+  imports outside Mathlib and the spec tree (`scripts/check_spec_imports.py`)
+- `tools.comparator_rev` / `tools.lean4export_rev` — pin a tool revision; by
+  default the installer picks the revision matching the entry's Lean toolchain
 
 ## Beyond verification
 

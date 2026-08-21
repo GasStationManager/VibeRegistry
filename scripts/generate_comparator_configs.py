@@ -43,9 +43,10 @@ def generate_configs(config_path, output_dir, enable_nanoda=False):
         permitted_axioms = thm_group.get('permitted_axioms',
                                          ['propext', 'Quot.sound', 'Classical.choice'])
 
-        # Generate filename from the last part of the impl module name
-        parts = impl_module.split('.')
-        filename = sanitize_name(parts[-1]) if parts else f"theorem_{i}"
+        # Name the config after the FULL impl module. Naming it after the last
+        # component alone made `A.B.Foo` and `C.D.Foo` collide, so one group's
+        # config silently overwrote the other's and that group went unchecked.
+        filename = sanitize_name(impl_module) if impl_module else f"theorem_{i}"
         config_file = os.path.join(output_dir, f"{filename}.json")
 
         comparator_config = {

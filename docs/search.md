@@ -43,7 +43,21 @@ python3 scripts/check_mathlib_conflicts.py --all
 Exit code 1 on any conflict, so it can gate CI. Every index record carries its
 conflicts, and the search page tags them.
 
-Deliberate exceptions go in the entry TOML with a reason:
+A companion check enforces the other half of readability — that a spec is
+standalone at all:
+
+```bash
+python3 scripts/check_spec_imports.py --all
+```
+
+It flags a spec importing anything outside Mathlib and the spec tree. Such a
+statement is stated in the implementation's own definitions, so auditing the
+statement means auditing the implementation too — the separation the registry
+publishes is gone. Palomar enforces the same property on Challenge modules with
+a transitive-import allowlist. Exceptions go in the entry as
+`[[spec_import_exemptions]]` with a reason.
+
+Deliberate name-collision exceptions go in the entry TOML with a reason:
 
 ```toml
 [[mathlib_conflict_exemptions]]

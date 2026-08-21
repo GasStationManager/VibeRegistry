@@ -30,7 +30,14 @@ import subprocess
 
 
 def get_decl_kinds(repo_dir, lean4export_bin, module, names):
-    """Use lean4export to determine the kind (def/thm/ax/ind) of each name."""
+    """Use lean4export to determine the kind (def/thm/ax/ind) of each name.
+
+    A name missing from the result means lean4export could not tell us its kind —
+    which is NOT the same as "it is not a theorem". Callers must not drop a name
+    on that basis: doing so silently discarded three real theorems when
+    lean4export failed to load the module, and the run then reported a pass with
+    nothing checked.
+    """
     if not names:
         return {}
 
@@ -191,6 +198,11 @@ def filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode="drop
     configs = sorted(f for f in os.listdir(config_dir) if f.endswith(".json"))
     removed = 0
     filtered_names = 0
+    unknown_total = 0
+    # Machine-readable outcome per config. The caller uses it to tell "there was
+    # genuinely nothing here for comparator to check" apart from "we could not
+    # find out" — only the first may be recorded as not-applicable.
+    report = {"configs": {}}
 
     for config_name in configs:
         config_path = os.path.join(config_dir, config_name)
@@ -207,7 +219,22 @@ def filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode="drop
         kinds = get_decl_kinds(repo_dir, lean4export_bin, challenge_module, names)
 
         thm_names = [n for n in names if kinds.get(n) in ("thm", "ax")]
-        non_thm = [n for n in names if kinds.get(n) not in ("thm", "ax")]
+        unknown = [n for n in names if n not in kinds]
+        non_thm = [n for n in names if n in kinds and kinds[n] not in ("thm", "ax")]
+
+        if unknown:
+            # Leave the config alone and let the caller fail the run. Guessing
+            # here is how unchecked theorems get reported as checked.
+            print(f"  ERROR {config_name}: could not determine the kind of "
+                  f"{', '.join(unknown)} — lean4export did not report them. "
+                  f"Leaving the config untouched; comparator will run against it.")
+            report["configs"][config_name] = {
+                "status": "unknown-kinds",
+                "kept": names,
+                "unknown": unknown,
+            }
+            unknown_total += len(unknown)
+            continue
 
         if non_thm:
             kind_info = ", ".join(f"{n} ({kinds.get(n, '?')})" for n in non_thm)
@@ -245,13 +272,34 @@ def filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode="drop
             os.remove(config_path)
             print(f"  {config_name}: removed (nothing comparator can check)")
             removed += 1
-        elif len(thm_names) < len(names) or keep_definitions:
-            config["theorem_names"] = thm_names
-            with open(config_path, "w") as f:
-                json.dump(config, f, indent=2)
-                f.write("\n")
+            report["configs"][config_name] = {
+                "status": "removed",
+                "kept": [],
+                "dropped_non_theorem": non_thm,
+            }
+        else:
+            report["configs"][config_name] = {
+                "status": "ok",
+                "kept": thm_names,
+                "definitions": config.get("definition_names", []),
+                "dropped_non_theorem": non_thm,
+            }
+            if len(thm_names) < len(names) or keep_definitions:
+                config["theorem_names"] = thm_names
+                with open(config_path, "w") as f:
+                    json.dump(config, f, indent=2)
+                    f.write("\n")
+
+    report["unknown_total"] = unknown_total
+    with open(os.path.join(config_dir, "_filter_report.json"), "w") as f:
+        json.dump(report, f, indent=2)
+        f.write("\n")
 
     print(f"  Filtered {filtered_names} non-theorem name(s), removed {removed} config(s)")
+    if unknown_total:
+        print(f"  {unknown_total} name(s) of unknown kind — the caller must not "
+              f"treat these groups as checked")
+    return unknown_total
 
 
 def main():
@@ -276,7 +324,9 @@ def main():
 
     repo_dir, lean4export_bin, config_dir = argv[0], argv[1], argv[2]
 
-    filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode)
+    unknown_total = filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode)
+    # Non-zero when any declaration's kind could not be established.
+    sys.exit(1 if unknown_total else 0)
 
 
 if __name__ == "__main__":

@@ -71,6 +71,70 @@ nanoda is built by `install_nanoda` in `scripts/lib/install_comparator_tools.sh`
 is requested but missing, the run degrades to a Lean-kernel-only comparator run
 and records `nanoda: unavailable` — unless `--require-nanoda` was given.
 
+## Tool revisions
+
+comparator and lean4export are Lean programs that load the target project's
+oleans, so they must be built against the *entry's* Lean version. Their default
+branches track whatever Lean release is current, which is usually a different
+one — building comparator's master against an older entry fails outright
+(`Invalid field 'replay'`).
+
+So the installer picks a revision instead of forcing a toolchain:
+
+1. the newest revision whose `lean-toolchain` is exactly the entry's;
+2. otherwise the newest revision in the same minor series, rebuilt against the
+   entry's exact toolchain (tools pin releases and skip patch versions —
+   comparator pins `v4.29.0` but never `v4.29.1`);
+3. otherwise the default branch, with a warning.
+
+`COMPARATOR_REV`, `LEAN4EXPORT_REV` and `NANODA_REV` override the choice. The log
+states which of the three applied, and the resolved revision of every tool is
+recorded in the result file:
+
+```json
+"tools": {
+  "comparator": "2a00b30df5e9173e70c4e4ec669fdf03da3163b9",
+  "lean4export": "caccfbe…", "nanoda": "6ae1f0c…", "landrun": "…"
+}
+```
+
+A verdict is only as meaningful as the tool that produced it, so the revision
+that produced it is published with it.
+
+The installer also prefers a tool's committed `lake-manifest.json` over `lake
+update`: re-resolving would un-pin the dependencies of a tool whose whole job is
+reproducible verification. A tool build that fails is now a hard error — it used
+to print "built" and carry on, and the missing binary later surfaced as every
+check reporting `skip`.
+
+## Self-test
+
+```bash
+tests/run_selftest.sh
+```
+
+Builds a throwaway Mathlib-free Lean project with two proved theorems and runs
+the real pipeline against `specs/selftest/`, asserting that comparator *and*
+nanoda both returned pass and that every tool revision was recorded.
+
+It exists because the failures that matter here do not look like failures. Three
+real ones, all found by running it:
+
+- landrun's upgrade to urfave/cli v3 made it swallow the `--` separator
+  comparator uses to pass constants to lean4export, so every comparator run died
+  with `unknown module prefix 'Nat'`. landrun is now pinned to the commit before
+  that (`5283024`), with a preflight that re-checks the separator survives.
+- comparator and lean4export speak a protocol that changes between revisions, so
+  lean4export is now built at the revision comparator's own manifest pins.
+- The theorem filter treated "lean4export could not tell me this declaration's
+  kind" as "this is not a theorem", dropped three real theorems, and the run
+  reported a pass with nothing checked.
+
+None of those are visible in an ordinary entry, where a pipeline failure and a
+real failure look alike. In the fixture the answer is known, so anything but a
+pass is a bug in the pipeline. CI runs it on every change to `scripts/`, and
+weekly before the full verification run.
+
 ## Results
 
 `results/<entry>/latest.json` records which checks ran and the per-declaration

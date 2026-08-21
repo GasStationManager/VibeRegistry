@@ -99,6 +99,10 @@ def parse_blueprint(text: str, source_file: str):
 _RESULT_LIST_KEYS = ("main_results", "results", "theorems", "declarations", "statements")
 _DECL_KEYS = ("declaration", "name", "lean", "lean_name", "decl")
 _INFORMAL_KEYS = ("informal", "statement", "informal_statement", "description", "summary")
+# formalization.yaml v0.4 states the correspondence under alignment.statements as
+# `lean` + `source` (which informal theorem) + `note` (how they correspond), with
+# no field literally called "informal". Compose those instead of skipping them.
+_CORRESPONDENCE_KEYS = ("source", "note")
 
 
 def _walk_results(node, out, source_file):
@@ -111,12 +115,21 @@ def _walk_results(node, out, source_file):
                         continue
                     decl = next((item[k] for k in _DECL_KEYS if item.get(k)), None)
                     informal = next((item[k] for k in _INFORMAL_KEYS if item.get(k)), None)
+                    if not informal:
+                        parts = [
+                            str(item[k]).strip()
+                            for k in _CORRESPONDENCE_KEYS
+                            if item.get(k) and isinstance(item[k], (str, int, float))
+                        ]
+                        informal = " — ".join(parts) if parts else None
                     if not decl or not informal:
                         continue
                     for name in [n.strip() for n in str(decl).split(",") if n.strip()]:
                         out[name] = {
                             "kind": item.get("kind", "theorem"),
                             "title": str(item.get("title", "")).strip(),
+                            "status": str(item.get("status", "")).strip(),
+                            "module": str(item.get("module", "")).strip(),
                             "label": "",
                             "statement": str(informal).strip(),
                             "leanok": True,

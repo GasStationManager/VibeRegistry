@@ -1,0 +1,1 @@
+import Registry.Selftest.Basic

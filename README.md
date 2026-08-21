@@ -160,6 +160,15 @@ checked, who signed off, and any Mathlib name collision. See
 6. **Test** locally: `./scripts/verify_entry.sh entries/<entry-id>.toml`
 7. **Submit** a PR
 
+### Self-test
+
+```bash
+tests/run_selftest.sh
+```
+
+Runs the real pipeline against a Mathlib-free fixture whose answer is known, so a
+broken pipeline cannot pass quietly. See [docs/checks.md](docs/checks.md#self-test).
+
 ### Sign-off helpers
 
 ```bash

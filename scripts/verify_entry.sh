@@ -131,6 +131,12 @@ if [[ "$CHECK_LEAN4CHECKER" -eq 1 ]]; then
 else
     export LEAN4CHECKER_REV=""
 fi
+
+# Optional pins for the comparator toolchain. Unset, the installer picks the
+# revision of each tool whose lean-toolchain matches this entry's.
+export COMPARATOR_REV=$($PARSE_TOML "$CONFIG_FILE" tools.comparator_rev 2>/dev/null || echo "")
+export LEAN4EXPORT_REV=$($PARSE_TOML "$CONFIG_FILE" tools.lean4export_rev 2>/dev/null || echo "")
+export NANODA_REV=$($PARSE_TOML "$CONFIG_FILE" tools.nanoda_rev 2>/dev/null || echo "")
 export BUILD_TARGETS=$($PARSE_TOML "$CONFIG_FILE" build.targets 2>/dev/null || echo "")
 
 echo "Entry: $ENTRY_ID"
@@ -147,6 +153,13 @@ SPEC_DIR="$PROJECT_DIR/specs/$ENTRY_ID"
 RESULTS_DIR="$PROJECT_DIR/results/$ENTRY_ID"
 
 mkdir -p "$WORK_DIR" "$RESULTS_DIR"
+
+# INVALIDATE: a result file describes one run. If this run dies before writing a
+# new one, the old verdict must not be left behind looking current, so retire it
+# now and restore nothing. History is kept under results/<entry>/history/.
+if [[ -f "$RESULTS_DIR/latest.json" ]]; then
+    mv "$RESULTS_DIR/latest.json" "$RESULTS_DIR/.latest.superseded.json"
+fi
 
 if [[ ! -d "$SPEC_DIR" ]]; then
     echo "ERROR: Spec directory not found: $SPEC_DIR"
@@ -184,6 +197,24 @@ echo "Build lib path: $BUILD_LIB"
 
 FAILED=0
 TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+# Must match sanitize_name() in generate_comparator_configs.py: the full impl
+# module, dots to underscores, lowercased.
+config_name_for() {
+    echo "$1" | tr '.' '_' | tr '[:upper:]' '[:lower:]'
+}
+
+# A verdict is only as meaningful as the tool that produced it, so record which
+# revision of each tool ran. Works whether the tool was auto-installed here or
+# pointed at by *_BIN, by asking the binary's own checkout.
+tool_revision() {
+    local bin="$1"
+    if [[ -z "$bin" ]] || [[ ! -e "$bin" ]]; then
+        echo ""
+        return
+    fi
+    (cd "$(dirname "$bin")" && git rev-parse HEAD 2>/dev/null) || echo ""
+}
 
 # Parse theorem groups into arrays for per-group result tracking
 NUM_GROUPS=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; print(len(json.loads(sys.stdin.read())))")
@@ -419,19 +450,46 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
             if [[ "$CHECK_DEFINITIONS" -eq 1 ]]; then
                 DEFINITIONS_MODE="compare"
             fi
+            FILTER_RC=0
             python3 "$SCRIPT_DIR/lib/filter_comparator_theorems.py" \
                 "$REPO_DIR" "$LEAN4EXPORT_FOR_FILTER" "$COMP_CONFIG_DIR" \
-                --definitions-mode "$DEFINITIONS_MODE"
+                --definitions-mode "$DEFINITIONS_MODE" || FILTER_RC=$?
 
-            # Groups whose config the filter deleted have nothing comparator can
-            # check (definition-only groups in drop mode). Mark them so they read
-            # as "not checked here" rather than silently passing.
+            if [[ "$FILTER_RC" -ne 0 ]]; then
+                echo ""
+                echo "ERROR: the theorem filter could not establish what it was"
+                echo "       looking at (lean4export failed to report declaration"
+                echo "       kinds). Refusing to treat these groups as checked."
+                FAILED=1
+            fi
+
+            # A group may be recorded as not-applicable ONLY when the filter
+            # positively established there is nothing here for comparator (a
+            # definition-only group while `definitions` is off). A missing config
+            # for any other reason is a failure, not a pass: dropping names
+            # because a tool broke is exactly how unchecked theorems get reported
+            # as checked.
+            FILTER_REPORT="$COMP_CONFIG_DIR/_filter_report.json"
             for ((i=0; i<NUM_GROUPS; i++)); do
-                IMPL_MODULE="${GROUP_IMPL_MODULES[$i]}"
-                LAST_PART=$(echo "$IMPL_MODULE" | awk -F'.' '{print $NF}')
-                EXPECTED_CONFIG="$COMP_CONFIG_DIR/$(echo "$LAST_PART" | tr '[:upper:]' '[:lower:]').json"
-                if [[ ! -f "$EXPECTED_CONFIG" ]]; then
+                CONFIG_KEY="$(config_name_for "${GROUP_IMPL_MODULES[$i]}")"
+                EXPECTED_CONFIG="$COMP_CONFIG_DIR/$CONFIG_KEY.json"
+                if [[ -f "$EXPECTED_CONFIG" ]]; then
+                    continue
+                fi
+                STATUS=$(python3 -c "
+import json, sys
+try:
+    report = json.load(open(sys.argv[1]))
+except Exception:
+    print('missing'); raise SystemExit
+print(report.get('configs', {}).get(sys.argv[2], {}).get('status', 'missing'))
+" "$FILTER_REPORT" "$CONFIG_KEY" 2>/dev/null || echo "missing")
+                if [[ "$STATUS" == "removed" ]]; then
                     GROUP_COMPARATOR[$i]="not-applicable"
+                else
+                    echo "ERROR: no comparator config for ${GROUP_IMPL_MODULES[$i]} (filter status: $STATUS)"
+                    GROUP_COMPARATOR[$i]="fail"
+                    FAILED=1
                 fi
             done
         else
@@ -474,10 +532,7 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
         # e.g., ArtificialTheorems.Opt.SGD -> sgd.json
         declare -A CONFIG_TO_GROUP
         for ((i=0; i<NUM_GROUPS; i++)); do
-            IMPL_MODULE="${GROUP_IMPL_MODULES[$i]}"
-            LAST_PART=$(echo "$IMPL_MODULE" | awk -F'.' '{print $NF}')
-            CONFIG_NAME=$(echo "$LAST_PART" | tr '[:upper:]' '[:lower:]')
-            CONFIG_TO_GROUP["$CONFIG_NAME"]=$i
+            CONFIG_TO_GROUP["$(config_name_for "${GROUP_IMPL_MODULES[$i]}")"]=$i
         done
 
         # --- Ensure tools are in PATH for comparator ---
@@ -520,6 +575,10 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
             fi
 
             config_name=$(basename "$config" .json)
+            # Not a comparator config — the filter's own outcome report.
+            if [[ "$config_name" == "_filter_report" ]]; then
+                continue
+            fi
             echo ""
             echo "-----------------------------------------"
             echo "Comparator: $config_name"
@@ -548,19 +607,31 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
                 if [[ -n "$group_idx" ]]; then
                     GROUP_COMPARATOR[$group_idx]="fail"
                     if [[ "$NANODA_ENABLED" -eq 1 ]]; then
-                        GROUP_NANODA[$group_idx]="fail"
+                        # The second kernel only has a verdict if the run got as
+                        # far as replaying the export through it. A comparator
+                        # failure earlier than that (a build error, say) is not a
+                        # nanoda rejection, and recording one would be a lie.
+                        if grep -qi "noda" "$COMPARATOR_LOG"; then
+                            GROUP_NANODA[$group_idx]="fail"
+                        else
+                            GROUP_NANODA[$group_idx]="not-reached"
+                        fi
                     fi
                 fi
                 FAILED=1
 
                 # Diagnostic: if the failure was a const mismatch, dump both
                 # exports so we can see exactly what diverged at the kernel level.
-                FAILING_CONST=$(grep -oP "Const does not match between challenge and target '\K[^']+" "$COMPARATOR_LOG" | head -1)
+                # `|| true` matters: under `set -e` a non-matching grep here
+                # aborted the whole script, so a comparator failure of any other
+                # kind never reached the results write — and the stale results
+                # file from the previous run, saying "pass", stayed on disk.
+                FAILING_CONST=$(grep -oP "Const does not match between challenge and target '\K[^']+" "$COMPARATOR_LOG" | head -1 || true)
                 if [[ -n "$FAILING_CONST" ]] && [[ -n "$LEAN4EXPORT" ]] && [[ -f "$LEAN4EXPORT" ]]; then
                     echo ""
                     echo "=== DIAGNOSTIC: export diff for $FAILING_CONST ==="
-                    CHALLENGE_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['challenge_module'])" 2>/dev/null)
-                    SOLUTION_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['solution_module'])" 2>/dev/null)
+                    CHALLENGE_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['challenge_module'])" 2>/dev/null || true)
+                    SOLUTION_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['solution_module'])" 2>/dev/null || true)
                     SPEC_OUT=$(mktemp)
                     IMPL_OUT=$(mktemp)
                     (cd "$REPO_DIR" && lake env "$LEAN4EXPORT" "$CHALLENGE_MODULE" -- "$FAILING_CONST" > "$SPEC_OUT" 2>&1) || echo "  (spec export failed)"
@@ -597,6 +668,8 @@ for ((i=0; i<NUM_GROUPS; i++)); do
 done
 
 # --- Guard: the primary check must actually produce a verdict ---
+# (A run that dies before this point leaves no new result file; the stale one
+#  from the previous run is invalidated at startup, see INVALIDATE below.)
 # A run where comparator was requested but never reported on a group is not a
 # pass. "not-applicable" is fine (the group holds nothing comparator checks);
 # "skip" means the check was asked for and silently did not happen.
@@ -641,6 +714,12 @@ RESULT_JSON=$(cat <<EOF
     "lean4checker": $([[ "$CHECK_LEAN4CHECKER" -eq 1 ]] && echo true || echo false)
   },
   "build_strategy": "$STRATEGY",
+  "tools": {
+    "comparator": "$(tool_revision "${COMPARATOR:-}")",
+    "lean4export": "$(tool_revision "${LEAN4EXPORT:-${LEAN4EXPORT_BIN:-}}")",
+    "nanoda": "$(tool_revision "${NANODA:-}")",
+    "landrun": "$(tool_revision "${LANDRUN:-}")"
+  },
   "theorems": [$THEOREMS_ARRAY],
   "overall": "$OVERALL"
 }
@@ -648,6 +727,8 @@ EOF
 )
 
 echo "$RESULT_JSON" > "$RESULTS_DIR/latest.json"
+# This run produced a verdict, so the retired one is no longer needed.
+rm -f "$RESULTS_DIR/.latest.superseded.json"
 mkdir -p "$RESULTS_DIR/history"
 cp "$RESULTS_DIR/latest.json" "$RESULTS_DIR/history/$(date -u +%Y%m%d_%H%M%S).json"
 

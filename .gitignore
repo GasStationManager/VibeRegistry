@@ -6,6 +6,10 @@ work/
 # data/mathlib-names.meta.json records which snapshot was used and is committed.
 data/mathlib-names.tsv.gz
 
+# Self-test artifacts: tests/run_selftest.sh runs the real pipeline, which writes
+# a result file like any other entry. It is a test outcome, not registry data.
+results/selftest/
+
 # Python
 __pycache__/
 *.pyc

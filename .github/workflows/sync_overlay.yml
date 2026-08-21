@@ -61,9 +61,9 @@ jobs:
             git push
           fi
 
-  # Separate job so a collision turns CI red without blocking the index rebuild:
+  # Separate job so a finding turns CI red without blocking the index rebuild:
   # the index records conflicts, and readers should see them flagged either way.
-  mathlib-collisions:
+  spec-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -71,6 +71,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      - name: Check specs are standalone
+        run: python3 scripts/check_spec_imports.py --all
 
       - name: Fetch Mathlib declaration names
         run: python3 scripts/fetch_mathlib_names.py
