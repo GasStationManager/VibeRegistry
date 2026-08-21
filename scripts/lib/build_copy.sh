@@ -118,9 +118,16 @@ build_copy() {
         return 1
     fi
 
-    # 3d. Add verification tool entries to lake-manifest.json if present
-    if [[ -f "$repo_dir/lake-manifest.json" ]] && [[ -n "${SAFE_VERIFY_REV:-}" || -n "${LEAN4CHECKER_REV:-}" ]]; then
-        echo "Updating lake-manifest.json with verification tool entries..."
+    # 3d. Normalize the manifest, and add verification tool entries when the
+    # optional checks that need them are enabled.
+    #
+    # This must NOT be gated on those tools: the same block also repairs a
+    # package name Lake rejects (hyphens are not a valid Lean `Name`), which
+    # every build needs. It used to run only when SafeVerify or lean4checker
+    # were being injected, so turning those off by default silently broke
+    # `lake build` for any repo with a hyphenated manifest name.
+    if [[ -f "$repo_dir/lake-manifest.json" ]]; then
+        echo "Updating lake-manifest.json..."
         python3 - "$repo_dir/lake-manifest.json" "${SAFE_VERIFY_REV:-}" "${LEAN4CHECKER_REV:-}" << 'PYEOF'
 import json, sys
 
