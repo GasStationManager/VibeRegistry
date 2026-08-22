@@ -29,6 +29,94 @@ import json
 import subprocess
 
 
+def _resolve_name(name_table, idx):
+    """Resolve a name index to a dotted string."""
+    parts = []
+    while idx in name_table:
+        pre, part = name_table[idx]
+        parts.append(part)
+        idx = pre
+    parts.reverse()
+    return ".".join(parts)
+
+
+# lean4export emits two different export formats, and which one you get depends
+# on the revision comparator pins you to:
+#
+#   2.x  plain text. First line is the bare version, names are
+#        `<idx> #NS <parent> <string>`, declarations are `#THM <name_idx> ...`
+#   3.x  NDJSON. First line is a JSON meta header, names are
+#        {"in": idx, "str": {...}}, declarations are {"thm": {...}} — and a
+#        mutual block arrives as a LIST under one key.
+#
+# Handling only the JSON dict shape is how this filter came to report every
+# declaration as "kind unknown": it crashed on a list, and read nothing at all
+# from a 2.x export.
+def _kinds_from_text_export(text, names):
+    name_table = {}
+    kinds = {}
+    wanted = set(names)
+    markers = {
+        "#THM": "thm", "#AX": "ax", "#DEF": "def", "#OPAQ": "opaque",
+        "#IND": "ind", "#CTOR": "ctor", "#REC": "rec", "#QUOT": "quot",
+    }
+    for line in text.splitlines():
+        parts = line.split()
+        if len(parts) >= 4 and parts[1] in ("#NS", "#NI"):
+            try:
+                name_table[int(parts[0])] = (int(parts[2]), parts[3])
+            except ValueError:
+                pass
+            continue
+        if not parts:
+            continue
+        kind = markers.get(parts[0])
+        if kind is None or len(parts) < 2:
+            continue
+        try:
+            name_idx = int(parts[1])
+        except ValueError:
+            continue
+        resolved = _resolve_name(name_table, name_idx)
+        if resolved in wanted:
+            kinds[resolved] = kind
+    return kinds
+
+
+def _kinds_from_json_export(text, names):
+    name_table = {}
+    kinds = {}
+    wanted = set(names)
+    for line in text.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            obj = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+
+        if "in" in obj and "str" in obj:
+            name_table[obj["in"]] = (obj["str"].get("pre", 0), obj["str"].get("str", ""))
+            continue
+
+        for kind in ("def", "thm", "ax", "ind", "quot", "ctor", "rec", "opaque"):
+            if kind not in obj:
+                continue
+            entries = obj[kind] if isinstance(obj[kind], list) else [obj[kind]]
+            for entry in entries:
+                if not isinstance(entry, dict):
+                    continue
+                name_idx = entry.get("name")
+                if name_idx is None:
+                    continue
+                resolved = _resolve_name(name_table, name_idx)
+                if resolved in wanted:
+                    kinds[resolved] = kind
+            break
+    return kinds
+
+
 def get_decl_kinds(repo_dir, lean4export_bin, module, names):
     """Use lean4export to determine the kind (def/thm/ax/ind) of each name.
 
@@ -45,7 +133,7 @@ def get_decl_kinds(repo_dir, lean4export_bin, module, names):
     try:
         result = subprocess.run(
             ["lake", "env"] + cmd,
-            capture_output=True, text=True, cwd=repo_dir, timeout=120
+            capture_output=True, text=True, cwd=repo_dir, timeout=600
         )
     except subprocess.TimeoutExpired:
         print(f"  WARNING: lean4export timed out for {module}", file=sys.stderr)
@@ -56,48 +144,9 @@ def get_decl_kinds(repo_dir, lean4export_bin, module, names):
               file=sys.stderr)
         return {}
 
-    # Parse NDJSON output to build name index and find declaration entries
-    name_table = {}  # idx -> (pre, str)
-    decl_kinds = {}  # resolved_name -> kind
-
-    for line in result.stdout.splitlines():
-        line = line.strip()
-        if not line:
-            continue
-        try:
-            obj = json.loads(line)
-        except json.JSONDecodeError:
-            continue
-
-        # Collect name entries: {"in": idx, "str": {"pre": pre_idx, "str": "name"}}
-        if "in" in obj and "str" in obj:
-            idx = obj["in"]
-            pre = obj["str"].get("pre", 0)
-            s = obj["str"].get("str", "")
-            name_table[idx] = (pre, s)
-
-        # Check for declaration entries
-        for kind in ("def", "thm", "ax", "ind", "quot", "ctor", "rec"):
-            if kind in obj:
-                name_idx = obj[kind].get("name")
-                if name_idx is not None:
-                    resolved = _resolve_name(name_table, name_idx)
-                    if resolved in names:
-                        decl_kinds[resolved] = kind
-                break
-
-    return decl_kinds
-
-
-def _resolve_name(name_table, idx):
-    """Resolve a name index to a dotted string."""
-    parts = []
-    while idx in name_table:
-        pre, s = name_table[idx]
-        parts.append(s)
-        idx = pre
-    parts.reverse()
-    return ".".join(parts)
+    if result.stdout.lstrip()[:1] == "{":
+        return _kinds_from_json_export(result.stdout, names)
+    return _kinds_from_text_export(result.stdout, names)
 
 
 def get_type_deps(repo_dir, lean4export_bin, module, names):

@@ -102,6 +102,82 @@ _describe_rev() {
     esac
 }
 
+# Which export format version a comparator build can parse.
+#
+# comparator reads lean4export's output and rejects a format it does not know
+# ("Version invalid" / "unsupported version"). The two tools are versioned
+# independently, so a toolchain match is not enough: for v4.27.0-rc1 there are
+# lean4export revisions emitting format 2.0.0 and others emitting 3.0.0, and
+# only one of them pairs with a given comparator. Echoes e.g. "2.0.0", or
+# nothing when the source does not state it (newer comparators negotiate).
+_comparator_export_format() {
+    local dir="$1"
+    local parser="$dir/Comparator/Parser.lean"
+    [[ -f "$parser" ]] || return 0
+    grep -oE 'version != \(([0-9]+), *([0-9]+), *([0-9]+)\)' "$parser" \
+        | head -1 \
+        | grep -oE '[0-9]+, *[0-9]+, *[0-9]+' \
+        | tr -d ' ' \
+        | tr ',' '.'
+}
+
+# The export format a lean4export revision emits, as declared in its Main.lean.
+_lean4export_format() {
+    local dir="$1"
+    local rev="$2"
+    (cd "$dir" && git show "$rev:Main.lean" 2>/dev/null) \
+        | grep -oE '"[0-9]+\.[0-9]+\.[0-9]+"' \
+        | head -1 \
+        | tr -d '"'
+}
+
+# Pick a lean4export revision that both builds against our Lean and emits the
+# export format this comparator can read.
+_checkout_lean4export() {
+    local dir="$1" want_tc="$2" want_format="$3" explicit="${4:-}"
+
+    if [[ -n "$explicit" ]]; then
+        (cd "$dir" && git checkout -q "$explicit") || return 1
+        echo "$explicit pinned"
+        return 0
+    fi
+
+    if [[ -z "$want_format" ]]; then
+        _checkout_matching_toolchain "$dir" "$want_tc"
+        return $?
+    fi
+
+    local want_series="${want_tc%.*}"
+    local best="" best_series="" commit
+    while read -r commit; do
+        local format
+        format=$(_lean4export_format "$dir" "$commit")
+        [[ "$format" == "$want_format" ]] || continue
+        local tc
+        tc=$(cd "$dir" && git show "$commit:lean-toolchain" 2>/dev/null | tr -d '[:space:]')
+        if [[ "$tc" == "$want_tc" ]]; then
+            best="$commit"
+            break
+        fi
+        if [[ -z "$best_series" ]] && [[ "${tc%.*}" == "$want_series" ]]; then
+            best_series="$commit"
+        fi
+    done < <(cd "$dir" && git log --format=%H --max-count=2000)
+
+    if [[ -n "$best" ]]; then
+        (cd "$dir" && git checkout -q "$best") || return 1
+        echo "$best exact"
+        return 0
+    fi
+    if [[ -n "$best_series" ]]; then
+        (cd "$dir" && git checkout -q "$best_series") || return 1
+        echo "$want_tc" > "$dir/lean-toolchain"
+        echo "$best_series series"
+        return 0
+    fi
+    return 1
+}
+
 # Build a cloned Lake project. Prefers its committed lake-manifest.json over
 # `lake update`: re-resolving would un-pin the dependency revisions of a tool
 # whose whole job is reproducible verification, and it forces a Reservoir lookup
@@ -235,6 +311,13 @@ install_comparator_tools() {
         echo ""
         echo "--- Installing lean4export ---"
 
+        # What this comparator can read decides which lean4export we need.
+        local want_format
+        want_format=$(_comparator_export_format "$comparator_dir")
+        if [[ -n "$want_format" ]]; then
+            echo "  comparator reads export format $want_format"
+        fi
+
         local pinned_export_rev="${LEAN4EXPORT_REV:-}"
         if [[ -z "$pinned_export_rev" ]] && [[ -f "$comparator_dir/lake-manifest.json" ]]; then
             pinned_export_rev=$(python3 -c "
@@ -256,11 +339,16 @@ for package in manifest.get('packages', []):
         rm -rf "$lean4export_dir"
         git clone https://github.com/leanprover/lean4export.git "$lean4export_dir"
         local lean4export_rev
-        if lean4export_rev=$(_checkout_matching_toolchain "$lean4export_dir" "$toolchain" "$pinned_export_rev"); then
+        if lean4export_rev=$(_checkout_lean4export "$lean4export_dir" "$toolchain" "$want_format" "$pinned_export_rev"); then
             _describe_rev "lean4export" "$toolchain" $lean4export_rev
+            if [[ -n "$want_format" ]]; then
+                echo "  emits export format $(_lean4export_format "$lean4export_dir" HEAD)"
+            fi
         else
-            echo "WARNING: no lean4export revision pins $toolchain; building its default branch"
-            cp "$toolchain_file" "$lean4export_dir/lean-toolchain"
+            echo "ERROR: no lean4export revision both targets $toolchain and emits"
+            echo "       export format ${want_format:-<unconstrained>}, which this comparator"
+            echo "       requires. Pin one with tools.lean4export_rev."
+            return 1
         fi
         # Whatever revision we took, it has to build against this entry's Lean.
         echo "$toolchain" > "$lean4export_dir/lean-toolchain"

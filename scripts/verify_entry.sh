@@ -204,6 +204,20 @@ config_name_for() {
     echo "$1" | tr '.' '_' | tr '[:upper:]' '[:lower:]'
 }
 
+# Whether this comparator build can compare definitions at all. `definition_names`
+# is a recent addition; older revisions parse their config with a derived FromJson
+# that silently ignores unknown fields, so passing definitions to one of them is
+# not an error — it checks nothing and reports success. Verified: comparator at
+# v4.29's revision, given theorem_names [] and definition_names [...], prints
+# "Your solution is okay!" and exits 0.
+comparator_supports_definitions() {
+    local bin="$1"
+    local root
+    root=$(cd "$(dirname "$bin")" 2>/dev/null && git rev-parse --show-toplevel 2>/dev/null) || return 1
+    [[ -n "$root" ]] || return 1
+    grep -rq "definition_names" "$root" --include="*.lean" 2>/dev/null
+}
+
 # A verdict is only as meaningful as the tool that produced it, so record which
 # revision of each tool ran. Works whether the tool was auto-installed here or
 # pointed at by *_BIN, by asking the binary's own checkout.
@@ -425,6 +439,17 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
         # --- Generate comparator configs ---
         COMP_CONFIG_DIR="$WORK_DIR/comparator_configs"
         rm -rf "$COMP_CONFIG_DIR"
+        if [[ "$CHECK_DEFINITIONS" -eq 1 ]] && ! comparator_supports_definitions "$COMPARATOR"; then
+            echo ""
+            echo "ERROR: this comparator build has no definition_names field, so the"
+            echo "       definitions this entry asks to check would be silently"
+            echo "       ignored and reported as passing. Either drop"
+            echo "       'definitions = true' from the entry, or pin a comparator"
+            echo "       revision that supports it (tools.comparator_rev) — note it"
+            echo "       must still build against ${TOOLCHAIN}."
+            exit 2
+        fi
+
         GEN_ARGS=()
         if [[ "$NANODA_ENABLED" -eq 1 ]]; then
             GEN_ARGS+=(--enable-nanoda)
