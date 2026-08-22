@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-08-21T18:33:27Z",
+  "generated_at": "2026-08-22T01:23:47Z",
   "counts": {
    "total": 628,
    "registry": 30,
@@ -269,7 +269,9 @@
    "doc": "Standard Gaussian product measure: the product of n independent standard Gaussians N(0,1)",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -294,7 +296,9 @@
    "doc": "The standard Gaussian on EuclideanSpace as pushforward of stdGaussianPi via the equivalence.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -319,7 +323,9 @@
    "doc": "`t` is an `eps`-net for `s` if every point of `s` lies in a closed ball of radius `eps`\ncentered at some element of `t`.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -344,7 +350,9 @@
    "doc": "Covering number: the minimal cardinality of a finite `eps`-net, as `WithTop Nat`.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -369,7 +377,9 @@
    "doc": "Helper to compute metric entropy given a natural number.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -394,7 +404,9 @@
    "doc": "Metric entropy: log of covering number.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -419,7 +431,9 @@
    "doc": "Square root of metric entropy.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -444,7 +458,9 @@
    "doc": "Dudley integrand: √(log N(ε, s)) as ENNReal.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -469,7 +485,9 @@
    "doc": "Entropy integral (ENNReal): ∫₀^D √(log N(ε, s)) dε.",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -494,7 +512,9 @@
    "doc": "Entropy integral (real-valued wrapper).",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -519,7 +539,9 @@
    "doc": "A stochastic process X indexed by a metric space is σ-sub-Gaussian if\nthe MGF of increments satisfies E[exp(l(X_s - X_t))] ≤ exp(l²σ²d(s,t)²/2).",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"
@@ -544,7 +566,9 @@
    "doc": "A function is compactly supported and smooth (C²)",
    "informal": "",
    "informal_source": "",
-   "checks": {},
+   "checks": {
+    "comparator": "not-applicable"
+   },
    "signoffs": [],
    "mathlib_conflicts": [],
    "url": "https://github.com/YuanheZ/lean-stat-learning-theory/blob/7b82b1323c80f0c21ca449fd12e1c24315ae9782"

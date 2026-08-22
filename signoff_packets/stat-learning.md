@@ -1,11 +1,11 @@
 # Sign-off packet — Lean Statistical Learning Theory
 
-*Generated 2026-08-21 18:33 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-08-22 01:23 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `stat-learning`
 - **Upstream**: https://github.com/YuanheZ/lean-stat-learning-theory @ `7b82b1323c80`
 - **Lean**: leanprover/lean4:v4.27.0-rc1
-- **Machine checks**: level 2 (pre-checks-model result) — overall **pass** at 2026-08-09T03:46:18Z
+- **Machine checks**: comparator — overall **pass** at 2026-08-22T01:01:09Z
 - **Informal statements**: none adopted yet — run `python3 scripts/fetch_blueprint_statements.py entries/stat-learning.toml`
 
 ## What you are attesting
@@ -40,7 +40,7 @@ Sign-off is optional: an entry whose comparator check passes stands on its own a
 
 ### `GaussianMeasure.stdGaussianPi`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -57,7 +57,7 @@ noncomputable def stdGaussianPi (n : ℕ) : Measure (Fin n → ℝ) :=
 
 ### `GaussianMeasure.stdGaussianE`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -83,7 +83,7 @@ noncomputable def stdGaussianE (n : ℕ) : Measure (EuclideanSpace ℝ (Fin n)) 
 
 ### `IsENet`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -101,7 +101,7 @@ def IsENet {A : Type*} [PseudoMetricSpace A] (t : Finset A) (eps : ℝ) (s : Set
 
 ### `coveringNumber`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -127,7 +127,7 @@ noncomputable def coveringNumber {A : Type*} [PseudoMetricSpace A] (eps : ℝ) (
 
 ### `metricEntropyOfNat`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -144,7 +144,7 @@ def metricEntropyOfNat (n : ℕ) : ℝ :=
 
 ### `metricEntropy`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -163,7 +163,7 @@ def metricEntropy (eps : ℝ) (s : Set A) : ℝ :=
 
 ### `sqrtEntropy`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -180,7 +180,7 @@ def sqrtEntropy (eps : ℝ) (s : Set A) : ℝ :=
 
 ### `dudleyIntegrand`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -197,7 +197,7 @@ def dudleyIntegrand (eps : ℝ) (s : Set A) : ℝ≥0∞ :=
 
 ### `entropyIntegralENNReal`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -214,7 +214,7 @@ def entropyIntegralENNReal (s : Set A) (D : ℝ) : ℝ≥0∞ :=
 
 ### `entropyIntegral`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -240,7 +240,7 @@ def entropyIntegral (s : Set A) (D : ℝ) : ℝ :=
 
 ### `IsSubGaussianProcess`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -268,7 +268,7 @@ def IsSubGaussianProcess (μ : Measure Ω) (X : A → Ω → ℝ) (σ : ℝ) : P
 
 ### `EfronSteinApp.CompactlySupportedSmooth`
 
-*Machine checks: not checked*
+*Machine checks: comparator: not-applicable*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 

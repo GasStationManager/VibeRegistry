@@ -26,7 +26,7 @@ The registry itself does not contain proof code. It contains:
 | [Lean Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare (16 theorems) | v4.27.0-rc1 | comparator | — | Verified |
 | [AKS Sorting Networks](https://github.com/girving/aks) | O(log n)-depth sorting networks (1 theorems) | v4.29.0-rc4 | comparator | — | Verified |
 | [Archon FirstProof Results](https://github.com/frenzymath/Archon-FirstProof-Results) | Harmonic-mean inequality, epsilon-light graph subsets (2 theorems) | v4.28.0 | comparator | — | Verified |
-| [lean-zip](https://github.com/kim-em/lean-zip) | 3 theorems | v4.29.1 | comparator | — | Verified |
+| [lean-zip](https://github.com/kim-em/lean-zip) | 3 theorems | v4.29.1 | comparator +nanoda | — | Failed |
 <!-- END REGISTRY TABLE -->
 
 ## Overlay and search
