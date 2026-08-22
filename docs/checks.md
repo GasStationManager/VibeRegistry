@@ -7,7 +7,7 @@ are extras an entry may switch on.
 |-------|---------|---------------------|
 | `comparator` | **on** | The pinned implementation proves *this* statement. Comparator rebuilds the project in a landrun sandbox, exports the proof term at kernel level, holds the challenge (spec) statement apart from the solution (proof), compares declarations by name and type, and enforces the axiom allowlist. |
 | `nanoda` | off | The exported proof is replayed through [nanoda](https://github.com/ammkrn/nanoda_lib), an independently written Lean kernel, as well as Lean's own. A soundness bug in one kernel is unlikely to be shared by the other. |
-| `definitions` | off | Spec `def`s are compared through comparator's `definition_names`, not just theorems. |
+| `definitions` | off | Spec `def`s are compared through comparator's `definition_names`, not just theorems. Needs a comparator revision that has that field — see below. |
 | `safe_verify` | off | Legacy olean-level spec/impl check (types match, axioms allowed, no `sorry`, no `partial`/`unsafe`). |
 | `lean4checker` | off | Legacy kernel re-check of the implementation module. |
 
@@ -71,6 +71,35 @@ nanoda is built by `install_nanoda` in `scripts/lib/install_comparator_tools.sh`
 is requested but missing, the run degrades to a Lean-kernel-only comparator run
 and records `nanoda: unavailable` — unless `--require-nanoda` was given.
 
+## Definitions need a comparator that has the field
+
+`definition_names` is a recent addition to comparator. The revisions that build
+against our entries' Lean versions do not have it:
+
+| comparator | Lean | `definition_names` |
+|---|---|---|
+| `6d5870e` (stat-learning) | v4.27.0-rc1 | no |
+| `2a00b30` (lean-zip) | v4.29.1 | no |
+| `master` | v4.34.0-rc2 | yes |
+
+Comparator parses its config with a derived `FromJson`, which reads the fields it
+knows and ignores the rest. So passing `definition_names` to an older build is
+not an error — it is a no-op. Given `theorem_names: []` and
+`definition_names: [...]`, comparator at v4.29's revision prints
+
+```
+Lean default kernel accepts the solution
+Your solution is okay!          (exit 0)
+```
+
+having compared nothing. Enabling `definitions` there would have turned
+stat-learning's 12 unchecked definitions into 12 reported as passing.
+
+The pipeline therefore refuses to run when `definitions` is on and the comparator
+build lacks the field. Until an entry's Lean version has a comparator that
+carries it, its definition-only groups are recorded as **not-applicable**: the
+registry says plainly that nothing checked them, rather than implying something did.
+
 ## Tool revisions
 
 comparator and lean4export are Lean programs that load the target project's
@@ -86,6 +115,20 @@ So the installer picks a revision instead of forcing a toolchain:
    entry's exact toolchain (tools pin releases and skip patch versions —
    comparator pins `v4.29.0` but never `v4.29.1`);
 3. otherwise the default branch, with a warning.
+
+lean4export gets a second constraint: comparator reads its output and rejects a
+format it does not know, and the two tools are versioned independently. Selecting
+each by toolchain alone paired a comparator that reads export format `2.0.0` with
+a lean4export that emits `3.0.0`, and every group failed with
+
+```
+uncaught exception: Version invalid: '{"meta":{"exporter":...}}'
+```
+
+Comparator's own manifest cannot settle it either — at that revision comparator
+does not depend on lean4export at all. So the installer reads the format
+comparator's parser accepts and picks the newest lean4export revision that both
+targets the entry's Lean and emits that format.
 
 `COMPARATOR_REV`, `LEAN4EXPORT_REV` and `NANODA_REV` override the choice. The log
 states which of the three applied, and the resolved revision of every tool is

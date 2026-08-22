@@ -72,6 +72,14 @@ comparator = true
 # Replay comparator's export through the independent nanoda kernel as well.
 nanoda = false
 # Compare spec `def`s via comparator's definition_names (previously SafeVerify's job).
+#
+# Off, and it cannot be turned on for this entry yet. 12 of this entry's 16
+# registered declarations are definitions, and the comparator revision that
+# builds against v4.27.0-rc1 (6d5870e) has no definition_names field at all —
+# it parses its config with a derived FromJson that ignores unknown fields, so
+# enabling this would report the 12 as passing while checking nothing. Verified
+# directly; see docs/checks.md. Until a comparator with the field builds against
+# this entry's Lean, its definition groups are recorded as not-applicable.
 definitions = false
 safe_verify = false
 lean4checker = false

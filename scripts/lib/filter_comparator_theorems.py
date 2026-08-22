@@ -254,6 +254,12 @@ def filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode="drop
     report = {"configs": {}}
 
     for config_name in configs:
+        # The caller looks these up by the config's stem, which is how it derives
+        # a config name from a theorem group's impl module. Keying the report by
+        # the filename instead made every lookup miss, and a group the filter had
+        # deliberately dropped was reported as a failure rather than as having
+        # nothing to check.
+        report_key = os.path.splitext(config_name)[0]
         config_path = os.path.join(config_dir, config_name)
         with open(config_path) as f:
             config = json.load(f)
@@ -277,7 +283,7 @@ def filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode="drop
             print(f"  ERROR {config_name}: could not determine the kind of "
                   f"{', '.join(unknown)} — lean4export did not report them. "
                   f"Leaving the config untouched; comparator will run against it.")
-            report["configs"][config_name] = {
+            report["configs"][report_key] = {
                 "status": "unknown-kinds",
                 "kept": names,
                 "unknown": unknown,
@@ -321,13 +327,13 @@ def filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode="drop
             os.remove(config_path)
             print(f"  {config_name}: removed (nothing comparator can check)")
             removed += 1
-            report["configs"][config_name] = {
+            report["configs"][report_key] = {
                 "status": "removed",
                 "kept": [],
                 "dropped_non_theorem": non_thm,
             }
         else:
-            report["configs"][config_name] = {
+            report["configs"][report_key] = {
                 "status": "ok",
                 "kept": thm_names,
                 "definitions": config.get("definition_names", []),
