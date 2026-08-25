@@ -41,7 +41,8 @@ human sign-off step and indexes everything it knows about:
 - `index/` — `statements.json` plus a static `search.html` over every statement,
   ours and overlaid, each tagged with what was checked, who signed off, and any
   Mathlib name collision. Current counts live in `index/meta.json`.
-  See [docs/search.md](docs/search.md).
+  Published at **https://gasstationmanager.github.io/VibeRegistry/**, rebuilt
+  whenever the index changes on `main`. See [docs/search.md](docs/search.md).
 
 ## Checks
 

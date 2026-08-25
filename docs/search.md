@@ -4,11 +4,35 @@ Because sign-off is optional, the registry is also useful as a plain search
 surface over Lean statements that something has actually checked — ours and the
 upstream registries we mirror.
 
+Published at **https://gasstationmanager.github.io/VibeRegistry/**. To build and
+read it locally:
+
 ```bash
 python3 scripts/fetch_mathlib_names.py     # once, and whenever Mathlib moves
 python3 scripts/build_search_index.py
 python3 -m http.server 8000 --directory index   # then open /search.html
 ```
+
+A server is needed even locally: the page fetches `statements.json`, and a
+browser blocks that from a `file://` origin. Opening the HTML by double-clicking
+it shows "Could not load statements.json".
+
+## Publishing
+
+`.github/workflows/pages.yml` deploys `index/` as the project site whenever the
+index changes on `main`. It deploys from Actions rather than from a branch, so
+the directory becomes the site root — the page is at `/VibeRegistry/` rather
+than `/VibeRegistry/index/search.html` — and it refuses to publish an index with
+no records in it.
+
+This is a separate Pages site from the Jekyll blog at `gasstationmanager.github.io`:
+different repo, different build, and it serves a path the blog does not use.
+Enabling it requires one manual step, in the VibeRegistry repo's
+**Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+**`search.html` is generated** from a template inside `build_search_index.py`.
+Edit the template, not the file — the next build overwrites the file.
+`scripts/lib/test_search_page.py` fails if they drift apart.
 
 Outputs:
 

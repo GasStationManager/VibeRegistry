@@ -254,6 +254,9 @@ SEARCH_HTML = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VibeRegistry — statement search</title>
+<!-- Inline so the page makes no request for it: a public page should not log a
+     404 for a favicon, and there is nothing else to fetch. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232f5fd0'/%3E%3Cpath d='M3.5 8.5l3 3 6-6' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <style>
   :root {
     color-scheme: light dark;
@@ -294,6 +297,9 @@ SEARCH_HTML = """<!doctype html>
     border-radius: 6px; padding: 0.6rem; font-size: 0.8rem; margin: 0.6rem 0 0; }
   a { color: var(--accent); }
   details summary { cursor: pointer; color: var(--muted); font-size: 0.85rem; margin-top: 0.5rem; }
+  footer { max-width: 60rem; margin: 0 auto; padding: 1.5rem 1rem 3rem;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; }
+  footer p { margin: 0.3rem 0; }
 </style>
 </head>
 <body>
@@ -315,6 +321,17 @@ SEARCH_HTML = """<!doctype html>
   <div class="count" id="count">Loading…</div>
   <div id="results"></div>
 </main>
+<footer>
+  <p><strong>What a row means.</strong> A machine check says an implementation
+  proves the statement. A sign-off says a named human read the statement and
+  vouched for what it says. They are different claims, and a row shows both or
+  neither — an unsigned statement is listed, not hidden.</p>
+  <p>Mirrored rows come from <a href="https://palomar-registry.org/">Palomar</a>
+  and <a href="https://github.com/Vilin97/lean-pool">LeanPool</a>, which checked
+  them; this registry did not re-verify those proofs.</p>
+  <p><a href="https://github.com/GasStationManager/VibeRegistry">Source and
+  documentation</a> · <a href="statements.json">raw index</a></p>
+</footer>
 <script>
 const state = { records: [], meta: null };
 
