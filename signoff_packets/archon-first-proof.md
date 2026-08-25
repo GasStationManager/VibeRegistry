@@ -1,6 +1,6 @@
 # Sign-off packet — Archon FirstProof Results
 
-*Generated 2026-08-25 15:11 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-08-25 15:12 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `archon-first-proof`
 - **Upstream**: https://github.com/frenzymath/Archon-FirstProof-Results @ `35550f2bc0a5`

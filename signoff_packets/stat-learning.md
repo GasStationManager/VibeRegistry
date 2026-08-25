@@ -1,6 +1,6 @@
 # Sign-off packet — Lean Statistical Learning Theory
 
-*Generated 2026-08-25 15:11 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-08-25 15:12 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `stat-learning`
 - **Upstream**: https://github.com/YuanheZ/lean-stat-learning-theory @ `7b82b1323c80`
