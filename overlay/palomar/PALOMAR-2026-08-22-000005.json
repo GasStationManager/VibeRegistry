@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-22-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-22-000005",
+  "version": 1,
+  "title": "mbaccaro-dev/mathematical-proofs",
+  "abstract": "A Lean 4 proof of a residual-or-unmatched barrier for local Möbius cancellation. At every sufficiently large fixed-band scale, either the permitted edge length reaches the retained-prime product or every member of an explicit squarefree prime-product family is unmatched. Chebyshev estimates give the exact binomial and factorial population bounds. The product scale also converts residual rank to its logarithmic threshold with the exact limiting constant.",
+  "authors": [
+    "Mayk Loide Baccaro"
+  ],
+  "repository": "https://github.com/mbaccaro-dev/mathematical-proofs",
+  "commit": "11d59ae23fb0fe3d8591a00069bec47a868ac93f",
+  "project_path": "MathematicalProofs/MobiusResidualComplexity/Lean",
+  "declarations": [
+    "RiemannHypothesisProofFactory.MobiusResidualComplexity.chebyshev_globalMatching_residual_budget_barrier",
+    "RiemannHypothesisProofFactory.MobiusResidualComplexity.eventually_octuple_globalMatching_residual_or_unmatched_barrier",
+    "RiemannHypothesisProofFactory.MobiusResidualComplexity.threshold_logarithmic_scale_conversion",
+    "RiemannHypothesisProofFactory.MobiusResidualComplexity.eventually_threshold_budget_separation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N37",
+      "11A25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-22T05:26:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "11d59ae23fb0fe3d8591a00069bec47a868ac93f",
+        "fork_repository": "PalomarArchive/mbaccaro-dev--mathematical-proofs--747a1597eb38",
+        "source_repository": "mbaccaro-dev/mathematical-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e86324ea27bfd192c2a671ec80a2e5c87093f7ac7ff64bf8c856ba9ae12e1cd9"
+}

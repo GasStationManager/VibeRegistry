@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "egrs75",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Egrs75",
+  "version": 1,
+  "title": "The Erdős–Graham–Ruzsa–Straus two-prime theorem",
+  "abstract": "A complete machine-checked proof that for any two distinct odd primes p and q there are infinitely many n with binom(2n,n) coprime to pq, including the iterated carry-controlled digit-clearing step that Bloom and Croot defer to the 1975 paper, via a per-move lexicographic measure, an elementary staircase lemma, and a Dirichlet-approximation seed.",
+  "authors": [
+    "Egor Lyfar"
+  ],
+  "repository": "https://github.com/lyfar/egrs75-lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Egrs75",
+  "declarations": [
+    "Egrs75.MuFinish.egrs_two_prime_mu",
+    "Egrs75.Finish.egrs_two_prime_finish",
+    "Egrs75.not_dvd_centralBinom_iff_lowDigits",
+    "Egrs75.MathlibAPI.irrational_log_div_log"
+  ],
+  "informal": {
+    "Egrs75.MuFinish.egrs_two_prime_mu": "Proves that for distinct odd primes p and q there are infinitely many n with p and q both not dividing the central binomial coefficient binom(2n,n), via the mu-measure descent.",
+    "Egrs75.Finish.egrs_two_prime_finish": "Reassembles the same theorem via bad-bit-mask strong induction, with the low-case clearing discharged by Egrs75.MuFinish.egrs_clearing_low_mu.",
+    "Egrs75.not_dvd_centralBinom_iff_lowDigits": "The Kummer bridge, stating that an odd prime p does not divide binom(2n,n) exactly when every base-p digit of n is at most (p-1)/2.",
+    "Egrs75.MathlibAPI.irrational_log_div_log": "Proves that the ratio of logarithms of two distinct primes is irrational."
+  },
+  "classification": {
+    "msc2020": [
+      "11A63",
+      "11B65"
+    ],
+    "tags": [
+      "number-theory",
+      "central-binomial-coefficients",
+      "digit-representations",
+      "erdos-problems"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Egrs75.lean",
+  "statement_hash": "sha256:c638a1902defd4ce9795d2eb0f274716f9237d326b2aef9695a9dac91f604020"
+}

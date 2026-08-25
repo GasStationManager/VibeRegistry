@@ -1,0 +1,63 @@
+{
+  "source": "leanpool",
+  "upstream_id": "formal-learning-theory",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FormalLearningTheory",
+  "version": 1,
+  "title": "Formal Learning Theory Kernel",
+  "abstract": "Formalizes major equivalences and separations in PAC, VC, Gold-style, and online learning theory.",
+  "authors": [
+    "Dhruv Gupta"
+  ],
+  "repository": "https://github.com/Zetetic-Dhruv/formal-learning-theory-kernel",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.FormalLearningTheory",
+  "declarations": [
+    "fundamental_theorem",
+    "littlestone_characterization",
+    "pac_not_implies_online",
+    "vc_characterization",
+    "fundamental_vc_compression",
+    "gold_theorem",
+    "mind_change_characterization",
+    "ex_not_implies_pac"
+  ],
+  "informal": {
+    "vc_characterization": "Characterizes PAC learnability by finite VC dimension.",
+    "fundamental_theorem": "Bundles the central PAC, VC, compression, Rademacher, and sample-complexity equivalences.",
+    "fundamental_vc_compression": "Relates finite VC dimension to compression with side information.",
+    "gold_theorem": "States the Gold-style characterization for identification in the limit.",
+    "mind_change_characterization": "Characterizes learnability by a bounded mind-change ordinal.",
+    "littlestone_characterization": "Characterizes online learnability by finite Littlestone dimension.",
+    "pac_not_implies_online": "Separates PAC learnability from online learnability.",
+    "ex_not_implies_pac": "Separates explanatory learnability from PAC learnability."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q32",
+      "68T05"
+    ],
+    "tags": [
+      "learning-theory",
+      "probability",
+      "combinatorics",
+      "online-learning"
+    ],
+    "branch": "computational learning theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/FormalLearningTheory.lean",
+  "statement_hash": "sha256:b56718395a6e74aa53a8054eecc82db565716ae6a4adbd5be418f28ccc5908b3"
+}

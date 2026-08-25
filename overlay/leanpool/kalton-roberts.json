@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "kalton-roberts",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/KaltonRoberts",
+  "version": 1,
+  "title": "Halving the Kalton-Roberts upper bound",
+  "abstract": "Formalizes the paper-style Boolean-algebra theorem that every approximately additive real-valued set function is uniformly close to a finitely additive signed measure, proving the certified Kalton-Roberts constant bound below 19.838.",
+  "authors": [
+    "Ho Boon Suan"
+  ],
+  "repository": "https://github.com/boonsuan/KaltonRoberts",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.KaltonRoberts",
+  "declarations": [
+    "KaltonRoberts.KR_constant_lt",
+    "KaltonRoberts.KR_constant_le_C₂",
+    "KaltonRoberts.set_algebra_bound_C₂"
+  ],
+  "informal": {
+    "KaltonRoberts.KR_constant_lt": "Proves the headline certified bound that the Kalton-Roberts constant is strictly less than 9919/500, i.e. 19.838.",
+    "KaltonRoberts.KR_constant_le_C₂": "Proves the exact rational upper bound C₂ = 694198146664396294486127753 / 34994834677886019996000000 for the Kalton-Roberts constant.",
+    "KaltonRoberts.set_algebra_bound_C₂": "States the paper-style set-algebra formulation, where every approximately additive function on a Boolean subalgebra of sets is within C₂ times the error of a finitely additive signed measure."
+  },
+  "classification": {
+    "msc2020": [
+      "46B20",
+      "28A12",
+      "05C35"
+    ],
+    "tags": [
+      "functional-analysis",
+      "finitely-additive-measures",
+      "kalton-roberts"
+    ],
+    "branch": "analysis"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/KaltonRoberts.lean",
+  "statement_hash": "sha256:12e44d4a24babe3341f521feb8892a7d4d484429a2a6c44cde2ed8852d850fc2"
+}

@@ -1,0 +1,78 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-24-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-24-000005",
+  "version": 1,
+  "title": "catskillsresearch/scott1982",
+  "abstract": "A Lean 4 / mathlib formalization of Dana Scott's 1982 ICALP paper *Domains for Denotational Semantics*. The Palomar compared result is only the first sentence of Theorem 7.2: if A and B are information systems, then so is A → B, and the approximable mappings f : A → B are exactly the elements f ∈ |A → B|. Challenge.lean imports Mathlib only and locks Definition 2.1, Definition 2.2, Definition 5.1, and Definition 7.1 (tokens, consistency, and the constructive-witness form of entailment). The remaining apply / curry clauses of the same numbered theorem live in Scott1982/Theorem72.lean and are not Comparator targets. The informal account is arxiv.md; ground truth for theorem wording is sources/Domains_for_Denotational_Semantics.pdf. Lean was written by AI agents under the direction and review of the author. Dana Scott did not participate in or endorse this formalization. There is no sorry outside the deliberate holes in Challenge.lean, no project-defined axiom, and Mathlib is the only Lake dependency.",
+  "authors": [
+    "Lars Warren Ericson"
+  ],
+  "repository": "https://github.com/catskillsresearch/scott1982",
+  "commit": "d3221eec09505aa75e1b818aabc73f1f04339bdc",
+  "project_path": null,
+  "declarations": [
+    "Scott1982.InfoSys.theorem_7_2",
+    "Scott1982.InfoSys.element_toApproxMap_approxMap_toElement",
+    "Scott1982.InfoSys.approxMap_toElement_element_toApproxMap",
+    "Scott1982.InfoSys.approxMap_toElement_consistent",
+    "Scott1982.InfoSys.approxMap_toElement_closed",
+    "Scott1982.InfoSys.element_toApproxMap_rel_dom",
+    "Scott1982.InfoSys.element_toApproxMap_rel_cod",
+    "Scott1982.InfoSys.element_toApproxMap_empty_rel",
+    "Scott1982.InfoSys.element_toApproxMap_union_right",
+    "Scott1982.InfoSys.element_toApproxMap_mono",
+    "Scott1982.InfoSys.functionSystem_con_subset",
+    "Scott1982.InfoSys.functionSystem_con_sing",
+    "Scott1982.InfoSys.functionSystem_ent_con",
+    "Scott1982.InfoSys.functionSystem_ent_bot",
+    "Scott1982.InfoSys.functionSystem_ent_refl",
+    "Scott1982.InfoSys.functionSystem_ent_trans",
+    "Scott1982.InfoSys.Element.ext",
+    "Scott1982.InfoSys.element_le_refl",
+    "Scott1982.InfoSys.element_le_trans",
+    "Scott1982.InfoSys.element_le_antisymm",
+    "Scott1982.InfoSys.con_empty",
+    "Scott1982.InfoSys.funion_left_comm",
+    "Scott1982.InfoSys.funion_left_comm'",
+    "Scott1982.InfoSys.funBot_property",
+    "Scott1982.Constructive.insert_comm'",
+    "Scott1982.Constructive.decidableEq_finset_eq_of_subset",
+    "Scott1982.Constructive.decidableEq_finset_false_of_ne",
+    "Scott1982.InfoSys.mkFunToken_property"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO",
+      "math.LO"
+    ],
+    "msc2020": [
+      "68Q55",
+      "06B35",
+      "03B70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-24T18:41:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d3221eec09505aa75e1b818aabc73f1f04339bdc",
+        "fork_repository": "PalomarArchive/catskillsresearch--scott1982--ca9aa6e0a302",
+        "source_repository": "catskillsresearch/scott1982"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c47c92b704d0cb5bf7b4297921262d2feaf1ece28d98ddf200f41c99c3740beb"
+}

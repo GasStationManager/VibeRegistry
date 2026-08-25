@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "sabidussi",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Sabidussi",
+  "version": 1,
+  "title": "Sabidussi's compatibility conjecture for Eulerian multigraphs",
+  "abstract": "Formalizes Sabidussi's compatibility conjecture for finite labelled endpoint multigraphs with loops and parallel edges, where a loop contributes two half-edge incidences to the degree of its vertex. Given an Euler tour and minimum degree at least four, the main theorem constructs a partition of all edges into nonempty, edge-connected, 2-regular ordinary circuits such that consecutive edges of the Euler tour never lie in the same circuit. The proof runs a four-colour (F_2^2) algebra over the cyclic transition word, uses an odd balancing parity lemma to choose compatible local frames, and transports the resulting colouring back to a compatible ordinary circuit decomposition.",
+  "authors": [
+    "Nikolay Ulyanov"
+  ],
+  "repository": "https://github.com/gexahedron/sabidussi-lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Sabidussi",
+  "declarations": [
+    "Sabidussi.LoopMultigraph.loop_sabidussi_compatibility_ordinary",
+    "Sabidussi.LoopMultigraph.loop_sabidussi_compatibility"
+  ],
+  "informal": {
+    "Sabidussi.LoopMultigraph.loop_sabidussi_compatibility_ordinary": "For any finite endpoint multigraph with an Euler tour and minimum degree at least four, the edges partition into ordinary, nonempty, connected, 2-regular circuits that are compatible with the tour: no circuit contains two consecutive tour edges.",
+    "Sabidussi.LoopMultigraph.loop_sabidussi_compatibility": "The same compatibility statement phrased with the intrinsic even-edge-set circuit decomposition, from which the ordinary-circuit form is derived."
+  },
+  "classification": {
+    "msc2020": [
+      "05C45"
+    ],
+    "tags": [
+      "graph-theory",
+      "eulerian-graphs",
+      "circuit-decomposition",
+      "sabidussi"
+    ],
+    "branch": "graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Sabidussi.lean",
+  "statement_hash": "sha256:9ebfaf9cd7765a7093b2c30ed9e23a1ef0cc558d33d691bde32c7171705990b8"
+}

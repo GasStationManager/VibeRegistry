@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-19-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-19-000007",
+  "version": 2,
+  "title": "stalex444/pdt-lean",
+  "abstract": "Kernel-checked exact-constant results for the CHSH operator T = A₀B₀ + A₀B₁ + A₁B₀ − A₁B₁ of an arbitrary CHSH tuple (Mathlib's IsCHSHTuple: self-adjoint involutions with the A's commuting with the B's). (1) The Landau identity: in any *-ring, T² = 4 + [A₀,A₁]·[B₁,B₀] — the exact, representation-independent correction to the naive T² = 8·1 (chsh_mul_self). (2) Tsirelson's bound in norm form: ‖T‖ ≤ 2√2 for every CHSH tuple in every nontrivial unital real C*-normed algebra (chsh_norm_le). (3) The classical constant, exactly: if either party's pair commutes, ‖T‖ = 2 — not merely ≤ 2 (chsh_norm_of_comm). (4) Necessity of noncommutativity: any violation ‖T‖ > 2 forces A₀A₁ ≠ A₁A₀ and B₀B₁ ≠ B₁B₀ — noncommutativity within both parties is necessary for any violation of the classical bound (noncomm_of_chsh_norm_gt_two). (5) The exact constant of M₄(ℝ): in the l2 operator norm, 2√2 is the greatest element of the set of CHSH operator norms over 4×4 real matrices — an upper bound for every tuple, attained by an explicit real-Pauli tuple (chsh_opNorm_isGreatest), so the maximal violation 2√2 is possible, not just bounded. The witness side stays compared: the explicit quadruple is verified to be a genuine CHSH tuple, its CHSH operator has eigenvalue exactly 2√2 on the explicit nonzero vector (1,0,0,1) and l2 operator norm exactly 2√2; the ordered star-ring bounds T ≤ (2√2)·1 and (commutative case) T ≤ 2 and the strict gap 2 < 2√2 complete the picture. A falsification is compared alongside: the saturating tuple's T² is not c·1 for ANY real c (chsh_sq_ne quantifies over every scalar), so the scalar-square route to the norm is closed for every scalar; the norm results here go through the C*-identity (and, for the generic bound, the Landau identity) instead.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-lean",
+  "commit": "0dae307fb786a3d180bba137a44555a1bf645637",
+  "project_path": null,
+  "declarations": [
+    "TsirelsonTightness.chsh_upper",
+    "TsirelsonTightness.chsh_mul_self",
+    "TsirelsonTightness.chsh_norm_le",
+    "TsirelsonTightness.chsh_norm_of_comm",
+    "TsirelsonTightness.noncomm_of_chsh_norm_gt_two",
+    "TsirelsonTightness.tuple_isCHSH",
+    "TsirelsonTightness.vsat_ne_zero",
+    "TsirelsonTightness.chsh_saturates",
+    "TsirelsonTightness.classical_le_two",
+    "TsirelsonTightness.bell_gap",
+    "TsirelsonTightness.chsh_opNorm",
+    "TsirelsonTightness.chsh_sq_ne",
+    "TsirelsonTightness.chsh_opNorm_isGreatest"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "math.OA"
+    ],
+    "msc2020": [
+      "81P40",
+      "81P45",
+      "46L60",
+      "15A18"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T01:02:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0dae307fb786a3d180bba137a44555a1bf645637",
+        "fork_repository": "PalomarArchive/stalex444--pdt-lean--23d4079303b8",
+        "source_repository": "stalex444/pdt-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:46d84616c78d8a18a4d1ec25fa44f915ad70d18c128897a7cbf4c1531fa8d72d"
+}

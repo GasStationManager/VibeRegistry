@@ -1,0 +1,22 @@
+# Human sign-offs on overlaid upstream entries.
+#
+# This file is hand-maintained (or written by the sign-off Action) and is never
+# rewritten by scripts/import_upstream.py, so re-importing upstream data cannot
+# clobber human review.
+#
+# A sign-off attests that the named declarations' Lean statements say what the
+# upstream informal statement says. `statement_hash` is the hash of what was
+# reviewed, copied from overlay/<source>/<id>.json at review time; when upstream
+# publishes a new version the hash stops matching and the sign-off is reported
+# as stale rather than silently carried over.
+#
+# [[signoff]]
+# source = "leanpool"
+# upstream_id = "boolean-isoperimetry"
+# declarations = ["BooleanIsoperimetry.harper_theorem"]  # or ["*"] for the whole entry
+# github_user = "GasStationManager"
+# date = "2026-08-21"
+# issue = 42
+# verdict = "approved"                                    # approved | rejected
+# statement_hash = "sha256:..."
+# comment = "Harper's theorem as in Harper (1966); initial-segment ordering matches."

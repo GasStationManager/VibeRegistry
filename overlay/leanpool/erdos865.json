@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "erdos865",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Erdos865",
+  "version": 1,
+  "title": "A sharp 5/8 bound for Erdős Problem 865",
+  "abstract": "Formalizes the resolution of Erdős Problem 865 on pairwise sums. For A ⊆ {1,…,N}, a pairwise-sum triple is a set of distinct a, b, c ∈ A with a+b, a+c, b+c all in A, and A is triple-free when it has none. The development proves that every triple-free A ⊆ [1,N] satisfies 8·|A| ≤ 5·N + 53, that any A exceeding this bound contains a triple, and — via the construction A = [M,2M] ∪ [4M,8M] for N = 8M — that the constant 5/8 is optimal, so f₃(N) = 5N/8 + O(1). The upper bound runs through a folded additive lemma over ℤ/mℤ (a four-set union bound) and a folding lemma, closed by strong induction on N.",
+  "authors": [
+    "Ricky Cipollini"
+  ],
+  "repository": "https://github.com/mrricky22/erdos-865-lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Erdos865",
+  "declarations": [
+    "Erdos865.erdos865_upper_bound",
+    "Erdos865.sharpness",
+    "Erdos865.erdos865_contains_triple"
+  ],
+  "informal": {
+    "Erdos865.erdos865_upper_bound": "Every triple-free set A ⊆ [1,N] satisfies 8·|A| ≤ 5·N + 53, i.e. |A| ≤ (5/8)·N + O(1).",
+    "Erdos865.erdos865_contains_triple": "Every A ⊆ [1,N] with 5·N + 53 < 8·|A| contains a pairwise-sum triple (the paper's Theorem 1.1 form).",
+    "Erdos865.sharpness": "For N = 8M with M ≥ 1 there is a triple-free A ⊆ [1,N] with 8·|A| = 5·N + 16, so the constant 5/8 is optimal."
+  },
+  "classification": {
+    "msc2020": [
+      "11B75",
+      "11B13"
+    ],
+    "tags": [
+      "additive-combinatorics",
+      "erdos-problems",
+      "sum-free-sets",
+      "combinatorics"
+    ],
+    "branch": "additive combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Erdos865.lean",
+  "statement_hash": "sha256:929b6e126736b2941c5bf13dcd36855f170180f23439c94c640ca0513d2459c4"
+}

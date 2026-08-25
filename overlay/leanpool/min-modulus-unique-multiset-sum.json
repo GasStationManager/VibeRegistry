@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "min-modulus-unique-multiset-sum",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MinModulusUniqueMultisetSum",
+  "version": 1,
+  "title": "Minimum modulus for the unique multiset-sum problem",
+  "abstract": "Formalizes the exact minimum modulus `N_min(n) = 2^n - 2^{floor(log_2 n)}` for the unique multiset-sum problem on the super-increasing residue set `{2^i - 1 : 0 <= i < n}`, and proves the sharp elementary-abelian-2-group lower bound `k >= n - 1` for unique multiset sums in `(Z/2Z)^k`.",
+  "authors": [
+    "José A. R. Fonollosa"
+  ],
+  "repository": "https://github.com/jarfo/min-modulus",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.MinModulusUniqueMultisetSum",
+  "declarations": [
+    "MinModulus.nmin_eq",
+    "MinModulus.elementaryAbelianTwoGroups_optimal"
+  ],
+  "informal": {
+    "MinModulus.nmin_eq": "Proves that among moduli `N >= 2` the least one making the super-increasing residue set `{2^i - 1 : 0 <= i < n}` valid for the unique multiset-sum problem is `2^n - 2^{floor(log_2 n)}`, for every `n >= 2` (stated as `IsLeast`).",
+    "MinModulus.elementaryAbelianTwoGroups_optimal": "Proves that if `g_0, ..., g_{n-1}` in `(Z/2Z)^k` have unique multiset sums, then `k >= n - 1`: an elementary abelian 2-group admitting such a family has order at least `2^(n - 1)`."
+  },
+  "classification": {
+    "msc2020": [
+      "11B75",
+      "05D99"
+    ],
+    "tags": [
+      "additive-combinatorics",
+      "multiset-sums",
+      "finite-groups",
+      "permanent"
+    ],
+    "branch": "additive combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/MinModulusUniqueMultisetSum.lean",
+  "statement_hash": "sha256:8e4fed6ce0438b15821797c653265e4e03924475efc0b404ed3f9d7e1d2b8702"
+}

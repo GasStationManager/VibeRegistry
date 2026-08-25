@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "mriscx",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MRiscX",
+  "version": 1,
+  "title": "MRiscX",
+  "abstract": "A Hoare logic for verifying unstructured RISC-V-like assembly in Lean, following Lundberg et al. (SEFM 2020), with a certified interpreter, proved structural Hoare rules, per-instruction specifications, custom elaborators and tactics, and a complete One-Time-Pad correctness proof.",
+  "authors": [
+    "Julius Marx"
+  ],
+  "repository": "https://github.com/JulsDE/MRiscX",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.MRiscX",
+  "declarations": [
+    "hoareTripleUp",
+    "S_SEQ",
+    "proof_otp",
+    "PRE_STR",
+    "POST_WEAK",
+    "specification_LoadImmediate"
+  ],
+  "informal": {
+    "hoareTripleUp": "Defines the MRiscX Hoare triple, asserting that from any state satisfying the precondition the code reaches a successor state satisfying the postcondition while respecting the line whitelist and blacklist.",
+    "S_SEQ": "Proves the sequencing Hoare rule, peeling off the last instruction of a code block.",
+    "PRE_STR": "Proves the precondition-strengthening rule for MRiscX Hoare triples.",
+    "POST_WEAK": "Proves the postcondition-weakening rule for MRiscX Hoare triples.",
+    "specification_LoadImmediate": "Proves the per-instruction Hoare specification of the load-immediate instruction.",
+    "proof_otp": "Proves the full correctness of a One-Time-Pad implementation written in MRiscX assembly."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q60"
+    ],
+    "tags": [
+      "hoare-logic",
+      "program-verification",
+      "risc-v",
+      "assembly",
+      "formal-methods"
+    ],
+    "branch": "program verification"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/MRiscX.lean",
+  "statement_hash": "sha256:176d11347e6abdfbb4414461346f55885e11d5870044a1194ec54bcd36936f0d"
+}

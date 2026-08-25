@@ -1,0 +1,26 @@
+# Entry config for the pipeline self-test. Materialized by tests/run_selftest.sh
+# with the throwaway impl repo's path and commit; deliberately not in entries/,
+# so the registry's own verification never picks it up.
+[project]
+id = "selftest"
+name = "Pipeline self-test"
+description = "Mathlib-free fixture that exercises the full comparator path"
+url = "__IMPL_URL__"
+commit = "__IMPL_COMMIT__"
+branch = "master"
+
+[lean]
+toolchain = "leanprover/lean4:v4.29.1"
+
+[[theorems]]
+spec_module = "Registry.Selftest.Basic"
+impl_module = "Selftest.Basic"
+names = ["Selftest.add_comm'", "Selftest.append_nil'"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[checks]
+comparator = true
+nanoda = true
+
+[build]
+strategy = "copy"

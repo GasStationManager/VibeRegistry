@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "pl-accelerated-nesterov-lean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PLAcceleratedNesterovLean",
+  "version": 1,
+  "title": "Accelerated Nesterov convergence under local Polyak-Lojasiewicz conditions",
+  "abstract": "Formalizes accelerated Nesterov convergence near a smooth minimizer manifold under a local Polyak-Lojasiewicz condition, including embedded-manifold and C3 public theorem statements with explicit exponential rate and prefactor.",
+  "authors": [
+    "Max Obreiter",
+    "Tobias Steinbrecher",
+    "Robert Foerster"
+  ],
+  "repository": "https://github.com/M1ngXU/PL-Accelerated-Nesterov-Lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.PLAcceleratedNesterovLean",
+  "declarations": [
+    "PLAcceleratedNesterovLean.nesterov_pl_accelerated_rate",
+    "PLAcceleratedNesterovLean.nesterov_pl_accelerated_rate_c3",
+    "PLAcceleratedNesterovLean.nesterov_convergence_at_base_point_position_theta"
+  ],
+  "informal": {
+    "PLAcceleratedNesterovLean.nesterov_pl_accelerated_rate": "Proves an accelerated Nesterov convergence rate for state positions near a C2 embedded minimizer manifold, with an existential momentum parameter, explicit exponential decay, and prefactor 2.",
+    "PLAcceleratedNesterovLean.nesterov_pl_accelerated_rate_c3": "Proves the corresponding C3 public theorem, deriving the minimizer geometry internally from smoothness and the Polyak-Lojasiewicz condition.",
+    "PLAcceleratedNesterovLean.nesterov_convergence_at_base_point_position_theta": "Provides the reusable local theta-retuned convergence theorem used by the public accelerated-rate statements."
+  },
+  "classification": {
+    "msc2020": [
+      "49M37",
+      "65K05",
+      "58C15"
+    ],
+    "tags": [
+      "optimization",
+      "numerical-analysis",
+      "gradient-methods",
+      "polyak-lojasiewicz",
+      "differential-geometry"
+    ],
+    "branch": "optimization"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/PLAcceleratedNesterovLean.lean",
+  "statement_hash": "sha256:6f444acbffff4de2e1ba5ebc7842b2d9ca7b5adad2dd28b00398669f7c4647bc"
+}

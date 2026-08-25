@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-17-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-17-000003",
+  "version": 1,
+  "title": "gexahedron/sabidussi-lean",
+  "abstract": "Sabidussi compatibility in Lean",
+  "authors": [
+    "Nikolay Ulyanov"
+  ],
+  "repository": "https://github.com/gexahedron/sabidussi-lean",
+  "commit": "58307d74da99ec6e4fe28e012c30c83e369c54c3",
+  "project_path": null,
+  "declarations": [
+    "sabidussi_compatibility_ordinary"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C45",
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-17T19:19:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "58307d74da99ec6e4fe28e012c30c83e369c54c3",
+        "fork_repository": "PalomarArchive/gexahedron--sabidussi-lean--5f92c8eca325",
+        "source_repository": "gexahedron/sabidussi-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9b692069d4094dbbe218f6c276bc539fda3b071c534e92981a771ca237ac1e44"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean4-gl-coalgebras",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Lean4GlCoalgebras",
+  "version": 1,
+  "title": "Craig Interpolation for Gödel-Löb logic via coalgebraic proofs",
+  "abstract": "Formalizes a proof-theoretic Craig interpolation theorem for Gödel-Löb provability logic, built on a coalgebraic notion of circular proof.",
+  "authors": [
+    "Madeleine Gignoux"
+  ],
+  "repository": "https://github.com/mgignoux/lean4-gl-coalgebras",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Lean4GlCoalgebras",
+  "declarations": [
+    "Lean4GlCoalgebras.interpolation"
+  ],
+  "informal": {
+    "Lean4GlCoalgebras.interpolation": "Proves the Craig interpolation theorem for Gödel-Löb provability logic."
+  },
+  "classification": {
+    "msc2020": [
+      "03B45",
+      "03F45"
+    ],
+    "tags": [
+      "modal-logic",
+      "provability-logic",
+      "craig-interpolation",
+      "proof-theory"
+    ],
+    "branch": "provability logic"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Lean4GlCoalgebras.lean",
+  "statement_hash": "sha256:616651686642adec3f87d3e40ac7b25f7a70c27ef5a37cc6624b0a4f8617c409"
+}

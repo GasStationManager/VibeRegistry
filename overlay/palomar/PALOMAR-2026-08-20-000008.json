@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-20-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-20-000008",
+  "version": 1,
+  "title": "benkeene/erdos266",
+  "abstract": "A Lean 4 formalization, against Mathlib, of the Kovač–Tao resolution of Erdős problem #266 (a conjecture of Stolarsky): it is not true that every sequence of positive integers with convergent reciprocal sum admits an integer shift t >= 1 making the shifted Ahmes series irrational.  The stronger construction is also formalized: a strictly increasing sequence of positive integers whose shifted series has a rational sum for every admissible rational shift.",
+  "authors": [
+    "Ben Keene"
+  ],
+  "repository": "https://github.com/benkeene/erdos266",
+  "commit": "aa0cd43fb45d4f8a3019bf8925424c06b1e67874",
+  "project_path": null,
+  "declarations": [
+    "Erdos266.erdos_266",
+    "Erdos266.erdos_266_rational_shifts"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CA"
+    ],
+    "msc2020": [
+      "11J72",
+      "40A05",
+      "11B83"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T12:34:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "aa0cd43fb45d4f8a3019bf8925424c06b1e67874",
+        "fork_repository": "PalomarArchive/benkeene--erdos266--5089d7151e9d",
+        "source_repository": "benkeene/erdos266"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9f63c12e1117ee2eb08b2df935889a094abf34f5f3e89767a040833eaf0b5941"
+}

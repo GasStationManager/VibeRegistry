@@ -1,0 +1,25 @@
+{
+  "entry_id": "lean-zip",
+  "timestamp": "2026-08-21T18:19:52Z",
+  "commit": "e76f0813faa2893f09b83d027e52754041febc35",
+  "lean_toolchain": "leanprover/lean4:v4.29.1",
+  "mathlib_tag": "",
+  "verification_level": 2,
+  "primary_check": "comparator",
+  "checks": {
+    "comparator": true,
+    "nanoda": true,
+    "definitions": false,
+    "safe_verify": false,
+    "lean4checker": false
+  },
+  "build_strategy": "copy",
+  "tools": {
+    "comparator": "2a00b30df5e9173e70c4e4ec669fdf03da3163b9",
+    "lean4export": "caccfbebbc99077962b3321125b2375bb3fa22db",
+    "nanoda": "6ae1f0cd962f081f6c423454c5da729d841236a7",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"
+  },
+  "theorems": [{"name":"Zip.Native.Deflate.inflate_deflateRaw","spec_module":"Registry.LeanZip.DeflateRoundtrip","impl_module":"Zip.Spec.DeflateRoundtrip","comparator":"fail","nanoda":"fail","safe_verify":"skip","lean4checker":"skip"},{"name":"Zip.Native.Deflate.deflateRaw_pad","spec_module":"Registry.LeanZip.DeflateRoundtrip","impl_module":"Zip.Spec.DeflateRoundtrip","comparator":"fail","nanoda":"fail","safe_verify":"skip","lean4checker":"skip"},{"name":"Zip.Native.Deflate.deflateRaw_goR_pad","spec_module":"Registry.LeanZip.DeflateRoundtrip","impl_module":"Zip.Spec.DeflateRoundtrip","comparator":"fail","nanoda":"fail","safe_verify":"skip","lean4checker":"skip"}],
+  "overall": "fail"
+}

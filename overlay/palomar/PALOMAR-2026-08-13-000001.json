@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-13-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-13-000001",
+  "version": 2,
+  "title": "teorth/sendov",
+  "abstract": "A Lean formalization of Sendov's conjecture, and of its Phelps-Rodriguez strengthening, in full generality: if every zero of a complex polynomial p of degree n >= 2 lies in the closed unit disk, then every zero a of p has a critical point of p within distance 1 of it, and within distance strictly less than 1 unless |a| = 1 and p is a scalar multiple of z^n - a^n. The proof is by contradiction. Degrees 2 to 4 fall to an elementary integral computation; degree 5 upward goes through two estimates on the same integral -- a polar channel and an origin channel -- which are shown to be incompatible, reducing the theorem to a single numerical inequality. That inequality is discharged by exact rational Bernstein certificates, generated outside Lean and re-verified inside it, in both of its ranges: per-degree certificates for 5 <= n <= 100, and, for n >= 101, a single degree-58 certificate closing the one-variable inequality that the analytic large-degree reduction leaves behind. The boundary case |a| = 1 is proved separately from a reciprocal identity, and it is there that the equality classification is extracted. Nothing here is claimed to be new: the informal proof being formalized is a digestion of Lech Mazur's proof, which had already been formalized in Lean, so this is a second and independently checkable machine-checked proof of Sendov's conjecture, whose additional content is the Phelps-Rodriguez equality case. The Lean source was written by an AI agent under the direction and review of the author. There is no sorry outside the two deliberate holes in Challenge.lean, no project-defined axiom, no native_decide, and no floating point in any statement or proof.",
+  "authors": [
+    "Terence Tao"
+  ],
+  "repository": "https://github.com/teorth/sendov",
+  "commit": "1ddea92d89f951a0a7cbbffa6c267cf7e6640b1d",
+  "project_path": null,
+  "declarations": [
+    "SendovConjecture.sendov",
+    "SendovConjecture.phelps_rodriguez"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV"
+    ],
+    "msc2020": [
+      "30C15",
+      "30C10",
+      "12D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T00:23:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1ddea92d89f951a0a7cbbffa6c267cf7e6640b1d",
+        "fork_repository": "PalomarArchive/teorth--sendov--f83e016e02dc",
+        "source_repository": "teorth/sendov"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f593a1f710fac7561868a2b1229b991067b95ed84c2b5340e346d6466206c695"
+}

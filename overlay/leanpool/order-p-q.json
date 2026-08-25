@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "order-p-q",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/OrderPQ",
+  "version": 1,
+  "title": "Classification of groups of order p * q",
+  "abstract": "Classification of noncyclic finite groups of order p*q, including the prime-square direct-product case and the p<q semidirect-product normal form.",
+  "authors": [
+    "Scott Harper",
+    "Peiran Wu"
+  ],
+  "repository": "https://github.com/wupr/order-p-q",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.OrderPQ",
+  "declarations": [
+    "OrderPQ.exists_card_eq_prime_mul_prime_and_not_isCyclic_iff",
+    "OrderPQ.nonempty_mulEquiv_of_card_eq_prime_mul_prime_of_not_isCyclic",
+    "OrderPQ.nonempty_mulEquiv_semidirectProduct_of_card_eq_prime_mul_prime"
+  ],
+  "informal": {
+    "OrderPQ.exists_card_eq_prime_mul_prime_and_not_isCyclic_iff": "There exists a noncyclic group of order p*q exactly when p=q, p divides q-1, or q divides p-1.",
+    "OrderPQ.nonempty_mulEquiv_of_card_eq_prime_mul_prime_of_not_isCyclic": "Any two noncyclic groups of order p*q are isomorphic.",
+    "OrderPQ.nonempty_mulEquiv_semidirectProduct_of_card_eq_prime_mul_prime": "If p<q, every group of order p*q is isomorphic to a semidirect product of MulZMod q by MulZMod p."
+  },
+  "classification": {
+    "msc2020": [
+      "20D20",
+      "20E22",
+      "20D60"
+    ],
+    "tags": [
+      "group-theory",
+      "finite-groups",
+      "semidirect-products"
+    ],
+    "branch": "group theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/OrderPQ.lean",
+  "statement_hash": "sha256:ac4a1a19b7896bbddf13e53cc4ea4f422899a7b808569a2dacd26afd2dd2e57f"
+}

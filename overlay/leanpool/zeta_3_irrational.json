@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "zeta_3_irrational",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Zeta3Irrational",
+  "version": 1,
+  "title": "Irrationality of ζ(3)",
+  "abstract": "Formalizes Beukers' proof of Apéry's theorem for ζ(3), including the integral identities, denominator estimates, positivity, upper bounds, and final irrationality contradiction.",
+  "authors": [
+    "Junqi Liu",
+    "Jujian Zhang"
+  ],
+  "repository": "https://github.com/ahhwuhu/zeta_3_irrational",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Zeta3Irrational",
+  "declarations": [
+    "LeanPool.Zeta3Irrational.zeta3_irrational",
+    "LeanPool.Zeta3Irrational.linear_int",
+    "LeanPool.Zeta3Irrational.JJ_pos",
+    "LeanPool.Zeta3Irrational.JJ_upper",
+    "LeanPool.Zeta3Irrational.fun1_tendsto_zero"
+  ],
+  "informal": {
+    "LeanPool.Zeta3Irrational.zeta3_irrational": "Proves that ζ(3) is irrational.",
+    "LeanPool.Zeta3Irrational.linear_int": "Clears denominators in the Apéry integral to produce a linear form in 1 and ζ(3).",
+    "LeanPool.Zeta3Irrational.JJ_pos": "Proves positivity of the transformed Beukers-Apéry integral.",
+    "LeanPool.Zeta3Irrational.JJ_upper": "Bounds the Beukers-Apéry integral by a geometric factor times the ζ(3) series.",
+    "LeanPool.Zeta3Irrational.fun1_tendsto_zero": "Shows that the denominator-cleared Apéry linear forms tend to zero."
+  },
+  "classification": {
+    "msc2020": [
+      "11M06",
+      "11J72"
+    ],
+    "tags": [
+      "number-theory",
+      "analysis",
+      "zeta-functions"
+    ],
+    "branch": "analytic number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Zeta3Irrational.lean",
+  "statement_hash": "sha256:c54b9e573f058a2b77f416c6368f8ad9ed9e335ce3ac501514aaca764fa197fd"
+}

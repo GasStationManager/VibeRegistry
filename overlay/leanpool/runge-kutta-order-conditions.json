@@ -1,0 +1,64 @@
+{
+  "source": "leanpool",
+  "upstream_id": "runge-kutta-order-conditions",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/RungeKuttaOrderConditions",
+  "version": 1,
+  "title": "Certified Runge-Kutta Order Conditions",
+  "abstract": "Certifies Runge-Kutta order conditions over planar rooted trees, including RK4 order four, Dormand-Prince order five, and Gauss-Legendre order six.",
+  "authors": [
+    "Carles Marín"
+  ],
+  "repository": "https://github.com/karlesmarin/runge-kutta-order-conditions-lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.RungeKuttaOrderConditions",
+  "declarations": [
+    "RungeKuttaOrderConditions.Butcher.gauss_order6_rat",
+    "RungeKuttaOrderConditions.Butcher.satisfiesOrderConditions_iff",
+    "RungeKuttaOrderConditions.Butcher.rk4_order4",
+    "RungeKuttaOrderConditions.Butcher.rk4_not_ord5",
+    "RungeKuttaOrderConditions.Butcher.orderCond_node_perm",
+    "RungeKuttaOrderConditions.Butcher.dp_order5",
+    "RungeKuttaOrderConditions.Butcher.gauss_order4",
+    "RungeKuttaOrderConditions.Butcher.gauss_order6"
+  ],
+  "informal": {
+    "RungeKuttaOrderConditions.Butcher.satisfiesOrderConditions_iff": "Reduces order-p Runge-Kutta conditions to a finite catalogue check over rooted trees.",
+    "RungeKuttaOrderConditions.Butcher.rk4_order4": "Certifies that classical RK4 satisfies all planar rooted-tree order conditions through order four.",
+    "RungeKuttaOrderConditions.Butcher.rk4_not_ord5": "Shows that RK4 fails a fifth-order condition, pinning its order exactly.",
+    "RungeKuttaOrderConditions.Butcher.orderCond_node_perm": "Proves order conditions are invariant under permutations of a node's children.",
+    "RungeKuttaOrderConditions.Butcher.dp_order5": "Certifies the Dormand-Prince RK45 fifth-order tableau through order five.",
+    "RungeKuttaOrderConditions.Butcher.gauss_order4": "Certifies the Gauss-Legendre three-stage tableau through order four over Q(sqrt(15)).",
+    "RungeKuttaOrderConditions.Butcher.gauss_order6": "Certifies the denominator-cleared (360-scaled) integer Z(sqrt(15)) Gauss-Legendre tableau through order six, the scaled certificate feeding the homogeneity bridge.",
+    "RungeKuttaOrderConditions.Butcher.gauss_order6_rat": "Certifies the Gauss-Legendre s=3 tableau through order six over Q(sqrt(15)), via the formalized homogeneity bridge from the 360-scaled integer certificate."
+  },
+  "classification": {
+    "msc2020": [
+      "65L06",
+      "65L05",
+      "05C05"
+    ],
+    "tags": [
+      "numerical-analysis",
+      "runge-kutta",
+      "rooted-trees",
+      "order-conditions"
+    ],
+    "branch": "numerical analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/RungeKuttaOrderConditions.lean",
+  "statement_hash": "sha256:6aefaae22fa7057835403bc252412742c615b11974b261106753928d7db58c3e"
+}

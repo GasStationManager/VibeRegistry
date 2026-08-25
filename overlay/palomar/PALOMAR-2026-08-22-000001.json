@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-22-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-22-000001",
+  "version": 1,
+  "title": "williamjblair/lean-proofs",
+  "abstract": "Machine-checked Lean 4 proofs of solved research problems from the Erdős problems collection, hosted as stable formal_proof targets for Google DeepMind's Formal Conjectures. The principal result is an affirmative answer to Erdős Problem #730 (Erdős, Graham, Ruzsa and Straus, 1975): the set of pairs n < m for which binom(2n, n) and binom(2m, m) have the same set of prime divisors is infinite, and in fact contains infinitely many consecutive pairs (n, n + 1). The proof formalises the argument posted informally by Liam Price on the problem's discussion page on 24 June 2026: Kummer's theorem converts equality of prime supports into a base-p digit condition, an explicit quadratic family of consecutive pairs is constructed, a fixed-depth Fourier estimate bounds the digit obstruction on blocks of length p^r, a uniform depth tail uses a Mertens-type reciprocal-prime input, the top-prime range is handled by fixed-modulus divisor switching using the prime number theorem in arithmetic progressions, and an exact rational density budget yields positive lower density and hence infinitude. The repository also proves the sumset form of Erdős Problem #154 (equidistribution of A + A in residue classes for Sidon sets A with |A| ~ sqrt N, from Lindström's theorem) and hosts smaller bounded results for Problems #94, #399 and #1074. Every tracked theorem depends only on propext, Classical.choice and Quot.sound; each registry statement under Palomar/ restates its result in a Challenge importing Mathlib alone.",
+  "authors": [
+    "Will Blair"
+  ],
+  "repository": "https://github.com/williamjblair/lean-proofs",
+  "commit": "03729c9cbb0b602f5a828bb850c85e84c5a6d460",
+  "project_path": null,
+  "declarations": [
+    "Palomar.Erdos730.erdos_730_infinite"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B65",
+      "11N13",
+      "11A41",
+      "11B13"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-22T03:01:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "03729c9cbb0b602f5a828bb850c85e84c5a6d460",
+        "fork_repository": "PalomarArchive/williamjblair--lean-proofs--0e1dd8ebd799",
+        "source_repository": "williamjblair/lean-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d76ee330082ea60c1019741b867764effca53bb8050202831865faad8c27ef5f"
+}

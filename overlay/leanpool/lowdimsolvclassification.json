@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lowdimsolvclassification",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LowDimSolvClassification",
+  "version": 1,
+  "title": "Classification of low-dimensional solvable Lie algebras",
+  "abstract": "Formalises the classification of solvable Lie algebras up to dimension three.",
+  "authors": [
+    "Viviana del Barco",
+    "Gustavo Infanti",
+    "Exequiel Rivas",
+    "Paul Schwahn"
+  ],
+  "repository": "https://github.com/LieLean/LowDimSolvClassification",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.LowDimSolvClassification",
+  "declarations": [
+    "LieAlgebra.Dim3.classification"
+  ],
+  "informal": {
+    "LieAlgebra.Dim3.classification": "Classifies three-dimensional solvable Lie algebras over arbitrary fields."
+  },
+  "classification": {
+    "msc2020": [
+      "17B30"
+    ],
+    "tags": [
+      "lie-algebras",
+      "solvable",
+      "classification"
+    ],
+    "branch": "lie theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/LowDimSolvClassification.lean",
+  "statement_hash": "sha256:e8cea4a0a74bb8d1c5e902e7ddf00eac55f08050d27cb67bf2a29f8af685df1d"
+}

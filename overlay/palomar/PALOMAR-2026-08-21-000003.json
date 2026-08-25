@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-21-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-21-000003",
+  "version": 1,
+  "title": "mbaccaro-dev/mathematical-proofs",
+  "abstract": "A Lean 4 proof that every finite member of the stated positive-shift incomplete-gamma family has a nonreal zero.",
+  "authors": [
+    "Mayk Loide Baccaro"
+  ],
+  "repository": "https://github.com/mbaccaro-dev/mathematical-proofs",
+  "commit": "4c8fd5edad3fd7eaf12812832d3caf1935ea35d5",
+  "project_path": "MathematicalProofs/BoundaryConstantObstruction/Lean",
+  "declarations": [
+    "IncompleteGammaApproximant.theorem_A"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV",
+      "math.NT"
+    ],
+    "msc2020": [
+      "30D15",
+      "11M26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-21T05:17:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4c8fd5edad3fd7eaf12812832d3caf1935ea35d5",
+        "fork_repository": "PalomarArchive/mbaccaro-dev--mathematical-proofs--747a1597eb38",
+        "source_repository": "mbaccaro-dev/mathematical-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:42d73445c0b6a3b6f98f72a111d40955f6f1cca0a0d78816263446014c0ec4e5"
+}

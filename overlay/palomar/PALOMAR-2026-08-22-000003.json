@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-22-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-22-000003",
+  "version": 1,
+  "title": "xiangyazi24/palomar-hahn-hecke-appell",
+  "abstract": "A Lean 4 verification of the coefficientwise Kronecker partial-fraction identity and the general boundary-cleared Hickerson--Mortenson Hecke--Appell identity for f_{n,n+p,n}, for all positive integers n and p.",
+  "authors": [
+    "Xiang Huang"
+  ],
+  "repository": "https://github.com/xiangyazi24/palomar-hahn-hecke-appell",
+  "commit": "b9d84fd9f905605b3956f974f50ed41ee59d54e2",
+  "project_path": null,
+  "declarations": [
+    "PalomarHahnHeckeAppell.kronecker_partial_fraction_cleared_coefficient",
+    "PalomarHahnHeckeAppell.general_boundary_cleared_hm_coefficient"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11F27",
+      "33D15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-22T03:39:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b9d84fd9f905605b3956f974f50ed41ee59d54e2",
+        "fork_repository": "PalomarArchive/xiangyazi24--palomar-hahn-hecke-appell--7cd8b3eedc08",
+        "source_repository": "xiangyazi24/palomar-hahn-hecke-appell"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8de15560371c685d92b97ac79893a99b72db8368041693ff71d974a6382f95ea"
+}

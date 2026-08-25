@@ -1,0 +1,81 @@
+name: Publish Search Page
+
+# Publishes index/ as the project site:
+#   https://gasstationmanager.github.io/VibeRegistry/
+#
+# Deploying from Actions rather than from a branch keeps the repo layout alone:
+# the site root is the index/ directory, so the page is at / and its data sits
+# beside it, instead of the awkward /VibeRegistry/index/search.html a
+# branch-served site would give.
+#
+# This is a separate Pages site from the Jekyll blog at
+# gasstationmanager.github.io — separate repo, separate build, separate URL
+# space. It serves a path the blog does not use.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race; let a newer one supersede a queued older one.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stage the site
+        run: |
+          mkdir -p _site
+          cp index/statements.json index/meta.json _site/
+          cp index/search.html _site/search.html
+          # Serve the page at the site root, so the URL is /VibeRegistry/
+          cp index/search.html _site/index.html
+          # Belt and braces: Actions deployment does not run Jekyll, but this
+          # guarantees no file is dropped for beginning with an underscore.
+          touch _site/.nojekyll
+          ls -la _site
+
+      - name: Check the data is what the page expects
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          with open("_site/statements.json") as f:
+              data = json.load(f)
+          records = data.get("records", [])
+          if not records:
+              print("ERROR: statements.json has no records — refusing to publish "
+                    "a search page with nothing in it", file=sys.stderr)
+              sys.exit(1)
+          meta = data.get("meta", {}).get("counts", {})
+          print(f"publishing {len(records)} statements "
+                f"({meta.get('registry', '?')} registry, {meta.get('overlay', '?')} overlay)")
+          PY
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

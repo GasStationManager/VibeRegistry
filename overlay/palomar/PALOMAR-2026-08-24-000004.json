@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-24-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-24-000004",
+  "version": 1,
+  "title": "jeremypparker/mahler-hansen-cograph",
+  "abstract": "A Lean 4/Mathlib formalisation of a sharp Mahler-volume theorem for Hansen polytopes of finite cographs. It proves that the normalized Mahler volume of the Hansen polytope of a cograph is at least one, and exactly one if and only if it is a threshold graph.",
+  "authors": [
+    "Jeremy P Parker"
+  ],
+  "repository": "https://github.com/jeremypparker/mahler-hansen-cograph",
+  "commit": "72eee5b643fe4f003eea56b8192adb25ba08aa2e",
+  "project_path": null,
+  "declarations": [
+    "hansen_cograph_mahler",
+    "hansen_cograph_mahler_eq_one_iff_threshold"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52A40",
+      "52B05",
+      "05C75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-24T17:37:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "72eee5b643fe4f003eea56b8192adb25ba08aa2e",
+        "fork_repository": "PalomarArchive/jeremypparker--mahler-hansen-cograph--9e881925f110",
+        "source_repository": "jeremypparker/mahler-hansen-cograph"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cd25bfbf38f639e0f6829f082dfc7d1d7be23c45bd27689db876f6ca2a03cb12"
+}

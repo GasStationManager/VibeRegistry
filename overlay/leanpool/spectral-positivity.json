@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "spectral-positivity",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SpectralPositivity",
+  "version": 1,
+  "title": "Spectral positivity",
+  "abstract": "Perron-Frobenius theory, Jentzsch's theorem, and matrix/operator positivity in Lean 4. At the matrix level it proves that nonnegative matrices have nonnegative powers, the Metzler decomposition and positivity of the matrix exponential of a Metzler matrix, M-matrix inverse positivity, and the Perron-Frobenius theorem for irreducible nonnegative matrices (a positive dominant eigenvalue with a strictly positive eigenvector). At the operator level it proves Jentzsch's theorem for compact self-adjoint positivity-improving operators on L2 — a simple, strictly positive ground state with a spectral gap — together with a kernel positivity criterion.",
+  "authors": [
+    "Michael R. Douglas"
+  ],
+  "repository": "https://github.com/mrdouglasny/spectral-positivity",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.SpectralPositivity",
+  "declarations": [
+    "allpos_has_pos_eigenvec",
+    "perron_frobenius",
+    "ground_state_strictly_positive",
+    "SpectralPositivity.Matrix.MMatrix.inverse_pos"
+  ],
+  "informal": {
+    "allpos_has_pos_eigenvec": "A matrix with all strictly positive entries has a positive eigenvalue with a strictly positive eigenvector (Perron-Frobenius for positive matrices, via the Collatz-Wielandt characterization).",
+    "perron_frobenius": "An irreducible (primitive) nonnegative matrix has a positive eigenvalue with a strictly positive eigenvector.",
+    "ground_state_strictly_positive": "The ground eigenfunction of a compact self-adjoint positivity-improving operator on L2 is strictly positive almost everywhere (Jentzsch).",
+    "SpectralPositivity.Matrix.MMatrix.inverse_pos": "The inverse of a nonsingular irreducible M-matrix is entrywise strictly positive."
+  },
+  "classification": {
+    "msc2020": [
+      "15B48",
+      "15A18"
+    ],
+    "tags": [
+      "linear-algebra",
+      "perron-frobenius",
+      "positivity"
+    ],
+    "branch": "linear algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/SpectralPositivity.lean",
+  "statement_hash": "sha256:5355a5529b36760966ff65d6d51332dfea3585a9e23ba8c6d7fbf0057226946e"
+}

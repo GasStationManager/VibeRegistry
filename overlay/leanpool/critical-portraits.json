@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "critical-portraits",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CriticalPortraits",
+  "version": 1,
+  "title": "Counting Critical Portraits",
+  "abstract": "Formalizes the census of degree-d critical portraits, modeled as level-canonical (d-1)-subsets of the cyclic group ZMod (d*m), and proves that their number equals C(d*m, d-1)/d for all d, via the Dvoretzky-Motzkin cycle lemma together with an explicit level-canonicalization bijection (injectivity and surjectivity of the delete-minimum map).",
+  "authors": [
+    "Keston Aquino-Michaels"
+  ],
+  "repository": "https://github.com/no-way-labs/lean-critical-portraits",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.CriticalPortraits",
+  "declarations": [
+    "CriticalPortraits.card_portraits",
+    "CriticalPortraits.Cycle.cycle_lemma",
+    "CriticalPortraits.T_injOn",
+    "CriticalPortraits.T_surjOn"
+  ],
+  "informal": {
+    "CriticalPortraits.card_portraits": "The number of degree-d critical portraits at level m equals C(d*m, d-1)/d.",
+    "CriticalPortraits.Cycle.cycle_lemma": "The Dvoretzky-Motzkin cycle lemma: a period-n integer sequence with period-sum 1 has exactly one good cyclic shift.",
+    "CriticalPortraits.T_injOn": "The delete-minimum map is injective on critical portraits.",
+    "CriticalPortraits.T_surjOn": "The delete-minimum map surjects onto the level-canonical subsets."
+  },
+  "classification": {
+    "msc2020": [
+      "05A15",
+      "37F20"
+    ],
+    "tags": [
+      "combinatorics",
+      "cycle-lemma",
+      "critical-portraits",
+      "enumeration"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CriticalPortraits.lean",
+  "statement_hash": "sha256:37ea29a6bf5b92263c85f378128917c74e2783287d53d8b634bd0ee68291b9f1"
+}

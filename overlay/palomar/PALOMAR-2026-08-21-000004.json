@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-21-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-21-000004",
+  "version": 1,
+  "title": "teal-sea/zeta-lab",
+  "abstract": "A variational identity for the Fredholm operator A = I + T on the interval I = [-1/2, 1/2], where T is convolution against the Farmer-Gonek-Lee pair-correlation form factor F1(x) = |x| - 4x^2 + sum_k a_k |x|^(2k+3) with a_k = 2^(2k+3) k! / (2k+2)!. Let w = A^(-1)1 and c* = <1, A^(-1)1>. Over the source-admissible class of scalar profiles v(s) = phi(Ls)^2 induced by even, radially nonincreasing C^2 windows supported exactly on [-L/2, L/2] with 0 <= phi <= 1 and uniform L^1 bounds on phi'' and (phi^2)'', the supremum of <1,v>^2 / <Av,v> equals c*, and the infimum of the reciprocal quotient <Av,v> / <1,v>^2 equals 1/c*. The upper bound <1,v>^2 <= c* <Av,v> is energy Cauchy-Schwarz. It holds for every v, it is classical, and it is not the content of this result. The content is the reverse inequality over the constrained class: c* is the value of the unconstrained variational problem, and the identity says that imposing evenness, radial monotonicity, an exact compact support, the amplitude ceiling 0 <= phi <= 1 and uniform L^1 bounds on the second derivatives does not lower the supremum. That direction is proved by exhibiting an explicit endpoint-tapered family inside the class, indexed by the scale L, whose quotient converges to c*. Both orientations are advertised because the orientation is load-bearing: it is the quotient with <1,v>^2 in the numerator whose supremum is c*, and the supporting development also proves that the two are not interchangeable. The advertised statement is existential in the profile and in the two uniform constants, so it carries its own non-vacuity: an IsLUB or IsGLB assertion over the image of an empty class is unsatisfiable in the reals, so the theorem cannot hold unless the class is populated by the constants for which it is stated. Audience. The kernel F1 is the pair-correlation form factor and the window class is the generalized, load-bearing class of Section 7.1 of the cited paper rather than a convenient flat-topped realization, so the constrained supremum settled here is the quantity that a critical-line proportion argument built on that framework optimizes; analytic number theorists working on the proportion of zeros of the Riemann zeta function on the critical line, and on pair correlation of its zeros, are the audience for which the exact value of that supremum over the admissible class, rather than a bound on it, is the relevant fact. The statement is also a closure result for a constrained admissible class in the variational theory of Fredholm integral operators (MSC 45B05, 49R05) and can be read there without reference to its origin. What the theorem itself asserts is bounded by the scope field below: it is a statement about a Fredholm operator on an interval and a class of test profiles, and it is evidence for nothing beyond that.",
+  "authors": [
+    "Thomas Lince"
+  ],
+  "repository": "https://github.com/teal-sea/zeta-lab",
+  "commit": "8a28a4faa3fb0fe68649f4f22faba7efe4bc3406",
+  "project_path": "lean",
+  "declarations": [
+    "ZetaLean.Palomar.pub1_strong_closure",
+    "ZetaLean.Palomar.pub1_strong_closure_reciprocal",
+    "ZetaLean.Palomar.pub1_strong_closure_exists"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CA"
+    ],
+    "msc2020": [
+      "45B05",
+      "49R05",
+      "11M26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-21T05:37:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8a28a4faa3fb0fe68649f4f22faba7efe4bc3406",
+        "fork_repository": "PalomarArchive/teal-sea--zeta-lab--3c21e0f57be6",
+        "source_repository": "teal-sea/zeta-lab"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8876c2c5e4ea5ade252b9b4a806ff57b686d12e6caf34a0f555d330145c72d86"
+}

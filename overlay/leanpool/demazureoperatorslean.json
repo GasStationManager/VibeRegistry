@@ -1,0 +1,62 @@
+{
+  "source": "leanpool",
+  "upstream_id": "demazureoperatorslean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/DemazureOperatorsLean",
+  "version": 1,
+  "title": "Demazure Operators and Lean",
+  "abstract": "Formalizes Demazure operators on multivariate polynomials and their nilpotence, braid, commutation, and symmetric-polynomial linearity relations, with auxiliary Coxeter-theory support including strong exchange and a conditional Matsumoto theorem.",
+  "authors": [
+    "Óscar Álvarez Sánchez"
+  ],
+  "repository": "https://github.com/bolito2/DemazureOperatorsLean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.DemazureOperatorsLean",
+  "declarations": [
+    "Demazure.Dem",
+    "CoxeterSystem.strongExchangeProperty",
+    "Demazure.demazure_order_two",
+    "Demazure.demazure_commutes_adjacent",
+    "Demazure.demazure_commutes_non_adjacent",
+    "Demazure.demazure_mul_symm",
+    "CoxeterSystem.matsumoto_reduced"
+  ],
+  "informal": {
+    "Demazure.Dem": "Defines the Demazure operator as a linear map over the subalgebra of symmetric polynomials.",
+    "Demazure.demazure_order_two": "Proves that applying the Demazure operator twice gives zero.",
+    "Demazure.demazure_commutes_adjacent": "Proves the braid relation for adjacent Demazure operators.",
+    "Demazure.demazure_commutes_non_adjacent": "Proves that non-adjacent Demazure operators commute.",
+    "Demazure.demazure_mul_symm": "Proves that symmetric polynomials act as scalars with respect to Demazure operators.",
+    "CoxeterSystem.strongExchangeProperty": "Proves the strong exchange property for Coxeter systems.",
+    "CoxeterSystem.matsumoto_reduced": "Auxiliary theorem proving, under the extra MatsumotoCondition hypothesis, that reduced words for the same Coxeter group element are connected by braid moves."
+  },
+  "classification": {
+    "msc2020": [
+      "05E05",
+      "13P10",
+      "20F55"
+    ],
+    "tags": [
+      "algebraic-combinatorics",
+      "demazure-operators",
+      "polynomials",
+      "representation-theory"
+    ],
+    "branch": "algebraic combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/DemazureOperatorsLean.lean",
+  "statement_hash": "sha256:64636f16acd26dda4f73043a7218fcf12606bd7467f1a9c07be4f01a59b171f0"
+}

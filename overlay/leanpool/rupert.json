@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "rupert",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Rupert",
+  "version": 1,
+  "title": "The Rupert Problem for convex polyhedra",
+  "abstract": "Formalizes the Rupert property for the cube, the regular tetrahedron, and the triakis tetrahedron, exhibiting for each an explicit straight-through hole admitting a congruent copy.",
+  "authors": [
+    "David Renshaw"
+  ],
+  "repository": "https://github.com/dwrensha/Rupert.lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Rupert",
+  "declarations": [
+    "Cube.rupert",
+    "Tetrahedron.rupert",
+    "TriakisTetrahedron.rupert"
+  ],
+  "informal": {
+    "Cube.rupert": "Proves that the cube has the Rupert property.",
+    "Tetrahedron.rupert": "Proves that the regular tetrahedron has the Rupert property.",
+    "TriakisTetrahedron.rupert": "Proves that the triakis tetrahedron has the Rupert property."
+  },
+  "classification": {
+    "msc2020": [
+      "52B10",
+      "52A15"
+    ],
+    "tags": [
+      "convex-geometry",
+      "polyhedra",
+      "rupert-problem"
+    ],
+    "branch": "convex geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Rupert.lean",
+  "statement_hash": "sha256:de9a00f15875e690a7845e299dd5f7c99688125dcb96b8f5f3cceeef10a956d0"
+}

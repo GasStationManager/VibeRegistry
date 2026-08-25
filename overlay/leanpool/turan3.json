@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "turan3",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Turan3",
+  "version": 1,
+  "title": "Turán's theorem (the \"Book\" weighting proof)",
+  "abstract": "Formalizes the weighting/optimization proof of Turán's theorem from Proofs from THE BOOK, bounding the number of edges of a p-clique-free simple graph by (1/2)(1 - 1/(p-1)) n².",
+  "authors": [
+    "Rodrigo Gutierrez",
+    "Yves Jäckle"
+  ],
+  "repository": "https://github.com/ro-gut/turan3",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Turan3",
+  "declarations": [
+    "Turan3.turans",
+    "Turan3.finale_bound",
+    "Turan3.Better_forms_clique",
+    "Turan3.Enhance_total_weight_stricinc"
+  ],
+  "informal": {
+    "Turan3.turans": "Turán's theorem — a p-clique-free simple graph on n vertices has at most (1/2)(1 - 1/(p-1)) n² edges.",
+    "Turan3.finale_bound": "For any weight distribution on a p-clique-free graph, the total edge weight is at most ((p-1)(p-2)/2)·(1/(p-1))², the bound used to derive the edge count.",
+    "Turan3.Better_forms_clique": "Starting from any weight function, the minimal-support weight-non-decreasing improvement has support that forms a clique.",
+    "Turan3.Enhance_total_weight_stricinc": "Equalizing weights between a maximum- and minimum-weight vertex in the clique support strictly increases the total edge weight."
+  },
+  "classification": {
+    "msc2020": [
+      "05C35"
+    ],
+    "tags": [
+      "graph-theory",
+      "combinatorics",
+      "turan-theorem",
+      "extremal-graph-theory"
+    ],
+    "branch": "extremal graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Turan3.lean",
+  "statement_hash": "sha256:4f245e008f30d96e22ffb5e1643b59fc5079dd3e9bee8f675a30bb311f2f3a58"
+}

@@ -1,28 +1,18 @@
 #!/bin/bash
 # Verify all registry entries.
 #
-# Usage: ./scripts/verify_all.sh [--level 1|2]
+# Usage: ./scripts/verify_all.sh [verify_entry.sh flags...]
 #
-# Iterates over all entry configs in entries/ and runs verify_entry.sh on each.
+# Iterates over all entry configs in entries/ and runs verify_entry.sh on each,
+# forwarding every flag (e.g. --with-nanoda, --checks comparator).
 
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 
-LEVEL_ARGS=""
-while [[ $# -gt 0 ]]; do
-    case "$1" in
-        --level)
-            LEVEL_ARGS="--level $2"
-            shift 2
-            ;;
-        *)
-            echo "Unknown argument: $1"
-            exit 2
-            ;;
-    esac
-done
+# Forward flags verbatim; verify_entry.sh validates them.
+VERIFY_ARGS=("$@")
 
 echo "========================================="
 echo "VibeRegistry: Verify All Entries"
@@ -43,7 +33,7 @@ for config in "$PROJECT_DIR/entries"/*.toml; do
         echo "Entry: $entry_name"
         echo "========================================="
 
-        if "$SCRIPT_DIR/verify_entry.sh" "$config" $LEVEL_ARGS; then
+        if "$SCRIPT_DIR/verify_entry.sh" "$config" "${VERIFY_ARGS[@]+"${VERIFY_ARGS[@]}"}"; then
             PASSED=$((PASSED + 1))
         else
             FAILED_ENTRIES+=("$entry_name")

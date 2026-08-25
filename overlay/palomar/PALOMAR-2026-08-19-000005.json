@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-19-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-19-000005",
+  "version": 1,
+  "title": "dcposch/jc2-lean",
+  "abstract": "Lean 4 / Mathlib formalization of Theorem A (ODE rigidity, all weights; label thm:ode, Theorem 6.1 in the current compilation of the campaign paper): if polynomials A, C over an integral domain of characteristic zero and an integer weight nu >= 1 satisfy A*C' - nu*A'*C = c for a nonzero constant c, then deg A <= 1 (TheoremA).  Also a standalone positive-characteristic strengthening extracted from the same proof (TheoremA_charP): the same conclusion over a domain of characteristic p under the degree bounds nu*deg A < p and deg C < p.  The theorem is the rigidity engine of the depth-two block analysis in the campaign on the plane Jacobian problem at Newton-degree pair (72,108).",
+  "authors": [
+    "Dan Clemens Posch"
+  ],
+  "repository": "https://github.com/dcposch/jc2-lean",
+  "commit": "6c0f56309226432afb90b6213638ec987d46f4a3",
+  "project_path": "theorem-a",
+  "declarations": [
+    "TheoremA",
+    "TheoremA_charP"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.AC"
+    ],
+    "msc2020": [
+      "14R15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-19T23:02:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6c0f56309226432afb90b6213638ec987d46f4a3",
+        "fork_repository": "PalomarArchive/dcposch--jc2-lean--e2c6525da39f",
+        "source_repository": "dcposch/jc2-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1b9f4967041223fd114c3a98d6969a5755fddafd685c83b22a53d57aa46618e2"
+}

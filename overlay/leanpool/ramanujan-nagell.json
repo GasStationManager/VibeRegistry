@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "ramanujan-nagell",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/RamanujanNagell",
+  "version": 1,
+  "title": "The Ramanujan-Nagell theorem",
+  "abstract": "Formalizes the Ramanujan-Nagell theorem, proving that the Diophantine equation x^2 + 7 = 2^n has exactly the five positive-integer solutions (|x|, n) = (1, 3), (3, 4), (5, 5), (11, 7), (181, 15).",
+  "authors": [
+    "Barinder S. Banwait",
+    "Xinze Li"
+  ],
+  "repository": "https://github.com/BarinderBanwait/ramanujan_nagell",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.RamanujanNagell",
+  "declarations": [
+    "ramanujanNagellExact"
+  ],
+  "informal": {
+    "ramanujanNagellExact": "Proves that the integer solutions of x^2 + 7 = 2^n are exactly (x, n) = (+/-1, 3), (+/-3, 4), (+/-5, 5), (+/-11, 7), (+/-181, 15)."
+  },
+  "classification": {
+    "msc2020": [
+      "11D61",
+      "11D45",
+      "11R11"
+    ],
+    "tags": [
+      "number-theory",
+      "diophantine-equations",
+      "quadratic-integers"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/RamanujanNagell.lean",
+  "statement_hash": "sha256:584f9397983c230a9ce8ac89eaeedf9e40fd673eb6819754e502a5e7c515ecd0"
+}

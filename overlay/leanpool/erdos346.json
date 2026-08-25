@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "erdos346",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Erdos346",
+  "version": 1,
+  "title": "Erdős Problem 346: Ratio Limit Forces the Golden Ratio",
+  "abstract": "Formalizes the limit-exists interpretation of Erdős Problem 346: for a strictly increasing positive integer sequence with a uniform ratio gap whose finite deletions are complete but whose infinite deletions are not, if the consecutive quotient sequence converges to some real limit greater than one, then that limit must equal the golden ratio and the quotient sequence tends to it.",
+  "authors": [
+    "KitaKen1"
+  ],
+  "repository": "https://github.com/KitaKen1/erdos346-ratio-limit-lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Erdos346",
+  "declarations": [
+    "Erdos346.intended_problem_if_limit_exists",
+    "Erdos346.ratio_limit_eq_goldenRatio",
+    "Erdos346.ratio_tendsto_goldenRatio_of_limit_exists"
+  ],
+  "informal": {
+    "Erdos346.intended_problem_if_limit_exists": "Existence of any limit greater than one for the quotient sequence forces convergence to the golden ratio, the intended Erdős–Graham conclusion.",
+    "Erdos346.ratio_limit_eq_goldenRatio": "If the quotient sequence converges to a limit greater than one under the completeness and incompleteness deletion hypotheses, that limit equals the golden ratio.",
+    "Erdos346.ratio_tendsto_goldenRatio_of_limit_exists": "Under the same hypotheses, the quotient sequence converges to the golden ratio itself."
+  },
+  "classification": {
+    "msc2020": [
+      "11B05",
+      "11J70"
+    ],
+    "tags": [
+      "number-theory",
+      "golden-ratio",
+      "erdos-problems"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Erdos346.lean",
+  "statement_hash": "sha256:685851fe0714f94fe3c86d9f8a24043ffca8cc1452e5d099d5e3439f73ba5b05"
+}

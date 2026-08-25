@@ -1,0 +1,56 @@
+{
+  "source": "leanpool",
+  "upstream_id": "compact-spectral",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CompactSpectral",
+  "version": 1,
+  "title": "Spectral theorem for compact self-adjoint operators",
+  "abstract": "Formalizes the spectral theorem for compact self-adjoint operators on a Hilbert space: such an operator admits a Hilbert basis of eigenvectors. The development passes from weak compactness of Hilbert closed balls and Rayleigh-quotient extrema to an eigenvector at the operator norm, finiteness of the point spectrum outside any neighbourhood of zero, finite-rank cutoff approximation, and finally the orthogonal decomposition into eigenspaces.",
+  "authors": [
+    "Adam Benenson"
+  ],
+  "repository": "https://github.com/abenenson/compact-spectral",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.CompactSpectral",
+  "declarations": [
+    "CompactSelfAdjoint.exists_hasEigenvector_iSup_or_iInf_of_isCompactOperator",
+    "CompactSelfAdjoint.exists_hilbertBasis_hasEigenvector_of_isCompactOperator_of_isSelfAdjoint",
+    "CompactSelfAdjoint.iSup_eigenspace_orthogonal_eq_bot_of_isCompactOperator_of_isSelfAdjoint",
+    "CompactSelfAdjoint.exists_unit_norm_eq_opNorm_of_isCompactOperator",
+    "CompactSelfAdjoint.countable_set_hasEigenvalue_ne_zero_of_isCompactOperator_of_isSelfAdjoint"
+  ],
+  "informal": {
+    "CompactSelfAdjoint.exists_hilbertBasis_hasEigenvector_of_isCompactOperator_of_isSelfAdjoint": "A compact self-adjoint operator on a Hilbert space admits a Hilbert basis of eigenvectors.",
+    "CompactSelfAdjoint.iSup_eigenspace_orthogonal_eq_bot_of_isCompactOperator_of_isSelfAdjoint": "The eigenspaces of a compact self-adjoint operator span a dense subspace: the orthogonal complement of the supremum of all eigenspaces is trivial.",
+    "CompactSelfAdjoint.exists_hasEigenvector_iSup_or_iInf_of_isCompactOperator": "A compact self-adjoint operator has an eigenvector whose eigenvalue realizes either the supremum or the infimum of its Rayleigh quotient.",
+    "CompactSelfAdjoint.exists_unit_norm_eq_opNorm_of_isCompactOperator": "A compact operator attains its operator norm on the unit sphere of the Hilbert space.",
+    "CompactSelfAdjoint.countable_set_hasEigenvalue_ne_zero_of_isCompactOperator_of_isSelfAdjoint": "The set of nonzero eigenvalues of a compact self-adjoint operator is countable."
+  },
+  "classification": {
+    "msc2020": [
+      "47A75",
+      "47B07"
+    ],
+    "tags": [
+      "spectral-theory",
+      "functional-analysis",
+      "compact-operators"
+    ],
+    "branch": "functional analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CompactSpectral.lean",
+  "statement_hash": "sha256:adcd91013984ef509bac334f0f1d11951f2613facb17d3797cc1ae9a1e4cad5f"
+}

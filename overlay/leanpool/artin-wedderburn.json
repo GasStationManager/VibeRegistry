@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "artin-wedderburn",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ArtinWedderburn",
+  "version": 1,
+  "title": "Artin-Wedderburn Theorem",
+  "abstract": "Formalizes the Artin-Wedderburn theorem for prime and simple Artinian rings.",
+  "authors": [
+    "Matevz Miščič",
+    "Maša Žaucer",
+    "Job Petrovčič"
+  ],
+  "repository": "https://github.com/JobPetrovcic/ArtinWedderburn",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.ArtinWedderburn",
+  "declarations": [
+    "LeanPool.ArtinWedderburn.ArtinWedderburnForPrime"
+  ],
+  "informal": {
+    "LeanPool.ArtinWedderburn.ArtinWedderburnForPrime": "A nontrivial prime Artinian ring is isomorphic to a matrix ring over a division ring."
+  },
+  "classification": {
+    "msc2020": [
+      "16K20",
+      "16P20"
+    ],
+    "tags": [
+      "ring-theory",
+      "noncommutative-algebra",
+      "artinian-rings"
+    ],
+    "branch": "ring theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ArtinWedderburn.lean",
+  "statement_hash": "sha256:f1c54c9356996db6b28b8687b4530535e0aa60ba0903ffa5fc449497e18e2363"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "sensitivity",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Sensitivity",
+  "version": 1,
+  "title": "Sensitivity Conjecture: sqrt(deg) <= sensitivity",
+  "abstract": "Formalizes the quantitative Nisan-Szegedy/Huang sensitivity theorem for Boolean functions.",
+  "authors": [
+    "Samuel Schlesinger"
+  ],
+  "repository": "https://github.com/SamuelSchlesinger/sensitivity-conjecture",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Sensitivity",
+  "declarations": [
+    "LeanPoolSensitivity.sensitivity_ge_sqrt_degree",
+    "LeanPoolSensitivity.degree_le_sensitivity_sq"
+  ],
+  "informal": {
+    "LeanPoolSensitivity.sensitivity_ge_sqrt_degree": "Proves that the square root of multilinear degree is bounded above by sensitivity.",
+    "LeanPoolSensitivity.degree_le_sensitivity_sq": "Derives the degree bound by the square of sensitivity."
+  },
+  "classification": {
+    "msc2020": [
+      "06E30",
+      "68Q17"
+    ],
+    "tags": [
+      "combinatorics",
+      "boolean-functions",
+      "computational-complexity"
+    ],
+    "branch": "extremal combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Sensitivity.lean",
+  "statement_hash": "sha256:9d376241b8c5e833e4056176c465e00ff04fe3022732becdb4dbb1a24081ec26"
+}

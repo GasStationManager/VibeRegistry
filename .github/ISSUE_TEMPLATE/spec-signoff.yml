@@ -1,38 +1,68 @@
-name: Spec Sign-off
-description: Submit a domain expert sign-off attesting that spec files faithfully capture the intended mathematics.
-title: "Sign-off: [ENTRY_ID]"
+name: Sign-off
+description: Attest that a Lean statement says what the mathematics says — for a registry entry or an overlaid upstream record.
+title: "Sign-off: "
 labels: ["signoff"]
 body:
   - type: markdown
     attributes:
       value: |
-        ## Spec Sign-off
+        ## Sign-off
 
-        Use this form to attest that one or more spec files faithfully capture
-        the intended mathematical statements. Automated verification proves the
-        implementation matches the spec; your sign-off confirms the spec itself
-        is mathematically correct.
+        Machine checks establish that an implementation proves a statement. They
+        say nothing about whether the statement is the right one. That is what a
+        sign-off adds, and it is the only part no tool here can do for you.
+
+        The same form covers both kinds of target:
+
+        - **Registry entry** — our own entry with human-vetted specs under `specs/<id>/`.
+        - **Overlay record** — a record mirrored from Palomar or LeanPool. Those
+          registries machine-check the proof but leave statement fidelity to a
+          language model; your sign-off is the layer they lack.
+
+        Before reviewing, generate the packet — it puts the informal statement,
+        the Lean statement, and the checks that ran in one file:
+
+        ```
+        python3 scripts/generate_signoff_packet.py entries/<id>.toml       # registry entry
+        python3 scripts/generate_signoff_packet.py --overlay leanpool:<id> # overlay record
+        ```
 
   - type: dropdown
-    id: entry_id
+    id: target_kind
     attributes:
-      label: Entry ID
-      description: Which registry entry are you signing off on?
+      label: Target kind
+      description: What are you signing off on?
       options:
-        - artificial-theorems
-        - stat-learning
-        - aks
-        - archon-first-proof
+        - Registry entry
+        - "Overlay record: palomar"
+        - "Overlay record: leanpool"
+    validations:
+      required: true
+
+  - type: input
+    id: target_id
+    attributes:
+      label: Target ID
+      description: |
+        For a registry entry, its id (e.g. `artificial-theorems`, `stat-learning`,
+        `aks`, `archon-first-proof`, `lean-zip`).
+        For an overlay record, its upstream id — a Palomar ID
+        (`PALOMAR-2026-08-13-000001`) or a LeanPool slug (`2-coloring-1-round`).
+      placeholder: artificial-theorems
     validations:
       required: true
 
   - type: textarea
-    id: spec_files
+    id: reviewed
     attributes:
-      label: Spec files reviewed
+      label: What you reviewed
       description: |
-        List the spec files you reviewed, one per line.
-        Paths are relative to `specs/<entry>/` (e.g., `Registry/StatLearning/Dudley.lean`).
+        **Registry entry:** spec file paths, one per line, relative to
+        `specs/<entry>/` (e.g. `Registry/StatLearning/Dudley.lean`).
+
+        **Overlay record:** declaration names, one per line
+        (e.g. `Distributed2Coloring.pStar_ge_23879`), or a single `*` for every
+        declaration in the record. A sign-off covers exactly what you list here.
       placeholder: |
         Registry/StatLearning/Dudley.lean
         Registry/StatLearning/EfronStein.lean
@@ -43,7 +73,7 @@ body:
     id: literature_ref
     attributes:
       label: Literature reference
-      description: The textbook, paper, or standard reference these specs correspond to.
+      description: The textbook, paper, or standard reference the statement corresponds to.
       placeholder: "Boucheron et al. (2013) Concentration Inequalities, Theorem 5.6"
     validations:
       required: true
@@ -52,7 +82,9 @@ body:
     id: verdict
     attributes:
       label: Verdict
-      description: Do the spec files faithfully capture the intended mathematics?
+      description: |
+        Does the Lean statement faithfully capture the intended mathematics?
+        A rejection is recorded too — it is information the next reader needs.
       options:
         - Approved
         - Rejected
@@ -63,7 +95,6 @@ body:
     id: comments
     attributes:
       label: Comments
-      description: Any additional comments, caveats, or notes about the review.
-      placeholder: "Optional comments..."
+      description: Anything a later reader should know — caveats, scope limits, or why you rejected it.
     validations:
       required: false

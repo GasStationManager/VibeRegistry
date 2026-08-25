@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "monsky",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Monsky",
+  "version": 1,
+  "title": "Monsky's Theorem",
+  "abstract": "Formalizes Monsky's theorem that a square can be dissected into n triangles of equal area if and only if n is nonzero and even, via a 2-adic valuation, a three-coloring of the unit square, and a rainbow-triangle argument.",
+  "authors": [
+    "Dhyan Aranha",
+    "contributors"
+  ],
+  "repository": "https://github.com/dhyan-aranha/Monsky",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Monsky",
+  "declarations": [
+    "LeanPool.Monsky.monsky_theorem"
+  ],
+  "informal": {
+    "LeanPool.Monsky.monsky_theorem": "Proves that the unit square admits a dissection into n equal-area triangles if and only if n is nonzero and even."
+  },
+  "classification": {
+    "msc2020": [
+      "52C20",
+      "05B45"
+    ],
+    "tags": [
+      "geometry",
+      "combinatorics",
+      "measure-theory"
+    ],
+    "branch": "combinatorial geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Monsky.lean",
+  "statement_hash": "sha256:b9987b94f2516698b43036f788a454653828fdbe08bbb1c20c9107f8bb23d80d"
+}

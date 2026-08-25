@@ -45,7 +45,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          git add entries/
+          # A sign-off lands in the entry TOML or in overlay/signoffs.toml,
+          # depending on what was signed; stage both.
+          git add entries/ overlay/signoffs.toml
           git commit -m "Record sign-off from issue #${ISSUE_NUMBER}"
           git push origin "$BRANCH"
           PR_URL=$(gh pr create \

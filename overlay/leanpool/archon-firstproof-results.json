@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "archon-firstproof-results",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ArchonFirstProofResults",
+  "version": 1,
+  "title": "Archon-FirstProof-Results",
+  "abstract": "Collects formal solutions from the Archon FirstProof benchmark, including polynomial and graph-theoretic results.",
+  "authors": [
+    "FrenzyMath"
+  ],
+  "repository": "https://github.com/frenzymath/Archon-FirstProof-Results",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.ArchonFirstProofResults",
+  "declarations": [
+    "Problem4.harmonic_mean_inequality_full",
+    "Problem6.exists_eps_light_subset"
+  ],
+  "informal": {
+    "Problem4.harmonic_mean_inequality_full": "Proves the benchmark harmonic-mean inequality for real-rooted polynomial transforms.",
+    "Problem6.exists_eps_light_subset": "Proves the benchmark light-subset existence theorem in the graph Laplacian setting."
+  },
+  "classification": {
+    "msc2020": [
+      "26D15",
+      "05C50",
+      "15A42"
+    ],
+    "tags": [
+      "polynomials",
+      "analysis",
+      "combinatorics",
+      "linear-algebra",
+      "graph-theory"
+    ],
+    "branch": "problem-solving mathematics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ArchonFirstProofResults.lean",
+  "statement_hash": "sha256:fc7f7f8e3d81959e761e7d073894398c9f14f9ba15e1ba688a010b6ff6aefd17"
+}

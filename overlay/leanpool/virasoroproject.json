@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "virasoroproject",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/VirasoroProject",
+  "version": 1,
+  "title": "Virasoro Project",
+  "abstract": "Formalizes the Virasoro algebra, its Witt-algebra central extension, Verma modules, and the basic bosonic Sugawara construction.",
+  "authors": [
+    "Kalle Kytölä"
+  ],
+  "repository": "https://github.com/kkytola/VirasoroProject",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.VirasoroProject",
+  "declarations": [
+    "VirasoroProject.VirasoroAlgebra",
+    "VirasoroProject.sugawaraRepresentation"
+  ],
+  "informal": {
+    "VirasoroProject.VirasoroAlgebra": "Defines the Virasoro algebra as a one-dimensional central extension of the Witt algebra.",
+    "VirasoroProject.sugawaraRepresentation": "Constructs the basic bosonic Sugawara representation of the Virasoro algebra from locally truncated Heisenberg actions."
+  },
+  "classification": {
+    "msc2020": [
+      "17B68",
+      "17B56",
+      "81R10"
+    ],
+    "tags": [
+      "representation-theory",
+      "lie-algebras",
+      "mathematical-physics",
+      "virasoro-algebra"
+    ],
+    "branch": "representation theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/VirasoroProject.lean",
+  "statement_hash": "sha256:de74b306153091eea817d9086c1830e804ac9220003464106f4db11ab242d70d"
+}

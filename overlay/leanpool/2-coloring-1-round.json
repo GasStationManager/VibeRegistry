@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "2-coloring-1-round",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/TwoColoringOneRound",
+  "version": 1,
+  "title": "2-Coloring Cycles in One Round",
+  "abstract": "Formalizes certified upper and lower bounds for one-round randomized algorithms that 2-color cycles.",
+  "authors": [
+    "Jukka Suomela"
+  ],
+  "repository": "https://github.com/suomela/2-coloring-1-round",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.TwoColoringOneRound",
+  "declarations": [
+    "Distributed2Coloring.pStar_ge_23879",
+    "Distributed2Coloring.pStar_lt_24118"
+  ],
+  "informal": {
+    "Distributed2Coloring.pStar_ge_23879": "Proves that every one-round classical algorithm has monochromatic-edge probability at least 0.23879.",
+    "Distributed2Coloring.pStar_lt_24118": "Proves that an explicit one-round algorithm attains monochromatic-edge probability strictly below 0.24118."
+  },
+  "classification": {
+    "msc2020": [
+      "68W15",
+      "05C15"
+    ],
+    "tags": [
+      "distributed-computing",
+      "graph-coloring",
+      "randomized-algorithms",
+      "formal-verification"
+    ],
+    "branch": "distributed computing"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/TwoColoringOneRound.lean",
+  "statement_hash": "sha256:2c3c87a2250aa593c29e258f5e5771ca774e8f068904f5c56df3a868e9bf68f3"
+}

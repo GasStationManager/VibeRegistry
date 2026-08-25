@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "three-gap-theorem",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SteinhausThreeGap",
+  "version": 1,
+  "title": "The Three-Gap (Steinhaus) Theorem",
+  "abstract": "Formalizes the three-gap (Steinhaus, three-distance) theorem: for every real `a` and every `N`, the `N`-point orbit `{i·a mod 1 : i < N}` partitions `[0,1)` into gaps taking at most three distinct lengths, and when exactly three occur the largest is the sum of the other two. The proof works in `[0,1)` via `Int.fract` (not `AddCircle`) through the two first-return times `η⁺` and `η⁻`, and is uniform in the rotation number, covering rational and irrational `a` with no case split.",
+  "authors": [
+    "Dirk Kunert"
+  ],
+  "repository": "https://github.com/dkunert/three-gap-theorem-lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.SteinhausThreeGap",
+  "declarations": [
+    "SteinhausThreeGap.three_gap_card_le_three",
+    "SteinhausThreeGap.three_gap_lengths_eq"
+  ],
+  "informal": {
+    "SteinhausThreeGap.three_gap_card_le_three": "For every real `a` and natural `N`, the gaps of the orbit `{i·a mod 1 : i < N}` take at most three distinct lengths.",
+    "SteinhausThreeGap.three_gap_lengths_eq": "When the gaps take exactly three distinct lengths, those lengths are precisely the two first returns `η⁺`, `η⁻`, and their sum `η⁺ + η⁻`; in particular the largest gap is the sum of the other two."
+  },
+  "classification": {
+    "msc2020": [
+      "11K06"
+    ],
+    "tags": [
+      "number-theory",
+      "three-gap-theorem",
+      "equidistribution"
+    ],
+    "branch": "number theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/SteinhausThreeGap.lean",
+  "statement_hash": "sha256:0e7bafe74e06bef5cd0a3a3794c7e96802c9472333047f3528cbc9e15652a336"
+}

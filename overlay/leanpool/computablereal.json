@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "computablereal",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ComputableReal",
+  "version": 1,
+  "title": "Verified interval-Cauchy real arithmetic",
+  "abstract": "Represents real numbers as Cauchy sequences of nested rational intervals quotiented into a field, with executable interval ring arithmetic, proven-convergent rational bounds for sqrt, exp, and pi, and an IsComputable typeclass that packages such approximations to drive classical (noncomputable) comparison instances, after O'Connor's certified exact real computation.",
+  "authors": [
+    "Alex Meiburg"
+  ],
+  "repository": "https://github.com/Timeroot/computableReal",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.ComputableReal",
+  "declarations": [
+    "ComputableℝSeq",
+    "Computableℝ",
+    "IsComputable",
+    "Computableℝ.instField",
+    "ComputableℝSeq.Sqrt.sqrtq"
+  ],
+  "informal": {
+    "ComputableℝSeq": "A sequence of converging rational lower and upper bounds representing a single real number.",
+    "Computableℝ": "The quotient of interval-Cauchy sequences by equality of value, an ordered field whose ring operations are executable interval arithmetic.",
+    "IsComputable": "A typeclass packaging an explicit interval-Cauchy approximation of a real number, used to drive its classical comparison instances.",
+    "Computableℝ.instField": "The field instance on the quotient; inversion extracts a sign witness classically and is noncomputable.",
+    "ComputableℝSeq.Sqrt.sqrtq": "Computes converging rational interval bounds for the square root of a rational interval."
+  },
+  "classification": {
+    "msc2020": [
+      "65G40",
+      "68V20"
+    ],
+    "tags": [
+      "interval-arithmetic",
+      "real-numbers",
+      "cauchy-sequences",
+      "special-functions"
+    ],
+    "branch": "interval arithmetic"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ComputableReal.lean",
+  "statement_hash": "sha256:52720375ff85313e09d023d54b524d20a2301d0e5be5f736785df2acb220438f"
+}

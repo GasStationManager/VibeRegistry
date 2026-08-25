@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "kuramoto",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Kuramoto",
+  "version": 1,
+  "title": "Finite-N Kuramoto Synchronization",
+  "abstract": "Formalizes the finite-N Kuramoto model of coupled phase oscillators: the order parameter and its unit bound, the potential/force gradient identities, smoothness and local Lipschitz continuity of the vector field with ODE existence and uniqueness, Lyapunov descent along trajectories, pairwise and semicircle contraction estimates, Hebbian phase/weight dynamics, and full convergence to synchrony under all-to-all coupling from initial phases in an open semicircle.",
+  "authors": [
+    "Ben Cassie"
+  ],
+  "repository": "https://github.com/velvetmonkey/kuramoto-lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Kuramoto",
+  "declarations": [
+    "kuramotoR_norm_le_one",
+    "weighted_lyapunov_descent",
+    "allToAll_convergence_to_synchrony"
+  ],
+  "informal": {
+    "kuramotoR_norm_le_one": "The Kuramoto order parameter has norm at most one for any phase configuration.",
+    "weighted_lyapunov_descent": "The weighted Kuramoto potential is non-increasing along the gradient flow, since the sum of force times potential-derivative over all oscillators is at most zero.",
+    "allToAll_convergence_to_synchrony": "Under all-to-all coupling with positive strength and initial phases in an open semicircle, the order parameter norm tends to one, i.e. the oscillators synchronize."
+  },
+  "classification": {
+    "msc2020": [
+      "34D06"
+    ],
+    "tags": [
+      "dynamical-systems",
+      "synchronization",
+      "kuramoto"
+    ],
+    "branch": "dynamical systems"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Kuramoto.lean",
+  "statement_hash": "sha256:a87c01973139b7b9b6784693a11053ff2f6efafee79227b2f31e7e6f20c1efb0"
+}

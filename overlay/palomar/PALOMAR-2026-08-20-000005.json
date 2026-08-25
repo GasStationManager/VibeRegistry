@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-20-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-20-000005",
+  "version": 1,
+  "title": "google-deepmind/formal-conjectures",
+  "abstract": "Formal proof of the First Cuboid Conjecture, which states that for all positive coprime integers a, b with a ≠ b, a certain degree-8 polynomial P_{a,b}(t) over ℤ is irreducible. This conjecture was proposed by Shapirov in \"Perfect cuboids and irreducible polynomials\" (arXiv:1108.5348) as part of a family of three conjectures whose combined truth would imply the nonexistence of a perfect Euler brick. The proof first analyses rational factors and the symmetry F(−x) vs F(x) to reduce irreducibility of the degree-8 polynomial to irreducibility of a degree-4 factor Q_{a,b}, and the coprime branch to a Diophantine identity. Irreducibility of Q is in turn reduced to the quartic Diophantine equation x⁴ + 34x²y² + y⁴ = z², whose only trivial solutions are established by Fermat-style infinite descent. The formal proof was autonomously discovered by the AlphaProof Nexus agent; an independent informal proof using rank-zero elliptic curves was given by Asiryan (arXiv:2510.11768).",
+  "authors": [
+    "The Formal Conjectures Authors",
+    "Moritz Firsching",
+    "Codrut Grosu",
+    "Reklle"
+  ],
+  "repository": "https://github.com/google-deepmind/formal-conjectures",
+  "commit": "d2e3d71ef64e3c7a67b0ea942d0a49e454a853b4",
+  "project_path": null,
+  "declarations": [
+    "EulerBrick.cuboid_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.AG"
+    ],
+    "msc2020": [
+      "11D41",
+      "12E05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T06:11:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d2e3d71ef64e3c7a67b0ea942d0a49e454a853b4",
+        "fork_repository": "PalomarArchive/google-deepmind--formal-conjectures--26b7f8cc558b",
+        "source_repository": "google-deepmind/formal-conjectures"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2c507a4250efae2e37a1cdbd08b1be9092bd8e6060681b233591b0d638c22f8a"
+}

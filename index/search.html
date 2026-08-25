@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VibeRegistry — statement search</title>
+<!-- Inline so the page makes no request for it: a public page should not log a
+     404 for a favicon, and there is nothing else to fetch. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232f5fd0'/%3E%3Cpath d='M3.5 8.5l3 3 6-6' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff; --fg: #16181d; --muted: #5c6370; --line: #e2e5ea;
+    --card: #f7f8fa; --accent: #2f5fd0; --warn: #a1421f; --ok: #1d6f42;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a; --fg: #e6e8ec; --muted: #9aa1ac; --line: #2a2e36;
+      --card: #1b1e24; --accent: #7aa2f7; --warn: #e0875f; --ok: #7bc496;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { padding: 1.5rem 1rem 0.5rem; max-width: 60rem; margin: 0 auto; }
+  h1 { font-size: 1.25rem; margin: 0 0 0.25rem; }
+  .sub { color: var(--muted); font-size: 0.9rem; margin: 0 0 1rem; }
+  main { max-width: 60rem; margin: 0 auto; padding: 0 1rem 4rem; }
+  input[type=search] { width: 100%; padding: 0.6rem 0.7rem; font-size: 1rem;
+    border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); }
+  .filters { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0.75rem 0 1rem;
+    font-size: 0.85rem; color: var(--muted); align-items: center; }
+  .filters label { display: inline-flex; gap: 0.3rem; align-items: center; }
+  .count { margin: 0.5rem 0 1rem; color: var(--muted); font-size: 0.85rem; }
+  .card { border: 1px solid var(--line); background: var(--card); border-radius: 8px;
+    padding: 0.9rem 1rem; margin-bottom: 0.85rem; }
+  .name { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.95rem;
+    font-weight: 600; word-break: break-all; }
+  .meta { color: var(--muted); font-size: 0.8rem; margin-top: 0.2rem; }
+  .tags { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .tag { font-size: 0.72rem; padding: 0.1rem 0.45rem; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted); }
+  .tag.ok { color: var(--ok); border-color: var(--ok); }
+  .tag.warn { color: var(--warn); border-color: var(--warn); }
+  .informal { margin-top: 0.6rem; font-size: 0.9rem; }
+  pre { overflow-x: auto; background: var(--bg); border: 1px solid var(--line);
+    border-radius: 6px; padding: 0.6rem; font-size: 0.8rem; margin: 0.6rem 0 0; }
+  a { color: var(--accent); }
+  details summary { cursor: pointer; color: var(--muted); font-size: 0.85rem; margin-top: 0.5rem; }
+  footer { max-width: 60rem; margin: 0 auto; padding: 1.5rem 1rem 3rem;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: 0.82rem; }
+  footer p { margin: 0.3rem 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>VibeRegistry — statement search</h1>
+  <p class="sub">Lean statements this registry has checked, plus mirrored entries
+  from upstream registries. A machine check says the proof establishes the
+  statement; a sign-off says a human read the statement.</p>
+</header>
+<main>
+  <input type="search" id="q" placeholder="Search names, statements, informal text…" autofocus>
+  <div class="filters">
+    <label><input type="checkbox" id="f-registry" checked> registry</label>
+    <label><input type="checkbox" id="f-overlay" checked> overlay</label>
+    <label><input type="checkbox" id="f-signed"> signed off only</label>
+    <label><input type="checkbox" id="f-informal"> has informal statement</label>
+    <span id="gen"></span>
+  </div>
+  <div class="count" id="count">Loading…</div>
+  <div id="results"></div>
+</main>
+<footer>
+  <p><strong>What a row means.</strong> A machine check says an implementation
+  proves the statement. A sign-off says a named human read the statement and
+  vouched for what it says. They are different claims, and a row shows both or
+  neither — an unsigned statement is listed, not hidden.</p>
+  <p>Mirrored rows come from <a href="https://palomar-registry.org/">Palomar</a>
+  and <a href="https://github.com/Vilin97/lean-pool">LeanPool</a>, which checked
+  them; this registry did not re-verify those proofs.</p>
+  <p><a href="https://github.com/GasStationManager/VibeRegistry">Source and
+  documentation</a> · <a href="statements.json">raw index</a></p>
+</footer>
+<script>
+const state = { records: [], meta: null };
+
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"]/g, c => (
+    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]
+  ));
+}
+
+// A sign-off counts only if it is current AND approved. The index has already
+// narrowed r.signoffs to the ones covering this declaration.
+function approvedSignoffs(r) {
+  return (r.signoffs || []).filter(s => s.status === "current" && s.verdict === "approved");
+}
+
+function tagsFor(r) {
+  const tags = [];
+  const all = r.signoffs || [];
+  const approved = approvedSignoffs(r);
+  const rejected = all.filter(s => s.verdict === "rejected");
+  if (approved.length) {
+    tags.push(`<span class="tag ok">signed off by @${esc(approved[0].github_user)}</span>`);
+  } else if (rejected.length) {
+    tags.push(`<span class="tag warn">review REJECTED by @${esc(rejected[0].github_user)}</span>`);
+  } else if (all.length) {
+    const why = (all[0].stale_reasons || []).join(", ");
+    tags.push(`<span class="tag warn">sign-off stale${why ? ": " + esc(why) : ""}</span>`);
+  } else {
+    tags.push('<span class="tag">no sign-off</span>');
+  }
+  if (r.verdict_state && r.verdict_state !== "current" && r.origin === "registry") {
+    const label = {
+      "stale-statement": "verdict stale: spec statement changed since it was checked",
+      "stale-commit": "verdict stale: entry now pins a different commit",
+      "unbound-verdict": "verdict predates statement binding",
+      "statement-not-found": "statement not found in spec",
+      "not-in-results": "not in the latest results",
+      "no-results": "never verified",
+    }[r.verdict_state] || r.verdict_state;
+    tags.push(`<span class="tag warn">${esc(label)}</span>`);
+  }
+  for (const [k, v] of Object.entries(r.checks || {})) {
+    const cls = v === "pass" ? "ok" : v === "fail" ? "warn" : "";
+    tags.push(`<span class="tag ${cls}">${esc(k)}: ${esc(v)}</span>`);
+  }
+  if (r.upstream_checks && r.upstream_checks.kernels) {
+    tags.push(`<span class="tag">upstream kernels: ${esc(r.upstream_checks.kernels.join("+"))}</span>`);
+  }
+  for (const c of r.mathlib_conflicts || []) {
+    tags.push(`<span class="tag warn">shadows Mathlib ${esc(c.mathlib_kind)}</span>`);
+  }
+  return tags.join(" ");
+}
+
+function render(list) {
+  const results = document.getElementById("results");
+  document.getElementById("count").textContent =
+    `${list.length} of ${state.records.length} statements`;
+  results.innerHTML = list.slice(0, 300).map(r => `
+    <div class="card">
+      <div class="name">${esc(r.name || "(entry)")}</div>
+      <div class="meta">
+        ${esc(r.origin)} · ${esc(r.entry_name || r.entry)}
+        ${r.url ? ` · <a href="${esc(r.url)}" rel="noreferrer noopener">source</a>` : ""}
+        ${r.lean ? ` · ${esc(r.lean)}` : ""}
+      </div>
+      <div class="tags">${tagsFor(r)}</div>
+      ${r.informal ? `<div class="informal">${esc(r.informal)}</div>` : ""}
+      ${r.statement ? `<details><summary>Lean statement</summary><pre>${esc(r.statement)}</pre></details>` : ""}
+    </div>`).join("");
+  if (list.length > 300) {
+    results.innerHTML += `<div class="count">Showing the first 300 matches — narrow the query.</div>`;
+  }
+}
+
+function apply() {
+  const q = document.getElementById("q").value.toLowerCase().trim();
+  const wantRegistry = document.getElementById("f-registry").checked;
+  const wantOverlay = document.getElementById("f-overlay").checked;
+  const signedOnly = document.getElementById("f-signed").checked;
+  const informalOnly = document.getElementById("f-informal").checked;
+  const terms = q.split(/\s+/).filter(Boolean);
+
+  render(state.records.filter(r => {
+    const isRegistry = r.origin === "registry";
+    if (isRegistry && !wantRegistry) return false;
+    if (!isRegistry && !wantOverlay) return false;
+    if (signedOnly && approvedSignoffs(r).length === 0) return false;
+    if (informalOnly && !r.informal) return false;
+    if (!terms.length) return true;
+    const hay = [r.name, r.entry, r.entry_name, r.informal, r.statement, r.doc]
+      .join(" ").toLowerCase();
+    return terms.every(t => hay.includes(t));
+  }));
+}
+
+fetch("statements.json")
+  .then(r => r.json())
+  .then(data => {
+    state.records = data.records || data;
+    state.meta = data.meta || null;
+    if (state.meta && state.meta.generated_at) {
+      document.getElementById("gen").textContent = "generated " + state.meta.generated_at;
+    }
+    for (const id of ["f-registry", "f-overlay", "f-signed", "f-informal"]) {
+      document.getElementById(id).addEventListener("change", apply);
+    }
+    document.getElementById("q").addEventListener("input", apply);
+    apply();
+  })
+  .catch(err => {
+    document.getElementById("count").textContent =
+      "Could not load statements.json — run scripts/build_search_index.py. " + err;
+  });
+</script>
+</body>
+</html>

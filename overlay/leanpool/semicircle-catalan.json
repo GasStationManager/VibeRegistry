@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "semicircle-catalan",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SemicircleCheck",
+  "version": 1,
+  "title": "Genus-Zero Pairings and Catalan Numbers",
+  "abstract": "Formalizes the finite combinatorics behind the genus-zero term of the Wigner semicircle law: a pairing of Fin (2n), viewed as a fixed-point-free involution, has genus zero (total cycle count of the rotation product maximal) exactly when it is noncrossing, and these genus-zero pairings are counted by the Catalan number Cₙ. The Catalan recurrence is obtained from an explicit equivalence decomposing a noncrossing pairing by the partner of vertex 0 into independent inside and outside pairings.",
+  "authors": [
+    "Wondermonger-daydreaming"
+  ],
+  "repository": "https://github.com/Wondermonger-daydreaming/semicircle-catalan",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.SemicircleCheck",
+  "declarations": [
+    "card_noncrossingPairing_eq_catalan",
+    "Pairing.genus_zero_count",
+    "Pairing.genus_zero_iff_noncrossing"
+  ],
+  "informal": {
+    "card_noncrossingPairing_eq_catalan": "The number of noncrossing pairings on 2n points equals the Catalan number catalan n.",
+    "Pairing.genus_zero_count": "The number of genus-zero pairings of Fin (2n) equals the Catalan number catalan n.",
+    "Pairing.genus_zero_iff_noncrossing": "A pairing has genus zero if and only if it is noncrossing."
+  },
+  "classification": {
+    "msc2020": [
+      "05A15",
+      "05A18"
+    ],
+    "tags": [
+      "combinatorics",
+      "catalan-numbers",
+      "noncrossing-partitions"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/SemicircleCheck.lean",
+  "statement_hash": "sha256:3a46d522956c13bf78300e169b06e602b75af048161a3408a7ec84ad4aa6312f"
+}

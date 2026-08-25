@@ -1,0 +1,76 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-24-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-24-000002",
+  "version": 1,
+  "title": "rwst/Confinement-Certificates",
+  "abstract": "A Lean 4 / Mathlib development of a paper on the emptiness theory of the sets Z_{p/q}(s, s+t) = {ξ > 0 : {ξ(p/q)ⁿ} ∈ [s, s+t) for all n ≥ 0}, the generalized Z-numbers of Flatto, Lagarias and Pollington, at and beyond the window length 1/p. The paper introduces block certificates --- finite integer witnesses, rechecked from scratch by the Lean proof kernel, whose soundness rests on the aperiodicity lemma alone --- and uses them to pass the length-$1/p$ line: $\\Zset_{3/2}(1/6,13/24)=\\emptyset$ (window length $3/8>1/3$), $\\Zset_{3/2}(961/3600,2427/3600)=\\emptyset$ (length $733/1800$), and explicit unions of total length up to $17/24$, against $20/39$ in print. The closed-interval union statement of Dubickas is replicated exactly as printed; no $\\xi\\ne0$ keeps $\\|\\xi(3/2)^{n}\\|<1/5$ for every $n$, with $\\|\\cdot\\|$ the distance to the nearest integer; and thirty windows of length $1/p$ are certified at five bases in the regime $p>q^{2}$ that Dubickas leaves open. There is no sorry anywhere outside the deliberate placeholders in Challenge.lean, no project-defined axiom, and no native_decide: every block certificate is discharged by `c.ok = true := by decide`, i.e. by kernel reduction of integer arithmetic on the certificate's raw data.",
+  "authors": [
+    "Ralf Stephan (direction, review, paper author)",
+    "Claude Code, claude-fable-5 (mathematical discovery, paper drafting)",
+    "Claude Code, claude-opus-4-8 (formalization)"
+  ],
+  "repository": "https://github.com/rwst/Confinement-Certificates",
+  "commit": "eb810d8f86e49b2b8e058d02a9edac9e5fedafc8",
+  "project_path": null,
+  "declarations": [
+    "Z32.FLP_cor_one_four_a",
+    "Z32.dubickas_theorem_1",
+    "Z32.ZSet_eq_empty_of_lt_sq",
+    "Z32.ZSet_three_two_third_empty",
+    "Z32.residue_not_eventually_constant",
+    "Z32.exists_residue_change",
+    "Z32.residue_not_eventually_constant_one",
+    "Z32.ZSet_three_two_sixth_3_8",
+    "Z32.ZSet_three_two_frontier",
+    "Z32.not_eventually_mem_sixth_3_8",
+    "Z32.ZSet_four_three_beyond_line",
+    "Z32.dubickas_2008_cor_1_2",
+    "Z32.union_seven_twelfths_empty",
+    "Z32.union_two_thirds_empty",
+    "Z32.union_record_empty",
+    "Z32.union_record_7083_empty",
+    "Z32.two_cell_fifth_empty",
+    "Z32.not_forall_abs_sub_round_lt_fifth",
+    "Z32.ZSet_five_two_fifth",
+    "Z32.ZSet_five_two_grid",
+    "Z32.ZSet_seven_two_grid",
+    "Z32.ZSet_nine_two_grid",
+    "Z32.ZSet_ten_three_grid",
+    "Z32.ZSet_eleven_three_grid"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.DS"
+    ],
+    "msc2020": [
+      "11J71",
+      "11K06",
+      "37B10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-24T16:23:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "eb810d8f86e49b2b8e058d02a9edac9e5fedafc8",
+        "fork_repository": "PalomarArchive/rwst--Confinement-Certificates--8fe7a8378a8f",
+        "source_repository": "rwst/Confinement-Certificates"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cb50d19397355bc2f805eecd92d6d8eb1f78ad6697039c2178817d6a66f1ad14"
+}

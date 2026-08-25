@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean-model-checking",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LeanModelChecking",
+  "version": 1,
+  "title": "Formalizations of theorems related to model checking",
+  "abstract": "Proves that every linear temporal logic formula has an equivalent finite-state nondeterministic Büchi automaton (via negation normal form, alternating Büchi automata, and the Miyano-Hayashi breakpoint construction), and that every linear-time property decomposes as the intersection of a safety property and a liveness property.",
+  "authors": [
+    "György Kurucz"
+  ],
+  "repository": "https://github.com/kuruczgy/lean-model-checking",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.LeanModelChecking",
+  "declarations": [
+    "LeanModelChecking.for_any_LTL_formula_exists_an_equivalent_NBW",
+    "LeanModelChecking.LTL",
+    "LeanModelChecking.NBW",
+    "LeanModelChecking.ABW.toNBW.lang_eq",
+    "SafetyLivenessDecomposition.safety_liveness_decomposition"
+  ],
+  "informal": {
+    "LeanModelChecking.for_any_LTL_formula_exists_an_equivalent_NBW": "For any linear temporal logic formula there exists an equivalent finite-state nondeterministic Büchi automaton, i.e. one whose state type is finite, accepting the same language.",
+    "LeanModelChecking.LTL": "The syntax of linear temporal logic formulas over a set of atomic propositions.",
+    "LeanModelChecking.NBW": "A nondeterministic Büchi automaton over a given alphabet of letters.",
+    "LeanModelChecking.ABW.toNBW.lang_eq": "The Miyano-Hayashi breakpoint construction turns any alternating Büchi automaton over a finite state space into a nondeterministic Büchi automaton accepting the same language.",
+    "SafetyLivenessDecomposition.safety_liveness_decomposition": "Every linear-time property is the intersection of a safety property and a liveness property."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q60",
+      "03B44",
+      "68Q45"
+    ],
+    "tags": [
+      "model-checking",
+      "linear-temporal-logic",
+      "buchi-automaton",
+      "safety-liveness",
+      "omega-automata"
+    ],
+    "branch": "model checking"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/LeanModelChecking.lean",
+  "statement_hash": "sha256:c62daa281c07f98b10783fb650264a1ef97620872a75a5cae169e0f24815862e"
+}

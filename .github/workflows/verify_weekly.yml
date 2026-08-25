@@ -1,4 +1,4 @@
-name: Weekly Level 2 Verification
+name: Weekly Full Verification
 
 on:
   schedule:
@@ -33,7 +33,7 @@ jobs:
       fail-fast: false
       matrix:
         entry: ${{ fromJson(needs.detect-entries.outputs.entries) }}
-    name: Level 2 - ${{ matrix.entry }}
+    name: Full - ${{ matrix.entry }}
     steps:
       - uses: actions/checkout@v4
 
@@ -47,18 +47,14 @@ jobs:
         with:
           go-version: '1.21'
 
-      - name: Install Level 2 tools (landrun, lean4export, comparator)
-        run: |
-          TOOLCHAIN_FILE="specs/${{ matrix.entry }}/lean-toolchain"
-          source scripts/lib/install_comparator_tools.sh
-          install_comparator_tools "$TOOLCHAIN_FILE" "${{ runner.temp }}/tools"
-          echo "COMPARATOR_BIN=$COMPARATOR_BIN" >> "$GITHUB_ENV"
-          echo "LEAN4EXPORT_BIN=$LEAN4EXPORT_BIN" >> "$GITHUB_ENV"
-          echo "LANDRUN_BIN=$LANDRUN_BIN" >> "$GITHUB_ENV"
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
 
-      - name: Verify ${{ matrix.entry }} (Level 2)
+      # Tools are installed by verify_entry.sh so that each entry's own
+      # tools.*_rev pins reach the installer; see verify.yml for the detail.
+      - name: Verify ${{ matrix.entry }} (comparator + nanoda)
         run: |
-          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --level 2 --skip-level-1
+          ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --with-nanoda
 
       - name: Upload results
         if: always()
@@ -69,7 +65,10 @@ jobs:
 
   commit-results:
     needs: verify
-    if: github.event_name == 'schedule'
+    # always(): the weekly run covers every entry, and `needs` alone would skip
+    # this job whenever any single entry failed — discarding refreshed results
+    # for all the entries that succeeded.
+    if: always() && github.event_name == 'schedule'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -101,6 +100,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to results"
           else
-            git commit -m "Update weekly Level 2 verification results"
+            git commit -m "Update weekly verification results"
             git push
           fi

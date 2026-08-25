@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "leanmodularforms",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LeanModularForms",
+  "version": 1,
+  "title": "Modular forms and the generalized residue theorem",
+  "abstract": "Formalizes the Hungerbühler-Wasem generalized residue theorem for Cauchy principal value integrals through poles and applies it to the valence formula for modular forms on the modular group.",
+  "authors": [
+    "Chris Birkbeck"
+  ],
+  "repository": "https://github.com/CBirkbeck/LeanModularForms",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.LeanModularForms",
+  "declarations": [
+    "generalizedResidueTheorem",
+    "valence_formula_textbook_orbit_finsum",
+    "generalizedResidueTheorem_simplePoles"
+  ],
+  "informal": {
+    "generalizedResidueTheorem": "Proves the Hungerbühler-Wasem generalized residue theorem for piecewise-C1 curves through poles.",
+    "generalizedResidueTheorem_simplePoles": "Specializes the generalized residue theorem to the simple-pole case.",
+    "valence_formula_textbook_orbit_finsum": "Proves the valence formula for modular forms on the modular group."
+  },
+  "classification": {
+    "msc2020": [
+      "11F11",
+      "30E20"
+    ],
+    "tags": [
+      "modular-forms",
+      "complex-analysis",
+      "residue-theorem",
+      "valence-formula"
+    ],
+    "branch": "complex analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/LeanModularForms.lean",
+  "statement_hash": "sha256:da9e6614c0ae79fb45463fbd1e2bf95f3b3bfafd43c0eb266af7ab1928c97dd0"
+}

@@ -1,16 +1,30 @@
 #!/bin/bash
 # Verify a single registry entry.
 #
-# Usage: ./scripts/verify_entry.sh entries/<entry>.toml [--level 1|2] [--skip-level-1]
+# Usage: ./scripts/verify_entry.sh entries/<entry>.toml [check flags]
 #
-# Level 1 (default): lean4checker + SafeVerify
-# Level 2: Level 1 + Comparator (sandboxed)
-# --skip-level-1: Skip lean4checker + SafeVerify (useful when Level 1 is already covered by other CI)
+# Checks (comparator-primary model):
+#   comparator    PRIMARY. Sandboxed rebuild + kernel-level proof export and
+#                 statement/proof comparison. On by default.
+#   nanoda        Replay comparator's exported proof through the independent
+#                 nanoda kernel as a second checker. Opt-in.
+#   safe_verify   OPTIONAL. Legacy olean-level spec/impl check.
+#   lean4checker  OPTIONAL. Legacy kernel re-check of the impl module.
+#
+# Check flags:
+#   --checks comparator,nanoda   Run exactly this set
+#   --with-nanoda / --no-nanoda  Toggle one check (same for the other names,
+#                                e.g. --with-safe-verify, --no-comparator)
+#   --require-nanoda             Fail (rather than warn) if nanoda is missing
+#   --level 1|2 / --skip-level-1 Deprecated aliases, kept for old CI callers
+#
+# Per-entry defaults come from the entry TOML's [checks] table; flags win.
 #
 # Environment variables (optional):
 #   COMPARATOR_BIN   Path to comparator binary (auto-installed if missing)
 #   LEAN4EXPORT_BIN  Path to lean4export binary (auto-installed if missing)
 #   LANDRUN_BIN      Path to landrun binary (optional sandboxing)
+#   NANODA_BIN       Path to nanoda_bin binary (auto-installed if missing)
 #
 # Exit codes:
 #   0 - All verifications passed
@@ -25,23 +39,37 @@ PARSE_TOML="python3 $SCRIPT_DIR/lib/parse_toml.py"
 
 # --- Parse arguments ---
 if [[ $# -lt 1 ]]; then
-    echo "Usage: $0 <entry_config.toml> [--level 1|2]"
+    echo "Usage: $0 <entry_config.toml> [--checks comparator,nanoda] [--with-X|--no-X]"
     exit 2
 fi
 
 CONFIG_FILE="$1"
-LEVEL=1
-SKIP_LEVEL_1=0
+REQUIRE_NANODA=0
+RESOLVE_ARGS=()
 
 shift
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --level)
-            LEVEL="$2"
+            RESOLVE_ARGS+=(--level "$2")
             shift 2
             ;;
         --skip-level-1)
-            SKIP_LEVEL_1=1
+            RESOLVE_ARGS+=(--skip-level-1)
+            shift
+            ;;
+        --checks)
+            RESOLVE_ARGS+=(--checks "$2")
+            shift 2
+            ;;
+        --require-nanoda)
+            REQUIRE_NANODA=1
+            RESOLVE_ARGS+=(--with-nanoda)
+            shift
+            ;;
+        --with-comparator|--no-comparator|--with-nanoda|--no-nanoda|\
+        --with-safe-verify|--no-safe-verify|--with-lean4checker|--no-lean4checker)
+            RESOLVE_ARGS+=("$1")
             shift
             ;;
         *)
@@ -60,11 +88,24 @@ if [[ ! -f "$CONFIG_FILE" ]]; then
     fi
 fi
 
+# --- Resolve which checks to run ---
+CHECK_PLAN=$(python3 "$SCRIPT_DIR/lib/resolve_checks.py" "$CONFIG_FILE" "${RESOLVE_ARGS[@]+"${RESOLVE_ARGS[@]}"}")
+eval "$CHECK_PLAN"
+
+# NOTE: plain `[[ cond ]] && arr+=(x)` would abort the script under `set -e`
+# whenever cond is false, so each append gets its own `if`.
+ENABLED_CHECKS=()
+if [[ "$CHECK_COMPARATOR" -eq 1 ]]; then ENABLED_CHECKS+=("comparator"); fi
+if [[ "$CHECK_NANODA" -eq 1 ]]; then ENABLED_CHECKS+=("nanoda"); fi
+if [[ "$CHECK_DEFINITIONS" -eq 1 ]]; then ENABLED_CHECKS+=("definitions"); fi
+if [[ "$CHECK_SAFE_VERIFY" -eq 1 ]]; then ENABLED_CHECKS+=("safe_verify"); fi
+if [[ "$CHECK_LEAN4CHECKER" -eq 1 ]]; then ENABLED_CHECKS+=("lean4checker"); fi
+
 echo "========================================="
 echo "VibeRegistry: Entry Verification"
 echo "========================================="
 echo "Config: $CONFIG_FILE"
-echo "Level: $LEVEL"
+echo "Checks: ${ENABLED_CHECKS[*]}"
 echo ""
 
 # --- Parse config ---
@@ -76,9 +117,27 @@ TOOLCHAIN=$($PARSE_TOML "$CONFIG_FILE" lean.toolchain)
 MATHLIB_TAG=$($PARSE_TOML "$CONFIG_FILE" lean.mathlib_tag 2>/dev/null || echo "")
 THEOREMS_JSON=$($PARSE_TOML "$CONFIG_FILE" theorems)
 
-# Parse optional tool versions for verification dependencies
-export SAFE_VERIFY_REV=$($PARSE_TOML "$CONFIG_FILE" tools.safe_verify_rev 2>/dev/null || echo "")
-export LEAN4CHECKER_REV=$($PARSE_TOML "$CONFIG_FILE" tools.lean4checker_rev 2>/dev/null || echo "")
+# Parse optional tool versions for verification dependencies.
+# These are only injected into the impl repo's lakefile when the corresponding
+# optional check is enabled — an unused dependency is one more way to break a
+# build that comparator does not need.
+if [[ "$CHECK_SAFE_VERIFY" -eq 1 ]]; then
+    export SAFE_VERIFY_REV=$($PARSE_TOML "$CONFIG_FILE" tools.safe_verify_rev 2>/dev/null || echo "")
+else
+    export SAFE_VERIFY_REV=""
+fi
+if [[ "$CHECK_LEAN4CHECKER" -eq 1 ]]; then
+    export LEAN4CHECKER_REV=$($PARSE_TOML "$CONFIG_FILE" tools.lean4checker_rev 2>/dev/null || echo "")
+else
+    export LEAN4CHECKER_REV=""
+fi
+
+# Optional pins for the comparator toolchain. Unset, the installer picks the
+# revision of each tool whose lean-toolchain matches this entry's.
+export COMPARATOR_REV=$($PARSE_TOML "$CONFIG_FILE" tools.comparator_rev 2>/dev/null || echo "")
+export LEAN4EXPORT_REV=$($PARSE_TOML "$CONFIG_FILE" tools.lean4export_rev 2>/dev/null || echo "")
+export NANODA_REV=$($PARSE_TOML "$CONFIG_FILE" tools.nanoda_rev 2>/dev/null || echo "")
+export LANDRUN_REV=$($PARSE_TOML "$CONFIG_FILE" tools.landrun_rev 2>/dev/null || echo "")
 export BUILD_TARGETS=$($PARSE_TOML "$CONFIG_FILE" build.targets 2>/dev/null || echo "")
 
 echo "Entry: $ENTRY_ID"
@@ -95,6 +154,13 @@ SPEC_DIR="$PROJECT_DIR/specs/$ENTRY_ID"
 RESULTS_DIR="$PROJECT_DIR/results/$ENTRY_ID"
 
 mkdir -p "$WORK_DIR" "$RESULTS_DIR"
+
+# INVALIDATE: a result file describes one run. If this run dies before writing a
+# new one, the old verdict must not be left behind looking current, so retire it
+# now and restore nothing. History is kept under results/<entry>/history/.
+if [[ -f "$RESULTS_DIR/latest.json" ]]; then
+    mv "$RESULTS_DIR/latest.json" "$RESULTS_DIR/.latest.superseded.json"
+fi
 
 if [[ ! -d "$SPEC_DIR" ]]; then
     echo "ERROR: Spec directory not found: $SPEC_DIR"
@@ -133,11 +199,58 @@ echo "Build lib path: $BUILD_LIB"
 FAILED=0
 TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
+# Hash of the exact spec statement behind each declaration, recorded with the
+# verdict. A verdict is about a statement, not a name: without this a spec can be
+# edited under an unchanged name and the old verdict still reads as current.
+SPEC_HASHES_JSON=$(python3 "$SCRIPT_DIR/lib/spec_statement_hash.py" "$CONFIG_FILE" --spec-dir "$SPEC_DIR")
+
+# Our own `lake env` calls, reconfiguring first for projects whose compiled
+# config Lake will not load otherwise (set by build_copy).
+lake_env() {
+    if [[ "${LAKE_NEEDS_RECONFIGURE:-0}" -eq 1 ]]; then
+        lake env -R "$@"
+    else
+        lake env "$@"
+    fi
+}
+
+# Must match sanitize_name() in generate_comparator_configs.py: the full impl
+# module, dots to underscores, lowercased.
+config_name_for() {
+    echo "$1" | tr '.' '_' | tr '[:upper:]' '[:lower:]'
+}
+
+# Whether this comparator build can compare definitions at all. `definition_names`
+# is a recent addition; older revisions parse their config with a derived FromJson
+# that silently ignores unknown fields, so passing definitions to one of them is
+# not an error — it checks nothing and reports success. Verified: comparator at
+# v4.29's revision, given theorem_names [] and definition_names [...], prints
+# "Your solution is okay!" and exits 0.
+comparator_supports_definitions() {
+    local bin="$1"
+    local root
+    root=$(cd "$(dirname "$bin")" 2>/dev/null && git rev-parse --show-toplevel 2>/dev/null) || return 1
+    [[ -n "$root" ]] || return 1
+    grep -rq "definition_names" "$root" --include="*.lean" 2>/dev/null
+}
+
+# A verdict is only as meaningful as the tool that produced it, so record which
+# revision of each tool ran. Works whether the tool was auto-installed here or
+# pointed at by *_BIN, by asking the binary's own checkout.
+tool_revision() {
+    local bin="$1"
+    if [[ -z "$bin" ]] || [[ ! -e "$bin" ]]; then
+        echo ""
+        return
+    fi
+    (cd "$(dirname "$bin")" && git rev-parse HEAD 2>/dev/null) || echo ""
+}
+
 # Parse theorem groups into arrays for per-group result tracking
 NUM_GROUPS=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; print(len(json.loads(sys.stdin.read())))")
 
 declare -a GROUP_SPEC_MODULES GROUP_IMPL_MODULES GROUP_NAMES_JSON
-declare -a GROUP_CHECKER GROUP_SAFEVERIFY GROUP_COMPARATOR
+declare -a GROUP_CHECKER GROUP_SAFEVERIFY GROUP_COMPARATOR GROUP_NANODA
 
 for ((i=0; i<NUM_GROUPS; i++)); do
     GROUP_SPEC_MODULES[$i]=$(echo "$THEOREMS_JSON" | python3 -c "import sys,json; d=json.loads(sys.stdin.read()); print(d[$i]['spec_module'])")
@@ -146,13 +259,14 @@ for ((i=0; i<NUM_GROUPS; i++)); do
     GROUP_CHECKER[$i]="skip"
     GROUP_SAFEVERIFY[$i]="skip"
     GROUP_COMPARATOR[$i]="skip"
+    GROUP_NANODA[$i]="skip"
 done
 
-# --- Level 1: lean4checker + SafeVerify ---
-if [[ "$SKIP_LEVEL_1" -eq 0 ]]; then
+# --- Optional checks: lean4checker + SafeVerify ---
+if [[ "$CHECK_LEAN4CHECKER" -eq 1 ]] || [[ "$CHECK_SAFE_VERIFY" -eq 1 ]]; then
 echo ""
 echo "========================================="
-echo "Step 2: Level 1 Verification"
+echo "Step 2: Optional checks (lean4checker / SafeVerify)"
 echo "========================================="
 
 for ((i=0; i<NUM_GROUPS; i++)); do
@@ -171,7 +285,8 @@ for ((i=0; i<NUM_GROUPS; i++)); do
     IMPL_OLEAN="$BUILD_LIB/$(echo "$IMPL_MODULE" | tr '.' '/').olean"
     SPEC_OLEAN="$BUILD_LIB/$(echo "$SPEC_MODULE" | tr '.' '/').olean"
 
-    # 2a. lean4checker on impl module
+    # 2a. lean4checker on impl module (optional)
+    if [[ "$CHECK_LEAN4CHECKER" -eq 1 ]]; then
     echo "  Running lean4checker on $IMPL_MODULE..."
     if [[ -f "$IMPL_OLEAN" ]]; then
         if (cd "$REPO_DIR" && lake exe lean4checker "$IMPL_MODULE") 2>&1; then
@@ -187,8 +302,10 @@ for ((i=0; i<NUM_GROUPS; i++)); do
         GROUP_CHECKER[$i]="fail"
         FAILED=1
     fi
+    fi
 
-    # 2b. SafeVerify on spec/impl pair
+    # 2b. SafeVerify on spec/impl pair (optional)
+    if [[ "$CHECK_SAFE_VERIFY" -eq 1 ]]; then
     echo "  Running safe_verify..."
     if [[ -f "$SPEC_OLEAN" ]] && [[ -f "$IMPL_OLEAN" ]]; then
         if (cd "$REPO_DIR" && lake exe safe_verify "$SPEC_OLEAN" "$IMPL_OLEAN") 2>&1; then
@@ -209,20 +326,21 @@ for ((i=0; i<NUM_GROUPS; i++)); do
         GROUP_SAFEVERIFY[$i]="fail"
         FAILED=1
     fi
+    fi
 done
 
 else
     echo ""
     echo "========================================="
-    echo "Skipping Level 1 (--skip-level-1)"
+    echo "No optional checks enabled (comparator-only run)"
     echo "========================================="
 fi
 
-# --- Level 2: Comparator (if requested) ---
-if [[ "$LEVEL" -ge 2 ]]; then
+# --- Primary check: Comparator (+ optional nanoda second kernel) ---
+if [[ "$CHECK_COMPARATOR" -eq 1 ]]; then
     echo ""
     echo "========================================="
-    echo "Step 3: Level 2 Verification (Comparator)"
+    echo "Step 3: Comparator (primary check)"
     echo "========================================="
 
     # Auto-install tools if not available
@@ -238,8 +356,53 @@ if [[ "$LEVEL" -ge 2 ]]; then
         if install_comparator_tools "$SPEC_DIR/lean-toolchain" "$TOOLS_DIR"; then
             COMPARATOR="$COMPARATOR_BIN"
         else
-            echo "WARNING: Auto-install failed. Skipping Level 2."
+            echo "WARNING: Auto-install failed. Skipping comparator."
         fi
+    fi
+
+    # --- Resolve nanoda (comparator's optional second kernel) ---
+    # comparator finds nanoda on PATH, or via COMPARATOR_NANODA. We only turn
+    # the second kernel on in the generated configs when we actually have the
+    # binary, so a missing nanoda degrades to a comparator-only run instead of
+    # silently reporting a second-kernel check that never ran.
+    NANODA_ENABLED=0
+    if [[ "$CHECK_NANODA" -eq 1 ]]; then
+        NANODA="${NANODA_BIN:-}"
+        if [[ -z "$NANODA" ]] && command -v nanoda_bin &> /dev/null; then
+            NANODA="$(command -v nanoda_bin)"
+        fi
+        if [[ -z "$NANODA" ]]; then
+            echo "nanoda not found, attempting auto-install..."
+            source "$SCRIPT_DIR/lib/install_comparator_tools.sh"
+            if install_nanoda "$PROJECT_DIR/work/tools"; then
+                NANODA="$NANODA_BIN"
+            fi
+        fi
+        if [[ -n "$NANODA" ]] && [[ -x "$NANODA" ]]; then
+            NANODA_ENABLED=1
+            export COMPARATOR_NANODA="$NANODA"
+            export PATH="$(dirname "$NANODA"):$PATH"
+            echo "nanoda second kernel: $NANODA"
+        else
+            echo "WARNING: nanoda requested but not available."
+            if [[ "$REQUIRE_NANODA" -eq 1 ]]; then
+                echo "ERROR: --require-nanoda was given; refusing to continue."
+                exit 2
+            fi
+            for ((i=0; i<NUM_GROUPS; i++)); do
+                GROUP_NANODA[$i]="unavailable"
+            done
+        fi
+    fi
+
+    if [[ "${LAKE_NEEDS_RECONFIGURE:-0}" -eq 1 ]]; then
+        echo ""
+        echo "WARNING: this project's compiled Lake config loads only with -R."
+        echo "         Comparator runs 'lake build' inside its sandbox and takes"
+        echo "         no flags from us, so it will fail to load the config."
+        echo "         That is a build-configuration problem, not a statement or"
+        echo "         proof problem — the verdict below says nothing about the"
+        echo "         mathematics."
     fi
 
     if [[ -n "$COMPARATOR" ]]; then
@@ -302,7 +465,23 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
         # --- Generate comparator configs ---
         COMP_CONFIG_DIR="$WORK_DIR/comparator_configs"
         rm -rf "$COMP_CONFIG_DIR"
-        python3 "$SCRIPT_DIR/generate_comparator_configs.py" "$CONFIG_FILE" "$COMP_CONFIG_DIR"
+        if [[ "$CHECK_DEFINITIONS" -eq 1 ]] && ! comparator_supports_definitions "$COMPARATOR"; then
+            echo ""
+            echo "ERROR: this comparator build has no definition_names field, so the"
+            echo "       definitions this entry asks to check would be silently"
+            echo "       ignored and reported as passing. Either drop"
+            echo "       'definitions = true' from the entry, or pin a comparator"
+            echo "       revision that supports it (tools.comparator_rev) — note it"
+            echo "       must still build against ${TOOLCHAIN}."
+            exit 2
+        fi
+
+        GEN_ARGS=()
+        if [[ "$NANODA_ENABLED" -eq 1 ]]; then
+            GEN_ARGS+=(--enable-nanoda)
+        fi
+        python3 "$SCRIPT_DIR/generate_comparator_configs.py" "$CONFIG_FILE" "$COMP_CONFIG_DIR" \
+            "${GEN_ARGS[@]+"${GEN_ARGS[@]}"}"
 
         # --- Filter configs to theorem-only names ---
         # Comparator only accepts thmInfo/axiomInfo constants. Helper defs
@@ -318,8 +497,52 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
         if [[ -n "$LEAN4EXPORT_FOR_FILTER" ]]; then
             echo ""
             echo "Filtering comparator configs to theorem-only names..."
+            DEFINITIONS_MODE="drop"
+            if [[ "$CHECK_DEFINITIONS" -eq 1 ]]; then
+                DEFINITIONS_MODE="compare"
+            fi
+            FILTER_RC=0
             python3 "$SCRIPT_DIR/lib/filter_comparator_theorems.py" \
-                "$REPO_DIR" "$LEAN4EXPORT_FOR_FILTER" "$COMP_CONFIG_DIR"
+                "$REPO_DIR" "$LEAN4EXPORT_FOR_FILTER" "$COMP_CONFIG_DIR" \
+                --definitions-mode "$DEFINITIONS_MODE" || FILTER_RC=$?
+
+            if [[ "$FILTER_RC" -ne 0 ]]; then
+                echo ""
+                echo "ERROR: the theorem filter could not establish what it was"
+                echo "       looking at (lean4export failed to report declaration"
+                echo "       kinds). Refusing to treat these groups as checked."
+                FAILED=1
+            fi
+
+            # A group may be recorded as not-applicable ONLY when the filter
+            # positively established there is nothing here for comparator (a
+            # definition-only group while `definitions` is off). A missing config
+            # for any other reason is a failure, not a pass: dropping names
+            # because a tool broke is exactly how unchecked theorems get reported
+            # as checked.
+            FILTER_REPORT="$COMP_CONFIG_DIR/_filter_report.json"
+            for ((i=0; i<NUM_GROUPS; i++)); do
+                CONFIG_KEY="$(config_name_for "${GROUP_IMPL_MODULES[$i]}")"
+                EXPECTED_CONFIG="$COMP_CONFIG_DIR/$CONFIG_KEY.json"
+                if [[ -f "$EXPECTED_CONFIG" ]]; then
+                    continue
+                fi
+                STATUS=$(python3 -c "
+import json, sys
+try:
+    report = json.load(open(sys.argv[1]))
+except Exception:
+    print('missing'); raise SystemExit
+print(report.get('configs', {}).get(sys.argv[2], {}).get('status', 'missing'))
+" "$FILTER_REPORT" "$CONFIG_KEY" 2>/dev/null || echo "missing")
+                if [[ "$STATUS" == "removed" ]]; then
+                    GROUP_COMPARATOR[$i]="not-applicable"
+                else
+                    echo "ERROR: no comparator config for ${GROUP_IMPL_MODULES[$i]} (filter status: $STATUS)"
+                    GROUP_COMPARATOR[$i]="fail"
+                    FAILED=1
+                fi
+            done
         else
             echo "WARNING: lean4export not available, skipping theorem filtering"
         fi
@@ -360,10 +583,7 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
         # e.g., ArtificialTheorems.Opt.SGD -> sgd.json
         declare -A CONFIG_TO_GROUP
         for ((i=0; i<NUM_GROUPS; i++)); do
-            IMPL_MODULE="${GROUP_IMPL_MODULES[$i]}"
-            LAST_PART=$(echo "$IMPL_MODULE" | awk -F'.' '{print $NF}')
-            CONFIG_NAME=$(echo "$LAST_PART" | tr '[:upper:]' '[:lower:]')
-            CONFIG_TO_GROUP["$CONFIG_NAME"]=$i
+            CONFIG_TO_GROUP["$(config_name_for "${GROUP_IMPL_MODULES[$i]}")"]=$i
         done
 
         # --- Ensure tools are in PATH for comparator ---
@@ -406,6 +626,10 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
             fi
 
             config_name=$(basename "$config" .json)
+            # Not a comparator config — the filter's own outcome report.
+            if [[ "$config_name" == "_filter_report" ]]; then
+                continue
+            fi
             echo ""
             echo "-----------------------------------------"
             echo "Comparator: $config_name"
@@ -421,30 +645,48 @@ for ext in ('lakefile.lean', 'lakefile.toml'):
             # Run comparator via lake env (sets up LEAN_PATH)
             # Comparator internally uses landrun for sandboxing
             COMPARATOR_LOG=$(mktemp)
-            if (cd "$REPO_DIR" && lake env "$COMPARATOR" "$config") 2>&1 | tee "$COMPARATOR_LOG"; then
+            if (cd "$REPO_DIR" && lake_env "$COMPARATOR" "$config") 2>&1 | tee "$COMPARATOR_LOG"; then
                 echo "  Comparator $config_name: PASS"
                 if [[ -n "$group_idx" ]]; then
                     GROUP_COMPARATOR[$group_idx]="pass"
+                    if [[ "$NANODA_ENABLED" -eq 1 ]]; then
+                        GROUP_NANODA[$group_idx]="pass"
+                    fi
                 fi
             else
                 echo "  Comparator $config_name: FAIL"
                 if [[ -n "$group_idx" ]]; then
                     GROUP_COMPARATOR[$group_idx]="fail"
+                    if [[ "$NANODA_ENABLED" -eq 1 ]]; then
+                        # The second kernel only has a verdict if the run got as
+                        # far as replaying the export through it. A comparator
+                        # failure earlier than that (a build error, say) is not a
+                        # nanoda rejection, and recording one would be a lie.
+                        if grep -qi "noda" "$COMPARATOR_LOG"; then
+                            GROUP_NANODA[$group_idx]="fail"
+                        else
+                            GROUP_NANODA[$group_idx]="not-reached"
+                        fi
+                    fi
                 fi
                 FAILED=1
 
                 # Diagnostic: if the failure was a const mismatch, dump both
                 # exports so we can see exactly what diverged at the kernel level.
-                FAILING_CONST=$(grep -oP "Const does not match between challenge and target '\K[^']+" "$COMPARATOR_LOG" | head -1)
+                # `|| true` matters: under `set -e` a non-matching grep here
+                # aborted the whole script, so a comparator failure of any other
+                # kind never reached the results write — and the stale results
+                # file from the previous run, saying "pass", stayed on disk.
+                FAILING_CONST=$(grep -oP "Const does not match between challenge and target '\K[^']+" "$COMPARATOR_LOG" | head -1 || true)
                 if [[ -n "$FAILING_CONST" ]] && [[ -n "$LEAN4EXPORT" ]] && [[ -f "$LEAN4EXPORT" ]]; then
                     echo ""
                     echo "=== DIAGNOSTIC: export diff for $FAILING_CONST ==="
-                    CHALLENGE_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['challenge_module'])" 2>/dev/null)
-                    SOLUTION_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['solution_module'])" 2>/dev/null)
+                    CHALLENGE_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['challenge_module'])" 2>/dev/null || true)
+                    SOLUTION_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['solution_module'])" 2>/dev/null || true)
                     SPEC_OUT=$(mktemp)
                     IMPL_OUT=$(mktemp)
-                    (cd "$REPO_DIR" && lake env "$LEAN4EXPORT" "$CHALLENGE_MODULE" -- "$FAILING_CONST" > "$SPEC_OUT" 2>&1) || echo "  (spec export failed)"
-                    (cd "$REPO_DIR" && lake env "$LEAN4EXPORT" "$SOLUTION_MODULE" -- "$FAILING_CONST" > "$IMPL_OUT" 2>&1) || echo "  (impl export failed)"
+                    (cd "$REPO_DIR" && lake_env "$LEAN4EXPORT" "$CHALLENGE_MODULE" -- "$FAILING_CONST" > "$SPEC_OUT" 2>&1) || echo "  (spec export failed)"
+                    (cd "$REPO_DIR" && lake_env "$LEAN4EXPORT" "$SOLUTION_MODULE" -- "$FAILING_CONST" > "$IMPL_OUT" 2>&1) || echo "  (impl export failed)"
                     echo "--- Spec export size: $(wc -l < "$SPEC_OUT") lines, Impl export size: $(wc -l < "$IMPL_OUT") lines ---"
                     echo "--- canonical form comparison (names resolved, index noise removed) ---"
                     python3 "$PROJECT_DIR/scripts/lib/canonical_const_diff.py" \
@@ -467,13 +709,35 @@ for ((i=0; i<NUM_GROUPS; i++)); do
     CHECKER_RESULT="${GROUP_CHECKER[$i]}"
     SAFE_VERIFY_RESULT="${GROUP_SAFEVERIFY[$i]}"
     COMPARATOR_RESULT="${GROUP_COMPARATOR[$i]}"
+    NANODA_RESULT="${GROUP_NANODA[$i]}"
 
     NAMES_COUNT=$(echo "$NAMES_JSON" | python3 -c "import sys,json; print(len(json.loads(sys.stdin.read())))")
     for ((j=0; j<NAMES_COUNT; j++)); do
         NAME=$(echo "$NAMES_JSON" | python3 -c "import sys,json; print(json.loads(sys.stdin.read())[$j])")
-        RESULTS+=("{\"name\":\"$NAME\",\"spec_module\":\"$SPEC_MODULE\",\"impl_module\":\"$IMPL_MODULE\",\"lean4checker\":\"$CHECKER_RESULT\",\"safe_verify\":\"$SAFE_VERIFY_RESULT\",\"comparator\":\"$COMPARATOR_RESULT\"}")
+        SPEC_HASH=$(echo "$SPEC_HASHES_JSON" | python3 -c "
+import json, sys
+print(json.load(sys.stdin).get(sys.argv[1], ''))
+" "$NAME")
+        RESULTS+=("{\"name\":\"$NAME\",\"spec_module\":\"$SPEC_MODULE\",\"impl_module\":\"$IMPL_MODULE\",\"comparator\":\"$COMPARATOR_RESULT\",\"nanoda\":\"$NANODA_RESULT\",\"safe_verify\":\"$SAFE_VERIFY_RESULT\",\"lean4checker\":\"$CHECKER_RESULT\",\"spec_hash\":\"$SPEC_HASH\"}")
     done
 done
+
+# --- Guard: the primary check must actually produce a verdict ---
+# (A run that dies before this point leaves no new result file; the stale one
+#  from the previous run is invalidated at startup, see INVALIDATE below.)
+# A run where comparator was requested but never reported on a group is not a
+# pass. "not-applicable" is fine (the group holds nothing comparator checks);
+# "skip" means the check was asked for and silently did not happen.
+if [[ "$CHECK_COMPARATOR" -eq 1 ]]; then
+    for ((i=0; i<NUM_GROUPS; i++)); do
+        if [[ "${GROUP_COMPARATOR[$i]}" == "skip" ]]; then
+            echo ""
+            echo "ERROR: comparator produced no verdict for ${GROUP_IMPL_MODULES[$i]}."
+            echo "       The primary check was enabled but did not run for this group."
+            FAILED=1
+        fi
+    done
+fi
 
 # --- Write results ---
 echo ""
@@ -495,8 +759,22 @@ RESULT_JSON=$(cat <<EOF
   "commit": "$COMMIT",
   "lean_toolchain": "$TOOLCHAIN",
   "mathlib_tag": "$MATHLIB_TAG",
-  "verification_level": $LEVEL,
+  "verification_level": $LEGACY_LEVEL,
+  "primary_check": "comparator",
+  "checks": {
+    "comparator": $([[ "$CHECK_COMPARATOR" -eq 1 ]] && echo true || echo false),
+    "nanoda": $([[ "${NANODA_ENABLED:-0}" -eq 1 ]] && echo true || echo false),
+    "definitions": $([[ "$CHECK_DEFINITIONS" -eq 1 ]] && echo true || echo false),
+    "safe_verify": $([[ "$CHECK_SAFE_VERIFY" -eq 1 ]] && echo true || echo false),
+    "lean4checker": $([[ "$CHECK_LEAN4CHECKER" -eq 1 ]] && echo true || echo false)
+  },
   "build_strategy": "$STRATEGY",
+  "tools": {
+    "comparator": "$(tool_revision "${COMPARATOR:-}")",
+    "lean4export": "$(tool_revision "${LEAN4EXPORT:-${LEAN4EXPORT_BIN:-}}")",
+    "nanoda": "$(tool_revision "${NANODA:-}")",
+    "landrun": "$(tool_revision "${LANDRUN:-}")"
+  },
   "theorems": [$THEOREMS_ARRAY],
   "overall": "$OVERALL"
 }
@@ -504,6 +782,8 @@ EOF
 )
 
 echo "$RESULT_JSON" > "$RESULTS_DIR/latest.json"
+# This run produced a verdict, so the retired one is no longer needed.
+rm -f "$RESULTS_DIR/.latest.superseded.json"
 mkdir -p "$RESULTS_DIR/history"
 cp "$RESULTS_DIR/latest.json" "$RESULTS_DIR/history/$(date -u +%Y%m%d_%H%M%S).json"
 
@@ -515,7 +795,7 @@ echo "Results written to: $RESULTS_DIR/latest.json"
 echo ""
 echo "========================================="
 if [[ $FAILED -eq 0 ]]; then
-    echo "VERIFICATION PASSED (Level $LEVEL)"
+    echo "VERIFICATION PASSED (checks: ${ENABLED_CHECKS[*]})"
     exit 0
 else
     echo "VERIFICATION FAILED"

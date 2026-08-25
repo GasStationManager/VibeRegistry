@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-20-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-20-000007",
+  "version": 1,
+  "title": "Vulkin-prog/paper-c-lean",
+  "abstract": "Lean 4 formalization of a quantitative Poisson approximation for the starting points of long constant stretches of an extended Rademacher random completely multiplicative function in a dyadic block. The compared theorem uses a finite prime-sign cylinder and proves, uniformly in the critical window |L - log_2 N| <= C, that the total-variation distance to Pois(N/2^L) is O_C((log log N)^-2). It is conditional on three fully stated ordinary propositions specialized from Arratia--Goldstein--Gordon, Evertse--Silverman, and Nicolas--Robin; those propositions are theorem arguments, not Lean axioms.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "7dd863ab60a3b2b3a99fa4efcfb6503de7511811",
+  "project_path": null,
+  "declarations": [
+    "paper_c_theorem_one_one_finite_cylinder"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T11:56:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7dd863ab60a3b2b3a99fa4efcfb6503de7511811",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9d9a57d7687c2259ee3dfdef576b71e62add642224df4f5093f2bb4194c9e9d9"
+}

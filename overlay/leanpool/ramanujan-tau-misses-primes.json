@@ -1,0 +1,56 @@
+{
+  "source": "leanpool",
+  "upstream_id": "ramanujan-tau-misses-primes",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/RamanujanTauMissesPrimes",
+  "version": 1,
+  "title": "ABC implies that Ramanujan's tau function misses almost all primes",
+  "abstract": "Formalizes the ABC-conditional proof that Ramanujan's tau function takes prime values only rarely.",
+  "authors": [
+    "Evan Chen",
+    "Kenny Lau",
+    "Ken Ono",
+    "Jujian Zhang"
+  ],
+  "repository": "https://github.com/AxiomMath/ramanujan-tau-misses-primes",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.RamanujanTauMissesPrimes",
+  "declarations": [
+    "main_theorem",
+    "reduction_lemma",
+    "abc_bound_E2",
+    "abc_bound_E4"
+  ],
+  "informal": {
+    "main_theorem": "ABC implies that Ramanujan's tau function misses almost all primes.",
+    "reduction_lemma": "Reduces the main prime-value statement to the key analytic estimates.",
+    "abc_bound_E2": "ABC-bound input for the Eisenstein-series term E2.",
+    "abc_bound_E4": "ABC-bound input for the Eisenstein-series term E4."
+  },
+  "classification": {
+    "msc2020": [
+      "11F30",
+      "11N05"
+    ],
+    "tags": [
+      "number-theory",
+      "modular-forms"
+    ],
+    "branch": "analytic number theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/RamanujanTauMissesPrimes.lean",
+  "statement_hash": "sha256:d0da8767da4c0d4d6b9ddbeb44f9d7f20c388f1f895d83e50247142fed0c0a05"
+}

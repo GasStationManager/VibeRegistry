@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-21-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-21-000006",
+  "version": 1,
+  "title": "Paul-Lez/jacobian-conjecture",
+  "abstract": "A self-contained version of the formal-conjectures formalization by Paul Lezeau and Dean Cureton. It disproves the generalized Jacobian conjecture over every nontrivial commutative ring using an explicit determinant-one polynomial self-map in three variables. The formal-conjectures formalisation remains the reference statement.",
+  "authors": [
+    "Paul Lezeau",
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/Paul-Lez/jacobian-conjecture",
+  "commit": "b244ea482ed086297e379d73e6724cd26b2d301f",
+  "project_path": null,
+  "declarations": [
+    "JacobianConjecture.jacobian_conjecture"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.AC"
+    ],
+    "msc2020": [
+      "14R15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-21T11:10:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b244ea482ed086297e379d73e6724cd26b2d301f",
+        "fork_repository": "PalomarArchive/Paul-Lez--jacobian-conjecture--13e84929e25d",
+        "source_repository": "Paul-Lez/jacobian-conjecture"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a371025f4c1c4bd65efd262654a46bd9245d922beb4a3f6326cbdc2bb8d01e62"
+}

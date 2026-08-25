@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "pebbling-hypercube",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PebblingLean",
+  "version": 1,
+  "title": "Optimal Pebbling Number of the Hypercube",
+  "abstract": "Formalizes that the optimal pebbling number of the n-dimensional hypercube Q_n is Theta((4/3)^n).  Builds a weight-function lower bound of (4/3)^n and a probabilistic recursive upper bound C * (4/3)^n with an explicit constant, combining them into a two-sided big-Theta witness.",
+  "authors": [
+    "Lior Pachter"
+  ],
+  "repository": "https://github.com/pachterlab/P_2026_2",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.PebblingLean",
+  "declarations": [
+    "PebblingLean.Hypercube.Paper.optimalPebblingNumber_theta",
+    "PebblingLean.Hypercube.Paper.lower_bound",
+    "PebblingLean.Hypercube.Paper.upper_bound"
+  ],
+  "informal": {
+    "PebblingLean.Hypercube.Paper.optimalPebblingNumber_theta": "The optimal pebbling number of Q_n has order (4/3)^n: there is a positive constant C with (4/3)^n <= o(Q_n) <= C * (4/3)^n for all n.",
+    "PebblingLean.Hypercube.Paper.lower_bound": "The optimal pebbling number of Q_n is at least (4/3)^n, proved by a weight-function argument summing one-pebble weights over the cube.",
+    "PebblingLean.Hypercube.Paper.upper_bound": "The optimal pebbling number of Q_n is at most C * (4/3)^n for an explicit constant C, via a probabilistic recursive splitting construction."
+  },
+  "classification": {
+    "msc2020": [
+      "05C57"
+    ],
+    "tags": [
+      "combinatorics",
+      "pebbling",
+      "hypercube"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/PebblingLean.lean",
+  "statement_hash": "sha256:45ecb0778c923f09920b6137af7cda8f2cc51455a920a6125b77ca10861dd211"
+}

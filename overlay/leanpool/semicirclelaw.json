@@ -1,0 +1,60 @@
+{
+  "source": "leanpool",
+  "upstream_id": "semicirclelaw",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SemicircleLaw",
+  "version": 1,
+  "title": "Wigner Semicircle Distribution",
+  "abstract": "Defines the real Wigner semicircle distribution, its normalized density, affine transformations, and finite-moment integrability.",
+  "authors": [
+    "FredRaj3"
+  ],
+  "repository": "https://github.com/FredRaj3/SemicircleLaw",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.SemicircleLaw",
+  "declarations": [
+    "LeanPool.SemicircleLaw.integral_semicirclePDFReal_eq_one",
+    "LeanPool.SemicircleLaw.semicirclePDFReal",
+    "LeanPool.SemicircleLaw.semicirclePDF",
+    "LeanPool.SemicircleLaw.semicircleReal",
+    "LeanPool.SemicircleLaw.semicircleReal_map_add_const",
+    "LeanPool.SemicircleLaw.semicircleReal_map_const_mul",
+    "LeanPool.SemicircleLaw.memLp_id_semicircleReal"
+  ],
+  "informal": {
+    "LeanPool.SemicircleLaw.semicirclePDFReal": "Defines the real-valued density of the semicircle distribution with mean μ and variance v.",
+    "LeanPool.SemicircleLaw.semicirclePDF": "Defines the ℝ≥0∞-valued density of the semicircle distribution.",
+    "LeanPool.SemicircleLaw.integral_semicirclePDFReal_eq_one": "Proves that the real-valued semicircle density integrates to one for nonzero variance.",
+    "LeanPool.SemicircleLaw.semicircleReal": "Defines the semicircle measure on ℝ, equal to a Dirac mass when the variance is zero.",
+    "LeanPool.SemicircleLaw.semicircleReal_map_add_const": "Shows that translating a semicircle measure translates its mean parameter.",
+    "LeanPool.SemicircleLaw.semicircleReal_map_const_mul": "Shows that scaling by a nonzero constant scales the mean and variance parameters.",
+    "LeanPool.SemicircleLaw.memLp_id_semicircleReal": "Shows that the identity has all finite Lp moments under a semicircle distribution."
+  },
+  "classification": {
+    "msc2020": [
+      "60B20",
+      "60E05"
+    ],
+    "tags": [
+      "probability",
+      "random-matrix-theory",
+      "distributions"
+    ],
+    "branch": "probability theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/SemicircleLaw.lean",
+  "statement_hash": "sha256:86cab6fb7267888b98b1f420d0d28105e6db390e311de75f6010886de9c936c8"
+}

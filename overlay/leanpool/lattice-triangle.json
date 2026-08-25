@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lattice-triangle",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LatticeTriangle",
+  "version": 1,
+  "title": "On the paucity of lattice triangles",
+  "abstract": "Formalizes an analytic lower bound used in the paucity theorem for lattice triangles.",
+  "authors": [
+    "Evan Chen",
+    "Kenny Lau",
+    "Ken Ono",
+    "Jujian Zhang"
+  ],
+  "repository": "https://github.com/AxiomMath/lattice-triangle",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.LatticeTriangle",
+  "declarations": [
+    "analyticEngine_lower_bound"
+  ],
+  "informal": {
+    "analyticEngine_lower_bound": "Proves the analytic-engine lower bound underlying the lattice-triangle result."
+  },
+  "classification": {
+    "msc2020": [
+      "11H06",
+      "11B30"
+    ],
+    "tags": [
+      "number-theory",
+      "combinatorics"
+    ],
+    "branch": "additive combinatorics"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/LatticeTriangle.lean",
+  "statement_hash": "sha256:6d19911f42ea08b83229fe64be76411c19a5312bc5108569c93058eaba2c9393"
+}

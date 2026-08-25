@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "polya-enumeration-theorem",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PolyaEnumerationTheorem",
+  "version": 1,
+  "title": "Pólya's enumeration theorem",
+  "abstract": "Formalizes Pólya's enumeration theorem counting orbits of colorings under a group action.",
+  "authors": [
+    "Luka Opravš"
+  ],
+  "repository": "https://github.com/Luka-O/polya-enumeration-theorem",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.PolyaEnumerationTheorem",
+  "declarations": [
+    "LeanPool.PolyaEnumerationTheorem.polya_theorem"
+  ],
+  "informal": {
+    "LeanPool.PolyaEnumerationTheorem.polya_theorem": "Counts distinct colorings of a finite set under a group action by averaging powers of the number of colors over cycle indices."
+  },
+  "classification": {
+    "msc2020": [
+      "05A15",
+      "20B30"
+    ],
+    "tags": [
+      "combinatorics",
+      "group-theory",
+      "enumeration"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/PolyaEnumerationTheorem.lean",
+  "statement_hash": "sha256:c9a0bedff92c79d769dd62c7a3f51b70faf2a9bbaef5f9f884d0d44548f6acf2"
+}

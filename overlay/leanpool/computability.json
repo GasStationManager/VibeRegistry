@@ -1,0 +1,61 @@
+{
+  "source": "leanpool",
+  "upstream_id": "computability",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Computability",
+  "version": 1,
+  "title": "Oracle Computability and Turing Degrees",
+  "abstract": "Formalizes oracle-relative computability via partial recursive functions, Turing reducibility and the Turing degrees as an upper semilattice, a Gödel numbering with a universal oracle machine, the jump operator, and the arithmetical hierarchy.",
+  "authors": [
+    "Tanner Duve",
+    "Elan Roth"
+  ],
+  "repository": "https://github.com/tannerduve/computability",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Computability",
+  "declarations": [
+    "Computability.RecursiveIn",
+    "Computability.TuringDegree",
+    "Computability.exists_code_rel",
+    "Computability.TuringReducible",
+    "Computability.jump_recIn",
+    "Computability.TuringDegree.instSemilatticeSup"
+  ],
+  "informal": {
+    "Computability.RecursiveIn": "The inductive relation `RecursiveIn O f` stating that `f : ℕ →. ℕ` is partial recursive relative to a set of oracle functions `O`.",
+    "Computability.exists_code_rel": "Universality of the oracle evaluator `evalo`, that is, `RecursiveIn (Set.range g) f` holds iff there is a code `c` with `evalo g c = f`.",
+    "Computability.TuringReducible": "`f` is Turing reducible to `g` (`f ≤ᵀ g`) when `f` is recursive in the singleton oracle set `{g}`.",
+    "Computability.TuringDegree": "The type of Turing degrees, the antisymmetrization of partial functions under Turing reducibility.",
+    "Computability.jump_recIn": "The original function is Turing reducible to its jump, `f ≤ᵀ f⌜`.",
+    "Computability.TuringDegree.instSemilatticeSup": "The Turing degrees form an upper semilattice with the Turing join as supremum."
+  },
+  "classification": {
+    "msc2020": [
+      "03D30",
+      "03D28"
+    ],
+    "tags": [
+      "computability",
+      "oracle-computability",
+      "turing-degrees",
+      "recursion-theory",
+      "arithmetical-hierarchy"
+    ],
+    "branch": "computability theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Computability.lean",
+  "statement_hash": "sha256:0bb9232d3f1ad0818694f6d0a30199fe1518e2664db530e48fabab3d5bcce6da"
+}

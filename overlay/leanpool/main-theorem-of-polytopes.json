@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "main-theorem-of-polytopes",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Polytopes",
+  "version": 1,
+  "title": "The main theorem of polytopes",
+  "abstract": "Formalizes the Minkowski–Weyl theorem — the equivalence between V-polytopes (convex hulls of finite point sets) and bounded H-polytopes (finite intersections of half-spaces) in a finite-dimensional real vector space.",
+  "authors": [
+    "Jun Kwon"
+  ],
+  "repository": "https://github.com/Jun2M/Main-theorem-of-polytopes",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Polytopes",
+  "declarations": [
+    "MainTheoremOfPolytopes",
+    "Vpolytope_of_Hpolytope"
+  ],
+  "informal": {
+    "MainTheoremOfPolytopes": "The Minkowski–Weyl theorem — a set is a V-polytope iff it is a bounded H-polytope.",
+    "Vpolytope_of_Hpolytope": "Every bounded H-polytope (finite intersection of half-spaces) is the convex hull of a finite point set."
+  },
+  "classification": {
+    "msc2020": [
+      "52B11",
+      "52A20"
+    ],
+    "tags": [
+      "convex-geometry",
+      "discrete-geometry",
+      "polytopes"
+    ],
+    "branch": "convex geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Polytopes.lean",
+  "statement_hash": "sha256:c463695bd98023cfad7573506b1145550de871ff8a7667015cfa2baf72dcf98e"
+}

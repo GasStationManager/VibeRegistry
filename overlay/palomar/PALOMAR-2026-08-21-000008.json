@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-21-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-21-000008",
+  "version": 1,
+  "title": "lennrt/palomar-formalizations",
+  "abstract": "Lean formalization of the paper's finite skew-symmetric path instance, exact prefix-deletion completion oracle, deterministic oracle-pruned DFS, correctness and duplicate-freedom, and an executable DFS event trace whose extracted first-output, inter-output, post-output, and no-output work intervals satisfy the paper-level depth/LCP bounds.",
+  "authors": [
+    "Lennart Rudolph",
+    "Sol",
+    "Fable"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "d259d35ad32d0e7c8c60ddd5a574aa987956e1d2",
+  "project_path": "zenodo-21892986/palomar",
+  "declarations": [
+    "PalomarRegularPathDelay.exact_prefix_deletion_extension",
+    "PalomarRegularPathDelay.exact_oracle_regular_extension",
+    "PalomarRegularPathDelay.ordered_fixed_endpoint_enumerator",
+    "PalomarRegularPathDelay.explicit_dfs_event_trace_certificate"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C20",
+      "05C38",
+      "68Q25",
+      "68R10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-21T17:39:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d259d35ad32d0e7c8c60ddd5a574aa987956e1d2",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:40ef8dbd3071037c92a3044a3aaefa0c89ecf2c4069be392bea347488151c837"
+}

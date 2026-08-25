@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-19-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-19-000004",
+  "version": 1,
+  "title": "vo-rodrigues/wallace-problem-palomar",
+  "abstract": "Lean 4 formalization of the theorem that every torsion-free Abelian group of cardinality continuum admits a Hausdorff countably compact group topology in which every convergent sequence is eventually constant, and constructs a commutative Tychonoff countably compact cancellative topological monoid that is not a group, giving a negative answer to Wallace's question.",
+  "authors": [
+    "Juliane Trianon Fraga",
+    "Vinicius de Oliveira Rodrigues"
+  ],
+  "repository": "https://github.com/vo-rodrigues/wallace-problem-palomar",
+  "commit": "1ab2fb7ed1fb106e14af45312c2a7ab5d568048b",
+  "project_path": null,
+  "declarations": [
+    "Wallace.Palomar.torsionFreeAbelianGroup_mainTheorem",
+    "Wallace.Palomar.commutativeTychonoffWallaceCounterexampleExists"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "math.GN"
+    ],
+    "msc2020": [
+      "22A05",
+      "54H11",
+      "54D20",
+      "22A15",
+      "20K20",
+      "54A20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-19T14:58:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1ab2fb7ed1fb106e14af45312c2a7ab5d568048b",
+        "fork_repository": "PalomarArchive/vo-rodrigues--wallace-problem-palomar--c93f65425503",
+        "source_repository": "vo-rodrigues/wallace-problem-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5ab78a178a572576704590d8563206fb5db91f5eb8793665f6f63b9b185030e8"
+}

@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "bannai-bannai-stanton",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BannaiBannaiStanton",
+  "version": 1,
+  "title": "The Bannai-Bannai-Stanton Bound on Distance Sets",
+  "abstract": "Formalizes the Bannai-Bannai-Stanton theorem: a distance set `S` in `ℝ^d` realizing `s` distinct distances has size at most `Nat.choose (d + s) s`. Follows the short polynomial-method proof of Petrov and Pohoata via a generalized Croot-Lev-Pach rank lemma, with auxiliary results on the diagonal linear-independence argument for polynomials, monomial counting of bounded degree, and a rank bound for sums of matrices.",
+  "authors": [
+    "Antoine du Fresne von Hohenesche"
+  ],
+  "repository": "https://github.com/AntoineduFresne/Bannai-Bannai-Stanton_Theorem",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.BannaiBannaiStanton",
+  "declarations": [
+    "BannaiBannaiStanton.bannai_bannai_stanton_bound"
+  ],
+  "informal": {
+    "BannaiBannaiStanton.bannai_bannai_stanton_bound": "A distance set `S` in Euclidean space `ℝ^d` realizing `s` distinct distances satisfies `S.encard ≤ Nat.choose (d + s) s`."
+  },
+  "classification": {
+    "msc2020": [
+      "52C10",
+      "05B30"
+    ],
+    "tags": [
+      "combinatorics",
+      "distance-sets",
+      "polynomial-method"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/BannaiBannaiStanton.lean",
+  "statement_hash": "sha256:e87d752e7c725895a830e6d06503c068abc9bde932ea856d0fda0ded7d8bc99f"
+}

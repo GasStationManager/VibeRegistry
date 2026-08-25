@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "odlyzko-bound",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Odlyzko",
+  "version": 1,
+  "title": "Poitou's Explicit Odlyzko Bound for Root Discriminants",
+  "abstract": "Formalizes the unconditional explicit-formula argument for a lower bound on root discriminants of totally complex number fields. Develops the completed Dedekind zeta function and its functional equation, Poitou's explicit formula, the Tartar test function, and a certified numerical estimate proving that degree at least 18 forces root discriminant at least 8.25.",
+  "authors": [
+    "The FLT Project",
+    "√2"
+  ],
+  "repository": "https://github.com/ImperialCollegeLondon/FLT",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Odlyzko",
+  "declarations": [
+    "NumberField.Odlyzko.odlyzkoBound"
+  ],
+  "informal": {
+    "NumberField.Odlyzko.odlyzkoBound": "Proves that every totally complex number field of degree at least 18 has absolute discriminant at least 8.25 raised to its degree."
+  },
+  "classification": {
+    "msc2020": [
+      "11R29",
+      "11R42"
+    ],
+    "tags": [
+      "number-theory",
+      "discriminants",
+      "number-fields",
+      "explicit-formula"
+    ],
+    "branch": "algebraic number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Odlyzko.lean",
+  "statement_hash": "sha256:5aaca082b7a3dcc06b4cd0920d4735d20ab87961486aa9d9b7e7302159446396"
+}

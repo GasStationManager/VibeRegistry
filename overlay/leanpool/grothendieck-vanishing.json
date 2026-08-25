@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "grothendieck-vanishing",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/GrothendieckVanishing",
+  "version": 1,
+  "title": "Grothendieck's Vanishing Theorem",
+  "abstract": "Formalizes Grothendieck's vanishing theorem for sheaf cohomology on Noetherian topological spaces.",
+  "authors": [
+    "Vasily Ilin",
+    "Brian Nugent"
+  ],
+  "repository": "https://github.com/Vilin97/Clawristotle",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.GrothendieckVanishing",
+  "declarations": [
+    "GrothendieckVanishing"
+  ],
+  "informal": {
+    "GrothendieckVanishing": "Proves vanishing of sheaf cohomology above the topological Krull dimension."
+  },
+  "classification": {
+    "msc2020": [
+      "14F06",
+      "18F20"
+    ],
+    "tags": [
+      "algebraic-geometry",
+      "sheaf-theory",
+      "topology"
+    ],
+    "branch": "algebraic geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/GrothendieckVanishing.lean",
+  "statement_hash": "sha256:4fe0fcb165ca9548b4b23fb63e328140d2232a1fded794978e898c8ff0b0d4c8"
+}

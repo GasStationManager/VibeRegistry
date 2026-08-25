@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "odd-prime-valuation-distribution",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/OddPrimeValuationDistribution",
+  "version": 1,
+  "title": "Exact odd-prime distributions of central-binomial valuations",
+  "abstract": "Formalizes the exact distribution of the p-adic valuation of the central binomial coefficient binom(2n,n) over every complete block 0 <= n < p^k for every odd prime p. The development proves Kummer correctness for padded digit words, constructs the two-state doubling carry enumerator, identifies it with the arithmetic valuation polynomial, derives its second-order recurrence, proves the rational bivariate generating function, and obtains closed formulas for valuations zero and one.",
+  "authors": [
+    "Egor Lyfar"
+  ],
+  "repository": "https://github.com/lyfar/gkp-carry-lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.OddPrimeValuationDistribution",
+  "declarations": [
+    "OddPrimeValuationDistribution.oddPrimeValuationGeneratingSeries_identity",
+    "OddPrimeValuationDistribution.oddPrimeValuationPolynomial_recurrence",
+    "OddPrimeValuationDistribution.padicValNat_oddPrime_centralBinom_ofDigits_eq_carryCount",
+    "OddPrimeValuationDistribution.card_oddPrimeBlock_valuation_one"
+  ],
+  "informal": {
+    "OddPrimeValuationDistribution.oddPrimeValuationGeneratingSeries_identity": "For every odd prime p = 2h+1, proves the denominator-cleared identity for the bivariate series whose coefficient of T^k X^r counts n < p^k with nu_p(binomial(2n,n)) = r; equivalently the series is (1-XT)/(1-(h+1)(1+X)T+pXT^2).",
+    "OddPrimeValuationDistribution.oddPrimeValuationPolynomial_recurrence": "Proves that the exact valuation polynomials satisfy F_{k+2}(X)+pX F_k(X)=(h+1)(1+X)F_{k+1}(X), with F_0=1 and F_1=(h+1)+hX.",
+    "OddPrimeValuationDistribution.padicValNat_oddPrime_centralBinom_ofDigits_eq_carryCount": "Proves Kummer correctness for every valid padded base-p word: the p-adic valuation of its central binomial coefficient equals the number of carries produced by doubling the word.",
+    "OddPrimeValuationDistribution.card_oddPrimeBlock_valuation_one": "Gives a closed formula for the number of n below p^(k+2) whose central binomial coefficient has p-adic valuation exactly one."
+  },
+  "classification": {
+    "msc2020": [
+      "11A63",
+      "11B65"
+    ],
+    "tags": [
+      "central-binomial-coefficients",
+      "p-adic-valuations",
+      "digit-carries",
+      "generating-functions"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/OddPrimeValuationDistribution.lean",
+  "statement_hash": "sha256:11024a0571a79759de85d594c73f3b35013adbb7313cbe0f24e94da203db9439"
+}

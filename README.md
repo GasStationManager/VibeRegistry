@@ -3,10 +3,12 @@
 VibeRegistry is a registry that catalogs AI-assisted Lean 4 proofs from external repositories, provides human-vetted formal theorem specifications, and runs automated secure verification to certify that implementations match their specs.
 
 As AI-generated / AI-assisted formalizations of mathematical proofs become more common, we hope this registry can:
-- increase awareness of tools that check against known pitfalls (comparator, SafeVerify);
+- increase awareness of tools that check against known pitfalls (comparator, second kernels);
 - provide a place for human experts to vett and sign-off on specifications;
 - serve as a trusted source of verification status of public repositories;
-- promote safe re-use of autoformalized libraries of theorems
+- promote safe re-use of autoformalized libraries of theorems;
+- act as a human sign-off **overlay** on upstream registries that have none ([Palomar](https://palomar-registry.org/), [LeanPool](https://github.com/Vilin97/lean-pool));
+- make verified statements **searchable**, whether or not anyone has signed off on them.
 
 ## Core Invariant
 
@@ -18,24 +20,48 @@ The registry itself does not contain proof code. It contains:
 ## Registry Entries
 
 <!-- BEGIN REGISTRY TABLE -->
-| Entry | Theorems | Lean | Verification | Sign-offs | Status |
-|-------|----------|------|--------------|-----------|--------|
-| [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration (8 theorems) | v4.27.0 | Level 2 | 1 sign-off | Verified |
-| [Lean Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare (16 theorems) | v4.27.0-rc1 | Level 2 | — | Verified |
-| [AKS Sorting Networks](https://github.com/girving/aks) | O(log n)-depth sorting networks (1 theorems) | v4.29.0-rc4 | Level 2 | — | Verified |
-| [Archon FirstProof Results](https://github.com/frenzymath/Archon-FirstProof-Results) | Harmonic-mean inequality, epsilon-light graph subsets (2 theorems) | v4.28.0 | Level 2 | — | Verified |
-| [lean-zip](https://github.com/kim-em/lean-zip) | 3 theorems | v4.29.1 | — | — | Pending |
+| Entry | Theorems | Lean | Checks | Sign-offs | Status |
+|-------|----------|------|--------|-----------|--------|
+| [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration (8 theorems) | v4.27.0 | comparator | 1 sign-off | Verified |
+| [Lean Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare (16 theorems) | v4.27.0-rc1 | comparator | — | Verified |
+| [AKS Sorting Networks](https://github.com/girving/aks) | O(log n)-depth sorting networks (1 theorems) | v4.29.0-rc4 | comparator | — | Verified |
+| [Archon FirstProof Results](https://github.com/frenzymath/Archon-FirstProof-Results) | Harmonic-mean inequality, epsilon-light graph subsets (2 theorems) | v4.28.0 | comparator | — | Verified |
+| [lean-zip](https://github.com/kim-em/lean-zip) | 3 theorems | v4.29.1 | comparator +nanoda | — | Failed |
 <!-- END REGISTRY TABLE -->
 
-## Verification Levels
+## Overlay and search
 
-**Level 1: SafeVerify** (fast, every PR)
-- `lean4checker` — kernel re-checks every declaration
-- `safe_verify` — types match, only standard axioms used, no `sorry` remnants
+Beyond our own entries, the registry mirrors upstream registries that have no
+human sign-off step and indexes everything it knows about:
 
-**Level 2: Comparator** (sandboxed, nightly)
-- `landrun` sandboxes the build (Linux Landlock filesystem isolation)
-- `lean4export` + `comparator` for kernel-level proof export and independent checking
+- `overlay/` — records imported from [Palomar](https://palomar-registry.org/) and
+  [LeanPool](https://github.com/Vilin97/lean-pool), with our sign-offs kept
+  separately in `overlay/signoffs.toml` so re-importing never clobbers review.
+  See [docs/overlay.md](docs/overlay.md).
+- `index/` — `statements.json` plus a static `search.html` over every statement,
+  ours and overlaid, each tagged with what was checked, who signed off, and any
+  Mathlib name collision. Current counts live in `index/meta.json`.
+  Published at **https://gasstationmanager.github.io/VibeRegistry/**, rebuilt
+  whenever the index changes on `main`. See [docs/search.md](docs/search.md).
+
+## Checks
+
+The registry is **comparator-primary**: one check establishes an entry, the rest
+are extras an entry can switch on. Full details in [docs/checks.md](docs/checks.md).
+
+| Check | Default | What it establishes |
+|-------|---------|---------------------|
+| `comparator` | **on** | Sandboxed rebuild (`landrun`), kernel-level proof export (`lean4export`), statement/proof separation, axiom allowlist |
+| `nanoda` | off | The exported proof is replayed through a second, independently written kernel as well as Lean's own |
+| `definitions` | off | Spec `def`s compared through comparator's `definition_names` |
+| `safe_verify` | off | Legacy olean-level spec/impl check |
+| `lean4checker` | off | Legacy kernel re-check of the impl module |
+
+Comparator re-derives the proof under its own sandboxed build instead of trusting
+oleans our build produced, and enforces statement/proof separation against
+adversarial Lean code. That makes the older checks redundant for the guarantee we
+publish — they remain available per entry, but they are no longer what an entry
+means.
 
 ## Repository Structure
 
@@ -47,13 +73,24 @@ VibeRegistry/
 │       ├── lakefile.lean      # Pins its own Mathlib version
 │       ├── lean-toolchain     # Matches external repo's toolchain
 │       └── Registry.lean      # Root import file
-├── entries/                   # Per-entry verification configs (TOML)
+├── entries/                   # Per-entry config: repo, commit, theorems, [checks]
 │   └── artificial-theorems.toml
-├── scripts/                   # Verification automation
+├── scripts/                   # Verification + registry automation
 │   ├── verify_entry.sh        # Verify a single entry
 │   ├── verify_all.sh          # Verify all entries
+│   ├── import_upstream.py     # Mirror Palomar / LeanPool records
+│   ├── fetch_blueprint_statements.py  # Adopt informal statements
+│   ├── generate_signoff_packet.py     # Reviewer packets
+│   ├── check_mathlib_conflicts.py     # Name collisions with Mathlib
+│   ├── build_search_index.py          # Statement index + search page
 │   └── lib/                   # Shared utilities
 ├── results/                   # Verification results (JSON)
+├── informal/                  # Adopted informal statements, per entry
+├── signoff_packets/           # Generated review packets
+├── overlay/                   # Mirrored upstream registries + our sign-offs
+├── index/                     # statements.json + search.html
+├── data/                      # Mathlib name list metadata
+├── docs/                      # checks / signoff / overlay / search
 └── registry.toml              # Central index
 ```
 
@@ -62,44 +99,57 @@ VibeRegistry/
 ### Verify an entry locally
 
 ```bash
-./scripts/verify_entry.sh entries/artificial-theorems.toml --level 1
+./scripts/verify_entry.sh entries/artificial-theorems.toml               # entry defaults
+./scripts/verify_entry.sh entries/artificial-theorems.toml --with-nanoda # + second kernel
+./scripts/verify_entry.sh entries/aks.toml --checks comparator,definitions
+./scripts/verify_all.sh --with-nanoda
 ```
 
-### Verify all entries
+Tools are auto-installed if missing, or install them yourself:
 
 ```bash
-./scripts/verify_all.sh --level 1
-```
-
-### Level 2 verification (Comparator)
-
-Level 2 adds `lean4export` + `comparator` for kernel-level proof export and independent checking, optionally sandboxed with `landrun`.
-
-Tools are auto-installed if missing, but you can install them manually:
-
-```bash
-# Install tools (requires Go for landrun)
 source scripts/lib/install_comparator_tools.sh
 install_comparator_tools specs/artificial-theorems/lean-toolchain work/tools
-
-# Run Level 2
-./scripts/verify_entry.sh entries/artificial-theorems.toml --level 2
+install_nanoda work/tools        # needs cargo
 ```
 
-Or set tool paths directly:
+Or point at existing binaries:
 
 ```bash
 export COMPARATOR_BIN=/path/to/comparator
 export LEAN4EXPORT_BIN=/path/to/lean4export
-export LANDRUN_BIN=/path/to/landrun  # optional
-./scripts/verify_entry.sh entries/artificial-theorems.toml --level 2
+export LANDRUN_BIN=/path/to/landrun   # optional but recommended
+export NANODA_BIN=/path/to/nanoda_bin # optional second kernel
 ```
+
+### Overlay upstream registries
+
+```bash
+python3 scripts/import_upstream.py --all     # Palomar + LeanPool
+```
+
+Mirrors their records into `overlay/`, where our human sign-offs
+(`overlay/signoffs.toml`) are attached without touching upstream data. See
+[docs/overlay.md](docs/overlay.md).
+
+### Search the statements
+
+```bash
+python3 scripts/fetch_mathlib_names.py       # once
+python3 scripts/build_search_index.py
+python3 -m http.server 8000 --directory index    # open /search.html
+```
+
+Indexes our entries and every overlaid record, tagging each with what was
+checked, who signed off, and any Mathlib name collision. See
+[docs/search.md](docs/search.md).
 
 ### CI
 
-- **On push/PR**: Level 1 verification runs automatically for changed entries
-- **Nightly (weekly)**: Level 2 verification runs for all entries with landrun sandboxing
-- **Manual dispatch**: Run any level via GitHub Actions workflow_dispatch
+- **On push/PR**: each changed entry runs its configured checks; only the tools
+  those checks need get built
+- **Weekly**: every entry, comparator + nanoda, results committed
+- **Manual dispatch**: override with the `checks` input
 
 ### Add a new entry
 
@@ -110,6 +160,25 @@ export LANDRUN_BIN=/path/to/landrun  # optional
 5. **Update** `registry.toml` with the new entry
 6. **Test** locally: `./scripts/verify_entry.sh entries/<entry-id>.toml`
 7. **Submit** a PR
+
+### Self-test
+
+```bash
+tests/run_selftest.sh
+```
+
+Runs the real pipeline against a Mathlib-free fixture whose answer is known, so a
+broken pipeline cannot pass quietly. See [docs/checks.md](docs/checks.md#self-test).
+
+### Sign-off helpers
+
+```bash
+python3 scripts/fetch_blueprint_statements.py entries/<id>.toml  # adopt informal statements
+python3 scripts/generate_signoff_packet.py --all                 # build review packets
+python3 scripts/check_mathlib_conflicts.py --all                 # name-collision check
+```
+
+See [docs/signoff.md](docs/signoff.md).
 
 ### Spec file rules
 
@@ -129,12 +198,17 @@ export LANDRUN_BIN=/path/to/landrun  # optional
 
 **Untrusted:** External repo code — may contain metaprogramming that manipulates the Lean environment.
 
-| Layer | What it catches | Level |
-|-------|----------------|-------|
-| `lean4checker` | Declarations not accepted by kernel | 1 |
-| `safe_verify` | Type mismatches, extra axioms, `sorry`, `partial`/`unsafe` | 1 |
-| `landrun` sandbox | Build-time filesystem attacks | 2 |
-| `comparator` | Environment manipulation, kernel-level verification | 2 |
+| Layer | What it catches | Default |
+|-------|----------------|---------|
+| `comparator` | Environment manipulation, statement/proof conflation, disallowed axioms, kernel-level verification of an independent export | on |
+| `landrun` sandbox | Build-time filesystem attacks (used by comparator) | on |
+| `nanoda` | A soundness bug in Lean's own kernel | opt-in |
+| `safe_verify` | Type mismatches, extra axioms, `sorry`, `partial`/`unsafe` | opt-in |
+| `lean4checker` | Declarations not accepted by the kernel | opt-in |
+| `check_mathlib_conflicts.py` | Spec names that shadow Mathlib's, and attribute/export overrides | advisory |
+
+A run whose primary check returns no verdict for a theorem group **fails** rather
+than reporting a pass.
 
 
 ## Submitting a Sign-off
@@ -147,5 +221,17 @@ Domain experts can attest that spec files faithfully capture the intended mathem
 4. Submit — a GitHub Action will process the sign-off and create a PR
 
 Sign-offs are recorded in the entry's TOML config and included in verification results. If spec files change after a sign-off, it is automatically marked stale. Run `python3 scripts/check_signoff_staleness.py entries/<entry>.toml` to check.
+
+Before reviewing, generate the packet — it puts the informal statement, the Lean
+statement, the checks that ran, and a reviewer checklist in one file:
+
+```bash
+python3 scripts/fetch_blueprint_statements.py entries/<entry>.toml
+python3 scripts/generate_signoff_packet.py entries/<entry>.toml
+```
+
+Sign-off is **optional**. A comparator-verified statement stands on its own; a
+sign-off adds a named human vouching for what it says. See
+[docs/signoff.md](docs/signoff.md).
 
 

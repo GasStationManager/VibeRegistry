@@ -1,0 +1,56 @@
+{
+  "source": "leanpool",
+  "upstream_id": "root-system",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/RootSystem",
+  "version": 1,
+  "title": "Explicit type Aₙ and BCₙ root pairings",
+  "abstract": "Constructs the type Aₙ and BCₙ root pairings explicitly over ℤ — from signed intervals on Fin n and from the reflective vectors of the standard dot product — proves the pairing and reflection identities exhibiting them as Mathlib `RootPairing`s, and identifies the BCₙ roots with the classical set {±eᵢ, ±2eᵢ, ±eᵢ ± eⱼ}.",
+  "authors": [
+    "Antoine de Saint Germain",
+    "Ambrose Tang"
+  ],
+  "repository": "https://github.com/Antoine-dSG/root_system",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.RootSystem",
+  "declarations": [
+    "An.rootPairing",
+    "BCn.rootPairing",
+    "BCn.isReflective_iff_isClassicalRoot",
+    "BCn.range_rootPairing_root"
+  ],
+  "informal": {
+    "An.rootPairing": "Constructs the type Aₙ root pairing over the integers from signed intervals on Fin n, with finiteness, reducedness, and crystallographic properties.",
+    "BCn.rootPairing": "Constructs the type BCₙ root pairing from the reflective vectors of the standard dot product on ℤⁿ via a symmetric nondegenerate form.",
+    "BCn.isReflective_iff_isClassicalRoot": "Characterizes the reflective vectors of the standard dot product on ℤⁿ as exactly the classical type BCₙ roots ±eᵢ, ±2eᵢ, and ±eᵢ ± eⱼ for i ≠ j.",
+    "BCn.range_rootPairing_root": "Identifies the root set of the type BCₙ root pairing with the classical type BCₙ root set."
+  },
+  "classification": {
+    "msc2020": [
+      "17B22",
+      "20F55"
+    ],
+    "tags": [
+      "representation-theory",
+      "root-systems",
+      "lie-theory",
+      "combinatorics"
+    ],
+    "branch": "representation theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/RootSystem.lean",
+  "statement_hash": "sha256:173a181ba44ee99e6e113b8bdc40ee7aa659aa34ceb823b5f8be4e7af4e3b2d2"
+}

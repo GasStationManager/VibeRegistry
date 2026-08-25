@@ -1,0 +1,82 @@
+name: Sync Overlay and Search Index
+
+on:
+  schedule:
+    # Weekly on Mondays at 03:00 UTC, after the weekend verification run.
+    - cron: '0 3 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - 'entries/**'
+      - 'specs/**'
+      - 'informal/**'
+      - 'overlay/signoffs.toml'
+      - 'scripts/import_upstream.py'
+      - 'scripts/build_search_index.py'
+      - 'scripts/check_mathlib_conflicts.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      # Only re-import upstream on the schedule; a push should not depend on
+      # third-party availability.
+      - name: Import upstream registries
+        if: github.event_name != 'push'
+        run: python3 scripts/import_upstream.py --all
+
+      - name: Fetch Mathlib declaration names
+        run: python3 scripts/fetch_mathlib_names.py
+
+      - name: Rebuild search index
+        run: |
+          python3 scripts/import_upstream.py --reindex
+          python3 scripts/build_search_index.py
+
+      - name: Regenerate sign-off packets
+        run: python3 scripts/generate_signoff_packet.py --all
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add overlay/ index/ signoff_packets/ data/mathlib-names.meta.json
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+          else
+            git commit -m "Sync overlay records and search index"
+            git push
+          fi
+
+  # Separate job so a finding turns CI red without blocking the index rebuild:
+  # the index records conflicts, and readers should see them flagged either way.
+  spec-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check specs are standalone
+        run: python3 scripts/check_spec_imports.py --all
+
+      - name: Fetch Mathlib declaration names
+        run: python3 scripts/fetch_mathlib_names.py
+
+      - name: Check spec declarations against Mathlib
+        run: python3 scripts/check_mathlib_conflicts.py --all

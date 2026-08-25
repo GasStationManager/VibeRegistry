@@ -1,0 +1,47 @@
+{
+  "source": "leanpool",
+  "upstream_id": "apportionment",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Apportionment",
+  "version": 1,
+  "title": "Apportionmentlib",
+  "abstract": "Formalizes apportionment rules and proves the Balinski-Young impossibility theorem: no anonymous quota rule can be population-monotone.",
+  "authors": [
+    "Michał Dobranowski"
+  ],
+  "repository": "https://github.com/mdbrnowski/apportionmentlib",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Apportionment",
+  "declarations": [
+    "Apportionment.balinski_young"
+  ],
+  "informal": {
+    "Apportionment.balinski_young": "Proves that no anonymous quota apportionment rule can satisfy population monotonicity."
+  },
+  "classification": {
+    "msc2020": [
+      "91B12",
+      "91B14"
+    ],
+    "tags": [
+      "social-choice-theory",
+      "combinatorics"
+    ],
+    "branch": "social choice theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Apportionment.lean",
+  "statement_hash": "sha256:e4b4f842c8c33399ca48679ba3c7a38af9a5c8dc1db55646c6b9a6d32f8e51f3"
+}

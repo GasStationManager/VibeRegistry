@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "clawristotle",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Clawristotle",
+  "version": 1,
+  "title": "Clawristotle: Vlasov-Maxwell-Landau steady-state classification",
+  "abstract": "Formalizes a steady-state classification result for the Vlasov-Maxwell-Landau system with Coulomb kernel.",
+  "authors": [
+    "Vasily Ilin"
+  ],
+  "repository": "https://github.com/Vilin97/Clawristotle",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Clawristotle",
+  "declarations": [
+    "VML.Theorem42",
+    "VML.CoulombConcreteTheorem42"
+  ],
+  "informal": {
+    "VML.Theorem42": "States the abstract steady-state classification theorem for the Vlasov-Maxwell-Landau framework.",
+    "VML.CoulombConcreteTheorem42": "Specializes the steady-state classification theorem to the Coulomb kernel."
+  },
+  "classification": {
+    "msc2020": [
+      "35Q83",
+      "82C40",
+      "35Q61"
+    ],
+    "tags": [
+      "pde",
+      "kinetic-theory",
+      "mathematical-physics"
+    ],
+    "branch": "kinetic theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Clawristotle.lean",
+  "statement_hash": "sha256:da6cf5c8b6048a04691066b6fbe1329f860f1b6246f7c69f69e515ac97216ecb"
+}

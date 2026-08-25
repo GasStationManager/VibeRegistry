@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "sundogcert",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Sundogcert",
+  "version": 1,
+  "title": "Sundog certificates",
+  "abstract": "A referee-free, axiom-clean Lean development of coding-theory certificates: syndrome decoding soundness and lossiness bounds for GF(2) parity-check schemes (with a Reed–Solomon evaluation-dual variant), and a fully machine-checked correctness proof of the Karp reduction chain 3SAT ≤ 3DM ≤ X3C ≤ bounded-weight syndrome decoding. Only the logical iff of each reduction is formalized; polynomial-time bounds, NP classes, and Cook–Levin are unformalized external inputs, so NP-hardness of decoding is conditional on those standard facts.",
+  "authors": [
+    "Humiliati"
+  ],
+  "repository": "https://github.com/humiliati/sundogcert",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Sundogcert",
+  "declarations": [
+    "Sundog.SATReductionMain.sat_iff_decodes",
+    "Sundog.Certificate.accept_sound",
+    "Sundog.MatchingNPHard.threeDM_iff_X3C",
+    "Sundog.Certificate.reject_sound"
+  ],
+  "informal": {
+    "Sundog.SATReductionMain.sat_iff_decodes": "The end-to-end reduction correctness: a formula is satisfiable iff its image under the composed 3SAT-to-decoding reduction is a yes-instance of bounded-weight syndrome decoding.",
+    "Sundog.MatchingNPHard.threeDM_iff_X3C": "The 3-dimensional matching instance has a perfect matching iff the reduced exact-cover-by-3-sets instance has an exact cover, both directions machine-checked.",
+    "Sundog.Certificate.accept_sound": "Soundness of the cheap syndrome-decoding verifier when it accepts: an exhibited light same-syndrome witness certifies the body is safe within the decoding radius.",
+    "Sundog.Certificate.reject_sound": "Soundness of the verifier when it rejects: a sound column-weight lower bound on the minimum same-syndrome weight rules out every light witness, so the body is genuinely unsafe."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q17",
+      "94B35"
+    ],
+    "tags": [
+      "complexity",
+      "coding-theory",
+      "np-hardness"
+    ],
+    "branch": "complexity theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Sundogcert.lean",
+  "statement_hash": "sha256:4a282eec4c04a4aaacac59915a1b1b4cde1017bfb225149a389e5e60dcd60354"
+}

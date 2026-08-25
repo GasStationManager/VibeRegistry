@@ -1,0 +1,65 @@
+{
+  "source": "leanpool",
+  "upstream_id": "formalization-of-bounded-arithmetic",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FormalizationOfBoundedArithmetic",
+  "version": 1,
+  "title": "Strengthened V0 Bounded Arithmetic Interfaces",
+  "abstract": "Formalizes first-order and two-sorted bounded-arithmetic model infrastructure, including arithmetic model laws and string-addition laws for strengthened bundled V0-style interfaces with propositional induction, order, cancellation, decidability, and algebraic laws assumed as fields rather than derived from a separate raw V0 class.",
+  "authors": [
+    "ruplet"
+  ],
+  "repository": "https://github.com/ruplet/formalization-of-bounded-arithmetic",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.FormalizationOfBoundedArithmetic",
+  "declarations": [
+    "V0Model.ind_strengthened_v0",
+    "str_add_assoc_strengthened_v0",
+    "IOPENModel.add_assoc",
+    "IOPENModel.add_comm",
+    "IDelta0Model.pred_exists",
+    "IDelta0Model.mul_cancel_right",
+    "V0Model.xind",
+    "str_add_comm_strengthened_v0",
+    "str_succ_assoc_strengthened_v0"
+  ],
+  "informal": {
+    "IOPENModel.add_assoc": "Proves associativity of addition in IOPEN models.",
+    "IOPENModel.add_comm": "Proves commutativity of addition in IOPEN models.",
+    "IDelta0Model.pred_exists": "Shows that nonzero elements in IDelta0 models have predecessors.",
+    "IDelta0Model.mul_cancel_right": "Proves right cancellation for multiplication by a nonzero element in IDelta0 models.",
+    "V0Model.xind": "Exposes string induction inside the strengthened bundled V0Model structure, whose fields include the comprehension and induction/order principles used downstream.",
+    "V0Model.ind_strengthened_v0": "Exposes propositional induction inside the strengthened bundled V0Model structure, rather than deriving it from only the raw finite V0 axiom list.",
+    "str_add_comm_strengthened_v0": "Proves commutativity of string addition in V0 extension models extending the strengthened V0Model bundle.",
+    "str_add_assoc_strengthened_v0": "Proves associativity of string addition in V0 extension models extending the strengthened V0Model bundle, using the bundled propositional induction field.",
+    "str_succ_assoc_strengthened_v0": "Proves that string addition associates with string successor in V0 extension models extending the strengthened V0Model bundle."
+  },
+  "classification": {
+    "msc2020": [
+      "03F30",
+      "03D15"
+    ],
+    "tags": [
+      "logic",
+      "bounded-arithmetic",
+      "model-theory",
+      "computational-complexity"
+    ],
+    "branch": "mathematical logic"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/FormalizationOfBoundedArithmetic.lean",
+  "statement_hash": "sha256:fdbd9c15ca70876af8c4ccd0a16250befd5bc76b9785ae5ac464d8afb6b75ccf"
+}

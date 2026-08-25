@@ -1,0 +1,55 @@
+name: Pipeline Self-test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'specs/selftest/**'
+      - '.github/workflows/selftest.yml'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'specs/selftest/**'
+      - '.github/workflows/selftest.yml'
+  schedule:
+    # Weekly, before the full verification run: the tools are built from
+    # upstream, so this catches an upstream regression against a fixture whose
+    # answer we know, rather than against an entry where we could not tell a
+    # pipeline failure from a real one.
+    - cron: '0 1 * * 0'
+  workflow_dispatch:
+
+jobs:
+  selftest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Install comparator tools
+        run: |
+          source scripts/lib/install_comparator_tools.sh
+          install_comparator_tools specs/selftest/lean-toolchain "${{ runner.temp }}/tools"
+          install_nanoda "${{ runner.temp }}/tools"
+          {
+            echo "COMPARATOR_BIN=$COMPARATOR_BIN"
+            echo "LEAN4EXPORT_BIN=$LEAN4EXPORT_BIN"
+            echo "LANDRUN_BIN=$LANDRUN_BIN"
+            echo "NANODA_BIN=$NANODA_BIN"
+          } >> "$GITHUB_ENV"
+
+      - name: Run the pipeline against a fixture with a known answer
+        run: ./tests/run_selftest.sh

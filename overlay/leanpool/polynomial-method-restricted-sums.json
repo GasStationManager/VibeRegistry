@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "polynomial-method-restricted-sums",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PolynomialMethodRestrictedSums",
+  "version": 1,
+  "title": "The polynomial method and restricted sums of congruence classes",
+  "abstract": "Formalizes the polynomial method (Alon–Tarsi-style combinatorial Nullstellensatz arguments) and applies it to restricted sums of congruence classes, including Cauchy–Davenport, Dias da Silva–Hamidoune, and a Vandermonde coefficient formula.",
+  "authors": [
+    "Nick Adfor"
+  ],
+  "repository": "https://github.com/NickAdfor/The-polynomial-method-and-restricted-sums-of-congruence-classes",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.PolynomialMethodRestrictedSums",
+  "declarations": [
+    "ANR_polynomial_method",
+    "cauchy_davenport",
+    "dias_da_silva_hamidoune",
+    "restricted_sum_distinct_sizes",
+    "Vandermonde_coefficient_formula"
+  ],
+  "informal": {
+    "ANR_polynomial_method": "The Alon–Nathanson–Rusza polynomial method theorem, giving a non-vanishing-coefficient criterion for restricted sums.",
+    "cauchy_davenport": "The Cauchy–Davenport theorem on sums of subsets of the cyclic group of prime order.",
+    "dias_da_silva_hamidoune": "The Dias da Silva–Hamidoune lower bound for restricted sums of distinct elements in a prime cyclic group.",
+    "restricted_sum_distinct_sizes": "A lower bound for restricted sums when the summand sets have distinct sizes.",
+    "Vandermonde_coefficient_formula": "A closed-form expression for a specific Vandermonde-style coefficient used by the polynomial method."
+  },
+  "classification": {
+    "msc2020": [
+      "11B30",
+      "11B75",
+      "11P70"
+    ],
+    "tags": [
+      "combinatorics",
+      "polynomial-method",
+      "alon-tarsi",
+      "restricted-sums",
+      "congruence-classes"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/PolynomialMethodRestrictedSums.lean",
+  "statement_hash": "sha256:e04a4da670d429b103916ae66d9dd484e8b6095ec94c4bab0b4ceb3120b21d15"
+}

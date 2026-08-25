@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "desargues",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Desargues",
+  "version": 1,
+  "title": "Axiomatic projective geometry (Faure–Frölicher)",
+  "abstract": "Develops, following Faure and Frölicher's Modern Projective Geometry, the axiomatic theory of projective geometries given by a ternary collinearity relation, with subspaces and subgeometries, proves that the central projection between two lines is a bijection, and exhibits every Mathlib projectivization as a projective geometry. Groundwork from the upstream desargues repository — Desargues' theorem itself is not formalized.",
+  "authors": [
+    "Abdullah Uyu"
+  ],
+  "repository": "https://github.com/oneofvalts/desargues",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.Desargues",
+  "declarations": [
+    "Basic.ProjectiveGeometry",
+    "Basic.centralProjection",
+    "Basic.cen_proj_bij"
+  ],
+  "informal": {
+    "Basic.ProjectiveGeometry": "Axiomatizes a projective geometry as a typeclass (axioms L₁–L₃, Faure–Frölicher p. 26) on a ternary collinearity relation.",
+    "Basic.centralProjection": "Defines the central projection of a line onto another from a center point.",
+    "Basic.cen_proj_bij": "The headline theorem — the central projection between two lines is a bijection."
+  },
+  "classification": {
+    "msc2020": [
+      "51A05",
+      "51A30"
+    ],
+    "tags": [
+      "projective-geometry",
+      "incidence-geometry",
+      "geometry"
+    ],
+    "branch": "geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Desargues.lean",
+  "statement_hash": "sha256:cb19dbef51f771fa0be128dadc26500117b8177f9dd548ad915ab3fa17fae708"
+}

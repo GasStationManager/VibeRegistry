@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "misere-games",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MisereGames",
+  "version": 1,
+  "title": "Misere combinatorial games",
+  "abstract": "Formalizes a combinatorial game theory library for misere play, including comparison modulo universes, p-free forms, outcome-stability, Property X, and concrete rulesets such as Hackenbush.",
+  "authors": [
+    "Tomasz Maciosowski",
+    "Alfie Davies"
+  ],
+  "repository": "https://github.com/t4ccer/misere-games",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.MisereGames",
+  "declarations": [
+    "MisereGames.Form.Promain.of_universe",
+    "MisereGames.IntegerInvertible.isPFree_of_propertyX",
+    "MisereGames.Form.Preservation.endLikeSeedToUniverse_bijective"
+  ],
+  "informal": {
+    "MisereGames.Form.Promain.of_universe": "Shows that comparison modulo a universe is characterized by the maintenance-proviso test.",
+    "MisereGames.IntegerInvertible.isPFree_of_propertyX": "Proves that Property X makes the sum of two short p-free games p-free in an outcome-stable, hereditary, integer-invertible monoid.",
+    "MisereGames.Form.Preservation.endLikeSeedToUniverse_bijective": "Proves that universal closure gives a bijection from bounded end-like seeds to universes."
+  },
+  "classification": {
+    "msc2020": [
+      "91A46",
+      "05C57"
+    ],
+    "tags": [
+      "combinatorial-games",
+      "misere-play",
+      "game-theory"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/MisereGames.lean",
+  "statement_hash": "sha256:f612515c7af3522275294a701ee2acad1d0efabcb87e33fa6102a8e86538f21e"
+}

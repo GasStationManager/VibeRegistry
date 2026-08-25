@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean-booleanfun",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LeanBooleanfun",
+  "version": 1,
+  "title": "Analysis of Boolean functions in Lean",
+  "abstract": "Walsh-Fourier analysis on Boolean functions, including Arrow's theorem and BLR linearity testing.",
+  "authors": [
+    "Joris Roos"
+  ],
+  "repository": "https://github.com/roos-j/lean-booleanfun",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.LeanBooleanfun",
+  "declarations": [
+    "LeanPool.LeanBooleanfun.BooleanFun.BV.dictator_of_condorcet_and_unanimous"
+  ],
+  "informal": {
+    "LeanPool.LeanBooleanfun.BooleanFun.BV.dictator_of_condorcet_and_unanimous": "Arrow's theorem for two-candidate Boolean voting rules."
+  },
+  "classification": {
+    "msc2020": [
+      "06E30",
+      "42C10",
+      "91B14"
+    ],
+    "tags": [
+      "boolean-functions",
+      "fourier-analysis",
+      "social-choice"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/LeanBooleanfun.lean",
+  "statement_hash": "sha256:74236afa8e74237ee9f0eb7ad16d22382a1bb6dcfa368670950ad535e9c679d1"
+}

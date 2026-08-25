@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "rellich-kondrachov",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/RellichKondrachov",
+  "version": 1,
+  "title": "Rellich–Kondrachov compact embedding theorem",
+  "abstract": "Formalizes the Rellich–Kondrachov compact embedding theorem: the Sobolev embedding H¹ → L² is a compact operator on compact Riemannian manifolds. The proof builds the Euclidean core (compactness of the H¹ → L² inclusion on a fixed compact support via the Fréchet–Kolmogorov criterion and the H¹ translation estimate ‖τₐu − u‖₂ ≤ ‖a‖ · ‖∇u‖₂), glues chart contributions over a finite atlas, and specializes to the Levi-Civita Riemannian volume measure.",
+  "authors": [
+    "Adam Benenson"
+  ],
+  "repository": "https://github.com/abenenson/rellich-kondrachov",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.RellichKondrachov",
+  "declarations": [
+    "RellichKondrachov.Geometry.Manifold.Sobolev.exists_riemannianFiniteChartData",
+    "RellichKondrachov.Geometry.Manifold.Sobolev.RiemannianFiniteChartData.isCompactOperator_h1ToL2_riemannianVolume",
+    "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.isCompactOperator_h1OnToL2"
+  ],
+  "informal": {
+    "RellichKondrachov.Geometry.Manifold.Sobolev.RiemannianFiniteChartData.isCompactOperator_h1ToL2_riemannianVolume": "On a compact Riemannian manifold, the Sobolev inclusion H¹ → L² for the Levi-Civita volume measure is a compact operator.",
+    "RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.isCompactOperator_h1OnToL2": "Euclidean Rellich–Kondrachov compactness: on a fixed compact support K, the H¹ → L² inclusion restricted to functions supported in K is a compact operator.",
+    "RellichKondrachov.Geometry.Manifold.Sobolev.exists_riemannianFiniteChartData": "On a compact Riemannian manifold there exists finite chart data equipped with explicit Lipschitz neighborhoods and a subordinate partition of unity, the input to the manifold Rellich glue."
+  },
+  "classification": {
+    "msc2020": [
+      "46E35"
+    ],
+    "tags": [
+      "analysis",
+      "pde",
+      "sobolev-embedding"
+    ],
+    "branch": "analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/RellichKondrachov.lean",
+  "statement_hash": "sha256:20235f943b2eec164a0d7a3586d991a7f027e57b0c0f389cda8b26357fd26b24"
+}

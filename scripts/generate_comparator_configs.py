@@ -3,10 +3,15 @@
 Generate comparator JSON configs from entry TOML config.
 
 Usage:
-    python3 generate_comparator_configs.py <entry_toml> <output_dir>
+    python3 generate_comparator_configs.py <entry_toml> <output_dir> [--enable-nanoda]
 
 For each [[theorems]] group in the entry config, generates a comparator
 JSON config file in the output directory.
+
+--enable-nanoda turns on comparator's second-kernel replay: the exported proof
+is re-checked by the independent nanoda kernel as well as Lean's own. Comparator
+finds the binary on PATH or via COMPARATOR_NANODA, so the caller is responsible
+for making it available before passing this flag.
 """
 
 import sys
@@ -23,7 +28,7 @@ def sanitize_name(name):
     return name.replace('.', '_').lower()
 
 
-def generate_configs(config_path, output_dir):
+def generate_configs(config_path, output_dir, enable_nanoda=False):
     config = load_config(config_path)
     entry_id = config.get('project', {}).get('id', 'unknown')
     theorems = config.get('theorems', [])
@@ -38,9 +43,10 @@ def generate_configs(config_path, output_dir):
         permitted_axioms = thm_group.get('permitted_axioms',
                                          ['propext', 'Quot.sound', 'Classical.choice'])
 
-        # Generate filename from the last part of the impl module name
-        parts = impl_module.split('.')
-        filename = sanitize_name(parts[-1]) if parts else f"theorem_{i}"
+        # Name the config after the FULL impl module. Naming it after the last
+        # component alone made `A.B.Foo` and `C.D.Foo` collide, so one group's
+        # config silently overwrote the other's and that group went unchecked.
+        filename = sanitize_name(impl_module) if impl_module else f"theorem_{i}"
         config_file = os.path.join(output_dir, f"{filename}.json")
 
         comparator_config = {
@@ -48,7 +54,7 @@ def generate_configs(config_path, output_dir):
             "solution_module": impl_module,
             "theorem_names": names,
             "permitted_axioms": permitted_axioms,
-            "enable_nanoda": False
+            "enable_nanoda": bool(enable_nanoda)
         }
 
         with open(config_file, 'w') as f:
@@ -58,23 +64,31 @@ def generate_configs(config_path, output_dir):
         generated.append(config_file)
         print(f"Generated: {config_file}")
 
-    print(f"\nGenerated {len(generated)} comparator config(s) for entry '{entry_id}'")
+    kernels = "Lean + nanoda" if enable_nanoda else "Lean"
+    print(f"\nGenerated {len(generated)} comparator config(s) for entry '{entry_id}' (kernels: {kernels})")
     return generated
 
 
 def main():
-    if len(sys.argv) < 3:
-        print(f"Usage: {sys.argv[0]} <entry_toml> <output_dir>", file=sys.stderr)
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    flags = [a for a in sys.argv[1:] if a.startswith("--")]
+
+    unknown = [f for f in flags if f != "--enable-nanoda"]
+    if unknown:
+        print(f"ERROR: unknown flag(s): {' '.join(unknown)}", file=sys.stderr)
         sys.exit(1)
 
-    config_path = sys.argv[1]
-    output_dir = sys.argv[2]
+    if len(args) < 2:
+        print(f"Usage: {sys.argv[0]} <entry_toml> <output_dir> [--enable-nanoda]", file=sys.stderr)
+        sys.exit(1)
+
+    config_path, output_dir = args[0], args[1]
 
     if not os.path.exists(config_path):
         print(f"ERROR: Config file not found: {config_path}", file=sys.stderr)
         sys.exit(1)
 
-    generate_configs(config_path, output_dir)
+    generate_configs(config_path, output_dir, enable_nanoda="--enable-nanoda" in flags)
 
 
 if __name__ == '__main__':

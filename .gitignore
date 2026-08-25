@@ -2,6 +2,18 @@
 work/
 .lake/
 
+# Derived Mathlib name list (~2 MB, refetched by scripts/fetch_mathlib_names.py).
+# data/mathlib-names.meta.json records which snapshot was used and is committed.
+data/mathlib-names.tsv.gz
+
+# The retired result a run sets aside at startup, so a dead run leaves no stale
+# verdict behind. Internal to a run in progress, never registry data.
+results/*/.latest.superseded.json
+
+# Self-test artifacts: tests/run_selftest.sh runs the real pipeline, which writes
+# a result file like any other entry. It is a test outcome, not registry data.
+results/selftest/
+
 # Python
 __pycache__/
 *.pyc

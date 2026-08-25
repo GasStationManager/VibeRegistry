@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-21-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-21-000007",
+  "version": 1,
+  "title": "lennrt/palomar-formalizations",
+  "abstract": "A Lean formalization of the paper's standard finite-word semantics for k-uniform two-word π-representability, its neighbourhood-trace bound binomial(k(|A|+1),k)^2, the explicit 20-by-741322 bit-incidence graph B20, and the theorem that B20 is not representable by two 2-uniform words. It also retains the companion's token-order bridge and exact arithmetic endpoints.",
+  "authors": [
+    "Lennart Rudolph",
+    "Sol",
+    "Fable"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "d259d35ad32d0e7c8c60ddd5a574aa987956e1d2",
+  "project_path": "zenodo-21986230/palomar",
+  "declarations": [
+    "PalomarG2.fibre_agreement_iff_no_cross_inversion",
+    "PalomarG2.same_fibre_no_inversion",
+    "PalomarG2.trace_capacity_endpoint",
+    "PalomarG2.no_trace_code_injection",
+    "PalomarG2.neighborhood_trace_bound",
+    "PalomarG2.B20_not_twoWordPiRepresentable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C62",
+      "05C75",
+      "06A07",
+      "68R15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-21T14:54:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d259d35ad32d0e7c8c60ddd5a574aa987956e1d2",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f76c9d1c66ccb8ec041c61133d9ced45add91ddd69b7aa9cbd536f5713b0bff3"
+}

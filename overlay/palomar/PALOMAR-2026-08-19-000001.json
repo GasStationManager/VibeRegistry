@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-19-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-19-000001",
+  "version": 1,
+  "title": "rkirov/jordan_pick",
+  "abstract": "The Jordan curve theorem, formalized in Lean 4 against Mathlib: a continuous injective map from the circle into the plane has a complement with exactly two connected components. The hypothesis is bare continuity and injectivity — no smoothness, piecewise-linearity or rectifiability — which is what makes the theorem hard and what separates it from the polygonal case. The proof follows Maehara's reduction to the Brouwer fixed point theorem, via a crossing lemma for transversal paths in a rectangle and the fact that every component has the curve as its boundary, together with a farthest-pair normalization that pins down exactly one bounded component. Because Mathlib has no Brouwer fixed point theorem at the pinned revision, Brouwer is built here from the ground up: covering-space path lifting for the circle giving π₁(S¹) ≅ ℤ, then no-retraction of the disk onto its boundary, then Brouwer on the disk by ray-retraction, then the general nonempty-compact-convex case by nearest-point projection. The statement is expressed in Mathlib's own vocabulary. The proof is sorry-free and depends on Lean's three standard axioms (propext, Classical.choice, Quot.sound) and nothing else.",
+  "authors": [
+    "Rado Kirov"
+  ],
+  "repository": "https://github.com/rkirov/jordan_pick",
+  "commit": "b3c9b7cf7358bf81a077d78ad67e6e8247869ddd",
+  "project_path": "submission/jordan_curve",
+  "declarations": [
+    "jordan_curve"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GT",
+      "math.GN"
+    ],
+    "msc2020": [
+      "54F65",
+      "54F15",
+      "54H25",
+      "55M20",
+      "55M25",
+      "54D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-19T01:54:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b3c9b7cf7358bf81a077d78ad67e6e8247869ddd",
+        "fork_repository": "PalomarArchive/rkirov--jordan_pick--96177826a785",
+        "source_repository": "rkirov/jordan_pick"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4ff8f94bd50be1d6347c87a8528f1c57a659fb09b6e047543b44e698012fadf7"
+}

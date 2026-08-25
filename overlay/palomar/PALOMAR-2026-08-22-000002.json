@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-22-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-22-000002",
+  "version": 1,
+  "title": "mbaccaro-dev/mathematical-proofs",
+  "abstract": "A Lean 4 proof of the sequence-level conditioning construction for Selberg divisor feedback. Two explicit perturbations of the von Mangoldt weight stay in the positive prime-power cone, approximate the divisor data to an arbitrary tolerance through twice the observation scale, separate their summatory outputs at a near-linear power scale, and retain one uniform linear Selberg bound.",
+  "authors": [
+    "Mayk Loide Baccaro"
+  ],
+  "repository": "https://github.com/mbaccaro-dev/mathematical-proofs",
+  "commit": "f0ccae19f2cb5afdca00c42694d677c74dc492f6",
+  "project_path": "MathematicalProofs/SelbergDivisorFeedback/Lean",
+  "declarations": [
+    "RiemannHypothesisProofFactory.SelbergConditioning.near_linear_conditioning_witness"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N05",
+      "11M26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-22T03:29:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f0ccae19f2cb5afdca00c42694d677c74dc492f6",
+        "fork_repository": "PalomarArchive/mbaccaro-dev--mathematical-proofs--747a1597eb38",
+        "source_repository": "mbaccaro-dev/mathematical-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c3450ca40fb0cf75b182655b87b9875200c01943e0acd97b07b73ffdf62841ef"
+}

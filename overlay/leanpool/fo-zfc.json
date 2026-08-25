@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "fo-zfc",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FoZfc",
+  "version": 1,
+  "title": "First Order Language of ZF Set Theory",
+  "abstract": "Formalizes ZF set theory inside Lean's `FirstOrder.Language` framework, enabling meta-mathematical arguments such as elementary submodels.",
+  "authors": [
+    "Tetsuya Ishiu"
+  ],
+  "repository": "https://github.com/ishiut/fo_zfc",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.FoZfc",
+  "declarations": [
+    "FirstOrder.ZFC.ModelZF",
+    "FirstOrder.ZFC.ext_induction"
+  ],
+  "informal": {
+    "FirstOrder.ZFC.ModelZF": "Bundles the ZF axioms (Emptyset, Pairing, Union, Powerset, Infinity, Regularity, Comprehension, Replacement) into a single model class.",
+    "FirstOrder.ZFC.ext_induction": "States the principle of mathematical induction over ω externally for any bounded formula in LZFC."
+  },
+  "classification": {
+    "msc2020": [
+      "03B10",
+      "03E30"
+    ],
+    "tags": [
+      "model-theory",
+      "set-theory",
+      "zf"
+    ],
+    "branch": "mathematical logic"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/FoZfc.lean",
+  "statement_hash": "sha256:f38c814c6795bb968d1c4ccced974d790ab6be90a690d3555973eacd4008dbb3"
+}

@@ -1,0 +1,47 @@
+{
+  "source": "leanpool",
+  "upstream_id": "anderson-conjecture",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/AndersonConjecture",
+  "version": 1,
+  "title": "The Anderson Conjecture: A Weakly Quasi-Complete Ring Need Not Be Quasi-Complete",
+  "abstract": "Formalizes a counterexample to Anderson's question, constructing a weakly quasi-complete Noetherian local ring that is not quasi-complete via the Jensen-Heitmann-Loepp transfinite construction.",
+  "authors": [
+    "FrenzyMath"
+  ],
+  "repository": "https://github.com/frenzymath/Anderson-Conjecture",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.AndersonConjecture",
+  "declarations": [
+    "anderson_main_theorem"
+  ],
+  "informal": {
+    "anderson_main_theorem": "Proves that there exists a weakly quasi-complete Noetherian local ring that is not quasi-complete."
+  },
+  "classification": {
+    "msc2020": [
+      "13B35",
+      "13H10"
+    ],
+    "tags": [
+      "commutative-algebra",
+      "ring-theory"
+    ],
+    "branch": "algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/AndersonConjecture.lean",
+  "statement_hash": "sha256:e37ac7ce8548ec48c6e82fb7b0aaf5de4e1559a52fff04c357cf3c27b5fa2487"
+}

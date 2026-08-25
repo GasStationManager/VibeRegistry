@@ -1,0 +1,60 @@
+{
+  "source": "leanpool",
+  "upstream_id": "cramer-wold",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CramerWold",
+  "version": 1,
+  "title": "The Cramer-Wold theorem",
+  "abstract": "Formalizes the finite-dimensional Cramer-Wold theorem for measures on Euclidean spaces, with Banach-space continuous-dual generalizations, Hilbert-space inner-product versions, and random-variable law corollaries for identical distributions and `HasLaw`.",
+  "authors": [
+    "Lazar Milikic"
+  ],
+  "repository": "https://github.com/Lemmy00/lean-pool",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.CramerWold",
+  "declarations": [
+    "LeanPool.CramerWold.euclideanSpace_measure_eq_of_forall_inner_map_eq",
+    "LeanPool.CramerWold.measure_eq_of_forall_dual_map_eq",
+    "LeanPool.CramerWold.measure_eq_of_forall_inner_map_eq",
+    "LeanPool.CramerWold.identDistrib_of_forall_dual_comp_identDistrib",
+    "LeanPool.CramerWold.identDistrib_of_forall_inner_comp_identDistrib",
+    "LeanPool.CramerWold.hasLaw_of_forall_dual_comp_hasLaw"
+  ],
+  "informal": {
+    "LeanPool.CramerWold.euclideanSpace_measure_eq_of_forall_inner_map_eq": "Proves the classical finite-dimensional Cramer-Wold theorem for finite Borel measures on `EuclideanSpace ℝ (Fin n)`, showing equality when all scalar projections have equal pushforward measures.",
+    "LeanPool.CramerWold.measure_eq_of_forall_dual_map_eq": "Generalizes the extensionality criterion to finite Borel measures on complete second-countable real normed spaces, using all continuous-linear real projections.",
+    "LeanPool.CramerWold.measure_eq_of_forall_inner_map_eq": "Specializes Cramer-Wold extensionality to real Hilbert spaces, using scalar projections of the form `x ↦ ⟪t, x⟫_ℝ`.",
+    "LeanPool.CramerWold.identDistrib_of_forall_dual_comp_identDistrib": "Proves that two finite-measure random variables are identically distributed when every continuous-linear real projection of them is identically distributed.",
+    "LeanPool.CramerWold.identDistrib_of_forall_inner_comp_identDistrib": "Gives the Hilbert-space random-variable version using all scalar inner-product projections.",
+    "LeanPool.CramerWold.hasLaw_of_forall_dual_comp_hasLaw": "Proves that a random variable has a target law when every continuous-linear real projection has the corresponding projected target law."
+  },
+  "classification": {
+    "msc2020": [
+      "60B11",
+      "60E10",
+      "28A33"
+    ],
+    "tags": [
+      "probability",
+      "measure-theory",
+      "characteristic-functions",
+      "cramer-wold"
+    ],
+    "branch": "probability theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CramerWold.lean",
+  "statement_hash": "sha256:9757f24627ba397ed50d7f600cf2fc82f9448932a25863e3f976f4dafeafe6c6"
+}

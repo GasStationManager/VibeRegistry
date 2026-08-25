@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "cencov-petz",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CencovPetz",
+  "version": 1,
+  "title": "Finite Čencov-Petz Uniqueness",
+  "abstract": "Formalizes the finite/discrete Čencov-Petz uniqueness theorem, showing that any continuous metric family on finite probability simplexes that is monotone under Markov morphisms is a scalar multiple of the Fisher information metric.",
+  "authors": [
+    "Adam Benenson"
+  ],
+  "repository": "https://github.com/abenenson/cencov-petz",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.CencovPetz",
+  "declarations": [
+    "LeanPool.CencovPetz.MonotoneMetricFamily.eq_smul_fisher_of_continuous",
+    "LeanPool.CencovPetz.MonotoneMetricFamily.eq_smul_fisher_of_isRational",
+    "LeanPool.CencovPetz.MonotoneMetricFamily.eq_smul_fisher_of_isSplitRepresentable",
+    "LeanPool.CencovPetz.MonotoneMetricFamily.uniformScalar_eq_uniformScalar_two",
+    "LeanPool.CencovPetz.TangentFin.Bilin.B_eq_smul_fisherBilin_uniform"
+  ],
+  "informal": {
+    "LeanPool.CencovPetz.MonotoneMetricFamily.eq_smul_fisher_of_continuous": "Proves that every continuous monotone metric family on a finite probability simplex is a scalar multiple of the Fisher information metric.",
+    "LeanPool.CencovPetz.MonotoneMetricFamily.eq_smul_fisher_of_isRational": "Establishes the scalar Fisher-form identity at rational simplex points using split representations.",
+    "LeanPool.CencovPetz.MonotoneMetricFamily.eq_smul_fisher_of_isSplitRepresentable": "Proves the scalar Fisher-form identity for simplex points represented as pushforwards of uniform distributions under splitting maps.",
+    "LeanPool.CencovPetz.MonotoneMetricFamily.uniformScalar_eq_uniformScalar_two": "Shows that the uniform-point scalar is independent of simplex dimension once the dimension is at least two.",
+    "LeanPool.CencovPetz.TangentFin.Bilin.B_eq_smul_fisherBilin_uniform": "Proves that the permutation-invariant bilinear form at a uniform finite simplex point is a scalar multiple of the Fisher bilinear form."
+  },
+  "classification": {
+    "msc2020": [
+      "62B10",
+      "53C21"
+    ],
+    "tags": [
+      "information-geometry",
+      "fisher-information",
+      "markov-morphisms",
+      "finite-simplex"
+    ],
+    "branch": "information geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CencovPetz.lean",
+  "statement_hash": "sha256:931cfa81b67b8465843ec4ba4d632936764174707788e9c8970284ee7024e081"
+}

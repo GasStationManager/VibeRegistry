@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "five-distance-sharp",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ThreeGap",
+  "version": 1,
+  "title": "Sharp Five-Distance and Sup-Norm Gap Theorems",
+  "abstract": "Formalizes sharp gap theorems for Kronecker sequences on tori: the Euclidean five-distance theorem on the 2-torus and the sup-norm gap bound, together with explicit arithmetic witnesses realizing the extremal cases - five distinct nearest-neighbour distances for the Euclidean and sup-norm metrics in dimension two, and nine distinct sup-norm distances in dimension three (Haynes-Marklof-Ramirez), via exact modular arithmetic on best simultaneous Diophantine approximations.",
+  "authors": [
+    "Vico Bonfioli"
+  ],
+  "repository": "https://github.com/ElVec1o/five-distance-sharp",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.ThreeGap",
+  "declarations": [
+    "ThreeGap.LinftyRecords3.nine_attained",
+    "ThreeGap.EuclideanRecords.sharp_attained",
+    "ThreeGap.LinftyRecords.sharp_attained"
+  ],
+  "informal": {
+    "ThreeGap.EuclideanRecords.sharp_attained": "Exhibits a base point on the 2-torus with an irrational coordinate and an N whose Euclidean nearest-neighbour distances realize exactly five distinct values, showing the Euclidean five-distance bound is sharp.",
+    "ThreeGap.LinftyRecords.sharp_attained": "Exhibits a base point on the 2-torus with an irrational coordinate and an N whose sup-norm nearest-neighbour distances realize exactly five distinct values, showing the sup-norm gap bound is sharp in dimension two.",
+    "ThreeGap.LinftyRecords3.nine_attained": "Exhibits a base point on the 3-torus with an irrational coordinate and an N whose sup-norm nearest-neighbour distances realize at least nine distinct values, showing the sup-norm gap bound is sharp in dimension three."
+  },
+  "classification": {
+    "msc2020": [
+      "11J71"
+    ],
+    "tags": [
+      "number-theory",
+      "kronecker-sequences",
+      "three-gap"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ThreeGap.lean",
+  "statement_hash": "sha256:b638e2e56b26917ead62e0929ade58835f3af2093ec536518cef663edc702f40"
+}

@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "aharonikorman",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/AharoniKorman",
+  "version": 1,
+  "title": "Disproof of the Aharoni-Korman Conjecture",
+  "abstract": "Formalizes Hollom's counterexample to the Aharoni-Korman fishbone conjecture for partially ordered sets.",
+  "authors": [
+    "Bhavik Mehta"
+  ],
+  "repository": "https://github.com/b-mehta/AharoniKorman",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.AharoniKorman",
+  "declarations": [
+    "LeanPool.AharoniKorman.aharoni_korman_false"
+  ],
+  "informal": {
+    "LeanPool.AharoniKorman.aharoni_korman_false": "Proves that not every partially ordered set has either an infinite antichain or a chain meeting every antichain in a partition."
+  },
+  "classification": {
+    "msc2020": [
+      "06A06",
+      "06A07"
+    ],
+    "tags": [
+      "order-theory",
+      "combinatorics",
+      "partial-orders"
+    ],
+    "branch": "order theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/AharoniKorman.lean",
+  "statement_hash": "sha256:f37ba243111d598acd76ec2740f2632e6c2e83e0f1c3d464715cbf3a3b037732"
+}

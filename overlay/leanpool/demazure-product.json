@@ -1,0 +1,65 @@
+{
+  "source": "leanpool",
+  "upstream_id": "demazure-product",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/DemazureProduct",
+  "version": 1,
+  "title": "Extended Demazure Product on ASP Permutations",
+  "abstract": "Formalizes the extended Demazure product on almost-sign-preserving integer permutations, including slipface models, residuals, greedy and stingy characterizations, reduction theorems, adjacent-transposition formulas, and 321-avoiding factorization results.",
+  "authors": [
+    "Nathan Pflueger"
+  ],
+  "repository": "https://github.com/npflueger/demazure",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.DemazureProduct",
+  "declarations": [
+    "LeanPool.DemazureProduct.AspPerm.star",
+    "LeanPool.DemazureProduct.AspPerm.star_assoc",
+    "LeanPool.DemazureProduct.Reduction.starGreedy",
+    "LeanPool.DemazureProduct.Reduction.reduce",
+    "LeanPool.DemazureProduct.Reduction.lres_stingy",
+    "LeanPool.DemazureProduct.ReducedProducts.star_eq_mul_iff_reducedProduct",
+    "LeanPool.DemazureProduct.Transpositions.starSigma",
+    "LeanPool.DemazureProduct.ASP321a.dprod_eq_iff",
+    "LeanPool.DemazureProduct.Tableaux.setValuedTableauEquivHeckeFactorization"
+  ],
+  "informal": {
+    "LeanPool.DemazureProduct.AspPerm.star": "Defines the extended Demazure product on almost-sign-preserving permutations.",
+    "LeanPool.DemazureProduct.AspPerm.star_assoc": "Proves associativity of the extended Demazure product on almost-sign-preserving permutations.",
+    "LeanPool.DemazureProduct.Reduction.starGreedy": "Characterizes the Demazure product as the Bruhat-maximum of ordinary products of smaller factors.",
+    "LeanPool.DemazureProduct.Reduction.reduce": "Reduces inequalities against a Demazure product to ordinary products of Bruhat-smaller factors with fixed shift.",
+    "LeanPool.DemazureProduct.Reduction.lres_stingy": "Gives the stingy characterization of the left residual as a Bruhat-minimum of ordinary products.",
+    "LeanPool.DemazureProduct.ReducedProducts.star_eq_mul_iff_reducedProduct": "Shows that the Demazure product equals ordinary multiplication exactly for reduced ASP products.",
+    "LeanPool.DemazureProduct.Transpositions.starSigma": "Proves the adjacent-transposition formula for multiplying an ASP permutation by a no-consecutive-pair involution.",
+    "LeanPool.DemazureProduct.ASP321a.dprod_eq_iff": "Characterizes Demazure factorizations of 321-avoiding ASP permutations by isolated inversion-set decompositions.",
+    "LeanPool.DemazureProduct.Tableaux.setValuedTableauEquivHeckeFactorization": "Relates fixed-shift set-valued tableaux to Hecke factorizations of 321-avoiding ASP permutations."
+  },
+  "classification": {
+    "msc2020": [
+      "05E05",
+      "20F55"
+    ],
+    "tags": [
+      "algebraic-combinatorics",
+      "demazure-product",
+      "bruhat-order",
+      "permutations"
+    ],
+    "branch": "algebraic combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/DemazureProduct.lean",
+  "statement_hash": "sha256:34db886ab13aed843278fbf25407a71a328792d0ad9b3d88c9320d4cf1f3e144"
+}

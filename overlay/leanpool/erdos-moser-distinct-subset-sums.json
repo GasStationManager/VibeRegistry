@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "erdos-moser-distinct-subset-sums",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ErdosMoser",
+  "version": 1,
+  "title": "Leo Moser's finite distinct-subset-sums inequality",
+  "abstract": "Formalizes the exact finite sum-of-squares inequality that Guy's 1982 account states as Theorem 2 and attributes to Leo Moser: a finite set A of natural numbers with distinct subset sums satisfies 4^|A| - 1 <= 3 * sum(a^2). It then derives direct and square-root lower bounds for the largest element of A. This does not claim the stronger historical asymptotic bound attributed jointly to Erdős and Moser, and Erdős Problem 1 remains open.",
+  "authors": [
+    "Egor Lyfar"
+  ],
+  "repository": "https://github.com/lyfar/erdos-moser-distinct-subset-sums-lean",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.ErdosMoser",
+  "declarations": [
+    "LeanPool.ErdosMoser.leoMoserVarianceBound",
+    "LeanPool.ErdosMoser.erdosMoserMaxBound",
+    "LeanPool.ErdosMoser.erdosMoserMaxSqrt"
+  ],
+  "informal": {
+    "LeanPool.ErdosMoser.leoMoserVarianceBound": "If a finite set A of natural numbers has distinct subset sums, then 4^|A| - 1 is at most three times the sum of the squares of the elements of A.",
+    "LeanPool.ErdosMoser.erdosMoserMaxBound": "For a nonempty finite set A of natural numbers with distinct subset sums, 4^|A| - 1 is at most 3|A| times the square of its largest element.",
+    "LeanPool.ErdosMoser.erdosMoserMaxSqrt": "The equivalent square-root lower bound on the largest element: sqrt((4^|A| - 1)/(3|A|)) is at most max(A)."
+  },
+  "classification": {
+    "msc2020": [
+      "11B13",
+      "11B75"
+    ],
+    "tags": [
+      "additive-combinatorics",
+      "number-theory",
+      "distinct-subset-sums",
+      "erdos-problems"
+    ],
+    "branch": "additive combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ErdosMoser.lean",
+  "statement_hash": "sha256:3f1a4da4297cd113b68b18589b954c492fc0dad4dc408182f4daeb1308c9a7d7"
+}

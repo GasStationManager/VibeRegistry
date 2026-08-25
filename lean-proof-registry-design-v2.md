@@ -1,5 +1,12 @@
 # Lean Proof Registry: Design & Implementation Plan (v2)
 
+> **Superseded in part.** The Level 1 / Level 2 split described below has been
+> replaced by the comparator-primary check model: comparator establishes an
+> entry, and nanoda, definitions, SafeVerify and lean4checker are per-entry
+> extras. See [docs/checks.md](docs/checks.md). The overlay, sign-off packet, and
+> statement-index layers added later are documented in `docs/`. Everything else
+> here — repo structure, spec conventions, build strategies — still holds.
+
 ## 1. Overview
 
 A registry that catalogs AI-assisted Lean 4 proofs from external repositories, provides human-vetted formal theorem specifications, and runs automated verification (SafeVerify + Comparator) to certify that implementations match their specs without smuggling in extra axioms.

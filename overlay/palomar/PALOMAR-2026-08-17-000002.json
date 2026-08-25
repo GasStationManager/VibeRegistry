@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-17-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-17-000002",
+  "version": 1,
+  "title": "Paul-Lez/hadamard-668-comparator",
+  "abstract": "Hadamard 668 Comparator formalization",
+  "authors": [
+    "Paul Lezeau"
+  ],
+  "repository": "https://github.com/Paul-Lez/hadamard-668-comparator",
+  "commit": "da94bc80401b6ece36d8dd2f5c316755fd97dd65",
+  "project_path": null,
+  "declarations": [
+    "Hadamard.H_isHadamard"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-17T19:10:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "da94bc80401b6ece36d8dd2f5c316755fd97dd65",
+        "fork_repository": "PalomarArchive/Paul-Lez--hadamard-668-comparator--2b123e0fb883",
+        "source_repository": "Paul-Lez/hadamard-668-comparator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2a8064c69663be6a4cadd91e7a7aad16fca54d5208edcc7b97b04c3796d4707a"
+}

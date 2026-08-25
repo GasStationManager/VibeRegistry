@@ -1,0 +1,67 @@
+{
+  "source": "leanpool",
+  "upstream_id": "brauergroup_new",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BrauerGroupNew",
+  "version": 1,
+  "title": "Brauer Group Core",
+  "abstract": "Formalizes central simple algebra infrastructure, Wedderburn-Artin structure theorems, and finite-field triviality for Brauer groups.",
+  "authors": [
+    "Yunzhou Xie",
+    "Yichen Feng",
+    "Jujian Zhang",
+    "Yael Dillies"
+  ],
+  "repository": "https://github.com/Whysoserioushah/BrauerGroup",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.BrauerGroupNew",
+  "declarations": [
+    "BrauerGroup.BruaerGroup",
+    "BrauerGroupHom.Br",
+    "WedderburnArtin",
+    "trivialBrauer",
+    "WedderburnArtin_algebra_version",
+    "IsCentralSimple.TensorProduct.simple",
+    "IsCentralSimple.TensorProduct.isCentral",
+    "CSA_implies_CSA"
+  ],
+  "informal": {
+    "BrauerGroup.BruaerGroup": "Constructs the Brauer group of a field from Brauer equivalence classes of central simple algebras.",
+    "BrauerGroupHom.Br": "Constructs the Brauer group functor from fields to commutative groups via scalar extension.",
+    "WedderburnArtin": "Proves a Wedderburn-Artin decomposition for simple Artinian rings as matrix algebras over division rings.",
+    "trivialBrauer": "Proves that every element of the Brauer group of a finite field is trivial.",
+    "WedderburnArtin_algebra_version": "Gives an algebra equivalence form of Wedderburn-Artin for finite-dimensional central simple algebras.",
+    "IsCentralSimple.TensorProduct.simple": "Proves simplicity of tensor products of central simple algebras over a field.",
+    "IsCentralSimple.TensorProduct.isCentral": "Proves centrality of tensor products of central algebras over a field.",
+    "CSA_implies_CSA": "Shows that the division algebra factor in a matrix presentation of a central simple algebra is central over the base field."
+  },
+  "classification": {
+    "msc2020": [
+      "16K20",
+      "16K50",
+      "16S35"
+    ],
+    "tags": [
+      "algebra",
+      "ring-theory",
+      "central-simple-algebras",
+      "brauer-groups"
+    ],
+    "branch": "ring theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/BrauerGroupNew.lean",
+  "statement_hash": "sha256:0145e956f2c8e96589c75979f719e3ef29bff7c1aaf288e35388b5089345ba02"
+}

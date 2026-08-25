@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "whitehead-theorem",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/WhiteheadTheorem",
+  "version": 1,
+  "title": "Whitehead's theorem for CW-complexes",
+  "abstract": "Formalizes Whitehead's theorem — a continuous map between CW-complexes that induces isomorphisms on all homotopy groups is a homotopy equivalence — including the supporting theory of CW-complexes, relative homotopy groups, the homotopy extension property, and compression of maps.",
+  "authors": [
+    "Jiazhen Xia"
+  ],
+  "repository": "https://github.com/jzxia/WhiteheadTheorem",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.WhiteheadTheorem",
+  "declarations": [
+    "WhiteheadTheorem"
+  ],
+  "informal": {
+    "WhiteheadTheorem": "Proves that a continuous map between CW-complexes inducing isomorphisms on all homotopy groups is a homotopy equivalence."
+  },
+  "classification": {
+    "msc2020": [
+      "55P10",
+      "55Q05",
+      "55U10"
+    ],
+    "tags": [
+      "algebraic-topology",
+      "cw-complex",
+      "homotopy-groups",
+      "weak-homotopy-equivalence"
+    ],
+    "branch": "algebraic topology"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/WhiteheadTheorem.lean",
+  "statement_hash": "sha256:17a9bc240e34670496b4db3f3ed6f67117b449d7ddf304405de9ed0662c7be41"
+}

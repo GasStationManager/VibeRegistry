@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "forward-euler",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ForwardEuler",
+  "version": 1,
+  "title": "Forward Euler Method",
+  "abstract": "Proves convergence of the explicit Euler method for ordinary differential equations.",
+  "authors": [
+    "Vasily Ilin",
+    "Aristotle"
+  ],
+  "repository": "https://github.com/Vilin97/forward_euler",
+  "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "entry_module": "LeanPool.ForwardEuler",
+  "declarations": [
+    "ODE.EulerMethod.dist_path_le",
+    "ODE.EulerMethod.tendsto_path",
+    "ODE.EulerMethod.dist_deriv_le"
+  ],
+  "informal": {
+    "ODE.EulerMethod.dist_deriv_le": "Bounds the local difference between the Euler derivative and the vector field along the Euler path.",
+    "ODE.EulerMethod.dist_path_le": "Bounds the distance between the Euler path and an exact solution using Gronwall's inequality.",
+    "ODE.EulerMethod.tendsto_path": "Proves that Euler paths converge pointwise to the true solution as the step size tends to zero from above."
+  },
+  "classification": {
+    "msc2020": [
+      "65L05",
+      "34A45"
+    ],
+    "tags": [
+      "numerical-analysis",
+      "ordinary-differential-equations",
+      "numerical-methods"
+    ],
+    "branch": "numerical analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ForwardEuler.lean",
+  "statement_hash": "sha256:172420a920249f4816149c862145c9887236c19e54ec837dbfc1e9919bdb6a64"
+}
