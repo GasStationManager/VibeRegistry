@@ -13,6 +13,7 @@
   ],
   "repository": "https://github.com/mrdouglasny/OSforGFF",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.OSforGFF",
   "declarations": [
     "OSforGFF.gaussianFreeField_satisfies_all_OS_axioms"
@@ -47,5 +48,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:89af686baec2f27c5f26775938a7370f5c82bc29bea1d6f819e9f1bd1f7642d9"
+  "lean_source_path": "LeanPool/OSforGFF.lean",
+  "statement_hash": "sha256:6906215cb085b8168a82fac3e1ee61fa191644cc0c43c58773e6968127855d28"
 }

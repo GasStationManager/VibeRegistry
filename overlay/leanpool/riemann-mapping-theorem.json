@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/vbeffara/RMT4",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.RiemannMappingTheorem",
   "declarations": [
     "RMT",
@@ -48,5 +49,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:5c182b292f4bbffcc38cc443913d48fbd37b34115afc0e63ecc5652f72b34d24"
+  "lean_source_path": "LeanPool/RiemannMappingTheorem.lean",
+  "statement_hash": "sha256:e985456f764d39de4270d5db72d72af5950a15e00fd0e4552e38b27bac4cf56f"
 }

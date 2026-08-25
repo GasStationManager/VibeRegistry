@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/erdos-moser-distinct-subset-sums-lean",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.ErdosMoser",
   "declarations": [
     "LeanPool.ErdosMoser.leoMoserVarianceBound",
@@ -47,5 +48,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:73e6635c2dc3ae53b08d9f4bb44f0909ef6ca9cac1d4b34b998ead147bd06e34"
+  "lean_source_path": "LeanPool/ErdosMoser.lean",
+  "statement_hash": "sha256:3f1a4da4297cd113b68b18589b954c492fc0dad4dc408182f4daeb1308c9a7d7"
 }

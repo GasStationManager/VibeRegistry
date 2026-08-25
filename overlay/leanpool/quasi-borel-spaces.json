@@ -11,6 +11,7 @@
   ],
   "repository": "https://github.com/YellPika/quasi-borel-spaces",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.QuasiBorelSpaces",
   "declarations": [
     "QuasiBorelSpace",
@@ -51,5 +52,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:d638a34f09104279f05d45306eb30cd7556370022f2208e60f48ca663a108c59"
+  "lean_source_path": "LeanPool/QuasiBorelSpaces.lean",
+  "statement_hash": "sha256:8f20348ada758825eabe887e5e5a79468725ae70f3e3dd3f25276de9772665a3"
 }

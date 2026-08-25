@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/andrejbauer/partial-combinatory-algebras",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.PartialCombinatoryAlgebras",
   "declarations": [
     "LeanPool.PartialCombinatoryAlgebras.PCA",
@@ -48,5 +49,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:c547a07ada4824732f17211c7637228f57eaa040324d70ccbe34ace985319245"
+  "lean_source_path": "LeanPool/PartialCombinatoryAlgebras.lean",
+  "statement_hash": "sha256:ee4f2510e01f29aedf90b3f5c0fe28649f1c4f7f94645749b36466d7f3062ef2"
 }

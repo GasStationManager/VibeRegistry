@@ -130,6 +130,13 @@ does not depend on lean4export at all. So the installer reads the format
 comparator's parser accepts and picks the newest lean4export revision that both
 targets the entry's Lean and emits that format.
 
+An entry pins a tool with `tools.comparator_rev`, `tools.lean4export_rev`,
+`tools.nanoda_rev` or `tools.landrun_rev`. Those pins are read by
+`verify_entry.sh`, which is also what installs the tools — CI deliberately does
+not pre-install them, because installing before the entry is read passed only the
+Lean toolchain and the pins never reached the installer. The tool cache is keyed
+on the toolchain *and* the requested revisions, so changing a pin rebuilds.
+
 `COMPARATOR_REV`, `LEAN4EXPORT_REV` and `NANODA_REV` override the choice. The log
 states which of the three applied, and the resolved revision of every tool is
 recorded in the result file:
@@ -149,6 +156,24 @@ update`: re-resolving would un-pin the dependencies of a tool whose whole job is
 reproducible verification. A tool build that fails is now a hard error — it used
 to print "built" and carry on, and the missing binary later surfaced as every
 check reporting `skip`.
+
+## Projects whose Lake config needs `-R`
+
+Some projects' compiled Lake configuration is rejected by a plain `lake env` or
+`lake build` and accepted only with `-R`, and the reconfigure does not persist.
+`build_copy.sh` detects this and sets `LAKE_NEEDS_RECONFIGURE`, after which our
+own lake calls pass `-R`. That matters: without it lean4export never ran for such
+a project, every declaration's kind came back unknown, and the run failed for a
+reason unrelated to the mathematics.
+
+It does not rescue comparator. Comparator runs `lake build <target>` inside its
+sandbox with no flags of ours, so for such a project it cannot load the config at
+all. The run says so before it starts, so the resulting failure is not read as a
+statement or proof failure. lean-zip is the current example: its config is
+rejected without `-R` even unpatched, while the entries comparator verifies
+successfully load theirs cleanly. Fixing it needs the build restructured so the
+spec is a sibling package requiring the implementation, rather than the
+implementation's own lakefile being extended.
 
 ## Self-test
 

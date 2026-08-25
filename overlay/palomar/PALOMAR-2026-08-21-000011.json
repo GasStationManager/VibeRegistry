@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-21-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-21-000011",
+  "version": 1,
+  "title": "lennrt/palomar-formalizations",
+  "abstract": "A concrete formalization of the infinite-family construction in the source: cycle and Cartesian-product distances on P_m □ C_(6m), the displayed landmarks (0,0), (0,2m), and (m-1,0), the four-piece cycle distance-pair locus, and injectivity of the resulting unordered multiset code for every even m at least 2. This establishes the three-landmark resolving upper bound. It does not formalize the separate general lower bound needed to conclude that the set is a basis or that the multiset dimension equals 3.",
+  "authors": [
+    "Lennart Rudolph",
+    "Sol",
+    "Fable"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "d259d35ad32d0e7c8c60ddd5a574aa987956e1d2",
+  "project_path": "zenodo-21925458/palomar",
+  "declarations": [
+    "PalomarMSET25.cycle_distance_pair_locus",
+    "PalomarMSET25.cycle_distance_pair_injective",
+    "PalomarMSET25.even_cylinder_three_landmarks_resolve"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C12",
+      "05C76",
+      "68R10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-21T19:03:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d259d35ad32d0e7c8c60ddd5a574aa987956e1d2",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e4619d387bd179438d43e0161393b155b569a69a56b08d9582729cf05dd13de0"
+}

@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/SamuelSchlesinger/shannon-1948-formalization",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Shannon1948Formalization",
   "declarations": [
     "LeanPool.Shannon1948Formalization.entropyNat_unique",
@@ -50,5 +51,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:fefaee4a3c16ca604df274a1e1f4824a78117e8ad72b2507b3aeb8c4abb9c340"
+  "lean_source_path": "LeanPool/Shannon1948Formalization.lean",
+  "statement_hash": "sha256:1ff17967b2638a99ba6ede62d69c6d884c4003c1e790256a13d7a0611e16ddd4"
 }

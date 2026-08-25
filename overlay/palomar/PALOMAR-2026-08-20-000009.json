@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-20-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-20-000009",
+  "version": 1,
+  "title": "sloisel/MPE-Formal",
+  "abstract": "Machine-checked proofs of three probabilistic convergence theorems for restarted Minimal Polynomial Extrapolation (MPE) applied to nonlinear fixed-point iterations.  Dithered restarts keep the error below the doubly exponential schedule delta^(theta^m), for any theta in (1,2), from every starting point -- the breakdown set included -- with an explicit failure-probability exponent over the dither; in the root sense the convergence order is at least theta.  Under simple spectrum, the error follows a quadratically shrinking dither schedule (root order at least 2) with failure probability linear in the initial radius up to a logarithmic factor, and MPE coincides with Reduced Rank Extrapolation at every cycle. With no dither at all, the restarted iteration from a single uniformly random starting point at worst squares the error at every cycle with high probability, under two checkable hypotheses on the Jacobian and the quadratic Taylor coefficients.  The registered statements are self-contained over mathlib: every object of the construction is introduced by an explicit defining equation among the hypotheses.",
+  "authors": [
+    "Sébastien Loisel"
+  ],
+  "repository": "https://github.com/sloisel/MPE-Formal",
+  "commit": "149d06281b1e5f2b2af85e03f8492e1b793ab4f9",
+  "project_path": null,
+  "declarations": [
+    "MPE.mpe_dithered",
+    "MPE.mpe_quadratic",
+    "MPE.mpe_undithered"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NA"
+    ],
+    "msc2020": [
+      "65B05",
+      "65F10",
+      "65H10",
+      "41A17",
+      "60D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T14:31:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "149d06281b1e5f2b2af85e03f8492e1b793ab4f9",
+        "fork_repository": "PalomarArchive/sloisel--MPE-Formal--357ef4ffc856",
+        "source_repository": "sloisel/MPE-Formal"
+      }
+    ]
+  },
+  "statement_hash": "sha256:007a796553b96be2acc33f68e50e1f18f67fee6b0d43e7cb28cae3eb04dcc1d0"
+}

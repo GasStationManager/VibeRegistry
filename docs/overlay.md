@@ -59,10 +59,32 @@ comment = "Harper (1966); initial-segment ordering matches the informal statemen
 ```
 
 `statement_hash` is what makes the sign-off honest over time: it hashes the
-declaration names, informal statements, and pinned commit that were reviewed.
-When upstream publishes a new version the hash stops matching and
+declaration names, informal statements, pinned commit and upstream snapshot that
+were reviewed. When upstream publishes a new version the hash stops matching and
 `import_upstream.py --reindex` reports the sign-off as **stale** instead of
 carrying it forward.
+
+Metadata alone is not enough for LeanPool, which publishes no per-project commit
+and vendors its projects at mutable `main`: a theorem's *type* could change while
+its name and informal text stay put. So every LeanPool record pins the
+`snapshot_commit` it was read from, and a signed-off record also carries
+`lean_source_hash` — the hash of the Lean file its statements live in, fetched at
+that snapshot:
+
+```bash
+python3 scripts/import_upstream.py --reindex --fetch-sources
+```
+
+A sign-off goes stale if either hash moves, and the record says which.
+
+A sign-off covers exactly the declarations it names. Listing
+`declarations = ["Foo.bar"]` signs `Foo.bar` and nothing else — the search index
+attaches it only to that declaration, and only a current, approved sign-off reads
+as one.
+
+A full sync (no `--limit`) also removes mirrored records the source no longer
+publishes; a partial import never prunes, since it says nothing about what
+upstream still has.
 
 Sign-offs on our own entries still go through the
 [sign-off issue form](../.github/ISSUE_TEMPLATE/spec-signoff.yml); extending that

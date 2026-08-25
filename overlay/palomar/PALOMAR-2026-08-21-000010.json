@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-21-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-21-000010",
+  "version": 1,
+  "title": "lennrt/palomar-formalizations",
+  "abstract": "A Lean formalization of Lemma 7.1 and the outer-matrix content of Theorem 7.2 for generalized cubic subdivision. It defines the naturally indexed 28n by 28n outer matrix row-by-row from the authenticated released MATLAB masks, including all previous/current/next-sector references. It constructs the paper's explicit topological permutation, proves that the first 24n coordinates are strictly upper triangular and that the remaining diagonal components are n scalar 1/64 blocks and n copies of the displayed 3 by 3 core, and proves unconditionally for every n at least 3 the characteristic polynomial X^(24n)(X-1/64)^n(X-1/32)^n(X-1/16)^n(X-1/8)^n.",
+  "authors": [
+    "Lennart Rudolph",
+    "Sol",
+    "Fable"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "d259d35ad32d0e7c8c60ddd5a574aa987956e1d2",
+  "project_path": "zenodo-21925578/palomar",
+  "declarations": [
+    "PalomarCubicHalfSpectrum.released_outer_source_normal_form",
+    "PalomarCubicHalfSpectrum.released_zero_block_strictly_upper",
+    "PalomarCubicHalfSpectrum.outer_core_charpoly",
+    "PalomarCubicHalfSpectrum.outer_normal_form_charpoly",
+    "PalomarCubicHalfSpectrum.released_outer_charpoly"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GR",
+      "math.NA"
+    ],
+    "msc2020": [
+      "15A18",
+      "65D07",
+      "65D17",
+      "65F15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-21T18:18:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d259d35ad32d0e7c8c60ddd5a574aa987956e1d2",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c0501cd04dcc41d021c01e42e063d4d7fe08d2b79c17ac76b0fe77c70aba0f0d"
+}

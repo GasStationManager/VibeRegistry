@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/madvorak/duality",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Duality",
   "declarations": [
     "extendedFarkas",
@@ -50,5 +51,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:7e8951f3e5fa65bff46d0b35b834cc573bd5fd254e708e1ad5b8fd63bc4a552c"
+  "lean_source_path": "LeanPool/Duality.lean",
+  "statement_hash": "sha256:f5813509970c7d76884d84de765961bd93050af31e0d200440e8ebffc99cd4f1"
 }

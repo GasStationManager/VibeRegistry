@@ -24,6 +24,32 @@ Outputs:
 Every record says what was checked and by whom, so an unsigned record is
 searchable without being misread as vetted.
 
+## A verdict is bound to one statement
+
+A verdict describes a statement, not a name. Each run records `spec_hash`, the
+hash of the exact declaration source it verified, and the index attaches a
+verdict only when that hash still matches the current spec *and* the entry still
+pins the commit the run used. Otherwise the record carries `verdict_state`
+saying why not, and the page shows it:
+
+| `verdict_state` | meaning |
+|---|---|
+| `current` | verified, and the statement and commit are unchanged since |
+| `stale-statement` | the spec statement changed after it was checked |
+| `stale-commit` | the entry now pins a different implementation commit |
+| `unbound-verdict` | result predates statement binding — cannot tell what was checked |
+| `statement-not-found` | the declaration is no longer in the spec |
+| `no-results` / `not-in-results` | never verified |
+
+Without this, editing a spec under an unchanged theorem name would leave the old
+`comparator: pass` showing against the new statement — a checkmark on text
+nobody checked. Re-verifying the entry is what restores the verdict.
+
+Sign-offs are attached the same way: only to the declarations they actually name
+(`declarations = ["*"]` or an exact list), and only a **current, approved**
+sign-off counts as one. A rejected review is shown as a rejection, never as a
+sign-off.
+
 ## Names must not conflict with Mathlib's
 
 A search surface is only readable if names mean what they normally mean. Spec

@@ -47,8 +47,9 @@ rm -rf "$PROJECT_DIR/work/selftest"
 
 echo ""
 echo "=== Checking the verdict ==="
-python3 - "$PROJECT_DIR/results/selftest/latest.json" <<'PY'
-import json, sys
+python3 - "$PROJECT_DIR/results/selftest/latest.json" "$ENTRY" "$PROJECT_DIR/scripts" \
+       "$PROJECT_DIR/specs/selftest" <<'PY'
+import json, os, sys
 
 with open(sys.argv[1]) as f:
     result = json.load(f)
@@ -71,6 +72,21 @@ tools = result.get("tools", {})
 for tool in ("comparator", "lean4export", "nanoda", "landrun"):
     if not tools.get(tool):
         problems.append(f"no revision recorded for {tool}")
+
+# A verdict must be bound to the statement it describes, or a spec can be edited
+# under an unchanged name while the old verdict still reads as current.
+sys.path.insert(0, os.path.join(sys.argv[3], "lib"))
+from parse_toml import load_config
+from spec_statement_hash import statement_hashes
+
+current = statement_hashes(load_config(sys.argv[2]), sys.argv[4])
+for theorem in result.get("theorems", []):
+    recorded = theorem.get("spec_hash", "")
+    expected = current.get(theorem["name"], "")
+    if not recorded:
+        problems.append(f"{theorem['name']}: no spec_hash recorded with the verdict")
+    elif recorded != expected:
+        problems.append(f"{theorem['name']}: spec_hash {recorded} != current {expected}")
 
 if problems:
     print("SELF-TEST FAILED")

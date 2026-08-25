@@ -14,6 +14,7 @@
   ],
   "repository": "https://github.com/Antoine-dSG/frieze_patterns",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.FriezePatterns",
   "declarations": [
     "main3",
@@ -54,5 +55,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:41e8791857f4acf8d79c7c991f234b98c819c11e0a39bdebffc7463c7735a0c5"
+  "lean_source_path": "LeanPool/FriezePatterns.lean",
+  "statement_hash": "sha256:8f24daa2b04448ffcb3aa0efe1f1c08967c457cdd9ec5f5a90f13b16273fce41"
 }

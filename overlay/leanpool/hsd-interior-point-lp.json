@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/makoto-yamashita/proof-on-a-homogeneous-self-dual-interior-point-method-for-linear-programming",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.HSDInteriorPointLP",
   "declarations": [
     "HSDInteriorPointLP.YTM_fixed_local_theory_from_paper",
@@ -51,5 +52,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:d1398d96dab3f251fad438d1cb3597d6a2a81547a46217a3b6c6f13ea82d7974"
+  "lean_source_path": "LeanPool/HSDInteriorPointLP.lean",
+  "statement_hash": "sha256:0f9ba84f49af681d24fd24cdea0f34596925dac24bf5758429f5d7cdff468664"
 }

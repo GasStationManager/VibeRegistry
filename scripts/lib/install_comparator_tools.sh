@@ -222,16 +222,21 @@ install_comparator_tools() {
 
     mkdir -p "$tools_dir"
 
-    # Record current toolchain for cache invalidation
-    local tc_cache="$tools_dir/.toolchain"
-    local cached_tc=""
+    # Cache key: the toolchain AND the revisions asked for. Keying on the
+    # toolchain alone meant changing a pin while staying on the same Lean
+    # version silently reused the old binary — the pin had no effect at all.
+    local tc_cache="$tools_dir/.toolstamp"
+    local stamp="toolchain=$toolchain comparator=${COMPARATOR_REV:-auto} lean4export=${LEAN4EXPORT_REV:-auto} landrun=${LANDRUN_REV:-default}"
+    local cached_stamp=""
     if [[ -f "$tc_cache" ]]; then
-        cached_tc=$(cat "$tc_cache" | tr -d '[:space:]')
+        cached_stamp=$(cat "$tc_cache")
     fi
 
     local need_rebuild=false
-    if [[ "$cached_tc" != "$toolchain" ]]; then
-        echo "Toolchain changed ($cached_tc -> $toolchain), rebuilding tools..."
+    if [[ "$cached_stamp" != "$stamp" ]]; then
+        echo "Tool stamp changed, rebuilding tools..."
+        echo "  was: ${cached_stamp:-<none>}"
+        echo "  now: $stamp"
         need_rebuild=true
     fi
 
@@ -247,6 +252,9 @@ install_comparator_tools() {
     # 5283024 is the commit before that upgrade. Override with tools.landrun_rev.
     export LANDRUN_BIN=""
     local landrun_rev="${LANDRUN_REV:-5283024a2f49b28046c3b4a06d7d775c058d4d80}"
+    if [[ -n "${LANDRUN_REV:-}" ]]; then
+        echo "landrun revision pinned by the entry: ${landrun_rev:0:12}"
+    fi
     if command -v go &> /dev/null; then
         local landrun_dir="$tools_dir/landrun"
         if [[ "$need_rebuild" == true ]] || [[ ! -f "$landrun_dir/landrun" ]]; then
@@ -401,7 +409,7 @@ for package in manifest.get('packages', []):
     # Stamp the cache only now that both binaries exist. Stamping earlier meant a
     # failed build was remembered as a successful one, and the next run skipped
     # the rebuild and reported "using cached build" for a tool that was not there.
-    echo "$toolchain" > "$tc_cache"
+    echo "$stamp" > "$tc_cache"
 
     return 0
 }

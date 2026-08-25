@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/SmaniaD/Burkholder",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Burkholder",
   "declarations": [
     "MeasureTheory.Lp_Burkholder_inequality_martingaleTransform",
@@ -45,5 +46,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:2d0a6cc1ae6a0e216e29aa9381417445bf8a79c0309a03fb9ef9f02f01dd67fa"
+  "lean_source_path": "LeanPool/Burkholder.lean",
+  "statement_hash": "sha256:bd67955867a360c755f4a2cf0e1060c39b1fbba3df07e6dac1f0518b8a419034"
 }

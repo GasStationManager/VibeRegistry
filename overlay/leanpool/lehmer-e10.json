@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/dillon-11/lehmer-E10",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.LehmerE10",
   "declarations": [
     "LehmerE10.main_theorem",
@@ -46,5 +47,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:9dc7e1e8467a5bd0f65103fe861ec21e26e5f082f5e6ba1a9635acf0988f6dea"
+  "lean_source_path": "LeanPool/LehmerE10.lean",
+  "statement_hash": "sha256:9fd98b24740073781cf31ba083a49072ce2e78dac2f37bca2184b308454bc5d1"
 }

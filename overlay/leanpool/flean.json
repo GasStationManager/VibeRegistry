@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/josephmckinsey/flean",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Flean",
   "declarations": [
     "Flean.Float",
@@ -52,5 +53,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:0a69f02aadcb64a600adaab4052a1d8cee6a77846b84754c644bfe5962933ec9"
+  "lean_source_path": "LeanPool/Flean.lean",
+  "statement_hash": "sha256:f3c59cc9c19bda96f5c99e1276b84a52c86884b8464cd26ea2ed67683110bf4a"
 }

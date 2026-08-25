@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/hojonathanho/isoperimetric",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Isoperimetric",
   "declarations": [
     "prekopa_leindler",
@@ -46,5 +47,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:1b6ec782bd001836ee125feb659aa4a23903edc31f1cef0903edf0d683e8c5ad"
+  "lean_source_path": "LeanPool/Isoperimetric.lean",
+  "statement_hash": "sha256:91a5f18bf18cc2f86d8fb763f1100aca6afe4155baad0a6b52b62a55381c040b"
 }

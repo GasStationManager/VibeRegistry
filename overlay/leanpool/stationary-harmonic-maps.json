@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/BrookWW/LeanStationaryHarmonicMaps",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.LeanStationaryHarmonicMaps",
   "declarations": [
     "LeanStationaryHarmonicMaps.StationaryHarmonicMap.StationaryW12LocMap",
@@ -50,5 +51,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:39f9a37422722b03743039f3d42b65072fa45fd8b2922615edeb115bd682da2d"
+  "lean_source_path": "LeanPool/LeanStationaryHarmonicMaps.lean",
+  "statement_hash": "sha256:a3ec63cf4257845df01ab25901edcd18683d7498e69bb87771860c841931c9b9"
 }

@@ -137,6 +137,7 @@ fi
 export COMPARATOR_REV=$($PARSE_TOML "$CONFIG_FILE" tools.comparator_rev 2>/dev/null || echo "")
 export LEAN4EXPORT_REV=$($PARSE_TOML "$CONFIG_FILE" tools.lean4export_rev 2>/dev/null || echo "")
 export NANODA_REV=$($PARSE_TOML "$CONFIG_FILE" tools.nanoda_rev 2>/dev/null || echo "")
+export LANDRUN_REV=$($PARSE_TOML "$CONFIG_FILE" tools.landrun_rev 2>/dev/null || echo "")
 export BUILD_TARGETS=$($PARSE_TOML "$CONFIG_FILE" build.targets 2>/dev/null || echo "")
 
 echo "Entry: $ENTRY_ID"
@@ -197,6 +198,21 @@ echo "Build lib path: $BUILD_LIB"
 
 FAILED=0
 TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+# Hash of the exact spec statement behind each declaration, recorded with the
+# verdict. A verdict is about a statement, not a name: without this a spec can be
+# edited under an unchanged name and the old verdict still reads as current.
+SPEC_HASHES_JSON=$(python3 "$SCRIPT_DIR/lib/spec_statement_hash.py" "$CONFIG_FILE" --spec-dir "$SPEC_DIR")
+
+# Our own `lake env` calls, reconfiguring first for projects whose compiled
+# config Lake will not load otherwise (set by build_copy).
+lake_env() {
+    if [[ "${LAKE_NEEDS_RECONFIGURE:-0}" -eq 1 ]]; then
+        lake env -R "$@"
+    else
+        lake env "$@"
+    fi
+}
 
 # Must match sanitize_name() in generate_comparator_configs.py: the full impl
 # module, dots to underscores, lowercased.
@@ -377,6 +393,16 @@ if [[ "$CHECK_COMPARATOR" -eq 1 ]]; then
                 GROUP_NANODA[$i]="unavailable"
             done
         fi
+    fi
+
+    if [[ "${LAKE_NEEDS_RECONFIGURE:-0}" -eq 1 ]]; then
+        echo ""
+        echo "WARNING: this project's compiled Lake config loads only with -R."
+        echo "         Comparator runs 'lake build' inside its sandbox and takes"
+        echo "         no flags from us, so it will fail to load the config."
+        echo "         That is a build-configuration problem, not a statement or"
+        echo "         proof problem — the verdict below says nothing about the"
+        echo "         mathematics."
     fi
 
     if [[ -n "$COMPARATOR" ]]; then
@@ -619,7 +645,7 @@ print(report.get('configs', {}).get(sys.argv[2], {}).get('status', 'missing'))
             # Run comparator via lake env (sets up LEAN_PATH)
             # Comparator internally uses landrun for sandboxing
             COMPARATOR_LOG=$(mktemp)
-            if (cd "$REPO_DIR" && lake env "$COMPARATOR" "$config") 2>&1 | tee "$COMPARATOR_LOG"; then
+            if (cd "$REPO_DIR" && lake_env "$COMPARATOR" "$config") 2>&1 | tee "$COMPARATOR_LOG"; then
                 echo "  Comparator $config_name: PASS"
                 if [[ -n "$group_idx" ]]; then
                     GROUP_COMPARATOR[$group_idx]="pass"
@@ -659,8 +685,8 @@ print(report.get('configs', {}).get(sys.argv[2], {}).get('status', 'missing'))
                     SOLUTION_MODULE=$(python3 -c "import json; print(json.load(open('$config'))['solution_module'])" 2>/dev/null || true)
                     SPEC_OUT=$(mktemp)
                     IMPL_OUT=$(mktemp)
-                    (cd "$REPO_DIR" && lake env "$LEAN4EXPORT" "$CHALLENGE_MODULE" -- "$FAILING_CONST" > "$SPEC_OUT" 2>&1) || echo "  (spec export failed)"
-                    (cd "$REPO_DIR" && lake env "$LEAN4EXPORT" "$SOLUTION_MODULE" -- "$FAILING_CONST" > "$IMPL_OUT" 2>&1) || echo "  (impl export failed)"
+                    (cd "$REPO_DIR" && lake_env "$LEAN4EXPORT" "$CHALLENGE_MODULE" -- "$FAILING_CONST" > "$SPEC_OUT" 2>&1) || echo "  (spec export failed)"
+                    (cd "$REPO_DIR" && lake_env "$LEAN4EXPORT" "$SOLUTION_MODULE" -- "$FAILING_CONST" > "$IMPL_OUT" 2>&1) || echo "  (impl export failed)"
                     echo "--- Spec export size: $(wc -l < "$SPEC_OUT") lines, Impl export size: $(wc -l < "$IMPL_OUT") lines ---"
                     echo "--- canonical form comparison (names resolved, index noise removed) ---"
                     python3 "$PROJECT_DIR/scripts/lib/canonical_const_diff.py" \
@@ -688,7 +714,11 @@ for ((i=0; i<NUM_GROUPS; i++)); do
     NAMES_COUNT=$(echo "$NAMES_JSON" | python3 -c "import sys,json; print(len(json.loads(sys.stdin.read())))")
     for ((j=0; j<NAMES_COUNT; j++)); do
         NAME=$(echo "$NAMES_JSON" | python3 -c "import sys,json; print(json.loads(sys.stdin.read())[$j])")
-        RESULTS+=("{\"name\":\"$NAME\",\"spec_module\":\"$SPEC_MODULE\",\"impl_module\":\"$IMPL_MODULE\",\"comparator\":\"$COMPARATOR_RESULT\",\"nanoda\":\"$NANODA_RESULT\",\"safe_verify\":\"$SAFE_VERIFY_RESULT\",\"lean4checker\":\"$CHECKER_RESULT\"}")
+        SPEC_HASH=$(echo "$SPEC_HASHES_JSON" | python3 -c "
+import json, sys
+print(json.load(sys.stdin).get(sys.argv[1], ''))
+" "$NAME")
+        RESULTS+=("{\"name\":\"$NAME\",\"spec_module\":\"$SPEC_MODULE\",\"impl_module\":\"$IMPL_MODULE\",\"comparator\":\"$COMPARATOR_RESULT\",\"nanoda\":\"$NANODA_RESULT\",\"safe_verify\":\"$SAFE_VERIFY_RESULT\",\"lean4checker\":\"$CHECKER_RESULT\",\"spec_hash\":\"$SPEC_HASH\"}")
     done
 done
 

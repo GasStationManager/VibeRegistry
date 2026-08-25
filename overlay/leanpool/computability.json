@@ -11,6 +11,7 @@
   ],
   "repository": "https://github.com/tannerduve/computability",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Computability",
   "declarations": [
     "Computability.RecursiveIn",
@@ -55,5 +56,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:48edd3832619b94e3c6ae96865dc648b03209284c9842b6e4463a1d98075a49c"
+  "lean_source_path": "LeanPool/Computability.lean",
+  "statement_hash": "sha256:0bb9232d3f1ad0818694f6d0a30199fe1518e2664db530e48fabab3d5bcce6da"
 }

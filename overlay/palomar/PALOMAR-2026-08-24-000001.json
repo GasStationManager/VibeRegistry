@@ -1,0 +1,69 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-24-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-24-000001",
+  "version": 2,
+  "title": "catskillsresearch/scott1980",
+  "abstract": "A Lean 4 / mathlib formalization of Dana Scott's 1980 Oxford lectures, published May 1981 as PRG-19 Lectures on a Mathematical Theory of Computation. The principal sourced Palomar result is the first sentence of Theorem 8.8: the neighbourhood system U over [0,1) ⊆ ℚ is universal, in the sense that every countable neighbourhood system D embeds as a subdomain (D ⊴ U). Comparator also selects two new formal corollaries: P4_embeds for Scott's Example 1.5 and Ssys_embeds for Exercise 7.22. Scott defines those systems but does not separately state the embeddings. Challenge.lean fixes the neighbourhood-system vocabulary, including Scott's standing assumption that the master token set Δ is non-empty, Scott's ⊴, and the concrete Definition 8.7 family U. This foundational universality result supplies a concrete host for all countable domains; it is relevant to domain theory, denotational semantics, mathematical logic, and formalized mathematics. The broader Lectures I–VIII development lives in Scott1980/Neighborhood/* and is not the advertised Comparator result. The informal account is arxiv.md; the working transcription is sources/PRG19.md. Lean was written by AI agents under the direction and review of the author. Dana Scott did not participate in or endorse this formalization. There is no sorry outside the deliberate holes in Challenge.lean, no project-defined axiom, and Mathlib is the only Lake dependency.",
+  "authors": [
+    "Lars Warren Ericson"
+  ],
+  "repository": "https://github.com/catskillsresearch/scott1980",
+  "commit": "ef6c05671582b7883ecd40b7081b642ce5351963",
+  "project_path": null,
+  "declarations": [
+    "Scott1980.Neighborhood.theorem_8_8",
+    "Scott1980.Neighborhood.NeighborhoodSystem.Element.ext",
+    "Scott1980.Neighborhood.NeighborhoodSystem.element_le_refl",
+    "Scott1980.Neighborhood.NeighborhoodSystem.element_le_trans",
+    "Scott1980.Neighborhood.NeighborhoodSystem.element_le_antisymm",
+    "Scott1980.Neighborhood.U_master_mem",
+    "Scott1980.Neighborhood.UMaster_nonempty",
+    "Scott1980.Neighborhood.U_inter_mem",
+    "Scott1980.Neighborhood.U_sub_master",
+    "Scott1980.Neighborhood.Example15.P4_master_mem",
+    "Scott1980.Neighborhood.Example15.P4_master_nonempty",
+    "Scott1980.Neighborhood.Example15.P4_inter_mem",
+    "Scott1980.Neighborhood.Example15.P4_sub_master",
+    "Scott1980.Neighborhood.Example15.P4_embeds",
+    "Scott1980.Neighborhood.Exercise722.Ssys_master_mem",
+    "Scott1980.Neighborhood.Exercise722.Ssys_master_nonempty",
+    "Scott1980.Neighborhood.Exercise722.Ssys_sub_master",
+    "Scott1980.Neighborhood.Exercise722.Ssys_inter_mem",
+    "Scott1980.Neighborhood.Exercise722.Ssys_embeds"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO",
+      "math.LO"
+    ],
+    "msc2020": [
+      "68Q55",
+      "06B35",
+      "03B70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-25T01:25:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ef6c05671582b7883ecd40b7081b642ce5351963",
+        "fork_repository": "PalomarArchive/catskillsresearch--scott1980--01865c711747",
+        "source_repository": "catskillsresearch/scott1980"
+      }
+    ]
+  },
+  "statement_hash": "sha256:420dc8133220b96c0d732334f42e388a4895953bbf1974f82186f5ce9f78394a"
+}

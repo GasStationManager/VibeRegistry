@@ -11,6 +11,7 @@
   ],
   "repository": "https://github.com/AlexeyMilovanov/BooleanIsoperimetry",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.BooleanIsoperimetry",
   "declarations": [
     "BooleanIsoperimetry.harper_theorem",
@@ -47,5 +48,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:2e2e80347354a141a9ff26d5a12921fc1aa2a2134c0fecc94f0f3bb5929972da"
+  "lean_source_path": "LeanPool/BooleanIsoperimetry.lean",
+  "statement_hash": "sha256:2c0e6c794f67e32af29c4191ae343b93a82cb245a1a49b7a65b3376792210757"
 }

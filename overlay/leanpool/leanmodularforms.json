@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/CBirkbeck/LeanModularForms",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.LeanModularForms",
   "declarations": [
     "generalizedResidueTheorem",
@@ -47,5 +48,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:6b80db3380a5ce5e203ba5f466b428a00263e5d853c19bad7b42f6971dd444f9"
+  "lean_source_path": "LeanPool/LeanModularForms.lean",
+  "statement_hash": "sha256:da9e6614c0ae79fb45463fbd1e2bf95f3b3bfafd43c0eb266af7ab1928c97dd0"
 }

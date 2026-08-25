@@ -14,6 +14,7 @@
   ],
   "repository": "https://github.com/AxiomMath/partial-regularity",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.PartialRegularity",
   "declarations": [
     "LeanPool.PartialRegularity.Extension.irregularPrimes_isBigO"
@@ -45,5 +46,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:58a9bd33cb3e67632bd0295568af9f6f3f3547a3361e64be24f3e832cb97ff81"
+  "lean_source_path": "LeanPool/PartialRegularity.lean",
+  "statement_hash": "sha256:8b530a315b211b358e0b057c56be2e5be2d45fabd91ff1f3b6c1e50bc1eae8c8"
 }

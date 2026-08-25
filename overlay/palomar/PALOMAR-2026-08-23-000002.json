@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-23-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-23-000002",
+  "version": 1,
+  "title": "rwst/Square-Roots",
+  "abstract": "A Lean 4 / Mathlib development of a paper, which answers a problem by Dubickas. Dubickas (Glasgow Math. J. 48 (2006), 331–336) splits the reals α > 1 in two: α lies in 𝒵 when some real ξ ≠ 0 makes every integral part ⌊ξαⁿ⌋, n ≥ 1, even, and in 𝒮 otherwise. At α = 3/2 this is Mahler's question, and open; his Problem 3 asks whether √3 lies in 𝒮 or in 𝒵. This formalization settles that question and the whole square-root slice: √3 ∈ 𝒵 by an explicit ξ = 1.34160899796…, and for an integer m ≥ 2 one has √m ∈ 𝒮 exactly when m = 2. The cells √5, √6, √7, √8 put four explicit points of 𝒵 in the interval (2,3), the only interval where an answer to Dubickas's Problem 5 could live; they are formalized (SZ.exists_mem_MahlerZ_Ioo_two_three) but are not separately compared, being subsumed by the compared Theorem B. The mechanism is not Diophantine approximation but the arithmetic of Cantor sets, and rests on the triviality that √m² = m is an integer: splitting n into even and odd values turns the one orbit into two base-m orbits coupled by x + √m y = σ, and a covering induction — Utz's 1951 theorem on the distance set of the Cantor discontinuum at m = 3, proved here for every base and every modulus — solves that equation inside the restricted-digit set. The same machinery at a general modulus gives, for p ≥ 2 and non-square m ≥ 3 in either of two explicit ranges, a real ξ ≠ 0 with p ∣ ⌊ξ√mⁿ⌋ for every n ≥ 1, hence integral parts that are composite from some point on; and the greedy's branching shows the witnesses for √3 have cardinality 2^ℵ₀, so all but countably many of them are transcendental. The informal account is the companion paper doi:10.13140/RG.2.2.32215.43682. Credit divides as follows, in contributor terms rather than bibliographic ones: the mathematical discovery is the Fable-5 agent's; the formalization is the Fable-5 and Opus-5 agents'; the agents also drafted the prose of the companion paper, which the author revised; the direction and the review are the author's, who is responsible for the mathematical content. Bibliographic authorship of the paper is the author's alone — the collaboration is credited in its Acknowledgements, not in its byline, as is usual for an AI tool. There is no sorry outside the deliberate placeholders in Challenge.lean, no project-defined axiom, no native_decide, and Mathlib is the only Lake dependency of the development itself.",
+  "authors": [
+    "Ralf Stephan (direction, review, paper author)",
+    "Claude Code, claude-fable-5 (mathematical discovery, formalization, paper drafting)",
+    "Claude Code, claude-opus-5 (formalization, paper drafting)"
+  ],
+  "repository": "https://github.com/rwst/Square-Roots",
+  "commit": "e3184902f13967b9f20f37244b3d1c30610ca846",
+  "project_path": null,
+  "declarations": [
+    "SZ.sqrtTwo_mem_S",
+    "SZ.sqrtThree_mem_MahlerZ",
+    "SZ.sqrtThree_notMem_S",
+    "SZ.sqrt_natCast_mem_S_iff",
+    "SZ.mem_MahlerZ_of_three_le",
+    "SZ.sqrt_mem_MahlerZ_of_four_le",
+    "SZ.exists_dvd_floor_sqrt",
+    "SZ.exists_eventually_composite_sqrt",
+    "SZ.continuum_le_mk_witnesses_sqrtThree",
+    "SZ.exists_transcendental_witness_sqrtThree"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.DS"
+    ],
+    "msc2020": [
+      "11J71",
+      "11K16",
+      "11A63",
+      "28A80",
+      "11B83"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-23T10:11:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e3184902f13967b9f20f37244b3d1c30610ca846",
+        "fork_repository": "PalomarArchive/rwst--Square-Roots--3c293e4b711d",
+        "source_repository": "rwst/Square-Roots"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ea0d062a0dc0f4000e8bd80948db1f151d9c2fce5f42c09a28151361a7bd160f"
+}

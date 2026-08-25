@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/Vilin97/Clawristotle",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Clawristotle",
   "declarations": [
     "VML.Theorem42",
@@ -45,5 +46,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:92aee15aeec3dd4745fae3fa598d0dd1633f6a0ff35d9772ab3075768f3de10b"
+  "lean_source_path": "LeanPool/Clawristotle.lean",
+  "statement_hash": "sha256:da6cf5c8b6048a04691066b6fbe1329f860f1b6246f7c69f69e515ac97216ecb"
 }

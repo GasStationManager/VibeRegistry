@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-20-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-20-000006",
+  "version": 1,
+  "title": "rwst/Even-Integral",
+  "abstract": "A Lean 4 / Mathlib development of a paper, which improves on a problem by Dubickas. Dubickas (Glasgow Math. J. 48 (2006), 331–336) splits the reals α > 1 in two: α lies in 𝒵 when some real ξ ≠ 0 makes every integral part ⌊ξαⁿ⌋, n ≥ 1, even, and in 𝒮 otherwise. At α = 3/2 this is Mahler's question, and open; his Problem 5 asks whether 𝒮 has an element greater than 2. This formalization decides 𝒮 versus 𝒵 for every quadratic Pisot number: the golden mean is the only one in 𝒮, so none greater than 2 lies there and Problem 5 loses its whole natural class of candidates, though the problem itself stays open. The case that had resisted the source paper's four constructions is α = 1 + √2, settled by an exact computation rather than an estimate: with ξ = (2−√2)/4 one has ⌊ξ(1+√2)^(n+1)⌋ = Pₙ − [n odd] for the Pell numbers P, so every integral part is even. The mechanism generalizes: for a real quadratic pair with second conjugate in (−1,0), the closed-form multiplier ξ = −β/(α−β) makes m divide ⌊ξαⁿ⌋ for every n ≥ 0 whenever m ∣ a and m ∣ b−1 — an exact congruence, not a confinement of fractional parts — and all but finitely many of those integral parts are then composite. The informal account is the companion paper doi:10.13140/RG.2.2.20582.79689. Credit divides as follows, in contributor terms rather than bibliographic ones: the mathematical discovery and the formalization are the AI agent's; the agent also drafted the prose of the companion paper, which the author revised; the direction and the review are the author's, who is responsible for the mathematical content. Bibliographic authorship of the paper is the author's alone — the agent is credited in its Acknowledgements, not in its byline, as is usual for an AI tool. There is no sorry outside the deliberate placeholders in Challenge.lean, no project-defined axiom, no native_decide, and Mathlib is the only Lake dependency.",
+  "authors": [
+    "Ralf Stephan (direction, review, paper author)",
+    "Claude Code, claude-opus-5 (mathematical discovery, formalization, paper drafting)"
+  ],
+  "repository": "https://github.com/rwst/Even-Integral",
+  "commit": "db8f6025df35517cb9552df04d18345c68d8ac11",
+  "project_path": null,
+  "declarations": [
+    "SZ.quadPisot_notMem_S_of_two_lt",
+    "SZ.isQuadPisot_silver",
+    "SZ.quadPisot_mem_S_iff",
+    "SZ.quadPisot_mem_MahlerZ",
+    "SZ.isQuadPisot_golden",
+    "SZ.floor_silver_pell",
+    "SZ.even_floor_silver",
+    "SZ.silver_mem_MahlerZ",
+    "SZ.dvd_floor_of_neg",
+    "SZ.eventually_composite"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.DS"
+    ],
+    "msc2020": [
+      "11J71",
+      "11K16",
+      "11R06",
+      "11B37",
+      "11B39",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T10:58:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "db8f6025df35517cb9552df04d18345c68d8ac11",
+        "fork_repository": "PalomarArchive/rwst--Even-Integral--d8277e09a8e7",
+        "source_repository": "rwst/Even-Integral"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e40a5552d81b097c6c72ecd9cce4ecd56510ca90c11c5134875abd87305b1016"
+}

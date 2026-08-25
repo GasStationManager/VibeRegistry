@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/Parcly-Taxel/Redhill",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Redhill",
   "declarations": [
     "not_ramaekersConjecture_ge_six",
@@ -51,5 +52,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:bc74a42e2c150b58e1336784b0bd7b3907108e6ea1fc86f642a51b27b277834c"
+  "lean_source_path": "LeanPool/Redhill.lean",
+  "statement_hash": "sha256:25b992522a8fcbb6e3c41155c85727ec59e183ea7165eda1b7f91af5708e4d37"
 }

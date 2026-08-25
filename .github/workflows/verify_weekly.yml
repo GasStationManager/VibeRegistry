@@ -47,22 +47,11 @@ jobs:
         with:
           go-version: '1.21'
 
-      - name: Install comparator tools (landrun, lean4export, comparator)
-        run: |
-          TOOLCHAIN_FILE="specs/${{ matrix.entry }}/lean-toolchain"
-          source scripts/lib/install_comparator_tools.sh
-          install_comparator_tools "$TOOLCHAIN_FILE" "${{ runner.temp }}/tools"
-          echo "COMPARATOR_BIN=$COMPARATOR_BIN" >> "$GITHUB_ENV"
-          echo "LEAN4EXPORT_BIN=$LEAN4EXPORT_BIN" >> "$GITHUB_ENV"
-          echo "LANDRUN_BIN=$LANDRUN_BIN" >> "$GITHUB_ENV"
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
 
-      # The weekly run is the thorough one, so it always adds the second kernel.
-      - name: Install nanoda (second kernel)
-        run: |
-          source scripts/lib/install_comparator_tools.sh
-          install_nanoda "${{ runner.temp }}/tools" || echo "nanoda unavailable; comparator will run Lean-kernel only"
-          echo "NANODA_BIN=$NANODA_BIN" >> "$GITHUB_ENV"
-
+      # Tools are installed by verify_entry.sh so that each entry's own
+      # tools.*_rev pins reach the installer; see verify.yml for the detail.
       - name: Verify ${{ matrix.entry }} (comparator + nanoda)
         run: |
           ./scripts/verify_entry.sh "entries/${{ matrix.entry }}.toml" --with-nanoda
@@ -76,7 +65,10 @@ jobs:
 
   commit-results:
     needs: verify
-    if: github.event_name == 'schedule'
+    # always(): the weekly run covers every entry, and `needs` alone would skip
+    # this job whenever any single entry failed — discarding refreshed results
+    # for all the entries that succeeded.
+    if: always() && github.event_name == 'schedule'
     runs-on: ubuntu-latest
     permissions:
       contents: write

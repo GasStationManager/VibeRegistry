@@ -12,6 +12,7 @@
   ],
   "repository": "https://github.com/pitmonticone/SumsThreeSquares",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.SumsThreeSquares",
   "declarations": [
     "LeanPool.SumsThreeSquares.blueprint_case_mod8_eq3"
@@ -44,5 +45,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:e017f4aaee139c39dc40bec881bef72fa10360c2d8fbb651d3e07ad57741b19a"
+  "lean_source_path": "LeanPool/SumsThreeSquares.lean",
+  "statement_hash": "sha256:ae8fec4bda751b0e9e8adbc0d05cc85feda52b777ddd74b67b6abd846e8ecf99"
 }

@@ -138,9 +138,14 @@ lc_rev = sys.argv[3] if len(sys.argv) > 3 else ""
 with open(manifest_path) as f:
     manifest = json.load(f)
 
-# Fix manifest name if it contains hyphens (not a valid Lean Name)
-if isinstance(manifest.get("name"), str) and "-" in manifest["name"]:
-    manifest["name"] = manifest["name"].replace("-", "_")
+# Lake parses the manifest's `name` as a Lean Name, and a bare hyphenated name
+# fails to parse. Quote it rather than substituting characters: the name also
+# has to match the `package` declaration in the lakefile, so rewriting
+# «lean-zip» to «lean_zip» would break a project that was already valid.
+name = manifest.get("name")
+if isinstance(name, str) and "-" in name and not name.startswith("\u00ab"):
+    manifest["name"] = "\u00ab" + name + "\u00bb"
+    print(f"  Quoted package name: {name} -> {manifest['name']}")
 
 names = [p["name"] for p in manifest.get("packages", [])]
 
@@ -244,6 +249,20 @@ PYEOF
         (cd "$repo_dir" && lake build $RECONFIG_FLAG "$mod")
     done
     echo "Build complete."
+
+    # 6. Does this project's compiled Lake configuration load without -R?
+    #
+    # Some projects' configs are rejected by a plain `lake env` / `lake build`
+    # and accepted only with -R, and a reconfigure does not persist. That matters
+    # downstream: our own lake calls can pass -R, but comparator runs
+    # `lake build <target>` inside its sandbox with no flags of ours, so for such
+    # a project comparator cannot load the config at all.
+    export LAKE_NEEDS_RECONFIGURE=0
+    if ! (cd "$repo_dir" && lake env true) &> /dev/null; then
+        export LAKE_NEEDS_RECONFIGURE=1
+        echo "NOTE: this project's compiled Lake config is rejected without -R."
+        echo "      Our own lake calls will pass -R."
+    fi
 
     # Return the repo directory for downstream use
     echo "REPO_DIR=$repo_dir"

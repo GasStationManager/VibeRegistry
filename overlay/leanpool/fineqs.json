@@ -11,6 +11,7 @@
   ],
   "repository": "https://github.com/nasqret/fineqs",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Fineqs",
   "declarations": [
     "LeanPool.Fineqs.theorem_1",
@@ -51,5 +52,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:299e9b972a4d41e07579a80d63f5016cfe4ca40d96faa1a6ddfe4f09ebca907c"
+  "lean_source_path": "LeanPool/Fineqs.lean",
+  "statement_hash": "sha256:50e0ce699a68b706958c71fcdc440a54ab37c74b60efcecafb89c02bd50c2c8d"
 }

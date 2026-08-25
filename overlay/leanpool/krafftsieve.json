@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/ElNando888/KrafftSieve",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.KrafftSieve",
   "declarations": [
     "KrafftSieve.mu_min_lt_one_implies_tpc",
@@ -45,5 +46,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:8aa8db4008e96dd17ff319ad277584a0ad97d690df0b8c0c4ea878c9f2507025"
+  "lean_source_path": "LeanPool/KrafftSieve.lean",
+  "statement_hash": "sha256:0bba6956a3e026b4415b5788be0907c63c5849d99e573989d9d76cba333425ad"
 }

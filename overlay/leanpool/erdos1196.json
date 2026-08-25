@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/math-inc/Erdos1196",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Erdos1196",
   "declarations": [
     "PrimitiveSetsAboveX.mainTheorem",
@@ -44,5 +45,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:dfcac23701eae220652baba2e735e9707808ed5c5d12dc97c81a6e6c0939e961"
+  "lean_source_path": "LeanPool/Erdos1196.lean",
+  "statement_hash": "sha256:935c4d13b74f3dd4c777701d701292cd2607d30bc6b6bdd0e986f92699853ea3"
 }

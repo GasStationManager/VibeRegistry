@@ -13,6 +13,7 @@
   ],
   "repository": "https://github.com/LieLean/LowDimSolvClassification",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.LowDimSolvClassification",
   "declarations": [
     "LieAlgebra.Dim3.classification"
@@ -44,5 +45,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:af2013339482067fd600ded43f613d28111dc68aa94b09bbd23e8461fcdd157b"
+  "lean_source_path": "LeanPool/LowDimSolvClassification.lean",
+  "statement_hash": "sha256:e8cea4a0a74bb8d1c5e902e7ddf00eac55f08050d27cb67bf2a29f8af685df1d"
 }

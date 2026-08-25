@@ -11,6 +11,7 @@
   ],
   "repository": "https://github.com/b-mehta/ABC-Exceptions",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.ABCExceptions",
   "declarations": [
     "abcConjecture_iff_countTriples",
@@ -47,5 +48,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:2cda0bc3f7df62aca8372e892741f130f15b626ed7be94343fae1bde6b46a89a"
+  "lean_source_path": "LeanPool/ABCExceptions.lean",
+  "statement_hash": "sha256:b287aa20b2de6787755fd4434f517b3fa3d6051b5f2849e0793a46df1689566d"
 }

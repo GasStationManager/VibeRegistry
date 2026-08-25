@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/math-xmum/Brouwer",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Brouwer",
   "declarations": [
     "ExistsNashEq",
@@ -55,5 +56,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:58c4f4f31d4f5fa7369ce561196b1665cd344e8fbeb1649b5f01f3abecc375cb"
+  "lean_source_path": "LeanPool/Brouwer.lean",
+  "statement_hash": "sha256:81502ca44026cff4f8f0ccfe0df0a05200359b4a62f567ed69a5eed8308c35ab"
 }

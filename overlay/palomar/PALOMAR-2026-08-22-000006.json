@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-22-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-22-000006",
+  "version": 1,
+  "title": "ehrlich-b/sequential-products-lean",
+  "abstract": "A sequential product on the effects of an order-unit space is a binary operation a & b, read \"first test a, then test b with the state updated by the first test\", satisfying the seven axioms S1-S7 of van de Wetering (arXiv:1803.11139, Definition 2). This development registers two classification theorems for such products on the Hermitian matrix algebras.\nOn H_N(R), the Hermitian N x N real matrices with N >= 1, every sequential product is the Lueders product sqrt(a) b sqrt(a): there is no free parameter. On H_N(C) with N >= 3, every sequential product has the twist normal form a^(1/2+it) b a^(1/2-it) for a unique real t. The twist family is a one-parameter deformation of the Lueders product, and the complex theorem says nothing outside it satisfies the axioms.\nPrior art. That Lueders is not the only sequential product, and twisted products of this shape in particular, are not new: Gudder asked the question in 2005, Shen and Wu answered it negatively and gave a general construction in 2009 (arXiv:0905.0596), and Liu, Wu and Wu showed those examples are unitary equivalent to Lueders (arXiv:1009.2593). What is registered here is the converse direction. The examples are not exhibited; they are shown to be forced, with the parameter unique, and with no product outside the family admissible. The equations are asserted on all effects, including singular ones, and the uniqueness of t is part of the registered statement.\nDirection. Both registered classification theorems are necessity: a product satisfying the axioms is supplied, and the theorem says it has the stated normal form. The two converses differ in status and neither is registered. For the complex case, that each real t defines a SeqProd satisfying S2 is proved in the wider development; together with the registered uniqueness it is what would make the parameter map injective. For the real case, that the Lueders formula defines a SeqProd satisfying S2 is not proved anywhere in this development. Nothing here registers a bijection between parameters and products, or the admissibility of the Lueders formula.\nThe package also registers two classical theorems the development proves in passing. Albert's power-associativity theorem: in a commutative Jordan ring carrying an R-module structure, x^(m+1) * x^(n+1) = x^(m+n+2), with no unit, finite dimension, formal reality or positivity assumed. And the real case of Wigner's theorem: every transition probability preserving self-map of the rays of a finite-dimensional real inner product space is induced by a linear isometry, with bijectivity not assumed but derived.\nBoth classification theorems are proved from S1-S7 with no hypotheses beyond the dimension bounds, and their axiom closures contain only Lean's three core axioms (propext, Classical.choice, Quot.sound). The continuity axiom S2 is stated in the order-unit norm, as an explicit epsilon-delta condition, so the statement file depends on no normed-space or topological instance; the equivalence with continuity in the carrier's Frobenius topology is proved in the development.\nScope. The repository carries three Comparator configurations, selecting four theorems between them: the two sequential-product classifications above, which use the SeqProd interface and the axiom S2 and correspond to numbered rows of the manuscript; and the two ancillary classical theorems, Albert and Wigner, which use neither and correspond to no manuscript row. Each configuration is a separate submission and a separate entry; no one entry contains all four. No Palomar claim is made here for any other declaration in the repository.\nThe two classification theorems are two rows of a thirty-six row manifest tracking the numbered results of the accompanying manuscript. The manuscript as a whole is not formalized: as of 2026-08-12 the manifest stands at 12 rows formalized, 19 partial, and 5 absent. In particular the quaternionic row H_n(H) and the Albert-algebra row H_3(O) of the manuscript's main theorem are not proved here, and the coalescence and diagonal-homomorphism lemmas are established on the concrete carrier H_N(C) rather than at the manuscript's stated generality of a finite-dimensional simple Euclidean Jordan algebra.",
+  "authors": [
+    "Bryan Ehrlich"
+  ],
+  "repository": "https://github.com/ehrlich-b/sequential-products-lean",
+  "commit": "9c6d92f5fc222d9d1646ae6044dcec053900ca83",
+  "project_path": null,
+  "declarations": [
+    "TwistNormalForm.real_classification",
+    "TwistNormalForm.complex_classification"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OA",
+      "math.RA",
+      "quant-ph"
+    ],
+    "msc2020": [
+      "17C65",
+      "81P16",
+      "46L70",
+      "81P10",
+      "15B57",
+      "17C90"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-22T16:18:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9c6d92f5fc222d9d1646ae6044dcec053900ca83",
+        "fork_repository": "PalomarArchive/ehrlich-b--sequential-products-lean--7c5c76db591c",
+        "source_repository": "ehrlich-b/sequential-products-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7f7891cf672477fcf2a115aeb3c2dd62d8d7abecd1b6a93a3fab4a8a756f3cf4"
+}

@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/Jun2M/Main-theorem-of-polytopes",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Polytopes",
   "declarations": [
     "MainTheoremOfPolytopes",
@@ -44,5 +45,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:ecbe37598647c7d3e5fdc55acfa03fcb4cee61f2c61d1fa0d6dc01c5c3b4a15d"
+  "lean_source_path": "LeanPool/Polytopes.lean",
+  "statement_hash": "sha256:c463695bd98023cfad7573506b1145550de871ff8a7667015cfa2baf72dcf98e"
 }

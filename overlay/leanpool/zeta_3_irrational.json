@@ -11,6 +11,7 @@
   ],
   "repository": "https://github.com/ahhwuhu/zeta_3_irrational",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.Zeta3Irrational",
   "declarations": [
     "LeanPool.Zeta3Irrational.zeta3_irrational",
@@ -51,5 +52,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:c8a75cdd8a26baecc11bd894d4535bf8940525ef6005c87760e9eb463a9252a1"
+  "lean_source_path": "LeanPool/Zeta3Irrational.lean",
+  "statement_hash": "sha256:c54b9e573f058a2b77f416c6368f8ad9ed9e335ce3ac501514aaca764fa197fd"
 }

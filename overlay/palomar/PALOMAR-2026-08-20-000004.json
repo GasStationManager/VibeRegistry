@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-20-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-20-000004",
+  "version": 1,
+  "title": "guanyangwang/ktv-swap-lean-comparator",
+  "abstract": "Lean 4 formalization and Comparator verification of the spectral-gap theorem for the lazy swap chain on binary contingency tables with fixed margins.",
+  "authors": [
+    "Guanyang Wang"
+  ],
+  "repository": "https://github.com/guanyangwang/ktv-swap-lean-comparator",
+  "commit": "fd4dc985900b1fba59791067dcf3bf9341a94bda",
+  "project_path": null,
+  "declarations": [
+    "KTV.Johnson.MathlibOnly.binaryFixedMarginLazySwapChain_spectralGap_card"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "cs.DS",
+      "math.CO",
+      "stat.CO"
+    ],
+    "msc2020": [
+      "60J10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-20T05:28:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fd4dc985900b1fba59791067dcf3bf9341a94bda",
+        "fork_repository": "PalomarArchive/guanyangwang--ktv-swap-lean-comparator--1838500af2cf",
+        "source_repository": "guanyangwang/ktv-swap-lean-comparator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a585a3896aa006bb51d93bc8f1a2c875a938d97b93b19b7c7d1e8d64a114f928"
+}

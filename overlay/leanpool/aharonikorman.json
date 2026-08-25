@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/b-mehta/AharoniKorman",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.AharoniKorman",
   "declarations": [
     "LeanPool.AharoniKorman.aharoni_korman_false"
@@ -42,5 +43,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:0b3384dc18a5453d9a76623d7b3d435dd1c08a9f9fdca38d234ca0589693b631"
+  "lean_source_path": "LeanPool/AharoniKorman.lean",
+  "statement_hash": "sha256:f37ba243111d598acd76ec2740f2632e6c2e83e0f1c3d464715cbf3a3b037732"
 }

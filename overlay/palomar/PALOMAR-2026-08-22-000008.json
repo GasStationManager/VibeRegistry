@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-22-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-22-000008",
+  "version": 1,
+  "title": "adas1236/KaltonPeckPalomar",
+  "abstract": "We prove the following mod-2 identity for real symplectic Banach spaces:\n  If $(X, \\omega)$ is a real symplectic Banach space, and $T \\in L(X)$ satisfies:\n    (1) $I + T^+T$ is Fredholm\n    (2) $I + T^2$ has finite rank\n  Then\n    $\\rank(T^2 + I) \\equiv \\dim \\ker (I + T^+T) \\pmod 2$.\nIn the above, $T^+$ represents the symplectic adjoint. See our paper for more depth in definitions. This identity is applied to show that no hyperplane of the real Kalton-Peck space has a complex structure. We note that in our notation, a symplectic Banach space always assumes that the symplectic form \\omega is a strong symplectic form. See our paper for more detail on the definitions.\nWe formalize:\n (1) The mod-2 identity for arbitrary real symplectic Banach spaces\n (2) An application of the identity to show that if $T \\in L(Z_2)$ and $T^2 + I$ has finite rank, then $T^2 + I$ has even rank.\n     Here, Z_2 is the real Kalton-Peck space.\n (3) The corollary that no hyperplane of the real Kalton-Peck space has a complex structure.",
+  "authors": [
+    "Avik Das"
+  ],
+  "repository": "https://github.com/adas1236/KaltonPeckPalomar",
+  "commit": "6830235450adb5f7da6bc683f7ac6b1767320cc0",
+  "project_path": null,
+  "declarations": [
+    "KaltonPeck.rankParityGeneral",
+    "KaltonPeck.rankParityZ2",
+    "KaltonPeck.noHyperplaneComplexStructure"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA"
+    ],
+    "msc2020": [
+      "46B03",
+      "46B20",
+      "47A53"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-22T20:27:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6830235450adb5f7da6bc683f7ac6b1767320cc0",
+        "fork_repository": "PalomarArchive/adas1236--KaltonPeckPalomar--bffa78b64bd0",
+        "source_repository": "adas1236/KaltonPeckPalomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:df85501a0e6bc86a3cc52bc17ce4d3d1b942fd5f8905551a9a1ca9709977136c"
+}

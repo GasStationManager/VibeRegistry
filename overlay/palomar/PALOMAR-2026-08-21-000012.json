@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-21-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-21-000012",
+  "version": 1,
+  "title": "teal-sea/zeta-lab",
+  "abstract": "Davenport and Heilbronn (1936) exhibited a Dirichlet series with real coefficients satisfying a Riemann-type functional equation which nevertheless has zeros off the critical line. It is the standard demonstration that a functional equation of Riemann type does not on its own force the Riemann Hypothesis, it is the reference counterexample against which structural explanations of the Riemann Hypothesis are tested, and the location of its zeros remains an active subject. The function is DH(s) = (1 - i*kappa)/2 * L(s, chi) + (1 + i*kappa)/2 * L(s, chi^-1) for a quartic Dirichlet character chi mod 5 and kappa = (sqrt(10 - 2*sqrt 5) - 2)/(sqrt 5 - 1), the value that rotates the two conjugate root numbers onto each other and so makes the Dirichlet coefficients real. This submission advertises one theorem, the analytic half of the Davenport-Heilbronn theorem: there exists an entire function represented by the Davenport-Heilbronn Dirichlet series on Re z > 1 whose completion (pi/5)^(-(s+1)/2) * Gamma((s+1)/2) * f(s) is symmetric under s -> 1-s. The statement is existential in f, so it carries its own non-vacuity and needs none of the character theory used to construct the witness. What the work consists of. The Davenport-Heilbronn function is not a library object anywhere we could find, so the development builds it: the quartic character mod 5, the linear combination, entirety on all of C, the identification of the Dirichlet coefficients as the real period-5 sequence 1, kappa, -kappa, -1, 0, and the completed functional equation. The last of these is where the content sits. It reduces to a root-number identity whose convention-sensitive constants are derived inside the development, from Mathlib's Real.cos_pi_div_five by radical algebra, rather than transcribed from a table; the standard sources state kappa without deriving it in a form a kernel will accept, and getting it wrong yields a function whose coefficients are not real and which therefore is not the counterexample. The functional equation is stated with explicit guards excluding the poles of the two Gamma factors, because Mathlib's junk value Gamma = 0 at the poles would otherwise make the unrestricted equation false for reasons having nothing to do with the mathematics. Audience. The Davenport-Heilbronn function is a named object of analytic number theory with a continuing literature on its zeros, so a machine-checked construction of it is of direct interest to number theorists working on zeros of L-functions and on what a Riemann-type functional equation does and does not imply. It is also the object a formalized treatment of the Davenport-Heilbronn theorem has to have before it can say anything, and this supplies it in a form that carries its own non-vacuity. Prior art. A search of Mathlib at the revision pinned by this repository found no Davenport-Heilbronn function and no formalization of this functional equation. That is a bounded search of one library. No systematic search of other proof assistants or of the mathematical literature for prior formalizations has been run, and no novelty against the literature is claimed: the mathematics is Davenport and Heilbronn's, published in 1936. Scope. The Davenport-Heilbronn theorem itself is NOT proved here. Its full statement additionally requires a zero s with Re s different from 1/2, and that conjunct appears nowhere in the advertised theorem. What is offered is the analytic half alone. No numerical enclosure for any zero of DH is asserted, and nothing here is a statement about the Riemann zeta function or the Riemann Hypothesis.",
+  "authors": [
+    "Thomas Lince"
+  ],
+  "repository": "https://github.com/teal-sea/zeta-lab",
+  "commit": "097215a8413641fd3b3de137386316bf294328de",
+  "project_path": "lean",
+  "declarations": [
+    "ZetaLean.PalomarDH.dh_analytic_half"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CV"
+    ],
+    "msc2020": [
+      "11M26",
+      "11M41"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-21T23:05:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "097215a8413641fd3b3de137386316bf294328de",
+        "fork_repository": "PalomarArchive/teal-sea--zeta-lab--3c21e0f57be6",
+        "source_repository": "teal-sea/zeta-lab"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e0ccf30736e23dfcb6ab47816dc73496a6aa49515a8d7d734f396e7c2aa5e8ac"
+}

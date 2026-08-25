@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/math-inc/FrontierMathOpen-Hypergraphs",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.FrontierMathOpenHypergraphs",
   "declarations": [
     "HypergraphLowerBound.thm_main_H_lower_bound",
@@ -57,5 +58,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:e29b7c7f97d576b3ed72b968ca52f31df058e2442b68024fbb9020e451885cec"
+  "lean_source_path": "LeanPool/FrontierMathOpenHypergraphs.lean",
+  "statement_hash": "sha256:5ab20b11096f443904f84abcfa90ee018ebdba7f4937439471bd233c169abf18"
 }

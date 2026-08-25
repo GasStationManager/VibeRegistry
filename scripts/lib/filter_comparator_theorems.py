@@ -29,6 +29,19 @@ import json
 import subprocess
 
 
+def _lake_env(repo_dir):
+    """`lake env`, reconfiguring first where the project needs it.
+
+    Some projects' compiled Lake configs are rejected by a plain `lake env` and
+    accepted only with -R. Without this, lean4export never ran for such a
+    project, every declaration's kind came back unknown, and the run failed for
+    a reason that had nothing to do with the mathematics.
+    """
+    if os.environ.get("LAKE_NEEDS_RECONFIGURE") == "1":
+        return ["lake", "env", "-R"]
+    return ["lake", "env"]
+
+
 def _resolve_name(name_table, idx):
     """Resolve a name index to a dotted string."""
     parts = []
@@ -132,7 +145,7 @@ def get_decl_kinds(repo_dir, lean4export_bin, module, names):
     cmd = [lean4export_bin, module, "--"] + names
     try:
         result = subprocess.run(
-            ["lake", "env"] + cmd,
+            _lake_env(repo_dir) + cmd,
             capture_output=True, text=True, cwd=repo_dir, timeout=600
         )
     except subprocess.TimeoutExpired:
@@ -149,30 +162,14 @@ def get_decl_kinds(repo_dir, lean4export_bin, module, names):
     return _kinds_from_text_export(result.stdout, names)
 
 
-def get_type_deps(repo_dir, lean4export_bin, module, names):
-    """Get the set of constants referenced in each theorem's type.
+def _deps_from_json_export(text, names):
+    """Type dependencies from the NDJSON (3.x) export."""
+    name_table = {}
+    expr_table = {}
+    decls = []          # (name_idx, type_idx)
+    wanted = set(names)
 
-    Returns dict mapping name -> set of constant names used in type.
-    """
-    if not names:
-        return {}
-
-    cmd = [lean4export_bin, module, "--"] + names
-    try:
-        result = subprocess.run(
-            ["lake", "env"] + cmd,
-            capture_output=True, text=True, cwd=repo_dir, timeout=120
-        )
-    except subprocess.TimeoutExpired:
-        return {}
-    if result.returncode != 0:
-        return {}
-
-    name_table = {}   # idx -> (pre, str)
-    expr_table = {}   # idx -> expr_obj
-    thm_entries = []  # list of thm dicts
-
-    for line in result.stdout.splitlines():
+    for line in text.splitlines():
         line = line.strip()
         if not line:
             continue
@@ -182,59 +179,162 @@ def get_type_deps(repo_dir, lean4export_bin, module, names):
             continue
 
         if "in" in obj:
-            in_idx = obj["in"]
+            idx = obj["in"]
             if "str" in obj:
-                name_table[in_idx] = (obj["str"].get("pre", 0), obj["str"].get("str", ""))
+                name_table[idx] = (obj["str"].get("pre", 0), obj["str"].get("str", ""))
             elif "num" in obj:
-                name_table[in_idx] = (obj["num"].get("pre", 0), str(obj["num"].get("i", "")))
+                name_table[idx] = (obj["num"].get("pre", 0), str(obj["num"].get("i", "")))
 
         if "ie" in obj:
             expr_table[obj["ie"]] = obj
 
-        if "thm" in obj:
-            thm_entries.append(obj["thm"])
+        for kind in ("thm", "def", "opaque", "ax"):
+            if kind not in obj:
+                continue
+            # A mutual block arrives as a list of declarations under one key.
+            entries = obj[kind] if isinstance(obj[kind], list) else [obj[kind]]
+            for entry in entries:
+                if isinstance(entry, dict) and entry.get("name") is not None:
+                    decls.append((entry["name"], entry.get("type")))
+            break
 
-    def resolve(idx):
-        parts = []
-        while idx in name_table:
-            pre, s = name_table[idx]
-            parts.append(s)
-            idx = pre
-        parts.reverse()
-        return ".".join(parts)
-
-    def collect_consts(expr_idx, visited=None):
-        """Collect all constant names referenced in an expression."""
+    def collect(expr_idx, visited=None):
         if visited is None:
             visited = set()
-        if expr_idx in visited or expr_idx not in expr_table:
+        if expr_idx is None or expr_idx in visited or expr_idx not in expr_table:
             return set()
         visited.add(expr_idx)
-        e = expr_table[expr_idx]
+        expr = expr_table[expr_idx]
         consts = set()
-        if "const" in e:
-            consts.add(resolve(e["const"]["name"]))
+        if "const" in expr:
+            consts.add(_resolve_name(name_table, expr["const"]["name"]))
         for key in ("forallE", "lam", "letE"):
-            if key in e:
-                sub = e[key]
+            if key in expr:
+                sub = expr[key]
                 for field in ("type", "body", "value"):
                     if field in sub:
-                        consts |= collect_consts(sub[field], visited)
-        if "app" in e:
-            consts |= collect_consts(e["app"]["fn"], visited)
-            consts |= collect_consts(e["app"]["arg"], visited)
+                        consts |= collect(sub[field], visited)
+        if "app" in expr:
+            consts |= collect(expr["app"].get("fn"), visited)
+            consts |= collect(expr["app"].get("arg"), visited)
         return consts
 
     deps = {}
-    name_set = set(names)
-    for thm in thm_entries:
-        resolved = resolve(thm["name"])
-        if resolved in name_set:
-            type_idx = thm.get("type")
-            if type_idx is not None:
-                deps[resolved] = collect_consts(type_idx)
-
+    for name_idx, type_idx in decls:
+        resolved = _resolve_name(name_table, name_idx)
+        if resolved in wanted and type_idx is not None:
+            deps[resolved] = collect(type_idx)
     return deps
+
+
+# Text-format expression markers, and which of their operands are expressions.
+# #EA fn arg | #EL info name type body | #EP info name type body | #EZ ... |
+# #EJ struct idx expr | #EM data expr | #EC name (universes...)
+_TEXT_EXPR_OPERANDS = {
+    "#EA": (0, 1),
+    "#EL": (2, 3),
+    "#EP": (2, 3),
+    "#EZ": (2, 3),
+    "#EJ": (2,),
+    "#EM": (1,),
+}
+
+
+def _deps_from_text_export(text, names):
+    """Type dependencies from the flat text (2.x) export.
+
+    The 2.x exporter emits `<idx> #EC <nameIdx>` style lines rather than JSON, so
+    the JSON walker read nothing at all from it and every dependency came back
+    empty — which silently disabled the cross-reference filter.
+    """
+    name_table = {}
+    expr_lines = {}     # expr idx -> (marker, [operand tokens])
+    decls = []          # (name_idx, type_idx)
+    wanted = set(names)
+
+    for line in text.splitlines():
+        parts = line.split()
+        if not parts:
+            continue
+
+        if len(parts) >= 4 and parts[1] in ("#NS", "#NI"):
+            try:
+                name_table[int(parts[0])] = (int(parts[2]), parts[3])
+            except ValueError:
+                pass
+            continue
+
+        if len(parts) >= 2 and parts[1].startswith("#E"):
+            try:
+                expr_lines[int(parts[0])] = (parts[1], parts[2:])
+            except ValueError:
+                pass
+            continue
+
+        if parts[0] in ("#THM", "#DEF", "#OPAQ", "#AX") and len(parts) >= 3:
+            try:
+                decls.append((int(parts[1]), int(parts[2])))
+            except ValueError:
+                pass
+
+    def collect(expr_idx, visited=None):
+        if visited is None:
+            visited = set()
+        if expr_idx in visited or expr_idx not in expr_lines:
+            return set()
+        visited.add(expr_idx)
+        marker, operands = expr_lines[expr_idx]
+        consts = set()
+        if marker == "#EC" and operands:
+            try:
+                consts.add(_resolve_name(name_table, int(operands[0])))
+            except ValueError:
+                pass
+            return consts
+        for position in _TEXT_EXPR_OPERANDS.get(marker, ()):
+            if position < len(operands):
+                try:
+                    consts |= collect(int(operands[position]), visited)
+                except ValueError:
+                    continue
+        return consts
+
+    deps = {}
+    for name_idx, type_idx in decls:
+        resolved = _resolve_name(name_table, name_idx)
+        if resolved in wanted:
+            deps[resolved] = collect(type_idx)
+    return deps
+
+
+def get_type_deps(repo_dir, lean4export_bin, module, names):
+    """Constants referenced in each theorem's type, in either export format.
+
+    Used to drop a theorem whose statement mentions another target theorem:
+    comparator compares such a reference's full ConstantInfo, and the spec's
+    `sorry` can never match the implementation's real proof.
+    """
+    if not names:
+        return {}
+
+    cmd = [lean4export_bin, module, "--"] + names
+    try:
+        result = subprocess.run(
+            _lake_env(repo_dir) + cmd,
+            capture_output=True, text=True, cwd=repo_dir, timeout=600
+        )
+    except subprocess.TimeoutExpired:
+        print(f"  WARNING: lean4export timed out reading dependencies for {module}",
+              file=sys.stderr)
+        return {}
+    if result.returncode != 0:
+        print(f"  WARNING: lean4export failed reading dependencies for {module}: "
+              f"{result.stderr[:200]}", file=sys.stderr)
+        return {}
+
+    if result.stdout.lstrip()[:1] == "{":
+        return _deps_from_json_export(result.stdout, names)
+    return _deps_from_text_export(result.stdout, names)
 
 
 def filter_configs(repo_dir, lean4export_bin, config_dir, definitions_mode="drop"):

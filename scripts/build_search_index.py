@@ -42,6 +42,7 @@ sys.path.insert(0, os.path.join(SCRIPT_DIR, "lib"))
 
 from parse_toml import load_config  # noqa: E402
 from lean_decls import find_declaration  # noqa: E402
+from spec_statement_hash import statement_hashes  # noqa: E402
 
 INDEX_DIR = os.path.join(PROJECT_DIR, "index")
 
@@ -79,17 +80,41 @@ def mathlib_conflicts_by_file():
     return by_name
 
 
-def checks_for(results, name):
+def checks_for(results, name, current_hash, commit_matches):
+    """The verdict for this declaration, and whether it still applies.
+
+    A verdict describes one statement of one commit. It is shown only when the
+    run that produced it verified this same statement (`spec_hash`) against this
+    same implementation commit. Otherwise the record says the verdict is stale
+    and why — publishing it anyway would attach a checkmark to text nobody
+    checked.
+    """
     if not results:
-        return {}
-    for theorem in results.get("theorems", []):
-        if theorem.get("name") == name:
-            return {
-                key: theorem[key]
-                for key in ("comparator", "nanoda", "safe_verify", "lean4checker")
-                if theorem.get(key) and theorem[key] != "skip"
-            }
-    return {}
+        return {}, "no-results"
+
+    row = next((t for t in results.get("theorems", []) if t.get("name") == name), None)
+    if row is None:
+        return {}, "not-in-results"
+
+    verdicts = {
+        key: row[key]
+        for key in ("comparator", "nanoda", "safe_verify", "lean4checker")
+        if row.get(key) and row[key] != "skip"
+    }
+
+    if not commit_matches:
+        return {}, "stale-commit"
+
+    recorded_hash = row.get("spec_hash", "")
+    if not recorded_hash:
+        # Written before statements were hashed: cannot tell what was checked.
+        return {}, "unbound-verdict"
+    if not current_hash:
+        return {}, "statement-not-found"
+    if recorded_hash != current_hash:
+        return {}, "stale-statement"
+
+    return verdicts, "current"
 
 
 def signoffs_for(config, spec_module):
@@ -119,6 +144,9 @@ def build_registry_records(conflicts_by_name):
         commit = project.get("commit", "")
         repo = project.get("url", "")
 
+        current_hashes = statement_hashes(config, os.path.join(PROJECT_DIR, "specs", entry_id))
+        commit_matches = bool(results) and results.get("commit", "") == commit
+
         for group in config.get("theorems", []):
             spec_module = group.get("spec_module", "")
             impl_module = group.get("impl_module", "")
@@ -132,6 +160,9 @@ def build_registry_records(conflicts_by_name):
             for name in group.get("names", []):
                 decl = find_declaration(spec_text, name) if spec_text else None
                 record_informal = informal.get(name, {})
+                verdicts, verdict_state = checks_for(
+                    results, name, current_hashes.get(name, ""), commit_matches
+                )
                 records.append({
                     "id": f"{entry_id}:{name}",
                     "name": name,
@@ -149,7 +180,10 @@ def build_registry_records(conflicts_by_name):
                     "doc": decl.doc if decl else "",
                     "informal": record_informal.get("statement", ""),
                     "informal_source": record_informal.get("source_file", ""),
-                    "checks": checks_for(results, name),
+                    "checks": verdicts,
+                    # Why a verdict is or is not being shown; see checks_for().
+                    "verdict_state": verdict_state,
+                    "spec_hash": current_hashes.get(name, ""),
                     "signoffs": signoffs_for(config, spec_module),
                     "mathlib_conflicts": (conflicts_by_name or {}).get(name, []),
                     "url": f"{repo}/blob/{commit}" if repo and commit else repo,
@@ -166,11 +200,19 @@ def build_overlay_records():
         source = entry.get("source", "")
         repo = entry.get("repository", "")
         commit = entry.get("commit", "")
-        signoffs = entry.get("signoffs", [])
+        entry_signoffs = entry.get("signoffs", [])
         declarations = entry.get("declarations") or []
         if not declarations:
             declarations = [""]
         for name in declarations:
+            # A sign-off covers the declarations it names. Attaching the entry's
+            # whole list to every declaration would let a review of theorem A
+            # display as a review of theorem B.
+            covering = [
+                s for s in entry_signoffs
+                if "*" in (s.get("declarations") or ["*"])
+                or name in (s.get("declarations") or [])
+            ]
             records.append({
                 "id": f"{source}:{entry.get('upstream_id', '')}:{name}",
                 "name": name,
@@ -192,7 +234,7 @@ def build_overlay_records():
                 "informal_source": f"{source} metadata",
                 "checks": {"upstream": source},
                 "upstream_checks": entry.get("upstream_checks", {}),
-                "signoffs": signoffs,
+                "signoffs": covering,
                 "mathlib_conflicts": [],
                 "url": entry.get("upstream_url", "") or repo,
                 "classification": entry.get("classification", {}),

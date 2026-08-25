@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-22-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-22-000007",
+  "version": 1,
+  "title": "ashebson/kinin-lean",
+  "abstract": "A Lean 4 formalization of all sixteen units of Mishnah Kinnim, with a machine-checked physical optimization theorem for the Koppel--Reiss reading of Kinnim 3:2. For any list of pair counts grouped by owner, the priest has already acted on exactly half of the mixed birds above and half below. A physical world records one action level for every individual bird of every owner. Lean proves that every such world is compatible, by permutation, with the fixed half-split action list. Counting valid birds directly from each owner's closed-pair quota, the theorem proves that the exact minimum over all physical apportionments is twice the complement of the largest attainable subset sum not exceeding half the total, and constructs an apportionment attaining it. The repository also covers all sixteen units, flight recurrences, and replacement-inventory covers.",
+  "authors": [
+    "Aryeh Shebson"
+  ],
+  "repository": "https://github.com/ashebson/kinin-lean",
+  "commit": "d8ca202e6ccd655bd9c49dad5b9ee724cd3c2f54",
+  "project_path": null,
+  "declarations": [
+    "PalomarKinnim.physicalApportionmentExactMinimum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A17",
+      "90C27"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-22T19:17:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d8ca202e6ccd655bd9c49dad5b9ee724cd3c2f54",
+        "fork_repository": "PalomarArchive/ashebson--kinin-lean--d6cd02a705f8",
+        "source_repository": "ashebson/kinin-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:78e5db00ca7478186b78c7d8a29556bc36918bf7312a4213f65ec7454b8ce9bc"
+}

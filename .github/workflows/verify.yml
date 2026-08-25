@@ -137,24 +137,16 @@ jobs:
         with:
           go-version: '1.21'
 
-      - name: Install comparator tools (landrun, lean4export, comparator)
-        if: steps.checks.outputs.comparator == '1'
-        run: |
-          TOOLCHAIN_FILE="specs/${{ matrix.entry }}/lean-toolchain"
-          source scripts/lib/install_comparator_tools.sh
-          install_comparator_tools "$TOOLCHAIN_FILE" "${{ runner.temp }}/tools"
-          echo "COMPARATOR_BIN=$COMPARATOR_BIN" >> "$GITHUB_ENV"
-          echo "LEAN4EXPORT_BIN=$LEAN4EXPORT_BIN" >> "$GITHUB_ENV"
-          echo "LANDRUN_BIN=$LANDRUN_BIN" >> "$GITHUB_ENV"
-
-      # Second kernel: only built when the entry actually asks for it.
-      - name: Install nanoda (second kernel)
+      # Rust for nanoda; only when the entry asks for the second kernel.
+      - name: Install Rust
         if: steps.checks.outputs.nanoda == '1'
-        run: |
-          source scripts/lib/install_comparator_tools.sh
-          install_nanoda "${{ runner.temp }}/tools"
-          echo "NANODA_BIN=$NANODA_BIN" >> "$GITHUB_ENV"
+        uses: dtolnay/rust-toolchain@stable
 
+      # NOTE: tools are installed by verify_entry.sh, not here. Installing them
+      # in this job meant passing only the Lean toolchain, so an entry's
+      # tools.comparator_rev / lean4export_rev / landrun_rev pins never reached
+      # the installer — and exporting *_BIN made verify_entry.sh skip
+      # installation entirely, so the pins had no effect at all.
       - name: Verify ${{ matrix.entry }}
         run: |
           ARGS=()

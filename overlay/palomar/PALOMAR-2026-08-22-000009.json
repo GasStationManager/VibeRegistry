@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-22-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-22-000009",
+  "version": 1,
+  "title": "xiangyazi24/palomar-qseries-prime-coefficients",
+  "abstract": "For an explicitly defined difference B of two signed cone theta series over Q(sqrt(5)), Lean proves a closed nonmultiplicativity witness and a complete prime-index classification. For every rational prime p congruent to 1 modulo 10, B((p-1)/10) is one of -2, -1, 1, 2; a norm-negative golden integer generator and its strict fundamental-window normalization exist; and the coefficient has magnitude two exactly when the resulting geometric residue invariant is one modulo three. The invariant is also proved independent of the generator within the explicitly defined signed fundamental-unit orbit.",
+  "authors": [
+    "Xiang Huang"
+  ],
+  "repository": "https://github.com/xiangyazi24/palomar-qseries-prime-coefficients",
+  "commit": "0df90a92002da988b4cbc439f5a1c76b2759a14c",
+  "project_path": null,
+  "declarations": [
+    "PalomarQseriesPrimeCoefficients.BCoeff_not_multiplicative_witness",
+    "PalomarQseriesPrimeCoefficients.prime_BCoeff_complete_classification",
+    "PalomarQseriesPrimeCoefficients.geometric_iota_eq_of_sameIdeal"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11F27",
+      "11R11"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-22T23:20:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0df90a92002da988b4cbc439f5a1c76b2759a14c",
+        "fork_repository": "PalomarArchive/xiangyazi24--palomar-qseries-prime-coefficients--11cfcf6746fb",
+        "source_repository": "xiangyazi24/palomar-qseries-prime-coefficients"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b706fabc2ddbba1dcab8c69118df55d14e3b07179040f8786e92487581a4625b"
+}

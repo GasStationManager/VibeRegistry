@@ -74,15 +74,37 @@ function esc(s) {
   ));
 }
 
+// A sign-off counts only if it is current AND approved. The index has already
+// narrowed r.signoffs to the ones covering this declaration.
+function approvedSignoffs(r) {
+  return (r.signoffs || []).filter(s => s.status === "current" && s.verdict === "approved");
+}
+
 function tagsFor(r) {
   const tags = [];
-  const current = (r.signoffs || []).filter(s => s.status === "current");
-  if (current.length) {
-    tags.push(`<span class="tag ok">signed off by @${esc(current[0].github_user)}</span>`);
-  } else if ((r.signoffs || []).length) {
-    tags.push('<span class="tag warn">sign-off stale</span>');
+  const all = r.signoffs || [];
+  const approved = approvedSignoffs(r);
+  const rejected = all.filter(s => s.verdict === "rejected");
+  if (approved.length) {
+    tags.push(`<span class="tag ok">signed off by @${esc(approved[0].github_user)}</span>`);
+  } else if (rejected.length) {
+    tags.push(`<span class="tag warn">review REJECTED by @${esc(rejected[0].github_user)}</span>`);
+  } else if (all.length) {
+    const why = (all[0].stale_reasons || []).join(", ");
+    tags.push(`<span class="tag warn">sign-off stale${why ? ": " + esc(why) : ""}</span>`);
   } else {
     tags.push('<span class="tag">no sign-off</span>');
+  }
+  if (r.verdict_state && r.verdict_state !== "current" && r.origin === "registry") {
+    const label = {
+      "stale-statement": "verdict stale: spec statement changed since it was checked",
+      "stale-commit": "verdict stale: entry now pins a different commit",
+      "unbound-verdict": "verdict predates statement binding",
+      "statement-not-found": "statement not found in spec",
+      "not-in-results": "not in the latest results",
+      "no-results": "never verified",
+    }[r.verdict_state] || r.verdict_state;
+    tags.push(`<span class="tag warn">${esc(label)}</span>`);
   }
   for (const [k, v] of Object.entries(r.checks || {})) {
     const cls = v === "pass" ? "ok" : v === "fail" ? "warn" : "";
@@ -130,7 +152,7 @@ function apply() {
     const isRegistry = r.origin === "registry";
     if (isRegistry && !wantRegistry) return false;
     if (!isRegistry && !wantOverlay) return false;
-    if (signedOnly && !(r.signoffs || []).some(s => s.status === "current")) return false;
+    if (signedOnly && approvedSignoffs(r).length === 0) return false;
     if (informalOnly && !r.informal) return false;
     if (!terms.length) return true;
     const hay = [r.name, r.entry, r.entry_name, r.informal, r.statement, r.doc]

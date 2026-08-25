@@ -10,6 +10,7 @@
   ],
   "repository": "https://github.com/suomela/2-coloring-1-round",
   "commit": "",
+  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
   "entry_module": "LeanPool.TwoColoringOneRound",
   "declarations": [
     "Distributed2Coloring.pStar_ge_23879",
@@ -45,5 +46,6 @@
     "llm_review": true,
     "sorry_free": true
   },
-  "statement_hash": "sha256:f31f8e0cef85d593ea3064aa4a362278661dd383eb8ac01d9cec83759fc5e861"
+  "lean_source_path": "LeanPool/TwoColoringOneRound.lean",
+  "statement_hash": "sha256:2c3c87a2250aa593c29e258f5e5771ca774e8f068904f5c56df3a868e9bf68f3"
 }

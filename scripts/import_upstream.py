@@ -36,6 +36,7 @@ import glob
 import hashlib
 import json
 import os
+import subprocess
 import sys
 import urllib.request
 
@@ -73,17 +74,57 @@ def fetch(url: str) -> bytes:
 
 
 def statement_hash(record) -> str:
-    """Hash the parts a reviewer actually reads, so upstream edits invalidate a sign-off."""
+    """Hash the metadata a reviewer reads, so upstream edits invalidate a sign-off."""
     payload = json.dumps(
         {
             "declarations": sorted(record.get("declarations", [])),
             "informal": record.get("informal", {}),
             "commit": record.get("commit", ""),
+            "snapshot_commit": record.get("snapshot_commit", ""),
         },
         sort_keys=True,
         ensure_ascii=False,
     )
     return "sha256:" + hashlib.sha256(payload.encode()).hexdigest()
+
+
+def head_commit(repo_url: str) -> str:
+    """Current HEAD of a remote, without cloning it."""
+    try:
+        out = subprocess.run(
+            ["git", "ls-remote", repo_url, "HEAD"],
+            capture_output=True, text=True, timeout=60, check=True,
+        ).stdout.split()
+        return out[0] if out else ""
+    except Exception:  # noqa: BLE001 - provenance is best-effort, never fatal
+        return ""
+
+
+def lean_source_url(record) -> str:
+    """Raw URL of the LeanPool entry module that holds this record's statements."""
+    module = record.get("entry_module", "")
+    snapshot = record.get("snapshot_commit", "") or "main"
+    if not module:
+        return ""
+    return (f"https://raw.githubusercontent.com/Vilin97/lean-pool/{snapshot}/"
+            f"{module.replace('.', '/')}.lean")
+
+
+def fetch_lean_source_hash(record) -> str:
+    """Hash the Lean source a LeanPool record's statements live in.
+
+    LeanPool publishes no per-project commit and vendors its projects, so the
+    metadata hash alone cannot notice a theorem's *type* changing while its name
+    and informal text stay put. Hashing the entry module closes that: it is the
+    file the declarations are stated in.
+    """
+    url = lean_source_url(record)
+    if not url:
+        return ""
+    try:
+        return "sha256:" + hashlib.sha256(fetch(url)).hexdigest()
+    except Exception:  # noqa: BLE001 - upstream may move or rename a module
+        return ""
 
 
 def normalize_palomar(entry):
@@ -126,7 +167,7 @@ def normalize_palomar(entry):
     return record
 
 
-def normalize_leanpool(project):
+def normalize_leanpool(project, snapshot_commit=""):
     source = project.get("source", {}) or {}
     slug = project.get("slug", "")
     github_repo = source.get("github_repo", "")
@@ -153,6 +194,9 @@ def normalize_leanpool(project):
         "authors": [str(a) for a in (project.get("authors") or [])],
         "repository": f"https://github.com/{github_repo}" if github_repo else "",
         "commit": "",  # LeanPool vendors projects; it pins Mathlib, not upstream commits
+        # Which lean-pool revision this record was read from. LeanPool points at
+        # mutable `main`, so without this a sign-off could never go stale.
+        "snapshot_commit": snapshot_commit,
         "entry_module": project.get("entry_module", ""),
         "declarations": declarations,
         "informal": informal,
@@ -173,6 +217,10 @@ def normalize_leanpool(project):
             "sorry_free": True,
         },
     }
+    record["lean_source_path"] = (
+        f"{str(project.get('entry_module', '')).replace('.', '/')}.lean"
+        if project.get("entry_module") else ""
+    )
     record["statement_hash"] = statement_hash(record)
     return record
 
@@ -196,7 +244,14 @@ def import_leanpool(limit=None):
     projects = doc.get("projects", []) if isinstance(doc, dict) else []
     if limit:
         projects = projects[:limit]
-    return [normalize_leanpool(p) for p in projects]
+    snapshot = head_commit("https://github.com/Vilin97/lean-pool")
+    if snapshot:
+        print(f"  lean-pool snapshot: {snapshot[:12]}")
+    else:
+        print("  WARNING: could not resolve a lean-pool snapshot commit; "
+              "sign-off staleness for this source will rest on metadata alone",
+              file=sys.stderr)
+    return [normalize_leanpool(p, snapshot) for p in projects]
 
 
 IMPORTERS = {"palomar": import_palomar, "leanpool": import_leanpool}
@@ -204,6 +259,27 @@ IMPORTERS = {"palomar": import_palomar, "leanpool": import_leanpool}
 
 def safe_filename(upstream_id: str) -> str:
     return "".join(c if c.isalnum() or c in "-._" else "-" for c in upstream_id) or "entry"
+
+
+def prune_withdrawn(source, records, dry_run=False):
+    """Remove mirrored records the upstream source no longer publishes.
+
+    Only safe on a full sync: a partial import (--limit) says nothing about what
+    upstream still has. Without this, a project withdrawn upstream stays
+    published here forever.
+    """
+    out_dir = os.path.join(OVERLAY_DIR, source)
+    if not os.path.isdir(out_dir):
+        return []
+    keep = {safe_filename(r["upstream_id"]) + ".json" for r in records}
+    removed = []
+    for name in sorted(os.listdir(out_dir)):
+        if not name.endswith(".json") or name in keep:
+            continue
+        removed.append(name)
+        if not dry_run:
+            os.remove(os.path.join(out_dir, name))
+    return removed
 
 
 def write_records(source, records, dry_run=False):
@@ -236,26 +312,54 @@ def load_overlay_signoffs():
     return config.get("signoff", []) or []
 
 
-def attach_signoffs(record, signoffs):
-    """Attach our sign-offs, flagging any whose reviewed statement has since changed."""
+def attach_signoffs(record, signoffs, fetch_sources=False):
+    """Attach our sign-offs, flagging any whose reviewed statement has changed.
+
+    Staleness has two independent triggers, because either can mean the reviewer
+    vouched for something else:
+      - the metadata hash moved (declarations, informal text, pinned commit,
+        upstream snapshot), or
+      - the Lean source the statements live in moved. LeanPool publishes no
+        per-project commit, so without this a theorem's type could change under
+        an unchanged name and the sign-off would still read as current.
+    """
+    relevant = [
+        s for s in signoffs
+        if s.get("source") == record["source"]
+        and str(s.get("upstream_id")) == str(record["upstream_id"])
+    ]
+
+    if relevant and fetch_sources and record["source"] == "leanpool":
+        current_source_hash = fetch_lean_source_hash(record)
+        if current_source_hash:
+            record["lean_source_hash"] = current_source_hash
+
     attached = []
-    for s in signoffs:
-        if s.get("source") != record["source"]:
-            continue
-        if str(s.get("upstream_id")) != str(record["upstream_id"]):
-            continue
-        declarations = s.get("declarations") or ["*"]
+    for s in relevant:
+        reasons = []
         reviewed_hash = s.get("statement_hash", "")
-        stale = bool(reviewed_hash) and reviewed_hash != record["statement_hash"]
+        if reviewed_hash and reviewed_hash != record["statement_hash"]:
+            reasons.append("metadata changed")
+        reviewed_source = s.get("lean_source_hash", "")
+        current_source = record.get("lean_source_hash", "")
+        if reviewed_source and current_source and reviewed_source != current_source:
+            reasons.append("Lean source changed")
+        if not reviewed_hash:
+            reasons.append("no statement hash recorded")
+
         attached.append({
             "github_user": s.get("github_user", ""),
             "date": s.get("date", ""),
             "issue": s.get("issue"),
             "verdict": s.get("verdict", "approved"),
-            "declarations": declarations,
+            # Which declarations this sign-off actually covers. "*" means the
+            # whole entry; anything else covers only the names it lists.
+            "declarations": s.get("declarations") or ["*"],
             "comment": s.get("comment", ""),
-            "status": "stale" if stale else "current",
+            "status": "stale" if reasons else "current",
+            "stale_reasons": reasons,
         })
+
     record["signoffs"] = attached
     record["has_human_signoff"] = any(
         a["status"] == "current" and a["verdict"] == "approved" for a in attached
@@ -263,14 +367,22 @@ def attach_signoffs(record, signoffs):
     return record
 
 
-def reindex():
+def signoffs_covering(signoffs, declaration):
+    """The sign-offs that actually cover one declaration."""
+    return [
+        s for s in signoffs
+        if "*" in (s.get("declarations") or ["*"]) or declaration in (s.get("declarations") or [])
+    ]
+
+
+def reindex(fetch_sources=False):
     signoffs = load_overlay_signoffs()
     records = []
     for source in sorted(SOURCES):
         for path in sorted(glob.glob(os.path.join(OVERLAY_DIR, source, "*.json"))):
             with open(path) as f:
                 record = json.load(f)
-            records.append(attach_signoffs(record, signoffs))
+            records.append(attach_signoffs(record, signoffs, fetch_sources))
 
     index = {
         "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -304,10 +416,12 @@ def main():
     ap.add_argument("--limit", type=int, help="import at most N entries")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--reindex", action="store_true", help="rebuild overlay/index.json only")
+    ap.add_argument("--fetch-sources", action="store_true",
+                    help="re-hash the Lean source behind signed-off LeanPool records")
     args = ap.parse_args()
 
     if args.reindex and not (args.source or args.all):
-        reindex()
+        reindex(args.fetch_sources)
         return 0
 
     if not args.source and not args.all:
@@ -326,8 +440,18 @@ def main():
         print(f"  {len(records)} record(s), {written} written/updated, "
               f"{with_informal} carry per-declaration informal statements")
 
+        if args.limit:
+            print("  (partial import: not pruning, since this says nothing "
+                  "about what upstream still publishes)")
+        else:
+            withdrawn = prune_withdrawn(source, records, args.dry_run)
+            if withdrawn:
+                verb = "would remove" if args.dry_run else "removed"
+                print(f"  {verb} {len(withdrawn)} record(s) upstream no longer "
+                      f"publishes: {', '.join(w[:-5] for w in withdrawn)}")
+
     if not args.dry_run:
-        reindex()
+        reindex(args.fetch_sources)
     return 0
 
 

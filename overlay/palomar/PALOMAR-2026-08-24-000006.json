@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-24-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-24-000006",
+  "version": 1,
+  "title": "SauersML/group-approximation",
+  "abstract": "The displayed finitely presented group is sofic and is not MF in the Carrión-Dadarlat-Eckhardt operator-norm sense.",
+  "authors": [
+    "Sauers"
+  ],
+  "repository": "https://github.com/SauersML/group-approximation",
+  "commit": "f6ccc7a138b281eb6c4eedf111c6cbd37b4917ce",
+  "project_path": null,
+  "declarations": [
+    "ExplicitNonMF.explicit_sofic_not_MF"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OA",
+      "math.GR"
+    ],
+    "msc2020": [
+      "46L05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-24T20:15:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f6ccc7a138b281eb6c4eedf111c6cbd37b4917ce",
+        "fork_repository": "PalomarArchive/SauersML--group-approximation--d16b34e6ab02",
+        "source_repository": "SauersML/group-approximation"
+      }
+    ]
+  },
+  "statement_hash": "sha256:440676cd2da23bbfbfc4213ac0da3da530b4ad998dee2dc9d266a8fc62a67bc4"
+}

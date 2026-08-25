@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-23-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-23-000004",
+  "version": 1,
+  "title": "DiarHaidary/Nelson-Nguyen-conjecture-upper-bound-palomar",
+  "abstract": "Lean 4 formalization of three sparse oblivious-subspace-embedding results at the Nelson--Nguyen parameter scale: the fully independent signed-hash SparseStack construction, independent uniform signed exact-s columns, and a limited-independence transfer for finite laws whose combined hash-sign selector marginals agree with SparseStack through order 4q.  At the stated rounded parameters the selected theorems give failure probability at most delta, with explicit strict bounds s < 1356 q / epsilon and m < 306456 (d + q) / epsilon^2 where those parameter conclusions are packaged.  The formalization is machine checked but has not been peer reviewed and makes no priority claim.",
+  "authors": [
+    "Diar Heidary"
+  ],
+  "repository": "https://github.com/DiarHaidary/Nelson-Nguyen-conjecture-upper-bound-palomar",
+  "commit": "3fdbf2cbb26c10c18bc799fa63fbd3a768f6f0e2",
+  "project_path": null,
+  "declarations": [
+    "SparseFock.MainTheorem.fully_independent_sparseStack_matrix",
+    "SparseFock.MainTheoremAssembly.canonicalB_pos"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NA",
+      "math.PR"
+    ],
+    "msc2020": [
+      "65F50",
+      "60B20",
+      "68W20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-23T14:18:53Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3fdbf2cbb26c10c18bc799fa63fbd3a768f6f0e2",
+        "fork_repository": "PalomarArchive/DiarHaidary--Nelson-Nguyen-conjecture-upper-bound-palomar--1d79648f834b",
+        "source_repository": "DiarHaidary/Nelson-Nguyen-conjecture-upper-bound-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7fa33f2f21f88b3823a723a95c12c17b4023e02fe6fc55df862f6736293365fc"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-23-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-23-000001",
+  "version": 1,
+  "title": "geoconuk/lean-misc-math",
+  "abstract": "For a fixed angular radius theta in (0, pi/2), the least number M(n, theta) of spherical caps of angular radius theta, centred at points of the unit sphere of R^n, whose union is that whole sphere satisfies (1/n) log M(n, theta) -> -log sin theta as n -> infinity. This is the covering half of Wyner (1967): the elementary volume bound gives the lower bound on the covering number and a random-covering argument gives the upper bound. The statement is given in Mathlib's own vocabulary, as an asymptotic for Metric.coveringNumber of Metric.sphere 0 1 in EuclideanSpace R (Fin n) at chordal radius 2 sin (theta/2), and introduces no definition of its own; two compared lemmas establish that an angular cap of half-angle theta about a unit vector is exactly the closed chordal ball of that radius, which is what licenses reading the result as a statement about caps. Two further compared theorems rule out the junk values that the N-infinity-valued covering number and the logarithm would otherwise admit.",
+  "authors": [
+    "George A. Constantinides"
+  ],
+  "repository": "https://github.com/geoconuk/lean-misc-math",
+  "commit": "4a1b0c422b6b4e0fd98b04b31a5c41b33fcea123",
+  "project_path": null,
+  "declarations": [
+    "MiscMath.Geometry.tendsto_log_coveringNumber_sphere_div_atTop",
+    "MiscMath.Geometry.coveringNumber_sphere_ne_top",
+    "MiscMath.Geometry.coveringNumber_sphere_pos",
+    "MiscMath.Geometry.angle_le_iff_dist_le",
+    "MiscMath.Geometry.dist_eq_two_mul_sin_angle_div_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "cs.IT"
+    ],
+    "msc2020": [
+      "52C17",
+      "41A46",
+      "94B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-23T09:43:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4a1b0c422b6b4e0fd98b04b31a5c41b33fcea123",
+        "fork_repository": "PalomarArchive/geoconuk--lean-misc-math--79e5c7089a59",
+        "source_repository": "geoconuk/lean-misc-math"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e2182a9ea0afe29a81c110db54c17e080ed4c70064a433771b7ff7cea85d671d"
+}

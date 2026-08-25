@@ -1,0 +1,69 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-24-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-24-000003",
+  "version": 2,
+  "title": "catskillsresearch/scott1972",
+  "abstract": "A Lean 4 / mathlib formalization of Dana Scott's 1972 paper *Continuous Lattices* (LNM 274), through the Milner correction (pp. 135–136). The Palomar compared result is Theorem 4.4 as worded in sources/ScottContinLatt1972.md: the inverse limit D_∞ of the recursively defined sequence ⟨D_n, j_n⟩ of function spaces is not only a continuous lattice, but it is also homeomorphic to its own function space [D_∞ → D_∞]. The compared Homeomorph explicitly uses the product/subspace topology on the inverse limit and the pointwise Pi topology on the function space. The full paper development (injectivity, Scott topology, way-below, function spaces, inverse limits) lives in Scott1972/ContinuousLattice/*. The informal account is arxiv.md and sources/ScottContinLatt1972.md in this repository. Lean was written by AI agents under the direction and review of the author. Dana Scott did not participate in or endorse this formalization. There is no sorry outside the deliberate holes in Challenge.lean, no project-defined axiom, and Mathlib is the only Lake dependency.",
+  "authors": [
+    "Lars Warren Ericson"
+  ],
+  "repository": "https://github.com/catskillsresearch/scott1972",
+  "commit": "278ba1745b6fb023fc3e9ffe53b7106ce60222c1",
+  "project_path": null,
+  "declarations": [
+    "Scott1972.ContinuousLattice.theorem_4_4",
+    "Scott1972.ContinuousLattice.ScottMap.le_refl'",
+    "Scott1972.ContinuousLattice.ScottMap.le_trans'",
+    "Scott1972.ContinuousLattice.ScottMap.le_antisymm'",
+    "Scott1972.ContinuousLattice.ScottMap.lt_iff_le_not_ge'",
+    "Scott1972.ContinuousLattice.ScottMap.sSupMaps_continuous",
+    "Scott1972.ContinuousLattice.ScottMap.isLUB_sSup",
+    "Scott1972.ContinuousLattice.functionSpaceInclFun_continuous",
+    "Scott1972.ContinuousLattice.functionSpaceInclFun_outer_continuous",
+    "Scott1972.ContinuousLattice.functionSpaceRetrFun_continuous",
+    "Scott1972.ContinuousLattice.functionSpaceRetrFun_outer_continuous",
+    "Scott1972.ContinuousLattice.functionSpaceRetrIncl",
+    "Scott1972.ContinuousLattice.functionSpaceInclRetrLe",
+    "Scott1972.ContinuousLattice.inverseLimitLE_refl",
+    "Scott1972.ContinuousLattice.inverseLimitLE_trans",
+    "Scott1972.ContinuousLattice.inverseLimitLE_antisymm",
+    "Scott1972.ContinuousLattice.inverseLimitLT_iff_LE_not_GE",
+    "Scott1972.ContinuousLattice.compatible_sInf",
+    "Scott1972.ContinuousLattice.isGLB_sInf'"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.GN"
+    ],
+    "msc2020": [
+      "06B35",
+      "54H99",
+      "03B40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-24T23:48:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "278ba1745b6fb023fc3e9ffe53b7106ce60222c1",
+        "fork_repository": "PalomarArchive/catskillsresearch--scott1972--3cc4355f1f46",
+        "source_repository": "catskillsresearch/scott1972"
+      }
+    ]
+  },
+  "statement_hash": "sha256:46ac5887a2a7aeea83a4c44a3397c2782b251b53abfc6d17e84d75758b8f3549"
+}
