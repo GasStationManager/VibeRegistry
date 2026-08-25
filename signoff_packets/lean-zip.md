@@ -1,11 +1,11 @@
 # Sign-off packet — lean-zip
 
-*Generated 2026-08-22 01:23 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-08-25 02:55 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `lean-zip`
 - **Upstream**: https://github.com/kim-em/lean-zip @ `e76f0813faa2`
 - **Lean**: leanprover/lean4:v4.29.1
-- **Machine checks**: comparator, nanoda — overall **fail** at 2026-08-21T18:24:36Z
+- **Machine checks**: comparator, nanoda — overall **fail** at 2026-08-25T02:28:25Z
 - **Informal statements**: none adopted yet — run `python3 scripts/fetch_blueprint_statements.py entries/lean-zip.toml`
 
 ## What you are attesting

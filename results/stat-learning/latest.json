@@ -1,6 +1,6 @@
 {
   "entry_id": "stat-learning",
-  "timestamp": "2026-08-22T01:01:09Z",
+  "timestamp": "2026-08-25T02:36:45Z",
   "commit": "7b82b1323c80f0c21ca449fd12e1c24315ae9782",
   "lean_toolchain": "leanprover/lean4:v4.27.0-rc1",
   "mathlib_tag": "v4.27.0",
@@ -28,7 +28,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:c6969406214c75ea80270cc8e4012f16414dd4f13c7b0ac3f55710d3cfebbe78"
     },
     {
       "name": "GaussianMeasure.stdGaussianE",
@@ -37,7 +38,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:270283eb34f520aa51585284734d5e67f984715851e2ecd82fb90f3fb1bd2f78"
     },
     {
       "name": "IsENet",
@@ -46,7 +48,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:0eb17cca66b05571062342bb25184463d6428116daea40a0aa22105f6e503ce7"
     },
     {
       "name": "coveringNumber",
@@ -55,7 +58,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:bfcb897e02dc18748d41b16d168d1b712f899dd2cecaf7318f3db5c2f6dece51"
     },
     {
       "name": "metricEntropyOfNat",
@@ -64,7 +68,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:af786dfe49c1674d765f8420662c2ee0b065d7680973bcd4bb51c38dd5fad6cd"
     },
     {
       "name": "metricEntropy",
@@ -73,7 +78,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:f3a1d42465927010c9c791bf6eb7379180ad66b40372f501a4d861f870e628b9"
     },
     {
       "name": "sqrtEntropy",
@@ -82,7 +88,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:6efb694da3bb19626a735c08c294010ef0e722cf31b8ba4d4a2c966b7703a0ef"
     },
     {
       "name": "dudleyIntegrand",
@@ -91,7 +98,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:84ec0c4922b28bb60bd732efe01002202b19078a497c8ce58beaf26b88452353"
     },
     {
       "name": "entropyIntegralENNReal",
@@ -100,7 +108,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:b85d8e8b840034d3064830f12d943496723dc43aa6fbc082f44eb3b6b302a2dd"
     },
     {
       "name": "entropyIntegral",
@@ -109,7 +118,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:9f975d8b76e9cbe3746aa2998b8c155937d70a9dcebb19e1b3e183e9b6bd009d"
     },
     {
       "name": "IsSubGaussianProcess",
@@ -118,7 +128,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:c0fdd95237411b16ec3370b92d620864348a3010ca4c2cc8aab0b4f57f5088c0"
     },
     {
       "name": "EfronSteinApp.CompactlySupportedSmooth",
@@ -127,7 +138,8 @@
       "comparator": "not-applicable",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:d2de3acec8dd9d9f925e6f5a32da99e5f428409d5f0bfb9ef189779a7ad56331"
     },
     {
       "name": "GaussianLipConcen.gaussian_lipschitz_concentration",
@@ -136,7 +148,8 @@
       "comparator": "pass",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:6d4b653df227a944d2de99ff7ed7790b5b02d8eb4d84eb1020ca560be74aab40"
     },
     {
       "name": "dudley",
@@ -145,7 +158,8 @@
       "comparator": "pass",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:7507698de20bf960ffd454d224231b2870a71a845d5cec0d511817940ae4fa02"
     },
     {
       "name": "efronStein",
@@ -154,7 +168,8 @@
       "comparator": "pass",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:1ef30ab4f8e008e48d503f91fe5de5692eba97503db635d46397a12acbf8ea4f"
     },
     {
       "name": "GaussianPoincare.gaussianPoincare",
@@ -163,7 +178,8 @@
       "comparator": "pass",
       "nanoda": "skip",
       "safe_verify": "skip",
-      "lean4checker": "skip"
+      "lean4checker": "skip",
+      "spec_hash": "sha256:a124288f9993f9f1b0b07b0bf16ece68361b094e592ddc8b9a4c8dff01869804"
     }
   ],
   "overall": "pass",

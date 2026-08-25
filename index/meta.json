@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-25T02:11:01Z",
+  "generated_at": "2026-08-25T02:54:47Z",
   "counts": {
-    "total": 628,
+    "total": 850,
     "registry": 30,
-    "overlay": 598,
-    "with_informal": 543,
+    "overlay": 820,
+    "with_informal": 558,
     "signed_off": 2,
     "mathlib_conflicts": 0
   },
