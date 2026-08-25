@@ -17,6 +17,20 @@ A server is needed even locally: the page fetches `statements.json`, and a
 browser blocks that from a `file://` origin. Opening the HTML by double-clicking
 it shows "Could not load statements.json".
 
+## Signing off from the page
+
+Every row links to the sign-off issue form with its target already filled in —
+target kind, target id, and the spec file or declaration reviewed. Someone who
+notices an unsigned statement should not have to work out which entry it belongs
+to and what to type where. The header and footer also link to a blank form and to
+[signoff.md](signoff.md).
+
+The prefill uses GitHub's issue-form query parameters, which match on the field
+ids and the exact dropdown option text in
+`.github/ISSUE_TEMPLATE/spec-signoff.yml`. Renaming a field or an option there
+breaks the prefill silently — the form still opens, just empty — so change both
+together.
+
 ## Publishing
 
 `.github/workflows/pages.yml` deploys `index/` as the project site whenever the

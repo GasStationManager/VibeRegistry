@@ -292,6 +292,9 @@ SEARCH_HTML = """<!doctype html>
     border: 1px solid var(--line); color: var(--muted); }
   .tag.ok { color: var(--ok); border-color: var(--ok); }
   .tag.warn { color: var(--warn); border-color: var(--warn); }
+  .actions { margin-top: 0.55rem; font-size: 0.82rem; }
+  .actions a { text-decoration: none; }
+  .actions a:hover { text-decoration: underline; }
   .informal { margin-top: 0.6rem; font-size: 0.9rem; }
   pre { overflow-x: auto; background: var(--bg); border: 1px solid var(--line);
     border-radius: 6px; padding: 0.6rem; font-size: 0.8rem; margin: 0.6rem 0 0; }
@@ -308,6 +311,9 @@ SEARCH_HTML = """<!doctype html>
   <p class="sub">Lean statements this registry has checked, plus mirrored entries
   from upstream registries. A machine check says the proof establishes the
   statement; a sign-off says a human read the statement.</p>
+  <p class="sub">Anyone can sign off: pick a statement below and use its link, or
+  <a href="https://github.com/GasStationManager/VibeRegistry/issues/new?template=spec-signoff.yml">open a blank sign-off</a>.
+  <a href="https://github.com/GasStationManager/VibeRegistry/blob/main/docs/signoff.md">What a sign-off means and how to prepare one</a>.</p>
 </header>
 <main>
   <input type="search" id="q" placeholder="Search names, statements, informal text…" autofocus>
@@ -330,7 +336,10 @@ SEARCH_HTML = """<!doctype html>
   and <a href="https://github.com/Vilin97/lean-pool">LeanPool</a>, which checked
   them; this registry did not re-verify those proofs.</p>
   <p><a href="https://github.com/GasStationManager/VibeRegistry">Source and
-  documentation</a> · <a href="statements.json">raw index</a></p>
+  documentation</a> ·
+  <a href="https://github.com/GasStationManager/VibeRegistry/issues/new?template=spec-signoff.yml">Submit a sign-off</a> ·
+  <a href="https://github.com/GasStationManager/VibeRegistry/blob/main/docs/signoff.md">How sign-off works</a> ·
+  <a href="statements.json">raw index</a></p>
 </footer>
 <script>
 const state = { records: [], meta: null };
@@ -345,6 +354,30 @@ function esc(s) {
 // narrowed r.signoffs to the ones covering this declaration.
 function approvedSignoffs(r) {
   return (r.signoffs || []).filter(s => s.status === "current" && s.verdict === "approved");
+}
+
+const SIGNOFF_FORM =
+  "https://github.com/GasStationManager/VibeRegistry/issues/new?template=spec-signoff.yml";
+
+// Link straight to the sign-off form with this statement's target already
+// filled in. Someone who notices an unsigned statement should not then have to
+// work out which entry it belongs to and what to type where.
+function signoffUrl(r) {
+  const params = new URLSearchParams();
+  params.set("title", "Sign-off: " + (r.name || r.entry));
+  if (r.origin === "registry") {
+    params.set("target_kind", "Registry entry");
+    params.set("target_id", r.entry);
+    // The form wants the path relative to specs/<entry>/.
+    const prefix = "specs/" + r.entry + "/";
+    params.set("reviewed", (r.spec_file || "").startsWith(prefix)
+      ? r.spec_file.slice(prefix.length) : (r.spec_file || ""));
+  } else {
+    params.set("target_kind", "Overlay record: " + r.origin.split(":")[1]);
+    params.set("target_id", r.entry);
+    params.set("reviewed", r.name || "*");
+  }
+  return SIGNOFF_FORM + "&" + params.toString();
 }
 
 function tagsFor(r) {
@@ -401,6 +434,10 @@ function render(list) {
       <div class="tags">${tagsFor(r)}</div>
       ${r.informal ? `<div class="informal">${esc(r.informal)}</div>` : ""}
       ${r.statement ? `<details><summary>Lean statement</summary><pre>${esc(r.statement)}</pre></details>` : ""}
+      <div class="actions">
+        <a href="${esc(signoffUrl(r))}" rel="noreferrer noopener">
+          ${approvedSignoffs(r).length ? "add another sign-off" : "sign off on this statement"} →</a>
+      </div>
     </div>`).join("");
   if (list.length > 300) {
     results.innerHTML += `<div class="count">Showing the first 300 matches — narrow the query.</div>`;
