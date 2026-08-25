@@ -1,6 +1,6 @@
 # Sign-off packet — lean-zip
 
-*Generated 2026-08-25 15:12 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-08-25 17:19 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `lean-zip`
 - **Upstream**: https://github.com/kim-em/lean-zip @ `e76f0813faa2`

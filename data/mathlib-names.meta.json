@@ -1,8 +1,8 @@
 {
   "source": "https://leanprover-community.github.io/mathlib4_docs/declarations/declaration-data.bmp",
-  "fetched_at": "2026-08-25T15:12:10Z",
-  "declarations": 421326,
-  "sha256": "0ec8f2b2375ddc43df49f183baf70c90b8cf6e3194450777fe9e5a9d14ce7029",
+  "fetched_at": "2026-08-25T17:19:11Z",
+  "declarations": 421467,
+  "sha256": "164b099534e067ea62425b0bf17e7396084884be9401820f9aaa0aa21185f3d1",
   "file": "data/mathlib-names.tsv.gz",
   "note": "Snapshot of current Mathlib docs; entries pin older Mathlib revisions."
 }
