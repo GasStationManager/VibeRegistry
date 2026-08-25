@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-08-25T02:54:47Z",
+  "generated_at": "2026-08-25T10:11:26Z",
   "counts": {
    "total": 850,
    "registry": 30,
@@ -47,7 +47,9 @@
      "github_user": "GasStationManager",
      "date": "2026-02-17",
      "status": "current",
-     "issue": 1
+     "issue": 1,
+     "verdict": "approved",
+     "comment": "S. Gadat, Lecture notes on Stochastic Optimization Algorithms, http://perso.math.univ-toulouse.fr/gadat/files/2012/12/cours_Algo_Stos_M2R5.pdf"
     }
    ],
    "mathlib_conflicts": [],
@@ -81,7 +83,9 @@
      "github_user": "GasStationManager",
      "date": "2026-02-17",
      "status": "current",
-     "issue": 1
+     "issue": 1,
+     "verdict": "approved",
+     "comment": "S. Gadat, Lecture notes on Stochastic Optimization Algorithms, http://perso.math.univ-toulouse.fr/gadat/files/2012/12/cours_Algo_Stos_M2R5.pdf"
     }
    ],
    "mathlib_conflicts": [],

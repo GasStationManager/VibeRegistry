@@ -15,6 +15,13 @@ Lean say what the mathematics says?
 Usage:
     generate_signoff_packet.py entries/<id>.toml [--out PATH] [--stdout]
     generate_signoff_packet.py --all
+    generate_signoff_packet.py --overlay leanpool:2-coloring-1-round
+
+An overlaid upstream record gets the same packet, from what upstream publishes:
+its declarations, the informal statement for each, what the upstream registry
+itself checked, and the hashes the sign-off will be bound to. We hold no spec of
+our own for those, so the packet links to the statement upstream rather than
+quoting Lean we did not write.
 """
 
 from __future__ import annotations
@@ -36,18 +43,34 @@ from lean_decls import find_declaration  # noqa: E402
 
 REPO_SLUG = "GasStationManager/VibeRegistry"
 
-CHECKLIST = """\
+# Shared by both kinds of target: these are about the statement itself.
+CHECKLIST_COMMON = """\
 - [ ] The Lean statement says what the informal statement says — same hypotheses,
       same conclusion, same quantifier order.
 - [ ] No hypothesis is stronger than it looks (watch for `Nonempty`, finiteness,
       measurability, and typeclass assumptions that quietly rule out the hard case).
 - [ ] No conclusion is weaker than it looks (existentials that are trivially
       satisfiable, bounds that hold vacuously).
-- [ ] Definitions replicated from the impl mean what their names claim, and do not
-      shadow a Mathlib definition of the same name with different content
-      (`scripts/check_mathlib_conflicts.py` reports suspected collisions).
+- [ ] Every definition the statement leans on means what its name claims.
+"""
+
+# Only meaningful where we hold the spec: an overlay record has no spec of ours.
+CHECKLIST_REGISTRY = """\
+- [ ] Definitions replicated from the impl do not shadow a Mathlib definition of
+      the same name with different content (`scripts/check_mathlib_conflicts.py`
+      reports suspected collisions).
 - [ ] Universe variables and implicit binders match the impl.
 - [ ] The statement is `sorry`-ed: the spec asserts, it does not prove.
+"""
+
+# Only meaningful upstream: there the proof and the statement live together.
+CHECKLIST_OVERLAY = """\
+- [ ] The statement upstream is the one the record names — same declaration, same
+      module, at the revision this packet pins.
+- [ ] Nothing in the surrounding upstream file weakens it (a local `axiom`, an
+      opaque definition, a hypothesis bundled into a typeclass).
+- [ ] What the upstream registry checked (above) is what you are relying on; this
+      registry did not re-verify the proof.
 """
 
 
@@ -152,7 +175,7 @@ def build_packet(entry_path):
     add("")
     add("### Checklist")
     add("")
-    add(CHECKLIST)
+    add(CHECKLIST_COMMON + CHECKLIST_REGISTRY)
 
     missing_informal = []
 
@@ -246,16 +269,137 @@ def build_packet(entry_path):
     return "\n".join(lines) + "\n"
 
 
+def build_overlay_packet(source, upstream_id):
+    """The same packet, for a record mirrored from an upstream registry."""
+    index_path = os.path.join(PROJECT_DIR, "overlay", "index.json")
+    if not os.path.isfile(index_path):
+        raise SystemExit(
+            "ERROR: no overlay/index.json. Run: python3 scripts/import_upstream.py --all"
+        )
+    with open(index_path) as f:
+        index = json.load(f)
+    record = next(
+        (r for r in index.get("records", [])
+         if r.get("source") == source and str(r.get("upstream_id")) == upstream_id),
+        None,
+    )
+    if record is None:
+        raise SystemExit(
+            f"ERROR: no {source} record with upstream id '{upstream_id}'. "
+            f"Run: python3 scripts/import_upstream.py --source {source}"
+        )
+
+    checks = record.get("upstream_checks", {})
+    lines = []
+    add = lines.append
+
+    add(f"# Sign-off packet — {record.get('title', upstream_id)}")
+    add("")
+    add(f"*Generated {dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} "
+        f"by `scripts/generate_signoff_packet.py`. Do not edit by hand.*")
+    add("")
+    add(f"- **Overlay record**: `{source}:{upstream_id}`")
+    add(f"- **Upstream**: {record.get('upstream_url', '')}")
+    add(f"- **Source repository**: {record.get('repository', '(none published)')}"
+        + (f" @ `{record['commit'][:12]}`" if record.get("commit") else ""))
+    if record.get("snapshot_commit"):
+        add(f"- **Read at snapshot**: `{record['snapshot_commit'][:12]}`")
+    add(f"- **Upstream checked**: comparator={checks.get('comparator', False)}, "
+        f"kernels={'+'.join(checks.get('kernels', [])) or 'unknown'}, "
+        f"llm_review={checks.get('llm_review', False)}, "
+        f"human_signoff={checks.get('human_signoff', False)}")
+    existing = record.get("signoffs", [])
+    if existing:
+        for signoff in existing:
+            add(f"- **Existing sign-off**: {signoff.get('verdict', '?')} / "
+                f"{signoff.get('status', '?')} by @{signoff.get('github_user', '?')} "
+                f"covering {', '.join(signoff.get('declarations', []))}")
+    else:
+        add("- **Existing sign-off**: **none**")
+    add("")
+    add("## What you are attesting")
+    add("")
+    add("This registry did not verify this result — the upstream registry did, "
+        "with the checks listed above. What it did not do is have a person read "
+        "the statement and vouch for what it says. That is what your sign-off "
+        "adds, and it is the whole reason this record is mirrored here.")
+    add("")
+    add("### Checklist")
+    add("")
+    add(CHECKLIST_COMMON + CHECKLIST_OVERLAY)
+
+    if record.get("abstract"):
+        add("")
+        add("## Abstract (upstream)")
+        add("")
+        for para in record["abstract"].split("\n"):
+            add("> " + para if para.strip() else ">")
+
+    informal = record.get("informal", {}) or {}
+    for name in record.get("declarations", []):
+        add("")
+        add("---")
+        add("")
+        add(f"## `{name}`")
+        add("")
+        text = informal.get(name)
+        if text:
+            add("**Informal statement** (upstream):")
+            add("")
+            for para in str(text).split("\n"):
+                add("> " + para if para.strip() else ">")
+        else:
+            add("**Informal statement**: _none published per declaration_ — "
+                "read the abstract above and the upstream source.")
+        add("")
+        add(f"**Lean statement**: not held here. Read it in the upstream source: "
+            f"{record.get('upstream_url', '')}")
+
+    add("")
+    add("---")
+    add("")
+    add("## Submitting")
+    add("")
+    add(f"Open a [sign-off issue](https://github.com/{REPO_SLUG}/issues/new?template=spec-signoff.yml), "
+        f"choose **Overlay record: {source}**, enter `{upstream_id}` as the Target ID, "
+        f"and list the declarations you reviewed (or `*` for all of them). The "
+        f"Action records it in `overlay/signoffs.toml` and binds it to the hashes "
+        f"below, so it goes stale by itself when upstream moves.")
+    add("")
+    add(f"- `statement_hash`: `{record.get('statement_hash', '(none)')}`")
+    add(f"- `lean_source_hash`: `{record.get('lean_source_hash', '(not fetched yet)')}`")
+
+    return "\n".join(lines) + "\n"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("entry", nargs="?", help="entries/<id>.toml")
+    ap.add_argument("--overlay", metavar="SOURCE:ID",
+                    help="packet for a mirrored record, e.g. leanpool:2-coloring-1-round")
     ap.add_argument("--all", action="store_true", help="generate for every entry")
     ap.add_argument("--out", help="output path (single entry only)")
     ap.add_argument("--stdout", action="store_true")
     args = ap.parse_args()
 
+    if args.overlay:
+        if ":" not in args.overlay:
+            ap.error("--overlay takes SOURCE:ID, e.g. leanpool:2-coloring-1-round")
+        source, upstream_id = args.overlay.split(":", 1)
+        text = build_overlay_packet(source.strip(), upstream_id.strip())
+        if args.stdout:
+            print(text, end="")
+        else:
+            out = args.out or os.path.join(PROJECT_DIR, "signoff_packets",
+                                           f"{source.strip()}-{upstream_id.strip()}.md")
+            os.makedirs(os.path.dirname(out), exist_ok=True)
+            with open(out, "w") as f:
+                f.write(text)
+            print(f"Wrote {out}")
+        return
+
     if not args.entry and not args.all:
-        ap.error("give an entry TOML or --all")
+        ap.error("give an entry TOML, --overlay SOURCE:ID, or --all")
 
     entries = (
         sorted(glob.glob(os.path.join(PROJECT_DIR, "entries", "*.toml")))

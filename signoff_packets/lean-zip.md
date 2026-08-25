@@ -1,6 +1,6 @@
 # Sign-off packet — lean-zip
 
-*Generated 2026-08-25 02:55 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-08-25 10:11 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `lean-zip`
 - **Upstream**: https://github.com/kim-em/lean-zip @ `e76f0813faa2`
@@ -22,9 +22,10 @@ Sign-off is optional: an entry whose comparator check passes stands on its own a
       measurability, and typeclass assumptions that quietly rule out the hard case).
 - [ ] No conclusion is weaker than it looks (existentials that are trivially
       satisfiable, bounds that hold vacuously).
-- [ ] Definitions replicated from the impl mean what their names claim, and do not
-      shadow a Mathlib definition of the same name with different content
-      (`scripts/check_mathlib_conflicts.py` reports suspected collisions).
+- [ ] Every definition the statement leans on means what its name claims.
+- [ ] Definitions replicated from the impl do not shadow a Mathlib definition of
+      the same name with different content (`scripts/check_mathlib_conflicts.py`
+      reports suspected collisions).
 - [ ] Universe variables and implicit binders match the impl.
 - [ ] The statement is `sorry`-ed: the spec asserts, it does not prove.
 

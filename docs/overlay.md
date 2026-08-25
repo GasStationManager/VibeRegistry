@@ -42,53 +42,51 @@ registry itself checked.
 `import_upstream.py` never writes `overlay/signoffs.toml`. Re-importing cannot
 clobber human review.
 
-## Signing off on an overlaid entry
+## Signing off on an overlaid record
 
-Add a block to `overlay/signoffs.toml` (via PR) naming what you reviewed:
+Same interface as a registry entry: the
+[sign-off issue form](../.github/ISSUE_TEMPLATE/spec-signoff.yml), choosing
+**Overlay record: palomar** or **Overlay record: leanpool** as the target kind,
+the upstream id as the Target ID, and the declarations you reviewed (or `*` for
+all of them). The Action appends a `[[signoff]]` block to `overlay/signoffs.toml`
+and opens a PR, exactly as it appends `[[signoffs]]` to an entry TOML.
+
+Read the packet first — it is the same artifact, built from what upstream publishes:
+
+```bash
+python3 scripts/generate_signoff_packet.py --overlay leanpool:2-coloring-1-round
+```
+
+The Action fills in the hashes that make the sign-off go stale, from the record
+as it stands when you sign:
 
 ```toml
 [[signoff]]
 source = "leanpool"
-upstream_id = "boolean-isoperimetry"
-declarations = ["BooleanIsoperimetry.harper_theorem"]   # or ["*"]
+upstream_id = "2-coloring-1-round"
+declarations = ["Distributed2Coloring.pStar_ge_23879"]   # or ["*"]
 github_user = "your-handle"
-date = "2026-08-21"
-verdict = "approved"
-statement_hash = "sha256:…"    # copy from overlay/leanpool/boolean-isoperimetry.json
+date = "2026-08-25"
+issue = 42
+verdict = "approved"                                      # approved | rejected
+statement_hash = "sha256:…"
+lean_source_hash = "sha256:…"
 comment = "Harper (1966); initial-segment ordering matches the informal statement."
 ```
 
-`statement_hash` is what makes the sign-off honest over time: it hashes the
-declaration names, informal statements, pinned commit and upstream snapshot that
-were reviewed. When upstream publishes a new version the hash stops matching and
-`import_upstream.py --reindex` reports the sign-off as **stale** instead of
-carrying it forward.
+Nobody copies a hash by hand: a sign-off bound to a hash the reviewer transcribed
+is a sign-off bound to whatever they happened to paste. `statement_hash` covers
+the declarations, informal text, pinned commit and upstream snapshot;
+`lean_source_hash` covers the Lean file the statements live in, which is what
+catches a theorem's *type* changing under an unchanged name. Either moving marks
+the sign-off **stale**.
 
-Metadata alone is not enough for LeanPool, which publishes no per-project commit
-and vendors its projects at mutable `main`: a theorem's *type* could change while
-its name and informal text stay put. So every LeanPool record pins the
-`snapshot_commit` it was read from, and a signed-off record also carries
-`lean_source_hash` — the hash of the Lean file its statements live in, fetched at
-that snapshot:
+A rejection is recorded too, with `verdict = "rejected"`. It is information the
+next reader needs, and the search index renders it as a rejection — never as a
+sign-off, and never as absence of one.
 
-```bash
-python3 scripts/import_upstream.py --reindex --fetch-sources
-```
-
-A sign-off goes stale if either hash moves, and the record says which.
-
-A sign-off covers exactly the declarations it names. Listing
-`declarations = ["Foo.bar"]` signs `Foo.bar` and nothing else — the search index
-attaches it only to that declaration, and only a current, approved sign-off reads
-as one.
-
-A full sync (no `--limit`) also removes mirrored records the source no longer
-publishes; a partial import never prunes, since it says nothing about what
-upstream still has.
-
-Sign-offs on our own entries still go through the
-[sign-off issue form](../.github/ISSUE_TEMPLATE/spec-signoff.yml); extending that
-Action to cover overlay records is not done yet.
+`import_upstream.py` never writes `overlay/signoffs.toml`, so re-importing cannot
+clobber review.
 
 ## Promoting an overlay record to a full entry
 

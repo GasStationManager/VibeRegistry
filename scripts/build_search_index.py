@@ -127,6 +127,12 @@ def signoffs_for(config, spec_module):
                 "date": s.get("date", ""),
                 "status": s.get("status", ""),
                 "issue": s.get("issue"),
+                # Entry sign-offs predating the field were only recordable when
+                # approved, so absence means approved — not "unknown". Readers
+                # require an explicit verdict, and without this a real sign-off
+                # would render as none.
+                "verdict": (s.get("verdict") or "approved").lower(),
+                "comment": s.get("comment", ""),
             })
     return out
 

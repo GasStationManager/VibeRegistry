@@ -54,12 +54,24 @@ context by hand.
 
 ### 3. Submit
 
-Open a [sign-off issue](../.github/ISSUE_TEMPLATE/spec-signoff.yml). The Action
-parses it, appends a `[[signoffs]]` block to the entry TOML with a hash of the
-spec files reviewed, and opens a PR. If those files change later, the sign-off is
-marked stale automatically (`scripts/check_signoff_staleness.py`).
+Open a [sign-off issue](../.github/ISSUE_TEMPLATE/spec-signoff.yml). One form
+covers both kinds of target:
 
-For overlaid upstream entries, see [overlay.md](overlay.md).
+| Target kind | Target ID | What you reviewed | Recorded in |
+|---|---|---|---|
+| Registry entry | entry id | spec file paths | `entries/<id>.toml` |
+| Overlay record: palomar | `PALOMAR-…` | declaration names, or `*` | `overlay/signoffs.toml` |
+| Overlay record: leanpool | slug | declaration names, or `*` | `overlay/signoffs.toml` |
+
+The Action parses the issue, works out which store the sign-off belongs in, binds
+it to a hash of what you actually reviewed, and opens a PR. If the reviewed spec
+files change later the sign-off is marked stale automatically
+(`scripts/check_signoff_staleness.py`); for overlay records the equivalent check
+runs on re-import (see [overlay.md](overlay.md)).
+
+Rejections are recorded as well as approvals. A rejected review renders as a
+rejection in the search index — the next reader learns more from "someone looked
+and said no" than from silence.
 
 ## What a reviewer should watch for
 
