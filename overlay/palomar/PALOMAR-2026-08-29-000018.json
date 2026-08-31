@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000018",
+  "version": 1,
+  "title": "ehrlich-b/composition-algebras",
+  "abstract": "Hurwitz's theorem (1898), classification form: a nontrivial finite-dimensional Euclidean composition algebra over R - a unital, not necessarily associative or commutative bilinear product together with a symmetric positive-definite form whose quadratic form is multiplicative - is isomorphic to R, C, the quaternions or the octonions, by a linear isomorphism preserving the unit, the product and the norm form. All four targets are constructed, with Degen's eight-square identity discharging the octonion composition law, so every branch of the conclusion is attained. Machine checked, not peer reviewed, no priority claim.",
+  "authors": [
+    "Bryan Ehrlich"
+  ],
+  "repository": "https://github.com/ehrlich-b/composition-algebras",
+  "commit": "98d4437ce1bfd8d042b8383e0cfe28ec3e595eee",
+  "project_path": null,
+  "declarations": [
+    "HurwitzClassification.hurwitz_classification"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA",
+      "math.RT"
+    ],
+    "msc2020": [
+      "17A75",
+      "11E88",
+      "17A35",
+      "17D05",
+      "17C40",
+      "15A63"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T23:27:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "98d4437ce1bfd8d042b8383e0cfe28ec3e595eee",
+        "fork_repository": "PalomarArchive/ehrlich-b--composition-algebras--e3945ebc89d0",
+        "source_repository": "ehrlich-b/composition-algebras"
+      }
+    ]
+  },
+  "statement_hash": "sha256:54bfd9c85eefd6e16955ac7054ae7f8aacea179c33feaca38777522d6ec9f291"
+}

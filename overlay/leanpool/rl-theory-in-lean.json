@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ShangtongZhang/rl-theory-in-lean",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.RlTheoryInLean",
   "declarations": [
     "StochasticMatrix.stationary_distribution_exists"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/RlTheoryInLean.lean",
-  "statement_hash": "sha256:548872b3b35f2c2321703595c2309002d72ac92135aa148c5e8f81c8ec18ff2b"
+  "statement_hash": "sha256:467769cb0760eab995a4d7edf3d6e378cb43b1bb55e9967a401aad99ac7f1a7d"
 }

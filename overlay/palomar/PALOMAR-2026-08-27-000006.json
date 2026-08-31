@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000006",
+  "version": 1,
+  "title": "AviKndr/universal-words",
+  "abstract": "Answer to Problem 10.32 of the Kourovka Notebook, posed by Yu. I. Merzlyakov in 1986 and still open in the Notebook's 21st edition (2026), in both directions. Positive direction: there are constants C and N0 such that for all nonzero integers r, s with r or s odd, the word x^r y^s is universal on the symmetric group S_n (every permutation is a value) whenever n >= N0 and n >= C * log m(r,s), where m(r,s) is the product of the distinct primes dividing rs. This is the S_n analogue of the logarithmic Brenner-Evans-Silberger bound for A_n; the best previous S_n bound (Droste, 1986) was linear in m. The constant C is effective (the paper gives 4.65 for its fully effective cases), while the threshold N0 is ineffective solely because the proof uses Vinogradov's three-primes theorem. Negative direction, unconditional: the logarithmic shape is optimal. For r = lcm(1..n) with s its odd part, no element of order 3 in S_n is a value of x^r y^s, while log m(r,s) equals theta(n), the full Chebyshev mass of the primes up to n. The proof is machine-checked in Lean 4 on top of Mathlib, with the complete prose write-up included in this repository. The principal theorem, UniversalWords.kourovka_10_32_conditional, is a fully proved implication from eight explicitly stated published theorems (Herzog-Kaplan-Lev, Boccara, three Rosser-Schoenfeld bounds, Montgomery-Vaughan's Brun-Titchmarsh inequality, Vinogradov's three-primes theorem, and the Halberstam-Richert sieve bound) and depends only on Lean's three standard axioms, as does the optimality theorem UniversalWords.not_universal. A quarantined module assumes the eight statements as axioms to recover the unconditional form.",
+  "authors": [
+    "Avi Kondareddy"
+  ],
+  "repository": "https://github.com/AviKndr/universal-words",
+  "commit": "90e3cbf743db257ecc13639f024c52fb197d6a48",
+  "project_path": "lean",
+  "declarations": [
+    "Kourovka1032.kourovka_10_32_conditional",
+    "Kourovka1032.not_universal"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "math.NT"
+    ],
+    "msc2020": [
+      "20B30",
+      "20D60",
+      "11P32",
+      "05A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T01:47:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "90e3cbf743db257ecc13639f024c52fb197d6a48",
+        "fork_repository": "PalomarArchive/AviKndr--universal-words--e0c5e5f4fcc9",
+        "source_repository": "AviKndr/universal-words"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a76cef3462e0a8143136b66c60e0fa1d9a8099152951cc00bc38b460d9632fcf"
+}

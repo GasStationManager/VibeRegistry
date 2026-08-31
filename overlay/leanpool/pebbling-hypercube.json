@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/pachterlab/P_2026_2",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.PebblingLean",
   "declarations": [
     "PebblingLean.Hypercube.Paper.optimalPebblingNumber_theta",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PebblingLean.lean",
-  "statement_hash": "sha256:45ecb0778c923f09920b6137af7cda8f2cc51455a920a6125b77ca10861dd211"
+  "statement_hash": "sha256:ea5fbd8409ced55a095b33c491238278059cd252cd0a1c4f17a8db962ae02c13"
 }

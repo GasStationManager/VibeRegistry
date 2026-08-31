@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "erdos81-paper-iii-sum-zero-triangles",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Erdos81PaperIIIContrib",
+  "version": 1,
+  "title": "Near-perfect triangle packings from sum-zero triples",
+  "abstract": "Records a reusable formalization byproduct accompanying Paper III: pairwise edge-disjoint triangles in any finite complete graph such that every vertex is incident to at most three uncovered edges, using a cyclic-group sum-zero triple system, with a bridge to Mathlib's SimpleGraph API.",
+  "authors": [
+    "Juan Pablo Traverso Gianini",
+    "Aristotle",
+    "Vasily Ilin"
+  ],
+  "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
+  "commit": "",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "entry_module": "LeanPool.Erdos81PaperIIIContrib",
+  "declarations": [
+    "SumZeroTriangles.exists_simpleGraph_triangle_packing",
+    "SumZeroTriangles.exists_triangle_packing_clique"
+  ],
+  "informal": {
+    "SumZeroTriangles.exists_simpleGraph_triangle_packing": "For every finite vertex type, its complete simple graph has a family of pairwise edge-disjoint triangle graphs whose uncovered graph has degree at most three at every vertex.",
+    "SumZeroTriangles.exists_triangle_packing_clique": "Every finite complete graph has a family of pairwise edge-disjoint triangles leaving uncovered degree at most three at every vertex."
+  },
+  "classification": {
+    "msc2020": [
+      "05B07",
+      "05C70"
+    ],
+    "tags": [
+      "extremal-combinatorics",
+      "triangle-packing",
+      "cyclic-groups"
+    ],
+    "branch": "extremal and design combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Erdos81PaperIIIContrib.lean",
+  "statement_hash": "sha256:dfe338fc7d34228f4251db8eb3b47c07f22aa70833bfbe1e5275112e3c1b5a1c"
+}

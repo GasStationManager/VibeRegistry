@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000002",
+  "version": 1,
+  "title": "BrandonMYates/csordas-comparator",
+  "abstract": "This project formalizes in Lean 4 a counterexample to a log-concavity conjecture of Coffey and Csordas (Math. Comp. 82 (2013) 2265-2272, Conjecture 2.5, where the quantity below is written S_n), later restated as Open Problem 4.13 of Csordas (Comput. Methods Funct. Theory 15 (2015) 373-391). Let Phi be the kernel of Riemann's integral representation, Phi(u) = sum_{n>=1} (4 pi^2 n^4 e^{9u/2} - 6 pi n^2 e^{5u/2}) e^{-pi n^2 e^{2u}}, and set J_n(t) = (Phi^(n)(t))^2 - Phi^(n-1)(t) Phi^(n+1)(t), the n-th Laguerre expression of Phi. The conjecture asserts J_n(t) > 0 for every real t and every n >= 1. The compared theorem proves J_9(0) < 0, refuting it. The mechanism is a single sign anomaly: Phi is even, so Phi^(9)(0) = 0 and J_9(0) = -Phi^(8)(0) Phi^(10)(0); the expected sign alternation of the even-order derivatives at the origin breaks at order ten, with Phi^(8)(0) and Phi^(10)(0) both positive. The formalization defines Phi through its convergent theta series, uses iterated derivatives, and derives evenness from Mathlib's Gaussian Poisson summation. The audience is the study of Laguerre expressions and Turan-type inequalities for the Riemann kernel: the Csordas school and its successors, who posed the conjecture and restated it as an open problem. The result is a counterexample, checkable directly by anyone with the definition of Phi in hand. This entry makes no claim concerning the Riemann hypothesis and no priority claim for the counterexample. Contemporaneous LLM-assisted exact-certificate proofs of the same sign failure are cited in the source metadata; neither is a proof-assistant formalization. The contribution recorded here is the Lean 4 formalization and its auditable dependency chain. As an aside: the supporting library pinned by this entry also contains machine-checked refutations, on the same axiom set, of conjectures of X.-J. Yang (Fractals 32 (2024) 2340116) asserting that the zeros of the tempered xi function -- the odd channel of this same kernel -- are confined to a single line; those theorems are not compared by this configuration and are mentioned only as context for the library.",
+  "authors": [
+    "Brandon Yates"
+  ],
+  "repository": "https://github.com/BrandonMYates/csordas-comparator",
+  "commit": "2b23c32b841044581b7fc7a2dca0df86255d490d",
+  "project_path": null,
+  "declarations": [
+    "CsordasCounterexample.J_nine_neg"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.CV",
+      "math.NT"
+    ],
+    "msc2020": [
+      "30D15",
+      "26A51",
+      "30D10",
+      "11M06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T00:40:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2b23c32b841044581b7fc7a2dca0df86255d490d",
+        "fork_repository": "PalomarArchive/BrandonMYates--csordas-comparator--af50d54b96fc",
+        "source_repository": "BrandonMYates/csordas-comparator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c8d9f340406e6849975247047cc9adfd9681ec65e32371ac96a34129337ee762"
+}

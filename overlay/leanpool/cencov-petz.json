@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/abenenson/cencov-petz",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.CencovPetz",
   "declarations": [
     "LeanPool.CencovPetz.MonotoneMetricFamily.eq_smul_fisher_of_continuous",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CencovPetz.lean",
-  "statement_hash": "sha256:931cfa81b67b8465843ec4ba4d632936764174707788e9c8970284ee7024e081"
+  "statement_hash": "sha256:f642637df6567c311310d2069619ca50c0ae80a8209b5136d28201061b5a0bc8"
 }

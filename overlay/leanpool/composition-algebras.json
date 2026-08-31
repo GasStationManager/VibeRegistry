@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "composition-algebras",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CompositionAlgebras",
+  "version": 1,
+  "title": "Hurwitz's Classification of Euclidean Composition Algebras",
+  "abstract": "Formalizes Hurwitz's classification of nontrivial finite-dimensional real Euclidean composition algebras: every such algebra has dimension 1, 2, 4, or 8 and is real-linearly equivalent to the real numbers, complex numbers, quaternions, or octonions through a map preserving the unit, multiplication, and norm form. The development also constructs the octonions from an explicit Fano multiplication table, proves Degen's eight-square identity, and shows that Cayley--Dickson doubling preserves the composition law for associative inputs.",
+  "authors": [
+    "Bryan Ehrlich"
+  ],
+  "repository": "https://github.com/ehrlich-b/composition-algebras",
+  "commit": "",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "entry_module": "LeanPool.CompositionAlgebras",
+  "declarations": [
+    "CompositionAlgebra.hurwitz_classification",
+    "CompositionAlgebra.finrank_eq_one_or_two_or_four_or_eight",
+    "CompositionAlgebra.CD.instCompositionAlgebra",
+    "Octonion.nucleus_real"
+  ],
+  "informal": {
+    "CompositionAlgebra.hurwitz_classification": "Every nontrivial finite-dimensional real Euclidean composition algebra is linearly equivalent to the real numbers, complex numbers, quaternions, or octonions through a map preserving the unit, multiplication, and norm form.",
+    "CompositionAlgebra.finrank_eq_one_or_two_or_four_or_eight": "The real dimension of a nontrivial finite-dimensional Euclidean composition algebra is exactly 1, 2, 4, or 8.",
+    "CompositionAlgebra.CD.instCompositionAlgebra": "The Cayley--Dickson double of a nontrivial associative Euclidean composition algebra again satisfies the composition law.",
+    "Octonion.nucleus_real": "Any octonion that associates in the third slot with every pair has zero imaginary coordinates and hence lies on the real line."
+  },
+  "classification": {
+    "msc2020": [
+      "17A75",
+      "17A35",
+      "11E88"
+    ],
+    "tags": [
+      "nonassociative-algebra",
+      "composition-algebras",
+      "octonions",
+      "hurwitz-theorem",
+      "cayley-dickson"
+    ],
+    "branch": "nonassociative algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CompositionAlgebras.lean",
+  "statement_hash": "sha256:769c10978706550e59f14542f9f59f5b463888a758f551bfb8a46cded5eff97e"
+}

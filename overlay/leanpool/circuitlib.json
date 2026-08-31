@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/matthunz/circuitlib",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.Circuitlib",
   "declarations": [
     "Circuit.SequentialCircuitCategory.instSymmetricCategory",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Circuitlib.lean",
-  "statement_hash": "sha256:e2537028bce1fe301de93e6ec991365a7a30542ee8f2a90bd9b3128a758b9219"
+  "statement_hash": "sha256:10ba6ba6b108d7b8179b2c149bc3a0e6a43cffad63a06848077240dc004c99aa"
 }

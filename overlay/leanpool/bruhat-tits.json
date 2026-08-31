@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/chrisflav/bruhat-tits",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.BruhatTits",
   "declarations": [
     "BruhatTits.BTtree",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/BruhatTits.lean",
-  "statement_hash": "sha256:e8240645b70e3b024066c55074f39ef8a60a0064e83a78fcb8dfd1b6d6b53cfa"
+  "statement_hash": "sha256:9d7cb62e623920a1c0602843e351f3f3089af9a9a280ce3f522fd63cb29a819b"
 }

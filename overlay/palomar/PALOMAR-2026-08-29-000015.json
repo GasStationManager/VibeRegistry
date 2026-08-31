@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000015",
+  "version": 1,
+  "title": "ehrlich-b/composition-algebras",
+  "abstract": "Hurwitz's theorem (1898), dimension form: a nontrivial finite-dimensional Euclidean composition algebra over R - a unital, not necessarily associative or commutative bilinear product together with a symmetric positive-definite form whose quadratic form is multiplicative - has real dimension 1, 2, 4 or 8. R, C and H are exhibited so the class is inhabited; the classification into R, C, H and O is strictly stronger and is not part of this entry. Machine checked, not peer reviewed, no priority claim.",
+  "authors": [
+    "Bryan Ehrlich"
+  ],
+  "repository": "https://github.com/ehrlich-b/composition-algebras",
+  "commit": "e37e22b0571a170ba18a0d8db29fe2a857906b92",
+  "project_path": null,
+  "declarations": [
+    "HurwitzDimension.finrank_eq_one_or_two_or_four_or_eight"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA",
+      "math.RT"
+    ],
+    "msc2020": [
+      "17A75",
+      "11E88",
+      "17A35",
+      "17D05",
+      "17C40",
+      "15A63"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T11:55:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e37e22b0571a170ba18a0d8db29fe2a857906b92",
+        "fork_repository": "PalomarArchive/ehrlich-b--composition-algebras--e3945ebc89d0",
+        "source_repository": "ehrlich-b/composition-algebras"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6ff32291afed2880fa5c2cb4af290d78cfe389f0c5eb79f5a79e0dd50a0bdbc3"
+}

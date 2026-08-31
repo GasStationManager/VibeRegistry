@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/ah1112/synthetic_euclid_4",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.SyntheticEuclid4",
   "declarations": [
     "SyntheticEuclid4.pythagoras",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SyntheticEuclid4.lean",
-  "statement_hash": "sha256:d7abb57e02eeb560239cdba0ce6ab8dbc671f9e88cb05ff90d5fa75f47db55bd"
+  "statement_hash": "sha256:7710d43edfb397ca04fcbbbc756b0e5ac12e5fe51635d6f292cb74c264dd2cc0"
 }

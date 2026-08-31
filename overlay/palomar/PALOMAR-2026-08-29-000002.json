@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000002",
+  "version": 1,
+  "title": "dcposch/jc2-lean",
+  "abstract": "Lean 4 / Mathlib proof of the source-facing polynomial-cube exclusion at actual partial degrees (6,9).  From literal bivariate polynomials of outer degrees six and nine, leading coefficients s^6 and s^9 for a common polynomial s, and nonzero constant Keller bracket, the formalization proves that no such source exists, including when s is constant.  It constructs the finite-pole or infinity expansion, exhausts every timing of the eight Faber loads through rho2, and excludes the remaining elliptic, cusp, zero-invariant, and constant-core terminal fibres.  It does not claim the reduction from an arbitrary Keller pair, all (6,9), maximum eleven, or the plane Jacobian conjecture.",
+  "authors": [
+    "Dan Clemens Posch"
+  ],
+  "repository": "https://github.com/dcposch/jc2-lean",
+  "commit": "ba44127093e65cbd862604a16e3fe79fb63e93cf",
+  "project_path": "gcd3-69-cube",
+  "declarations": [
+    "GCD369PolynomialCubeSourceExclusion"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.AC"
+    ],
+    "msc2020": [
+      "14R15",
+      "13P10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T00:42:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ba44127093e65cbd862604a16e3fe79fb63e93cf",
+        "fork_repository": "PalomarArchive/dcposch--jc2-lean--e2c6525da39f",
+        "source_repository": "dcposch/jc2-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:121824ddc44939547349503079496b69cfbcf6322243e1465a31d732d56a47b2"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000009",
+  "version": 1,
+  "title": "Arthur742Ramos/hadamard-668-lean",
+  "abstract": "An independent Lean 4 and Mathlib formalization of a supplied bordered block-circulant sign matrix of order 668.  The main theorem proves that there exists a 668 by 668 integer matrix with entries in {-1, 1}, diagonal row norm 668, and zero inner product between every pair of distinct rows. The formalization is a certificate-specific existence result, not a classification of Hadamard matrices and not a proof of the general Hadamard conjecture.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/hadamard-668-lean",
+  "commit": "78fbae8d69b6fdb66705b662469692d60e346ef0",
+  "project_path": null,
+  "declarations": [
+    "Hadamard668.hadamard_668_exists"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.LO"
+    ],
+    "msc2020": [
+      "05B20",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T01:52:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "78fbae8d69b6fdb66705b662469692d60e346ef0",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--hadamard-668-lean--1a5279bbab33",
+        "source_repository": "Arthur742Ramos/hadamard-668-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3b9965dcec015e2f837a0d3bfdf04073cd7666d05c616c532dc09c1a35eea8a3"
+}

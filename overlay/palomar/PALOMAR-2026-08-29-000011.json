@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000011",
+  "version": 1,
+  "title": "mccorvie/classification-of-surfaces",
+  "abstract": "A Lean 4 formalization of the classification theorem for compact connected topological 2-manifolds, including surfaces with boundary. The main theorem proves that every compact connected Hausdorff 2-manifold modeled on the Euclidean half-plane is homeomorphic to the sphere, an orientable canonical quotient surface, or a non-orientable canonical quotient surface. The submitted theorem is the exact statement of the Lean Eval `topological_classification_of_surfaces` challenge.",
+  "authors": [
+    "Ryan McCorvie",
+    "Jack McCarthy"
+  ],
+  "repository": "https://github.com/mccorvie/classification-of-surfaces",
+  "commit": "e3c7230fe78d7b056a415d9ecae6f77887046b32",
+  "project_path": "LeanEval/topological_classification_of_surfaces",
+  "declarations": [
+    "classification_of_surfaces"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GT"
+    ],
+    "msc2020": [
+      "57K20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T02:38:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e3c7230fe78d7b056a415d9ecae6f77887046b32",
+        "fork_repository": "PalomarArchive/mccorvie--classification-of-surfaces--d718e10e33ab",
+        "source_repository": "mccorvie/classification-of-surfaces"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a7f199a12bc8102ac9e1c3d0b49c365f2c68ae4e8991966ee50a97b9e5dd071a"
+}

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/roos-j/lean-booleanfun",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.LeanBooleanfun",
   "declarations": [
     "LeanPool.LeanBooleanfun.BooleanFun.BV.dictator_of_condorcet_and_unanimous"
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/LeanBooleanfun.lean",
-  "statement_hash": "sha256:74236afa8e74237ee9f0eb7ad16d22382a1bb6dcfa368670950ad535e9c679d1"
+  "statement_hash": "sha256:9d4e808687304c6e0b70dc2bf23e505995ef3b7b7c392ceb37d463087fe69cfc"
 }

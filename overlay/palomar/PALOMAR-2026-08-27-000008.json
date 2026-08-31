@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000008",
+  "version": 2,
+  "title": "Vulkin-prog/paper-c-lean",
+  "abstract": "Lean 4 formalization of global and finite-prefix Poisson laws for the starting points of long constant stretches of an extended Rademacher random completely multiplicative function, corresponding to Theorem 16.2 and Corollary 16.4 of the cited source article. The selected declarations give the global interior start-count law on a finite prime-sign cylinder, its recentering at M/2^L, the corresponding theorem on the infinite Rademacher product, and the finite-prefix start-count and longest-stretch law. All asymptotics are uniform in the critical window |L - log_2 M| <= C. Each declaration is conditional on exactly six fully stated ordinary source propositions; those propositions are theorem arguments, not Lean axioms.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "b3cf107d2df629453a5da8e84f2bad29eea0bf94",
+  "project_path": null,
+  "declarations": [
+    "paper_c_theorem_sixteen_two_finite_cylinder",
+    "paper_c_theorem_sixteen_two_finite_cylinder_recentered",
+    "paper_c_theorem_sixteen_two_infinite_model",
+    "paper_c_corollary_sixteen_four_prefix_law"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T12:36:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b3cf107d2df629453a5da8e84f2bad29eea0bf94",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:640a26c35f43170ef2714664d9d39617fe4f5acfc15f71ca687f4a99746047e9"
+}

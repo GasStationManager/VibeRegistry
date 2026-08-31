@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000019",
+  "version": 1,
+  "title": "yuhangshi888/sun-cotangent-permanent-counterexample-lean",
+  "abstract": "A Lean 4 and Mathlib formalization of the exact evaluation of the normalized 14 by 14 cotangent permanent at p = 29. The formalization proves that its value is 84643985981440 and hence gives a counterexample to the cotangent sign inequality in Zhi-Wei Sun's Conjecture 4.7(ii). It includes the analytic-to-cyclotomic bridge, two separately kernel-checked finite permanent certificates, Chinese-remainder and coefficientwise integer lifting, the Section 3 Archimedean uniqueness argument, and equation (4.1) in the integral cyclotomic quotient.",
+  "authors": [
+    "Yuhang Shi"
+  ],
+  "repository": "https://github.com/yuhangshi888/sun-cotangent-permanent-counterexample-lean",
+  "commit": "8db902a56070f0d90866bf8a44d485a20cb817af",
+  "project_path": null,
+  "declarations": [
+    "SunCotangentP29.cotangentPermanent29_exact",
+    "SunCotangentP29.sunSignCounterexample"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11C20",
+      "15A15",
+      "11A07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T21:50:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8db902a56070f0d90866bf8a44d485a20cb817af",
+        "fork_repository": "PalomarArchive/yuhangshi888--sun-cotangent-permanent-counterexample-lean--bd54da548ba3",
+        "source_repository": "yuhangshi888/sun-cotangent-permanent-counterexample-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0f02ce080135080536a26c5c9cefc016cb07e2d88777ba8aae1462de23c2d1cd"
+}

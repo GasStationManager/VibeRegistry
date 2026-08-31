@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000005",
+  "version": 1,
+  "title": "akopjan/NRR-AAK",
+  "abstract": "Formalization of the result by A. Akopyan, S. Avvakumov, and R. Karasev that every convex figure in the plane can be partitioned into n convex pieces having equal area and equal perimeter for any n≥1.",
+  "authors": [
+    "Arseniy Akopyan"
+  ],
+  "repository": "https://github.com/akopjan/NRR-AAK",
+  "commit": "9e57be63320f29cbb8d2da7c4a8ad6afdef681eb",
+  "project_path": null,
+  "declarations": [
+    "HumanVerification.equalAreaEqualPerimeterPartition"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C35",
+      "55M20",
+      "55M35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T04:27:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9e57be63320f29cbb8d2da7c4a8ad6afdef681eb",
+        "fork_repository": "PalomarArchive/akopjan--NRR-AAK--35f6d81e6f88",
+        "source_repository": "akopjan/NRR-AAK"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e27e0d35f6f08ac525f47266e3929639cd8c41fa356e1d10560a5361f2181397"
+}

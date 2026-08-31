@@ -1,11 +1,11 @@
 # Sign-off packet — Lean Statistical Learning Theory
 
-*Generated 2026-08-25 17:19 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-08-31 09:14 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `stat-learning`
 - **Upstream**: https://github.com/YuanheZ/lean-stat-learning-theory @ `7b82b1323c80`
 - **Lean**: leanprover/lean4:v4.27.0-rc1
-- **Machine checks**: comparator — overall **pass** at 2026-08-25T02:36:45Z
+- **Machine checks**: comparator, nanoda — overall **fail** at 2026-08-30T07:57:02Z
 - **Informal statements**: none adopted yet — run `python3 scripts/fetch_blueprint_statements.py entries/stat-learning.toml`
 
 ## What you are attesting
@@ -295,7 +295,7 @@ def CompactlySupportedSmooth (f : ℝ → ℝ) : Prop :=
 
 ### `GaussianLipConcen.gaussian_lipschitz_concentration`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -328,7 +328,7 @@ theorem gaussian_lipschitz_concentration {f : EuclideanSpace ℝ (Fin n) → ℝ
 
 ### `dudley`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -368,7 +368,7 @@ theorem dudley {μ : Measure Ω} [IsProbabilityMeasure μ]
 
 ### `efronStein`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -400,7 +400,7 @@ theorem efronStein (f : (Fin n → Ω) → ℝ) (hf : MemLp f 2 (Measure.pi μs)
 
 ### `GaussianPoincare.gaussianPoincare`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 

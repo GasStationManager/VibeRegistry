@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000001",
+  "version": 1,
+  "title": "BrandonMYates/tempered-xi-comparator",
+  "abstract": "This project formalizes in Lean 4 the zero geometry of the odd channel of Riemann's kernel, refuting conjectures of X.-J. Yang (Fractals 32 (2024) 2340116). Let Phi be the kernel of Riemann's integral representation, Phi(u) = sum_{n>=1} (4 pi^2 n^4 e^{9u/2} - 6 pi n^2 e^{5u/2}) e^{-pi n^2 e^{2u}}, the positive even function whose cosh transform is the completed zeta function, and let F(w) = 2 int_0^infty Phi(u) sinh(wu) du be the odd channel of the same kernel; this is Yang's \"tempered xi function\", in shifted coordinates. Six statements are compared: F is entire; F has infinitely many zeros; every nonzero zero of F has both real and imaginary parts nonzero; the zeros occur in quartets w, -w, conj w, -conj w; consequently the source paper's Conjecture 1, which asserts that every zero of the tempered xi function lies on the line Re s = 1/2, is false, and indeed apart from the origin no zero lies on that line; and the zeros of the sine channel t -> F(it) are not all real, which is the exactly formalizable content of the source paper's Conjecture 2. The audience is the study of real zeros of Fourier transforms of Riemann's kernel, the line of work of Lagarias and Montague (2011), Ki, Kim and Lee (2009), and the de Bruijn-Newman literature: the weight family interpolating the Lagarias-Montague integrated function and the odd xi derivatives places F at weight zero. Yang's conjectures are the occasion for the formalization, not its research context; Conjecture 1 was also the subject of a prize challenge publicly announced by its author, recorded here solely as evidence that the question was regarded as open and difficult, with no claim made concerning the prize itself. This entry makes no claim concerning the Riemann hypothesis. Scope limitation, stated plainly: the compared theorems quantify over the integral F as defined in the Challenge file. The classical identification of F with the odd part of the completed zeta function is NOT proved in Lean; it was checked numerically only (agreement to about forty digits at several complex points), and nothing in the formal development depends on it. On novelty: the refutation of the source conjectures is believed new. In the literature search completed 26 August 2026, every recorded citation of the source paper is a self-citation, the conjectures are restated as open in a 2026 invited review, and no refutation and no proof-assistant formalization of any compared statement was identified; that search is recorded but not exhaustive, and absence from search is not proof of open status. The component statements are not claimed as new: that F is entire of order one with infinitely many zeros was asserted, without proof, by Yang, Abdel-Aty and Geng (Thermal Science 27 (2023) 505-512) for this same function; the exclusion of zeros from the imaginary axis is, in sine-transform coordinates, a 1971 theorem of Spira, independently reproved here, with classical ancestry in Polya (1918, 1926) and Wintner (1935); and the quartet symmetry is recorded as a printed remark by Lagarias and Montague for the sibling weight family. The contribution recorded here is the proof-assistant formalization and its auditable dependency chain. As an aside: the supporting library pinned by this entry also contains a machine-checked counterexample, on the same axiom set, to a log-concavity conjecture of Coffey and Csordas for the derivatives of this same kernel; that theorem is not compared by this configuration and is mentioned only as context for the library.",
+  "authors": [
+    "Brandon Yates"
+  ],
+  "repository": "https://github.com/BrandonMYates/tempered-xi-comparator",
+  "commit": "d226851cc05dee3cad2244ce2660ad72b898a636",
+  "project_path": null,
+  "declarations": [
+    "TemperedXi.F_differentiable",
+    "TemperedXi.zeros_infinite",
+    "TemperedXi.zeros_off_axes",
+    "TemperedXi.zeros_quartet",
+    "TemperedXi.critical_line_conjecture_false",
+    "TemperedXi.sine_channel_zeros_not_all_real"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CV",
+      "math.CA"
+    ],
+    "msc2020": [
+      "30D15",
+      "30D10",
+      "11M06",
+      "44A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T00:08:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d226851cc05dee3cad2244ce2660ad72b898a636",
+        "fork_repository": "PalomarArchive/BrandonMYates--tempered-xi-comparator--5192eff4761a",
+        "source_repository": "BrandonMYates/tempered-xi-comparator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b32e8b61a746c6d61001b7bf9cf6eb1d3c28f0da5a5c5dc1283eb64e07134e43"
+}

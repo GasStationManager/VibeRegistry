@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-30-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-30-000002",
+  "version": 1,
+  "title": "pengzhang91/Feige",
+  "abstract": "A Lean 4 formalization of the sharp unit-slack (delta = 1) small-deviation inequality for sums of independent nonnegative random variables. For every positive integer n and every independent family X_1, ..., X_n of measurable, integrable, nonnegative random variables satisfying E[X_i] <= 1, writing S = sum_i X_i, it proves the sharp bound P(S < E[S] + 1) >= (n / (n + 1))^n and proves that this constant is optimal for each fixed n. This optimal dimension-dependent bound strengthens and implies Feige's 1/e conjecture. The repository also formalizes the Vlassis-Thomas exact calibration theorem and Grünbaum's centroid-halfspace inequality used in the proof.",
+  "authors": [
+    "Guanyang Wang",
+    "Peng Zhang"
+  ],
+  "repository": "https://github.com/pengzhang91/Feige",
+  "commit": "939c2581c8c97339c7d465bc2c85c31e95255c17",
+  "project_path": null,
+  "declarations": [
+    "PalomarFeige.sharp_unit_slack_feige_complete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.CO"
+    ],
+    "msc2020": [
+      "60E15",
+      "60G50",
+      "52A40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-30T15:20:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "939c2581c8c97339c7d465bc2c85c31e95255c17",
+        "fork_repository": "PalomarArchive/pengzhang91--Feige--90f16a83c0a6",
+        "source_repository": "pengzhang91/Feige"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b6ffd363c33cb503d9f6aba7c29e509a9ad652d299eed36db942b5350dbf5feb"
+}

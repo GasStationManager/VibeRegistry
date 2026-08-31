@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/catskillsresearch/domain_theory",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.DomainTheory",
   "declarations": [
     "InfoSys",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/DomainTheory.lean",
-  "statement_hash": "sha256:7a6d74a671e9f6b67baec08f3f8a33e3b6cb09cf3f56bb853c81b31248e2a5df"
+  "statement_hash": "sha256:9c3442d20e5f2a4abb183844c89946848c2f31b7d1a3952d72e9a82aacc05921"
 }

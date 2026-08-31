@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000014",
+  "version": 1,
+  "title": "ukiyois/hs-virial-nbc-identity",
+  "abstract": "A kernel-checked Lean formalization of the exact no-broken-circuit volume identity for hard-sphere Mayer cluster integrals and the stronger dimension-three fork-packing upper bound for each tree-owned NBC region. The development proves finite broken-circuit cancellation, the measurable finite-region decomposition, the anchored Euclidean product-measure theorem, and its explicit flat-coordinate transport.  Its geometric result is the attachment-aware estimate Vol(NBC_T) <= (17/32)^hardSphereNu T * hardSphereKappa^(k-1), where hardSphereNu T is the maximum cardinality of a packing of pairwise vertex-disjoint, order-compatible forks in T.  A formal fork is an ordered triple (a,b,c) with a < b < c, center a, leaves b,c, and tree edges {a,b} and {a,c}.  The central contribution is the complete pointwise-to-integral bridge together with the orientation-aware measure-preserving factorization that realizes the per-fork volume suppression.",
+  "authors": [
+    "ukiyois",
+    "OpenCode agent sessions"
+  ],
+  "repository": "https://github.com/ukiyois/hs-virial-nbc-identity",
+  "commit": "6ff2cea17ea9320d8974b76f26bd502b4a4076a9",
+  "project_path": null,
+  "declarations": [
+    "PalomarHS.main_result",
+    "PalomarHS.nbc_region_real_volume_le_fork_factor"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math-ph"
+    ],
+    "msc2020": [
+      "05C15",
+      "82B05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T08:10:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6ff2cea17ea9320d8974b76f26bd502b4a4076a9",
+        "fork_repository": "PalomarArchive/ukiyois--hs-virial-nbc-identity--d905f84d1fae",
+        "source_repository": "ukiyois/hs-virial-nbc-identity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6ff627590a7dec7655f157a2ecc1486e6972b2bbb746da6eeda87c6c0d547f20"
+}

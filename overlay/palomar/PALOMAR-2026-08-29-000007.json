@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000007",
+  "version": 1,
+  "title": "sneed-and-feed/lean-theorems-1",
+  "abstract": "A complete, machine-checked Lean 4 formalization of Radon's Lemma (Johann Radon, 1921) and Helly's Theorem on intersecting families of convex sets (Eduard Helly, 1923; Freek Wiedijk #99) from first principles. Proves that any d + 2 points in ℝ^d admit a Radon partition into two disjoint subsets whose convex hulls intersect, and uses Radon's lemma by induction on the family size to prove Helly's theorem for finite families of convex sets under the general <= d + 1 subfamily intersection hypothesis (covering small families |ι| <= d + 1 as well as large families). To the maintainers' knowledge, the theorem was not found in an exact declaration name, docstring, and type signature search of the pinned Mathlib revision (Mathlib v4.34.0-rc1).",
+  "authors": [
+    "Sneed & Feed Formalization Team"
+  ],
+  "repository": "https://github.com/sneed-and-feed/lean-theorems-1",
+  "commit": "ab63e28a6ca4082ddb2191c9cb676622c90f3797",
+  "project_path": null,
+  "declarations": [
+    "RadonHelly.radons_theorem",
+    "RadonHelly.hellys_theorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52A35",
+      "52A20",
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T01:33:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ab63e28a6ca4082ddb2191c9cb676622c90f3797",
+        "fork_repository": "PalomarArchive/sneed-and-feed--lean-theorems-1--a2ac55dbf7b5",
+        "source_repository": "sneed-and-feed/lean-theorems-1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2d2b474bfe92d96acec6fdc4fe91d3475f486c9cd4ff38562dec819cf6036350"
+}

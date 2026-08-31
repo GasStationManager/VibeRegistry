@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/gkp-carry-lean",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.OddPrimeValuationDistribution",
   "declarations": [
     "OddPrimeValuationDistribution.oddPrimeValuationGeneratingSeries_identity",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/OddPrimeValuationDistribution.lean",
-  "statement_hash": "sha256:11024a0571a79759de85d594c73f3b35013adbb7313cbe0f24e94da203db9439"
+  "statement_hash": "sha256:82f30d68fc0958305981ea456039c62e931938edd14e57c7e12cd5e8a61a24f7"
 }

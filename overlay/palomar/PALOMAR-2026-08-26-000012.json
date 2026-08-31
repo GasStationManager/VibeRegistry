@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-26-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000012",
+  "version": 1,
+  "title": "Vulkin-prog/paper-c-lean",
+  "abstract": "Lean 4 formalization of the first two moments and variance of the number of long constant-stretch starts of an extended Rademacher random completely multiplicative function in a dyadic block, together with the quantitative exponential estimate for the separated homogeneous two-start sum. Uniformly in the critical window, Theorem 1.4 gives the first-moment rate, second falling-factorial-moment convergence, R_2(N,L)=o_C(N^2), and variance convergence; Corollary 11.3 gives the stronger bound R_2(N,L) <<_C N^2 exp(-c_R sqrt(log N)/log log N) for some c_R>0. Both compared statements are conditional on exactly two fully stated ordinary propositions specialized from Evertse--Silverman and Nicolas--Robin. Those propositions are theorem arguments, not Lean axioms.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "37133861e5f7b350b6dcf9f5d61645aa7ed38bec",
+  "project_path": null,
+  "declarations": [
+    "paper_c_theorem_one_four_moments",
+    "paper_c_corollary_eleven_three"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-26T21:07:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "37133861e5f7b350b6dcf9f5d61645aa7ed38bec",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fe8e3222d588fd96eba2aff2d01987e5d1ded5517b12e7791f47d630517c24e9"
+}

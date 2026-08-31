@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-26-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000006",
+  "version": 1,
+  "title": "g-pichler/bsc-averaging",
+  "abstract": "A Lean 4 / Mathlib development that settles three previously open problems about\nbinary channels on a doubly symmetric binary source (DSBS): a pair (X, Y) of Bernoulli(1/2)\nbits with P(X != Y) = p, together with Markov chains U - X - Y - V in which U and V are the\noutputs of two independent binary channels applied to X and to Y. All quantities are in nats.\n\n(1) MathOverflow 285151, \"Do averaged binary symmetric channels maximize mutual information?\"\n(Georg Pichler, 2017; unanswered there) asks whether conv A = conv B, where A is the set of\nrate triples (R0, R1, R2) with I(U;X) <= R1, I(Y;V) <= R2 and R0 <= I(U;V) attainable by\narbitrary binary channels on the two sides, and B is the same set with both channels\nrestricted to be binary symmetric. The inclusion B subset A is elementary; the question is\nwhether taking convex hulls closes the gap, which the counterexample to the predecessor\nquestion MathOverflow 213084 leaves open. This development proves conv A = conv B for every\np in [0,1] (`averaged_bsc_maximise_mutual_information`). The same statement settles\nConjecture 5.2 of Pichler, Piantanida and Matz, \"Distributed Information-Theoretic\nClustering\", Information and Inference 11 (2022) 1029-1082.\n\n(2), (3) Conjectures 1 and 2 of Dikshtein, Ordentlich and Shamai (Shitz), \"The Double-Sided\nInformation Bottleneck Function\", Entropy 24(9):1321 (2022), which concern the double-sided\ninformation bottleneck function R(Cu, Cv) = max I(U;V) subject to I(X;U) <= Cu and\nI(Y;V) <= Cv at p = 0, that is X = Y. Conjecture 1 predicts that the maximising test channels\nare a Z-channel and an S-channel; Conjecture 2 predicts that the pair maximising I(X;U,V) are\nboth Z-channels. Both are proved here for binary U and V, in optimality form: the Challenge\nstatements exhibit the conjectured channels themselves as `Chan` values and say that no\nadmissible pair beats them. No admissible pair exceeds the I(U;V) of the Z/S pair\n(`conjecture1_p0_holds`), and none undercuts that of the Z/Z pair (`conjecture2_p0_holds`), at\nevery nondegenerate rate pair. A Z-channel and an S-channel are the same transition matrix up\nto relabelling the input alphabet, so what the two conjectures distinguish is the relative\norientation of the two sides: anti-aligned for the maximum, aligned for the minimum.\n\nThe development is sorry-free and contains no hand-written axiom declaration.\n`averaged_bsc_maximise_mutual_information` and `conjecture2_p0_holds` depend only on `propext`,\n`Classical.choice` and `Quot.sound`. `conjecture1_p0_holds` additionally depends on exactly one\nfurther axiom: the 24129-monomial Polya certificate of its kernel lemma is checked by\n`native_decide`, which on Lean v4.32.0 mints a per-declaration auxiliary axiom\n(BSCAveraging.Reflect.kerQPE_allNonneg._native.native_decide.ax_1_1) rather than citing\n`Lean.ofReduceBool`; that auxiliary axiom is a custom axiom in Comparator's sense. The other\ncomputed step of that proof, a 650-cell interval sweep, is checked by the Lean kernel and adds\nno axiom.\n\nScope, stated once for all three results. The channels are binary on both sides. For (1) this\nis the setting of the source question. For (2) and (3) the reduction of the double-sided\nbottleneck over arbitrary alphabets to binary test channels is Proposition 3 of the\nDikshtein-Ordentlich-Shamai paper and Proposition 4.3 of the Pichler-Piantanida-Matz paper; it\nis cited here, not formalized, so read as statements about R(Cu, Cv, 0) with unrestricted\nalphabets, (2) and (3) are conditional on that published cardinality bound. Conjecture 2 is\nstated in its minimisation form, min I(U;V) at fixed rates; the identity\nI(U;V) = I(U;X) + I(V;X) - I(X;U,V) that turns the paper's maximisation of I(X;U,V) into\nthat minimisation is the authors' own, given as Remark 5 of the same paper, and is likewise\nnot formalized here. Both\nconjecture statements are value statements: they say the conjectured optimal value is not\nbeaten, not that the conjectured pair is the unique optimiser. p = 0 is the only case the\npaper's Conjectures 1 and 2 state; Conjecture 3 of that paper, which concerns p above a\nthreshold, is not addressed.\n\nTwo endpoints of (1) were already settled in the literature and are reproved here rather than\nestablished: p = 0, which Pichler-Piantanida-Matz note follows from their Corollary 4.1 and\nProposition 4.3, and the degenerate p = 1/2, where the two regions coincide without\nconvexification. The new content of (1) is p in (0,1/2) union (1/2,1). The binary restriction\ncosts nothing in (1): Conjecture 5.2 is stated for S_i, which is defined with the cardinality\nbounds |U| <= |X| and |V| <= |Y|, and Proposition 4.3 of the same paper gives\nconv(S_i) = conv(R_i).\n\nNovelty has not been independently established. MathOverflow 285151 has no answer and no\ncomments (StackExchange API, asked 2017-11-03). The Dikshtein-Ordentlich-Shamai paper has one\nrecorded citing work, a 2024 Entropy editorial that mentions the setting but not the\nconjectures, and no resolution of either conjecture was found. Mathlib at the pinned revision\ncontains no mutual information at all, and no prior Lean formalization of any of the three\nproblems was found. That search is the authors' own and is not offered as evidence of\npriority.",
+  "authors": [
+    "Georg Pichler"
+  ],
+  "repository": "https://github.com/g-pichler/bsc-averaging",
+  "commit": "1876704dc866fadfb139ef463ad86b671dd09bb4",
+  "project_path": null,
+  "declarations": [
+    "BSCAveraging.MO285151.averaged_bsc_maximise_mutual_information"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.IT",
+      "math.IT"
+    ],
+    "msc2020": [
+      "94A17",
+      "94A15",
+      "94A40",
+      "52A40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-26T13:05:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1876704dc866fadfb139ef463ad86b671dd09bb4",
+        "fork_repository": "PalomarArchive/g-pichler--bsc-averaging--863d39aecd42",
+        "source_repository": "g-pichler/bsc-averaging"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cb1ba5bd4a7641f52f5026e887e39e1bb71972afb0798b080050fc3c4e0ebcb4"
+}

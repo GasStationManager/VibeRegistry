@@ -1,11 +1,11 @@
 # Sign-off packet — Archon FirstProof Results
 
-*Generated 2026-08-25 17:19 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-08-31 09:14 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `archon-first-proof`
 - **Upstream**: https://github.com/frenzymath/Archon-FirstProof-Results @ `35550f2bc0a5`
 - **Lean**: leanprover/lean4:v4.28.0
-- **Machine checks**: level 2 (pre-checks-model result) — overall **pass** at 2026-08-23T03:07:54Z
+- **Machine checks**: comparator, nanoda — overall **pass** at 2026-08-30T07:54:52Z
 - **Informal statements**: none adopted yet — run `python3 scripts/fetch_blueprint_statements.py entries/archon-first-proof.toml`
 
 ## What you are attesting
@@ -41,7 +41,7 @@ Sign-off is optional: an entry whose comparator check passes stands on its own a
 
 ### `Problem4.harmonic_mean_inequality_full`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: pass, nanoda: pass*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -74,7 +74,7 @@ theorem harmonic_mean_inequality_full
 
 ### `Problem6.exists_eps_light_subset`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: pass, nanoda: pass*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 

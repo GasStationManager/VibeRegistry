@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000016",
+  "version": 1,
+  "title": "savarin/lean-malliavin",
+  "abstract": "Gaussian integration by parts and closability of the Malliavin derivative on an abstract Gaussian Banach space. Two compared theorems, zero definition holes. Challenge.lean (225 lines) states both results using only Mathlib definitions; Solution.lean bridges via definitional equality to the extracted Malliavin proof library.",
+  "authors": [
+    "Ezzeri Esa"
+  ],
+  "repository": "https://github.com/savarin/lean-malliavin",
+  "commit": "29c57b3eba99625e8c7f6b2eaccea7fb1c6cc5f7",
+  "project_path": null,
+  "declarations": [
+    "integral_inner_mderiv",
+    "mderiv_closable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.FA"
+    ],
+    "msc2020": [
+      "60H07",
+      "46E35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T16:01:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "29c57b3eba99625e8c7f6b2eaccea7fb1c6cc5f7",
+        "fork_repository": "PalomarArchive/savarin--lean-malliavin--dca90676de5b",
+        "source_repository": "savarin/lean-malliavin"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d1eaaa9f247812178b82798350deaa638e9aeac4e6630a1da6f702b6016d6354"
+}

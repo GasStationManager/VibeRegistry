@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/scottdhughes/erdos367",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.Erdos367",
   "declarations": [
     "Erdos367.erdos_367_k3",
@@ -59,5 +59,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos367.lean",
-  "statement_hash": "sha256:52def93bad0641015d6a5a3ca127097e0d4b4feffe723bbba0c05aaea2f1d259"
+  "statement_hash": "sha256:161f91995b9fc4fd600cf5346224ca87bf480bb8a400928eb66f2ef5134275c5"
 }

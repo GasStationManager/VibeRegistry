@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000004",
+  "version": 1,
+  "title": "yuhangshi888/zeta-simple-zeros-673316977",
+  "abstract": "A Lean 4 and Mathlib formalization of the supporting-plane and exact-arithmetic portion of the finite-dimensional argument in Yuhang Shi's research draft on simple zeros of the Riemann zeta function. It proves a conditional scalar two-certificate supporting-plane implication, its explicit piecewise-square-root specialization at block length 219, and the exact strict comparison above 673316977/10^9 for the resulting local assembly expression. The spectral derivation of the trace-envelope alternative, the upstream seven- and nine-point interval certificates, and the analytic passage from finite blocks to a global zeta-zero proportion are not formalized here and are not claimed as Palomar-verified conclusions.",
+  "authors": [
+    "Yuhang Shi"
+  ],
+  "repository": "https://github.com/yuhangshi888/zeta-simple-zeros-673316977",
+  "commit": "7cfd0ce9a9ef1615889b5c1191fac5de41f13960",
+  "project_path": "lean",
+  "declarations": [
+    "TwoCertificatePalomar.two_certificate_supporting_plane",
+    "TwoCertificatePalomar.phi219_supporting_plane",
+    "TwoCertificatePalomar.exact_final_comparison"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T01:00:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7cfd0ce9a9ef1615889b5c1191fac5de41f13960",
+        "fork_repository": "PalomarArchive/yuhangshi888--zeta-simple-zeros-673316977--86e65b09dec4",
+        "source_repository": "yuhangshi888/zeta-simple-zeros-673316977"
+      }
+    ]
+  },
+  "statement_hash": "sha256:20525a24ffbda05e4b3c6525ab555dd01e65c482bb97566c7efff332db8509b5"
+}

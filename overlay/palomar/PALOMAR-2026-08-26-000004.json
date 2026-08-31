@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-26-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000004",
+  "version": 1,
+  "title": "JD-Jones-ASES/fs-formal",
+  "abstract": "A Lean 4 formalization of an explicit construction for the Furstenberg-Sárközy problem. If D(N) is the largest size of a subset of {1,...,N} with no nonzero square difference, the development proves that an explicit eleven-block constant alphaInf is at most liminf log D(N)/log N, that every exponent below alphaInf holds eventually pointwise, and that 0.7537 < alphaInf. The proof includes the finite certificates, the composite even-digit lift, CRT gluing, asymptotic passage, and kernel-checked numerical inequalities. This strictly improves Krachun's preceding explicit exponent 0.752796455874514... and moves the lower bound farther beyond 3/4.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/fs-formal",
+  "commit": "4e796565301b1425c53e807a6edf408535b2e922",
+  "project_path": null,
+  "declarations": [
+    "FsFormal.sdf_liminf_ge",
+    "FsFormal.sdf_pointwise",
+    "FsFormal.alphaInf_gt"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B30",
+      "11B75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-26T11:42:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4e796565301b1425c53e807a6edf408535b2e922",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--fs-formal--27698bf1d8da",
+        "source_repository": "JD-Jones-ASES/fs-formal"
+      }
+    ]
+  },
+  "statement_hash": "sha256:880983a9981b5672fd5f1ab779b55072e0f5a107d5e4d8c5b5137fc6f811f755"
+}

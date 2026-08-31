@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/frenzymath/Anderson-Conjecture",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.AndersonConjecture",
   "declarations": [
     "anderson_main_theorem"
@@ -43,5 +43,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/AndersonConjecture.lean",
-  "statement_hash": "sha256:e37ac7ce8548ec48c6e82fb7b0aaf5de4e1559a52fff04c357cf3c27b5fa2487"
+  "statement_hash": "sha256:8bca1bda32921a2c7b5fcedc40a9911d2677b15e42d856e3092ec9465c868ea1"
 }

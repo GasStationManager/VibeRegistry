@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000017",
+  "version": 1,
+  "title": "Arthur742Ramos/SpinorLean",
+  "abstract": "Formalizes an exterior-model spinor construction for a field K in which 2 is invertible, using an explicit hyperbolic presentation and the Clifford conjugation action on the ambient quadratic space.  The development proves field-sensitive covering and image results: the positive split-rank spin-to-isometry kernel is {1,-1}, the spin action therefore descends only projectively, the split-line image is exactly the square-scaling subgroup, and a finite-dimensional split Levi element associated to g lies in the ambient spin image exactly when det(g) is a square unit.  The repository also packages the chosen exterior model, half-spin pieces, explicit transvection and square-scaling Clifford lifts, square-class quotient characters, vector-product norm identities, and selected complex and real low-dimensional Clifford classifications.",
+  "authors": [
+    "Arthur F. Ramos",
+    "David B. Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/SpinorLean",
+  "commit": "5c890f3466da7433a133eb45c5372a55fbdab1da",
+  "project_path": null,
+  "declarations": [
+    "Palomar.splitLevi_mem_spin_isometry_range_iff_det_square"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA"
+    ],
+    "msc2020": [
+      "15A66",
+      "11E81",
+      "20G15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T21:07:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5c890f3466da7433a133eb45c5372a55fbdab1da",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--SpinorLean--abf31c872d80",
+        "source_repository": "Arthur742Ramos/SpinorLean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4a539acd7c285baaf3d16cce94f1b3f1480181e9d2640529db984a11a08369bd"
+}

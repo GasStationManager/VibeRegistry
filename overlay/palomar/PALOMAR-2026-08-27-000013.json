@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000013",
+  "version": 1,
+  "title": "Arthur742Ramos/jacobian-conjecture-lean",
+  "abstract": "An independent Lean 4 and Mathlib formalization of the explicit three-dimensional polynomial map announced by Levent Alpöge in 2026. The project proves that its formal Jacobian determinant is the nonzero constant -2, verifies an explicit three-point fibre over the complex numbers, and derives the failure of injectivity required to refute the dimension-three Jacobian conjecture. The source formulas and proof scope are recorded explicitly; no claim is made about the still-open two-dimensional case.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/jacobian-conjecture-lean",
+  "commit": "8db55ea3ffa8ba90094d6ef78ee3351ddfce01ca",
+  "project_path": null,
+  "declarations": [
+    "JacobianCounterexample.jacobianDet_F",
+    "JacobianCounterexample.explicit_three_point_fibre",
+    "JacobianCounterexample.not_jacobian_conjecture_complex"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.LO"
+    ],
+    "msc2020": [
+      "14R15",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T18:12:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8db55ea3ffa8ba90094d6ef78ee3351ddfce01ca",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--jacobian-conjecture-lean--c0ce8c6c8618",
+        "source_repository": "Arthur742Ramos/jacobian-conjecture-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:83edcd5f1a503580cb9a23e253a3487f1007d015662b2e0f1e950167802289ba"
+}

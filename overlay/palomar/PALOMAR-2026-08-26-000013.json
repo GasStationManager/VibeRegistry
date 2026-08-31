@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-26-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000013",
+  "version": 1,
+  "title": "sneed-and-feed/lean-theorems-1",
+  "abstract": "A complete, machine-checked Lean 4 formalization of the Sylvester–Gallai theorem (J. J. Sylvester 1893, T. Gallai 1944, L. M. Kelly 1948; Freek Wiedijk #98). Proves that every finite non-collinear set of points in the real Euclidean plane contains an ordinary line passing through exactly two points of the set, formalized via Kelly's minimal point-line distance argument.\nTo the maintainers' knowledge, the theorem was not found in an exact declaration name,\n    docstring, and type signature search of the pinned Mathlib revision (Mathlib v4.34.0-rc1).",
+  "authors": [
+    "Sneed & Feed Formalization Team"
+  ],
+  "repository": "https://github.com/sneed-and-feed/lean-theorems-1",
+  "commit": "35f4023fda8c9a37287dea03fe9f3487649c919a",
+  "project_path": null,
+  "declarations": [
+    "SylvesterGallai.sylvester_gallai"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C10",
+      "52C35",
+      "51M04"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-26T22:43:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "35f4023fda8c9a37287dea03fe9f3487649c919a",
+        "fork_repository": "PalomarArchive/sneed-and-feed--lean-theorems-1--a2ac55dbf7b5",
+        "source_repository": "sneed-and-feed/lean-theorems-1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:406a98492aa148738a55f643b789c7027c7119d4ff45ed630467d47e3b5712c0"
+}

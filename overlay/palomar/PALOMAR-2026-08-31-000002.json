@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000002",
+  "version": 1,
+  "title": "Arthur742Ramos/GraphCoveringTheory",
+  "abstract": "Formalizes the sharp Schreier index formula for a finite-index subgroup of a free group on a finite nonempty generating type. For a finite nonempty type alpha, a subgroup H of FreeGroup alpha with finite index d is proved equivalent, as a group, to FreeGroup (Fin (1 + d * (card alpha - 1))). More strongly, the repository exposes a FreeGroupBasis for H with this indexing type. The proof realizes H as the vertex group of the finite action-groupoid covering on the coset space, verifies the covering locally by explicit star and costar bijections, and counts the complement of a geodesic spanning tree. It also exposes the truncation-safe natural-number statement and the generic finite free-groupoid rank calculation used by the submission theorem. For finite-index normal subgroups, a companion module proves that every deck transformation of the finite Schreier action is a unique right translation by the quotient group.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/GraphCoveringTheory",
+  "commit": "be06b655ae6d2cfee8fee8033b2ff0f5a4f99bf5",
+  "project_path": null,
+  "declarations": [
+    "GraphCoveringTheory.schreier_index_formula"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "math.AT",
+      "math.LO"
+    ],
+    "msc2020": [
+      "20E07",
+      "05C25",
+      "18B40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T01:14:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "be06b655ae6d2cfee8fee8033b2ff0f5a4f99bf5",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--GraphCoveringTheory--465f1a87939b",
+        "source_repository": "Arthur742Ramos/GraphCoveringTheory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:580716703a9cf1028b69bbd902110d268d89871d2ae1be35df7da0ad1990e9fb"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000004",
+  "version": 1,
+  "title": "Arthur742Ramos/finite-graph-fundamental-group",
+  "abstract": "Formalizes the fundamental group of a finite connected graph, represented as a finite weakly connected directed multigraph with its standard interval-cell quotient realization. The main result identifies the topological fundamental group at a chosen vertex with `FreeGroup (Fin (E + 1 - V))`. The proof compares the topological group with the endomorphism group at the root in Mathlib's free groupoid, whose explicit spanning-tree basis supplies the non-tree-edge generators. The development also proves the cycle-rank identities, root-change equivalences, the tree/triviality criterion, and the corresponding abelianization statement. It constructs a path-lifting quiver and verifies its covering property; the realization of that cover is proved contractible by an explicit quotient homotopy, and path lifting plus monodromy completes the comparison isomorphism.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Hulak",
+    "Ruy de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/finite-graph-fundamental-group",
+  "commit": "dd57e3ab8bc5a7042fcc5498e778b008d87ac032",
+  "project_path": null,
+  "declarations": [
+    "FiniteGraphFreeGroup.graph_fundamental_group_free_rank"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AT",
+      "math.LO"
+    ],
+    "msc2020": [
+      "05C25",
+      "18B40",
+      "20F65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T01:24:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dd57e3ab8bc5a7042fcc5498e778b008d87ac032",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--finite-graph-fundamental-group--349c24a8c268",
+        "source_repository": "Arthur742Ramos/finite-graph-fundamental-group"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d8ce9d9d21b0e6f91e122598dfba8dc6ff16bf57934916529d835094c86b4fd4"
+}

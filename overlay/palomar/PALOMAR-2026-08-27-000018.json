@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000018",
+  "version": 1,
+  "title": "shaikidris/CollatzEndpointTransport-Palomar",
+  "abstract": "A Lean 4 formalization of a quantitative stability theorem for the one-block endpoint-pullback operator of the shortcut Collatz map. If an arbitrary target set has at most C N^(1-D) exceptions among the positive integers up to N, then, for every central Renyi order 1/2 < theta < 1, every admissible fixed central window, and every positive transport coefficient below the explicit asymptotic slope, its pullback through one floor(log_2 n)-step endpoint is (K(C+1)D^(-(1+theta)), transport*D)-dense whenever D is sufficiently small. The cutoff and K depend only on the fixed moment and transport parameters, not on the target set or C,D. This is an operator-level arbitrary-target theorem, not a pointwise convergence or eventual-descent claim.",
+  "authors": [
+    "Idris Ali Shaik (ORCID 0009-0009-9699-9712)"
+  ],
+  "repository": "https://github.com/shaikidris/CollatzEndpointTransport-Palomar",
+  "commit": "c8958144e7853723e1e459afe368716e2059a1f6",
+  "project_path": null,
+  "declarations": [
+    "CollatzEndpointTransportPalomar.quantitative_arbitrary_target_endpoint_transport"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.LO"
+    ],
+    "msc2020": [
+      "11B83",
+      "37P99",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T21:18:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c8958144e7853723e1e459afe368716e2059a1f6",
+        "fork_repository": "PalomarArchive/shaikidris--CollatzEndpointTransport-Palomar--daed96355413",
+        "source_repository": "shaikidris/CollatzEndpointTransport-Palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:efc110df41c190d21f50b66e2c43c238d6cca12e97194e82e134e7da28fad7c4"
+}

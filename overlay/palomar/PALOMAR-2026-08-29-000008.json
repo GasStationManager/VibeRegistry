@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000008",
+  "version": 1,
+  "title": "ehrlich-b/euclidean-jordan",
+  "abstract": "The frame Peirce decomposition: relative to a Jordan frame, a Euclidean Jordan algebra is the internal direct sum of the blocks V_ij over unordered pairs of frame indices, and in finite dimension the diagonal blocks are lines, dim V_ii = 1 - the Faraut-Koranyi table entry. The frame is carried as data, so frame conjugacy is sidestepped and nothing here claims anything about the rank of J. Machine checked, not peer reviewed, no priority claim.",
+  "authors": [
+    "Bryan Ehrlich"
+  ],
+  "repository": "https://github.com/ehrlich-b/euclidean-jordan",
+  "commit": "a83407e4dbf73c77c31a2291c02f20b37a5ebbaf",
+  "project_path": null,
+  "declarations": [
+    "JordanFramePeirce.frameBlock_isInternal",
+    "JordanFramePeirce.finrank_frameBlock_diag"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA",
+      "math.OA",
+      "math.FA"
+    ],
+    "msc2020": [
+      "17C20",
+      "17C27",
+      "17C37",
+      "17C65",
+      "17A15",
+      "46L70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T01:43:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a83407e4dbf73c77c31a2291c02f20b37a5ebbaf",
+        "fork_repository": "PalomarArchive/ehrlich-b--euclidean-jordan--60bdbed9ee0b",
+        "source_repository": "ehrlich-b/euclidean-jordan"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1714e0cde136f81b5f16530078bd77bc2a9cbcbb7e80ae7c9a13c883ef62cc2b"
+}

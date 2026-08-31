@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/egrs75-lean",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.Egrs75",
   "declarations": [
     "Egrs75.MuFinish.egrs_two_prime_mu",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Egrs75.lean",
-  "statement_hash": "sha256:c638a1902defd4ce9795d2eb0f274716f9237d326b2aef9695a9dac91f604020"
+  "statement_hash": "sha256:f9815804cd3c9d1421d12919ba5e4b740f5e0c4409edd3b4d223bf277ee0caa7"
 }

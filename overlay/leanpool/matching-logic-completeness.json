@@ -1,0 +1,60 @@
+{
+  "source": "leanpool",
+  "upstream_id": "matching-logic-completeness",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MatchingLogic",
+  "version": 1,
+  "title": "Global completeness of one-sorted definedness-free matching logic",
+  "abstract": "Formalizes the one-sorted case of Chen and Roșu's global-completeness argument and independently discharges its local-completeness oracle by mechanizing the canonical-model construction from their 2019 Matching μ-Logic technical report (Theorem 73, Lemmas 80–81, and strong local completeness Theorem 83). The resulting theorem supplies both local completeness and soundness for countably infinite variable types.",
+  "authors": [
+    "Aurélien Eveil",
+    "Anthropic",
+    "OpenAI"
+  ],
+  "repository": "https://github.com/eveil-labs/matching-logic-lean",
+  "commit": "",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "entry_module": "LeanPool.MatchingLogic",
+  "declarations": [
+    "MatchingLogic.global_completeness_entryIII",
+    "MatchingLogic.locality",
+    "MatchingLogic.two_copies",
+    "MatchingLogic.semantic_localization",
+    "MatchingLogic.strongLocalCompleteness"
+  ],
+  "informal": {
+    "MatchingLogic.locality": "For a backward-closed subset of a matching-logic model, two valuations that agree inside the subset and both stay outside it otherwise give identical denotations after restriction to that subset.",
+    "MatchingLogic.two_copies": "The double-cover model over a nonempty backward-closed proper subset has exactly the denotation predicted by each of its two projections back to the original model.",
+    "MatchingLogic.semantic_localization": "For a closed theory and closed conclusion, global semantic consequence is equivalent to local consequence from the localized theory.",
+    "MatchingLogic.strongLocalCompleteness": "One-sorted basic matching logic has strong local completeness over an arbitrary one-sorted finitary signature when the element-variable type is countably infinite.",
+    "MatchingLogic.global_completeness_entryIII": "For a one-sorted finitary signature, closed premises and conclusion, and a countably infinite element-variable type, global semantic consequence is equivalent to derivability, with both soundness and local completeness discharged."
+  },
+  "classification": {
+    "msc2020": [
+      "03B45",
+      "03B70"
+    ],
+    "tags": [
+      "matching-logic",
+      "mathematical-logic",
+      "modal-logic",
+      "completeness",
+      "formal-methods"
+    ],
+    "branch": "mathematical logic and formal methods"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/MatchingLogic.lean",
+  "statement_hash": "sha256:229717774ed84dfd3b6267d9171521965cc9ec06c26168650c6cabf7d2b19216"
+}

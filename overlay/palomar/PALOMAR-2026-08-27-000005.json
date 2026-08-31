@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000005",
+  "version": 2,
+  "title": "elliotglazer/nf-not-wpp",
+  "abstract": "A Lean 4 proof that standard first-order New Foundations (NF), axiomatized by extensionality and the full stratified-comprehension schema, syntactically derives the negation of the Weak Partition Principle (WPP). The translated Metamath proof enters through eleven literal Hailperin sentences, which are used internally as a finite-basis bridge and are proved deductively equivalent to standard NF.",
+  "authors": [
+    "Elliot Glazer"
+  ],
+  "repository": "https://github.com/elliotglazer/nf-not-wpp",
+  "commit": "fa58a7a895a73422042e167391c78e9149979913",
+  "project_path": null,
+  "declarations": [
+    "NFNotWPP.NF_proves_not_WPP"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03E70",
+      "03E25",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T05:39:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fa58a7a895a73422042e167391c78e9149979913",
+        "fork_repository": "PalomarArchive/elliotglazer--nf-not-wpp--6ead5185431f",
+        "source_repository": "elliotglazer/nf-not-wpp"
+      }
+    ]
+  },
+  "statement_hash": "sha256:16b9cafa4adf303b3e12fefaff6bfb0166bbb4d82818b2f023988efe8ebbf6c2"
+}

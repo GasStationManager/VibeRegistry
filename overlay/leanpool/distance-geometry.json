@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/distance-geometry-lean",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.DistanceGeometry",
   "declarations": [
     "DistanceGeometry.schoenberg",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/DistanceGeometry.lean",
-  "statement_hash": "sha256:13d561f3aa7f32b874522447b630041639ce9328c9cf3072ed2341b213be9e37"
+  "statement_hash": "sha256:c86b639bdcc5fc6bc2c852a8254475eb982c613527ccf59c629cee4a3ab4a58e"
 }

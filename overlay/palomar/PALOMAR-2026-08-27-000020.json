@@ -1,0 +1,75 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000020",
+  "version": 1,
+  "title": "BrandonMYates/schwarzschild-comparator",
+  "abstract": "Twenty-one theorems and thirty-three definitions, machine-checked in Lean 4 against Mathlib v4.32.0: the Schwarzschild, Schwarzschild-de Sitter (Kottler), Reissner-Nordstrom (with the Maxwell stress tensor defined and G = 8 pi T proved in all sixteen components), ingoing Vaidya (null dust of rank at most one, rank one wherever dm/dv ≠ 0, for a merely once-differentiable mass function), spatially flat FLRW (both Friedmann equations in Einstein-tensor form), static de Sitter, Minkowski-in-spherical and Kiselev metrics, together with Birkhoff uniqueness in the areal static gauge and the n != 2 equivalence of the two forms of the vacuum equations. The results are classical and NO NEW MATHEMATICS IS CLAIMED: this is a proof of concept for the definitions. Lean checks that a proof establishes a statement, not that a definition means what its name says, so the entry certifies its sign, index and contraction conventions by computing textbook solutions with them -- including four NONZERO answers (de Sitter R = 12/L^2, Reissner-Nordstrom R_thetatheta = Q^2/r^2, Vaidya R_vv = 2 (dm/dv)/r^2, Kiselev R_thetatheta = -3wc r^-(3w+1)), because a curvature definition that was accidentally identically zero would still prove every vacuum theorem here. Scope: everything is a computation in ONE FIXED CHART, an open subset of R^4 -- no atlas, no manifold, no coordinate-independence theorem, no maximal extension, and horizons and coordinate poles lie outside every statement. NOT compared: Ricci symmetry R_bd = R_db in general (it needs Clairaut for the coordinate partial derivative, which Mathlib supplies only for fderiv) or the Bianchi identities; Maxwell's own equations; any matter model, fluid or energy condition beyond the single defined Maxwell stress tensor; non-flat FLRW; the outgoing Vaidya chart. Audience: general relativists, for whom this is the definitional layer a junction-condition or thin-shell statement would be written against, and the formalization community, for whom it is coverage-creating rather than coverage-duplicating. Mathlib v4.32.0 contains no curvature of any kind -- christoffel, ricci, scalarCurvature, Lorentzian, PseudoRiemannian and five further names return zero hits across all 8,264 .lean files at the pinned revision, and its one metric structure hard-codes positive definiteness -- so the entire chain is defined inline in the Challenge.",
+  "authors": [
+    "Brandon Yates"
+  ],
+  "repository": "https://github.com/BrandonMYates/schwarzschild-comparator",
+  "commit": "d8b6acf8263d4924356ac8abb62668c137ab61cd",
+  "project_path": null,
+  "declarations": [
+    "SchwarzschildVacuum.einstein_eq_zero_iff_ricciFlat",
+    "SchwarzschildVacuum.schwarzschild_ricciFlat",
+    "SchwarzschildVacuum.schwarzschild_einstein_eq_zero",
+    "SchwarzschildVacuum.schwarzschild_scalarCurvature_eq_zero",
+    "SchwarzschildVacuum.ricci_sds",
+    "SchwarzschildVacuum.exists_mass_of_areal_vacuum",
+    "SchwarzschildVacuum.ricci_rn_thetaTheta",
+    "SchwarzschildVacuum.reissnerNordstrom_scalarCurvature_eq_zero",
+    "SchwarzschildVacuum.faradayInvariant_coulomb",
+    "SchwarzschildVacuum.reissnerNordstrom_einstein_eq_maxwell",
+    "SchwarzschildVacuum.ricci_vaidya_null_dust",
+    "SchwarzschildVacuum.vaidya_scalarCurvature_eq_zero",
+    "SchwarzschildVacuum.einstein_vaidya",
+    "SchwarzschildVacuum.friedmann_first",
+    "SchwarzschildVacuum.friedmann_second",
+    "SchwarzschildVacuum.einstein_flrw_offDiag",
+    "SchwarzschildVacuum.ricci_deSitterStatic",
+    "SchwarzschildVacuum.deSitterStatic_scalarCurvature",
+    "SchwarzschildVacuum.minkowskiSpherical_ricciFlat",
+    "SchwarzschildVacuum.ricci_kiselev_thetaTheta",
+    "SchwarzschildVacuum.kiselev_ricciFlat_of_w_eq_zero"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "gr-qc",
+      "math.DG",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "83C15",
+      "83C05",
+      "83C22",
+      "83F05",
+      "53B30",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T22:42:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d8b6acf8263d4924356ac8abb62668c137ab61cd",
+        "fork_repository": "PalomarArchive/BrandonMYates--schwarzschild-comparator--7b7249f95243",
+        "source_repository": "BrandonMYates/schwarzschild-comparator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:753b85d281922dc1ad9800d9b98a873f9f79904f45be07d43ec1579d676f4f26"
+}

@@ -1,11 +1,11 @@
 # Sign-off packet — ArtificialTheorems
 
-*Generated 2026-08-25 17:19 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-08-31 09:14 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `artificial-theorems`
 - **Upstream**: https://github.com/GasStationManager/ArtificialTheorems @ `9c0f970db295`
 - **Lean**: leanprover/lean4:v4.27.0
-- **Machine checks**: level 2 (pre-checks-model result) — overall **pass** at 2026-08-23T03:07:29Z
+- **Machine checks**: comparator, nanoda — overall **fail** at 2026-08-30T07:59:10Z
 - **Informal statements**: none adopted yet — run `python3 scripts/fetch_blueprint_statements.py entries/artificial-theorems.toml`
 
 ## What you are attesting
@@ -41,7 +41,7 @@ Sign-off is optional: an entry whose comparator check passes stands on its own a
 
 ### `QLS.Stoch.robbinsSiegmund_expBound`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -94,7 +94,7 @@ theorem robbinsSiegmund_expBound.{v}
 
 ### `QLS.Stoch.robbinsSiegmund_full`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -170,7 +170,7 @@ theorem robbinsSiegmund_full.{v}
 
 ### `convergence_stochastic_gradient_method`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -216,7 +216,7 @@ theorem convergence_stochastic_gradient_method
 
 ### `SGDUniqueMin.convergence_simplified`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -254,7 +254,7 @@ theorem convergence_simplified
 
 ### `VALUE_ITERATION_CONVERGENCE_COMPLETE`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -292,7 +292,7 @@ theorem VALUE_ITERATION_CONVERGENCE_COMPLETE (mdp : MDP S A) (γ : Rat)
 
 ### `ApproxValueIterationInt.INT_VALUE_ITERATION_APPROX`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -319,7 +319,7 @@ theorem INT_VALUE_ITERATION_APPROX
 
 ### `ApproxValueIterationInt.INT_VALUE_ITERATION_EVENTUAL_BALL`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 
@@ -353,7 +353,7 @@ theorem INT_VALUE_ITERATION_EVENTUAL_BALL
 
 ### `universal_approximation_cybenko`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: fail, nanoda: fail*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 

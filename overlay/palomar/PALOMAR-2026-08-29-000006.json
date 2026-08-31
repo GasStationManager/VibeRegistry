@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000006",
+  "version": 1,
+  "title": "nimaanari/formalization-beyond-bethe",
+  "abstract": "Computing or approximating the permanent is a canonical problem in theoretical computer science and in counting and sampling.  Before this work, the canonical Bethe approximation gave the best known deterministic guarantee, with approximation factor (sqrt 2)^n.  This formalization proves that there is an absolute constant c < sqrt 2 and a deterministic polynomial-time c^n-approximation for every nonnegative rational matrix. It checks the mathematical and algorithmic proof down to Lean's standard logical axioms, including the finite-precision convex-optimization implementation.",
+  "authors": [
+    "Nima Anari"
+  ],
+  "repository": "https://github.com/nimaanari/formalization-beyond-bethe",
+  "commit": "325cda6d2118870f7f121a9a986b7ea9ffdd7a26",
+  "project_path": null,
+  "declarations": [
+    "Palomar.beyond_bethe_permanent"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "math.CO"
+    ],
+    "msc2020": [
+      "68W25",
+      "15A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T01:23:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "325cda6d2118870f7f121a9a986b7ea9ffdd7a26",
+        "fork_repository": "PalomarArchive/nimaanari--formalization-beyond-bethe--751699832a37",
+        "source_repository": "nimaanari/formalization-beyond-bethe"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c1c6dac4ac8b254869dc9e301e83a4c308bdd49a02774c89fcf8faffb539fe1e"
+}

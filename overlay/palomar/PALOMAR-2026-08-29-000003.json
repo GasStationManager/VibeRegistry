@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000003",
+  "version": 1,
+  "title": "Arthur742Ramos/dinitz-garg-goemans-counterexample-lean",
+  "abstract": "A standalone Lean 4 and Mathlib formalization of the finite counterexample to the cost-preserving single-source unsplittable-flow conjecture. The development realizes a directed graph with seven vertices, nine arcs, and three terminal demands; checks a feasible rational fractional flow of cost 58 with maximum demand 15; and proves that every unsplittable routing under the weak additive congestion bound has cost at least 60. It also derives the failure of the strict congestion variant. No general algorithmic or complexity-theoretic claim is made.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/dinitz-garg-goemans-counterexample-lean",
+  "commit": "cc7284cf415fc2a773f00d400319ef39663c277a",
+  "project_path": null,
+  "declarations": [
+    "DinitzGargGoemans.allSourceTerminalPaths",
+    "DinitzGargGoemans.splitFlowFeasible",
+    "DinitzGargGoemans.fractionalCostValue",
+    "DinitzGargGoemans.boundedUnsplittableCost",
+    "DinitzGargGoemans.dggCounterexampleWitness",
+    "DinitzGargGoemans.weakDggCostConjectureFalse",
+    "DinitzGargGoemans.strictDggCostConjectureFalse"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "math.LO"
+    ],
+    "msc2020": [
+      "68R10",
+      "90C27",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T00:52:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cc7284cf415fc2a773f00d400319ef39663c277a",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--dinitz-garg-goemans-counterexample-lean--bbbff431965a",
+        "source_repository": "Arthur742Ramos/dinitz-garg-goemans-counterexample-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ccfed1a84bb671a9a28b3a9a8c2df606bc60d2c2ea532a092bbe486e4fded003"
+}

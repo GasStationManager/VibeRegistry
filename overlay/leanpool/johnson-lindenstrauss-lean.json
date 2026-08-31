@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/claytomode/johnson-lindenstrauss-lean",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.JohnsonLindenstraussLean",
   "declarations": [
     "JL.johnson_lindenstrauss",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/JohnsonLindenstraussLean.lean",
-  "statement_hash": "sha256:3cc43c8d078f4f4b8bd70c0035b7ea75361efe795f3c973ef9339719dadf1076"
+  "statement_hash": "sha256:e61a87e30efea95dd71c9082ce9e1be34dff1dd952ac776d856450bfcd5e289a"
 }

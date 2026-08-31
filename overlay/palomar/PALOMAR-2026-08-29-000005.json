@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000005",
+  "version": 1,
+  "title": "Arthur742Ramos/TopologicalComputationalPaths",
+  "abstract": "A Lean formalization of topological semantics for endpoint-varying computational paths.  It constructs both the canonical final composable quotient and the ordinary pullback of quotient arrows.  The selected result proves that the canonical comparison is a continuous bijection and characterizes exactly when it is quotient, a homeomorphism, and an induced topology agreement; under these equivalent conditions ordinary composition is continuous.  It also records discontinuity as an obstruction and proves compact--Hausdorff and discrete sufficient cases.  The selected certificate additionally requires full additive classifications of the genuine based-loop spaces `AddCircle (1 : ℝ)` by `ℤ` and its product torus by `ℤ × ℤ`: the invariant, identity value, composition additivity, explicit standard representatives, and both inverse laws are checked using covering-map lifts and coordinatewise arguments.  It also formalizes the observable based fiber of the universal continuous-path presentation, its homeomorphism to the standard based loop quotient, the final/ordinary pair comparison, and the source-backed Hawaiian-earring transfer: the non-quotient square and discontinuous multiplication force failure of the scoped ordinary-pair quotient, topology agreement, and ordinary multiplication continuity under the comparison.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "Ruy J. G. B. de Queiroz",
+    "Anjolina Grisi de Oliveira",
+    "Tiago M. L. de Veras",
+    "David Barros Hulak"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/TopologicalComputationalPaths",
+  "commit": "8254c40d0de03ff469c7c9c05087b8bc154e9a87",
+  "project_path": null,
+  "declarations": [
+    "TopologicalComputationalPaths.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AT",
+      "math.GN"
+    ],
+    "msc2020": [
+      "22A22",
+      "54B15",
+      "03B38",
+      "55Q05",
+      "68V20",
+      "54B30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T01:10:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8254c40d0de03ff469c7c9c05087b8bc154e9a87",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--TopologicalComputationalPaths--6a8cf543e5b3",
+        "source_repository": "Arthur742Ramos/TopologicalComputationalPaths"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0b9b6bc98a1911edfd44ead341575ec6f637f509c790f503c5469fc92efe9b6b"
+}

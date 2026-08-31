@@ -1,11 +1,11 @@
 # Sign-off packet — AKS Sorting Networks
 
-*Generated 2026-08-25 17:19 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-08-31 09:14 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `aks`
 - **Upstream**: https://github.com/girving/aks @ `f172ac6c2e46`
 - **Lean**: leanprover/lean4:v4.29.0-rc4
-- **Machine checks**: level 2 (pre-checks-model result) — overall **pass** at 2026-08-23T03:06:05Z
+- **Machine checks**: comparator, nanoda — overall **pass** at 2026-08-30T07:58:47Z
 - **Informal statements**: none adopted yet — run `python3 scripts/fetch_blueprint_statements.py entries/aks.toml`
 
 ## What you are attesting
@@ -41,7 +41,7 @@ Sign-off is optional: an entry whose comparator check passes stands on its own a
 
 ### `networks_exist`
 
-*Machine checks: comparator: pass*
+*Machine checks: comparator: pass, nanoda: pass*
 
 **Informal statement**: _none adopted_ — the reviewer must supply the intended mathematics from the literature.
 

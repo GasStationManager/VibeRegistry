@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "ulms-theorem",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/UlmsTheorem",
+  "version": 1,
+  "title": "Ulm's theorem for countable reduced abelian p-groups",
+  "abstract": "Formalizes Ulm's classification theorem for countable reduced abelian p-groups in arbitrary Lean universes. The development constructs the transfinite Ulm filtration and invariants, proves their invariance under additive equivalence, establishes Kaplansky's one-generator extension lemma, and completes the countable back-and-forth classification. A finite-group regression distinguishes Z/4 x Z/4 from Z/2 x Z/8 at the zeroth Ulm invariant.",
+  "authors": [
+    "Elan Roth"
+  ],
+  "repository": "https://github.com/elanroth/UlmsTheorem",
+  "commit": "",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "entry_module": "LeanPool.UlmsTheorem",
+  "declarations": [
+    "UlmsTheorem.ulm_theorem",
+    "UlmsTheorem.iso_of_ulm_invariants",
+    "UlmsTheorem.ulmInvariant_iso_invariant",
+    "UlmsTheorem.UlmDifferentialRegression.no_iso_44_28"
+  ],
+  "informal": {
+    "UlmsTheorem.ulm_theorem": "For any prime p and any two countable reduced abelian p-groups in the same arbitrary Lean universe, the groups are additively isomorphic if and only if all of their classical Ulm invariants, indexed by universe-zero ordinals, agree.",
+    "UlmsTheorem.iso_of_ulm_invariants": "Equal Ulm invariants at every universe-zero ordinal imply an additive equivalence between countable reduced abelian p-groups, via finite height-preserving partial isomorphisms and a back-and-forth limit.",
+    "UlmsTheorem.ulmInvariant_iso_invariant": "An additive equivalence preserves every classical Ulm invariant.",
+    "UlmsTheorem.UlmDifferentialRegression.no_iso_44_28": "The groups Z/4 x Z/4 and Z/2 x Z/8 are not additively isomorphic; the proof exercises the classification theorem and independently detects their different zeroth Ulm invariants."
+  },
+  "classification": {
+    "msc2020": [
+      "20K10"
+    ],
+    "tags": [
+      "abelian-groups",
+      "p-groups",
+      "classification-theorems",
+      "ordinal-filtrations",
+      "ulm-invariants"
+    ],
+    "branch": "abelian group theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/UlmsTheorem.lean",
+  "statement_hash": "sha256:20eacb91652fca6c3f9422ad9b5c1cb115d3f361498687a7acf598f78a07ca9e"
+}

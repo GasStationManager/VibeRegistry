@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000001",
+  "version": 1,
+  "title": "JD-Jones-ASES/Hadamard-formal",
+  "abstract": "A Lean 4 formalization of the periodic Cooper-Wallis construction and of Hadamard existence at eight orders: from kernel-checked periodic T-matrix quadruples of orders 103 and 163 and seven symmetric-circulant Williamson quadruples, the development proves that Hadamard matrices of orders 2884, 4532, 7004, 7172, 7828, 8476, 9476, and 11948 exist. Each of the eight orders lands on an entry of Table 4 of Cati and Pasechnik's maintained construction database (arXiv:2411.18897v2, 2025-08-30) recording no Hadamard matrix of that order as known, and the source repositories' firsthand audit of the construction literature (closed 2026-08-29) located no published route to the order-103 or order-163 T-objects the eight are built from. The development also proves the erratum core of the companion Hadamard-M note on Miyamoto's 1991 construction paper: the handshake parity obstruction, its empty-class corollary, and the nonexistence of the displayed C2-matrix ingredient of that paper's Corollary 4 at every positive block order not congruent to 1 mod 4 - covering the paper's printed list entries at orders 103, 127, and 151 under both printed readings of the corollary's output order, and leaving the order-515 list entry, the paper's claim of a Hadamard matrix of order 2060, unsupported by the paper's own machinery. Cati and Pasechnik, for want of details, record being unable to verify the constructions claimed in that paper's section 7, naming order 4*515 as their example; the obstruction supplies an independent mathematical reason the printed route cannot deliver that entry. Order 2060 itself is not open: a Hadamard matrix of that order was posted publicly on 2026-08-23, credited to Schneider, by other means.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/Hadamard-formal",
+  "commit": "46544fab662e04db8b6fd18b47bd994585c4685c",
+  "project_path": null,
+  "declarations": [
+    "HadamardFormal.handshake_mod_four",
+    "HadamardFormal.no_handshake_matrix",
+    "HadamardFormal.no_c2_matrix",
+    "HadamardFormal.cooperWallis",
+    "HadamardFormal.hadamard_7172",
+    "HadamardFormal.hadamard_8476",
+    "HadamardFormal.hadamard_2884",
+    "HadamardFormal.hadamard_4532",
+    "HadamardFormal.hadamard_7004",
+    "HadamardFormal.hadamard_7828",
+    "HadamardFormal.hadamard_9476",
+    "HadamardFormal.hadamard_11948"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T00:24:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "46544fab662e04db8b6fd18b47bd994585c4685c",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--Hadamard-formal--de9ae797e429",
+        "source_repository": "JD-Jones-ASES/Hadamard-formal"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ed18de8c8bb24fed0d9334e5b276b3f79dfc0daed1ab163d5d8c9a9a4f3a3abb"
+}

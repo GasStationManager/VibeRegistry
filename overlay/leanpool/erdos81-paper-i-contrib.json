@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.Erdos81PaperIContrib",
   "declarations": [
     "LeanPool.Erdos81PaperIContrib.fg_cone_isClosed",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos81PaperIContrib.lean",
-  "statement_hash": "sha256:625ecbd3ebfc8b034cf88d7f770f39ed155a9d957e7d7da28327d9a097e9be17"
+  "statement_hash": "sha256:a72ee0db7fce856554d04d6689e91aed25fa5b7f87d97c811b42e294dd0d8b2a"
 }

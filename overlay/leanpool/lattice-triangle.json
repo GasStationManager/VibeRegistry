@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/AxiomMath/lattice-triangle",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.LatticeTriangle",
   "declarations": [
     "analyticEngine_lower_bound"
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/LatticeTriangle.lean",
-  "statement_hash": "sha256:6d19911f42ea08b83229fe64be76411c19a5312bc5108569c93058eaba2c9393"
+  "statement_hash": "sha256:3efca7cd884c248b64eaaae4e252b4e6dab32ce357c1b853da794b1be88611a2"
 }

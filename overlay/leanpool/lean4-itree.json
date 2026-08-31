@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/mit-plv/lean4-itree",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.Lean4Itree",
   "declarations": [
     "Lean4Itree.ITree",
@@ -60,5 +60,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Lean4Itree.lean",
-  "statement_hash": "sha256:5a6ce7f7fd030f07a215871d238ab545c619a349d511a024b931b425bdf55f33"
+  "statement_hash": "sha256:7596950ff32328807472f32154086b2c84615b0850f5b592d96a60e13d2ca48a"
 }

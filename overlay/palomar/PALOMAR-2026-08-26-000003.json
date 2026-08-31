@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-26-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000003",
+  "version": 1,
+  "title": "JaTaSn/lattice-line-covers",
+  "abstract": "A Lean 4 formalization of Theorem 1 of arXiv:2608.22550: there is a family of lattice lines covering the integer plane whose set of realized directions is dense. Concretely, a family F of subsets of Z^2 is exhibited such that (i) every member is a genuine lattice line, the nonempty solution set of Px + Qy = c with P, Q coprime; (ii) the members cover Z^2; (iii) two members of different direction are disjoint, so no lattice point is covered twice in different directions; and (iv) the directions that occur are dense in the space RP^1 of line directions, that is, every angle in [0, pi) is approximated to within any epsilon by the direction of some member. The construction is recursive and works on nested regions: a chain of cosets Z^2 = R_0 > R_1 > R_2 > ... is built, and at stage k the region R_k is partitioned into sub-cosets of a new coprime direction, one of which is reserved to become R_{k+1} while lines of that direction claim all the others. Coverage is what the choice of reserved sub-coset is for: fix a surjective enumeration z_0, z_1, ... of Z^2 and reserve, at stage k, a sub-coset that does not contain z_k -- always possible, since the partition has at least four sub-cosets and only the one containing z_k must be avoided. Every point is then claimed: it is z_k for some k, and either it had already left the region at an earlier stage, in which case the coverage invariant Z^2 \\ R_k = union over i < k of (R_i \\ R_{i+1}) shows it was claimed there, or it is still in R_k and the reservation rule places it in a sub-coset claimed at stage k. Reserving an arbitrary sub-coset would not do: without that diagonal choice a point could survive in every R_k and never be claimed. Disjointness is a consequence of that partition rather than of any criterion for when two individual lines meet: distinct sub-cosets of a region are disjoint, each stage's lines stay inside the sub-cosets they claim, and the regions claimed at distinct stages are therefore disjoint. Earlier lines survive untouched because everything a later stage touches lies inside the reserved region. Only Theorem 1 is formalized; the paper's further remarks and discussion are not.",
+  "authors": [
+    "Jan Snellman"
+  ],
+  "repository": "https://github.com/JaTaSn/lattice-line-covers",
+  "commit": "68f90ff9d90cb71af2c76eb1291a6ddf564cf4fb",
+  "project_path": "lean",
+  "declarations": [
+    "Palomar.main_theorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05B40",
+      "11H31",
+      "52C15",
+      "11B25",
+      "11B57"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-26T10:47:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "68f90ff9d90cb71af2c76eb1291a6ddf564cf4fb",
+        "fork_repository": "PalomarArchive/JaTaSn--lattice-line-covers--2c3ea32a3a37",
+        "source_repository": "JaTaSn/lattice-line-covers"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6a133ff52e1f218bea7c45e48e189816fd423e71288bfd242a292a4355003a20"
+}

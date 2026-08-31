@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/dkunert/three-gap-theorem-lean",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.SteinhausThreeGap",
   "declarations": [
     "SteinhausThreeGap.three_gap_card_le_three",
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SteinhausThreeGap.lean",
-  "statement_hash": "sha256:0e7bafe74e06bef5cd0a3a3794c7e96802c9472333047f3528cbc9e15652a336"
+  "statement_hash": "sha256:aa6cc710d9f1493dcc0bbcc43d0ffc299e5138a102e23ab47609f624290343fe"
 }

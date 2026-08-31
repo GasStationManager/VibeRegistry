@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000015",
+  "version": 1,
+  "title": "Arthur742Ramos/HigherLambdaModel",
+  "abstract": "A Lean formalization of higher-dimensional structure in the untyped lambda calculus.  Arthur Ramos is the first author and responsible maintainer of the Lean formalization; Daniel O. Martinez-Rivillas and Ruy J.G.B. de Queiroz are credited as the mathematical/source authors whose results are formalized.  The Palomar surface uses a restricted Kan-complex exponential and a separate certificate for term-generated semantic bodies, while the substantive repository also formalizes the higher conversion tower and the concrete K-infinity homotopy lambda model.",
+  "authors": [
+    "Arthur Ramos",
+    "Daniel O. Martinez-Rivillas",
+    "Ruy J.G.B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/HigherLambdaModel",
+  "commit": "f2fc3a20d29b24098466ba4373c0e93abb65f546",
+  "project_path": "palomar",
+  "declarations": [
+    "HigherLambdaModel.Palomar.main_result",
+    "HigherLambdaModel.Palomar.boolExtensionalCandidate_nontrivial"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T19:29:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f2fc3a20d29b24098466ba4373c0e93abb65f546",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--HigherLambdaModel--77ec198cec18",
+        "source_repository": "Arthur742Ramos/HigherLambdaModel"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d184e563347a387094c19eeae397a15d8bc4b00919c439313c8b96f944337b3f"
+}

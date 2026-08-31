@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ElodinLaarz/lean-thesis",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.SingularModuli",
   "declarations": [
     "QuadraticOrder.prime_inert_iff",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SingularModuli.lean",
-  "statement_hash": "sha256:290e44bbd5e4968ceb21f413246fb73650900ece2a0d2296c84537cdc4b42b42"
+  "statement_hash": "sha256:81ff8f296b44cbe4dbf51235166005f4c54e077b7ade80443b713105625c6d17"
 }

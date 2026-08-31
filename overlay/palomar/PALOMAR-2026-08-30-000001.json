@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-30-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-30-000001",
+  "version": 1,
+  "title": "BochaoKong/nullstellensatz",
+  "abstract": "A Lean 4 formalization of Rückert's Noetherianity theorem for local holomorphic-germ rings, algebraic and genuinely geometric finite projection for analytic hypersurface germs, the holomorphic constant-rank normal form, and Rückert's local analytic Nullstellensatz in finite-family and arbitrary-ideal radical forms.",
+  "authors": [
+    "BochaoKong"
+  ],
+  "repository": "https://github.com/BochaoKong/nullstellensatz",
+  "commit": "029697242294aea7989bf5d391199696a43490df",
+  "project_path": null,
+  "declarations": [
+    "LocalComplexGeometry.holomorphicGerm_isNoetherian",
+    "LocalComplexGeometry.hypersurface_finiteProjection",
+    "LocalComplexGeometry.holomorphic_constantRank_normalForm",
+    "LocalComplexGeometry.localAnalyticNullstellensatz"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV",
+      "math.AG"
+    ],
+    "msc2020": [
+      "32A10",
+      "32B05",
+      "32C25",
+      "13E05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-30T07:03:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "029697242294aea7989bf5d391199696a43490df",
+        "fork_repository": "PalomarArchive/BochaoKong--nullstellensatz--d5e535bb70d4",
+        "source_repository": "BochaoKong/nullstellensatz"
+      }
+    ]
+  },
+  "statement_hash": "sha256:769dd3b68f1b519e8c33e300378cf510de55e862dae708e2b2ed4a6dece6e9d9"
+}

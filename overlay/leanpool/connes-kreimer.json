@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/karlesmarin/connes-kreimer-lean",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.ConnesKreimer",
   "declarations": [
     "CK.instCKHopf",
@@ -54,5 +54,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ConnesKreimer.lean",
-  "statement_hash": "sha256:96451901b9978e531e49d4d293bf1e68ed5cb688c7e4192fbe8a93dcfe60a2f5"
+  "statement_hash": "sha256:d142aa65817771651c30fb2bf0e9f33eaf266344b810a8212e16f0e18cb5e413"
 }

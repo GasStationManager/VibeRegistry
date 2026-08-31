@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000004",
+  "version": 1,
+  "title": "stalex444/mahler-measure-minima",
+  "abstract": "For each degree d in {2, 3, 4}, the polynomial x^d - x - 1 attains the minimal Mahler measure among monic irreducible integer polynomials of degree d with Mahler measure above one, and the three minimal values are exactly the golden ratio (M^2 = M + 1), the plastic ratio (M^3 = M + 1), and the root of x^4 - x^3 - 1 above one (M^4 = M^3 + 1); by Siegel's classical theorem (1944, cited as background, not formalized here) the latter two are the smallest and second-smallest Pisot numbers. Classically the degree-4 minimizer is not itself a Pisot polynomial, yet its measure lands back on the Pisot list via the reciprocal transform. The minimizers' irreducibility is part of the compared surface. Proofs are by a Graeffe-certificate architecture: an effective coefficient-bound box from Mathlib's norm_coeff_le_choose_mul_mahlerMeasure, then one integer certificate per box element (tie orbit, cyclotomic cofactor, explicit factorization, or an iterated Graeffe coefficient bound), 6,171 + 147 + 21 certificates kernel-decided with plain decide — no native_decide anywhere. The exact values follow from a root-inversion identity and a (sigma, s)-reduction localizing the conjugate pairs, with multiplicity excluded by kernel-certified measure brackets.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/mahler-measure-minima",
+  "commit": "ca3df22ba91ce60e5199aee4a0c35a6ca8ee559d",
+  "project_path": null,
+  "declarations": [
+    "MahlerWindow.quadratic_min",
+    "MahlerWindow.quadratic_exact",
+    "MahlerWindow.quadratic_min_irreducible",
+    "MahlerWindow.cubic_min",
+    "MahlerWindow.cubic_exact",
+    "MahlerWindow.cubic_min_irreducible",
+    "MahlerWindow.quartic_min",
+    "MahlerWindow.quartic_exact",
+    "MahlerWindow.quartic_min_irreducible"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R06",
+      "11R09",
+      "12D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T03:21:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ca3df22ba91ce60e5199aee4a0c35a6ca8ee559d",
+        "fork_repository": "PalomarArchive/stalex444--mahler-measure-minima--93e268aaf02f",
+        "source_repository": "stalex444/mahler-measure-minima"
+      }
+    ]
+  },
+  "statement_hash": "sha256:24ce7e230a427d85a74c41de2520373504dd029255b2ba5f77e6d9d847631821"
+}

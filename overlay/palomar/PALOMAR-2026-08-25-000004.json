@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-25-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-25-000004",
+  "version": 1,
+  "title": "catskillsresearch/scott1976",
+  "abstract": "A partial Lean 4 / mathlib formalization of Dana Scott's 1976 paper *Data Types as Lattices* (Technical Monograph PRG-5; SIAM J. Comput. 5 (1976), 522–587). Comparator selects the six source theorems classified as fully faithful by the project audit: 1.1, 1.2, 1.4, 2.5, 4.2, and 6.1. Lean is written by AI agents under the direction and review of the author. Dana Scott did not participate in or endorse this formalization. There is no sorry outside the deliberate holes in Challenge.lean, no project-defined axiom, and Mathlib is the only Lake dependency.",
+  "authors": [
+    "Lars Warren Ericson"
+  ],
+  "repository": "https://github.com/catskillsresearch/scott1976",
+  "commit": "2081973122a631d34dc74f83cfc3f7495991415b",
+  "project_path": null,
+  "declarations": [
+    "Scott1976.DataTypesAsLattices.theorem_1_1",
+    "Scott1976.DataTypesAsLattices.theorem_1_2",
+    "Scott1976.DataTypesAsLattices.theorem_1_4",
+    "Scott1976.DataTypesAsLattices.theorem_2_5",
+    "Scott1976.DataTypesAsLattices.theorem_4_2",
+    "Scott1976.DataTypesAsLattices.theorem_6_1"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "06B35",
+      "68Q55",
+      "03B70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-25T18:14:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2081973122a631d34dc74f83cfc3f7495991415b",
+        "fork_repository": "PalomarArchive/catskillsresearch--scott1976--4994ad81a666",
+        "source_repository": "catskillsresearch/scott1976"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2a79e520d48fb29892a43496724feae42fd81e4f2dcf589c267451fbc6bddc0e"
+}

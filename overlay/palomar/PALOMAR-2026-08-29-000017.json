@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000017",
+  "version": 2,
+  "title": "shaikidris/prime-star-spectra-formalization",
+  "abstract": "A Lean 4 formalization of the ordered adjacency spectrum of finite prime-cover graphs. Its root-centred specialization proves that the square of the largest ordered eigenvalue equals pi(X) plus four times the finite prime sum of 1/(p-1), up to o(1). More generally, for every fixed finite set S of deleted primes and epsilon > 0, the same law with the explicit centre correction c(a) holds uniformly over allowed centres a <= (log X)^(1/2-epsilon). The same window admits a uniform centre--shell evolution theorem at the explicit first-exit frequency, with a finite localization-plus-phase error bound.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/prime-star-spectra-formalization",
+  "commit": "fe3fe9fa41f5c69d9e1e16abc6da144511f778b0",
+  "project_path": null,
+  "declarations": [
+    "PrimeStar.palomar_uniform_finite_prime_sum",
+    "PrimeStar.palomar_top_finite_prime_sum",
+    "PrimeStar.palomar_uniform_explicit_frequency_dynamics"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05C50",
+      "11N05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T01:24:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fe3fe9fa41f5c69d9e1e16abc6da144511f778b0",
+        "fork_repository": "PalomarArchive/shaikidris--prime-star-spectra-formalization--ddf336975c4c",
+        "source_repository": "shaikidris/prime-star-spectra-formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d3edf34a361cbf523adb11c4c14fcc41a4a4541f7c94eb0639876eafbdf2f4dc"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-26-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000005",
+  "version": 2,
+  "title": "shaikidris/FirstPassageLinearTransport-Palomar",
+  "abstract": "A Lean 4 formalization of four almost-all descent results for shortcut Collatz orbits in ordinary natural density: a general moving-endpoint first-passage theorem with a quantitative dyadic-shell error profile; the fixed-exponent polylogarithmic specialization with the full explicit entropy-margin exceptional-rate range; a stretched-logarithmic same-witness companion with a 6.953 log n clock and orbit ceiling; and a quantitative stretched-logarithmic exceptional count retaining every strict exponent sigma < 1 - delta.",
+  "authors": [
+    "Idris Ali Shaik (ORCID 0009-0009-9699-9712)"
+  ],
+  "repository": "https://github.com/shaikidris/FirstPassageLinearTransport-Palomar",
+  "commit": "68d0ab1f258fa9a584d9ca3f3822d5f56461b8ed",
+  "project_path": null,
+  "declarations": [
+    "CollatzFirstPassage.moving_polylogarithmic_natural_density_descent",
+    "CollatzFirstPassage.polylogarithmic_natural_density_descent",
+    "CollatzFirstPassage.stretched_logarithmic_descent_with_orbit_ceiling",
+    "CollatzFirstPassage.stretched_logarithmic_quantitative_exceptional_count"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.LO"
+    ],
+    "msc2020": [
+      "11B83",
+      "37P99",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-26T18:58:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "68d0ab1f258fa9a584d9ca3f3822d5f56461b8ed",
+        "fork_repository": "PalomarArchive/shaikidris--FirstPassageLinearTransport-Palomar--0ba971783d12",
+        "source_repository": "shaikidris/FirstPassageLinearTransport-Palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9b8d83d172a6a20894580e71564ce7f2c3ca8205ca555f68662a10188b948e56"
+}

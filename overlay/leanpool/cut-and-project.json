@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/dkunert/cut-and-project",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.CutAndProject",
   "declarations": [
     "CutAndProject.main_theorem_geometric_concrete",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CutAndProject.lean",
-  "statement_hash": "sha256:6367247ef5eb386a46bad1a8047e2ca2aacf4f35162327f8091113c62b92195f"
+  "statement_hash": "sha256:38ceeeca2e683a4fa53f6af7ddab16cb0abb886233a2124d8bde94887999308a"
 }

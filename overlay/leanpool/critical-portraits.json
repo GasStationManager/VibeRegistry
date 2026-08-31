@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/no-way-labs/lean-critical-portraits",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.CriticalPortraits",
   "declarations": [
     "CriticalPortraits.card_portraits",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CriticalPortraits.lean",
-  "statement_hash": "sha256:37ea29a6bf5b92263c85f378128917c74e2783287d53d8b634bd0ee68291b9f1"
+  "statement_hash": "sha256:2b53111e1f27a618d92ef3149081c1340917934155942a8a41c941b51ea44dcc"
 }

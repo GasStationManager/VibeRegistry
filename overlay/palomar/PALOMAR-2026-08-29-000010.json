@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000010",
+  "version": 1,
+  "title": "BochaoKong/classical-complex-wpt",
+  "abstract": "A Mathlib-only Lean 4 formalization of the classical complex-analytic Weierstrass preparation theorem at the origin. For every number of base variables and every preparation degree, including the zero-dimensional and degree-zero cases, it constructs the distinguished monic polynomial and nonvanishing analytic unit and proves uniqueness of all factors as germs.",
+  "authors": [
+    "BochaoKong"
+  ],
+  "repository": "https://github.com/BochaoKong/classical-complex-wpt",
+  "commit": "b4a7273fe5c9752753c52e10494097569089642d",
+  "project_path": null,
+  "declarations": [
+    "ClassicalComplexWPT.classicalComplexWeierstrassPreparation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV"
+    ],
+    "msc2020": [
+      "32A05",
+      "32A10",
+      "32B05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T02:02:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b4a7273fe5c9752753c52e10494097569089642d",
+        "fork_repository": "PalomarArchive/BochaoKong--classical-complex-wpt--4cd7e5b38132",
+        "source_repository": "BochaoKong/classical-complex-wpt"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3e69531a0f760f378a9e118f617a29fec908d35c0f8e097fd71825a36267e97e"
+}

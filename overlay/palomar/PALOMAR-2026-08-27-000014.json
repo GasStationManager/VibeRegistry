@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000014",
+  "version": 1,
+  "title": "sneed-and-feed/lean-theorems-1",
+  "abstract": "A machine-checked Lean 4 formalization of the general n-dimensional combinatorial Sperner parity theorem on abstract n-dimensional pseudomanifolds with boundary for arbitrary dimension n : ℕ. Proves the local door-counting parity invariant on (n+1)-simplices, the global double-counting identity on door-facet incidences, and the master parity congruence modulo 2 relating panchromatic (n+1)-simplices to boundary doors. The theorem is conditional on an odd number of boundary (n-1)-doors; obtaining the classical geometric Sperner lemma for simplicial subdivisions of geometric simplices with boundary-preserving colorings is a specialization requiring an additional geometric boundary induction argument not contained in these abstract combinatorial declarations. This n-dimensional development (SpernerND.lean) generalizes and supersedes the fixed-dimensional combinatorial parity identities in the repository's lower-dimensional modules (SpernersLemma.lean and Sperner3D.lean) into a single unified parameterized architecture. To the maintainers' knowledge, the theorem was not found in an exact declaration name, docstring, and type signature search of the pinned Mathlib revision (Mathlib v4.34.0-rc1).",
+  "authors": [
+    "Sneed & Feed Formalization Team"
+  ],
+  "repository": "https://github.com/sneed-and-feed/lean-theorems-1",
+  "commit": "d14072a07f6c5a4dbca1428c7d013828d7c1a9da",
+  "project_path": null,
+  "declarations": [
+    "SpernerND.sperner_nd_parity",
+    "SpernerND.sperner_nd_odd",
+    "SpernerND.sperner_nd_exists"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.AT"
+    ],
+    "msc2020": [
+      "05E45",
+      "57Q05",
+      "52A35",
+      "55M20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T18:40:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d14072a07f6c5a4dbca1428c7d013828d7c1a9da",
+        "fork_repository": "PalomarArchive/sneed-and-feed--lean-theorems-1--a2ac55dbf7b5",
+        "source_repository": "sneed-and-feed/lean-theorems-1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d14e6deeded3368662892e1edf0f8592cae552edbca4b3a7e65ec04147eac217"
+}

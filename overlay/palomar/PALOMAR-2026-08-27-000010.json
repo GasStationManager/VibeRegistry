@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000010",
+  "version": 1,
+  "title": "BrandonMYates/yz-cubic-comparator",
+  "abstract": "This project formalizes in Lean 4 the statement that the Diophantine equation y*z*(y+z) = x^3 + x^2 + 3x - 1 admits no polynomial parametrization over the rationals whose x-coordinate has degree between 1 and 4. Writing f = X^3 + X^2 + 3X - 1, the compared theorem is that there is no triple of rational polynomials (g, u, v) with g nonconstant of degree at most 4 satisfying the identity u*v*(u+v) = f composed with g. Exhibiting such a family is one of the two standard ways an equation of this shape is settled affirmatively -- the other being a sporadic solution -- and the theorem closes that route at low degree. The statement is over the rationals, which is the stronger reading: an integer family is in particular a rational one, so the theorem also excludes integer families in the same degree range. The statement is unconditional and uses no hypothesis from the literature. Context, stated plainly and without overstatement: this equation is recorded on MathOverflow (question 509449, posed by Bogdan Grechuk) as the smallest cubic equation with open solvability problem under the size ordering H(P) = sum |a_i| 2^{d_i} used in that programme, at H = 35. The compared theorem does NOT decide whether the equation has integer solutions, and makes no claim to. A solution could still exist sporadically, or in a polynomial family whose x-coordinate has degree 5 or more, or the equation could be unsolvable for reasons this theorem does not touch. Degree 5 is not covered and is not claimed: it admits slot-degree shapes the argument for degree at most 4 does not reach, and the bound in the statement is exactly the bound that is proved. The audience is the programme that maintains and closes the frontier list this equation sits on -- Bogdan Grechuk and Ashleigh Ratcliffe, On the shortest open cubic equations (arXiv:2603.29831), and the MathOverflow thread 466803 that tracks the current smallest open equations -- together with the adjacent literature on cubic Diophantine equations of this shape: Janos Kollar and Jennifer Li on the Mordell-Schinzel conjecture for cubic Diophantine equations XYZ = G(X,Y) (arXiv:2412.12080), and Martin Bright and Julian Lyczak on log K3 surfaces (arXiv:1705.04529), whose setting -- a del Pezzo surface minus a smooth anticanonical divisor -- is the geometry of the affine surface defined by this equation. Ruling out low-degree parametric families is directly responsive to how equations on that frontier list are resolved. On novelty: a literature search recorded 2026-07-21 and repeated 2026-08-26 identified no indexed resolution of the equation and no proof-assistant formalization touching it or the frontier list; the search is recorded but not exhaustive, and absence from search is not proof of open status. That search establishes that the equation is open; it does NOT establish that the non-existence of low-degree polynomial families is a new observation, and no such claim is made here. The contribution recorded by this entry is the proof-assistant formalization and its auditable dependency chain.",
+  "authors": [
+    "Brandon Yates"
+  ],
+  "repository": "https://github.com/BrandonMYates/yz-cubic-comparator",
+  "commit": "70082c378b76b2eb9cec74de67506d1c0e36a514",
+  "project_path": null,
+  "declarations": [
+    "SmallestOpenCubic.no_polynomial_family_deg_le_four"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.AC"
+    ],
+    "msc2020": [
+      "11D25",
+      "12E05",
+      "13P15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T08:58:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "70082c378b76b2eb9cec74de67506d1c0e36a514",
+        "fork_repository": "PalomarArchive/BrandonMYates--yz-cubic-comparator--23f58ebcc0e9",
+        "source_repository": "BrandonMYates/yz-cubic-comparator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cd95cef54aa65f4022337fd68ea0ddda1c2aaae3d477fbe2896212cc0b93cc5f"
+}

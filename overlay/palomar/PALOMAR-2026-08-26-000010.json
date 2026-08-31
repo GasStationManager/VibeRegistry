@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-26-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000010",
+  "version": 2,
+  "title": "Vulkin-prog/paper-c-lean",
+  "abstract": "Lean 4 formalization of three Poisson-limit statements for the starting points of long constant stretches of an extended Rademacher random completely multiplicative function in a dyadic block, corresponding to the three clauses of Theorem 1.2 in the cited source article. The first proves a total-variation Poisson approximation uniformly over every deterministic mask of the dyadic block. The second gives the Laplace-functional characterization of the limiting spatial Poisson point process. The third gives the corresponding marked characterization together with uniform tightness of the discrete marks. All three compared statements are conditional on exactly three fully stated ordinary propositions specialized from Arratia--Goldstein--Gordon, Evertse--Silverman, and Nicolas--Robin. Those propositions are theorem arguments, not Lean axioms.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "b3cf107d2df629453a5da8e84f2bad29eea0bf94",
+  "project_path": null,
+  "declarations": [
+    "paper_c_theorem_one_two_i_deterministic_masks",
+    "paper_c_theorem_one_two_ii_spatial_laplace",
+    "paper_c_theorem_one_two_iii_marked_laplace_and_tightness"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T09:33:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b3cf107d2df629453a5da8e84f2bad29eea0bf94",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:96a7f800c5fced77b0f6d57998e6567f8613a704f576164dfc7e901b0ecbc759"
+}

@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/AxiomMath/AgreeToDisagree",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.AgreeToDisagree",
   "declarations": [
     "AgreeToDisagree.agreeToDisagree",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/AgreeToDisagree.lean",
-  "statement_hash": "sha256:e58cfc38ca7f3a85bb95e0d320d82a7e31f610c474e2e94062789016fcf6914b"
+  "statement_hash": "sha256:48edf09b8adab2e75e3eedfab0f573157724eecbf3b0a05116f9e28f7f12903d"
 }

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/hadwiger-nelson-bounds-lean",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.HadwigerNelsonBounds",
   "declarations": [
     "HadwigerNelsonBounds.hadwiger_nelson_known_bounds",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/HadwigerNelsonBounds.lean",
-  "statement_hash": "sha256:5f1e6893f3dc6e51dc23be5615b1ba2b336cccdd52f815aa7b44b8d281f18c3d"
+  "statement_hash": "sha256:b9a8f13d1267eb432e45d3df1c515b5f26ffb95e5713c1b5450a2ed7476005dc"
 }

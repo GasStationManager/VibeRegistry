@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-26-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000001",
+  "version": 1,
+  "title": "sneed-and-feed/lean-theorems-1",
+  "abstract": "A complete, machine-checked Lean 4 formalization of the Graham–Pollak theorem (1971) and its tightness on complete bipartite partitions of complete graphs. Proves that any partition of the edges of the complete graph K_n into m complete bipartite subgraphs requires at least n - 1 bipartite graphs (m >= n - 1), adapting Helge Tverberg's 1982 linear-algebraic quadratic form argument. Also formalizes the canonical star partition proving tightness. To the maintainers' knowledge, Graham–Pollak was not previously formalized in Mathlib (checked against Mathlib v4.34.0-rc1).",
+  "authors": [
+    "Sneed & Feed Formalization Team"
+  ],
+  "repository": "https://github.com/sneed-and-feed/lean-theorems-1",
+  "commit": "fc4a68b1a7ec3ab87aa40ab64fbfd168fda862d2",
+  "project_path": null,
+  "declarations": [
+    "graham_pollak",
+    "graham_pollak_tight"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C50",
+      "05C70",
+      "15A03"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-26T08:38:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fc4a68b1a7ec3ab87aa40ab64fbfd168fda862d2",
+        "fork_repository": "PalomarArchive/sneed-and-feed--lean-theorems-1--a2ac55dbf7b5",
+        "source_repository": "sneed-and-feed/lean-theorems-1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fa42593c467fa886ec696d047de06d85f6ea0cc777e03d965374ac888e026295"
+}

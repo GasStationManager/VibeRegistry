@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-29-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-29-000001",
+  "version": 1,
+  "title": "ehrlich-b/euclidean-jordan",
+  "abstract": "The Jordan trace form tau(x,y) = tr(L_{x*y}), constructed from the multiplication rather than assumed: symmetric, associative, and positive definite. Symmetry and associativity need neither finite dimensionality nor formal reality; positive definiteness needs both, and runs through the spectral theorem. The carrier is not assumed unital, so this supplies the Euclidean form itself and does not by itself establish a unital Euclidean Jordan algebra. Sits directly on Mathlib's IsCommJordan. Coordinatization is absent. Machine checked, not peer reviewed, no priority claim.",
+  "authors": [
+    "Bryan Ehrlich"
+  ],
+  "repository": "https://github.com/ehrlich-b/euclidean-jordan",
+  "commit": "a0077822f037d5de7bdcbf3f9f498cc00f361a4a",
+  "project_path": null,
+  "declarations": [
+    "JordanTraceForm.traceForm_comm",
+    "JordanTraceForm.traceForm_assoc",
+    "JordanTraceForm.traceForm_self_nonneg",
+    "JordanTraceForm.traceForm_self_eq_zero_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA",
+      "math.OA",
+      "math.FA"
+    ],
+    "msc2020": [
+      "17C20",
+      "17C27",
+      "17C37",
+      "17C65",
+      "17A15",
+      "46L70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-29T00:33:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a0077822f037d5de7bdcbf3f9f498cc00f361a4a",
+        "fork_repository": "PalomarArchive/ehrlich-b--euclidean-jordan--60bdbed9ee0b",
+        "source_repository": "ehrlich-b/euclidean-jordan"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f214068a78b6cc8f58c2b4f59e94713d13cfed852787cd27fcf26f16c614ac59"
+}

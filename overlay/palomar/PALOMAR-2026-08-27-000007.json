@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000007",
+  "version": 1,
+  "title": "hkjtsgmc79-boop/colombo-odd-lean",
+  "abstract": "This project formalizes the odd-exponent branch of Colombo's determinant problem for even matrix size. For every m at least one, every strictly increasing x : Fin (2*m) → ℝ, and every r at least m - 1, it proves that the determinant of the matrix with entries (x_j - x_i)^(2*r+1) is strictly positive. The proof development passes through paired truncated-power determinants, B-spline and Marsden factorization, total nonnegativity, Volterra propagation, and Beta--de Bruijn and Pfaffian identities.",
+  "authors": [
+    "Qianli Ma"
+  ],
+  "repository": "https://github.com/hkjtsgmc79-boop/colombo-odd-lean",
+  "commit": "250ff20a0c2edae8f37e5733b439bf9128a877bd",
+  "project_path": null,
+  "declarations": [
+    "ColomboPalomar.odd_colombo_determinant_positive"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.CO"
+    ],
+    "msc2020": [
+      "15A15",
+      "15B48",
+      "41A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T05:27:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "250ff20a0c2edae8f37e5733b439bf9128a877bd",
+        "fork_repository": "PalomarArchive/hkjtsgmc79-boop--colombo-odd-lean--8450c3d9cca6",
+        "source_repository": "hkjtsgmc79-boop/colombo-odd-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:06699023a7d46154387d60e2fe6a810c843bace637c66e7e6c1da410671adfa6"
+}

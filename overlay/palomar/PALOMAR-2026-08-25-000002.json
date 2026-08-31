@@ -1,0 +1,67 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-25-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-25-000002",
+  "version": 2,
+  "title": "dcposch/jc2-lean",
+  "abstract": "Lean 4 / Mathlib formalization of a two-sheet implication in the aligned nontrivial cubic-Kummer analysis at actual partial degrees (6,9). Every field-valued solution of the four lower-Pfaffian invariant equations is proved to lie on a common-power sheet with zero source bracket or on an elliptic sheet; converse inclusions and existence of the sheets are not compared.  The formalization derives the elliptic equation and terminal one-form, excludes nonconstant reduced rational trajectories on its C != 0 fibre by a finite forbidden-value argument, factors the C=0 fibre, and verifies the shifted Davenport--Stothers bracket and terminal descent. Version 2 derives the finite-place valuation classification directly from the reduced rational ODE, proves the one-point support theorem, and excludes that sheet in the noncube Kummer branch.  It does not claim the preceding landing from an arbitrary Keller pair, the cube branch, all (6,9), maximum eleven, or JC2.",
+  "authors": [
+    "Dan Clemens Posch"
+  ],
+  "repository": "https://github.com/dcposch/jc2-lean",
+  "commit": "b80667d80987ca48cb98e1eb31e1324251b7928a",
+  "project_path": "gcd3-69-noncube",
+  "declarations": [
+    "GCD369InvariantFibreDichotomy",
+    "GCD369ZeroBracketSheet",
+    "GCD369EllipticSheetEquation",
+    "GCD369EllipticTerminalForm",
+    "GCD369ForbiddenNumerator",
+    "GCD369EllipticNonzeroExclusion",
+    "GCD369SpecialFibreDichotomy",
+    "GCD369ShiftedDSBracket",
+    "GCD369ShiftedDSTerminalDescent",
+    "GCD369WeightedWronskianLocal",
+    "GCD369ShiftedDSFinitePlace",
+    "GCD369WeightedWronskianDegree",
+    "GCD369ShiftedDSPolynomialCube",
+    "GCD369ShiftedDSNumeratorConstant",
+    "GCD369ShiftedDSRationalCube",
+    "GCD369ShiftedDSNoncubeExclusion",
+    "GCD369DSInfinitySupport",
+    "GCD369DSOneRootCube"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.AC"
+    ],
+    "msc2020": [
+      "14R15",
+      "13P10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-26T09:33:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b80667d80987ca48cb98e1eb31e1324251b7928a",
+        "fork_repository": "PalomarArchive/dcposch--jc2-lean--e2c6525da39f",
+        "source_repository": "dcposch/jc2-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:95c99f0356b6a09eed5b4f0faac4401b10c43be0955e5b41472d6d5f63ba6e1f"
+}

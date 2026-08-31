@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/AxiomMath/Biswal",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.Biswal",
   "declarations": [
     "Biswal.Theorem23.thm_manifest_coeff_nonneg",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Biswal.lean",
-  "statement_hash": "sha256:2a00716398d2e84152e78a242d44d37098274569db09bcc5e255fc07198d17f2"
+  "statement_hash": "sha256:a4e7871c53d7e7f56b420beaa4cb5db95fa875974a254831c7e8aa192c78388f"
 }

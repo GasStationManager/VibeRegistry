@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "connes-rigidity",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ConnesRigidity",
+  "version": 1,
+  "title": "Conditional formalization of Zhou's Connes-rigidity counterexample",
+  "abstract": "Constructs Zhou's two countable discrete groups and, assuming the project's universe-polymorphic property-(T) predicate for EL₃(𝔽₂[t]), proves that both satisfy the same predicate, are ICC and nonisomorphic, while their group von Neumann algebras are trace-preservingly normally star-isomorphic.",
+  "authors": [
+    "Utensil Song"
+  ],
+  "repository": "https://github.com/utensil/connes-rigidity",
+  "commit": "",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "entry_module": "LeanPool.ConnesRigidity",
+  "declarations": [
+    "Connes.theoremA"
+  ],
+  "informal": {
+    "Connes.theoremA": "At any Hilbert-space universe, assuming property-(T) for EL₃(𝔽₂[t]), constructs two countable discrete ICC groups satisfying property-(T) at that universe which are nonisomorphic although their group von Neumann algebras are trace-preservingly normally star-isomorphic."
+  },
+  "classification": {
+    "msc2020": [
+      "46L10",
+      "20F65",
+      "22D10"
+    ],
+    "tags": [
+      "operator-algebras",
+      "von-neumann-algebras",
+      "property-t",
+      "group-theory",
+      "connes-rigidity"
+    ],
+    "branch": "operator algebras and geometric group theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ConnesRigidity.lean",
+  "statement_hash": "sha256:dd454d5cafb6188427c15997fd8986443ecf1ef4ce36e275d292c2270b39ed1b"
+}

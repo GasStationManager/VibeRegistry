@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/SamuelSchlesinger/circuit-complexity",
   "commit": "",
-  "snapshot_commit": "f40532c7355fc2af6def32797660f89cb7fa8549",
+  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
   "entry_module": "LeanPool.CircuitComplexity",
   "declarations": [
     "CircuitComplexity.shannon_lower_bound_circuit",
@@ -56,5 +56,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CircuitComplexity.lean",
-  "statement_hash": "sha256:f156cedd221052df50858e697ed1d24de740e856a9a888d8e4291bb2f2f3eeec"
+  "statement_hash": "sha256:4f28d4a89ecda0473c9536683e2a7cdb91a67522ada28cc4178b1cb8b352573a"
 }

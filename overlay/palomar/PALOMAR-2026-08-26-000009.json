@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-26-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000009",
+  "version": 1,
+  "title": "sneed-and-feed/lean-theorems-1",
+  "abstract": "A complete machine-checked Lean 4 formalization of the Erdős–Ko–Rado theorem (1961) on intersecting families of finite sets using Katona's circle method (1972), along with the construction of the classical Hilton–Milner (1967) extremal non-star intersecting family. To the maintainers' knowledge, the theorem was not found in an exact declaration, docstring, and type signature search of the pinned Mathlib revision (Mathlib v4.34.0-rc1).",
+  "authors": [
+    "Sneed & Feed Formalization Team"
+  ],
+  "repository": "https://github.com/sneed-and-feed/lean-theorems-1",
+  "commit": "158e3dbad77b780e4e21c89072bc3b863104edd1",
+  "project_path": null,
+  "declarations": [
+    "erdos_ko_rado",
+    "exists_hiltonMilner_extremizer"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05D05",
+      "05A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-26T17:59:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "158e3dbad77b780e4e21c89072bc3b863104edd1",
+        "fork_repository": "PalomarArchive/sneed-and-feed--lean-theorems-1--a2ac55dbf7b5",
+        "source_repository": "sneed-and-feed/lean-theorems-1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:664d830515b87720b14495d249ced58cbb7ce7131b4dd3cb1b84411e338ac623"
+}

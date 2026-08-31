@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000003",
+  "version": 1,
+  "title": "GrgAakash/factorial-hypergraph-auxiliary-erdos",
+  "abstract": "A Lean 4 formalization of a quantitative solution to the auxiliary problem suggested by Erdos alongside Problem 1059. Conditional on an explicitly stated standard dimension-one upper-bound sieve theorem, the formalization proves that for every sufficiently large L there are at least ((L+1)!)^eta/(100 log L) integers n in (2L!, (L+1)!] whose prime factors all exceed L and for which n-k! is composite for every 1 <= k <= L. The formalization does not prove that n is prime and therefore does not solve the original Erdos prime problem.",
+  "authors": [
+    "Aakash Gurung"
+  ],
+  "repository": "https://github.com/GrgAakash/factorial-hypergraph-auxiliary-erdos",
+  "commit": "67b4088fc84422c84f7e5e205552757c3c0c9a71",
+  "project_path": null,
+  "declarations": [
+    "FactorialHypergraph.Palomar.quantitative_auxiliary_erdos"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11N36",
+      "11B65",
+      "11A41",
+      "05C65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T01:05:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "67b4088fc84422c84f7e5e205552757c3c0c9a71",
+        "fork_repository": "PalomarArchive/GrgAakash--factorial-hypergraph-auxiliary-erdos--94dad0e3e08f",
+        "source_repository": "GrgAakash/factorial-hypergraph-auxiliary-erdos"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8efc9226b77131285293484d97d31793a77027bb8cb3cebef8279b68e5c93d73"
+}

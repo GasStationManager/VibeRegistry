@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000007",
+  "version": 1,
+  "title": "MaxWellApexLab/BicausalOT-palomar",
+  "abstract": "A Lean 4 formalization of the Bellman value representation for bicausal optimal transport, together with the descriptive-set-theoretic library it requires.  The result registered by this Comparator configuration is the Kuratowski–Ryll-Nardzewski measurable selection theorem: for an arbitrary measurable space (alpha, A) and a Polish space Y, a multifunction Phi : alpha -> Set Y with nonempty closed values that is weakly measurable (the hit set {a | Phi a meets U} lies in A for every open U) admits an A-to-Borel measurable selection f with f a in Phi a for every a.  The statement is measure-free and pointwise: no measure appears, and the selection property holds everywhere, not almost everywhere.  It is proved from Mathlib alone, by the classical argument — a dense sequence in Y, a recursion producing measurable countably-valued approximate selectors whose successive stages stay within (1/2)^n, and a uniform Cauchy limit that is measurable as a pointwise limit of measurable functions and lands in Phi a because Phi a is closed.  The measurability of each refinement step is obtained by splitting over the countably many measurable fibres of the previous stage's index function, on each of which the test set is cut out by a fixed open set, so the weak measurability hypothesis applies directly.  No measurable selection theorem exists in Mathlib at the pinned revision.  The wider repository contains the Bellman value representation for bicausal optimal transport in one period and over a general finite horizon, an epsilon-optimal strategy that is sigma(Sigma-1-1)-measurable at every stage and an exactly optimal Borel-measurable strategy under Feller kernels and lower semicontinuous costs (Bertsekas–Shreve 7.50 and 8.3), and the supporting descriptive set theory: Jankov–von Neumann uniformization, Choquet capacitability for analytic sets, Polishness of the space of probability measures on a Polish space, and lower semianalyticity of kernel integrals.  The measurable selection theorem is used in that development to produce plain-Borel-measurable feasible bicausal strategies.",
+  "authors": [
+    "KT. Wu"
+  ],
+  "repository": "https://github.com/MaxWellApexLab/BicausalOT-palomar",
+  "commit": "06488da9a8379c66bc8d9065e6279d4d36f29d99",
+  "project_path": null,
+  "declarations": [
+    "MeasurableSelection.exists_measurable_selection"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.PR",
+      "math.GN",
+      "math.OC"
+    ],
+    "msc2020": [
+      "28B20",
+      "54C65",
+      "54H05",
+      "03E15",
+      "28A20",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T07:25:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "06488da9a8379c66bc8d9065e6279d4d36f29d99",
+        "fork_repository": "PalomarArchive/MaxWellApexLab--BicausalOT-palomar--498dc9db60b6",
+        "source_repository": "MaxWellApexLab/BicausalOT-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e103bd43f761df7f2e854322d39f43868b25012ab14e8a3623e1bee4fc4fcbae"
+}

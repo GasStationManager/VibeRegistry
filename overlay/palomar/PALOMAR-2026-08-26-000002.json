@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-26-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000002",
+  "version": 1,
+  "title": "lukasliehr/GrothendieckBessel",
+  "abstract": "A Lean 4 formalization of the existence assertion in Theorem 1.1 of arXiv:2608.12280v1 with the sharp constant K = 1: for every countable Bessel sequence with bound 1 in a complex Hilbert space, there exist measurable functions on the unit interval, pointwise bounded by 1, whose correlations reproduce the sequence's Gram matrix. This solves an open problem posed by Olevskii.",
+  "authors": [
+    "Lukas Liehr",
+    "Mitchell A. Taylor",
+    "Peiyang Yu"
+  ],
+  "repository": "https://github.com/lukasliehr/GrothendieckBessel",
+  "commit": "f1ad1c7680bce2b1ab4218a02bddd694fb57062a",
+  "project_path": null,
+  "declarations": [
+    "GrothendieckBessel.main"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.CA"
+    ],
+    "msc2020": [
+      "46B15",
+      "46B25",
+      "42C15",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-26T10:06:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f1ad1c7680bce2b1ab4218a02bddd694fb57062a",
+        "fork_repository": "PalomarArchive/lukasliehr--GrothendieckBessel--3d4b32fc2c7b",
+        "source_repository": "lukasliehr/GrothendieckBessel"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9048a21906fb33776bd7055e9a1832026aab6af8a7628a2f5d4a817c2e04e7df"
+}

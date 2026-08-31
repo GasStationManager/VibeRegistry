@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-25-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-25-000003",
+  "version": 1,
+  "title": "catskillsresearch/scott_models",
+  "abstract": "Order isomorphisms relating Scott’s three presentations of domains — continuous lattices (1972), neighbourhood systems (PRG-19), and information systems (1982) — including the round identification D ≃o RoundFilter ≃o RoundInfoSysElement and the S-expression equation T ≅ A + (T × T) as |T| ≃o |A + (T × T)| (SexSys.Element ≃o SexRhs.Element). Not a formalization of the three papers. Account: view.pdf.",
+  "authors": [
+    "Lars Warren Ericson"
+  ],
+  "repository": "https://github.com/catskillsresearch/scott_models",
+  "commit": "f0d6af25a06008457d399562ef6e26c11616ac51",
+  "project_path": null,
+  "declarations": [
+    "ScottModels.exists_presentation_domains_equiv",
+    "ScottModels.exists_sexNeighborhoodIso",
+    "ScottModels.exists_sexIdealIso",
+    "ScottModels.exists_sexDomainEquationIso"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO",
+      "math.LO"
+    ],
+    "msc2020": [
+      "06B35",
+      "68Q55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-25T12:48:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f0d6af25a06008457d399562ef6e26c11616ac51",
+        "fork_repository": "PalomarArchive/catskillsresearch--scott_models--939a81cd7f19",
+        "source_repository": "catskillsresearch/scott_models"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c3763faa72471b139bc4bffab57e755d7cc812593bb78cece5a78c243b5f13e5"
+}

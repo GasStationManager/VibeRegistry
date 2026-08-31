@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-27-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000009",
+  "version": 1,
+  "title": "yuma-mizuno/markoff-modp",
+  "abstract": "Lean 4 formalization of strong approximation for the Markoff surface modulo sufficiently large primes. The primary source is Bourgain-Gamburd-Sarnak.",
+  "authors": [
+    "Yuma Mizuno"
+  ],
+  "repository": "https://github.com/yuma-mizuno/markoff-modp",
+  "commit": "aea702e1116c5688a0c570127ebcd3f194924439",
+  "project_path": null,
+  "declarations": [
+    "Challenge.markoff_reduction_surjective_of_large_prime"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11D25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-27T07:34:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "aea702e1116c5688a0c570127ebcd3f194924439",
+        "fork_repository": "PalomarArchive/yuma-mizuno--markoff-modp--f917d627dade",
+        "source_repository": "yuma-mizuno/markoff-modp"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ffa39526b8cfd1dfc26a5f0132e6a89d320fd4378f991e09321341627fe9a2dc"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-25-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-25-000005",
+  "version": 1,
+  "title": "teal-sea/zeta-lab",
+  "abstract": "Let N(T,2T) count the nontrivial zeros of the Riemann zeta function with ordinate in (T,2T], with multiplicity, and N_0^s(T,2T) the simple zeros among them on the critical line. The Lean development accompanying arXiv:2608.13637 (anthropics/zeta-23-lean) proves, for Mathlib's riemannZeta and unconditionally, that for every eps > 0 and all large T, (H - eps) N(T,2T) <= N_0^s(T,2T), with H = 3/2 - (1/sqrt 2) cot(1/sqrt 2) = 0.67250070367941164573... (its Theorem D). Ainta (github.com/ainta/zeta-simple-zeros) refines H by carrying the spectral defect of the Gram matrix of the simple-zero vectors through that argument and bounding it block by block through a local inequality on seven points. Advertised here: that refinement carried out for n points at once, and three instances. Parametrically, for n >= 2, c > 0, m >= n, p > 0 with c(m-(n-1)) <= 1, if c <= F(n,p,g) for every nonnegative vector g of n-1 gaps (the hypothesis hCert), then for every eps > 0 and all large T, (Phi_n(n,c,m,p) - eps) N(T,2T) <= N_0^s(T,2T), where Phi_n(n,c,m,p) = (H - (n-1)(m-1)/(pm)) / (1 - c(m-(n-1))/m). At n = 7 this is Ainta's theorem. THE THREE-POINT INSTANCE IS UNCONDITIONAL. At (n,c,p) = (3, 1345/10^6, 3000) the hypothesis is proved, not assumed: the overlap weight w = k^2 is enclosed from a twelve-term Taylor bound on cos and sin and the closed form of the kernel, and 368 interval cell lemmas over rationals, applied 1515 times over 487 leaves, cover the quarter-plane of the two gaps. No external interval-arithmetic certificate is assumed for the three-point theorem, and no floating point appears. The cap gives m = 745 and the constant (149000000 H - 99200)/148800133 = 0.67273733450380945875..., exceeding H by 2.3663e-4: for Mathlib's riemannZeta, an unconditional improvement of the dependency's Theorem D. THE FOUR-POINT INSTANCE IS ALSO UNCONDITIONAL. At (n,c,p) = (4, 2310/10^6, 2500), the finite inequality at every triple of nonnegative gaps is proved inside Lean. The cap gives m = 435 and the resulting constant is (906250 H - 1085)/904171 = 0.67284701976668870316.... The bound and ratio carry no certificate hypothesis and use exactly the same three permitted axioms. The eight-point instance stays conditional. Our n-point generalisation of Ainta's interval verifier accepts c = 41763/10^7 at p = 3200, giving m = 246 and 0.67305298298962888...; interval-arithmetic acceptance is not a Lean proof, so hCert remains explicit. The contrast is explicit in the statements: the parametric and eight-point theorems retain a named certificate hypothesis, while the three- and four-point theorems prove their certificates inside Lean.",
+  "authors": [
+    "Thomas Lince"
+  ],
+  "repository": "https://github.com/teal-sea/zeta-lab",
+  "commit": "84312e4477dfeb7e0d8a91c38897f225f5a52f19",
+  "project_path": "lean/bridge",
+  "declarations": [
+    "Zeta23Ext.PalomarV2.n_point_bound",
+    "Zeta23Ext.PalomarV2.eight_point_bound",
+    "Zeta23Ext.PalomarV2.eight_point_bound_ratio",
+    "Zeta23Ext.PalomarV2.three_point_bound",
+    "Zeta23Ext.PalomarV2.three_point_bound_ratio",
+    "Zeta23Ext.PalomarV2.four_point_bound",
+    "Zeta23Ext.PalomarV2.four_point_bound_ratio"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M26",
+      "15A42"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-25T23:50:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "84312e4477dfeb7e0d8a91c38897f225f5a52f19",
+        "fork_repository": "PalomarArchive/teal-sea--zeta-lab--3c21e0f57be6",
+        "source_repository": "teal-sea/zeta-lab"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bc362cbb9df88b43334d1a346259363266123da21061d19d0daa229ee63bfc5b"
+}
