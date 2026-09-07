@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-02-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-02-000003",
+  "version": 1,
+  "title": "Salem's theorem: every Pisot number is a two-sided limit of Salem numbers",
+  "abstract": "Kernel-checked Salem's theorem — every Pisot number is a limit point of Salem numbers from both sides (R. Salem, Algebraic Numbers and Fourier Analysis, D. C. Heath, 1963, Ch. III, Theorem IV, p. 30; origin R. Salem, Duke Math. J. 12 (1945)) — with both of Salem's constructions, each stated as a construction. Three compared statements carry the surface. (1) salem_theorem — the theorem for Pisot numbers: a real algebraic integer alpha > 1 every other complex root of whose minimal polynomial has modulus < 1 (spelled as 1 < alpha, IsIntegral Z alpha, and every z in (minpoly Q alpha).aroots C other than alpha has norm < 1 — the spelling of the Pisot predicate in google-deepmind/formal-conjectures, inlined) has, for every eps > 0, a Salem number in (alpha - eps, alpha) and one in (alpha, alpha + eps). (2) salem_construction_two_sided — Salem's main construction z^m P(z) ± z^p P(1/z) with its family root in the conclusion: for the pattern data of a monic integer polynomial P (one real root alpha > 1, every other complex root strictly inside the unit circle, conjugation-closed) under the nondegeneracy P(1/alpha) != 0 — a proviso that on the pattern domain is strictly STRONGER than Boyd's — coinciding, when P is the minimal polynomial, with Boyd's \"provided P is not a reciprocal quadratic\" (Math. Comp. 32 (1978), p. 1252, eq. (26)) and with the reason clause of Salem's, \"so that Q and P will not be identical\" (Salem's stated hypothesis, \"theta not a quadratic unit\", is stronger; fidelity (g)) — there is a sign e = ±1, the sign of P(1/alpha), such that for every eps > 0 some X^m P + e P.reverse with m >= 2 has a Salem root in (alpha - eps, alpha) and some X^m P - e P.reverse with m >= 2 has a Salem root in (alpha, alpha + eps); P.reverse is z^p P(1/z), p = deg P. (3) salem_quadratic_unit — the excluded case, Salem's second construction (1963, p. 31) with its family root in the conclusion: for the reciprocal quadratic Pisot units alpha^2 = r alpha - 1, r >= 3 an integer, and every eps > 0, some (X^2 - rX + 1)(X^{2m} + 1) + X^{m+1} with m >= 1 has a Salem root in (alpha - eps, alpha) and some (X^2 - rX + 1)(X^{2m} + 1) - X^{m+1} with m >= 1 has a Salem root in (alpha, alpha + eps) — the Chebyshev family (x - r) T_m(x) ∓ 1 pulled back through x = y + 1/y. Statement (1) is the theorem; (2) and (3) each carry their construction and neither follows from (1), their conclusions naming a root of a specific polynomial; Boyd's \"for all sufficiently large m\" is NOT stated — (2) and (3) assert, per eps, the existence of some index m. A Salem number is spelled by Salem's definition of the class T (1963, p. 26): a real algebraic integer tau > 1 all of whose other conjugates lie in the closed unit disk, at least one on the unit circle — with the clause that 1/tau is a conjugate stated explicitly. Classically that clause and \"degree at least 4\" are consequences (Salem 1963, p. 26; Smyth 2015, Lemma 1); the equivalence is NOT formalized here, and the formal predicate is the stronger conjunction, which is the CONCLUSION of every compared statement — nothing is assumed of it. THE ROUTE: (1) is transported from a pattern-form theorem in the proof modules (salem_theorem_full), stated for any monic integer polynomial with the pattern data — a larger index set than the Pisot numbers (X^k times a minimal polynomial has the pattern) but equivalent in content, since the large root of any pattern polynomial is itself a Pisot number — through the bridge that the minimal polynomial over Z of a Pisot number carries the pattern data (the Gauss step: the minimal polynomial over Q is the rational image of the one over Z, since Z is integrally closed; separability of the irreducible minimal polynomial in characteristic zero; conjugation-invariance of integer coefficients). The pattern-form theorem splits on P(1/alpha) = 0: the nonzero branch is the assembly PdtSalemEndgame.salem_two_sided; the zero branch reduces to PdtSalemQuadUnit.salem_two_sided_quad_unit by a supporting lemma (reciprocal_quadratic_of_inv_root: a pattern polynomial vanishing at 1/alpha forces alpha^2 = r alpha - 1 with r >= 3 — the elementary \"reciprocal Pisot implies quadratic\", McKee–Smyth 2012, Lemma 6.2). Those two assemblies discard the index and the family; (2) and (3) are the same assemblies re-run in the bridge module SalemPisot with both kept. The book runs Case 1 under the proviso and handles the quadratic units in Case 2; the kernel unifies both cases in a single statement with no nondegeneracy hypothesis — a presentational unification of Salem's own two cases, not a mathematical strengthening of the theorem, which has no gap. The proofs use no argument principle and no Rouché theorem: the circle counts (m + p - 2 unimodular roots for the plus family z^m P + z^p P(1/z) with p = deg P, m + p - 3 plus the root z = 1 for the minus family, 2m for the quadratic-unit family) are intermediate-value arguments on explicit real phases; the trichotomy (every root unimodular or in {tau, 1/tau}) is a multiset squeeze against the degree; Salem-ness is an arithmetic certificate (the minimal polynomial divides the family; the Gauss step excludes degrees 1 and 2 and forces 1/tau a conjugate), with the integer degeneracies tau in Z and tau + 1/tau in Z discharged by finiteness along the ladders, or directly for the quadratic-unit family. NOT formalized: the equivalence of the Salem-number definitions (above); Boyd's converse (Boyd 1977: every Salem number arises from the construction); Salem 1944 (the Pisot numbers form a closed set); any rate of approach; Boyd's \"for all sufficiently large m\". As of the 2026-09-01 sweep (Mathlib at the pin and at master, Loogle, the Isabelle AFP at title/abstract/filename level, Coq, HOL Light, Metamath, arXiv; GitHub native code search and Mizar not run) the entry is not aware of a prior formalization of Salem's theorem or of Salem numbers in any surveyed prover ecosystem; the one adjacent hit is the IsPisot definition in google-deepmind/formal-conjectures (the definition and the golden-ratio instance; no Salem numbers), whose spelling the compared statement adopts. Axioms on every compared theorem: propext, Classical.choice, Quot.sound, audited in-build.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/salem-theorem",
+  "commit": "887be765bf24c6a645600dfc7bd0a1055a1761dd",
+  "project_path": null,
+  "declarations": [
+    "SalemTheorem.salem_theorem",
+    "SalemTheorem.salem_construction_two_sided",
+    "SalemTheorem.salem_quadratic_unit"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R06",
+      "11R04"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-02T10:12:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "887be765bf24c6a645600dfc7bd0a1055a1761dd",
+        "fork_repository": "PalomarArchive/stalex444--salem-theorem--0dba1667eca0",
+        "source_repository": "stalex444/salem-theorem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3a72c0747ea3cc26b558aa656aac2ae4ec53bcece2a372c6643f983bb47d4196"
+}

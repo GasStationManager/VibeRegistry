@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000009",
+  "version": 1,
+  "title": "Howson's theorem through finite cores and Kurosh decomposition",
+  "abstract": "Formalizes Howson's theorem for finite-rank free groups: the intersection of two finitely generated subgroups is finitely generated. The proof uses the repository's inclusion-compatible Marshall Hall construction to place one subgroup as a free factor of a finite-index overgroup, applies Schreier's finite-index theorem to the other subgroup, and then uses the actual Kurosh decomposition of the resulting subgroup of a binary free product. The final map from the relevant conjugate-intersection factor is defined from the factor inclusions and proved surjective onto the internal subgroup intersection.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/HowsonIntersectionTheorem",
+  "commit": "19aa5cdfb1e4c4711ab28304cd7f602b6500a3e9",
+  "project_path": null,
+  "declarations": [
+    "HowsonChallenge.howson_intersection_fg"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR"
+    ],
+    "msc2020": [
+      "20E07",
+      "20F65",
+      "05C25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T17:39:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "19aa5cdfb1e4c4711ab28304cd7f602b6500a3e9",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--HowsonIntersectionTheorem--b0d864bb1822",
+        "source_repository": "Arthur742Ramos/HowsonIntersectionTheorem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:018818e112490e11bf9b124a10a1f27c007ed890567f20fe83fba7606b7414d9"
+}

@@ -2,35 +2,33 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-08-26-000005",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-26-000005",
-  "version": 2,
-  "title": "shaikidris/FirstPassageLinearTransport-Palomar",
-  "abstract": "A Lean 4 formalization of four almost-all descent results for shortcut Collatz orbits in ordinary natural density: a general moving-endpoint first-passage theorem with a quantitative dyadic-shell error profile; the fixed-exponent polylogarithmic specialization with the full explicit entropy-margin exceptional-rate range; a stretched-logarithmic same-witness companion with a 6.953 log n clock and orbit ceiling; and a quantitative stretched-logarithmic exceptional count retaining every strict exponent sigma < 1 - delta.",
+  "version": 4,
+  "title": "Polylogarithmic Descent for Almost All Collatz Orbits in Natural Density",
+  "abstract": "A Lean 4 formalization of four strengthened almost-all results for shortcut and raw Collatz orbits in ordinary natural density: critical polylogarithmic descent with arbitrary positive divergent target and height multipliers, centered trajectory tubes, and actual first-passage clocks; the fixed-exponent common-landing theorem with the exact upper exceptional-rate endpoint; an explicit reciprocal-order lower bound forced by the joint height ceiling; and a quantitative stretched-logarithmic common-landing theorem with smaller relative-height ceilings. These are almost-all statements and do not prove pointwise Collatz convergence.",
   "authors": [
-    "Idris Ali Shaik (ORCID 0009-0009-9699-9712)"
+    "Idris Ali Shaik"
   ],
   "repository": "https://github.com/shaikidris/FirstPassageLinearTransport-Palomar",
-  "commit": "68d0ab1f258fa9a584d9ca3f3822d5f56461b8ed",
+  "commit": "39a6ba1940a1523e7491e32889f61afd235bb8df",
   "project_path": null,
   "declarations": [
-    "CollatzFirstPassage.moving_polylogarithmic_natural_density_descent",
-    "CollatzFirstPassage.polylogarithmic_natural_density_descent",
-    "CollatzFirstPassage.stretched_logarithmic_descent_with_orbit_ceiling",
-    "CollatzFirstPassage.stretched_logarithmic_quantitative_exceptional_count"
+    "CollatzFirstPassage.critical_polylogarithmic_descent_with_arbitrary_multipliers",
+    "CollatzFirstPassage.fixed_polylogarithmic_common_landing_centered_clocks_exact_rate",
+    "CollatzFirstPassage.eventually_fixedJointPolylogHeightFailureCount_ge_log_order",
+    "CollatzFirstPassage.stretchedLogCommonLandingWithRelativeHeightQuantitative"
   ],
   "informal": {},
   "classification": {
     "arxiv": [
-      "math.NT",
-      "math.LO"
+      "math.NT"
     ],
     "msc2020": [
       "11B83",
-      "37P99",
-      "03B35"
+      "37P99"
     ]
   },
   "license": "",
-  "published_at": "2026-08-26T18:58:07Z",
+  "published_at": "2026-09-06T14:34:04Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -44,11 +42,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "68d0ab1f258fa9a584d9ca3f3822d5f56461b8ed",
+        "commit": "39a6ba1940a1523e7491e32889f61afd235bb8df",
         "fork_repository": "PalomarArchive/shaikidris--FirstPassageLinearTransport-Palomar--0ba971783d12",
         "source_repository": "shaikidris/FirstPassageLinearTransport-Palomar"
       }
     ]
   },
-  "statement_hash": "sha256:9b8d83d172a6a20894580e71564ce7f2c3ca8205ca555f68662a10188b948e56"
+  "statement_hash": "sha256:d09afa18a01b8cacc90829859a18494a8b604fe38219780cddb809eef9142203"
 }

@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-05-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-05-000006",
+  "version": 1,
+  "title": "The global Kronecker–Weber theorem in Lean 4",
+  "abstract": "This project formalizes the global Kronecker–Weber theorem in Lean 4: every finite abelian extension of the rational numbers embeds into a cyclotomic field. For a number field L that is abelian Galois over the rationals, the selected declaration gives a positive integer n and a rational algebra embedding from L into CyclotomicField n ℚ. The proof is supplied by the ClassFieldTheory library at a fixed commit, using Lean 4.33.0 and Mathlib.",
+  "authors": [
+    "Naganori Yamaguchi"
+  ],
+  "repository": "https://github.com/n-yamaguchi-0729/KroneckerWeber",
+  "commit": "c3de19b9368d3ba1a28804efe1c21d1302db8f54",
+  "project_path": null,
+  "declarations": [
+    "KroneckerWeber.exists_cyclotomicEmbedding"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-05T22:48:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c3de19b9368d3ba1a28804efe1c21d1302db8f54",
+        "fork_repository": "PalomarArchive/n-yamaguchi-0729--KroneckerWeber--0f5a01c62e8e",
+        "source_repository": "n-yamaguchi-0729/KroneckerWeber"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4a5a372ceac0cdd7f903269acff47423b5565405d01cd829e29b2ad15d0f9810"
+}

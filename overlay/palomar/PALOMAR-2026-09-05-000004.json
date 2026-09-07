@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-05-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-05-000004",
+  "version": 1,
+  "title": "Exact four-dimensional projection quality of the OneTwo Sobol' table at 65,536 points",
+  "abstract": "The quality parameter t of a base-2 digital net with 2^m points measures exact equidistribution in dyadic boxes, and for Sobol' sequences used in quasi-Monte Carlo integration and computer graphics the quality of low-dimensional projections is a practical bottleneck. The OneTwo construction of Bonneel, Coeurjolly, Iehl, and Ostromoukhov (ACM Transactions on Graphics, 2025) releases a 692-dimension direction-number table whose protected pairs (2k-1, 2k) have the (1,2) property, with acceptance targets t <= 3 through m <= 10 and t <= 4 through m <= 15 for the pair-aligned four-dimensional blocks. Theorem 1.1 of the preprint determines the next depth exactly: at m = 16, a complete batch of 65,536 points, every one of the 345 pair-aligned windows of the released table has exact four-dimensional t-value 4 when its first dimension is one of 1, 7, 31, 49, 67, 195, 225, 243, 373 and t-value 5 otherwise, so the t <= 4 guarantee extends to m = 16 in exactly nine windows and fails in the other 336, each failure witnessed by an empty dyadic box of volume 2^-12 in that projection. The standard star-discrepancy bound for the projection is 299/4096 at t = 4 and 29/256 at t = 5. This Lean development proves the theorem in rank form with the released table embedded as one 256-bit literal per dimension: for every window, every four-part composition at the threshold total selects independent generator rows over F_2 and some composition one total higher does not, and the distribution is 9 windows at t = 4 and 336 at t = 5. The worked block, dimensions 25 to 28, keeps its separate explicit certificate (t = 5, with every smaller threshold refuted). All checks are 16-column XOR row reductions reduced by kernel decide with no native evaluation. The digital-net rank criterion, the discrepancy bound, and the authentication of the upstream table remain informal.",
+  "authors": [
+    "Lennart Rudolph"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "cc754a3bd42b2c0be28ff0a9e87c6d71e2fbfd82",
+  "project_path": "zenodo-21925582/palomar",
+  "declarations": [
+    "OneTwoSobolT5.exact_t_five_certificate",
+    "OneTwoSobolT5.census_every_window",
+    "OneTwoSobolT5.census_distribution"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "msc2020": [
+      "11K38",
+      "11K45",
+      "65C05",
+      "65D30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-05T21:10:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cc754a3bd42b2c0be28ff0a9e87c6d71e2fbfd82",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:535766bb85fdba50cabdfc7a3bd8aa61794cd4b3616c469530c5346515a890b9"
+}

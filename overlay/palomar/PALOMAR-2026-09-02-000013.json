@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-02-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-02-000013",
+  "version": 1,
+  "title": "Chip-Firing with Lean 4",
+  "abstract": "A Lean 4 / Mathlib formalization of Baker and Norine's Riemann-Roch theorem for finite graphs. Chip configurations on a finite graph, modulo chip-firing moves, form an abelian group analogous to the group of line bundles on a compact Riemann surface. Each class can be assigned a rank, analogous to the dimension of a linear series. These ranks then satisfy a formula of the form r(D) - r(K-D) = deg D + 1 - g, in exact analogy to Riemann surfaces. This formula is formalized, along with the analog of Clifford's theorem for finite graphs.",
+  "authors": [
+    "Dhyey Dharmendrakumar Mavani",
+    "Nathan Pflueger"
+  ],
+  "repository": "https://github.com/DhyeyMavani2003/chip-firing-with-lean",
+  "commit": "5b422d855c02af60591121ba7c11b5e8242542b8",
+  "project_path": null,
+  "declarations": [
+    "Propositions.riemann_roch",
+    "Propositions.clifford"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C57",
+      "14T20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-02T23:45:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5b422d855c02af60591121ba7c11b5e8242542b8",
+        "fork_repository": "PalomarArchive/DhyeyMavani2003--chip-firing-with-lean--549bfbf7c9e4",
+        "source_repository": "DhyeyMavani2003/chip-firing-with-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2fbb87a95e2957a3c414b9be2ec917e8207e1a466542aae308eefa049c4489d7"
+}

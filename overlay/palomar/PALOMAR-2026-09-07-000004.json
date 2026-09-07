@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000004",
+  "version": 1,
+  "title": "The rearrangement number: non(M) ≤ rr",
+  "abstract": "A Lean formalization of the lower bound non(M) ≤ rr, where non(M) is the least cardinality of a nonmeagre subset of the usual real line and rr is the least cardinality of a family of permutations of the natural numbers that changes the sum or destroys convergence of every conditionally convergent real series. It accompanies the manuscript *Determining the Rearrangement Number* by Vinicius de Oliveira Rodrigues. The reverse inequality was already known in the literature. The reverse inequality, the full equality, and further manuscript corollaries are not formalized in this project.",
+  "authors": [
+    "Vinicius de Oliveira Rodrigues"
+  ],
+  "repository": "https://github.com/vo-rodrigues/rr-equals-nonmeager-paper",
+  "commit": "a8e74a91fe0b9f3534194910172349c9926e3b3b",
+  "project_path": "lean",
+  "declarations": [
+    "PalomarRR.nonM_minimum",
+    "PalomarRR.rr_minimum",
+    "PalomarRR.nonM_le_rr"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03E17",
+      "40A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T06:03:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a8e74a91fe0b9f3534194910172349c9926e3b3b",
+        "fork_repository": "PalomarArchive/vo-rodrigues--rr-equals-nonmeager-paper--75b2cdca1836",
+        "source_repository": "vo-rodrigues/rr-equals-nonmeager-paper"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c0f0e721af16c19c7f93c79fa98d456fe3286cb88256725026bfdb7b0ed22a72"
+}

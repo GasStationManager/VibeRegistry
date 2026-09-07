@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/humiliati/sundogcert",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.Sundogcert",
   "declarations": [
     "Sundog.SATReductionMain.sat_iff_decodes",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Sundogcert.lean",
-  "statement_hash": "sha256:04a37e3a717ef059b173edf807818fbe6a8a802200c60fdcd34018a6bcffd5f8"
+  "statement_hash": "sha256:922759e9b102255609099d2b4af97e9a65c985026599121d98f9eb0acf96b47e"
 }

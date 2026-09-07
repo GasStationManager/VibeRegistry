@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "long-gaps-between-primes",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LongGapsBetweenPrimes",
+  "version": 1,
+  "title": "Improved long gaps between consecutive primes",
+  "abstract": "Formalizes the unconditional lower bound showing that, for all sufficiently large X, the largest gap between consecutive primes below X is at least a positive constant times log X (log log X)^2 log log log log X / (log log log X)^2. The development includes the short-translates sieve proposition, divisor coefficient estimates, truncated product weights, moment bounds, and the Erdos--Rankin covering argument used to derive the headline result.",
+  "authors": [
+    "OpenAI"
+  ],
+  "repository": "https://github.com/openai/LongGapsBetweenPrimes",
+  "commit": "",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "entry_module": "LeanPool.LongGapsBetweenPrimes",
+  "declarations": [
+    "LongGapsBetweenPrimes.long_prime_gaps",
+    "LongGapsBetweenPrimes.long_gap_theorem",
+    "LongGapsBetweenPrimes.short_translates"
+  ],
+  "informal": {
+    "LongGapsBetweenPrimes.long_prime_gaps": "There are a positive constant c and a real threshold X0 such that for every X at least X0, some pair of consecutive indexed primes below X has gap greater than c times log X (log log X)^2 log log log log X / (log log log X)^2.",
+    "LongGapsBetweenPrimes.long_gap_theorem": "For all sufficiently large X, there are consecutive primes p < q with q at most X and q - p at least a fixed positive multiple of the improved long-gap scale.",
+    "LongGapsBetweenPrimes.short_translates": "For all sufficiently large x, every sufficiently sparse subset S of an interval of length between x and x(log x)^2 has a translate b + Q(x)t + S consisting entirely of composite numbers, with 1 <= t <= exp x."
+  },
+  "classification": {
+    "msc2020": [
+      "11N05"
+    ],
+    "tags": [
+      "analytic-number-theory",
+      "prime-gaps",
+      "sieve-theory",
+      "erdos-rankin"
+    ],
+    "branch": "analytic number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/LongGapsBetweenPrimes.lean",
+  "statement_hash": "sha256:c47963ddcff27b9f75d4d126dbf8107bceb95f0bea8a9fcd539ca8b6c22c5208"
+}

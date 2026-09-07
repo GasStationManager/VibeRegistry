@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-03-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-03-000003",
+  "version": 1,
+  "title": "Tverberg's Partition Theorem, 1D Theorem, and Colorful 1D Theorem",
+  "abstract": "A complete, machine-checked Lean 4 formalization of Tverberg's Theorem (Helge Tverberg, 1966) in the distinct-point set formulation across dimensions d >= 1 (with d = 0, r > 1 cases vacuously satisfied due to Finset carrier capacity limits on Fin 0 -> ℝ) via the Sarkaria–Bárány Colorful Carathéodory reduction, the full 1D Tverberg theorem for arbitrary r via symmetric-rank pairing following Mulzer–Werner, and the 1-dimensional Colorful Tverberg Theorem for arbitrary r (Bárány–Larman–Pach 1992). Proves that any (r - 1)(d + 1) + 1 points in ℝ^d can be partitioned into r parts whose convex hulls intersect, and that two disjoint color classes of r points each in ℝ¹ can be partitioned into r colorful pairs whose convex hulls share a common point of intersection. To the maintainers' knowledge, the theorem was not found in an exact declaration name, docstring, and type signature search of the pinned Mathlib revision (Mathlib v4.34.0-rc1).",
+  "authors": [
+    "Noah Cohen"
+  ],
+  "repository": "https://github.com/sneed-and-feed/lean-theorems-1",
+  "commit": "d932843c58b449bfc1172686ddeef94945eb3c57",
+  "project_path": null,
+  "declarations": [
+    "TverbergsTheorem.tverbergs_theorem",
+    "TverbergsTheorem.tverberg_1d",
+    "TverbergsTheorem.colorful_tverberg_1d"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52A35",
+      "52C10",
+      "52A20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-03T05:14:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d932843c58b449bfc1172686ddeef94945eb3c57",
+        "fork_repository": "PalomarArchive/sneed-and-feed--lean-theorems-1--a2ac55dbf7b5",
+        "source_repository": "sneed-and-feed/lean-theorems-1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fc074c7386f7140429cf09a496aa0794189af3aae16e986d243c4907afc9d5b9"
+}

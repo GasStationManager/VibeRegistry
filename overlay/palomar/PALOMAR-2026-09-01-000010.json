@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000010",
+  "version": 1,
+  "title": "Proof-Carrying Decreasing-Diagram Confluence Certificates",
+  "abstract": "A Lean 4.33.0 formalization of a generic soundness theorem for finite, proof-carrying decreasing-diagram certificates. An artifact lists the labeled rewrite steps and explicit decreasing valleys for every local peak; an executable checker validates the finite data, while a separate completeness proof connects that data to the semantic relation. The theorem assumes `WellFounded lt` for the label order and then derives confluence of the unlabeled relation even though the underlying rewrite relation itself need not terminate. The repository includes a nontrivial funnel regression with three local peaks and negative certificate tests, plus a generated family study of canonical compression.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Metatheory",
+  "commit": "ab553544dafba3172cee2d56cf88ebf3065262b5",
+  "project_path": "palomar",
+  "declarations": [
+    "Metatheory.Palomar433.checked_complete_confluence"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO"
+    ],
+    "msc2020": [
+      "68Q42"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T21:02:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ab553544dafba3172cee2d56cf88ebf3065262b5",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Metatheory--a325a15f4ed6",
+        "source_repository": "Arthur742Ramos/Metatheory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:db2b46a8f95425ff1ac2935fb3e7b8e52ea48ee82b6ba66661a8851c83cd0ea7"
+}

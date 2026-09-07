@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "flt-regular",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FltRegular",
+  "version": 1,
+  "title": "Fermat's Last Theorem for regular primes",
+  "abstract": "Formalizes Kummer's proof of Fermat's Last Theorem for every odd regular prime exponent. The development proves both cases of the theorem and includes the required theory of cyclotomic integers, relative units, Hilbert 90 and 92, ramification, class groups, and Kummer's lemma.",
+  "authors": [
+    "FltRegular contributors"
+  ],
+  "repository": "https://github.com/leanprover-community/flt-regular",
+  "commit": "",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "entry_module": "LeanPool.FltRegular",
+  "declarations": [
+    "flt_regular",
+    "FltRegular.caseI",
+    "FltRegular.caseII",
+    "eq_pow_prime_of_unit_of_congruent"
+  ],
+  "informal": {
+    "flt_regular": "Fermat's Last Theorem holds for every odd regular prime exponent.",
+    "FltRegular.caseI": "The first case of Fermat's Last Theorem holds for every regular prime: no primitive solution exists when the exponent does not divide the product of the three terms.",
+    "FltRegular.caseII": "The second case of Fermat's Last Theorem holds for every odd regular prime: no primitive nonzero solution exists when the exponent divides the product of the three terms.",
+    "eq_pow_prime_of_unit_of_congruent": "A unit of the cyclotomic field of an odd regular prime that is congruent to an integer modulo the prime is itself a prime-th power."
+  },
+  "classification": {
+    "msc2020": [
+      "11D41",
+      "11R18",
+      "11R29"
+    ],
+    "tags": [
+      "algebraic-number-theory",
+      "fermats-last-theorem",
+      "cyclotomic-fields",
+      "class-groups",
+      "regular-primes"
+    ],
+    "branch": "algebraic number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/FltRegular.lean",
+  "statement_hash": "sha256:100276382f48c9df33fa678ee427917853999236dea15cf999c8dfdd8cad35d2"
+}

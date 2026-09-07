@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-03-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-03-000005",
+  "version": 1,
+  "title": "Sharp bounds for intervals in finite subgroup lattices",
+  "abstract": "Let H be a subgroup of a finite group G, let n = [G:H] > 1, and let p be the least prime divisor of n. This Lean development proves an exact finite rational upper envelope for the number of subgroups K with H ≤ K ≤ G and the strict bound c(p) n^((log_p n)/4), where c(p) is an Euler-product times a Gaussian theta series. It formalizes the bandwise moment inequality that drives the proof, a universal base-two bound with an exact decimal coefficient, the exact optimal answer for prime-power indices, and elementary-abelian asymptotics showing that both the constant and the exponent 1/4 are optimal.",
+  "authors": [
+    "Sébastien Palcoux"
+  ],
+  "repository": "https://github.com/sebastienpalcoux/sharp-intermediate-subgroup-bounds",
+  "commit": "522d6dfcb5d25d47455375e3df0f8a561b7b780b",
+  "project_path": null,
+  "declarations": [
+    "SharpIntermediateSubgroupBounds.bandwise_moment",
+    "SharpIntermediateSubgroupBounds.finiteU_and_sharp_leastPrime",
+    "SharpIntermediateSubgroupBounds.interval_card_lt_universal_decimal",
+    "SharpIntermediateSubgroupBounds.sharpConstant_two_decimal_enclosure",
+    "SharpIntermediateSubgroupBounds.Palomar.primePower_interval_bound_optimal",
+    "SharpIntermediateSubgroupBounds.Palomar.manuscript_elementaryAbelian_displayed_ratio_tendsto_sharpConstant",
+    "SharpIntermediateSubgroupBounds.Palomar.manuscript_elementaryAbelian_interval_div_finiteUQ_tendsto_one",
+    "SharpIntermediateSubgroupBounds.Palomar.manuscript_sharpConstant_le_of_positive_elementaryAbelian_bound",
+    "SharpIntermediateSubgroupBounds.Palomar.manuscript_no_subquarter_positive_elementaryAbelian_rpow_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "math.CO"
+    ],
+    "msc2020": [
+      "20D30",
+      "20E15",
+      "05A16"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-03T14:23:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "522d6dfcb5d25d47455375e3df0f8a561b7b780b",
+        "fork_repository": "PalomarArchive/sebastienpalcoux--sharp-intermediate-subgroup-bounds--1fc7151a37e3",
+        "source_repository": "sebastienpalcoux/sharp-intermediate-subgroup-bounds"
+      }
+    ]
+  },
+  "statement_hash": "sha256:de603004037b1cf0ab20b90b4d3054ef6c62ed2e28525c10c3dce979127bf4f0"
+}

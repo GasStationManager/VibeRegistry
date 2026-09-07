@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jzxia/WhiteheadTheorem",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.WhiteheadTheorem",
   "declarations": [
     "WhiteheadTheorem"
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/WhiteheadTheorem.lean",
-  "statement_hash": "sha256:c1e040649154cf68cb137d31254cba36dce7e008b902ab440148671f0a682a6e"
+  "statement_hash": "sha256:7b1cab142815c1e15bb631edaf6e48ec218852796dc20b1e26f0b322aba9fe61"
 }

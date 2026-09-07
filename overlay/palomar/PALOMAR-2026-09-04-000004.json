@@ -1,0 +1,67 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-04-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-04-000004",
+  "version": 1,
+  "title": "Sharp arithmetic separation in chiral Padovan histories",
+  "abstract": "Sixteen compared statements establish quantitative recurrence for the actual infinite Padovan prefix path and compare cubic and quartic arithmetic record windows. For 0<epsilon<=1, every nonempty prefix whose conjugate coordinate lies within epsilon of the origin has expanding coordinate at least epsilon^(-2); an actual prefix returns with expanding coordinate at most r^3*epsilon^(-2). Every letter stream satisfies the pairwise bound abs(Delta X)*norm(Delta W)^2>=1, and Padovan substitution stages attain equality at arbitrarily large clocks. The full cubic record window is relatively dense with uniformly discrete differences; the identical positive-real window in the quartic case admits nonzero inverse-unit points arbitrarily close to zero, while its other real embedding grows. Scalar prefix coordinates factor the included faithful chiral timelike history in the genuine quartic trace geometry. The formalization exposes the return bounds, actual-word attainment, constructive covering, and explicit obstruction as its principal mathematical consequences.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/chiral-padovan-histories",
+  "commit": "14711e6cffdc74669d15f808d4aec8cbb373d71f",
+  "project_path": null,
+  "declarations": [
+    "ChiralPadovanHistories.return_clock_bounds",
+    "ChiralPadovanHistories.stage_product_attainment",
+    "ChiralPadovanHistories.history_separation",
+    "ChiralPadovanHistories.cubic_record_windows",
+    "ChiralPadovanHistories.quartic_record_obstruction",
+    "ChiralPadovanHistories.quartic_escaping_coordinate",
+    "ChiralPadovanHistories.history_coordinate_factorization",
+    "ChiralPadovanHistories.normalized_inflation_iff",
+    "ChiralPadovanHistories.trace_gram_link",
+    "ChiralPadovanHistories.rest_space",
+    "ChiralPadovanHistories.endpoint_inflation",
+    "ChiralPadovanHistories.reversal_information",
+    "ChiralPadovanHistories.admissible_stream",
+    "ChiralPadovanHistories.faithful_chiral_code",
+    "ChiralPadovanHistories.exists_chiral_timelike_history",
+    "ChiralPadovanHistories.exact_stage_coordinates"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.NT"
+    ],
+    "msc2020": [
+      "37B10",
+      "11K16",
+      "52C23",
+      "11E04"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-04T18:52:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "14711e6cffdc74669d15f808d4aec8cbb373d71f",
+        "fork_repository": "PalomarArchive/stalex444--chiral-padovan-histories--902ed7c3be92",
+        "source_repository": "stalex444/chiral-padovan-histories"
+      }
+    ]
+  },
+  "statement_hash": "sha256:642b054c720779f532d9858d47d187b78c1e128378395b38b536f7b0dd7e3c5e"
+}

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/elanroth/UlmsTheorem",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.UlmsTheorem",
   "declarations": [
     "UlmsTheorem.ulm_theorem",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/UlmsTheorem.lean",
-  "statement_hash": "sha256:20eacb91652fca6c3f9422ad9b5c1cb115d3f361498687a7acf598f78a07ca9e"
+  "statement_hash": "sha256:058fc00a7b8754c1d8276098920ce73375e610f43db49b3e753cd21f744333db"
 }

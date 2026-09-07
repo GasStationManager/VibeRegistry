@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/AxiomMath/zeta-h123",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.ZetaH123",
   "declarations": [
     "ZetaH123.H1.main_theorem",
@@ -54,5 +54,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ZetaH123.lean",
-  "statement_hash": "sha256:f8ca0a88d15e2f66436a05165e3fb2aa3e4870a77acbbdd2c0f7b618804b88f6"
+  "statement_hash": "sha256:7544846f280b2e01e94210b68fb6f452603d4cf1ae647fc59c0cc31eb1468bc5"
 }

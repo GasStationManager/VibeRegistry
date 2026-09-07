@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000013",
+  "version": 1,
+  "title": "Grushko--Neumann rank additivity for free products",
+  "abstract": "Formalizes the binary Grushko--Neumann theorem: the minimal number of generators of a free product of two finitely generated groups is the sum of the minimal numbers of generators of the factors. The central theorem is proved by a kernel-checked finite labelled-graph reduction. For a minimal null path, the implemented reduction uniformly performs a source unfold, a subsequent safe fold, and an explicit monochromatic-vertex contraction; this gives the strict decrease used by strong induction and the separated-generator lower bound. The repository also retains the finite-core and free-group rank lemmas from the surrounding development as reusable supporting infrastructure, but only the global Grushko theorem declaration is selected by the public Challenge and Comparator.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/GrushkoNeumannTheorem",
+  "commit": "ef1f70db49792bb9bdb0c40eeec48168fca53393",
+  "project_path": null,
+  "declarations": [
+    "rank_freeProduct_eq_add"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR"
+    ],
+    "msc2020": [
+      "20E07",
+      "20F65",
+      "05C25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T23:01:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ef1f70db49792bb9bdb0c40eeec48168fca53393",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--GrushkoNeumannTheorem--c8ec15d3befa",
+        "source_repository": "Arthur742Ramos/GrushkoNeumannTheorem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:922acf29f8ad80433b3401a15bf41c45c6ae389e13eb80a6020e5a992d22c6af"
+}

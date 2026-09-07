@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000011",
+  "version": 1,
+  "title": "Arrow's theorem via Fourier analysis",
+  "abstract": "This is a formalization in Lean 4 of Arrow's theorem for three-candidate elections as stated in Ryan O'Donnell's book \"Analysis of Boolean Functions\", Sec. 2.5, with a single voting rule applied to every pairwise election. The theorem states that every unanimous voting rule that always admits a Condorcet winner  must be a dictatorship, i.e. there must exist a voter that alone determines the outcome. Here voting rules are encoded by Boolean-valued functions on the Hamming cube. The proof follows the exposition given there, which is based on Gil Kalai's Fourier-analytic argument using the Walsh-Fourier transform. The version stated in the book  and formalized here is not the most general version of Arrow's theorem: for example, one may allow more than three candidates, or that the voting rules for each pairwise election are different. This formalization was entirely human-written.",
+  "authors": [
+    "Joris Roos"
+  ],
+  "repository": "https://github.com/roos-j/lean-booleanfun",
+  "commit": "62125550b3dbaca60028e266be19397c2ef027ee",
+  "project_path": null,
+  "declarations": [
+    "BooleanFun.BV.dictator_of_condorcet_and_unanimous"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM"
+    ],
+    "msc2020": [
+      "68R01"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T21:38:58Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "62125550b3dbaca60028e266be19397c2ef027ee",
+        "fork_repository": "PalomarArchive/roos-j--lean-booleanfun--7b21d0c99127",
+        "source_repository": "roos-j/lean-booleanfun"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4185eb96615aace10b894062f03a52e424c7116d97a666d8e2f4d5140701b206"
+}

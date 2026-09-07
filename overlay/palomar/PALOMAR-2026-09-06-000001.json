@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-06-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-06-000001",
+  "version": 1,
+  "title": "Convex geometry and the Erdős–Ginzburg–Ziv problem: Theorem 1.2",
+  "abstract": "A Lean 4 formalization of Theorem 1.2 of Dmitrii Zakharov's Convex geometry and the Erdős–Ginzburg–Ziv problem. For every fixed positive dimension d, as p tends to infinity through the primes, the Erdős–Ginzburg–Ziv constant s(F_p^d) satisfies s(F_p^d) = p w(F_p^d) + o(p), where w is the weak Erdős–Ginzburg–Ziv constant.  Supporting proofs include the convex-flag Helly and centerpoint theorems, flag decomposition lemma, balanced convex combinations, relative set expansion, and the polynomial method bound for w. This submission covers Theorem 1.2 and its upper-bound formulation, not every result in the paper. The submission was prepared with the assistance of ChatGPT 5.6 / 6 Sol-Ultra under the direction and review of the author.  The GitHub page includes a PDF file zakharov_2026-3.pdf containing a revised version of the published paper generated  by ChatGPT 5.6 during this formalization project.  The only noteworthy difference is a correction to Definition 4.6 (Proper points) which was meant to use the function f^circ(q) in  place of \\hat f(q) in the published version (this typo slipped in during one of the revision rounds of the paper). No other significant mistakes or corrections were discovered.",
+  "authors": [
+    "Dmitrii Zakharov"
+  ],
+  "repository": "https://github.com/zakharov2k/EGZ-formal-proof",
+  "commit": "7c82267c43a51dd5cb3e440412780ff82aff7500",
+  "project_path": null,
+  "declarations": [
+    "PalomarEGZ.theorem_1_2",
+    "PalomarEGZ.main_upper_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B30",
+      "11H06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-06T01:34:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7c82267c43a51dd5cb3e440412780ff82aff7500",
+        "fork_repository": "PalomarArchive/zakharov2k--EGZ-formal-proof--b987e3f86b0c",
+        "source_repository": "zakharov2k/EGZ-formal-proof"
+      }
+    ]
+  },
+  "statement_hash": "sha256:742683ef9cc3d5acb4d8612cb025b401d7fdbdb47131b5e4dce6dfcaf2ed524f"
+}

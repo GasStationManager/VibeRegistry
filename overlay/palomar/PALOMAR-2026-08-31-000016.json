@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000016",
+  "version": 1,
+  "title": "Arthur742Ramos/KuroshSubgroupTheorem",
+  "abstract": "Formalizes the sharp Schreier index formula for finite-index subgroups of free groups and the Kurosh subgroup theorem for arbitrary subgroups of indexed free products. The Schreier proof realizes a subgroup as the vertex group of a finite action-groupoid covering, while the Kurosh proof constructs the Bass--Serre tree, a locally bijective graph-of-groups cover, and its path-lifting normal form. The Kurosh factor-only statement is a free product of the nontrivial quotient vertex stabilizers and the free group of the quotient graph; each vertex stabilizer is identified with an intersection with a conjugate of an original factor. For finite-index normal subgroups, a companion module proves that every deck transformation of the finite Schreier action is a unique right translation by the quotient group.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/KuroshSubgroupTheorem",
+  "commit": "911707126c8b9bb0c764bf853008fe1053c0aad9",
+  "project_path": null,
+  "declarations": [
+    "GraphCoveringTheory.KuroshChallenge.kurosh_bass_serre_decomposition_challenge"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "math.AT",
+      "math.LO"
+    ],
+    "msc2020": [
+      "20E07",
+      "05C25",
+      "18B40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T18:59:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "911707126c8b9bb0c764bf853008fe1053c0aad9",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--KuroshSubgroupTheorem--fd378969e93a",
+        "source_repository": "Arthur742Ramos/KuroshSubgroupTheorem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9f7c3bb8ece6f7f853b352be3b7b6ce08b4123b89ede1f715acf5bb4cb4a55da"
+}

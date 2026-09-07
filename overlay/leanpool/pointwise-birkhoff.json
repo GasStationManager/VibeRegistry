@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/lua-vr/pointwise-birkhoff",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.PointwiseBirkhoff",
   "declarations": [
     "LeanPool.PointwiseBirkhoff.birkhoffErgodicTheorem'",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PointwiseBirkhoff.lean",
-  "statement_hash": "sha256:0a53b6b87e770b105f7ea7d73c64d6206d543c21f44f88aa1af2554a2bb65a6c"
+  "statement_hash": "sha256:2760b2362dc35b45e09959b333b10819784cfda205651a68c76ed08cdd49345e"
 }

@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000008",
+  "version": 1,
+  "title": "Only two morphic numbers: the Aarts-Fokkink-Kruijtzer classification of the golden ratio and the plastic number",
+  "abstract": "Kernel-checked classification of the morphic numbers — the reals p > 1 satisfying both of the golden ratio's defining scale closures: p + 1 = p^k (the sum of consecutive measures of the geometric system is again a measure) and p - 1 = p^(-l) (so is their difference; rendered zpow-free as p^l * (p - 1) = 1). These two equations are the arithmetic of self-similar proportion: a number satisfying both generates a measure system closed under the paper's superposition and juxtaposition, the property pair behind the divine proportion's standing as the plane's design constant. The theorem (Aarts-Fokkink-Kruijtzer 2001): there exist only two such numbers — the golden ratio, with (k, l) = (2, 1), and the plastic number, the real root of x^3 = x + 1, with (k, l) = (3, 4). Four compared statements carry the classification in full: existence of the cubic's root, the iff pinning every morphic number to the golden ratio or that root, and the two witnesses. The list of numbers with the golden ratio's defining property pair is thereby provably complete at two. The second member is a distinguished constant independently of this theorem: the plastic number is the smallest Pisot number (Siegel 1944); its minimal polynomial x^3 - x - 1 attains the minimal Mahler measure among monic irreducible integer cubics (kernel-certified in the registered entry PALOMAR-2026-08-31-000004), and by Smyth's theorem its measure — the number itself — is the global minimum of the Mahler measure over nonreciprocal integer polynomials; it is the growth rate of the Padovan and Perrin sequences, the cubic analogue of Fibonacci growth; and it is the threshold constant of the Blanc-Cantat classification of birational surface dynamical degrees, the spectral limit of the Bedford-Kim automorphism family (kernel-certified in the author's mahler-minimizer-compositum entry). It entered mathematics from architecture: Dom Hans van der Laan introduced it (Le Nombre Plastique, 1960) as the ideal ratio of three-dimensional proportion — the same discovery made independently by Cordonnier — and Kruijtzer conjectured, and Aarts-Fokkink-Kruijtzer proved, that van der Laan's number is the only companion the golden ratio has. What \"morphic\" adds to the plastic number's distinctions is finality: the golden ratio's arithmetic of self-similarity, taken as a definition, has exactly one more solution among the reals. The formalized proof consumes Selmer's trinomial irreducibility theorem from Mathlib, derives the needed Tverberg-type instance through a mirror-dichotomy argument carried out entirely in the integer polynomial ring (simplifying the paper's complex-root analysis; disclosed in the fidelity block), and closes with the factorization endgame forcing (n, m) = (3, 5). No formalization of the morphic classification, the plastic number, or the Padovan/Perrin constants exists in any surveyed prover as of the 2026-09-01 sweep; Mathlib's golden-ratio development supplies one witness's vocabulary. Axioms on every compared theorem: propext, Classical.choice, Quot.sound, audited in-build.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/only-two-morphic-numbers",
+  "commit": "9d3664f4ad3abc3783a9296ad1207a1ef1fee41d",
+  "project_path": null,
+  "declarations": [
+    "MorphicNumbers.morphic_iff",
+    "MorphicNumbers.goldenRatio_morphic",
+    "MorphicNumbers.plasticNumber_morphic",
+    "MorphicNumbers.plastic_exists"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.HO"
+    ],
+    "msc2020": [
+      "11R09",
+      "11C08",
+      "00A67"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T15:53:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9d3664f4ad3abc3783a9296ad1207a1ef1fee41d",
+        "fork_repository": "PalomarArchive/stalex444--only-two-morphic-numbers--e5d806ec5637",
+        "source_repository": "stalex444/only-two-morphic-numbers"
+      }
+    ]
+  },
+  "statement_hash": "sha256:320495d8d884252b5bea6d8aa6cd6c4aa20b2ebd6bf7c314853b8c66db037cc8"
+}

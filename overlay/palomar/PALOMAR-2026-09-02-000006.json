@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-02-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-02-000006",
+  "version": 1,
+  "title": "Erdős Problem 625: chromatic versus cochromatic number of a random graph",
+  "abstract": "A Lean 4 formalization of the full-sequence quantitative theorem for G(n,1/2): with probability tending to one, the chromatic number minus the cochromatic number is at least ((log 2)^2/4) log(200/153) times n/(log n)^3. The formal statement uses the finite binomial random-graph measure, natural-valued chromatic and cochromatic numbers, real subtraction, and convergence along all natural n.",
+  "authors": [
+    "Samuil Petkov"
+  ],
+  "repository": "https://github.com/SamPetkov/Erdos625-formalization",
+  "commit": "9702b5e734627e3fdaef8da0d65ad7394016f0a7",
+  "project_path": null,
+  "declarations": [
+    "Erdos625.coe_halfProbability",
+    "Erdos625.erdos625"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C80",
+      "60C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-02T16:17:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9702b5e734627e3fdaef8da0d65ad7394016f0a7",
+        "fork_repository": "PalomarArchive/SamPetkov--Erdos625-formalization--e3b927505cb3",
+        "source_repository": "SamPetkov/Erdos625-formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:869ff5564ae43845d89b839523f9b428c6f26fdb0b5ab9822e64ca10061680e0"
+}

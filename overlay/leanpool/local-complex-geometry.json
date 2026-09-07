@@ -1,0 +1,64 @@
+{
+  "source": "leanpool",
+  "upstream_id": "local-complex-geometry",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LocalComplexGeometry",
+  "version": 1,
+  "title": "Foundational local complex-analytic geometry",
+  "abstract": "Develops a common Lean foundation for several classical local theorems in several complex variables: complex-analytic Weierstrass preparation with full germ uniqueness, Noetherianity of holomorphic-germ rings, finite projection for hypersurface germs, the holomorphic constant-rank normal form, and the finite-family local analytic Nullstellensatz. The imported development also exposes the arbitrary-ideal Nullstellensatz and regular level-set, submersion, and immersion consequences.",
+  "authors": [
+    "BochaoKong"
+  ],
+  "repository": "https://github.com/BochaoKong/nullstellensatz",
+  "commit": "",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "entry_module": "LeanPool.LocalComplexGeometry",
+  "declarations": [
+    "LocalComplexGeometry.localAnalyticNullstellensatz",
+    "LocalComplexGeometry.holomorphicGerm_isNoetherian",
+    "LocalComplexGeometry.hypersurface_finiteProjection",
+    "LocalComplexGeometry.holomorphic_constantRank_normalForm",
+    "ClassicalComplexWPT.classicalComplexWeierstrassPreparation",
+    "LocalComplexGeometry.analyticNullstellensatz_ideal",
+    "LocalComplexGeometry.holomorphic_regularLevelSet_parametrization"
+  ],
+  "informal": {
+    "LocalComplexGeometry.localAnalyticNullstellensatz": "If a finite family of functions analytic at the origin has common zero set locally contained in the zero set of another analytic function, then a positive power of the latter is locally an analytic linear combination of the family.",
+    "LocalComplexGeometry.holomorphicGerm_isNoetherian": "For every finite complex dimension, including dimension zero, the local ring of holomorphic germs at the origin is Noetherian.",
+    "LocalComplexGeometry.hypersurface_finiteProjection": "A nonzero hypersurface germ vanishing at the origin admits a linear coordinate change whose local quotient is finite free over the base germ ring, together with an explicit prepared equation and a proper, surjective finite-fiber projection of the local zero set.",
+    "LocalComplexGeometry.holomorphic_constantRank_normalForm": "An analytic map of locally constant complex rank is locally equivalent, through analytic source and target coordinates, to the standard rank projection.",
+    "ClassicalComplexWPT.classicalComplexWeierstrassPreparation": "A complex-analytic germ of exact order in one distinguished variable factors uniquely into a nonvanishing analytic unit and a monic Weierstrass polynomial whose analytic coefficient germs vanish at the origin.",
+    "LocalComplexGeometry.analyticNullstellensatz_ideal": "For every ideal of the local holomorphic-germ ring, the ideal of germs vanishing on its local zero set equals its radical.",
+    "LocalComplexGeometry.holomorphic_regularLevelSet_parametrization": "Near a regular point, the level set of a holomorphic map admits an analytic parametrization with an analytic local inverse on the level set."
+  },
+  "classification": {
+    "msc2020": [
+      "32A05",
+      "32A10",
+      "32B05",
+      "32C25",
+      "13E05"
+    ],
+    "tags": [
+      "complex-analysis",
+      "analytic-geometry",
+      "nullstellensatz",
+      "weierstrass-preparation"
+    ],
+    "branch": "several complex variables and local analytic geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/LocalComplexGeometry.lean",
+  "statement_hash": "sha256:eec0300467a0cbcff4447d599c43bb262fc881b5158c0a5fce6c3fd4b9cd427b"
+}

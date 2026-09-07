@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "common-neighbour-conjecture",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CommonNeighbourConjecture",
+  "version": 1,
+  "title": "Common-neighbour counterexamples for Saxl graphs",
+  "abstract": "Proves that for every base size B at least two and every prescribed degree bound, there is a finite faithful primitive permutation group of at least that degree and exact base size B whose generalized Saxl graph contains two nonadjacent vertices with no common neighbor. The supporting library constructs an explicit infinite family from binary deleted permutation modules over finite fields and proves the required base-size, irreducibility, primitivity, and graph-theoretic properties.",
+  "authors": [
+    "Aluna Rizzoli",
+    "Adam R. Thomas"
+  ],
+  "repository": "https://github.com/alunik/common-neighbour-conjecture",
+  "commit": "",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "entry_module": "LeanPool.CommonNeighbourConjecture",
+  "declarations": [
+    "SaxlCounterexamples.MainTheorems.mainTheorem",
+    "SaxlCounterexamples.EveryBase.hq_coreFamily"
+  ],
+  "informal": {
+    "SaxlCounterexamples.MainTheorems.mainTheorem": "For every natural number B at least two and every degree bound, there exists a finite faithful primitive permutation group of degree at least the bound and base size exactly B whose generalized Saxl graph has two nonadjacent vertices with no common neighbor.",
+    "SaxlCounterexamples.EveryBase.hq_coreFamily": "For every odd d with 3 ≤ d and every tail, the explicit affine wreath-product family has exact base size tail + 2, acts primitively, and its displayed pair has no common neighbor in the corresponding generalized Saxl graph."
+  },
+  "classification": {
+    "msc2020": [
+      "20B15",
+      "05C25"
+    ],
+    "tags": [
+      "permutation-groups",
+      "group-actions",
+      "algebraic-graph-theory",
+      "saxl-graphs",
+      "counterexamples"
+    ],
+    "branch": "permutation groups and algebraic graph theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CommonNeighbourConjecture.lean",
+  "statement_hash": "sha256:5fd61475e6f0e5e132f3ef00137067419e57cb2f5ba3e804164d3b14c0b138b4"
+}

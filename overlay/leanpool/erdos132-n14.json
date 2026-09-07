@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/erdos-132-moment-obstruction-lean",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.Erdos132N14",
   "declarations": [
     "LeanPool.Erdos132N14.erdos132_for_fourteen_of_published_inputs",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos132N14.lean",
-  "statement_hash": "sha256:0876aa48046ce186b287d76f341dee0e7d1d0aa7f0e8f2082a0a0a4b61e5b033"
+  "statement_hash": "sha256:97e9c31caedf7f1fe0c0b02645aad01cfa89940f1ce4d3e7c4789ca595fdc6b6"
 }

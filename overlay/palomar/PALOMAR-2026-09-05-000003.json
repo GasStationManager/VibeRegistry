@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-05-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-05-000003",
+  "version": 1,
+  "title": "N4Code: optimal finite-length block codes of size four for binary symmetric channels",
+  "abstract": "A Lean 4 and mathlib formalization of the Dong-Yang classification of optimal (n,4) binary block codes for binary symmetric channels.  The registered results are Theorems 1-5 of the paper: existence of an optimal linear or Class-I code, the explicit linear optimal codes by residue class modulo 3, the universal strict-improvement reductions outside the linear, Class-I, and Class-II classes, the Class-I condition reduction to linear codes, and the finite classification for blocklengths 2 <= n <= 8. The Lean statements use the strict-improvement contrapositive forms.",
+  "authors": [
+    "Shenghao Yang",
+    "Yanyan Dong"
+  ],
+  "repository": "https://github.com/shhyang/n4code_lean",
+  "commit": "1a501146e430d46c355aa937689f88f24e5ea822",
+  "project_path": null,
+  "declarations": [
+    "N4Code.palomar_thm1",
+    "N4Code.palomar_thm2_residue2",
+    "N4Code.palomar_thm2_n3",
+    "N4Code.palomar_thm2_residue0",
+    "N4Code.palomar_thm2_residue1",
+    "N4Code.palomar_thm3",
+    "N4Code.palomar_thm4",
+    "N4Code.palomar_thm5"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.IT",
+      "math.IT"
+    ],
+    "msc2020": [
+      "94B05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-05T09:12:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1a501146e430d46c355aa937689f88f24e5ea822",
+        "fork_repository": "PalomarArchive/shhyang--n4code_lean--082efe15ad27",
+        "source_repository": "shhyang/n4code_lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bfae30a8517458a3f86bd83f04c275d37430b667cd474016e29aefb883a6ad34"
+}

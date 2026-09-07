@@ -1,0 +1,56 @@
+{
+  "source": "leanpool",
+  "upstream_id": "zeta-zeros",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ZetaZeros",
+  "version": 1,
+  "title": "Simple zeros of the Riemann zeta function",
+  "abstract": "Formalizes Lamzouri's Hilbert-space proof of lower bounds for simple and distinct zeros of the Riemann zeta function. From explicit Riemann--von Mangoldt and unconditional pair-correlation hypotheses, the development proves that eventually more than 67.25% of nontrivial zeros are simple and on the critical line and more than 83.625% are distinct. It includes the finite-multiset Hilbert-space inequality, zeta-zero multiplicity symmetries, an admissible cutoff construction, and certified trigonometric estimates.",
+  "authors": [
+    "Kenny Lau"
+  ],
+  "repository": "https://github.com/AxiomMath/ZetaZeros",
+  "commit": "",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "entry_module": "LeanPool.ZetaZeros",
+  "declarations": [
+    "ZetaZeros.simple_proportion_d4",
+    "ZetaZeros.distinct_proportion_d5",
+    "ZetaZeros.card_simpleRealPart_lower",
+    "ZetaZeros.card_lower"
+  ],
+  "informal": {
+    "ZetaZeros.simple_proportion_d4": "Assuming the stated Riemann--von Mangoldt and unconditional pair-correlation formulas, beyond some height more than 67.25% of nontrivial zeta zeros are simple and lie on the critical line.",
+    "ZetaZeros.distinct_proportion_d5": "Under the same two explicit analytic hypotheses, beyond some height more than 83.625% of nontrivial zeta zeros are distinct.",
+    "ZetaZeros.card_simpleRealPart_lower": "Bounds from below the number of multiplicity-one real points in a finite nonempty conjugation-invariant multiset using the squared test-kernel sum of any admissible function.",
+    "ZetaZeros.card_lower": "Bounds from below the number of distinct points in a finite nonempty conjugation-invariant multiset using the same Hilbert-space kernel method."
+  },
+  "classification": {
+    "msc2020": [
+      "11M06",
+      "11M26"
+    ],
+    "tags": [
+      "analytic-number-theory",
+      "riemann-zeta-function",
+      "critical-line",
+      "simple-zeros",
+      "pair-correlation"
+    ],
+    "branch": "analytic number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ZetaZeros.lean",
+  "statement_hash": "sha256:910f8e174fb64bc05f5b5405367921085fd78bdc242e8f6fd5075489cb2033ed"
+}

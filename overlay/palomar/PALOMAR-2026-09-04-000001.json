@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-04-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-04-000001",
+  "version": 1,
+  "title": "Even-order Grünschloß–Keller permutation nets: net property and tiling distance",
+  "abstract": "This Lean development proves that the even-order permutation construction of Grünschloß and Keller (MCQMC 2008 proceedings, implemented in gendiag0m2.h) is a base-2 (0,m,2)-net for every even m >= 4. The proof is symbolic: for every resolution a <= m the dyadic-box map is shown injective through the concatenation x = floor(k/4) + 2^(m/2-2) z and fixed-width bit-reversal splitting, and a cardinality argument upgrades injectivity to a bijection (exactly one point per elementary interval). For the source's row-shifted tiling lattice <(N,0),(N/4,N)> it proves, for every even m >= 8, that one explicit pair of points has squared distance 241 * 2^(m-8), and at m = 8 that 241 is the exact minimum over all pairs and all lattice translates. The exhaustive m = 8 lower bound is reduced by ordinary kernel decide; the exactness of the computed candidate minimum over the whole lattice is a symbolic lemma. The all-parameter lower bound of the distance theorem (even m >= 10) is proved in the paper but is not formalized.",
+  "authors": [
+    "Lennart Rudolph"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "a55482e8e2cd43bb8099f600678644e1646f6c3d",
+  "project_path": "zenodo-22264675/palomar",
+  "declarations": [
+    "GKEvenNet.net",
+    "GKEvenNet.distance_upper",
+    "GKEvenNet.distance_m8_exact"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NA",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "11K38",
+      "65C05",
+      "65D18",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-04T04:59:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a55482e8e2cd43bb8099f600678644e1646f6c3d",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5a39c1d6b6732d5d81f2cbdc29e67a8027b2d690628ab4cf4db00ad15f0a9b72"
+}

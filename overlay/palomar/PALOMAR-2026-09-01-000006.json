@@ -1,0 +1,73 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000006",
+  "version": 1,
+  "title": "hadamard-b-formal: the bordered Goethals-Seidel characterisation, the s=1 layer, and Theorem D",
+  "abstract": "A Lean 4 and Mathlib formalization of part of the theorem layer of the Hadamard-B note on bordered Goethals-Seidel arrays: twenty-six compared theorems over fifty-eight compared definitions. Theorem A characterises, by an if-and-only-if, when a Goethals-Seidel array of four sign-valued sequences over a finite abelian group extends to a Hadamard matrix through a border of width 4s whose strips are constant on the cosets of a subgroup. Theorem B is its house form, whose hypothesis is exactly a two-tier periodic-autocorrelation profile, and carries two classical degenerations at an arbitrary reflection shift: the Goethals-Seidel theorem over an arbitrary finite abelian group, and the Wallis-Whiteman/Spence bordered construction. Of Theorem C only the row-sum rows D5 and D6 are formalized; clauses D1-D4 and the classification corollary are not. The character-twist layer is Lemma T, the s = 1 profile bijection, and the theorem that a twist fixing the reflection shift is a diagonal conjugation. Theorem D is covered at clauses (D-a) through (D-e): the forced Gram and border tables, the collapse of (H4) to a single 4x4 equation, the integer Parseval identity, both directions of the transport across the doubling, and clause (D-a'), which identifies the degenerate branch with the index-one construction entry for entry, again in both directions. The index-two collapse corollary is represented by its seed-problem bijection clause alone; its characteristic-subgroup and equivariance clauses are not formalized, nor is the 768-squared census behind (D-e). Two witness records are imported under SHA-256 pins, cross-checked against the source's canonical matrix digests, and checked by kernel reduction against Theorem A's hypotheses, giving Hadamard matrices of orders 52 and 20 through the theorem rather than by matrix multiplication; no novelty of existence is claimed at either order.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/Hadamard-B-Formal",
+  "commit": "d99c0180872e4213e54272f9699d28f28032a2a3",
+  "project_path": null,
+  "declarations": [
+    "HadamardBFormal.theoremA",
+    "HadamardBFormal.theoremA_sufficiency",
+    "HadamardBFormal.theoremB_profile",
+    "HadamardBFormal.D5",
+    "HadamardBFormal.D6",
+    "HadamardBFormal.goethalsSeidel_abelian",
+    "HadamardBFormal.borderedGS_index_one",
+    "HadamardBFormal.lemmaT",
+    "HadamardBFormal.twist_profile_iff",
+    "HadamardBFormal.twist_isConjugation",
+    "HadamardBFormal.twist_isHadamard_iff",
+    "HadamardBFormal.theoremD_tables",
+    "HadamardBFormal.theoremD_rowTable",
+    "HadamardBFormal.theoremD_border",
+    "HadamardBFormal.deltaSqSum_eq_four",
+    "HadamardBFormal.theoremD_transport",
+    "HadamardBFormal.theoremD_transport_converse",
+    "HadamardBFormal.theoremD_transport_iff",
+    "HadamardBFormal.theoremD_degenerate_collapse",
+    "HadamardBFormal.theoremD_degenerate_converse",
+    "HadamardBFormal.collapse_seedProblem_bijection",
+    "HadamardBFormal.hadamard_52_bordered",
+    "HadamardBFormal.hadamardExists_52",
+    "HadamardBFormal.hadamard_20_bordered",
+    "HadamardBFormal.hadamardExists_20",
+    "HadamardBFormal.gate52_columnTable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T12:03:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d99c0180872e4213e54272f9699d28f28032a2a3",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--Hadamard-B-Formal--531cc34ea6ea",
+        "source_repository": "JD-Jones-ASES/Hadamard-B-Formal"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f0d582085cd9f9efbe02608eac01a3e0a28ab9dad82f3bd0cb9664cce3be3c9e"
+}

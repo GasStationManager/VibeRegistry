@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000014",
+  "version": 1,
+  "title": "stalex444/Busch-theorem",
+  "abstract": "Kernel-checked proof of Busch's theorem in finite dimension: every generalized probability measure on the effects of a complex matrix algebra — nonnegative on effects, additive whenever a sum of effects is again an effect, normalized at the identity — is represented by a unique density matrix via the trace pairing. Existence and uniqueness are both compared (busch_representation). The result is the uniqueness of the Born rule in the POVM reading; it is valid in every finite dimension (beyond finiteness and decidable equality of the index type, the compared statement assumes only [Nonempty n]) and holds already at dimension 2, where Gleason's theorem (which requires dimension at least 3) does not apply. No continuity is assumed: for a normalized measure, nonnegativity plus additivity force real homogeneity on the effect interval (scalars in [0,1]), compared separately as homogeneity_automatic. The compared statements use only Mathlib vocabulary (Matrix.PosSemidef, Matrix.trace).",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/Busch-theorem",
+  "commit": "b6801977b666320c38b7027bc130a49583578902",
+  "project_path": null,
+  "declarations": [
+    "BuschTheorem.homogeneity_automatic",
+    "BuschTheorem.busch_representation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "math-ph"
+    ],
+    "msc2020": [
+      "81P16",
+      "81P15",
+      "46N50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T15:52:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b6801977b666320c38b7027bc130a49583578902",
+        "fork_repository": "PalomarArchive/stalex444--Busch-theorem--b339dc389dad",
+        "source_repository": "stalex444/Busch-theorem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ee9f34ad428387b930d11670d0ec8623facbfe21b26ebfdc458db22e5ecb66a9"
+}

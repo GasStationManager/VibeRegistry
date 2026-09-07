@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-04-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-04-000002",
+  "version": 1,
+  "title": "Combinatorial core of the K₃,₃,₁-redundancy theorem for tetrahedral balls",
+  "abstract": "Alexa's three-dimensional Tutte embedding theorem (Discrete & Computational Geometry, 2025) requires the graph of a tetrahedral mesh to have neither a K₆ nor a K₃,₃,₁ minor and asks whether the second exclusion is necessary. The paper proves that it is redundant for finite simplicial complexes whose realization is a closed topological 3-ball and which satisfy the boundary-triangle condition (BT): if the 1-skeleton G has no K₆ minor, then G is linklessly embeddable and hence has no K₃,₃,₁ minor (Theorem 1.1). This Lean development proves the paper's new combinatorial mathematics over mathlib simple graphs and finite simplicial complexes and composes it into Theorem 1.1 with the cited theorems as explicit hypotheses. Proved: for every four-clique of a (BT) pair the induced relative F₂ chain complex has homology of dimension at most one (Lemma 4.3, with the soundness of its Boolean coordinate model, Lemma 7.1); a K₄-attachment never merges components of the old part (Lemma 5.2); every MP₁-cockade whose four-clique deletions leave at most two components is linklessly embeddable, given the four-clique Holst–Lovász–Schrijver criterion and linkless atoms (Proposition 5.3); and the joined statement structural_theorem, in which the skeleton of the complex is a mathlib SimpleGraph, every skeleton four-clique is a labelled four-clique of the pair, and the hypotheses are Corollary 3.6 (rigidity, Mader, Jørgensen), the relative ball duality of Section 4, Corollary 2.5, and Lemma 5.1. Generic rigidity, the extremal-minor classification, PL duality, the Holst–Lovász–Schrijver theorem, apex linklessness, and Alexa's theorem are not formalized and enter only as named hypotheses.",
+  "authors": [
+    "Lennart Rudolph"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "debbfca8601d34a975a54d327f8dcba7ec6289df",
+  "project_path": "zenodo-21925574/palomar",
+  "declarations": [
+    "K331Tutte.Bridge.structural_theorem",
+    "K331Tutte.Cockades.safe_cockade_linkless",
+    "K331Tutte.Cockades.attachment_reachable_transfer",
+    "K331Tutte.FiniteHomology.Ambient.encoded_induced_four_pair_admissible",
+    "K331Tutte.FiniteHomology.Ambient.induced_four_coordinate_chain_identification",
+    "K331Tutte.FiniteHomology.Ambient.induced_four_clique_relative_homology_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.CG"
+    ],
+    "msc2020": [
+      "05C10",
+      "05C40",
+      "05C83",
+      "55N10",
+      "57Q15",
+      "68U05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-04T05:46:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "debbfca8601d34a975a54d327f8dcba7ec6289df",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bb94d3c74db23c7b9f82d4a181b9ecc3cee4d4beb739b6aba8c1db1c98f4b3fb"
+}

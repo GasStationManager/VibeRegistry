@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000003",
+  "version": 1,
+  "title": "The entangled Born correlations: a mixed-state entanglement witness through the Born rule forced on the composite algebra",
+  "abstract": "Kernel-checked entanglement package on the bipartite matrix algebra (2x2 tensor 2x2, native product index): (1) the separable-state CHSH bound 2 for the real-Pauli tuple, proved through the Bloch-disk constraint with no spectral theory; (2) an entanglement witness — a bipartite state, positive semidefinite with unit trace, that is NOT separable, with Born CHSH expectation equal to the Tsirelson value 2*sqrt(2) (the Bell state, exhibited explicitly in the Solution); (3) spectral projections without spectral theory — (1+W)/2 is an effect for every Hermitian involution W, any finite dimension; (4) the two-party correlation law forced, not postulated: for any state representing a generalized probability measure on effects (Busch's theorem vocabulary; no continuity assumed), the correlation at any pair of binary-observable settings is an explicit difference of the measure's values at two effects; (5) the assembly — a state that is not separable, is the UNIQUE state reproducing its own effect statistics (Born-rule uniqueness on the composite algebra), attains the Tsirelson value, and carries the witness correlation table XX = ZZ = 1, XZ = ZX = 0. Extended (second session, 2026-08-31) by five further compared theorems — the general bounds and the quantitative Werner-family layer: (6) the separable bound 2 at ARBITRARY finite local dimensions and arbitrary Hermitian-involution settings; (7) the state-level Tsirelson bound 2*sqrt(2) at the same generality; (8) the Werner family W_p = p|Phi+><Phi+| + ((1-p)/4)1, spelled inline from the explicit Bell projector, has CHSH expectation at most 2*sqrt(2)*p at any Hermitian-involution settings with traceless party-1 observables (p >= 0) — the Werner line of the Horodecki 1995 criterion; (9) the violation threshold: for p >= 0, W_p violates CHSH at some such settings iff p > 1/sqrt(2); (10) the separability endpoint (Werner 1989): W_p is separable for 0 <= p <= 1/3. All hypotheses are inline; the compared statements use only Mathlib vocabulary (Matrix.PosSemidef, Matrix.IsHermitian, Matrix.trace, the Kronecker product, Real.sqrt, Matrix.vecMulVec) with no custom definitions.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/werner-window",
+  "commit": "81c70fe45f81da86c25254f3eb52123d504b452c",
+  "project_path": null,
+  "declarations": [
+    "EntangledBorn.separable_chsh_le",
+    "EntangledBorn.entanglement_exists",
+    "EntangledBorn.effect_of_involution",
+    "EntangledBorn.born_correlation_forced",
+    "EntangledBorn.entangled_born_correlations",
+    "EntangledBorn.separable_chsh_le_general",
+    "EntangledBorn.state_chsh_le_general",
+    "EntangledBorn.werner_chsh_max",
+    "EntangledBorn.werner_violation_iff",
+    "EntangledBorn.werner_separable_third"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "math-ph"
+    ],
+    "msc2020": [
+      "81P40",
+      "81P15",
+      "81P16"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T03:13:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "81c70fe45f81da86c25254f3eb52123d504b452c",
+        "fork_repository": "PalomarArchive/stalex444--werner-window--b27a0d75c51f",
+        "source_repository": "stalex444/werner-window"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1a1ba3f8f047f6f10a48b43c87efee2df1fe9f228ec71a9cb3a88ddb33e4de68"
+}

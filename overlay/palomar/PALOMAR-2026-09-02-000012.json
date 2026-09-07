@@ -1,0 +1,77 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-02-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-02-000012",
+  "version": 1,
+  "title": "heilbronn-convex-3-8",
+  "abstract": "For n = 3 through n = 8, this formalization determines the supremal minimum triangle area among n indexed planar points whose own convex hull has Lebesgue area one. It proves a pointwise upper bound, attainment, and the exact value for every n in that range. The values are 1, 1/2, (5-sqrt(5))/10, 1/6, 1/9, and, at n = 8, the unique root in (79/1000, 81/1000) of 2060x^5 - 2332x^4 + 1064x^3 - 240x^2 + 26x - 1.\nFor n = 3, 4, 5, 6, and 8 it also proves pairwise uniqueness of optimizers modulo arbitrary relabeling and arbitrary nonsingular affine transformations. Uniqueness is false at n = 7; instead, an explicit real family is proved to attain throughout its full parameter interval and to exhaust all unit-hull optimizers up to the same equivalence. A real subinterval is pairwise inequivalent, exhibiting a continuum-parameterized set of optimizer orbits; an explicit countable subfamily is retained too.\nThe n = 3 and n = 4 cases are elementary folklore. The sharp n = 6 and n = 7 values were published by Dress-Yang-Zeng and Yang-Zeng, respectively; the Lean developments here independently reprove those results rather than formalizing the published arguments. The full n = 5 result, the explicit n = 7 family and optimizer classification, and the exact n = 8 result and optimizer classification are first presented in this development. The scoped search described below located prior candidate records but no published full n = 5 proof, no prior exhaustive n = 7 optimizer classification, and no published n = 8 proof. This is not an absolute priority claim. These results are intended for researchers in discrete and computational geometry studying extremal configurations, exact geometric bounds, and formalized combinatorial geometry.",
+  "authors": [
+    "Tej Stead"
+  ],
+  "repository": "https://github.com/tejstead/heilbronn-site",
+  "commit": "143e09956fbbf68184cd60cfe445585a00e3b50f",
+  "project_path": "proofs/palomar/heilbronn-convex",
+  "declarations": [
+    "HeilbronnChallenge.heilbronn_convex_three_upper_bound",
+    "HeilbronnChallenge.heilbronn_convex_three_attained",
+    "HeilbronnChallenge.heilbronn_convex_three",
+    "HeilbronnChallenge.heilbronn_convex_three_unique",
+    "HeilbronnChallenge.heilbronn_convex_four_upper_bound",
+    "HeilbronnChallenge.heilbronn_convex_four_attained",
+    "HeilbronnChallenge.heilbronn_convex_four",
+    "HeilbronnChallenge.heilbronn_convex_four_unique",
+    "HeilbronnChallenge.P5_root_existsUnique",
+    "HeilbronnChallenge.heilbronn_convex_five_upper_bound",
+    "HeilbronnChallenge.heilbronn_convex_five_attained",
+    "HeilbronnChallenge.heilbronn_convex_five",
+    "HeilbronnChallenge.heilbronn_convex_five_unique",
+    "HeilbronnChallenge.heilbronn_convex_six_upper_bound",
+    "HeilbronnChallenge.heilbronn_convex_six_attained",
+    "HeilbronnChallenge.heilbronn_convex_six",
+    "HeilbronnChallenge.heilbronn_convex_six_unique",
+    "HeilbronnChallenge.heilbronn_convex_seven_upper_bound",
+    "HeilbronnChallenge.heilbronn_convex_seven_attained",
+    "HeilbronnChallenge.heilbronn_convex_seven",
+    "HeilbronnChallenge.heilbronn_convex_seven_family_attains",
+    "HeilbronnChallenge.heilbronn_convex_seven_real_family_inequivalent",
+    "HeilbronnChallenge.heilbronn_convex_seven_optimizer_classification",
+    "HeilbronnChallenge.heilbronn_convex_seven_infinite_optimizers",
+    "HeilbronnChallenge.P8_root_existsUnique",
+    "HeilbronnChallenge.heilbronn_convex_eight_upper_bound",
+    "HeilbronnChallenge.heilbronn_convex_eight_attained",
+    "HeilbronnChallenge.heilbronn_convex_eight",
+    "HeilbronnChallenge.heilbronn_convex_eight_unique"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-02T23:22:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "143e09956fbbf68184cd60cfe445585a00e3b50f",
+        "fork_repository": "PalomarArchive/tejstead--heilbronn-site--aabef726a6e6",
+        "source_repository": "tejstead/heilbronn-site"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ae37a478cacf03c96c32b5218a6fe7a1f877f7af75bfa9bf47547929aacf99ba"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000001",
+  "version": 1,
+  "title": "Subspace embeddings with the rerandomized SRHT",
+  "abstract": "A Lean 4 formalization of a rerandomized SRHT subspace embedding theorem. For every ambient Walsh dimension n = 2^m, rank 1 <= r <= n, and 0 < epsilon < 1, one deterministic width k <= min(n, ceil(C r / epsilon^2)) can be chosen independently of the orthonormal frame. For each fixed frame, the transform with two independent uniform sign layers and an independent uniform k-subset has spectral failure probability at most 1/100, and preserves all squared norms in that subspace within 1 +/- epsilon with probability at least 99/100. C is an explicit universal constant, with no sharp numerical value claimed. The Comparator selects the spectral theorem and its fixed-frame squared-norm consequence. The full repository retains the 12 named v6 results and their supporting proofs and correspondence maps.",
+  "authors": [
+    "Yuning Yang"
+  ],
+  "repository": "https://github.com/yuningyang19/rerandSRHT_prob_5_6_simons_workshop",
+  "commit": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+  "project_path": null,
+  "declarations": [
+    "Problem56.main_universal_ose",
+    "Problem56.PaperV6.fixed_frame_squared_norm_success"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NA",
+      "math.PR"
+    ],
+    "msc2020": [
+      "65F55",
+      "60B20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T00:09:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "158a716c07e16ec4fca14e36836b14d8d20ee7c8",
+        "fork_repository": "PalomarArchive/yuningyang19--rerandSRHT_prob_5_6_simons_workshop--ce13805ae8b2",
+        "source_repository": "yuningyang19/rerandSRHT_prob_5_6_simons_workshop"
+      }
+    ]
+  },
+  "statement_hash": "sha256:74c083c328764cbe26744cdbd4423ae8cd2e97ee6dffde896628355a1f03e6ee"
+}

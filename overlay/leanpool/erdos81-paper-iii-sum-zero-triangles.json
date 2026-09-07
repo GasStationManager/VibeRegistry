@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.Erdos81PaperIIIContrib",
   "declarations": [
     "SumZeroTriangles.exists_simpleGraph_triangle_packing",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos81PaperIIIContrib.lean",
-  "statement_hash": "sha256:dfe338fc7d34228f4251db8eb3b47c07f22aa70833bfbe1e5275112e3c1b5a1c"
+  "statement_hash": "sha256:a4dd0f7a095ab754e262a3865be32898067436d9c92f2b92ae90dcf8ca7ca8fb"
 }

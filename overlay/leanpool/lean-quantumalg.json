@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/QudeLeap/Lean-QuantumAlg",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.LeanQuantumAlg",
   "declarations": [
     "QuantumAlg.GroverSearch.main_success_probability",
@@ -58,5 +58,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/LeanQuantumAlg.lean",
-  "statement_hash": "sha256:810c754eea23163663d4fb7443ed9ab38af1f2c96a5d23de386fcb4e29671864"
+  "statement_hash": "sha256:3221fa76b3aa9a0b99dba781be725279ea2c270efb4dffccda8b5b79af579567"
 }

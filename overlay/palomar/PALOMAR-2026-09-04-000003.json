@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-04-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-04-000003",
+  "version": 1,
+  "title": "A kernel-checked exclusion certificate for Erdős Problem 647, to 10^8",
+  "abstract": "Erdős Problem 647 asks whether there is any n > 24 with max_{m < n} (m + tau(m)) <= n + 2, where tau counts divisors. The value n = 24 satisfies it and the question is open. This entry certifies a bounded exclusion: no such n exists in (24, 10^8]. It does not resolve the problem and asserts nothing about n > 10^8.\nThe exclusion is certified rather than searched at check time. A witness at a cover position is an offset together with prime-power pairs dividing m, certifying tau(m) >= prod (e + 1); every prime in a pair is below 1024 and is checked prime by eleven trial divisions, so no primality certificates appear anywhere. A chain of witnesses covers the interval and each certificate chunk is discharged by a single decide against the chain checker, so the Lean kernel certifies the arithmetic and the generator that produced it is never trusted.\nThe audience is the community working on the Erdős problems database and its Lean formalizations, for whom a machine-checked lower bound on the search range is directly usable, and researchers building certificate-based exclusions in elementary number theory, for whom the witness format and its kernel-evaluable checkers are the transferable part.",
+  "authors": [
+    "Ibrahim Mian",
+    "Shayaan Siddique"
+  ],
+  "repository": "https://github.com/ibrahimmian36/palomar-decanus",
+  "commit": "776a5817bffcd9c30dd96259ccb7cfc822ec8ec4",
+  "project_path": null,
+  "declarations": [
+    "Erdos647.erdos647_no_solution_upto_1e8"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N56",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-04T13:23:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "776a5817bffcd9c30dd96259ccb7cfc822ec8ec4",
+        "fork_repository": "PalomarArchive/ibrahimmian36--palomar-decanus--78df6acd91af",
+        "source_repository": "ibrahimmian36/palomar-decanus"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4faede79f18548a235c6eeb08e224461e3a39fa9ae312ac21828054b803f1a16"
+}

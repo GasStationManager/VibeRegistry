@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-02-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-02-000005",
+  "version": 1,
+  "title": "The De Bruijn–Erdős Theorem on Incidence Geometry and Near-Pencil Tightness",
+  "abstract": "A complete machine-checked Lean 4 formalization of the De Bruijn–Erdős theorem (1948) in incidence geometry and pairwise balanced block designs, together with its constructive near-pencil tightness proof. Proves that any finite linear space on n ≥ 3 non-collinear points determines at least n lines (|P| ≤ |L|) via the classical combinatorial double-counting inequality. Furthermore, explicitly constructs the near-pencil configuration with designated apex p₀ (consisting of one line of n - 1 points and n - 1 lines of 2 points) and proves that it forms a valid linear space achieving exact equality |L| = |P|. To the maintainers' knowledge, the theorem was not found in an exact declaration name, docstring, and type signature search of the pinned Mathlib revision (Mathlib v4.34.0-rc1).",
+  "authors": [
+    "Noah Cohen"
+  ],
+  "repository": "https://github.com/sneed-and-feed/lean-theorems-1",
+  "commit": "afbbe0c3c1823bb84502f83f05936d1836f8cc24",
+  "project_path": null,
+  "declarations": [
+    "DeBruijnErdos.de_bruijn_erdos",
+    "DeBruijnErdos.de_bruijn_erdos_tight"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "05B25",
+      "51E10",
+      "51A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-02T15:42:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "afbbe0c3c1823bb84502f83f05936d1836f8cc24",
+        "fork_repository": "PalomarArchive/sneed-and-feed--lean-theorems-1--a2ac55dbf7b5",
+        "source_repository": "sneed-and-feed/lean-theorems-1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:dad6fa0241486d31954e91a920ccaf93da1e69f7486eb303346aee9f4ecbe950"
+}

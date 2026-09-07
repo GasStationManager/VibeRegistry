@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/bolito2/DemazureOperatorsLean",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.DemazureOperatorsLean",
   "declarations": [
     "Demazure.Dem",
@@ -58,5 +58,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/DemazureOperatorsLean.lean",
-  "statement_hash": "sha256:3a83dc781d0f06fbec9f36876d43593bcbff45c9c8e48a7858ed9bf1734f4f64"
+  "statement_hash": "sha256:74e24e596ac20562d1b2d27d5bd8f2c520cd4e4b3aaab2a77cdf5c6a73751a65"
 }

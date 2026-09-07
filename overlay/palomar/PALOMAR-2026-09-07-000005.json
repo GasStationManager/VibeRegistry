@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000005",
+  "version": 1,
+  "title": "Dimension-independent Hlawka constants for Schatten norms",
+  "abstract": "Existence of a dimension-independent Hlawka constant for every Schatten p-norm with 1 < p < infinity, and proof that no such constant exists at either endpoint (trace norm at p=1, operator norm at p=infinity).",
+  "authors": [
+    "Ezzeri Esa"
+  ],
+  "repository": "https://github.com/savarin/hlawka-schatten",
+  "commit": "97c3363af2722dd6e94ce4d3ef749fab1efab6bf",
+  "project_path": null,
+  "declarations": [
+    "PalomarHlawkaSchatten.dimension_independent_hlawka_constant_for_schatten_norms"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.OA"
+    ],
+    "msc2020": [
+      "47A30",
+      "47B10",
+      "46B20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T07:02:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "97c3363af2722dd6e94ce4d3ef749fab1efab6bf",
+        "fork_repository": "PalomarArchive/savarin--hlawka-schatten--2a35a3d9f959",
+        "source_repository": "savarin/hlawka-schatten"
+      }
+    ]
+  },
+  "statement_hash": "sha256:73f1afddb79839ef4d241bcbd79052054fe20e8c743013e071125dfff28f04ab"
+}

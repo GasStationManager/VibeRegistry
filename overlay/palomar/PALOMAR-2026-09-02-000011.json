@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-02-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-02-000011",
+  "version": 1,
+  "title": "A machine-checked bound of 0.6934 for Besicovitch's 1/2-problem",
+  "abstract": "Besicovitch's 1/2-conjecture asserts that a Borel set in the plane with finite one-dimensional Hausdorff measure whose lower density exceeds 1/2 almost everywhere is countably 1-rectifiable. Writing sigma_1(R^2) for the least threshold that forces countable 1-rectifiability, the conjecture is sigma_1(R^2) = 1/2. The previously published record is sigma_1(R^2) <= 7/10, obtained by De Lellis, Glaudo, Massaccesi and Vittone.\nThis development proves, with a complete Lean 4 proof term, sigma_1(R^2) <= 6934/10000 = 0.6934.",
+  "authors": [
+    "Yongxi Lin"
+  ],
+  "repository": "https://github.com/CoolRmal/Besicovitchs-1-2",
+  "commit": "17c9597b2a901bf386d5bb8382d0a74d2069f25b",
+  "project_path": null,
+  "declarations": [
+    "Besicovitch.sigma_one_plane_le_6934_div_10000",
+    "Besicovitch.forcesOneRectifiability_plane_of_gt",
+    "Besicovitch.one_half_le_sigma_one_plane"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.MG"
+    ],
+    "msc2020": [
+      "28A75",
+      "28A78",
+      "49Q15",
+      "68V20",
+      "90C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-02T23:12:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "17c9597b2a901bf386d5bb8382d0a74d2069f25b",
+        "fork_repository": "PalomarArchive/CoolRmal--Besicovitchs-1-2--78db2fccbeb7",
+        "source_repository": "CoolRmal/Besicovitchs-1-2"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4741e58fdf9ae33340b80a14001cd7dbe43eb1f41d80ccda39f9d743ca019721"
+}

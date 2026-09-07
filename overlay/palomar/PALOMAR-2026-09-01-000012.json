@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000012",
+  "version": 1,
+  "title": "The golden family's boundary at n = 3: general-n theorems for x^n = x + 1",
+  "abstract": "Kernel-checked general-n theorems for the golden family — the ladder of trinomials x^n - x - 1, whose unique real root r_n > 1 descends from the golden ratio (n = 2) through the plastic number (n = 3) toward 1. The family's structural boundary falls at n = 3; this entry proves the morphic half unconditionally at general n and holds the Pisot half as the measure⟺Pisot equivalence, the unconditional n = 4 non-Pisot statement, and the Siegel-conditional strict excess for n >= 4, from the family's own arithmetic, with no per-degree case check above the boundary. Eleven compared statements carry the surface. (1) The root ladder: for every n >= 2 the root exists, is unique above 1, and strictly decreases in n. (2) The morphic boundary, UNCONDITIONAL: r_n satisfies the golden ratio's two scale closures p + 1 = p^k and p - 1 = p^(-l) (Aarts-Fokkink-Kruijtzer 2001, spelled inline) if and only if n <= 3 — the classification pins morphic numbers to the golden ratio and the plastic number, and descent puts r_n below 1.23, hence below both, for n >= 4. (3) Circle exclusion: x^n - x - 1 has no complex root of modulus 1, for any n (|z| = |z + 1| = 1 forces z^2 + z + 1 = 0, so z^3 = 1, and every residue of n mod 3 is impossible). (4) The Jensen lower bound r_n <= M(x^n - x - 1), by the monic root-product form of the Mahler measure. (5) The equivalence M(x^n - x - 1) = r_n iff every other complex root lies strictly inside the unit circle — the honest form of \"the family's Mahler-measure boundary IS its Pisot boundary\": the equivalence is itself the kernel theorem (exact because the family never has unimodular roots, and its trinomials are separable by Selmer irreducibility), stated once and never counted as a pair of separate boundaries. (6) The Siegel-conditional closure: IF the plastic number is the smallest Pisot number — Siegel 1944, entering ONLY as an explicit named hypothesis, with \"Pisot\" unfolded in the statement — THEN r_n < M(x^n - x - 1) for every n >= 4. Siegel's minimality is the single classical input anywhere in the entry; every other statement is kernel-checked unconditionally, and Siegel's theorem itself is not proved here. (7) Q < psi: the quartic root (q^4 = q + 1) lies strictly below psi (psi^4 = psi^3 + 1), the Mahler measure of the n = 4 member. (8) THE SHARED LEMMA, at general n: no root of x^n - x - 1 satisfies z^2 + z + 1 = 0 (z^3 = 1 and every residue of n mod 3 is impossible). It supplies the obstruction in the circle exclusion (3), which is re-derived from it as an explicit corollary (the circle geometry supplies the reduction), and up to the substitution z^n = z + 1 (under which z^n + z^2 = 0 iff z^2 + z + 1 = 0) it is Mathlib's public Polynomial.X_pow_sub_X_sub_one_irreducible_aux — the first step of Mathlib's Selmer proof, hence of the morphic classification behind (2) — restated in the family's own vocabulary; compared as the named shared core, not as new mathematics. (9) Witness b_3 (b^3 = b^2 + 1): every other complex root of x^3 = x^2 + 1 has modulus < 1, and b_3 is not morphic. (10) Witness psi (psi^4 = psi^3 + 1): every other complex root of x^4 = x^3 + 1 has modulus < 1, and psi is not morphic. (11) The golden quartic root is NOT Pisot: for q^4 = q + 1, some complex root of x^4 = x + 1 other than q has modulus > 1 (every nonreal root does — quartic_conj_norm_gt_one in the proof module, not compared) — with (10) and (7) the degree-4 separation: Q and psi are both algebraic units with constant term of modulus one (unit-ness is elementary and not compared: Q^-1 = Q^3 - 1, psi^-1 = psi^3 - psi^2), yet Q is not Pisot and psi is, so the unit condition alone does not locate the Pisot boundary. (10) and (11) are not independent evidence: x^4 - x^3 - 1 is the image of x^4 - x - 1 under x -> -1/x, so the Pisot half of (10) says x^4 - x - 1 has one root inside the unit circle and three outside, and (11) follows; they are compared separately for the two families' sakes. THE STORY: one shared lemma beneath both boundaries (naming the family-specific arithmetic core, not the whole proof graph: (2) and (6) also share the elementary descent r_n < 1.23 < rho, and the kernel-held Pisot side is localized by Siegel plus descent, the angle route being context); the boundaries localize by different routes — an angle for Pisot (the escape arc between the primitive cube roots of unity, giving the outside-root count 1 + 2*floor((2n - 1)/6), Howell-Kyle 2018 Theorem 3 via the reciprocal trinomial; context, NOT formalized), a degree for morphic (the cofactor x^2 - x + 1 forcing k = 3; formalized) — and the classes are in fact separable: (9)-(11) hold the witnesses and the degree-4 separation in the kernel, with no Siegel input, showing the classes coming apart inside the sister trinomial family itself (Pisot units below phi that are not morphic). The entry never claims the two boundaries are independent (they share the lemma) and never claims a common cause for their location. Two spellings of \"Pisot\" appear: the trinomial-roots form of (5), (9), (10), (11) and the minimal-polynomial form of the siegel hypothesis; they coincide exactly when the defining trinomial is irreducible (Selmer for (5), (11); x^3 - x^2 - 1 and x^4 - x^3 - 1 have no rational root and no integer quadratic factorization, for (9), (10)). On the sister family x^m - x^(m-1) - 1 the classes come apart: b_2 = phi and b_5 = rho exactly, so morphic only for m = 2, 5 (AFK, kernel-held, plus strict decrease); Pisot at m = 2, 5 is elementary, though at m = 5 the quintic is reducible with two roots ON the unit circle, so b_5 is Pisot in the minimal-polynomial sense only; the m = 3, 4 members are the kernel-held witnesses; not Pisot for 6 <= m <= 30 numerically and for all m >= 6 Siegel-conditionally (b_6 < rho). The n <= 4 instances of this boundary are registered content of the author's sibling entries (PALOMAR-2026-08-31-000004, PALOMAR-2026-09-01-000005, and PALOMAR-2026-09-01-000008) and are cited as context imports, never re-compared. The classical route to the n >= 4 strict excess (Smyth 1971), the limit behavior of the family measures (Lawton 1983, Smyth 1981, Verger-Gaugry 2016, Stankov 2014), and the outside-root count (Howell-Kyle 2018, with Brilleslyper-Schaubroeck 2014 for the unimodular criterion and Stankov 2014 for the asymptotic density) are cited context, not formalized — see the labeled context block in the sources. As of the 2026-09-01 sweep the entry is not aware of a prior formalization of the general-n family boundary, of Siegel minimality, of Smyth's nonreciprocal bound, or of Pisot-number theory in any surveyed prover ecosystem; Mathlib supplies Selmer irreducibility and the Mahler-measure development as infrastructure. Axioms on every compared theorem: propext, Classical.choice, Quot.sound, audited in-build.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/golden-family-boundary",
+  "commit": "fc43a62561b4d7846ca25273229a4f964dff7ae5",
+  "project_path": null,
+  "declarations": [
+    "FamilyBoundary.family_root_exists_unique",
+    "FamilyBoundary.family_morphic_boundary",
+    "FamilyBoundary.no_unit_circle_root",
+    "FamilyBoundary.family_le_mahlerMeasure",
+    "FamilyBoundary.family_measure_eq_iff_pisot",
+    "FamilyBoundary.siegel_conditional_closure",
+    "FamilyBoundary.Q_lt_psi",
+    "FamilyBoundary.no_primitive_cube_root",
+    "FamilyBoundary.b3_pisot_not_morphic",
+    "FamilyBoundary.psi_pisot_not_morphic",
+    "FamilyBoundary.Q_not_pisot"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R06",
+      "11R09",
+      "11C08"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T22:45:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fc43a62561b4d7846ca25273229a4f964dff7ae5",
+        "fork_repository": "PalomarArchive/stalex444--golden-family-boundary--78da6483f173",
+        "source_repository": "stalex444/golden-family-boundary"
+      }
+    ]
+  },
+  "statement_hash": "sha256:156a2c33cb7a187f25deeae2aa6ca63718dccbe0ac1a3bba29a5d94e01688dac"
+}

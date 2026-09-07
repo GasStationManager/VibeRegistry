@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000008",
+  "version": 1,
+  "title": "yoshito-ishiki-math/lean-scottish-book-155",
+  "abstract": "A Lean proof that there are real Banach spaces X and Y and a bijection U from X to Y which preserves every pairwise distance on every closed ball of radius one quarter while failing to be a global isometry. This gives a counterexample to Scottish Book Problem 155.",
+  "authors": [
+    "Yoshito Ishiki"
+  ],
+  "repository": "https://github.com/yoshito-ishiki-math/lean-scottish-book-155",
+  "commit": "233eff4af7901eadee7927a1eb1f814ad0f3c118",
+  "project_path": null,
+  "declarations": [
+    "ScottishBook155.claim14"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.MG"
+    ],
+    "msc2020": [
+      "46B20",
+      "54E40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T09:40:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "233eff4af7901eadee7927a1eb1f814ad0f3c118",
+        "fork_repository": "PalomarArchive/yoshito-ishiki-math--lean-scottish-book-155--752154e12792",
+        "source_repository": "yoshito-ishiki-math/lean-scottish-book-155"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1b7d0555e30fe7062c2c5f46638eaa49f0e7ac673e53a6f3da576a76fd51a5d0"
+}

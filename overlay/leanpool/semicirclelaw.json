@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/FredRaj3/SemicircleLaw",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.SemicircleLaw",
   "declarations": [
     "LeanPool.SemicircleLaw.integral_semicirclePDFReal_eq_one",
@@ -56,5 +56,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SemicircleLaw.lean",
-  "statement_hash": "sha256:194587934e9733cd592a5d5e82ffcf4313d89bd5d88627c77070f73a3857e9bc"
+  "statement_hash": "sha256:bfd3f5e0d951e02c2d306d22b4950df54c7a3a38a05be889370040a018f7cbd8"
 }

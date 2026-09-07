@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-03-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-03-000002",
+  "version": 1,
+  "title": "A proof of Conway's refinement conjecture",
+  "abstract": "A Lean proof of Conway's 1976 refinement conjecture for omnific integers. For omnific integers a, b, c, d with ab = cd, it proves the existence of omnific integers e, f, g, h satisfying a = ef, b = gh, c = eg, and d = fh, including zero and degenerate cases. The proof proceeds through factorisation and refinement theory for generalised-power-series integer parts and connects the generalised-power-series and surreal-number formulations.",
+  "authors": [
+    "Dan Abramov"
+  ],
+  "repository": "https://github.com/gaearon/conway-refinement",
+  "commit": "63797aae79c09df5be6bfa066f147fa39e63b6cd",
+  "project_path": null,
+  "declarations": [
+    "ConwayRefinement.Palomar.conwayRefinement"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.RA"
+    ],
+    "msc2020": [
+      "13F25",
+      "13F15",
+      "13A05",
+      "03E10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-03T00:54:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "63797aae79c09df5be6bfa066f147fa39e63b6cd",
+        "fork_repository": "PalomarArchive/gaearon--conway-refinement--22ee63c73699",
+        "source_repository": "gaearon/conway-refinement"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d7147302e0f312ec3e5b1a273c47c11ed420981a828d6272b3cdbc36854e5ff6"
+}

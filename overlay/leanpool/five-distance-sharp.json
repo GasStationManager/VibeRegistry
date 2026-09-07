@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ElVec1o/five-distance-sharp",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.ThreeGap",
   "declarations": [
     "ThreeGap.LinftyRecords3.nine_attained",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ThreeGap.lean",
-  "statement_hash": "sha256:0c4663c8d1e57f8d1d93fa4ed78e9026f34c26e2ae595e915cde3beea468a2c5"
+  "statement_hash": "sha256:951540d1c94de1815b5f19b46b57622e991a90c4f78729768a9048b8cfc90fd4"
 }

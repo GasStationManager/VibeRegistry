@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-03-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-03-000007",
+  "version": 1,
+  "title": "Tucker's Lemma: Full Combinatorial & Topological Parity Suite in 1D and 2D",
+  "abstract": "A complete machine-checked Lean 4 formalization of Tucker's Lemma (Albert W. Tucker, 1945) and the combinatorial Borsuk–Ulam theorem in 1D and 2D without artificial conditions. Formalizes four foundational pillars: (1) 1D discrete sign-change parity and antipodal interval subdivision lemma; (2) 2D combinatorial double counting of face doors and modulo-2 parity conservation on edge-pseudomanifolds; (3) the boundary cycle engine on 2D edge-pseudomanifolds with an enumerated cyclic boundary (CyclicBoundaryPseudomanifold2D) under antipodal boundary labeling, proving that non-complementary boundary labelings force odd boundary door parity, thereby establishing the 2D Tucker's Lemma on cyclic boundary pseudomanifolds, retracting previous claims of full topological disk coverage; and (4) the concrete 6-vertex, 8-face, 12-edge octahedral 2-sphere S^2_8 triangulation. All declarations rely strictly on standard Lean 4 kernel axioms (propext, Quot.sound, Classical.choice).",
+  "authors": [
+    "Noah Cohen"
+  ],
+  "repository": "https://github.com/sneed-and-feed/lean-theorems-1",
+  "commit": "932380aafde3af51cea2aa43f0e9612acca48dc6",
+  "project_path": null,
+  "declarations": [
+    "TuckersLemma.tucker_1d",
+    "TuckersLemma.sign_switch_parity",
+    "TuckersLemma.double_counting_doors",
+    "TuckersLemma.parity_conservation",
+    "TuckersLemma.boundary_doors_odd_of_no_comp",
+    "TuckersLemma.tuckers_lemma_2d",
+    "TuckersLemma.octahedron_tuckers_lemma"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.AT"
+    ],
+    "msc2020": [
+      "05C10",
+      "55M20",
+      "57M15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-03T22:26:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "932380aafde3af51cea2aa43f0e9612acca48dc6",
+        "fork_repository": "PalomarArchive/sneed-and-feed--lean-theorems-1--a2ac55dbf7b5",
+        "source_repository": "sneed-and-feed/lean-theorems-1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1c25f59dcba9cb4a9aa02220a415779dfa1cb8ca12b872a8a823251ef071ab6e"
+}

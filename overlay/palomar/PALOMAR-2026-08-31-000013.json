@@ -1,0 +1,71 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000013",
+  "version": 2,
+  "title": "Lean formalization toward Bugeaud Problem 10.61",
+  "abstract": "A Lean 4 / Mathlib development of criteria for Bugeaud's Problem 10.61 ([Bug12, p. 222], due to Mendès France [MF67]): for a Pisot number α > 2 and the Cantor set C(α) = {(α−1) Σ_{k≥1} ε_k α^{−k} : ε_k ∈ {0,1}}, no ξ ∈ C(α) has (ξαⁿ)_{n≥1} uniformly distributed modulo one. The problem is open; what is proved here are criteria for it and two instances. Every compared statement that concludes Problem 10.61 does so for a *quadratic* setup — a real root α > 1 of X² − aX − b whose conjugate has modulus below one — and the two instances are quadratic; the arbitrary-degree material is conditional ingredients, from which no compared statement derives non-equidistribution. Seventeen statements are compared, in four groups. (A) The reduction to symbolic dynamics is an equivalence, and it is complete. (i) Some ξ ∈ C(α) is u.d. mod 1 iff the full two-shift {0,1}^ℤ carries a shift-invariant Borel probability measure whose push-forward under an explicit factor map F is Lebesgue measure on 𝕋. (ii) 10.61 holds at α iff a finite certificate witnesses it: a mean-zero real trigonometric polynomial G on 𝕋 and a c > 0 with ∫ G∘F dμ ≥ c for every invariant μ. (iii) The pressure bracket that makes such a search terminate, −c/β ≤ ∫ g dμ over every invariant μ whenever the pressure of −βg relative to a finite partition is at most c. (B) A pressure criterion. (ii) A bounded measurable potential annihilated by every counterexample measure, an entropy floor h_min for those measures, and a partition pressure below h_min together prove 10.61 at α; and its machine form, where the potential carries a finite-state transfer bound with an integer vector certificate, the hypothesis comparing the log of the certificate ratio, less the Lebesgue mean, against h_min. (iv) The budget identity A(α)·h_min(α) = log 2, tying the Route A exponent to the floor. (C) A covering criterion for quadratic setups, and arbitrary-degree ingredients. (i) Two real inequalities — the depth slope 1 + L/R − L is negative exactly when (L−1)(R−1) > 1, and at the balanced depth M′ = ⌈M·L/R⌉ the covering total obeys an explicit logarithmic bound linear in M with that slope — and then, for a quadratic setup, a numeric certificate at depths (M, M′) yielding one open interval J ⊆ (0,1), uniform in ξ and in n, that every orbit misses at every time, whence A(α) < 1 implies 10.61 at α. (ii) For a quadratic setup of norm −b, the criterion applies exactly when (log₂ α − 1)(log₂(α/|b|) − 1) > 1. This characterizes when A(α) < 1; it does not decide Problem 10.61 for quadratic α with A(α) ≥ 1, about which nothing is compared. (iii) Three ingredients about the family Xᵈ − aXᵈ⁻¹ − 1, valid at every degree d ≥ 2: for a ≥ 3 the real root exceeding a is a Pisot number; every other conjugate has modulus at most (2/a)^{1/(d−1)}; and the numerical inequality log 2/log α + log 2/log(1/ρ) < 1 holds whenever a ≥ 2^{d+1}, a < α, ρ > 0 and a·ρᵈ⁻¹ ≤ 2. These are ingredients, not a criterion: no compared statement carries them to Problem 10.61 above degree two, because (i) is proved only for quadratic setups. At degree two the family members are quadratic setups, and the first of them is α = 2+√5. (D) The two numbers at which the machinery is run to a conclusion, both quadratic: at α = 2+√5 the strong form — an explicit interval missed by every orbit at every time — and 10.61 itself; and at α = 2+√3, 10.61 by a confinement-gap certificate. The informal account is the repository's paper.pdf: machine-written notes documenting the Lean development, not a prior paper that the development formalizes. Credit in contributor terms rather than bibliographic ones: the mathematics and the Lean text are the agents' work, the Fable-5 agent having written the notes and the Opus-5 agent the formalization, each directed turn by turn by Ralf Stephan, who chose the targets, selected which outputs to keep, and releases the files. He does not endorse the informal arguments and has not independently verified informal-to-formal fidelity; where the prose disagrees with the challenge file, the challenge file wins. Every compared statement depends on propext, Classical.choice and Quot.sound and nothing else.",
+  "authors": [
+    "Ralf Stephan"
+  ],
+  "repository": "https://github.com/rwst/Pisot-Cantor-61",
+  "commit": "d61132ffcdb748b641f9de59b7acfffc860796b2",
+  "project_path": null,
+  "declarations": [
+    "BB61.QuadSetup.equidistributed_iff_exists_invariant_measure",
+    "BB61.QuadSetup.forall_not_equidistributed_iff_exists_trigCertificate",
+    "MeasureTheory.le_integral_of_partitionPressure_le",
+    "BB61.forall_not_equidistributed_of_partitionPressure_lt",
+    "BB61.forall_not_equidistributed_of_transferBound",
+    "BB61.QuadSetup.routeAExponent_mul_hMin",
+    "BB61.slope_neg_iff",
+    "BB61.logb_coverTotal_balancedDepth_le",
+    "BB61.QuadSetup.exists_avoided_interval",
+    "BB61.QuadSetup.not_equidistributed_of_routeAExponent_lt_one",
+    "BB61.QuadSetup.routeAExponent_lt_one_iff_quadratic",
+    "BB61.isPisot_family",
+    "BB61.norm_le_familyConjBound",
+    "BB61.routeA_family_lt_one",
+    "BB61.routeA_two_add_sqrt5",
+    "BB61.two_add_sqrt5_not_equidistributed",
+    "BB61.GapThree.problem_10_61_two_add_sqrt3_axiom_free"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.DS"
+    ],
+    "msc2020": [
+      "11K06",
+      "11J71",
+      "11R06",
+      "37B10",
+      "28A80",
+      "37D35",
+      "37A35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-06T08:42:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d61132ffcdb748b641f9de59b7acfffc860796b2",
+        "fork_repository": "PalomarArchive/rwst--Pisot-Cantor-61--4e7f4f2cbab1",
+        "source_repository": "rwst/Pisot-Cantor-61"
+      }
+    ]
+  },
+  "statement_hash": "sha256:75f7e3ee13d87d1dd8f402c413ad3f44be0c74eff5a1c7298fdda566b0b6ca17"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000004",
+  "version": 1,
+  "title": "lean-spectral-theory",
+  "abstract": "The spectral theorem for possibly unbounded self-adjoint operators on complex Hilbert spaces, formalized through the Cayley transform and real projection-valued measures. The selected spectral theorem constructs a PVM whose scalar measures give the exact finite-second-moment domain and first-moment quadratic form, with measurable-set uniqueness, and is proved equivalent to equality with the unbounded coordinate spectral integral. The selected Stone theorem proves both that strongly continuous one-parameter unitary groups have self-adjoint generators and that every self-adjoint operator generates such a group.",
+  "authors": [
+    "Ezzeri Esa"
+  ],
+  "repository": "https://github.com/savarin/lean-spectral-theory",
+  "commit": "d19e279f0ab244657f02ce678e8d67fa69e2f407",
+  "project_path": null,
+  "declarations": [
+    "PalomarSpectralStone.spectral_theorem_intrinsic",
+    "PalomarSpectralStone.stone_theorem_intrinsic"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.OA"
+    ],
+    "msc2020": [
+      "47A10",
+      "47B15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T06:32:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d19e279f0ab244657f02ce678e8d67fa69e2f407",
+        "fork_repository": "PalomarArchive/savarin--lean-spectral-theory--4a8d89f24640",
+        "source_repository": "savarin/lean-spectral-theory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a628eae0e044ec180fce5156cf5144e29e49273919e2e69cb3c5cbb697a5dd6a"
+}

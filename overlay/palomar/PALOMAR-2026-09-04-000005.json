@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-04-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-04-000005",
+  "version": 1,
+  "title": "Carlet's Kasami cyclic-additive conjecture",
+  "abstract": "A Lean formalization of the Kasami cyclic-additive conjecture introduced by Claude Carlet. For the derivative image of the Kasami monomial x^(4^k-2^k+1) with gcd(k,n)=1, over a finite field of characteristic two with 2^n elements, the formalized result gives the exact three-variable coefficient count 2^(2n-3) for every pair of distinct nonzero coefficients.",
+  "authors": [
+    "D.S. McNeil",
+    "Gábor P. Nagy",
+    "Attila Vajda"
+  ],
+  "repository": "https://github.com/dsm054/kasami_cyclic_additive",
+  "commit": "c8ab49ebd8e9e53f5aa7585f1d43acf1ff68d10f",
+  "project_path": null,
+  "declarations": [
+    "KasamiCyclicAdditive.carlet_kasami_cyclic_additive"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11T06",
+      "11T71",
+      "94A60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-04T21:19:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c8ab49ebd8e9e53f5aa7585f1d43acf1ff68d10f",
+        "fork_repository": "PalomarArchive/dsm054--kasami_cyclic_additive--e080404d99ea",
+        "source_repository": "dsm054/kasami_cyclic_additive"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f363123264bb99af7c995a53350dd678c5aa096e8e1068e31705bef6a2762f5d"
+}

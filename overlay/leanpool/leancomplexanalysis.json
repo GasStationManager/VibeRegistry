@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/seb488/LeanComplexAnalysis",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.LeanComplexAnalysis",
   "declarations": [
     "LeanPool.LeanComplexAnalysis.harnack_ineq",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/LeanComplexAnalysis.lean",
-  "statement_hash": "sha256:be77ccb3a9c330fdad0fe64b5cf1ea3e8abc05e695d4d52dc0a1cf04473f7b97"
+  "statement_hash": "sha256:19d7c61d174e4c05c20420235827e94ee75d532a5d6aae3e696fac5fab80d23d"
 }

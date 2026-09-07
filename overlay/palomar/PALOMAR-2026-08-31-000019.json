@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000019",
+  "version": 2,
+  "title": "Marshall Hall's theorem through finite cores",
+  "abstract": "Formalizes Marshall Hall's finite-index free-factor theorem for finitely generated subgroups of finite-rank free groups. The proof extracts the finitely many suffix states of a subgroup generating set, completes the resulting partial generator actions to permutations of a finite state set, identifies the connected orbit with a finite core, and extends a geodesic spanning tree to obtain an inclusion-compatible free-product decomposition. The repository also proves binary and finite-indexed free-group instances of Grushko--Neumann rank additivity, the arbitrary-factor binary theorem, and the LERF consequence. The arbitrary-factor proof is carried by a finite labelled-graph fold, source-unfold, and monochromatic-vertex contraction reduction.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/MarshallHallTheorem",
+  "commit": "449124d5b5659f0c34b5fbb46ffb671eeac4e08e",
+  "project_path": null,
+  "declarations": [
+    "MarshallHall.marshallHall",
+    "rank_freeProduct_eq_add"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR"
+    ],
+    "msc2020": [
+      "20E07",
+      "20F65",
+      "05C25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T16:03:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "449124d5b5659f0c34b5fbb46ffb671eeac4e08e",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--MarshallHallTheorem--106e66720b6f",
+        "source_repository": "Arthur742Ramos/MarshallHallTheorem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:06456a7c64fadea7f4713c89ba6f0d20db2cde18f756b63e7119062c3d532421"
+}

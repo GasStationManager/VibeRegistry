@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000001",
+  "version": 1,
+  "title": "schur-numbers",
+  "abstract": "Lean 4 formalization of modular Schur numbers. For m ≥ 2 and ℓ ≥ 2, put n = m/gcd(m,ℓ-1). The main result proves the uniform closed form S_m(k,ℓ) = n-1 for every k ≥ n-1. The development also proves the integer-to-residue formulation and lossless N ≤ m-1 bound, singleton-safety and zero-class obstructions, the exact one-color formula for 2 ≤ ℓ ≤ m, and the stated sigma-infinity coset-cardinality bound. Mathlib-only Headline statements are checked by the Palomar Comparator configuration. A separate public 27-module hand-written, generated-independent project layer contains named canonical-cover seed count, stable-prime transport and recurrence, prime-power, and unrestricted exponent-truncation capstones; those capstones have a separate transitive-axiom audit and are outside the Comparator's statement-comparison gate. The earlier generated native_decide scan tree is excluded from the public release and verification claims.",
+  "authors": [
+    "Adam McKenna"
+  ],
+  "repository": "https://github.com/mysticflounder/modular-schur",
+  "commit": "9df0fee1832a4896e29001bcd35974d7b7d655f8",
+  "project_path": "lean",
+  "declarations": [
+    "Headline.schurMod_eq",
+    "Headline.schurMod_is_greatest",
+    "Headline.no_valid_partition_of_ge_m",
+    "Headline.schurMod_eq_schurModResidue",
+    "Headline.schurModResidue_eq",
+    "Headline.schurModResidue_le",
+    "Headline.le_schurModResidue",
+    "Headline.singleton_sumFree_iff",
+    "Headline.unsafe_witness_residue",
+    "Headline.not_sumFree_of_mem_zero",
+    "Headline.schurModResidue_k1",
+    "Headline.sigmaInfty_le"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05D10",
+      "11B13",
+      "11B75",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T00:57:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9df0fee1832a4896e29001bcd35974d7b7d655f8",
+        "fork_repository": "PalomarArchive/mysticflounder--modular-schur--d5f9358df5a5",
+        "source_repository": "mysticflounder/modular-schur"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d533a5cda1365f68c7565b7232a395826c959e8ef4ef0aff7ba5c3ad94409e14"
+}

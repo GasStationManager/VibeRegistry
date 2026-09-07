@@ -1,0 +1,69 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000005",
+  "version": 1,
+  "title": "The compositum of the two Mahler minimizers: exact measure, conjugate census, house, and minimal product recurrence, with the Bedford-Kim plastic family and Lehmer's polynomial",
+  "abstract": "Kernel-checked certificates for the multiplicative compositum of the two registered Mahler minimizers — rho, the real root of x^3 = x + 1 (the plastic number: Smyth's nonreciprocal minimum, Siegel's smallest Pisot number) and Q, the real root > 1 of x^4 = x + 1 (the degree-4 entry of the minimal-measure tables) — together with the Bedford-Kim spectral family whose limit rho is. Seventeen compared theorems. The spectral half: (1) for n >= 7 the family chi_n(x) = x^(n+1)(x^3 - x - 1) + (x^3 + x^2 - 1) has a canonical root in [117/100, rho), largest below rho, strictly increasing, tending to rho; (2) every chi_n is strictly positive on [rho, infinity); (3) chi_7 = (x - 1) * L exactly, over any commutative ring, with L Lehmer's degree-10 polynomial; (4) L has a root in [117/100, rho). The compositum half, for the degree-12 minimal polynomial of rho * Q (written out in full in every compared statement): (5) an exclusion witness — a nonreal quartic root z with 1 < |rho * z| < rho * Q; (6) the twelve embedding products ARE the conjugates of rho * Q, both directions; (7) there are exactly twelve of them; (8) rho * Q is an algebraic unit, via an explicit degree-11 cofactor over any commutative ring — the (3, 4, 12) triple in the normal form alpha * beta * gamma = 1; (9) the degree-12 polynomial is not reciprocal (neither its reversal nor the reversal's negation), placing it in the regime of Smyth's theorem; (10) degree multiplicativity — deg minpoly(rho*Q) = deg minpoly(rho) * deg minpoly(Q) = 12; (11) the compositum in sup form Q(rho) join Q(Q) = Q(rho*Q), of degree 12, with the two simple extensions linearly disjoint; (12) the complete unit-circle census — EXACTLY 5 conjugates strictly outside, EXACTLY 7 strictly inside, NONE on the circle, so rho * Q is neither a Pisot nor a Salem number; (13) the house — every conjugate other than rho * Q has modulus strictly below rho * Q; (14) the exact Mahler measure M = rho^2 * Q^2 * psi, where psi is the real root > 1 of psi^4 = psi^3 + 1; (15) the registry bridge — M(X^4 - X - 1) = psi and M(rulerPoly) = (rho * Q)^2 * M(X^4 - X - 1), re-proving in-repo the quantity pinned in registered entry PALOMAR-2026-08-31-000004; (16) the order-12 Hadamard product recurrence — the termwise product of any solutions of the cubic and quartic shift recurrences satisfies the order-12 recurrence whose characteristic polynomial is exactly the degree-12 polynomial, in any Q-algebra; (17) the annihilator ideal of the product power sequence n |-> (rho * Q)^n is EXACTLY the principal ideal of the degree-12 polynomial — the classical order <= 3 * 4 bound is an equality, forced by the polynomial's kernel-held irreducibility. The results address three research audiences: the degree problem for products and composita of algebraic numbers (the certified (3,4,12) witness at a canonically distinguished pair, in the field's own unit-product normal form); the Mahler-measure tradition (the measure of the composed product of the two degree-minimal polynomials, in closed form in the second-smallest Pisot number); and composed products of polynomials (a certified rational instance where the finite-field coprimality criterion is unavailable and irreducibility is proved by elimination) — with the Lean audience served by concrete exercise of the Mahler-measure and linear-disjointness APIs. Like the golden ratio, rho * Q is an algebraic unit of norm -1; the compared cofactor identity is that norm computation, certified. No novelty claim is made for the measure identity (the entry is not aware of it in the literature; the claimed contribution is the kernel certificate), no \"first formalization\" claim is made anywhere, and whether rho is ATTAINED as a dynamical degree is open in the literature — no statement claims it. Hypotheses are inline: rho, Q, psi enter only through their defining equations plus root-selection inequalities, and the compared statements use only core Mathlib vocabulary (Filter.Tendsto, nhds, the complex norm, minpoly, Polynomial.rootSet, Set.ncard, Polynomial.mahlerMeasure, IntermediateField adjoin/sup, Module.finrank, Finset.range sums) — zero custom definitions. The name prefix \"ruler\" in statement names is the source project's term for the product rho * Q; nothing in any statement depends on it.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/mahler-minimizer-compositum",
+  "commit": "d78ce1610608cf4a90d5580c267110c96d2f9af5",
+  "project_path": null,
+  "declarations": [
+    "PlasticThreshold.plastic_salem_family",
+    "PlasticThreshold.family_pos_of_rho_le",
+    "PlasticThreshold.lehmer_first_rung",
+    "PlasticThreshold.lehmer_root_below_plastic",
+    "PlasticThreshold.ruler_second_conjugate",
+    "PlasticThreshold.ruler_conjugates_eq_embedding_products",
+    "PlasticThreshold.ruler_conjugates_card",
+    "PlasticThreshold.ruler_unit",
+    "PlasticThreshold.rulerPoly_nonreciprocal",
+    "PlasticThreshold.ruler_degree_multiplicative",
+    "PlasticThreshold.ruler_linearDisjoint",
+    "PlasticThreshold.ruler_conjugate_census",
+    "PlasticThreshold.ruler_house",
+    "PlasticThreshold.ruler_mahler_measure",
+    "PlasticThreshold.ruler_mahler_eq_quartic_measure",
+    "PlasticThreshold.product_recurrence_charpoly",
+    "PlasticThreshold.product_annihilator_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.DS"
+    ],
+    "msc2020": [
+      "11R06",
+      "11R04",
+      "11B37",
+      "14E07",
+      "37B40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T11:04:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d78ce1610608cf4a90d5580c267110c96d2f9af5",
+        "fork_repository": "PalomarArchive/stalex444--mahler-minimizer-compositum--ca9ebf56e752",
+        "source_repository": "stalex444/mahler-minimizer-compositum"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fbef14b87f02ffafa3abd08a1af713fcca402b1f19aa8f8f5fa362364fc4f003"
+}

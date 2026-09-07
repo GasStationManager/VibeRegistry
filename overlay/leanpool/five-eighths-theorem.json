@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ldct/lean-monorepo",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.FiveEighthsTheorem",
   "declarations": [
     "FiveEighths.commProb_le_five_eighths",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FiveEighthsTheorem.lean",
-  "statement_hash": "sha256:c3ff4f31df7d96991a4cdd25c8f91e12c66aef05eb5ae5e13335aadbe06ce5d9"
+  "statement_hash": "sha256:676c09f30c6b255f5b2367b82593c047fbf308dcf284a0a5fd84c8dc5a545bb3"
 }

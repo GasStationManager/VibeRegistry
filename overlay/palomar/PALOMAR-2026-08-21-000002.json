@@ -2,13 +2,11 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-08-21-000002",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-21-000002",
-  "version": 1,
+  "version": 2,
   "title": "lennrt/palomar-formalizations",
   "abstract": "A kernel-checked certificate for the finite mathematical core of the paper's explicit 16-vertex counterexample. The compared declarations prove cubicity, bipartiteness, connectivity after every deletion of at most two vertices, Hamiltonicity of the displayed cycle, its exact complementary perfect matching, the displayed oriented facial incidence and dual data, Euler's equality, properness and uniqueness up to global permutation of the face coloring, the induced edge-color classes, their unavoidable intersections with the complementary matching, and the instantiated final obstruction. The topological realization of the incidence data as a sphere embedding and the published algorithm's Property 1 remain external inputs.",
   "authors": [
-    "Lennart Rudolph",
-    "Sol",
-    "Fable"
+    "Lennart Rudolph"
   ],
   "repository": "https://github.com/lennrt/palomar-formalizations",
   "commit": "090b3b300ba8ec76fdba09a17f086953d13f2653",
@@ -34,7 +32,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-08-21T04:45:28Z",
+  "published_at": "2026-09-03T05:55:09Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,

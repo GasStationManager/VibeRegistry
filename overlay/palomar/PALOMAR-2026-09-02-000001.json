@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-02-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-02-000001",
+  "version": 1,
+  "title": "Generalized Markoff strong approximation",
+  "abstract": "A Lean 4 formalization of the generic branch of eventual strong approximation for generalized Markoff surfaces, specialized to a fixed ordered integral coefficient triple. It proves punctured transitivity for both the full Vieta group and the two-Vieta rotation group, supplies an explicit coefficient-dependent cutoff, and derives surjectivity of coordinatewise reduction onto the full finite-field surface.",
+  "authors": [
+    "Yuma Mizuno"
+  ],
+  "repository": "https://github.com/yuma-mizuno/markoff-modp-generalized",
+  "commit": "ee2ca5ada999beb0341e73d51a1b844087771dbf",
+  "project_path": null,
+  "declarations": [
+    "Challenge.generalizedMarkoff_reduction_surjective_of_large_prime"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.DS"
+    ],
+    "msc2020": [
+      "11D25",
+      "11T06",
+      "37P25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-02T01:10:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ee2ca5ada999beb0341e73d51a1b844087771dbf",
+        "fork_repository": "PalomarArchive/yuma-mizuno--markoff-modp-generalized--21665691de9d",
+        "source_repository": "yuma-mizuno/markoff-modp-generalized"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4221f312022ab6fe01066ea0fe8c3308675ca1f13e5961b1257c7894a846cec2"
+}

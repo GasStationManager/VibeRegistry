@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000007",
+  "version": 1,
+  "title": "Native Lean equality-saturation certificate checking",
+  "abstract": "Formalizes a native Lean checker for certified finite acyclic e-graphs. The principal result proves that accepted class certificates connect a canonical e-class term to the executable extracted representative and establish its minimum additive cost among all represented terms. The development also covers chronological merge certificates, egg-style flat explanations, replay-backed extraction, and bounded certificate search.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/equality-saturation-checker-lean",
+  "commit": "e74222fe2591b15837d1bc239b58a14170d4bccc",
+  "project_path": null,
+  "declarations": [
+    "EqualitySaturationChecker.Palomar.certified_egraph_extraction_correct"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO",
+      "cs.PL",
+      "math.LO"
+    ],
+    "msc2020": [
+      "03B35",
+      "68Q42"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T14:27:58Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e74222fe2591b15837d1bc239b58a14170d4bccc",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--equality-saturation-checker-lean--0fdf336a1b25",
+        "source_repository": "Arthur742Ramos/equality-saturation-checker-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8c54d5686a7cc306065be962e7afce6898750cfb2926ad89415c34072dd3bccf"
+}

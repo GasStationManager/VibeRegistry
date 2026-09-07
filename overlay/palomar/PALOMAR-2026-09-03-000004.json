@@ -1,0 +1,78 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-03-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-03-000004",
+  "version": 1,
+  "title": "Radial harmonic functions on a real inner product space: the classification, the Laplacian of radial functions, and the stability of circular orbits for power-law central forces; Ehrenfest's dimensionality argument (1917) as the application",
+  "abstract": "GENERAL THEOREMS FIRST. Throughout, E is a finite-dimensional real inner product space of dimension n, Δ is Mathlib's coordinate-free Laplacian, HarmonicOnNhd its harmonic functions, and f : ℝ → ℝ is twice differentiable on (0, ∞) (two HasDerivAt hypotheses, with derivatives f', f''). (I) THE CLASSIFICATION OF RADIAL HARMONIC FUNCTIONS: (1) for n ≠ 2 and E ≠ 0, the radial function f ∘ ‖·‖ is harmonic on E ∖ {0} if and only if f(r) = a + b r^(2−n) on (0, ∞) for some real a, b; (2) for n = 2, if and only if f(r) = a + b log r — every radial harmonic function with a twice-differentiable profile is an affine function of the Newtonian potential, constants included, and of the logarithm in the plane. (II) THE LAPLACIAN OF RADIAL FUNCTIONS, away from the origin: (3) Δ(f ∘ ‖·‖)(x) = f''(‖x‖) + (n − 1) f'(‖x‖)/‖x‖, the radial Laplacian; (4) for g twice differentiable on (0, ∞), Δ(g(‖y‖²))(x) = 2n g'(‖x‖²) + 4‖x‖² g''(‖x‖²), the squared-norm parametrization; (5) for every real s, Δ(‖y‖^s)(x) = s (n + s − 2) ‖x‖^(s−2), the indicial identity (its consequence, not itself compared: for E ≠ 0, ‖y‖^s is harmonic away from 0 exactly when s (n + s − 2) = 0, at s = 0 and s = 2 − n, which coincide at n = 2); (6) Δ(log ‖y‖)(x) = (n − 2)/‖x‖²; (7) ‖y‖^(2−n) is harmonic on E ∖ {0} for every n — for n ≥ 3, up to its normalizing constant, the Newtonian kernel away from the origin (the normalization and the distributional identity −ΔΦ = δ at the origin, in Evans's sign convention, which make a normalized multiple of it the fundamental solution proper, are NOT formalized); at n = 2 the power is the constant 1 and the logarithmic case is (8); on the zero space the statement is vacuous; (8) log ‖y‖ is harmonic on E ∖ {0} when n = 2. (III) THE RADIAL EQUATION, the one-variable content of (1)-(2): (9) for n ≠ 2, f'' + (n − 1) f'/r = 0 on (0, ∞) if and only if f(r) = a + b r^(2−n) there for some a, b; (10) for n = 2, if and only if f(r) = a + b log r. (IV) THE STABILITY OF CIRCULAR ORBITS, general in the real exponent: for the effective potential U(r) = a/r² − b/r^p on (0, ∞), a, b > 0, p > 0 real — the radial potential of a body with angular momentum under a central attraction with force law 1/r^(p+1) — (11) U'(r) = 0 iff r^(2−p) = 2a/(bp), the circular-orbit condition (for p ≠ 2 that equation has exactly one positive solution, whence \"the circular orbit\" below — a consequence of (11), not itself compared; in the plane \"the circular orbit r = √(2a/b)\" names the point of (19)); (12) at a circular orbit U''(r) = 2a(2 − p)/r⁴; (13) for p < 2 the circular orbit r* = (2a/(bp))^(1/(2−p)) is a local minimum of U (Mathlib's non-strict IsLocalMin) — stable; (14) for p > 2 it is a local maximum — unstable; (15) for p > 2 U has no local minimum on (0, ∞) at all (Ehrenfest's reading, that bounded motion between two radii is then impossible, is not formalized); (16) U''(r*) r*⁴/(2a) = 2 − p, the square of the ratio of the radial to the angular frequency of small oscillations about the circular orbit, which the local step of Bertrand's argument requires to be the square of a rational number for a near-circular orbit to close. The boundary p = 2, where the two terms of U have the same power, is covered by the critical-point and second-derivative identities (11)-(12), whose only hypothesis on the exponent is p > 0, and is excluded from the stability conclusions (13)-(15) and the frequency identity (16), all of which require p ≠ 2; among the instances it is n = 4, where (17) with a ≠ b yields no local minimum (the potential (a − b)/r² has no critical point) while the sub-case a = b, where U vanishes, is excluded; the table's 'unstable' cell at n = 4 is not compared. THE INSTANCES (17)-(23), with p = n − 2 for the Newtonian potential in n ≥ 3 dimensions and the logarithmic potential in the plane: (17) for n ≥ 3 and a ≠ b a stable circular orbit exists iff n = 3 (a ≠ b excludes n = 4, a = b, where U vanishes identically and every point is a non-strict minimum); (18) for n ≥ 5 the effective potential has no local minimum on (0, ∞); (19) in the plane, for a/r² + b log r, the circular orbit r = √(2a/b) is stable; (20) the quantity of (16) is 4 − n for n ≥ 3, n ≠ 4, hence 1 at n = 3; (21) in the plane it equals 2; (22) in the plane its square root is irrational (it is √2 by (21); this statement asserts irrationality only); (23) ‖x‖^(2−n) is harmonic on ℝⁿ ∖ {0} for every n; for n ≥ 3, up to its normalizing constant, the Newtonian kernel away from the origin, with the same disclosure as (7). THE APPLICATION: Ehrenfest's argument of 1917 (KNAW Proceedings 20 (1918) 200-209, §1 and Appendix I) that the stability of planetary orbits singles out three spatial dimensions. He deduces the n-dimensional force law from the Laplace–Poisson equation (the Laplace half is statement (7), harmonicity away from the source; the Poisson half, the point source, is not formalized; the classification (1)-(2) makes \"the radial harmonic function\" a theorem), reduces the motion to the radial equation ṙ = (1/r)√(A r² + B r^(4−n) − C²), and tabulates three columns — circular trajectories; motions between two positive values of r; motion to the infinite — for n ≥ 4 (unstable, impossible, possible), n = 3 (stable, possible and moreover closed, possible), n = 2 (stable, possible and not closed, impossible). Statements (17)-(22) are the extrema and frequency identities of the effective potential behind the first two columns for n ≥ 5, n = 3, n = 2 — a local minimum where the table says stable, no local minimum where it says bounded motion is impossible, the frequency ratio where it says closed or not closed; the passage from those identities to trajectories (bounded motion, closure, the third column), the n = 4 cell, and Bertrand's global theorem (1873) are not formalized. Tangherlini (1963) extended the argument to the n-dimensional Schwarzschild field; Caruso and Xavier (1987) and Tegmark (1997) discuss its epistemological status and call it Ehrenfest's argument, as does this entry (\"Ehrenfest's theorem\" names his 1927 quantum-mechanical result). NOT formalized: Bertrand's theorem, the third column and the n = 4 cell of the table, the derivation of the effective potential from the equations of motion, the relativistic extension, the wave-equation half of Ehrenfest's paper (Huygens' principle in odd dimensions), and any statement about the actual dimension of physical space — the theorems classify radial functions and a family of effective potentials; the reading that the stable case is the world we observe is Ehrenfest's, cited, not compared. PRIOR ART, as of the 2026-09-02 sweep: Mathlib has the Laplacian on inner product spaces (InnerProductSpace.laplacian, laplacian_eq_iteratedFDeriv_orthonormalBasis), harmonic functions (HarmonicAt, HarmonicOnNhd, harmonicAt_congr_nhds) with complex-analytic examples — in particular AnalyticAt.harmonicAt_log_norm, which gives log |z| harmonic on ℂ ∖ {0}, the n = 2 case of (8) in the complex model obtained through complex analysis — the second- derivative test (isLocalMin_of_deriv_deriv_pos), the mean-value lemmas IsOpen.exists_is_const_of_deriv_eq_zero and IsOpen.exists_eq_add_of_deriv_eq, and real powers; it has no Laplacian of a radial function, no harmonic power of the norm, no classification of radial harmonic functions, no central-force mechanics, and no formalization of Ehrenfest's argument. No formalization of the classification of radial harmonic functions, of Ehrenfest's argument, of the harmonic Newtonian potential in general dimension, or of Bertrand's theorem was found in the surveyed prover ecosystems (Mathlib and its archive, the Isabelle AFP, the Coq Mathematical Components and Coquelicot analysis libraries). The proof module descends from the author's public pdt-lean development (pinned below), where none of these statements was ever a compared statement. Axioms on every compared theorem: propext, Classical.choice, Quot.sound, audited in-build.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/radial-harmonic-classification",
+  "commit": "74e9b3ea7f204fba2e84e546c80457bcca5c6268",
+  "project_path": null,
+  "declarations": [
+    "EhrenfestArgument.harmonicOnNhd_radial_iff",
+    "EhrenfestArgument.harmonicOnNhd_radial_iff_two",
+    "EhrenfestArgument.laplacian_comp_norm",
+    "EhrenfestArgument.laplacian_comp_normSq",
+    "EhrenfestArgument.laplacian_normPow",
+    "EhrenfestArgument.laplacian_log_norm",
+    "EhrenfestArgument.harmonicOnNhd_normPow",
+    "EhrenfestArgument.harmonicOnNhd_log_norm",
+    "EhrenfestArgument.radial_ode_iff",
+    "EhrenfestArgument.radial_ode_iff_two",
+    "EhrenfestArgument.critical_iff",
+    "EhrenfestArgument.deriv_deriv_of_critical",
+    "EhrenfestArgument.isLocalMin_of_lt_two",
+    "EhrenfestArgument.isLocalMax_of_gt_two",
+    "EhrenfestArgument.not_isLocalMin_of_gt_two",
+    "EhrenfestArgument.freq_ratio_sq",
+    "EhrenfestArgument.stable_iff_three",
+    "EhrenfestArgument.not_isLocalMin_of_ge_five",
+    "EhrenfestArgument.isLocalMin_log",
+    "EhrenfestArgument.freq_ratio_sq_dim",
+    "EhrenfestArgument.freq_ratio_sq_log",
+    "EhrenfestArgument.freq_ratio_log_irrational",
+    "EhrenfestArgument.harmonicOnNhd_euclidean"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.AP",
+      "math-ph",
+      "physics.class-ph"
+    ],
+    "msc2020": [
+      "31B05",
+      "35J05",
+      "34A05",
+      "70F05",
+      "70H14",
+      "70K20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-03T13:09:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "74e9b3ea7f204fba2e84e546c80457bcca5c6268",
+        "fork_repository": "PalomarArchive/stalex444--radial-harmonic-classification--19ea2ae2a355",
+        "source_repository": "stalex444/radial-harmonic-classification"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d19a9f3fad73bddcee98d8e649693cb7481bdf0c027511e81e2f735e8d37f8c3"
+}

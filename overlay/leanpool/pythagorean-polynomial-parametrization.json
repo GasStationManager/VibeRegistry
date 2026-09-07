@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/epfl-lara/AutoformalizedProjects",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.PythagoreanPolynomialParametrization",
   "declarations": [
     "LeanPool.PythagoreanPolynomialParametrization.exists_int_valued_parametrization",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PythagoreanPolynomialParametrization.lean",
-  "statement_hash": "sha256:035ebf9baa4e770e57bbbfb4d31c6c5e320f8a326e3efdab9f7d2a57f928be42"
+  "statement_hash": "sha256:e898e513cd1157d38bf1aa0d5fc09a03e93d472dcc5fa81d3b27bd2206d52503"
 }

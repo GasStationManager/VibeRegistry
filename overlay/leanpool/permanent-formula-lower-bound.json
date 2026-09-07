@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "permanent-formula-lower-bound",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PermanentFormulaLowerBound",
+  "version": 1,
+  "title": "Quartic-over-logarithmic lower bound for rational permanent formulas",
+  "abstract": "Proves that every valid rational arithmetic formula over the complex numbers computing the n-by-n permanent, for n at least 32, has at least n^4 / (192 log_2 n) variable leaves. The development derives the bound through coefficient-field transcendence degree, Jacobian minors, matching-polynomial identities, and a cyclic block decomposition.",
+  "authors": [
+    "OpenAI",
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/openai/ten-proofs",
+  "commit": "",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "entry_module": "LeanPool.PermanentFormulaLowerBound",
+  "declarations": [
+    "PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound",
+    "PermanentFormulaLowerBound.permanent_rational_formula_lower_bound"
+  ],
+  "informal": {
+    "PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound": "For n at least 32, every valid rational formula over the complex numbers that computes the n-by-n permanent has at least n^4 / (192 log_2 n) variable leaves.",
+    "PermanentFormulaLowerBound.permanent_rational_formula_lower_bound": "The same quartic-over-logarithmic lower bound controls variable leaves, total leaves, and vertices, and half that bound controls internal gates."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q17",
+      "68Q25",
+      "15A15"
+    ],
+    "tags": [
+      "algebraic-complexity",
+      "arithmetic-formulas",
+      "permanent",
+      "lower-bounds",
+      "transcendence-degree"
+    ],
+    "branch": "algebraic complexity theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/PermanentFormulaLowerBound.lean",
+  "statement_hash": "sha256:f165cc2504852b333c1c731ce1b771fb2c753bf80b02373bae7b9e4598d04ed0"
+}

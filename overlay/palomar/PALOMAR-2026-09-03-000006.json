@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-03-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-03-000006",
+  "version": 1,
+  "title": "Erdős Problem 684: f(n)/log n is unbounded — a Lean 4 formalization of arXiv:2604.23784",
+  "abstract": "A Lean 4 formalization, against Mathlib, of the main theorem of J. H. Bae, \"Unbounded logarithmic limsup in Erdős Problem 684 via shifted carry scheduling\" (arXiv:2604.23784, v3).  For 0 ≤ k ≤ n write C(n,k) = u·v with u supported on the primes ≤ k and v on the primes in (k,n], and let f(n) be the least k with u > n²; Erdős asked for bounds on f(n) (Problem 684 in Bloom's database).  The compared theorems state that for every ε > 0 there are infinitely many n with f(n) > (1/2 − ε)·log n·log log n / log log log n, equivalently limsup f(n)·log log log n /(log n·log log n) ≥ 1/2 (stated in the extended nonnegative reals), and in particular that f(n)/log n is unbounded, so no estimate f(n) = O(log n) holds.  This strengthens the subsequential lower bound (1/2 − o(1)) log n of Alexeev–Putterman–Sawhney–Sellke–Valiant by a factor of order log log n / log log log n; the general upper bound (log n)² remains the best known and the exact order of f(n) is open.  Two further compared statements fix the meaning of the definitions: u(n,k) times the part of C(n,k) supported on primes exceeding k equals C(n,k), and K < f(n) holds exactly when u(n,k) ≤ n² for all 1 ≤ k ≤ min(K,n).  The proof follows the paper section by section (Kummer carries, a product-cell code, a CRT count with exponential weighting, an anchored-fibre selection lemma, and a four-range carry budget).  The prime number theorem is the single analytic input: the library proves the theorem under the explicit hypothesis θ(x) = x + O(x/log² x) and then discharges that hypothesis from the bound ψ(x) = x + O(x·exp(−c(log x)^{1/10})) of the PrimeNumberTheoremAnd project (Kontorovich, Tao et al.), so the compared theorems carry no hypotheses and depend only on propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Ji Ho Bae"
+  ],
+  "repository": "https://github.com/jidodat/erdos684-lean",
+  "commit": "4543ff7764f9e8f1b2732a8464d5c19c945bfc52",
+  "project_path": null,
+  "declarations": [
+    "Erdos684.Palomar.main_theorem",
+    "Erdos684.Palomar.main_theorem_limsup",
+    "Erdos684.Palomar.unbounded",
+    "Erdos684.Palomar.lt_f_iff",
+    "Erdos684.Palomar.u_mul_eq_choose"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B65",
+      "11N05",
+      "11A51"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-03T18:32:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4543ff7764f9e8f1b2732a8464d5c19c945bfc52",
+        "fork_repository": "PalomarArchive/jidodat--erdos684-lean--b4c193c90ac2",
+        "source_repository": "jidodat/erdos684-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9aa309c5726b4d728ae6d44f8a7b0774c5492ecd9e1b5c8740660f8579371f27"
+}

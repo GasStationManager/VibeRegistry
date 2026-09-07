@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-06-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-06-000005",
+  "version": 1,
+  "title": "The density Hales–Jewett theorem and Szemerédi's theorem",
+  "abstract": "A Lean 4 formalization of the density Hales–Jewett theorem: for every finite alphabet α and every density δ > 0, all sufficiently large n have the property that any set of at least δ·|α|^n words of length n over α contains a combinatorial line. The basis for the formalization is the combinatorial proof of Dodos, Kanellopoulos, and Tyros. As a consequence, we also formalize Szemerédi's theorem on the integers: for every k ≥ 3 and δ > 0, the following holds for all sufficiently large n. Any subset of {0, …, n−1} of size at least δ·n contains a nonconstant arithmetic progression of length k.",
+  "authors": [
+    "Gabriel Dahia"
+  ],
+  "repository": "https://github.com/gdahia/DensityHalesJewett",
+  "commit": "1285e649d0256a848d4693377dd1244065ac49ff",
+  "project_path": null,
+  "declarations": [
+    "Combinatorics.Line.exists_of_density_atTop",
+    "Combinatorics.ArithmeticProgression.exists_of_density_nat_atTop"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05D10",
+      "05A05",
+      "11B75",
+      "68R15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-06T16:15:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1285e649d0256a848d4693377dd1244065ac49ff",
+        "fork_repository": "PalomarArchive/gdahia--DensityHalesJewett--873857f8a9b4",
+        "source_repository": "gdahia/DensityHalesJewett"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0326328e6a69be4e6e4283d2757002ee5f436deb8ecff36da28e063c779200df"
+}

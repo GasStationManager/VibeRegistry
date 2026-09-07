@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-02-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-02-000007",
+  "version": 3,
+  "title": "Levi–Civita connections and metric-determined curvature invariants in Lean",
+  "abstract": "Formalizes a coherent static Riemannian theorem family for smooth finite-dimensional manifolds: existence of a global C^1 Levi–Civita covariant derivative, independence of the bundled curvature tensor from the chosen Levi–Civita realization, symmetry of the Ricci contraction, and independence of both Ricci and scalar curvature from that realization. These are standard classical results assembled at the current Mathlib manifold/vector-bundle API boundary. The contribution claimed here is a kernel-checked Lean formalization of the theorem family and its bundled constructions, not a new mathematical discovery or a priority claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/lean-poincare-formalization-plan",
+  "commit": "80b71f3a239ac2b294c91c66d020476f667a1306",
+  "project_path": "curvature",
+  "declarations": [
+    "PoincareCurvature.Palomar.exists_contMDiffLeviCivitaConnection",
+    "PoincareCurvature.Palomar.curvatureTensor_eq_of_isLeviCivita",
+    "PoincareCurvature.Palomar.ricciCurvature_symm_of_isLeviCivita",
+    "PoincareCurvature.Palomar.ricciCurvature_eq_of_isLeviCivita",
+    "PoincareCurvature.Palomar.scalarCurvature_eq_of_isLeviCivita"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "math.LO"
+    ],
+    "msc2020": [
+      "53C21",
+      "53C25",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-03T00:09:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "80b71f3a239ac2b294c91c66d020476f667a1306",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--lean-poincare-formalization-plan--659c07d79115",
+        "source_repository": "Arthur742Ramos/lean-poincare-formalization-plan"
+      }
+    ]
+  },
+  "statement_hash": "sha256:614027242283859762bcc072eeb08bb7d5d332c8e09635cbf0e04ba8de7654c7"
+}

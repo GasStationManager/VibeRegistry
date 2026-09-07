@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000015",
+  "version": 1,
+  "title": "roos-j/lean-superorthogonality",
+  "abstract": "A Lean formalization of the main result (Theorem 1) of the paper  \"A new type of superorthogonality\" by P. T. Gressman, L. B. Pierce, J. Roos, and P.-L. Yung; arXiv:2212.08956, Proc. Amer. Math. Soc. 152, 665-675, 2024. The theorem provides a simple criterion on a family of functions that implies a square function estimate on Lp for every even integer p ≥ 2. This defines a new type of superorthogonality that is verified by checking a less restrictive criterion than any other type of superorthogonality previously known.",
+  "authors": [
+    "Joris Roos"
+  ],
+  "repository": "https://github.com/roos-j/lean-superorthogonality",
+  "commit": "d6cebb0d1ec7cf96f7485b839f895f205c3857df",
+  "project_path": null,
+  "declarations": [
+    "Superorthogonal.sqfct_estimate_of_type_iv_superorthogonal"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "42B25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T18:50:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d6cebb0d1ec7cf96f7485b839f895f205c3857df",
+        "fork_repository": "PalomarArchive/roos-j--lean-superorthogonality--4ebd955d7e8b",
+        "source_repository": "roos-j/lean-superorthogonality"
+      }
+    ]
+  },
+  "statement_hash": "sha256:44c9cfa2041b7b8d37f16f0c7612fa2687c22fd008987f4db047d5409546a6e9"
+}

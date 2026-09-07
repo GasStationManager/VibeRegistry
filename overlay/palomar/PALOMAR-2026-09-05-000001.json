@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-05-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-05-000001",
+  "version": 1,
+  "title": "Brill--Noether generality and gonality for chains of cycles and theta graphs",
+  "abstract": "This repository formalizes Brill--Noether generality for chains whose factors may be cycles or theta graphs, subject to a genericity condition on path lengths and an evenly-marked condition on the theta factors. A graph is called Brill--Noether general if the possible degrees and ranks of its chip configurations, in the sense of Baker and Norine, match the behavior of a general algebraic curve. Here we use only the existential form of Brill--Noether generality, without computing dimensions. Following Cools--Draisma--Payne--Robeva, we also formalize a mild vanishing-order condition that permits the recovery of dimension statements on the algebraic side. A Brill--Noether general graph also has the conjectural maximum gonality in its genus. The chain of cycles case is a theorem of Cools--Draisma--Payne--Robeva, which Pflueger--Solomon generalized to allow evenly-marked theta graphs. Among other things, the construction shows the existence, in every positive genus g, of graphs with every gonality between 2 and ceil(g/2) + 1, inclusive.",
+  "authors": [
+    "Nathan Pflueger"
+  ],
+  "repository": "https://github.com/npflueger/brill-noether-graphs",
+  "commit": "7987ddbab4f757592e2d2b52565f2c3670e4ff6b",
+  "project_path": null,
+  "declarations": [
+    "BNChains.cdpr_marked_no_high_multiplicity",
+    "BNChains.cdpr_chain_brill_noether_general",
+    "BNChains.cycle_chain_brill_noether_general_of_torsion",
+    "BNChains.cycle_theta_chain_marked_no_high_multiplicity",
+    "BNChains.cycle_theta_chain_brill_noether_general",
+    "BNChains.cycle_theta_chain_gonality_eq_common_torsion",
+    "BNChains.exists_graph_of_genus_and_gonality"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C57",
+      "14T15",
+      "14H51"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-05T03:47:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7987ddbab4f757592e2d2b52565f2c3670e4ff6b",
+        "fork_repository": "PalomarArchive/npflueger--brill-noether-graphs--fa3c542b766f",
+        "source_repository": "npflueger/brill-noether-graphs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0fb73f16d25a0c76883a53106bcb412f10b2c10c77d8b700286b60a21c5ef6fa"
+}

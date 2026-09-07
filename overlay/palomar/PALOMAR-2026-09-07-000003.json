@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000003",
+  "version": 1,
+  "title": "Distance-shell tomography: product kernels and sharp grid sensing",
+  "abstract": "General integer-trade criterion and full-factor Cartesian-product kernel/recovery theorem; the all-order grid lower bound; and, for every n ≥ 6, the complete four-parameter integer grid kernel, exact threshold n−2 for odd n and n−3 for even n, optimal n−2 sensor count throughout 2 ≤ h < threshold, and unique four-parameter description of equal-observation populations.",
+  "authors": [
+    "Lennart Rudolph"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "71bcd530fd1c2c9a02d9112c9ca05839082983de",
+  "project_path": "zenodo-22404456/palomar",
+  "declarations": [
+    "ShellTomography.Verified.trade_criterion",
+    "ShellTomography.Verified.product_kernel",
+    "ShellTomography.Verified.product_recovery",
+    "ShellTomography.Verified.grid_lower_bound",
+    "ShellTomography.Verified.grid_kernel_uniform",
+    "ShellTomography.Verified.grid_capacity_uniform",
+    "ShellTomography.Verified.grid_sensor_optimality",
+    "ShellTomography.Verified.grid_fibre_uniform"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "05C12",
+      "05C50",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T02:43:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "71bcd530fd1c2c9a02d9112c9ca05839082983de",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:45370469ba179f9be9325f50fe3417112d59ea6b32dc19b734a74173e3d17bd4"
+}

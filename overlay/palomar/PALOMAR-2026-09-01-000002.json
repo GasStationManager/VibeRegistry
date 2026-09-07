@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-01-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-01-000002",
+  "version": 1,
+  "title": "lean-operator-theory",
+  "abstract": "Hilbert-space operator theory from unitary power dilation through von Neumann's polynomial inequality, together with the Crouzeix--Palencia theorem that the closed numerical range is a (1 + square-root-of-2)-polynomial spectral set.",
+  "authors": [
+    "Ezzeri Esa"
+  ],
+  "repository": "https://github.com/savarin/lean-operator-theory",
+  "commit": "6f90bb7e6b056b54f56005e0416d77d6d7c2a478",
+  "project_path": null,
+  "declarations": [
+    "PalomarCrouzeixPalencia.exists_unitary_power_dilation",
+    "PalomarCrouzeixPalencia.vonNeumann_inequality",
+    "PalomarCrouzeixPalencia.crouzeix_palencia"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.OA"
+    ],
+    "msc2020": [
+      "47A12",
+      "47A20",
+      "47A25",
+      "47A30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-01T02:17:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6f90bb7e6b056b54f56005e0416d77d6d7c2a478",
+        "fork_repository": "PalomarArchive/savarin--lean-operator-theory--791bd87b282f",
+        "source_repository": "savarin/lean-operator-theory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c5799725b990a0fb454146f3ce95245fee5ac3c25eb83ee006d90c913d0f520f"
+}

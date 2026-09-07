@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-06-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-06-000004",
+  "version": 1,
+  "title": "Double-contracted second Bianchi identity for metric-compatible torsion-free connections",
+  "abstract": "Proves the orthonormal double contraction of the actual corrected curvature derivative of a tangent connection on a smooth finite-dimensional real manifold. The Challenge exposes the corrected commutator and the smooth tangent-vector extensions explicitly; the Solution proves the identity for every supplied extension satisfying the stated hypotheses. The derivative symmetries and cyclic Bianchi equations are derived from torsion-freeness and metric compatibility, not assumed as abstract tensor data. No separate Einstein-divergence theorem is selected.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/lean-poincare-formalization-plan",
+  "commit": "90d215d81d30a5f67922dce00dfa160b4878e1c5",
+  "project_path": "contracted-bianchi",
+  "declarations": [
+    "ContractedBianchi.contractedSecondBianchi"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "gr-qc",
+      "math.LO"
+    ],
+    "msc2020": [
+      "53B20",
+      "53C21",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-06T14:20:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "90d215d81d30a5f67922dce00dfa160b4878e1c5",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--lean-poincare-formalization-plan--659c07d79115",
+        "source_repository": "Arthur742Ramos/lean-poincare-formalization-plan"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1cf02173841333dff47da530861764443adf38b9a19319647f970b8f7813ca8a"
+}

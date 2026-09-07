@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000010",
+  "version": 1,
+  "title": "MaxWellApexLab/BicausalOT-palomar",
+  "abstract": "A Lean 4 formalization of the Bellman value representation for bicausal optimal transport, together with the descriptive-set-theoretic library it requires.  The result registered by this Comparator configuration is the Polish-space structure of the space of probability measures: if X is a Polish space carrying its Borel sigma-algebra, then the space of Borel probability measures on X, with the topology of weak convergence, is again Polish — its topology is second countable and admits a complete compatible metric.  Mathlib at the pinned revision already supplies the Levy-Prokhorov metric, the identification of the Levy-Prokhorov topology with the topology of weak convergence on a separable space, and Prokhorov's theorem; it stops at metrizability of the space of probability measures and supplies neither completeness nor separability.  Both are proved here.  Completeness: a Levy-Prokhorov Cauchy sequence is uniformly tight, the compact witness being an intersection over j of finite unions of closed balls of radius 2^(-j), whose heads are covered using a countable dense sequence and continuity from below and whose tails are transferred between members of the sequence along the Levy-Prokhorov inequality; Prokhorov's theorem then produces a convergent subsequence, and a Cauchy sequence with a convergent subsequence converges.  Separability: normalized natural-weight mixtures of Dirac measures at points of a countable dense sequence are dense in Levy-Prokhorov distance.  Complete plus separable metric gives a Polish structure on the Levy-Prokhorov space, which Mathlib's homeomorphism LevyProkhorov.probabilityMeasureHomeomorph transports to the space of probability measures with the weak topology.  The wider repository contains the Bellman value representation for bicausal optimal transport in one period and over a general finite horizon, an epsilon-optimal strategy that is sigma(Sigma-1-1)-measurable at every stage and an exactly optimal Borel-measurable strategy under Feller kernels and lower semicontinuous costs (Bertsekas-Shreve 7.50 and 8.3), and the supporting descriptive set theory: Jankov-von Neumann uniformization, the Kuratowski-Ryll-Nardzewski measurable selection theorem, Choquet capacitability for analytic sets, and lower semianalyticity of kernel integrals.  The registered result is used in that development to make the space of probability measures a legitimate Polish parameter space for kernels and for the Bellman recursion.",
+  "authors": [
+    "KT. Wu"
+  ],
+  "repository": "https://github.com/MaxWellApexLab/BicausalOT-palomar",
+  "commit": "66fbfd2fcf10f570d43946aafbd8731ef0dc127f",
+  "project_path": null,
+  "declarations": [
+    "ProbabilityMeasurePolish.polishSpace_probabilityMeasure"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.GN",
+      "math.LO"
+    ],
+    "msc2020": [
+      "60B05",
+      "60B10",
+      "28A33",
+      "54E50",
+      "54E35",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T12:38:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "66fbfd2fcf10f570d43946aafbd8731ef0dc127f",
+        "fork_repository": "PalomarArchive/MaxWellApexLab--BicausalOT-palomar--498dc9db60b6",
+        "source_repository": "MaxWellApexLab/BicausalOT-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e9f5c286fbba14119dc4935d587574f42cbc932c7eee904cd9847b61d974b913"
+}

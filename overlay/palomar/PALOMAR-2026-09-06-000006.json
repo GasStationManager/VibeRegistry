@@ -1,0 +1,80 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-06-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-06-000006",
+  "version": 1,
+  "title": "Marton's conjecture (the polynomial Freiman-Ruzsa conjecture)",
+  "abstract": "A Lean formalization of Marton's conjecture, widely known as the polynomial Freiman-Ruzsa conjecture, together with its principal consequences. If A is a non-empty subset of an abelian group of exponent 2 with |A + A| <= K|A|, then A is covered by fewer than 2K^12 cosets of a subgroup of cardinality at most |A|; the same conclusion holds with 2K^9 cosets. For an abelian group in which mx = 0 for every x, with m >= 2, the covering number is m * K^(256m^3 + 1). Three consequences are also recorded: a finite set of small doubling in Z^D has a subset of at least K^(-34) of its size whose affine dimension is at most (80/log 2) log K; a map between finite groups of exponent 2 whose additive defects f(x+y) - f(x) - f(y) all lie in a set S differs from a homomorphism by a map taking at most |S|^10 values; and a map that is additive on at least a proportion 1/K of pairs agrees with a homomorphism on at least (|G| / (2^144 K^122) - 1)/2 points. The proofs are by an entropy method: one minimizes a functional of the entropic Ruzsa distance between two random variables and shows the minimum is attained at a uniform distribution on a subgroup, so the development also builds a substantial theory of Shannon entropy, entropic Ruzsa distance, and, for the bounded torsion case, a multidistance for m-tuples. The repository is a collaborative formalization project begun in November 2023; the mathematics is due to the cited papers and nothing here is claimed to be new. The compared theorems depend on propext, Classical.choice and Quot.sound and on nothing else, and there is no sorry outside the six deliberate holes in PFRPalomar/Challenge.lean.",
+  "authors": [
+    "Aaron Anderson",
+    "Mantas Bakšys",
+    "Jonas Bayer",
+    "Mauricio Collares",
+    "Rémy Degenne",
+    "Yaël Dillies",
+    "Ben Eltschig",
+    "Sébastien Gouëzel",
+    "Kalle Kytölä",
+    "Rob Lewis",
+    "Paul Lezeau",
+    "Lorenzo Luccioli",
+    "Heather Macbeth",
+    "Patrick Massot",
+    "Arend Mellendijk",
+    "Kyle Miller",
+    "Pietro Monticone",
+    "Kim Morrison",
+    "Oliver Nash",
+    "Utensil Song",
+    "Terence Tao",
+    "Floris van Doorn",
+    "Sky Wilshaw",
+    "Lawrence Wu"
+  ],
+  "repository": "https://github.com/teorth/pfr",
+  "commit": "3d7898164ebff70a809dce618f9082a7b39e7850",
+  "project_path": null,
+  "declarations": [
+    "Marton.pfr_conjecture",
+    "Marton.pfr_conjecture_nine",
+    "Marton.torsion_pfr_conjecture",
+    "Marton.weak_pfr_int",
+    "Marton.homomorphism_pfr",
+    "Marton.approx_hom_pfr"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B30",
+      "11P70",
+      "20K01",
+      "94A17"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-06T16:49:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3d7898164ebff70a809dce618f9082a7b39e7850",
+        "fork_repository": "PalomarArchive/teorth--pfr--0b6b7d3305bc",
+        "source_repository": "teorth/pfr"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e0a3d5474d0a12c5a824a85add9f7fb62d5fae291efd039ec024eceeb7a103ae"
+}

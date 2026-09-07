@@ -2,13 +2,11 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-08-21-000008",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-21-000008",
-  "version": 1,
+  "version": 2,
   "title": "lennrt/palomar-formalizations",
   "abstract": "Lean formalization of the paper's finite skew-symmetric path instance, exact prefix-deletion completion oracle, deterministic oracle-pruned DFS, correctness and duplicate-freedom, and an executable DFS event trace whose extracted first-output, inter-output, post-output, and no-output work intervals satisfy the paper-level depth/LCP bounds.",
   "authors": [
-    "Lennart Rudolph",
-    "Sol",
-    "Fable"
+    "Lennart Rudolph"
   ],
   "repository": "https://github.com/lennrt/palomar-formalizations",
   "commit": "d259d35ad32d0e7c8c60ddd5a574aa987956e1d2",
@@ -33,7 +31,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-08-21T17:39:41Z",
+  "published_at": "2026-09-03T06:05:05Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,

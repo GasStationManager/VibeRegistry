@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-02-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-02-000002",
+  "version": 1,
+  "title": "Actual F₂ flag homology and the dense extremal counterexample family",
+  "abstract": "A finite-chain formalization of the F₂ content of Theorem 1.1 and Proposition 3.1 in the source paper. Lean defines the literal flag-chain groups of a finite graph using unordered edges and three-vertex clique faces, their d1 and d2 maps, and actual H1 as ker(d1)/range(d2). It proves that the paper's family G_n has F₂ first Betti number exactly two for every n at least seven, proves the universal F₂ upper bound beta1 <= 2 for every n-vertex graph with choose(n,2)-n edges, and bundles these facts with the exact density and no-complete-bipartite-spanning obstruction. The literal d1-d2 identity is also selected so every Challenge proof hole is compared. No compared proof uses native_decide or an external homology axiom.",
+  "authors": [
+    "Lennart Rudolph"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "a7cc03716e7683cfc0c66cfc0d3b30e00a7a2923",
+  "project_path": "zenodo-21892997/palomar",
+  "declarations": [
+    "ExtremalFlagBetti.ActualHomology.flagD1_flagD2",
+    "PalomarExtremalFlagBetti.family_actual_flag_h1_exactly_two",
+    "PalomarExtremalFlagBetti.universal_flag_beta1_f2_le_two",
+    "PalomarExtremalFlagBetti.dense_extremal_flag_counterexample_f2"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.AT"
+    ],
+    "msc2020": [
+      "05C35",
+      "05C69",
+      "55U10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-02T04:11:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a7cc03716e7683cfc0c66cfc0d3b30e00a7a2923",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ca363325afcdde45bb87ff8376cfa82af299902ce74f924a049c538baeb7ca72"
+}

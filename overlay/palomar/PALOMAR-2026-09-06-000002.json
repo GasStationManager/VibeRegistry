@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-06-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-06-000002",
+  "version": 1,
+  "title": "The sharp finite-field Nikodym exponent",
+  "abstract": "A complete Lean 4 / Mathlib formalization of the sharp power saving in the finite-field Nikodym problem. A set N in F_q^d is a Nikodym set if through every point x there is a line all of whose points other than x lie in N. Lower bound: for every finite field F_q, every d >= 2 and every Nikodym set N in F_q^d, |N| >= q^d - (8 d^2 + 1) q^(d - 2^(1-d)); the proof goes through a carrier theorem for integral projective varieties containing many affine lines with private points, proved by finite-grid Hermite interpolation, Hilbert-function estimates (normalized monotonicity and a degree upper bound via linear Noether normalization), an interpolation cut, and a dimension induction that halves the saving at each step. Upper bound: for every d >= 2 and epsilon > 0 and all sufficiently large primes q there is a Nikodym set N in F_q^d with |N| <= q^d - q^(d - 2^(1-d) - epsilon), constructed as the complement of a product set built from a totally real multiquadratic order in which q splits completely, with a digit encoding and tangent lines. Together these give Nik(d, q) = q^d - q^(d - 2^(1-d) + o(1)) along primes. Previously, for general q and d >= 3, the best lower bound was q^d / 2^(d-1) + O(q^(d-1)) and even Nik(d,q) = (1 - o(1)) q^d was open (Lund-Saraf-Wolf, Conjecture 2), while the best upper bounds for prime q were q^d - Omega_d(q^(d - eps_d)) with eps_d << 1/log log d and q^3 - Omega(q^2.1167) (Hunter-Pohoata-Verstraete-Zhang 2026); the lower bound here settles the former conjecture for every finite field, and the construction shows that the exponent d - 1/d conjectured by Chao and Yu (2026) is not sharp over prime fields. The README gives theorem-level comparisons and references. All three headline theorems are proved with no sorry and depend only on propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Ting-Wei Chao",
+    "Zach Hunter",
+    "Cosmin Pohoata",
+    "Hung-Hsun Hans Yu",
+    "Shengtong Zhang"
+  ],
+  "repository": "https://github.com/ShengtongZhang-alt/Nikodym",
+  "commit": "0cd3550000630f4653fac67db43c2d264a0ca426",
+  "project_path": null,
+  "declarations": [
+    "Nikodym.card_compl_pow_mul_card_le",
+    "Nikodym.card_ge_pow_sub",
+    "Nikodym.exists_isNikodym_card_le"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.AG"
+    ],
+    "msc2020": [
+      "05B25",
+      "11T06",
+      "13D40",
+      "14G15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-06T05:02:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0cd3550000630f4653fac67db43c2d264a0ca426",
+        "fork_repository": "PalomarArchive/ShengtongZhang-alt--Nikodym--ff803761ed4e",
+        "source_repository": "ShengtongZhang-alt/Nikodym"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0333bfa205d343571a05d6f732a7390fb37d809cd27272c45d91f00e9a14394e"
+}

@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/KisaraBlue/ec-tate-lean",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.EcTateLean",
   "declarations": [
     "Model",
@@ -62,5 +62,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/EcTateLean.lean",
-  "statement_hash": "sha256:5a1f77c0f1c91415647aeb10f999c180e3fa2f71f40a32fef36e9ff43f8341f2"
+  "statement_hash": "sha256:5114ae04b0cb49a7fd6a2a1f9fdfc1ee07f1ee676bac8fbfefbcb291072ba645"
 }

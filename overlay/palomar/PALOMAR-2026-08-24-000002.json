@@ -2,13 +2,11 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-08-24-000002",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-24-000002",
-  "version": 1,
+  "version": 2,
   "title": "rwst/Confinement-Certificates",
   "abstract": "A Lean 4 / Mathlib development of a paper on the emptiness theory of the sets Z_{p/q}(s, s+t) = {ξ > 0 : {ξ(p/q)ⁿ} ∈ [s, s+t) for all n ≥ 0}, the generalized Z-numbers of Flatto, Lagarias and Pollington, at and beyond the window length 1/p. The paper introduces block certificates --- finite integer witnesses, rechecked from scratch by the Lean proof kernel, whose soundness rests on the aperiodicity lemma alone --- and uses them to pass the length-$1/p$ line: $\\Zset_{3/2}(1/6,13/24)=\\emptyset$ (window length $3/8>1/3$), $\\Zset_{3/2}(961/3600,2427/3600)=\\emptyset$ (length $733/1800$), and explicit unions of total length up to $17/24$, against $20/39$ in print. The closed-interval union statement of Dubickas is replicated exactly as printed; no $\\xi\\ne0$ keeps $\\|\\xi(3/2)^{n}\\|<1/5$ for every $n$, with $\\|\\cdot\\|$ the distance to the nearest integer; and thirty windows of length $1/p$ are certified at five bases in the regime $p>q^{2}$ that Dubickas leaves open. There is no sorry anywhere outside the deliberate placeholders in Challenge.lean, no project-defined axiom, and no native_decide: every block certificate is discharged by `c.ok = true := by decide`, i.e. by kernel reduction of integer arithmetic on the certificate's raw data.",
   "authors": [
-    "Ralf Stephan (direction, review, paper author)",
-    "Claude Code, claude-fable-5 (mathematical discovery, paper drafting)",
-    "Claude Code, claude-opus-4-8 (formalization)"
+    "Ralf Stephan (direction, review, paper author)"
   ],
   "repository": "https://github.com/rwst/Confinement-Certificates",
   "commit": "eb810d8f86e49b2b8e058d02a9edac9e5fedafc8",
@@ -52,7 +50,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-08-24T16:23:03Z",
+  "published_at": "2026-09-06T01:41:46Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/gexahedron/sabidussi-lean",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.Sabidussi",
   "declarations": [
     "Sabidussi.LoopMultigraph.loop_sabidussi_compatibility_ordinary",
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Sabidussi.lean",
-  "statement_hash": "sha256:123b564da02d9186b579d9443a9e03c5f720534fc30dbd795c4129b27d83a7b5"
+  "statement_hash": "sha256:70149aaab234bda8d75e560b6eb4a7e09c642deaf7f9787e272ac5fc614afdf1"
 }

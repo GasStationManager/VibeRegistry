@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/lean-pool",
   "commit": "",
-  "snapshot_commit": "34e4309df9f06073d1bad30aecfb61e90cada2b5",
+  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
   "entry_module": "LeanPool.Erdos132ThreeChain",
   "declarations": [
     "Erdos132ThreeChain.nonDiameterSqDists_ne_chain",
@@ -59,5 +59,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos132ThreeChain.lean",
-  "statement_hash": "sha256:164a9a5f0b296eaea3ab6866e8bf5ce690afe6bb71ecbedf70bc3e6344408603"
+  "statement_hash": "sha256:1cb91e0ee154e953f7535d20b800e5ef36b3a439e7b7d8000bec1e1f04e193d5"
 }

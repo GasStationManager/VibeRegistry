@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000012",
+  "version": 1,
+  "title": "mrdouglasny/OSforGFF-comparator",
+  "abstract": "Construction of the massive Gaussian Free Field in Euclidean spacetime of any dimension d >= 2 as a probability measure on the tempered distributions S'(R^d), and a proof that it satisfies all of the Osterwalder-Schrader axioms: OS0 analyticity, OS1 regularity, OS2 Euclidean invariance, OS3 reflection positivity, and OS4 clustering and ergodicity. The OS axioms are the conditions under which a Euclidean field theory reconstructs a relativistic quantum field theory obeying the Wightman axioms, so the free field is the base case of constructive quantum field theory on which interacting constructions are built. The development is dimension-generic: one proof parameterized by d, consuming the free covariance only through a typeclass whose per-dimension input is a single closed-form radial kernel identified with the proper-time integral, with concrete instances at d = 2, 3, 4, 5. The result addresses three research audiences. In constructive quantum field theory, the free field satisfying OS0-OS4 is the base case (Glimm-Jaffe, ch. 6) on which interacting constructions such as P(phi)_2 and phi^4_3 are built, so a machine-checked base case is the reusable starting point for any formalized interacting construction. The analytic chain is proved rather than assumed: the Minlos theorem and the Hilbert-nuclearity of Schwartz space are consumed from the bochner and gaussian-field developments as theorems, nuclearity in the general form for Schwartz functions on any finite-dimensional real normed space, so every headline result depends on nothing beyond Lean's three foundational axioms. In stochastic quantization and singular SPDEs, the massive GFF constructed here is the reference Gaussian and the invariant measure of the free dynamics in every dimension treated. And for researchers formalizing quantum field theory in various dimensions, this is, to our knowledge, the first machine-checked verification of the Osterwalder-Schrader axioms — the literature search supporting that statement (scope, terms, dates, and the related-but-distinct work found) is documented in docs/novelty.md of this repository — with the dimension-generic propagator typeclass as the designed extension point for further covariances and dimensions.",
+  "authors": [
+    "Sergey A. Cherkis",
+    "Michael R. Douglas",
+    "Sarah Hoback",
+    "Anna Mei",
+    "Ron Nissim"
+  ],
+  "repository": "https://github.com/mrdouglasny/OSforGFF-comparator",
+  "commit": "6e56a6f2a0fe01272492ae8c2ae3dd4fc5bc5901",
+  "project_path": null,
+  "declarations": [
+    "Challenge.gaussianFreeField_satisfies_OS_axioms"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "hep-th",
+      "math-ph"
+    ],
+    "msc2020": [
+      "81T08",
+      "81S40",
+      "60G60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T14:32:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6e56a6f2a0fe01272492ae8c2ae3dd4fc5bc5901",
+        "fork_repository": "PalomarArchive/mrdouglasny--OSforGFF-comparator--e33f878203cf",
+        "source_repository": "mrdouglasny/OSforGFF-comparator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7e33a90b1b665d674ada76f760027042c8a680ef4ce11533caff6a4782aadcb7"
+}

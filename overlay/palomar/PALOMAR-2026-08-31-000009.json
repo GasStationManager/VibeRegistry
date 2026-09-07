@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-08-31-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-31-000009",
+  "version": 1,
+  "title": "MaxWellApexLab/BicausalOT-palomar",
+  "abstract": "A Lean 4 formalization of the Bellman value representation for bicausal optimal transport, together with the descriptive-set-theoretic library it requires.  The results registered by this Comparator configuration are Choquet capacitability for analytic sets in its finite-measure form, and its immediate corollary, the universal measurability of analytic sets.  Concretely: for a Polish space X carrying its Borel sigma-algebra, a finite Borel measure mu on X, and an analytic (not necessarily Borel) set A contained in X, the outer measure of A is the supremum of mu K over the compact subsets K of A; and consequently A is null-measurable for mu, i.e. it differs from a Borel set by a mu-null set.  Both are proved from Mathlib alone.  The argument writes a nonempty analytic set as the range of a continuous map pi from Baire space, forms the Souslin scheme of closures of images of cylinders, and runs a measure-free recursion that produces, coordinate by coordinate, a bound beta with c < mu (W(beta,n)) for every n, where W(beta,n) is the closed union of the scheme pieces bounded by beta on the first n coordinates.  A subsequence extraction inside the compact set of beta-bounded branches shows that the intersection of the W(beta,n) is contained in the compact set pi '' Sigma(beta), and continuity of mu along the decreasing sequence of closed sets W(beta,n) — the one step that uses finiteness of mu — supplies the compact witness.  Universal measurability then follows by inner approximation within 1/(k+1), taking the union of the approximating compacts and comparing with a measurable hull. Neither result exists in Mathlib at the pinned revision, where inner regularity is available for measurable sets only.  The wider repository contains the Bellman value representation for bicausal optimal transport in one period and over a general finite horizon, an epsilon-optimal strategy that is sigma(Sigma-1-1)-measurable at every stage and an exactly optimal Borel-measurable strategy under Feller kernels and lower semicontinuous costs (Bertsekas-Shreve 7.50 and 8.3), and the supporting descriptive set theory: Kuratowski-Ryll-Nardzewski measurable selection, Jankov-von Neumann uniformization, Polishness of the space of probability measures on a Polish space, and lower semianalyticity of kernel integrals.  Capacitability is what makes the last of these possible: universal measurability of analytic sets is the ingredient behind the null-measurable Fubini step in Bertsekas-Shreve 7.48.",
+  "authors": [
+    "KT. Wu"
+  ],
+  "repository": "https://github.com/MaxWellApexLab/BicausalOT-palomar",
+  "commit": "66fbfd2fcf10f570d43946aafbd8731ef0dc127f",
+  "project_path": null,
+  "declarations": [
+    "Capacitability.analyticSet_measure_eq_iSup_isCompact",
+    "Capacitability.analyticSet_nullMeasurableSet"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.CA",
+      "math.PR",
+      "math.GN",
+      "math.OC"
+    ],
+    "msc2020": [
+      "28A12",
+      "28A05",
+      "03E15",
+      "54H05",
+      "31C15",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-08-31T12:01:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "66fbfd2fcf10f570d43946aafbd8731ef0dc127f",
+        "fork_repository": "PalomarArchive/MaxWellApexLab--BicausalOT-palomar--498dc9db60b6",
+        "source_repository": "MaxWellApexLab/BicausalOT-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c248b7e957e3d195c399733369414fec691e2616d6699980f5aa973a348c6a8f"
+}
