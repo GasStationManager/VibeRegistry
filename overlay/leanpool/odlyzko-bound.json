@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/ImperialCollegeLondon/FLT",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.Odlyzko",
   "declarations": [
     "NumberField.Odlyzko.odlyzkoBound"
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Odlyzko.lean",
-  "statement_hash": "sha256:91f4b0d97df9b561f1325be453922bbd6d0be2426fe745a6177859302e068ec2"
+  "statement_hash": "sha256:6b9195fffd84ac771379add5238e5d2731e2153151613f9ffadad7fa29902fcf"
 }

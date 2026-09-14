@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000009",
+  "version": 1,
+  "title": "Native Lean finite Nash equilibria",
+  "abstract": "Formalizes finite strategic-form games with player-specific finite move sets, pure profiles, unilateral deviations, best responses, dominant strategies, and two distinct potential notions. Pure Nash equilibrium is defined over utility preorders by the absence of a strict improvement; weak-inequality characterizations are restricted to linear orders. The library names the one-way improvement condition a generalized ordinal potential and reserves ordinal potential for the standard bidirectional strict-sign condition. It proves a global potential-maximizer certificate for pure Nash equilibrium, the standard Nash/local-potential-maximum equivalence, and acyclicity of the better-response relation for the generalized class. The development also gives checked counterexamples and Prisoner's-Dilemma/coordination/matching-pennies/rock-paper-scissors examples. Its native mixed layer proves support equalization, Dirac transport, the normalized excess-map reduction, and the closed/compact/ convex/continuous finite mixed-profile geometry. It also proves general finite mixed-Nash existence on a common nonempty move type by connecting the native excess map to an attributed, kernel-checked product-of-simplices Brouwer theorem. This is a reusable formalization artifact, not a claim of new mathematics or the first Lean proof of Nash existence.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/nash-equilibrium-lean",
+  "commit": "6dd83f3b004c0318e52f4c3cb272d909efca321d",
+  "project_path": null,
+  "declarations": [
+    "NashEquilibrium.Palomar.exists_nash_maximizing_ordinal_potential",
+    "NashEquilibrium.Palomar.isNash_iff_potential_local_maximum",
+    "NashEquilibrium.Palomar.no_betterResponse_cycle_of_generalized_ordinal_potential",
+    "NashEquilibrium.Palomar.weaklyAcyclic_of_generalized_ordinal_potential",
+    "NashEquilibrium.Palomar.mixedNash_support_payoff_eq",
+    "NashEquilibrium.Palomar.exists_mixedNash"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "91A10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T16:13:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6dd83f3b004c0318e52f4c3cb272d909efca321d",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--nash-equilibrium-lean--950938f890dd",
+        "source_repository": "Arthur742Ramos/nash-equilibrium-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7315ada05fc8f96ba86f1a210ddffeb529e49731c4f1045c7ee9b7ee8a78b4d5"
+}

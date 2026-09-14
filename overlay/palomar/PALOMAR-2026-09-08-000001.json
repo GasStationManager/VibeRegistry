@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-08-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-08-000001",
+  "version": 1,
+  "title": "Finite correlated equilibria and regret certificates",
+  "abstract": "For finite games with player-specific action types, a valid independent product distribution is a correlated equilibrium exactly when its mixed profile is Nash. The correlated-equilibrium set is nonempty, compact, and convex when every player's action type is nonempty. For every positive finite horizon, cumulative external-regret and swap-regret bounds give corresponding approximate coarse-correlated and correlated equilibria of the empirical distribution. The development also proves equivalence with conditional obedience inequalities, arbitrary mixed-deviation sufficiency, and extension-by-zero correspondence for restricted legal actions. An exact per-recommendation certificate characterizes approximate correlated equilibrium without loss in its error budget and directly certifies empirical play from cumulative recommendation gains.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/correlated-equilibrium-lean",
+  "commit": "67f1dc1f2fcb6e75ea62de92f9c67bd92191fd6e",
+  "project_path": null,
+  "declarations": [
+    "CorrelatedEquilibrium.Palomar.mixedNash_iff_unilateral_update",
+    "CorrelatedEquilibrium.Palomar.CE_iff_conditional",
+    "CorrelatedEquilibrium.Palomar.productCE_iff_mixedNash",
+    "CorrelatedEquilibrium.Palomar.CE_geometry",
+    "CorrelatedEquilibrium.Palomar.swap_regret_implies_approxCE",
+    "CorrelatedEquilibrium.Palomar.external_regret_implies_approxCCE",
+    "CorrelatedEquilibrium.Palomar.restricted_mixedNash_iff",
+    "CorrelatedEquilibrium.Palomar.approxCE_iff_recommendation_certificate",
+    "CorrelatedEquilibrium.Palomar.empirical_recommendation_certificate"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91A10",
+      "91A26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-08T00:51:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "67f1dc1f2fcb6e75ea62de92f9c67bd92191fd6e",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--correlated-equilibrium-lean--6c12736548c6",
+        "source_repository": "Arthur742Ramos/correlated-equilibrium-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5fbb1fcadecc46668ed98d672c7c2e852d4289f349fb7cc16dc6bf52c0e12343"
+}

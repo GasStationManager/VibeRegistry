@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-09-05-000007",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-05-000007",
-  "version": 1,
+  "version": 2,
   "title": "Stafford 3.8",
   "abstract": "Lean formalization of Stafford's Conjecture 3.8 for every characteristic-zero field and every Weyl-algebra rank, proving that each nonzero d admits F, R, and S with 1 = d*R + F*d*S. The development also proves an exact Bernstein-degree fixed-source strengthening and derived localization, adjoint, and evolutionary results.",
   "authors": [
     "Christopher Albert"
   ],
   "repository": "https://github.com/itpplasma/stafford38-formal",
-  "commit": "784b59925beb9a480519142336bd6434f6eeef16",
+  "commit": "914d6ad0c8ac9851e782fa61302ba340996d9472",
   "project_path": null,
   "declarations": [
     "Stafford38Challenge.universalStatement"
@@ -24,7 +24,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-09-05T22:58:11Z",
+  "published_at": "2026-09-08T22:43:14Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -38,11 +38,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "784b59925beb9a480519142336bd6434f6eeef16",
+        "commit": "914d6ad0c8ac9851e782fa61302ba340996d9472",
         "fork_repository": "PalomarArchive/itpplasma--stafford38-formal--e4b6caf6307d",
         "source_repository": "itpplasma/stafford38-formal"
       }
     ]
   },
-  "statement_hash": "sha256:2e6ef56ea8e9194684e6939f2180053f5732c59d04eb98294208ad32c6d80223"
+  "statement_hash": "sha256:a24abc57fa2efaf270a1638d1063412060c1c9d39d4f49fcf887607440c369f4"
 }

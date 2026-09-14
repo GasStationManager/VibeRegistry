@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "compactness-and-degeneracy",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CompactnessAndDegeneracy",
+  "version": 1,
+  "title": "Counterexamples to graph compactness and two-degenerate extremal bounds",
+  "abstract": "Formalizes two counterexamples in extremal graph theory. The first gives a finite family of connected bipartite cyclic graphs whose family extremal number grows strictly slower than every member's extremal number, disproving the Erdős--Simonovits compactness conjecture. The second constructs a connected bipartite two-degenerate graph with extremal number at least c n^(3/2+ε), disproving the proposed universal n^(3/2) upper bound under the stated bipartition degree condition.",
+  "authors": [
+    "OpenAI",
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/openai/ten-proofs",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.CompactnessAndDegeneracy",
+  "declarations": [
+    "CompactnessConjecture.quantitativeCompactnessCounterexample",
+    "TwoDegenerateGraphs.twoDegenerateExtremalCounterexample"
+  ],
+  "informal": {
+    "CompactnessConjecture.quantitativeCompactnessCounterexample": "There is a nonempty finite family of connected bipartite cyclic graphs such that every member has a uniform positive n^(4/3)-scale extremal lower bound, while every family-free host on n vertices has its sixteenth power of the edge count bounded by a constant times n^21. Consequently the family is not compact and the Erdős--Simonovits compactness conjecture is false.",
+    "TwoDegenerateGraphs.twoDegenerateExtremalCounterexample": "There is a connected bipartite two-degenerate finite graph H such that each side of every two-coloring has a vertex of degree greater than two, yet ex(n,H) is eventually at least c n^(3/2+ε) for some positive constants c and ε."
+  },
+  "classification": {
+    "msc2020": [
+      "05C35",
+      "05C75"
+    ],
+    "tags": [
+      "extremal-combinatorics",
+      "extremal-graph-theory",
+      "degenerate-graphs",
+      "counterexamples"
+    ],
+    "branch": "extremal combinatorics and graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CompactnessAndDegeneracy.lean",
+  "statement_hash": "sha256:8e9e001c16cd052822d7ae19c56528c6fc66104fc0032a08e451a5ef4dfb4469"
+}

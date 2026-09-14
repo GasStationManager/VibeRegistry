@@ -2,18 +2,22 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-08-24-000004",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-24-000004",
-  "version": 1,
-  "title": "jeremypparker/mahler-hansen-cograph",
-  "abstract": "A Lean 4/Mathlib formalisation of a sharp Mahler-volume theorem for Hansen polytopes of finite cographs. It proves that the normalized Mahler volume of the Hansen polytope of a cograph is at least one, and exactly one if and only if it is a threshold graph.",
+  "version": 2,
+  "title": "Three Sharp Bounds for Hansen Polytopes of Cographs",
+  "abstract": "A Lean 4/Mathlib formalisation of three sharp lower bounds for Hansen polytopes of finite nonempty cographs: normalized Mahler volume at least one, at least 3^d nonempty faces, and at least 2^d d! full flags in dimension d. In each result equality holds exactly for threshold graphs.",
   "authors": [
     "Jeremy P Parker"
   ],
   "repository": "https://github.com/jeremypparker/mahler-hansen-cograph",
-  "commit": "72eee5b643fe4f003eea56b8192adb25ba08aa2e",
+  "commit": "c7639c5060f40d69b613bcbd637b1750f27b7e3f",
   "project_path": null,
   "declarations": [
     "hansen_cograph_mahler",
-    "hansen_cograph_mahler_eq_one_iff_threshold"
+    "hansen_cograph_mahler_eq_one_iff_threshold",
+    "HansenCograph.hansen_cograph_three_pow",
+    "HansenCograph.hansen_cograph_three_pow_eq_iff_threshold",
+    "HansenCograph.hansen_cograph_full_flag",
+    "HansenCograph.hansen_cograph_full_flag_eq_iff_threshold"
   ],
   "informal": {},
   "classification": {
@@ -28,7 +32,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-08-24T17:37:29Z",
+  "published_at": "2026-09-10T09:09:15Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -42,11 +46,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "72eee5b643fe4f003eea56b8192adb25ba08aa2e",
+        "commit": "c7639c5060f40d69b613bcbd637b1750f27b7e3f",
         "fork_repository": "PalomarArchive/jeremypparker--mahler-hansen-cograph--9e881925f110",
         "source_repository": "jeremypparker/mahler-hansen-cograph"
       }
     ]
   },
-  "statement_hash": "sha256:cd25bfbf38f639e0f6829f082dfc7d1d7be23c45bd27689db876f6ca2a03cb12"
+  "statement_hash": "sha256:cbc632b39550eac1e49583b7c0aa0fbf64d14b545d03f6dd6daf64d4e48e2ca4"
 }

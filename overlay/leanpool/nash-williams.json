@@ -1,0 +1,61 @@
+{
+  "source": "leanpool",
+  "upstream_id": "nash-williams",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/NashWilliams",
+  "version": 1,
+  "title": "Nash-Williams fronts and 2-better-quasi-orders",
+  "abstract": "Formalizes Nash-Williams fronts through their well-founded prefix trees and ordinal ranks, proves the finite-color Nash-Williams theorem, and derives the infinite Ramsey theorem for arbitrary finite arity. The order-theoretic development proves that 2-better-quasi-orders are well-quasi-orders and establishes closure under finite products, lexicographic sums, domination of subsets, and pointwise embedding of sequences. Throughout, TwoBQO r is the good-triple property of an arbitrary binary relation r (every pair-sequence has m < n < l with f(m,n) related to f(n,l)); it assumes no reflexivity or transitivity of r.",
+  "authors": [
+    "Yann Pequignot"
+  ],
+  "repository": "https://github.com/yannpequignot/TwoBQO",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.NashWilliams",
+  "declarations": [
+    "Front.IsFront.nash_williams",
+    "TwoBQO.wellQuasiOrdered",
+    "Front.IsFront.nash_williams_fin",
+    "infinite_ramsey",
+    "TwoBQO.lexSigmaQO",
+    "TwoBQO.embedForAll_wqo"
+  ],
+  "informal": {
+    "Front.IsFront.nash_williams": "Every two-coloring of a Nash-Williams front on an infinite set has an infinite restriction whose front is monochromatic.",
+    "Front.IsFront.nash_williams_fin": "Every finite coloring of a Nash-Williams front has an infinite restriction whose front is monochromatic.",
+    "infinite_ramsey": "Every finite coloring of the r-element subsets of an infinite set of natural numbers is constant on all r-element subsets of some infinite subset.",
+    "TwoBQO.wellQuasiOrdered": "Every 2-better-quasi-order is a well-quasi-order.",
+    "TwoBQO.lexSigmaQO": "The 2-BQO good-triple property is preserved by lexicographic sums: if the index relation and every fibre relation have it, so does the lexicographic-sum relation on the sigma type. This asserts nothing about reflexivity or transitivity of the sum; those are proved separately (LexSumRelQO.refl and LexSumRelQO.trans) under the corresponding order hypotheses on the index and fibres.",
+    "TwoBQO.embedForAll_wqo": "If a preorder is a 2-better-quasi-order, then its infinite sequences are well-quasi-ordered by the relation admitting a strictly monotone reindexing along which corresponding terms are related."
+  },
+  "classification": {
+    "msc2020": [
+      "03E05",
+      "05D10",
+      "06A07"
+    ],
+    "tags": [
+      "infinitary-combinatorics",
+      "ramsey-theory",
+      "better-quasi-orders",
+      "well-quasi-orders",
+      "ordinal-ranks"
+    ],
+    "branch": "infinitary combinatorics and order theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/NashWilliams.lean",
+  "statement_hash": "sha256:d6c61d9c6b0f87060fbe622d02ef473d6457418e72d10dc3ef5f38d1a8654911"
+}

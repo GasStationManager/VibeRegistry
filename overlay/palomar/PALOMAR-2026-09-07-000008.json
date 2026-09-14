@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000008",
+  "version": 1,
+  "title": "The maximal difference theorem for s-numbers",
+  "abstract": "A bound between all s-numbers (in the sense of Pietsch). The approximation  numbers a_n are the largest s-number sequence and the Hilbert numbers h_n  the smallest, so that h_n(S) <= s_n(S) <= a_n(S) holds for every s-number  sequence (s_n) and every bounded linear operator S between Banach spaces.  The formalized result gives a bound in the reverse direction:  a_n(S) <= ((n+1)^(n+1)/n^n) * h_n(S) <= e * (n+1) * h_n(S), for every bounded linear operator between normed spaces over the reals or the complex numbers. Hence, the same factor bounds the gap between any two s-number  sequences. The linear growth in n is order-optimal.  This is the main result of arXiv:2608.05024 and solves a problem of  Mityagin, Henkin (1963) and Carl, Pietsch (1978), up to a constant.",
+  "authors": [
+    "Mario Ullrich"
+  ],
+  "repository": "https://github.com/mario-ullrich/Lean-SNumbers",
+  "commit": "085b29905f46bc4e61e19be642699153bdb99c2d",
+  "project_path": null,
+  "declarations": [
+    "SNumbers.approximationNumber_le_mul_hilbertNumber",
+    "SNumbers.approximationNumber_le_e_mul_hilbertNumber"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.OA"
+    ],
+    "msc2020": [
+      "47B06",
+      "47L20",
+      "46B06",
+      "41A46"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T14:30:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "085b29905f46bc4e61e19be642699153bdb99c2d",
+        "fork_repository": "PalomarArchive/mario-ullrich--Lean-SNumbers--1867b7fd268b",
+        "source_repository": "mario-ullrich/Lean-SNumbers"
+      }
+    ]
+  },
+  "statement_hash": "sha256:041a117c2e4a80fc52b99a78b504b7a93e4c2d63de3cad7ac4160999f87c9a14"
+}

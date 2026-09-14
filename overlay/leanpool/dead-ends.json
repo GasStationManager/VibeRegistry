@@ -14,7 +14,7 @@
   ],
   "repository": "https://github.com/AxiomMath/dead-ends",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.DeadEnds",
   "declarations": [
     "LeanPool.DeadEnds.baseBDeadEnd_density_formula"
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/DeadEnds.lean",
-  "statement_hash": "sha256:2d7e7220d97ca622b586757da000f5e1f0ce39d4dd388c1ff8ff12af18b9e0d6"
+  "statement_hash": "sha256:309859ef0684be0ad3942c3325357394f8f1e51dbf39fe70199fe13513537cca"
 }

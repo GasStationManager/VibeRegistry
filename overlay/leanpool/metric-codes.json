@@ -1,0 +1,58 @@
+{
+  "source": "leanpool",
+  "upstream_id": "metric-codes",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MetricCodes",
+  "version": 1,
+  "title": "Improved asymptotic bounds for binary and spherical codes",
+  "abstract": "Formalizes asymptotic coding bounds obtained from multilevel harmonic analysis, branching rules, and spectral decompositions. The development proves a binary-code exponent strictly below the MRRW rate, constructs a strict hierarchy of spherical-code bounds, and derives the published 0.39661 asymptotic kissing-number exponent. This import incorporates substantial proof and performance optimizations by Dean Cureton.",
+  "authors": [
+    "OpenAI",
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/openai/ten-proofs",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.MetricCodes",
+  "declarations": [
+    "MetricCodes.Johnson.main_binary_theorem",
+    "MetricCodes.Spherical.HigherHierarchy.main_general",
+    "MetricCodes.Spherical.HigherHierarchy.strict_hierarchy",
+    "MetricCodes.Spherical.HigherHierarchy.NumericalMaximum.eventually_kissingNumber_lt_published"
+  ],
+  "informal": {
+    "MetricCodes.Johnson.main_binary_theorem": "For every relative distance strictly between zero and one half, the combined variational upper bound on the asymptotic binary-code rate is valid and is strictly smaller than the MRRW rate.",
+    "MetricCodes.Spherical.HigherHierarchy.main_general": "Every feasible finite interlacing certificate gives an eventual exponential upper bound for spherical codes, while the spherical-code rate is bounded by the closed hierarchy's variational rate.",
+    "MetricCodes.Spherical.HigherHierarchy.strict_hierarchy": "At every angle parameter strictly between zero and one, successive levels of both the global and localized hierarchies improve strictly, with the localized hierarchy also strictly improving the row and classical bounds.",
+    "MetricCodes.Spherical.HigherHierarchy.NumericalMaximum.eventually_kissingNumber_lt_published": "In all sufficiently large dimensions, the kissing number is at most 2 raised to 0.39661 times the dimension."
+  },
+  "classification": {
+    "msc2020": [
+      "94B65",
+      "52C17",
+      "41A60"
+    ],
+    "tags": [
+      "coding-theory",
+      "spherical-codes",
+      "kissing-number",
+      "harmonic-analysis",
+      "asymptotic-bounds"
+    ],
+    "branch": "coding theory and discrete geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/MetricCodes.lean",
+  "statement_hash": "sha256:fedaff70247c6c1e41042366b132fcf04d442b869092ff0801cd1e15e1c9f76f"
+}

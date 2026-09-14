@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-14-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-14-000003",
+  "version": 1,
+  "title": "A proof of Nivat's conjecture",
+  "abstract": "A Lean+mathlib proof of Nivat's conjecture: Given a finite alphabet A, we consider configurations c: Z^2 -> A, which are arbitrary maps that can be thought of as colorings of the 2D lattice. Writing P_c(m, n) for the number of distinct m-by-n block patterns occurring in a configuration c, Nivat conjectured that if P_c(m, n) <= mn for some positive m and n, then c is periodic; that is, there exists nonzero h such that c(v+h) = c(v) for all v. The proof is due to GPT-6 Pro.",
+  "authors": [
+    "Boon Suan Ho"
+  ],
+  "repository": "https://github.com/boonsuan/nivat",
+  "commit": "0d94547e934418c9d1b75fcbb7d6af493e86759d",
+  "project_path": null,
+  "declarations": [
+    "NivatSubmission.nivat"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.CO"
+    ],
+    "msc2020": [
+      "37B10",
+      "68R15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-14T04:54:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0d94547e934418c9d1b75fcbb7d6af493e86759d",
+        "fork_repository": "PalomarArchive/boonsuan--nivat--8f5b1fc73411",
+        "source_repository": "boonsuan/nivat"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7c6efb4272f8d9f61581d9350744afc089d1d1c93c13696b14d5fc1251bd5aee"
+}

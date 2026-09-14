@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-12-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-12-000001",
+  "version": 1,
+  "title": "The Broughton--Huff theorem on increasing unions of sigma-fields",
+  "abstract": "A Lean formalization of the Broughton--Huff theorem that the ordinary union of a strictly increasing sequence of sigma-fields is not a sigma-field. The proof also proves the existence of a set measurable in the lattice supremum but in none of the individual sigma-fields.",
+  "authors": [
+    "Yi-Jing Tseng"
+  ],
+  "repository": "https://github.com/KiringYJ/mathlib4",
+  "commit": "9e0a67ce31f1dbac121879a94e9e02319e273a50",
+  "project_path": "Palomar/BroughtonHuff",
+  "declarations": [
+    "BroughtonHuff.exists_measurableSet_iSup_not_measurableSet_of_strictMono",
+    "BroughtonHuff.not_exists_measurableSpace_iUnion_of_strictMono"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "28A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-12T01:09:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9e0a67ce31f1dbac121879a94e9e02319e273a50",
+        "fork_repository": "PalomarArchive/leanprover-community--mathlib4--67b3d817d8a2",
+        "source_repository": "KiringYJ/mathlib4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:12fccbde569d719e05424b8cd236fe1c0d931fbdcb4f655d41293fa7ee1fda91"
+}

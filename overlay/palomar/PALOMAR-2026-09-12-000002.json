@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-12-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-12-000002",
+  "version": 1,
+  "title": "Optimal Fully Dynamic Matching on the Line: Lean Upper Bound",
+  "abstract": "A Lean 4 formalization of the main constructive upper bound for fully dynamic matching on the unit interval. For every inventory size m at least two, the development constructs a measurable online policy for iid uniform demand and replenishment. From every fixed initial inventory it proves a limsup root-mean-square one-period cost of at most C log(m+1)/m, with the explicit universal constant C = 72000/log(2). After a scheduled m-period replacement phase, it proves the same upper bound for expected average cost at every horizon N at least 2m^2. The compared result deliberately excludes the manuscript's implementation-complexity sentence because the development has no operational cost semantics linking abstract counters to execution.",
+  "authors": [
+    "Yash Kanoria"
+  ],
+  "repository": "https://github.com/ykanoria/FD1d-Lean",
+  "commit": "4c2fd462ae8cecb7fb21694174226c8d63b2f279",
+  "project_path": null,
+  "declarations": [
+    "FD1D.V5.Palomar.optimalDynamicMatchingUpperBound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC",
+      "math.PR"
+    ],
+    "msc2020": [
+      "68W27",
+      "90C40",
+      "60J20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-12T05:09:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4c2fd462ae8cecb7fb21694174226c8d63b2f279",
+        "fork_repository": "PalomarArchive/ykanoria--FD1d-Lean--8f90e399686d",
+        "source_repository": "ykanoria/FD1d-Lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0f53420a5b0f648cc6e3622c052f5563a0eef3bcc6d4750af0837ba53302bdae"
+}

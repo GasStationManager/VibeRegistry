@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-12-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-12-000003",
+  "version": 1,
+  "title": "Confinement schemas and the reach of block certificates for powers of rational numbers modulo one",
+  "abstract": "A Lean 4 / Mathlib development of the second paper on the sets Z_{p/q}(s, s+t) = {ξ > 0 : {ξ(p/q)ⁿ} ∈ [s, s+t) for all n ≥ 0}, the generalized Z-numbers of Flatto, Lagarias and Pollington. The first paper built a corpus of block certificates for individual statements Z_{p/q}(U) = ∅. This paper replaces parts of that corpus by theorems, and then asks what the certificate format can and cannot reach. Thirty certificates in the regime p > q² collapse into one closed-form criterion on the single real parameter ε = {(p−q)s}, settling a set of positions of measure 1 − 2q²/(p(p+q)) at every base and for every real ξ ≠ 0; the criterion extends to a family indexed by a depth K, identified with the finiteness criterion of [FLP95] and with the parameter intervals J¹_b of [Bug04], the depth playing the role of the denominator of the rotation number. An explicit escape time for L ≤ ξ ≤ X is extracted from the soundness proof, and every unranked certificate of [Ste26] is made effective by it. A completeness theorem says the verdict is forced on the class where a certificate can exist — a finite hold set — and that an infinite hold set refuses every unranked certificate at every depth and over every denominator, which turns a bounded computer search into a theorem. A measure-theoretic depth–size bound 1 ≤ 2δ(K + 2 + log_{p/q} 2B) prices [KK17, Prob. 6.1] for this format. Finally a rank-stratified certificate gives ‖ξ(3/2)ⁿ‖ < 2/7 = 0.285714… infinitely often for every ξ ≠ 0, past the 31/81 = 0.38271… of [Dub19] as a window and past the corpus's own 1/3 as a nearest-integer constant.",
+  "authors": [
+    "Ralf Stephan"
+  ],
+  "repository": "https://github.com/rwst/Confinement-Certificates",
+  "commit": "e773310aa60d010038c3b1a02ee09dcaacce064d",
+  "project_path": null,
+  "declarations": [
+    "Z32.ZSet_eq_empty_of_certifiedK",
+    "Z32.not_forall_fract_mem_Ico_of_certifiedK",
+    "Z32.ZSet_eq_empty_of_lowBand",
+    "Z32.not_forall_fract_mem_Ico_of_lowBand",
+    "Z32.ZSet_eq_empty_of_certified",
+    "Z32.not_forall_fract_mem_Ico_of_certified",
+    "Z32.exists_fract_notMem_le_of_certifiedK",
+    "Z32.holdSet_finite_imp",
+    "Z32.depth_size",
+    "Z32.depth_size_logb",
+    "Z32.ZSet_three_two_two_seven",
+    "Z32.two_seven_empty",
+    "Z32.not_eventually_two_seven",
+    "Z32.not_forall_two_seven_le_abs_sub_round"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.DS"
+    ],
+    "msc2020": [
+      "11J71",
+      "11K06",
+      "37E05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-12T09:59:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e773310aa60d010038c3b1a02ee09dcaacce064d",
+        "fork_repository": "PalomarArchive/rwst--Confinement-Certificates--8fe7a8378a8f",
+        "source_repository": "rwst/Confinement-Certificates"
+      }
+    ]
+  },
+  "statement_hash": "sha256:16b85d7cf8672befe509d435917be96217d798d7086e1a5cf788958ec36dcfff"
+}

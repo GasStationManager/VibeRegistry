@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Timeroot/IsoGraph",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.IsoGraph",
   "declarations": [
     "IsoGraph.Canon.canonAdj_eq_iff",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/IsoGraph.lean",
-  "statement_hash": "sha256:3ca0c7e150db4255afbdb12222fdc11bf2dfbbfea0494cafd3ac667c94e4e96c"
+  "statement_hash": "sha256:be65853cea0973fd2282e8b6269c5fbdd4bc3530cfb9e20da84b8f22ff13264f"
 }

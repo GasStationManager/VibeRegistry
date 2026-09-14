@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/Vilin97/forward_euler",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.ForwardEuler",
   "declarations": [
     "ODE.EulerMethod.dist_path_le",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ForwardEuler.lean",
-  "statement_hash": "sha256:72bac5234253c896f3fccd4b7fa5fa65824d2b244d8ddcd60a48ea13a012368b"
+  "statement_hash": "sha256:2870943c840293877743a203b91b00c5dd5b4b71137f7b3512474d8a571f28e9"
 }

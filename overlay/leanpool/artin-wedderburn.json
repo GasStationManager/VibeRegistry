@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/JobPetrovcic/ArtinWedderburn",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.ArtinWedderburn",
   "declarations": [
     "LeanPool.ArtinWedderburn.ArtinWedderburnForPrime"
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ArtinWedderburn.lean",
-  "statement_hash": "sha256:d96969d16a106be25ff080425c1a5ab7641e9da6d6a8b9399fabf972e2cc7388"
+  "statement_hash": "sha256:2ac9ca2e2d94f9b4fd71baaf2fdf40e06a1021fccedd57726765e3a9d69e7d3e"
 }

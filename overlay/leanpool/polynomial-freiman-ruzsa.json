@@ -1,0 +1,61 @@
+{
+  "source": "leanpool",
+  "upstream_id": "polynomial-freiman-ruzsa",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PFR",
+  "version": 1,
+  "title": "The polynomial Freiman–Ruzsa conjecture",
+  "abstract": "Formalizes Marton's polynomial Freiman–Ruzsa conjecture by the entropy method, including the characteristic-two bounds with exponents twelve and nine, the bounded-torsion theorem with an explicit exponent, and quantitative consequences for affine dimension and approximate homomorphisms. The supporting development builds entropic Ruzsa distance, multidistance, conditional entropy, and additive-energy machinery. This optimized import reuses the pooled Zhang–Yeung entropy and kernel library in place of duplicate upstream modules while preserving all six closed headline statements.",
+  "authors": [
+    "PFR contributors"
+  ],
+  "repository": "https://github.com/teorth/pfr",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.PFR",
+  "declarations": [
+    "Marton.pfr_conjecture",
+    "Marton.pfr_conjecture_nine",
+    "Marton.torsion_pfr_conjecture",
+    "Marton.weak_pfr_int",
+    "Marton.homomorphism_pfr",
+    "Marton.approx_hom_pfr"
+  ],
+  "informal": {
+    "Marton.pfr_conjecture": "A nonempty finite set A of doubling at most K in an abelian group of exponent two is covered by fewer than 2 K^12 cosets of a finite subgroup no larger than A.",
+    "Marton.pfr_conjecture_nine": "Strengthens the characteristic-two covering theorem to fewer than 2 K^9 cosets of a finite subgroup no larger than A.",
+    "Marton.torsion_pfr_conjecture": "In an abelian group of exponent m at least two, a nonempty finite set of doubling at most K is covered by fewer than m K^(256 m^3 + 1) cosets of a subgroup no larger than A.",
+    "Marton.weak_pfr_int": "A nonempty finite set of doubling at most K in a finite-rank free abelian group has a subset of relative size at least K^(-34) and affine dimension at most (80 / log 2) log K.",
+    "Marton.homomorphism_pfr": "A map between finite abelian groups of exponent two whose additive defects lie in S differs from a homomorphism by a map taking at most |S|^10 values.",
+    "Marton.approx_hom_pfr": "A map between finite abelian groups of exponent two that is additive on at least a 1/K fraction of pairs agrees with a homomorphism on at least (|G| / (2^144 K^122) - 1) / 2 points."
+  },
+  "classification": {
+    "msc2020": [
+      "11B30",
+      "11P70",
+      "20K01",
+      "94A17"
+    ],
+    "tags": [
+      "additive-combinatorics",
+      "polynomial-freiman-ruzsa",
+      "entropy",
+      "approximate-homomorphisms"
+    ],
+    "branch": "additive combinatorics and information theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/PFR.lean",
+  "statement_hash": "sha256:eebd03f6fd2b7978faeff27603d3fb012da98b5e5b93b398ca545dd76c420cfe"
+}

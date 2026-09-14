@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/moser-lattice-colorings-lean",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.MoserLatticeColorings",
   "declarations": [
     "LeanPool.MoserLatticeColorings.MoserRing.both_colorings_are_geometric",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MoserLatticeColorings.lean",
-  "statement_hash": "sha256:b6fa264ca8ace020b7bb6ad9d26a24c1e647629c8f6a5e46fea395c591cc966e"
+  "statement_hash": "sha256:9e887488b2778d6249da1a1a0d195aa92b927948d58962fbcef7ce08ddd659af"
 }

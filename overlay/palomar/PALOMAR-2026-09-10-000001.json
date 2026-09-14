@@ -1,0 +1,89 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-10-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-10-000001",
+  "version": 1,
+  "title": "Short-Cycle Decompositions and Full Zombie Damage in Cubic Graphs",
+  "abstract": "For every finite simple connected bridgeless cubic graph G, the survivor can force full zombie damage if and only if G is not isomorphic to K4, K3,3, the triangular prism or the cube. In particular, for order n at least 10 this proves Randy Davila's Conjecture 24, zdmg(G)=n, with an explicit bound of 2n(n+1) survivor moves against every initial zombie position and every legal geodesic reply. The game formalization retains starting and turn order, survivor passes, capture and distinct-vertex damage, and proves the numerical payoff's connection to bounded and eventual strategies. The argument classifies short-cycle components, bounds their boundaries by four ports and composes metric exit and target routes into an ambient-graph strategy. Structural expansion corollaries and recurrent-coverage extensions accompany the characterization. The 39 selected results connect structural cubic-graph theory with extremal damage and worst-case strategies in graph pursuit. All proof sources are included in one Lake project.",
+  "authors": [
+    "Lennart Rudolph"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "f8f870fb1ce96d966ff39a8470f7f57011c398bb",
+  "project_path": "zenodo-22667596/palomar",
+  "declarations": [
+    "PalomarVerified.full_damage_within_iff",
+    "PalomarVerified.full_damage_iff",
+    "PalomarVerified.davila_conjecture_24",
+    "PalomarVerified.full_damage_of_clean_edge",
+    "PalomarVerified.recurrent_coverage_of_clean_edge",
+    "ZombieMain.mobius_recurrent_coverage",
+    "PalomarVerified.four_boundary_edges",
+    "PalomarVerified.short_component_expansion",
+    "PalomarVerified.four_port_principle",
+    "PalomarVerified.cycle_union_classification",
+    "ZombieDamage.Graph.geodesicReply_iff_commonNeighbor",
+    "ZombieDamage.Graph.cleanEdge_forces_reply",
+    "ZombieDamage.Graph.short_twoStep_closed",
+    "ZombieDamage.Verified.finite_component_routing",
+    "PalomarVerified.metric_exit_contract",
+    "PalomarVerified.metric_target_contract",
+    "ZombieDamage.TriangleRoute.prescribed_exit",
+    "ZombieDamage.TriangleRoute.target_route",
+    "ZombieDamage.DiamondRoute.target_route",
+    "ZombieDamage.Task.fullGame_metricForcesWithin",
+    "ZombieDamage.FullGame.fullDamage_iff_eventual",
+    "ZombieDamage.Graph.MetricCertificate.distance",
+    "ZombieDamage.Task.metricForcesWithin_fullGame",
+    "ZombieDamage.FullGame.fullDamage_of_contract",
+    "ZombieDamage.FullGame.universal_vertex_not_fullDamage",
+    "ZombieDamage.FullGame.pass_damages_source",
+    "ZombieDamage.CycleGame.full_damage",
+    "ZombieDamage.MobiusGame.full_damage",
+    "ZombieDamage.PrismGame.full_damage",
+    "ZombieDamage.Exceptions.not_full_damage",
+    "ZombieDamage.GraphIso.fullDamage_iff",
+    "ZombieDamage.ShortComponentModel.metricForcesWithin_ambient",
+    "ZombieDamage.FullGame.PermissiveForces.iff_normalized",
+    "ZombieDamage.FullGame.fullDamage_iff_permissive",
+    "ZombieDamage.FullGame.zombieDamageNumber_le_card",
+    "ZombieDamage.FullGame.canForceDamage_iff_le_number",
+    "ZombieDamage.FullGame.canForceDamage_iff_eventual",
+    "ZombieDamage.FullGame.zombieDamageNumber_eq_card_iff",
+    "PalomarVerified.davila_conjecture_24_damage_number"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "05C57",
+      "05C75",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-10T02:22:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f8f870fb1ce96d966ff39a8470f7f57011c398bb",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:82a2d138e24ebe4b457e24d4fbdb7f0eac7895bb56d1d2afd40687cbe28d6e80"
+}

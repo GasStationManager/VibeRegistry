@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000013",
+  "version": 1,
+  "title": "gn-lean: the Gurvich–Naumova partition conjecture",
+  "abstract": "A Lean 4 proof that for every nonnegative integer n, the distinct integers 1,...,n can be partitioned into nonempty sets of at most three elements, each having sum equal to a nonnegative integer power of three. This proves Conjecture 1 of Gurvich and Naumova, arXiv:2508.00946v3. The development constructs permutations with all prescribed nonzero displacements, derives signed zero-sum triple partitions, proves a contraction and complement-pair extension, and completes strong induction on n. All required finite certificates and unbounded sequence constructions are proved in Lean.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/gn-lean",
+  "commit": "73bb87b16da8c053fd07e0d4dc43732b74335a3b",
+  "project_path": null,
+  "declarations": [
+    "GurvichNaumova.partition_into_powers_of_three"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05A17",
+      "11B75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T20:54:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "73bb87b16da8c053fd07e0d4dc43732b74335a3b",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--gn-lean--3044e25b73cc",
+        "source_repository": "JD-Jones-ASES/gn-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4561f2ad6202cb68a6aa2f6e0efe6c38f42c886e77b2657ee998848db2292bd5"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "infinite-connes-rigidity",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/InfiniteConnesRigidity",
+  "version": 1,
+  "title": "Infinite counterexamples to Connes's rigidity conjecture",
+  "abstract": "Constructs one finitely generated property-(T) ICC group and an infinite family of finitely generated property-(T) ICC groups that are pairwise nonisomorphic and are each nonisomorphic to the first group, while all of their tracial group von Neumann algebras are normally star-isomorphic. This unconditional infinite-family result is independent of the pooled conditional two-group Connes-rigidity formalization.",
+  "authors": [
+    "OpenAI",
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/openai/ten-proofs",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.InfiniteConnesRigidity",
+  "declarations": [
+    "ConnesRigidity.infiniteConnesRigidity",
+    "ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors"
+  ],
+  "informal": {
+    "ConnesRigidity.infiniteConnesRigidity": "Registry-friendly alias of the exact canonical infinite-family Connes-rigidity counterexample theorem below.",
+    "ConnesRigidity.exists_infinite_pairwise_nonisomorphic_propertyT_icc_groups_with_isomorphic_factors": "There exist a finitely generated property-(T) ICC group and an infinite sequence of finitely generated property-(T) ICC groups such that all their tracial group von Neumann algebras are normally star-isomorphic, although the sequence is pairwise nonisomorphic and none of its groups is isomorphic to the distinguished group."
+  },
+  "classification": {
+    "msc2020": [
+      "46L10",
+      "20F65",
+      "22D10"
+    ],
+    "tags": [
+      "operator-algebras",
+      "von-neumann-algebras",
+      "property-t",
+      "group-theory",
+      "connes-rigidity"
+    ],
+    "branch": "operator algebras and geometric group theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/InfiniteConnesRigidity.lean",
+  "statement_hash": "sha256:adafcf1c1fd91e662157a983acba2065d50909f5626f0990a051942a37b20541"
+}

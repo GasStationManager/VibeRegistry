@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/AxiomMath/ZetaZeros",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.ZetaZeros",
   "declarations": [
     "ZetaZeros.simple_proportion_d4",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ZetaZeros.lean",
-  "statement_hash": "sha256:910f8e174fb64bc05f5b5405367921085fd78bdc242e8f6fd5075489cb2033ed"
+  "statement_hash": "sha256:0391b4c39ff1c2a627b60e7edba6e3c69e345e7aedee41d46a9137c68ad7d774"
 }

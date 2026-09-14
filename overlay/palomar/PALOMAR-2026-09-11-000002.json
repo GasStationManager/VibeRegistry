@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-11-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-11-000002",
+  "version": 1,
+  "title": "The Kolmogorov-Arnold representation theorem",
+  "abstract": "Every continuous real function on the closed unit n-cube is a superposition of continuous functions of one variable and addition, with the inner functions universal for the dimension. Three forms, each implying the next, named for who is credited with the statement. Lorentz-Sprecher form: there are positive constants lam_1, ..., lam_n and continuous strictly increasing psi_0, ..., psi_2n : R -> R, all depending only on n, such that every f continuous on [0,1]^n is f(x) = sum_{q=0}^{2n} g(sum_{p=1}^{n} lam_p psi_q(x_p)) on the cube for some continuous g : R -> R depending on f. Lorentz's form: continuous monotone (non-decreasing) inner functions phi_{q,p} : R -> R indexed by both q and p, and a single continuous outer function Phi. Kolmogorov's form: continuous phi_{q,p} and 2n+1 continuous outer functions Phi_q -- the theorem as proved in 1957 and as usually cited. In every form the inner functions are quantified before f, so one family serves every f; that is the content of the theorem. The statements are made for every n, the trivial cases n = 0 and n = 1 included, and are written in Mathlib's vocabulary alone -- Continuous, ContinuousOn, StrictMono, Monotone, Set.Icc on Fin n -> R and finite sums -- with no definition of their own, so that each can be audited against the informal statement without first accepting a definition.",
+  "authors": [
+    "George A. Constantinides"
+  ],
+  "repository": "https://github.com/geoconuk/lean-misc-math",
+  "commit": "7a3052cdb08bba42d782957568e06ae08d52d8d8",
+  "project_path": null,
+  "declarations": [
+    "MiscMath.Analysis.kolmogorov_arnold_lorentz_sprecher",
+    "MiscMath.Analysis.kolmogorov_arnold_lorentz",
+    "MiscMath.Analysis.kolmogorov_arnold"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "26B40",
+      "41A63"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-11T19:58:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7a3052cdb08bba42d782957568e06ae08d52d8d8",
+        "fork_repository": "PalomarArchive/geoconuk--lean-misc-math--79e5c7089a59",
+        "source_repository": "geoconuk/lean-misc-math"
+      }
+    ]
+  },
+  "statement_hash": "sha256:da271adc6fc50ada24a283d298a858ce4a5e9a35658f9d58785f5ff77e4a0a25"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-14-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-14-000002",
+  "version": 1,
+  "title": "A Surjunctive Group That Is Not Sofic",
+  "abstract": "We formalize the existence of a finitely generated surjunctive group that is not sofic. This answers negatively the converse to the Gromov-Weiss surjunctivity theorem, recorded as open problem OP-11 by Ceccherini-Silberstein and Coornaert and as Problem 1.1 by Bowen and Chapman. The witness is the symmetric double G *_Gamma G, where Gamma = EL_3(F_2[x_1,x_2,x_3]) and G = EL_3(F_2[x_1^+-1,x_2^+-1,x_3^+-1]) semidirect EL_3(Z), with the action given by monomial substitution. Kun and Thom constructed this pair and proved the double nonsofic. The new ingredient here is a surjunctivity theorem for symmetric doubles of surjunctive groups. The Lean development proves both halves for this witness, including the required permutation centralizer normalization theorem. The challenge states surjunctivity through finite-memory cellular automata and soficity through finite normalized-Hamming models. The two selected declarations assert the finitely generated counterexample and the failure of the universal converse.",
+  "authors": [
+    "Sauers"
+  ],
+  "repository": "https://github.com/SauersML/group-approximation",
+  "commit": "232c77f169ec66b27fd480d5c19474f519d359b7",
+  "project_path": null,
+  "declarations": [
+    "SurjunctiveNonsofic.not_all_surjunctive_groups_sofic",
+    "SurjunctiveNonsofic.exists_finitelyGenerated_surjunctive_not_sofic"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "math.DS"
+    ],
+    "msc2020": [
+      "20F69",
+      "37B15",
+      "20E06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-14T02:25:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "232c77f169ec66b27fd480d5c19474f519d359b7",
+        "fork_repository": "PalomarArchive/SauersML--group-approximation--d16b34e6ab02",
+        "source_repository": "SauersML/group-approximation"
+      }
+    ]
+  },
+  "statement_hash": "sha256:57c1dcc22ede7106d2da2937da968b0f5499b3939f86f265019daecc0c29984e"
+}

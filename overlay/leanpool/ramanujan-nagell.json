@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/BarinderBanwait/ramanujan_nagell",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.RamanujanNagell",
   "declarations": [
     "ramanujanNagellExact"
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/RamanujanNagell.lean",
-  "statement_hash": "sha256:832e94a8e39dec7b5603acff95314d3ece311198af6dc1eb68c2cb496f2e9c51"
+  "statement_hash": "sha256:32ad5feb8e66812c8ca5d98947c537cdd07a0316468bc7903eee708d8508f806"
 }

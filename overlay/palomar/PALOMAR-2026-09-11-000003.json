@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-11-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-11-000003",
+  "version": 1,
+  "title": "ry-lean: sets avoiding {x, x+y, x+y²} — Younis's two-set construction and the exponent 0.77028",
+  "abstract": "A Lean 4 proof of Younis's lower-bound construction for subsets of {1,...,N} with no configuration {x, x+y, x+y^2} (y nonzero), in its two-set form: for every square-free modulus m and residue sets R1, R2 modulo m with R1 square-difference-free and no nonzero difference of R2 equal to the square of a difference of R1, the interval {1,...,N} contains a configuration-free set of size at least C(rho) N^rho for every rho below 1/2 + log|R1|/(3 log m) + log|R2|/(6 log m). The theorem is instantiated at m = 145 with |R1| = 10 and |R2| = 32, giving the exponent 0.770287..., which is proved to exceed Younis's exponent 0.768503... (m = 65, sizes 7 and 17) by exact comparisons of integer powers; decimal bounds 0.7702 < gamma < 0.77029 are also proved, and the bound is stated in liminf form for the counting function D(N).",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/ry-lean",
+  "commit": "a4edb0ea61422813cfd23b319cb28c62f09129bf",
+  "project_path": null,
+  "declarations": [
+    "NonlinearRoth.younis_period_two",
+    "NonlinearRoth.record_pointwise",
+    "NonlinearRoth.record_liminf",
+    "NonlinearRoth.younis_lt_record",
+    "NonlinearRoth.record_exponent_bounds"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B30",
+      "11B75",
+      "05D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-11T20:49:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a4edb0ea61422813cfd23b319cb28c62f09129bf",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--ry-lean--38298ff2fa13",
+        "source_repository": "JD-Jones-ASES/ry-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:72fc4bfe3416a7fad7c97c1342147d49e9edf951d71153b64d9b79089cffb9b0"
+}

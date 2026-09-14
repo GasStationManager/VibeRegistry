@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-08-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-08-000005",
+  "version": 1,
+  "title": "Sharp Bounds for Graph Matrices",
+  "abstract": "A Lean formalization of matching polynomial and logarithmic orders for the norm of every fixed finite simple graph matrix in the globally injective dense independent-sign model. For each fixed positive real moment order p, the pth norm moment to the power 1/p is bounded above and below by positive shape-dependent constants times n^((h+i0-s)/2) log(2n)^(b*/2). Here h is the number of graph roles, i0 counts isolated interior roles, s is the minimum boundary-separator size, and b* is the maximum number of attached floating components over minimum separators. The expected-norm specialization and the half-integer logarithmic exponent are also proved.",
+  "authors": [
+    "Diar Heidary"
+  ],
+  "repository": "https://github.com/DiarHaidary/Sharp-Bounds-for-Graph-Matrices",
+  "commit": "01994362f8543743d556e7544d2538e93c62c02b",
+  "project_path": null,
+  "declarations": [
+    "GraphMatrices.Classification.full_dense_sign_classification",
+    "GraphMatrices.Classification.expected_dense_sign_classification",
+    "GraphMatrices.Classification.classification_logarithmic_exponent"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.CO"
+    ],
+    "msc2020": [
+      "60B20",
+      "05C80",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-08T20:15:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "01994362f8543743d556e7544d2538e93c62c02b",
+        "fork_repository": "PalomarArchive/DiarHaidary--Sharp-Bounds-for-Graph-Matrices--a05fb4a3632c",
+        "source_repository": "DiarHaidary/Sharp-Bounds-for-Graph-Matrices"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2f50e2a60637d477ab3d8fc58afd74601818016a92931f20fdd96288615f8c4a"
+}

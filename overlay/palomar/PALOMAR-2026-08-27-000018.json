@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-08-27-000018",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-08-27-000018",
-  "version": 2,
-  "title": "shaikidris/CollatzEndpointTransport-Palomar",
-  "abstract": "A Lean 4 formalization of a quantitative stability theorem for the one-block endpoint-pullback operator of the shortcut Collatz map. If an arbitrary target set has at most C N^(1-D) exceptions among the positive integers up to N, then, for every central Renyi order 1/2 < theta < 1, every admissible fixed central window, and every positive transport coefficient below the explicit asymptotic slope, its pullback through one floor(log_2 n)-step endpoint is (K(C+1)D^(-(1+theta)), transport*D)-dense whenever D is sufficiently small. The cutoff and K depend only on the fixed moment and transport parameters, not on the target set or C,D. This is an operator-level arbitrary-target theorem, not a pointwise convergence or eventual-descent claim.",
+  "version": 3,
+  "title": "Refined Arbitrary-Target Transport Through Collatz Endpoints",
+  "abstract": "A Lean 4 formalization of a quantitative stability theorem for the one-block endpoint-pullback operator of the shortcut Collatz map. If an arbitrary target set has at most C N^(1-D) exceptions among the positive integers up to N, then, for every central Renyi order 1/2 < theta < 1, every admissible fixed central window, and every positive transport coefficient below the explicit asymptotic slope, its pullback through one floor(log_2 n)-step endpoint is (K(1+C^(theta/(1+theta)))D^(-theta/(2(1+theta))), transport*D)-dense whenever D is sufficiently small. The cutoff and K depend only on the fixed moment and transport parameters, not on the target set or C,D.",
   "authors": [
     "Idris Ali Shaik"
   ],
   "repository": "https://github.com/shaikidris/CollatzEndpointTransport-Palomar",
-  "commit": "c8958144e7853723e1e459afe368716e2059a1f6",
+  "commit": "9505e8fd59f2b49a2dad269436766319c57b4012",
   "project_path": null,
   "declarations": [
     "CollatzEndpointTransportPalomar.quantitative_arbitrary_target_endpoint_transport"
@@ -17,15 +17,17 @@
   "informal": {},
   "classification": {
     "arxiv": [
-      "math.NT"
+      "math.NT",
+      "math.PR"
     ],
     "msc2020": [
       "11B83",
-      "37P99"
+      "37P99",
+      "60F10"
     ]
   },
   "license": "",
-  "published_at": "2026-09-02T01:19:37Z",
+  "published_at": "2026-09-07T08:48:04Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -39,11 +41,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "c8958144e7853723e1e459afe368716e2059a1f6",
+        "commit": "9505e8fd59f2b49a2dad269436766319c57b4012",
         "fork_repository": "PalomarArchive/shaikidris--CollatzEndpointTransport-Palomar--daed96355413",
         "source_repository": "shaikidris/CollatzEndpointTransport-Palomar"
       }
     ]
   },
-  "statement_hash": "sha256:efc110df41c190d21f50b66e2c43c238d6cca12e97194e82e134e7da28fad7c4"
+  "statement_hash": "sha256:81d5f69c3e5851fc5fdba6bb8c063a6cb92406949264e918d4e86a7d917a079a"
 }

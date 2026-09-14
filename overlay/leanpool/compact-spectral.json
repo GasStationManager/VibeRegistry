@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/abenenson/compact-spectral",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.CompactSpectral",
   "declarations": [
     "CompactSelfAdjoint.exists_hasEigenvector_iSup_or_iInf_of_isCompactOperator",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CompactSpectral.lean",
-  "statement_hash": "sha256:ac98a208fb186b5451fdf71d01d3fb477c65ca77fbcf86faa5ac71085cef57e2"
+  "statement_hash": "sha256:2ba99070cfcd9aba3a94cb41879557b18b711696764021e6cbdc1765b96606f4"
 }

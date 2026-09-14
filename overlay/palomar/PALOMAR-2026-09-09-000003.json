@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-09-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-09-000003",
+  "version": 1,
+  "title": "Rerandomized Subsampled Trigonometric Transforms",
+  "abstract": "A Lean formalization of a two-round real Walsh subsampled randomized Hadamard embedding. For every fixed d-dimensional real subspace of a Walsh space of dimension n, independent unbiased diagonal signs and a uniform sample of M distinct rows preserve every squared Euclidean norm within factors 1-epsilon and 1+epsilon with probability at least 1-delta. The prescribed M is at most n and at most [8192(1+432/delta)+1]d/epsilon^2. Thus, at any fixed failure probability, the embedding dimension is O(d/epsilon^2), the scaling asked for in Problem 5.6 of arXiv:2602.05394v3 for its Walsh model. The recorded Challenge/Solution declaration states the actual finite sampling law, transform, success event, and quantitative dimension bound.",
+  "authors": [
+    "Diar Heidary"
+  ],
+  "repository": "https://github.com/DiarHaidary/Rerandomized-Subsampled-Trigonometric-Transforms",
+  "commit": "929653a019eb4910fc6efb9cb34cc3c3c2f949d4",
+  "project_path": null,
+  "declarations": [
+    "RerandomizedSTT.problem_5_6"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NA",
+      "cs.DS"
+    ],
+    "msc2020": [
+      "60B20",
+      "68W20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-09T21:41:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "929653a019eb4910fc6efb9cb34cc3c3c2f949d4",
+        "fork_repository": "PalomarArchive/DiarHaidary--Rerandomized-Subsampled-Trigonometric-Transforms--426a661d68e6",
+        "source_repository": "DiarHaidary/Rerandomized-Subsampled-Trigonometric-Transforms"
+      }
+    ]
+  },
+  "statement_hash": "sha256:91e8d680871ebfbcef5f413622af0abf9bb901fd9162fe3e03bfb5aaed6dd46d"
+}

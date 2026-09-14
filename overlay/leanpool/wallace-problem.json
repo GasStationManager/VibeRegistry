@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "wallace-problem",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Wallace",
+  "version": 1,
+  "title": "The Wallace problem in ZFC",
+  "abstract": "Formalizes in ZFC a Hausdorff countably compact group topology without nontrivial convergent sequences on every torsion-free Abelian group of cardinality continuum. It specializes the construction to the rational direct sum and the additive real group, and derives a commutative Tychonoff countably compact cancellative semigroup that is not a group.",
+  "authors": [
+    "Juliane Trianon Fraga",
+    "Vinicius de Oliveira Rodrigues"
+  ],
+  "repository": "https://github.com/vo-rodrigues/wallace-problem-zfc-paper",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.Wallace",
+  "declarations": [
+    "Wallace.commutativeTychonoffWallaceCounterexampleExists",
+    "Wallace.torsionFreeAbelianGroup_mainTheorem_exact",
+    "Wallace.continuumRationalGroup_and_real_mainTheorem"
+  ],
+  "informal": {
+    "Wallace.torsionFreeAbelianGroup_mainTheorem_exact": "Every torsion-free Abelian group of cardinality continuum admits a Hausdorff countably compact group topology with no nontrivial convergent sequences.",
+    "Wallace.continuumRationalGroup_and_real_mainTheorem": "Both the continuum-indexed rational direct sum and the additive group of real numbers admit such Hausdorff countably compact group topologies without nontrivial convergent sequences.",
+    "Wallace.commutativeTychonoffWallaceCounterexampleExists": "There exists a commutative Tychonoff countably compact topological semigroup with two-sided cancellation which is not a group."
+  },
+  "classification": {
+    "msc2020": [
+      "22A05",
+      "54D30",
+      "20K20"
+    ],
+    "tags": [
+      "wallace-problem",
+      "topological-groups",
+      "set-theoretic-topology"
+    ],
+    "branch": "set-theoretic topology and topological algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Wallace.lean",
+  "statement_hash": "sha256:28f2ca5a5f8c3a8641bded5c5a850a002829ade88e4464059e997b4120c0a077"
+}

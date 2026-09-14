@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Wondermonger-daydreaming/semicircle-catalan",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.SemicircleCheck",
   "declarations": [
     "card_noncrossingPairing_eq_catalan",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SemicircleCheck.lean",
-  "statement_hash": "sha256:9eab2a5d48129ff4b82652f379933da694c315c82f7b0e7ceeaa2999fec6d894"
+  "statement_hash": "sha256:7701d423b6715e1f8a155637f8d6e7841f7950648dd70c45f97de3a1f69bc2d3"
 }

@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/Dominique-Lawson/Directed-Topology-Lean-4",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.DirectedTopologyLean4",
   "declarations": [
     "DirectedSpace",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/DirectedTopologyLean4.lean",
-  "statement_hash": "sha256:30b747af0ddc1c4c8a982f08d64eccfc372e415982ca796578444d89864bbc4d"
+  "statement_hash": "sha256:79b2835b4f0f29b4c0c3255a1c97d3a90a6e16880515c0646e2c4f0c36b99de9"
 }

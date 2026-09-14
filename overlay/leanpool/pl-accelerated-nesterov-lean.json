@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/M1ngXU/PL-Accelerated-Nesterov-Lean",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.PLAcceleratedNesterovLean",
   "declarations": [
     "PLAcceleratedNesterovLean.nesterov_pl_accelerated_rate",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PLAcceleratedNesterovLean.lean",
-  "statement_hash": "sha256:c6d86af4137277482a8ed19e988bbff73f19e6fb081fd80c9253d5613bc9bd23"
+  "statement_hash": "sha256:4aef81734c2f25922089de009a9c00211e191c35be0f3c10010d74b165343847"
 }

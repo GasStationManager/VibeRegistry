@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-11-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-11-000004",
+  "version": 1,
+  "title": "All-ones polynomials over GF(2) under the substitution X ↦ X² + X + 1 (OEIS A071642, TheoremDB P12771)",
+  "abstract": "Formalizes in Lean 4 the resolution of a 2019 OEIS conjecture of L. H. Gallardo (comment on A071642; TheoremDB P12771): for every n ≥ 2 the all-ones polynomial 1 + X + ⋯ + Xⁿ is irreducible over GF(2) if and only if 1 + P + ⋯ + Pⁿ is irreducible over GF(2), where P = X² + X + 1. The compared statements are the per-n equivalence, the literal set-level form of the OEIS comment (the terms ≥ 2 coincide), and the failure of the excluded case n = 1. The proof is elementary: a factorization of the all-ones polynomial composes to one of the substituted polynomial; conversely irreducibility forces n even, the X^(n-1) coefficient gives trace 1 for a root α, hence Tr(α + 1) = 1, so Z² + Z + (α + 1) has no root in GF(2^n) (Frobenius-invariance of the trace), a root β of it satisfies P(β) = α and has degree 2n, and the monic degree-2n polynomial 1 + P + ⋯ + Pⁿ vanishing at β is its minimal polynomial. SCOPE. The full conjecture is formalized with no weakened hypothesis. NOT CLAIMED: novelty of the mechanism, which is the classical trace criterion for compositions f(X² + X + c) over binary fields (Varshamov 1984, Meyn 1990); the contribution is the resolution of the specific OEIS conjecture and its machine check. AUDIENCE: finite fields and integer sequences.",
+  "authors": [
+    "Brandon Yates"
+  ],
+  "repository": "https://github.com/BrandonMYates/allones-comparator",
+  "commit": "76f3a65407c45de21228824f7a41430acec473a4",
+  "project_path": null,
+  "declarations": [
+    "AllOnesGallardo.main",
+    "AllOnesGallardo.A071642_terms_ge_two",
+    "AllOnesGallardo.boundary_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11T06",
+      "12E20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-11T22:24:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "76f3a65407c45de21228824f7a41430acec473a4",
+        "fork_repository": "PalomarArchive/BrandonMYates--allones-comparator--1eae20d0b04e",
+        "source_repository": "BrandonMYates/allones-comparator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a20c730d722609a894e3d1eb923a41df94da5338f49ca315431477f580f1a73b"
+}

@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/AxiomMath/ramanujan-tau-misses-primes",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.RamanujanTauMissesPrimes",
   "declarations": [
     "main_theorem",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/RamanujanTauMissesPrimes.lean",
-  "statement_hash": "sha256:a8a34b44b1b52dd8dadeaa7deeebb186cf819d423d39a10b303d81defcdfd26f"
+  "statement_hash": "sha256:ddf928b0d767be16cbacfe37266fff034c6390eef62397e9d6ab2e55180d4984"
 }

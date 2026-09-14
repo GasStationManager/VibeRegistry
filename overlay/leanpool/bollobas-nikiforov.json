@@ -1,0 +1,73 @@
+{
+  "source": "leanpool",
+  "upstream_id": "bollobas-nikiforov",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BollobasNikiforov",
+  "version": 1,
+  "title": "The Bollobás–Nikiforov conjecture",
+  "abstract": "Proves the Bollobás–Nikiforov conjecture (2007): every finite noncomplete simple graph G on at least two vertices satisfies λ₁(G)² + λ₂(G)² ≤ 2 (1 - 1/ω(G)) |E(G)|, where λ₁ ≥ λ₂ are the two largest adjacency eigenvalues and ω(G) is the clique number. The inequality is derived from a weighted spectral inequality for symmetric entrywise nonnegative matrices supported on the edges of G, which in turn rests on a complete positivity theorem for planar Gram matrices and a rank-two Gram inequality. The rank-two Gram inequality also identifies the conic parameter of Coutinho, Spier and Zhang with the clique number. The supporting library develops the completely positive cone and its closedness, the Motzkin–Straus inequality in completely positive form, total nonnegativity of truncated-square and convex kernels via Cauchy–Binet, weighted Laplacian updates, Schur complements, Perron eigenvectors, the Schur product theorem and Cauchy interlacing over Mathlib.",
+  "authors": [
+    "Gabriel Coutinho",
+    "Yinchen Liu",
+    "Thomás Jung Spier",
+    "Quanyu Tang",
+    "Shengtong Zhang"
+  ],
+  "repository": "https://github.com/ShengtongZhang-alt/BN",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.BollobasNikiforov",
+  "declarations": [
+    "BollobasNikiforov.lambda1_sq_add_lambda2_sq_le",
+    "BollobasNikiforov.weighted",
+    "BollobasNikiforov.matrix_theorem",
+    "BollobasNikiforov.gram_le",
+    "BollobasNikiforov.chiVec3_eq_cliqueNum",
+    "BollobasNikiforov.motzkinStraus",
+    "BollobasNikiforov.posSemidef_hadamard",
+    "BollobasNikiforov.isClosed_isCompletelyPositive",
+    "BollobasNikiforov.IsTotallyNonneg.mul",
+    "BollobasNikiforov.exists_nonneg_eigenvector_lambdaMax"
+  ],
+  "informal": {
+    "BollobasNikiforov.lambda1_sq_add_lambda2_sq_le": "For every finite simple graph G on at least two vertices that is not complete, the two largest adjacency eigenvalues satisfy λ₁(G)² + λ₂(G)² ≤ 2 (1 - 1/ω(G)) |E(G)|, with ω(G) the clique number and |E(G)| the number of edges.",
+    "BollobasNikiforov.weighted": "If B is a real symmetric matrix, indexed by a finite type with at least two elements, that is entrywise nonnegative, has zero diagonal and vanishes off the edges of a graph G on that type, then the sum of the squares of its two largest positive eigenvalues is at most (1 - 1/ω(G)) times its squared Frobenius norm.",
+    "BollobasNikiforov.matrix_theorem": "If planar vectors z₁, …, zₙ lie in a closed half-plane through the origin and X is their Gram matrix, then X ∘ X plus the weighted Laplacian with weights X_ij² on the pairs i < j with X_ij < 0 is completely positive.",
+    "BollobasNikiforov.gram_le": "For every real positive semidefinite matrix X of rank at most two, ∑_{i,j} (A_G)_ij (X_ij)₊² ≤ (1 - 1/ω(G)) ‖X‖_F², where (·)₊ is the positive part.",
+    "BollobasNikiforov.chiVec3_eq_cliqueNum": "For every graph G on a nonempty finite vertex type, the rank-two conic parameter χ''_{vec,3}(G) of Coutinho, Spier and Zhang, defined as the supremum of ‖X‖_F² over positive semidefinite X of rank at most two with nonnegative entries on the edges and unit off-edge mass, equals the clique number ω(G).",
+    "BollobasNikiforov.motzkinStraus": "Motzkin–Straus inequality; for every entrywise nonnegative vector y, yᵀ A_G y ≤ (1 - 1/ω(G)) (∑ᵢ yᵢ)².",
+    "BollobasNikiforov.posSemidef_hadamard": "Schur product theorem over the reals; the Hadamard product of two positive semidefinite matrices is positive semidefinite.",
+    "BollobasNikiforov.isClosed_isCompletelyPositive": "The cone of completely positive real matrices is closed.",
+    "BollobasNikiforov.IsTotallyNonneg.mul": "Cauchy–Binet; the product of two totally nonnegative real matrices is totally nonnegative.",
+    "BollobasNikiforov.exists_nonneg_eigenvector_lambdaMax": "Perron; a real symmetric entrywise nonnegative matrix on a nonempty finite index type has an entrywise nonnegative unit eigenvector for its largest eigenvalue."
+  },
+  "classification": {
+    "msc2020": [
+      "05C50",
+      "15B48",
+      "05C35",
+      "15A18"
+    ],
+    "tags": [
+      "spectral-graph-theory",
+      "clique-number",
+      "completely-positive-matrices",
+      "motzkin-straus"
+    ],
+    "branch": "spectral graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/BollobasNikiforov.lean",
+  "statement_hash": "sha256:8b7fe5ae86126e8170c7d349b97d13f137daff9bee90c9faa407633addab355c"
+}

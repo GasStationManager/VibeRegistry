@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000006",
+  "version": 1,
+  "title": "Ceiling orbits of rational bases are not P-recursive",
+  "abstract": "A Lean 4 / Mathlib development of the companion paper of the same name (doi:10.13140/RG.2.2.10727.82081). Fix coprime integers p > q ≥ 2 and an integer x₀ ≥ 1 and iterate the ceiling map of the rational base p/q, xₙ = ⌈p·xₙ₋₁/q⌉, with associated word wₙ = q·xₙ₊₁ − p·xₙ ∈ {0,…,q−1}, the correction that makes p·xₙ divisible by q. Four statements are compared. (A) The word of every such orbit is not P-recursive: it satisfies no nontrivial linear recurrence with polynomial coefficients. (B) At p/q = 3/2 the orbit itself is not P-recursive either; for x₀ = 1 it is the sequence A061419, which is therefore not holonomic. (C, D) neither generating function, Σⱼ wⱼzʲ nor Σₙ xₙzⁿ, is algebraic over ℚ(z). The Lean contains a proof of Stanley's algebraic-holonomic-p-recursive closure theorem.",
+  "authors": [
+    "Ralf Stephan"
+  ],
+  "repository": "https://github.com/rwst/Ceiling-Orbits",
+  "commit": "f76e02755cf909322015890f568338273d98038f",
+  "project_path": null,
+  "declarations": [
+    "RB.Gen.not_isPRecursive_word",
+    "RB.not_isPRecursive_orbit",
+    "RB.Gen.not_isAlgebraic_wordSeries",
+    "RB.not_isAlgebraic_orbitSeries"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B37",
+      "11A63",
+      "05A15",
+      "68R15",
+      "12H05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T10:38:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f76e02755cf909322015890f568338273d98038f",
+        "fork_repository": "PalomarArchive/rwst--Ceiling-Orbits--83850daac49c",
+        "source_repository": "rwst/Ceiling-Orbits"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ff3f59a5533923ca5204c6068626267b2ee19052ae5ade180244eeba48e1ac59"
+}

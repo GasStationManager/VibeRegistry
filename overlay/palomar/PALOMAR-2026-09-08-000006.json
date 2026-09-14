@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-08-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-08-000006",
+  "version": 1,
+  "title": "Lichnerowicz--Obata first eigenvalue and round-sphere rigidity",
+  "abstract": "Formalizes attainment of the first positive smooth Laplace eigenvalue on closed connected smooth Riemannian manifolds of dimension n >= 2, its sharp lower bound n*K under Ric >= (n-1)*K with K > 0, and equality if and only if the manifold is smoothly Riemannian-isometric to the round sphere of radius 1/sqrt K. The independent statement constructs the metric-compatible torsion-free connection and explicitly defines Ricci curvature, the Riesz gradient, the div-grad Laplacian, eigenvalue minimality, and the radius-scaled induced round metric.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/lean-poincare-formalization-plan",
+  "commit": "5db025e6d20d8aad714c3d116714545d1823fd8e",
+  "project_path": "lichnerowicz-obata",
+  "declarations": [
+    "LichnerowiczObataEntry.Geometry.lichnerowiczObata"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "math.SP",
+      "math.LO"
+    ],
+    "msc2020": [
+      "53C21",
+      "58J50",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-08T23:45:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5db025e6d20d8aad714c3d116714545d1823fd8e",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--lean-poincare-formalization-plan--659c07d79115",
+        "source_repository": "Arthur742Ramos/lean-poincare-formalization-plan"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7f24e48ee0b2af354e2a0140bbc0d8f00c6e8073dd6f90bb385ff04a74ad8fff"
+}

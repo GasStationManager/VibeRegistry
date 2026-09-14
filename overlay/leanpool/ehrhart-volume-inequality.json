@@ -1,0 +1,56 @@
+{
+  "source": "leanpool",
+  "upstream_id": "ehrhart-volume-inequality",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/EhrhartVolumeInequality",
+  "version": 1,
+  "title": "Ehrhart's sharp volume inequality",
+  "abstract": "Proves Ehrhart's sharp upper bound for the volume of a centered full-dimensional convex body whose origin is its unique interior lattice point. The development builds the weighted complex-analytic and variational machinery needed for the bound and verifies sharpness using the centered simplex, including its barycenter and exact volume.",
+  "authors": [
+    "OpenAI",
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/openai/ten-proofs",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.EhrhartVolumeInequality",
+  "declarations": [
+    "Ehrhart.Volume.ehrhart_volume_inequality_for_sets",
+    "Ehrhart.SimplexVolume.normalizedVolume_centeredSimplex",
+    "Ehrhart.SimplexVolume.barycenter_centeredSimplex",
+    "Ehrhart.SimplexVolume.exists_centeredBody_sharp"
+  ],
+  "informal": {
+    "Ehrhart.Volume.ehrhart_volume_inequality_for_sets": "In every positive dimension, a compact full-dimensional convex set with barycenter zero and origin as its unique interior lattice point has volume at most (n + 1)^n / n!.",
+    "Ehrhart.SimplexVolume.normalizedVolume_centeredSimplex": "The centered dilation of the standard n-simplex has normalized volume exactly (n + 1)^n / n!, so the volume bound is sharp.",
+    "Ehrhart.SimplexVolume.barycenter_centeredSimplex": "The centered dilation of the standard simplex has barycenter zero.",
+    "Ehrhart.SimplexVolume.exists_centeredBody_sharp": "In every positive dimension there exists a centered convex body with a unique interior lattice point that attains the sharp volume bound."
+  },
+  "classification": {
+    "msc2020": [
+      "52A40",
+      "11H06"
+    ],
+    "tags": [
+      "convex-geometry",
+      "geometry-of-numbers",
+      "lattice-points",
+      "ehrhart-theory"
+    ],
+    "branch": "convex geometry and geometry of numbers"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/EhrhartVolumeInequality.lean",
+  "statement_hash": "sha256:004205fd7ce5a95d1776a62c7c379d0d1bda737b8f2f93ba4250edd0ce266e96"
+}

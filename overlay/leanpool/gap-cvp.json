@@ -1,0 +1,58 @@
+{
+  "source": "leanpool",
+  "upstream_id": "gap-cvp",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/GapCVP",
+  "version": 1,
+  "title": "Polynomial-factor hardness of the closest vector problem",
+  "abstract": "Formalizes polynomial-factor NP-hardness of the closest vector problem through an explicit reduction from 3-SAT. The development also derives NP-hardness of binary nearest codeword, binary syndrome decoding, and finite p-norm variants of GapCVP. It includes machine-level polynomial-time bounds, binary encodings, affine systems, Reed--Solomon-style interpolation, and the lattice and coding-theory reductions needed by the final results.",
+  "authors": [
+    "OpenAI",
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/openai/ten-proofs",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.GapCVP",
+  "declarations": [
+    "GapCVP.Comparator.gapCVP400IsNPHard",
+    "GapCVP.Comparator.binaryNearestCodewordIsNPHard",
+    "GapCVP.Comparator.binarySyndromeDecodingIsNPHard",
+    "GapCVP.Comparator.finitePNormGapCVPIsNPHard"
+  ],
+  "informal": {
+    "GapCVP.Comparator.gapCVP400IsNPHard": "GapCVP in the Euclidean norm with approximation factor n^(1/400), where n is the lattice dimension, is NP-hard as a promise problem: every NP language reduces in polynomial time to the promise problem on encoded well-formed instances (positive dimension, nonsingular integer basis, positive rational radius) with an integer target, whose YES instances have a lattice vector within the radius of the target and whose NO instances have every lattice vector at distance greater than n^(1/400) times the radius.",
+    "GapCVP.Comparator.binaryNearestCodewordIsNPHard": "Binary nearest codeword is NP-hard as a promise problem.",
+    "GapCVP.Comparator.binarySyndromeDecodingIsNPHard": "Binary syndrome decoding is NP-hard as a promise problem.",
+    "GapCVP.Comparator.finitePNormGapCVPIsNPHard": "For every rational p at least one, the finite p-norm version of GapCVP is NP-hard as a promise problem."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q17",
+      "68Q25",
+      "11H06",
+      "94B35"
+    ],
+    "tags": [
+      "computational-complexity",
+      "np-hardness",
+      "lattice-problems",
+      "coding-theory"
+    ],
+    "branch": "computational complexity and lattice problems"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/GapCVP.lean",
+  "statement_hash": "sha256:96b1984345eb8772d197e32ec828609856dfa7d0f57b4b227afcd76733ccbdca"
+}

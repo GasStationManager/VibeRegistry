@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "quantum-parallel-repetition",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/QuantumParallelRepetition",
+  "version": 1,
+  "title": "Quantum parallel repetition",
+  "abstract": "Proves a quantitative parallel-repetition theorem for finite two-player quantum games: whenever the entangled value is below one, the entangled values of parallel repetitions decay exponentially, with an explicit universal exponent in the game gap and answer-alphabet sizes.",
+  "authors": [
+    "OpenAI",
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/openai/ten-proofs",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.QuantumParallelRepetition",
+  "declarations": [
+    "QuantumParallelRepetition.distributionUniformExponential",
+    "QuantumParallelRepetition.standardQuantumParallelRepetition"
+  ],
+  "informal": {
+    "QuantumParallelRepetition.distributionUniformExponential": "There is a universal positive constant giving an explicit exponential upper bound on the repeated entangled value of every finite game with positive gap and nonempty answer alphabets.",
+    "QuantumParallelRepetition.standardQuantumParallelRepetition": "Every finite two-player game whose entangled value is below one has exponentially decaying entangled value under parallel repetition."
+  },
+  "classification": {
+    "msc2020": [
+      "81P68",
+      "68Q12"
+    ],
+    "tags": [
+      "quantum-information",
+      "nonlocal-games",
+      "parallel-repetition",
+      "theoretical-computer-science"
+    ],
+    "branch": "quantum information theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/QuantumParallelRepetition.lean",
+  "statement_hash": "sha256:2090257c01b8b306c4e8b233abf1c4a88fe727d5255b9c8ce443db85df336bf5"
+}

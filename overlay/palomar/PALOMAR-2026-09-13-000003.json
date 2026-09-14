@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-13-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-13-000003",
+  "version": 1,
+  "title": "Lean proofs of Dimitrov's Conjectures 1 and 3",
+  "abstract": "A Lean 4 formalization proving Dimitrov's Conjectures 1 and 3 for every natural k >= 1 and n >= 2. The results concern inequalities involving Euler's totient, Dedekind's psi function, and the sum-of-divisors function. The source paper proves the k = 1 instances and discusses k = 2, 3; this development covers the full stated range, including k >= 4, and additionally proves for each inequality that equality holds exactly when n is prime. By supplying the full parameter range and sharp equality cases beyond those treated in the source, the project is relevant to researchers in elementary and analytic number theory who study inequalities among multiplicative arithmetic functions, and to formal-mathematics researchers studying the verification of contemporary conjectures. Historical priority for the full-range proofs has not been established by expert or source-author review. The mathematical reductions, Lean code, and documentation were generated substantially by OpenAI Codex under human direction, as detailed below.",
+  "authors": [
+    "Michael Mazur"
+  ],
+  "repository": "https://github.com/pro20541/dimitrov-conjectures-lean",
+  "commit": "95809b59deefd8dfad81e398250aedd7e1aea3b3",
+  "project_path": null,
+  "declarations": [
+    "PalomarDimitrov.conjecture1FullRange",
+    "PalomarDimitrov.conjecture1EqualityIffPrime",
+    "PalomarDimitrov.conjecture3FullRange",
+    "PalomarDimitrov.conjecture3EqualityIffPrime"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A25",
+      "26D15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-13T23:03:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "95809b59deefd8dfad81e398250aedd7e1aea3b3",
+        "fork_repository": "PalomarArchive/pro20541--dimitrov-conjectures-lean--031fbad6b810",
+        "source_repository": "pro20541/dimitrov-conjectures-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7e3035c4cbfc06297a2c1c0ed305c1a93f6ab3523c7dbc198f652c38ea61dd4f"
+}

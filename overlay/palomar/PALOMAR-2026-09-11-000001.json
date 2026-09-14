@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-11-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-11-000001",
+  "version": 1,
+  "title": "Independent Bonnet--Myers diameter and compactness theorem",
+  "abstract": "Formalizes the classical Bonnet--Myers theorem for complete connected smooth boundaryless finite-dimensional real Riemannian manifolds. From dimension n >= 2, K > 0, and the pointwise lower bound Ric(a,a) >= (n-1) K g(a,a), the selected theorem constructs the Levi--Civita connection and actual curvature, proves compactness, and gives the sharp induced extended-diameter bound pi/sqrt K. The development proves minimizing-geodesic, parallel-transport, second-variation, index-form, and metric-compactness bridges rather than assuming them.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/lean-poincare-formalization-plan",
+  "commit": "0cc7c31bf6e2dac5c0359a432f3d99803f563017",
+  "project_path": "bonnet-myers",
+  "declarations": [
+    "BonnetMyersEntry.bonnet_myers"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "math.LO"
+    ],
+    "msc2020": [
+      "53C20",
+      "53C21",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-11T19:43:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0cc7c31bf6e2dac5c0359a432f3d99803f563017",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--lean-poincare-formalization-plan--659c07d79115",
+        "source_repository": "Arthur742Ramos/lean-poincare-formalization-plan"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7fb2ddd7a53980462a60e6d403dd6fca2bbfb65472262ad8532717786e5c585c"
+}

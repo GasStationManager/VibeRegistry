@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-14-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-14-000001",
+  "version": 1,
+  "title": "md-lean: exact height span, dart mass, and adjugate scaling for Mazur's greedy construction",
+  "abstract": "Exact height-span of Mazur's scheme grammar, a local dart-mass bound, and an adjugate identity for the Dirichlet matrix of that construction; not a proof of the strong Papadimitriou–Ratajczak conjecture and not a theorem that every 3-connected plane graph attains the scheme maximum. Mazur builds injective integer heights by inductive recurrences on rooted pieces (edge, cycle, binary series, two-range join) and then forms a weighted Dirichlet matrix for the horizontal coordinate; the paper does not bound the height span or the bit length of the coordinates. For a well-formed scheme on n >= 2 vertices with j nontrivial joins, T+1 <= 2^j (n-2j), attained at every admissible pair (n,j)=(2,0) or 2j+3 <= n. The one-parameter maximum is F(n) = 2^{n/2}-1 (n even) or 3 * 2^{(n-3)/2}-1 (n odd). The coarser bound T <= 2^{n-2} remains. An integer matrix has |det| at most the product of its row ell_1-norms. Heights in {0,...,T} force Mazur's interior dart weights to be at most (n-1)T, so every Dirichlet row has ell_1-norm at most 2(n-1)^2 T when T >= 1, and |det M| <= (2(n-1)^2 T)^n; locally the interior outgoing dart-weight sum is at most a_s b_s T. Combining the coarser span bound with the row-sum bound sizes T^2 |det M| and T^2 |det M| T. Independently of invertibility, under the height bound h i <= T, z = adj(M) u satisfies Mz = Delta u and z_s = Delta h_s (T-h_s) on the boundary as ordinary integer subtraction. Polynomial-area Euclidean planar greedy drawings of all 3-connected planar graphs remain open (Da Lozzo–D'Angelo–Frati, COCOON 2020).",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/md-lean",
+  "commit": "b7f9f9deb5f5e520c99fd0d48893808d6ad082d6",
+  "project_path": null,
+  "declarations": [
+    "MazurSpan.span_le_two_pow",
+    "MazurSpan.span_succ_le_join_budget",
+    "MazurSpan.exists_span_eq_join_budget",
+    "MazurSpan.span_le_exact",
+    "MazurSpan.exists_span_eq_exact",
+    "MazurSpan.natAbs_det_le_prod_rowSum",
+    "MazurSpan.natAbs_det_le_of_rowSum_le",
+    "MazurSpan.dirichlet_rowSum_le",
+    "MazurSpan.dirichlet_det_le",
+    "MazurSpan.coord_denom",
+    "MazurSpan.coord_grid",
+    "MazurSpan.dartMass_le",
+    "MazurSpan.dartWeight_sum_eq_dartMass",
+    "MazurSpan.dartWeight_interior_sum_le",
+    "MazurSpan.dirichlet_adjugate_clears"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "05C10",
+      "05C62"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-14T02:14:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b7f9f9deb5f5e520c99fd0d48893808d6ad082d6",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--md-lean--c25a07047e32",
+        "source_repository": "JD-Jones-ASES/md-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ed927976e6d5a3e55c1b41d08da3d64703869569aafe1be4b72e18edfac3d913"
+}

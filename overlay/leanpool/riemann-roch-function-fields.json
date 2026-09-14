@@ -1,0 +1,63 @@
+{
+  "source": "leanpool",
+  "upstream_id": "riemann-roch-function-fields",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/RiemannRochFunctionFields",
+  "version": 1,
+  "title": "Riemann–Roch for algebraic function fields",
+  "abstract": "Formalizes the Riemann–Roch theorem for algebraic function fields of one variable through the adelic route. Divisors are indexed by intrinsic places (discrete rank-one valuation subrings containing the constants), with an equivalence to a two-chart coordinate model via Ostrowski's theorem. The development builds Riemann–Roch spaces, the genus, an intrinsic adele space, Weil differentials and the canonical class, and proves Riemann's inequality, the duality theorem, Riemann–Roch, Clifford's inequality, and the standard corollaries. As an application it shows that a Weierstrass elliptic curve has genus one and identifies its degree-one places with the class group of the coordinate ring compatibly with the group law.",
+  "authors": [
+    "Guanghao Li"
+  ],
+  "repository": "https://github.com/vaca22/riemann-roch-function-fields",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.RiemannRochFunctionFields",
+  "declarations": [
+    "FunctionField.riemann_roch",
+    "FunctionField.duality",
+    "FunctionField.riemann_ineq",
+    "FunctionField.clifford",
+    "FunctionField.exists_isCanonical",
+    "WeierstrassCurve.Affine.genus_eq_one",
+    "WeierstrassCurve.Affine.picTorsor_compat_groupLaw"
+  ],
+  "informal": {
+    "FunctionField.riemann_roch": "For a function field K over its full constant field k, a canonical divisor W, and any divisor D indexed by intrinsic places, ℓ(D) = deg D + 1 − g + ℓ(W − D).",
+    "FunctionField.duality": "For a canonical divisor W and any divisor D, ℓ(W − D) equals the index of specialty i(D), the codimension of L(D) plus K inside the adele space.",
+    "FunctionField.riemann_ineq": "Riemann's inequality ℓ(D) ≥ deg D + 1 − g holds for every divisor D.",
+    "FunctionField.clifford": "Clifford's inequality 2(ℓ(D) − 1) ≤ deg D holds for every divisor D with 0 ≤ deg D ≤ 2g − 2, ℓ(D) > 0, and ℓ(W − D) > 0 for a canonical divisor W. The degree bounds are not needed for the inequality and are dropped in FunctionField.clifford_of_ell_pos.",
+    "FunctionField.exists_isCanonical": "Every function field admits a canonical divisor, namely the divisor of a nonzero Weil differential.",
+    "WeierstrassCurve.Affine.genus_eq_one": "The function field of a Weierstrass elliptic curve over a field k that is its full constant field (for example any algebraically closed k, in any characteristic) has genus one.",
+    "WeierstrassCurve.Affine.picTorsor_compat_groupLaw": "The bijection between degree-one places of an elliptic function field and the class group of the coordinate ring is compatible with the elliptic group law."
+  },
+  "classification": {
+    "msc2020": [
+      "14H05",
+      "11R58",
+      "14H52"
+    ],
+    "tags": [
+      "riemann-roch",
+      "function-fields",
+      "algebraic-curves",
+      "weil-differentials",
+      "elliptic-curves"
+    ],
+    "branch": "algebraic curves and function fields"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/RiemannRochFunctionFields.lean",
+  "statement_hash": "sha256:95e93acaf59f91d85c886b629c98dd53d9dc7c825b48c80717c962ced12f61a5"
+}

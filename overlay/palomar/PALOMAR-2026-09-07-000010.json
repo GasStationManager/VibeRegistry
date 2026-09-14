@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000010",
+  "version": 2,
+  "title": "A two-to-one executable map between Tunnell representation sets under the Tunnell balance",
+  "abstract": "Let B(n) and A(n) be the integer solution sets of 2x^2 + y^2 + 8z^2 = n and 2u^2 + v^2 + 32w^2 = n, respectively. For every odd positive squarefree n satisfying |B(n)| = 2|A(n)|, we construct a deterministic computable map Phi_n : B(n) -> A(n) that sends exactly two source points to each target point. The construction combines an elementary even-coordinate map, three explicit quarter-turn correspondences, and a unique stable matching of the remaining antipodal orbits, with preferences determined by primitive midpoint directions. The map, its two-to-one property, the branch formulas, and the inverse identities for the residual map are formalized in Lean 4. Tunnell's theorem supplies the required counting identity for odd squarefree congruent numbers; its modular-form proof lies outside this formalization.",
+  "authors": [
+    "Aakash Gurung"
+  ],
+  "repository": "https://github.com/GrgAakash/tunnell-two-to-one-map",
+  "commit": "d888a7c73c0ef1695dab8c48ccde629fbebb2d46",
+  "project_path": null,
+  "declarations": [
+    "TunnellChallenge.tunnellMap_exactly_two",
+    "TunnellChallenge.tunnellMap_even",
+    "TunnellChallenge.tunnellMap_quarterTurn_one",
+    "TunnellChallenge.tunnellMap_quarterTurn_two",
+    "TunnellChallenge.tunnellMap_quarterTurn_three",
+    "TunnellChallenge.tunnellResidualMap_agrees",
+    "TunnellChallenge.tunnellResidualInverse_left",
+    "TunnellChallenge.tunnellResidualInverse_right",
+    "TunnellChallenge.tunnellMap_residual_target",
+    "TunnellChallenge.tunnellMap_residual_stable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "11E25",
+      "11D85",
+      "68W40",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T18:40:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d888a7c73c0ef1695dab8c48ccde629fbebb2d46",
+        "fork_repository": "PalomarArchive/GrgAakash--tunnell-two-to-one-map--0e6bd8003436",
+        "source_repository": "GrgAakash/tunnell-two-to-one-map"
+      }
+    ]
+  },
+  "statement_hash": "sha256:de73d1dff8ad744f4b2003601cb4df385739297f3242ed66ba09c228237b400f"
+}

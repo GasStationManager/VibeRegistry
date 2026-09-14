@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000015",
+  "version": 1,
+  "title": "De Lellis--Topping almost-Schur inequality",
+  "abstract": "Formalizes the quantitative almost-Schur lemma on nonempty connected closed smooth Riemannian manifolds of dimension at least three with nonnegative Ricci curvature: scalar-curvature variance is bounded by 4*n*(n-1)/(n-2)^2 times the squared L2 norm of trace-free Ricci, with the Einstein equality characterization. The development constructs normalized Riemannian volume, solves the mean-zero Poisson problem variationally and upgrades it to a smooth representative, proves the actual integrated Bochner and contracted-Bianchi identities, and closes the sharp algebra.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/lean-poincare-formalization-plan",
+  "commit": "d9f4c4deaea269a1ab1f5f8874697da798cc3db2",
+  "project_path": "almost-schur",
+  "declarations": [
+    "AlmostSchurEntry.Geometry.almostSchur"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "math.LO"
+    ],
+    "msc2020": [
+      "53C21",
+      "53C25",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T23:18:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d9f4c4deaea269a1ab1f5f8874697da798cc3db2",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--lean-poincare-formalization-plan--659c07d79115",
+        "source_repository": "Arthur742Ramos/lean-poincare-formalization-plan"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7429ca0af67df56ae1fafe447d3fde636bd1acc0b009a8ed43065be7ca3cda80"
+}

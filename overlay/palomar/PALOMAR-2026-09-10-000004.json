@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-10-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-10-000004",
+  "version": 1,
+  "title": "Density-one prescribed-rank spectra of prime-cover graphs",
+  "abstract": "For finite prime-cover graphs, the ordered adjacency eigenvalues at prescribed arithmetic ranks obey density-one squared-error estimates in every fixed power range 0 < theta < 1/2. Relative to the prime-counting main term and explicit first-exit correction, the error is bounded by a constant times a/log(X) + log(X)^D sqrt(X/(a log(X))), with quantitative terminal exception counts and zero limiting failure density. This gives a positive power improvement over the sqrt(X)/log(X) block bound. Separate sharp every-terminal-centre statements on 21/61 < theta < 1/2 at error O(a/log(X)) remain open on the preserved sharp-development branch.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/prime-cover-power-band-spectra-palomar",
+  "commit": "72288e1f32ba491a873e63647023b70d195f7139",
+  "project_path": null,
+  "declarations": [
+    "PrimeCoverPowerBand.palomar_almostAll_powerBand",
+    "PrimeCoverPowerBand.palomar_almostAll_subBlock"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05C50",
+      "11N05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-10T13:52:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "72288e1f32ba491a873e63647023b70d195f7139",
+        "fork_repository": "PalomarArchive/shaikidris--prime-cover-power-band-spectra-palomar--bc15c8130711",
+        "source_repository": "shaikidris/prime-cover-power-band-spectra-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:80a2308823ead614bcb37646c0d976d5fda46ce4a76f158501d13ff7a4ad2b2b"
+}

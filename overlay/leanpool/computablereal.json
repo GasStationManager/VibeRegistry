@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Timeroot/computableReal",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.ComputableReal",
   "declarations": [
     "ComputableℝSeq",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ComputableReal.lean",
-  "statement_hash": "sha256:cde57bf0ce263267f8fd6f72842ef4199aab77d6875a7cc75ba7bcfe6302a193"
+  "statement_hash": "sha256:f82af8608c5a4f7a1c6629316e699c234c98d2518704df90dc7de5cbf5a97361"
 }

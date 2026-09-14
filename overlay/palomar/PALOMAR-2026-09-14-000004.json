@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-14-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-14-000004",
+  "version": 1,
+  "title": "To cover a permutohedron",
+  "abstract": "This Lean 4 formalization of Kong and Zeng's To cover a permutohedron (arXiv:2509.13877v3, 9 April 2026) determines the minimum number of affine hyperplanes needed to cover the permutation vertices of (1,...,n), excluding the hyperplane containing every vertex. The exact answer is n for odd n at least 3, and n-1 for even n at least 4. It also proves that an arbitrary injective real tuple of length n at least 2 has the sharp hyperplane intersection bound (n-1)! when its n-1 signed critical values are distinct. Genuine polynomial-root path lifting establishes local transpositions and the cycle at infinity, with explicit corrections to the source's loop hypotheses. A symmetric polynomial norm replaces the paper's general Bezout step. One independent Challenge and one Comparator configuration cover all eighteen results, including sharp constructions, generic and four-element consequences, and the connection with convex vertices and arbitrary affine hyperplanes.",
+  "authors": [
+    "Bochao Kong"
+  ],
+  "repository": "https://github.com/BochaoKong/permutohedron",
+  "commit": "886b7364faa7ab6db7d9eb36cf5a0c26e37d388a",
+  "project_path": null,
+  "declarations": [
+    "PermutohedronCover.odd_hyperplane_vertex_bound",
+    "PermutohedronCover.odd_vertex_cover_lower_bound",
+    "PermutohedronCover.even_vertex_cover_lower_bound",
+    "PermutohedronCover.distinct_critical_values_hyperplane_bound",
+    "PermutohedronCover.distinct_critical_values_cover_lower_bound",
+    "PermutohedronCover.coordinate_vertex_cover_exists",
+    "PermutohedronCover.even_standard_vertex_cover_exists",
+    "PermutohedronCover.fiberPolynomial_at_product",
+    "PermutohedronCover.meridian_root_path_lifting_is_transposition",
+    "PermutohedronCover.large_circle_root_path_lifting_is_nCycle",
+    "PermutohedronCover.generic_vertex_cover_lower_bound",
+    "PermutohedronCover.four_element_three_cover_pair_sums",
+    "PermutohedronCover.extremePoints_convexHull_vertexSet",
+    "PermutohedronCover.coe_affineSpan_vertexSet",
+    "PermutohedronCover.exists_affineHyperplane_of_isCoatom",
+    "PermutohedronCover.AffineHyperplane.exists_isCoatom",
+    "PermutohedronCover.dimension_one_intersectionCount_eq_zero",
+    "PermutohedronCover.dimension_one_vertex_cover_impossible"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "52B05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-14T06:06:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "886b7364faa7ab6db7d9eb36cf5a0c26e37d388a",
+        "fork_repository": "PalomarArchive/BochaoKong--permutohedron--1d4400949e42",
+        "source_repository": "BochaoKong/permutohedron"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ff263591cd0cd8e4fc2ecfebe0c1f5a22991c78734a6e76afae47de3511f5d44"
+}

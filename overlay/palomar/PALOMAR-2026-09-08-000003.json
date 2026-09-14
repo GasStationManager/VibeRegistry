@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-08-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-08-000003",
+  "version": 1,
+  "title": "Erdős–Rado negative stepping-up for ordinal order types",
+  "abstract": "A Lean 4 formalisation of the Erdős–Rado negative stepping-up lemma in its order-type form, for arities three and above and for at least two colours.\nFix an ordinal kappa; a colour count mu ≥ 2; and a target order type theta = omega^alpha with alpha > 0, so that theta is additively indecomposable. The theorem proved is, for every natural number r: if some colouring of the (r+3)-subsets of kappa by ordinals below mu admits no monochromatic subset of kappa of order type theta, then some colouring of the (r+4)-subsets of 2^kappa admits none either, using the same number of colours.\nThe construction compares two unrelated orders on 2^kappa -- an arbitrary well-order, and the lexicographic order given by the first place two sets differ -- and reads a colouring off the pattern of agreement between them along a chain, together with the sequence of discrepancies. Two colours are spent marking the chains where those patterns first deviate, and on the well-behaved chains the colouring copies the given one along the discrepancy map.",
+  "authors": [
+    "Bruno Jartoux"
+  ],
+  "repository": "https://github.com/bjrtx/ordinal-step-up",
+  "commit": "e46994fca709e3983061ef8d52a824b29a613ee4",
+  "project_path": null,
+  "declarations": [
+    "OrdinalStepUp.ErdosRado.noHomog_stepUp"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.CO"
+    ],
+    "msc2020": [
+      "03E02",
+      "05D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-08T11:49:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e46994fca709e3983061ef8d52a824b29a613ee4",
+        "fork_repository": "PalomarArchive/bjrtx--ordinal-step-up--76976dc40b0b",
+        "source_repository": "bjrtx/ordinal-step-up"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b0a7b6f66b37079df8871c084479e07295354e583faf0b3b86288f9e8cbc0f3c"
+}

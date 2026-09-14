@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/provables/special-numbers",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.SpecialNumbers",
   "declarations": [
     "SpecialNumbers.sylvester",
@@ -57,5 +57,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SpecialNumbers.lean",
-  "statement_hash": "sha256:e678a86ca994e0c829bfc44963831b83ce56045c73d89c4c98460658f534293d"
+  "statement_hash": "sha256:b2829c72163a11bf117dbaa23c690c48779692498636f90edef5767baecc3ac1"
 }

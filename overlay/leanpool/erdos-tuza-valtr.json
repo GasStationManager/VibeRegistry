@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jcpaik/erdos-tuza-valtr",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.ErdosTuzaValtr",
   "declarations": [
     "ErdosTuzaValtr.main",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ErdosTuzaValtr.lean",
-  "statement_hash": "sha256:6caa79f1b1eb66a3df4ad3a2dd481acab663ba1d3459ea9e252615a6f8cb2cd0"
+  "statement_hash": "sha256:17ab929e43c1670772e2a3a55d592a9c5d1feaf453c6e5814cc16c42cae5d364"
 }

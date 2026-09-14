@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-08-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-08-000002",
+  "version": 1,
+  "title": "Verified regret matching and finite-time equilibrium computation",
+  "abstract": "For finite nonempty action sets and unit-interval full-information payoffs, regret matching and regret matching+ have cumulative external regret at most the square root of the product of the number of actions and the horizon, against every fixed pure or mixed comparator. In finite two-player zero-sum matrix games, simultaneous self-play gives an explicit finite-time approximate Nash guarantee for uniformly averaged strategies. A finite-vector implementation is proved to reproduce the abstract averages. Square-root-free accuracy budgets and finite rational payoff inequalities certify approximate equilibria, including against all real mixed deviations. A four-round rational RM+ example has certified Nash error at most 19/260.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/verified-regret-matching-lean",
+  "commit": "52e2c3dbbd8308b11271daf2e4c5a80aebae1df7",
+  "project_path": null,
+  "declarations": [
+    "RegretMatching.strategy_valid",
+    "RegretMatching.potential_step",
+    "RegretMatching.external_regret_bound",
+    "RegretMatching.mixed_external_regret_bound",
+    "RegretMatching.selfPlay_approxNash",
+    "RegretMatching.denseAverage_correct",
+    "RegretMatching.denseSelfRun_certificate",
+    "RegretMatching.finiteCertificate_real",
+    "RegretMatching.Examples.fourRounds_sharp_real_approxNash"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91A10",
+      "91A26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-08T03:30:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "52e2c3dbbd8308b11271daf2e4c5a80aebae1df7",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--verified-regret-matching-lean--f69d112af488",
+        "source_repository": "Arthur742Ramos/verified-regret-matching-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:82cf9a888f449bc9f0719e5d57d4012df008f459bd81aab0caf3e47aeb1f1ea3"
+}

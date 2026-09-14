@@ -1,0 +1,79 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-10-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-10-000003",
+  "version": 1,
+  "title": "Irreducible improper phi-regret in Lean",
+  "abstract": "A Mathlib-only formalization of two explicit three-action improper phi-regret families in Section 4.4.1 of Dann, Mansour, Mohri, Schneider, and Sivan (COLT 2025). They are finite counterexample families for the paper's rate-preserving linear-reduction program. It proves valid-improper certificates, the affine-hyperplane invariant-transport core of Lemma 4, the extreme-point antipodal-displacement core of Lemma 5, a direct finite one-way affine action/loss-transfer-to-canonical bridge, a source-style two-direction affine linear-equivalence-to-canonical bridge in an explicit bijective-coordinate regime, finite-dimensional Equation-(15)-to-(16) and Equation-(16)-to-(17) bridges, and concrete Equation-(18) vertex/corner criteria. These mechanisms rule out the selected canonical, normalized, finite-loss-basis, homogeneous/affine-transfer, two-direction affine-equivalence, and finite-vertex/corner proper reductions for the two cited families.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/blackwell-approachability-lean",
+  "commit": "8a53170bbf91309d687d4f0131b2147457a3dbc3",
+  "project_path": null,
+  "declarations": [
+    "Blackwell.Palomar.skewPhi_valid_improper_instance",
+    "Blackwell.Palomar.sourceAB_valid_improper_family",
+    "Blackwell.Palomar.normalized_proper_reduction_implies_canonical_properization",
+    "Blackwell.Palomar.invertible_transfer_proper_reduction_implies_canonical_properization",
+    "Blackwell.Palomar.invertible_affine_transfer_proper_reduction_implies_canonical_properization",
+    "Blackwell.Palomar.affine_linear_equivalence_implies_canonical_properization",
+    "Blackwell.Palomar.loss_basis_pairing_implies_normalized_matrix_identity",
+    "Blackwell.Palomar.matrixProperOn_simplex3_iff_on_vertices",
+    "Blackwell.Palomar.canonicalProperOn_simplex3_iff_vertex_constraints",
+    "Blackwell.Palomar.affine_hyperplane_canonical_properizer_has_nonzero_common_invariant",
+    "Blackwell.Palomar.extreme_antipodal_no_canonical_properizer",
+    "Blackwell.Palomar.skewPhi_has_no_nonzero_common_invariant",
+    "Blackwell.Palomar.canonical_proper_matrices_are_singular",
+    "Blackwell.Palomar.skewPhi_not_canonically_proper_reducible",
+    "Blackwell.Palomar.skewPhi_not_invertible_transfer_proper_reducible",
+    "Blackwell.Palomar.skewPhi_not_invertible_affine_transfer_proper_reducible",
+    "Blackwell.Palomar.skewPhi_not_affine_linearly_equivalent_to_proper",
+    "Blackwell.Palomar.skew_canonicalProper_iff_vertex_constraints",
+    "Blackwell.Palomar.skewPhi_no_invertible_nine_vertex_properizer",
+    "Blackwell.Palomar.skewPhi_not_normalized_proper_reducible",
+    "Blackwell.Palomar.skewPhi_not_loss_basis_proper_reducible",
+    "Blackwell.Palomar.sourceAB_has_nonzero_common_invariant",
+    "Blackwell.Palomar.sourceAB_not_canonically_proper_reducible",
+    "Blackwell.Palomar.sourceAB_not_invertible_transfer_proper_reducible",
+    "Blackwell.Palomar.sourceAB_not_invertible_affine_transfer_proper_reducible",
+    "Blackwell.Palomar.sourceAB_not_affine_linearly_equivalent_to_proper",
+    "Blackwell.Palomar.sourceAB_canonicalProperOn_iff_twelve_corner_constraints",
+    "Blackwell.Palomar.sourceAB_no_invertible_twelve_corner_properizer",
+    "Blackwell.Palomar.sourceAB_not_normalized_proper_reducible",
+    "Blackwell.Palomar.sourceAB_not_loss_basis_proper_reducible"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT",
+      "cs.LG"
+    ],
+    "msc2020": [
+      "91A26",
+      "68T05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-10T12:37:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8a53170bbf91309d687d4f0131b2147457a3dbc3",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--blackwell-approachability-lean--ce111246e295",
+        "source_repository": "Arthur742Ramos/blackwell-approachability-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1f5bb5743ffda7a97be3fe35ea3414cb96fdcb3987030ec04c587f959d1d8b76"
+}

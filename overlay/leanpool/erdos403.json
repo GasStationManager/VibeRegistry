@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/gotrevor/erdos-403",
   "commit": "",
-  "snapshot_commit": "c8ddda0a64f21cb019720cdda48c94354d4091e7",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
   "entry_module": "LeanPool.Erdos403",
   "declarations": [
     "Erdos403.erdos_403_sharp",
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos403.lean",
-  "statement_hash": "sha256:4dc14e697f5a8ddb7e069af31a54e61bc426deecfbb269dfe0b1f295fd159dd4"
+  "statement_hash": "sha256:b4fb9e539e59171e78c8ed86f9f2f0a663bc67f87fd5fc413f86a877a334c282"
 }

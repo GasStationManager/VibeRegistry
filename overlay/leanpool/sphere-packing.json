@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "sphere-packing",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SpherePacking",
+  "version": 1,
+  "title": "Sharp asymptotic upper bounds for sphere packing",
+  "abstract": "Formalizes the sharp high-dimensional asymptotics of the unrestricted Cohn--Elkies linear program and bridges them to sphere-packing density. The development constructs radial test functions through Mellin, saddle-point, and harmonic analysis, proves radialization preserves the unrestricted optimum, and certifies the exact natural- and base-two exponential rates.",
+  "authors": [
+    "OpenAI",
+    "Sidharth Hariharan",
+    "Gareth Ma",
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/openai/ten-proofs",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.SpherePacking",
+  "declarations": [
+    "PackingBounds.sharpFullCohnElkiesManuscriptConclusions",
+    "PackingBounds.FullMain.exact_limit",
+    "PackingBounds.FullMain.exact_binary_exponent",
+    "PackingBounds.PackingBridge.sphere_packing_sharp_asymptotic_upper"
+  ],
+  "informal": {
+    "PackingBounds.FullMain.exact_limit": "The d-th root of the unrestricted Cohn--Elkies linear-program bound converges to the sharp constant sqrt(e / (2 pi)).",
+    "PackingBounds.FullMain.exact_binary_exponent": "The base-two logarithm of the unrestricted linear-program bound, divided by dimension, converges to -1/2 log_2(2 pi / e).",
+    "PackingBounds.PackingBridge.sphere_packing_sharp_asymptotic_upper": "There is a vanishing error sequence such that, in every positive dimension, sphere-packing density is at most (sqrt(e / (2 pi)) plus that error) to the dimension.",
+    "PackingBounds.sharpFullCohnElkiesManuscriptConclusions": "Packages the complete sharp asymptotic conclusions for the unrestricted program, including quotient-root, natural-logarithmic, and base-two limits, vanishing-error formulas, a universal bound for all admissible functions, and a certified decimal exponent interval."
+  },
+  "classification": {
+    "msc2020": [
+      "52C17",
+      "41A60",
+      "42A38"
+    ],
+    "tags": [
+      "sphere-packing",
+      "discrete-geometry",
+      "harmonic-analysis",
+      "linear-programming-bounds"
+    ],
+    "branch": "discrete geometry and harmonic analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/SpherePacking.lean",
+  "statement_hash": "sha256:29716822e455cd4a19b06d58e274398e102639df442d7383ffea7e9e8e68b5a0"
+}

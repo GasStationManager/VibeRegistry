@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "erdos81-paper-ii-chordal-heredity",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Erdos81PaperIIContrib",
+  "version": 1,
+  "title": "Chordal graphs: minimal separators and simplicial vertices",
+  "abstract": "A reusable formalization byproduct accompanying Paper II: defines chordal graphs through the cycle-and-chord characterization, proves induced-subgraph heredity and the clique property for finite minimal separators of fixed vertex pairs, proves Dirac's simplicial-vertex theorem, and proves the connected non-complete case of the two-vertex conclusion.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/lean-pool",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.Erdos81PaperIIContrib",
+  "declarations": [
+    "SimpleGraph.IsChordal.exists_two_nonadj_isSimplicial",
+    "SimpleGraph.IsChordal.comap",
+    "SimpleGraph.IsChordal.induce",
+    "SimpleGraph.IsChordal.minimalSeparator_isClique",
+    "SimpleGraph.IsChordal.exists_isSimplicial"
+  ],
+  "informal": {
+    "SimpleGraph.IsChordal.comap": "A graph that embeds as an induced subgraph of a chordal graph is itself chordal.",
+    "SimpleGraph.IsChordal.induce": "Every induced subgraph of a chordal graph is chordal.",
+    "SimpleGraph.IsChordal.minimalSeparator_isClique": "Every finite minimal separator of two fixed vertices in a chordal graph is a clique.",
+    "SimpleGraph.IsChordal.exists_isSimplicial": "Every nonempty finite chordal graph has a simplicial vertex.",
+    "SimpleGraph.IsChordal.exists_two_nonadj_isSimplicial": "Every connected non-complete finite chordal graph has two non-adjacent simplicial vertices."
+  },
+  "classification": {
+    "msc2020": [
+      "05C75"
+    ],
+    "tags": [
+      "graph-theory",
+      "chordal-graphs",
+      "induced-subgraphs",
+      "minimal-separators",
+      "simplicial-vertices"
+    ],
+    "branch": "graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Erdos81PaperIIContrib.lean",
+  "statement_hash": "sha256:c8e49f1198496bb53408654ec82f2d7e67bde7906cc3b3fc10614ac3fa8cacfd"
+}

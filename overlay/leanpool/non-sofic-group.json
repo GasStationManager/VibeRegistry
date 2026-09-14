@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "non-sofic-group",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/NonSoficGroup",
+  "version": 1,
+  "title": "Existence of a finitely presented non-sofic group",
+  "abstract": "Constructs a finitely presented group that is not sofic, resolving the question whether every group admits arbitrarily accurate finite permutation approximations. The development combines an explicit elementary group with property T, a finite-table construction of a finitely presented group, finite-model expansion, and a local obstruction to sofic approximation.",
+  "authors": [
+    "OpenAI",
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/openai/ten-proofs",
+  "commit": "",
+  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "entry_module": "LeanPool.NonSoficGroup",
+  "declarations": [
+    "SoficGroups.exists_finitelyPresented_nonsofic_group"
+  ],
+  "informal": {
+    "SoficGroups.exists_finitelyPresented_nonsofic_group": "There exists a group admitting a finite presentation but no sofic approximation."
+  },
+  "classification": {
+    "msc2020": [
+      "20F65",
+      "20E22"
+    ],
+    "tags": [
+      "group-theory",
+      "sofic-groups",
+      "property-t",
+      "finite-approximations"
+    ],
+    "branch": "geometric and combinatorial group theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/NonSoficGroup.lean",
+  "statement_hash": "sha256:d79598722a11cc69456792e1116c4e77fd5290f0932f1a75709b627d982f0b6b"
+}

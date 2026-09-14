@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-09-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-09-000002",
+  "version": 1,
+  "title": "Verified external-to-swap regret reduction and correlated-equilibrium solver",
+  "abstract": "A finite Cesaro/Markov reduction turns one external regret learner per recommendation into a quantitative swap-regret bound. Applied to the pinned regret-matching and regret-matching+ algorithm, the development proves an approximate correlated-equilibrium guarantee for actual simultaneous play, with an explicit finite stationarity term. A rational refinement and exact coordination run make the construction executable.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/correlated-swap-regret-lean",
+  "commit": "5a3ca60f6390d88cef38c767e8952eb47c7b3dfa",
+  "project_path": null,
+  "declarations": [
+    "CorrelatedEquilibrium.SwapReduction.Palomar.swap_regret_bound_of_base",
+    "CorrelatedEquilibrium.SwapReduction.Palomar.swap_regret_bound",
+    "CorrelatedEquilibrium.SwapReduction.Palomar.averageProduct_swapGain_eq_cumulative",
+    "CorrelatedEquilibrium.SwapReduction.Palomar.averageProduct_approxCE_of_swap_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91A26",
+      "91A10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-09T14:36:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5a3ca60f6390d88cef38c767e8952eb47c7b3dfa",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--correlated-swap-regret-lean--11f09b229fec",
+        "source_repository": "Arthur742Ramos/correlated-swap-regret-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:51c3be02b905e4635fb8ac1982e793915cf505365d698c4e04b4b653f3f5c85e"
+}

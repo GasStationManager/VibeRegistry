@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-12-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-12-000004",
+  "version": 1,
+  "title": "rk-lean: the directed construction for k-th-power-difference-free sets at every k, with the exponents 0.912145 (k = 4) and 0.950826 (k = 6)",
+  "abstract": "A Lean 4 proof of Krachun's directed (acyclic-block) lower-bound construction for sets of integers with no k-th-power difference, stated and proved for every exponent k >= 2. Let D_k(N) be the largest size of a subset of {1,...,N} no two of whose elements differ by a nonzero perfect k-th power. A pool for k is a nonempty list of blocks (m, sup, H) with pairwise coprime square-free moduli m >= 2, heights H >= 2, and sup a nonempty list of (vertex, rank) pairs with distinct vertices below m, ranks below H, and a strict rank drop along every ordered pair of vertices whose difference is a nonzero k-th-power residue mod m (so the induced digraph is acyclic). For every such pool, alpha k P <= liminf log D_k(N)/log N, where alpha k P = (sum ((k-1) log m + log t)/log H) / (1 + k sum log m / log H) and t >= 1 is the number of vertices of a block; and N^rho <= D_k(N) for all large N whenever rho < alpha k P. The theorem is instantiated at k = 4 with nine blocks, eight on the primes 5, 13, 29, 37, 53, 61, 101, 109 and one at the composite square-free modulus 51 = 3 * 17, and at k = 6 with nine blocks on the primes 7, 19, 31, 43, 67, 79, 103, 127, 139, giving the exponents 0.912145042700... and 0.950825559086..., each proved to exceed the corresponding Ruzsa transfer value ((3 + log 6/log 17)/4 = 0.908103119289... and (5 + log 6/log 13)/6 = 0.949759249243..., the latter being Ruzsa's own published Corollary at k = 6) and the decimal bounds 0.9121 and 0.9508, by exact comparisons of natural powers.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/rk-lean",
+  "commit": "4bf2e3a56b6a522764a4d03e5dc606c12376185e",
+  "project_path": null,
+  "declarations": [
+    "KthPower.directed_liminf",
+    "KthPower.directed_pointwise",
+    "KthPower.pool4_valid",
+    "KthPower.pool6_valid",
+    "KthPower.alpha4_gt_transfer",
+    "KthPower.alpha4_gt",
+    "KthPower.alpha6_gt_transfer",
+    "KthPower.alpha6_gt",
+    "KthPower.fourth_power_liminf",
+    "KthPower.sixth_power_liminf"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B30",
+      "11B75",
+      "05C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-12T18:36:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4bf2e3a56b6a522764a4d03e5dc606c12376185e",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--rk-lean--656735e0c066",
+        "source_repository": "JD-Jones-ASES/rk-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:05d4f436af854b1f7f20df11f4074d43fae0aa30a04cebe1f197f2ade5f99812"
+}

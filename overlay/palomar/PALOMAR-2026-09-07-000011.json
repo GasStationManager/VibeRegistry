@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-07-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000011",
+  "version": 1,
+  "title": "Hoeffding's extrema of the number of successes at a fixed mean",
+  "abstract": "For n independent trials with success probabilities p_1, ..., p_n in [0,1] -- Poisson trials -- and S the number of successes, three results about how the law of S varies over all trial vectors with a given mean lam, with pbar = lam/n the common success probability of the homogeneous trials of the same mean. First, for g convex on the integer grid, E[g S] is maximised by the binomial, and under strict grid convexity equality holds exactly at the constant vector (Hoeffding's Theorem 3). Second, for arbitrary g with no convexity assumed, the maximum and the minimum of E[g S] over the fixed-mean box are attained at points whose coordinates take at most three distinct values, at most one of them strictly between 0 and 1 (Corollary 2.1). Third, away from the mean the binomial extremises the lower tail: for k >= lam the homogeneous vector has the lightest lower tail and for k <= lam - 1 the heaviest (two of the three regimes of Theorem 4). Every compared statement is written without any definition of its own: the probability model, the tail and the binomial comparator are expanded into raw Finset sums, products and filters from Mathlib, so that each claim can be audited against the informal statement without first accepting a definition.",
+  "authors": [
+    "George A. Constantinides"
+  ],
+  "repository": "https://github.com/geoconuk/lean-misc-math",
+  "commit": "cb359c08d6515e97c4b7ec1ccdd0f56b0ddbe722",
+  "project_path": null,
+  "declarations": [
+    "MiscMath.Probability.hoeffding_thm3_unfolded",
+    "MiscMath.Probability.hoeffding_thm3_eq_iff_unfolded",
+    "MiscMath.Probability.hoeffding_cor21_unfolded",
+    "MiscMath.Probability.hoeffding_cor21_min_unfolded",
+    "MiscMath.Probability.hoeffding_thm4_unfolded"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.ST"
+    ],
+    "msc2020": [
+      "60E15",
+      "62E15",
+      "60C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-07T16:58:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cb359c08d6515e97c4b7ec1ccdd0f56b0ddbe722",
+        "fork_repository": "PalomarArchive/geoconuk--lean-misc-math--79e5c7089a59",
+        "source_repository": "geoconuk/lean-misc-math"
+      }
+    ]
+  },
+  "statement_hash": "sha256:aecb66c241450a45fa37b906786e49821fb9d49a9e06c45e7e3899041b902698"
+}
