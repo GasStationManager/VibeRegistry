@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ldct/lean-eval-chudnovsky",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.Chudnovsky",
   "declarations": [
     "Chudnovsky.chudnovskySum_eq_pi_inv"
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Chudnovsky.lean",
-  "statement_hash": "sha256:7e99971b7ac573c15ca6a905e1a4f7685d0c08785e7607b5722a2f055136267e"
+  "statement_hash": "sha256:cfb9b76955464ff85ccf742ff4f78271bc2e601aeb34b39ba84d3d4444f6b42f"
 }

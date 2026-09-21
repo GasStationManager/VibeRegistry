@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/cameronfreer/infinitary-logic",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.InfinitaryLogic",
   "declarations": [
     "FirstOrder.Language.scottSentence_characterizes",
@@ -106,5 +106,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/InfinitaryLogic.lean",
-  "statement_hash": "sha256:a383690256760e05eecc440ab48af47dc76271eaeda6fb027de8c008340c7b3e"
+  "statement_hash": "sha256:aa803a929235dda152d863beea877a9fce9ea306643f4a8fe7e7e3090509ddb4"
 }

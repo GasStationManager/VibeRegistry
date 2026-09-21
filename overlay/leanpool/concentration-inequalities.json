@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "concentration-inequalities",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ConcentrationInequalities",
+  "version": 1,
+  "title": "Bennett--Bernstein, Freedman, and Hoeffding concentration inequalities",
+  "abstract": "Develops variance-sensitive sub-gamma moment-generating-function estimates, Bennett and Bernstein bounds, a Freedman--Bernstein upper tail for finite adapted sums, conditional and independent-variable Hoeffding inequalities.",
+  "authors": [
+    "Juan Pablo Traverso Gianini",
+    "Aristotle"
+  ],
+  "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.ConcentrationInequalities",
+  "declarations": [
+    "Contrib.Freedman.subgamma_bernstein_tail",
+    "Contrib.Bennett.hasSubgammaMGF_of_bounded_above",
+    "Contrib.ConditionalHoeffding.hasCondSubgaussianMGF_of_mem_Icc",
+    "Contrib.Hoeffding.hoeffding_upper"
+  ],
+  "informal": {
+    "Contrib.Bennett.hasSubgammaMGF_of_bounded_above": "A centered real random variable bounded above by a positive constant, with bounded second moment, satisfies a Bennett--Bernstein sub-gamma moment-generating-function estimate.",
+    "Contrib.Freedman.subgamma_bernstein_tail": "A finite adapted sum of conditionally sub-gamma increments satisfies the corresponding variance-sensitive Freedman--Bernstein upper-tail bound.",
+    "Contrib.ConditionalHoeffding.hasCondSubgaussianMGF_of_mem_Icc": "A bounded random variable with zero conditional expectation satisfies a conditional Hoeffding sub-Gaussian moment-generating-function estimate.",
+    "Contrib.Hoeffding.hoeffding_upper": "A sum of finitely many independent random variables valued in the unit interval exceeds its mean by t with probability at most exp(-2 t squared divided by the number of terms)."
+  },
+  "classification": {
+    "msc2020": [
+      "60E15",
+      "60G42"
+    ],
+    "tags": [
+      "probability-theory",
+      "concentration-inequalities",
+      "martingales"
+    ],
+    "branch": "probability theory and probabilistic combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ConcentrationInequalities.lean",
+  "statement_hash": "sha256:30bb6b4729e5fbf50d1398538a9add13f26c86ddb5b893754ff24a8cc8dab624"
+}

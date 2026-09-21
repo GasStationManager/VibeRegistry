@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "naslund-counterexample",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/NaslundCounterexample",
+  "version": 1,
+  "title": "Square-difference-free polynomials beyond Naslund's conjectured bound",
+  "abstract": "Constructs square-difference-free subsets of polynomials over the field with three elements that refute Naslund's Conjecture 13 at every degree bound divisible by four and at least eight. An explicit degree-eight lift multiplies cardinality by 810 and yields a lower bound of 16/21 for the lower limiting normalized logarithmic growth rate.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/ns-lean",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.NaslundCounterexample",
+  "declarations": [
+    "NaslundCounterexample.conjecture_fails",
+    "NaslundCounterexample.liminf_ge",
+    "NaslundCounterexample.exists_card_810",
+    "NaslundCounterexample.conjecture_fails_at_eight",
+    "NaslundCounterexample.exists_card_pow",
+    "NaslundCounterexample.exists_card_twenty_seven_mul_pow"
+  ],
+  "informal": {
+    "NaslundCounterexample.exists_card_810": "There is a square-difference-free set of 810 polynomials over F_3 with degree less than eight.",
+    "NaslundCounterexample.conjecture_fails_at_eight": "The upper bound 3^6 = 729 in Naslund's Conjecture 13 fails for square differences over F_3 at degree bound eight.",
+    "NaslundCounterexample.exists_card_pow": "For every positive integer e, there is a square-difference-free set of 810^e polynomials over F_3 with degree less than 8e.",
+    "NaslundCounterexample.exists_card_twenty_seven_mul_pow": "For every natural number e, there is a square-difference-free set of 27 times 810^e polynomials over F_3 with degree less than 8e + 4.",
+    "NaslundCounterexample.conjecture_fails": "For every n divisible by four with n at least eight, there is a square-difference-free set of polynomials over F_3 of degree less than n whose cardinality exceeds 3^(3n/4).",
+    "NaslundCounterexample.liminf_ge": "If D(n) is the largest cardinality of a square-difference-free set of polynomials over F_3 of degree less than n, then the lower limit of log D(n) divided by n log 3 is at least 16/21."
+  },
+  "classification": {
+    "msc2020": [
+      "11B75",
+      "05D05"
+    ],
+    "tags": [
+      "additive-combinatorics",
+      "square-difference-free",
+      "function-fields",
+      "polynomial-constructions"
+    ],
+    "branch": "additive combinatorics and number theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/NaslundCounterexample.lean",
+  "statement_hash": "sha256:7eec137a33c8616b6fcb766b0550ae52645d8ed9a6c312c0ea96743a61194733"
+}

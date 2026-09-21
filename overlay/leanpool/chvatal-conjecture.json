@@ -1,0 +1,61 @@
+{
+  "source": "leanpool",
+  "upstream_id": "chvatal-conjecture",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Chvatal",
+  "version": 1,
+  "title": "Chvátal's conjecture and sharp Boolean correlation",
+  "abstract": "Formalizes Chang, Liu, and Liu's proof that a hereditary family on a finite nonempty ground set has a largest intersecting subfamily that is a star. Develops the sharp Boolean Fourier correlation inequality, its antipodal and quadratic forms, sharpness examples, and the weighted star theorem for nonnegative decreasing weights.",
+  "authors": [
+    "Boon Suan Ho",
+    "Chvatal formalization contributors"
+  ],
+  "repository": "https://github.com/boonsuan/chvatal",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.Chvatal",
+  "declarations": [
+    "Chvatal.chvatal",
+    "Chvatal.sharp_correlation",
+    "Chvatal.exists_largest_intersecting_star",
+    "Chvatal.two_spectral_le_quadratic_covariance",
+    "Chvatal.antipodal_correlation",
+    "Chvatal.andFunction_sharp",
+    "Chvatal.exists_largest_weighted_intersecting_star"
+  ],
+  "informal": {
+    "Chvatal.chvatal": "Every intersecting subfamily A of a hereditary finite family D on a finite nonempty ground type has cardinality at most that of some star of D.",
+    "Chvatal.exists_largest_intersecting_star": "One star of D is itself intersecting and simultaneously dominates all intersecting subfamilies of the hereditary family D in size, on a finite nonempty ground type.",
+    "Chvatal.sharp_correlation": "For increasing Boolean functions f and g on any finite cube, the sum of squared Fourier coefficients of g weighted by the largest influence of f on each nonempty index is at most the harmonic mean of Cov(f,g) and Cov(f,g*), with zero-denominator value zero.",
+    "Chvatal.two_spectral_le_quadratic_covariance": "For increasing Boolean f and g and every real t, twice their squared Fourier energy over index pairs with odd intersection is bounded by t^2 Cov(f,g) + (1-t)^2 Cov(f,g*).",
+    "Chvatal.antipodal_correlation": "If g is also self-dual and the finite coordinate type is nonempty, Cov(f,g) is at least one quarter of f's minimum coordinate influence.",
+    "Chvatal.andFunction_sharp": "The AND function attains equality in the sharp correlation bound for every increasing Boolean second function, including constants.",
+    "Chvatal.exists_largest_weighted_intersecting_star": "For any nonnegative antitone real weight on subsets of a finite nonempty ground type, one full-cube star is intersecting and its total weight dominates every intersecting family."
+  },
+  "classification": {
+    "msc2020": [
+      "05D05",
+      "60E15"
+    ],
+    "tags": [
+      "extremal-combinatorics",
+      "intersecting-families",
+      "Fourier-analysis"
+    ],
+    "branch": "extremal combinatorics"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Chvatal.lean",
+  "statement_hash": "sha256:c6082ea8a9f5267d451ee9047e9b65d33e3ab1ff0f7d40c1d2ee8559797f3f57"
+}

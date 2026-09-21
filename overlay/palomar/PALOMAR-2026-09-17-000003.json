@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-17-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-17-000003",
+  "version": 1,
+  "title": "ns-lean: Naslund's Conjecture 13 is false at q = 3, k = 2, for every n congruent to 0 mod 4 with n >= 8",
+  "abstract": "A Lean 4 proof that square-difference-free subsets of the polynomials of degree below n over F_3 can be larger than 3^(3n/4). Call A square-difference-free when no two of its elements differ by a nonzero square, and let D_3(n) be the largest size of such a set inside P_{3,n}. A ten-word code S in F_3^4, in which no two words differ by a vector with every coordinate in {0, 1}, drives a lift that carries a square-difference-free subset of P_{3,m} to one of P_{3,m+8} with 810 times as many elements. Iterating it from the bases {0} and B_4 = {a T^3 + b T + c (1 - T^2)} gives square-difference-free sets of size 810^e in degree below 8e and 27 * 810^e in degree below 8e + 4, so the conjectured bound 3^(3n/4) fails at every n divisible by 4 with n >= 8, and 16/21 <= liminf log D_3(n) / (n log 3).",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/ns-lean",
+  "commit": "035e9b0c147630e35631e4401433660f695d1fba",
+  "project_path": null,
+  "declarations": [
+    "NS.D3_8_ge_810",
+    "NS.conjecture13_fails_3_2_8",
+    "NS.D3_8e_ge",
+    "NS.D3_8e4_ge",
+    "NS.conjecture13_fails_3_2_all",
+    "NS.liminf_ge"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11T55",
+      "11B30",
+      "05B40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-17T01:26:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "035e9b0c147630e35631e4401433660f695d1fba",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--ns-lean--8c013c5b3fa4",
+        "source_repository": "JD-Jones-ASES/ns-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d51d36c96e542455e0841353eb88670fd2d2bd71ee9c98505e26a778be4222e3"
+}

@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/openai/ten-proofs",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.PermanentFormulaLowerBound",
   "declarations": [
     "PermanentFormulaLowerBound.permanent_rational_formula_logarithmic_lower_bound",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PermanentFormulaLowerBound.lean",
-  "statement_hash": "sha256:c16f520c8a486b1cc860a84bde7ec58a5f95de898be8a368b944e191914980d9"
+  "statement_hash": "sha256:b70d02bb32c7f2c981c36fc74206e016bd0cc21e3c957243ef92a4d5e2d14805"
 }

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/kkytola/VirasoroProject",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.VirasoroProject",
   "declarations": [
     "VirasoroProject.VirasoroAlgebra",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/VirasoroProject.lean",
-  "statement_hash": "sha256:bb83dd4bef121b2909cb0ca034e734afbc7f549a4e8d2bdc4175df3a42572088"
+  "statement_hash": "sha256:d3d838b569d977e596a448951ba2f8f00c9bf0eaec2e1df21b0eebbeea21af4f"
 }

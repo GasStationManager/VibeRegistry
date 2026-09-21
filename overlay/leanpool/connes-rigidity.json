@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/utensil/connes-rigidity",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.ConnesRigidity",
   "declarations": [
     "Connes.theoremA"
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ConnesRigidity.lean",
-  "statement_hash": "sha256:22c00b3fcfcae8f0b8f880fafed92fb9aa26f00e3d7fe353e4f2ec51ea876035"
+  "statement_hash": "sha256:6ab8be0d9b60f86ea94f951d05a303bf016a64bd07a29c4543c944ddcaa8ece8"
 }

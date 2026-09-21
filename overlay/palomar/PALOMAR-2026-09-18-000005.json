@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-18-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-18-000005",
+  "version": 1,
+  "title": "Yu-Wang-Samworth 2015: population-gap eigenspace and singular-subspace perturbation bounds",
+  "abstract": "A machine-checked Lean 4 formalization of the principal population-gap perturbation results of Yi Yu, Tengyao Wang and Richard J. Samworth, \"A useful variant of the Davis-Kahan theorem for statisticians\" (Biometrika 102 (2015) 315-323). This single Palomar entry compares both conclusions of Theorem 2 and both displays of Corollary 1 for eigenspaces of real symmetric matrices, together with the right- and left-singular-subspace conclusions of Theorem 3 for general real matrices and two supporting equivalences between its Gram-eigenvector formulation and the paper's paired singular-vector equations.\nThe common idea is that every separation hypothesis in Theorems 2 and 3 is stated entirely in terms of the population object. Theorem 2 uses the population eigenvalue gap min(lambda_(r-1)-lambda_r, lambda_s-lambda_(s+1)); Theorem 3 applies the same idea to the squared singular spectrum, with the additional factor (2 sigma_1 + ||A-hat-A||_op). No sample eigenvalue or singular-value gap is assumed, so the sample frame is arbitrary among admissible orthonormal frames at the selected block, including under multiplicity.\nThe selected results have deliberately different source dispositions. Theorem 2 is source-exact. Corollary 1 writes out the unit normalization inherited from its introduction as the d=1 case of Theorem 2; the standalone printed display omits that normalization and its second conclusion is false without it. Theorem 3 is source-corrected: its printed convention sigma^2_(rank(A)+1) := -infinity makes the denominator infinite at a rank boundary and yields a false assertion. The compared statement instead uses the ambient Gram-spectrum convention used by the paper's own proof, with singular values zero past rank, while retaining the printed restriction 1 <= r <= s <= rank(A). Because this one entry contains that correction, its source relationship is conservatively recorded as `adapts`.",
+  "authors": [
+    "Jon Crall",
+    "Edward Wang"
+  ],
+  "repository": "https://github.com/AIQ-Kitware/aiq-yu-wang-samworth-2015-useful-variant-davis-kahan-statisticians-formalization",
+  "commit": "234e61473e5378fd89585d8929cfba560b046323",
+  "project_path": null,
+  "declarations": [
+    "YWSPalomar.theorem2_sinTheta",
+    "YWSPalomar.theorem2_alignedFrame",
+    "YWSPalomar.corollary1_sinTheta",
+    "YWSPalomar.corollary1_alignedVector",
+    "YWSRectangular.theorem3_rightSinTheta",
+    "YWSRectangular.theorem3_rightAlignedFrame",
+    "YWSRectangular.theorem3_leftSinTheta",
+    "YWSRectangular.theorem3_leftAlignedFrame",
+    "YWSRectangular.isRightSingularBlock_iff_pairedSingularVectors",
+    "YWSRectangular.isLeftSingularBlock_iff_pairedSingularVectors"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.ST",
+      "math.FA"
+    ],
+    "msc2020": [
+      "62H25",
+      "47A55",
+      "15A42",
+      "15A18",
+      "65F15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-18T11:51:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "234e61473e5378fd89585d8929cfba560b046323",
+        "fork_repository": "PalomarArchive/AIQ-Kitware--aiq-yu-wang-samworth-2015-useful-variant-davis-kahan-statisticians-formal--b7b289f4bf00",
+        "source_repository": "AIQ-Kitware/aiq-yu-wang-samworth-2015-useful-variant-davis-kahan-statisticians-formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4b2c426a6ddc7f6bc2640e9730f1e111e500723aaa7cde09c667e01955960598"
+}

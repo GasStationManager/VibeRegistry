@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-19-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-19-000006",
+  "version": 1,
+  "title": "An interval-moment criterion for square-difference-free integer sets",
+  "abstract": "We prove a general interval-moment criterion for square-difference-free integer sets and apply it to obtain an improved unconditional lower bound in Sarkozy's theorem, with exponent 0.75806746. If D(N) is the largest size of a subset of {1, ..., N} containing no two distinct elements whose difference is a square, then for every epsilon > 0 and all sufficiently large N we prove D(N) >= N^(0.75806746 - epsilon). The exact exponent is 37903373/50000000. The reusable criterion starts from finite digit sets in pairwise coprime square bases, with ordered intervals and width-moment inequalities. A strict surplus in the component exponents yields the asymptotic bound through finite stopping words, rank rounding, the Chinese remainder theorem, and interpolation between geometric scales. Both the general criterion and its numerical application are formalized in Lean. All nine concrete components are proved: six prime chains, a 25-state binary recursion, and the two complete composite witnesses for 215 and 437. Every required ordering, numerical moment, lifting, and asymptotic argument is checked, with no remaining finite-certificate hypotheses. The repository includes self-contained PDF and LaTeX write-ups of the full result and a simpler companion construction attaining exponent 0.758001 that explains several core ideas, together with exact computational certificate programs. The simpler construction is not separately formalized or a selected submission statement.",
+  "authors": [
+    "Eric Naslund"
+  ],
+  "repository": "https://github.com/enaslund/sarkozy-lower-bound-0.758",
+  "commit": "e5d693729e23762b063a55015ad79ccaf28a3217",
+  "project_path": null,
+  "declarations": [
+    "SarkozySubmission.interval_moment_bound",
+    "SarkozySubmission.improved_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B75",
+      "05D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-19T20:21:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e5d693729e23762b063a55015ad79ccaf28a3217",
+        "fork_repository": "PalomarArchive/enaslund--sarkozy-lower-bound-0.758--6006cb546a0b",
+        "source_repository": "enaslund/sarkozy-lower-bound-0.758"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f5964babf53b7bf0cdf8765588cadcb37f62ee1e079bf194e5f84a6d0c9cc414"
+}

@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/AlexLoitzl/pumping_cfg",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.PumpingCfg",
   "declarations": [
     "Language.IsContextFree.pumping",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PumpingCfg.lean",
-  "statement_hash": "sha256:32e57c370cfe6b1785df12b0d596b198946e8986c2292fc4e548899d62e59e1d"
+  "statement_hash": "sha256:5735d22892b1062e63efb73d5d73b45316bf95424b21b963fe61eb906815958e"
 }

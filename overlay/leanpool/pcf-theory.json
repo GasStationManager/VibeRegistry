@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/YnirPaz/PCF-Theory",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.PCFTheory",
   "declarations": [
     "Ordinal.exists_isClubGuessing_of_cof_uncountable"
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PCFTheory.lean",
-  "statement_hash": "sha256:155e49fca5efe4922001cbecde983b1724ce1316f97a701bb117d9694fa4d695"
+  "statement_hash": "sha256:d72ac6a8351f9a50fb4d7dbd5ee6b27d3c82b6001a5e7dcdc803b9408da50b20"
 }

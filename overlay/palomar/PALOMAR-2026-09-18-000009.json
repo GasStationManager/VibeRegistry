@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-18-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-18-000009",
+  "version": 1,
+  "title": "A convex body variant of Soberon's counterexample to the Grünbaum conjecture.",
+  "abstract": "A Lean formalization of a geometric strengthening/variant of Pablo Soberón's counterexample to the Grünbaum four-hyperplane mass-partition conjecture. The formalized result constructs a convex body K in R^4 with nonempty interior such that no four affine hyperplanes divide K into sixteen sign cells of equal four-dimensional volume.  Equivalently, the obstructed mass can be chosen to be uniform Lebesgue volume on a convex body.  The proof adapts Soberón's explicit cubic/quartic tensor obstruction and replaces the smooth positive density used in the source by a small Wulff-body perturbation of the Euclidean ball.",
+  "authors": [
+    "Arseniy Akopyan"
+  ],
+  "repository": "https://github.com/akopjan/Grunbaum-counterexample",
+  "commit": "438da254d505b77d58461e35029b2bc6ebcf148e",
+  "project_path": null,
+  "declarations": [
+    "SoberonConvexBody.grunbaum_counterexample"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C35",
+      "52A37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-18T22:06:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "438da254d505b77d58461e35029b2bc6ebcf148e",
+        "fork_repository": "PalomarArchive/akopjan--Grunbaum-counterexample--7f799d003199",
+        "source_repository": "akopjan/Grunbaum-counterexample"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f43e7f1cdf8b8820b306844d4c81ef9e7b2cd766edc720d72aa16e1056166e77"
+}

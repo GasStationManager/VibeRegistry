@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/siddhartha-gadgil/Polylean",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.Polylean",
   "declarations": [
     "LeanPool.Polylean.P.torsionFree",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Polylean.lean",
-  "statement_hash": "sha256:d0a24067e89863f69f0e6db32f6ae6ca2016292ed07c80da9c586242fea4f8f8"
+  "statement_hash": "sha256:c8b0b4ac71e6a8338cde01f5de0aee08fbcd5fd6558b7ea98ce71c8cf6a804a6"
 }

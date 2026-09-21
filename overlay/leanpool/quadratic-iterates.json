@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/MichaelStollBayreuth/QuadraticIterates",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.QuadraticIterates",
   "declarations": [
     "QuadraticIterates.section3_main",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/QuadraticIterates.lean",
-  "statement_hash": "sha256:d515966a6aa4de0d70b6d7db153c50167de9531e2a0f2ab24ab6f0d689bc5748"
+  "statement_hash": "sha256:cc676d7f1e48d14f40c8097d48898ec6cea6e2e240dcf13808482a547060f3d1"
 }

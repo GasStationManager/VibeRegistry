@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/Arthur742Ramos/finite-graph-fundamental-group",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.FiniteGraphFundamentalGroup",
   "declarations": [
     "FiniteGraphFreeGroup.graphTopologicalFundamentalGroupEquiv",
@@ -59,5 +59,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FiniteGraphFundamentalGroup.lean",
-  "statement_hash": "sha256:ef7d61c01b3dc3be1dac875cf68578f970597b12ead135d000065d8e03ed2403"
+  "statement_hash": "sha256:eb43a3e43eed835be24a5e24cea053a81e507881612ff696b9b37d968fe5ce59"
 }

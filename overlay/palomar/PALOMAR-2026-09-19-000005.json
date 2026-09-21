@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-19-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-19-000005",
+  "version": 1,
+  "title": "definable-saturated",
+  "abstract": "A Lean 4 formalization of the relative consistency of ZFC + CH together with the following assertion. There is a countably saturated elementary extension of the natural-number arithmetic structure of cardinality aleph one; all such set-sized presentations are isomorphic; and no such presentation is ordinal definable. The class is defined without parameters. Removing CH from the asserted theory gives a consistent negative answer to MathOverflow question 382009 about definability up to isomorphism versus an ordinal-definable copy. Every notion in the final sentence is internal to the first-order model of set theory.",
+  "authors": [
+    "Elliot Glazer"
+  ],
+  "repository": "https://github.com/elliotglazer/definable-saturated",
+  "commit": "e683bba9e758323b43dd1d6206ed2f6fc9510f06",
+  "project_path": null,
+  "declarations": [
+    "DefinableSaturated.consistent_with_ch",
+    "DefinableSaturated.definable_up_to_isomorphism_without_od_copy_consistent"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03C62",
+      "03E35",
+      "03E40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-19T15:54:53Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e683bba9e758323b43dd1d6206ed2f6fc9510f06",
+        "fork_repository": "PalomarArchive/elliotglazer--definable-saturated--18798dbfc1b8",
+        "source_repository": "elliotglazer/definable-saturated"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8171d68463d0b7a4a65fa5e1b3f6d9b88f4f2be13b890e323bbd828b4ae2e8fb"
+}

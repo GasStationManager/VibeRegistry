@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-15-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-15-000001",
+  "version": 1,
+  "title": "Boundary regularity for non-local operators with symmetric kernels and vanishing horizon",
+  "abstract": "This Lean 4 formalization proves the two main theorems of the paper 'Boundary regularity for non-local operators with symmetric kernels and vanishing horizon' (arXiv:2504.00567v1). For a fractional order s in (1/2,1), the paper studies a nonlocal operator with symmetric kernel whose interaction horizon depends on the distance to the boundary and on a horizon parameter sigma in (0,1], and shrinks near the boundary. The formalization proves that weak solutions u to the Dirichlet problem with zero Dirichlet data and bounded right-hand side are in the Hölder space C^{2s-1} up to the boundary. Furthermore, it is proven that the quotient u/d_Omega^{2s-1} is also Hölder continuous up to the boundary. Both results include norm estimates controlled by the essential supremum of the right-hand side.",
+  "authors": [
+    "Philipp Svinger"
+  ],
+  "repository": "https://github.com/philipp-svinger/Math_Lean_Palomar_Vanishing-Horizon-Boundary-Reg",
+  "commit": "b90e5cc8ac0d36dfedd84cbfe517acc58cbc1a4a",
+  "project_path": null,
+  "declarations": [
+    "MathLeanVanishingHorizonBoundaryReg.holderBoundaryRegularity",
+    "MathLeanVanishingHorizonBoundaryReg.higherBoundaryRegularity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP"
+    ],
+    "msc2020": [
+      "47G20",
+      "35B65",
+      "35S15",
+      "35R09"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-15T06:53:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b90e5cc8ac0d36dfedd84cbfe517acc58cbc1a4a",
+        "fork_repository": "PalomarArchive/philipp-svinger--Math_Lean_Palomar_Vanishing-Horizon-Boundary-Reg--d8fe0f599f39",
+        "source_repository": "philipp-svinger/Math_Lean_Palomar_Vanishing-Horizon-Boundary-Reg"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3dda9f2c9d5fbbc3af704e800881ff69562b91d4db2cc9d189a52013aba5eb74"
+}

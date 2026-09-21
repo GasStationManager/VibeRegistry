@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-15-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-15-000002",
+  "version": 1,
+  "title": "Integral Matrices of Fixed Rank over Number Fields: Lean formalization",
+  "abstract": "A Lean formalization of the fixed-rank asymptotic count for integral matrices over a number field and the convergence of moments of lifts of algebraic codes. The public results preserve the submission PDF's main scale, error terms, echelon-integral limit, and denominator normalization. The intermediate-rank height-counting input attributed to Schmidt is an explicit hypothesis; it is not silently assumed as an axiom.",
+  "authors": [
+    "Nihar Gargava"
+  ],
+  "repository": "https://github.com/nihargargava/IntegralMatrices",
+  "commit": "4124db884ee55ef0da9e899d44d1bec5bfe432ea",
+  "project_path": null,
+  "declarations": [
+    "Katznelson.Palomar.fixed_rank_count",
+    "Katznelson.Palomar.lifts_of_codes_convergence"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R04",
+      "11H06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-15T09:31:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4124db884ee55ef0da9e899d44d1bec5bfe432ea",
+        "fork_repository": "PalomarArchive/nihargargava--IntegralMatrices--ca51a36466e7",
+        "source_repository": "nihargargava/IntegralMatrices"
+      }
+    ]
+  },
+  "statement_hash": "sha256:347143729b1f8e21979b8d78e3faa3c1cc4eda5ac8b797ca8399911d002c1a94"
+}

@@ -14,7 +14,7 @@
   ],
   "repository": "https://github.com/ShengtongZhang-alt/BN",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.BollobasNikiforov",
   "declarations": [
     "BollobasNikiforov.lambda1_sq_add_lambda2_sq_le",
@@ -69,5 +69,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/BollobasNikiforov.lean",
-  "statement_hash": "sha256:8b7fe5ae86126e8170c7d349b97d13f137daff9bee90c9faa407633addab355c"
+  "statement_hash": "sha256:d5a2502819828037d52f86d00f34be0746bbc90d6e8c029d2447916b044217b9"
 }

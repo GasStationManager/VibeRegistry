@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-17-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-17-000006",
+  "version": 1,
+  "title": "Resonance-cluster analysis for a proposed counterexample to Fried's conjecture",
+  "abstract": "A Lean 4 formalization of the theorem FriedCrossing.fried_counterexample_of_resolvent_inputs, the machine-checked reduction behind a proposed codimension-one failure of Fried's identity ζ(0) = τ_R for acyclic characters on a closed hyperbolic 3-manifold with b₁ = 1. For a simple illustration of the method with figures, see docs/counterexample_intuitive_view.pdf.\nThe Mechanism: Near (g_hyp, ρ_triv), along the conformal family g_τ = e^{−2τb}g_hyp with characters χ_θ, the Ruelle resonances near 0 form two small clusters: a rank-2 cluster in degree 1, encoded by a 2×2 matrix M(θ,τ), and a rank-4 cluster in degree 2, encoded by a 4×4 matrix A(θ,τ). A branch is one eigenvalue of a cluster matrix followed continuously in (θ,τ). Degree 1 has the closed branch and the twin s_nc(θ,τ), which starts at the double point s*(θ) < 0 and travels at rate r₀ > 0 towards 0. Degree 2 has the two locked branches (the same eigenvalues, lifted by d₀) and two pure branches, the roots of Q = X² − e₁X + e₂; the pure branch nearest 0 is z(θ,τ). At the crossing metric τ = σ(θ) the twin and z reach 0 together, the twin as a pole of ζ and z as a zero, so ζ stays regular at 0 and ζ(0; g_σ) = τ_R · (rate of the twin)/(rate of z). The twin's rate is at most 2r₀ and z's exceeds 2r₀, so ζ(0; g_σ) ≠ τ_R. Fried's identity would need the two branches to arrive at the same speed. The whole Lean argument is bookkeeping of these four branches.\nWhat is Proved: The theorem is a conditional reduction. Its objects are two abstract resolvent families on Banach scales (structure fields = the cited facts: local uniform boundedness and two-sided inversion of the generator modulo inclusions, CDDP Lemma 4.3; smooth generator), complex structures, and nondegenerate frames; the cluster matrices M, A are DEFINED from them as real parts of the frame matrices A(p)⁻¹B(p) built from contour integrals of matrix elements of the resolvent. Its hypotheses are, in six groups, the properties of that data which the argument uses, each cited: (1) two independent states at s*(θ) in the degree-1 cluster at τ = 0, with s*(0) = 0, s* continuous, s*(θ) < 0 for θ ≠ 0 [DGRS (7.6), BuOl Cor 5.1, DFG Thm 2; independence = rederivation A2 of the informal account]; (2) the first-variation formula B·∂_τM(0,0) = diag(0,p) with r₀ = B_cc p/det B > 0 [CDDP (4.22), (1.3)]; (3) the degree-2 cluster at τ = 0 has spectrum {s*, s*, s*, −s*} [DGRS (7.6), k = 2]; (4) at θ = 0 the degree-1 cluster is singular and the degree-2 cluster has spectrum {0, 0, 0, tr M} [CDDP Cor 4.1, DGRS Lemma 7.1]; (5) every eigenvalue of M is an eigenvalue of A [DGRS Lemma 7.1]; (6) for any functions ζ₀, F, any τ_R ≠ 0 and dimension vector c: ζ₀ = F·z/s_nc off the crossing with F continuous and ζ₀(σ) = F(σ) at it [CD (6.5) at λ = 0], ζ₀ = τ_R wherever s_nc ≠ 0 [DGRS Thm 2 + Fried 1986], exactness of C₀¹ → C₀² → V₃ at each crossing [DR Thm 2.1], c₀ = c₄ = 0 and c₃ = c₁ [DGRS Lemmas 7.4, 7.2], c_k the dimensions. The conclusion: there are θ₀, δ > 0 such that for 0 < |θ| < θ₀ the twin crosses 0 at exactly one σ ∈ (0, 2|s*|/r₀], the ζ-order at 0 is zero, the zero branch has slope ∂_τe₂/e₁ of modulus > 2r₀, |e₁(θ,σ)| ≤ K₁|θ|σ, and ζ₀(σ) = τ_R · (pole rate)/(zero rate) ≠ τ_R, with the torsion identity of the zero cluster.\nDependencies: The identification of the abstract data with the geometry — that the resolvent families are those of the twisted deformed generator L_X + iθω(X) on the anisotropic spaces of g_τ, that ζ₀(τ) is the Ruelle zeta function of g_τ at 0, that τ_R is the Reidemeister torsion of χ_θ, and that the defined matrices are the cluster matrices (their imaginary parts vanish) — is the informal layer, taken from the cited papers and the accompanying note, and is not formalized. Nothing about manifolds, flows, anisotropic spaces or zeta functions is in Lean. Granting the six groups as cited, the theorem exhibits a counterexample to Fried's identity in the form stated by DGRS for acyclic unitary representations, at a non-generic metric where ζ is regular at 0 and zero-resonant states exist with cancelling multiplicities; the refined identity of CD Thm 4 holds there. Whether the six groups hold as cited has not been independently verified by a mathematician other than the author.",
+  "authors": [
+    "Benjamin Lawton"
+  ],
+  "repository": "https://github.com/blawton/fried-conj-lean",
+  "commit": "610d659ea15af869553f6e3e79c432880d9b0ab0",
+  "project_path": null,
+  "declarations": [
+    "FriedCrossing.fried_counterexample_of_resolvent_inputs"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.SP"
+    ],
+    "msc2020": [
+      "37C30",
+      "37D20",
+      "58J52",
+      "57Q10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-17T06:43:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "610d659ea15af869553f6e3e79c432880d9b0ab0",
+        "fork_repository": "PalomarArchive/blawton--fried-conj-lean--5c05aaba3487",
+        "source_repository": "blawton/fried-conj-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:eaeba9f7245d15fe9a2806b89b2756060b428b6e64c95067f91a03fcfe086160"
+}

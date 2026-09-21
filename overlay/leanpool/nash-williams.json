@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/yannpequignot/TwoBQO",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.NashWilliams",
   "declarations": [
     "Front.IsFront.nash_williams",
@@ -57,5 +57,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/NashWilliams.lean",
-  "statement_hash": "sha256:d6c61d9c6b0f87060fbe622d02ef473d6457418e72d10dc3ef5f38d1a8654911"
+  "statement_hash": "sha256:9da5119502d50b3fd09a2fe9f57c71190365a528137f684f5ef6306ae0270e43"
 }

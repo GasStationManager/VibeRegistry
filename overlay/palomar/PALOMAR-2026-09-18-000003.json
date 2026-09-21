@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-18-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-18-000003",
+  "version": 1,
+  "title": "Komlós conjecture",
+  "abstract": "Lean4 formalization of the Komlós bound with constant 36 following the Lovett—Karingula exposition. The Komlós statement gives signs for finitely many vectors of Euclidean norm at most 1 so that the signed sum has supremum norm at most 36. The Beck–Fiala statement gives a vertex colouring with edge discrepancy at most 36√t when every vertex belongs to at most t edges.",
+  "authors": [
+    "Gabriel Dahia"
+  ],
+  "repository": "https://github.com/gdahia/komlos",
+  "commit": "d802857449234318d557361b1dbb0a27e0258528",
+  "project_path": null,
+  "declarations": [
+    "Komlos.exists_sign_forall_abs_sum_apply_le",
+    "Komlos.exists_sign_forall_abs_finsum_le"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.DM"
+    ],
+    "msc2020": [
+      "11K38",
+      "05C65",
+      "05D40",
+      "68R05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-18T09:55:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d802857449234318d557361b1dbb0a27e0258528",
+        "fork_repository": "PalomarArchive/gdahia--Komlos--0f2adfaa0f39",
+        "source_repository": "gdahia/komlos"
+      }
+    ]
+  },
+  "statement_hash": "sha256:96bd10d94a4fa707203dff1b9ba3e91e29276d9f1987e3dc0c4618dffc4c6a22"
+}

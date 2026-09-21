@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/openai/ten-proofs",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.GapCVP",
   "declarations": [
     "GapCVP.Comparator.gapCVP400IsNPHard",
@@ -54,5 +54,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/GapCVP.lean",
-  "statement_hash": "sha256:96b1984345eb8772d197e32ec828609856dfa7d0f57b4b227afcd76733ccbdca"
+  "statement_hash": "sha256:2aa631f4264c39b50889e51d3c8108f3a9fa61bfa2e517776a2a092869a9fa40"
 }

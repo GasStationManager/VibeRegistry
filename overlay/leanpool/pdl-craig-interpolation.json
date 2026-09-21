@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "pdl-craig-interpolation",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PDL",
+  "version": 1,
+  "title": "Craig interpolation and Beth definability for propositional dynamic logic",
+  "abstract": "Proves Craig interpolation for full propositional dynamic logic, including tests and Kleene star, by constructing interpolants from uniform cyclic tableaux. Interpolants use only atomic propositions and atomic programs common to the two formulas. The development also proves the local Beth definability property for a propositional letter, and supplies reusable syntax, Kripke semantics, Fischer-Ladner closure, tableau soundness and completeness, finite reachability and game-theoretic infrastructure. The results assert existence; no executable extraction algorithm or complexity bound is claimed. Human contributors and Aristotle jointly developed the formalization. The completeness modules reuse the finite game determinacy theorem already pooled in `LeanPool.Lean4GlCoalgebras` instead of duplicating it.",
+  "authors": [
+    "PDL formalization contributors"
+  ],
+  "repository": "https://github.com/m4lvin/lean4-pdl",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.PDL",
+  "declarations": [
+    "PDL.interpolation",
+    "PDL.beth",
+    "PDL.consIffSat"
+  ],
+  "informal": {
+    "PDL.interpolation": "If the implication from PDL formula phi to psi is valid in every Kripke model, there exists a PDL formula theta whose atomic proposition and program vocabulary is contained in the intersection of theirs, such that phi implies theta and theta implies psi in every model.",
+    "PDL.beth": "If a PDL formula phi implicitly determines a propositional letter p (all two-letter substitutions agree wherever both substituted formulas hold), there is a formula psi using only phi's vocabulary other than p such that phi entails that p is equivalent to psi.",
+    "PDL.consIffSat": "A free sequent is tableau-consistent if and only if it is satisfiable in a Kripke model."
+  },
+  "classification": {
+    "msc2020": [
+      "03B45",
+      "03B70",
+      "03F03"
+    ],
+    "tags": [
+      "modal-logic",
+      "propositional-dynamic-logic",
+      "craig-interpolation",
+      "beth-definability",
+      "tableaux"
+    ],
+    "branch": "modal logic"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/PDL.lean",
+  "statement_hash": "sha256:22bf9e7a3191a272c8d810c72a77711380f891e42607ffa6e530bf40d1bf9659"
+}

@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-15-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-15-000005",
+  "version": 1,
+  "title": "Constructive families and an extension theorem for binary permutation X-rays",
+  "abstract": "We prove permutation realization for every admissible binary X-ray profile whose rank deviations from the odd staircase lie in [-2, 2], at every order and without a bound on density slack. We also prove the one-sided families with all deviations at least -1 or all deviations at most 1, with at least 2^u realizations, where u counts positive or negative deviations respectively. For n >= 1, if a label multiset L is realizable at order n, then Q(L) = {3, 2n+1} multiset-union (L+2) is realizable at order n+2. If every source label lies in [2, 2n-2], then h(L) <= h(Q(L)), where h counts permutation realizations. Repeated source labels are allowed. A least-order counterexample to the unrestricted conjecture must have first deviation at least 3 or last deviation at most -3. The unrestricted conjecture remains open.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/x-ray-lean",
+  "commit": "c0a7d9f6119ed1126a292081689fdf8927ac12ea",
+  "project_path": null,
+  "declarations": [
+    "XRay.two_sided",
+    "XRay.one_sided_lower",
+    "XRay.one_sided_upper",
+    "XRay.one_sided_lower_count",
+    "XRay.one_sided_upper_count",
+    "XRay.ordinary_extension",
+    "XRay.extension_count",
+    "XRay.least_counterexample"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A05",
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-15T15:08:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c0a7d9f6119ed1126a292081689fdf8927ac12ea",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--x-ray-lean--e7cc94550743",
+        "source_repository": "JD-Jones-ASES/x-ray-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1c5e064db94765238f0596b41b91fafc37fa7e7a2d99dfabdb35cc035e196025"
+}

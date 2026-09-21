@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/vikraman/event-structures",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.EventStructures",
   "declarations": [
     "EventStructures.EventStructure",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/EventStructures.lean",
-  "statement_hash": "sha256:cc317bc1f60daefb85643208105de45dc8ff9657c0004b64cfa2874a64aa8e48"
+  "statement_hash": "sha256:b447488c8c790b966731302a653d86bcf1cf9a4b334446d774fff50dad41e2ec"
 }

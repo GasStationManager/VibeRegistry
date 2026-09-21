@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/Vilin97/Clawristotle",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.GrothendieckVanishing",
   "declarations": [
     "GrothendieckVanishing"
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/GrothendieckVanishing.lean",
-  "statement_hash": "sha256:b3ebf01bcab629f8c0fcc3d7f0b9100ebc943f5d7ece164a6b408ba85cc346ba"
+  "statement_hash": "sha256:8b5c34d9f00281983a5087e64b63e2691a63214b12799dd3be5862f50407ab97"
 }

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-17-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-17-000005",
+  "version": 1,
+  "title": "Sectorial asymptotics for centered Riemann-xi coefficients",
+  "abstract": "Formalizes the exact centered-xi coefficient normalization, a uniform sectorial saddle-point asymptotic, and relative-error derivative estimates through order six. These are the analytic inputs used by a two-thirds hyperbolicity-wedge theorem for Jensen polynomials of Riemann's xi-function. This Palomar topic does not itself state the final Jensen-polynomial hyperbolicity theorem.",
+  "authors": [
+    "John Savva"
+  ],
+  "repository": "https://github.com/aimathpapers/Jensen-Two-Thirds-Palomar-T5",
+  "commit": "6c4ac2b98f4479c37b3479d9daafa1d679479614",
+  "project_path": null,
+  "declarations": [
+    "centered_xi_continuation_agrees_at_positive_integers",
+    "sectorial_centered_xi_asymptotic_and_derivatives"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CV"
+    ],
+    "msc2020": [
+      "11M06",
+      "30D10",
+      "30E15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-17T05:07:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6c4ac2b98f4479c37b3479d9daafa1d679479614",
+        "fork_repository": "PalomarArchive/aimathpapers--Jensen-Two-Thirds-Palomar-T5--6f1e2bde79cf",
+        "source_repository": "aimathpapers/Jensen-Two-Thirds-Palomar-T5"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8358165a6169d243e9e6648f069e30a9b60a01a2ad4786434ba2ab455c091ff8"
+}

@@ -1,0 +1,121 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-18-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-18-000008",
+  "version": 1,
+  "title": "Several complex variables: local theory, Hartogs phenomena, Weierstrass theory, domains of holomorphy and pseudoconvexity",
+  "abstract": "A Lean 4 formalization, on top of Mathlib, of the classical function theory of several complex variables on open subsets of finite-dimensional complex normed spaces, with values in complex Banach spaces wherever the statements allow. The compared statements cover: Cauchy's integral formula on polydiscs, Osgood's lemma, the equivalence of holomorphy and analyticity, the Cauchy-Riemann equations, Cauchy estimates, the identity theorem, the maximum modulus principle, holomorphic dependence of integrals and the Cauchy-Pompeiu identity; the theorems of Weierstrass, Montel and Vitali and an estimate for holomorphic L^p classes; the holomorphic inverse and implicit mapping theorems; Reinhardt domains, logarithmic convexity, the characterization of convergence domains of power series, Laurent expansion, and continuation from Reinhardt and circular domains; Hartogs-Taylor expansion, Hartogs' continuity theorem, Hartogs' theorem on separate analyticity, removability of isolated singularities, the two Riemann extension theorems and Hartogs' extension theorem for compact holes; elementary analytic sets and their regular points; the local ring of analytic germs, Weierstrass division and preparation, and the Noetherian and unique factorization properties of the germ ring; injective holomorphic maps, Cartan's uniqueness theorem, linearity of biholomorphisms of circular domains, transitivity of the automorphisms of the ball and the inequivalence of ball and polydisc; holomorphic hulls, domains of holomorphy, Thullen's lemma, the Cartan-Thullen theorem and Bochner's tube theorem; subharmonic and plurisubharmonic functions, the Levi form, pseudoconvexity of domains of holomorphy, Levi's theorem and local peak functions; Runge domains and polynomial hulls. All results are classical; none is claimed to be new.",
+  "authors": [
+    "Bastiaan J Braams"
+  ],
+  "repository": "https://github.com/bjbraams/lean-SCV",
+  "commit": "336759b3964011aa0d6e1111e32276b1476fb7f0",
+  "project_path": null,
+  "declarations": [
+    "SCV.cauchy_formula_polydisc",
+    "SCV.osgood",
+    "SCV.differentiableOn_iff_analyticOnNhd",
+    "SCV.analyticOnNhd_iff_cauchyRiemann",
+    "SCV.identity_theorem",
+    "SCV.maximum_modulus",
+    "SCV.cauchy_pompeiu",
+    "SCV.cauchy_estimates",
+    "SCV.analyticOnNhd_integral",
+    "SCV.weierstrass_convergence",
+    "SCV.isClosed_holomorphicMaps",
+    "SCV.montel",
+    "SCV.vitali",
+    "SCV.holomorphic_Lp_bound",
+    "SCV.inverse_mapping",
+    "SCV.implicit_mapping",
+    "SCV.IsCompleteReinhardt.isReinhardt_and_isPathConnected",
+    "SCV.isLogarithmicallyConvex_iff_geometric",
+    "SCV.convergenceDomain_properties",
+    "SCV.exists_powerSeries_eqOn_of_isCompleteReinhardt",
+    "SCV.exists_convergenceDomain_eq",
+    "SCV.existsUnique_laurent_expansion",
+    "SCV.exists_extension_completeReinhardtHull",
+    "SCV.exists_extension_balancedHull",
+    "SCV.hartogs_taylor_expansion",
+    "SCV.hartogs_cylinder_extension",
+    "SCV.hartogs_separate_analyticity",
+    "SCV.exists_extension_diff_singleton",
+    "SCV.frequently_zero_punctured",
+    "SCV.riemann_extension_first",
+    "SCV.hartogs_compact_hole",
+    "SCV.IsAnalyticSet.interior_eq_empty_and_isConnected_sdiff",
+    "SCV.isRegularAnalyticSetAt_iff_exists_equations",
+    "SCV.exists_extension_across_coordinatePlane",
+    "SCV.riemann_extension_second",
+    "SCV.analyticGermRing_isDomain_isLocalRing",
+    "SCV.exists_regular_coordinate_change",
+    "SCV.taylorSeries_mul_and_eq_zero_iff",
+    "SCV.coordinatePower_division",
+    "SCV.weierstrass_division",
+    "SCV.weierstrass_preparation",
+    "SCV.analyticGermRing_isNoetherianRing_ufd",
+    "SCV.isOpen_isRelPrime_locus",
+    "SCV.exists_regularPoint_zeroSet",
+    "SCV.injOn_biholomorphic",
+    "SCV.cartan_uniqueness",
+    "SCV.biholomorphic_circular_linear",
+    "SCV.exists_ball_automorphism",
+    "SCV.not_biholomorphic_polydisc_ball",
+    "SCV.common_extension",
+    "SCV.holomorphicHull_idem_and_isBounded",
+    "SCV.isHolomorphicallyConvex_of_completeReinhardt",
+    "SCV.isDomainOfHolomorphy_of_convex_and_pi",
+    "SCV.isHolomorphicallyConvex_iff_escaping",
+    "SCV.isDomainOfHolomorphy_iff_hull_radius",
+    "SCV.cartan_thullen",
+    "SCV.bochner_tube",
+    "SCV.SubharmonicOn.eqOn_const_of_isMaxOn",
+    "SCV.subharmonicOn_iff_laplacian_nonneg",
+    "SCV.plurisubharmonicOn_iff_leviForm_nonneg",
+    "SCV.IsDomainOfHolomorphy.isPseudoconvex",
+    "SCV.IsPseudoconvex.continuity_principle",
+    "SCV.IsDomainOfHolomorphy.isLeviPseudoconvexAt",
+    "SCV.leviForm_comp_analytic",
+    "SCV.isLeviPseudoconvexAt_iff_of_defining",
+    "SCV.exists_local_peak_function",
+    "SCV.runge_domains"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV"
+    ],
+    "msc2020": [
+      "32A10",
+      "32A05",
+      "32D05",
+      "32D15",
+      "32D20",
+      "32B05",
+      "32U05",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-18T19:52:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "336759b3964011aa0d6e1111e32276b1476fb7f0",
+        "fork_repository": "PalomarArchive/bjbraams--lean-SCV--b48fcc83349f",
+        "source_repository": "bjbraams/lean-SCV"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ad6fb5c35c901f0bfc76b6b8b6ca4791520514d3f746811270b1f289c6a99412"
+}

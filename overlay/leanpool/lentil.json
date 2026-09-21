@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/verse-lab/Lentil",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.Lentil",
   "declarations": [
     "TLA.always",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Lentil.lean",
-  "statement_hash": "sha256:745c7ce8f196c9441bcfe0108d24b460f5ea74d2c8b5eaf2a24999063b226ebc"
+  "statement_hash": "sha256:09efeb8d5e70acd1e758ec354d983e0cabbdc759b0fed42ed14e6b1f75867cfd"
 }

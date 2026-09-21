@@ -1,0 +1,81 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-14-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-14-000010",
+  "version": 1,
+  "title": "Certified naturality and the obstruction to unrestricted naturality in a typed two-dimensional calculus",
+  "abstract": "We formalize the boundary of naturality in the labelled conversion calculus of A Theory of a Two-Dimensional Typed Lambda Calculus. Canonical evaluation of inductively presented homotopies constructs naturality squares, and transport along finite presentations preserves two-paths and recovers the naturality boundary. In contrast, an explicit pointwise family on Fin 3 admits no naturality two-cell or finite pasting: a six-element dihedral-group invariant separates its two boundary paths while respecting every declared two-cell generator. This independently reconstructed refutation is classical, not a verification of the manuscript's claimed constructive Idris proof. Supporting results distinguish beta and eta evidence by parity and give a standalone typed de Bruijn syntax with exact raw-tree representation adequacy and a parity-preserving conversion interpretation. The result concerns this declared evidence calculus, not normalization, full abstraction, or a completeness theorem for lambda calculus.",
+  "authors": [
+    "Arthur F. Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/two-dimensional-lambda-calculus-lean",
+  "commit": "7aa1f961347b19deab3718521627b98f14357bc7",
+  "project_path": null,
+  "declarations": [
+    "TDLC.evalHomotopyStepI_refl",
+    "TDLC.evalHomotopyStepI_beta",
+    "TDLC.evalHomotopyStepI_eta",
+    "TDLC.evalHomotopyStepI_apCong",
+    "TDLC.evalHomotopyStepI_sym",
+    "TDLC.evalHomotopyStepI_trans",
+    "TDLC.evalHomotopyStepI_lamCong",
+    "TDLC.evalHomotopyPathI_nil",
+    "TDLC.evalHomotopyPathI_seq",
+    "TDLC.evaluatedHeadTagConstant",
+    "TDLC.semanticFamilyNotPresented",
+    "TDLC.transportAlongPathI_nil",
+    "TDLC.transportAlongPathI_seq",
+    "TDLC.step2PreservesParity",
+    "TDLC.path2PreservesParity",
+    "TDLC.betaEtaSeparated",
+    "TDLC.betaEtaLoopNontrivial",
+    "TDLC.Syntax.representationAdequacy",
+    "TDLC.Syntax.eval_rename",
+    "TDLC.Syntax.eval_subst",
+    "TDLC.Syntax.eval_beta",
+    "TDLC.Syntax.eval_eta",
+    "TDLC.Syntax.interpret_parity",
+    "TDLC.Syntax.noCell_of_parity_ne",
+    "TDLC.Syntax.Example.endpointsDistinct",
+    "TDLC.Syntax.Example.routesDistinct",
+    "TDLC.Syntax.Example.interpretedRoutesSeparated",
+    "TDLC.Refutation.cell_preserves",
+    "TDLC.Refutation.path2_preserves",
+    "TDLC.Refutation.noBadStep2",
+    "TDLC.Refutation.noBadPath2",
+    "TDLC.Refutation.notStepNat",
+    "TDLC.Refutation.notNatPath"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03B40",
+      "03B38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-14T20:40:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7aa1f961347b19deab3718521627b98f14357bc7",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--two-dimensional-lambda-calculus-lean--a5de7050dab6",
+        "source_repository": "Arthur742Ramos/two-dimensional-lambda-calculus-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ebf96e873fd58067e2aaafc8f0e8f954338ff77903c7a9c00a44472a471ef9ce"
+}

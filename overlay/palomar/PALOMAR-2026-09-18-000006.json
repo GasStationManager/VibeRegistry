@@ -1,0 +1,72 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-18-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-18-000006",
+  "version": 1,
+  "title": "Birnbaum’s principles in Venn diagrams: Extended version with Lean verification",
+  "abstract": "We reformulate Birnbaum's theorem as a statement about classes of statistical procedures that preserve statistical relations, and show that the proof reduces to the propagation of evidential equality along chains of conditionality-related inference bases (experiment–observation pairs). For finite parameter spaces with at least two points, the sufficiency relation and the conditionality relation are incomparable, yet the corresponding preservation classes are nested. The class of likelihood-invariant procedures with codomain [0, 1] is strictly contained in the class of sufficiency-invariant procedures. The lower-tail likelihood-ratio p-value illustrates this strict inclusion.",
+  "authors": [
+    "Jaime Enrique Lincovil Curivil",
+    "Alexandre Galvão Patriota"
+  ],
+  "repository": "https://github.com/AGPatriota/Birnbaum_Theorem_VennDiagrams",
+  "commit": "03bd70414f15ae7abbbd840a032022ef7337e9c2",
+  "project_path": null,
+  "declarations": [
+    "VennDiagrams.preservingClass_equivalenceClosure",
+    "VennDiagrams.likelihoodRelation_isEquivalence",
+    "VennDiagrams.finite_neyman_fisher_factorization",
+    "VennDiagrams.finite_minimal_sufficiency_iff_likelihoodFiberCriterion",
+    "VennDiagrams.packedLowerTailLRPValue_mem_Icc",
+    "VennDiagrams.packedFiniteConditionalityClosure_eq_likelihoodRelation",
+    "VennDiagrams.packedFiniteJointClosure_eq_likelihoodRelation",
+    "VennDiagrams.Certification.PaperSignature.theorem_BT1_procedure_classes",
+    "VennDiagrams.Certification.PaperSignature.corollary_BT2_conditional_pairs",
+    "VennDiagrams.Certification.PaperSignature.corollary_BT3_joint_pairs",
+    "VennDiagrams.Certification.PaperSignature.packed_sufficiency_conditionality_incomparable",
+    "VennDiagrams.Certification.PaperSignature.finite_lr_pvalue_separation",
+    "VennDiagrams.Certification.PaperSignature.evans2013_theorem7_packed",
+    "VennDiagrams.Certification.PaperSignature.evans2013_theorem9_packed",
+    "VennDiagrams.Certification.PaperSignature.evans2013_lemma1",
+    "VennDiagrams.Certification.PaperSignature.evans2013_lemma2",
+    "VennDiagrams.Certification.PaperSignature.evans2013_lemma3_packed",
+    "VennDiagrams.Certification.PaperSignature.evans2013_lemma4_packed",
+    "VennDiagrams.Certification.PaperSignature.evans2013_lemma5_packed",
+    "VennDiagrams.Certification.PaperSignature.evans2013_lemma6_packed",
+    "VennDiagrams.Certification.PaperSignature.evans2013_theorem8_packed",
+    "VennDiagrams.Certification.PaperSignature.evans2013_corollary10_packed",
+    "VennDiagrams.Certification.PaperSignature.evans2013_four_step_chain_packed"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.ST"
+    ],
+    "msc2020": [
+      "62A01",
+      "62B05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-18T13:32:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "03bd70414f15ae7abbbd840a032022ef7337e9c2",
+        "fork_repository": "PalomarArchive/AGPatriota--Birnbaum_Theorem_VennDiagrams--cf3d8ec3424d",
+        "source_repository": "AGPatriota/Birnbaum_Theorem_VennDiagrams"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cf36df20f60f43b0d47a23d53393112de18795d6c1379a6da41899c2d9a3db19"
+}

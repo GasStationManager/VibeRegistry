@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-19-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-19-000002",
+  "version": 1,
+  "title": "A lower bound 1.6855 for the planar centred Hardy-Littlewood maximal constant over squares",
+  "abstract": "Let c_d be the weak type (1,1) constant of the centred Hardy-Littlewood maximal operator over axis-parallel cubes in R^d: the least C such that alpha |{Mf > alpha}| <= C ||f||_1 for every integrable f and every level alpha. The value of c_d is unknown for every d >= 2. The previously published lower bound in the plane is c_2 >= 3/4 - sqrt(2)/4 + sqrt(6)/2 = 1.62119..., obtained by Aldaz (2000) from a rectangular lattice of unit Dirac masses; the best known upper bound is c_2 <= 4.\nThis development proves c_2 >= Phi = 1.68550999335552518..., where Phi = ((77 + 16 sqrt 22)/2 - (8 + sqrt 22 - sqrt(70 + 8 sqrt 22))(11 + sqrt 22 - 2 sqrt 2 - 2 sqrt 11 - sqrt(17 + 4 sqrt 22)))/(26 + 4 sqrt 22) is an algebraic number of degree 16. The extremal configuration found is a lattice with unequal masses: columns at spacing h = (5 + sqrt 22)/6 carrying masses alternating 1 and w = (17 + 4 sqrt 22)/9, rows at spacing h + 1. Its level-one set covers the period cell except four thin slots, and truncating and smearing the lattice gives integrable test functions. The development also proves the classical covering bound c_d <= 2^d in every dimension, and 1.685 < Phi < 1.686.",
+  "authors": [
+    "Yongxi Lin"
+  ],
+  "repository": "https://github.com/CoolRmal/centered-maximal-constant",
+  "commit": "c6a8cb29e8ecce9ac4614a8c7e4bf6938366f986",
+  "project_path": null,
+  "declarations": [
+    "CenteredMaximal.weakTypeConstant_le_two_pow",
+    "CenteredMaximal.ofReal_phi_le_weakTypeConstant_two",
+    "CenteredMaximal.lt_phi",
+    "CenteredMaximal.phi_lt"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.FA"
+    ],
+    "msc2020": [
+      "42B25",
+      "26D15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-19T06:59:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c6a8cb29e8ecce9ac4614a8c7e4bf6938366f986",
+        "fork_repository": "PalomarArchive/CoolRmal--centered-maximal-constant--975187d5196c",
+        "source_repository": "CoolRmal/centered-maximal-constant"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ed3fc8a723d45c72ff0667218f29bdf9770a5211e48aa1014c54702361b2265d"
+}

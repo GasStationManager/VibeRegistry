@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-16-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-16-000001",
+  "version": 1,
+  "title": "The exponential map is chaotic",
+  "abstract": "In 1926, Fatou conjectured that the Julia set of the complex exponential map is the entire complex plane; in other words, the dynamical system described by the map is unstable under perturbation at every point in the plane.  Misiurewicz proved this conjecture in 1981. In 2015, Shen and Rempe published \"The Exponential Map Is Chaotic: An Invitation to Transcendental Dynamics\", giving an elementary and conceptual proof of Misiurewicz's theorem and deriving its dynamical consequences, without requiring advanced results  from complex analysis or dynamics.\nThis project formalises these results in Lean 4: density of escaping points, points with dense orbits, and repelling periodic points; eventual covering of compact subsets of the punctured plane; Devaney chaos; spherical non-equicontinuity; and the fact that the Julia set is the whole complex plane.",
+  "authors": [
+    "Lasse Rempe"
+  ],
+  "repository": "https://github.com/LR-UK/exp-chaotic",
+  "commit": "303b2d3d1121ebc3a86399de8f1e71c17a8b6dd8",
+  "project_path": null,
+  "declarations": [
+    "ExpChaotic.eventually_covers_compact",
+    "ExpChaotic.dense_iteratedPreimages_nonzero",
+    "ExpChaotic.dense_iteratedPreimages_realAxis",
+    "ExpChaotic.dense_escapingSet",
+    "ExpChaotic.dense_denseOrbitSet",
+    "ExpChaotic.not_countable_denseOrbitSet",
+    "ExpChaotic.dense_repellingPeriodicSet",
+    "ExpChaotic.topologically_transitive",
+    "ExpChaotic.devaney_chaotic",
+    "ExpChaotic.not_equicontinuousAt_sphericalExpIterate",
+    "ExpChaotic.infinitely_often_hits_negative_realAxis",
+    "ExpChaotic.spherical_sensitive_dependence_paper",
+    "ExpChaotic.expansion_along_escaping_orbits",
+    "ExpChaotic.not_tendstoLocallyUniformly_sphericalExpIterate",
+    "ExpChaotic.juliaSet_exp"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.CV"
+    ],
+    "msc2020": [
+      "37F10",
+      "30D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-16T00:00:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "303b2d3d1121ebc3a86399de8f1e71c17a8b6dd8",
+        "fork_repository": "PalomarArchive/LR-UK--exp-chaotic--81fc3bb18771",
+        "source_repository": "LR-UK/exp-chaotic"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4adb822481cf4cb70b9b32e409beb72bda437a1daec4d9f10483caf94a163ac2"
+}

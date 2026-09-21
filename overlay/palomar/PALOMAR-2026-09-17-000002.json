@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-17-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-17-000002",
+  "version": 1,
+  "title": "Chain Bounding",
+  "abstract": "Lean 4 formalization of the core results of \"Chain bounding, the leanest proof of Zorn's lemma, and an illustration of computerized proof formalization\" by Guillermo L. Incatasciato and Pedro Sánchez Terraf, published at the American Mathematical Monthly (preprint freely accessible at http://arxiv.org/abs/2404.11638). It formalizes the order-theoretic notion of _good chains_ for an \"expander\" of subsets of a poset: the comparability of good chains, the existence of a greatest good chain, the well-ordering of good chains for an expander of the form C ↦ C ∪ {f C}, the Chain Bounding Lemma (there is no assignment of a strict upper bound to every chain of a poset), the Unbounded Chain Lemma, and — as a novel, unified alternative to the classical ordinal-based arguments — derivations of both Zorn's Lemma and the Bourbaki–Witt fixed point theorem from Chain Bounding.",
+  "authors": [
+    "Pedro Sánchez Terraf"
+  ],
+  "repository": "https://github.com/sterraf/chain-bounding",
+  "commit": "f3eb6e0becc13d645f0809c98ed28912ee41ee6a",
+  "project_path": null,
+  "declarations": [
+    "OrderExpander.greatest_good_chain",
+    "OrderSelector.wellOrdered_of_good",
+    "ChainBounding.chain_bounding",
+    "unbounded_chain",
+    "zorn",
+    "bourbaki_witt_of_complete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03E25",
+      "06A06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-17T01:15:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f3eb6e0becc13d645f0809c98ed28912ee41ee6a",
+        "fork_repository": "PalomarArchive/sterraf--chain-bounding--1546ee7cddc8",
+        "source_repository": "sterraf/chain-bounding"
+      }
+    ]
+  },
+  "statement_hash": "sha256:714eff13b679487d12935eb5a2681a7192a249769bf4b3bfba35d5f6140c9a76"
+}

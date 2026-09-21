@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-18-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-18-000001",
+  "version": 1,
+  "title": "Superdiffusion",
+  "abstract": "A Lean formalization of the quantitative theory of advection-diffusion in self-similar random incompressible flows: the superdiffusive asymptotics of the effective diffusivity (Theorem A), the renormalization of the generator (quantitative homogenization of the Dirichlet problem at every scale, Theorem B), and the anomalous large-scale regularity theory (Theorem C) of Armstrong-Bou-Rabee-Kuusi, together with the sensitivity and coarse-matrix-derivative theory, the diffusivity recursion, and the diffusion-process theory that support them. The formalization consumes the public CoarseGraining homogenization library as its analytic base and the public MarkovProcess library for the general theory of continuous strong Markov processes of Feller semigroups. The three headline theorems are independently checked using the SuperdiffusionAudit/ comparator pairs.",
+  "authors": [
+    "Scott Armstrong",
+    "Tuomo Kuusi"
+  ],
+  "repository": "https://github.com/scottnarmstrong/Superdiffusion",
+  "commit": "b648c0736372daaae80b1007061a1199bc18cc4a",
+  "project_path": null,
+  "declarations": [
+    "Algsuperdiff.StatementAudit.Superdiffusivity.superdiffusivity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.AP",
+      "math-ph"
+    ],
+    "msc2020": [
+      "60K37",
+      "35B27",
+      "60J60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-18T09:31:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b648c0736372daaae80b1007061a1199bc18cc4a",
+        "fork_repository": "PalomarArchive/scottnarmstrong--Superdiffusion--8fdfa253ab02",
+        "source_repository": "scottnarmstrong/Superdiffusion"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cfa5487840b0c3161b295371a3dd6bee7b5b2d90d3e536cfad7cd7671db9595e"
+}

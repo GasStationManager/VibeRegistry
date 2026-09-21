@@ -1,0 +1,62 @@
+{
+  "source": "leanpool",
+  "upstream_id": "serre-mass-formula",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MassFormula",
+  "version": 1,
+  "title": "Serre's mass formula for totally ramified local-field extensions",
+  "abstract": "Proves both of Serre's mass formulas for totally ramified separable extensions of a nonarchimedean local field of any positive degree, together with the discriminant bound, tame-ramification criterion, finiteness dichotomy, convergence, and automorphism-weighted orbit count. The proof develops Eisenstein monogenicity, quantitative Newton-Hensel lifting, local constancy of root counts, and Haar measures of lattices over discrete valuation rings.",
+  "authors": [
+    "Hyeon Seung-Hyeon"
+  ],
+  "repository": "https://github.com/0stellensatz/MassFormula",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.MassFormula",
+  "declarations": [
+    "MassFormula.tsum_one_div_q_pow_c",
+    "MassFormula.tsum_one_div_w_mul_q_pow_c",
+    "MassFormula.sigma_infinite_iff",
+    "MassFormula.sub_one_le_d",
+    "MassFormula.c_eq_zero_iff",
+    "MassFormula.summable_one_div_q_pow_c",
+    "MassFormula.ncard_isomorphic_mul_w"
+  ],
+  "informal": {
+    "MassFormula.tsum_one_div_q_pow_c": "For every nonarchimedean local field K with residue-field cardinality q and every positive integer n, the sum of q^(-c(L)) over the totally ramified degree-n subextensions L of a separable closure of K is n, where c(L) is the discriminant exponent minus n plus one.",
+    "MassFormula.tsum_one_div_w_mul_q_pow_c": "For every nonarchimedean local field K, positive n, and set of representatives of K-isomorphism classes of totally ramified separable degree-n extensions, the sum of 1/(|Aut_K(L)| q^c(L)) is one.",
+    "MassFormula.sigma_infinite_iff": "For positive n, the set of totally ramified separable degree-n subextensions is infinite exactly when K and its residue field have the same characteristic p and p divides n.",
+    "MassFormula.sub_one_le_d": "For positive n, the discriminant exponent of a totally ramified degree-n extension is at least n-1.",
+    "MassFormula.c_eq_zero_iff": "For positive n and a totally ramified degree-n extension, the wild discriminant exponent vanishes exactly when the residue characteristic does not divide n.",
+    "MassFormula.summable_one_div_q_pow_c": "For positive n, the real-valued series of the unweighted mass terms is summable.",
+    "MassFormula.ncard_isomorphic_mul_w": "For a nonarchimedean local field K and a totally ramified separable extension L of positive degree n, the number of K-isomorphic copies of L inside a separable closure, multiplied by |Aut_K(L)|, is n."
+  },
+  "classification": {
+    "msc2020": [
+      "11S15",
+      "11S05"
+    ],
+    "tags": [
+      "number-theory",
+      "local-fields",
+      "ramification",
+      "discriminants",
+      "haar-measure"
+    ],
+    "branch": "local fields and ramification theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/MassFormula.lean",
+  "statement_hash": "sha256:1a13c325c1c5fb651eea0954557d9e1539a17961131b96a3f7f3e0854373497f"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-14-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-14-000007",
+  "version": 1,
+  "title": "Robin1984",
+  "abstract": "A Lean 4 formalization of Guy Robin's 1984 equivalence between the Riemann hypothesis and the strict divisor-sum inequality sigma(n) < exp(gamma) n log(log n) for every integer n > 5040.  The development also proves the restriction to colossally abundant integers, reconstructs the Nicolas--Landau oscillation argument used for the converse implication, and checks the finite ranges with exact Lean certificates.  It also formalizes Lagarias's 2001 elementary harmonic-number criterion and its equivalence to the Riemann hypothesis. This is a formalization of equivalence criteria; it does not prove the Riemann hypothesis.",
+  "authors": [
+    "Jonas Whidden"
+  ],
+  "repository": "https://github.com/kimihiro64/Robin1984",
+  "commit": "acab1a31f31e0499518a4416b63281e0b4838f9c",
+  "project_path": null,
+  "declarations": [
+    "Robin1984.robin_inequality_iff_riemannHypothesis",
+    "Robin1984.riemannHypothesis_iff_colossallyAbundant_robin",
+    "Robin1984.riemann_hypothesis_iff_lagarias_elementary_criterion"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M26",
+      "11N37",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-14T15:54:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "acab1a31f31e0499518a4416b63281e0b4838f9c",
+        "fork_repository": "PalomarArchive/kimihiro64--Robin1984--7bcb3c6dde2b",
+        "source_repository": "kimihiro64/Robin1984"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c1c3a9df3a25dca77301a772f9e515b101121ddf18801927911317acd9c54535"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-14-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-14-000008",
+  "version": 1,
+  "title": "A Counterexample to the Trace Problem for Uniform Tracial Completions",
+  "abstract": "We formalize a negative answer to Problem XXII of Schafhauser, Tikuisis and White. There is a separable unital C*-algebra A with nonempty compact tracial state space such that its uniform tracial completion M has a tracial state that is discontinuous in the uniform 2-norm. Thus the canonical extensions of the traces of A form a proper subset X of the traces of M. A second theorem gives a factorial tracially complete pair (M, X) with the same failure, answering Question 1.1 of Carrion, Castillejos, Evington, Gabe, Schafhauser, Tikuisis and White negatively. In both statements, X is exactly the set of uniform-2-norm-continuous traces. The proof uses a unitized c0-sum of antipodally covariant matrix-function algebras of growing rank and dimension. Borsuk-Ulam supplies finite coordinate-state constraints; weak-star compactness produces a corona trace detecting a sequence whose uniform 2-norm tends to zero. Both selected Lean theorems are unconditional. The completion is characterized by tracial completeness, unique restriction of designated traces to all base traces, and density in the uniform 2-norm.",
+  "authors": [
+    "Sauers"
+  ],
+  "repository": "https://github.com/SauersML/group-approximation",
+  "commit": "a4eea122897265caab10088c303451049bdd797f",
+  "project_path": null,
+  "declarations": [
+    "STWProblemXXII.exists_uniformTracialCompletion_with_discontinuous_trace",
+    "STWProblemXXII.exists_factorial_traciallyComplete_with_discontinuous_trace"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OA"
+    ],
+    "msc2020": [
+      "46L05",
+      "46L30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-14T16:40:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a4eea122897265caab10088c303451049bdd797f",
+        "fork_repository": "PalomarArchive/SauersML--group-approximation--d16b34e6ab02",
+        "source_repository": "SauersML/group-approximation"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4bdbaa66179f7fe68057ef199135f3cd06fbc170c23f8cb546851e607d23738a"
+}

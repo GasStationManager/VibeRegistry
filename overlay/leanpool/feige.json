@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/pengzhang91/Feige",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.Feige",
   "declarations": [
     "Feige.sharp_unit_slack_feige_complete",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Feige.lean",
-  "statement_hash": "sha256:94d08827fe8b36b768d99cd34590fcabc2f5bdfe9264afe8121e8f8c987f5f55"
+  "statement_hash": "sha256:6c90cba5d786db3fbd858bf7caba55cfab7ce7d6a690472c8aa2c9a437c0d82d"
 }

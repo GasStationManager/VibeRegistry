@@ -1,0 +1,62 @@
+{
+  "source": "leanpool",
+  "upstream_id": "sum-difference-exponent",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SumDifferenceExponent",
+  "version": 1,
+  "title": "The optimal exponent relating sumsets and difference sets",
+  "abstract": "For a finite integer set A with at least two elements, proves that C(A) = log(|A+A|/|A|) / log(|A-A|/|A|) is strictly below 2, while explicit finite sets have exponents tending to 2. Thus 2 is the supremum and is never attained. Also gives an explicit witness within 10^(-999) of 2. This imports the upstream base-39 row-and-column variant, not the paper's base-12 automaton construction or its quantitative cardinality estimates. Supporting infrastructure includes injective digit expansions and the strict Pluennecke-Petridis equality argument for finite integer sets.",
+  "authors": [
+    "Haowei Lin",
+    "Shanda Li"
+  ],
+  "repository": "https://github.com/linhaowei1/sum-diff-proof",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.SumDifferenceExponent",
+  "declarations": [
+    "SumDifferenceExponent.sSup_admissibleExponents",
+    "SumDifferenceExponent.growthExponent_lt_two",
+    "SumDifferenceExponent.tendsto_growthExponent_approximatingSet",
+    "SumDifferenceExponent.isLUB_admissibleExponents",
+    "SumDifferenceExponent.supremum_not_attained",
+    "SumDifferenceExponent.quantitative_example"
+  ],
+  "informal": {
+    "SumDifferenceExponent.growthExponent_lt_two": "For every finite set A of integers with at least two elements, log(|A+A|/|A|) / log(|A-A|/|A|) is strictly less than 2.",
+    "SumDifferenceExponent.tendsto_growthExponent_approximatingSet": "The growth exponents of the explicit finite integer sets approximatingSet l converge to 2 as l tends to infinity; these sets have at least two elements whenever l is positive.",
+    "SumDifferenceExponent.isLUB_admissibleExponents": "The number 2 is the least upper bound of the growth exponents of all finite integer sets with at least two elements.",
+    "SumDifferenceExponent.sSup_admissibleExponents": "The supremum of the growth exponents of all finite integer sets with at least two elements equals 2.",
+    "SumDifferenceExponent.supremum_not_attained": "No finite integer set with at least two elements has growth exponent equal to 2.",
+    "SumDifferenceExponent.quantitative_example": "The explicitly defined finite integer set quantitativeSet has growth exponent strictly between 2 - 10^(-999) and 2."
+  },
+  "classification": {
+    "msc2020": [
+      "11B13",
+      "11B30",
+      "05D10"
+    ],
+    "tags": [
+      "additive-combinatorics",
+      "sumsets",
+      "difference-sets",
+      "Pluennecke-Ruzsa",
+      "optimal-exponents"
+    ],
+    "branch": "additive combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/SumDifferenceExponent.lean",
+  "statement_hash": "sha256:3e5db81ac0ec759adbfe038f2c96ab16b193a3a605dddccc4ebd1f81ed843d4d"
+}

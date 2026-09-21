@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/FormalizedFormalLogic/Incompleteness",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.Incompleteness",
   "declarations": [
     "LeanPool.Incompleteness.goedelFirst",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Incompleteness.lean",
-  "statement_hash": "sha256:54f55af51ea4084ca4cecafc1b4ed3a2eeaf80522b8d2366276bcc256c68e429"
+  "statement_hash": "sha256:edf3947e6b0740583cd4a6e290fd7670b6928484412ed7700324d6b5da9f5bc9"
 }

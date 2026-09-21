@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-17-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-17-000004",
+  "version": 1,
+  "title": "A formalization of Chang, Liu, and Liu's proof of Chvátal's conjecture",
+  "abstract": "A Lean 4 + mathlib formalization of Fan Chang, Hong Liu, and Miao Liu's paper \"A proof of Chvátal's conjecture via a sharp correlation inequality\" (arXiv:2609.19123v1). It formalizes their star theorem for hereditary set families, sharp Boolean Fourier correlation inequality, antipodal corollary, sharpness results, and weighted strengthening. The formalization was completely prepared by GPT-6.",
+  "authors": [
+    "Boon Suan Ho"
+  ],
+  "repository": "https://github.com/boonsuan/chvatal",
+  "commit": "c46f715af9d400523eb0d4c9c0d2335abbdc9fdd",
+  "project_path": null,
+  "declarations": [
+    "ChvatalSubmission.chvatal",
+    "Chvatal.sharp_correlation",
+    "Chvatal.antipodal_correlation",
+    "Chvatal.two_spectral_le_quadratic_covariance",
+    "Chvatal.andFunction_sharp",
+    "Chvatal.quarter_coefficient_optimal",
+    "Chvatal.and_or_two_example",
+    "Chvatal.kleitman_weighted_bound",
+    "Chvatal.exists_largest_weighted_intersecting_star"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-17T04:26:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c46f715af9d400523eb0d4c9c0d2335abbdc9fdd",
+        "fork_repository": "PalomarArchive/boonsuan--chvatal--bd83efb43e41",
+        "source_repository": "boonsuan/chvatal"
+      }
+    ]
+  },
+  "statement_hash": "sha256:530caafe67dc62546ee5e6ea78ee922150a7064e5efb4564fbd5b5196250ef99"
+}

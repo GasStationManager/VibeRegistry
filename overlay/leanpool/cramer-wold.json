@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Lemmy00/lean-pool",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.CramerWold",
   "declarations": [
     "LeanPool.CramerWold.euclideanSpace_measure_eq_of_forall_inner_map_eq",
@@ -56,5 +56,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CramerWold.lean",
-  "statement_hash": "sha256:6a6592b125cbcf320ebc3e5e4263d8fea592c16e30b45f88998b175f6aa4c2ee"
+  "statement_hash": "sha256:6b55c57587755c863dbbda99684dfd04c014141a61348a0dea236a51b0c74f19"
 }

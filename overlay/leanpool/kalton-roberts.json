@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/boonsuan/KaltonRoberts",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.KaltonRoberts",
   "declarations": [
     "KaltonRoberts.KR_constant_lt",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/KaltonRoberts.lean",
-  "statement_hash": "sha256:830ef5460f483d92045c7a63b0f4050d5b4e82541fd3457680de92fba6d4052b"
+  "statement_hash": "sha256:2edd2f68bc561ac790268ddaabfe0cfa6cc66008269d858fb7043463c72c39da"
 }

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/cboone/zhang-yeung-inequality",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.ZhangYeungInequality",
   "declarations": [
     "ZhangYeung.zhangYeung",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ZhangYeungInequality.lean",
-  "statement_hash": "sha256:8f2da0c00df38982f90910ca400120ce2ec36b5e4b89becd04ca461ea5369ded"
+  "statement_hash": "sha256:2510f53aca60037ca21de15cccfa3010979d5ff24b50c82dbe05e7954422a58a"
 }

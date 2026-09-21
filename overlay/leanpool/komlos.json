@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "komlos",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Komlos",
+  "version": 1,
+  "title": "The Komlós and Beck–Fiala bounds with constant 36",
+  "abstract": "Proves that finitely many real vectors of Euclidean norm at most one admit signs whose sum has every coordinate bounded by 36, and deduces the Beck–Fiala discrepancy bound 36 times the square root of the maximum vertex degree for finite hypergraphs. The Karingula–Lovett splitting argument is supported by reusable finite-distribution, total-variation, transport, convex-hull, and matrix-discrepancy infrastructure. The near-invariant distribution uses discrete squared tent weights, and real vectors are handled by coordinatewise truncation toward zero.",
+  "authors": [
+    "Gabriel Dahia"
+  ],
+  "repository": "https://github.com/gdahia/Komlos",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.Komlos",
+  "declarations": [
+    "Komlos.discrepancy_le_of_forall_sum_sq_le_one",
+    "Komlos.exists_isColouring_forall_abs_sum_apply_le",
+    "Hypergraph.exists_isColouring_forall_abs_finsum_le",
+    "Komlos.exists_isColouring_mean_add_sum_mem_convexHull",
+    "Komlos.exists_nearInvariant"
+  ],
+  "informal": {
+    "Komlos.discrepancy_le_of_forall_sum_sq_le_one": "For a real matrix with arbitrary finite row and column index types, if each column has sum of squared entries at most one, its minimum signed-column discrepancy is at most 36.",
+    "Komlos.exists_isColouring_forall_abs_sum_apply_le": "Any finite family of vectors in a finite-dimensional real Euclidean space, each of norm at most one, admits signs in {-1, 1} whose signed sum has absolute value at most 36 in every coordinate.",
+    "Hypergraph.exists_isColouring_forall_abs_finsum_le": "If a hypergraph has finitely many vertices and each vertex belongs to at most t edges, there is a {-1, 1} colouring of all vertices whose sum on each edge has absolute value at most 36 times sqrt(t).",
+    "Komlos.exists_isColouring_mean_add_sum_mem_convexHull": "For a finitely supported probability distribution on any real module and n vectors, if translation by six times each vector has total variation distance at most one third, some signed sum added to the mean belongs to the convex hull of the distribution's support.",
+    "Komlos.exists_nearInvariant": "Every positive-denominator integer grid in finite-dimensional real coordinate space admits a finitely supported mean-zero probability distribution in [-6, 6]^d whose total variation distance under any grid translation of Euclidean norm at most one is at most one third."
+  },
+  "classification": {
+    "msc2020": [
+      "11K38",
+      "05C65",
+      "05D40"
+    ],
+    "tags": [
+      "discrepancy",
+      "vector-balancing",
+      "hypergraphs",
+      "probability",
+      "total-variation"
+    ],
+    "branch": "discrepancy theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Komlos.lean",
+  "statement_hash": "sha256:ea0d6f8de0bbddc4b42b27e782a1786eff2647f080231547f36604d83e9821e4"
+}

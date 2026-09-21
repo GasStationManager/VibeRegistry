@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "schoenflies",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Schoenflies",
+  "version": 1,
+  "title": "Jordan–Schönflies theorem",
+  "abstract": "Formalizes the Jordan curve theorem and the extension of every homeomorphism between Jordan curves to a plane homeomorphism.",
+  "authors": [
+    "Álvaro Begué"
+  ],
+  "repository": "https://github.com/alonamaloh/schoenflies-lean",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.Schoenflies",
+  "declarations": [
+    "Schoenflies.jordan_schoenflies_of_homeomorph",
+    "Schoenflies.jordan_schoenflies",
+    "Schoenflies.forall_isSeparating_of_isJordanCurve"
+  ],
+  "informal": {
+    "Schoenflies.jordan_schoenflies_of_homeomorph": "Every homeomorphism between two Jordan curves in the plane extends to a self-homeomorphism of the plane.",
+    "Schoenflies.jordan_schoenflies": "A homeomorphism between Jordan curves extends to a global homeomorphism agreeing with it on the source curve.",
+    "Schoenflies.forall_isSeparating_of_isJordanCurve": "Every Jordan curve separates the plane into an inside and an outside region."
+  },
+  "classification": {
+    "msc2020": [
+      "57K10",
+      "54C25"
+    ],
+    "tags": [
+      "jordan-curve",
+      "schoenflies-theorem",
+      "geometric-topology",
+      "homeomorphism"
+    ],
+    "branch": "geometric topology"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Schoenflies.lean",
+  "statement_hash": "sha256:de9c40e8d9636e2de2ed7d097333a0aad1c68809e515c0d0d7ae7d9a1254868b"
+}

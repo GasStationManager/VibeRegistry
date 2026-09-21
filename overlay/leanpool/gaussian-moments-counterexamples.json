@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "gaussian-moments-counterexamples",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/GaussianMomentsCounterexamples",
+  "version": 1,
+  "title": "Gaussian Moments Conjecture counterexamples",
+  "abstract": "Proves explicit complex polynomial counterexamples to the Gaussian Moments Conjecture in every dimension at least three, using genuine expectations under finite products of standard real Gaussian measures. Retains reusable polynomial integrability, Stein identities, complex contractions, coefficient formulas, injective-coordinate marginals, and related moment results.",
+  "authors": [
+    "Christopher D. Long"
+  ],
+  "repository": "https://github.com/long-mathematics/gaussian-moments-counterexamples",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.GaussianMomentsCounterexamples",
+  "declarations": [
+    "GaussianMomentsCounterexamples.not_GMC_of_three_le",
+    "GaussianMomentsCounterexamples.master_three",
+    "GaussianMomentsCounterexamples.master_four"
+  ],
+  "informal": {
+    "GaussianMomentsCounterexamples.not_GMC_of_three_le": "For every n at least three, the Gaussian Moments Conjecture fails: some complex polynomial has all positive pure Gaussian moments zero, while a polynomial multiplier prevents eventual mixed-moment vanishing.",
+    "GaussianMomentsCounterexamples.master_three": "For every complex univariate polynomial A and positive m, the expectation of A(Q3) times P3 to power m equals m! times the degree-m coefficient of A(X) times (1+X) to power m-1. The explicit P3 has degree four and five terms in its natural complex coordinates.",
+    "GaussianMomentsCounterexamples.master_four": "The analogous arbitrary-A coefficient identity for the explicit four-variable polynomial P4, of degree three and six terms in its natural complex coordinates, gives an independent counterexample."
+  },
+  "classification": {
+    "msc2020": [
+      "60E05",
+      "13F20"
+    ],
+    "tags": [
+      "gaussian-measure",
+      "polynomial-moments",
+      "counterexamples",
+      "formal-power-series"
+    ],
+    "branch": "probability and polynomial algebra"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/GaussianMomentsCounterexamples.lean",
+  "statement_hash": "sha256:ea799e9cb4d1e26d1085a3c489138de999eb1ecb2e625c929b83d5d9bfdae178"
+}

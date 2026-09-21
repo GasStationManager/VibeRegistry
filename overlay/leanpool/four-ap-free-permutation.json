@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "four-ap-free-permutation",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FourAP",
+  "version": 1,
+  "title": "A 4AP-free permutation of the positive integers",
+  "abstract": "Formalizes Boon Suan Ho's construction of a permutation of the positive integers with no four-term arithmetic progression as a subsequence, proving the binary-order lemmas, extension lemma, and computable limit.",
+  "authors": [
+    "Boon Suan Ho"
+  ],
+  "repository": "https://github.com/boonsuan/4ap",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.FourAP",
+  "declarations": [
+    "FourAP.exists_fourAPFree_positive_permutation",
+    "FourAP.explicitPositivePermutation_apFree"
+  ],
+  "informal": {
+    "FourAP.exists_fourAPFree_positive_permutation": "There exists a bijection of the positive integers such that no four increasing positions map to a nonconstant four-term arithmetic progression, including negative common differences.",
+    "FourAP.explicitPositivePermutation_apFree": "The explicit computable positive-integer permutation constructed in the development has the stated four-term progression avoidance property."
+  },
+  "classification": {
+    "msc2020": [
+      "11B25",
+      "05D10"
+    ],
+    "tags": [
+      "additive-combinatorics",
+      "arithmetic-progressions",
+      "Erdos-problem-196",
+      "permutations"
+    ],
+    "branch": "additive combinatorics"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/FourAP.lean",
+  "statement_hash": "sha256:f394e55c9be156256bba9550bd96584f818d1cdf76e693193f7b1d9b5e41ccfe"
+}

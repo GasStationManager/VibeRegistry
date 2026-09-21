@@ -1,0 +1,64 @@
+{
+  "source": "leanpool",
+  "upstream_id": "language-generation-characterization",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LanguageGeneration",
+  "version": 1,
+  "title": "Finite witnesses and the width hierarchy for language generation",
+  "abstract": "Characterizes generation in the limit for arbitrary families of infinite languages over any countably infinite universe by finite positive witnesses. Ordered-history generators admit a single set-driven normalization, chosen before the target language. The separation-width invariant takes every value 0, 1, 2, ..., omega, omega+1; generation is equivalent to width at most omega. Reusable infrastructure includes locking witnesses, positive separation, bounded diagonal capture over arbitrary universes, transport under equivalences, and finite-query normalization on natural numbers. The formalized scope is the semantic characterization and hierarchy, not the paper's additional density-one or Turing-computability results in Appendices D and E.",
+  "authors": [
+    "Xiaoyu Li",
+    "Andi Han",
+    "Jiaojiao Jiang",
+    "Junbin Gao",
+    "Shuangping Li",
+    "Peng Zhang"
+  ],
+  "repository": "https://github.com/xiaoyulics/language-generation-characterization",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.LanguageGeneration",
+  "declarations": [
+    "GenLimit.FiniteWitness.Simplified.ordinary_iff_finiteWitnesses",
+    "GenLimit.FiniteWitness.Simplified.universal_normalization",
+    "GenLimit.FiniteWitness.ordinary_iff_width",
+    "GenLimit.FiniteWitness.full_range",
+    "GenLimit.FiniteWitness.bounded_capture",
+    "GenLimit.FiniteWitness.executable_universal_normalization"
+  ],
+  "informal": {
+    "GenLimit.FiniteWitness.Simplified.ordinary_iff_finiteWitnesses": "For any family H of infinite languages over a countably infinite universe, there exists one ordered-history generator that eventually outputs an unseen target element on every exact presentation of every target in H if and only if H admits a finite positive witness assignment whose nonempty active subfamilies always have infinite common intersection.",
+    "GenLimit.FiniteWitness.Simplified.universal_normalization": "Every ordered-history generator over a countably infinite universe has one set-driven normalization that locks on every infinite target on which the original generator succeeds on all exact presentations. The normalization is chosen before the target.",
+    "GenLimit.FiniteWitness.ordinary_iff_width": "A family of infinite languages over a countably infinite universe is generatable in the limit exactly when its separation width is at most omega.",
+    "GenLimit.FiniteWitness.full_range": "Over every countably infinite universe, every value in WithTop (WithTop Nat), representing 0, 1, 2, ..., omega, omega+1, is the separation width of some family of infinite languages.",
+    "GenLimit.FiniteWitness.bounded_capture": "Over an arbitrary universe, every sequence of uniformly bounded finite sets has infinitely many terms contained in one set D such that D contains none of a prescribed countable list of infinite cores.",
+    "GenLimit.FiniteWitness.executable_universal_normalization": "The finite-search normalization on natural numbers locks on every infinite language on which the supplied generator eventually succeeds on every exact presentation. This is a semantic correctness theorem for the defined procedure, without a formal Turing-computability claim."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q32",
+      "68Q45"
+    ],
+    "tags": [
+      "language-generation",
+      "learning-theory",
+      "finite-witnesses",
+      "combinatorics"
+    ],
+    "branch": "formal language theory and learning theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/LanguageGeneration.lean",
+  "statement_hash": "sha256:5581d06cd9765841d018af1aecfbfc75b9fc66cc97daf19c6ca3d56cfd1dbe57"
+}

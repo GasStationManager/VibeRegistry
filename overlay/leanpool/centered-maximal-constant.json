@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "centered-maximal-constant",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CenteredMaximal",
+  "version": 1,
+  "title": "Bounds for the centered Hardy-Littlewood maximal constant",
+  "abstract": "Proves that the weak type (1,1) constant c_2 of the centered maximal operator over axis-parallel squares is at least the explicit radical phi, approximately 1.68551, using a weighted periodic lattice and integrable approximations. Also proves c_d <= 2^d in every natural dimension and 1.685 < phi < 1.686. The operator acts on real-valued integrable functions, with Lebesgue outer measure of strict level sets. Includes the maximal-function API, a Vitali covering argument, lattice witnesses, smearing estimates, and the limiting lower bound. No optimality of phi is claimed.",
+  "authors": [
+    "Yongxi Lin"
+  ],
+  "repository": "https://github.com/CoolRmal/centered-maximal-constant",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.CenteredMaximal",
+  "declarations": [
+    "LeanPool.CenteredMaximal.ofReal_phi_le_weakTypeConstant_two",
+    "LeanPool.CenteredMaximal.weakTypeConstant_le_two_pow",
+    "LeanPool.CenteredMaximal.phi_mem_Ioo"
+  ],
+  "informal": {
+    "LeanPool.CenteredMaximal.ofReal_phi_le_weakTypeConstant_two": "The explicit radical phi is a lower bound for c_2, the infimum of all weak type (1,1) bounds for the centered maximal operator over axis-parallel squares in the real plane.",
+    "LeanPool.CenteredMaximal.weakTypeConstant_le_two_pow": "For every natural number d, including zero, the centered maximal operator over axis-parallel cubes in real d-space has weak type (1,1) constant c_d at most 2^d.",
+    "LeanPool.CenteredMaximal.phi_mem_Ioo": "The explicit radical constant phi lies strictly between 1.685 and 1.686."
+  },
+  "classification": {
+    "msc2020": [
+      "42B25",
+      "26D15"
+    ],
+    "tags": [
+      "harmonic-analysis",
+      "maximal-functions",
+      "weak-type-inequalities",
+      "lattice-constructions"
+    ],
+    "branch": "harmonic analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CenteredMaximal.lean",
+  "statement_hash": "sha256:a2236dd22cd563a1023315c2d76a13d74cd70f99978599eb2ce656b46081402f"
+}

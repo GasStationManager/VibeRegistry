@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/ro-gut/turan3",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.Turan3",
   "declarations": [
     "Turan3.turans",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Turan3.lean",
-  "statement_hash": "sha256:0453cf4b8534633374960f06fa9b98a11091d3720b0b2ff2ae33c95c9ddd0295"
+  "statement_hash": "sha256:b05ab8ed4abaee255c04a87dddf92bc55f82f3a84662703ff421846a976a87cf"
 }

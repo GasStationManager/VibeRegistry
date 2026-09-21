@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-15-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-15-000004",
+  "version": 1,
+  "title": "B. C. Carlson's approach to special functions of applied mathematics",
+  "abstract": "Lean formalization of selected results in B. C. Carlson's theory of special functions as complex Dirichlet averages. The registry selection establishes joint entire-parameter continuation of holomorphic averages on convex open scalar domains; joint holomorphy and native-integral agreement for the Gamma-regularized R and L functions on principal slit-node domains; Euler inversion and Euler-Poisson equations; and Gamma-regularized adaptations of both quadratic R transformations for all complex exponent and Dirichlet parameters with positive-real-part unsquared variables. The L function is related to R by exponent differentiation. The repository also supplies Pochhammer, several-complex-variable, simplex-integration, and Dirichlet foundations, which are not separately selected registry claims. This is a snapshot of an ongoing development, not complete coverage of Carlson's 1977 book or 1987 L-function article.",
+  "authors": [
+    "Bastiaan J Braams"
+  ],
+  "repository": "https://github.com/bjbraams/lean-codes",
+  "commit": "b7ed9a789ef8f1dea50cf82e29b7aded2b07b097",
+  "project_path": null,
+  "declarations": [
+    "PalomarSnapshot.joint_average_continuation",
+    "PalomarSnapshot.r_joint",
+    "PalomarSnapshot.r_native",
+    "PalomarSnapshot.r_euler",
+    "PalomarSnapshot.r_euler_poisson",
+    "PalomarSnapshot.r_first_quadratic",
+    "PalomarSnapshot.r_second_quadratic",
+    "PalomarSnapshot.l_joint",
+    "PalomarSnapshot.l_native",
+    "PalomarSnapshot.l_exponent_derivative"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.CV"
+    ],
+    "msc2020": [
+      "33C65",
+      "32A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-15T13:16:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b7ed9a789ef8f1dea50cf82e29b7aded2b07b097",
+        "fork_repository": "PalomarArchive/bjbraams--lean-codes--a2b9324092cc",
+        "source_repository": "bjbraams/lean-codes"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a84aaa399d506bcaa49ba20c93654a7e13eaf31734b0770718a77d0f6dcd23cb"
+}

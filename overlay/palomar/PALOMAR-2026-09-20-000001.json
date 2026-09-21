@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-20-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-20-000001",
+  "version": 1,
+  "title": "Finite tight Blackwell approachability-to-improper phi-regret reduction in Lean",
+  "abstract": "A Mathlib-only nonempty finite-simplex, algorithmic specialization of Theorem 4 in Dann, Mansour, Mohri, Schneider, and Sivan (COLT 2025). It realizes the tensor action space as a joint simplex, defines the source improper comparator by adding a mixed-constraint tensor of the canonical action marginal, proves that comparator escapes the action set, and proves exact finite-horizon equality between approachability loss and improper phi-regret under explicit causal strategy translations in both directions. It also proves that every joint action is a mixture of at most one rank-one tensor per constraint index.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "Ruy Jose Guerra Barretto de Queiroz",
+    "David Barros Hulak"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/blackwell-approachability-lean",
+  "commit": "42b9d7c77e77fc158d44cb31ef320798c3c73492",
+  "project_path": "rate-preserving-reduction",
+  "declarations": [
+    "Blackwell.RateReduction.Palomar.marginal_simplex",
+    "Blackwell.RateReduction.Palomar.outer_jointSimplex",
+    "Blackwell.RateReduction.Palomar.elementaryTensor_eq_outer_pointMass",
+    "Blackwell.RateReduction.Palomar.jointSimplex_eq_finiteTensorCombination",
+    "Blackwell.RateReduction.Palomar.jointSimplex_eq_finiteRowRankOneCombination",
+    "Blackwell.RateReduction.Palomar.marginal_outer",
+    "Blackwell.RateReduction.Palomar.pairing_shift_sub_pairing_eq_score",
+    "Blackwell.RateReduction.Palomar.regretSum_eq_approachSum",
+    "Blackwell.RateReduction.Palomar.regretLoss_eq_approachLoss",
+    "Blackwell.RateReduction.Palomar.shift_is_improper",
+    "Blackwell.RateReduction.Palomar.finiteTensorTightReduction_of_anchor",
+    "Blackwell.RateReduction.Palomar.algorithmicFiniteTensorTightReduction_of_anchor"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT",
+      "cs.LG"
+    ],
+    "msc2020": [
+      "91A26",
+      "68T05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-20T01:32:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "42b9d7c77e77fc158d44cb31ef320798c3c73492",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--blackwell-approachability-lean--ce111246e295",
+        "source_repository": "Arthur742Ramos/blackwell-approachability-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9adf854f9fea3e08615a064526421ea57b466f03d137b5109c6a0d6211588863"
+}

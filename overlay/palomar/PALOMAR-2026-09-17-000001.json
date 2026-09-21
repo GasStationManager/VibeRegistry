@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-17-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-17-000001",
+  "version": 1,
+  "title": "Davis-Kahan 1970: the four Section 2 rotation-of-eigenvectors theorem families",
+  "abstract": "Machine-checked Lean 4 presentation of the four headline theorem families in Section 2 of Davis and Kahan (1970): sin-Theta, tan-Theta, sin-2-Theta, and tan-2-Theta. The Palomar Comparator exposes five selected source-facing declarations: the residual sin-Theta estimate, the residual tan-Theta estimate, both the residual and whole-space sin-2-Theta estimates, and the residual tan-2-Theta estimate. The statements retain the paper's standing separable ambient Hilbert-space scope, permit finite or infinite ambient dimension, and are generic over RCLike scalars to cover the real and complex cases. Their norm quantifier is presented in the Challenge by a dimension-coherent symmetric norming function; the included formalization proves via Fan dominance that the corresponding inequalities yield the source-facing universal unitarily invariant norm estimates.",
+  "authors": [
+    "Jon Crall",
+    "Edward Wang"
+  ],
+  "repository": "https://github.com/AIQ-Kitware/aiq-davis-kahan-1970-rotation-eigenvectgors-perturbation-formalization",
+  "commit": "38e37da6e147cd0016da1eb05987c3edf7d95b39",
+  "project_path": null,
+  "declarations": [
+    "RotationOfEigenvectors.sinTheta",
+    "RotationOfEigenvectors.tanTheta",
+    "RotationOfEigenvectors.sinTwoTheta_directed",
+    "RotationOfEigenvectors.sinTwoTheta_ambient",
+    "RotationOfEigenvectors.tanTwoTheta"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.NA"
+    ],
+    "msc2020": [
+      "47A55",
+      "47A15",
+      "15A42",
+      "65F15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-17T00:41:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "38e37da6e147cd0016da1eb05987c3edf7d95b39",
+        "fork_repository": "PalomarArchive/AIQ-Kitware--aiq-davis-kahan-1970-rotation-eigenvectgors-perturbation-formalization--335602c8e20f",
+        "source_repository": "AIQ-Kitware/aiq-davis-kahan-1970-rotation-eigenvectgors-perturbation-formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:35e880a7779b9be74a2aa4b3c3cf858a16e90d38e2f2949fee6d1c48b0bc8e94"
+}

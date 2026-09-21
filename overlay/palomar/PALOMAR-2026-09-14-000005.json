@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-14-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-14-000005",
+  "version": 1,
+  "title": "Gallai’s Path Decomposition Conjecture for Graphs with Small Bowtie Boundaries",
+  "abstract": "We prove sufficient conditions for partitioning the edges of a connected finite simple graph into at most ⌈|V(G)|/2⌉ simple paths. The results concern bowtie components—two triangles sharing exactly one vertex—in the subgraph induced by even-degree vertices. They include removal preserving specified endpoints, a sharp full-incidence star expansion, composition under explicit boundary hypotheses, and corollaries for graphs with two bowtie components. The unrestricted two-exception conjecture remains open.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/gallai-bowtie-removal",
+  "commit": "2f19c6ff50ec0a7cb0d979f33870378299d78fea",
+  "project_path": null,
+  "declarations": [
+    "Gallai.Palomar.theoremA",
+    "Gallai.Palomar.expansion",
+    "Gallai.Palomar.expansionSharp",
+    "Gallai.Palomar.theoremC",
+    "Gallai.Palomar.corollaryA1",
+    "Gallai.Palomar.corollaryA2"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C38",
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-14T14:45:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2f19c6ff50ec0a7cb0d979f33870378299d78fea",
+        "fork_repository": "PalomarArchive/shaikidris--gallai-bowtie-removal--17650ad3832a",
+        "source_repository": "shaikidris/gallai-bowtie-removal"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e06f058a2ab4c7518389c12b493fba6de0a14ed02c7c8216c087712604e92f4b"
+}

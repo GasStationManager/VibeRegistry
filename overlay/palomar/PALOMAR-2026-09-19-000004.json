@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-19-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-19-000004",
+  "version": 1,
+  "title": "Irrationality of the 7-adic zeta value ζ₇(3)",
+  "abstract": "A complete Lean 4 / Mathlib proof that the 7-adic zeta value ζ₇(3) is irrational. Here ζ₇(3) = L₇(3, ω⁻²) is the Kubota–Leopoldt value, equal to the 7-adic limit of the Euler-corrected Bernoulli numbers −(1 − 7^{w−1}) B_w / w over the weights w = 6·7^{n+1} − 2. The same is proved for η = ζ₇(3)/2. The proof is a determinant irrationality argument on the modular curve X₀(7), in four parts: independence of seven explicit germs attached to the weight −2 seven-adic Eisenstein series, with a uniform zero estimate; a seven-adic annular saving; an auxiliary-prime denominator estimate; and an Archimedean energy estimate with a kernel-checked numerical margin. It also uses an internal proof of the geometric continuation of the target series to every radius below 49, via a twisted U₇ matrix bound and initial overconvergence obtained from classical Eisenstein approximants. The Lean endpoints depend only on propext, Classical.choice and Quot.sound. The mathematical argument has not been refereed. The work is human-directed, with extensive AI assistance in both the mathematics and the Lean development; see the automation section and PROVENANCE.md.",
+  "authors": [
+    "Yi Taifeng"
+  ],
+  "repository": "https://github.com/TaifengYi/zeta7-irrationality",
+  "commit": "8af843a0536a8f1fc3945ef302d16fb2f6622b2a",
+  "project_path": null,
+  "declarations": [
+    "Zeta7Challenge.approximant_tendsto",
+    "Zeta7Challenge.zeta7Three_irrational",
+    "Zeta7Challenge.eta_irrational"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11S40",
+      "11F33",
+      "11F85",
+      "11B68",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-19T13:25:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8af843a0536a8f1fc3945ef302d16fb2f6622b2a",
+        "fork_repository": "PalomarArchive/TaifengYi--zeta7-irrationality--315fac83cbad",
+        "source_repository": "TaifengYi/zeta7-irrationality"
+      }
+    ]
+  },
+  "statement_hash": "sha256:186b2c1c2a97b50af330ee92219871eb8eb18ecb662240444a73c062a4ea8fb6"
+}

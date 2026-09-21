@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-09-12-000002",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-12-000002",
-  "version": 1,
-  "title": "Optimal Fully Dynamic Matching on the Line: Lean Upper Bound",
-  "abstract": "A Lean 4 formalization of the main constructive upper bound for fully dynamic matching on the unit interval. For every inventory size m at least two, the development constructs a measurable online policy for iid uniform demand and replenishment. From every fixed initial inventory it proves a limsup root-mean-square one-period cost of at most C log(m+1)/m, with the explicit universal constant C = 72000/log(2). After a scheduled m-period replacement phase, it proves the same upper bound for expected average cost at every horizon N at least 2m^2. The compared result deliberately excludes the manuscript's implementation-complexity sentence because the development has no operational cost semantics linking abstract counters to execution.",
+  "version": 2,
+  "title": "A Tight Upper Bound for Fully Dynamic Matching on the Line",
+  "abstract": "There are `m` labeled supplies in `[0,1]`. In each period, an independent uniform demand arrives; an online policy selects one live supply, pays the distance between them, and replaces that supply by an independent uniform point. This is the one-dimensional fully dynamic model studied in Kanoria's [*Dynamic spatial matching*](https://doi.org/10.1214/25-AAP2154). That paper established a lower bound of order `log(m)/m` and an upper bound of order `log(m)^2/m`, and posed closing this logarithmic gap as an open problem.\n\nWe construct a policy and show that its performance matches the prior known lower bound up to a universal constant factor. Specifically, for every `m >= 2`, from every fixed initial inventory, its root-mean-square one-period cost has limsup at most `C log(m+1)/m`, with `C = 72000/log(2)`. With a scheduled `m`-period replacement phase, its expected average cost, including that phase, has the same bound for every total horizon `N >= 2m^2`. The policy assigns deletion probabilities recursively on a dyadic tree and implements them by quantile transport. Its analysis combines a harmonic inventory potential with a quadratic Bellman inequality. Tree symmetry cancels interactions between spatial scales, while the Bellman inequality controls both transport discrepancy and the curvature loss in the potential drift.",
   "authors": [
     "Yash Kanoria"
   ],
   "repository": "https://github.com/ykanoria/FD1d-Lean",
-  "commit": "4c2fd462ae8cecb7fb21694174226c8d63b2f279",
+  "commit": "26a5b4e2fd83fa86053239e09e92af370c62f18c",
   "project_path": null,
   "declarations": [
     "FD1D.V5.Palomar.optimalDynamicMatchingUpperBound"
@@ -27,7 +27,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-09-12T05:09:38Z",
+  "published_at": "2026-09-14T21:01:55Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -41,11 +41,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "4c2fd462ae8cecb7fb21694174226c8d63b2f279",
+        "commit": "26a5b4e2fd83fa86053239e09e92af370c62f18c",
         "fork_repository": "PalomarArchive/ykanoria--FD1d-Lean--8f90e399686d",
         "source_repository": "ykanoria/FD1d-Lean"
       }
     ]
   },
-  "statement_hash": "sha256:0f53420a5b0f648cc6e3622c052f5563a0eef3bcc6d4750af0837ba53302bdae"
+  "statement_hash": "sha256:2bd49190060014ef27934a4d9b6189fba17f55d9d6da37eceb4e8046e1e934b2"
 }

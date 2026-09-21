@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-19-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-19-000001",
+  "version": 1,
+  "title": "NKBesicovitch",
+  "abstract": "Lean proofs of Hausdorff dimension at least n-(n-k)/p_c^k for all (n,k)-Besicovitch sets with 1<=k<=n, and positive Lebesgue measure for Lebesgue measurable such sets when p_c^(k-1)+k>n. Here a Besicovitch set contains a translated unit k-disk in every k-dimensional direction, and p_c is the unique root in (2,3) of p^3-2p^2-2p+2=0.\nBuilding on Bourgain's arithmetic-combinatorial approach, Nets Hawk Katz and Terence Tao's New bounds for Kakeya problems (2002; preprint 2001) established the Minkowski-dimension bound 1+(n-1)/beta_c, where beta_c=p_c/(p_c-1)=1.67513... satisfies beta_c^3-4*beta_c+2=0. This is exactly n-(n-1)/p_c, so the numerical exponent itself is not new. They also proved the distinct Hausdorff bound (2-sqrt(2))*(n-4)+3. A Minkowski lower bound alone does not imply the same Hausdorff lower bound: Hausdorff dimension is at most Minkowski dimension.\nRichard Oberlin's subsequent X-ray work (2006 preprint; published 2010) gave the Hausdorff bound n-(n-k)/(1+sqrt(2))^k and positive measure when (1+sqrt(2))^(k-1)+k>n. Later polynomial-partitioning work by Hickman, Rogers, and Zhang improved Kakeya bounds in many dimensions while retaining the large-dimension leading coefficient 2-sqrt(2).\nThe claimed advance here is a continuous projection estimate with joint measurable parameter selection, developed from the supplied September 2026 manuscript. Its mixed-norm X-ray and plate maximal consequences, together with a countable-cover argument, give the Katz-Tao numerical bound for Hausdorff dimension and replace 1+sqrt(2)=2.41421... by p_c=2.48119... in Oberlin's displayed dimension and positive-measure ranges. For k=1 the resulting Hausdorff bound is approximately 0.596968*n+0.403032, with a larger leading coefficient than 2-sqrt(2)=0.585786.... This is an improvement in sufficiently high dimensions, not a claim to the best bound in every dimension. The formalized hypotheses require only unit disks, and the Hausdorff theorem requires neither measurability nor boundedness of the set.\nBoth geometric theorems and the exact bounds 2.481<p_c<2.482 are proved with only the standard Lean axioms. The comparisons above identify the improvement over the cited results; independent mathematical review and confirmation of novelty against the full literature remain pending. Final sandboxed Comparator and independent-kernel verification are pending.",
+  "authors": [
+    "Yongxi Lin"
+  ],
+  "repository": "https://github.com/CoolRmal/NKBesicovitch",
+  "commit": "e12e5981d840eb5ebdc25403691b3c63a9c7aff8",
+  "project_path": null,
+  "declarations": [
+    "NKBesicovitch.criticalExponent_bounds",
+    "NKBesicovitch.volume_pos_of_criticalExponent",
+    "NKBesicovitch.le_dimH_of_isBesicovitch"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "42B25",
+      "28A75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-19T03:22:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e12e5981d840eb5ebdc25403691b3c63a9c7aff8",
+        "fork_repository": "PalomarArchive/CoolRmal--NKBesicovitch--2dc406a2bbd2",
+        "source_repository": "CoolRmal/NKBesicovitch"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f65bc6803d91d461018054a97333ee840c9ac53333e0db11ca9f1a3225022777"
+}

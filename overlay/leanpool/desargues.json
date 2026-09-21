@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/oneofvalts/desargues",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.Desargues",
   "declarations": [
     "Basic.ProjectiveGeometry",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Desargues.lean",
-  "statement_hash": "sha256:6a092ec64f0418b10ac027cb21586660f06fa914634bc39eb2dd85529cf657be"
+  "statement_hash": "sha256:0eeea3368a100081db3a6adfa6e8b40c0ea6a192305855b7ddc4c7c7a4c3fb1a"
 }

@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-15-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-15-000003",
+  "version": 1,
+  "title": "Erdős Problem 190: every canonical N exceeds (Ck)^k for large k, and H(k)^{1/k}/k → ∞ under the existence hypothesis — a Lean 4 formalization of the qualitative statement of arXiv:2604.20588",
+  "abstract": "A Lean 4 formalization, against Mathlib, of the qualitative statement of J. H. Bae, \"A resolution of Erdős Problem #190: the canonical van der Waerden number satisfies H(k)^{1/k}/k → ∞\" (arXiv:2604.20588, v2), Corollary 1.2, via the elementary argument of its Section 4.3.  Let H(k) be the least N such that every finite colouring of {1,…,N} contains a monochromatic or a rainbow k-term arithmetic progression; Erdős and Graham (1979) asked whether H(k)^{1/k}/k → ∞ (Problem 190 in Bloom's database).  The compared theorems state that for every C there is K such that for all k ≥ K every N for which [N] is canonical for k satisfies (Ck)^k < N (divergence, and its Filter.Eventually form); this is a statement about canonical N only and by itself says nothing about H(k) (it holds vacuously for a k with no canonical N, where H(k) = sInf ∅ = 0).  Combined with the existence of a canonical N for every k — the Erdős–Graham theorem, via Szemerédi's theorem, which is not formalized — it gives H(k) > (Ck)^k for all large k, i.e. H(k)^{1/k}/k → ∞; that conditional conclusion is stated as H_divergence, with the existence as an explicit hypothesis on H(k) = sInf {N | canonical}.  The fourth compared theorem is the explicit bound behind the argument: for k ≥ 12 there is a prime p with (k−1)/2 < p ≤ k−1 such that every canonical N exceeds p^(p − ⌊k/3⌋)·⌊⌊k/3⌋^(k−1)/(16k²)⌋ (integer divisions, as in the Lean statement).  The proof composes the Erdős–Lovász lower bound W(r,k) − 1 ≥ r^(k−1)/(16k²) for van der Waerden numbers (obtained from the symmetric Lovász local lemma, applied with a number of colours r₀ = ⌊k/3⌋ growing with k), the restricted Blankenship–Cummings–Taranchuk recurrence W(r,k) − 1 ≥ p·(W(r−1,k) − 1) for primes r ≤ p ≤ k, Bertrand's postulate, and elementary asymptotics.  The paper's main theorem, the explicit rate H(k)^{1/k}/k ≥ (1/e − ε(k))·k/log k obtained with the Baker–Harman–Pintz prime-gap theorem, is not formalized (that theorem is not available in Mathlib); the formalized argument gives the weaker rate k^{1/6−o(1)}, which suffices for the qualitative statement.  The compared theorems depend only on propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Ji Ho Bae"
+  ],
+  "repository": "https://github.com/jbaelaw/erdos190-lean",
+  "commit": "be43a3ead08a9d9af352cf296d284dd3468ca805",
+  "project_path": null,
+  "declarations": [
+    "Erdos190.Palomar.divergence",
+    "Erdos190.Palomar.divergence_eventually",
+    "Erdos190.Palomar.H_divergence",
+    "Erdos190.Palomar.explicit_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05D10",
+      "11B25",
+      "05C65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-15T10:31:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "be43a3ead08a9d9af352cf296d284dd3468ca805",
+        "fork_repository": "PalomarArchive/jbaelaw--erdos190-lean--ffa29cd1b3a4",
+        "source_repository": "jbaelaw/erdos190-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:952b8af9a7ed91b2672d6c817c7da30964302fec597172c3fb9203bfdd0b9d56"
+}

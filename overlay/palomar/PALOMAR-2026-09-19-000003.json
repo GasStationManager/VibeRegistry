@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-19-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-19-000003",
+  "version": 1,
+  "title": "BKARForestFormula",
+  "abstract": "A Lean 4 / Mathlib formalization of the Brydges-Kennedy-Abdesselam-Rivasseau forest interpolation formula: for a finite vertex set V and a C-infinity function rho on the edge-coupling space of the complete graph on V, the value of rho at the all-ones coupling equals the sum, over all acyclic edge subsets (forests) F, of the integral over the unit cube [0,1]^E(F) of the mixed partial derivative of rho in the edge variables of F, evaluated at the path-minimum interpolation point x^F(u); the empty forest contributes rho(0). The flagship theorem is additionally restated Mathlib-only and re-proved in the leanprover/comparator challenge/solution format using Audit/ForestFormula/comparator.json.",
+  "authors": [
+    "Scott Armstrong"
+  ],
+  "repository": "https://github.com/scottnarmstrong/BKARForestFormula",
+  "commit": "a07f44a534240fe6339558951dd78a19e4ef7c51",
+  "project_path": null,
+  "declarations": [
+    "BKARMirror.bkar_formula_forestIndex_cube_contributions"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math-ph",
+      "math.PR"
+    ],
+    "msc2020": [
+      "82B05",
+      "81T15",
+      "05C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-19T11:49:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a07f44a534240fe6339558951dd78a19e4ef7c51",
+        "fork_repository": "PalomarArchive/scottnarmstrong--BKARForestFormula--ce48304a9ae3",
+        "source_repository": "scottnarmstrong/BKARForestFormula"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5f6737c65a2835a1aa35a5dfc7f2c386166b31780242adda335691e38c606199"
+}

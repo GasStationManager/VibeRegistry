@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/t4ccer/misere-games",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.MisereGames",
   "declarations": [
     "MisereGames.Form.Promain.of_universe",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MisereGames.lean",
-  "statement_hash": "sha256:b6f4b113cd385ca5f2f47f51f5731ac0d4994d908d3ad1e697e8f7df1da82db2"
+  "statement_hash": "sha256:6c056b58720f46bfd960596137d5fac766e80dda9cf69e3ea6a01a40e63dee6c"
 }

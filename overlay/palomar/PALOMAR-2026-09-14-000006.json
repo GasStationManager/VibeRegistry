@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-14-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-14-000006",
+  "version": 1,
+  "title": "MI-32: Lean formalization of the parity and positive-polynomial upper bound",
+  "abstract": "A Lean 4 formalization of the MI-32 upper bound, that is, of the Latała-Świątkowski conjecture that for every regularity parameter alpha >= 1 there is a constant C > 0, independent of the dimension and of the entry laws, with E||X|| <= C (M(X) + D(X)) for every square random matrix X with independent mean-zero real entries whose absolute moments satisfy ||X_ij||_{L_2r} <= alpha ||X_ij||_{L_r} at every real order r >= 1. Here ||.|| is the Euclidean operator norm, M(X) is the sum of the largest row and column standard deviations, and D(X) is the max-min weak moment at order log(k+1) taken over one shared deterministic deletion set on both axes. The probability space is arbitrary and the subunit order log 2 at k = 1 is kept literally. The selected theorem MI32.main_upper carries a complete proof whose transitive axiom audit reports only propext, Classical.choice and Quot.sound. The proof runs through original-law positive-polynomial moments and interpolation, exact occupation-count localization, finite nets, a direct independent-coordinate Hilbert comparison, full original-law creator and annihilator contractions, positive vacuum iteration giving the local symmetric-law operator-moment theorem at the exact order log(n+1), a nested deterministic deletion decomposition with cubic two-sided variance screening, an elementary centered-Gram estimate for the far remainder, two two-shell block families controlled by the local theorem at scheduled orders, and the original-copy symmetrization reduction. Constants are explicit and conservative, not optimized.",
+  "authors": [
+    "Diar Heidary"
+  ],
+  "repository": "https://github.com/DiarHaidary/Spectral-norms-of-independent-entries-with-regular-moment-growth",
+  "commit": "762bd5ec5050a96f5e6ba3926b6cda4816fcd4b0",
+  "project_path": null,
+  "declarations": [
+    "MI32.main_upper"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.FA"
+    ],
+    "msc2020": [
+      "60B20",
+      "60E15",
+      "47A30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-14T15:41:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "762bd5ec5050a96f5e6ba3926b6cda4816fcd4b0",
+        "fork_repository": "PalomarArchive/DiarHaidary--Spectral-norms-of-independent-entries-with-regular-moment-growth--b1249e53599c",
+        "source_repository": "DiarHaidary/Spectral-norms-of-independent-entries-with-regular-moment-growth"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d173a5bfb2d25d19ce793f661755c12e0ef459f9bfae7462833a04e6f8f30faf"
+}

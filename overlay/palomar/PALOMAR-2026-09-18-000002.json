@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-18-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-18-000002",
+  "version": 1,
+  "title": "Endpoint estimates for Stein's purely quadratic Carleson operator",
+  "abstract": "A Lean 4 formalization of four principal endpoint assertions from Fragkos, Krause, and Lacey's Endpoint Estimates for Stein's Purely Quadratic Carleson Operator: two failures of modular estimates below t log₂ t, a full-modulation L log L endpoint estimate, and a lacunary L (log₂ L)² log₄ L endpoint estimate.",
+  "authors": [
+    "Anastasios Fragkos"
+  ],
+  "repository": "https://github.com/anastasiosfragkosmath/quadratic-carleson-palomar-submission",
+  "commit": "3d3cf4316acac4c23140059a78fb570b1440394b",
+  "project_path": null,
+  "declarations": [
+    "QuadraticCarleson.StatementSurface.PaperTheorems.lacunary_sub_log2_modular_failure",
+    "QuadraticCarleson.StatementSurface.PaperTheorems.full_sub_log2_modular_failure",
+    "QuadraticCarleson.StatementSurface.PaperTheorems.full_LlogL_endpoint",
+    "QuadraticCarleson.StatementSurface.PaperTheorems.lacunary_log2_squared_log4_endpoint"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.FA"
+    ],
+    "msc2020": [
+      "42B20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-18T09:42:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3d3cf4316acac4c23140059a78fb570b1440394b",
+        "fork_repository": "PalomarArchive/anastasiosfragkosmath--quadratic-carleson-palomar-submission--d28b1bb96b8f",
+        "source_repository": "anastasiosfragkosmath/quadratic-carleson-palomar-submission"
+      }
+    ]
+  },
+  "statement_hash": "sha256:84e45b9810279dbfdab0fef2f1fd0cd52e3fb8c7c117f726b65d2a1223f5ea30"
+}

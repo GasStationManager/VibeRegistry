@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-15-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-15-000006",
+  "version": 1,
+  "title": "CoarseGraining",
+  "abstract": "A Lean formalization of the coarse-graining approach to quantitative stochastic homogenization of divergence-form elliptic equations: function-space, deterministic, probabilistic, and homogenization-scale theory up to the quenched minimal-scale theorem. The public main result is a uniformly elliptic, isotropic specialization of the quenched homogenization comparison estimate in Armstrong-Kuusi, \"Renormalization Group and Elliptic Homogenization in High Contrast\" (Inventiones Mathematicae, 2025), independently checked using Audit/QuenchedComparison/comparator.json, together with four further comparator-checked specializations under Audit/.",
+  "authors": [
+    "Scott Armstrong",
+    "Tuomo Kuusi"
+  ],
+  "repository": "https://github.com/scottnarmstrong/CoarseGraining",
+  "commit": "28ca42c02fd286c8f63a45be3344f6f82d026db3",
+  "project_path": null,
+  "declarations": [
+    "Homogenization.StatementAudit.homogenizationComparison_uniformEllipticity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP"
+    ],
+    "msc2020": [
+      "35B27",
+      "60K37",
+      "35J15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-15T17:44:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "28ca42c02fd286c8f63a45be3344f6f82d026db3",
+        "fork_repository": "PalomarArchive/scottnarmstrong--CoarseGraining--c278d2cd6998",
+        "source_repository": "scottnarmstrong/CoarseGraining"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ac361830261e5885c4e95a9754ba4ab49d16be60bbe6a9a201d38c97ece11a92"
+}

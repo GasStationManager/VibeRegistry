@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/alunik/common-neighbour-conjecture",
   "commit": "",
-  "snapshot_commit": "76d2444305cb934243f18108fe173b8a0fa0d718",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
   "entry_module": "LeanPool.CommonNeighbourConjecture",
   "declarations": [
     "SaxlCounterexamples.MainTheorems.mainTheorem",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CommonNeighbourConjecture.lean",
-  "statement_hash": "sha256:e9f524b9bc9127576d4886bbbb698bfd0d353506e1a0981618abf875378b0825"
+  "statement_hash": "sha256:5118602da270505c1bbf70a23f8cb7f5c2397b58ae9db53d44bcd78d6f01b5c5"
 }

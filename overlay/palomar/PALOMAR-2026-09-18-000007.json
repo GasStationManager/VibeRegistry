@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-18-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-18-000007",
+  "version": 1,
+  "title": "Sharp symmetry bounds for real plane algebraic curves (Theorem 1)",
+  "abstract": "Let C be an infinite real plane algebraic curve defined by a polynomial of degree d >= 2 that is irreducible over the complex numbers, and suppose C is not a circle. Its group of Euclidean symmetries is finite, the orientation-preserving part is cyclic of order at most max(d, 2d - 4), and the full group has order at most 2d. Both bounds are attained in every degree d >= 2. For d >= 5, curves attaining the rotation bound are exactly, up to orientation-preserving similarity, the curves Re(z^(d-2)(|z|^2 + a)) = 0 with |a| = 1 and a not real; conversely each such curve with d - 2 >= 3 attains the bound. This entry formalizes Theorem 1 of the note; the note's second theorem (Mobius symmetries and genus of the extremal family) is not part of this entry.",
+  "authors": [
+    "Carlo Perassi"
+  ],
+  "repository": "https://github.com/carlok/sharp-symmetry-bounds-lean",
+  "commit": "ced9fe2d4d2aa42aa03bbc19b1b56cdcd18c9413",
+  "project_path": null,
+  "declarations": [
+    "SharpSymmetryBounds.sharp_bounds",
+    "SharpSymmetryBounds.rotation_bound_sharp",
+    "SharpSymmetryBounds.full_bound_sharp",
+    "SharpSymmetryBounds.equality_classification",
+    "SharpSymmetryBounds.family_attains_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.MG"
+    ],
+    "msc2020": [
+      "14H50",
+      "14P05",
+      "51N20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-18T14:29:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ced9fe2d4d2aa42aa03bbc19b1b56cdcd18c9413",
+        "fork_repository": "PalomarArchive/carlok--sharp-symmetry-bounds-lean--f3036be09495",
+        "source_repository": "carlok/sharp-symmetry-bounds-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2ca423f21dd963a6f4b11e8f3c6dfe848788145e3c97244cace0821618a839bb"
+}

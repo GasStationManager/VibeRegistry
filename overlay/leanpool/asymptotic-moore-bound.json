@@ -1,0 +1,60 @@
+{
+  "source": "leanpool",
+  "upstream_id": "asymptotic-moore-bound",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MooreBound",
+  "version": 1,
+  "title": "Asymptotically attaining the Moore bound",
+  "abstract": "Proves that, for each fixed positive diameter k, the largest order of a finite simple graph with maximum degree at most d and extended diameter at most k is asymptotic to d^k as d tends to infinity. Constructs regular halved-flag graphs over every finite field, with exact order and diameter, a sharp degree cap, and matching asymptotics through all prime powers. Also proves the corresponding lower-limit bound for the edge extremum defined using line-graph diameter. Reusable infrastructure includes common bases for complete flags, odd-even sorting routes, exact flag enumeration, projective-line completion counts, and bipartite graph expansion. The analytic bridge retains the Wiener-Ikehara and prime-counting dependency closure from the Apache-2.0 PrimeNumberTheoremAnd project. The paper describes AI-assisted formalization supervised by the human authors.",
+  "authors": [
+    "Wouter Cames van Batenburg",
+    "Samuel Korsky",
+    "PrimeNumberTheoremAnd contributors"
+  ],
+  "repository": "https://github.com/woutercvb/wewantmoore",
+  "commit": "",
+  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "entry_module": "LeanPool.MooreBound",
+  "declarations": [
+    "MooreBound.DegreeDiameter.theorem_1_1",
+    "MooreBound.DegreeDiameter.corollary_1_2",
+    "MooreBound.DegreeDiameter.proposition_3_1",
+    "MooreBound.DegreeDiameter.alternating_route",
+    "MooreBound.prime_between"
+  ],
+  "informal": {
+    "MooreBound.DegreeDiameter.theorem_1_1": "For each positive natural k, n(k,d)/d^k tends to 1 as the natural degree bound d tends to infinity. Here n(k,d) is the maximum number of vertices of a finite simple graph with maximum degree at most d and extended diameter at most k.",
+    "MooreBound.DegreeDiameter.corollary_1_2": "For each natural ell at least 2, the lower limit of h(ell,d)/d^ell is at least 1. Here h(ell,d) is one plus the maximum number of edges of a finite simple graph with maximum degree at most d whose line graph has extended diameter at most ell.",
+    "MooreBound.DegreeDiameter.proposition_3_1": "For every positive k and prime power q, the concrete halved-flag graph is regular, has order [2k+1]_q!/(q+1)^k, degree at most (q+1)^k((q+1)^k-1), and extended diameter exactly k. Along all prime powers q tending to infinity, its actual degree divided by this cap and its order divided by the kth power of its actual degree both tend to 1.",
+    "MooreBound.DegreeDiameter.alternating_route": "Any two complete flags in an n-dimensional vector space over a division ring admit an n-step route that changes only ranks of the prescribed alternating parity at each step.",
+    "MooreBound.prime_between": "For every positive real epsilon, every sufficiently large real x admits a prime strictly between x and (1+epsilon)x."
+  },
+  "classification": {
+    "msc2020": [
+      "05C35",
+      "05B25",
+      "11N05"
+    ],
+    "tags": [
+      "graph-theory",
+      "finite-geometry",
+      "asymptotics",
+      "prime-number-theorem"
+    ],
+    "branch": "extremal graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/MooreBound.lean",
+  "statement_hash": "sha256:07df94a08fecaabbfb96f75751ab4e246204cffda70c75ac24434b7d477d9392"
+}

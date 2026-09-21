@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-14-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-14-000011",
+  "version": 1,
+  "title": "Explicit Fourier–Jacobi Haar-core evaluation and Abel limits",
+  "abstract": "For a nonarchimedean local field with residue cardinality q > 2, this development evaluates a sum of three normalized Haar integrals of an explicit eight-term Weyl kernel defined from valuations of entries and two-by-two minors of a concrete 4 by 4 matrix. It proves measurability and Bochner integrability on the natural damped range, an explicit rational evaluation in the undamped interior, principal Abel convergence, and the whole signed special Abel limit at delta = plus or minus q^(-1/2). The Satake parameters are unitary and avoid the stated Weyl walls; the special quotient also excludes parameters equal to its sign. The proof assembles all fifty infinite valuation regions with the source Haar normalizations. This adapts local calculations in Paul, Pitale, Saha and Schmidt's Fourier–Jacobi period paper. Identification of the explicit kernel with the paper's independently defined spherical coefficient and the full period identity are not claimed. The positive special-sign product is identically zero. No undamped special-endpoint integrability or extension to exceptional parameter walls is asserted.",
+  "authors": [
+    "Abhishek Saha"
+  ],
+  "repository": "https://github.com/abhisaha-git/fourier-jacobi-core-evaluation",
+  "commit": "fb2b788d6271dd6228044b2c4e9e47c891a16762",
+  "project_path": null,
+  "declarations": [
+    "FourierJacobiPalomar.measure_normalizations",
+    "FourierJacobiPalomar.integrability",
+    "FourierJacobiPalomar.principal_evaluation",
+    "FourierJacobiPalomar.special_abel_limit"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.RT"
+    ],
+    "msc2020": [
+      "11F70",
+      "11F85"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-14T21:39:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fb2b788d6271dd6228044b2c4e9e47c891a16762",
+        "fork_repository": "PalomarArchive/abhisaha-git--fourier-jacobi-core-evaluation--141e3bd325b1",
+        "source_repository": "abhisaha-git/fourier-jacobi-core-evaluation"
+      }
+    ]
+  },
+  "statement_hash": "sha256:53f3cdfd462748e6d71bdb9e13b33e6a9398c933563fc405b7e4efdae1ca2d43"
+}
