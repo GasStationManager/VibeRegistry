@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-27-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-27-000001",
+  "version": 1,
+  "title": "Uniform Minor-Arc Cancellation for Primes at the X^{2/15+ε} Scale",
+  "abstract": "We prove uniform cancellation in prime-weighted exponential sums at the 2/15 scale, improving the 8/33 local Fourier scale in the Matomäki–Radziwiłł–Tao machinery for averaged prime-pair correlations. On the minor-arc part of every centered arc of radius 1/(2H), the squared von Mangoldt exponential sum over X < n <= 2X has integral at most C X (log X)^(-A), for every A > 0 and epsilon > 0, once H >= X^(2/15+epsilon) and X is large enough. The center may lie anywhere on the circle. The same cutoffs and constants work for every center and are chosen before X and H. This gives uniform minor-arc cancellation at the 2/15 threshold. Since 2/15 < 8/33, the admissible H is smaller, so the frequency windows of length 1/H are wider and the shift-averaging intervals are shorter. The constants C and X0 are ineffective because the proof uses Siegel's theorem. The development also contains an internal proof of the epsilon-form of Guth–Maynard's large-value estimate for Dirichlet polynomials. The recorded 20 September Lean 4.30 kernel replays checked 100,596 declarations for MAP and 75,874 for Guth–Maynard, using only standard axioms. The formal statement is AllCenterMAP.map_two_fifteenths, manuscript Theorem 1.1.",
+  "authors": [
+    "Conor Grogan"
+  ],
+  "repository": "https://github.com/jconorgrogan/prime-minor-arcs-2-15",
+  "commit": "f369f267b4dcfebf010c8e7baa2c9602e2960eba",
+  "project_path": null,
+  "declarations": [
+    "AllCenterMAP.map_two_fifteenths"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-27T01:05:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f369f267b4dcfebf010c8e7baa2c9602e2960eba",
+        "fork_repository": "PalomarArchive/jconorgrogan--prime-minor-arcs-2-15--b3b69567282b",
+        "source_repository": "jconorgrogan/prime-minor-arcs-2-15"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bac71bba1989aa67493c80d1922cc72b292c648d13a996bbad459f1b6639fca5"
+}

@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "granville-moore",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/GranvilleMoore",
+  "version": 1,
+  "title": "Integer Moore determinants and iterated Fermat quotients",
+  "abstract": "Proves Granville's integrality and congruence formulas for iterated Fermat quotients at odd primes, including the exceptional order p - 1. For 1 ≤ d ≤ p and integers x_j prime to p, it proves that the nonzero integer Moore determinant det(x_j^(p^i)) is divisible by p^C(d+1,3), and that the next power does not divide it exactly when the Fermat quotients q_p(x_j) are pairwise distinct modulo p. The development supplies polynomial coefficient identities, denominator-clearing and valuation estimates, a determinant reduction ladder, and weighted Vandermonde formulas over general commutative rings.",
+  "authors": [
+    "Ken Ono"
+  ],
+  "repository": "https://github.com/AxiomMath/GranvilleMoore",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.GranvilleMoore",
+  "declarations": [
+    "GranvilleMoore.not_pow_succ_dvd_det_mooreMatrix_iff",
+    "GranvilleMoore.exists_intCast_iteratedFermatQuot",
+    "GranvilleMoore.dvd_factorial_mul_sub_mul_pow",
+    "GranvilleMoore.dvd_factorial_mul_sub_exceptional",
+    "GranvilleMoore.pow_dvd_det_mooreMatrix"
+  ],
+  "informal": {
+    "GranvilleMoore.exists_intCast_iteratedFermatQuot": "For an odd prime p, an integer x not divisible by p, any j ≤ p - 1, and any k, the iterated Fermat quotient F^(j)_k(x) is an integer.",
+    "GranvilleMoore.dvd_factorial_mul_sub_mul_pow": "Under the same prime and unit hypotheses, for j ≤ p - 2 and any k, j! F^(j)_k(x) is congruent to x q_p(x)^j modulo p, where q_p(x) = (x^(p-1) - 1)/p.",
+    "GranvilleMoore.dvd_factorial_mul_sub_exceptional": "For an odd prime p and an integer x not divisible by p, (p-1)! F^(p-1)_0(x) is congruent to x q_p(x)^(p-1) - x q_p(x) modulo p.",
+    "GranvilleMoore.pow_dvd_det_mooreMatrix": "For an odd prime p, 1 ≤ d ≤ p, and integers x_j not divisible by p with nonzero Moore determinant, p^C(d+1,3) divides det(x_j^(p^i)).",
+    "GranvilleMoore.not_pow_succ_dvd_det_mooreMatrix_iff": "Under those determinant hypotheses, its p-adic valuation is exactly C(d+1,3) if and only if the integer Fermat quotients q_p(x_j) have pairwise distinct residues modulo p. The Lean statement expresses exactness as failure of divisibility by p^(C(d+1,3)+1)."
+  },
+  "classification": {
+    "msc2020": [
+      "11A07",
+      "11C20",
+      "15A15"
+    ],
+    "tags": [
+      "number-theory",
+      "fermat-quotients",
+      "determinants",
+      "p-adic-valuations",
+      "polynomial-identities"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/GranvilleMoore.lean",
+  "statement_hash": "sha256:423137fc939378f1b637a818c098dea7146e660074fe8b83b57db16e321fee0f"
+}

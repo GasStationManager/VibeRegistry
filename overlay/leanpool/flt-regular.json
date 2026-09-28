@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/leanprover-community/flt-regular",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.FltRegular",
   "declarations": [
     "flt_regular",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FltRegular.lean",
-  "statement_hash": "sha256:3a3b9acd87163c8d70d786daf595d72bbfbbad5e78a7eac0b504385b40d6f4ea"
+  "statement_hash": "sha256:49566e87891a9f049674aff7de3cb796fdf2eec0ec00d55d1ccfdd4ce424e871"
 }

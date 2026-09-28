@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000008",
+  "version": 1,
+  "title": "Shapley value axiomatic characterization",
+  "abstract": "Formalizes finite TU cooperative games, the Shapley value formula, and the four axioms of efficiency, symmetry, the null-player property, and additivity. It proves that the Shapley value satisfies all four and proves uniqueness via unanimity games and Möbius inversion over the Boolean lattice. This is a reusable formalization artifact, not a claim of new mathematics.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/shapley-value-lean",
+  "commit": "ee15891fecdf294363791c61a5ec018109fe423a",
+  "project_path": null,
+  "declarations": [
+    "ShapleyValue.Palomar.shapley_characterization",
+    "ShapleyValue.Palomar.shapleyValue_unique",
+    "ShapleyValue.Palomar.shapleyValue_efficient",
+    "ShapleyValue.Palomar.shapleyValue_symmetric",
+    "ShapleyValue.Palomar.shapleyValue_nullPlayer",
+    "ShapleyValue.Palomar.shapleyValue_additive"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91A12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T07:36:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ee15891fecdf294363791c61a5ec018109fe423a",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--shapley-value-lean--8d638964e840",
+        "source_repository": "Arthur742Ramos/shapley-value-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:22e2a6f015ea3f0c8aec2bbc6aa639dd02475f44c4a71bae4f66b622dc7ce083"
+}

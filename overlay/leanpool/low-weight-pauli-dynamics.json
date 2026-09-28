@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "low-weight-pauli-dynamics",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LowWeightPauliDynamics",
+  "version": 1,
+  "title": "Low-weight Pauli dynamics and truncation error",
+  "abstract": "Derives a normalized Pauli 2-norm truncation-error bound for concrete circuits of disjoint-support Hermitian Pauli rotations, with explicit locality, angle, step-count, and cutoff hypotheses. Develops a faithful matrix representation, Pauli coefficient reconstruction, finite Schur bounds, and reusable scalar multi-jump ladder estimates. Also proves a combinatorial light-cone bound and exact counterexamples showing why repeated product-formula layers must count toward the layer exponent. This is the norm-level analysis, not a formalization of expectation-value accuracy, Hamiltonian approximation, or the paper's full algorithm.",
+  "authors": [
+    "Jue Xu"
+  ],
+  "repository": "https://github.com/Jue-Xu/Lean4LPD",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.LowWeightPauliDynamics",
+  "declarations": [
+    "Lean4LPD.PauliString.pauliNorm_layerStep_error_le_model_of_source_regime",
+    "Lean4LPD.l2_opNorm_le_schur",
+    "Lean4LPD.PauliString.reachable_weight_le",
+    "Lean4LPD.LayerCounterexample.actual_discard_exceeds_gamma_bound"
+  ],
+  "informal": {
+    "Lean4LPD.PauliString.pauliNorm_layerStep_error_le_model_of_source_regime": "For an observable supported on Pauli weights at most ko, a block of Γ positive-many disjoint-support layers of Hermitian rotations of weight at most kh, kh ≥ 2, and |sin θ| ≤ a ≤ αt/r with α > 0 and t ≥ 0, truncation to weight ko + m(kh - 1) after each of r blocks has Pauli 2-norm error at most (2Γ(kh - 1)αt)^(m+1) (e(m+1))^(ko/(kh-1)) times the input norm. The conditions include m ≥ 1, r ≥ 5, m ≤ r, rΓ ≥ 8(m+1)^2, and r ≥ 8e^2(ko+kh-1)αt. Γ counts every layer of the actual block, including repeated product-formula layers.",
+    "Lean4LPD.l2_opNorm_le_schur": "A finite rectangular matrix over any RCLike field, with absolute row sums bounded by nonnegative R and absolute column sums bounded by nonnegative C, has Euclidean operator norm at most sqrt(RC).",
+    "Lean4LPD.PauliString.reachable_weight_le": "Every Pauli string reachable through a list of disjoint-support kh-local layers, kh ≥ 1, has weight at most its initial weight times kh raised to the number of layers. Reachability is combinatorial; this theorem does not assert that a reachable coefficient is nonzero.",
+    "Lean4LPD.LayerCounterexample.actual_discard_exceeds_gamma_bound": "For the explicit eight-qubit second-order word L1,L2,L2,L1 and angles 0 < θ < π/2, truncating the evolved weight-one input at weight one discards a nonzero coefficient of weight greater than four. Thus the two distinct layer types give an invalid bound 1*2^2; repetitions must be counted."
+  },
+  "classification": {
+    "msc2020": [
+      "81P68",
+      "65L70",
+      "47A30"
+    ],
+    "tags": [
+      "quantum-information",
+      "pauli-operators",
+      "numerical-analysis",
+      "operator-norms",
+      "truncation-error"
+    ],
+    "branch": "quantum information"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/LowWeightPauliDynamics.lean",
+  "statement_hash": "sha256:bc5e45cac1692d33c09b7ce922f865bc50b3e7019a5d30946286b4d9cf6e1f78"
+}

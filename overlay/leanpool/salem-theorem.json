@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "salem-theorem",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SalemTheorem",
+  "version": 1,
+  "title": "Every Pisot number is a two-sided limit of Salem numbers",
+  "abstract": "Proves Salem’s two-sided approximation theorem for Pisot numbers, preserving both the polynomial reciprocal-family construction and the exceptional quadratic-unit construction.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/salem-theorem",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.SalemTheorem",
+  "declarations": [
+    "SalemTheorem.salem_theorem",
+    "SalemTheorem.salem_construction_two_sided",
+    "SalemTheorem.salem_quadratic_unit"
+  ],
+  "informal": {
+    "SalemTheorem.salem_theorem": "Every Pisot number is approached by Salem numbers from both below and above.",
+    "SalemTheorem.salem_construction_two_sided": "For the nondegenerate Pisot polynomial pattern, reciprocal-family polynomials have Salem roots arbitrarily near the Pisot root from either side.",
+    "SalemTheorem.salem_quadratic_unit": "The quadratic-unit family supplies Salem roots approaching each reciprocal quadratic Pisot unit from either side."
+  },
+  "classification": {
+    "msc2020": [
+      "11R06",
+      "11R09"
+    ],
+    "tags": [
+      "number-theory",
+      "pisot-numbers",
+      "salem-numbers"
+    ],
+    "branch": "algebraic number theory"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/SalemTheorem.lean",
+  "statement_hash": "sha256:946d9fb60eb6f219d1edeefc2d1122b11d024f656a21279d72a63a56e0edde25"
+}

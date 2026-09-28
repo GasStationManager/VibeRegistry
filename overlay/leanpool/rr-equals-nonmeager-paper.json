@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "rr-equals-nonmeager-paper",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/RearrangementNumber",
+  "version": 1,
+  "title": "The nonmeagre lower bound for the rearrangement number",
+  "abstract": "Formalizes the inequality non(M) ≤ rr in ZFC via relational systems, category and slalom bounds, finite-vector constructions, and rearrangements of conditionally convergent real series. The reverse inequality from the accompanying manuscript is outside the upstream Lean formalization.",
+  "authors": [
+    "Vinicius de Oliveira Rodrigues"
+  ],
+  "repository": "https://github.com/vo-rodrigues/rr-equals-nonmeager-paper",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.RearrangementNumber",
+  "declarations": [
+    "NonMRR.nonM_le_rr"
+  ],
+  "informal": {
+    "NonMRR.nonM_le_rr": "The uniformity of the meagre ideal is at most the rearrangement number."
+  },
+  "classification": {
+    "msc2020": [
+      "03E17",
+      "40A05"
+    ],
+    "tags": [
+      "set-theory",
+      "cardinal-characteristics",
+      "series"
+    ],
+    "branch": "set theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/RearrangementNumber.lean",
+  "statement_hash": "sha256:0c59d9bed2314d864ba1db261678992a0cb60ef622e69a8d2c37af49781d0266"
+}

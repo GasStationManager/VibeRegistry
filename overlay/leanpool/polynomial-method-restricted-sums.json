@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/NickAdfor/The-polynomial-method-and-restricted-sums-of-congruence-classes",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.PolynomialMethodRestrictedSums",
   "declarations": [
     "ANR_polynomial_method",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PolynomialMethodRestrictedSums.lean",
-  "statement_hash": "sha256:38bf14f406820dbf9ab472a7e40365cfcdfa7c4cb45fe0dde3bd5d82642f642f"
+  "statement_hash": "sha256:7e4452b55c009dbba32581eb4ab2ad780b71ff47f16501c62f7cf232d1e920ae"
 }

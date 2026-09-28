@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/m4lvin/lean4-pdl",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.PDL",
   "declarations": [
     "PDL.interpolation",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PDL.lean",
-  "statement_hash": "sha256:22bf9e7a3191a272c8d810c72a77711380f891e42607ffa6e530bf40d1bf9659"
+  "statement_hash": "sha256:b91428f6b4f2cb130f830379822a6588cd57fd5eacfa6ed04a85257785c5a40b"
 }

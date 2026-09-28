@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/VTrelat/ZFLean",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.ZFLean",
   "declarations": [
     "ZFSet.isIso_of_biembedding",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ZFLean.lean",
-  "statement_hash": "sha256:f06e1baaa22662d9bb1d469f76459ad0ec9760fa01810a9d86d64e5335dc3595"
+  "statement_hash": "sha256:4f51c1b95785f0f462e08bc9242f8c7c3548f81e8183d1b06d658125b1d4344c"
 }

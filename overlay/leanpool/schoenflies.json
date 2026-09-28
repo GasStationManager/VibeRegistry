@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/alonamaloh/schoenflies-lean",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.Schoenflies",
   "declarations": [
     "Schoenflies.jordan_schoenflies_of_homeomorph",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Schoenflies.lean",
-  "statement_hash": "sha256:de9c40e8d9636e2de2ed7d097333a0aad1c68809e515c0d0d7ae7d9a1254868b"
+  "statement_hash": "sha256:c94aa89a3cbb29bf7e64b876da2069685aa2c667a5e69ffba4d70b5d18eff3e7"
 }

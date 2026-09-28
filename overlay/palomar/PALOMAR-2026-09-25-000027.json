@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000027",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000027",
+  "version": 1,
+  "title": "MAF composition criteria, exact enumeration of child-selection autocatalytic cores, and degradation regions of linear diluted source networks",
+  "abstract": "We establish three sets of results addressing published questions about the composition, enumeration and degradation of autocatalytic reaction networks. In response to the composition questions of Gagrani, Wang, De Decker and Lacoste (arXiv:2603.02627, Discussion and outlook), we give exact criteria for strict increases in the maximum amplification factor (MAF) under reaction addition, nonnegative species aggregation and shared-species coupling, assuming nonnegative inputs and attained MAFs. A block direct sum attains the larger component MAF, while an explicit example shows that component MAFs alone do not determine the MAF of a coupled network. Addressing the CS-core enumeration direction of Golnik, Gatter, Stadler and Vassena (arXiv:2603.02770, Section 6), we prove exact reconstruction from a complete list of ordinary-core anchor matchings, each unique on its vertex set, by alternating-path generation and certified rational semipositivity filtering. We establish existence of the certified test, its rejection of the empty matching, and an explicit nonempty instance for A → 2A. For the arbitrary-degradation question discussed by Nandan, Nghe and Unterberger (arXiv:2507.15546, Section 6), we characterize growth, criticality and extinction for irreducible linear diluted source networks with nonnegative unary reaction data and species degradation d ≥ 0: the real spectral bound of A − diag(d) is positive, zero or negative exactly when d is componentwise strictly below, equal to or strictly above (Av)_i/v_i for some positive v. We also characterize partial-actuation stabilizability of Metzler matrices through a positive-vector certificate on the unactuated block. All eleven selected statements are formalized in Lean 4 with Mathlib.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p011-modular-autocatalytic-interfaces",
+  "commit": "1a6347f281c134c9561eb883ca726876b4a88c07",
+  "project_path": null,
+  "declarations": [
+    "MAFComposition.reactionEdit",
+    "MAFComposition.aggregate",
+    "MAFComposition.directSum",
+    "MAFComposition.parallel",
+    "MAFComposition.scalarNoncompositionality",
+    "DegradationControl.sourceNetwork_arbitraryDegradationRegions",
+    "DegradationControl.partialActuation_stabilizable_iff_unactuatedCertificate",
+    "AutocatalyticCS.sourceDirectCSCoreEnum_exact",
+    "AutocatalyticCS.certifiedAutocatalyticTest_nonempty",
+    "AutocatalyticCS.certifiedAutocatalyticTest_rejects_empty",
+    "AutocatalyticCS.OneSpeciesExample.sourceDirectCSCoreEnum_example"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "q-bio.MN",
+      "math.CO"
+    ],
+    "msc2020": [
+      "92C42",
+      "15A39",
+      "05C70",
+      "15B48"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T20:44:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1a6347f281c134c9561eb883ca726876b4a88c07",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p011-modular-autocatalytic-interfaces--5eb3a0b13fdd",
+        "source_repository": "mmislan/palomar-p011-modular-autocatalytic-interfaces"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4652a6efbccc73a8fd7d504c4200cfb1793caf8c4e8c68bdb8fcc1e77029544d"
+}

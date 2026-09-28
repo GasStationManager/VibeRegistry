@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-28-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-28-000001",
+  "version": 1,
+  "title": "Global class field theory in Lean 4.35.0-rc2",
+  "abstract": "For every finite abelian extension L/K of number fields, the idèle class group C_K modulo the image of the idèle-class norm from C_L is isomorphic as a topological multiplicative group to Gal(L/K). The Challenge defines the norm as the determinant on the relative adèle algebra and descends it through principal idèles; the included ClassFieldTheory development supplies the proof of the resulting reciprocity theorem.",
+  "authors": [
+    "Naganori Yamaguchi"
+  ],
+  "repository": "https://github.com/n-yamaguchi-0729/FiniteAbelianGlobalReciprocityv2",
+  "commit": "01b4bcb786c458c9af029860c9bbdbd67dd7c978",
+  "project_path": null,
+  "declarations": [
+    "ClassFieldTheory.GlobalClassFieldComparison.finiteAbelianGlobalReciprocity_relativeNormQuotient"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-28T04:50:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "01b4bcb786c458c9af029860c9bbdbd67dd7c978",
+        "fork_repository": "PalomarArchive/n-yamaguchi-0729--FiniteAbelianGlobalReciprocityv2--ccc6f4bb14f4",
+        "source_repository": "n-yamaguchi-0729/FiniteAbelianGlobalReciprocityv2"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6f09febc4a8079a483b1beb9b28ca451ab9ca3755f9957216bb3ec91637606c1"
+}

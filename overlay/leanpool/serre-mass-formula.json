@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/0stellensatz/MassFormula",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.MassFormula",
   "declarations": [
     "MassFormula.tsum_one_div_q_pow_c",
@@ -58,5 +58,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MassFormula.lean",
-  "statement_hash": "sha256:1a13c325c1c5fb651eea0954557d9e1539a17961131b96a3f7f3e0854373497f"
+  "statement_hash": "sha256:e93c7d6c218ccb7bbe786e568fc5fd895d05835504bc28727c2e7155f77a7ffe"
 }

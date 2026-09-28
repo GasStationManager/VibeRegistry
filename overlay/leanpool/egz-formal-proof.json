@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "egz-formal-proof",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ErdosGinzburgZiv",
+  "version": 1,
+  "title": "Convex geometry and the Erdős–Ginzburg–Ziv problem",
+  "abstract": "For every fixed positive dimension d, the Erdős–Ginzburg–Ziv constant of (ZMod p)^d equals p times its hollow-family constant plus o(p) as p tends to infinity through primes. Includes the convex-flag Helly and centerpoint theorems, flag decomposition, balanced combinations, relative expansion, and the polynomial hollow-family bound.",
+  "authors": [
+    "Dmitrii Zakharov"
+  ],
+  "repository": "https://github.com/zakharov2k/egz-formal-proof",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.ErdosGinzburgZiv",
+  "declarations": [
+    "EGZ.theorem_1_2",
+    "EGZ.main_upper_bound"
+  ],
+  "informal": {
+    "EGZ.theorem_1_2": "For each positive dimension d, s((F_p)^d) = p w((F_p)^d) + o(p) as p tends to infinity through primes.",
+    "EGZ.main_upper_bound": "For each positive d and ε > 0, sufficiently large primes satisfy s((F_p)^d) ≤ (w((F_p)^d) + ε) p."
+  },
+  "classification": {
+    "msc2020": [
+      "11B30",
+      "11H06"
+    ],
+    "tags": [
+      "additive-combinatorics",
+      "zero-sum",
+      "convex-geometry"
+    ],
+    "branch": "additive combinatorics"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ErdosGinzburgZiv.lean",
+  "statement_hash": "sha256:649d693b0fe109463fd1d296d6d7443f33113990d284ec6a27497727bd4a95b1"
+}

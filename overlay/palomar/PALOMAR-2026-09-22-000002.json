@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-22-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-22-000002",
+  "version": 1,
+  "title": "Small undecidable groups and fixed-size Adian–Rabin families",
+  "abstract": "Lean 4 proofs of the algebraic results in Small undecidable groups and unrecognizable 4-manifolds (arXiv:2609.10461v1): existence of a group with a three-generator, nine-relator presentation and unsolvable word problem; an effective family of four-generator, eleven-relator presentations with undecidable triviality; and an effective family of two-generator, ten-relator presentations with undecidable triviality. These are Theorems 1.1, 1.3, and 1.4 of the paper. The four-manifold consequences in the paper are outside the formalized scope.",
+  "authors": [
+    "Marc Kegel",
+    "Shana Yunsheng Li",
+    "Qiuyu Ren"
+  ],
+  "repository": "https://github.com/32805433/Adian-Rabin",
+  "commit": "fb4a401e8fbdba36e7b35c11fde2baa15592e185",
+  "project_path": null,
+  "declarations": [
+    "Undecidability.exists_three_generator_nine_relator_group_with_unsolvable_word_problem",
+    "Undecidability.exists_four_generator_eleven_relator_adian_rabin_family",
+    "Undecidability.exists_two_generator_ten_relator_adian_rabin_family"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "math.LO"
+    ],
+    "msc2020": [
+      "20F10",
+      "20F05",
+      "03D35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-22T06:26:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fb4a401e8fbdba36e7b35c11fde2baa15592e185",
+        "fork_repository": "PalomarArchive/32805433--Adian-Rabin--dfdf30c22bd6",
+        "source_repository": "32805433/Adian-Rabin"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7e03a57b9e02a0768484b6e9b23c1fed8e6409c76b5cc9433dc5540351c147f9"
+}

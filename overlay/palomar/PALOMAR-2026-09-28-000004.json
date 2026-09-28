@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-28-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-28-000004",
+  "version": 1,
+  "title": "Conditional Hilbert-space classification of Gromov--Hausdorff space",
+  "abstract": "A Lean formalization of the implication from five explicitly stated literature inputs to a homeomorphism between the ordinary Gromov--Hausdorff space of nonempty compact metric spaces and real square-summable sequences. The proof constructs invariant full-support probability assignments, finite dimensional local models, global AR domination and discrete approximation. The five literature inputs are assumptions, not theorems proved in this snapshot.",
+  "authors": [
+    "Yoshito Ishiki"
+  ],
+  "repository": "https://github.com/yoshito-ishiki-math/lean-gh-space-hilbert",
+  "commit": "8b25d3fc5b9f2a61dffa59e1daa8c9c483f70a46",
+  "project_path": null,
+  "declarations": [
+    "PalomarPaperN.main"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN",
+      "math.MG"
+    ],
+    "msc2020": [
+      "54E35",
+      "54C55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-28T06:50:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8b25d3fc5b9f2a61dffa59e1daa8c9c483f70a46",
+        "fork_repository": "PalomarArchive/yoshito-ishiki-math--lean-gh-space-hilbert--6ad5ce4534be",
+        "source_repository": "yoshito-ishiki-math/lean-gh-space-hilbert"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1c6b605e70637277e4e14c47b339fca7a342fdce6f945db6e20c042b4d509c1a"
+}

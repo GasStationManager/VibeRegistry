@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-20-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-20-000003",
+  "version": 1,
+  "title": "Critical Poisson fields and information-adapted conditioning",
+  "abstract": "Poisson laws for the actual run field with positions, all excesses and signs; hard and soft small-prime conditioning, deterministic masks and statistics, stable recorded variables, uniform quenched convergence, and an information-adapted cutoff that respects a prescribed conditioning floor.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "edd850b26641f18897376a029a0d4f16577205b7",
+  "project_path": null,
+  "declarations": [
+    "PaperCV3Audit.CriticalField.exact_source_coefficients",
+    "PaperCV3Audit.CriticalField.critical_lattice",
+    "PaperCV3Audit.CriticalField.critical_start_count",
+    "PaperCV3Audit.CriticalField.deterministic_statistic",
+    "PaperCV3Audit.CriticalField.hard_conditional",
+    "PaperCV3Audit.CriticalField.soft_conditional",
+    "PaperCV3Audit.CriticalField.spatial_hard_conditioning",
+    "PaperCV3Audit.CriticalField.spatial_soft_conditioning",
+    "PaperCV3Audit.CriticalField.uniform_quenched_scalar",
+    "PaperCV3Audit.CriticalField.critical_diffuse",
+    "PaperCV3Audit.CriticalField.stable_small_prime_record",
+    "PaperCV3Audit.CriticalField.masked_conditional_kernel",
+    "PaperCV3Audit.CriticalField.spatial_conditional_mean",
+    "PaperCV3Audit.CriticalField.information_cutoff_spec",
+    "PaperCV3Audit.CriticalField.constrained_information_maximum",
+    "PaperCV3Audit.CriticalField.information_adapted_field"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-20T09:10:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "edd850b26641f18897376a029a0d4f16577205b7",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:42ea35fed63ee15e71cc1cbee6323c874b80cc2fc7ac2e3f8198d87e6d9b4a39"
+}

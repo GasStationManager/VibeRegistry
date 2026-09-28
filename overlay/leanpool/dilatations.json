@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/rndmx/DilCat",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.Dilatations",
   "declarations": [
     "CategoryTheory.Dilatations.Dila_universal_property",
@@ -59,5 +59,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Dilatations.lean",
-  "statement_hash": "sha256:5a6f6f296681b16e0532ab9f4100c6508c16e523c26bbbe9371ceb206c892b25"
+  "statement_hash": "sha256:f0c37e13abd30f9073be06f70917569cd0da87cd56444ce5a2df7b03f95a4629"
 }

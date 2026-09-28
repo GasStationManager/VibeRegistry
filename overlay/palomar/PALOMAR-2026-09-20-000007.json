@@ -1,0 +1,78 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-20-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-20-000007",
+  "version": 1,
+  "title": "Threshold staircases and the Poisson–Gaussian bridge",
+  "abstract": "Joint Poisson–Gaussian limits for conditioned run counts, with an autoregressive Gaussian target and independent normal innovations. Quantitative results give local Poisson probabilities, a Gaussian distribution-function bound, moderate deviations, and relative local or tail estimates for the multiplicative source under the stated information budgets. The whole integer-level point process has locally finite but infinite total mass; its complete upper-half laws, conditioning on a fixed count and extreme phases are included. The two upper-half law assertions include proved measurability and probability normalization; conditioning on every finite count has positive mass. The intrinsic probability estimates are proved internally. Their arithmetic applications use, as applicable, the prime number theorem, scalar Stein bounds, the Poisson process estimate of Arratia, Goldstein and Gordon, and Barbour's corrected multivariate Stein bounds.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "d8edbc44654f623fc68df92612c26a6ef9a90ec2",
+  "project_path": null,
+  "declarations": [
+    "PaperCV3Audit.paper_c_v3_limits_joint_poisson_gaussian",
+    "PaperCV3Audit.paper_c_v3_limits_gaussian_covariance",
+    "PaperCV3Audit.paper_c_v3_limits_ar_covariance",
+    "PaperCV3Audit.paper_c_v3_limits_ar_recursion",
+    "PaperCV3Audit.paper_c_v3_limits_ar_independent_innovations",
+    "PaperCV3Audit.paper_c_v3_limits_ar_normal_innovations",
+    "PaperCV3Audit.paper_c_v3_limits_local_stirling_bounds",
+    "PaperCV3Audit.paper_c_v3_limits_local_stirling_relative_error",
+    "PaperCV3Audit.paper_c_v3_limits_poisson_local_limit",
+    "PaperCV3Audit.paper_c_v3_limits_poisson_moderate_bound",
+    "PaperCV3Audit.paper_c_v3_limits_poisson_moderate_limit",
+    "PaperCV3Audit.paper_c_v3_limits_poisson_gaussian_cdf_bound",
+    "PaperCV3Audit.paper_c_v3_limits_hard_central_local",
+    "PaperCV3Audit.paper_c_v3_limits_soft_central_local",
+    "PaperCV3Audit.paper_c_v3_limits_hard_moderate_tail",
+    "PaperCV3Audit.paper_c_v3_limits_integer_process_moving_laplace",
+    "PaperCV3Audit.paper_c_v3_limits_integer_process_phase_limit",
+    "PaperCV3Audit.paper_c_v3_limits_integer_process_target_laplace",
+    "PaperCV3Audit.paper_c_v3_limits_integer_process_locally_finite",
+    "PaperCV3Audit.paper_c_v3_limits_integer_process_infinite_mass",
+    "PaperCV3Audit.paper_c_v3_limits_integer_process_independent_counts",
+    "PaperCV3Audit.paper_c_v3_limits_integer_process_poisson_counts",
+    "PaperCV3Audit.paper_c_v3_limits_integer_process_finite_upper_tails",
+    "PaperCV3Audit.paper_c_v3_limits_integer_process_conditioned_positions",
+    "PaperCV3Audit.paper_c_v3_limits_extreme_phase_limit",
+    "PaperCV3Audit.paper_c_v3_limits_d4_full_half_count_law",
+    "PaperCV3Audit.paper_c_v3_limits_d4_entire_upper_point_law",
+    "PaperCV3Audit.paper_c_v3_limits_d4_conditional_upper_point_law",
+    "PaperCV3Audit.paper_c_v3_limits_d4_half_line_is_whole_restriction"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-20T17:01:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d8edbc44654f623fc68df92612c26a6ef9a90ec2",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:490b9fe7bb3c164acf69873fd650e4b43dae33f0648c0393df18e906ef53332d"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "hasse-minkowski",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/HasseMinkowski",
+  "version": 1,
+  "title": "The Hasse–Minkowski theorem over ℚ",
+  "abstract": "Proves the local–global principle for quadratic forms over the rationals: a form is isotropic over ℚ exactly when it is isotropic over ℝ and over every p-adic completion, together with Meyer's theorem that an indefinite rational form in at least five variables is isotropic. The development builds the Hilbert symbol at every place of ℚ with Serre's explicit formulas (including the 2-adic case), proves Hilbert reciprocity and the existence theorem for prescribed local symbols, the Hasse invariant and the rank-two and rank-three local representability criteria, Legendre's ternary descent, and the rank-four and rank-≥5 inductions.",
+  "authors": [
+    "jayyswan",
+    "Nirvana Coppola",
+    "María Inés de Frutos-Fernández"
+  ],
+  "repository": "https://github.com/jayyswan/hasse-minkowski",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.HasseMinkowski",
+  "declarations": [
+    "HasseMinkowski.hasseMinkowski",
+    "HasseMinkowski.meyer"
+  ],
+  "informal": {
+    "HasseMinkowski.hasseMinkowski": "A quadratic form over ℚ is isotropic if and only if it is isotropic over ℝ and over every p-adic completion ℚ_[p] (the Hasse–Minkowski local–global principle, in isotropy form).",
+    "HasseMinkowski.meyer": "Every indefinite quadratic form over ℚ in at least five variables is isotropic (Meyer's theorem)."
+  },
+  "classification": {
+    "msc2020": [
+      "11E12",
+      "11E08",
+      "11E88"
+    ],
+    "tags": [
+      "number-theory",
+      "quadratic-forms",
+      "local-global",
+      "p-adic"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/HasseMinkowski.lean",
+  "statement_hash": "sha256:d1a8644fa49e721d4754f7983426709a903efc11739e6263ec7afac90d661425"
+}

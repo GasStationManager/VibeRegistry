@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jjdishere/neukirch",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.Neukirch",
   "declarations": [
     "NumberField.ramificationIdx_mul_inertiaDegOfIsGalois",
@@ -60,5 +60,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Neukirch.lean",
-  "statement_hash": "sha256:81f12444fdb69cf18efeab731cddb3fa0c72f16e508f732fc538c04b97616c7f"
+  "statement_hash": "sha256:b9c7194f416ae459ef9366e1ed8be5957487b30ac5593b02d64d8c75debb3044"
 }

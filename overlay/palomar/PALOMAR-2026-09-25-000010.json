@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000010",
+  "version": 1,
+  "title": "Tree stacking equals the Csernák--Soukup estimator on nontrivial finite trees",
+  "abstract": "A Lean 4 proof of the corrected nontrivial-tree form of the Csernák--Soukup tree-stacking conjecture. For every finite tree with at least two vertices, the exact-size stacking number equals the explicit rooted-distance-and-degree estimator. The one-vertex case is excluded because the source stacking-number convention restricts admissible thresholds to t >= 2 while the displayed estimator is 1 on the one-vertex tree.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/TreeStack-Structural-Certificates-for-Stacking-on-Trees",
+  "commit": "457b88b785e50a749710108a935a661a9d992348",
+  "project_path": null,
+  "declarations": [
+    "TreeStack.stack_eq_estim_of_two_le_card"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T10:18:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "457b88b785e50a749710108a935a661a9d992348",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--TreeStack-Structural-Certificates-for-Stacking-on-Trees--7494745629d5",
+        "source_repository": "jfairfaxball-348/TreeStack-Structural-Certificates-for-Stacking-on-Trees"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4d15e1a90f024a279ed707420183a39fdacb01c7422723d6d388141056f93e9e"
+}

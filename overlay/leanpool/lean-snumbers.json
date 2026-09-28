@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean-snumbers",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SNumbers",
+  "version": 1,
+  "title": "Pietsch s-numbers and the maximal difference theorem",
+  "abstract": "Formalizes the five classical s-number sequences, their comparison inequalities, the maximal difference theorem, compact-operator singular value decomposition, John ellipsoids, entropy numbers, and compactness characterizations.",
+  "authors": [
+    "Mario Ullrich"
+  ],
+  "repository": "https://github.com/mario-ullrich/lean-snumbers",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.SNumbers",
+  "declarations": [
+    "SNumbers.approximationNumber_le_e_mul_hilbertNumber",
+    "SNumbers.allSNumbers_eq_on_HilbertSpace",
+    "John.john_decomposition"
+  ],
+  "informal": {
+    "SNumbers.approximationNumber_le_e_mul_hilbertNumber": "For a bounded operator, its nth approximation number is at most e times (n+1) times its nth Hilbert number.",
+    "SNumbers.allSNumbers_eq_on_HilbertSpace": "Every s-number sequence agrees with the approximation numbers on operators between Hilbert spaces.",
+    "John.john_decomposition": "In John position, the identity decomposes into a positive weighted sum of rank-one operators from contact points."
+  },
+  "classification": {
+    "msc2020": [
+      "47B06",
+      "46B20"
+    ],
+    "tags": [
+      "functional-analysis",
+      "operator-theory",
+      "s-numbers"
+    ],
+    "branch": "functional analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/SNumbers.lean",
+  "statement_hash": "sha256:087c41f22a46a5f0bf149f51c5d1e381f04f1de55a9196a823c6acd46673964c"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000006",
+  "version": 1,
+  "title": "Dimension-independent Hlawka constants for Schatten norms",
+  "abstract": "For every Schatten p-norm with 1 < p < infinity, a finite Hlawka constant exists that does not depend on dimension, and at both endpoints (trace norm, p = 1; operator norm, p = infinity) no constant exists. For complex diagonal matrices and every real p >= 256, the sharp constant is an explicit maximum over a one-parameter cyclic family: it holds in every dimension and cannot be lowered in any dimension at least three.",
+  "authors": [
+    "Ezzeri Esa"
+  ],
+  "repository": "https://github.com/savarin/hlawka-schatten",
+  "commit": "1829591140522193a81ae721330e4d775c81123e",
+  "project_path": null,
+  "declarations": [
+    "PalomarHlawkaSchatten.ConstructionDiagonal.diagonal_hlawka_bound",
+    "PalomarHlawkaSchatten.ConstructionDiagonal.diagonal_hlawka_sharp",
+    "PalomarHlawkaSchatten.ConstructionDiagonal.cyclic_maximum_attained"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.OA"
+    ],
+    "msc2020": [
+      "47A30",
+      "47B10",
+      "46B20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T06:55:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1829591140522193a81ae721330e4d775c81123e",
+        "fork_repository": "PalomarArchive/savarin--hlawka-schatten--2a35a3d9f959",
+        "source_repository": "savarin/hlawka-schatten"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2dda6ee8215ae22243458045673330010e74ce45d0d98925438def7a98d7523f"
+}

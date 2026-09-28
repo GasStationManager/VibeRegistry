@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/gersh/lean-pool",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.PoincareThreeBody",
   "declarations": [
     "LeanPool.PoincareThreeBody.nonintegrability_of_collisionBand",
@@ -54,5 +54,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PoincareThreeBody.lean",
-  "statement_hash": "sha256:ddfba08218984360a4217e285d3b1d05aad1193497368a3a1080522b9bd5c70f"
+  "statement_hash": "sha256:3fd0fef3257a1e5337953b240427ab7289cf1371e25074ab565b9bdf5c7238e3"
 }

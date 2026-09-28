@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-27-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-27-000004",
+  "version": 1,
+  "title": "Zero forcing number of the generalized Petersen graphs P(n,3)",
+  "abstract": "A Lean 4 proof that the zero-forcing number of the generalized Petersen graph P(n,3) is exactly 8 for every natural number n >= 13. The formalized result is the statement recorded as Conjecture 5 in Arnav Krishnan's July 2026 correction preprint; this repository supplies and kernel-checks a proof of that conjectured statement rather than formalizing a proof already given in the cited preprint.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/Petersen-Zero-Forcing",
+  "commit": "5dd760e79ab33b3fcf2feb93eb37e23509d184ed",
+  "project_path": null,
+  "declarations": [
+    "PetersenZeroForcing.zero_forcing_number_eq_eight"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-27T01:34:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5dd760e79ab33b3fcf2feb93eb37e23509d184ed",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--Petersen-Zero-Forcing--092c328236aa",
+        "source_repository": "jfairfaxball-348/Petersen-Zero-Forcing"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1cedb888c60a60104b4dab4f50cbcf551b92c378b5b197742beb556ec3508e1d"
+}

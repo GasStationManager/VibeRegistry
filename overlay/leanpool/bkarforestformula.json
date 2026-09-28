@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "bkarforestformula",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BKARForestFormula",
+  "version": 1,
+  "title": "The BKAR forest interpolation formula",
+  "abstract": "Proves the Brydges–Kennedy–Abdesselam–Rivasseau forest interpolation formula for smooth functions on a finite complete graph’s edge-coupling space, with unordered forest-cube contributions, ordered sector variants, and choice independence.",
+  "authors": [
+    "Scott Armstrong"
+  ],
+  "repository": "https://github.com/scottnarmstrong/bkarforestformula",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.BKARForestFormula",
+  "declarations": [
+    "BKAR.bkar_formula_forestIndex_cube_contributions"
+  ],
+  "informal": {
+    "BKAR.bkar_formula_forestIndex_cube_contributions": "A smooth function evaluated at the all-one configuration is the sum over forests of cube integrals of mixed partial derivatives at path-minimum interpolation points."
+  },
+  "classification": {
+    "msc2020": [
+      "81T08",
+      "05C05"
+    ],
+    "tags": [
+      "analysis",
+      "graph-theory",
+      "mathematical-physics"
+    ],
+    "branch": "analysis and mathematical physics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/BKARForestFormula.lean",
+  "statement_hash": "sha256:02fe96a0a832b57148722fc60392977e848ff00174954f4214e2938ca0a0fb20"
+}

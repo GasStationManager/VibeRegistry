@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "nikodym",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Nikodym",
+  "version": 1,
+  "title": "The sharp finite-field Nikodym exponent",
+  "abstract": "Proves a lower bound for Nikodym sets over arbitrary finite fields and a matching exponent upper construction over sufficiently large prime fields, using interpolation, algebraic degree bounds, and multiquadratic constructions.",
+  "authors": [
+    "Ting-Wei Chao",
+    "Zach Hunter",
+    "Cosmin Pohoata",
+    "Hung-Hsun Hans Yu",
+    "Shengtong Zhang"
+  ],
+  "repository": "https://github.com/shengtongzhang-alt/nikodym",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.Nikodym",
+  "declarations": [
+    "Nikodym.card_ge_pow_sub",
+    "Nikodym.exists_isNikodym_card_le"
+  ],
+  "informal": {
+    "Nikodym.card_ge_pow_sub": "Every Nikodym set in dimension d ≥ 2 over a finite field of size q has size at least q^d − (8d²+1)q^(d−2^(1−d)).",
+    "Nikodym.exists_isNikodym_card_le": "For every positive ε and dimension d ≥ 2, sufficiently large prime fields admit a Nikodym set of size at most q^d − q^(d−2^(1−d)−ε)."
+  },
+  "classification": {
+    "msc2020": [
+      "05B25",
+      "11T99"
+    ],
+    "tags": [
+      "combinatorics",
+      "finite-fields",
+      "nikodym-sets"
+    ],
+    "branch": "additive combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Nikodym.lean",
+  "statement_hash": "sha256:90b38667905f18cc9c01d7ca5c7a4b5f799e5d7005e31bc86aabb3d4e1856f59"
+}

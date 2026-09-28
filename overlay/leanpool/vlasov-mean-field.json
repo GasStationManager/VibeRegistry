@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Hydrodynamical/Vlasov_Meanfield_Formalization",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.Vlasov",
   "declarations": [
     "Vlasov.vlasovWellPosedness",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Vlasov.lean",
-  "statement_hash": "sha256:80b802ef6171f9f30bfeb0f61b8c668d90087c2108a5b357d87395e0a38f4b00"
+  "statement_hash": "sha256:cfe3ccd8e4251ac0d14c469b72f05e348b99e49945804e0e78447903755fa717"
 }

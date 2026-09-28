@@ -1,0 +1,47 @@
+{
+  "source": "leanpool",
+  "upstream_id": "nagatafactoriality",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/NagataFactoriality",
+  "version": 1,
+  "title": "Nagata's prime-generated factoriality theorem",
+  "abstract": "Nagata’s factoriality criterion for noetherian domains localized at prime-generated multiplicative sets, with concrete and abstract localization interfaces and applications to polynomial rings through Laurent and fraction-field localizations.",
+  "authors": [
+    "Arthur F. Ramos",
+    "Ruy J. G. B. de Queiroz",
+    "Anjolina G. de Oliveira"
+  ],
+  "repository": "https://github.com/arthur742ramos/nagatafactoriality",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.NagataFactoriality",
+  "declarations": [
+    "NagataFactoriality.nagata_theorem"
+  ],
+  "informal": {
+    "NagataFactoriality.nagata_theorem": "A noetherian integral domain is a unique factorization domain when localization at a prime-generated multiplicative set is a unique factorization domain."
+  },
+  "classification": {
+    "msc2020": [
+      "13F15"
+    ],
+    "tags": [
+      "commutative-algebra"
+    ],
+    "branch": "commutative algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/NagataFactoriality.lean",
+  "statement_hash": "sha256:fcffd0fca94d59a154877ea6d89b61313d3fe47c9db8e518c765664071445ede"
+}

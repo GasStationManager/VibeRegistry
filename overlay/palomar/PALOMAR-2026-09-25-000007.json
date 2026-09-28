@@ -1,0 +1,105 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000007",
+  "version": 1,
+  "title": "lean-LCS: locally convex spaces, duality, and closed graph theorems in Lean 4",
+  "abstract": "A Lean 4 formalization, built on Mathlib, of the basic theory of locally convex topological vector spaces over the real or complex numbers. It covers barrelled, quasi-barrelled, bornological and ultrabornological spaces; the closed graph and open mapping theorems for barrelled spaces, and Pták's closed graph and open mapping theorems; duality theory with the bipolar, Alaoglu–Bourbaki, Mackey, Mackey–Arens, Banach–Dieudonné and Krein–Šmulian theorems and Grothendieck's completeness theorem; semi-reflexive, reflexive and Montel spaces with their permanence properties; completeness of strong duals; countable strict inductive limits, with the Dieudonné–Schwartz theorem; Milman's converse to the Krein–Milman theorem; and webbed spaces with De Wilde's closed graph and open mapping theorems. The Palomar entry compares 52 theorems from these areas; their statements and the notions they use are in Challenge.lean. The results are classical textbook and research results; the formalization proves them without sorry and without additional axioms.",
+  "authors": [
+    "Bastiaan J. Braams"
+  ],
+  "repository": "https://github.com/bjbraams/lean-LCS",
+  "commit": "d2a9c3112132820d7d1bf2fbc340a9db3cd6213a",
+  "project_path": null,
+  "declarations": [
+    "LeanLCS.barrelledSpace_iff_forall_isBarrel_mem_nhds",
+    "LeanLCS.barrelledSpace_iff_forall_equicontinuous",
+    "LeanLCS.LinearMap.continuous_of_isClosed_graph_of_barrelledSpace",
+    "LeanLCS.ContinuousLinearMap.isOpenMap_of_barrelledSpace",
+    "LeanLCS.LinearEquiv.continuous_symm_of_barrelledSpace",
+    "LeanLCS.locallyConvexFinalTopology.barrelledSpace",
+    "LeanLCS.Submodule.Quotient.instBarrelledSpace",
+    "LeanLCS.PtakSpace.of_completeSpace_firstCountableTopology",
+    "LeanLCS.LinearMap.continuous_of_isClosed_graph_of_infraPtakSpace",
+    "LeanLCS.ContinuousLinearMap.isOpenMap_of_ptakSpace",
+    "LeanLCS.StrongDual.bipolar_eq_self",
+    "LeanLCS.LinearMap.flip_polar_polar_eq_self",
+    "LeanLCS.WeakDual.isCompact_polar_of_mem_nhds",
+    "LeanLCS.Bornology.isVonNBounded_iff_forall_strongDual",
+    "LeanLCS.LinearMap.isCompatibleTopology_iff_mackeyTopology_le",
+    "LeanLCS.StrongDual.exists_isCompact_polar_subset",
+    "LeanLCS.StrongDual.isClosed_of_isAlmostWeakStarClosed",
+    "LeanLCS.StrongDual.completeSpace_iff_forall_exists_eq_apply",
+    "LeanLCS.CompactConvergenceCLM.exists_forall_apply_eq",
+    "LeanLCS.IsCompact.exists_isCompact_convex_balanced_superset",
+    "LeanLCS.IsCompact.extremePoints_closure_convexHull_subset_closure",
+    "LeanLCS.bornologicalSpace_iff_forall_mem_nhds_zero",
+    "LeanLCS.LinearMap.continuous_of_forall_isVonNBounded_image",
+    "LeanLCS.BornologicalSpace.of_firstCountableTopology",
+    "LeanLCS.UltrabornologicalSpace.of_completeSpace_firstCountableTopology",
+    "LeanLCS.UltrabornologicalSpace.toBarrelledSpace",
+    "LeanLCS.UltrabornologicalSpace.of_bornologicalSpace_of_quasiCompleteSpace",
+    "LeanLCS.locallyConvexFinalTopology.ultrabornologicalSpace",
+    "LeanLCS.quasiBarrelledSpace_iff_forall_equicontinuous",
+    "LeanLCS.reflexiveSpace_iff_semiReflexiveSpace_and_barrelledSpace",
+    "LeanLCS.semiReflexiveSpace_iff_forall_isVonNBounded",
+    "LeanLCS.semiReflexiveSpace_iff_mackeyTopology_le",
+    "LeanLCS.ReflexiveSpace.strongDual",
+    "LeanLCS.MontelSpace.reflexiveSpace",
+    "LeanLCS.MontelSpace.strongDual",
+    "LeanLCS.MontelSpace.barrelledSpace_strongDual",
+    "LeanLCS.ReflexiveSpace.submodule_of_quasiBarrelledSpace",
+    "LeanLCS.SemiReflexiveSpace.pi",
+    "LeanLCS.ReflexiveSpace.pi",
+    "LeanLCS.MontelSpace.pi",
+    "LeanLCS.QuasiBarrelledSpace.pi",
+    "LeanLCS.BornologicalSpace.completeSpace_strongDual",
+    "LeanLCS.QuasiBarrelledSpace.quasiCompleteSpace_strongDual",
+    "LeanLCS.SchwartzMap.instCompleteSpaceStrongDual",
+    "LeanLCS.TestFunction.instBornologicalSpace",
+    "LeanLCS.TestFunction.instCompleteSpaceStrongDual",
+    "LeanLCS.IsStrictInductiveLimit.exists_subset_range_of_isVonNBounded",
+    "LeanLCS.IsStrictInductiveLimit.completeSpace",
+    "LeanLCS.IsStrictInductiveLimit.reflexiveSpace",
+    "LeanLCS.IsStrictInductiveLimit.montelSpace",
+    "LeanLCS.LinearMap.continuous_of_isSeqClosed_graph_of_ultrabornologicalSpace",
+    "LeanLCS.LinearMap.isOpenMap_of_isSeqClosed_graph_of_ultrabornologicalSpace"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA"
+    ],
+    "msc2020": [
+      "46A03",
+      "46A08",
+      "46A30",
+      "46A20",
+      "46A25",
+      "46A13",
+      "46A04"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T07:12:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d2a9c3112132820d7d1bf2fbc340a9db3cd6213a",
+        "fork_repository": "PalomarArchive/bjbraams--lean-LCS--5bcb86023edc",
+        "source_repository": "bjbraams/lean-LCS"
+      }
+    ]
+  },
+  "statement_hash": "sha256:423dc234b981c8ffc1efcddb9d19eb05cc5eed0bfc9e0d81598e79b3e0fca045"
+}

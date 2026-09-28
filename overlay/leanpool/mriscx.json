@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/JulsDE/MRiscX",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.MRiscX",
   "declarations": [
     "hoareTripleUp",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MRiscX.lean",
-  "statement_hash": "sha256:33b2c5848585dfd5b44f97a5e8f302a3ade7f13e4df65be2cf6a04603a064a86"
+  "statement_hash": "sha256:0c76a21bdab854632ff6f099b793244c8ccc4a5846eb79cf5f1378117dc8c423"
 }

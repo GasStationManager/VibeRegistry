@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean-scv",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SeveralComplexVariables",
+  "version": 1,
+  "title": "Classical several complex variables",
+  "abstract": "Formalizes Cauchy and Taylor theory, Hartogs phenomena, removable singularities, analytic sets and germs, Weierstrass theory, holomorphic convexity, Cartan–Thullen and Bochner tube theorems, plurisubharmonic functions, Levi convexity, and elementary Runge-domain theory. Weierstrass preparation and coordinate-origin germ Noetherianity overlap LocalComplexGeometry; this development also supplies germ unique factorization and global extension and convexity results.",
+  "authors": [
+    "Bastiaan J Braams"
+  ],
+  "repository": "https://github.com/bjbraams/lean-scv",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.SeveralComplexVariables",
+  "declarations": [
+    "SeveralComplexVariables.analyticOnNhd_of_separately_analytic_locally_bounded",
+    "SCV.cauchy_formula_polydisc",
+    "SCV.identity_theorem"
+  ],
+  "informal": {
+    "SCV.cauchy_formula_polydisc": "Holomorphic functions on a polydisc satisfy the iterated Cauchy integral formula.",
+    "SeveralComplexVariables.analyticOnNhd_of_separately_analytic_locally_bounded": "On an open subset of a finite complex coordinate space, a Banach-valued separately analytic map that is locally bounded is jointly analytic.",
+    "SCV.identity_theorem": "Holomorphic functions on a connected domain that agree on a nonempty open subset agree throughout the domain."
+  },
+  "classification": {
+    "msc2020": [
+      "32A10",
+      "32D05",
+      "32E10"
+    ],
+    "tags": [
+      "complex-analysis",
+      "several-complex-variables",
+      "holomorphic-functions"
+    ],
+    "branch": "complex analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/SeveralComplexVariables.lean",
+  "statement_hash": "sha256:89fce0ad8d4ecf810d84c78adb1c95afe1edc420f0e36c8ad0e33e7f0d31d990"
+}

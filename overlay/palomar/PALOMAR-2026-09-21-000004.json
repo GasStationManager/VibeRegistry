@@ -1,0 +1,69 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-21-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-21-000004",
+  "version": 1,
+  "title": "Lower bounds for sets without perfect-power differences",
+  "abstract": "Let D_k(N) be the largest size of a subset of {1, ..., N} with no positive k-th-power difference. We prove D_k(N) >= c_k N^alpha_k for every N >= 1, with positive constants c_k and exponents 0.75806770413, 0.9142, and 0.95295 for squares, fourth powers, and sixth powers. The proofs use a general interval-moment criterion for every positive integer k. We also prove arithmetic lifting results, exact product and prime-depth laws for interval capacity, and existence of the binary square capacity limit. The square construction refines Naslund's published example while retaining its binary transition rules. All selected statements are proved in Lean.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/nk-lean",
+  "commit": "55acbf0def926afb15eb243a3c3f2a3b42439bce",
+  "project_path": null,
+  "declarations": [
+    "NK.powerLowerBound_of_intervalMoments",
+    "NK.dvd_pow_iff_perfectPowerClosure_dvd",
+    "NK.perfectPowerClosure_le_of_dvd_pow",
+    "NK.perfectPowerClosure_coprime_iff",
+    "NK.perfectPowerClosure_idempotent",
+    "NK.closure_interval_lift",
+    "NK.unitConductor_le_exponent_iff",
+    "NK.unitPower_stabilizes",
+    "NK.unitPower_stabilizes_block",
+    "NK.Certificates.square_power_bound",
+    "NK.Certificates.fourth_power_bound",
+    "NK.Certificates.sixth_power_bound",
+    "NK.BinaryCapacity.U_supermultiplicative",
+    "NK.BinaryCapacity.capacity_bounds",
+    "NK.BinaryCapacity.tendsto_capacity",
+    "NK.LexicographicCapacity.capacity_lex",
+    "NK.WordGraphCapacity.word_capacity",
+    "NK.prime_power_capacity",
+    "NK.IntervalAlphabet.moment_le_prime_power_capacity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B30",
+      "11B75",
+      "05C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-21T12:59:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "55acbf0def926afb15eb243a3c3f2a3b42439bce",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--nk-lean--16e68f1d1a02",
+        "source_repository": "JD-Jones-ASES/nk-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:be8d97defc7be6ffab5a98256645bc0ae898217a1e6c0f917c046a5ae6ffdf9a"
+}

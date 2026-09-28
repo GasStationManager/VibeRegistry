@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000011",
+  "version": 1,
+  "title": "Nonnegativity cutoffs for level-one modular forms",
+  "abstract": "A Lean formalization of the qualitative well-definedness of the nonnegativity Sturm bound A(k) for real level-one modular forms. For every weight k at least 12 and divisible by four, the formalization proves that a finite initial segment detects coefficientwise nonnegativity and that its optimal endpoint is attained as the greatest possible first negative Fourier-coefficient index.",
+  "authors": [
+    "Paul Jenkins"
+  ],
+  "repository": "https://github.com/jenkins-byu/nonnegativity-cutoffs-lean",
+  "commit": "b3217f0e8367a677426daa461f8f79953532d80c",
+  "project_path": null,
+  "declarations": [
+    "NonnegativeModularForms.exists_optimal_nonnegativity_cutoff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11F11",
+      "11F30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T10:36:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b3217f0e8367a677426daa461f8f79953532d80c",
+        "fork_repository": "PalomarArchive/jenkins-byu--nonnegativity-cutoffs-lean--d3b79972c9e6",
+        "source_repository": "jenkins-byu/nonnegativity-cutoffs-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4ec6a18667b350c6f4fc99d4704e2d71c161ee0aa819e038b5c63494407757c4"
+}

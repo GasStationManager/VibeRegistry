@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/karlesmarin/runge-kutta-order-conditions-lean",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.RungeKuttaOrderConditions",
   "declarations": [
     "RungeKuttaOrderConditions.Butcher.gauss_order6_rat",
@@ -60,5 +60,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/RungeKuttaOrderConditions.lean",
-  "statement_hash": "sha256:019c6d44de14cfb0a1cbc823cbf368ad7fb4b76149db4a9c5b5dfe7732732a6a"
+  "statement_hash": "sha256:9101f309e52e4a8b09dcf2cee66f950e34f6f6f6a7ddf3ce07fddcd1f871eaae"
 }

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-21-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-21-000005",
+  "version": 1,
+  "title": "Unrestricted Boolean multiplicative complexity of four-term polynomial multiplication",
+  "abstract": "Formalizes the exact minimum AND-gate counts 0, 1, 3, 6 and 9 for binary polynomial multiplication with zero through four coefficients per operand. XOR and constants are free, and AND inputs may reuse arbitrary earlier nonlinear wires. The principal result excludes eight-gate four-term circuits and matches an explicit nine-gate construction. Separate research workflows check selected n5 quadratic results and n6 upper bounds and reductions; their open unrestricted/bilinear lower bounds are not claims of this submission.",
+  "authors": [
+    "Gregory Morse"
+  ],
+  "repository": "https://github.com/GregoryMorse/unrestricted-boolean-mul",
+  "commit": "56837b8ed4ffe6390a7a84d9a77f1489bfd9d872",
+  "project_path": null,
+  "declarations": [
+    "UnrestrictedBooleanMul.mc_mul_zero",
+    "UnrestrictedBooleanMul.mc_mul_one",
+    "UnrestrictedBooleanMul.mc_mul_two",
+    "UnrestrictedBooleanMul.mc_mul_three",
+    "UnrestrictedBooleanMul.N4.no_eight_gate_circuit",
+    "UnrestrictedBooleanMul.N4.mc_mul_four"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC",
+      "cs.DS"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-09-21T21:44:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "56837b8ed4ffe6390a7a84d9a77f1489bfd9d872",
+        "fork_repository": "PalomarArchive/GregoryMorse--unrestricted-boolean-mul--3d6873ffef31",
+        "source_repository": "GregoryMorse/unrestricted-boolean-mul"
+      }
+    ]
+  },
+  "statement_hash": "sha256:181749777f2597fd99b5747ddece2ea5b5e9601b41475abdadd828bf9fe302e1"
+}

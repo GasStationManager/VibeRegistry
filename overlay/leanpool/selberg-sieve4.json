@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/amellendijk/selberg-sieve4",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.SelbergSieve4",
   "declarations": [
     "fundamental_theorem_simple",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SelbergSieve4.lean",
-  "statement_hash": "sha256:8f70ecfad8e6994db6f3b793b83a234192d7d7df82c22421ac170d830192c54f"
+  "statement_hash": "sha256:ab74febe244d9a6f796b56321e750275a14a858f3e069c038698954830588a99"
 }

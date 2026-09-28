@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jtraverso/lean-pool",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.Erdos81PaperIIContrib",
   "declarations": [
     "SimpleGraph.IsChordal.exists_two_nonadj_isSimplicial",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos81PaperIIContrib.lean",
-  "statement_hash": "sha256:f33d9e050f35905cedad9fe782f6e07098c207efca94e6787bdcec4429561743"
+  "statement_hash": "sha256:9cf748760556f69e2393fabec21f4cedfa7609bd29b9effdf692b1b226cf2ae0"
 }

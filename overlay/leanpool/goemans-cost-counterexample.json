@@ -1,0 +1,56 @@
+{
+  "source": "leanpool",
+  "upstream_id": "goemans-cost-counterexample",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/GoemansFlow",
+  "version": 1,
+  "title": "Counterexample to Goemans' unsplittable-flow cost conjecture",
+  "abstract": "Refutes Goemans' cost conjecture for single-source unsplittable flow, Conjecture 1.3 of Traub, Vargas Koch, and Zenklusen's paper. A simple, loopless, acyclic graph with seven vertices and nine arcs admits a splittable flow of cost 58, but every unsplittable routing within the additive maximum-demand capacity bound costs at least 60, attained by an explicit routing. The development proves completeness of the walk enumeration and transfers the refutation from integers to any linearly ordered commutative ring, including the rationals and reals. Jason Hickey directed Claude's formal verification of the counterexample discovered by Dmitry Rybin with GPT-5.6 Pro; upstream also acknowledges Katherine Schlitz. Planarity is not part of the formalized claim.",
+  "authors": [
+    "Jason Hickey"
+  ],
+  "repository": "https://github.com/jyh/dinitz-verify",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.GoemansFlow",
+  "declarations": [
+    "GoemansFlow.goemans_cost_conjecture_false",
+    "GoemansFlow.not_GoemansCostConjectureFull",
+    "GoemansFlow.optimum_is_sixty",
+    "GoemansFlow.fractional_cost",
+    "GoemansFlow.path_complete"
+  ],
+  "informal": {
+    "GoemansFlow.goemans_cost_conjecture_false": "The rational form of Goemans' cost conjecture is false, even for simple, loopless, acyclic finite digraphs with explicit capacities, positive demands, and distinct terminals different from the source.",
+    "GoemansFlow.not_GoemansCostConjectureFull": "The same cost conjecture is false over every linearly ordered commutative ring, by transfer of the integer counterexample.",
+    "GoemansFlow.optimum_is_sixty": "On the explicit seven-vertex, nine-arc instance, the minimum cost among unsplittable routings satisfying the additive maximum-demand capacity bound is exactly 60.",
+    "GoemansFlow.fractional_cost": "The given splittable flow on the counterexample instance costs exactly 58.",
+    "GoemansFlow.path_complete": "For each of the three terminals, the lists of arcs giving a walk from the source are exactly the two explicitly exhibited paths."
+  },
+  "classification": {
+    "msc2020": [
+      "90C35",
+      "05C21"
+    ],
+    "tags": [
+      "network-flows",
+      "combinatorial-optimization",
+      "counterexamples"
+    ],
+    "branch": "combinatorial optimization"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/GoemansFlow.lean",
+  "statement_hash": "sha256:64820df760964438cec261eafc0429e68f6cff9a41e96e129e17a6ec75525e4b"
+}

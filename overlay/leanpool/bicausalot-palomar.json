@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "bicausalot-palomar",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BicausalOT",
+  "version": 1,
+  "title": "BicausalOT: measurable selection and coupling strategies",
+  "abstract": "Develops Kuratowski–Ryll-Nardzewski selection, Jankov–von Neumann uniformization, and finite-horizon Bellman identities for locally feasible coupling strategies. Exact Borel measurable optimal strategies and initial couplings are obtained on Polish Borel spaces for weakly continuous probability kernels and nonnegative extended-real lower semicontinuous costs. Equivalence with optimization over bicausal path laws is not established.",
+  "authors": [
+    "KT. Wu"
+  ],
+  "repository": "https://github.com/maxwellapexlab/bicausalot-palomar",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.BicausalOT",
+  "declarations": [
+    "MeasurableSelection.exists_measurable_selection"
+  ],
+  "informal": {
+    "MeasurableSelection.exists_measurable_selection": "A weakly measurable multifunction from an arbitrary measurable space to a Polish space with nonempty closed values admits an everywhere-defined Borel-measurable selector."
+  },
+  "classification": {
+    "msc2020": [
+      "28B20",
+      "54C65",
+      "54H05",
+      "03E15",
+      "28A20",
+      "68V20"
+    ],
+    "tags": [
+      "probability"
+    ],
+    "branch": "probability"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/BicausalOT.lean",
+  "statement_hash": "sha256:5e0c2e572612bd34dbc132c1fb84ad2485ea229be10f07e89134d6f595431810"
+}

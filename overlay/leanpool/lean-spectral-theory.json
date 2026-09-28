@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean-spectral-theory",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/SpectralTheory",
+  "version": 1,
+  "title": "lean-spectral-theory",
+  "abstract": "The spectral theorem for possibly unbounded self-adjoint operators on complex Hilbert spaces, formalized through the Cayley transform and real projection-valued measures. The selected spectral theorem constructs a PVM whose scalar measures give the exact finite-second-moment domain and first-moment quadratic form, with measurable-set uniqueness, and is proved equivalent to equality with the unbounded coordinate spectral integral. The selected Stone theorem proves both that strongly continuous one-parameter unitary groups have self-adjoint generators and that every self-adjoint operator generates such a group.",
+  "authors": [
+    "Ezzeri Esa"
+  ],
+  "repository": "https://github.com/savarin/lean-spectral-theory",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.SpectralTheory",
+  "declarations": [
+    "PalomarSpectralStone.spectral_theorem_intrinsic",
+    "PalomarSpectralStone.stone_theorem_intrinsic"
+  ],
+  "informal": {
+    "PalomarSpectralStone.spectral_theorem_intrinsic": "Every self-adjoint partial linear operator on a complex Hilbert space has a real projection-valued measure representing its domain and scalar moments, unique on Borel sets.",
+    "PalomarSpectralStone.stone_theorem_intrinsic": "Every strongly continuous one-parameter unitary group has a self-adjoint generator, and every self-adjoint operator generates such a group."
+  },
+  "classification": {
+    "msc2020": [
+      "47A10",
+      "47B15"
+    ],
+    "tags": [
+      "functional-analysis"
+    ],
+    "branch": "functional analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/SpectralTheory.lean",
+  "statement_hash": "sha256:3aec647ccfb25148f1949986cb5453c654eca254b1374b07dba610b3f9c445ea"
+}

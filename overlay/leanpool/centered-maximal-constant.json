@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/CoolRmal/centered-maximal-constant",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.CenteredMaximal",
   "declarations": [
     "LeanPool.CenteredMaximal.ofReal_phi_le_weakTypeConstant_two",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CenteredMaximal.lean",
-  "statement_hash": "sha256:a2236dd22cd563a1023315c2d76a13d74cd70f99978599eb2ce656b46081402f"
+  "statement_hash": "sha256:40b89e2462e05a43004c22b4bbf12459e531bbd3c53239bf2eeca45a8261784e"
 }

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-27-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-27-000005",
+  "version": 1,
+  "title": "The Four Color Theorem (Lean 4 port of Gonthier's Coq proof)",
+  "abstract": "A Lean 4 and Mathlib formalization of the Four Color Theorem, ported from Georges Gonthier's Coq proof by Claude Opus 5.5, Anthropic's AI model, working as an agent under the direction of Robert D. Barish. The main theorem, FourColor.RealPlane.four_color, states that every simple map of the real plane can be colored with at most four colors so that adjacent regions get different colors. The map may have infinitely many regions, bounded or not; each region must be open and connected, and two regions are adjacent when their closures share a point that lies in the closure of no third region. As in Coq, a compactness argument reduces the theorem to finite maps, which are turned into planar bridgeless hypermaps. A smallest hypermap that cannot be four-colored cannot exist: discharging shows that it would contain one of the 633 configurations of Robertson, Sanders, Seymour and Thomas, and each of these is reducible.\nThe port differs from the Coq proof in three main ways. Its statement uses Mathlib's real numbers rather than an arbitrary model of Coq's axiomatized reals; the two are equivalent, because all such models are isomorphic and the definitions use only the order. Coq checks that the 633 configurations are reducible with a procedure on trees of colorings, run by its virtual machine. The port replaces it with a new bit-parallel engine whose certificates, generated during the build, are checked by the Lean kernel itself. Finally, the case analysis of the unavoidability proof, written as tactic scripts in Coq, becomes case trees checked by a checker proved correct once. Every computation is carried out by the Lean kernel, without native_decide, and the proof uses only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/FourColorTheorem-Lean4",
+  "commit": "20fa34599f5189dd569d96dd22f306c94ab1c446",
+  "project_path": null,
+  "declarations": [
+    "FourColor.RealPlane.four_color"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C10",
+      "68V20",
+      "68V15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-27T01:43:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "20fa34599f5189dd569d96dd22f306c94ab1c446",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--FourColorTheorem-Lean4--2ebb41eff675",
+        "source_repository": "RBarish-UTokyo/FourColorTheorem-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ea04473aac1458220b0abb0f5d7dbc1e5857e170abf4b41f3c3edac426fd7e52"
+}

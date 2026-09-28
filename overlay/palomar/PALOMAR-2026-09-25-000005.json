@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000005",
+  "version": 1,
+  "title": "A left PCI left V-domain that is not right PCI and not a right V-domain",
+  "abstract": "A countable domain R that is a left PCI ring (every cyclic left module not isomorphic to R is injective) and a left V-ring (every simple left module is injective), but is not right Ore, not a right PCI ring and not a right V-ring. Consequently the opposite ring of R is a right PCI ring that is not left PCI.\nThis answers in the negative the question of Faith (1973), Cozzens and Faith (Simple Noetherian Rings, 1975) and Damiano (1979) whether every right PCI ring is left PCI, and the question, going back to Cozzens and Faith (1975), whether a left V-domain must be a right V-domain.\nThe ring is an Ore extension K[t; σ, δ] over a free field K (Cohn's universal field of fractions of a free algebra over the rationals) with a non-surjective endomorphism σ, built by iteratively adjoining free solutions of the pseudo-linear equations that govern divisibility of the cyclic modules R/Rf.\nThe mathematics, the accompanying paper and the Lean code were produced by AI models (Anthropic's Claude) at a human's direction; no human expert has checked the mathematics.",
+  "authors": [
+    "Vlad Tsyrklevich"
+  ],
+  "repository": "https://github.com/vlad902/left-pci-v-domain-not-right-pci-v-domain",
+  "commit": "ba649de9835f4d2b6ab1c1c79ad27d5a3bb5e0c9",
+  "project_path": null,
+  "declarations": [
+    "LeftPCI.exists_isLeftPCIRing_not_isRightPCIRing",
+    "LeftPCI.not_forall_isLeftPCIRing_imp_isRightPCIRing",
+    "LeftPCI.not_forall_isLeftVRing_imp_isRightVRing"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA"
+    ],
+    "msc2020": [
+      "16D50",
+      "16S36",
+      "16K40",
+      "16S10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T06:45:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ba649de9835f4d2b6ab1c1c79ad27d5a3bb5e0c9",
+        "fork_repository": "PalomarArchive/vlad902--left-pci-v-domain-not-right-pci-v-domain--e6a610af9126",
+        "source_repository": "vlad902/left-pci-v-domain-not-right-pci-v-domain"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4263ed5292761c7746e47ee86585ddbbeadca1997b16692f8860cbe2b73944f8"
+}

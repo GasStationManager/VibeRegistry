@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jarfo/min-modulus",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.MinModulusUniqueMultisetSum",
   "declarations": [
     "MinModulus.nmin_eq",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MinModulusUniqueMultisetSum.lean",
-  "statement_hash": "sha256:5437f7d8b0a2d49e90ee6539c4f416768b4ea77f98dadb317cfeffde54ac7248"
+  "statement_hash": "sha256:853012bc3444e7522d02e05d4babecf14dd2e8dac6da9b3d5d7163cab9d47aed"
 }

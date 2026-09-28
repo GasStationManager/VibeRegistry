@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/AxiomMath/fel-polynomial",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.FelConjecture",
   "declarations": [
     "fels_conjecture"
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FelConjecture.lean",
-  "statement_hash": "sha256:12acc9dcd8bb49af4f87e7414b0bd7f969d84b1da78d5f6fd3e83879a5558d7c"
+  "statement_hash": "sha256:70c35b88fa40bbdd4f7fa83ac702e0f13a1c6e986013125451fdde539a0b7695"
 }

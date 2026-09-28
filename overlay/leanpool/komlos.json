@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/gdahia/Komlos",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.Komlos",
   "declarations": [
     "Komlos.discrepancy_le_of_forall_sum_sq_le_one",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Komlos.lean",
-  "statement_hash": "sha256:ea0d6f8de0bbddc4b42b27e782a1786eff2647f080231547f36604d83e9821e4"
+  "statement_hash": "sha256:8330e77419cc62007738188c36a8295fa03173f43e80a2e3cc44e04fb5b9aaa0"
 }

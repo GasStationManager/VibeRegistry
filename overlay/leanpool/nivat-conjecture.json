@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/boonsuan/nivat",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.Nivat",
   "declarations": [
     "Nivat.nivat",
@@ -57,5 +57,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Nivat.lean",
-  "statement_hash": "sha256:f54e0f649a4eff8d7098005222e6fd706b1d617c181eec724e63e99d4215eda6"
+  "statement_hash": "sha256:eba1afd213417cdb53b74d5f79a4e393dd99e61071e7f6fe4dd37309ab95b596"
 }

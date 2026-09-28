@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/rkirov/jacobian-fable",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.JacobianDiffgeo",
   "declarations": [
     "genus_eq_zero_iff_homeo",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/JacobianDiffgeo.lean",
-  "statement_hash": "sha256:cfd7f6a1f51fedc3a96af1b258b33175c2cfdf21270dc066db021f29d13edfab"
+  "statement_hash": "sha256:8199d8a9faa4378eb421e3963a97c2fac93e37b72feced20a2de99005f2b4b5c"
 }

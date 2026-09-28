@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean-superorthogonality",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Superorthogonality",
+  "version": 1,
+  "title": "Square-function estimates from type IV superorthogonality",
+  "abstract": "Proves the type IV superorthogonality square-function estimate for finite and countable index sets, including the pointwise combinatorial estimate and unconditional convergence in L^(2r).",
+  "authors": [
+    "Joris Roos"
+  ],
+  "repository": "https://github.com/roos-j/lean-superorthogonality",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.Superorthogonality",
+  "declarations": [
+    "Superorthogonal.sqfct_estimate_of_type_iv_superorthogonal"
+  ],
+  "informal": {
+    "Superorthogonal.sqfct_estimate_of_type_iv_superorthogonal": "For an integer r >= 1, a countable type IV superorthogonal family in L^(2r), with almost-everywhere summable squared norms and square function in L^(2r), converges unconditionally in L^(2r) and satisfies the square-function bound with constant C(r)."
+  },
+  "classification": {
+    "msc2020": [
+      "42B25",
+      "46E30"
+    ],
+    "tags": [
+      "harmonic-analysis",
+      "superorthogonality",
+      "square-functions"
+    ],
+    "branch": "harmonic analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Superorthogonality.lean",
+  "statement_hash": "sha256:e048ffe6dc3dca8f5921890a4d5612b2a015a09788b41b23b8b1ff9b1f7f2098"
+}

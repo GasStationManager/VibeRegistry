@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.ConcentrationInequalities",
   "declarations": [
     "Contrib.Freedman.subgamma_bernstein_tail",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ConcentrationInequalities.lean",
-  "statement_hash": "sha256:30bb6b4729e5fbf50d1398538a9add13f26c86ddb5b893754ff24a8cc8dab624"
+  "statement_hash": "sha256:e82999c31e07d4bf6c4fd74e373f2a9027040440737367a50ce8ea4b3239e7b3"
 }

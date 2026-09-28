@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000023",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000023",
+  "version": 1,
+  "title": "At least one of the 2-adic zeta values ζ₂(7), ζ₂(9), ζ₂(11) is irrational",
+  "abstract": "A Lean 4 and Mathlib proof that at least one of the 2-adic zeta values ζ₂(7), ζ₂(9), ζ₂(11) is irrational. The theorem has no hypotheses, and its proof uses only the axioms propext, Classical.choice and Quot.sound. The values are defined through the Volkenborn integral: zeta2 s = J(s−1)/((s−1)·2^s), where J(s) is the 2-adic limit of the Riemann sums 2^(−N) Σ_{x<2^N} (x+1/2)^(−s), and the theorem also proves that these limits exist. By Lemma 2.8 of Lai, Sprang and Zudilin (IMRN 2026), zeta2 s is the Kubota–Leopoldt value ζ₂(s) = L₂(s, ω^(1−s)) for s ≥ 2. That identification is cited, not formalised; it only involves a non-zero rational factor, which does not affect irrationality. The result sharpens Theorem 1.1 (case s = 3) of L. Lai (Int. J. Number Theory 2025), which shows that at least one of ζ₂(7), ζ₂(9), ζ₂(11), ζ₂(13) is irrational. The proof uses linear forms S_n = −∫ R_n'''(t+1/2) dt in 1, ζ₂(7), ζ₂(9), ζ₂(11), with R_n(t) = 2^(16n)(2t+n)(t+1/2)_n^8/(t)_(n+1)^8. Their denominators are controlled by a one-power saving that comes from Andrews' multiple-series transformation (proved here in Lean) and by the prime number theorem (proved here from a vendored Lean proof of the Wiener–Ikehara theorem). The exact 2-adic valuation of S_n along n = 2^m − 1 shows that S_n ≠ 0, and Lai's irrationality criterion concludes. The mathematics and the Lean code were produced by AI agents under human direction and have not been refereed.",
+  "authors": [
+    "Gennaro Marco Devincenzis"
+  ],
+  "repository": "https://github.com/gmDevi/zeta2-7-9-11-lean",
+  "commit": "2ae1bccb82f1f72ed7a7aeab3196aa1cdbee165a",
+  "project_path": null,
+  "declarations": [
+    "Zeta2.zeta2_7_9_11_not_all_rational_palomar"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11S40",
+      "11S80",
+      "11M06",
+      "33C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T17:53:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2ae1bccb82f1f72ed7a7aeab3196aa1cdbee165a",
+        "fork_repository": "PalomarArchive/gmDevi--zeta2-7-9-11-lean--c7bc8f42d840",
+        "source_repository": "gmDevi/zeta2-7-9-11-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4d143ee6c9e0dc4d719c62b39edb30be64522868e9d79a7d0837a12db217f546"
+}

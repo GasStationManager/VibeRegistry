@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-26-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-26-000001",
+  "version": 1,
+  "title": "Erdős Problem #1220 in Lean 4: the affirmative statement is not provable in ZFC",
+  "abstract": "Erdős problem #1220 (erdosproblems.com/1220; Erdős–Hajnal 1971): let λ be a singular cardinal such that both λ and cf(λ) are ℵ₀-inaccessible (μ^ℵ₀ < κ for all μ < κ); does λ → (λ, ℵ₁)² hold?  This formalization settles the question as asked on erdosproblems.com in the negative sense \"not provable\": ZFC does not prove that every such λ satisfies λ → (λ, ℵ₁)² (erdos1220_not_provable : ¬ (ZFC ⊨ᵇ Erdos1220)), i.e. there is a model of ZFC with a singular λ, λ and cf(λ) ℵ₀-inaccessible, and λ ↛ (λ, ℵ₁)².  Shelah and Stanley (Sh:258, Ann. Pure Appl. Logic 36 (1987)) showed that a negative answer is consistent with ZFC.  This project formalizes that consistency result: the comparator target erdos1220_not_provable : ¬ (ZFC ⊨ᵇ Erdos1220) is stated for literally the same first-order theory ZFC, language and ZFSet interpretation as elliotglazer/erdos501's comparator challenge (imported from its statement module Erdos501.FOL.Statement), together with a faithfulness theorem erdos1220_sentence_faithful: in Mathlib's ZFSet the sentence Erdos1220 holds iff the Mathlib-level statement Erdos1220.Problem1220 holds.  The witness is the ground-model singular strong-limit cardinal λ = ℶ_{𝔠⁺} (cf λ = 𝔠⁺; λ and cf λ are ℵ₀-inaccessible without any deep cardinal-arithmetic input), not ℵ_{𝔠⁺}.  The forcing is the Shelah–Stanley §3 forcing, formalized as block-preserving, block-covering histories of basic conditions (weak extension order), with the μ⁺-strategic closure (hence μ-distributivity) and the (2^μ)⁺-chain condition proved in ZFC without GCH (Δ-system lemma for (2^μ)⁺ sets of size ≤ μ, blueprint counting (2^μ)^μ = 2^μ).  In the Boolean-valued model of its regular-open algebra (built with the Lean 4 port of Han–van Doorn's Flypitch vendored by erdos501) the hypotheses on λ are preserved, the generic colouring of [λ]² has neither a red homogeneous set of size λ nor a blue homogeneous set of size ℵ₁, and Flypitch's completeness theorem turns this into a two-valued model of ZFC satisfying ¬Erdos1220.  Both targets are proved from propext, Classical.choice and Quot.sound only and pass the Lean comparator.  Only the negative direction is claimed: independence (consistency of a positive answer) is NOT claimed.",
+  "authors": [
+    "Ji Ho Bae (JRTI)"
+  ],
+  "repository": "https://github.com/jbaelaw/erdos1220-lean",
+  "commit": "9cb81ffa48ffb766127c7e485ccef77bd4160868",
+  "project_path": null,
+  "declarations": [
+    "erdos1220_not_provable",
+    "erdos1220_sentence_faithful"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03E35",
+      "03E02",
+      "03E05",
+      "03E40",
+      "03E55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-26T02:04:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9cb81ffa48ffb766127c7e485ccef77bd4160868",
+        "fork_repository": "PalomarArchive/jbaelaw--erdos1220-lean--9ed9443659d9",
+        "source_repository": "jbaelaw/erdos1220-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8cd8a1e0f92deaf681fdfcf1560829c8874724543c25aa0f7e619ec5c9afb361"
+}

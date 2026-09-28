@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-23-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-23-000004",
+  "version": 1,
+  "title": "Verified finite automata for finitely generated subgroups of F₂",
+  "abstract": "Source-based formalization of the classical Stallings finite-graph recognition theorem. It gives an executable finite folding construction for every finite list of words in the rank-two free group, with exact subgroup-membership correctness. The least deterministic fold congruence is computed by finite exhaustive search; there is no complexity claim or implementation of core trimming, subgroup bases, intersections, or index algorithms.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/stallings-folding",
+  "commit": "117dde0a8415d3da1787e15ad22a6223a744432d",
+  "project_path": null,
+  "declarations": [
+    "Stallings.folded_recognizer_exists"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "math.LO"
+    ],
+    "msc2020": [
+      "20E05",
+      "68Q45",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-23T05:20:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "117dde0a8415d3da1787e15ad22a6223a744432d",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--stallings-folding--4ca148eb0a54",
+        "source_repository": "Arthur742Ramos/stallings-folding"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a9f2704ecb31b347836dc8d6eea2d9d069b096d3587c7ef66211e3429341d6b4"
+}

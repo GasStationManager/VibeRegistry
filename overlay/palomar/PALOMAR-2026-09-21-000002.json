@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-21-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-21-000002",
+  "version": 1,
+  "title": "Microscopic signed fields and empirical Poisson laws",
+  "abstract": "Quantitative comparison of the actual position/excess/sign field at growing intensity, retaining the original small-prime conditioning; same-grid dyadic restriction and common measurable readouts. Along literal dyadic scales, empirical window counts converge almost surely to Poisson, while empirical full vectors have a positive total-variation obstruction.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "d8edbc44654f623fc68df92612c26a6ef9a90ec2",
+  "project_path": null,
+  "declarations": [
+    "PaperCV3Audit.Microscopic.exact_source_coefficients",
+    "PaperCV3Audit.Microscopic.full_field_comparison",
+    "PaperCV3Audit.Microscopic.dyadic_field_comparison",
+    "PaperCV3Audit.Microscopic.empirical_poisson",
+    "PaperCV3Audit.Microscopic.common_readout",
+    "PaperCV3Audit.Microscopic.empirical_vector_obstruction"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-21T04:13:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d8edbc44654f623fc68df92612c26a6ef9a90ec2",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c064c6ee16e1039dea853de34d8c7f57818080f5b13999804257d0f23e5c7ae9"
+}

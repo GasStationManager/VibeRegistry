@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-26-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-26-000005",
+  "version": 1,
+  "title": "Metric TSP subtour-LP integrality gap",
+  "abstract": "Lean proofs that every metric TSP instance on at least three vertices has a Hamiltonian tour costing at most (3/2 - 2.05522e-30) times any feasible subtour-LP objective, with one strictly larger saving uniform over all instances. The submission also exposes the exact finite-layer saving and a KKO-framework bound using GKL capacity estimates.",
+  "authors": [
+    "Troy Lee"
+  ],
+  "repository": "https://github.com/troyjlee/tcs-formalizations",
+  "commit": "55d7c9c11ee4240328a71b1ab43d66f27a976da6",
+  "project_path": null,
+  "declarations": [
+    "PalomarTSPGap.kko_gap",
+    "PalomarTSPGap.song_gap",
+    "PalomarTSPGap.song_gap_strict",
+    "PalomarTSPGap.song_gap_exact",
+    "PalomarTSPGap.exactGain_gt_target"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "math.CO"
+    ],
+    "msc2020": [
+      "90C27",
+      "05C45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-26T13:32:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "55d7c9c11ee4240328a71b1ab43d66f27a976da6",
+        "fork_repository": "PalomarArchive/troyjlee--tcs-formalizations--200ed78cfc67",
+        "source_repository": "troyjlee/tcs-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f54c1ea7852392149c81c3f12e697e2d411ee5c9e881957da1424e7ae78dd469"
+}

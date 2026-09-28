@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-21-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-21-000006",
+  "version": 1,
+  "title": "A transexponential o-minimal structure",
+  "abstract": "The real field expanded by the function $x\\mapsto A(1+x^2)$, where $A$ is a normalized analytic Abel function for $e^x-1$, is an o-minimal structure that defines a function that grows faster than any finite iterate of the exponential function.",
+  "authors": [
+    "Artem Chernikov"
+  ],
+  "repository": "https://github.com/archernikov/abel-formalization",
+  "commit": "acf1a5a138aa966e1380e4af3100e6c286d00fe6",
+  "project_path": null,
+  "declarations": [
+    "AbelFormalization.mainTheorem",
+    "AbelFormalization.exists_abel_ominimal_expansion"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03C64"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-21T22:09:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "acf1a5a138aa966e1380e4af3100e6c286d00fe6",
+        "fork_repository": "PalomarArchive/archernikov--abel-formalization--784df47dfa7f",
+        "source_repository": "archernikov/abel-formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6fe6327c2a0b39c82af722cecbb016e09eed13cdd4789707ff160f735a8eb0dd"
+}

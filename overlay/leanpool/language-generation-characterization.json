@@ -15,7 +15,7 @@
   ],
   "repository": "https://github.com/xiaoyulics/language-generation-characterization",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.LanguageGeneration",
   "declarations": [
     "GenLimit.FiniteWitness.Simplified.ordinary_iff_finiteWitnesses",
@@ -60,5 +60,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/LanguageGeneration.lean",
-  "statement_hash": "sha256:5581d06cd9765841d018af1aecfbfc75b9fc66cc97daf19c6ca3d56cfd1dbe57"
+  "statement_hash": "sha256:5a89f512710664e3beed0a5a0422ce331c15d2b7661e663c4ccd3b3a632c1a1d"
 }

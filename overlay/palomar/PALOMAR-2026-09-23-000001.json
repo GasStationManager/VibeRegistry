@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-23-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-23-000001",
+  "version": 1,
+  "title": "Zero density theorems for short intervals",
+  "abstract": "Explicit zero-density results for the Riemann zeta function in short intervals, formalized in Lean 4 over Mathlib.  Count the nontrivial zeros whose imaginary part lies in a window (t-h, t+h], with multiplicity and with a zero on either horizontal edge counted for half.\nSeven statements are submitted, and all seven are mechanically checked.  Two are zero-density bounds for the edge strip Re s > 1-alpha, valid for 0 <= h <= t^(2/3), proved by two different mechanisms -- Jensen's formula and Littlewood's lemma, the source's Theorems 2 and 3.  Neither dominates the other over the whole parameter range.  Two turn those into bounds on the fraction of the window's zeros lying in that strip, and are antitone in both h0 and t0, so one evaluation bounds every larger window: Corollaries 4 and 5.  The remaining three are the headline corollary, Corollary 1 -- for every alpha in (0, 1/6) there are h0 and t0 beyond which a definite fraction of the window's zeros, bounded below by an explicit POSITIVE constant, have real part in the middle band [alpha, 1-alpha], away from both edges of the critical strip.  One states it with the constant named, one with the constant existentially quantified as the source phrases it, and one at the explicit parameters alpha = 1/16 with a sharper radius, where the limiting constant is 9/25.\nThe positivity is proved, not assumed, and needs no numerics: every term of the constant except the leading one carries a factor 1/h or 1/log t, so it tends to a limit fixed by one rational inequality, which the radius 1/2 discharges for every admissible alpha.  The factor of two relating the two edge strips is the reflection rho -> 1 - conj(rho), proved in the development to be a multiplicity-preserving involution of the zero set.\nThe results are conditional and their hypotheses are in the signature, not hidden.  They are of two kinds, kept apart in the development because a reader is entitled to weigh them differently.  Sixteen are published explicit bounds on zeta and Gamma transcribed from other authors; eleven are finite numerical certificates established outside Lean by arb ball arithmetic or mpmath on explicit compact boxes, which Mathlib cannot currently reproduce because it has no verified evaluation of zeta and the margins reach 9e-17.  The source's tables give the numerical values of the constant; they are not load-bearing for its sign.\n`comparator.json` names exactly those seven and is the authority on what is checked.  Beyond them, the wider development supplies what they rest on: the Littlewood short-interval theorem (Theorem 32), the argument-integral machinery (Theorem 31), the appendix of explicit zeta bounds, the Laurent expansion of zeta'/zeta, and the reflection step.",
+  "authors": [
+    "Andrew Fiori"
+  ],
+  "repository": "https://github.com/andrewfiori/ZeroDensityInShortIntervals",
+  "commit": "97ee4b41d2d4a0680434282e09e688424b59922a",
+  "project_path": null,
+  "declarations": [
+    "ZeroDensityShortIntervals.zero_density_jensen",
+    "ZeroDensityShortIntervals.zero_density_littlewood",
+    "ZeroDensityShortIntervals.edge_proportion_jensen",
+    "ZeroDensityShortIntervals.edge_proportion_littlewood",
+    "ZeroDensityShortIntervals.positive_proportion_in_middle_band",
+    "ZeroDensityShortIntervals.positive_proportion",
+    "ZeroDensityShortIntervals.positive_proportion_sixteenth"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M26",
+      "11M06",
+      "11Y35",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-23T01:19:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "97ee4b41d2d4a0680434282e09e688424b59922a",
+        "fork_repository": "PalomarArchive/andrewfiori--ZeroDensityInShortIntervals--f3653c9883c5",
+        "source_repository": "andrewfiori/ZeroDensityInShortIntervals"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ccc115540a9267b6be9d04518961c104d87fa04c7c176b7fbfdd98b386efe6cc"
+}

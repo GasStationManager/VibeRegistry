@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/teorth/pfr",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.PFR",
   "declarations": [
     "Marton.pfr_conjecture",
@@ -57,5 +57,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PFR.lean",
-  "statement_hash": "sha256:1c449c9d4971edb345011a6aaa32d20cdd3b61d2f1ce6edfa4537becbcd21e84"
+  "statement_hash": "sha256:225d067a3999bd91454623fd4b42b6df0617a0155f939cc73e59580a9ed97edb"
 }

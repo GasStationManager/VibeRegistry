@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "nemytskii-lebesgue",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/NemytskiiLebesgue",
+  "version": 1,
+  "title": "Nemytskii operators on Lebesgue spaces",
+  "abstract": "Develops superposition operators induced by Caratheodory functions: measurability, Lp-to-Lq growth bounds and sequential continuity, Lipschitz estimates, monotonicity and coercivity, and Frechet remainder estimates. For Lebesgue measure on the real line and finite-dimensional real fibers, characterizes when every Lp input has an Lq output by the standard integrable-envelope growth condition, for 1 <= p,q < infinity. First-order remainder estimates on arbitrary measure spaces assume a Caratheodory derivative with the stated Holder-compatible growth. The integral-functional result bounds the integrated remainder and proves integrability of the linearized integrand; it does not assert integrability of the original integrand without its separate growth hypotheses. Caratheodory here requires strongly measurable sections and almost-everywhere continuity in the fiber variable.",
+  "authors": [
+    "Petr Girg",
+    "Petr Nečesal",
+    "Martin Dvořák",
+    "Jakub Psutka"
+  ],
+  "repository": "https://github.com/madvorak/nemytskii-lebesgue",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.NemytskiiLebesgue",
+  "declarations": [
+    "NemytskiiLebesgue.IsCaratheodory.memLp_nemytskii_volume_iff_growth",
+    "NemytskiiLebesgue.IsCaratheodory.nemytskii_seqContinuous_of_memLp_of_growth_real",
+    "NemytskiiLebesgue.IsCaratheodory.eLpNorm_frechet_remainder_le_ofReal_mul_eLpNorm",
+    "NemytskiiLebesgue.IsCaratheodory.integralFunctional_frechet_deriv"
+  ],
+  "informal": {
+    "NemytskiiLebesgue.IsCaratheodory.memLp_nemytskii_volume_iff_growth": "For f from R times R^m to R^k with strongly measurable sections and almost-everywhere continuous fibers, and 1 <= p,q < infinity, every Lp input gives an Lq output if and only if there exist an Lq real envelope a and a nonnegative constant C such that almost everywhere, simultaneously for every fiber vector xi, norm(f(x,xi)) <= abs(a(x)) + C * norm(xi)^(p/q).",
+    "NemytskiiLebesgue.IsCaratheodory.nemytskii_seqContinuous_of_memLp_of_growth_real": "On any measure space, the same Caratheodory and growth assumptions imply that a sequence of Lp functions converging in Lp to an Lp function has superposition images converging in Lq, for finite exponents p,q at least one and finite-dimensional real fibers.",
+    "NemytskiiLebesgue.IsCaratheodory.eLpNorm_frechet_remainder_le_ofReal_mul_eLpNorm": "On a measure space, suppose f and its fiber derivative f' are Caratheodory, f' is the Frechet derivative at every fiber point almost everywhere, p,r >= 1 satisfy 1/q = 1/r + 1/p, and f' is bounded by b + C * norm(xi)^(p/r) with nonnegative b in Lr and C > 0. At each Lp function u, the Lq integral quantity (a quasi-norm when q < 1) of the first-order remainder is at most epsilon times the Lp norm of l whenever l is in Lp and its Lp norm is sufficiently small.",
+    "NemytskiiLebesgue.IsCaratheodory.integralFunctional_frechet_deriv": "On a measure space with finite-dimensional real inputs, under Caratheodory assumptions on f and its fiber derivative f', conjugate exponents p,q, and derivative growth b + C*norm(xi)^(p-1) with nonnegative b in Lq and C > 0, the linearized integrand is integrable for every Lp perturbation. The norm of the integral of the first-order remainder is at most epsilon times the Lp norm of the perturbation when that norm is sufficiently small."
+  },
+  "classification": {
+    "msc2020": [
+      "47H30",
+      "46E30",
+      "47J05"
+    ],
+    "tags": [
+      "nonlinear-analysis",
+      "nemytskii-operators",
+      "lebesgue-spaces",
+      "differentiation"
+    ],
+    "branch": "nonlinear functional analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/NemytskiiLebesgue.lean",
+  "statement_hash": "sha256:8b695ce8e630966ee3151bf3793117d0d9e76098d780bf3e41be5b4890a43787"
+}

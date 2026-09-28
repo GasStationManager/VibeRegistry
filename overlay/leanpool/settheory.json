@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/znssong/SetTheory",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.SetTheory",
   "declarations": [
     "SetTheory.kunen_inconsistency_V",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SetTheory.lean",
-  "statement_hash": "sha256:ddd5e7028aab5dcbafca1cf843c18c98170b50105ab2fead7673ec05af47ef3b"
+  "statement_hash": "sha256:437c8085496d9668748cd6f990e3f055a082db8ef2a3f8979785030f8cce0770"
 }

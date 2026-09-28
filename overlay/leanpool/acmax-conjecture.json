@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/MerLeanProver/ACMaxConjecture",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.ACMax",
   "declarations": [
     "ACMax.acmax_conjecture",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ACMax.lean",
-  "statement_hash": "sha256:2e91a17c75b9369c2976534e1a8ef124740c825d99edcc5a48d1154bdef7fba1"
+  "statement_hash": "sha256:f516869956ea1fa1b1399e82f37679a99248518a554e4e31fc263abb6369de06"
 }

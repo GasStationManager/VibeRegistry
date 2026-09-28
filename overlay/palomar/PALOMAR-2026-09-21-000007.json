@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-21-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-21-000007",
+  "version": 1,
+  "title": "SCOPE and REACH with almost-surely finite stopping times",
+  "abstract": "SCOPE and REACH are integrable unbiased estimators of an outcome-before-stopping probability for autoregressive models on countably infinite vocabularies. REACH is the conditional expectation of a two-stage Monte Carlo estimator given the outcome-free backbones. Its variance bound against ordinary Monte Carlo is derived from that Rao–Blackwell identity and the law of total variance, for every positive sample count. The development also proves the stopping-time property, almost-sure finiteness, and the bridge between the two sampling experiments.",
+  "authors": [
+    "Luke Solo",
+    "Matthew B. A. McDermott",
+    "William F. Parker",
+    "Bashar Ramadan",
+    "Michael C. Burkhart",
+    "Brett K. Beaulieu-Jones"
+  ],
+  "repository": "https://github.com/bbj-lab/Scope-Reach-Formalized",
+  "commit": "213759b733027d2558a73187b48b143a483ba3a1",
+  "project_path": null,
+  "declarations": [
+    "ScoRe.T_E_stoppingTime",
+    "ScoRe.T_E_finite_original",
+    "ScoRe.T_E_finite_avoiding",
+    "ScoRe.scope_unbiased",
+    "ScoRe.reach_unbiased",
+    "ScoRe.monteCarlo_unbiased",
+    "ScoRe.reach_raoBlackwell",
+    "ScoRe.equal_probabilities",
+    "ScoRe.monteCarlo_one_identDistrib",
+    "ScoRe.reach_variance_le_monteCarlo"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "stat.ML",
+      "math.PR"
+    ],
+    "msc2020": [
+      "62F10",
+      "65C05",
+      "60G40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-21T22:20:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "213759b733027d2558a73187b48b143a483ba3a1",
+        "fork_repository": "PalomarArchive/bbj-lab--Scope-Reach-Formalized--44c599629963",
+        "source_repository": "bbj-lab/Scope-Reach-Formalized"
+      }
+    ]
+  },
+  "statement_hash": "sha256:12a9e0723b8ba78099891140beb827423a4212ef01d781852a4f40f6401b0e13"
+}

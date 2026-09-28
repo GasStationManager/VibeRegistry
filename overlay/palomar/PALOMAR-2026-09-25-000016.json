@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000016",
+  "version": 1,
+  "title": "HighContrastHomogenization",
+  "abstract": "A Lean formalization of \"Homogenization at a polynomial scale in high contrast\" by Armstrong, Kuusi and Loher. The paper studies elliptic equations in random media whose conductivity can vary greatly. It proves that their large-scale behavior becomes predictable at a length bounded by a polynomial in the parameters measuring contrast and randomness, improving earlier bounds. The formalization includes quantitative convergence estimates, approximation by an effective constant-coefficient equation, and large-scale regularity results. It builds on the CoarseGraining library.",
+  "authors": [
+    "Scott Armstrong",
+    "Tuomo Kuusi",
+    "Amélie Loher"
+  ],
+  "repository": "https://github.com/scottnarmstrong/HighContrastHomogenization",
+  "commit": "7a13dbcd8d6609264a713373f5c69ceeac870472",
+  "project_path": null,
+  "declarations": [
+    "HCPoly.StatementAudit.PolynomialEntry.polynomial_entry"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP",
+      "math.PR"
+    ],
+    "msc2020": [
+      "35B27",
+      "35J15",
+      "60K37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T13:24:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7a13dbcd8d6609264a713373f5c69ceeac870472",
+        "fork_repository": "PalomarArchive/scottnarmstrong--HighContrastHomogenization--73d453bc851c",
+        "source_repository": "scottnarmstrong/HighContrastHomogenization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bd43ea8db1f099542959b5188c11e645d9de4790219c5d33d414a8b078c8f074"
+}

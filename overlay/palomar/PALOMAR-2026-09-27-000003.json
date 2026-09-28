@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-27-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-27-000003",
+  "version": 1,
+  "title": "Equivalence of the RAF abundance conjecture and Frankl's union-closed sets conjecture",
+  "abstract": "In a catalytic reaction system with finitely many reactions, a RAF is a nonempty set of reactions whose reactants are produced from the food set by iterated closure under the selected reactions and whose reactions are each catalysed by a molecule of that closure. Steel (arXiv:2305.16714v4, Section 4) asked whether some reaction always lies in at least half of the RAFs. Call a reaction food-ready if all its reactants are food, and abundant if it lies in at least half of the sets in the family formed by the RAFs and the empty set. If some RAF U consists entirely of food-ready reactions, then some reaction of U is abundant, with no condition on the other reactions. If every reaction of the system, except at most two, is food-ready and the system has a RAF, then some reaction is abundant. Finally, the statement that every catalytic reaction system with finitely many reactions and a RAF has an abundant reaction is equivalent to Frankl's union-closed sets conjecture in the form: every finite union-closed family containing the empty set and a nonempty set has an element lying in at least half of its members.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p020-raf-abundant-reactions",
+  "commit": "c1ebf53f80cc4a45af67142aa1e33f1a53494b8c",
+  "project_path": null,
+  "declarations": [
+    "RAF.Frankl.elementary_core_exists_abundant",
+    "RAF.Frankl.two_nonfood_rafFixedFrankl",
+    "RAF.Frankl.PairGadget.all_rafFixedFrankl_iff_all_unionClosedFrankl"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "05D05",
+      "92C42",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-27T01:24:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c1ebf53f80cc4a45af67142aa1e33f1a53494b8c",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p020-raf-abundant-reactions--8b8f0cbe7d09",
+        "source_repository": "mmislan/palomar-p020-raf-abundant-reactions"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6c44530241ac0767eb9e61c8d4a583fed16652137dff0cf037d2082bcd251cf6"
+}

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/sven-manthe/A-formalization-of-Borel-determinacy-in-Lean",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.AFormalizationOfBorelDeterminacyInLean",
   "declarations": [
     "GaleStewartGame.borel_determinacy",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/AFormalizationOfBorelDeterminacyInLean.lean",
-  "statement_hash": "sha256:9512e8eae8602bd8d44ebdcb86327bcef3a76bfb12b73216291277b3f65d2047"
+  "statement_hash": "sha256:8dc90752527165b4519905778a972ff0baf3da623586a307ec99416935cced54"
 }

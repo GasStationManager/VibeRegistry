@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-28-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-28-000002",
+  "version": 1,
+  "title": "Local class field theory in Lean 4.35.0-rc2",
+  "abstract": "For every finite abelian extension L/K of a nonarchimedean local field, the multiplicative group K× modulo the field-norm subgroup N_{L/K}(L×) is isomorphic as a topological group to Gal(L/K). The registered declaration is the finite norm-quotient form of local reciprocity proved in the included ClassFieldTheory development. Stronger compatibility, normalization and existence results in that development are documented separately and are not part of the compared declaration.",
+  "authors": [
+    "Naganori Yamaguchi"
+  ],
+  "repository": "https://github.com/n-yamaguchi-0729/FiniteAbelianLocalReciprocityv2",
+  "commit": "3b402b69622b131ebdc7ffe746c8975c593dc330",
+  "project_path": null,
+  "declarations": [
+    "ClassFieldTheory.finiteAbelianLocalReciprocity_quotient"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11S31"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-28T05:35:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3b402b69622b131ebdc7ffe746c8975c593dc330",
+        "fork_repository": "PalomarArchive/n-yamaguchi-0729--FiniteAbelianLocalReciprocityv2--fea68c6813ec",
+        "source_repository": "n-yamaguchi-0729/FiniteAbelianLocalReciprocityv2"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c067e2f33ea993ee34a7d124ef93485f0174393cf827c38f82698e4ce3cb78a9"
+}

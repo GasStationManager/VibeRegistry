@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-20-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-20-000004",
+  "version": 1,
+  "title": "Typical dictionaries, exact marks and compound Poisson clusters",
+  "abstract": "Poisson comparisons for word dictionaries, including mean distances for uniformly sampled fixed-size and affine dictionaries with each dictionary held fixed inside the comparison. Exact excesses and signs, category aggregation, geometric marks and compound Poisson cluster laws are retained.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "edd850b26641f18897376a029a0d4f16577205b7",
+  "project_path": null,
+  "declarations": [
+    "PaperCV3Audit.Patterns.word_overlap_probability",
+    "PaperCV3Audit.Patterns.dictionary_critical",
+    "PaperCV3Audit.Patterns.exact_marked_quantitative",
+    "PaperCV3Audit.Patterns.exact_sign_partition",
+    "PaperCV3Audit.Patterns.aggregate_hard_budget",
+    "PaperCV3Audit.Patterns.geometric_joint_configuration",
+    "PaperCV3Audit.Patterns.geometric_compound_weight",
+    "PaperCV3Audit.Patterns.geometric_compound_pgf",
+    "PaperCV3Audit.Patterns.constant_windows_compound",
+    "PaperCV3Audit.Patterns.typical_dictionary_mean",
+    "PaperCV3Audit.Patterns.affine_dictionary_mean"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-20T12:06:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "edd850b26641f18897376a029a0d4f16577205b7",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a2c03482ee67b93bbe17d6b7072a6e509fd950c5e5040836eb35e915eec403a2"
+}

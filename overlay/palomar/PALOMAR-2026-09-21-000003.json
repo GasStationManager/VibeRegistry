@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-21-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-21-000003",
+  "version": 1,
+  "title": "Regular configurations, Palm deficits and the cumulant obstruction",
+  "abstract": "Arithmetic regular configurations with private prime pivots, exact source–target Palm mass identities, ordinary deletion and normalized deficit bounds. The independent target is regular with probability tending to one, while absolute cumulant activity has a positive normalized lower bound on prime scales for original and stronger retained sets.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "409779f46c0599edcd9ae1f973dd931b1d0a1cea",
+  "project_path": null,
+  "declarations": [
+    "PaperCV3Audit.Palm.source_target_palm_mass",
+    "PaperCV3Audit.Palm.full_deficit_comparison",
+    "PaperCV3Audit.Palm.ordinary_deletion",
+    "PaperCV3Audit.Palm.full_retained_normalized_comparison",
+    "PaperCV3Audit.Palm.normalized_deficit_eventually",
+    "PaperCV3Audit.Palm.original_cumulant_obstruction",
+    "PaperCV3Audit.Palm.retained_cumulant_obstruction",
+    "PaperCV3Audit.Palm.stronger_retention_counts",
+    "PaperCV3Audit.Palm.regular_target_probability"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-21T09:06:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "409779f46c0599edcd9ae1f973dd931b1d0a1cea",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:80e88009e9ecf726bd7f2ba8247a8bd71df26e7918e22bdeec535f9611956c67"
+}

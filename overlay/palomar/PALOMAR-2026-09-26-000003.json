@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-26-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-26-000003",
+  "version": 1,
+  "title": "Hamilton cycles in Cayley graphs of polylogarithmic degree",
+  "abstract": "A complete Lean 4 / Mathlib formalization of the following theorem: there are absolute constants C, n0 > 0 such that every connected Cayley graph Cay(G, S) on n >= n0 vertices whose degree d = |S| is at least C (log n)^13 / log log n contains a Hamilton cycle (Lovasz.hamiltonian_of_polylog_degree). Here G is a finite group, S is a connection set (S = S^-1 and 1 not in S, so the graph is |S|-regular), log is the natural logarithm, and connectivity is equivalent to S generating G. The theorem is a case of the Lovász conjecture (every connected vertex-transitive graph has a Hamilton path) in its Cayley-graph form (every connected Cayley graph on at least three vertices is Hamiltonian). For arbitrary connected Cayley graphs the previously published degree thresholds were linear degree (Christofides, Hladký and Máthé, 2014) and degree at least n^(1-c) (Bedert, Draganić, Müyesser and Pavez-Signé, 2026). The proof follows the source manuscript: it extracts a connected bipartite template with spectral gap of order (log n)^-2, allocates the vertices to weighted translates of the template by signed rounding (a robust signed integrality theorem derived from the capacitated b-matching polytope, swap rounding, and a trace-exponential matrix concentration bound), connects the pieces by a sparse matching chosen by mutual nominations and a signed circulation, absorbs the outside matching inside every piece with Hamilton routers built from even-cycle comparators, and merges cycles. Every lemma of the manuscript is proved in the repository, as are the classical results it uses without proof (normalized Cheeger inequality, Haxell's hypergraph matching theorem, the b-matching polytope, Watkins's connectivity bound, the Nash-Williams–Tutte tree-packing theorem, Hoffman's circulation criterion, scalar Chernoff bounds); Hall's theorem is taken from Mathlib, and matrix Bernstein is avoided by deriving the one lemma that used it from the manuscript's own concentration bound. The source manuscript is an unpublished research draft that describes its own proof as not independently verified; this formalization is, to the maintainer's knowledge, the first verification of the theorem. The proved theorem has no sorry and depends only on propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Shengtong Zhang"
+  ],
+  "repository": "https://github.com/ShengtongZhang-alt/lovasz-opus",
+  "commit": "ee0085ddec79996279c7b52044659032e5cf8431",
+  "project_path": null,
+  "declarations": [
+    "Lovasz.hamiltonian_of_polylog_degree"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C45",
+      "05C25",
+      "05C48",
+      "05C50",
+      "05C70",
+      "05C80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-26T03:17:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ee0085ddec79996279c7b52044659032e5cf8431",
+        "fork_repository": "PalomarArchive/ShengtongZhang-alt--lovasz-opus--32b678aa320e",
+        "source_repository": "ShengtongZhang-alt/lovasz-opus"
+      }
+    ]
+  },
+  "statement_hash": "sha256:810274d49e05abfbb338888dc45a1327c35ddb1708b1647be53db2c8786366c7"
+}

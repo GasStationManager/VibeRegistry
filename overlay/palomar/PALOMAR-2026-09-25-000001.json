@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000001",
+  "version": 1,
+  "title": "Absence of bounded-orbit wandering domains",
+  "abstract": "We prove that transcendental entire functions do not have bounded-orbit wandering domains. This answers a major open question in the field. The proof builds upon Zihao Ye's new proof of Sullivan's No Wandering Domains theorem, and was obtained with assistance by generative AI.  We also formalise a stronger theorem, which shows that locally defined holomorphic functions do not have orbits of simply connected wandering domains. The formalisation includes a number of classical results that were implemented as auxiliary results, including results concerning the hyperbolic metric for a finitely punctured sphere, and its area.",
+  "authors": [
+    "Nikolai Prochorov",
+    "Lasse Rempe",
+    "James Waterman"
+  ],
+  "repository": "https://github.com/LR-UK/Bounded-orbit-wandering-domains",
+  "commit": "5c983043c79131f3c9525ab52ce748864d7d8b09",
+  "project_path": null,
+  "declarations": [
+    "BoundedWanderingDomains.no_local_bounded_wandering_domains",
+    "BoundedWanderingDomains.no_bounded_wandering_domains_transcendental_entire"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.CV"
+    ],
+    "msc2020": [
+      "37F10",
+      "30D05",
+      "30F45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T00:05:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5c983043c79131f3c9525ab52ce748864d7d8b09",
+        "fork_repository": "PalomarArchive/LR-UK--Bounded-orbit-wandering-domains--c47223f53157",
+        "source_repository": "LR-UK/Bounded-orbit-wandering-domains"
+      }
+    ]
+  },
+  "statement_hash": "sha256:775b94d2b25354d570b34a8e88769d0638c491180c5f16192890adfa1017e372"
+}

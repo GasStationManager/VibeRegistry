@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000028",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000028",
+  "version": 1,
+  "title": "Gibbard-Satterthwaite theorem (strategy-proof social choice)",
+  "abstract": "Formalizes the Gibbard-Satterthwaite theorem for finite electorates and finite alternative sets with at least three alternatives: every onto, strategy-proof social choice function is dictatorial. The proof constructs a social welfare function and reduces to Arrow's impossibility theorem.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/gibbard-satterthwaite-lean",
+  "commit": "8398e65a99cd3d5e973c64963c4bab8c0491947c",
+  "project_path": null,
+  "declarations": [
+    "GibbardSatterthwaite.gibbardSatterthwaite"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91B14"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T21:11:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8398e65a99cd3d5e973c64963c4bab8c0491947c",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--gibbard-satterthwaite-lean--fe2cb7e0c225",
+        "source_repository": "Arthur742Ramos/gibbard-satterthwaite-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:980af308df23fe4bba14c2880a14e0994e9b7984fecea61873e3dd70b9b846f9"
+}

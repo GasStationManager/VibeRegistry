@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000003",
+  "version": 1,
+  "title": "Erdős 1007, dimension five: fifteen edges, attained by K6 and K1,3,3",
+  "abstract": "The least number of edges of a graph of Euclidean dimension five (Erdős–Harary–Tutte) is 15, and both K6 and K1,3,3 attain it (Chaffee and Noble 2016). These are formal-conjectures' erdos_1007.variants.dimension_five and dimension_five_extremal. A graph has dimension n when n is the least dimension in which its vertices can be placed injectively with every edge a unit segment. The lower bound is Chaffee and Noble's Theorem 10: every graph with at most fourteen edges has such a placement in ℝ⁴. Its proof removes a vertex of degree at most three, joins that vertex's neighbours to one another, places the smaller graph by induction, and returns the vertex to one of the infinitely many points at distance one from its neighbours. A graph whose degrees are all at least four has at most seven vertices, and those graphs are handled case by case. For attainment, K6 has dimension five because six points at pairwise distance one fit in ℝ⁵ but not in ℝ⁴. K1,3,3 has dimension five by Theorem 8: it has an explicit placement in ℝ⁵, and an orthogonal-complement count rules out ℝ⁴. The supporting results are in GraphDimension, a separate Lean library on the dimension of graphs, which this repository pins by revision. The question belongs to discrete geometry and extremal graph theory, specifically the study of unit-distance representations and the dimension of graphs.",
+  "authors": [
+    "Dishant Shah"
+  ],
+  "repository": "https://github.com/Dishah3241/Erdos1007Dim5",
+  "commit": "85032a43ca6db7d92b492efd05deeea0739c4570",
+  "project_path": null,
+  "declarations": [
+    "Erdos1007Dim5.Palomar.target"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "05C62",
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T05:20:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "85032a43ca6db7d92b492efd05deeea0739c4570",
+        "fork_repository": "PalomarArchive/Dishah3241--Erdos1007Dim5--3b9128a98c60",
+        "source_repository": "Dishah3241/Erdos1007Dim5"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5f680e1700f9201611565ea94df85284979032ece26e2a32cfea295bc2f6b32e"
+}

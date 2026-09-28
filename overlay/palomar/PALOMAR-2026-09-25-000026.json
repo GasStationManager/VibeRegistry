@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000026",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000026",
+  "version": 1,
+  "title": "At least one of the 2-adic zeta values ζ₂(7), ζ₂(9) is irrational",
+  "abstract": "A Lean 4 and Mathlib proof that at least one of the 2-adic zeta values ζ₂(7), ζ₂(9) is irrational. The theorem has no hypotheses, and its proof uses only the axioms propext, Classical.choice and Quot.sound. The values are defined through the Volkenborn integral: zeta2 s = J(s−1)/((s−1)·2^s), where J(s) is the 2-adic limit of the Riemann sums 2^(−N) Σ_{x<2^N} (x+1/2)^(−s), and the theorem also proves that these limits exist. By Lemma 2.8 of Lai, Sprang and Zudilin (IMRN 2026), zeta2 s is the Kubota–Leopoldt value ζ₂(s) = L₂(s, ω^(1−s)) for s ≥ 2. That identification is cited, not formalised; it only involves a non-zero rational factor, which does not affect irrationality. The result sharpens Theorem 1.1 (case s = 3) of L. Lai (Int. J. Number Theory 2025), which shows that at least one of ζ₂(7), ζ₂(9), ζ₂(11), ζ₂(13) is irrational, and it implies the companion result, formalised in a separate repository, that at least one of ζ₂(7), ζ₂(9), ζ₂(11) is irrational. The proof uses linear forms S_n = ∫ R_n'''(t+1/2) dt in 1, ζ₂(7), ζ₂(9) built from the shifted well-poised rational functions R_n(t) = (2t+n) Π_{m=1}^{6} (t+1/2−h_m)_(n+2h_m) / (t)_(n+1)^6 with h = (n/40)(−17, 1, 2, 3, 5, 6). The 2-adic size of S_n comes from Lai's and Sprang's Δ-calculus. The size of the coefficients comes from a contour-integral representation and a saddle-point bound, whose numerical inequalities are certified in Lean. The odd part of the denominators is bounded by Legendre-type counts at the poles, the vanishing of R_n at half-integers, kernel-checked certificates and the prime number theorem (proved here from a vendored Lean proof of the Wiener–Ikehara theorem). If both values were rational, the valuations of the coefficients at the prime n − 1 (an idea of Lai and Sprang) would make S_n non-zero for infinitely many n, and Lai's irrationality criterion gives the contradiction. The mathematics and the Lean code were produced by AI agents under human direction and have not been refereed.",
+  "authors": [
+    "Gennaro Marco Devincenzis"
+  ],
+  "repository": "https://github.com/gmDevi/zeta2-7-9-lean",
+  "commit": "3797cb6e4f8653744c0aa8e66ec8eb3645e75dcd",
+  "project_path": null,
+  "declarations": [
+    "Zeta2.Pair.zeta2_7_9_not_both_rational_palomar"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11S40",
+      "11S80",
+      "11M06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T20:15:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3797cb6e4f8653744c0aa8e66ec8eb3645e75dcd",
+        "fork_repository": "PalomarArchive/gmDevi--zeta2-7-9-lean--782bf3edf3d4",
+        "source_repository": "gmDevi/zeta2-7-9-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:28b56a15ab2dea0719f2939d1856742ea8b7c56847257ae1e1f91cc37c06d1aa"
+}

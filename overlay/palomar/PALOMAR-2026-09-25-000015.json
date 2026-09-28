@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000015",
+  "version": 1,
+  "title": "Formalization of Scott's Measurement Structures and Linear Inequalities in Lean 4",
+  "abstract": "A Lean 4 / mathlib formalization of Dana Scott's 1964 paper *Measurement Structures and Linear Inequalities* (Journal of Mathematical Psychology 1 (1964), 233–247). The paper derives necessary and sufficient conditions for three finite representation problems — intransitive indifference, ordered differences, and subjective probability — from the general solvability criterion for finite systems of linear inequalities. The development also covers Scott's ordered-group and signed-charge remarks, literal vector cancellation, and the KPS obstruction to de Finetti's five axioms. Every compared equivalence is described predicate-by-predicate in Challenge.lean and the README, including its numerical-representation side and its qualitative cancellation, permutation, reversal, probability, or Kelley-cover side. The additional infinite theorem is a new, stronger modern characterization first stated in this project; it adapts Kelley's 1959 countable-cover/separation method and is not attributed to Scott. The Lean development was drafted with AI-agent assistance under Lars Warren Ericson's direction and review. Dana S. Scott, Vijay D'Silva, and Brian Milnes are co-authors of the formalization report. There is no sorry outside the deliberate holes in Challenge.lean, no project-defined axiom, and Mathlib is the only Lake dependency.",
+  "authors": [
+    "Lars Warren Ericson",
+    "Dana S. Scott",
+    "Vijay D'Silva",
+    "Brian Milnes"
+  ],
+  "repository": "https://github.com/catskillsresearch/scott1964",
+  "commit": "2c35b7d2b7f5d60c20381a2f497bb0ab7d4d0a1f",
+  "project_path": null,
+  "declarations": [
+    "Scott1964.MeasurementStructures.LinearInequalities.scott_theorem_1_1",
+    "Scott1964.MeasurementStructures.LinearInequalities.scott_theorem_1_2",
+    "Scott1964.MeasurementStructures.LinearInequalities.scott_theorem_1_3",
+    "Scott1964.MeasurementStructures.LinearInequalities.scott_theorem_1_4",
+    "Scott1964.MeasurementStructures.theorem_2_1",
+    "Scott1964.MeasurementStructures.theorem_3_1",
+    "Scott1964.MeasurementStructures.theorem_3_2",
+    "Scott1964.MeasurementStructures.theorem_4_1",
+    "Scott1964.MeasurementStructures.Probability.Infinite.reconstructed_infinite_theorem_4_1"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO",
+      "math.LO",
+      "econ.TH"
+    ],
+    "msc2020": [
+      "91C05",
+      "15A39",
+      "91B16",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T12:54:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2c35b7d2b7f5d60c20381a2f497bb0ab7d4d0a1f",
+        "fork_repository": "PalomarArchive/catskillsresearch--scott1964--40b95032b04d",
+        "source_repository": "catskillsresearch/scott1964"
+      }
+    ]
+  },
+  "statement_hash": "sha256:18638f28a97e0bda87622def3845653ead7a5337bdb6c29d06f30d4347287dc6"
+}

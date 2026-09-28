@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000004",
+  "version": 1,
+  "title": "Classical Seifert–van Kampen theorem for the fundamental groupoid",
+  "abstract": "Proves that for every topological space X and open cover X = U ∪ V, the inclusion-induced square of Mathlib's ordinary continuous-path fundamental groupoids for U ∩ V, U, V, and X is a pushout in Cat. The statement retains all points as objects and assumes no basepoint, connectedness, or separation conditions. The proof uses continuous paths and endpoint-preserving homotopies, specializes an auxiliary preorder to the indiscrete relation, and proves a natural equivalence with Mathlib's ordinary fundamental groupoid. It constructs the categorical descent functor by path subdivision and proves homotopy invariance by a square subdivision; it does not invoke the imported directed van Kampen theorem.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/classical-svk-lean",
+  "commit": "874680e16db88b4a41daadf56eafbac79fd2f748",
+  "project_path": null,
+  "declarations": [
+    "ClassicalSVK.seifert_van_kampen_groupoid"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AT",
+      "math.CT"
+    ],
+    "msc2020": [
+      "55Q05",
+      "18B40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T05:30:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "874680e16db88b4a41daadf56eafbac79fd2f748",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--classical-svk-lean--8ad5e1dd9311",
+        "source_repository": "Arthur742Ramos/classical-svk-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f4d3a4b6a0e672c93018e328c6b84aff6cb546a5f07adc1147150b44965d00b0"
+}

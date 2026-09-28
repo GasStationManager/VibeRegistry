@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ruplet/formalization-of-bounded-arithmetic",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.FormalizationOfBoundedArithmetic",
   "declarations": [
     "V0Model.ind_strengthened_v0",
@@ -61,5 +61,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FormalizationOfBoundedArithmetic.lean",
-  "statement_hash": "sha256:c1b0bddd094285cd62248ca9c45344d9c4c4c497361068db9bc7bd7fcbff4582"
+  "statement_hash": "sha256:dca3fef2198fe7dbab1eefbd84a43517b7753417a472e11c334af6badefbb4ae"
 }

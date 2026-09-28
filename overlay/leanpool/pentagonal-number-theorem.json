@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/wwylele/PentagonalNumberTheorem",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.PentagonalNumberTheorem",
   "declarations": [
     "pentagonalNumberTheorem_powerSeries",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PentagonalNumberTheorem.lean",
-  "statement_hash": "sha256:ef5ba4e582c748852dbb3c46d770728b8db6093f7b7bd8c6c9a208cceb3ad9a2"
+  "statement_hash": "sha256:b9c73a3094e440987f64d45b485775b1fd736256170a3df4696bab05d4309397"
 }

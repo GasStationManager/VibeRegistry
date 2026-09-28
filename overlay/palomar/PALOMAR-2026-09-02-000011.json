@@ -2,19 +2,21 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-09-02-000011",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-02-000011",
-  "version": 1,
+  "version": 2,
   "title": "A machine-checked bound of 0.6934 for Besicovitch's 1/2-problem",
-  "abstract": "Besicovitch's 1/2-conjecture asserts that a Borel set in the plane with finite one-dimensional Hausdorff measure whose lower density exceeds 1/2 almost everywhere is countably 1-rectifiable. Writing sigma_1(R^2) for the least threshold that forces countable 1-rectifiability, the conjecture is sigma_1(R^2) = 1/2. The previously published record is sigma_1(R^2) <= 7/10, obtained by De Lellis, Glaudo, Massaccesi and Vittone.\nThis development proves, with a complete Lean 4 proof term, sigma_1(R^2) <= 6934/10000 = 0.6934.",
+  "abstract": "Besicovitch's 1/2-conjecture asserts that a Borel set in the plane with finite one-dimensional Hausdorff measure whose lower density exceeds 1/2 almost everywhere is countably 1-rectifiable. Writing sigma_1(R^2) for the least threshold that forces countable 1-rectifiability, the conjecture is sigma_1(R^2) = 1/2. The previously published record is sigma_1(R^2) <= 7/10, obtained by De Lellis, Glaudo, Massaccesi and Vittone.\nThis development proves, with a complete Lean 4 proof term, sigma_1(H) <= 6934/10000 = 0.6934 for every real Hilbert space H, without finite-dimensionality or separability assumptions.",
   "authors": [
     "Yongxi Lin"
   ],
   "repository": "https://github.com/CoolRmal/Besicovitchs-1-2",
-  "commit": "17c9597b2a901bf386d5bb8382d0a74d2069f25b",
+  "commit": "8b0e98aa712374c96da7e619624f5b36ed8d5fd3",
   "project_path": null,
   "declarations": [
     "Besicovitch.sigma_one_plane_le_6934_div_10000",
     "Besicovitch.forcesOneRectifiability_plane_of_gt",
-    "Besicovitch.one_half_le_sigma_one_plane"
+    "Besicovitch.one_half_le_sigma_one_plane",
+    "Besicovitch.forcesOneRectifiability_of_gt_6934_div_10000",
+    "Besicovitch.sigma_one_le_6934_div_10000"
   ],
   "informal": {},
   "classification": {
@@ -31,7 +33,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-09-02T23:12:17Z",
+  "published_at": "2026-09-20T15:48:56Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -45,11 +47,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "17c9597b2a901bf386d5bb8382d0a74d2069f25b",
+        "commit": "8b0e98aa712374c96da7e619624f5b36ed8d5fd3",
         "fork_repository": "PalomarArchive/CoolRmal--Besicovitchs-1-2--78db2fccbeb7",
         "source_repository": "CoolRmal/Besicovitchs-1-2"
       }
     ]
   },
-  "statement_hash": "sha256:4741e58fdf9ae33340b80a14001cd7dbe43eb1f41d80ccda39f9d743ca019721"
+  "statement_hash": "sha256:25bc528fb152b1241db7a4f1e78b255367b0773b01e97f73e5a6a46a10aff2cd"
 }

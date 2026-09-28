@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-24-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-24-000001",
+  "version": 1,
+  "title": "The Favard-length decay exponent of the four-corner Cantor set is at least 1/4",
+  "abstract": "For the four-corner Cantor set approximants K_n = C_n × C_n, where C_n is the union of the 2^n intervals of length 4^{-n} with left endpoints sum_{j<=n} w_j 4^{-j}, w_j in {0,3}, let α_Fav be the supremum of the a >= 0 for which the Favard length Fav(K_n) = (1/π) ∫_0^π |π_θ(K_n)| dθ is at most C n^{-a} for all n >= 1. This project proves in Lean that every a < 1/4 is admissible, so 1/4 <= α_Fav, together with the classical bound α_Fav <= 1. The previous best lower bounds were 1/6 (Nazarov-Peres-Volberg, 2010) and 1/5 (Marshall, arXiv:2509.02882 v2, 2026, whose v1 claim of 1/4 was withdrawn). The new ingredient is a joint negative-moment estimate for the low-frequency cosine product. The argument comes from an unpublished AI-assisted manuscript, and this formalization is its first complete proof.",
+  "authors": [
+    "Yongxi Lin"
+  ],
+  "repository": "https://github.com/CoolRmal/FavardLength",
+  "commit": "65f19d4c36d4e576417da893f54cf351aef9d672",
+  "project_path": null,
+  "declarations": [
+    "Favard.favard_le_rpow_of_lt_quarter",
+    "Favard.one_quarter_le_decayExponent",
+    "Favard.le_one_of_mem_admissibleExponents",
+    "Favard.decayExponent_le_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.MG"
+    ],
+    "msc2020": [
+      "28A80",
+      "28A75",
+      "42A38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-24T01:22:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "65f19d4c36d4e576417da893f54cf351aef9d672",
+        "fork_repository": "PalomarArchive/CoolRmal--FavardLength--e8794c618c42",
+        "source_repository": "CoolRmal/FavardLength"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a557205ca75a31abea41139b93d38e0208cfaf3e617c1f9f6a3868a32af17815"
+}

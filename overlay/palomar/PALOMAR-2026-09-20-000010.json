@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-20-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-20-000010",
+  "version": 1,
+  "title": "The order-six stable-marriage finite-poset bound",
+  "abstract": "A Lean formalization of the finite-poset theorem that any finite poset with at most fifteen elements, width at most three, and the CI2 common-incomparability condition has at most forty-eight antichains.",
+  "authors": [
+    "Myunglae Jo"
+  ],
+  "repository": "https://github.com/insammael/stable-marriage-f6",
+  "commit": "2bbce71bd8dedafd31539ed6a7a5cd71b12f50d6",
+  "project_path": null,
+  "declarations": [
+    "StableMarriageF6Public.totalAntichains_le_48"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "06A07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-20T18:44:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2bbce71bd8dedafd31539ed6a7a5cd71b12f50d6",
+        "fork_repository": "PalomarArchive/insammael--stable-marriage-f6--c8bb3b0946a5",
+        "source_repository": "insammael/stable-marriage-f6"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c6bfbd45fab88b2513a5d71d562cb3cbd92ea8051975e0f047daed32a571db36"
+}

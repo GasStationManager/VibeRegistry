@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/BochaoKong/nullstellensatz",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.LocalComplexGeometry",
   "declarations": [
     "LocalComplexGeometry.localAnalyticNullstellensatz",
@@ -60,5 +60,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/LocalComplexGeometry.lean",
-  "statement_hash": "sha256:f76dddb5d9eab9c2752ea23de2a4ef111728129dd5d9f86c6d45de6b88ba2a02"
+  "statement_hash": "sha256:ada27d735d88a3bf8f2f66d0f392ff42e7a2aefe13eed57c8624d61b08eead4b"
 }

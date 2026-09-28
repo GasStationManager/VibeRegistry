@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000012",
+  "version": 1,
+  "title": "An exact counterexample to the D-unstable-core conjecture for parameter-rich reaction networks",
+  "abstract": "Vassena and Stadler conjectured that a reaction network with parameter-rich kinetics cannot have a Hurwitz-unstable Jacobian unless it contains a D-unstable core, a minimal square child-selection submatrix that becomes unstable under positive column scaling. We show that this conjecture is false. We construct a consistent reaction network with four species and five reactions and an admissible reactivity matrix for which the Jacobian has an eigenvalue with strictly positive real part, yet the network has no D-unstable core. Consistency is witnessed by a strictly positive stoichiometric kernel flux, and reactivities are positive exactly on reactant incidences. The counterexample and the resulting negation of the universal necessity statement are proved in Lean 4 with Mathlib.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p003-d-unstable-cores",
+  "commit": "95798cfde0bf77c95f63d211b18c19cb63c9cad8",
+  "project_path": null,
+  "declarations": [
+    "DUnstableCores.parameterRich_consistent_core_necessity_fin4_fin5_false"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS"
+    ],
+    "msc2020": [
+      "15A18",
+      "34D20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T10:48:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "95798cfde0bf77c95f63d211b18c19cb63c9cad8",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p003-d-unstable-cores--6ce7c7f22ed6",
+        "source_repository": "mmislan/palomar-p003-d-unstable-cores"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2d6d06828afb687c5f370bc255cb3fdc405b413350127e3f87e3e4f42032c85a"
+}

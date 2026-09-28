@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000024",
+  "version": 1,
+  "title": "Arrow's impossibility theorem (general finite version)",
+  "abstract": "Formalizes Arrow's impossibility theorem for finitely many voters and finitely many alternatives (at least three): every social welfare function satisfying unanimity and independence of irrelevant alternatives is dictatorial. The proof follows the classical decisive-coalition argument: field expansion (a coalition decisive for one pair is decisive for every pair) and group contraction (a decisive coalition with at least two voters contains a smaller decisive coalition), iterated down to a singleton dictator. This is a reusable formalization artifact, not a claim of new mathematics.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/arrow-impossibility-lean",
+  "commit": "4f405d27d0b244574bbee5d3d79bae0c66bda16e",
+  "project_path": null,
+  "declarations": [
+    "Arrow.Palomar.decisiveUniv",
+    "Arrow.Palomar.fieldExpansion",
+    "Arrow.Palomar.groupContraction",
+    "Arrow.Palomar.arrowImpossibility"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91B14"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T19:02:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4f405d27d0b244574bbee5d3d79bae0c66bda16e",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--arrow-impossibility-lean--5d0750e4e794",
+        "source_repository": "Arthur742Ramos/arrow-impossibility-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d820513d2943434e0b4447b285bdb0b0ffc966059dae943fd59a7be1ab4b15d0"
+}

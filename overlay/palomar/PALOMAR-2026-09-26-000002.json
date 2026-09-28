@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-26-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-26-000002",
+  "version": 1,
+  "title": "Myerson-Satterthwaite impossibility theorem (continuous bilateral-trade version)",
+  "abstract": "Formalizes the continuous-type bilateral-trade impossibility result: no mechanism can satisfy ex post efficiency (almost surely), Bayesian incentive compatibility, interim individual rationality, and weak ex ante budget balance when buyer and seller supports overlap. The proof uses payoff equivalence and envelope identities, together with the strict rent-gap identity B + C > S.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/myerson-satterthwaite-lean",
+  "commit": "f4dae9744e26a499679e4b8a7aeb9d82dd3f11ee",
+  "project_path": null,
+  "declarations": [
+    "MS.Palomar.myersonSatterthwaite"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "econ.TH",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91B26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-26T02:53:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f4dae9744e26a499679e4b8a7aeb9d82dd3f11ee",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--myerson-satterthwaite-lean--29d4c4ff61d0",
+        "source_repository": "Arthur742Ramos/myerson-satterthwaite-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5c501e56abae6b454db5bd88f9527e9c21f289679dfa94794bb02580659182ca"
+}

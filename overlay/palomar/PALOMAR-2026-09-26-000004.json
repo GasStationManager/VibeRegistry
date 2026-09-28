@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-26-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-26-000004",
+  "version": 2,
+  "title": "Existence of a Model Companion for Groups of Exponent 3: Lean Formalization",
+  "abstract": "This project formalizes the existence of a model companion for the first-order theory of groups satisfying x^3 = 1. Its principal group-theoretic result gives a uniform, explicit bound on the number of generators needed to witness a failure of amalgamation with an existentially closed exponent-three group. The development follows the accompanying manuscript through free groups, associated graded Lie algebras, strict extensions, and the bounded-amalgamation criterion.",
+  "authors": [
+    "Yawara Ishida"
+  ],
+  "repository": "https://github.com/yawara/t3-model-companion",
+  "commit": "7d38e7d9fe9d131e713ce160853983321970e598",
+  "project_path": null,
+  "declarations": [
+    "T3.exists_bounded_nonamalgamation_witness",
+    "T3.has_model_companion"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.GR"
+    ],
+    "msc2020": [
+      "03C60",
+      "20A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-26T12:58:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7d38e7d9fe9d131e713ce160853983321970e598",
+        "fork_repository": "PalomarArchive/yawara--t3-model-companion--87b9fb97bd12",
+        "source_repository": "yawara/t3-model-companion"
+      }
+    ]
+  },
+  "statement_hash": "sha256:512cfdf37d609316684ba1d03952f50e2dd97a5e96250f2519ef832af5bca530"
+}

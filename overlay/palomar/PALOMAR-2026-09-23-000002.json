@@ -1,0 +1,66 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-23-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-23-000002",
+  "version": 1,
+  "title": "Positive density of Collatz convergence at every rate above 3/log(4/3)",
+  "abstract": "A Lean 4 formalization of eighteen selected Phase 1 statements, led by a single positive lower natural-density constant for the set of positive integers reaching 1 within c log x ordinary Collatz steps, valid for every fixed c > 3/log(4/3). It also covers fixed-target hitting, the exact target criterion, individual-root consequences, vanishing-clock-loss variants, depth-eleven density bounds, exact finite fan allocation, real-moment comparison, target profiles, and bounded actual reference entropy with explicit tail estimates and zero normalized growth. Density witnesses and levels are existential. Full optimized formulas, complementary capacity, the Renyi-order right limit, amplified roots, and convergence of every positive integer remain outside the formalized scope.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/CollatzConvergencePositiveDensity",
+  "commit": "f0fda887ee60dc8ac4ef0d864935148b03734726",
+  "project_path": null,
+  "declarations": [
+    "CollatzWordCert.collatz_convergence_positive_lower_density",
+    "CollatzWordCert.collatz_convergence_depth_eleven_density_bound",
+    "CollatzWordCert.collatz_logarithmic_threshold_lt_10431_div_1000",
+    "CollatzWordCert.collatz_hitting_positive_lower_density",
+    "CollatzWordCert.collatz_hitting_depth_eleven_density_bound",
+    "CollatzWordCert.collatz_hitting_positive_density_iff_target_not_divisible_by_three",
+    "CollatzWordCert.collatz_canonical_root_reaches_one_with_positive_density",
+    "CollatzWordCert.collatz_convergence_density_with_vanishing_clock_loss",
+    "CollatzWordCert.collatz_hitting_density_with_vanishing_clock_loss",
+    "CollatzWordCert.collatz_convergence_fractional_density_bound",
+    "CollatzWordCert.collatz_hitting_fractional_density_bound",
+    "CollatzWordCert.fan_profile_eq_optimal_allocation",
+    "CollatzWordCert.fan_profile_ge_real_moment_bound",
+    "CollatzWordCert.collatz_convergence_profile_density_bound",
+    "CollatzWordCert.collatz_hitting_profile_density_bound",
+    "CollatzWordCert.reference_entropy_increment_bounds",
+    "CollatzWordCert.reference_entropy_tends_to_finite_limit_with_tail_bound",
+    "CollatzWordCert.reference_entropy_div_level_tends_to_zero"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B83",
+      "37P99"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-23T04:46:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f0fda887ee60dc8ac4ef0d864935148b03734726",
+        "fork_repository": "PalomarArchive/shaikidris--CollatzConvergencePositiveDensity--b2ee23919c0b",
+        "source_repository": "shaikidris/CollatzConvergencePositiveDensity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6919ac9e22ac35d0c5032ca4ad9b5872df647ec48cfd08978190c128d4c3bf70"
+}

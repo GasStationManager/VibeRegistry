@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000018",
+  "version": 1,
+  "title": "Irrationality of the Riemann zeta value at five",
+  "abstract": "Formalization of the irrationality claim for the real value of the Riemann zeta function at five in Aabir Fauzan's September 2026 preprint. The two compared statements assert irrationality of this zeta value and of the sum of reciprocal fifth powers. The development constructs integer polynomials using normalized Hankel determinants, proves positivity and decay estimates, and derives irrationality. The paper's quantitative irrationality-measure claim is not part of this submission.",
+  "authors": [
+    "Azriel Fasten"
+  ],
+  "repository": "https://github.com/realazthat/zeta5-lean2",
+  "commit": "2fa4e829816e1d4a4f61249cb758e67195d46806",
+  "project_path": null,
+  "declarations": [
+    "Zeta5Palomar.irrational_zeta_five",
+    "Zeta5Palomar.irrational_reciprocal_fifth_power_sum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11M06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T14:41:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2fa4e829816e1d4a4f61249cb758e67195d46806",
+        "fork_repository": "PalomarArchive/realazthat--zeta5-lean2--cb81e5ae7e91",
+        "source_repository": "realazthat/zeta5-lean2"
+      }
+    ]
+  },
+  "statement_hash": "sha256:297ce9e0216e0cc75cdef363989883bd96123c433cfb51945a064578f4dbdbf8"
+}

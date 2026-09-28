@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/velvetmonkey/kuramoto-lean",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.Kuramoto",
   "declarations": [
     "kuramotoR_norm_le_one",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Kuramoto.lean",
-  "statement_hash": "sha256:e3fc7e84750098243147856175c032e5e073571fd775c882f6c58567d5320136"
+  "statement_hash": "sha256:377d9c1e17ba7a9e5af18cee6d94fdadc9274a2753deec3091af8c383b40216f"
 }

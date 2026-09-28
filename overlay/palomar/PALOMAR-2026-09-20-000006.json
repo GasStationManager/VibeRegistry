@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-20-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-20-000006",
+  "version": 1,
+  "title": "A formal proof of the Kung–Traub conjecture",
+  "abstract": "For deterministic stationary root-finding methods without memory, the Kung–Traub bound 2^(n-1) for n >= 1 real or complex scalar derivative observations, the bound given by the first group size times the product of one plus each subsequent size for prescribed positive groups, and entire counterexamples, including one real witness defeating every larger real exponent simultaneously. A concrete inverse Hermite method attains 2^(n-1) for n >= 2 on open real intervals and has that exact order on exp(x)-1. Supporting constructions are included.",
+  "authors": [
+    "Matthew J. Colbrook"
+  ],
+  "repository": "https://github.com/MColbrook/Kung-Traub_conjecture",
+  "commit": "902bb22e24fb5c4e8e319305fb75378fb32d9eb4",
+  "project_path": null,
+  "declarations": [
+    "KungTraub.entire_counterexample",
+    "KungTraub.no_entire_universal_order_above",
+    "KungTraub.no_universal_order_above",
+    "KungTraub.grouped_entire_counterexample",
+    "KungTraub.no_grouped_entire_universal_order_above",
+    "KungTraub.no_grouped_universal_order_above",
+    "KungTraub.simultaneous_entire_counterexample",
+    "KungTraubAppendices.complex_entire_counterexample",
+    "KungTraubAppendices.no_complex_universal_order_above",
+    "KungTraubAppendices.inverseHermite_universal_local_order",
+    "KungTraubAppendices.inverseHermite_exp_asymptotic",
+    "KungTraubAppendices.inverseHermite_not_local_order_exp"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NA"
+    ],
+    "msc2020": [
+      "65H05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-20T13:01:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "902bb22e24fb5c4e8e319305fb75378fb32d9eb4",
+        "fork_repository": "PalomarArchive/MColbrook--Kung-Traub_conjecture--f75e5848a7bb",
+        "source_repository": "MColbrook/Kung-Traub_conjecture"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ef19da64189bebe593248e81f4fbd70eb0144e87b149cc398eaa49a058bb85d0"
+}

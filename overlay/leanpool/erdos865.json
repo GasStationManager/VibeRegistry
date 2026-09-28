@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/mrricky22/erdos-865-lean",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.Erdos865",
   "declarations": [
     "Erdos865.erdos865_upper_bound",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos865.lean",
-  "statement_hash": "sha256:dca87604d1886e2c1de1df729a143d29aff205fcc8d8895bdb783203d4877371"
+  "statement_hash": "sha256:43dc4f503b70fa4035e86810ff073dd23d219fc4f389eba804fb2540bfc89100"
 }

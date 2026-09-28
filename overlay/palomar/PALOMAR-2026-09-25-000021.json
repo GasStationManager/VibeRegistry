@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000021",
+  "version": 1,
+  "title": "Linear-size autocatalytic sets are asymptotically absent in the sparse binary polymer model",
+  "abstract": "In the sparse binary-polymer model with reversible ligation and cleavage, fix the food-length bound t, a nonnegative catalysis intensity lambda, and a linear reaction budget Cn. As the maximum polymer length n tends to infinity, the probability of a nonempty reflexively autocatalytic and food-generated reaction set with at most Cn channels tends to zero. The probability that some molecule catalyses a nonempty food-generated reaction set that constructs that molecule also tends to zero. These statements address the linear-size and single-molecule self-construction questions for the sparse catalysis law.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p012-sparse-raf-exclusion",
+  "commit": "324c7903021c54c3ee140637a98aef8766ec348b",
+  "project_path": null,
+  "declarations": [
+    "SparseLinearRAF.sparse_linear_raf_literature_resolution",
+    "SparseLinearRAF.no_high_probability_linear_raf",
+    "SparseLinearRAF.single_catalyst_probability_tendsto_zero"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "60C05",
+      "05C65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T15:40:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "324c7903021c54c3ee140637a98aef8766ec348b",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p012-sparse-raf-exclusion--812afa0bdd35",
+        "source_repository": "mmislan/palomar-p012-sparse-raf-exclusion"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8a1bd7f863fca4e00bc8df5f0069633599e0e7158e85471b6d1d8146a4e23856"
+}

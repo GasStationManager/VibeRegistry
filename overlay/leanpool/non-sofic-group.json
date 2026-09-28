@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/openai/ten-proofs",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.NonSoficGroup",
   "declarations": [
     "SoficGroups.exists_finitelyPresented_nonsofic_group"
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/NonSoficGroup.lean",
-  "statement_hash": "sha256:2090a60ea6bc528bc9eb5d5b17e916e4e1adac3b1fc556abffcbf34c25bae071"
+  "statement_hash": "sha256:5af1433cde7f88f330e2301480fdaa56735eb581bdef3a9da49eaf422aab2182"
 }

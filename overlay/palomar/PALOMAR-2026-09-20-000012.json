@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-20-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-20-000012",
+  "version": 1,
+  "title": "Microscopic–bulk crossover and conditional affine laws",
+  "abstract": "Conditioned on the presence of a run contained in a finite prefix, the first such run has a mixture law combining a microscopic border contribution with a uniform bulk location, geometric excess and fair sign. The results retain the marked record, describe both location scales in finite and infinite phase regimes, and determine the sign bias. Under compatible affine conditions on small primes, the border probability is exactly 2^(-d), where d is the row-space deficit. Affine localization and sign bias use the rank information budget without future neutrality; the full marked-clock limit also requires eventual neutrality for each fixed finite future prefix. Approximation uses the prime number theorem, the Poisson process estimate of Arratia, Goldstein and Gordon, and the stated Laishram–Shorey, Shorey and Nicolas–Robin estimates. The exact affine border identity needs none of these literature hypotheses.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "d8edbc44654f623fc68df92612c26a6ef9a90ec2",
+  "project_path": null,
+  "declarations": [
+    "PaperCV3Audit.v3_crossover_affine_border_mass",
+    "PaperCV3Audit.v3_crossover_complete_moving_mixture",
+    "PaperCV3Audit.v3_crossover_locations",
+    "PaperCV3Audit.v3_crossover_locations_atTop",
+    "PaperCV3Audit.v3_crossover_locations_atBot",
+    "PaperCV3Audit.v3_crossover_sign",
+    "PaperCV3Audit.v3_crossover_affine_complete_clock",
+    "PaperCV3Audit.v3_crossover_affine_locations",
+    "PaperCV3Audit.v3_crossover_affine_locations_atTop",
+    "PaperCV3Audit.v3_crossover_affine_locations_atBot",
+    "PaperCV3Audit.v3_crossover_affine_sign"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-20T20:22:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d8edbc44654f623fc68df92612c26a6ef9a90ec2",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4cde89ae155c485e1019fb9a81e6cd052b2e17fe35c1946b8588b81755e7ec9e"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-27-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-27-000006",
+  "version": 1,
+  "title": "Péterfalvi's Problem for p = 3: No Group Satisfies Hypothesis (B)",
+  "abstract": "Glauberman and Norton (Proc. Amer. Math. Soc. 119, 1993) end their paper on a combinatorial problem that arises in the proof of the Feit–Thompson odd order theorem with a question of Péterfalvi: can the hypothesis of their Proposition 9 be satisfied for p = 3? The same question is Problem 1 in Appendix C of Bender and Glauberman, Local Analysis for the Odd Order Theorem (1994). Let F be the field with p^q elements, P its additive group, U its group of units of norm one over the prime field, H the semidirect product P ⋊ U, and P₀ the image of the additive group of the prime field in H. Hypothesis (B) asks for an injective homomorphism σ from H into a group G, a finite abelian subgroup Q of G whose order is prime to p, and an element y of Q, such that σ(P₀) normalizes Q and σ(P₀)^y normalizes σ(U). Proposition 9 also assumes condition (A): q does not divide p − 1. This project proves in Lean 4 that the answer is negative: for every prime q with q ∤ 3 − 1, no group G, finite or infinite, satisfies hypothesis (B) with p = 3. It also proves Péterfalvi's example from the same paper, which shows that SL(2, 2^q) satisfies hypothesis (B) with p = 2, so the hypothesis is not empty. The proof is new. It turns a witness of hypothesis (B) into relations between three copies of the additive group of the field with 3^q elements, and it rules out these relations by arithmetic in that field.",
+  "authors": [
+    "Yawara Ishida"
+  ],
+  "repository": "https://github.com/yawara/peterfalvi-problem",
+  "commit": "698b7ae0af649f7fad48c482aa8ff0d2d14336bb",
+  "project_path": null,
+  "declarations": [
+    "PeterfalviProblem.not_hypothesisB_three",
+    "PeterfalviProblem.hypothesisB_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "math.NT"
+    ],
+    "msc2020": [
+      "20D05",
+      "20D10",
+      "11T06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-27T02:21:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "698b7ae0af649f7fad48c482aa8ff0d2d14336bb",
+        "fork_repository": "PalomarArchive/yawara--peterfalvi-problem--a99f0c3a84ab",
+        "source_repository": "yawara/peterfalvi-problem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6bd6cae4ac39b4348f13060fd8b666c38aad6a46584749b3ba1a84358b89a8a6"
+}

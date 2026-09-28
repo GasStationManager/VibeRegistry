@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/wupr/order-p-q",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.OrderPQ",
   "declarations": [
     "OrderPQ.exists_card_eq_prime_mul_prime_and_not_isCyclic_iff",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/OrderPQ.lean",
-  "statement_hash": "sha256:a54f475be4691bfd63b0744e4bc5cbe392584c4693f32212feea153857bee7fe"
+  "statement_hash": "sha256:24f4cfd81a1cea40b4ec8b103979ebbafe7e4b28d620e9dc93ad963988957fed"
 }

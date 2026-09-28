@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-20-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-20-000011",
+  "version": 1,
+  "title": "Microscopic boundary, prefixes and longest runs",
+  "abstract": "The exact left-border probability is 2^(-pi(L)), and the microscopic non-vacancy probability satisfies 0 <= q_L/2^(-pi(L)) - 1 <= 2^(-pi(L)/256) for sufficiently large L. The results give conditional localization and uniqueness, stability under changes of mesoscopic cutoff, and a quantitative Poisson law for runs contained in a finite prefix. They yield the critical longest-run distribution and asymmetric almost-sure envelopes for all integer prefix lengths. The exact border identity needs no literature hypothesis. The asymptotic results use, as applicable, scalar Stein bounds, the prime number theorem, the uniform prime-divisor estimate of Laishram and Shorey, Shorey's square-product exclusion, and the divisor bound of Nicolas and Robin.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-c-lean",
+  "commit": "d8edbc44654f623fc68df92612c26a6ef9a90ec2",
+  "project_path": null,
+  "declarations": [
+    "PaperCV3Audit.v3_boundary_exact",
+    "PaperCV3Audit.v3_boundary_microscopic",
+    "PaperCV3Audit.v3_boundary_mesoscopic",
+    "PaperCV3Audit.v3_boundary_prefix_quantitative",
+    "PaperCV3Audit.v3_boundary_prefix_critical",
+    "PaperCV3Audit.v3_boundary_asymmetric_envelopes",
+    "PaperCV3Audit.v3_boundary_longest_loglog"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-20T19:05:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d8edbc44654f623fc68df92612c26a6ef9a90ec2",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-c-lean--3e6fbf22dec6",
+        "source_repository": "Vulkin-prog/paper-c-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:96aa3f5888b2147527e17c776dc905d1b6c32046653310e9ac4fddb469434287"
+}

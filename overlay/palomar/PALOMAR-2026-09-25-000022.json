@@ -1,0 +1,80 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000022",
+  "version": 1,
+  "title": "Heights, Siegel's lemma, Roth's theorem and the Subspace Theorems in Lean",
+  "abstract": "A Lean 4 / Mathlib development of Schmidt's Subspace Theorem and the theory beneath it, following Bombieri–Gubler, Heights in Diophantine Geometry (Chapters 1–7), and Schmidt's route in general. Two libraries, sorry-free and within Lean's three standard axioms. ArithmeticHeights builds heights of points, polynomials, matrices and linear subspaces, Northcott and Kronecker, Minkowski's second theorem, Siegel's lemma and the Bombieri–Vaaler theorems. DiophantineApproximation builds on it Roth's theorem over a number field with several places (and Ridout, the p-adic form, targets at infinity, moving targets), the geometry of numbers of approximation domains, and the Subspace Theorem: parametric, with coefficients in K, with algebraic coefficients, for S-integral points, and in Vojta's general-position form. It then proves the applications — Schmidt's simultaneous approximation, a transcendence criterion, unit equations, decomposable-form, Thue–Mahler, hyperelliptic and norm-form equations, the Corvaja–Zannier gcd bound — and Evertse's quantitative steps: systems of inequalities, the gap principles, the count of small solutions, and the passage from height intervals to subspaces. Twenty-six headline statements are compared: seven forms of Siegel's lemma and Bombieri–Vaaler, seven of Roth's theorem, seven of the Subspace Theorem, and five of Evertse's counting of the subspaces.",
+  "authors": [
+    "Ralf Stephan"
+  ],
+  "repository": "https://github.com/rwst/Subspace-Theorems",
+  "commit": "d12aa25a9725e8d28c1bfc018c664b7ceb8d35c5",
+  "project_path": null,
+  "declarations": [
+    "Int.Matrix.exists_ne_zero_mulVec_eq_zero_iSup_abs_le",
+    "NumberField.exists_forall_exists_ne_zero_mulVec_eq_zero_absMulHeight_le",
+    "Int.Matrix.exists_linearIndependent_mulVec_eq_zero_prod_iSup_abs_le",
+    "Int.Matrix.exists_ne_zero_mulVec_eq_zero_iSup_abs_le_det_rpow",
+    "NumberField.exists_ne_zero_mem_ker_absMulHeight_le",
+    "NumberField.exists_linearIndependent_mem_ker_prod_absMulHeight_le",
+    "MvPolynomial.exists_ne_zero_mem_ker_mulHeight_rpow_le",
+    "NumberField.finite_setOf_prod_min_one_le",
+    "Real.irrationalityExponent_eq_two",
+    "Rat.finite_setOf_ridout",
+    "Rat.finite_setOf_apply_intCast_sub_le",
+    "NumberField.finite_setOf_prod_onePointApprox_le",
+    "NumberField.finite_setOf_prod_min_one_le_card_two",
+    "NumberField.finite_setOf_prod_min_one_le_of_isLittleO",
+    "NumberField.exists_finset_submodule_of_approxProd_le_card_two",
+    "NumberField.exists_finset_submodule_forall_approxDomain_subset",
+    "NumberField.exists_finset_submodule_of_approxProd_le",
+    "NumberField.exists_finset_submodule_of_approxProd_le_extension",
+    "NumberField.exists_finset_submodule_of_integer_of_affineProd_le",
+    "NumberField.exists_finset_submodule_of_generalProd_le",
+    "NumberField.exists_finset_submodule_of_approxProd_le_card_two_of_extension",
+    "NumberField.exists_finset_submodule_of_systemWeight_neg",
+    "NumberField.exists_finset_submodule_of_not_isLargeSolution",
+    "Rat.exists_finset_submodule_of_not_isLargeSolution",
+    "NumberField.exists_finset_submodule_of_forall_mem_interval",
+    "NumberField.exists_finset_submodule_of_card_eq_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J87",
+      "11J68",
+      "11G50",
+      "11J25",
+      "11H06",
+      "11D61",
+      "11D57",
+      "11D59"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T16:31:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d12aa25a9725e8d28c1bfc018c664b7ceb8d35c5",
+        "fork_repository": "PalomarArchive/rwst--Subspace-Theorems--9bd9bba330e8",
+        "source_repository": "rwst/Subspace-Theorems"
+      }
+    ]
+  },
+  "statement_hash": "sha256:456fe03512e497798652b4a627f8131c9c2fda2ffc2272d6ba8e3f2b692e30da"
+}

@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "block-spectral-sensitivity",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BlockSpectralSensitivity",
+  "version": 1,
+  "title": "Block sensitivity can exceed spectral sensitivity squared",
+  "abstract": "Constructs a total Boolean function on 14011 blocks of 144 bits with block sensitivity at least 14011 and squared spectral sensitivity at most U = 7149 + 2 sqrt(150108). Proves the strict separation lambda(f)^2.12 < bs(f), multiplicativity of spectral sensitivity under arbitrary block composition, and an exponential lower bound with factor 14011/U > 1.768 for the self-composed family. Includes reusable finite product probability, an asymmetric Lovasz local lemma, partial Boolean assignments, certificate-family spectral bounds, and a Paley doubly regular tournament. The formalized explicit exponent is 2.12; the exact logarithmic exponent is also retained.",
+  "authors": [
+    "Alex Meiburg"
+  ],
+  "repository": "https://github.com/Timeroot/BS_Lam",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.BlockSpectralSensitivity",
+  "declarations": [
+    "BSLambda.Final.exists_bs_gt_lam_rpow",
+    "BSLambda.Final.exists_counterexample",
+    "BSLambda.Final.exists_ratio_blowup",
+    "BSLambda.lam_comp",
+    "BSLambda.LLL.pr_avoid_pos"
+  ],
+  "informal": {
+    "BSLambda.Final.exists_bs_gt_lam_rpow": "There exists a total Boolean function on ZMod 14011 times Fin 144 whose block sensitivity strictly exceeds its spectral sensitivity raised to the real exponent 2.12.",
+    "BSLambda.Final.exists_counterexample": "There exists a gate labelling whose certificate-union indicator f has bs(f) at least 14011, lambda(f)^2 at most U = 7149 + 2 sqrt(150108), and lambda(f)^alpha at most bs(f), where alpha = 2 log(14011)/log(U) > 2.",
+    "BSLambda.Final.exists_ratio_blowup": "A single gate labelling yields, for every natural m, an m-fold self-composition F_m satisfying (14011/U)^m * lambda(F_m)^2 <= bs(F_m). The auxiliary theorem ratio_gt proves 14011/U > 1.768.",
+    "BSLambda.lam_comp": "For any Boolean functions on finite coordinate types, spectral sensitivity of their block composition equals the product of their spectral sensitivities, including the degenerate cases.",
+    "BSLambda.LLL.pr_avoid_pos": "In a finite uniform product of nonempty alphabets, events supported on specified coordinate sets have positive probability of all being avoided if each event probability is at most its weight times the product of one minus the weights of its dependent neighbours, with every weight strictly between zero and one."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q17",
+      "05D40",
+      "05C50"
+    ],
+    "tags": [
+      "boolean-functions",
+      "complexity",
+      "probabilistic-method"
+    ],
+    "branch": "computational complexity"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/BlockSpectralSensitivity.lean",
+  "statement_hash": "sha256:d0d845318b0d120d9718b6da18966cddb10d47b2b40a0db79fc77103299a7a7e"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000009",
+  "version": 1,
+  "title": "Weighted support criteria for reciprocal Mersenne subseries",
+  "abstract": "For an infinite set A of positive integers and an integer base b at least 2, consider the reciprocal Mersenne subseries X_A(b) = sum over a in A of 1/(b^a - 1). For a finite nonempty set P of primes, write h_P(a) for the P-part of a. The principal theorem proves irrationality when sum over a in A of h_P(a)/(a*(b^h_P(a) - 1)) converges. The base-two condition implies irrationality at every integer base at least 2 for every infinite subset of the host support. This is a sufficient support criterion, not a solution of the universal Erdős problem. It includes reciprocal-summable supports; the paper credits Erdős for that earlier stated all-base criterion and makes no identification with his suggested weakenings.\nThe five selected statements also give cofinally arbitrarily small positive weighted displacements, a strengthened positive divisor-cover criterion, and two common-average mixed-support extensions, one using an arbitrary positive weight budget. The proof averages displacements along multiples of a finite divisibility modulus, with another average controlling incomplete periods. Rationality would instead separate every positive displacement from zero. These extensions retain their explicit cover, summability, positivity and infinite-subset assumptions. Full support and all odd exponents are outside the weighted criterion; failure of the criterion is not a rationality assertion. The paper's achievement-set geometry, rational-membership tests and finite-denominator results are outside this registration. This entry supplies independently stated Challenge declarations and matching Lean proofs, with links to the complete paper and reasoning record; it makes no claim of independent human peer review or a novelty verdict.",
+  "authors": [
+    "Will Cook"
+  ],
+  "repository": "https://github.com/wcook04/plectis-erdos-lean",
+  "commit": "b85ed30805188eb4390a686b111294b24363418e",
+  "project_path": null,
+  "declarations": [
+    "PalomarCorpus.E257.DivisibilityWeightedSupport.divisibilityWeightedClaim",
+    "PalomarCorpus.E257.MixedWeightedCover.mixedSupportClaim",
+    "PalomarCorpus.E257.PaperStructuresBO.arbitraryWeightMixedSupport_allBase_hereditary",
+    "PalomarCorpus.E257.VariableExponentCover.strengthenedPositiveCoverClaim",
+    "PalomarCorpus.E257.WeightedCloseReturn.weighted_displacement_cofinal_close_return"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11B83"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T07:59:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b85ed30805188eb4390a686b111294b24363418e",
+        "fork_repository": "PalomarArchive/wcook04--plectis-erdos-lean--26c7e2ff36da",
+        "source_repository": "wcook04/plectis-erdos-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:201bb98282574ace0a1c261a2535fac839e969dc0cbd92d7a0aa1f844b846bd7"
+}

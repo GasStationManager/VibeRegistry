@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.MaxFlowMinCut",
   "declarations": [
     "Contrib.MaxFlowMinCut.maxflow_eq_mincut",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MaxFlowMinCut.lean",
-  "statement_hash": "sha256:1694cdb3be0d33e2fd28efb485603d81ac9f3d7ba774b377435ab6a2a346c612"
+  "statement_hash": "sha256:a6acf5a06a342e055efb27da24ffd019da9153229efb3ce450de0891fdc64e23"
 }

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/mrdouglasny/spectral-positivity",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.SpectralPositivity",
   "declarations": [
     "allpos_has_pos_eigenvec",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SpectralPositivity.lean",
-  "statement_hash": "sha256:021c1e753e7d0146f989db0b199f69ef5c9db8fcd1c36d4df3219e9ef0ca7cf6"
+  "statement_hash": "sha256:a19dbd3a6609b8a9d6aac45f4730c5a08df2c0a7209787b931790febb9226ad7"
 }

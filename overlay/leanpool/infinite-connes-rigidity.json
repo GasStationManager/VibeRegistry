@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/openai/ten-proofs",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.InfiniteConnesRigidity",
   "declarations": [
     "ConnesRigidity.infiniteConnesRigidity",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/InfiniteConnesRigidity.lean",
-  "statement_hash": "sha256:d0cb13e4ea3fb6004a8b841ae3b0865a1176cfd4f13738271a30ff20a67dbf36"
+  "statement_hash": "sha256:ef99d9db3a22941cf0a86d20c5ff1c4114b22f0070cf1616017e5c29ebc44303"
 }

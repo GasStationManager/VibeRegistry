@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-23-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-23-000003",
+  "version": 1,
+  "title": "Unit-distance graphs of dimension four with nine edges",
+  "abstract": "A graph has dimension n when n is the least number such that its vertices can be placed injectively in ℝⁿ with every edge of length one (Erdős, Harary and Tutte). House proved that a graph of dimension four has at least nine edges, and that nine is attained only by K_{3,3}. This project proves the second half in Lean 4, in the form google-deepmind/formal-conjectures states it as erdos_1007.variants.dimension_four_extremal: a graph of dimension four with nine edges and no isolated vertex is isomorphic to K_{3,3}. The proof follows Chaffee and Noble's proof of House's theorem. On the way it proves that K_{3,3} has dimension exactly four and that every graph with at most eight edges has a unit-distance representation in ℝ³ (Chaffee–Noble, Theorem 6).",
+  "authors": [
+    "Dishant Shah"
+  ],
+  "repository": "https://github.com/Dishah3241/Erdos1007",
+  "commit": "43f89415a6663848a1445effbda8b3abe77b052b",
+  "project_path": null,
+  "declarations": [
+    "Erdos1007.Palomar.target"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "05C62",
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-23T04:55:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "43f89415a6663848a1445effbda8b3abe77b052b",
+        "fork_repository": "PalomarArchive/Dishah3241--Erdos1007--ce3b8697073a",
+        "source_repository": "Dishah3241/Erdos1007"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e2920fa5964ecd225789e72210e7d2fc4de026ffa3fcb1ef26cbbdf075be6211"
+}

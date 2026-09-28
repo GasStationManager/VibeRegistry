@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000025",
+  "version": 1,
+  "title": "Same-ground RAF realizability of finite interior operators and the four-reaction threshold for the empty-or-at-least-three family",
+  "abstract": "Addressing the RAF-realizability question in Section 4 of Mike Steel's Interior Operators and Their Relationship to Autocatalytic Networks (arXiv:2305.16714v4, 2023), we characterize which interior operators on the subsets of a finite set E are maxRAF operators of catalytic reaction systems whose reaction set is exactly E. An interior operator is represented by its family of fixed sets, a union-closed family containing the empty set. A same-ground realization is a system with one reaction per element of E, finitely many molecule types, a food set and a catalysis relation; it realizes the empty set together with its RAFs, the nonempty reaction sets whose reactants arise from food by iterated closure under the selected reactions and whose reactions are each catalysed by a molecule of that closure. Such a family has a same-ground realization if and only if it is the intersection of an accessible union-closed family A and a predecessor-support family. Here A contains the empty set, is closed under unions, and every nonempty member of A has an element whose removal leaves a member of A; the members of A need not cover E. A set S is supported by a predecessor map P on E when every element e of S has some element of S in P(e), loops allowed. The family consisting of the empty set and all subsets of size at least three has a same-ground realization if and only if E has at most four elements. This gives the sharp threshold for the family considered in Proposition 5 and its subsequent remarks in Steel (2023). Both results are formalized in Lean 4 with Mathlib.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p005-raf-interior-realizability",
+  "commit": "ebc29d42debba48f8ffc90624d7bd14cdb4a281e",
+  "project_path": null,
+  "declarations": [
+    "RAFInteriorRealizability.palomar_same_ground_family_characterization",
+    "RAFInteriorRealizability.palomar_cplusThree_threshold"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B35",
+      "05C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T20:03:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ebc29d42debba48f8ffc90624d7bd14cdb4a281e",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p005-raf-interior-realizability--94f206c5ba90",
+        "source_repository": "mmislan/palomar-p005-raf-interior-realizability"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f03b964171563e76cb065e99725db9ffb4c7c392616ce8dba9108d38fd0e853e"
+}

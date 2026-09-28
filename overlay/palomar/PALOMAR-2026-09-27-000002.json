@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-27-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-27-000002",
+  "version": 1,
+  "title": "Corvaja–Zannier 2004: rational approximations to the powers of an algebraic number",
+  "abstract": "A Lean 4 / Mathlib formalization of the whole of P. Corvaja and U. Zannier, On the rational approximations to the powers of an algebraic number: solution of two problems of Mahler and Mendès France (Acta Math. 193 (2004)), built on the repository's libraries ArithmeticHeights and DiophantineApproximation, whose Subspace Theorem it uses. The library CorvajaZannier2004 is sorry-free and within Lean's three standard axioms. It proves the Main Theorem (finitely many non-pseudo-Pisot δqu that are very close to integers, u in a finitely generated group of algebraic numbers), Theorem 1 (Mahler's question: if ‖αⁿ‖ < lⁿ infinitely often, some power of α is a Pisot number), Lemmas 1–5, Theorem 2 (Mendès France's question: the period of the continued fraction of αⁿ tends to infinity unless α is a unit or a square root of a rational, and is bounded for units), and the Appendix (the word \"algebraic\" cannot be dropped from Theorem 1). Eleven statements are compared.",
+  "authors": [
+    "Ralf Stephan"
+  ],
+  "repository": "https://github.com/rwst/Subspace-Theorems",
+  "commit": "d7a11cb1dcab3883fd1008db27a8382c95455b0a",
+  "project_path": null,
+  "declarations": [
+    "finite_setOf_not_isPseudoPisot",
+    "exists_isPisot_pow_of_frequently",
+    "isIntegral_or_exists_pow_eq_ratCast",
+    "isIntegral_of_trace_mul_pow",
+    "Real.isPisot_or_tendsto_log_cfQuot",
+    "Real.isPisot_or_tendsto_log_cfQuot_odd",
+    "Real.tendsto_cfPeriod_pow",
+    "Real.tendsto_cfPeriod_pow_odd",
+    "Real.bddAbove_cfPeriod_pow",
+    "Real.exists_frequently_not_isPisot",
+    "Real.exists_transcendental_frequently_not_isPisot"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J68",
+      "11R06",
+      "11J70",
+      "11A55",
+      "11J87"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-27T01:14:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d7a11cb1dcab3883fd1008db27a8382c95455b0a",
+        "fork_repository": "PalomarArchive/rwst--Subspace-Theorems--9bd9bba330e8",
+        "source_repository": "rwst/Subspace-Theorems"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9a7fd615dd3059961e1e03605d04afb89edeb388e5c122ccf12c3df163a5bfc4"
+}

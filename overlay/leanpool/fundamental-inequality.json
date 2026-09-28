@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/linzialessandro/FundamentalInequality",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.FundamentalInequality",
   "declarations": [
     "Valuation.fundamentalInequality",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FundamentalInequality.lean",
-  "statement_hash": "sha256:d14310eaeaddb99d835ab8453b9c05a14279e01eb4ec3080dc5bd9fccb752e2d"
+  "statement_hash": "sha256:4e3974e01bbf8e0587aade5b93449045611f61264d77b32bef48cc3df5a7072d"
 }

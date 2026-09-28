@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "chip-firing-with-lean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ChipFiring",
+  "version": 1,
+  "title": "Chip-Firing with Lean 4",
+  "abstract": "A Lean 4 / Mathlib formalization of Baker and Norine's Riemann-Roch theorem for finite graphs. Chip configurations on a finite graph, modulo chip-firing moves, form an abelian group analogous to the group of line bundles on a compact Riemann surface. Each class can be assigned a rank, analogous to the dimension of a linear series. These ranks then satisfy a formula of the form r(D) - r(K-D) = deg D + 1 - g, in exact analogy to Riemann surfaces. This formula is formalized, along with the analog of Clifford's theorem for finite graphs.",
+  "authors": [
+    "Dhyey Dharmendrakumar Mavani",
+    "Nathan Pflueger"
+  ],
+  "repository": "https://github.com/dhyeymavani2003/chip-firing-with-lean",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.ChipFiring",
+  "declarations": [
+    "ChipFiring.Propositions.riemann_roch",
+    "ChipFiring.Propositions.clifford"
+  ],
+  "informal": {
+    "ChipFiring.Propositions.riemann_roch": "For a finite connected graph, the ranks of a divisor and its canonical complement satisfy the graph Riemann–Roch formula.",
+    "ChipFiring.Propositions.clifford": "For a special divisor on a finite connected graph, its rank is at most half its degree."
+  },
+  "classification": {
+    "msc2020": [
+      "05C57",
+      "14T20"
+    ],
+    "tags": [
+      "combinatorics"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ChipFiring.lean",
+  "statement_hash": "sha256:8e1ed7ecb1c715ccf196640b0cf4de06e960d232b3da651954b2857beeb3d63e"
+}

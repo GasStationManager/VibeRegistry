@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "champernowne-normality",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Champernowne",
+  "version": 1,
+  "title": "Champernowne normality in every base",
+  "abstract": "Proves that concatenating the base-b digits of the positive integers gives a normal digit sequence for every integer base b at least 2: every nonempty length-k word of digits below b has limiting frequency b^(-k). This is a discrete, all-base generalization of D. G. Champernowne's 1933 base-ten result, without a real-number expansion bridge. Includes reusable substring-counting inequalities, a digit-string equivalence, exact cohort counts, and quantitative prefix bounds used to establish the frequency limit.",
+  "authors": [
+    "Arthur Champernowne"
+  ],
+  "repository": "https://github.com/OldMathematician/ChampernowneNormality",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.Champernowne",
+  "declarations": [
+    "Champernowne.champernowne_normal",
+    "Champernowne.champernowne_normal_ten",
+    "Champernowne.sum_countOccurrences_cohort",
+    "Champernowne.sum_countOccurrences_cohort_zero"
+  ],
+  "informal": {
+    "Champernowne.champernowne_normal": "For every integer base b at least 2, the sequence formed by concatenating the base-b digits of 1, 2, 3, and so on is normal: each nonempty word w of digits below b has limiting occurrence frequency 1 / b^(length w), counting overlapping occurrences.",
+    "Champernowne.champernowne_normal_ten": "The decimal digit sequence 123456789101112... is normal in base ten.",
+    "Champernowne.sum_countOccurrences_cohort": "For a nonempty length-k word of base-b digits with nonzero first digit and k at most m, its total occurrences inside all m-digit positive integers equal b^(m-k) + (m-k)(b-1)b^(m-k-1), with natural subtraction in the exponents.",
+    "Champernowne.sum_countOccurrences_cohort_zero": "For a nonempty length-k word of base-b digits starting with zero and k at most m, its total occurrences inside all m-digit positive integers equal (m-k)(b-1)b^(m-k-1), with natural subtraction in the exponent."
+  },
+  "classification": {
+    "msc2020": [
+      "11K16",
+      "68R15"
+    ],
+    "tags": [
+      "normal-numbers",
+      "digit-expansions",
+      "combinatorics-on-words",
+      "asymptotic-frequency"
+    ],
+    "branch": "number theory and asymptotic analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Champernowne.lean",
+  "statement_hash": "sha256:f06155bab4ef0ccc170cd92bb03eccc73f855ee6560d4d332410cb42167b6eec"
+}

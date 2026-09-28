@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "puiseux",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Puiseux",
+  "version": 1,
+  "title": "Puiseux's theorem",
+  "abstract": "Constructs Puiseux series as the bounded-denominator subfield of rational-exponent Hahn series. Proves that this field is algebraic over Laurent series over any coefficient field, and is an algebraic closure when the coefficient field is algebraically closed of characteristic zero. The Newton-Puiseux proof includes reusable Hensel splitting and polynomial translation lemmas. Dean Cureton directed the AI formalization and subsequently simplified its proofs.",
+  "authors": [
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/deancureton/Puiseux",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.Puiseux",
+  "declarations": [
+    "PuiseuxSeries.isAlgClosure",
+    "PuiseuxSeries.isAlgebraic",
+    "PuiseuxSeries.mem_subfield_iff_support",
+    "Polynomial.Monic.exists_factorization_rootMultiplicity"
+  ],
+  "informal": {
+    "PuiseuxSeries.isAlgClosure": "For an algebraically closed field K of characteristic zero, the field of Puiseux series over K is an algebraic closure of the Laurent series field K((t)).",
+    "PuiseuxSeries.isAlgebraic": "Over any field K, the Puiseux series field is algebraic over the Laurent series field.",
+    "PuiseuxSeries.mem_subfield_iff_support": "A rational-exponent Hahn series belongs to the Puiseux subfield if and only if its support lies in (1/n) times the integers for some positive integer n.",
+    "Polynomial.Monic.exists_factorization_rootMultiplicity": "A monic degree-m polynomial over K[[t]] whose reduction has a root of multiplicity k, with 0 < k < m, factors into monic polynomials of degrees k and m-k."
+  },
+  "classification": {
+    "msc2020": [
+      "12F05",
+      "13F25"
+    ],
+    "tags": [
+      "field-theory",
+      "puiseux-series",
+      "algebraic-closure",
+      "hensel-lemma"
+    ],
+    "branch": "algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Puiseux.lean",
+  "statement_hash": "sha256:4e959ba6afc84f9a1d1e72e07356754d213657d6d7a1ac20ca83a9f3ad0ad701"
+}

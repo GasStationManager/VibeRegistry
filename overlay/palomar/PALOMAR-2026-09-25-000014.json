@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000014",
+  "version": 1,
+  "title": "Sunflower bounds",
+  "abstract": "Lean proofs of the ALWZ and Rao–Bell–Chueluecha–Warnke sunflower bounds, robust-sunflower upper and lower bounds, the BCW spread and satisfying results, and the classical Erdős–Rado theorem. The submission compares ten explicit finite statements, including second-moment and Janson routes to the ALWZ bound.",
+  "authors": [
+    "Troy Lee"
+  ],
+  "repository": "https://github.com/troyjlee/tcs-formalizations",
+  "commit": "55d7c9c11ee4240328a71b1ab43d66f27a976da6",
+  "project_path": null,
+  "declarations": [
+    "PalomarSunflower.erdos_rado_bounded",
+    "PalomarSunflower.alwz_bounded",
+    "PalomarSunflower.alwz_bounded_janson",
+    "PalomarSunflower.rao_bcw_bounded",
+    "PalomarSunflower.exists_isRobustSunflower_pad",
+    "PalomarSunflower.exists_isRobustSunflower_rao",
+    "PalomarSunflower.exists_no_robustSunflower",
+    "PalomarSunflower.exists_pairwiseDisjoint_of_raoSpread",
+    "PalomarSunflower.bcw_theorem3",
+    "PalomarSunflower.bcw_lemma4"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.DM"
+    ],
+    "msc2020": [
+      "05D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T11:22:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "55d7c9c11ee4240328a71b1ab43d66f27a976da6",
+        "fork_repository": "PalomarArchive/troyjlee--tcs-formalizations--200ed78cfc67",
+        "source_repository": "troyjlee/tcs-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:714adacf26f9c541cfd17d1df2f5bd2e1b7431f28433699bbbb5bba56a19346f"
+}

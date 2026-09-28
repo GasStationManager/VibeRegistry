@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/abenenson/channel-capacity",
   "commit": "",
-  "snapshot_commit": "8074944a145c2fe3fd03e8e80e7084f44873044d",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
   "entry_module": "LeanPool.ChannelCapacity",
   "declarations": [
     "ChannelCapacity.exists_unique_capacity_achieving_prior_of_finite",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ChannelCapacity.lean",
-  "statement_hash": "sha256:c7b036c8402d4bfe25269693be7f0162b0c64128910ffe61989ea24f49086f61"
+  "statement_hash": "sha256:101bfaac756302abedc60b13be0389539826a2178a6c8262ec193d1a65335152"
 }

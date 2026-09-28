@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000019",
+  "version": 1,
+  "title": "Unistationarity of Type II_l autocatalytic cores with positive degradation",
+  "abstract": "We prove that every source-minimal Type II_l autocatalytic core with l >= 3, reversible mass-action kinetics and strictly positive species degradation has at most one positive stationary state. The result covers the literal weak source grammar, including its separated cyclic realizations and the fully coincident three-species case. Any two positive concentration states satisfying the stationary equations of the same core are equal. The uniqueness theorem is proved in Lean 4 with Mathlib.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p006-type-ii-unistationarity",
+  "commit": "29ef2baabd1c8e1d0ed659b5900e2cf4633ed541",
+  "project_path": null,
+  "declarations": [
+    "TypeIIL.PaperRaw.paper_typeII_l_unistationarity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS"
+    ],
+    "msc2020": [
+      "34C05",
+      "92C42"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T15:05:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "29ef2baabd1c8e1d0ed659b5900e2cf4633ed541",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p006-type-ii-unistationarity--cfb655f70ee8",
+        "source_repository": "mmislan/palomar-p006-type-ii-unistationarity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7ad801de3548ca0b41c7cfd539ab5f20fe2c3098d691758a4d61b2cd30d74538"
+}

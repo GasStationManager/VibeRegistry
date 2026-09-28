@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-28-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-28-000003",
+  "version": 1,
+  "title": "Lean Formalization of Interpreting Lambda Calculus in Domain-Valued Random Variables (CSL 2026)",
+  "abstract": "Formalization in Lean 4 / mathlib of the existing paper by Furber, Mardare, Panangaden, and Scott, Interpreting Lambda Calculus in Domain-Valued Random Variables (LIPIcs, Vol. 363, CSL 2026, Article 48). This repository formalizes that published mathematics; it does not present the paper's results as new mathematics originating in this repository. Three capstones sit on top of the rest of the paper: Theorem 26 (internal λ-interpretation in SetoidF_A), Corollary 34 (the Engeler model with numerals in V^A), and Theorem 43 (two fair-coin subsets of ℕ that are incomparable under the λ-definable many-one preorder). Domain-theory background is imported from a vendored copy of scott1972. The Palomar Challenge locks Theorem 43 as csl2026 and proposition_36_i on the Engeler graph model. Full Corollary 34 remains kernel-checked in the library and is not represented by a weaker Mathlib-only proxy. Lean is written by AI agents under the direction and review of the author. Dana Scott gave the author the paper. This formalization does not claim that the paper's authors participated in it or endorsed it. There is no sorry outside the deliberate holes in Challenge.lean, no project-defined axiom, and Mathlib is the only Lake require.",
+  "authors": [
+    "Lars Warren Ericson"
+  ],
+  "repository": "https://github.com/catskillsresearch/scott2026",
+  "commit": "4b57681f2804e6390c73bae4149f54a92029c50d",
+  "project_path": null,
+  "declarations": [
+    "Scott2026.csl2026"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO",
+      "cs.PL",
+      "math.LO"
+    ],
+    "msc2020": [
+      "68Q55",
+      "06D99",
+      "03B70",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-28T06:12:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4b57681f2804e6390c73bae4149f54a92029c50d",
+        "fork_repository": "PalomarArchive/catskillsresearch--scott2026--c9ae37f0429f",
+        "source_repository": "catskillsresearch/scott2026"
+      }
+    ]
+  },
+  "statement_hash": "sha256:32c6327985e65ee4b1d232cb8f566f2128f3cf4681ef7ab4d2301c59a50fe057"
+}

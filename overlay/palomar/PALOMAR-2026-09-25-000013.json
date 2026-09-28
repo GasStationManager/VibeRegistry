@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000013",
+  "version": 1,
+  "title": "Nash bargaining solution axiomatic characterization",
+  "abstract": "Formalizes two-player bargaining problems with compact convex feasible sets, the four Nash axioms (Pareto optimality, symmetry, invariance to positive affine transformations, independence of irrelevant alternatives), and the Nash product. It proves existence and uniqueness of the Nash product maximizer, shows the maximizer satisfies the four axioms, and proves Nash's characterization: any bargaining solution satisfying the four axioms selects the Nash product maximizer. This is a reusable formalization artifact, not a claim of new mathematics.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/nash-bargaining-lean",
+  "commit": "0ddaa4bb858fa6fdf78074459eafada5e7938727",
+  "project_path": null,
+  "declarations": [
+    "NashBargaining.Palomar.nashMaximizerExists",
+    "NashBargaining.Palomar.nashMaximizerUnique",
+    "NashBargaining.Palomar.nashSatisfiesAxioms",
+    "NashBargaining.Palomar.axiomsCharacterizeNash"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91A12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T11:04:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0ddaa4bb858fa6fdf78074459eafada5e7938727",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--nash-bargaining-lean--d2a976fd6428",
+        "source_repository": "Arthur742Ramos/nash-bargaining-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cf5bbfb41aeb7e590da9e101a931f5131380747aea346bd345b7e3f68a42424e"
+}

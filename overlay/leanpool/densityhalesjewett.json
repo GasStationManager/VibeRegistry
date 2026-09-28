@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "densityhalesjewett",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/DensityHalesJewett",
+  "version": 1,
+  "title": "The density Hales–Jewett theorem and Szemerédi's theorem",
+  "abstract": "A Lean 4 formalization of the density Hales–Jewett theorem: for every finite alphabet α and every density δ > 0, all sufficiently large n have the property that any set of at least δ·|α|^n words of length n over α contains a combinatorial line. The basis for the formalization is the combinatorial proof of Dodos, Kanellopoulos, and Tyros. As a consequence, we also formalize Szemerédi's theorem on the integers: for every k ≥ 3 and δ > 0, the following holds for all sufficiently large n. Any subset of {0, …, n−1} of size at least δ·n contains a nonconstant arithmetic progression of length k.",
+  "authors": [
+    "Gabriel Dahia"
+  ],
+  "repository": "https://github.com/gdahia/densityhalesjewett",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.DensityHalesJewett",
+  "declarations": [
+    "Combinatorics.Line.exists_of_density_atTop",
+    "Combinatorics.ArithmeticProgression.exists_of_density_nat_atTop"
+  ],
+  "informal": {
+    "Combinatorics.Line.exists_of_density_atTop": "Every positive-density subset of sufficiently long words over a finite nontrivial alphabet contains a combinatorial line.",
+    "Combinatorics.ArithmeticProgression.exists_of_density_nat_atTop": "Every positive-density subset of a sufficiently long initial interval of the natural numbers contains an arithmetic progression of any prescribed length at least three with nonzero common difference."
+  },
+  "classification": {
+    "msc2020": [
+      "05D10",
+      "05A05",
+      "11B75",
+      "68R15"
+    ],
+    "tags": [
+      "combinatorics"
+    ],
+    "branch": "combinatorics"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/DensityHalesJewett.lean",
+  "statement_hash": "sha256:cb0d6852e0ab01f3c838ebbfa15a22becb522810d934e3c3399cbe824b10047d"
+}

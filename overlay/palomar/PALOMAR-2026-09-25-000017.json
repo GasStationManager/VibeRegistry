@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-25-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000017",
+  "version": 1,
+  "title": "Pascal Minus-One GCD",
+  "abstract": "A Lean 4 formalization of p-adic valuations for the restricted binomial gcd G(N;m) = gcd{C(N,k) : 0 < k < N, m divides k}. The principal submitted result gives the complete valuation formula for primes p congruent to -1 modulo m, including the mixed-parity digit-sum branch and the exceptional p = m - 1 valuation-2 case. The repository also proves the complementary p congruent to 1 branch, a prime-power scaling reduction, and complete prime-by-prime formulas for m = 3, 4, and 6.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/pascal-minus-one",
+  "commit": "5f20593464d86ef8c3c34e1c00d84f8a48c0457e",
+  "project_path": null,
+  "declarations": [
+    "PascalMinusOnePalomar.minus_one_valuation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-25T13:33:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5f20593464d86ef8c3c34e1c00d84f8a48c0457e",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--pascal-minus-one--a4f9243950c0",
+        "source_repository": "jfairfaxball-348/pascal-minus-one"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a416509c4e1bb1918749bee3fb70087e22becf5506d9c3229705b40590513654"
+}

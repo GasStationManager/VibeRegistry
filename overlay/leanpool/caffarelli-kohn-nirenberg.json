@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "caffarelli-kohn-nirenberg",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CaffarelliKohnNirenberg",
+  "version": 1,
+  "title": "Caffarelli–Kohn–Nirenberg partial regularity",
+  "abstract": "Partial regularity for three-dimensional incompressible Navier–Stokes suitable weak solutions with locally L^q forcing, q > 5/2: quantitative epsilon regularity and vanishing parabolic one-dimensional Hausdorff measure of the singular set. Includes the supporting Sobolev, singular integral, pressure, heat-potential and parabolic Morrey infrastructure, equivalence of suitable-solution formulations, and a nonzero shear-flow example. Imports the dependency closure of these completed results.",
+  "authors": [
+    "Scott Armstrong",
+    "Vlad Vicol"
+  ],
+  "repository": "https://github.com/scottnarmstrong/CaffarelliKohnNirenberg",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.CaffarelliKohnNirenberg",
+  "declarations": [
+    "CKN.caffarelliKohnNirenberg",
+    "CKN.epsilonRegularityL3",
+    "CKN.epsilonRegularityGradient",
+    "CKN.isSuitableWeakSolution_iff_integrable",
+    "CKN.isSuitableWeakSolutionIntegrable_shearFlow"
+  ],
+  "informal": {
+    "CKN.epsilonRegularityL3": "For q > 5/2, sufficiently small unit-cylinder L^3 velocity, L^(3/2) pressure and L^q force masses give an almost-everywhere equal quantitatively bounded parabolic Holder representative on the closed half-cylinder and regularity at each point of its open interior.",
+    "CKN.epsilonRegularityGradient": "A sufficiently small extended nonnegative limsup of the normalized squared weak-gradient mass implies regularity at an interior point of a suitable weak solution.",
+    "CKN.caffarelliKohnNirenberg": "The singular set of a suitable weak solution with locally L^q forcing, q > 5/2, has zero one-dimensional Hausdorff measure in the parabolic metric.",
+    "CKN.isSuitableWeakSolution_iff_integrable": "The manuscript's suitable weak-solution predicate is equivalent to the predicate that explicitly requires integrability of all tested weak-equation and local-energy integrands.",
+    "CKN.isSuitableWeakSolutionIntegrable_shearFlow": "The nonzero decaying sinusoidal shear flow with zero pressure and force is a suitable weak solution on all space and times in (0,1)."
+  },
+  "classification": {
+    "msc2020": [
+      "35Q30",
+      "35B65",
+      "42B20",
+      "28A78"
+    ],
+    "tags": [
+      "Navier–Stokes",
+      "partial differential equations",
+      "harmonic analysis"
+    ],
+    "branch": "Analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CaffarelliKohnNirenberg.lean",
+  "statement_hash": "sha256:f3f7bd3009922a7e7aa2a5850b020e7b79d5f8475299b391ade0fb34dffdf011"
+}

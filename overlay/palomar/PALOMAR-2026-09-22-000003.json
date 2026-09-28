@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-22-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-22-000003",
+  "version": 1,
+  "title": "CaffarelliKohnNirenberg",
+  "abstract": "A Lean 4 / Mathlib formalization of the Caffarelli-Kohn-Nirenberg partial regularity theory for suitable weak solutions of the three-dimensional incompressible Navier-Stokes equations with forcing in L^q, q > 5/2: the L^3 epsilon-regularity theorem (Theorem A), the gradient epsilon-regularity criterion (Theorem B) and the vanishing of the one-dimensional parabolic Hausdorff measure of the singular set (Theorem C). The three theorems are proved using only the standard axioms, restated together in a Mathlib-only comparator challenge and proved from the library theorems. The manuscript being formalized is in the repository and was corrected alongside the development.",
+  "authors": [
+    "Scott Armstrong",
+    "Vlad Vicol"
+  ],
+  "repository": "https://github.com/scottnarmstrong/CaffarelliKohnNirenberg",
+  "commit": "58a9ffe548ea64319ac8cba098634340ee6270cb",
+  "project_path": null,
+  "declarations": [
+    "CKNChallenge.epsilonRegularityL3",
+    "CKNChallenge.epsilonRegularityGradient",
+    "CKNChallenge.caffarelliKohnNirenberg"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP"
+    ],
+    "msc2020": [
+      "35Q30",
+      "35B65",
+      "76D05",
+      "76D03",
+      "35D30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-22T08:59:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "58a9ffe548ea64319ac8cba098634340ee6270cb",
+        "fork_repository": "PalomarArchive/scottnarmstrong--CaffarelliKohnNirenberg--b8e78fb1bbb0",
+        "source_repository": "scottnarmstrong/CaffarelliKohnNirenberg"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6d3f507d96f59a0433630d2d65bcd2932898d610b9d4733ae55576d6014618dc"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "zeta-five-irrational",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Zeta5Irrational",
+  "version": 1,
+  "title": "Irrationality of the Riemann zeta function at five",
+  "abstract": "Proves that Mathlib's Riemann zeta function at five is an irrational real number, following Aabir Fauzan's September 2026 preprint. Constructs integer polynomials of degree 37n with positive values at zeta(5) that decay exponentially in n squared. Includes a general integer-polynomial irrationality criterion, Hankel determinant and moment-integral identities, logarithmic-energy estimates, prime-adic integrality bounds, and kernel-checked rational certificates. The formalization uses a different normalizer and a positive decay constant in place of the paper's specific constant 139/5. Reuses the prime number theorem infrastructure already in the MooreBound project.",
+  "authors": [
+    "Moritz Firsching"
+  ],
+  "repository": "https://github.com/mo271/Zeta5",
+  "commit": "",
+  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "entry_module": "LeanPool.Zeta5Irrational",
+  "declarations": [
+    "Zeta5Irrational.irrational_five",
+    "Zeta5Irrational.main_estimate",
+    "Zeta5Irrational.irrational_of_eventually_exists_int_poly"
+  ],
+  "informal": {
+    "Zeta5Irrational.irrational_five": "There exists an irrational real number x whose complex coercion equals Mathlib's Riemann zeta function evaluated at five.",
+    "Zeta5Irrational.main_estimate": "There is a positive real c such that, for all sufficiently large n, an integer polynomial Q of degree 37n is a positive rational multiple of the constructed determinant polynomial and satisfies 0 < Q(zeta(5)) < exp(-c*n^2).",
+    "Zeta5Irrational.irrational_of_eventually_exists_int_poly": "A real xi is irrational if, eventually, integer polynomials of degree at most d(n) have positive values at xi bounded by epsilon(n), and b^d(n)*epsilon(n) tends to zero for every positive natural b."
+  },
+  "classification": {
+    "msc2020": [
+      "11J72",
+      "11M06",
+      "31A15"
+    ],
+    "tags": [
+      "irrationality",
+      "zeta-function",
+      "hankel-determinants",
+      "potential-theory",
+      "certified-computation"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Zeta5Irrational.lean",
+  "statement_hash": "sha256:dd130f6a77c4ed28b7c8621b3ab223bd65a95ea9326f704eb64fc79593d7c42c"
+}

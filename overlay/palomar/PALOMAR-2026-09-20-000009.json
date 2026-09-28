@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-20-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-20-000009",
+  "version": 1,
+  "title": "Fischer's 24-vertex zero-forcing counterexample",
+  "abstract": "A Lean 4 formalization of Mikko Fischer's explicit connected 24-vertex subcubic graph with independence number 9 and zero-forcing number 11. The formalization verifies the exact graph and both numerical invariants, yielding an existential counterexample to the proposed bound Z(G) <= alpha(G) + 1 for connected graphs of maximum degree at most 3.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/Fischer-Zero-Forcing-Counterexample",
+  "commit": "4ee012d6941e221d294f26520aff92043d715140",
+  "project_path": null,
+  "declarations": [
+    "FischerZeroForcing.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C50",
+      "05C69"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-20T17:36:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4ee012d6941e221d294f26520aff92043d715140",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--Fischer-Zero-Forcing-Counterexample--30140f29d1aa",
+        "source_repository": "jfairfaxball-348/Fischer-Zero-Forcing-Counterexample"
+      }
+    ]
+  },
+  "statement_hash": "sha256:64b30fa6d8878485a45e6f4aa02265b12ebb3569a0522e5936422b5693bd02f5"
+}
