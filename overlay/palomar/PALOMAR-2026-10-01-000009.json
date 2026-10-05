@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000009",
+  "version": 1,
+  "title": "vcg-mechanism-lean",
+  "abstract": "A Lean formalization of the Green-Laffont characterization: for finite, nonempty agent and alternative types, efficiency and dominant-strategy incentive compatibility imply that payments have Groves form. The project also verifies four standard properties of the finite VCG mechanism with Clarke pivot payments.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/vcg-mechanism-lean",
+  "commit": "aad0c41b99053cf4657d91f7446279557f87ae18",
+  "project_path": null,
+  "declarations": [
+    "VCG.vcg_greenLaffont",
+    "VCG.vcg_efficient",
+    "VCG.vcg_truthful",
+    "VCG.vcg_individualRational",
+    "VCG.vcg_noDeficit"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT",
+      "econ.TH"
+    ],
+    "msc2020": [
+      "91B26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T04:02:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "aad0c41b99053cf4657d91f7446279557f87ae18",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--vcg-mechanism-lean--b451825d01a8",
+        "source_repository": "Arthur742Ramos/vcg-mechanism-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:903526a9ccda5084d65b1a142fd049837a387e3f37e0f294d1a0ed1b10a68495"
+}

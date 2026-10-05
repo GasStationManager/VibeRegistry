@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000015",
+  "version": 1,
+  "title": "Near-linear cycles in connected vertex-transitive graphs",
+  "abstract": "A Lean formalization of the near-linear cycle theorem in \"Lovász conjecture holds asymptotically\". For every positive ε, sufficiently large connected finite vertex-transitive graphs contain a simple cycle with at least n^(1−ε) edges. The development includes a weaker-constant Bondy–Locke path-to-cycle comparison and the finite approximate-group and expansion arguments used in the path proofs.",
+  "authors": [
+    "Matija Bucic"
+  ],
+  "repository": "https://github.com/mbucic4/Nearly-spanning-Lovasz",
+  "commit": "7f2728d07ce648ed74cae08bbfa7084b9ec13f4b",
+  "project_path": null,
+  "declarations": [
+    "PalomarLovasz.vertex_transitive_long_cycle",
+    "PalomarLovasz.cayley_long_cycle",
+    "PalomarLovasz.cayley_long_path",
+    "PalomarLovasz.vertex_transitive_long_path"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C45",
+      "05C38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T03:42:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7f2728d07ce648ed74cae08bbfa7084b9ec13f4b",
+        "fork_repository": "PalomarArchive/mbucic4--Nearly-spanning-Lovasz--dc3fe5736fab",
+        "source_repository": "mbucic4/Nearly-spanning-Lovasz"
+      }
+    ]
+  },
+  "statement_hash": "sha256:50b6451efe108e44bdea1edad5e9f9512851b53eb892725f931e6365cee87497"
+}

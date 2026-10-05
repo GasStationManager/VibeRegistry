@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000013",
+  "version": 1,
+  "title": "Pointwise provable equality and the failure of composition",
+  "abstract": "In their study of pathologies in recursion categories, Montagna (1989) and Di Paola–Montagna (1991) introduce the algebraic systems S′ and S′_T, respectively, and claim that they are categories. We show that the proposed composition is not independent of the choice of representatives. For every consistent recursively enumerable extension T of Peano arithmetic (PA), we exhibit two unary programs whose partial functions are provably equal in T, separately at each standard input. Composing each after a program that searches for a T-proof of contradiction and returns its code yields programs that are not equivalent in this sense. An alternative proof uses the productivity of the complement of the diagonal halting set. Montagna's S′ is the case T = PA. More generally, for consistent T ⊇ PA, pointwise provable equality is a composition congruence exactly when T proves every true Π⁰₁ sentence, in which case it is extensional equality. This completeness condition fails for every consistent recursively enumerable T ⊇ PA by Gödel's second incompleteness theorem. For every extension T ⊇ PA, the least composition congruence containing pointwise provable equality is extensional equality if T is Σ⁰₁-sound and the universal relation otherwise.",
+  "authors": [
+    "Florian Lengyel"
+  ],
+  "repository": "https://github.com/flengyel/FailureOfComposition",
+  "commit": "fb32a19c4883baad83b286d4594cfbc6b1d2ad5c",
+  "project_path": "Lean",
+  "declarations": [
+    "FailureOfComposition.Palomar.obstruction_four_properties",
+    "FailureOfComposition.Palomar.no_quotient_composition_productive",
+    "FailureOfComposition.Palomar.no_quotient_composition_godel",
+    "FailureOfComposition.Palomar.pi_one_characterization",
+    "FailureOfComposition.Palomar.generated_congruence_classification",
+    "FailureOfComposition.Palomar.weak_totality_counterexample",
+    "FailureOfComposition.Palomar.range_counterexample_godel",
+    "FailureOfComposition.Palomar.range_counterexample_productive",
+    "FailureOfComposition.Palomar.generated_quotient_partial_recursive"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03D75",
+      "03F40",
+      "08A30",
+      "18B10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T14:11:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fb32a19c4883baad83b286d4594cfbc6b1d2ad5c",
+        "fork_repository": "PalomarArchive/flengyel--FailureOfComposition--79f0e34ed6ea",
+        "source_repository": "flengyel/FailureOfComposition"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3e54f985e6be1c5838e978c2b542c62246de92057083909a29660f103ba18725"
+}

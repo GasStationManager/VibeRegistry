@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000010",
+  "version": 1,
+  "title": "gleason-finite-lean",
+  "abstract": "A machine-checked proof of Gleason's theorem in finite dimensions. On a complex Hilbert space of dimension at least 3, every frame function on the orthogonal projections has the form P ↦ Re Tr(ρP) for exactly one density operator ρ. The statement is Kim Morrison's lean-eval problem gleason_theorem_finite, unchanged. The proof follows Cooke, Keane and Moran's elementary proof of Gleason's core lemma for matrices on ℂᴺ, then moves the result to operators by taking matrices in an orthonormal basis.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/gleason-finite-lean",
+  "commit": "3a9449ce0e3e9f9355f15827ce5d99a4460efa0c",
+  "project_path": null,
+  "declarations": [
+    "gleason_theorem_finite"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math-ph",
+      "quant-ph"
+    ],
+    "msc2020": [
+      "81P10",
+      "81P16",
+      "46C05",
+      "46N50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T08:58:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3a9449ce0e3e9f9355f15827ce5d99a4460efa0c",
+        "fork_repository": "PalomarArchive/zblore--gleason-finite-lean--7a8ddf8ab084",
+        "source_repository": "zblore/gleason-finite-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6e8eeb2fe390647a89745d61bf70bf131020cb287092194324d2dc3b0d052b14"
+}

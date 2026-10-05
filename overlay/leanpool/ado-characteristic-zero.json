@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "ado-characteristic-zero",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Ado",
+  "version": 1,
+  "title": "Ado's theorem in characteristic zero",
+  "abstract": "Every finite-dimensional Lie algebra over a field of characteristic zero admits a faithful finite-dimensional representation in which every element of the nilradical acts nilpotently. The development includes Levi complements, Weyl complete reducibility, highest-weight and sl2 infrastructure, and extensions of nilrepresentations across split ideals.",
+  "authors": [
+    "The Tau Ceti contributors"
+  ],
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.Ado",
+  "declarations": [
+    "Ado.adoCharZero",
+    "Ado.exists_faithful_nilrepresentation_charZero"
+  ],
+  "informal": {
+    "Ado.adoCharZero": "Every finite-dimensional Lie algebra over any field of characteristic zero has an injective Lie algebra homomorphism into the endomorphisms of a finite-dimensional vector space.",
+    "Ado.exists_faithful_nilrepresentation_charZero": "The faithful finite-dimensional representation can be chosen so that each element of the nilradical acts as a nilpotent endomorphism."
+  },
+  "classification": {
+    "msc2020": [
+      "17B10",
+      "17B05"
+    ],
+    "tags": [
+      "Lie-algebras",
+      "representation-theory",
+      "faithful-representations",
+      "nilpotent-representations"
+    ],
+    "branch": "Lie algebras and representation theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Ado.lean",
+  "statement_hash": "sha256:c05fffc2273fea79e1e7fe9d375bb1b3bb450ede5df539c95cbf82b25b21fd53"
+}

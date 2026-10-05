@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/SamuelSchlesinger/sensitivity-conjecture",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Sensitivity",
   "declarations": [
     "LeanPoolSensitivity.sensitivity_ge_sqrt_degree",
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Sensitivity.lean",
-  "statement_hash": "sha256:f61381f276b56aee334afd7d07a3793e80396ddd5bdcb033634cf58bff94c7ce"
+  "statement_hash": "sha256:5c8a2ab6259e13499eac7549f8e6cceafe6604e90fa029242871c4bd0bfe9bc4"
 }

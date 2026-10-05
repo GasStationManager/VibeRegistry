@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-05-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-05-000004",
+  "version": 1,
+  "title": "Erdős 958: planar point sets with distance multiplicities {1, ..., n - 1}",
+  "abstract": "A complete Lean 4 proof of the negative answer to Erdős problem 958: for every n ≥ 4, there exists an n-point configuration in the Euclidean plane determining n - 1 distinct interpoint distances with multiplicities {1, 2, ..., n - 1} that is neither equidistant on a line nor equidistant on a circle. Formalizing the May 2025 construction of Clemen, Dumitrescu, and Liu, the proof places n - 1 equally spaced points on a short arc of the unit circle together with the center (0, 0), uses strict monotonicity of chord lengths on [0, π/3) to compute the exact distance-multiplicity profile, and eliminates collinear and concyclic progressions algebraically. It also proves the positive baseline results that every equidistant collinear configuration of size n ≥ 2 has n - 1 distinct distances with multiplicities {1, ..., n - 1}, and that for every n ≥ 2 there exists an n-point circular equidistant configuration with that distance-multiplicity profile.",
+  "authors": [
+    "Linmiao Xu"
+  ],
+  "repository": "https://github.com/linrock/math-proofs",
+  "commit": "08152671ab394392fd941b18654daba734c26518",
+  "project_path": "erdos-958",
+  "declarations": [
+    "Erdos958.Palomar.erdos_958",
+    "Erdos958.Palomar.not_erdos_958",
+    "Erdos958.Palomar.clemen_dumitrescu_liu",
+    "Erdos958.Palomar.equidistantOnLine_has_profile",
+    "Erdos958.Palomar.equidistantOnCircle_exists_has_profile"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C10",
+      "05D99"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-05T07:11:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "08152671ab394392fd941b18654daba734c26518",
+        "fork_repository": "PalomarArchive/linrock--math-proofs--14cf37780a40",
+        "source_repository": "linrock/math-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5a86821f08ca4d212b0f5e39a2d2f0560a46d940320b699c34e2b842862f61a3"
+}

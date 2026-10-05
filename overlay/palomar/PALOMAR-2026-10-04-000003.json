@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000003",
+  "version": 1,
+  "title": "Lower bounds for the covering numbers C(24,14,4) and C(25,15,5)",
+  "abstract": "A Lean proof that every family of 14-element subsets of a 24-element set covering all 4-element subsets has at least 20 members, so the covering number C(24,14,4) is at least 20, improving the previously tabulated lower bound of 19. Point derivation (the Schönheim bound) then gives C(25,15,5) >= 34, improving the tabulated 32. The proof excludes a hypothetical 19-block covering using degree and codegree counting, a Gram-matrix rank argument that forces balanced bipartite components, and a structural analysis of the two resulting cases.",
+  "authors": [
+    "James Chang"
+  ],
+  "repository": "https://github.com/jamesyc/covering",
+  "commit": "17bca0067a6bfa8c6c25669d97fca1190d20c8a3",
+  "project_path": null,
+  "declarations": [
+    "Covering.Palomar.covering_24_14_4_lower_bound",
+    "Covering.Palomar.covering_25_15_5_lower_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T01:55:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "17bca0067a6bfa8c6c25669d97fca1190d20c8a3",
+        "fork_repository": "PalomarArchive/jamesyc--covering--2d6067e8871e",
+        "source_repository": "jamesyc/covering"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1a758732a106278e94b2ffad02ff4038e494e6107dcc1d63edac6bd3db69d749"
+}

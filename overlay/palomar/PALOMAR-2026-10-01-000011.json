@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000011",
+  "version": 1,
+  "title": "revenue-equivalence-lean",
+  "abstract": "A Lean formalization of Myerson's 1981 revenue equivalence theorem in a single-parameter Bayesian mechanism-design model with continuous real types. The formal result is RevenueEquivalence.Palomar.revenueEquivalence (X P1 P2 : ℝ → ℝ) (h1 : BIC X P1) (h2 : BIC X P2) (hU : interimUtility X P1 0 = interimUtility X P2 0) (t : ℝ) (ht : 0 ≤ t) : P1 t = P2 t: two Bayesian incentive-compatible mechanisms with the same interim allocation rule and the same interim utility at the reference type (type zero) charge the same interim payments at every nonnegative type. Types range over all of ℝ; there is no lowest type, and zero is only the normalization point for the payment identity. The envelope lemma RevenueEquivalence.Palomar.envelope_integral and the expected-revenue corollary RevenueEquivalence.Palomar.expectedRevenueEqual are proved alongside; the corollary requires both interim payment rules to be integrable with respect to the prior ((hInt1 : Integrable P1 μ) (hInt2 : Integrable P2 μ)), so its conclusion is an equality of finite expected revenues rather than a vacuous totalized-integral identity. The Palomar registry API search on 2026-10-01 for \"revenue equivalence\" returned zero entries; the queries \"Myerson\" and \"auction\" returned only different theorems (see related_formalizations note). These are dated, limited observations, not universal prior-art claims.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/revenue-equivalence-lean",
+  "commit": "b07bab2482b6ff98a71d650d5b4d4ac327e240b0",
+  "project_path": null,
+  "declarations": [
+    "RevenueEquivalence.Palomar.envelope_integral",
+    "RevenueEquivalence.Palomar.revenueEquivalence",
+    "RevenueEquivalence.Palomar.expectedRevenueEqual"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT",
+      "econ.TH"
+    ],
+    "msc2020": [
+      "91B26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T10:34:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b07bab2482b6ff98a71d650d5b4d4ac327e240b0",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--revenue-equivalence-lean--27517e4ee616",
+        "source_repository": "Arthur742Ramos/revenue-equivalence-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:22a1dd27b7f472b0ef0ad8faf6fb50a5cbbd8e9fa409fab59fc66c7c80a0d200"
+}

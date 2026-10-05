@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/AntoineduFresne/Bannai-Bannai-Stanton_Theorem",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.BannaiBannaiStanton",
   "declarations": [
     "BannaiBannaiStanton.bannai_bannai_stanton_bound"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/BannaiBannaiStanton.lean",
-  "statement_hash": "sha256:8c0865257256f5b811bf5244b3c54e2f2f82ffb63e066d26d1f4d0781a078d2d"
+  "statement_hash": "sha256:7667a3d2f563cf6903fc46d3ff2af71f3da559ec4641ec23351b88612bd27a3b"
 }

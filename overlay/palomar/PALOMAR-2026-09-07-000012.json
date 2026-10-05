@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-09-07-000012",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-07-000012",
-  "version": 1,
+  "version": 2,
   "title": "Moh's P3 curve is a set-theoretic complete intersection",
-  "abstract": "A Lean 4 formalization proving that the Moh curve parametrized by x=t^6+t^31, y=t^8, z=t^10 is cut out set-theoretically by two explicit equations over every characteristic-zero field. The development computes the polynomial and formal-power-series parametrization kernels, proves the radical equality for the two-generated witness ideal, and proves that the curve ideal has height two and arithmetic rank two, both globally and after completion.",
+  "abstract": "A Lean 4 formalization proving that the Moh curve parametrized by x=t^6+t^31, y=t^8, z=t^10 is cut out set-theoretically by two explicit equations over every characteristic-zero field. The development computes the polynomial and formal-power-series parametrization kernels, proves the radical equality for the two-generated witness ideal, and proves that the curve ideal has height two and arithmetic rank two, both globally and after completion. It also verifies the exact Hilbert-Burch presentation given by the manuscript's explicit four-by-three matrix.",
   "authors": [
     "Aakash Gurung"
   ],
   "repository": "https://github.com/GrgAakash/moh-p3-set-theoretic-complete-intersection",
-  "commit": "e1dd554d07425ae9822389427795bd83485a5b2c",
+  "commit": "abbdac729c91a6c7784a3dd15ff6828f2ce6e7fc",
   "project_path": null,
   "declarations": [
     "MohP3.Palomar.global_setTheoretic_completeIntersection",
@@ -29,7 +29,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-09-07T18:00:10Z",
+  "published_at": "2026-09-30T13:23:58Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -43,11 +43,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "e1dd554d07425ae9822389427795bd83485a5b2c",
+        "commit": "abbdac729c91a6c7784a3dd15ff6828f2ce6e7fc",
         "fork_repository": "PalomarArchive/GrgAakash--moh-p3-set-theoretic-complete-intersection--dfb91e23119e",
         "source_repository": "GrgAakash/moh-p3-set-theoretic-complete-intersection"
       }
     ]
   },
-  "statement_hash": "sha256:ca204323d6f1987886e05deec87e935f354623d34d2a213edcd8d77f9ee4a455"
+  "statement_hash": "sha256:4befc62cda2a6f35c58c62abc8429c1fd0aa76f1f8fc150d6d36b40094af573c"
 }

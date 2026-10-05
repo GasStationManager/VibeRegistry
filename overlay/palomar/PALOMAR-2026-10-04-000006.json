@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000006",
+  "version": 1,
+  "title": "Gallai's conjecture with two exceptional even vertices",
+  "abstract": "Every connected finite simple graph admits an edge partition into at most ceil(|V(G)|/2) simple paths when at most two vertices of its induced even-degree graph have degree greater than three. One positive designated even vertex can be exposed twice at the ceiling budget. Two designated even vertices can be exposed twice simultaneously within floor(|V(G)|/2)+1 paths, giving simultaneous ceiling exposure at odd order. Exceptional and ordinary degrees are unrestricted. Simultaneous even-order ceiling exposure and the unrestricted Gallai conjecture are not claimed.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/gallai-two-exception",
+  "commit": "5f4130a2e14b836cfaa86cad6ae59beb9768b9ea",
+  "project_path": null,
+  "declarations": [
+    "Gallai.Submission.prescribed_endpoint",
+    "Gallai.Submission.ceiling_bound",
+    "Gallai.Submission.simultaneous_floor_add_one",
+    "Gallai.Submission.odd_order_simultaneous"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C38",
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T13:47:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5f4130a2e14b836cfaa86cad6ae59beb9768b9ea",
+        "fork_repository": "PalomarArchive/shaikidris--gallai-two-exception--3391d32f463e",
+        "source_repository": "shaikidris/gallai-two-exception"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ba6ad98b5af8d5e7c6ba43f6bf1ee801c48f93f31ff32ca9eeebec06f55a6547"
+}

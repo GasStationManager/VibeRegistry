@@ -1,0 +1,68 @@
+{
+  "source": "leanpool",
+  "upstream_id": "sendov-conjecture",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Sendov",
+  "version": 1,
+  "title": "Sendov's conjecture and the Phelps–Rodriguez conjecture",
+  "abstract": "Proves Sendov's conjecture in full generality: if every zero of a complex polynomial of degree at least two lies in the closed unit disk, then every zero has a critical point within distance one. Also proves the Phelps–Rodriguez strengthening, with strict inequality unless the zero lies on the unit circle and the polynomial is a scalar multiple of z^n - a^n, and recovers Rubinstein's boundary theorem. Formalizes Tao's digestion of Lech Mazur's proof: the problem is reduced to a numerical inequality in the degree and one real parameter, settled by exact rational Bernstein certificates for degrees up to one hundred and by an analytic large-degree reduction beyond. Includes the top case of Maclaurin's inequality and multiset AM–GM, a defect inequality on the closed unit disk, a sharp bound on log(sinh h / h), kernel-checked polynomial certificate infrastructure, and a packed-exponentiation bridge for exact moment integrals.",
+  "authors": [
+    "Terence Tao"
+  ],
+  "repository": "https://github.com/teorth/sendov",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.Sendov",
+  "declarations": [
+    "Sendov.sendov",
+    "Sendov.phelps_rodriguez",
+    "SendovConjecture.sendov",
+    "Sendov.rubinstein_one",
+    "Sendov.stat_lt_one",
+    "Multiset.esymm_card_pred_le",
+    "Multiset.prod_le_mean_pow",
+    "Sendov.defect",
+    "Sendov.log_sinh_div_le",
+    "Sendov.pev_pos_of_bern"
+  ],
+  "informal": {
+    "Sendov.sendov": "For every natural number n at least two and every complex polynomial p of degree n all of whose roots have norm at most one, every root a of p admits a root of the derivative of p within distance at most one of a.",
+    "Sendov.phelps_rodriguez": "Under the same hypotheses, either some root of the derivative lies at distance strictly less than one from a, or a has norm one and p equals a nonzero scalar multiple of X^n - a^n.",
+    "SendovConjecture.sendov": "The same statement in the Mathlib-only form of the upstream statement of record: for every complex polynomial p of degree at least two such that every complex w with p(w) = 0 has norm at most one, every zero a of p admits a root of the derivative within distance at most one of a.",
+    "Sendov.rubinstein_one": "If a polynomial of degree n at least two with all roots in the closed unit disk vanishes at one, then either its derivative has a root within distance strictly less than one of the point one, or the polynomial equals its leading coefficient times X^n - 1.",
+    "Sendov.stat_lt_one": "For every degree n at least five and every real parameter alpha between zero and seventeen satisfying the feasibility constraint c^2 ≤ A, the quantity R n alpha of the blog post's equation stat is strictly less than one.",
+    "Multiset.esymm_card_pred_le": "For a nonempty multiset of nonnegative reals of cardinality m, the (m-1)-st elementary symmetric function is at most m times the (m-1)-st power of the mean.",
+    "Multiset.prod_le_mean_pow": "The product of a multiset of nonnegative reals is at most the mean raised to the cardinality.",
+    "Sendov.defect": "For a multiset of complex numbers in the closed unit disk, the product of the norms times the sum of the norms of 1/z minus the conjugate of z is at most one minus the square of that product.",
+    "Sendov.log_sinh_div_le": "For every positive real h, the logarithm of sinh h divided by h is at most the square root of h^2 + 9 minus three.",
+    "Sendov.pev_pos_of_bern": "If the Bernstein expansion of an integer coefficient list on an interval from zero to p/q equals p^d times a polynomial P and every Bernstein coefficient is positive, then P is positive on that interval."
+  },
+  "classification": {
+    "msc2020": [
+      "30C15",
+      "30C10",
+      "12D10"
+    ],
+    "tags": [
+      "sendov-conjecture",
+      "polynomial-zeros",
+      "critical-points",
+      "bernstein-certificates"
+    ],
+    "branch": "complex analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Sendov.lean",
+  "statement_hash": "sha256:ce897886ba9594263709079a45ea728d526c2b3d4f8a85b078ac0c75182211ff"
+}

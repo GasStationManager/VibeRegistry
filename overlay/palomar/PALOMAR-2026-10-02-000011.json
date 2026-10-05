@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000011",
+  "version": 2,
+  "title": "Uniqueness of four-body convex central configurations for all masses",
+  "abstract": "A Lean 4 and Mathlib formalization of Theorems A and B of arXiv:2609.35632 on the central configurations of the planar Newtonian four-body problem. For every choice of four positive masses and every cyclic order of the bodies there is exactly one strictly convex central configuration with that cyclic order, up to similarity, so there are exactly three convex central configurations up to similarity. This answers Problem 10 in the list of Albouy, Cabral and Santos (2012). The main step of the paper is Theorem B: at every strictly convex central configuration of positive masses, the Hessian form Q of U + (λ/2)I is at least one quarter of its radial part K. It follows that every convex central configuration is a nondegenerate local minimum of U I^(1/2), whose Hessian vanishes exactly on the tangent space of the orbit of the similarities. The computer-assisted step, a branch and bound with interval arithmetic over the three-dimensional set of normalized convex central configurations in the coordinates of Corbera, Cors and Roberts, proves tr S < 3/4 and is checked by Lean's kernel with `decide +kernel` in 7307 certificate theorems. No compiled code is trusted, and the proofs use only Lean's three standard axioms.",
+  "authors": [
+    "Tejasvi Singh Tomar"
+  ],
+  "repository": "https://github.com/tejasvi/lean4body-uniqueness",
+  "commit": "353653eceec402c993183f240beacaa20e6f39ad",
+  "project_path": null,
+  "declarations": [
+    "C4.theoremA_slice",
+    "C4.theoremA",
+    "C4.theoremA_cyclic",
+    "C4.theoremB",
+    "C4.nondegenerate",
+    "C4.convex_count"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math-ph"
+    ],
+    "msc2020": [
+      "70F10",
+      "70F15",
+      "58K05",
+      "65G40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T11:13:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "353653eceec402c993183f240beacaa20e6f39ad",
+        "fork_repository": "PalomarArchive/tejasvi--lean4body-uniqueness--ceab4c756231",
+        "source_repository": "tejasvi/lean4body-uniqueness"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ca9f90528ff9c23d88c39a150c2904eb72fef2b53db764bf761e34c08714d234"
+}

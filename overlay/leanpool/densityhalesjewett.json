@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/gdahia/densityhalesjewett",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.DensityHalesJewett",
   "declarations": [
     "Combinatorics.Line.exists_of_density_atTop",
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/DensityHalesJewett.lean",
-  "statement_hash": "sha256:cb0d6852e0ab01f3c838ebbfa15a22becb522810d934e3c3399cbe824b10047d"
+  "statement_hash": "sha256:910742b47a2424869fc91b12a41e6c22e01b71a34f4fa298f6f10f3e9b88aacc"
 }

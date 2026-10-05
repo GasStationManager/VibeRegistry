@@ -1,0 +1,61 @@
+{
+  "source": "leanpool",
+  "upstream_id": "quantum-query-foundations",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/QuantumQuery",
+  "version": 1,
+  "title": "Adversary bounds and the polynomial method for quantum queries",
+  "abstract": "Develops finite quantum query algorithms, real adversary primal and dual programs, strong duality, exact Boolean block composition, explicit constant-factor bounded-error query characterizations, and degree bounds for output-probability polynomials. Query models include idle and blank sectors; bounds count queries, not gate complexity or running time. Uniform algorithm extraction assumes a supplied dual certificate.",
+  "authors": [
+    "Troy Lee"
+  ],
+  "repository": "https://github.com/troyjlee/quantum-query-complexity",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.QuantumQuery",
+  "declarations": [
+    "QuantumQueryComplexity.boundedErrorQQuery_characterized_by_advPM",
+    "QuantumQueryComplexity.advDual_eq_advPM",
+    "QuantumQueryComplexity.advPM_composeFun_eq",
+    "QuantumQueryComplexity.xorQQuery_characterized_by_advPM",
+    "QuantumQueryComplexity.qQueryOn_third_le_of_hasDualOn_uniform",
+    "QuantumQueryComplexity.QAlg.exists_probability_polynomial",
+    "QuantumQueryComplexity.exists_xor_probability_polynomial"
+  ],
+  "informal": {
+    "QuantumQueryComplexity.advDual_eq_advPM": "For every total Boolean function on a finite Boolean input cube, the all-pairs real adversary dual infimum equals the real symmetric primal supremum.",
+    "QuantumQueryComplexity.advPM_composeFun_eq": "The negative-weight adversary value of total Boolean functions composed on disjoint blocks equals the product of their adversary values, including constant functions and empty index types.",
+    "QuantumQueryComplexity.boundedErrorQQuery_characterized_by_advPM": "For a total Boolean function at error one third, quantum value-query complexity lies between ADV±/36 and 2^14 ADV±. The value oracle swaps a blank answer with the queried letter and includes an idle query index.",
+    "QuantumQueryComplexity.xorQQuery_characterized_by_advPM": "For the Boolean XOR oracle with idle and blank sectors, query complexity at error one third lies between ADV±/72 and 2^15 ADV±.",
+    "QuantumQueryComplexity.qQueryOn_third_le_of_hasDualOn_uniform": "A supplied all-pairs real dual certificate of nonnegative cost c gives a finite quantum algorithm using at most 8192(1+c) value queries at error one third, for any finite promise domain and nonempty decidable output type.",
+    "QuantumQueryComplexity.QAlg.exists_probability_polynomial": "Each output probability of a q-query value-oracle algorithm on Boolean inputs agrees on the Boolean cube with a real polynomial of total degree at most 2q.",
+    "QuantumQueryComplexity.exists_xor_probability_polynomial": "Each output probability of a q-query Boolean XOR algorithm agrees on the Boolean cube with a real polynomial of total degree at most 2q."
+  },
+  "classification": {
+    "msc2020": [
+      "68Q12",
+      "81P68"
+    ],
+    "tags": [
+      "quantum-computing",
+      "query-complexity",
+      "adversary-method",
+      "polynomial-method"
+    ],
+    "branch": "quantum query complexity"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/QuantumQuery.lean",
+  "statement_hash": "sha256:f047cb920b54cbfcd296443562c94246eccdceb818c3e6e3ed503c71fea2c2c1"
+}

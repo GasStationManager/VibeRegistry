@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000028",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000028",
+  "version": 2,
+  "title": "FKS Problem 1 on at most twice the dimension vertices",
+  "abstract": "A Lean-checked proof of FKS Problem 1 for graphs on at most 2d vertices, for every d ≥ 4: every finite simple graph of maximum degree at most d with no connected component isomorphic to K_{d+1} has an injective placement in Euclidean d-space, with every vertex of norm 1/√2 and every edge at distance exactly 1. Non-edges are unconstrained and may also have length 1. The unrestricted question is false at d = 4: Mishra and Senthilkumar (2026) showed that the square of the nine-cycle, on 2d + 1 = 9 vertices, has no such placement. The bound proved here is therefore sharp at d = 4. Neither result settles the question restricted to d ≥ 5. The exception is interpreted componentwise: a K_{d+1} component already precludes such a placement even when other components are present. The research audience is discrete geometers and extremal graph theorists studying spherical unit-distance representations, graph dimension and bounded-degree embedding problems.",
+  "authors": [
+    "Dishant Shah"
+  ],
+  "repository": "https://github.com/Dishah3241/FKSProblem1",
+  "commit": "b0d32cb58e8f1d6e4b6e5993d6243fc46a88dd6e",
+  "project_path": null,
+  "declarations": [
+    "FKSProblem1.Palomar.target"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "05C62",
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T04:16:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b0d32cb58e8f1d6e4b6e5993d6243fc46a88dd6e",
+        "fork_repository": "PalomarArchive/Dishah3241--FKSProblem1--ff00f0d7257c",
+        "source_repository": "Dishah3241/FKSProblem1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b9123c92ceefc66235742a7e32abb2df1a3b9c75841cea2151441186aa1c442e"
+}

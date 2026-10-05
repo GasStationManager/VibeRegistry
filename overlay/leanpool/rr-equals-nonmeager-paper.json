@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/vo-rodrigues/rr-equals-nonmeager-paper",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.RearrangementNumber",
   "declarations": [
     "NonMRR.nonM_le_rr"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/RearrangementNumber.lean",
-  "statement_hash": "sha256:0c59d9bed2314d864ba1db261678992a0cb60ef622e69a8d2c37af49781d0266"
+  "statement_hash": "sha256:7ba543477832744952ad34d60e334c9b7156b1f908f69675e8600b9b5b7e72a9"
 }

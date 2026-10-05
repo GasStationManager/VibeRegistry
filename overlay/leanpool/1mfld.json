@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "1mfld",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/OneManifold",
+  "version": 1,
+  "title": "The classification of compact 1-manifolds",
+  "abstract": "A Lean 4 (mathlib) proof of the classification of 1-manifolds, specifically that every compact, connected, Hausdorff topological space charted on the half-line [0,∞) is homeomorphic to the circle S¹ or to the closed unit interval [0,1]. The proof follows David Gale's outline: shrink to a finite atlas of interval charts, then induct on the atlas size, merging two overlapping charts at each step; a connected overlap glues two charts into one (two boundary charts glue onto [0, 1]), while a disconnected overlap has exactly two components and yields the circle.",
+  "authors": [
+    "Jim Fowler",
+    "Dennis Sweeney"
+  ],
+  "repository": "https://github.com/sweeneyde/1mfld",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.OneManifold",
+  "declarations": [
+    "OneMfld.homeomorph_circle_or_unitInterval"
+  ],
+  "informal": {
+    "OneMfld.homeomorph_circle_or_unitInterval": "Every compact connected Hausdorff space charted on the nonnegative real half-line is homeomorphic to the circle or the closed unit interval."
+  },
+  "classification": {
+    "msc2020": [
+      "57N99",
+      "54F65",
+      "68V20"
+    ],
+    "tags": [
+      "topology"
+    ],
+    "branch": "topology"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/OneManifold.lean",
+  "statement_hash": "sha256:8711cded5a6e502ce0eeb9139f2832f8e7c460fb98f8398e9939c369c87e99e9"
+}

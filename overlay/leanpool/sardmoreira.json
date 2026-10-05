@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/urkud/SardMoreira",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.SardMoreira",
   "declarations": [
     "dimH_image_le_sardMoreiraBound_of_finrank_le",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SardMoreira.lean",
-  "statement_hash": "sha256:90a8aa40931a4e0b3a417032eda557b869c5fa898ddcc7ce69c22297aa15d88b"
+  "statement_hash": "sha256:8a5568b227ceb4d73d15e2b9e43ed70f62b32e1139b6dafb1e11dadecef006b1"
 }

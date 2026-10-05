@@ -1,0 +1,66 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000007",
+  "version": 1,
+  "title": "Finite Bayes Correlated Equilibrium, Information Expansions and Information Order",
+  "abstract": "Bergemann–Morris Theorem 1 for arbitrary finite players and states with heterogeneous action and original-signal spaces: a normalized decision rule is obedient if and only if a finite marginal-preserving information expansion supports a valid mixed Bayes–Nash strategy profile inducing its joint law. The recommendation expansion and the converse for arbitrary extra signals and independent behavioral randomization are proved. Null fibers are handled without conditioning, and exact induction is equivalent to the paper's positive-support quotient. Zero prior masses are permitted, extending the paper's full-support assumption. The one-player decision-problem specialization and explicit examples are included. Theorem 2 proves that individual sufficiency is equivalent to BCE outcome inclusion across all finite basic games with arbitrary heterogeneous actions and utilities and full-support common priors, on a nonempty finite state space. Its converse constructs actual couplings from finite quadratic-scoring games and weighted compactness.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/bayes-correlated-equilibrium-lean",
+  "commit": "1f2d307e49d5dbcc33984709f9c7bf8691554fbc",
+  "project_path": null,
+  "declarations": [
+    "BayesCorrelated.finite_characterization",
+    "BayesCorrelated.mixedBNE_induces_BCE",
+    "BayesCorrelated.expansion_normalized",
+    "BayesCorrelated.expansion_null_fiber",
+    "BayesCorrelated.strategyProduct_isProbability",
+    "BayesCorrelated.induces_iff_positive_support",
+    "BayesCorrelated.onePlayer_obedienceGain",
+    "BayesCorrelated.onePlayer_characterization",
+    "BayesCorrelated.information_order_characterization",
+    "BayesCorrelated.individuallySufficient_outcome",
+    "BayesCorrelated.moreIncentiveConstrained_outcome_any_universe",
+    "BayesCorrelated.onePlayer_individual_sufficiency",
+    "BayesCorrelated.onePlayer_information_order"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "econ.TH",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91A27",
+      "91A10",
+      "91B44",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-02T15:22:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1f2d307e49d5dbcc33984709f9c7bf8691554fbc",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--bayes-correlated-equilibrium-lean--cecbf64a937e",
+        "source_repository": "Arthur742Ramos/bayes-correlated-equilibrium-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a0907d0666df54d9c11c6de32535433c255beecfa9f140b41a6e6ebdf3b12f69"
+}

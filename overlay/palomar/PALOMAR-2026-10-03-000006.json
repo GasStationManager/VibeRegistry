@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-03-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-03-000006",
+  "version": 1,
+  "title": "Escauriaza–Seregin–Šverák and Ladyzhenskaya–Prodi–Serrin regularity",
+  "abstract": "A Lean formalization of two classical regularity theorems for the three-dimensional incompressible Navier–Stokes equations. The Escauriaza–Seregin–Šverák theorem states that a Leray–Hopf solution whose spatial L³ norm remains bounded in time is smooth at positive times and unique among Leray–Hopf solutions with the same initial data. The Ladyzhenskaya–Prodi–Serrin theorem gives the corresponding conclusion under a family of mixed space-time integrability conditions. The development includes the local regularity theorem, L⁵ space-time integrability under the endpoint L³ condition, and the supporting Carleman inequalities, unique continuation and backward uniqueness. It builds on the Caffarelli–Kohn–Nirenberg formalization and includes a manuscript presenting the proofs.",
+  "authors": [
+    "Scott Armstrong"
+  ],
+  "repository": "https://github.com/scottnarmstrong/EscauriazaSereginSverak",
+  "commit": "ae1a0e46086b9b16179dea76b41da10b01845151",
+  "project_path": null,
+  "declarations": [
+    "ESSChallenge.essLocal",
+    "ESSChallenge.essGlobal",
+    "ESSChallenge.essL5Unique",
+    "ESSChallenge.ladyzhenskayaProdiSerrin",
+    "ESSChallenge.essSmooth",
+    "ESSChallenge.serrinCriterion"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP"
+    ],
+    "msc2020": [
+      "35Q30",
+      "76D05",
+      "35B65",
+      "35D30",
+      "35B60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-03T12:58:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ae1a0e46086b9b16179dea76b41da10b01845151",
+        "fork_repository": "PalomarArchive/scottnarmstrong--EscauriazaSereginSverak--c1d5d82817d7",
+        "source_repository": "scottnarmstrong/EscauriazaSereginSverak"
+      }
+    ]
+  },
+  "statement_hash": "sha256:20b24006bae4f2f1d97e9b43274217a79fe8b51ae6ceb092c43a44b2f572e220"
+}

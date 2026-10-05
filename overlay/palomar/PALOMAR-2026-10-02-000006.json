@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000006",
+  "version": 1,
+  "title": "agv-mechanism-lean",
+  "abstract": "Lean 4 formalization of the AGV (d'Aspremont-Gérard-Varet-Arrow) expected-externality mechanism: with independent types, ex post efficiency, Bayesian incentive compatibility, and budget balance are jointly attainable. Agents are indexed by Fin n with 2 ≤ n; each agent has a finite nonempty type space with an independent PMF prior; alternatives form a finite nonempty type; values are private. The efficient rule xmax maximizes utilitarian welfare, and agvTransfer pays each agent its expected externality minus an equal share of the other agents' receipts. Interim individual rationality is not claimed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/agv-mechanism-lean",
+  "commit": "4e1f6b369836e6ec0a5443ea57424b5ed71b97d6",
+  "project_path": null,
+  "declarations": [
+    "AGV.agv_efficient",
+    "AGV.agv_bic",
+    "AGV.agv_budget_balanced",
+    "AGV.agv_theorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT",
+      "econ.TH"
+    ],
+    "msc2020": [
+      "91B26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-02T14:11:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4e1f6b369836e6ec0a5443ea57424b5ed71b97d6",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--agv-mechanism-lean--2dd26d94a5d0",
+        "source_repository": "Arthur742Ramos/agv-mechanism-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0a561b9e0d6579128e55cfd7ce91651f835eb7f9f69b846ecad37ee16c9b3afe"
+}

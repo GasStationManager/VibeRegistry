@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000001",
+  "version": 1,
+  "title": "Characterizing digraph support families by rooted-interval deletion",
+  "abstract": "We answer the set-theoretic characterization question for digraph support families posed by Mike Steel in Section 4 of Interior operators and their relationship to autocatalytic networks (arXiv:2305.16714v4, 2023). A digraph on a finite set E is given by a predecessor map P assigning to each vertex e a set P(e) of in-neighbours, loops allowed, and a set S is supported when every element e of S has some element of S in P(e). The characterization refers only to the family F. Start from the full power set of E with no roots used. A legal step chooses a remaining set S outside F that is inclusion-maximal among the remaining sets outside F, chooses a root r in S that has not been used before and lies in no member of F contained in S, and deletes every remaining set X with r in X and X contained in S. A family F of subsets of E is exactly the support family of some predecessor map on E if and only if some finite sequence of legal steps ends exactly at F.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p029-digraph-support-families",
+  "commit": "579ba54f592330e8fd972d9e5af02699f7fead6c",
+  "project_path": null,
+  "declarations": [
+    "DigraphRealizability.publication_resolution"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C20",
+      "06A15",
+      "05D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T00:48:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "579ba54f592330e8fd972d9e5af02699f7fead6c",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p029-digraph-support-families--cb671abcfe16",
+        "source_repository": "mmislan/palomar-p029-digraph-support-families"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b8b333f8a69300bc6a8dcd1c7971b36a529ba093212668e3de2750de9c347656"
+}

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/rkirov/jordan_pick",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Rado",
   "declarations": [
     "rado_riemannSurface",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Rado.lean",
-  "statement_hash": "sha256:312d0d9fb44fd381999fc49c007beeddba06b9a0f6320f46a35368578371d6e7"
+  "statement_hash": "sha256:0b1af24d9de5c2682ecfc43a0cb0eff566f4dabd16dbadb266b7fb8bbee77ad0"
 }

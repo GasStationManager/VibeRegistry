@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000035",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000035",
+  "version": 1,
+  "title": "Metric–Pfaffian Stabilizers and Fixed-Hodge Field Recovery",
+  "abstract": "For the explicit bivector metric induced by diag(1,1,1,-1,1,-1) and the Pfaffian cubic on fifteen real coordinates, the joint infinitesimal stabilizer is exactly the uniquely parameterized fifteen-dimensional orthogonal adjoint span. Under the metric condition, ninety specified cubic derivative checks certify preservation at every point. Within the joint stabilizer, commutation with a displayed local Lorentz Hodge operator is equivalent to annihilating its complementary reference and yields a unique six-plus-one decomposition, of dimension seven. Within this fixed-Hodge space, exactly the complementary line acts trivially on all extracted four-plane fields; six specified scalar readings reconstruct the entire visible action. The contribution is the explicit constructive classification and recovery certificates, situated in classical Pfaffian-preserver theory. The metric, cubic and four-plane are supplied data. PDT motivates the construction; selecting a physical coupling is outside these claims.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-metric-pfaffian-hodge-stabilizers",
+  "commit": "0e436b9e3468e0393641d42fd37dfc9e3520ffbf",
+  "project_path": null,
+  "declarations": [
+    "PDTGeometry.jointClassification",
+    "PDTGeometry.geometricRecovery",
+    "PDTGeometry.finiteCubicCertificate",
+    "PDTGeometry.fixedReference",
+    "PDTGeometry.fixedClassification",
+    "PDTGeometry.stabilizerDimensions",
+    "PDTGeometry.fieldKernel",
+    "PDTGeometry.fieldRecovery",
+    "PDTGeometry.complementStructure"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RT"
+    ],
+    "msc2020": [
+      "15A72",
+      "15A04"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T15:37:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0e436b9e3468e0393641d42fd37dfc9e3520ffbf",
+        "fork_repository": "PalomarArchive/stalex444--pdt-metric-pfaffian-hodge-stabilizers--4541a9a1b3db",
+        "source_repository": "stalex444/pdt-metric-pfaffian-hodge-stabilizers"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1e0374bb9e9533a5b822c96b7ffce9923f01a9d81829f9915e607a227b2d5036"
+}

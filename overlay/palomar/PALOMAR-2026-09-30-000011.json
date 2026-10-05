@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000011",
+  "version": 1,
+  "title": "Zero-divisor criteria for absolute concentration robustness",
+  "abstract": "García Puente et al. (arXiv:2401.00078v3, Question 3.13) asked whether a unique positive zero-divisor value is necessary or sufficient for absolute concentration robustness (ACR) in at-most-bimolecular mass-action networks. Explicit networks with positive rational rates answer both questions negatively. A further three-species example shows that their candidate algorithm can miss a zero-divisor ACR value under an admissible elimination order, refuting the unrestricted elimination-order form of Conjecture 4.7. For block orders that compare the other species before the distinguished species, completeness is established: every real zero-divisor ACR value is returned when the finite basis consists of nonzero steady-ideal elements whose leading monomials cover the ideal. ACR includes existence of a positive steady state; zero-divisor values include coordinate differences lying in the steady-state ideal.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p082-acr-zero-divisors",
+  "commit": "a2bcfab8f3015df957bc20da1db66cbf1ae98bd0",
+  "project_path": null,
+  "declarations": [
+    "ACRZeroDivisors.question313_necessity_counterexample",
+    "ACRZeroDivisors.question313_sufficiency_counterexample",
+    "ACRZeroDivisors.OrderWitness.unrestricted_order_counterexample",
+    "ACRZeroDivisors.mass_action_block_algorithm_complete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AC",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "13P10",
+      "13P25",
+      "92C42"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T03:01:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a2bcfab8f3015df957bc20da1db66cbf1ae98bd0",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p082-acr-zero-divisors--53da94089871",
+        "source_repository": "mmislan/palomar-p082-acr-zero-divisors"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d43a697f9cd62db89d8dc079b280b70857b61213fd3b1adf83b6734a942fa5e0"
+}

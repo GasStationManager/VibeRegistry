@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-03-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-03-000001",
+  "version": 2,
+  "title": "Continuity of solutions to abstract linear control systems",
+  "abstract": "Formalization of all the numbered statements of F. Marbach, \"Continuity of solutions to abstract linear control systems\" (2026), https://hexagonmath.org/2610.00022. For abstract linear control systems in the sense of Weiss (a strongly continuous semigroup T on a Banach space X and bounded input maps Phi_t : L^p(R_+; U) -> X satisfying the concatenation identity), the main results are: for p = infinity, every system is zero-class, i.e. the operator norm of Phi_t tends to zero as t -> 0+ (Theorem 1.5), and t -> Phi_t u is continuous on [0, infinity) for every u in L^infinity (Corollary 1.6), a positive answer to Weiss' 1989 Problem 2.4. No integral representation of the input maps is assumed. The proof packs nearly extremal controls into one bounded operator on l^infinity and uses Phillips' lemma (Lemma 2.2), which is proved here. The development also covers the continuity of semigroup orbits (Proposition 1.2), the classical case p < infinity (Proposition 1.3), and the examples of Section 3: a non zero-class system for p < infinity (Proposition 3.1), an exotic invariant mean on periodic L^infinity functions (Lemma 3.2), and a scalar system with p = infinity without integral representation and not E_F-admissible for any Young function F (Proposition 3.3).",
+  "authors": [
+    "Frédéric Marbach"
+  ],
+  "repository": "https://github.com/frederic-marbach/alcs",
+  "commit": "bda56576f8b2730b73a55f273511c80fabbe56f4",
+  "project_path": null,
+  "declarations": [
+    "PalomarALCS.zero_class",
+    "PalomarALCS.continuousOn_Phi"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC",
+      "math.FA"
+    ],
+    "msc2020": [
+      "93C25",
+      "47D06",
+      "93C05",
+      "46B45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-03T13:18:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "bda56576f8b2730b73a55f273511c80fabbe56f4",
+        "fork_repository": "PalomarArchive/frederic-marbach--alcs--85985fba62b5",
+        "source_repository": "frederic-marbach/alcs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:97ed33988ff394df1cc9ed9887855552b4864919708972d58b94eda47e903664"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000016",
+  "version": 1,
+  "title": "Frankl-Kupavskii-Swanepoel Theorem 3: fewer than C(d+2,2) edges embeds in R^d",
+  "abstract": "For every integer d ≥ 4, every finite simple graph with fewer than C(d + 2, 2) edges has an injective placement in Euclidean d-space under which every edge has length 1, and the complete graph K_{d+2} has exactly C(d + 2, 2) edges and has no such placement. Equivalently, f(d) = C(d + 2, 2), where f(d) is the least number of edges in a finite simple graph with no unit-distance representation in R^d. Non-edges may also lie at distance 1. Finite simple graphs are represented as SimpleGraph (Fin n), including the empty graph. The proof is Frankl–Kupavskii–Swanepoel Theorem 3, already proved in the GraphDimension library and imported here. The spherical half of the same theorem is not stated. The question belongs to discrete geometry and extremal graph theory, specifically the study of unit-distance representations and the dimension of graphs.",
+  "authors": [
+    "Dishant Shah"
+  ],
+  "repository": "https://github.com/Dishah3241/FKSEdgeThreshold",
+  "commit": "b0577b932a2780463139c25aedde6ea222bb6bd1",
+  "project_path": null,
+  "declarations": [
+    "FKSEdgeThreshold.Palomar.target"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "05C62",
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T05:23:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b0577b932a2780463139c25aedde6ea222bb6bd1",
+        "fork_repository": "PalomarArchive/Dishah3241--FKSEdgeThreshold--c82c6fe6c960",
+        "source_repository": "Dishah3241/FKSEdgeThreshold"
+      }
+    ]
+  },
+  "statement_hash": "sha256:eb5b0fbd3052934e4f1d4d37f74b57d8802fb0ddf78a031493ce47a8a8a46ada"
+}

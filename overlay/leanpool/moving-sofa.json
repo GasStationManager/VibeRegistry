@@ -1,0 +1,57 @@
+{
+  "source": "leanpool",
+  "upstream_id": "moving-sofa",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MovingSofa",
+  "version": 1,
+  "title": "Optimality of Gerver's sofa",
+  "abstract": "Formalizes Baek's solution of the moving sofa problem: Gerver's sofa attains the supremum of the areas of closed connected shapes that can move continuously around a right-angled corner in a unit-width hallway. Includes certified Gerver parameters, admissibility, convex cap geometry, Stieltjes curve area, Jordan separation, polygon approximation, and the concave quadratic upper bound.",
+  "authors": [
+    "Dean Cureton",
+    "Dawid Trela",
+    "Rado Kirov",
+    "Kirill Alkhimov"
+  ],
+  "repository": "https://github.com/deancureton/MovingSofa",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.MovingSofa",
+  "declarations": [
+    "MovingSofa.sofaConstant_eq_volume_gerversSofa",
+    "MovingSofa.GerversSofa.ABφθSpec.existsUnique",
+    "MovingSofa.isMovingSofa_gerversSofa"
+  ],
+  "informal": {
+    "MovingSofa.sofaConstant_eq_volume_gerversSofa": "The supremum, in extended nonnegative real numbers, of the areas of all admissible moving sofas equals the area of the explicitly defined Gerver sofa.",
+    "MovingSofa.GerversSofa.ABφθSpec.existsUnique": "Gerver's four defining equations have exactly one quadruple of parameters with A and B nonnegative and 0 ≤ φ ≤ θ ≤ π/4.",
+    "MovingSofa.isMovingSofa_gerversSofa": "Gerver's sofa is closed and connected and admits a continuous rigid motion from the horizontal arm to the vertical arm, starting at the identity and remaining within the unit-width hallway throughout."
+  },
+  "classification": {
+    "msc2020": [
+      "52A40",
+      "52A10",
+      "49Q10"
+    ],
+    "tags": [
+      "convex-geometry",
+      "moving-sofa-problem",
+      "geometric-optimization",
+      "interval-arithmetic"
+    ],
+    "branch": "convex geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/MovingSofa.lean",
+  "statement_hash": "sha256:6fd6f13b8a115ceab9e1ce2d60f347dfeea787e7d54d29fbb5c3b4e3895c7002"
+}

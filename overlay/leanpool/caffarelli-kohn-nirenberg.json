@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/scottnarmstrong/CaffarelliKohnNirenberg",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.CaffarelliKohnNirenberg",
   "declarations": [
     "CKN.caffarelliKohnNirenberg",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CaffarelliKohnNirenberg.lean",
-  "statement_hash": "sha256:f3f7bd3009922a7e7aa2a5850b020e7b79d5f8475299b391ade0fb34dffdf011"
+  "statement_hash": "sha256:b7a38406e64b6c4fa646848a64f5fdb180a0bcb5fc74d909b7d1b5556faa543a"
 }

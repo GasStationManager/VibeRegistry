@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "euclidean-jordan",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/EuclideanJordan",
+  "version": 1,
+  "title": "Euclidean Jordan algebras and the frame Peirce decomposition",
+  "abstract": "The frame Peirce decomposition: relative to a Jordan frame, a Euclidean Jordan algebra is the internal direct sum of the blocks V_ij over unordered pairs of frame indices, and in finite dimension the diagonal blocks are lines, dim V_ii = 1 - the Faraut-Koranyi table entry. The frame is carried as data, so frame conjugacy is sidestepped and nothing here claims anything about the rank of J. Machine checked, not peer reviewed, no priority claim.",
+  "authors": [
+    "Bryan Ehrlich"
+  ],
+  "repository": "https://github.com/ehrlich-b/euclidean-jordan",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.EuclideanJordan",
+  "declarations": [
+    "EuclideanJordan.frameBlock_isInternal",
+    "EuclideanJordan.finrank_frameBlock_diag"
+  ],
+  "informal": {
+    "EuclideanJordan.frameBlock_isInternal": "A Euclidean Jordan algebra is the internal direct sum of the Peirce blocks associated with a Jordan frame.",
+    "EuclideanJordan.finrank_frameBlock_diag": "In finite dimension, every diagonal block of a Jordan frame has dimension one."
+  },
+  "classification": {
+    "msc2020": [
+      "17C20",
+      "17C27",
+      "17C37",
+      "17C65",
+      "17A15",
+      "46L70"
+    ],
+    "tags": [
+      "nonassociative-algebra"
+    ],
+    "branch": "nonassociative algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/EuclideanJordan.lean",
+  "statement_hash": "sha256:692f771ad2e864f2fd51ec0429d36bbc4e5daf5f323724ed8058a13b57c707f9"
+}

@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000005",
+  "version": 1,
+  "title": "Identifying the rooted species tree from unrooted gene trees under the coalescent",
+  "abstract": "A formalization of E. S. Allman, J. H. Degnan and J. A. Rhodes, \"Identifying the rooted species tree from the distribution of unrooted gene trees under the coalescent\", J. Math. Biol. 62 (2011) 833-862. The multispecies coalescent is defined from Kingman's coalescent on forests of gene lineages (its generator, the matrix exponential, and a recursion over the species tree).\n\nProved: the distribution of unrooted topological gene trees, with one lineage sampled per taxon, determines the rooted species tree and its internal branch lengths when there are at least five taxa (Theorem 9); on four taxa it determines exactly the unrooted metric species tree (Proposition 3); with several lineages per taxon it also determines the corresponding pendant branch lengths (Corollary 10); and all of this holds for nonbinary species trees (Proposition 11). Every other result of the paper is proved too, with the explicit gene tree distributions, linear invariants and inequalities for five taxa, and the cited results that the proofs use: Tavare's formula, the reconstruction of trees from quartets, and Cayley's count of tree shapes.",
+  "authors": [
+    "The-Anh Vu-Le"
+  ],
+  "repository": "https://github.com/vltanh/lean4-adr11",
+  "commit": "2db7f81359758bc49f52bc13c51f2640f8f2a7fd",
+  "project_path": null,
+  "declarations": [
+    "ADR11.Challenge.unrootedDist_nonneg",
+    "ADR11.Challenge.unrootedDist_sum",
+    "ADR11.Challenge.fourTaxa_balanced",
+    "ADR11.Challenge.fourTaxa_caterpillar",
+    "ADR11.Challenge.theorem9",
+    "ADR11.Challenge.theorem9_four",
+    "ADR11.Challenge.proposition3",
+    "ADR11.Challenge.corollary10",
+    "ADR11.Challenge.proposition11_theorem9",
+    "ADR11.Challenge.proposition11_theorem9_four",
+    "ADR11.Challenge.proposition11_corollary10"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "q-bio.PE",
+      "math.PR"
+    ],
+    "msc2020": [
+      "92D15",
+      "60J90",
+      "60J27",
+      "05C05",
+      "62P10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T12:48:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2db7f81359758bc49f52bc13c51f2640f8f2a7fd",
+        "fork_repository": "PalomarArchive/vltanh--lean4-adr11--aeb74929e5e0",
+        "source_repository": "vltanh/lean4-adr11"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3ae79cf979da32e0bf480d9a8d71465a498206b94afe5ff7a70c7bee6ef5e2f2"
+}

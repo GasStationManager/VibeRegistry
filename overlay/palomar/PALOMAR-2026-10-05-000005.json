@@ -1,0 +1,70 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-05-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-05-000005",
+  "version": 1,
+  "title": "Erdős 1054: sums of smallest divisors",
+  "abstract": "A complete Lean 4 proof of all three parts of Erdős problem 1054. For the least integer f(n) whose k smallest divisors sum to n, we prove that f(n) is not o(n), is not o(n) on any density-one set, and satisfies limsup f(n)/n = ∞ on every density-one subtype. Building on the qualitative divisor-prefix sieve and almost-all binary Goldbach proof from Principia-Math-Solutions, this formalization proves the Formal Conjectures statements along with a sharp second-moment lower-density bound c / [A^3 (1 + log A)^4] for odd n with f(n) > A n, the Tao–Kovač small-ratio upper bound #{n ≤ X : 0 < f(n) ≤ δ n} ≤ C δ^3 X, liminf_{f(n)>0} f(n)/n = 0, and the asymptotic density equivalence between {s(2d)} and even aliquot values.",
+  "authors": [
+    "Linmiao Xu"
+  ],
+  "repository": "https://github.com/linrock/math-proofs",
+  "commit": "0917cd01090b52088aa82b09c8c84689047b8171",
+  "project_path": "erdos-1054",
+  "declarations": [
+    "Erdos1054.Palomar.answer_i",
+    "Erdos1054.Palomar.answer_ii",
+    "Erdos1054.Palomar.answer_iii",
+    "Erdos1054.Palomar.official_answer_i",
+    "Erdos1054.Palomar.official_answer_ii",
+    "Erdos1054.Palomar.official_answer_iii",
+    "Erdos1054.Palomar.limsup_on_every_density_one",
+    "Erdos1054.Palomar.odd_subtype_limsup",
+    "Erdos1054.Palomar.f_undefined_at_2",
+    "Erdos1054.Palomar.f_undefined_at_5",
+    "Erdos1054.Palomar.quantitative_odd_sharp_second_moment_logarithmic_endpoint",
+    "Erdos1054.Palomar.quantitative_odd_sharp_second_moment_logarithmic_endpoint_eventual_count",
+    "Erdos1054.Palomar.quantitative_odd_almost_full_three_plus_epsilon",
+    "Erdos1054.Palomar.quantitative_odd_pure_power_six",
+    "Erdos1054.Palomar.small_ratio_count_le_cubic",
+    "Erdos1054.Palomar.small_ratio_upper_density_le_cubic",
+    "Erdos1054.Palomar.littleO_on_subtype_imp_represented_density_zero",
+    "Erdos1054.Palomar.f_sigma_le",
+    "Erdos1054.Palomar.frequently_represented_small_ratio",
+    "Erdos1054.Palomar.cofactor_two_lower_density_eq_even_aliquot",
+    "Erdos1054.Palomar.cofactor_two_upper_density_eq_even_aliquot"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A25",
+      "11N36",
+      "11P32"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-05T07:51:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0917cd01090b52088aa82b09c8c84689047b8171",
+        "fork_repository": "PalomarArchive/linrock--math-proofs--14cf37780a40",
+        "source_repository": "linrock/math-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b9d0554bc41569aed61b68284182f5c15ac22db8107e807aad0a8140565e2610"
+}

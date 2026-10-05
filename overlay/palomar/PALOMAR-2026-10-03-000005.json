@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-03-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-03-000005",
+  "version": 1,
+  "title": "Optimal Information and Concavification in Bayesian Persuasion",
+  "abstract": "Kamenica and Gentzkow's finite-state persuasion theorem from economic primitives: nonempty compact metric actions, continuous sender and receiver utilities, and a full-support common prior. Receiver best replies and sender-preferred tie actions exist. The induced sender payoff is bounded and upper semicontinuous. Finite signals realize exactly finite Bayes-plausible posterior splittings, with prescribed posteriors recovered only at nonnull messages. An optimal finite signal with at most the number of states plus two messages exists and dominates every finite experiment. Its value is the least concave majorant of the induced payoff on the entire belief simplex; strict persuasion gain is exactly the concavification gap. This covers the signal/splitting part of Proposition 1 and Corollary 2, including attainment. The straightforward recommendation branch and compact-state extension are outside this scope. Related finite splitting and abstract attainment are already formalized in Daniel Lyng's Econlib; no first-formalization or novelty claim is made.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/bayesian-persuasion-lean",
+  "commit": "6bb350283717128bcd625daf93da18fe199e13d9",
+  "project_path": null,
+  "declarations": [
+    "BayesianPersuasion.economic_payoff_regular",
+    "BayesianPersuasion.finite_signal_splitting",
+    "BayesianPersuasion.optimal_information_and_concavification",
+    "BayesianPersuasion.persuasion_gain_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "econ.TH",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91A26",
+      "91B44",
+      "52A20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-03T12:27:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6bb350283717128bcd625daf93da18fe199e13d9",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--bayesian-persuasion-lean--b0746beaf304",
+        "source_repository": "Arthur742Ramos/bayesian-persuasion-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0b11c844f8e1e7120593ecc19325c13a46daf09177270423700dbe6d2001e7ab"
+}

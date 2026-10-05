@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000010",
+  "version": 1,
+  "title": "Erdős 546: sparse graph Ramsey numbers",
+  "abstract": "A complete Lean 4 proof of the affirmative answer to Erdős problem 546 (Sudakov's theorem): there exists an absolute constant C > 0 such that every finite simple graph G with m edges and no isolated vertices has diagonal Ramsey number R(G) ≤ 2^(C √m). Formalizing Sudakov's 2011 proof—including high-degree vertex deletion, greedy bounded-degree embedding and hereditary sparse cuts, low-density monochromatic-pair extraction, and iterative clique-reservoir amplification. This proves the uniform explicit bound R(G) ≤ 2^(4000 √m) across all finite simple graphs without isolated vertices (including m = 0), together with the exact Formal Conjectures statement.",
+  "authors": [
+    "Linmiao Xu"
+  ],
+  "repository": "https://github.com/linrock/math-proofs",
+  "commit": "7caa4144741e10f96cf79d6f7313a0efd9a18b67",
+  "project_path": "erdos-546",
+  "declarations": [
+    "erdos_546_original_statement",
+    "Erdos546.erdos_546",
+    "Erdos546.sudakov_sparse_bound",
+    "Erdos546.sparse_graph_ramsey_witness",
+    "Erdos546.boundedDegree_sparse_cut",
+    "Erdos546.exists_monoPair_of_low_edgeDensity",
+    "Erdos546.quantitative_monoPair_amplification"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C55",
+      "05C35",
+      "05D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T20:31:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7caa4144741e10f96cf79d6f7313a0efd9a18b67",
+        "fork_repository": "PalomarArchive/linrock--math-proofs--14cf37780a40",
+        "source_repository": "linrock/math-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:76d2198428c11be828665bca4d232bfa4eab35dca86d9faf5fd89a3a0f4a37d2"
+}

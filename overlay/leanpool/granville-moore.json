@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/AxiomMath/GranvilleMoore",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.GranvilleMoore",
   "declarations": [
     "GranvilleMoore.not_pow_succ_dvd_det_mooreMatrix_iff",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/GranvilleMoore.lean",
-  "statement_hash": "sha256:423137fc939378f1b637a818c098dea7146e660074fe8b83b57db16e321fee0f"
+  "statement_hash": "sha256:bc59252e035fbc26f4fe77501ab5e75b1b38c741f6a4d04046a146d3d27bdd59"
 }

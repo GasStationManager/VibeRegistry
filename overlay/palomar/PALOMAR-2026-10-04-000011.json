@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000011",
+  "version": 1,
+  "title": "Fundamental Groups of Arbitrary Two-Cell Attachments",
+  "abstract": "The full arbitrary-family two-cell attachment theorem for ordinary topological fundamental groups. For any path-connected topological space X, any basepoint, and any indexed family of continuous circle attaching maps, a genuine adjunction quotient is constructed from X and the coproduct of closed complex unit disks. The actual inclusion-induced fundamental-group homomorphism is surjective and its kernel is precisely the normal closure of the once-around attaching loops, transported along the specified basepoint paths. A quotient group isomorphism is proved compatible with the actual inclusion map. No finiteness, CW, separation, local-connectivity or semilocal-simple-connectivity hypotheses are added.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/cell-attachment-lean",
+  "commit": "1c671038e320cecc58ca1d81dca11bbe2e2a507c",
+  "project_path": null,
+  "declarations": [
+    "CellAttachment.two_cell_attachment"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AT",
+      "math.CT"
+    ],
+    "msc2020": [
+      "55Q05",
+      "18B40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T20:55:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1c671038e320cecc58ca1d81dca11bbe2e2a507c",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--cell-attachment-lean--38d25cf83333",
+        "source_repository": "Arthur742Ramos/cell-attachment-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:04d9f6717e2770682e64949c07affb56dbaf0ad308c43594c49cbc0da2bc4eca"
+}

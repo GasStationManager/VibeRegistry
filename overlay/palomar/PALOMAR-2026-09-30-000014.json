@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000014",
+  "version": 1,
+  "title": "Hong and Kung's red-blue pebble game: the partition lemma and I/O lower bounds for the FFT and matrix multiplication",
+  "abstract": "The red-blue pebble game of Hong Jia-Wei and H. T. Kung (STOC 1981) models a computation on a directed acyclic graph run with S words of fast memory and unlimited slow memory: a red pebble on a vertex is its value held in fast memory, a blue pebble its value held in slow memory, and each load or store costs one I/O operation. This formalisation defines the game, complete calculations and the minimum I/O time Q, and proves three families of results from the paper, with explicit constants and, where the paper states one, in its asymptotic form. Q is 0 by convention where no complete calculation exists, so each statement about Q is made only where one does. First, the partition lemma (Theorem 3.1 and Lemma 3.1): every complete calculation with at most S red pebbles and q I/O operations yields a 2S-partition of the graph into h sets with q <= S h <= q + S, so that Q >= S (P(2S) - 1) wherever a complete calculation exists. Read literally, the paper's Theorem 3.1 is false in two ways, since its rules let inputs be computed free of charge and let inputs be vertices other than the sources; here, as in Elango et al. (2014), the inputs are exactly the sources and cannot be computed. Second, the n-point FFT graph, for n = 2^k with k >= 1: every S-dominator partition has h sets with n (log2 n + 1) <= h S log2(2S) (Theorem 4.1, with a per-set bound sharper than the paper's, which also closes a gap in its proof), a complete calculation exists exactly when S >= 3, and every complete calculation has q >= 2n and n log2 n <= 5 q log2 S (Corollary 4.1 with an explicit constant); Q log S = Omega(n log n) holds with one constant for all such n and all S >= 3, and P_D(S) = Omega(n log n / (S log S)) with one constant for all such n and all S >= 2. Third, matrix multiplication by the ordinary algorithm, for every graph in which the m k n products A_il B_lj are vertices of their own, each with an edge from its two factors, and no vertex can be reached from the products of two different entries of the result; for m, k, n >= 1 this class contains every independent evaluation in the paper's sense. Every complete calculation has m k n <= 2 q sqrt(S) (Corollary 6.2 with an explicit constant), and for k >= 1 also q >= mk + kn + mn; Q sqrt(S) = Omega(m k n) holds with one constant over any collection of such graphs, for every graph of the collection and every S at which that graph has a complete calculation; and for all m, k, n >= 1 some such graph has a complete calculation exactly when S >= 3. Mathlib has no pebble games, so the statements rest on twelve definitions of the formalisation's own, which the Challenge restates for the reader. Not formalised: the paper's upper bounds (its Theorem 2.1 and section 8, which it states without proof), its sections 5 and 7, and its Theorem 6.1 for general expressions.",
+  "authors": [
+    "George A. Constantinides"
+  ],
+  "repository": "https://github.com/geoconuk/lean-misc-math",
+  "commit": "95624a5e96f93b05b744843f9fcd762503be1d85",
+  "project_path": null,
+  "declarations": [
+    "MiscMath.Computability.exists_partition_of_hasCompleteCalculation",
+    "MiscMath.Computability.io_lower_bound_of_parts",
+    "MiscMath.Computability.minIOTime_lower_bound",
+    "MiscMath.Computability.fft_parts_lower_bound",
+    "MiscMath.Computability.fft_parts_lower_bound_isBigO",
+    "MiscMath.Computability.fft_complete_iff",
+    "MiscMath.Computability.fft_io_bounds",
+    "MiscMath.Computability.fft_io_lower_bound",
+    "MiscMath.Computability.fft_io_lower_bound_isBigO",
+    "MiscMath.Computability.exists_isMatMulEvaluation",
+    "MiscMath.Computability.matMul_io_bounds",
+    "MiscMath.Computability.matMul_io_lower_bound",
+    "MiscMath.Computability.matMul_io_lower_bound_isBigO"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC",
+      "cs.DS"
+    ],
+    "msc2020": [
+      "68Q17",
+      "68Q25",
+      "05C57",
+      "65T50",
+      "65Y20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T03:30:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "95624a5e96f93b05b744843f9fcd762503be1d85",
+        "fork_repository": "PalomarArchive/geoconuk--lean-misc-math--79e5c7089a59",
+        "source_repository": "geoconuk/lean-misc-math"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a66668a3146ea84960414030837ffb578334de4eca72e98689f27eb63b39086e"
+}

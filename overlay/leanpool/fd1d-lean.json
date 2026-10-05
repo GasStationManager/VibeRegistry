@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "fd1d-lean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FullyDynamicMatching",
+  "version": 1,
+  "title": "Optimal fully dynamic matching on the line",
+  "abstract": "Constructs a measurable hierarchical policy for fully dynamic matching of uniformly arriving demand and replenishment on the unit interval. Proves logarithmic-over-inventory bounds for long-run root-mean-square distance from every initial inventory and for initialized finite-horizon expected average cost.",
+  "authors": [
+    "Yash Kanoria"
+  ],
+  "repository": "https://github.com/ykanoria/fd1d-lean",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.FullyDynamicMatching",
+  "declarations": [
+    "FD1D.V5.Palomar.optimalDynamicMatchingUpperBound"
+  ],
+  "informal": {
+    "FD1D.V5.Palomar.optimalDynamicMatchingUpperBound": "For every inventory size m at least two, an online policy has long-run RMS cost at most (72000/log 2) log(m+1)/m from every initial inventory, and the same expected-average-cost bound after initialization for horizons at least 2m²."
+  },
+  "classification": {
+    "msc2020": [
+      "60J20",
+      "90B15"
+    ],
+    "tags": [
+      "online-matching",
+      "probability",
+      "stochastic-optimization"
+    ],
+    "branch": "probability and optimization"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/FullyDynamicMatching.lean",
+  "statement_hash": "sha256:7453d9d90360d3d332c623cf9fa6b4d4feb86c35a44640497421f46d163508f8"
+}

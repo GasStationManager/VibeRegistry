@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000004",
+  "version": 1,
+  "title": "minimax-theorem-lean",
+  "abstract": "A Lean formalization of von Neumann's 1928 finite two-player zero-sum minimax theorem, a foundation of modern game theory and a cornerstone of mathematical economics. Nash equilibrium existence builds directly on its mixed-strategy solution concept by extending equilibrium existence beyond the two-player zero-sum case; this is historical motivation, not a claimed Lean proof of Nash's theorem. The formal result is Minimax.minimax_theorem {A B : Type*} [Fintype A] [Fintype B] [Nonempty A] [Nonempty B] (u : A → B → ℝ) : maxminValue u = minmaxValue u. The reported Palomar registry API search on 2026-09-29 for \"minimax\" returned zero entries. The M1 Mathlib survey found no finite zero-sum game specialization in the pinned Mathlib, whose general Sion saddle-point theorem is reused here.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/minimax-theorem-lean",
+  "commit": "0d5e3fd6ec3d56f5cafa34886019c46668fcf9ff",
+  "project_path": null,
+  "declarations": [
+    "Minimax.Palomar.maxmin_le_minmax",
+    "Minimax.Palomar.minmax_le_maxmin",
+    "Minimax.Palomar.minimax_theorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT",
+      "math.OC"
+    ],
+    "msc2020": [
+      "91A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T00:38:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0d5e3fd6ec3d56f5cafa34886019c46668fcf9ff",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--minimax-theorem-lean--2fd26e80c8d0",
+        "source_repository": "Arthur742Ramos/minimax-theorem-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c61f99ff72b380bdfe2c947dd0ce62ca2191f6b2d1c32116bd566100ca0f371a"
+}

@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "nrr-aak",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/NandakumarRamanaRao",
+  "version": 1,
+  "title": "Equal-area and equal-perimeter convex partitions",
+  "abstract": "Formalizes the Akopyan–Avvakumov–Karasev theorem that every planar convex body can be partitioned into any prescribed positive number of convex pieces with equal area and equal perimeter. Area is Lebesgue measure and perimeter is Hausdorff measure of the boundary.",
+  "authors": [
+    "Arseniy Akopyan"
+  ],
+  "repository": "https://github.com/akopjan/nrr-aak",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.NandakumarRamanaRao",
+  "declarations": [
+    "HumanVerification.equalAreaEqualPerimeterPartition"
+  ],
+  "informal": {
+    "HumanVerification.equalAreaEqualPerimeterPartition": "Every compact convex planar set with nonempty interior admits a convex partition into any positive number of pieces whose areas and perimeters are all equal."
+  },
+  "classification": {
+    "msc2020": [
+      "52A10",
+      "55M20"
+    ],
+    "tags": [
+      "convex-geometry",
+      "equivariant-topology",
+      "partitions"
+    ],
+    "branch": "convex geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/NandakumarRamanaRao.lean",
+  "statement_hash": "sha256:dc55ce642b8b4e00751d29e049072f014dc9c4ff5fb7be2d1f7eea77e60980dd"
+}

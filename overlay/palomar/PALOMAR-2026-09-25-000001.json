@@ -2,20 +2,37 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-09-25-000001",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000001",
-  "version": 1,
+  "version": 4,
   "title": "Absence of bounded-orbit wandering domains",
-  "abstract": "We prove that transcendental entire functions do not have bounded-orbit wandering domains. This answers a major open question in the field. The proof builds upon Zihao Ye's new proof of Sullivan's No Wandering Domains theorem, and was obtained with assistance by generative AI.  We also formalise a stronger theorem, which shows that locally defined holomorphic functions do not have orbits of simply connected wandering domains. The formalisation includes a number of classical results that were implemented as auxiliary results, including results concerning the hyperbolic metric for a finitely punctured sphere, and its area.",
+  "abstract": "We formalise the proof of two major recent results on wandering domains of transcendental entire and meromorphic functions: every orbit in a wandering domain accumulates at infinity and at a non-isolated (derived) point of the spherical set of singular values.\nBoth results are obtained as a special case of a more general theorem, for locally defined functions on possibly disconnected complex one-manifolds. Let f be an open holomorphic function from an open subset O of such a manifold X into X. Different components of O may map to different components of X, even when those source components lie in the same ambient component. Suppose that U is a wandering component of the set of normality of f, and that z is in U. If the orbit of z is contained in a compact subset of X, then it accumulates at a non-isolated point s of the set of singular values. Moreover, this accumulation must occur close to singularities for infinitely many singular values. That is, there exists a sequence (s_n) of distinct singular values converging to s, a sequence of embedded discs D_n containing s and a sequence U_n of components of f^{-1}(D_n), with the following properties. (We say that the orbit of z has \"singular encounters\"; see HasSingularEncounterSequence in the formalisation.) * the discs D_n shrink to s; that is, every neighbourhood of s contains D_n for sufficiently large n; * each component U_n contains a point of the orbit of z; * s_n is a singular value of the restriction f:U_n\\to D_n. In particular, the orbit of z is not contained in any compact subset of O. In the special case of a transcendental entire or meromorphic function, we can take X to be the Riemann sphere, and hence compact, so that the hypotheses are satisfied for any wandering Fatou component.\nWe also prove a corresponding theorem for measurable wandering subsets of the complement of the domain of normality on which all iterates are defined and injective; here the conclusion is that almost every point of the set (in any chart) behaves as above: ambient escape along a subsequence, or singular encounters.\nAs corollaries we recover Epstein's absence of wandering domains for finite-type maps on arbitrary open subsets of compact, possibly disconnected complex one-manifolds, and the classical no-wandering results for rational maps, compact-surface self-maps, and class S entire and meromorphic functions.\nThis is an update from the previous registered submission on Palomar, https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-25-000001&version=3 . The change in this update is to allow functions in the local result to take values in a possibly disconnected complex 1-manifold, rather than a Riemann surface. This aligns the definition with Epstein's original discussion of finite-type analytic maps, which likewise allow (compact) complex 1-manifolds.",
   "authors": [
     "Nikolai Prochorov",
     "Lasse Rempe",
     "James Waterman"
   ],
   "repository": "https://github.com/LR-UK/Bounded-orbit-wandering-domains",
-  "commit": "5c983043c79131f3c9525ab52ce748864d7d8b09",
+  "commit": "6e306deb8169e834e9cc6662160c70231a7e2a83",
   "project_path": null,
   "declarations": [
-    "BoundedWanderingDomains.no_local_bounded_wandering_domains",
-    "BoundedWanderingDomains.no_bounded_wandering_domains_transcendental_entire"
+    "BoundedWanderingDomains.wandering_domain_has_locally_uniform_escaping_subsequence",
+    "MeromorphicDynamics.wandering_domain_has_locally_uniform_escaping_subsequence",
+    "SurfaceDynamics.wandering_component_orbit_not_compactly_contained",
+    "SurfaceDynamics.positive_area_wandering_saturation_not_compactly_contained",
+    "BoundedWanderingDomains.wandering_orbit_accumulates_on_derived_singular_values",
+    "SurfaceDynamics.wandering_orbit_has_escaping_or_derived_singular_subsequence",
+    "BoundedWanderingDomains.no_bounded_wandering_domains_transcendental_entire",
+    "BoundedWanderingDomains.no_wandering_domains_transcendental_entire_finite_singularValues",
+    "SurfaceDynamics.no_wandering_domains_compact",
+    "SurfaceDynamics.no_wandering_domains_rational",
+    "SurfaceDynamics.compact_wandering_orbit_accumulates_on_derived_singular_values",
+    "SurfaceDynamics.almost_every_wandering_point_has_source_escaping_subsequence",
+    "SurfaceDynamics.positive_area_wandering_saturation_not_compactly_contained_away_from_derived",
+    "SurfaceDynamics.almost_every_wandering_point_has_escaping_or_derived_singular_subsequence",
+    "SurfaceDynamics.no_wandering_domains_finite_type",
+    "MeromorphicDynamics.no_wandering_domains_transcendental_meromorphic_finite_singularValues",
+    "SurfaceDynamics.wandering_domain_has_escaping_or_singular_encounter_sequence",
+    "SurfaceDynamics.almost_every_wandering_point_has_escaping_or_singular_encounter_sequence",
+    "MeromorphicDynamics.wandering_orbit_accumulates_on_derived_singular_values"
   ],
   "informal": {},
   "classification": {
@@ -30,7 +47,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-09-25T00:05:55Z",
+  "published_at": "2026-10-01T14:01:10Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -44,11 +61,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "5c983043c79131f3c9525ab52ce748864d7d8b09",
+        "commit": "6e306deb8169e834e9cc6662160c70231a7e2a83",
         "fork_repository": "PalomarArchive/LR-UK--Bounded-orbit-wandering-domains--c47223f53157",
         "source_repository": "LR-UK/Bounded-orbit-wandering-domains"
       }
     ]
   },
-  "statement_hash": "sha256:775b94d2b25354d570b34a8e88769d0638c491180c5f16192890adfa1017e372"
+  "statement_hash": "sha256:455aca9f8b743172fc6851d5f1a7569ccf1dc448f5656a010ba9cccc9e041fa6"
 }

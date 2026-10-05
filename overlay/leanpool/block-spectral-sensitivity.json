@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Timeroot/BS_Lam",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.BlockSpectralSensitivity",
   "declarations": [
     "BSLambda.Final.exists_bs_gt_lam_rpow",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/BlockSpectralSensitivity.lean",
-  "statement_hash": "sha256:d0d845318b0d120d9718b6da18966cddb10d47b2b40a0db79fc77103299a7a7e"
+  "statement_hash": "sha256:ad9b29da54c927c63dc1a553968db6a781ed6615345795f826cb308b225e35a7"
 }

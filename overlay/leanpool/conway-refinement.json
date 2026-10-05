@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "conway-refinement",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ConwayRefinement",
+  "version": 1,
+  "title": "Conway refinement for omnific integers",
+  "abstract": "Proves multiplicative refinement for omnific integers: every equality ab = cd admits a two-by-two factor refinement. Develops factorization and refinement of generalized power-series integer parts and connects these to surreal-number and standalone Mathlib formulations.",
+  "authors": [
+    "Dan Abramov"
+  ],
+  "repository": "https://github.com/gaearon/conway-refinement",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.ConwayRefinement",
+  "declarations": [
+    "ConwayRefinement.Palomar.conwayRefinement"
+  ],
+  "informal": {
+    "ConwayRefinement.Palomar.conwayRefinement": "If four omnific integers satisfy ab = cd, there are omnific integers e, f, g, h with a = ef, b = gh, c = eg, and d = fh, including degenerate cases."
+  },
+  "classification": {
+    "msc2020": [
+      "06A05",
+      "13F25"
+    ],
+    "tags": [
+      "surreal-numbers",
+      "ordered-algebra",
+      "factorization"
+    ],
+    "branch": "ordered algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ConwayRefinement.lean",
+  "statement_hash": "sha256:ef604a82a2a87f8a2a69720ee8e9bb6c78786cc63ebdd6fb91184dfa22c2e93e"
+}

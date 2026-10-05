@@ -1,0 +1,71 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000020",
+  "version": 1,
+  "title": "Linnik's constant is at most 3.99: A formalization of a weighted version of Heath-Brown's near-density estimate, and of the proof's certificate checker",
+  "abstract": "Two components of the proof, in the paper \"Linnik's constant is at most 3.99\" (paper/linnik399.pdf in this repository), that every reduced residue class modulo q contains a prime below q^3.99 for all large q. That bound itself is NOT formally verified here: the paper's zero-location arguments, case analysis and exterior regimes have conventional proofs and computer checks only. (1) The graded near lemma: fix test data (a detector f satisfying Heath-Brown's Condition 1, a Gram test g satisfying his Conditions 1 and 2, a Selberg-sieve weight with heights h_k >= 0 on cells [t_k, t_{k+1}) with t_0 > 1/3 + 2 eps', finitely many nonnegative anchor offsets, a positive lower bound for the weight omega where f is nonzero, and I_B > 0) and eta > 0. For all large q, take a finite family of entries (chi_j, gamma_j, delta_j) of non-principal characters mod q with heights |gamma_j| <= T <= (log q)/3 and a safe anchor at height 2T+1, whose characters are pairwise distinct whenever some sieve height h_k is nonzero (condition (iii) of the paper's Theorem 8.4; without sieve weights a character may repeat, and repeated characters enter through the pair excess e_j). Then the prime-sum responses satisfy (sum_j a_j R_j)_+^2 <= (1+eta) I_B [sum_j (D(delta_j) - d_1 + e_j) a_j^2 + (d_1 + eta)(sum_j a_j)^2] for all a_j >= 0. This is a weighted version of Heath-Brown's Lemma 12.1 (1992), which Heath-Brown remarks (section 16, item 9) no neat way of achieving \"seems available\". Its zero form: the response lemma (a response is bounded below by the zeros it keeps, via the local explicit formula), the threshold form exists tau: sum_j (v_j - tau)_+^2 / D_j <= 1 - tau^2/d with features computed from kept zeros, provided every diagonal numerator D(delta_j) - d_1 + e_j is positive, the entry bounds F(hi - s_j) of the rows, the normalization used by the leaf builders, and the vanishing of the pair excess for separated same-character pairs. (2) The leaf LPs: an exact integer checker for the certificates of the leaf linear programs (bisection trees over threshold boxes, first-order and tangent relaxations with safe rounding, exclusions, weak duality with a free dual) is proved sound: if it accepts a certificate with value v, every feasible point of the LP has objective at most v < 10^16. A bridge lemma turns the threshold form into the LP's near rows. Seven certificates (six leaves of the 3.99 corpus and the program of the large first-zero range) are checked by the kernel (decide +kernel) in the repository (not part of the compared theorems). The analytic part is conditional on four published estimates, stated as explicit hypotheses in the Challenge, each no stronger than its source: Xylouris's Lemmas 3.1 and 3.2 (= Heath-Brown's Lemmas 5.3 and 5.2), Burgess's character-sum bound with k = 3 as printed for primitive characters (Heath-Brown's Lemma 2.1; the form for all non-principal characters is derived), and Graham's asymptotic for Selberg-sieve sums. Mertens' estimate, Abel and partial summation, the Selberg majorant, the decay of Laplace transforms, the finiteness and multiplicities of zeros in a disc, the equality of multiplicities of conjugate zeros for real characters, and all error bookkeeping are proved.",
+  "authors": [
+    "Eric Naslund"
+  ],
+  "repository": "https://github.com/enaslund/linniks-constant-3.99",
+  "commit": "ecdbe3e3e08ad499d2c749ff417cc461f57334c5",
+  "project_path": null,
+  "declarations": [
+    "GradedNear.graded_near_lemma",
+    "GradedNear.response_lemma",
+    "GradedNear.graded_near_threshold",
+    "GradedNear.keptBound_single",
+    "GradedNear.keptBound_pair",
+    "GradedNear.single_zero_threshold",
+    "GradedNear.keptBound_double",
+    "GradedNear.keptBound_pair_neg",
+    "GradedNear.zeroTerm_conj",
+    "GradedNear.builder_threshold",
+    "GradedNear.pairExcess_eq_zero",
+    "GradedNear.burgessBound_of_primitive",
+    "GradedNear.zmult_conj",
+    "GradedNear.keptBound_pair_neg_real",
+    "GradedNear.Cert.near_row_of_bins",
+    "GradedNear.Cert.checkLeaf_sound",
+    "GradedNear.Cert.checkLeaf_lt",
+    "GradedNear.Cert.certified"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M20",
+      "11M26",
+      "11N13",
+      "11N35",
+      "11Y35",
+      "68V15",
+      "90C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T22:52:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ecdbe3e3e08ad499d2c749ff417cc461f57334c5",
+        "fork_repository": "PalomarArchive/enaslund--linniks-constant-3.99--88c18998ca3f",
+        "source_repository": "enaslund/linniks-constant-3.99"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3d19fd967e138420063c4d0bff05c899f79a613c896f98d1cf1c5c0efc5500b5"
+}

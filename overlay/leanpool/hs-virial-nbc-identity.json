@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/ukiyois/hs-virial-nbc-identity",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.HardSphereNBC",
   "declarations": [
     "PalomarHS.main_result",
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/HardSphereNBC.lean",
-  "statement_hash": "sha256:c9e6e0ea89e99503275114b65d9c0b415bb7a30dfbd843c64c5c6a08ad7c5654"
+  "statement_hash": "sha256:f82e2c3393d73ce71298f0d73ee7bba6a2b294ddcaa5537f92fd2fc467b4eb1e"
 }

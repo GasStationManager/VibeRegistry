@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "marshallhalltheorem",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MarshallHall",
+  "version": 1,
+  "title": "Marshall Hall's theorem through finite cores",
+  "abstract": "Formalizes Marshall Hall's finite-index free-factor theorem for finitely generated subgroups of finite-rank free groups. The proof extracts the finitely many suffix states of a subgroup generating set, completes the resulting partial generator actions to permutations of a finite state set, identifies the connected orbit with a finite core, and extends a geodesic spanning tree to obtain an inclusion-compatible free-product decomposition. It also exposes an explicit finite permutation separator for every finitely generated subgroup and element outside it, yielding the LERF consequence. The repository also proves binary and finite-indexed free-group instances of Grushko--Neumann rank additivity, and the arbitrary-factor binary theorem. The arbitrary-factor proof is carried by a finite labelled-graph fold, source-unfold, and monochromatic-vertex contraction reduction.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy J. G. B. de Queiroz"
+  ],
+  "repository": "https://github.com/arthur742ramos/marshallhalltheorem",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.MarshallHall",
+  "declarations": [
+    "MarshallHall.marshallHall",
+    "MarshallHall.rank_freeProduct_eq_add",
+    "LERFChallenge.freeGroup_finite_permutation_separator"
+  ],
+  "informal": {
+    "MarshallHall.marshallHall": "Every finitely generated subgroup of a finite-rank free group is an inclusion-compatible free factor of a finite-index subgroup.",
+    "LERFChallenge.freeGroup_finite_permutation_separator": "Every element outside a finitely generated subgroup of a finite-rank free group can be separated by an explicit finite permutation action.",
+    "MarshallHall.rank_freeProduct_eq_add": "The rank of a free product of finitely generated groups is the sum of their ranks."
+  },
+  "classification": {
+    "msc2020": [
+      "20E07",
+      "20F65",
+      "05C25"
+    ],
+    "tags": [
+      "group-theory"
+    ],
+    "branch": "group theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/MarshallHall.lean",
+  "statement_hash": "sha256:8d6cb98bb893f1fe94505b1abc9283cbe1b1cc2314d669715e81025beab70c59"
+}

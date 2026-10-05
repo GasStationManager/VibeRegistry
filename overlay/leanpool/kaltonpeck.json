@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "kaltonpeck",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/KaltonPeck",
+  "version": 1,
+  "title": "Rank parity and complex structures on the Kalton–Peck space",
+  "abstract": "Develops symplectic Fredholm theory and the real Kalton–Peck space to prove rank parity of finite-rank perturbations and rule out a complex structure on a hyperplane.",
+  "authors": [
+    "Avik Das"
+  ],
+  "repository": "https://github.com/adas1236/KaltonPeck",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.KaltonPeck",
+  "declarations": [
+    "KaltonPeck.noHyperplaneComplexStructure",
+    "KaltonPeck.rankParityGeneral",
+    "KaltonPeck.rankParityZ2"
+  ],
+  "informal": {
+    "KaltonPeck.rankParityGeneral": "The abstract symplectic Fredholm construction yields a rank-parity theorem.",
+    "KaltonPeck.rankParityZ2": "On the real Kalton–Peck space, T² + 1 has even rank whenever its rank is finite.",
+    "KaltonPeck.noHyperplaneComplexStructure": "A hyperplane of the real Kalton–Peck space cannot carry a complex structure."
+  },
+  "classification": {
+    "msc2020": [
+      "46B03",
+      "47A53"
+    ],
+    "tags": [
+      "functional-analysis",
+      "banach-spaces",
+      "fredholm-theory"
+    ],
+    "branch": "functional analysis"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "human",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/KaltonPeck.lean",
+  "statement_hash": "sha256:9b9da434fefa5d4dfecb95d5914515c51f05f9080e40d13896a28cfe1efa5e1d"
+}

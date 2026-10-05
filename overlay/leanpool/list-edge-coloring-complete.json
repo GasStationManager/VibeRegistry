@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "list-edge-coloring-complete",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ListEdgeColoringComplete",
+  "version": 1,
+  "title": "Häggkvist–Janssen list edge colouring of complete graphs",
+  "abstract": "Proves that arbitrary lists of at least n colours on the edges of a complete graph with n vertices admit a proper list edge colouring. The proof constructs and proves uniqueness of the local rank certificate, identifies a nonzero extended-star polynomial coefficient, and applies Mathlib's combinatorial Nullstellensatz. This is an alternative proof presentation, not a literal translation of the article's argument. The conclusion uses Mathlib's actual edge type and line-graph colouring, with no certificate hypothesis and no restriction on the colour universe. This formalizes a classical theorem, not a new bound or a solution of the general list-edge conjecture.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/haggkvist-janssen",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.ListEdgeColoringComplete",
+  "declarations": [
+    "LeanPool.ListEdgeColoringComplete.exists_listEdgeColoring_complete"
+  ],
+  "informal": {
+    "LeanPool.ListEdgeColoringComplete.exists_listEdgeColoring_complete": "For every finite vertex type V, arbitrary colour type and finite list on each edge of the complete graph, if every list has cardinality at least the number of vertices, there is a proper colouring of the line graph choosing a colour from each list. This includes orders zero and one."
+  },
+  "classification": {
+    "msc2020": [
+      "05C15"
+    ],
+    "tags": [
+      "graph-theory",
+      "list-edge-colouring",
+      "complete-graphs",
+      "combinatorial-nullstellensatz"
+    ],
+    "branch": "graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ListEdgeColoringComplete.lean",
+  "statement_hash": "sha256:949d8fa2f84a9f881416b01bb4ce13c4fec1408c48526696bb0c2cb101162e31"
+}

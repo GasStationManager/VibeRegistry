@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/deancureton/Puiseux",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Puiseux",
   "declarations": [
     "PuiseuxSeries.isAlgClosure",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Puiseux.lean",
-  "statement_hash": "sha256:4e959ba6afc84f9a1d1e72e07356754d213657d6d7a1ac20ca83a9f3ad0ad701"
+  "statement_hash": "sha256:204beed3b97f1fa32a4ded3cf11edda777fe3c41ee7f1735e4e2f6ab63e64314"
 }

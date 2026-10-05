@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000003",
+  "version": 1,
+  "title": "Cremer-McLean Full Surplus Extraction Theorem",
+  "abstract": "A Lean 4 formalization of the Cremer-McLean full surplus extraction theorem (Econometrica, 1988): for a single indivisible object with finitely many bidders, finite type spaces, and a correlated joint prior with full support, if every bidder's family of conditional distributions over the others' types is convex independent (no conditional lies in the convex hull of the rest), then there exists a Bayesian incentive compatible, interim individually rational direct mechanism that allocates ex post efficiently and extracts the full surplus: every bidder's interim expected utility is zero, so expected seller revenue equals the expected maximum value. The proof hinges on constructing side-bet lotteries with zero own-conditional expectation and strictly positive cross-conditional expectation, obtained by strict separation of each conditional from the convex hull of the others, scaled to dominate any misreport gain.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/cremer-mclean-lean",
+  "commit": "e0578ad905149bb579a2b4fe7930720055497c50",
+  "project_path": null,
+  "declarations": [
+    "CremerMcLean.separating_lottery",
+    "CremerMcLean.bic_of_good_lotteries",
+    "CremerMcLean.full_extraction"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "econ.TH",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91B26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-02T03:57:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e0578ad905149bb579a2b4fe7930720055497c50",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--cremer-mclean-lean--b8c346df28ca",
+        "source_repository": "Arthur742Ramos/cremer-mclean-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b6e0db1cef6dcb5fdef02e2eaac5950a39865bdd2100fc660c7e8bdb045d58a5"
+}

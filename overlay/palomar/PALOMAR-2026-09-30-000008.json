@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000008",
+  "version": 1,
+  "title": "Determinants and unstable cores in sequential distributive phosphorylation",
+  "abstract": "Vassena and Stadler (arXiv:2308.11486v3, Supplementary Example D) conjectured that sequential distributive phosphorylation cycles have only unstable-positive cores and that every invertible child-selection matrix has determinant of absolute value one. The determinant assertion is proved, and the restriction to unstable-positive cores is disproved. In the n-site cycle, every child-selection matrix has determinant 0, 1 or -1. For every n >= 3, a six-species child-selection matrix is minimally Hurwitz-unstable and has determinant 1, giving an unstable-negative core. For every n >= 2, there is an unstable-positive core on 2n+1 species, so their sizes are unbounded; every proper principal submatrix remains nonunstable under every positive column scaling. For every n >= 3, there is also a five-species D-unstable core: a positive column scaling makes it unstable, while every proper principal submatrix remains nonunstable under all such scalings.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p038-futile-cycle-child-selections",
+  "commit": "87366c2f6997480f4127b634c813e8daf8199abf",
+  "project_path": null,
+  "declarations": [
+    "FutileCycle.resolution",
+    "FutileCycle.positive_core_all_n",
+    "FutileCycle.negativeFive_core_all_n"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "92C42",
+      "15A15",
+      "15A18",
+      "34D20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T02:15:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "87366c2f6997480f4127b634c813e8daf8199abf",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p038-futile-cycle-child-selections--c80de064fed9",
+        "source_repository": "mmislan/palomar-p038-futile-cycle-child-selections"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2a77f754542cca7f5b5ba368fbd23b623fce26e36524ac50f9b27361a09f8f09"
+}

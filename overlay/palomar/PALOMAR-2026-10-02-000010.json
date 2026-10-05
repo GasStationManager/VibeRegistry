@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000010",
+  "version": 1,
+  "title": "Finite Bayesian-to-Dominant-Strategy Equivalence",
+  "abstract": "Finite Gershkov–Goeree–Kushnir–Moldovanu–Shi (2013) Theorem 2 for arbitrary finite agents and alternatives, heterogeneous ordered finite scalar type supports, arbitrary independent positive support masses, and linear private values with nonnegative slopes and arbitrary constants. The library constructs a feasible dominant-strategy mechanism preserving every support type's interim expected utility and ex ante social surplus. Weighted monotone lifting is proved by a compact feasible quadratic minimizer and an improving perturbation. Adjacent transfer bounds imply full-report IC by telescoping. Selected results are finite equivalence, weighted monotone lifting and optimizer monotonicity; scalar IC and support-restriction facts remain in the library as supporting lemmas. Validation evidence is recorded separately for the exact candidate.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/gershkov-bic-dic-lean",
+  "commit": "0e1bed171ab66b194d5ee28ac02818b9a7bc5073",
+  "project_path": null,
+  "declarations": [
+    "GGKMS.finite_bayesian_dominant_equivalence",
+    "GGKMS.weighted_monotone_lifting",
+    "GGKMS.minimizer_monotone"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "econ.TH",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91A27",
+      "91A10",
+      "91B44",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-02T18:37:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0e1bed171ab66b194d5ee28ac02818b9a7bc5073",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--gershkov-bic-dic-lean--d98725fc9369",
+        "source_repository": "Arthur742Ramos/gershkov-bic-dic-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ddf624fd6030d70f847fdd56a677d4c74c05f5ed7ca0b53dc8554c6bf9e97de7"
+}

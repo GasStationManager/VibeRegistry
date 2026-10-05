@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/SmaniaD/UnconditionalSchauderBasis",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.UnconditionalSchauderBasis",
   "declarations": [
     "UnconditionalCriterion.exists_unconditionalSchauderBasis_of_finiteSignBound",
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/UnconditionalSchauderBasis.lean",
-  "statement_hash": "sha256:d2e28b105289fbd1c9acdf0ceca5768420b7514348a49e3b4f1bfd3038bdfc62"
+  "statement_hash": "sha256:9fffd7eb8d2bcb191a603130bc2149e1ed303386f3b803ea7a85886740361663"
 }

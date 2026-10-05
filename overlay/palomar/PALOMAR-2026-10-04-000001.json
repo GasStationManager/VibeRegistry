@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000001",
+  "version": 1,
+  "title": "Distance-Shell Tomography: Geometric Certificates for Fault-Tolerant Sensing, Moment Compression, and Hypercube Equalization",
+  "abstract": "Substantive Lean development for labelled distance-shell observations of anonymous integer populations. The focused 14-statement interface covers six result groups. Square grids have an exact four-corner interval-cut characterization of recovery of all populations of mass at most two after one erased report, an equivalent distance-sum compression contract, and exact corner-constrained optimum ceil(3(n+1)/2) for every n at least 3. For every positive q, the actual-distance equalizer cardinality of Q_(4q) lies between 2^(4q-1)+2q-1 and 2^(4q-1)+2q; explicit prefixes also give the infinite contradiction to the sourced exponential formula. Further selected results prove the long-rectangle optimum, ordinary 2-domination on every positive even bishop board, two exact Petersen double-total-domination values, and a connected real fractional-face counterexample. The complete library is included, not an external or assumption-based wrapper. Supporting algebra and geometric lemmas remain proved but unselected. The public README explains mathematical scope, antecedents, and limitations without treating known ingredients or all supporting lemmas as separate original results.",
+  "authors": [
+    "Lennart Rudolph"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "636768718796b33b36d344d04b8e5f2f840633dd",
+  "project_path": "zenodo-23125523/palomar",
+  "declarations": [
+    "PalomarResults.Grid.gridRobust_iff_intervalCuts",
+    "PalomarResults.Grid.gridMomentRobust_iff_gridRobust",
+    "PalomarResults.Grid.grid_robust_sensor_lower_bound",
+    "PalomarResults.Grid.exact_corner_grid_robust_minimum_all",
+    "PalomarResults.Hypercube.infinite_counterexample_family",
+    "PalomarResults.Hypercube.odd_union_equalizer_iff_antipodal_cover",
+    "PalomarResults.Hypercube.equidistant_dimension_within_one",
+    "PalomarResults.Bishop.exact_two_domination",
+    "PalomarResults.Petersen11.exact_domination",
+    "PalomarResults.Petersen16.exact_domination",
+    "PalomarResults.Fractional.graph_connected",
+    "PalomarResults.Fractional.counterexample",
+    "PalomarResults.Rectangle.gridRobust_iff_intervalCuts",
+    "PalomarResults.Rectangle.exact_long_rectangle_robust_minimum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.IT"
+    ],
+    "msc2020": [
+      "05C12",
+      "05C69"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T00:36:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "636768718796b33b36d344d04b8e5f2f840633dd",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:89511f57eeb38482232b4731fc8af56afab6b75084ba258f635396767411e192"
+}

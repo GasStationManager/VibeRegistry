@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/dwrensha/Rupert.lean",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Rupert",
   "declarations": [
     "Cube.rupert",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Rupert.lean",
-  "statement_hash": "sha256:2669afcf9caf35ccafc0aef8ee5c8207c7e826ee28e9fbc8181cd388409b9685"
+  "statement_hash": "sha256:b6b83e04de0642fda2518f6405c9c0feeaa793302f22bbcb04cd529fe4c7d211"
 }

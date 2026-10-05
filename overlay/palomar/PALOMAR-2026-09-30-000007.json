@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000007",
+  "version": 1,
+  "title": "At least one of ζ(7), ζ(9), …, ζ(21) is irrational",
+  "abstract": "A Lean 4 and Mathlib proof that at least one of the eight values ζ(7), ζ(9), ζ(11), ζ(13), ζ(15), ζ(17), ζ(19), ζ(21) of the Riemann zeta function is irrational. The statement uses only Mathlib's riemannZeta, the theorem has no hypotheses, and its proof uses only the axioms propext, Classical.choice and Quot.sound. The shortest list of odd zeta values starting at ζ(7) that our literature search found proved to contain an irrational number was ζ(7), ζ(9), …, ζ(35) (W. Zudilin, Math. Notes 2001). The proof uses the very-well-poised linear forms of Zudilin (J. Théor. Nombres Bordeaux 2004, §8) with five derivatives, 23 factors and the direction vector η₀ = 160, η = (47, 47, 47, 47, 48, 50, 50, 51, 52, …, 66); they are linear forms in 1, ζ(7), ζ(9), …, ζ(21) with rational coefficients. Zudilin anticipated such an improvement but could not prove the asymptotics of his forms (his Lemma 20) for more than three derivatives. The proof here does not need them. The denominators of the coefficients are bounded by Zudilin's arithmetic lemma, the prime number theorem (proved from a vendored Lean proof of the Wiener–Ikehara theorem) and a kernel-checked table of 2602 pieces of Zudilin's function φ. For large n the forms are bounded by e^(−748.1n), through a contour integral on a fixed vertical line, pointwise estimates and certified numerical inequalities, without saddle-point analysis. They are non-zero if the eight values are rational, because at the auxiliary primes ℓ = 63n − 1, of which there are infinitely many by Dirichlet's theorem, the constant term has ℓ-adic valuation −5 while the coefficients of the zeta values are ℓ-integral. The theorem does not say which value is irrational. The mathematics and the Lean code were produced by AI agents under human direction and have not been refereed.",
+  "authors": [
+    "Gennaro Marco Devincenzis"
+  ],
+  "repository": "https://github.com/gmDevi/zeta-7-21-lean",
+  "commit": "a3b69fc43aea3dd140540f6e8380c7d0fecce028",
+  "project_path": null,
+  "declarations": [
+    "ZetaWindow.zeta_7_to_21_not_all_rational_palomar"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11M06",
+      "33C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T01:55:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a3b69fc43aea3dd140540f6e8380c7d0fecce028",
+        "fork_repository": "PalomarArchive/gmDevi--zeta-7-21-lean--801a5a28c754",
+        "source_repository": "gmDevi/zeta-7-21-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9f3865ca1de70dd0926d600260076d3f711423934970950c3a5e11f6eb62ade3"
+}

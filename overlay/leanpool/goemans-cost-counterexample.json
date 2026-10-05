@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jyh/dinitz-verify",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.GoemansFlow",
   "declarations": [
     "GoemansFlow.goemans_cost_conjecture_false",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/GoemansFlow.lean",
-  "statement_hash": "sha256:64820df760964438cec261eafc0429e68f6cff9a41e96e129e17a6ec75525e4b"
+  "statement_hash": "sha256:fc42f21e3e2f708b2e585c5e1f7b9d430b09d21f8fef0e02e5fa2eab82ea1648"
 }

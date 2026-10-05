@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "brill-noether-graphs",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BrillNoetherGraphs",
+  "version": 1,
+  "title": "Brill–Noether theory and gonality of finite graphs",
+  "abstract": "Formalizes Brill–Noether existence through genus five, chains of marked banana graphs and loops, the treewidth lower bound for gonality, and a tricycle example whose gonality drops under regular subdivision. Includes divisor and transmission infrastructure and the Demazure-product support used by vertex gluing.",
+  "authors": [
+    "Nathan Pflueger"
+  ],
+  "repository": "https://github.com/npflueger/brill-noether-graphs",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.BrillNoetherGraphs",
+  "declarations": [
+    "Highlights.brill_noether_existence_through_five",
+    "Highlights.treewidth_le_gonality",
+    "Highlights.gonality_drops_under_regular_subdivision"
+  ],
+  "informal": {
+    "Highlights.brill_noether_existence_through_five": "Every finite connected loopless multigraph of genus g at most five has, for integers r and d, a divisor of degree d and rank at least r whenever (r + 1) * (g - d + r) ≤ g.",
+    "Highlights.treewidth_le_gonality": "On a finite connected loopless multigraph, for every natural number k, any degree-k divisor of rank at least one bounds the treewidth by k; this is the witness formulation of the treewidth lower bound for divisorial gonality.",
+    "Highlights.gonality_drops_under_regular_subdivision": "There is a graph whose divisorial gonality strictly decreases under a regular subdivision."
+  },
+  "classification": {
+    "msc2020": [
+      "14T15",
+      "05C50"
+    ],
+    "tags": [
+      "brill-noether-theory",
+      "graph-theory",
+      "chip-firing",
+      "tropical-geometry"
+    ],
+    "branch": "combinatorics and tropical geometry"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/BrillNoetherGraphs.lean",
+  "statement_hash": "sha256:41ec7bb5c9922b52cc758d3da41de966e5b6d48af9327caa390cdc51eb37a8a7"
+}

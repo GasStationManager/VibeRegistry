@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/openai/ten-proofs",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.MulticolorTriangleRamsey",
   "declarations": [
     "ErdosProblems.MulticolourTriangleRamsey.erdos_problem_183_explicit",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MulticolorTriangleRamsey.lean",
-  "statement_hash": "sha256:5c5370434bf57a8d134843806cad583ad4165362e287ab9c91814b044c426500"
+  "statement_hash": "sha256:fea3168f057967a469628ddef4fe622367171bd6cb676da76c42ce30bf4860fa"
 }

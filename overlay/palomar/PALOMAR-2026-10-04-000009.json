@@ -1,0 +1,87 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000009",
+  "version": 1,
+  "title": "Dynamic MCS Ordering Maintenance",
+  "abstract": "A fully-dynamic Maximum-Cardinality-Search (MCS) ordering algorithm that, on a single-edge insertion or deletion into a loop-free undirected graph, scans the affected window between the two endpoints for the first step at which the current ordering's choice stops being a legal MCS pick, and only then regreedies the suffix (probe-then-repair). Correctness - every order produced stays a valid MCS ordering of the updated graph, and in fact equals the from-scratch canonical ordering - is machine-checked in Lean 4 / Mathlib, together with locality (the first position whose choice can change lies inside the window between the endpoints; after a break the suffix is regreedyed, so positions past the window may also change), an executable boolean-adjacency implementation proved to refine the abstract update, and per-update cost in a unit-cost query model (counting legality checks and pick steps along the real executable control flow): at most n units for an insertion and n + 1 for a deletion, so the worst case matches static recomputation. A stability-boundary result is also proved: if the neighbour count of every vertex in one graph exceeds that in the other by at most one along every chosen prefix, the two graphs admit a common MCS ordering; in particular inserting or deleting a matching, or flipping a single edge, always preserves a common MCS ordering.",
+  "authors": [
+    "Md Thoriqul Islam Thonmay",
+    "Gregory Morse"
+  ],
+  "repository": "https://github.com/thonmay/thesis-lean",
+  "commit": "a872fddca7025ae0ecedd654238fa0c06729dc2e",
+  "project_path": null,
+  "declarations": [
+    "Challenge.init_valid",
+    "Challenge.insert_update_valid",
+    "Challenge.delete_update_valid",
+    "Challenge.greedySuffix_full",
+    "Challenge.update_from_prefix",
+    "Challenge.setEdge_preserves_symm",
+    "Challenge.setEdge_preserves_loopless",
+    "Challenge.mcsOrder_eq_greedySuffix",
+    "Challenge.exec_insert_recompute_valid",
+    "Challenge.exec_delete_recompute_valid",
+    "Challenge.IsMCSOrdering_unique",
+    "Challenge.insert_update_eq_initOrder",
+    "Challenge.delete_update_eq_initOrder",
+    "Challenge.legal_upto_earlierPos",
+    "Challenge.legal_after_laterPos",
+    "Challenge.delete_legal_between",
+    "Challenge.insert_break_iff",
+    "Challenge.insert_update_eq_self_iff",
+    "Challenge.delete_update_eq_self_iff",
+    "Challenge.exec_insert_update_eq",
+    "Challenge.exec_delete_update_eq",
+    "Challenge.exec_insert_cost_le",
+    "Challenge.exec_delete_cost_le",
+    "Challenge.exec_insert_cost_of_no_break",
+    "Challenge.exec_delete_cost_of_no_break",
+    "Challenge.exec_insert_cost_of_break",
+    "Challenge.exec_delete_cost_of_break",
+    "Challenge.exec_insert_update_c_fst",
+    "Challenge.exec_delete_update_c_fst",
+    "Challenge.exists_common_ordering",
+    "Challenge.common_order_extends_prefix",
+    "Challenge.insert_matching_common_order",
+    "Challenge.delete_matching_common_order",
+    "Challenge.flip_common_order",
+    "Challenge.triangle_no_common_order",
+    "Challenge.p4_no_common_order",
+    "Challenge.mixed_matching_no_common_order"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C85",
+      "68Q25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T18:32:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a872fddca7025ae0ecedd654238fa0c06729dc2e",
+        "fork_repository": "PalomarArchive/thonmay--thesis-lean--090f8db89fc3",
+        "source_repository": "thonmay/thesis-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:245b69dd4bd0efb2d46c4ed91fd683ceecc1d054b18e64eb19b90af2d85ec750"
+}

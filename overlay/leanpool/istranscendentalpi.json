@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/samuelborza/IsTranscendentalPi",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.IsTranscendentalPi",
   "declarations": [
     "IsTranscendentalPi",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/IsTranscendentalPi.lean",
-  "statement_hash": "sha256:c02fba5a13d244f4f6f6d2b8e6c1f0b2e13065c13c57382920943e06db3cb738"
+  "statement_hash": "sha256:5b7b3243634dfbbc01a8068f4330a78bd94d842cedfd2829dd5cb4664b82d905"
 }

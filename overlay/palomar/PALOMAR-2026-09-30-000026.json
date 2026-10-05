@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000026",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000026",
+  "version": 1,
+  "title": "FKS Problem 2 in dimension three",
+  "abstract": "A Lean-checked proof of the d = 3 case of FKS Problem 2: for every simple graph G on seven vertices, G or its complement has an injective placement in Euclidean three-space under which every edge has length 1. Non-edges are unconstrained and may also have length 1. The full question, for graphs on 2d + 1 vertices in dimension d, is stated and marked open. In the notation of Alon and Kupavskii, the proved case gives f_D(7) ≤ 3; together with the published lower bound it implies f_D(7) = 3. The formal target is the seven-vertex disjunction, not a definition or equality for f_D. The research audience is discrete geometers and extremal graph theorists studying unit-distance representations, graph dimension and distance Ramsey questions.",
+  "authors": [
+    "Dishant Shah"
+  ],
+  "repository": "https://github.com/Dishah3241/FKSProblem2",
+  "commit": "11413860db107522485d4e8e580ae406363c1164",
+  "project_path": null,
+  "declarations": [
+    "FKSProblem2.Palomar.target"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "05C62",
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T11:22:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "11413860db107522485d4e8e580ae406363c1164",
+        "fork_repository": "PalomarArchive/Dishah3241--FKSProblem2--86c58af695b2",
+        "source_repository": "Dishah3241/FKSProblem2"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8d01e8ed90f318e89286940323f6d1c38e5a2de7847110a013ff0269b0899e3c"
+}

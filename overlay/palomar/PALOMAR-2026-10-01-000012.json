@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000012",
+  "version": 1,
+  "title": "Myerson's Optimal Auction Theorem",
+  "abstract": "A Lean formalization of Myerson's 1981 optimal auction theorem, regular case, in a single-parameter independent-private-values model with real types. Finitely many bidders draw independent types from TypeDist priors: probability measures on ℝ with a continuous monotone CDF and a nonnegative Lebesgue density that vanishes for negative types, so each prior's mass lies on [0, ∞). The formal results are MyersonOptimalAuction.Palomar.virtualSurplusIdentity: under BIC, the support hypothesis (hsupp : ∀ t : ℝ, 0 < t → 0 < D.F t, i.e. the prior puts positive mass in (0, t] for every t > 0 so zero is in the support), and five integrability hypotheses, the expected payment equals the expected virtual surplus minus the interim utility at the reference type (type zero), expectedPayment p D = expectedVirtualSurplus x D - interimUtility x p 0; and MyersonOptimalAuction.Palomar.optimalAuction: for regular priors (hreg : Regular D, i.e. each bidder's virtual value ψ(t) = t - (1 - F t) / f t is nondecreasing on nonnegative types), the auction that allocates the item to the least-index bidder attaining the highest virtual value whenever that value is strictly positive (no sale otherwise), with envelope payments normalized to zero utility at type zero, is Bayesian incentive compatible and interim individually rational, and raises at least as much expected revenue as any feasible BIC and interim-IR mechanism. Independence is the product measure over type profiles; feasibility is pointwise (∑ i, X i t ≤ 1 for every profile t). Types range over all of ℝ; zero is only the reference/normalization type, never a lowest type. The Bochner integrals defining expectations are totalized, so every expectation claim carries the integrability hypotheses that make it non-vacuous. Ironing for irregular distributions is out of scope. The Palomar registry API searches on 2026-10-01 for \"optimal auction\", \"virtual surplus\", and \"virtual value\" returned no existing Myerson optimal auction formalization (\"optimal auction\" matched only PALOMAR-2026-10-01-000007, Bulow-Klemperer, a different theorem). These are dated, limited observations, not universal prior-art claims.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/myerson-optimal-auction-lean",
+  "commit": "f78aa142d4c34ed70262f44250fa66eb1f95ffb4",
+  "project_path": null,
+  "declarations": [
+    "MyersonOptimalAuction.Palomar.virtualSurplusIdentity",
+    "MyersonOptimalAuction.Palomar.optimalAuction"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT",
+      "econ.TH"
+    ],
+    "msc2020": [
+      "91B26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T13:50:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f78aa142d4c34ed70262f44250fa66eb1f95ffb4",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--myerson-optimal-auction-lean--3701856fdb67",
+        "source_repository": "Arthur742Ramos/myerson-optimal-auction-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:07f345c1d46753f388e42d774b0d1d3b191e0dbe5a01a486dba22f2b484b3cdd"
+}

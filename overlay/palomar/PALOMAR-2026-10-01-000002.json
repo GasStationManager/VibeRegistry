@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000002",
+  "version": 1,
+  "title": "A Short Proof of Ball's Plank Theorem",
+  "abstract": "Formalization in Lean 4 of the paper 'A Short Proof of Ball's Plank Theorem' by Arseniy Akopyan and Alexander Polyanskii (arXiv:2609.36163). The paper gives a short proof of Keith Ball's 1991 theorem: if a centrally symmetric convex body in R^d is covered by finitely many planks, the sum of their relative widths with respect to the body is at least 1. The proof is based on a simple proof of a core theorem about linear functionals on R^n and an orthonormal basis. It also yields a short proof of Davenport's problem for centrally symmetric convex bodies (interior-disjointness of a homothet K/(n+1) from n hyperplanes).",
+  "authors": [
+    "Arseniy Akopyan"
+  ],
+  "repository": "https://github.com/akopjan/Palomar-Bang-Ball",
+  "commit": "e57a2d8d0129b2d7ce3ee45c2064f5080c8c65eb",
+  "project_path": null,
+  "declarations": [
+    "PlankProblem.ball_plank_theorem",
+    "PlankProblem.core_theorem",
+    "PlankProblem.davenport_conjecture"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG"
+    ],
+    "msc2020": [
+      "52A20",
+      "52C17",
+      "52A38",
+      "52A40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T00:18:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e57a2d8d0129b2d7ce3ee45c2064f5080c8c65eb",
+        "fork_repository": "PalomarArchive/akopjan--Palomar-Bang-Ball--93f2b4a952dd",
+        "source_repository": "akopjan/Palomar-Bang-Ball"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a09afd27de725d9f8c9bd6eeaf6c36b8fd3b85878ab2e1c213aa872b7c677706"
+}

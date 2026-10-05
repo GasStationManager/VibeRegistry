@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/roos-j/lean-superorthogonality",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Superorthogonality",
   "declarations": [
     "Superorthogonal.sqfct_estimate_of_type_iv_superorthogonal"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Superorthogonality.lean",
-  "statement_hash": "sha256:e048ffe6dc3dca8f5921890a4d5612b2a015a09788b41b23b8b1ff9b1f7f2098"
+  "statement_hash": "sha256:b3ff2ab544eb4dcdbacf0fc0fd553823a0ef0dd0395f00e8c70c340d965cbf34"
 }

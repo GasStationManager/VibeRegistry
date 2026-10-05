@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/dhyeymavani2003/chip-firing-with-lean",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.ChipFiring",
   "declarations": [
     "ChipFiring.Propositions.riemann_roch",
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ChipFiring.lean",
-  "statement_hash": "sha256:8e1ed7ecb1c715ccf196640b0cf4de06e960d232b3da651954b2857beeb3d63e"
+  "statement_hash": "sha256:c2bc3fa6bf1062455b2b051f2a32b95f70d7deae3d9716aa75ad286cb0fedb13"
 }

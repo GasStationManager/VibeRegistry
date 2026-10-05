@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/vo-rodrigues/wallace-problem-zfc-paper",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Wallace",
   "declarations": [
     "Wallace.commutativeTychonoffWallaceCounterexampleExists",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Wallace.lean",
-  "statement_hash": "sha256:1f9ea00f5cfcba8126f31d18e0af3324f11984306bf68c6d344791808dac6423"
+  "statement_hash": "sha256:4fa60655c59d51b6f28c4ae7c6ae01fb88472b2aaa9cbcc587977a07b5c6815a"
 }

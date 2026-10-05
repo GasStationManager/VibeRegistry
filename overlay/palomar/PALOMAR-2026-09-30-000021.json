@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000021",
+  "version": 1,
+  "title": "Improved sum–difference inequalities in abelian groups",
+  "abstract": "For all finite subsets X,Y of an abelian group,  |X-Y| <= |X+Y|^λ with λ = (9451e-3286)/(5378e+787) = 1.454277448906…, less than the classical exponent 3/2. A multiscale transfer gives the upper bound (13524e-7359)/(9451e-3286) = 1.312373302115… for the Gyarmati–Hennecart–Ruzsa small-sumset exponent, less than their exponent 4/3. The proof of the first result combines a coupling with distinct differences, entropy inequalities for independent sums, a finite certificate using non-Shannon inequalities, and an explicit limiting certificate. The transfer uses localization and the Plünnecke-Ruzsa inequality over a sequence of scales.",
+  "authors": [
+    "Logan J. Kleinwaks"
+  ],
+  "repository": "https://github.com/kleinwaks/sum-difference",
+  "commit": "9bd88c1a14ecedc6ecc6d96eb6403a62d9fc0989",
+  "project_path": null,
+  "declarations": [
+    "SumDifferenceResults.pair_bound",
+    "SumDifferenceResults.transfer_bound",
+    "SumDifferenceResults.transfer_pair_exponent",
+    "SumDifferenceResults.pair_exponent_bound",
+    "SumDifferenceResults.theta_bound",
+    "SumDifferenceResults.multiscale_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B30",
+      "11B75",
+      "94A17"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T08:28:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9bd88c1a14ecedc6ecc6d96eb6403a62d9fc0989",
+        "fork_repository": "PalomarArchive/kleinwaks--sum-difference--60abd0c4239b",
+        "source_repository": "kleinwaks/sum-difference"
+      }
+    ]
+  },
+  "statement_hash": "sha256:03f7740db1b79f73901e1742e8b011ca3b2debc793ef0e5bd66d174ce2666580"
+}

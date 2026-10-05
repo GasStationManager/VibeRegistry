@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000004",
+  "version": 1,
+  "title": "Erdős Problem 809: rainbow odd cycles",
+  "abstract": "A Lean proof resolving the Burr–Erdős–Graham–Sós conjecture (Erdős Problem 809): for every fixed odd cycle of length at least seven, the maximal anti-Ramsey threshold at floor(n²/4) + 1 edges is n²/8 + o(n²). The seven-cycle case is new to our knowledge. The development proves it and formalizes the stronger full-density result of Bucić, Chen, and Ma for odd cycles of length at least nine.",
+  "authors": [
+    "Jacob Parish"
+  ],
+  "repository": "https://github.com/plasma-ai/erdos-809",
+  "commit": "0f27743fabd97b262d2fce7946de9f0b3325a625",
+  "project_path": null,
+  "declarations": [
+    "Erdos809.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T01:21:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0f27743fabd97b262d2fce7946de9f0b3325a625",
+        "fork_repository": "PalomarArchive/plasma-ai--erdos-809--95e57efacaad",
+        "source_repository": "plasma-ai/erdos-809"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fa66c0f5e3bd1f0501c6cb036c3ddbe97c13e6c26deb19963aa59332b65af24e"
+}

@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/arthur742ramos/nagatafactoriality",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.NagataFactoriality",
   "declarations": [
     "NagataFactoriality.nagata_theorem"
@@ -43,5 +43,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/NagataFactoriality.lean",
-  "statement_hash": "sha256:fcffd0fca94d59a154877ea6d89b61313d3fe47c9db8e518c765664071445ede"
+  "statement_hash": "sha256:9b82caa49f19329e87107803929ab86ca94fd85c86d276312e760fef89cbc2bc"
 }

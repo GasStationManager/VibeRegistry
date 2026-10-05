@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-05-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-05-000003",
+  "version": 1,
+  "title": "ChazelleTriangulation",
+  "abstract": "A formalization and provably correct implementation of a linear-time algorithm for triangulating a simple polygon.  The implementation is a concrete program for an explicit exact real RAM.  Lean proves that on every simple polygon with n vertices the program halts within C(n+1) steps, with natural-number words at most K(n+1), and outputs a conforming triangulation with exactly n - 2 triangles on the input vertices.  No general-position assumption is made.  The proofs use exactly Lean's three standard axioms (propext, Classical.choice, Quot.sound), with no sorry and no native_decide.  They are checked by the Lean kernel and replayed by independent kernels.  The algorithm is a variant of Chazelle's (B. Chazelle, Triangulating a simple polygon in linear time, Discrete & Computational Geometry 6 (1991), 485-524), and the main theorem is the triangulation conclusion of his Theorem 4.3.  The program follows the structure of Chazelle's algorithm: visibility maps of polygonal chains, merging with conformality restoration and granularity enforcement, ray-shooting and arc-cutting oracles built with planar separators, the up phase and the down phase, and the final stage from the visibility map to the triangulation.  It departs from the paper's algorithm in documented ways; in particular its down phase recurses only for n >= 2^30 + 2.  The running-time bound is proved for this program, not for the algorithm as the paper describes it.  The program is also given by name with explicit (very large) constants, and a merge-level refinement theorem shows that its run follows an abstract model of the algorithm written from the paper.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/LinearTimeTriangulation-ChazelleAlgorithm-Lean4",
+  "commit": "04eace8ccf30c8a6ee2d2b8a85f6cca4b29170ea",
+  "project_path": null,
+  "declarations": [
+    "Chazelle.linear_time_triangulation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CG"
+    ],
+    "msc2020": [
+      "68U05",
+      "68Q25",
+      "68W40",
+      "52B55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-05T05:18:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "04eace8ccf30c8a6ee2d2b8a85f6cca4b29170ea",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--LinearTimeTriangulation-ChazelleAlgorithm-Lean4--0d58a8483c03",
+        "source_repository": "RBarish-UTokyo/LinearTimeTriangulation-ChazelleAlgorithm-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d433d2f7c1d6043e254cdf8ba5810f027c733a53bc93e8867a287a68b570a7d0"
+}

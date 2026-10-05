@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "vizing-equitable-edge-colouring",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Vizing",
+  "version": 1,
+  "title": "Vizing's theorem and equitable edge colourings",
+  "abstract": "Proves the maximum-degree-plus-one edge-colouring bound for finite simple graphs by fans and Kempe exchanges. A separate component-swapping argument equitably rebalances any finite proper edge colouring on its original palette. Together they give equitable proper edge colourings on any palette of at least maximum degree plus one colours, with every class bounded by the ceiling of the average class size. Extracted from the published Paper IV formalization; these are classical colouring results, not a claim to new mathematics or to the paper's clique-partition bound.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.Vizing",
+  "declarations": [
+    "LeanPool.Vizing.exists_equitable_edge_colouring",
+    "LeanPool.Vizing.lineGraph_colorable",
+    "SimpleGraph.lineGraph_chromaticNumber_le_maxDegree_succ",
+    "LeanPool.Vizing.Equitable.exists_equitable_colouring"
+  ],
+  "informal": {
+    "LeanPool.Vizing.lineGraph_colorable": "The line graph of a finite simple graph G is colourable with maximum degree of G plus one colours.",
+    "SimpleGraph.lineGraph_chromaticNumber_le_maxDegree_succ": "The chromatic number of the line graph of a finite simple graph G is at most maximum degree of G plus one.",
+    "LeanPool.Vizing.Equitable.exists_equitable_colouring": "Every proper edge colouring of a finite simple graph with a finite palette admits a proper recolouring on the same palette in which any two colour classes differ in size by at most one.",
+    "LeanPool.Vizing.exists_equitable_edge_colouring": "For every finite simple graph G and natural c at least maximum degree of G plus one, there is an equitable proper edge colouring with c colours; each colour class has at most ceiling(|E(G)|/c) edges."
+  },
+  "classification": {
+    "msc2020": [
+      "05C15"
+    ],
+    "tags": [
+      "graph-theory",
+      "edge-colouring",
+      "vizing-theorem",
+      "equitable-colouring",
+      "kempe-chains"
+    ],
+    "branch": "graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Vizing.lean",
+  "statement_hash": "sha256:d0f5d72e5a51eb2db2826d1dd31c5985e23fbbc8d971db0b43da8fe178fe39dd"
+}

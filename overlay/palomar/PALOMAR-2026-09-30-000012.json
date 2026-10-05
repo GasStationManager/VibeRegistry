@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000012",
+  "version": 1,
+  "title": "kissing-number-lean",
+  "abstract": "The kissing number of Euclidean 3-space is 12: at most twelve unit balls with disjoint interiors touch a given unit ball, and twelve do. The upper bound follows Musin's extension of the Delsarte linear-programming method. The Delsarte machinery on the sphere (positive-definite zonal kernels up to degree 9 and the LP bound, which by itself gives only 13) is built from scratch, since Mathlib has no spherical harmonics. The lower bound is the cuboctahedron.",
+  "authors": [
+    "Marek Wrzos"
+  ],
+  "repository": "https://github.com/Pendzoncymisio/kissing-number-lean",
+  "commit": "2e403b0d1afe84f41a90cb77d926bc31666a8972",
+  "project_path": null,
+  "declarations": [
+    "KissingNumber.kissingNumber_three",
+    "KissingNumber.neighbors_le_twelve"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "52C17",
+      "05B40",
+      "94B65",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T03:10:53Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2e403b0d1afe84f41a90cb77d926bc31666a8972",
+        "fork_repository": "PalomarArchive/Pendzoncymisio--kissing-number-lean--012113b2f3eb",
+        "source_repository": "Pendzoncymisio/kissing-number-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:47757245784d18ba2611aaf1028bff625ea3fa012d5e82c72b44979e8ba8815e"
+}

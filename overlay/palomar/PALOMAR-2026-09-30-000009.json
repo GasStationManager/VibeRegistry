@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000009",
+  "version": 1,
+  "title": "Attracting oscillations in sequential distributive phosphorylation",
+  "abstract": "Vassena (arXiv:2608.27081v2, Section 8) left open whether sequential distributive phosphorylation cycles with three or more sites admit Hopf bifurcation under mass-action kinetics. For every n >= 3, a componentwise-affine family of positive rate constants is constructed for the n-site cycle with one kinase and one phosphatase and a fixed positive equilibrium. A family of strictly positive, nonconstant periodic orbits bifurcates from this equilibrium, with amplitudes tending to zero and periods tending to a finite positive limit. Each orbit is orbitally asymptotically stable within its compatibility class: sufficiently nearby states with the same kinase, phosphatase and substrate totals have unique positive forward solutions that remain close to the orbit and converge to it.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p064-multisite-phosphorylation-oscillations",
+  "commit": "99597afe8632cbd41f0ffec6c04f73a554ba9881",
+  "project_path": null,
+  "declarations": [
+    "ThreeSitePhosphorylation.AllSiteAttractingFamily.all_site_attracting_hopf"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "34C23",
+      "37G15",
+      "34D20",
+      "92C45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T02:26:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "99597afe8632cbd41f0ffec6c04f73a554ba9881",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p064-multisite-phosphorylation-oscillations--3703a9c14353",
+        "source_repository": "mmislan/palomar-p064-multisite-phosphorylation-oscillations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:26599e23932cf01cc7d46247e23b4274101e89f030759bfa18d8626eb75dac72"
+}

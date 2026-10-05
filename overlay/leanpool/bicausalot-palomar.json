@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/maxwellapexlab/bicausalot-palomar",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.BicausalOT",
   "declarations": [
     "MeasurableSelection.exists_measurable_selection"
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/BicausalOT.lean",
-  "statement_hash": "sha256:5e0c2e572612bd34dbc132c1fb84ad2485ea229be10f07e89134d6f595431810"
+  "statement_hash": "sha256:02991f002121cc8ecfdc8a4f587d407c72cc68904e463cf3d17ec1fedf9cc76f"
 }

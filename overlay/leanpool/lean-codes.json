@@ -1,0 +1,50 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean-codes",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CarlsonFunctions",
+  "version": 1,
+  "title": "Carlson special functions and complex Dirichlet averages",
+  "abstract": "Formalizes Carlson special functions through complex Dirichlet averages, with simplex measures, Gamma-regularized analytic continuation, Euler inversion, Euler–Poisson equations, and quadratic transformations. Includes the complete supporting several-complex-variable and special-function libraries.",
+  "authors": [
+    "Bastiaan J Braams"
+  ],
+  "repository": "https://github.com/bjbraams/lean-codes",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.CarlsonFunctions",
+  "declarations": [
+    "PalomarSnapshot.r_first_quadratic",
+    "PalomarSnapshot.joint_average_continuation"
+  ],
+  "informal": {
+    "PalomarSnapshot.r_first_quadratic": "The Gamma-regularized Carlson R function satisfies the first quadratic transformation for complex exponent and Dirichlet parameters with positive-real-part unsquared variables.",
+    "PalomarSnapshot.joint_average_continuation": "For a holomorphic scalar function on a convex open domain D, its Gamma-regularized Dirichlet average extends jointly holomorphically to all complex Dirichlet parameters and all node vectors in D. The extension agrees with the regularized simplex integral when every parameter has positive real part; the ordinary normalized average differs by the factor Gamma of the parameter sum."
+  },
+  "classification": {
+    "msc2020": [
+      "33C65",
+      "32A10"
+    ],
+    "tags": [
+      "special-functions",
+      "complex-analysis",
+      "dirichlet-averages"
+    ],
+    "branch": "complex analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CarlsonFunctions.lean",
+  "statement_hash": "sha256:92994a56501b8501c3402bace5d138d9a06c185ba7c5e47d39f5591ce345bccc"
+}

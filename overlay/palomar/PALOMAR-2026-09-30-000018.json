@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000018",
+  "version": 1,
+  "title": "The 2-adic zeta value ζ₂(7) is irrational",
+  "abstract": "A Lean 4 and Mathlib proof that the 2-adic zeta value ζ₂(7) is irrational. The theorem has no hypotheses, and its proof uses only the axioms propext, Classical.choice and Quot.sound. The value is defined through the Volkenborn integral: zeta2 s = J(s−1)/((s−1)·2^s), where J(s) is the 2-adic limit of the Riemann sums 2^(−N) Σ_{x<2^N} (x+1/2)^(−s), so zeta2 7 = J(6)/768; the theorem also proves that these limits exist. By Lemma 2.8 of Lai, Sprang and Zudilin (IMRN 2026), zeta2 s is the Kubota–Leopoldt value ζ₂(s) = L₂(s, ω^(1−s)) for s ≥ 2. That identification is cited, not formalised; it only involves a non-zero rational factor, which does not affect irrationality. ζ₂(3) and ζ₂(5) are known to be irrational, and L. Lai (Int. J. Number Theory 2025) proved that at least one of ζ₂(7), ζ₂(9), ζ₂(11), ζ₂(13) is irrational; the theorem here implies that result and the two registered formalisations of the same maintainer for {ζ₂(7), ζ₂(9), ζ₂(11)} and {ζ₂(7), ζ₂(9)}. An unrefereed draft by C. D. Long claims, by a different method, that ζ₂(s) is irrational for every odd s with 3 ≤ s ≤ 29; it is not used here, and an internal review of it (docs/long_review.md) found a gap in its large-prime step, so we do not regard it as settling the question. No refereed proof that ζ₂(7) is irrational is known to us. The proof uses the linear forms S_n = ∫ R_n'''(t+1/2−n/2) dt = ρ_n + Z_n ζ₂(7) of the rational functions R_n(t) = (2t+n) Π_{m=1}^{6} Π_{c∈C_m} (t+1/2+c) / Π_{k=0}^{n} (t+k)^(a_k), with six nested well-poised numerator blocks C_m = [η_m n, (1−η_m) n − 1], η = (5, 7, 7, 9, 11, 13)/40, and pole orders a_k ∈ {1, 2, 3, 4} that ramp up from both ends; the evaluation at the centred point t + 1/2 − n/2 leaves ζ₂(7) as the only zeta value. The 2-adic size of S_n comes from Lai's and Sprang's Δ-calculus, and the size of the coefficients from residue-level Cauchy bounds and a certified maximum of an explicit potential. The odd part of the denominators is bounded by a residue-class analysis of the partial fractions (a class lemma, a kernel identity and per-pole bounds, evaluated on local models of the residue classes whose values are certified in Lean on finitely many intervals) and the prime number theorem, proved here from a vendored Lean proof of the Wiener–Ikehara theorem. If ζ₂(7) were rational, the valuations at the auxiliary prime ℓ = 19n/20 − 1 (an idea of Lai and Sprang) would make S_n non-zero for infinitely many n, and Lai's irrationality criterion gives the contradiction. The mathematics and the Lean code were produced by AI agents under human direction and have not been refereed.",
+  "authors": [
+    "Gennaro Marco Devincenzis"
+  ],
+  "repository": "https://github.com/gmDevi/zeta2-7-lean",
+  "commit": "e26813f04b3e84e136c88c00753567e1b442d5db",
+  "project_path": null,
+  "declarations": [
+    "Zeta2.Z7.zeta2_7_irrational_palomar"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11S40",
+      "11S80",
+      "11M06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T05:52:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e26813f04b3e84e136c88c00753567e1b442d5db",
+        "fork_repository": "PalomarArchive/gmDevi--zeta2-7-lean--d4961e7e615a",
+        "source_repository": "gmDevi/zeta2-7-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d79c1f3350896f029a24cd17c2c30a06de1f531c4e84cfe4cf84d99d372ead08"
+}

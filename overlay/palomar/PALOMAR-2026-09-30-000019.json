@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000019",
+  "version": 1,
+  "title": "Deciding D-stability is coNP-hard",
+  "abstract": "The computational difficulty of D-stability, raised by Chen, Fan and Yu (1995, doi:10.1016/0167-6911(94)00036-U), is addressed by an explicit integer-matrix reduction from PARTITION. For positive weights of total 2T, the construction produces a matrix of order m + 4 that is D-stable exactly when no subset has weight T. When an equal split exists, some positive diagonal scaling has an eigenvalue with strictly positive real part. A Pell recursion supplies the parameters, with a logarithmic search bound and an explicit bound on every matrix entry. These bounds give polynomial binary output length. Together with the classical NP-completeness of PARTITION, the reduction yields coNP-hardness of D-stability and D-semistability, and NP-hardness of strict D-instability, even for a four-dimensional core with attachments at one coordinate.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p086-d-stability-conp-hard",
+  "commit": "4bca0dc5b1d87d12e789cfc817b91db5a84dec37",
+  "project_path": null,
+  "declarations": [
+    "DStabilityHardness.dStability_coNP_reduction",
+    "DStabilityHardness.partition_dichotomy"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS"
+    ],
+    "msc2020": [
+      "15A18",
+      "68Q17",
+      "93D09"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T06:03:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4bca0dc5b1d87d12e789cfc817b91db5a84dec37",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p086-d-stability-conp-hard--e33c3a455fa7",
+        "source_repository": "mmislan/palomar-p086-d-stability-conp-hard"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9a64e1dd93ea0895fd53a62d2c1498307aa0b6ffb1ea01e1313a7344ee1df7d4"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000004",
+  "version": 1,
+  "title": "Quantum Pauli basis test",
+  "abstract": "A Lean 4 formalization of the quantum Pauli basis test from MIP*=RE. The comparator-configured results give a value-one symmetric projective consistent commuting strategy, quantum soundness of the simultaneous low-degree test, soundness of the Pauli basis test up to local isometries with the explicit deltaQld error, and the corresponding qubit-coordinate form.",
+  "authors": [
+    "Ruixuan Deng"
+  ],
+  "repository": "https://github.com/Dengnifer/MIPStarRE-QPBT",
+  "commit": "179a37893d2a037cce0587ea932f5da819c7d78c",
+  "project_path": null,
+  "declarations": [
+    "MIPStarRE.QPBT.Palomar.exists_spcc_value_one",
+    "MIPStarRE.QPBT.Palomar.exists_ld_soundness",
+    "MIPStarRE.QPBT.Palomar.pauli_soundness",
+    "MIPStarRE.QPBT.Palomar.pauli_soundness_qubit"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph"
+    ],
+    "msc2020": [
+      "81P45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T09:50:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "179a37893d2a037cce0587ea932f5da819c7d78c",
+        "fork_repository": "PalomarArchive/Dengnifer--MIPStarRE-QPBT--18006c01b8b8",
+        "source_repository": "Dengnifer/MIPStarRE-QPBT"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1d7aef5d166d77c5b98079f07c513971d81da4ae9186cad271ae8360f8745547"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-03-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-03-000003",
+  "version": 1,
+  "title": "The hitting time for loose Hamilton cycles in r-graphs",
+  "abstract": "A Lean formalisation of a hitting time theorem of Wanfang Chen, Jared León and Xizhi Liu. For every fixed integer r ≥ 3, assume all r-element subsets of n vertices are exposed in a uniformly random order. As n tends to infinity through multiples of r − 1, with probability tending to one, a loose Hamilton cycle first emerges exactly when the last isolated vertex disappears.",
+  "authors": [
+    "Jared León"
+  ],
+  "repository": "https://github.com/WozMit/hitting-time-loose-hamilton",
+  "commit": "594001afb0fb7d80c581d0e2998a98355e87143c",
+  "project_path": null,
+  "declarations": [
+    "HittingTimeLooseHamilton.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C65",
+      "05C80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-03T07:27:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "594001afb0fb7d80c581d0e2998a98355e87143c",
+        "fork_repository": "PalomarArchive/WozMit--hitting-time-loose-hamilton--76aa0aa185d8",
+        "source_repository": "WozMit/hitting-time-loose-hamilton"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2801e6d676adadfc881ba2bad33cf4ab81b16614d5e4b4ff85751fba66cc832d"
+}

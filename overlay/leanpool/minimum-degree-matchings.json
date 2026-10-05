@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.MinimumDegreeMatching",
   "declarations": [
     "BKLOK2.lemma107K2_holds",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MinimumDegreeMatching.lean",
-  "statement_hash": "sha256:5b4bf57a0407588e858d85956ed6bc2e8228cfeb78cf3012589e46bcaa2b2d33"
+  "statement_hash": "sha256:351fe889c79837db4f48f5183076819217739fffcb631e102d8949cbb890692e"
 }

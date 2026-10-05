@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-03-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-03-000007",
+  "version": 1,
+  "title": "Milgrom–Shannon's Monotonicity Theorem: the Full Characterization",
+  "abstract": "Milgrom and Shannon (1994), Theorem 4, in both directions: for an arbitrary lattice X, partially ordered parameter space T, and real-valued objective, strong-set monotonicity of constrained maximizers over every pair of strongly ordered feasible subsets is equivalent to quasisupermodularity of every section and both weak and strict preference-preservation clauses of single crossing. The theorem imposes no finiteness, completeness, topology, continuity, compactness, nonemptiness, or optimizer existence assumptions. Supporting results and counterexamples distinguish crossing clauses and fixed-domain from varying-feasible-set monotonicity. Earlier Lean sufficiency results in Econlib and nonmathlib4 are explicitly cited.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/milgrom-shannon-monotonicity-lean",
+  "commit": "50a69ed78003a84ea849ed72dd24e0146829c4a6",
+  "project_path": null,
+  "declarations": [
+    "MS1994.monotonicity_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "econ.TH",
+      "math.OC"
+    ],
+    "msc2020": [
+      "91B02",
+      "06B05",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-03T14:13:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "50a69ed78003a84ea849ed72dd24e0146829c4a6",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--milgrom-shannon-monotonicity-lean--e48b5a4260cf",
+        "source_repository": "Arthur742Ramos/milgrom-shannon-monotonicity-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ebdd2eeb7d40d91a39435a526ff90fc142d5ceac8f1a4bc5ad215cf40f3adbbe"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "stafford38-formal",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Stafford38",
+  "version": 1,
+  "title": "Stafford 3.8",
+  "abstract": "Lean formalization of Stafford's Conjecture 3.8 for every characteristic-zero field and every Weyl-algebra rank, proving that each nonzero d admits F, R, and S with 1 = d*R + F*d*S. The development also proves an exact Bernstein-degree fixed-source strengthening and derived localization, adjoint, and evolutionary results.",
+  "authors": [
+    "Christopher Albert"
+  ],
+  "repository": "https://github.com/itpplasma/stafford38-formal",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.Stafford38",
+  "declarations": [
+    "Stafford38.universalStatement",
+    "Stafford38.universalFixedSourceStatement"
+  ],
+  "informal": {
+    "Stafford38.universalStatement": "For every characteristic-zero field, every Weyl algebra rank, and every nonzero d, there are F, R, S with 1 = d*R + F*d*S.",
+    "Stafford38.universalFixedSourceStatement": "The stated fixed-source strengthening holds with its exact Bernstein-degree bound."
+  },
+  "classification": {
+    "msc2020": [
+      "16S32"
+    ],
+    "tags": [
+      "weyl-algebras",
+      "noncommutative-algebra",
+      "bernstein-degree"
+    ],
+    "branch": "noncommutative algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Stafford38.lean",
+  "statement_hash": "sha256:7d5660dc4a748a8589e5a023ce58d6510121dc65cbc2e2fb0b935d3bdfa30a03"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "inflation-termination",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/InflationTermination",
+  "version": 1,
+  "title": "Inflation termination for classical pair-source networks",
+  "abstract": "For finite binary pair-source networks without isolated vertices, classifies when the inflation hierarchy characterizes compatibility with finite latent alphabets: precisely forests of double stars, where order two suffices. Also proves triangle nontermination for arbitrary measurable latent probability spaces, quantitative obstructions, finite and measurable Finner inequalities, and graph witnesses.",
+  "authors": [
+    "William Blair"
+  ],
+  "repository": "https://github.com/williamjblair/inflation-termination",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.InflationTermination",
+  "declarations": [
+    "TriangleInflation.Graph.classification_NW",
+    "TriangleInflation.no_finite_characterizing_orderM"
+  ],
+  "informal": {
+    "TriangleInflation.Graph.classification_NW": "For finite binary pair-source graphs without isolated vertices, some finite order of the Navascués–Wolfe hierarchy characterizes compatibility with finite latent alphabets exactly for double-star forests; order two suffices there.",
+    "TriangleInflation.no_finite_characterizing_orderM": "At every positive inflation order, a triangle law passes both the AI and NW tests but has no compatible model over any measurable latent probability spaces."
+  },
+  "classification": {
+    "msc2020": [
+      "60A05",
+      "05C05"
+    ],
+    "tags": [
+      "causal-inference",
+      "probability",
+      "inflation-hierarchy",
+      "graph-theory"
+    ],
+    "branch": "causal inference and probability"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/InflationTermination.lean",
+  "statement_hash": "sha256:42d0123e39c557cbed15a8508ef6448a9f3cd5c0406a576acd0820c4081bc9d6"
+}

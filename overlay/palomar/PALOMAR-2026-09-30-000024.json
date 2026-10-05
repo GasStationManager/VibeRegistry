@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000024",
+  "version": 1,
+  "title": "Local Hodge generation of sl(15) and scalar response rigidity",
+  "abstract": "An explicit local Hodge operator on the oriented coordinate four-plane 0123, extended by zero, together with the fifteen adjoint basis actions of the orthogonal algebra for diag(1,1,1,-1,1,-1), generates sl(15,K) over every field of characteristic different from two. A finite integral commutator certificate produces signed skew matrix units and one symmetric seed; a general propagation lemma then produces all trace-free matrices. Dimension 224 follows from generation. As a consequence, an endomorphism of this algebra commuting with the commutator actions of the same sixteen generators is scalar, with determinant c^224. The proof includes characteristics three and five without a simplicity assumption. The contribution is this constructive generation-and-rigidity theorem. PDT motivates the chosen operators; assigning a physical response magnitude or gravitational coupling is outside the selected claim.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-hodge-lie-generation",
+  "commit": "e2d8dde6f076b730b9a718c95ff1664c6aa88b51",
+  "project_path": null,
+  "declarations": [
+    "HorizonEinsteinClosure.geometricHodgeGeneration"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RT"
+    ],
+    "msc2020": [
+      "17B05",
+      "17B10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T10:36:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e2d8dde6f076b730b9a718c95ff1664c6aa88b51",
+        "fork_repository": "PalomarArchive/stalex444--pdt-hodge-lie-generation--f565612039cb",
+        "source_repository": "stalex444/pdt-hodge-lie-generation"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f79d85f65fed22fcd95d3430b97eb201a78d5a0b14eb73bba75d2c009458277a"
+}

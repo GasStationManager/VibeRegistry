@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000005",
+  "version": 1,
+  "title": "One-generated (1518 + 3862)-magmas are trivial or the Z/3 shift; an explicit family of finite 1518-magmas violating laws 47, 614, 817, 3862",
+  "abstract": "Lean 4 results (core Lean, no dependencies, no axioms beyond the standard three) about law 1518 of the Equational Theories Project, x = (y ◇ y) ◇ (x ◇ (y ◇ x)). Theorem A: in every magma satisfying 1518 and 3862 (x ◇ x = (x ◇ (x ◇ x)) ◇ x), writing S x = x ◇ x, the set {x, S x, S (S x)} is closed under ◇ with u ◇ v = S v and S (S (S x)) = x; hence every one-generated such magma is the trivial magma or the three-element cyclic shift x ◇ y = y + 1. This proves a classification conjectured by Terence Tao on the Lean Zulip on 2024-11-29 (message 485148288). That message assumed 1518 together with all four of 47, 614, 817 and 3862 and carried no finiteness hypothesis; assuming 3862 alone is no weaker, because Matthew Bolan reported the same day (message 485153888) that 1518 and 3862 already imply the other three. What is added here is a machine-checked proof, not a weaker hypothesis: no proof of the classification was found in the venues searched. Theorem A is what the compared declarations state. Outside them the repository holds an explicit family of finite 1518-magmas that do violate the four targets, with two members checked by kernel evaluation, and kernel-checked certificate identities behind a cohomological obstruction theorem (every 1518-cocycle over the shift with finite fibre is a coboundary), whose reduction is a written proof, and the computations classifying base-dependent extensions of the shift.",
+  "authors": [
+    "Carlo Perassi"
+  ],
+  "repository": "https://github.com/carlok/magma-1518-obstruction-lean",
+  "commit": "eb2bbde8c137570d0e281a237187f5323a1b0a2d",
+  "project_path": null,
+  "declarations": [
+    "Magma1518.table",
+    "Magma1518.cube",
+    "Magma1518.words_in_T",
+    "Magma1518.one_or_three"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA",
+      "math.LO"
+    ],
+    "msc2020": [
+      "20N02",
+      "08B05",
+      "03C05",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T01:30:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "eb2bbde8c137570d0e281a237187f5323a1b0a2d",
+        "fork_repository": "PalomarArchive/carlok--magma-1518-obstruction-lean--763845730337",
+        "source_repository": "carlok/magma-1518-obstruction-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9e4fc973ffdbb3484b086e8581e92456e5ac92c6216ec5d41813728a335f2bbb"
+}

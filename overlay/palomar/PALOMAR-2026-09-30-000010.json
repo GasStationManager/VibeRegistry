@@ -1,0 +1,83 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000010",
+  "version": 1,
+  "title": "Adamczewski–Bugeaud 2007: the complexity of algebraic numbers in integer bases",
+  "abstract": "A Lean 4 / Mathlib formalization of B. Adamczewski and Y. Bugeaud, On the complexity of algebraic numbers I. Expansions in integer bases (Ann. of Math. 165 (2007)), built on the repository's libraries ArithmeticHeights, DiophantineApproximation and ForMathlib, whose Subspace Theorem with algebraic coefficients it uses. The library AdamczewskiBugeaud2007 is sorry-free and within Lean's three standard axioms. It proves Theorem 1 (the complexity of an irrational algebraic number in an integer base satisfies p(n)/n → ∞, with (1), p(n) − n → ∞), Theorems 2–4 (automatic and morphic expansions), Theorem 5 in full (β Pisot or Salem, bounded integer digits satisfying Condition (∗)_w: the number lies in ℚ(β) or is transcendental), Lemma 1, Theorems 1A–5A on β-expansions with K. Schmidt's periodicity theorem, and the p-adic Theorems 6 and 1B–4B, together with the finite automata and morphisms of §3, and Theorem 7 in corrected form (u_k < min(b, p)) with Christol's theorem (algebraic ⇒ automatic) and a counterexample to Theorem 7 as printed. The counterexample and the corrected hypothesis were worked out during this formalization, not taken from the cited works (see limitations). Thirty-two statements are compared.",
+  "authors": [
+    "Ralf Stephan"
+  ],
+  "repository": "https://github.com/rwst/Subspace-Theorems",
+  "commit": "ce289c64054c8ffcfb6fd37d5881312c6a5d577d",
+  "project_path": null,
+  "declarations": [
+    "Real.tendsto_complexity_div_atTop",
+    "Real.tendsto_complexity_sub_atTop",
+    "Real.transcendental_ofDigits_of_isGeneratedByAutomaton",
+    "Real.transcendental_ofDigits_of_isAutomatic",
+    "Real.transcendental_ofDigits_of_isGeneratedByMorphism",
+    "Real.transcendental_ofDigits_of_isGeneratedByMorphism_of_isRecurrent",
+    "Function.finite_kKernel_iff_isGeneratedByAutomaton",
+    "Function.IsAutomatic.exists_complexity_le",
+    "Function.IsAutomatic.isStammering",
+    "Real.abs_sub_le_of_periodic",
+    "Real.mem_adjoin_of_isStammering",
+    "Real.mem_adjoin_or_transcendental_of_isPisot",
+    "Real.mem_adjoin_or_transcendental_of_isSalem",
+    "Real.tsum_mem_adjoin_of_isEventuallyPeriodic",
+    "Real.tendsto_complexity_betaDigitsFin_div_atTop",
+    "Real.not_isGeneratedByAutomaton_betaDigitsFin",
+    "Real.not_isAutomatic_betaDigitsFin",
+    "Real.not_isGeneratedByMorphism_of_betaDigits",
+    "Real.not_isGeneratedByMorphism_betaDigitsFin_of_isRecurrent",
+    "Real.isEventuallyPeriodic_betaDigits_of_mem_adjoin",
+    "Real.transcendental_of_isStammering_betaDigits",
+    "Padic.transcendental_of_isStammering_henselDigits",
+    "Padic.transcendental_ofDigits_of_isStammering",
+    "Padic.tendsto_complexity_henselDigits_div_atTop",
+    "Padic.tendsto_complexity_div_atTop",
+    "Padic.transcendental_ofDigits_of_isAutomatic",
+    "Padic.transcendental_ofDigits_of_isGeneratedByMorphism",
+    "Padic.transcendental_ofDigits_of_isGeneratedByMorphism_of_isRecurrent",
+    "PowerSeries.finite_kKernel_coeff_of_isAlgebraic",
+    "Real.isAlgebraic_and_isAlgebraic_iff",
+    "exists_counterexample_theorem7",
+    "not_forall_theorem7_as_printed"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J81",
+      "11A63",
+      "11K16",
+      "11R06",
+      "68R15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T02:38:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ce289c64054c8ffcfb6fd37d5881312c6a5d577d",
+        "fork_repository": "PalomarArchive/rwst--Subspace-Theorems--9bd9bba330e8",
+        "source_repository": "rwst/Subspace-Theorems"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a01d6eecad4500520cf2e193e23bdb3eb075cf10e98438d6192f1b8ac167c6b1"
+}

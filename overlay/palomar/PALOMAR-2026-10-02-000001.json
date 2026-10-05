@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000001",
+  "version": 1,
+  "title": "On Graham's rearrangement conjecture (Pham–Sauermann)",
+  "abstract": "A Lean 4 / Mathlib formalization of H. T. Pham and L. Sauermann, \"On Graham's rearrangement conjecture\" (arXiv:2602.15797v1). Graham conjectured in 1971 that for every prime p, every subset S of Z_p \\ {0} has an ordering whose partial sums are pairwise distinct. The formalization proves the paper's main theorem (Theorem 1.2): for every 0 < α < 1 there is a constant C_α > 0 such that, for every prime p, every S ⊆ Z_p \\ {0} with C_α ≤ |S| ≤ p^(1-α) has such an ordering. It also proves the paper's anticoncentration bounds for the sum of a uniformly random m-element subset R of a set S ⊆ Z_p with |S| ≥ 2: the probability that the sum of R equals any given z is at most 1/p + C/(|S|√m), for an absolute constant C > 0, when C log|S| ≤ m ≤ 10^-3 |S|/log|S| (Theorem 1.3), and, for every 0 < ε < 1, at most 1/p + C_ε √(log|S|)/(|S|√m) for every positive integer m ≤ (1-ε)|S| (Corollary 1.4). Every result that the paper proves is formalized, following its argument, and so are the two hypergeometric tail bounds that its proofs take from the Chernoff bound of Janson, Łuczak and Ruciński.",
+  "authors": [
+    "The-Anh Vu-Le"
+  ],
+  "repository": "https://github.com/vltanh/lean4-graham-rearrangement-conjecture",
+  "commit": "e4d1034e026688b6ef3966dde89437d823a4262e",
+  "project_path": null,
+  "declarations": [
+    "PhamSauermann.theorem_1_2",
+    "PhamSauermann.theorem_1_3",
+    "PhamSauermann.corollary_1_4"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B75",
+      "05D40",
+      "11B30",
+      "60C05",
+      "11P70",
+      "05A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-02T02:31:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e4d1034e026688b6ef3966dde89437d823a4262e",
+        "fork_repository": "PalomarArchive/vltanh--lean4-graham-rearrangement-conjecture--7f9d98b8f7e8",
+        "source_repository": "vltanh/lean4-graham-rearrangement-conjecture"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1fc2a1f05032a576f047952758fb59e291804bdc170cb7764d7cbe1fc76bc9bb"
+}

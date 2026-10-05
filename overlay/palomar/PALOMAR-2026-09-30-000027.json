@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000027",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000027",
+  "version": 1,
+  "title": "Unconstrained detection of productive autocatalytic cores is NP-complete",
+  "abstract": "Kosc, Kuperberg, Rajon and Charlat (PNAS 122, e2421274122, 2025, Section 2.1) left open the complexity of detecting an autocatalytic core without a prescribed target species or allowed-food set. For finite reversible reaction networks with literal nonnegative integer reactant and product matrices, this unconstrained detection problem is proved NP-complete. A core is a nonempty entity/reaction pair, minimal under componentwise inclusion, with a selected reactant and product in every selected reaction and a signed real flow that strictly produces every selected entity. The input uses a canonical binary encoding. NP membership and a total polynomial-time many-one reduction from SAT are formalized using Complexitylib’s multi-tape Turing machines, including the Cook–Levin theorem.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p081-productive-core-np-completeness",
+  "commit": "9a4508c8643310033182b18e1f348f5d786f7c28",
+  "project_path": null,
+  "declarations": [
+    "UnconstrainedPACDetection.complexity_root"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "68Q17",
+      "92C42"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T11:33:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9a4508c8643310033182b18e1f348f5d786f7c28",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p081-productive-core-np-completeness--55af0db69bd1",
+        "source_repository": "mmislan/palomar-p081-productive-core-np-completeness"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bcfb8db2809c3b3892b6b77ff56ee9f5e457b8d33d32be1315b818f144ee8ca8"
+}

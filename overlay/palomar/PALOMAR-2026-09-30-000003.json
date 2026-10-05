@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000003",
+  "version": 1,
+  "title": "Erdős Problem #1219 in Lean 4: Σ_k 2^{ℵ_{n_k}} → (ℵ_ω)² (Shelah 1975)",
+  "abstract": "Erdős problem #1219 (erdosproblems.com/1219; Erdős–Hajnal 1971, Problem 3, asked by Erdős, Hajnal and Rado): let (n_k) be an increasing sequence of integers such that 2^{ℵ_{n_k}} is strictly increasing and 2^{ℵ_{n_0}} > ℵ_ω; is it true that Σ_k 2^{ℵ_{n_k}} → (ℵ_ω)²?  Shelah (Notes on partition calculus, 1975, §1) proved that the answer is yes.  This project formalizes that proof in Lean 4 with Mathlib: the comparator target erdos_1219 states that for every strictly increasing n : ℕ → ℕ with k ↦ 2 ^ ℵ_(n k) strictly increasing and ℵ_ω < 2 ^ ℵ_(n 0), the binary partition relation PartitionArrow (Σ_k 2 ^ ℵ_(n k)) ℵ_ω holds, i.e. every 2-colouring of the 2-element subsets of a set of cardinality Σ_k 2 ^ ℵ_(n k) has a monochromatic subset of cardinality ℵ_ω (PartitionArrow is the binary case of formal-conjectures' Combinatorics.cardinalPartitionRel).  The proof follows Shelah's Canonization Lemma 1.1 and Theorem 1.2: the unbalanced Erdős–Rado theorem (2^μ)⁺ → ((2^μ)⁺, μ⁺)² (proved here with a critical-ordinal / closure-point argument), a canonization of the colouring across blocks of sizes (2^{ℵ_{n_k}})⁺ by means of guides generic over all small subsets of the earlier blocks, and Ramsey's theorem for pairs on ℕ.  The target is proved from propext, Classical.choice and Quot.sound only and passes the Lean comparator (landrun sandbox, NanoDa kernel).",
+  "authors": [
+    "Ji Ho Bae (JRTI)"
+  ],
+  "repository": "https://github.com/jbaelaw/erdos1219-lean",
+  "commit": "00e696a9cd2bbd8cad33d2cdc90ad385058c1466",
+  "project_path": null,
+  "declarations": [
+    "erdos_1219"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.CO"
+    ],
+    "msc2020": [
+      "03E02",
+      "03E05",
+      "03E10",
+      "05D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T01:10:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "00e696a9cd2bbd8cad33d2cdc90ad385058c1466",
+        "fork_repository": "PalomarArchive/jbaelaw--erdos1219-lean--9297707161f0",
+        "source_repository": "jbaelaw/erdos1219-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5cab39b0d209c49beeaad3a538dbd5653a0c17daa4c57838d1b15fae508e14e3"
+}

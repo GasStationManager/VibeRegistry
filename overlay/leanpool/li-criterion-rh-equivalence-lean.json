@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "li-criterion-rh-equivalence-lean",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/LiCriterion",
+  "version": 1,
+  "title": "Li's criterion for the Riemann Hypothesis",
+  "abstract": "Li's criterion for the Riemann zeta function, formalized in Lean 4 over Mathlib: Mathlib's `RiemannHypothesis` holds if and only if every Li-Keiper coefficient of the completed xi function has nonnegative real part. The zero-indexed analytic coefficient at n is Li's classical lambda_(n+1), the n-th Taylor coefficient at 0 of the logarithmic derivative of s |-> xi(1/(1-s)). A second compared theorem identifies this analytic coefficient with Li's arithmetic coefficient, the symmetrized sum over the nontrivial zeros counted with multiplicity, and proves that symmetrized family summable so the sum is the genuine one. Both results are unconditional: the biconditional, the coefficient identification, the genus-1 Hadamard factorization of xi (with multiplicity), genus-1 summability of 1/|rho|^2, and the growth bound order(xi) <= 1 are all proved. This is a formalization of a classically known equivalence (X.-J. Li, 1997); it is not a proof of the Riemann Hypothesis, nor of the positivity of the coefficients.",
+  "authors": [
+    "Nicholas Bulka"
+  ],
+  "repository": "https://github.com/nicholasbulka/li-criterion-rh-equivalence-lean",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.LiCriterion",
+  "declarations": [
+    "li_criterion",
+    "li_coefficients_eq_zero_sum"
+  ],
+  "informal": {
+    "li_criterion": "The Riemann hypothesis is equivalent to nonnegativity of every Li–Keiper coefficient.",
+    "li_coefficients_eq_zero_sum": "The analytic Li–Keiper coefficients equal the symmetrically summed arithmetic coefficients over the nontrivial zeros."
+  },
+  "classification": {
+    "msc2020": [
+      "11M26"
+    ],
+    "tags": [
+      "number-theory",
+      "riemann-hypothesis",
+      "complex-analysis"
+    ],
+    "branch": "analytic number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/LiCriterion.lean",
+  "statement_hash": "sha256:8d26ed38e3d6d6fdc3951a914230454f5d2a25665a52455a073e7ec906064185"
+}

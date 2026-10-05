@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000003",
+  "version": 1,
+  "title": "Greedy Uniformity on Trees",
+  "abstract": "Formalization of exact distributional results for the random-permutation greedy maximal-independent-set process on finite trees. For every finite nonempty tree, the complete greedy output law is uniform over maximal independent sets exactly for K1 and K2. For the mixed-spider family T_{k,l}, the development counts maximal independent sets, proves exact output probabilities, and for l=2^k-k proves positive total-variation bias with decay O(sqrt(k)/4^k), equivalently O(sqrt(log n_k)/n_k^2) along n_k=2^k+k+1. The Stage-4 novelty classification is \"plausibly new with bounded uncertainty\"; no worldwide-priority, global-optimality, matching lower-bound, all-n extremal, or other stronger claim is made.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/Greedy-Uniformity-on-Trees",
+  "commit": "1733c29a5165148d71a2f0bd1ed2dcd7c35309ce",
+  "project_path": null,
+  "declarations": [
+    "GreedyUniformity.tree_greedyLawEqUniform_iff_isK1OrK2",
+    "GreedyUniformity.tree_bias_eq_zero_iff_isK1OrK2",
+    "GreedyUniformity.mixedSpider_maximalIndependentSets_card",
+    "GreedyUniformity.greedyProb_mixedSpiderCenter",
+    "GreedyUniformity.greedyProb_mixedSpiderNoncenter",
+    "GreedyUniformity.bias_mixedSpider_tuned_eq_expectation",
+    "GreedyUniformity.bias_mixedSpider_tuned_pos",
+    "GreedyUniformity.bias_mixedSpider_tuned_isBigO",
+    "GreedyUniformity.bias_mixedSpider_tuned_isBigO_sqrt_log_order_div_order_sq"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C05",
+      "05C69"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T00:28:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1733c29a5165148d71a2f0bd1ed2dcd7c35309ce",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--Greedy-Uniformity-on-Trees--0c04ff5c5faa",
+        "source_repository": "jfairfaxball-348/Greedy-Uniformity-on-Trees"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d5ec4f647e89d2878e8addc52b55c9a6afd2ef6d46b47fece11b7eeabd1003b3"
+}

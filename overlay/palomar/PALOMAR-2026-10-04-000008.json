@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000008",
+  "version": 1,
+  "title": "Erdős 956: unit distances between disjoint convex translates",
+  "abstract": "A complete Lean 4 proof of the affirmative answer to Erdős problem 956: for all sufficiently large n, there exist n pairwise-disjoint translates of a compact convex planar set with more than n^(1+c) unordered pairs at Euclidean set-distance 1 (for c = 1/4). Adapting the parabolic construction announced by Valtr (2005) and detailed in Chojecki's April 2026 manuscript, the formalization proves the supporting-hyperplane theorem for a centrally symmetric signed parabolic cap and constructs a four-layer parabolic grid of disjoint translates. This establishes the explicit lower bound h(n) > (1/26) n^(4/3) for all n ≥ 80 and the sharper eventual bound h(n) > (2/5) n^(4/3).",
+  "authors": [
+    "Linmiao Xu"
+  ],
+  "repository": "https://github.com/linrock/math-proofs",
+  "commit": "2afe25fe500b036dfabef8e00c369a434bfff763",
+  "project_path": "erdos-956",
+  "declarations": [
+    "Erdos956.Palomar.erdos_956_superlinear",
+    "Erdos956.Palomar.erdos_956",
+    "Erdos956.Palomar.erdos_956_omega_four_thirds",
+    "Erdos956.Palomar.erdos_956_four_layer_polynomial",
+    "Erdos956.Palomar.erdos_956_eventual_two_fifths"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C10",
+      "52A10",
+      "05D99"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T16:32:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2afe25fe500b036dfabef8e00c369a434bfff763",
+        "fork_repository": "PalomarArchive/linrock--math-proofs--14cf37780a40",
+        "source_repository": "linrock/math-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d3471fbb15a7f1f3fb83ba4c66189af9d021c3b9f81b583bc67f70504137e77f"
+}

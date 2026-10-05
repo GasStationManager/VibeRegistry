@@ -1,0 +1,49 @@
+{
+  "source": "leanpool",
+  "upstream_id": "dross-fractional-triangle-decomposition",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/DrossFractionalTriangleDecomposition",
+  "version": 1,
+  "title": "Dross's fractional triangle decomposition theorem",
+  "abstract": "Formalizes the exact nine-tenths minimum-degree threshold for fractional triangle decomposition of finite graphs. The proof uses a finite max-flow/min-cut argument and induction that peels high-degree triangles.",
+  "authors": [
+    "Juan Pablo Traverso Gianini",
+    "Aristotle"
+  ],
+  "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.DrossFractionalTriangleDecomposition",
+  "declarations": [
+    "LeanPool.DrossFractionalTriangleDecomposition.dross_fractional_flow_exact"
+  ],
+  "informal": {
+    "LeanPool.DrossFractionalTriangleDecomposition.dross_fractional_flow_exact": "Every finite graph whose minimum degree is at least nine tenths of its number of vertices has a fractional triangle decomposition: nonnegative triangle weights sum to one at each edge."
+  },
+  "classification": {
+    "msc2020": [
+      "05C70",
+      "05C35"
+    ],
+    "tags": [
+      "extremal-graph-theory",
+      "fractional-decomposition",
+      "max-flow-min-cut"
+    ],
+    "branch": "extremal graph theory and fractional decompositions"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/DrossFractionalTriangleDecomposition.lean",
+  "statement_hash": "sha256:a201af4e2da4bbeba24e9c2504c9a2aa957fad0d64b2e13ab97ddaba0a2e15d3"
+}

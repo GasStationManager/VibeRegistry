@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/susannabertolini/PhaseRetrieval",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.PhaseRetrieval",
   "declarations": [
     "DimdPolyShowcaseChallenge.stable_phase_retrieval",
@@ -57,5 +57,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PhaseRetrieval.lean",
-  "statement_hash": "sha256:15a395fe729404846dc32c860e7bc454b10a58e12bac2a68ac1c37e55a3ff4ba"
+  "statement_hash": "sha256:0a1ebc24a2f0d70dc447ee5d996efa3145242083497e962e333c3ba45a5ceac5"
 }

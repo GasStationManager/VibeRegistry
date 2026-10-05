@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000012",
+  "version": 1,
+  "title": "Critical-window emergence of autocatalytic sets under reaction-channel quotienting",
+  "abstract": "Hordijk and Steel (https://arxiv.org/abs/1605.03919, Section 7, Eq. (21)) conjectured a zero-one threshold for RAF emergence at linear mean catalysis. An interior limiting law is established for the reversible binary-polymer model with monomer/dimer food and reaction channels obtained by identifying the split descriptions u + v and v + u precisely when uv = vu. Each molecule independently catalyzes each channel, with one catalysis coordinate shared by both directions. For every real sequence f(n)/n → λ > 0, the clamped channel parameter eventually equals f(n)/|J_n|, and the probability of a reflexively autocatalytic and food-generated (RAF) set converges to a limit L(λ) depending only on λ. The function L is nondecreasing and satisfies 0 < L(λ) ≤ 1 − exp(−34λ) < 1 at every positive finite intensity. Thus a zero-one step threshold is excluded in this channel model.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p036-quotient-channel-raf-limit",
+  "commit": "12b505dcc1ccc5ee2d06b32692af201d452a2a7c",
+  "project_path": null,
+  "declarations": [
+    "RAFReactionQuotient.palomar_quotient_critical_window"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "60K35",
+      "92E20",
+      "05C80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-02T19:32:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "12b505dcc1ccc5ee2d06b32692af201d452a2a7c",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p036-quotient-channel-raf-limit--e02bae3b1dd7",
+        "source_repository": "mmislan/palomar-p036-quotient-channel-raf-limit"
+      }
+    ]
+  },
+  "statement_hash": "sha256:513b298789c147f94038173edbd364bc6365d53a11fdf3c7d1067cd4b4da7c40"
+}

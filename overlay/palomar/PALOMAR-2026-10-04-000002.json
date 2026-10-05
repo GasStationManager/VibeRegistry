@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000002",
+  "version": 1,
+  "title": "Monderer–Shapley Exact-Potential Characterization",
+  "abstract": "The full cycle characterization for arbitrary finite player types and arbitrary nonempty player-dependent action spaces. A real-valued exact potential exists if and only if deviators' payoff differences sum to zero around every finite closed path, every finite simple closed path, every simple four-cycle, or every two-player rectangle. The construction uses finite-subset induction and imposes no finiteness restriction on actions. Exact potentials are unique up to an additive constant. With finite actions, the cycle condition yields a pure Nash equilibrium. Adversarial examples distinguish matching pennies, infinite actions, unequal dependent actions, and the finite-action boundary.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/monderer-shapley-potential-lean",
+  "commit": "bce2e989bc8243f938a34ac0f027b57063c71380",
+  "project_path": null,
+  "declarations": [
+    "Potential.monderer_shapley_characterization",
+    "Potential.exactPotential_unique",
+    "Potential.fourCycle_exists_pureNash"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "econ.TH",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91A10",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T01:12:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "bce2e989bc8243f938a34ac0f027b57063c71380",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--monderer-shapley-potential-lean--5a16fe135330",
+        "source_repository": "Arthur742Ramos/monderer-shapley-potential-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:37c0afb19086a12c262ad4479603017b832ff152dbaacd335aa3b7c2e40e91e2"
+}

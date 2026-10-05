@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/GregoryMorse/unrestricted-boolean-mul",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.BooleanMultiplication",
   "declarations": [
     "UnrestrictedBooleanMul.N4.mc_mul_four",
@@ -58,5 +58,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/BooleanMultiplication.lean",
-  "statement_hash": "sha256:0ad33dcd82b3565879b7fe8ec0ce48c91e041f90ecdb5629c5f329497a47669e"
+  "statement_hash": "sha256:6a4ff44d3f4ebf70926dc411b74037cdfaf53691c223974bf140f304b862108c"
 }

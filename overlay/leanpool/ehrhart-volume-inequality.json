@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/openai/ten-proofs",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.EhrhartVolumeInequality",
   "declarations": [
     "Ehrhart.Volume.ehrhart_volume_inequality_for_sets",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/EhrhartVolumeInequality.lean",
-  "statement_hash": "sha256:c6d9d2ba3814d58741654679b22bb7e085f4e794fa9868236d1aefa983ccdd64"
+  "statement_hash": "sha256:2334a976350de405d85126c71c2e18871d430a90dfd3c9b4da66695e04c5a309"
 }

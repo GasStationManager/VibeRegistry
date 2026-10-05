@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000019",
+  "version": 1,
+  "title": "Border's Finite Auction Feasibility Theorem",
+  "abstract": "For arbitrary finite bidders with heterogeneous finite type spaces, a nonnegative normalized real joint prior, and an interim allocation rule with values in [0,1], a randomized allocation of at most one item realizes the weighted interim masses if and only if every collection of bidder-specific type subsets satisfies Border's union-probability inequality. Weighted feasibility is proved equivalent to conditional feasibility on positive marginal support. Null-type interim values remain unrestricted within [0,1]. For a product of nonnegative normalized distributions, the independent-prior corollary has right side 1 minus the product of the complementary marginal probabilities. Full real-valued sufficiency is proved by finite threshold decomposition and compact convex separation; no sufficiency oracle is assumed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/border-auction-feasibility-lean",
+  "commit": "690e62ec02d68f1e993fd53e46963d79b7993a2b",
+  "project_path": null,
+  "declarations": [
+    "Border.border_feasibility",
+    "Border.feasible_iff_conditional",
+    "Border.border_conditional_feasibility",
+    "Border.independent_border_feasibility",
+    "Border.independent_border_conditional_feasibility",
+    "Border.allocation_le_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "econ.TH",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91B26",
+      "90C05",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T22:42:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "690e62ec02d68f1e993fd53e46963d79b7993a2b",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--border-auction-feasibility-lean--13f9c1532ffa",
+        "source_repository": "Arthur742Ramos/border-auction-feasibility-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a07d5adfbd738a4f5a3498eac5b3f7b4dcd224e9121f47a19ce2d0e07186bb20"
+}

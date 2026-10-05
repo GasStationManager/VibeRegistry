@@ -2,15 +2,15 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-09-25-000002",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-25-000002",
-  "version": 1,
+  "version": 2,
   "title": "The quasi-isometry classes of Galton–Watson trees: Lean formalisation",
-  "abstract": "Lean 4 formalisation of the automorphism-matching theorems and the quasi-isometry classification of Galton–Watson trees from the paper \"The quasi-isometry classes of Galton–Watson trees\" by Jayadev S. Athreya and Sascha Troscheit (arXiv:2609.23882). The audited statements are: the i.i.d. matching theorem on the binary tree (leaf and full bounds, and the existence of a root-fixing automorphism of the infinite binary tree matching two independent i.i.d. labellings with probability at least 1 - 16 η_{5/2}, where η_{5/2} is the one-site potential of the label law); the general Markov matching theorem for typed label processes on the binary tree, in its finite-type and zero-compatible forms at finite and at infinite height, with a failure probability at most a constant multiple of the one-site defect; the complete classification, up to quasi-isometry, of Galton–Watson trees with finitely supported offspring law conditioned on infinite diameter, into the ray class, the binary-tree class, one chain class for each branching semigroup, and the bushy class, with two independent conditioned trees almost surely quasi-isometric exactly when their laws share a class, together with the finite class, so that over the unconditioned laws two trees are almost surely quasi-isometric exactly when both are finite or both are infinite with laws in the same class; the mutual embeddability theorem, that a Galton–Watson tree with finitely supported supercritical offspring law, conditioned on infinite diameter, almost surely admits quasi-isometric embeddings into the binary tree and from it; and, for offspring supported on {1,2}, almost sure quasi-isometry together with an explicit exponential bound on the failure probability of a (D^2+3)-quasi-isometry. The statements are made in Challenge.lean over Mathlib alone and discharged by Solution.lean from four library targets.",
+  "abstract": "Lean 4 formalisation of the automorphism-matching theorems and the quasi-isometry classification of Galton–Watson trees from the paper \"The quasi-isometry classes of Galton–Watson trees\" by Jayadev S. Athreya and Sascha Troscheit (arXiv:2609.23882). The audited statements are: the i.i.d. matching theorem on the binary tree (Theorem 5.1), the general Markov matching theorem for typed label processes on the binary tree, in its finite-type and zero-compatible forms (Theorem 6.1), the complete classification, up to quasi-isometry, of Galton–Watson trees with finitely supported offspring law conditioned on infinite diameter (Theorem 1.2), the mutual embeddability theorem (Theorem 1.3), and two-value universality with its quantitative rate (Theorem 1.4). The statements are made in Challenge.lean over Mathlib alone and discharged by Solution.lean from four library targets.",
   "authors": [
     "Jayadev S. Athreya",
     "Sascha Troscheit"
   ],
   "repository": "https://github.com/sascha2718/qi-trees-and-matching-lean",
-  "commit": "ccb43b2fcf0d81e7853a9bbbd8a4907165c80796",
+  "commit": "35e78969d036b4f663fc9a96d8c22750834a6ac4",
   "project_path": null,
   "declarations": [
     "Challenge.audit_graph_leaf_matching_bound",
@@ -31,17 +31,20 @@
   "classification": {
     "arxiv": [
       "math.PR",
+      "math.GR",
       "math.MG"
     ],
     "msc2020": [
       "60J80",
-      "05C80",
       "51F30",
-      "05C05"
+      "30L10",
+      "28A80",
+      "60K35",
+      "68V20"
     ]
   },
   "license": "",
-  "published_at": "2026-09-25T05:05:06Z",
+  "published_at": "2026-09-30T11:52:38Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -55,11 +58,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "ccb43b2fcf0d81e7853a9bbbd8a4907165c80796",
+        "commit": "35e78969d036b4f663fc9a96d8c22750834a6ac4",
         "fork_repository": "PalomarArchive/sascha2718--qi-trees-and-matching-lean--3baa1f2ce694",
         "source_repository": "sascha2718/qi-trees-and-matching-lean"
       }
     ]
   },
-  "statement_hash": "sha256:ff894eb1c98facddd3b857a005e00c6bf9d229c6abad41f17d9e18a4db18ebcb"
+  "statement_hash": "sha256:e101abcccb47263e2a53e6a433639bd3754e285da7d8069d9f9ba1257087d782"
 }

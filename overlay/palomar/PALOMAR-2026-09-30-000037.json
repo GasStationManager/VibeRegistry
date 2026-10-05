@@ -1,0 +1,67 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000037",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000037",
+  "version": 1,
+  "title": "Amenability of Lie, group and Hopf algebras",
+  "abstract": "Formalization of 18 claims from manuscript Theorems A, B, C, E (extension direction), F, G, H (hierarchy inclusions and characteristic-zero strictness), I, and J. The claims include coalgebraic rounding, algebraic and coalgebraic amenability, Hopf-module quotients, cleft extensions, group and Lie applications, and augmentation-associated graded amenability. Every selected claim is proved without unformalized literature inputs or project-local axioms. Theorem D, the equivalence form of E, and arbitrary-characteristic strictness in H remain in the library but are excluded from the submission.",
+  "authors": [
+    "Laurent Bartholdi"
+  ],
+  "repository": "https://github.com/laurentbartholdi/hopfamenability",
+  "commit": "6399798618014ed9a89694008cceb5b75707c7e0",
+  "project_path": null,
+  "declarations": [
+    "HopfAmenability.palomar_rounding",
+    "HopfAmenability.palomar_amenability",
+    "Palomar.theoremB",
+    "Palomar.theoremC",
+    "Palomar.theoremC_module",
+    "Palomar.theoremE_extension",
+    "Palomar.theoremF_permutation",
+    "Palomar.theoremF",
+    "Palomar.theoremG_growth",
+    "Palomar.theoremG_subalgebra",
+    "Palomar.theoremG_quotient",
+    "Palomar.theoremG_extension",
+    "Palomar.theoremG_union",
+    "Palomar.theoremH_EL_SL",
+    "Palomar.theoremH_SL_AL",
+    "Palomar.theoremH_charZero",
+    "Palomar.theoremI",
+    "Palomar.theoremJ"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA",
+      "math.GR"
+    ],
+    "msc2020": [
+      "16T05",
+      "43A07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T18:00:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6399798618014ed9a89694008cceb5b75707c7e0",
+        "fork_repository": "PalomarArchive/laurentbartholdi--hopfamenability--5ba5f4713a92",
+        "source_repository": "laurentbartholdi/hopfamenability"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3eb001f1e5c7700d72f3ebe5a1ff52f20b1d5c2735755561ffa583b670176a69"
+}

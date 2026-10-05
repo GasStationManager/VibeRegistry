@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000031",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000031",
+  "version": 1,
+  "title": "Evertse 1984: sums of S-units and linear recurrences",
+  "abstract": "A Lean 4 / Mathlib formalization of the whole of J.-H. Evertse, On sums of S-units and linear recurrences (Compositio Math. 53 (1984)), built on the repository's libraries ArithmeticHeights and DiophantineApproximation, whose p-adic Subspace Theorem (Schlickewei's, the paper's Theorem 4) it uses. The library Evertse1984 is sorry-free and within Lean's three standard axioms. It proves Theorem 2 (a lower bound for S-integral sums without vanishing subsums, at any set of places), Theorem 1 (finitely many admissible projective solutions of x₀ + ⋯ + xₙ = 0), Corollaries 1 and 2, Lemmas 1 and 2 (polynomial values and shifted polynomial quotients that are S-units), Theorem 3 (for a non-degenerate linear recurrence with at least two characteristic roots, the largest prime ideal norm of u_r / u_s tends to infinity), and Corollaries 3 and 4 (P(u_r) → ∞; u_r = u_s has finitely many solutions r ≠ s). It also compares the paper's cited Theorem 4, the repository's p-adic Subspace Theorem. Fourteen statements are compared.",
+  "authors": [
+    "Ralf Stephan"
+  ],
+  "repository": "https://github.com/rwst/Subspace-Theorems",
+  "commit": "f10f915bc689c86ae0abe45d4164dcb7df91e7ea",
+  "project_path": null,
+  "declarations": [
+    "NumberField.exists_finset_submodule_of_integer_of_affineProd_le",
+    "NumberField.exists_pos_forall_placeProd_le",
+    "NumberField.finite_setOf_admissible_sum_eq_zero",
+    "evertseTheorem1",
+    "NumberField.exists_pos_forall_placeProd_iInf_le",
+    "Rat.finite_setOf_sum_eq_zero_of_gcd_eq_one",
+    "NumberField.exists_pos_forall_placeProd_eval_intCast",
+    "NumberField.finite_setOf_eval_div_eval_mem_unit",
+    "NumberField.finite_setOf_powerSum_div_mem_unit",
+    "NumberField.finite_setOf_div_mem_unit_of_eq_powerSum",
+    "NumberField.finite_setOf_powerSum_mem_unit",
+    "NumberField.finite_setOf_mem_unit_of_eq_powerSum",
+    "NumberField.finite_setOf_powerSum_eq",
+    "NumberField.finite_setOf_eq_of_eq_powerSum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11D61",
+      "11B37",
+      "11J87",
+      "11R27"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T14:23:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f10f915bc689c86ae0abe45d4164dcb7df91e7ea",
+        "fork_repository": "PalomarArchive/rwst--Subspace-Theorems--9bd9bba330e8",
+        "source_repository": "rwst/Subspace-Theorems"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fef0ecf41b53d054a5ff17cccaa36e27e59566be0dd2d8ae37f6cefed626f7f0"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000017",
+  "version": 1,
+  "title": "A nontrivial critical window for RAF emergence in the binary polymer model",
+  "abstract": "Hordijk and Steel (https://arxiv.org/abs/1605.03919, Section 7, Eq. (21)) conjectured a zero-one threshold for RAF emergence at linear mean catalysis. In the uniform reversible binary-polymer model with split-position reaction identities and food consisting of monomers and dimers, a nontrivial limiting law is established. Each molecule independently catalyzes each reaction, with one catalysis coordinate shared by both directions. If the mean catalysis parameter f(n) satisfies f(n)/n → λ > 0, the probability of a reflexively autocatalytic and food-generated (RAF) set converges to L(λ). The function L is continuous and nondecreasing, with 0 < L(λ) ≤ 1 − exp(−36λ) < 1. Thus no finite positive threshold separates limiting RAF probability zero from one in this model.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p002-binary-polymer-critical-window",
+  "commit": "f90984f2b107aad62c6efcceb0d8cb9da0fe62a4",
+  "project_path": null,
+  "declarations": [
+    "HordijkSteelThreshold.palomar_critical_window_variable_intensity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "60K35",
+      "92E20",
+      "05C80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T21:33:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f90984f2b107aad62c6efcceb0d8cb9da0fe62a4",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p002-binary-polymer-critical-window--3e56abbe9c7e",
+        "source_repository": "mmislan/palomar-p002-binary-polymer-critical-window"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a9991ec193927a98de96b0ccefe2124594e6ffbe851c1806556c8538040a39a1"
+}

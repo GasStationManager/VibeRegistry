@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Zetetic-Dhruv/formal-learning-theory-kernel",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.FormalLearningTheory",
   "declarations": [
     "fundamental_theorem",
@@ -59,5 +59,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FormalLearningTheory.lean",
-  "statement_hash": "sha256:f223439ec456eaf3b76508696b703b2c9196262f7417fddb58e9a045b70c670c"
+  "statement_hash": "sha256:af7ccd0e09c4d90be300a64cc346caa27753ef364ac796e4249ea1c8cf7a79ea"
 }

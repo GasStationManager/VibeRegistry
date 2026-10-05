@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000001",
+  "version": 1,
+  "title": "A two-reaction counterexample to the gross-amplification affinity bound",
+  "abstract": "Despons, De Decker and Lacoste (https://arxiv.org/abs/2306.02366, conjecture following Eq. (33)) proposed that the affinity at maximum production flux is bounded below by the logarithm of the gross amplification ratio in seed-dependent autocatalytic networks. A two-species reversible mass-action counterexample is given by X ⇌ Y with forward/reverse rates (3, 2) and 2Y ⇌ 2X + Y with rates (7, 6). On the positive Y-stationary set, the production current has its unique global maximum at (X, Y) = (1, 1). At this point the exponential of the overall affinity is 7/4, strictly below the gross amplification ratio 2. The network has positive rates, an invertible net stoichiometric matrix, unit production mode and a positive detailed-balance state. The formal theorem establishes the counterexample; the correspondence with the published conjecture is supplied by the witness’s stationary branch and reactant matrix, together with the source’s affinity and chemostat conventions.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p004-optimal-affinity-counterexample",
+  "commit": "50199f4bc2999fb43a0486dcb7571f9dfd333ff2",
+  "project_path": null,
+  "declarations": [
+    "OptimalAffinity.optimalAffinity_seedLowerBound_false"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "q-bio.MN",
+      "math.DS"
+    ],
+    "msc2020": [
+      "92C42",
+      "80A30",
+      "92C45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T00:06:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "50199f4bc2999fb43a0486dcb7571f9dfd333ff2",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p004-optimal-affinity-counterexample--b9ec3e1231c9",
+        "source_repository": "mmislan/palomar-p004-optimal-affinity-counterexample"
+      }
+    ]
+  },
+  "statement_hash": "sha256:00c4f78c05f599ad32bdeb7af0ccade890df5001158e9ed145766d7e9f63a25d"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000014",
+  "version": 1,
+  "title": "Counting recurrences for the permutation classes Av(1342) and Av(12453)",
+  "abstract": "For a permutation pattern τ, let Av_n(τ) be the set of permutations of length n that avoid τ.  This formalization proves, for every n, that four recurrences from the source paper compute |Av_n(1342)| and |Av_n(12453)|. For 1342 they are the one-threshold recurrence W and the scalar kernel recurrence G, and for 12453 the literal two-threshold recurrence H and the transfer-kernel recurrence G.  These are the cases d = 1 and d = 2 of the paper's counting recurrences for the classes Av(12...d ⊕ 231), the direct sum of an increasing pattern and 231, whose kernel form gives polynomial-time algorithms for every fixed d (the complexity bounds themselves are not formalized).  The counting sequence of Av(1342) has been known since Bóna (1997).  That of Av(12453) was previously known only up to n = 38, from a program of Biers-Ariel that evaluates the recurrence H, and the paper uses its kernel algorithm to compute it up to n = 150 (that computation is not formalized).",
+  "authors": [
+    "Henning Arnór Skeggi Úlfarsson"
+  ],
+  "repository": "https://github.com/ulfarsson/public-12453",
+  "commit": "d6133070300db0fd1d229f3e4566067ef1fc6efa",
+  "project_path": "formal/Av12453",
+  "declarations": [
+    "Av12453.count_1342_literal",
+    "Av12453.count_1342_kernel",
+    "Av12453.count_12453_literal",
+    "Av12453.count_12453_kernel"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A05",
+      "05A15",
+      "68W40",
+      "68V15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T15:46:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d6133070300db0fd1d229f3e4566067ef1fc6efa",
+        "fork_repository": "PalomarArchive/ulfarsson--public-12453--a16eaf45e498",
+        "source_repository": "ulfarsson/public-12453"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e8d011c878ad8c404db2690ae13f6e8a729b6848811700bcc6b4761dd7521edc"
+}

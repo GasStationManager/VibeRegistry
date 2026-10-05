@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-29-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-29-000001",
+  "version": 1,
+  "title": "Adversary bounds and the polynomial method for quantum queries",
+  "abstract": "Lean proofs of strong duality and exact block composition for the negative-weight adversary bound on total Boolean functions, explicit constant-factor characterizations of bounded-error quantum query complexity in value and Boolean XOR oracle models, and uniform extraction of query algorithms from supplied promise dual certificates. The submission also proves that every output probability of a q-query algorithm on Boolean inputs has a real polynomial representation of degree at most 2q in each model. Seven statements are compared against a standalone Mathlib-only specification of the finite quantum model.",
+  "authors": [
+    "Troy Lee"
+  ],
+  "repository": "https://github.com/troyjlee/quantum-query-complexity",
+  "commit": "517ba85eb211232771429804d8583e3f52b9d541",
+  "project_path": null,
+  "declarations": [
+    "PalomarQuantumQuery.strong_duality",
+    "PalomarQuantumQuery.composition",
+    "PalomarQuantumQuery.value_characterization",
+    "PalomarQuantumQuery.xor_characterization",
+    "PalomarQuantumQuery.uniform_dual_upper_bound",
+    "PalomarQuantumQuery.value_probability_polynomial",
+    "PalomarQuantumQuery.xor_probability_polynomial"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "68Q12",
+      "81P68"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-29T00:40:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "517ba85eb211232771429804d8583e3f52b9d541",
+        "fork_repository": "PalomarArchive/troyjlee--quantum-query-complexity--2f2b6ce61352",
+        "source_repository": "troyjlee/quantum-query-complexity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8032bf4acd3825cb8a205c87b00dd4e7dbdcbad324c7f8b053c91ccfcba0dc1e"
+}

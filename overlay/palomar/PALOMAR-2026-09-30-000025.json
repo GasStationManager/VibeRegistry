@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000025",
+  "version": 1,
+  "title": "Unistationarity of Type II_l and Type V normal forms with nonnegative degradation",
+  "abstract": "Nandan, Nghe and Unterberger (arXiv:2507.15546, Theorem 5.2 and the following remark) left uniqueness with degradation unresolved for Type II_l cores with l > 2 and, when some degradation rates vanish, for Type V cores. For the source-minimal Type II_l normal forms with l ≥ 3 and the Type V normal forms, unistationarity is established for reversible mass-action kinetics with positive forward and reverse rate constants and arbitrary nonnegative linear degradation. Any two strictly positive stationary concentration vectors coincide, including all internal species of the reversible unit chains. The Type II_l class includes separated stems and the coincident three-fork case. The proof combines passive-chain elimination and a ratio argument for Type V with boundary Jacobian nonsingularity and an implicit-function argument for Type II_l.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p026-nonnegative-degradation-unistationarity",
+  "commit": "f8d9da22ab2743054412b71177e4dbc5fb6ac993",
+  "project_path": null,
+  "declarations": [
+    "MixedDegradation.paper_mixed_degradation_unistationarity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "92C42",
+      "80A30",
+      "15B48"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T11:09:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f8d9da22ab2743054412b71177e4dbc5fb6ac993",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p026-nonnegative-degradation-unistationarity--f74794b0a996",
+        "source_repository": "mmislan/palomar-p026-nonnegative-degradation-unistationarity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6e569268228a2ad882553aa174d9feb0c101f3cbccafe6346d40274e26c13323"
+}

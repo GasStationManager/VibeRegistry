@@ -1,0 +1,55 @@
+{
+  "source": "leanpool",
+  "upstream_id": "krohn-rhodes",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/KrohnRhodes",
+  "version": 1,
+  "title": "Aperiodic and simple-group wreath-division towers",
+  "abstract": "Constructs a finite recursive wreath-division tower for every finite monoid in universe zero, with finite aperiodic or finite simple-group factors and every simple-group factor a monoid divisor of the original monoid. Implements a variant of the Diekert–Kufleitner–Steinberg local-divisor argument, with reusable monoid and semigroup division, local divisors, action coverings, wreath reassociation, and the Krasner–Kaloujnine group embedding. The endpoint permits arbitrary aperiodic factors and recursive intermediate bases; it does not assert the three-element flip-flop reduction, a single transformation-monoid strong division, or quantitative decomposition bounds.",
+  "authors": [
+    "Aditya Rao"
+  ],
+  "repository": "https://github.com/adii800/krohn-rhodes-lean",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.KrohnRhodes",
+  "declarations": [
+    "LeanPool.KrohnRhodes.krohn_rhodes_prime_decomposition",
+    "LeanPool.KrohnRhodes.krasnerKaloujnine_injective",
+    "LeanPool.KrohnRhodes.LocalDivisor.localDivides"
+  ],
+  "informal": {
+    "LeanPool.KrohnRhodes.krohn_rhodes_prime_decomposition": "Every finite monoid M in universe zero admits a finite list of finite monoid factors, each witnessed to be aperiodic or a simple group, with DivTowerWreath M factors and every simple-group factor a monoid divisor of M. An empty tower means M divides the trivial monoid. At a nonempty step, M divides F wreath B for a finite action of a finite monoid B that itself has the tail tower.",
+    "LeanPool.KrohnRhodes.krasnerKaloujnine_injective": "For any group G and normal subgroup N, the constructed monoid homomorphism from G to Mathlib's regular wreath product of N and G/N is injective. No finiteness assumption is required.",
+    "LeanPool.KrohnRhodes.LocalDivisor.localDivides": "For any monoid M and c in M, the local divisor on cM intersect Mc, with its twisted multiplication and identity c, is a quotient of a submonoid of M."
+  },
+  "classification": {
+    "msc2020": [
+      "20M10",
+      "20M35",
+      "20E22"
+    ],
+    "tags": [
+      "semigroup-theory",
+      "finite-monoids",
+      "wreath-products",
+      "automata-theory",
+      "group-extensions"
+    ],
+    "branch": "algebra"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/KrohnRhodes.lean",
+  "statement_hash": "sha256:b57ef93b4503a0eeff3cb7e344f9be2de9a1c1c41fa4143e42b0f30102243a95"
+}

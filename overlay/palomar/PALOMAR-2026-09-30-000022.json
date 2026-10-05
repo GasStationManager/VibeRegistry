@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000022",
+  "version": 1,
+  "title": "solid-lean",
+  "abstract": "The tower theory H is the many-sorted first-order theory of a tower of ZFC universes Z_0, Z_1, ... cut at consecutive inaccessible cardinals, with transition maps j_n identifying Z_n with the rank segment V(kappa_n) of Z_{n+1}.  H is solid in Enayat's sense.  For models M, N, P, with N interpreted in M and P interpreted in N, and an M-definable isomorphism between M and P, there is an M-definable isomorphism between M and N.  The registered statement (Palomar/Challenge.lean) writes out the many-sorted first-order logic of H from scratch, with structures, formulas, satisfaction and definability with parameters.  It states the axioms of H with Separation and Replacement as schemes over all definable classes, finitary interpretations in one-coordinate normal form (each interpreted sort is a definable subset of a single sort modulo a definable equivalence; the reduction from tuple domains is not formalized), presentations, and definable isomorphisms.  The theorem is Theorem 2.1 of the accompanying paper, \"Solid idealized Lean\", where it is the tower half of the bi-interpretability of an idealized Lean with H.  The proof (Palomar/Solution.lean) reduces the statement to the development's semantic solidity theorem tower_solid.",
+  "authors": [
+    "Elliot Glazer"
+  ],
+  "repository": "https://github.com/elliotglazer/solid-lean",
+  "commit": "337e7a5afd81ee7236c0e0dceadbc8cfc313f83f",
+  "project_path": null,
+  "declarations": [
+    "SolidLean.Palomar.tower_theory_solid"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03C62",
+      "03C40",
+      "03F25",
+      "03E30",
+      "03E55",
+      "03B38",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T09:02:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "337e7a5afd81ee7236c0e0dceadbc8cfc313f83f",
+        "fork_repository": "PalomarArchive/elliotglazer--solid-lean--36b635673cfc",
+        "source_repository": "elliotglazer/solid-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6e61edca268792145703a08c430dbb901443d2a79fb7e3f9c1a66bd010fe4ea4"
+}

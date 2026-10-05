@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000006",
+  "version": 1,
+  "title": "NP-hardness of Gaussian c-separation",
+  "abstract": "A Lean 4 proof development of reduction idea toward NP-hardness of feature selection for relative Gaussian c-separation in the formulation of Borozan et al. The argument starts from NP-completeness of equal-cardinality partition of positive squares, giving integral Gaussian data via integer roots and an even paired total. Three Gaussians enforce partition balance, and a schedule of d+1 Gaussians enforces binary selectors. Explicit separation of the two blocks makes cross-block hinge penalties vanish. The fixed threshold is (dot s 1 / 2)*d*(d+1)/2 - 3*d/4, an integer multiple of 1/4 for natural input weights. Here d is the full dimension. The main proved result is the pointwise gadget iff. The full complexity reduction is not formalized. The threshold depends only on the input. General Karamata inequality and an unconditional ordinary-PARTITION to perfect-square equal-cardinality partition equivalence are auxiliary results stated in Solution.lean. The square encoding has proved injectivity and numerical size bounds; its NP-completeness argument is documented prose. The original Gaussian gadget predicate also has a proved binary certificate verifier with soundness, completeness, and quadratic work in a bit-cost model. The Gaussian gadget equivalence and square-partition reduction were developed and first presented by the author in this formalization. Their mathematical novelty and priority relative to earlier literature are unknown; no systematic literature search or comparison establishing them has been documented.",
+  "authors": [
+    "Tomislav Prusina"
+  ],
+  "repository": "https://github.com/tomo61098/c-separated-np-complete-lean",
+  "commit": "d70de3f969dd580506e0835f7d7773890b0a6eaa",
+  "project_path": null,
+  "declarations": [
+    "CSeparatedNPComplete.partition_gadget_schedule_partition_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "03B35",
+      "68Q17"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T01:45:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d70de3f969dd580506e0835f7d7773890b0a6eaa",
+        "fork_repository": "PalomarArchive/tomo61098--c-separated-np-complete-lean--1698d4b0f764",
+        "source_repository": "tomo61098/c-separated-np-complete-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9ec0d23e71bff0a17cf747e85f8041f365c94ecaf89c2e59bd58857c3dbfc248"
+}

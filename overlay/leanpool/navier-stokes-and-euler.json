@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/openai/NavierStokesAndEuler",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.NavierStokesAndEuler",
   "declarations": [
     "NavierStokes.Comparator.navier_stokes_breakdown_R3",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/NavierStokesAndEuler.lean",
-  "statement_hash": "sha256:f7e4df0ea5396f978eadb8dd1076c46e4f0ea58bb4e1bc87dde2bdce6a531271"
+  "statement_hash": "sha256:ff28af46e73e901474d2b7f3c88fd286df42b47039c577fe6bc0ee1393fbfbb1"
 }

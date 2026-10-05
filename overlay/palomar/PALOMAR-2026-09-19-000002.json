@@ -2,21 +2,23 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-09-19-000002",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-19-000002",
-  "version": 2,
-  "title": "Bounds 1.6855 and 3.879 for the planar centred Hardy-Littlewood maximal constant over squares",
-  "abstract": "Let c_d be the weak type (1,1) constant of the centred Hardy-Littlewood maximal operator over axis-parallel cubes in R^d: the least C such that alpha |{Mf > alpha}| <= C ||f||_1 for every integrable f and every level alpha. Its value is unknown for every d >= 2; in the plane the previously published lower bound is c_2 >= 3/4 - sqrt(2)/4 + sqrt(6)/2 = 1.62119... (Aldaz 2000) and the best known upper bound is 4.\nThis development proves c_2 >= Phi = 1.68550999335552518..., an explicit algebraic number of degree 16, from a lattice with unequal masses: columns at spacing h = (5 + sqrt 22)/6 carrying masses alternating 1 and w = (17 + 4 sqrt 22)/9, rows at spacing h + 1. It also proves 1.685 < Phi < 1.686, the classical covering bound c_d <= 2^d in every dimension, and an upper bound below the classical one in the plane, c_2 <= 3.879, by comparing the maximal operator with an explicit kernel for the Cauchy generator -|D_u| - |D_v|.",
+  "version": 3,
+  "title": "Centred maximal constants for cubes and Euclidean balls",
+  "abstract": "Lean proofs of Yongxi Lin's original weak type (1,1) bounds: c_2 >= 1.6855 and c_2 <= 3.879 for cubes, c_2 <= e for Euclidean discs, and c_n <= (n/2)^(n/(n-2)) for balls in n >= 3. Also proves the classical cube bound c_d <= 2^d.",
   "authors": [
     "Yongxi Lin"
   ],
   "repository": "https://github.com/CoolRmal/centered-maximal-constant",
-  "commit": "8e1ee3de55681cd852cf9db16384484036273a4d",
+  "commit": "72c022ba09032b522c878cca2f9b6c68217d77ea",
   "project_path": null,
   "declarations": [
     "CenteredMaximal.weakTypeConstant_le_two_pow",
     "CenteredMaximal.weakTypeConstant_two_le_upper",
     "CenteredMaximal.ofReal_phi_le_weakTypeConstant_two",
     "CenteredMaximal.lt_phi",
-    "CenteredMaximal.phi_lt"
+    "CenteredMaximal.phi_lt",
+    "CenteredMaximal.ballWeakTypeConstant_two_le_exp",
+    "CenteredMaximal.ballWeakTypeConstant_le_rpow"
   ],
   "informal": {},
   "classification": {
@@ -31,7 +33,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-09-20T22:24:58Z",
+  "published_at": "2026-10-01T02:09:29Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -45,11 +47,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "8e1ee3de55681cd852cf9db16384484036273a4d",
+        "commit": "72c022ba09032b522c878cca2f9b6c68217d77ea",
         "fork_repository": "PalomarArchive/CoolRmal--centered-maximal-constant--975187d5196c",
         "source_repository": "CoolRmal/centered-maximal-constant"
       }
     ]
   },
-  "statement_hash": "sha256:eb33e7ad8c1b15c7b90c8d51aebbf4507aa5170bdd56bfa7b85807867dc0c1e7"
+  "statement_hash": "sha256:b2df6b83843bd627c84955a5a87cb880b222164ab6395e54214b32a64dd84cf5"
 }

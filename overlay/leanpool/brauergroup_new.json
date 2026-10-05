@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/Whysoserioushah/BrauerGroup",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.BrauerGroupNew",
   "declarations": [
     "BrauerGroup.BruaerGroup",
@@ -63,5 +63,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/BrauerGroupNew.lean",
-  "statement_hash": "sha256:259aafa047ae72b90567a68d9e8ed9c1bd86ea0700e0322477976964e086da9f"
+  "statement_hash": "sha256:f29395eb36cec8f1f7ec2f1ee830fb2e42c3f66265620a11dc6f2c7df1d5e898"
 }

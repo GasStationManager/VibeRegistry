@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/mo271/Zeta5",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Zeta5Irrational",
   "declarations": [
     "Zeta5Irrational.irrational_five",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Zeta5Irrational.lean",
-  "statement_hash": "sha256:dd130f6a77c4ed28b7c8621b3ab223bd65a95ea9326f704eb64fc79593d7c42c"
+  "statement_hash": "sha256:cb93c84eb7a3cc92dab0a4d5c08f024f1ae3906abb0d1a16bebbdde83dfc69f7"
 }

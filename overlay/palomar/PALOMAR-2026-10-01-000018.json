@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000018",
+  "version": 1,
+  "title": "An Exponent of 1.04273 for the Unit Distance Problem: Lean formalization at exponent 1.0427, conditional on one zeta inequality",
+  "abstract": "Lean formalization accompanying the paper An Exponent of 1.04273 for the Unit Distance Problem by Eric Naslund (cited under sources), which proves the exponent 1.04273 unconditionally with a computer-assisted certificate. Conditional theorem on unit distances in the Euclidean plane. Let B = Q(sqrt 241) and let E be the number field of degree 512 generated over Q by sqrt 241 and square roots of the eight elements -1, -71011068 + 4574225 sqrt 241, (-6101 - 393 sqrt 241)/2, (6101 - 393 sqrt 241)/2, 31 - 2 sqrt 241, 31 + 2 sqrt 241, 326 - 21 sqrt 241 and 326 + 21 sqrt 241 of B (a basis of the {2,3,5}-units of B modulo squares; E is the maximal elementary abelian 2-extension of B unramified outside 2, 3, 5 and the infinite places). Hypothesis (H) is one displayed numerical inequality for the Dedekind zeta function of E: log(Re zeta_E(1 + 1/300))/512 + (1/300)((L - gamma - log(4 pi))/4 - Re((zeta_E'/zeta_E)(2))/512) < 852/10000, where L = (9/4) log 2 + (1/2) log 3615 and gamma is Euler's constant. The compared theorem proves that (H) implies the existence of finite sets U_j in the plane with |U_j| -> infinity such that the number of unordered pairs of points of U_j at distance one, divided by |U_j|^(10427/10000), tends to infinity. The exponent is exactly 10427/10000 = 1.0427. The conclusion is a sequence statement only; no bound at every sufficiently large cardinality is asserted. The infinite pro-2 tower over B (generators, relation bound, presentation, Golod-Shafarevich infinitude, local data), its retained field and growing Galois fields, the root-discriminant bound, the passage from (H) to the analytic ceiling, the numerical margin and the planar construction are proved in Lean over Mathlib; (H) itself is not proved. Outside Lean, a rigorous computation (certified approximate functional equations for the 255 quadratic Hecke L-functions of E/B and an Euler product with explicit tail) bounds the left side of (H) by 0.0848336; that computation is not part of the formal proof.",
+  "authors": [
+    "Eric Naslund"
+  ],
+  "repository": "https://github.com/enaslund/unit-distance-bound-0.0427",
+  "commit": "e0ac836176016dbefae28646bc91fc3a5aca30e8",
+  "project_path": "lean",
+  "declarations": [
+    "UnitDistanceSqrt241Submission.target_of_canonical_genus_zeta_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "52C10",
+      "11R37",
+      "20C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T21:55:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e0ac836176016dbefae28646bc91fc3a5aca30e8",
+        "fork_repository": "PalomarArchive/enaslund--unit-distance-bound-0.0427--b3a8b62d2e9c",
+        "source_repository": "enaslund/unit-distance-bound-0.0427"
+      }
+    ]
+  },
+  "statement_hash": "sha256:db4f16ba14ff6832169f7cf806d00cec0ea6c49a2a67c0dfdded11a6b476e036"
+}

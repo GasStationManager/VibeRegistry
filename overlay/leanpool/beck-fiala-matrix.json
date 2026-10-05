@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "beck-fiala-matrix",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BeckFialaMatrix",
+  "version": 1,
+  "title": "Strict Beck–Fiala rounding for incidence matrices",
+  "abstract": "Proves the rational integer-making form of Beck–Fiala rounding for finite zero-one incidence matrices with column degree bounded by a positive t. Every row has discrepancy strictly less than t, and initially integral coordinates are preserved. Includes the necessity of the positive-bound hypothesis. This is distinct from the Komlós discrepancy bound and from the non-strict hyperedge-selection rounding used in triangle packing.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/lean-pool",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.BeckFialaMatrix",
+  "declarations": [
+    "BeckFialaMatrix.exists_rounding",
+    "BeckFialaMatrix.exists_rounding_preserving_integral",
+    "BeckFialaMatrix.zero_bound_counterexample"
+  ],
+  "informal": {
+    "BeckFialaMatrix.exists_rounding": "Given a finite zero-one integer matrix with at most t ones per column, t at least one, and a rational vector in the unit cube, there is a zero-one integer vector whose discrepancy in every row is strictly less than t.",
+    "BeckFialaMatrix.exists_rounding_preserving_integral": "The strict rounding can additionally be chosen to leave every initially integral coordinate unchanged.",
+    "BeckFialaMatrix.zero_bound_counterexample": "The same universally quantified strict rounding claim without the assumption t at least one is false, already for a one-by-one zero matrix with t equal to zero."
+  },
+  "classification": {
+    "msc2020": [
+      "05D40"
+    ],
+    "tags": [
+      "discrepancy-theory",
+      "beck-fiala",
+      "integer-rounding",
+      "incidence-matrices"
+    ],
+    "branch": "discrepancy theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/BeckFialaMatrix.lean",
+  "statement_hash": "sha256:3a53ec770c0d24b910976fb25128f1abc1868886f09deb5571164eb5ac9f1ad0"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "regts-sevenster",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/RegtsSevenster",
+  "version": 1,
+  "title": "A proof of the Regts–Sevenster conjecture, formalized",
+  "abstract": "A Lean 4 proof of the Regts–Sevenster conjecture. A complex-valued graph parameter, normalized at the empty graph and invariant under isomorphism, has exponentially bounded edge-connection rank if and only if it is a mixed partition function. For a natural rank base R, a representing model can be chosen with k even and 2ℓ odd colours satisfying k + 2ℓ ≤ R. The development also proves the even connection-rank growth limit, minimum total colour dimension, minimal parity formulas and prescribed-dimension criterion. Schrijver's factorial argument supplies nilpotent-trace vanishing; semisimplicity and Deligne's fibre-functor theorem give the model; a polynomial commutant estimate gives the sharp colour budget. Deligne's theorem and the required symmetric-group character theory are proved within the development. The appendix's trace-zeta results give rationality and degree bounds, with an independent proof of nilpotent-trace vanishing. The theorems of record use only propext, Classical.choice and Quot.sound, checked by pinned audits.",
+  "authors": [
+    "William Whistler"
+  ],
+  "repository": "https://github.com/willwhistler/regts-sevenster",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.RegtsSevenster",
+  "declarations": [
+    "RS.regts_sevenster_characterisation",
+    "RS.regts_sevenster_total",
+    "RS.deligne_theorem"
+  ],
+  "informal": {
+    "RS.regts_sevenster_characterisation": "Normalized isomorphism-invariant complex graph parameters with exponentially bounded edge-connection ranks are precisely mixed partition functions.",
+    "RS.regts_sevenster_total": "A natural rank bound R admits a representing mixed model with total color dimension at most R.",
+    "RS.deligne_theorem": "The development proves its stated Deligne fiber-functor theorem for the symmetric tensor categories used in the representation."
+  },
+  "classification": {
+    "msc2020": [
+      "05C50",
+      "18M20"
+    ],
+    "tags": [
+      "graph-parameters",
+      "tensor-categories",
+      "partition-functions"
+    ],
+    "branch": "algebraic graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/RegtsSevenster.lean",
+  "statement_hash": "sha256:9fc62d88f37f47a7ccbd936f7a905e2f77beff29710c9b82be0fc698352ec918"
+}

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/tadamcz/erdos548",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Erdos548",
   "declarations": [
     "Erdos548.erdos_548",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos548.lean",
-  "statement_hash": "sha256:3084432a8dc03f46faa764cdd2f40a316b69dd25f615c2c8ef307ffcc6d306e7"
+  "statement_hash": "sha256:a464b6a10d3edfb7ec658d764edca8b849c6a39d59a45a3fd181e0a8a2ea6a51"
 }

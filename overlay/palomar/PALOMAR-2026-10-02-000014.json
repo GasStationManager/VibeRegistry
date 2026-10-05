@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000014",
+  "version": 1,
+  "title": "Pascal Cofactors",
+  "abstract": "A Lean 4 formalisation of p-adic valuation laws for alternating cofactors C_d(p^a) = (p^(ad)+1)/(p^a+1) with odd d. It proves finite-window coefficient scaling and an exact pre-extremal restricted-binomial-gcd formula, identifies the sparse endpoint, proves the least extremal row T_p(C_d(p^a)) = p^(ad)+1 for odd d >= 5, and gives the full cubic classification for p^(2a)-p^a+1. The Palomar Challenge records coefficient scaling, the exact bounded gcd formula, the odd-degree least-row theorem, and the cubic classification.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/pascal-cofactors",
+  "commit": "02a52e71a0a5ab1e77824490d0c47650d4a45691",
+  "project_path": null,
+  "declarations": [
+    "PascalCofactorsPalomar.coefficient_scaling",
+    "PascalCofactorsPalomar.restricted_gcd_valuation_bounded",
+    "PascalCofactorsPalomar.targetA_d",
+    "PascalCofactorsPalomar.targetC"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-02T20:32:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "02a52e71a0a5ab1e77824490d0c47650d4a45691",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--pascal-cofactors--9d6b3a0fe1db",
+        "source_repository": "jfairfaxball-348/pascal-cofactors"
+      }
+    ]
+  },
+  "statement_hash": "sha256:50ee8937bcd332daeedba7c3f035f55dfad2de6eaeb7950e21efe1ba1144f67f"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000013",
+  "version": 1,
+  "title": "Irrationality of Li₂(1/2)",
+  "abstract": "A Lean formalization of the irrationality of Li₂(1/2) = Σ_{n≥1} 2^(-n)/n². The proof is inspired by A. Fauzan's work on the irrationality of ζ(5) and builds on Moritz Firsching's Lean formalization in mo271/Zeta5. The central idea is to establish the irrationality of a real number r by constructing a sequence of integer polynomials P_n whose values P_n(r) decay rapidly as n tends to infinity, while for every rational q, P_n(q) ≠ 0 for infinitely many n. Analytic umbral calculus was used to find suitable polynomials Q_n with rational coefficients. Random matrix theory provides rapid decay of Q_n(r) as n tends to infinity. Estimates of p-adic valuations, together with the prime number theorem, ensure that the values P_n(r) of the corresponding primitive integer polynomials also decay rapidly as n tends to infinity, completing the proof. Similar methods may apply to other values Li₂(1/n), but those cases are not included here. The compared theorem depends on propext, Classical.choice and Quot.sound and on nothing else, and there is no sorry outside the one deliberate hole in Challenge.lean.",
+  "authors": [
+    "Qian Tang"
+  ],
+  "repository": "https://github.com/dtq1997/li2-half-irrationality",
+  "commit": "950ee9d53914e1afb89c8f835a8bca6ccfaa0108",
+  "project_path": null,
+  "declarations": [
+    "li2_one_half_irrational"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "33B30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T03:21:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "950ee9d53914e1afb89c8f835a8bca6ccfaa0108",
+        "fork_repository": "PalomarArchive/dtq1997--li2-half-irrationality--ba6c4988f6ba",
+        "source_repository": "dtq1997/li2-half-irrationality"
+      }
+    ]
+  },
+  "statement_hash": "sha256:73a714c4eb28bca39dc7a370be8e00472f0f5baa15a1fe7c08a2fc65263e3a07"
+}

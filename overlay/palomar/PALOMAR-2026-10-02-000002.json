@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000002",
+  "version": 1,
+  "title": "Optimal packings of one to seven unit squares in a disk",
+  "abstract": "For n = 1, …, 7: the least radius of a closed disk holding n unit squares with disjoint interiors, each placed and rotated freely, and every packing that attains it. The radii are √2/2, √5/2, 5√17/16, √2, √(5/2), √q* ≈ 1.68854 and √13/2, where q* is a quartic irrational. Up to rotation about the disk centre and relabelling, the optimal packing is unique for n ≤ 6: the square, the 2 × 1 rectangle, the T, the 2 × 2 block, the plus, and for six squares a central square with four neighbours, two of them pushed along its sides, and a sixth square turned by π/4 between those two. For n = 7 the optimal packings form a three-parameter family: two columns of two squares and, between them, a column of three whose heights vary independently, at least 1 apart and within √3 − 1/2 of the disk centre. The proofs for three to six squares bound the arcs the squares occupy on a small circle about the disk centre. For six squares this finds the square that contains the disk centre; five fixed points label the others, and a weighted sum of separating inequalities, with estimates uniform in the angles of the squares, forces the optimal radius. For seven squares, each square avoiding the disk centre gets a direction from it, and in the optimal disk two disjoint such squares get directions at least π/3 apart. We found no earlier proof for five, six or seven squares, and no exact one for three, where a computer-assisted enclosure of the radius and the optimal arrangements was known. Four squares, uniqueness included, were settled by hand in 2026, by the same idea as here.",
+  "authors": [
+    "The-Anh Vu-Le"
+  ],
+  "repository": "https://github.com/vltanh/lean4-squares-in-circles",
+  "commit": "621f2340a12f661a51b613719107a75cf40ab03a",
+  "project_path": null,
+  "declarations": [
+    "SquaresInCircles.optimal_radius",
+    "SquaresInCircles.optimal_packings"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-02T02:40:53Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "621f2340a12f661a51b613719107a75cf40ab03a",
+        "fork_repository": "PalomarArchive/vltanh--lean4-squares-in-circles--0ba28607e811",
+        "source_repository": "vltanh/lean4-squares-in-circles"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6c6e07c6a33c8cbf6c87bad586191c921dc1edff33e64806dc16dd833810c451"
+}

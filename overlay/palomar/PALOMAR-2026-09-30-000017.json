@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000017",
+  "version": 1,
+  "title": "Krohn–Rhodes decomposition of finite monoids into aperiodic and simple-group factors",
+  "abstract": "A Lean 4 and Mathlib formalization of the Krohn–Rhodes prime decomposition theorem for finite monoids, in a form with aperiodic factors: every finite monoid M divides an iterated wreath product of finite monoids, each of which is aperiodic or a simple group, and every simple group among the factors divides M. The proof follows the local-divisor proof of Diekert, Kufleitner and Steinberg. Unlike the classical statement, the aperiodic factors are not reduced to copies of the three-element flip-flop monoid U₂; for an aperiodic M the statement holds with M as its only factor, and in general it separates the group structure of M, as simple groups dividing M, from aperiodic factors.",
+  "authors": [
+    "Aditya Rao"
+  ],
+  "repository": "https://github.com/adii800/krohn-rhodes-lean",
+  "commit": "1f4a7e39ba2baede5434ac48c7571a442f8d521d",
+  "project_path": null,
+  "declarations": [
+    "KrohnRhodes.krohn_rhodes_prime_decomposition"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "cs.FL"
+    ],
+    "msc2020": [
+      "20M10",
+      "20M35",
+      "20M20",
+      "68Q70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T05:33:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1f4a7e39ba2baede5434ac48c7571a442f8d521d",
+        "fork_repository": "PalomarArchive/adii800--krohn-rhodes-lean--0944fc6761e8",
+        "source_repository": "adii800/krohn-rhodes-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:20854c6cdbb4c73a8da823ca71bb8d14d4f8dfdaedc356d85aa4a661a742d692"
+}

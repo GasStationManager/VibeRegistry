@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/gkp-carry-lean",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.GKPCarry",
   "declarations": [
     "GKPCarry.tendsto_gkpSuccessProportion_one",
@@ -59,5 +59,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/GKPCarry.lean",
-  "statement_hash": "sha256:2d99a52143c07545f0a45886e430de1cf707d9bb48a700a72fba4cdd2a2c42a2"
+  "statement_hash": "sha256:8744ebfeb89e2491dde75789864918cc383bfcda686450dde6742c434986bc95"
 }

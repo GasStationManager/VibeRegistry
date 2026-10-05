@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/mario-ullrich/lean-snumbers",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.SNumbers",
   "declarations": [
     "SNumbers.approximationNumber_le_e_mul_hilbertNumber",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SNumbers.lean",
-  "statement_hash": "sha256:087c41f22a46a5f0bf149f51c5d1e381f04f1de55a9196a823c6acd46673964c"
+  "statement_hash": "sha256:31fbd764c2f8a06805537e5f798f2008396c69be32bd225de55b2c8ec1bc1ec1"
 }

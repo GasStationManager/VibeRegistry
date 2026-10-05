@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "brooks-subcubic",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BrooksSubcubic",
+  "version": 1,
+  "title": "Brooks' theorem for subcubic graphs",
+  "abstract": "Proves that every finite simple graph of maximum degree at most three with no four-clique admits a three-colouring, without a connectedness assumption. Includes controlled greedy colouring, colouring across cut vertices, and a good-triple argument for cubic components. This is the subcubic case of Brooks' theorem, not the general-degree theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/lean-pool",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.BrooksSubcubic",
+  "declarations": [
+    "BrooksSubcubic.brooks_cubic"
+  ],
+  "informal": {
+    "BrooksSubcubic.brooks_cubic": "Every finite simple graph with maximum degree at most three and no clique on four vertices is three-colourable. The graph may be disconnected."
+  },
+  "classification": {
+    "msc2020": [
+      "05C15"
+    ],
+    "tags": [
+      "graph-theory",
+      "vertex-colouring",
+      "brooks-theorem",
+      "subcubic-graphs"
+    ],
+    "branch": "graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/BrooksSubcubic.lean",
+  "statement_hash": "sha256:cf17fb762014f824dd28e07a470ceacfd4bd36b62f159fd758ec8b3ccc594f2a"
+}

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/bjbraams/lean-scv",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.SeveralComplexVariables",
   "declarations": [
     "SeveralComplexVariables.analyticOnNhd_of_separately_analytic_locally_bounded",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SeveralComplexVariables.lean",
-  "statement_hash": "sha256:89fce0ad8d4ecf810d84c78adb1c95afe1edc420f0e36c8ad0e33e7f0d31d990"
+  "statement_hash": "sha256:f48cceae54daea9ea5089c5fa75e648463255476dc4114cb56fd15d20bb28144"
 }

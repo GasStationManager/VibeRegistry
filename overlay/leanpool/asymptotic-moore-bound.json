@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/woutercvb/wewantmoore",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.MooreBound",
   "declarations": [
     "MooreBound.DegreeDiameter.theorem_1_1",
@@ -56,5 +56,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MooreBound.lean",
-  "statement_hash": "sha256:e61a262f0f5c6535044d21e2e7d17e495c78d57a44d899895b6110e920756d41"
+  "statement_hash": "sha256:e74280e3699569cd9a3236ffdddc0db0d2db77885f93352e0b4fe38f867e9626"
 }

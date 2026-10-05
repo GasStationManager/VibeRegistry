@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000023",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000023",
+  "version": 1,
+  "title": "ProbStack — Random Stacking on Trees",
+  "abstract": "Lean 4 formalization of a deterministic finite-path necessity theorem for graph-pebbling stackability: a positive-mass nonstackable path configuration above an explicit mass threshold must contain an actual directed integer branch message at most -h.  The package also verifies the exact fixed-total corollary at total n*mu, forcing a message at most -(2*mu-1).  The project's two-sided random path threshold theorem is not part of this Palomar result.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/ProbStack-Random-Stacking-on-Trees",
+  "commit": "1897a76956168fba047f5943fa7998601f4fe459",
+  "project_path": null,
+  "declarations": [
+    "ProbStack.Palomar.nonstackable_exists_directedMessage_le",
+    "ProbStack.Palomar.nonstackable_total_mul_exists_directedMessage_le"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C99"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T10:05:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1897a76956168fba047f5943fa7998601f4fe459",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--ProbStack-Random-Stacking-on-Trees--ff7456044a49",
+        "source_repository": "jfairfaxball-348/ProbStack-Random-Stacking-on-Trees"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d9d669d63c5ea31c6fe783bbe744e3082145d80a6046746a1c27a924f783fe91"
+}

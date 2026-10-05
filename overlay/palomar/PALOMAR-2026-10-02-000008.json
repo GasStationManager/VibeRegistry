@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000008",
+  "version": 4,
+  "title": "Optimality (Baek 2024) and uniqueness of Gerver's sofa, formalized in Lean 4",
+  "abstract": "The moving sofa problem asks for the largest area of a planar shape that can be moved around the right-angled corner of a hallway of unit width. This repository formalizes in Lean 4, with Mathlib, Jineon Baek's proof (arXiv:2411.19826) that Gerver's sofa, of area 2.2195..., is optimal: every numbered result of the paper, the results it cites (Schneider's area formula for convex bodies, and the existence and uniqueness of the solution of Romik's equations, which define Gerver's sofa), and the structure of Gerver's sofa (Theorem 8.4.1), which the paper states without proof.\n\nIt also proves that Gerver's sofa is the only moving sofa of maximum area up to rigid motions: a rotation followed by a translation maps every moving sofa of that area onto Gerver's sofa. Baek's paper does not prove this.\n\nFinally, it bridges Baek's definitions and those of Google DeepMind's formal-conjectures: the two notions of moving sofa agree, the sofa constant of formal-conjectures is the supremum of the areas of Baek's moving sofas, and the two definitions of Gerver's sofa, from Gerver's four constants and from Romik's equations, give the same set. Gerver's four constants are proved unique by elementary inequalities. Formal-conjectures' statements follow, including the uniqueness, which it lists as open.",
+  "authors": [
+    "The-Anh Vu-Le"
+  ],
+  "repository": "https://github.com/vltanh/lean4-moving-sofa",
+  "commit": "16653ae81e0e4f52a362bafae2ad3440100ad065",
+  "project_path": null,
+  "declarations": [
+    "Baek.gerver_params_exists",
+    "Baek.gerver_params_unique",
+    "Baek.gerver_sofa_area",
+    "Baek.gerver_sofa_optimal",
+    "Baek.gerver_sofa_unique",
+    "Bridge.isMovingSofa_iff",
+    "Bridge.sofaConstant_eq",
+    "Bridge.gerversSofa_eq",
+    "FormalConjectures.MovingSofa.GerversSofa.ABφθSpec.existsUnique",
+    "FormalConjectures.MovingSofa.isMovingSofa_gerversSofa",
+    "FormalConjectures.MovingSofa.sofaConstant_eq_volume_gerversSofa",
+    "FormalConjectures.MovingSofa.volume_eq_sofaConstant_iff_congruent_gerversSofa"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.OC"
+    ],
+    "msc2020": [
+      "49Q10",
+      "52A10",
+      "52A38",
+      "52A40",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T10:16:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "16653ae81e0e4f52a362bafae2ad3440100ad065",
+        "fork_repository": "PalomarArchive/vltanh--lean4-moving-sofa--dfc797b6e6b6",
+        "source_repository": "vltanh/lean4-moving-sofa"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8bad64d03b22d91ab73e92e5d3f2ebade8d229752ef550234ed55ae0e1d3e249"
+}

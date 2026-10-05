@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000033",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000033",
+  "version": 1,
+  "title": "Pascal Extremes",
+  "abstract": "A Lean 4 formalisation of sharp p-adic extremal behaviour for the restricted binomial gcd G(N;m) = gcd{C(N,k) : 0 < k < N, m divides k}. For every prime p and m >= 2 with p not dividing m, it proves that the maximum of v_p(G(N;m)) over admissible rows is the least r >= 1 with m < p^r, with constructive attainment proved before the least extremal row T is used. It then proves, for every prime p and a >= 2, the exact least-row formula T_p(p^a+1) = p^(3a)+1.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/Pascal-Extremes",
+  "commit": "a7e414a9e5bcf931c79b2bd4d4ffa81eeb6cfc22",
+  "project_path": null,
+  "declarations": [
+    "PascalExtremesPalomar.targetA_attainment",
+    "PascalExtremesPalomar.targetA",
+    "PascalExtremesPalomar.targetB"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T15:06:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a7e414a9e5bcf931c79b2bd4d4ffa81eeb6cfc22",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--Pascal-Extremes--6b93e2d91cdd",
+        "source_repository": "jfairfaxball-348/Pascal-Extremes"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f37dd502ceb012030958b97bb1b99739859ab19dfa22b8e795089a8d74416ef0"
+}

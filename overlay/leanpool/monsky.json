@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/dhyan-aranha/Monsky",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Monsky",
   "declarations": [
     "LeanPool.Monsky.monsky_theorem"
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Monsky.lean",
-  "statement_hash": "sha256:a15ecb590ad8a6843cef3eb3d125ebd6f6240ecb1ea3a85a544d0e02491876f9"
+  "statement_hash": "sha256:ea01940b38b92a66c92bebaa049f7e49a34fcb7f62eb48c2d34045e600f19a51"
 }

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Luka-O/polya-enumeration-theorem",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.PolyaEnumerationTheorem",
   "declarations": [
     "LeanPool.PolyaEnumerationTheorem.polya_theorem"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PolyaEnumerationTheorem.lean",
-  "statement_hash": "sha256:16b4bac1a4950cb5cd1afa6be64a53c52b723a182f1d1da3eb89d2179a5448f5"
+  "statement_hash": "sha256:8238e5db17683fd6dcbeee669f4c361f2469ef5c9dc4fa90922a28db4e519454"
 }

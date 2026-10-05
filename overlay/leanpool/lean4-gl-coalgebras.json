@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/mgignoux/lean4-gl-coalgebras",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Lean4GlCoalgebras",
   "declarations": [
     "Lean4GlCoalgebras.interpolation"
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Lean4GlCoalgebras.lean",
-  "statement_hash": "sha256:85ba91ec0e18f04559cc2b53f3828b6c779ab121ac5bd13eec1818fd632100aa"
+  "statement_hash": "sha256:bc59b7f533c0a44f5ddf47d3884790dd9fb928feda474f4b824e3d7ef640d59a"
 }

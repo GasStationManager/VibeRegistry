@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000036",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000036",
+  "version": 1,
+  "title": "A complete crystalline-measure space of countably infinite Hamel dimension",
+  "abstract": "There exists a locally finite set Λ in the real line such that the complete complex vector space of tempered distributions locally given by atomic measures on Λ, whose distributional Fourier transforms are also locally atomic on Λ, has Hamel dimension ℵ₀. A countable family gives a unique finite linear expansion of every admissible distribution, and every finite expansion is admissible. The theorem includes the equivalence between a Schwartz-vanishing-ideal definition and the local atomic formulas on both Fourier sides. Temperedness is distributional; no additional polynomial total-variation bound is assumed. This is an exhaustive occurrence result for one constructed carrier, not a classification of arbitrary carriers.",
+  "authors": [
+    "Jamie Martin",
+    "Li Shen"
+  ],
+  "repository": "https://github.com/balancedscorpion/countably-infinite-dimension-meyer-spaces",
+  "commit": "0de61962a757b5e930dfe59dd94d191ae1f87922",
+  "project_path": null,
+  "declarations": [
+    "CountablyInfiniteCrystallineMeasures.exhaustiveCardinalClaim"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.FA"
+    ],
+    "msc2020": [
+      "42A38",
+      "46F12",
+      "52C23"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T17:49:58Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0de61962a757b5e930dfe59dd94d191ae1f87922",
+        "fork_repository": "PalomarArchive/balancedscorpion--countably-infinite-dimension-meyer-spaces--08b04ade2e72",
+        "source_repository": "balancedscorpion/countably-infinite-dimension-meyer-spaces"
+      }
+    ]
+  },
+  "statement_hash": "sha256:75f9bb56cd97db2b9a7852b728d47b1863b9751cafb9262de6d98327abadc520"
+}

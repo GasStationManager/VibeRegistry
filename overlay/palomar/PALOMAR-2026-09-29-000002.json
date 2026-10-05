@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-29-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-29-000002",
+  "version": 1,
+  "title": "A Lean formalization of the Erdős discrepancy theorem",
+  "abstract": "A formalization in Lean 4 and Mathlib of the Erdős discrepancy theorem, proved by Terence Tao in 2015: for every sequence f(1), f(2), … of signs ±1 and every C there are d ≥ 1 and n with |f(d) + f(2d) + ⋯ + f(nd)| > C, so every ±1 sequence has unbounded discrepancy along homogeneous arithmetic progressions. This is the original ±1 formulation, Corollary 1.2 of Tao's paper; its Hilbert-space-valued Theorem 1.1 is not formalized. The proof follows the architecture of Tao's argument: a Fourier-analytic reduction from a sequence of bounded discrepancy to a stochastic completely multiplicative function with bounded mean-square partial sums; a van der Corput argument, driven by the logarithmically averaged two-point Elliott estimate, forcing such a function to pretend to be a twisted Dirichlet character; and a generalized Borwein–Choi–Coons argument excluding that case. The analytic number theory these steps use is proved in the same development rather than assumed: the entropy-decrement proof of the two-point Elliott estimate from Tao's companion paper, the Matomäki–Radziwiłł short-interval estimate on the major arcs via the Dirichlet-polynomial route of Matomäki, Radziwiłł and Tao, the Halász–Montgomery large-values inequality, a large-values bound for Dirichlet polynomials over primes from a zero-free region of the Riemann zeta function, that zero-free region from Weyl-sum bounds on zeta, and a form of Vinogradov's mean value theorem. Where a published route did not fit, the development adapts it; the adaptations are documented. The theorem depends only on Lean's three standard axioms. This is a formalization of a published result, not a new proof; it was produced by AI agents working through pull requests checked by continuous integration in the ProofFleet repository (formerly MoltResearch).",
+  "authors": [
+    "Sean Huver"
+  ],
+  "repository": "https://github.com/ProofFleet/prooffleet",
+  "commit": "13853222d90d7cff0608c6380d0ee75b0e12473d",
+  "project_path": null,
+  "declarations": [
+    "EDP.erdos_discrepancy"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11K38",
+      "11N37",
+      "11M26",
+      "11L15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-29T01:01:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "13853222d90d7cff0608c6380d0ee75b0e12473d",
+        "fork_repository": "PalomarArchive/ProofFleet--prooffleet--f3efc1a69e0c",
+        "source_repository": "ProofFleet/prooffleet"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0f4e8bcea08f3bdfe4ddf75dc108d6c263965894908e3dfc219afe6c01c0dccd"
+}

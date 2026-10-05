@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/vaca22/riemann-roch-function-fields",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.RiemannRochFunctionFields",
   "declarations": [
     "FunctionField.riemann_roch",
@@ -59,5 +59,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/RiemannRochFunctionFields.lean",
-  "statement_hash": "sha256:1126182414f820642bf23329b06158c42fa1adafffb31f413545c72f1fda5078"
+  "statement_hash": "sha256:060cde9fabcaccd42e6f1588881b85ab79952730ef2760ea1410584b468ae7f0"
 }

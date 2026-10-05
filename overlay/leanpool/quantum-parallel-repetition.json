@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/openai/ten-proofs",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.QuantumParallelRepetition",
   "declarations": [
     "QuantumParallelRepetition.distributionUniformExponential",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/QuantumParallelRepetition.lean",
-  "statement_hash": "sha256:eba7adb0bcd816c8b54074f6eb0d3a34a70258f43ab8716dca65fa68cdb96ca1"
+  "statement_hash": "sha256:55d8df3d9bc9608cc96927db673e46859951d8351787c4fa13ea625b1b967283"
 }

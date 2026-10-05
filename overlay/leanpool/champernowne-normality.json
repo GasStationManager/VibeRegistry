@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/OldMathematician/ChampernowneNormality",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Champernowne",
   "declarations": [
     "Champernowne.champernowne_normal",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Champernowne.lean",
-  "statement_hash": "sha256:f06155bab4ef0ccc170cd92bb03eccc73f855ee6560d4d332410cb42167b6eec"
+  "statement_hash": "sha256:418f811ff0fc25192f71d2d3a594548485ad87796ba7ba59cdc06af3ae510542"
 }

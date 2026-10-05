@@ -14,7 +14,7 @@
   ],
   "repository": "https://github.com/shengtongzhang-alt/nikodym",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Nikodym",
   "declarations": [
     "Nikodym.card_ge_pow_sub",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Nikodym.lean",
-  "statement_hash": "sha256:90b38667905f18cc9c01d7ca5c7a4b5f799e5d7005e31bc86aabb3d4e1856f59"
+  "statement_hash": "sha256:9a8235a4f2b3b32fbfaba7d0be1e81f5deeb90e8e8f93ed26a031f0fca48aa1e"
 }

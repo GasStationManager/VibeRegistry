@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ivankobe/FactorizationSystems",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.FactorizationSystems",
   "declarations": [
     "CategoryTheory.FactorizationSystemCharacterization",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FactorizationSystems.lean",
-  "statement_hash": "sha256:5db0fe7f383a7d10a969d77fdeda657f103603979220210ee4be8a6dbdc18a17"
+  "statement_hash": "sha256:ab7027cd1bee85a2aa7f9860c23b5ba104a4ab22d9506c87e06f765826e86c41"
 }

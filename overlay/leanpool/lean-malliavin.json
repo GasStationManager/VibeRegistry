@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "lean-malliavin",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/Malliavin",
+  "version": 1,
+  "title": "Malliavin calculus and the Clark–Ocone representation",
+  "abstract": "Constructs the Malliavin derivative, Gaussian integration by parts, closability, Wiener chaos, Brownian Itô integration and martingale representation. The Clark–Ocone endpoint uses a generating pre-Brownian process with continuous linear coordinates on a separable real Gaussian Banach space, its natural filtration, and pairs in the closed Malliavin graph; the conditional-expectation sections agree almost everywhere at positive times.",
+  "authors": [
+    "Ezzeri Esa"
+  ],
+  "repository": "https://github.com/savarin/lean-malliavin",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.Malliavin",
+  "declarations": [
+    "PalomarClarkOcone.generated_clark_ocone"
+  ],
+  "informal": {
+    "PalomarClarkOcone.generated_clark_ocone": "For a generating pre-Brownian process on a separable real Gaussian Banach space whose coordinates are pointwise represented by continuous linear functionals, constructs a time realization of the Malliavin derivative and an Itô isometry for the natural filtration, with martingale representation for every terminal L² variable. For pairs in the closed Malliavin graph, the Clark–Ocone formula identifies the derivative's predictable projection with its conditional-expectation sections for almost every positive time."
+  },
+  "classification": {
+    "msc2020": [
+      "60H07",
+      "60H05"
+    ],
+    "tags": [
+      "probability",
+      "malliavin-calculus",
+      "stochastic-analysis"
+    ],
+    "branch": "stochastic analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/Malliavin.lean",
+  "statement_hash": "sha256:9458e597d4dd5ddfb1d3d3741e51ebc5bbe92121a906b6264693301697b16763"
+}

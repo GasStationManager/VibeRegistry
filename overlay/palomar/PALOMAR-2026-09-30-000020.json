@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000020",
+  "version": 1,
+  "title": "A critical-point criterion for D-stability in every dimension",
+  "abstract": "Johnson's contact criterion for D-stability is expressed as an explicit principal-minor critical-point system. For every real square matrix and every choice of positive barrier weights, D-stability is equivalent to Hurwitz stability and the absence of positive solutions of the associated Fritz-John equations. The proof applies a proper exhaustion of the positive orthant to Johnson's contact variety, so that every nonempty contact set contains a critical point. In dimension five, the criterion is written explicitly as a Lagrange system and a tangency system, with coefficients given by principal minors. Both equivalences are formalized in Lean. The result applies the classical critical-point method to the characterization problem discussed by Kanovei and Logofet (1998) and Kushel (arXiv:2604.16526).",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p087-d-stability-critical-points",
+  "commit": "e0e376f5df0a639c619259a1e4a0a09648d25f93",
+  "project_path": null,
+  "declarations": [
+    "DStability5x5.dStable_iff_explicit",
+    "DStability5x5.dStable_iff_five"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS"
+    ],
+    "msc2020": [
+      "15A18",
+      "34D20",
+      "14P10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T08:16:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e0e376f5df0a639c619259a1e4a0a09648d25f93",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p087-d-stability-critical-points--c8b03e795d22",
+        "source_repository": "mmislan/palomar-p087-d-stability-critical-points"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c0e5c1f43dab6fdf9a18f43d84df84d57c9e5221a1973b35d2a6d1ff26d58d57"
+}

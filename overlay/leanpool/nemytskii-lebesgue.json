@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/madvorak/nemytskii-lebesgue",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.NemytskiiLebesgue",
   "declarations": [
     "NemytskiiLebesgue.IsCaratheodory.memLp_nemytskii_volume_iff_growth",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/NemytskiiLebesgue.lean",
-  "statement_hash": "sha256:8b695ce8e630966ee3151bf3793117d0d9e76098d780bf3e41be5b4890a43787"
+  "statement_hash": "sha256:8d243203209cf1d8f4037d2610755a973a243b56bce59dafab57fdbcddff330d"
 }

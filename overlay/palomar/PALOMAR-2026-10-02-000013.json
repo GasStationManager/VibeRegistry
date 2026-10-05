@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000013",
+  "version": 1,
+  "title": "NP-completeness of SAT, 3-SAT and their variants (the Cook–Levin theorem) in Lean 4",
+  "abstract": "A Lean 4 proof of the Cook–Levin theorem and of the NP-completeness of several variants of satisfiability, for an explicit machine model, using only Lean's core library. The compared theorems state that the following languages are NP-complete: SAT, the set of binary codes of satisfiable CNF formulas (Complexity.sat_np_complete); 3-SAT, with at most three literals per clause (threeSAT_np_complete); exactly-3-SAT, with exactly three literals per clause on three distinct variables (exactThreeSAT_np_complete); (≤1,≤2)-SAT, with two or three literals per clause and every variable occurring at most once positively and at most twice negatively (leOneLeTwoSAT_np_complete); SAT with variable indices written in binary (binarySAT_np_complete); planar 3-SAT, whose variable–clause incidence graph is planar (planarThreeSAT_np_complete); and Lichtenstein's planar 3-SAT, whose incidence graph stays planar with the cycle through the variables added (cyclePlanarThreeSAT_np_complete). Planarity is Gonthier's from the formal proof of the Four Color Theorem: a graph is planar when a hypermap on its half-edges embeds it with genus zero, the genus being computed from the Euler formula. NP-complete means: in NP, and every language in NP reduces to it by a polynomial-time many-one (Karp) reduction. A further compared theorem, inNP_iff_nondeterministicPolyTime, proves that NP, defined by verifiers, is the class of languages accepted in polynomial time by nondeterministic machines with two transition tables. Languages are sets of binary words. Computation is by deterministic Turing machines with a single two-way infinite tape over a four-symbol alphabet, and time is the number of machine steps. NP is defined by polynomial-time verifiers and polynomially bounded certificates, the standard certificate characterization; a reduction is a function computed by such a machine within a polynomial number of steps. Formulas are coded with unary variable indices and list lengths (binary indices for the binary variant); words that code no formula belong to none of the languages.\nFor an arbitrary NP verifier, the hardness proof builds a CNF formula describing the computation tableau of the verifier on the input and an unknown certificate; it is satisfiable exactly when some certificate makes the verifier accept. The reduction is itself implemented as a machine: it is written in a small language of loops over unary counters, compiled through finite programs on Boolean stacks to the single-tape model, and its running time is proved by counting the executed steps. SAT is reduced to 3-SAT by replacing each clause with a chain of clauses of at most three literals linked by fresh variables, and the reductions are composed as machines. Exactly-3-SAT and (≤1,≤2)-SAT are reached by transforming the Cook–Levin formula generator itself: every literal occurrence gets its own copy variable, a cycle of implications links the copies of each variable, long clauses are split by chains, and short clauses are padded. The binary variant is reached by a machine converting unary indices to binary. For planar 3-SAT, the Cook–Levin formula is turned into a grid formula in the style of Lichtenstein (one column of crossover gadgets per clause, copies of each variable joined by nested two-literal clauses), proved equisatisfiable and planar with its variable cycle through a general lemma on formulas drawn as combs; the plain version subdivides the cycle edges. Membership in NP is proved with explicit verifier machines for every language; for the planar versions the certificate also describes a planar embedding. For the nondeterministic characterization, a deterministic verifier simulates a nondeterministic machine with its choices read from the certificate, and conversely a nondeterministic machine guesses a certificate in a unary budget and runs the verifier. The development was written by AI under human direction: GPT-6 Astra (OpenAI) produced the proof, and Claude Opus 5.5 (Anthropic) ran its full verification, revised the statement for auditability and prepared it for Palomar, with the variants and the nondeterministic characterization proved by Claude agents. The proof uses only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/NPCompleteness-Lean4",
+  "commit": "3e603e795b44fedcf7d6dd65b7d1e30547ead925",
+  "project_path": null,
+  "declarations": [
+    "Complexity.sat_np_complete",
+    "Complexity.threeSAT_np_complete",
+    "Complexity.exactThreeSAT_np_complete",
+    "Complexity.leOneLeTwoSAT_np_complete",
+    "Complexity.binarySAT_np_complete",
+    "Complexity.planarThreeSAT_np_complete",
+    "Complexity.cyclePlanarThreeSAT_np_complete",
+    "Complexity.inNP_iff_nondeterministicPolyTime"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "68Q17",
+      "68Q15",
+      "03D15",
+      "68Q04",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-02T19:47:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3e603e795b44fedcf7d6dd65b7d1e30547ead925",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--NPCompleteness-Lean4--67a5f2be4177",
+        "source_repository": "RBarish-UTokyo/NPCompleteness-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c1bdb2a427ef9221441b388bac9e425adfaf809badc053f7865311262904d0b5"
+}

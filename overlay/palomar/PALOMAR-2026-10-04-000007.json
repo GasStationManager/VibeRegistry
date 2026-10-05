@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-04-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-04-000007",
+  "version": 1,
+  "title": "Effective approximation and low-intensity flatness of RAF critical-window profiles",
+  "abstract": "The critical-window laws for autocatalytic emergence in reversible binary-polymer networks lead to survival profiles for independent open reaction channels. For both the ordered split-position and commuting-factor quotient models, with all binary words of length at most two as food, explicit total algorithms enclose each survival probability at every rational openness in [0,1] to any prescribed positive rational accuracy. Computable seed lengths and finite-record contraction estimates provide uniform truncation bounds on intervals bounded away from zero. The associated intensity profiles S(1 − exp(−λ)) are smaller than every fixed power of λ as λ tends to zero from above. Rational interval bounds also compare these profiles with finite-network RAF-existence probabilities under explicit catalyst-pool and input-probability conditions. These results extend the split and quotient critical-window laws with certified approximation and quantitative control.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-p046-critical-window-shape-law",
+  "commit": "b46f8d0747b6dfb4c00a50d386f3df4f330e861e",
+  "project_path": null,
+  "declarations": [
+    "RAF.Concrete.reaction_length_add",
+    "RAF.Concrete.reaction_left_pos",
+    "RAF.Concrete.reaction_right_pos",
+    "RAF.Concrete.reaction_product_le",
+    "RAF.Concrete.reaction_pow_split",
+    "RAF.Concrete.molLength_reactionLeft",
+    "RAF.Concrete.molLength_reactionRight",
+    "RAFCriticalWindowQuantitative.seedTest_exists",
+    "HordijkSteelThreshold.measurable_currySplitField",
+    "RAFReactionQuotient.precedes_total",
+    "RAFCriticalWindowQuantitative.geometricTest_exists",
+    "RAFCriticalWindowQuantitative.repair_ratio",
+    "RAFCriticalWindowQuantitative.quantitative_critical_window_resolution"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "60K35",
+      "92E20",
+      "05C80",
+      "03D78",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-04T15:07:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b46f8d0747b6dfb4c00a50d386f3df4f330e861e",
+        "fork_repository": "PalomarArchive/mmislan--palomar-p046-critical-window-shape-law--e3ad53e8d156",
+        "source_repository": "mmislan/palomar-p046-critical-window-shape-law"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7b18ba87744337a6c875da7399c86464e512ee8313c02a472ce39bf065308761"
+}

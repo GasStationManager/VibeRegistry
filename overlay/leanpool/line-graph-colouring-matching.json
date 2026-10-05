@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "line-graph-colouring-matching",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/GraphColouringMatching",
+  "version": 1,
+  "title": "Line-graph colourings and matching decompositions",
+  "abstract": "Connects Mathlib line-graph colourings to palette-indexed partitions of actual graph edges into Mathlib matching subgraphs. Both conversions are inverse, preserve each matching exactly, and allow empty colours without a default colour or a finiteness assumption. An edge equivalence yields exact edge accounting: natural-number counts require only finite edges and a finite palette, while indexed cardinal counts allow arbitrary vertices, edges, and palettes. This is classical representation interoperability, not a new colouring bound or a claim of priority.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/lean-pool",
+  "commit": "",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "entry_module": "LeanPool.GraphColouringMatching",
+  "declarations": [
+    "SimpleGraph.lineGraphColoringEquivMatchingDecomposition",
+    "SimpleGraph.MatchingDecomposition.edgeMatching_lineGraphColoring",
+    "SimpleGraph.MatchingDecomposition.edgeEquivSigma",
+    "SimpleGraph.MatchingDecomposition.card_edges_eq_sum",
+    "SimpleGraph.MatchingDecomposition.cardinal_edges_eq_sum",
+    "SimpleGraph.lineGraph_colorable_iff_matchingDecomposition"
+  ],
+  "informal": {
+    "SimpleGraph.lineGraphColoringEquivMatchingDecomposition": "Proper colourings of the line graph on any palette are equivalent to partitions of the original edges into matching subgraphs indexed by that palette, with empty classes permitted.",
+    "SimpleGraph.MatchingDecomposition.edgeMatching_lineGraphColoring": "Converting a matching decomposition to a colouring and extracting one colour class returns exactly its original matching subgraph.",
+    "SimpleGraph.MatchingDecomposition.edgeEquivSigma": "Original graph edges are in bijection with the disjoint union of the edge types of the palette-indexed matching subgraphs.",
+    "SimpleGraph.MatchingDecomposition.card_edges_eq_sum": "For a finite edge set and finite palette, the number of graph edges equals the sum of the numbers of edges in its matching classes, even when the vertex set is infinite.",
+    "SimpleGraph.MatchingDecomposition.cardinal_edges_eq_sum": "Without any finiteness assumption on vertices, edges, or colours, the cardinality of the graph edge set equals the indexed cardinal sum of the matching-class edge cardinalities, with a universe lift on the graph edge cardinality when required.",
+    "SimpleGraph.lineGraph_colorable_iff_matchingDecomposition": "The line graph is k-colourable if and only if the graph edges decompose into k matchings, allowing unused colours."
+  },
+  "classification": {
+    "msc2020": [
+      "05C15",
+      "05C70"
+    ],
+    "tags": [
+      "graph-theory",
+      "line-graphs",
+      "edge-colouring",
+      "matchings"
+    ],
+    "branch": "graph theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/GraphColouringMatching.lean",
+  "statement_hash": "sha256:20fe0bf87e8fcda37398fff1d15e61daaf0c0ca2d10effc4ad5c3b1d84e3c7f2"
+}

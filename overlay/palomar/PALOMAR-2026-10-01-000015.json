@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000015",
+  "version": 1,
+  "title": "Gale's Top Trading Cycles (Shapley-Scarf Housing Market)",
+  "abstract": "A Lean formalization of Gale's top trading cycles algorithm (1974) for the Shapley-Scarf housing market. Finitely many agents (Fin n) each own exactly one house (the endowment is a bijection endow : Fin n ≃ Fin n) and have strict preferences over houses, given most-preferred-first as per-agent permutations rank i : Fin n ≃ Fin n; agent i strictly prefers house a over house b iff (rank i).symm a < (rank i).symm b. The comparator-checked results are TTC.Palomar.ttcTerminates: the TTC procedure (each remaining agent points to the owner of their favourite remaining house, each house points to its owner; each round removes the single directed cycle reachable from a chosen remaining agent, whose members trade and leave) removes every agent within n rounds, since each round deletes at least one nonempty directed cycle from the finite functional pointing graph. This one-cycle-at-a-time form computes the same allocation as the simultaneous version (see the remark in README.md); TTC.Palomar.ttcInCore: the TTC allocation is in the ordinary core, i.e. no coalition S can reallocate its own endowments (Set.BijOn y S (M.endow '' S)) so that every member strictly prefers the deviation; TTC.Palomar.ttcUniqueStrictCore: strict-core uniqueness, i.e. for (x : Fin n → Fin n) with (hxb : Function.Bijective x) and (hx : StrictCore M x) the conclusion is x = ttcAllocation M. This is uniqueness among bijective strict-core allocations (no coalition can weakly block), not a singleton claim about the ordinary core. The library also proves the TTC allocation Pareto optimal (TTC.ttcPareto), individually rational (TTC.ttcIR), in the strict core (TTC.ttcInStrictCore), and strategyproof (TTC.ttcStrategyproof, Roth 1982: no unilateral misreport is profitable); these four are library-only and are not on the comparator surface. The Palomar registry API was searched on 2026-10-01 for \"top trading cycles\", \"housing market\", \"shapley scarf\", \"TTC\", and \"trading cycles\" and returned no existing TTC formalization among 397 entries; this is a dated, limited observation, not a universal prior-art claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/top-trading-cycles-lean",
+  "commit": "9fc2a2130983b494831f95b831b9cf28620cf556",
+  "project_path": null,
+  "declarations": [
+    "TTC.Palomar.ttcTerminates",
+    "TTC.Palomar.ttcInCore",
+    "TTC.Palomar.ttcUniqueStrictCore"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT",
+      "econ.TH"
+    ],
+    "msc2020": [
+      "91B68"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T18:31:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9fc2a2130983b494831f95b831b9cf28620cf556",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--top-trading-cycles-lean--0ea4ea731bf7",
+        "source_repository": "Arthur742Ramos/top-trading-cycles-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5f27278b742f65c8b0a778f4d2c49b98b4e6b41913b5cd2e16f3d20123bd76dd"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-05-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-05-000002",
+  "version": 1,
+  "title": "Erdős 2: minimum modulus of distinct covering systems",
+  "abstract": "A complete Lean 4 proof of the negative answer to Erdős problem 2 (Hough 2015; Balister–Bollobás–Morris–Sahasrabudhe–Tiba 2022): there is an absolute constant B such that every finite covering of the integers by distinct moduli > 1 contains a modulus ≤ B. For any finite set D of moduli above B with N = lcm(D), the proof builds a probability measure on ZMod N prime by prime via the BBMST half-cap fiber update, preserving the progression bound w(z ≡ a mod d) ≤ 2^ω(d)/d while bounding each prime-p loss by C (log p)^6 / (p - 1)^2 via Euler factorization and Mertens' third theorem. Combining this summable tail with Euler's product bound on A-smooth reciprocals keeps the covered mass below 1/2, proving the Formal Conjectures ideal statement (erdos_2), its direct negation (not_arbitrarilyLarge_ideal_coverings), the uniform minimum-modulus bound (minimum_modulus_bound), and finite-set noncoverage (finite_noncoverage_bound).",
+  "authors": [
+    "Linmiao Xu"
+  ],
+  "repository": "https://github.com/linrock/math-proofs",
+  "commit": "7caa4144741e10f96cf79d6f7313a0efd9a18b67",
+  "project_path": "erdos-2",
+  "declarations": [
+    "Erdos2.Standalone.erdos_2",
+    "Erdos2.Standalone.not_arbitrarilyLarge_ideal_coverings",
+    "Erdos2.Standalone.minimum_modulus_bound",
+    "Erdos2.Standalone.finite_noncoverage_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11A07",
+      "11B25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-05T05:09:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7caa4144741e10f96cf79d6f7313a0efd9a18b67",
+        "fork_repository": "PalomarArchive/linrock--math-proofs--14cf37780a40",
+        "source_repository": "linrock/math-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7598b25acd7f3549650f2f6a8bb849383a5abeb2bea0a06781ba4be9cc3b2366"
+}

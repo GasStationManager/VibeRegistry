@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-30-000030",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000030",
+  "version": 1,
+  "title": "Linear independence of 1, ζ(2), ζ(3) over ℚ",
+  "abstract": "A Lean formalization of the linear independence of 1, ζ(2) and ζ(3) over ℚ. The proof is inspired by A. Fauzan's work on the irrationality of ζ(5) and builds on the Lean formalization of the irrationality of Li₂(1/2), registered in Palomar as PALOMAR-2026-09-30-000013. It shows that the method of that proof can be pushed further. The main difference from the Li₂(1/2) proof is that the rational functions appearing here are allowed to have poles of order two. The remaining details are similar, with some minor modifications. The compared theorems depend on propext, Classical.choice and Quot.sound and on nothing else, and there is no sorry outside the deliberate holes in Challenge.lean.",
+  "authors": [
+    "Qian Tang"
+  ],
+  "repository": "https://github.com/dtq1997/zeta2-zeta3-linear-independence",
+  "commit": "669c92bf7a3728e0de9ad80c373bc29fb5ca3d58",
+  "project_path": null,
+  "declarations": [
+    "one_zeta_two_zeta_three_linearIndependent",
+    "one_zeta_two_zeta_three_linearIndependent_series"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11M06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-09-30T14:02:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "669c92bf7a3728e0de9ad80c373bc29fb5ca3d58",
+        "fork_repository": "PalomarArchive/dtq1997--zeta2-zeta3-linear-independence--4378dbf7497d",
+        "source_repository": "dtq1997/zeta2-zeta3-linear-independence"
+      }
+    ]
+  },
+  "statement_hash": "sha256:40b5196908ac22cf7a635a05698429dbab51977964e1ac564d008f39776d42df"
+}

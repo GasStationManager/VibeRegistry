@@ -1,0 +1,67 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-01-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-01-000016",
+  "version": 1,
+  "title": "Rochet's Cyclic-Monotonicity Characterization",
+  "abstract": "For any nonempty report type T, any outcome type X, any real-valued valuation v : T -> X -> Real and allocation f : T -> X, DSIC payments exist exactly when every finite closed walk has nonnegative sum of weights l(s,t) = v(t,f(t)) - v(t,f(s)). The proof constructs payments as the infimum of finite path weights from a fixed anchor. Direct edges establish nonemptiness; a return edge supplies an explicit real lower bound before using the infimum's order properties. The payments are zero at the anchor and satisfy every implementing difference inequality. The characterization also holds for arbitrary agents with heterogeneous nonempty report spaces and decidable agent equality, by fixing other reports and assembling anchored slice payments. A three-type example satisfies all two-cycle inequalities but has a negative three-cycle and admits no DSIC payment.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/rochet-cyclic-monotonicity-lean",
+  "commit": "88171ba4b232466c510d45863a91626a1c546a87",
+  "project_path": null,
+  "declarations": [
+    "Rochet.pathWeights_nonempty",
+    "Rochet.pathWeights_lower_bound",
+    "Rochet.pathWeights_bddBelow",
+    "Rochet.potential_anchor",
+    "Rochet.potential_edge",
+    "Rochet.potential_bounds",
+    "Rochet.dsic_iff_edge",
+    "Rochet.anchoredPayment_spec",
+    "Rochet.rochet",
+    "Rochet.payment_eq_of_same_outcome",
+    "Rochet.multiPayment_spec",
+    "Rochet.multi_rochet",
+    "Rochet.example_two_cycles",
+    "Rochet.example_three_cycle",
+    "Rochet.example_not_implementable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "econ.TH",
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91B03",
+      "91B16",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-01T19:48:58Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "88171ba4b232466c510d45863a91626a1c546a87",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--rochet-cyclic-monotonicity-lean--61bec3b9b9da",
+        "source_repository": "Arthur742Ramos/rochet-cyclic-monotonicity-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2a0b9ef8355807711dd63d55e2ec0a3f676ac5cacbc102a0a9895c4262498815"
+}

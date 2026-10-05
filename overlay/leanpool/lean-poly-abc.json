@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/seewoo5/lean-poly-abc",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.LeanPolyABC",
   "declarations": [
     "LeanPolyABC.Polynomial.abc",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/LeanPolyABC.lean",
-  "statement_hash": "sha256:77f753e3f96c204c7cac95c11e794f073939072a62b0eb7b5d6530db91d48a19"
+  "statement_hash": "sha256:6efaa97294abe3093daabef62f6c4a0447d8fda0536ea0b5f2566bd270a8ecf6"
 }

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-05-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-05-000001",
+  "version": 1,
+  "title": "Fundamental Groups of Arbitrary Higher-Cell Attachments",
+  "abstract": "Higher-cell attachment invariance for ordinary topological fundamental groups. For any path-connected topological space X, any basepoint, an index type in an independent universe, independently varying cell dimensions at least three, and arbitrary continuous unit-sphere attaching maps, the genuine adjunction quotient of X and the coproduct of closed Euclidean unit balls is constructed with its quotient topology. The actual inclusion-induced fundamental-group homomorphism is bijective and is the underlying homomorphism of the displayed multiplicative equivalence. Mixed dimensions and the empty family are included. No finiteness, countability, CW, separation or local-connectivity hypotheses are added, and no retraction, simple-connectivity or kernel oracle is assumed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/higher-cell-attachment-lean",
+  "commit": "bcf788e349b4969f4d8379ee9cb4df7a28352af1",
+  "project_path": null,
+  "declarations": [
+    "HigherCellAttachment.higher_cell_attachment"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AT",
+      "math.CT"
+    ],
+    "msc2020": [
+      "55Q05",
+      "18B40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-05T02:16:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "bcf788e349b4969f4d8379ee9cb4df7a28352af1",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--higher-cell-attachment-lean--839dc8f39578",
+        "source_repository": "Arthur742Ramos/higher-cell-attachment-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7b49e36ee3d02db651af09a8310fd2ac3cb9bd699f6032f02a29a76ecb5bee78"
+}

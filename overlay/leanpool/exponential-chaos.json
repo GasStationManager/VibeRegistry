@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/LR-UK/exp-chaotic",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.ExpChaotic",
   "declarations": [
     "ExpChaotic.devaney_chaotic",
@@ -58,5 +58,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ExpChaotic.lean",
-  "statement_hash": "sha256:9aba55f82f0562b72a099c61a06b33c7cf7c4de730cf6d172ca159dec5f67e75"
+  "statement_hash": "sha256:cf9353537cb925bb01146c833500a7d39985dbde697ddb4c0d207be11eb30645"
 }

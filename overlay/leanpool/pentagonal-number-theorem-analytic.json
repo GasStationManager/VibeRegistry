@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/viazovska/PentagonalNumberTheorem",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.PentagonalNumberTheoremAnalytic",
   "declarations": [
     "PentagonalNumberTheorem.Franklin.euler_pentagonal_number_theorem_packaged",
@@ -59,5 +59,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PentagonalNumberTheoremAnalytic.lean",
-  "statement_hash": "sha256:fa3d376cc73cb02b5404e2106e451d99b4e26150f57b3e07bd11810d397763b3"
+  "statement_hash": "sha256:5436fcdeba7f5698a632c4ae7e60f48d90856e86f8f690a81ce0c02b965a236e"
 }

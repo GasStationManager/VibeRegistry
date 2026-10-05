@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/erdos-97-octagon-lean",
   "commit": "",
-  "snapshot_commit": "24e3d835c5e2dac1a31e1e5429dd6559c9489f31",
+  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
   "entry_module": "LeanPool.Erdos97ConvexOctagon",
   "declarations": [
     "Erdos97Octagon.erdos97_convex_octagon"
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos97ConvexOctagon.lean",
-  "statement_hash": "sha256:8028f361bd2ccc58af58d712f44a041188f94cc9edd6358c9682b4f6fdc81e35"
+  "statement_hash": "sha256:b46ffa94ee7c004a4bde6f7f08d5976516e30dae825e77a9353c17a167ca86bf"
 }
