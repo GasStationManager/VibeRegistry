@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/abenenson/rellich-kondrachov",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.RellichKondrachov",
   "declarations": [
     "RellichKondrachov.Geometry.Manifold.Sobolev.exists_riemannianFiniteChartData",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/RellichKondrachov.lean",
-  "statement_hash": "sha256:a07d7f8ff12f544f4ced735d8fbcd6bf09031461bacee3d254f8e0a1802a3dea"
+  "statement_hash": "sha256:eeee2511478793e379d58ffdb134d96bf2b0f5c9e941224296a2fe7c6ed8b74e"
 }

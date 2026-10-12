@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/willwhistler/regts-sevenster",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.RegtsSevenster",
   "declarations": [
     "RS.regts_sevenster_characterisation",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/RegtsSevenster.lean",
-  "statement_hash": "sha256:9fc62d88f37f47a7ccbd936f7a905e2f77beff29710c9b82be0fc698352ec918"
+  "statement_hash": "sha256:6c806e0e6025a5cfe77e477485a68baf67ebc99f8b94af2c2cb785fbbf24a560"
 }

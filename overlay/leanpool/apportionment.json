@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/mdbrnowski/apportionmentlib",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.Apportionment",
   "declarations": [
     "Apportionment.balinski_young"
@@ -43,5 +43,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Apportionment.lean",
-  "statement_hash": "sha256:9694178836894cfe2cfe9b49f6352be187fff086295a652568bc6a7a1b631719"
+  "statement_hash": "sha256:24843df45a6725432fd351b39006247bac65ae43184717670ec60432a691f7dc"
 }

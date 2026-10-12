@@ -1,0 +1,69 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000005",
+  "version": 1,
+  "title": "A 7-vertex tournament whose Sperner capacity exceeds the order of its largest transitive subtournament: T₇, induced by the Paley tournament on 23 vertices on 0, 1, 2, 3, 9, 14, 18, has t = 4 and √18 ≤ C ≤ 5; every tournament on at most six vertices has C = t, so seven is the least order",
+  "abstract": "A Lean 4 development on the capacity of digraphs in the sense of Alon (1998): w(R^n) is the largest set of words of length n such that every ordered pair of distinct words has a coordinate carrying an arc from the first to the second, and C(R) is the supremum of w(R^n)^(1/n), which equals the limit; for a tournament T, t(T) is the order of its largest transitive subtournament and t(T) ≤ C(T). Conjecture 1.1 of Alon's paper, attributed to Körner and Simonyi, asserts C(T) = t(T) for every tournament; Alon disproved it with a random construction and with the Paley tournament on 67 vertices, and asked for the smallest tournament on which the equality fails. Let T7 be the subtournament of the Paley tournament on 23 vertices (x → y iff y − x is a nonzero square mod 23) induced on 0, 1, 2, 3, 9, 14, 18. Proved here: T7 is a tournament with t(T7) = 4; eighteen listed points of T7 × T7 form a transitive clique of its second Sperner power; hence, by the lift lemma (N injective points of the k-th power, each earlier one dominating each later one in some coordinate, give for every m a clique of the km-th power of size at least N^m / ((N − 1)m + 1), by words of fixed index sum), some Sperner power of T7 has a clique larger than 4^n, √18 ≤ C(T7), and t(T7) < C(T7); C(T7) ≤ 5, by an explicit rank-5 factorization over GF(2) of a matrix with nonzero diagonal and zeros on the arcs, through the rank bound (a clique of the n-th power indexes a nonsingular diagonal submatrix of the n-th Kronecker power, which factors through F^(r^n)); the general statements N^(1/k) ≤ C(R), t(R) ≤ C(R), C(R) ≤ r for any such factorization, and C(R) ≤ |V|; and, for the Paley tournament on 23 vertices, t = 5 and √29 ≤ C from a 29-point transitive clique of its second Sperner power; and every tournament on at most six vertices satisfies C(T) = t(T) (for each of the 1, 1, 1, 2, 4, 12, 56 isomorphism classes on 0 to 6 vertices, a representative with a rank-t factorization over GF(2) and a transitive t-chain, and a kernel check, by a bitset over all orientations, that every labelled tournament on at most six vertices is a relabelling of a representative), so a tournament with t < C has at least seven vertices and seven is the least order of a counterexample. The capacity is formalized in its supremum form. On paper, in the research note of the repository, with standard-library certificates: the square value 18 is exact; on seven vertices 455 of the 456 isomorphism classes have a rank-t matrix over GF(2) and the exception is T7, which is therefore the unique smallest counterexample up to isomorphism; every proper subtournament of T7 satisfies the equality; and the Paley tournament on 7 vertices has C = 3. The smallest example previously exhibited has 67 vertices (examples on 27 and 26 vertices follow from Alon's argument over GF(27) with a published value of t). Nothing in Lean is claimed about tournaments on seven or more vertices other than T7 and the Paley tournament on 23 vertices.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/sperner-t7-lean",
+  "commit": "0e846b6144d2c5954a983d2d97e90e02169d9809",
+  "project_path": null,
+  "declarations": [
+    "SpernerCapacity.T7_isTournament",
+    "SpernerCapacity.transitiveNumber_T7",
+    "SpernerCapacity.T7_square_witness",
+    "SpernerCapacity.T7_exists_clique_gt_four_pow",
+    "SpernerCapacity.four_lt_capacity_T7",
+    "SpernerCapacity.sqrt18_le_capacity_T7",
+    "SpernerCapacity.capacity_T7_le_five",
+    "SpernerCapacity.transitiveNumber_lt_capacity_T7",
+    "SpernerCapacity.lift_lemma",
+    "SpernerCapacity.rpow_le_capacity",
+    "SpernerCapacity.transitiveNumber_le_capacity",
+    "SpernerCapacity.capacity_le_of_factorization",
+    "SpernerCapacity.capacity_le_card",
+    "SpernerCapacity.paley_isTournament",
+    "SpernerCapacity.transitiveNumber_paley",
+    "SpernerCapacity.five_lt_capacity_paley",
+    "SpernerCapacity.sqrt29_le_capacity_paley",
+    "SpernerCapacity.capacity_eq_transitiveNumber_of_card_le_six",
+    "SpernerCapacity.seven_le_card_of_transitiveNumber_lt_capacity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.IT"
+    ],
+    "msc2020": [
+      "05C20",
+      "05C35",
+      "94A24"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T01:54:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0e846b6144d2c5954a983d2d97e90e02169d9809",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--sperner-t7-lean--f76f736b49c4",
+        "source_repository": "JD-Jones-ASES/sperner-t7-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e8b11c54d7052181726fc511382ef4bfd782373e5aa5bc5cbdc0f1ce6f6ee05c"
+}

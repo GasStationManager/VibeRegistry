@@ -1,0 +1,67 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000020",
+  "version": 1,
+  "title": "Quantitative permanence and recovery with vanishing reverse rates",
+  "abstract": "Quantitative permanence and recovery bounds are established for mass-action systems with vanishing reverse rates. For a finite weakly reversible network with rates proportional to powers of epsilon, eventual concentration bounds depend on the spread of the rate exponents, with geometric constants chosen before the individual rates. For an explicit three-species network, a prepared region admits global positive solutions with three distinct concentration scales. Every prepared solution reaches and remains in a smaller target by time (31/10)/(p^2 h^7), while an explicit prepared solution cannot enter before 400/(1313 p^2 h^7). Inventory inequalities give additional necessary restoration and depletion times from arbitrary positive initial states. A continuous reverse-exponent family retains arbitrary admitted prefactors and yields matching worst-case prepared recovery orders, together with exact common-clock transport, preparation identities and cumulative reverse-reaction bounds. Abstract constant-capacity and open-range state-dependent inventory comparisons are included without assuming monotone inventories.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-quantitative-permanence",
+  "commit": "e542422946035f4509e92c963b494e586105d09d",
+  "project_path": null,
+  "declarations": [
+    "ReverseRateLimits.general_quantitative_root",
+    "ReverseRateLimits.SharpRecovery.prepared_recovery_sharp",
+    "ReverseRateLimits.SharpRecovery.witness_sharp",
+    "ReverseRateLimits.GlobalInventory.global_inventory_clocks",
+    "ReverseRateLimits.SharpRecovery.family_root_sharp",
+    "ReverseRateLimits.ExponentFamily.identities",
+    "ReverseRateLimits.ExponentFamily.original_cutoff_bounds",
+    "ReverseRateLimits.ExponentFamily.cutoff_decimal",
+    "ReverseRateLimits.CommonClock.rescale_iff",
+    "ReverseRateLimits.RecoveryCorollaries.scale_tradeoff",
+    "ReverseRateLimits.ReactionExtent.restoration_extent",
+    "ReverseRateLimits.SharpRecovery.inventory_bottleneck",
+    "ReverseRateLimits.SharpRecovery.inventory_unreachable",
+    "ReverseRateLimits.GlobalInventory.inventory_bottleneck_scaling",
+    "ReverseRateLimits.RecoveryCorollaries.no_linear_inventory",
+    "QuantitativeRegistry.family_parameters",
+    "QuantitativeRegistry.admitted_parameters",
+    "QuantitativeRegistry.state_capacity_clock"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "37N25",
+      "92C42"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T16:49:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e542422946035f4509e92c963b494e586105d09d",
+        "fork_repository": "PalomarArchive/mmislan--palomar-quantitative-permanence--b8c5a1503b2d",
+        "source_repository": "mmislan/palomar-quantitative-permanence"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fdfcc01df6902005fedbb2a3788f0936c661d5a61d83ad980fb5ea08f350f749"
+}

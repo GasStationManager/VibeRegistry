@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/npflueger/demazure",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.DemazureProduct",
   "declarations": [
     "LeanPool.DemazureProduct.AspPerm.star",
@@ -61,5 +61,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/DemazureProduct.lean",
-  "statement_hash": "sha256:28b340b85ba4c2c12100860648488bce7f082ef5cdc6880200d458cecd8a1dd7"
+  "statement_hash": "sha256:b1c7b1ee74796f503077730c46f26787958b48da3953c3e8296191f8653364a6"
 }

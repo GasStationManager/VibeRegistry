@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ehrlich-b/composition-algebras",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.CompositionAlgebras",
   "declarations": [
     "CompositionAlgebra.hurwitz_classification",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CompositionAlgebras.lean",
-  "statement_hash": "sha256:6c212b75e4afd3235a6b6cf122cba9daaa8a528bf9bbac53b8f4627de729653b"
+  "statement_hash": "sha256:99dfbd5929ce9a0af6f70d380f768e58ec1a1de8362ec3210a042f0fc5949b4a"
 }

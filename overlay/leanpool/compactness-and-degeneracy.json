@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/openai/ten-proofs",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.CompactnessAndDegeneracy",
   "declarations": [
     "CompactnessConjecture.quantitativeCompactnessCounterexample",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CompactnessAndDegeneracy.lean",
-  "statement_hash": "sha256:87590592b93d9a8b262b8359f3fce1bf0fa4a7410d73d5afab07299eed7db284"
+  "statement_hash": "sha256:5595f76b18d15525578dd6b9484e874184a234b198fc10a91137cf09b36cce0b"
 }

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/frenzymath/Archon-FirstProof-Results",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.ArchonFirstProofResults",
   "declarations": [
     "Problem4.harmonic_mean_inequality_full",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ArchonFirstProofResults.lean",
-  "statement_hash": "sha256:1533e250437a7d5a0a48697f1102ab872c8a6a7be2d4eb50a93da5ebf7bf4a99"
+  "statement_hash": "sha256:319bc0f36a2be0c8bd0a23f9a4fe9b4dc02a02c78374000e368fdbc85135ad28"
 }

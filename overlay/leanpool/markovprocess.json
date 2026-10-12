@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/scottnarmstrong/markovprocess",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.MarkovProcess",
   "declarations": [
     "MarkovProcess.existsUnique_continuousProcess"
@@ -43,5 +43,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MarkovProcess.lean",
-  "statement_hash": "sha256:b87887b016ea4358aff74188e69d13144d51fdd28dfe75c3133a4e9f02e91ad0"
+  "statement_hash": "sha256:a716fbf1cfe404d41ad3b90e85254934bc4ba5bce5d20bc0f8735fd09446fc7b"
 }

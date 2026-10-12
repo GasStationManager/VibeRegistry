@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/adii800/krohn-rhodes-lean",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.KrohnRhodes",
   "declarations": [
     "LeanPool.KrohnRhodes.krohn_rhodes_prime_decomposition",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/KrohnRhodes.lean",
-  "statement_hash": "sha256:b57ef93b4503a0eeff3cb7e344f9be2de9a1c1c41fa4143e42b0f30102243a95"
+  "statement_hash": "sha256:553fa383707fe984dea83a5fa2bc8aea261da8c84a06c52b16dc9b4e091b3f2a"
 }

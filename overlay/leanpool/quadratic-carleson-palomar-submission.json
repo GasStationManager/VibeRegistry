@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "quadratic-carleson-palomar-submission",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/QuadraticCarleson",
+  "version": 1,
+  "title": "Endpoint estimates for Stein's purely quadratic Carleson operator",
+  "abstract": "A Lean 4 formalization of four principal endpoint assertions from Fragkos, Krause, and Lacey's Endpoint Estimates for Stein's Purely Quadratic Carleson Operator: two failures of modular estimates below t log₂ t, a full-modulation L log L endpoint estimate, and a lacunary L (log₂ L)² log₄ L endpoint estimate.",
+  "authors": [
+    "Anastasios Fragkos"
+  ],
+  "repository": "https://github.com/anastasiosfragkosmath/quadratic-carleson-palomar-submission",
+  "commit": "",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+  "entry_module": "LeanPool.QuadraticCarleson",
+  "declarations": [
+    "QuadraticCarleson.StatementSurface.PaperTheorems.full_LlogL_endpoint",
+    "QuadraticCarleson.StatementSurface.PaperTheorems.lacunary_sub_log2_modular_failure",
+    "QuadraticCarleson.StatementSurface.PaperTheorems.full_sub_log2_modular_failure",
+    "QuadraticCarleson.StatementSurface.PaperTheorems.lacunary_log2_squared_log4_endpoint"
+  ],
+  "informal": {
+    "QuadraticCarleson.StatementSurface.PaperTheorems.lacunary_sub_log2_modular_failure": "Lacunary purely quadratic modulation fails modular estimates below the specified iterated-logarithmic threshold.",
+    "QuadraticCarleson.StatementSurface.PaperTheorems.full_sub_log2_modular_failure": "Full purely quadratic modulation fails modular estimates below the specified iterated-logarithmic threshold.",
+    "QuadraticCarleson.StatementSurface.PaperTheorems.full_LlogL_endpoint": "The full-modulation operator satisfies the L log L endpoint estimate.",
+    "QuadraticCarleson.StatementSurface.PaperTheorems.lacunary_log2_squared_log4_endpoint": "The lacunary operator satisfies the L (log₂ L)² log₄ L endpoint estimate."
+  },
+  "classification": {
+    "msc2020": [
+      "42B20"
+    ],
+    "tags": [
+      "harmonic-analysis",
+      "maximal-operators",
+      "endpoint-estimates"
+    ],
+    "branch": "harmonic analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/QuadraticCarleson.lean",
+  "statement_hash": "sha256:6a5476ebcfb68e88d373635f3d43797bf90e6ed1707a7eeb62fde021b7ab146c"
+}

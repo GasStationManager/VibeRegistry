@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/savarin/lean-malliavin",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.Malliavin",
   "declarations": [
     "PalomarClarkOcone.generated_clark_ocone"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Malliavin.lean",
-  "statement_hash": "sha256:9458e597d4dd5ddfb1d3d3741e51ebc5bbe92121a906b6264693301697b16763"
+  "statement_hash": "sha256:a2d20a0fb1e7d130ed6363412de4eeec9f56ea8d7eedaf415156b0378af0a04f"
 }

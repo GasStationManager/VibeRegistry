@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-09-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-09-000016",
+  "version": 1,
+  "title": "Planar Euclidean midpoint rigidity",
+  "abstract": "A complete Lean proof of the dimension-two case of Nielsen–Okamura Conjecture 9.1. On any connected open planar Euclidean domain, complementarity of the actual canonical local affine-parameter midpoints of a smooth pair of dual torsion-free connections forces the symmetric cubic tensor to be constant. The proof constructs and identifies the short geodesic germs and derives the fourth-order obstruction, including the exceptional rank-deficient tensors. A second theorem needs only everywhere Frechet differentiability and vanishing of that obstruction; five fixed direction tests at every point suffice. Dimensions above two are outside the claim.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/PlanarMidpoint",
+  "commit": "148b39618710caf576189cbdb75551cec1735201",
+  "project_path": null,
+  "declarations": [
+    "PlanarMidpoint.planar_dual_midpoint_rigidity",
+    "PlanarMidpoint.planar_obstruction_rigidity",
+    "PlanarMidpoint.planar_five_direction_rigidity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "math.CA"
+    ],
+    "msc2020": [
+      "53B12",
+      "39B22"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-09T22:55:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "148b39618710caf576189cbdb75551cec1735201",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--PlanarMidpoint--8b5260b291db",
+        "source_repository": "JD-Jones-ASES/PlanarMidpoint"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e32e26022663acaaa0f88088d8715dc3f38c8c8bf414435b50fb3905e520920e"
+}

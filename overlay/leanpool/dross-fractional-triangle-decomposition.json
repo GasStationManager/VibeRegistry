@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.DrossFractionalTriangleDecomposition",
   "declarations": [
     "LeanPool.DrossFractionalTriangleDecomposition.dross_fractional_flow_exact"
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/DrossFractionalTriangleDecomposition.lean",
-  "statement_hash": "sha256:a201af4e2da4bbeba24e9c2504c9a2aa957fad0d64b2e13ab97ddaba0a2e15d3"
+  "statement_hash": "sha256:89650a85f9e99c4e3946993f1a095fc6f48e168d2cbd895b52235a8b840aa86c"
 }

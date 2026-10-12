@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-08-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-08-000004",
+  "version": 1,
+  "title": "Area stability of planar plank covers and Bezdek's annulus theorem",
+  "abstract": "A complete Lean 4 formalization of Bezdek's annulus theorem and the quantitative area stability of planar plank covers based on the paper \"Area stability of plank covers\" by Egor Bakaev and Amir Yehudayoff (arXiv:2609.30409). The formalization proves that there exists an explicit positive radius r > 0 such that if finitely many planar planks cover the closed annulus r <= ||x|| <= 1, their total width is at least 2. The core theorem established is the quantitative overlap theorem, which bounds the excess overlap cost on the unit disk from below by a positive constant times the hole area divided by r.",
+  "authors": [
+    "Arseniy Akopyan"
+  ],
+  "repository": "https://github.com/egor-bakaev/planks-lean",
+  "commit": "b2fab1d9af2fe6ca3ef93a167fea9ba6a83b671a",
+  "project_path": null,
+  "declarations": [
+    "bezdek_annulus"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C10",
+      "52A10",
+      "52A38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-08T14:57:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b2fab1d9af2fe6ca3ef93a167fea9ba6a83b671a",
+        "fork_repository": "PalomarArchive/egor-bakaev--planks-lean--19f7a71a0d1b",
+        "source_repository": "egor-bakaev/planks-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0ee064d587f641435b065fc88b6975b7a31fd92b6084a246fbe44172a0d15d6a"
+}

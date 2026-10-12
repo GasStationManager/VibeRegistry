@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/JD-Jones-ASES/ns-lean",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.NaslundCounterexample",
   "declarations": [
     "NaslundCounterexample.conjecture_fails",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/NaslundCounterexample.lean",
-  "statement_hash": "sha256:45bade1e1c42662203eb77be2dfbdcf4d388ff9d5dbcbccc7f0757ed0911f993"
+  "statement_hash": "sha256:a127b58459416a5c6cc9e8fb3bb41e7ad1041befb017bfa2c9e1c1386381be18"
 }

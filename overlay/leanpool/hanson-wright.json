@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/Lean-MoDS/StatsMLlib",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.HansonWright",
   "declarations": [
     "LeanPool.HansonWright.hanson_wright_inequality_hdp",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/HansonWright.lean",
-  "statement_hash": "sha256:94795e2a51e142ea0a7673bc2616667f6f5b414b0b980d7ed05451ec9548f88b"
+  "statement_hash": "sha256:2d06319c1e59fc20eca212fc07852b4c821c79b44cf6ff16be7473e93d716a86"
 }

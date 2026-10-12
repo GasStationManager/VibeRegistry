@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000016",
+  "version": 1,
+  "title": "Erdős 261: dyadic weighted representations n / 2^n = ∑ a_k / 2^(a_k)",
+  "abstract": "A Lean 4 formalization of the solved parts, extremal bounds, and finite verification up to 10000 for Erdős problem 261 on representing n / 2^n as a finite sum ∑_{k=1}^t a_k / 2^(a_k) of distinct positive integers a_k. Proves the Borwein–Loring telescoping family n = 2^(m+1) - m - 2 (resolving Part (i) that infinitely many positive integers n admit such a representation), verifies every integer 1 ≤ n ≤ 10000 via a coalesced dyadic block certificate forest (Theorem 3.5 of Tengely, Ulas, and Zygadło 2020), constructs infinitely many rationals with at least 2^m distinct infinite representations for every m ∈ ℕ, and proves the Tengely–Ulas–Zygadło sharp extremal bound n ≤ 2^(t+1) - t - 2 and its equality uniqueness, first-term localization a_k ∈ [n+1, n+3], 2-adic last-gap divisibility 2^(a_{t+1} - a_t) ∣ a_{t+1}, the punctured-interval infinite family n_k = (2^(4k+2) + 1)/5 - 4k, and arbitrary-length splicing.",
+  "authors": [
+    "Linmiao Xu"
+  ],
+  "repository": "https://github.com/linrock/math-proofs",
+  "commit": "b53791ff6294b4b90e3653970367f127a52fd16e",
+  "project_path": "erdos-261",
+  "declarations": [
+    "Erdos261.Palomar.borwein_loring",
+    "Erdos261.Palomar.borwein_loring_property",
+    "Erdos261.Palomar.erdos_261_parts_i",
+    "Erdos261.Palomar.le_10000",
+    "Erdos261.Palomar.two_representations",
+    "Erdos261.Palomar.infinite_rationals_two_pow_reps",
+    "Erdos261.Palomar.max_n_bound",
+    "Erdos261.Palomar.exists_term_le_add_three",
+    "Erdos261.Palomar.last_term_gap_dvd",
+    "Erdos261.Palomar.borwein_loring_unique",
+    "Erdos261.Palomar.punctured_family_erdos261Prop",
+    "Erdos261.Palomar.arbitrary_length_rep_of_all_erdos261Prop"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11D61",
+      "11B75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T14:53:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b53791ff6294b4b90e3653970367f127a52fd16e",
+        "fork_repository": "PalomarArchive/linrock--math-proofs--14cf37780a40",
+        "source_repository": "linrock/math-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a5de96b2726c471d46bdb7535388697f384673b72d625b3c36b74b61f5e025e9"
+}

@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/openai/ten-proofs",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.SpherePacking",
   "declarations": [
     "PackingBounds.sharpFullCohnElkiesManuscriptConclusions",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SpherePacking.lean",
-  "statement_hash": "sha256:2f712fba44d0d783cae1d1972a973bf6673b6fcd898f6272871c0c4e079ef87d"
+  "statement_hash": "sha256:18ba5f4cbaf256660fc7a0bb88b8722aeed290f9d86fb3bd8e990251fee109e4"
 }

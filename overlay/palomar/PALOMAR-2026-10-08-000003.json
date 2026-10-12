@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-08-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-08-000003",
+  "version": 1,
+  "title": "Improved exponents for 3SUM and APSP from triangles in sparse lopsided graphs",
+  "abstract": "A sorry-free Lean 4 formalization of improved running-time exponents for 3SUM, Exact Triangle, the (min,+)-product and all-pairs shortest paths (APSP), on the word RAM of the published formalization (anthropics/formal-math, 3sum-apsp) of the paper of Alman and Vassilevska Williams, \"Truly Subquadratic 3SUM and Truly Subcubic APSP via Triangles in Sparse Lopsided Graphs\" (arXiv:2610.06783). That paper gives deterministic algorithms for 3SUM in time O(n^1.9992) and for the (min,+)-product and APSP in time O(n^2.99942), through Exact Triangle in time O(n^(3 - 0.0017)). The project analyzes the same algorithm again and changes it in a few places: an exact count of the leaves of its recursion, a host that charges the solver at the true size of the middle part, and encodings restricted to the leaves that are read. The theorems submitted state, in exactly the sense of upstream's trusted file EndStatement.lean (programs of a word RAM with O(log n)-bit words, numbers of polynomial absolute value, every instance, every size), that 3SUM is solved in O(n^1.99896) steps and Exact Triangle in O(n^2.99791) steps, and, by carrying out the all-edges route that footnote 10 of the paper mentions, that the (min,+)-product and APSP are solved in O(n^2.99791) steps instead of O(n^2.99931) through the standard reductions. None of them has a hypothesis; every proof depends only on the axioms propext, Classical.choice and Quot.sound. The library also proves general theorems for all admissible parameters, a closed form for the optimal saving of the method at each ratio of parameters, and that the supremum of that saving over all ratios lies in (0.002095, 0.002096], so that no choice of parameters gives 3SUM an exponent below 1.998952 with this method. The pruned encoder and the two new hosts are written as programs of the machine and their running times are proved on it. All Lean, Python and LaTeX was written by the language model Claude Fable 5.1 (Anthropic) in Claude Code, under the direction of the maintainer, who wrote no Lean by hand; the move to Lean v4.35.0-rc2, with the port of the included part of upstream, was made by Claude Opus 5.5 (Anthropic) in the same way. An accompanying paper (papers/improved-exponents/) states every result with its Lean name.",
+  "authors": [
+    "Jihoon Hyun"
+  ],
+  "repository": "https://github.com/qawbecrdtey/ImprovedExponents",
+  "commit": "0725f2477587d67212936777b8a264c9793ac7bb",
+  "project_path": null,
+  "declarations": [
+    "ImprovedExponents.threeSum_pruned",
+    "ImprovedExponents.exactTriangle_pruned",
+    "ImprovedExponents.minPlus_allEdges_pruned",
+    "ImprovedExponents.apsp_allEdges_pruned"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "68Q25",
+      "68W40",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-08T05:35:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0725f2477587d67212936777b8a264c9793ac7bb",
+        "fork_repository": "PalomarArchive/qawbecrdtey--ImprovedExponents--333412a9c407",
+        "source_repository": "qawbecrdtey/ImprovedExponents"
+      }
+    ]
+  },
+  "statement_hash": "sha256:69e36cd621cea5c657c3156717dde1df2fcfe0e3e6d4817aa4b9fc49122acab1"
+}

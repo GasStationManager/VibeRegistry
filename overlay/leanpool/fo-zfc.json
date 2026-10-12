@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ishiut/fo_zfc",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.FoZfc",
   "declarations": [
     "FirstOrder.ZFC.ModelZF",
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FoZfc.lean",
-  "statement_hash": "sha256:d480116c790942422f6cf19c752ae78bd65d5ebc034f90170edcc6a8108b652f"
+  "statement_hash": "sha256:c5fe7f3dd4749989a8e8eb9f1901aa7d0cf2a74c41cf78a70ad02225c280830d"
 }

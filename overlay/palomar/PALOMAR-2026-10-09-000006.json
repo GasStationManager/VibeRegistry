@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-09-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-09-000006",
+  "version": 1,
+  "title": "Erdős Problem 809: an independent proof of the seven-cycle threshold",
+  "abstract": "For every fixed integer k >= 3, the minimum number of colors in an edge-coloring of an n-vertex simple graph with at least floor(n^2/4)+1 edges, in which every copy of C_(2k+1) is rainbow, is (1/8 + o(1))n^2. The minimum is attained. The development combines Asad Shahab's seven-cycle proof, using an exact rational five-vertex certificate, with a formalization of the Bucić-Chen-Ma argument for longer odd cycles.",
+  "authors": [
+    "Asad Shahab"
+  ],
+  "repository": "https://github.com/Asad-Shahab/erdos-809-lean",
+  "commit": "15f8839e2a21f64fc5558714506ebba465926eda",
+  "project_path": null,
+  "declarations": [
+    "Erdos809Palomar.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35",
+      "05C15",
+      "05D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-09T06:28:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "15f8839e2a21f64fc5558714506ebba465926eda",
+        "fork_repository": "PalomarArchive/Asad-Shahab--erdos-809-lean--5163a53d73cf",
+        "source_repository": "Asad-Shahab/erdos-809-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:acc1c42dc16b9cb31fff226dddbcb8e1891893de52d696a0177e2da9ba3b7f80"
+}

@@ -1,0 +1,66 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-09-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-09-000014",
+  "version": 1,
+  "title": "Hörmander's hypoellipticity theorem and the Rothschild–Stein theory",
+  "abstract": "A Lean 4 / Mathlib formalization of the regularity theory of Hörmander operators: second-order operators built from smooth vector fields X_1, ..., X_q (and possibly a drift X_0) whose iterated commutators span the tangent space at every point. It proves Hörmander's 1967 theorem that such operators are hypoelliptic: every locally integrable weak solution of X_0 u + sum X_i^2 u + c u = g with smooth data is smooth. It then develops the Rothschild–Stein theory (Acta Math. 1976), following Bramanti and Brandolini's \"Hörmander Operators\" (2023): lifting and approximation of the fields by the generators of a homogeneous group; the homogeneous fundamental solution and singular-integral estimates on homogeneous groups; and the sharp interior estimates, by which a distributional solution of sum X_i^2 T = f with f in W^{k,p}_X or C^{k,alpha}_X is a function in W^{k+2,p}_X or C^{k+2,alpha}_X, for every k >= 0, and at k = 0 with a drift. The formalization also proves the formal Baker–Campbell–Hausdorff theorem, Chow–Rashevskii connectivity, and the Nagel–Stein–Wainger theorems on control balls (ball-box, volume and doubling, comparison of distances), uniformly over compact sets.",
+  "authors": [
+    "Scott Armstrong",
+    "Amélie Loher"
+  ],
+  "repository": "https://github.com/amelieloher/hoermander-rothschild-stein",
+  "commit": "d1462014b4ca69cf04b250582ea45021aa07b546",
+  "project_path": null,
+  "declarations": [
+    "HormanderChallenge.hormander_hypoellipticity",
+    "HormanderChallenge.memSobolev_neg_of_integrable",
+    "HormanderChallenge.exists_contDiff_of_forall_memSobolev",
+    "HormanderChallenge.subelliptic_estimate",
+    "HormanderChallenge.forall_memSobolev_of_localized",
+    "HormanderChallenge.bch_lie_series",
+    "HormanderChallenge.chow_rashevskii",
+    "HormanderChallenge.ball_box",
+    "HormanderChallenge.ball_volume_doubling",
+    "HormanderChallenge.distance_comparison",
+    "HormanderChallenge.lifting_approximation",
+    "HormanderChallenge.lifting_approximation_drift"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP",
+      "math.CA",
+      "math.DG"
+    ],
+    "msc2020": [
+      "35H10",
+      "35H20",
+      "43A80",
+      "53C17",
+      "22E25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-09T17:57:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d1462014b4ca69cf04b250582ea45021aa07b546",
+        "fork_repository": "PalomarArchive/amelieloher--hoermander-rothschild-stein--a3f8df3a01f8",
+        "source_repository": "amelieloher/hoermander-rothschild-stein"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0a94d6c779c07b6ba636001b563921e0a141fd229980ca8a0efd4d8826f9dd6c"
+}

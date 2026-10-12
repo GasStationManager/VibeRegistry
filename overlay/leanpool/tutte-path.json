@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/mbaker386/tutte-homotopy-lean",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.TuttePath",
   "declarations": [
     "TutteFormalization.path_theorem",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/TuttePath.lean",
-  "statement_hash": "sha256:a83e55b5a163cba9c5ece0f25f704b1e1e3ee471454fff31a374c99aa975132f"
+  "statement_hash": "sha256:cee85cafb149b7a50638bf46c215ed417c71e37af04045d7f61fe6094daf5f44"
 }

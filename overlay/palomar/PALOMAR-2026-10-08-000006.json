@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-08-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-08-000006",
+  "version": 1,
+  "title": "Stability of Matter in Lean: Lieb–Thirring, Ionization, the Thermodynamic Limit and Thomas–Fermi Theory",
+  "abstract": "A Lean 4 and Mathlib formalization of the stability of non-relativistic Coulomb matter in three dimensions. For normalized antisymmetric L2 electron states with q >= 1 spin states and static nuclei with charges between zero and Z, it proves a lower energy bound -C(q,Z)(N+M), uniformly in particle counts and nuclear positions. The main estimate is an additive inequality between nonnegative extended energies, valid even for infinite kinetic energy and nuclear collisions. A real quadratic-form theorem proves Coulomb finiteness and the lower bound for states with finite kinetic energy and distinct nuclear positions. The library also proves the kinetic Lieb-Thirring inequality with Rumin's explicit coefficient (9/35)(6 pi^2)^(2/3) q^(-2/3), Baxter's electrostatic inequality with its positive nearest-other-nucleus correction, and equality of the Fourier kinetic form with the classical Dirichlet integral on spin-valued Schwartz functions. The kinetic normalization is -Delta. The proof combines Pauli projections and Rumin's layer cake, a Voronoi boundary-measure proof of Baxter's inequality, nearest-nucleus screening, and Hardy's inequality. Three extensions prove the atomic bound N < 2Z+1 for weak ground states and strict binding, the unique continuous convex canonical zero-temperature energy density of neutral matter with finite-mass bosonic nuclei in Dirichlet balls, and the molecular Thomas-Fermi large-charge limit for arbitrary fixed spin and every fixed TF mass nu>0. Thomas-Fermi theory also has a unique relaxed minimizer, mass saturation at the total nuclear charge, and exact-mass attainment precisely up to neutrality.",
+  "authors": [
+    "Scott Armstrong",
+    "Amélie Loher"
+  ],
+  "repository": "https://github.com/scottnarmstrong/LiebThirring",
+  "commit": "8bf4656f07f5aaa227b0b850d77b16976915bbd4",
+  "project_path": null,
+  "declarations": [
+    "LiebThirringAudit.stability_of_matter",
+    "LiebThirringAudit.stability_of_matter_real",
+    "LiebThirringAudit.kinetic_lieb_thirring",
+    "LiebThirringAudit.baxter",
+    "LiebThirringAudit.electron_count_lt_of_atomic_binding",
+    "LiebThirringAudit.electron_count_lt_of_atomic_weak_ground_state",
+    "LiebThirringAudit.exists_unique_thermodynamic_energy_density",
+    "LiebThirringAudit.tendsto_electronicGroundStateEnergy_tf",
+    "LiebThirringAudit.tendsto_groundStateEnergy_tf"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math-ph",
+      "math.AP"
+    ],
+    "msc2020": [
+      "81V70",
+      "81Q10",
+      "35Q40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-08T16:52:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8bf4656f07f5aaa227b0b850d77b16976915bbd4",
+        "fork_repository": "PalomarArchive/scottnarmstrong--LiebThirring--405b8eacc42e",
+        "source_repository": "scottnarmstrong/LiebThirring"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ef0219e2ddb4a3daa1df505af364e58eb34e5c4cd47394cb223723bd6a39a8bb"
+}

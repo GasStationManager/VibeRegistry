@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/alejandro-soto-franco/EllipticPDE",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.EllipticPDE",
   "declarations": [
     "EllipticPdes.Regularity.higher_interior_regularity",
@@ -57,5 +57,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/EllipticPDE.lean",
-  "statement_hash": "sha256:a68490a09f26fef0795dd81806012154dabe320f22a66d4c866eab91e55f7f92"
+  "statement_hash": "sha256:0d34ed2f9548aac6153db70058fe87fc26dd9b6ac9a3480ee93bb93f48c64223"
 }

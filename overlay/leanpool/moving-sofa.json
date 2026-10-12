@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/deancureton/MovingSofa",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.MovingSofa",
   "declarations": [
     "MovingSofa.sofaConstant_eq_volume_gerversSofa",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MovingSofa.lean",
-  "statement_hash": "sha256:6fd6f13b8a115ceab9e1ce2d60f347dfeea787e7d54d29fbb5c3b4e3895c7002"
+  "statement_hash": "sha256:53c72b8ede4ff43101b15300fc2083973b1f7d5eb76fc773be40b1f041bd9368"
 }

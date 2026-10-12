@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/mccorvie/classification-of-surfaces",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.ClassificationOfSurfaces",
   "declarations": [
     "LeanEval.Topology.ClassificationOfSurfaces.classification_of_surfaces"
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ClassificationOfSurfaces.lean",
-  "statement_hash": "sha256:013a114a05565019f2c8c55047a213b6ac7a5646d8e19e864dc566703187e7fc"
+  "statement_hash": "sha256:7cb357b7ff6fe49f9f896b1c3e61c4e0e7e5bf07f0ff73a45de05e73b1b4c602"
 }

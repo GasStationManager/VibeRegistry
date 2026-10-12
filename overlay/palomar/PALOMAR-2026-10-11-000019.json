@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000019",
+  "version": 1,
+  "title": "Exact robust gaps in finite open chiral chains",
+  "abstract": "Exact worst squared spectral gaps for finite open chiral chains with inhomogeneous strong-bond lower bounds and weak-bond ratio intervals. The scalar optimum is the minimum over the ordered one-switch endpoint configurations, with a two-certificate reduction when cuts are allowed. Strictly positive weak lower bounds give a complete point-or-edge classification of scalar minimizers and an exact aligned-channel equality criterion for arbitrary complex matrix disorder. The sharp channel bound includes the finite chiral Hamiltonian spectral bridge.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/chiral-gap",
+  "commit": "3414bf564e0afd92d713ced8ba51c28db96834b2",
+  "project_path": null,
+  "declarations": [
+    "ChiralGap.robustMinimum_spec",
+    "ChiralGap.one_switch_value",
+    "ChiralGap.two_certificate_value",
+    "ChiralGap.scalarGap_eigenvector",
+    "ChiralGap.scalarGap_le_eigenvalue",
+    "ChiralGap.scalar_optimizer_classification",
+    "ChiralGap.scalar_minimizers_vertex_or_edge",
+    "ChiralGap.robust_hopping_bound",
+    "ChiralGap.hopping_chiral_zero_multiplicity",
+    "ChiralGap.robust_chiral_sharpness_constrained",
+    "ChiralGap.hopping_nonzero_spectrum",
+    "ChiralGap.robust_chiral_complex_gap",
+    "ChiralGap.matrix_equality_criterion",
+    "ChiralGap.chiral_eigenbasis"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.SP",
+      "math-ph"
+    ],
+    "msc2020": [
+      "15A18",
+      "15A42",
+      "47A75",
+      "81Q10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T16:33:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3414bf564e0afd92d713ced8ba51c28db96834b2",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--chiral-gap--a9168b8ac388",
+        "source_repository": "JD-Jones-ASES/chiral-gap"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2f6d1c833129a66838291ed31c0fef5ce77e982a391f82db216c7f78367c8811"
+}

@@ -1,0 +1,91 @@
+{
+  "source": "leanpool",
+  "upstream_id": "polylog-integrals",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/PolylogIntegrals",
+  "version": 1,
+  "title": "Polylogarithms and sixteen log-trigonometric integral identities",
+  "abstract": "Formalizes the sixteen A-series identities from rainrzk's PolyLog Integrals tutorial, together with reusable real and complex polylogarithm series, absolute convergence on the closed unit disk, differentiation, duplication, Euler reflection and Landen identities, logarithmic moments, Fubini kernels and radial integration machinery. The formulas involve Catalan's constant, zeta(3), Li_4(1/2) and Im Li_3((1+i)/2). These are classical identities, not new informal results. A004 uses the corrected factor pi^2/24; A014 uses a proved expression entirely inside the unit disk, replacing the tutorial's invalid series expansion. A015 uses radial differentiation instead of a half-disc contour integral. The formalization was materially completed on 2026-10-01 at 00:01:57 UTC. The 2022 informal tutorial is older; the eligibility date is that of the completed Lean proofs.",
+  "authors": [
+    "rainrzk"
+  ],
+  "repository": "https://github.com/rainrzk/LeanPolyLog",
+  "commit": "",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+  "entry_module": "LeanPool.PolylogIntegrals",
+  "declarations": [
+    "LeanPolyLog.Proofs.A016",
+    "LeanPolyLog.Proofs.A001",
+    "LeanPolyLog.Proofs.A002",
+    "LeanPolyLog.Proofs.A003",
+    "LeanPolyLog.Proofs.A004",
+    "LeanPolyLog.Proofs.A005",
+    "LeanPolyLog.Proofs.A006_cos",
+    "LeanPolyLog.Proofs.A006_sin",
+    "LeanPolyLog.Proofs.A007",
+    "LeanPolyLog.Proofs.A008",
+    "LeanPolyLog.Proofs.A009",
+    "LeanPolyLog.Proofs.A010",
+    "LeanPolyLog.Proofs.A011",
+    "LeanPolyLog.Proofs.A012",
+    "LeanPolyLog.Proofs.A013",
+    "LeanPolyLog.Proofs.A014",
+    "LeanPolyLog.Proofs.A015",
+    "LeanPolyLog.Dilog.hasDerivAt_Li_succ",
+    "LeanPolyLog.Dilog.Li_two_add_Li_two_div_sub_one",
+    "LeanPolyLog.Arcsin.integral_Lir_div_mul_sqrt",
+    "LeanPolyLog.Radial.integral_im_logCube"
+  ],
+  "informal": {
+    "LeanPolyLog.Proofs.A001": "Li_2(i) equals -pi^2/48 plus i times Catalan's constant.",
+    "LeanPolyLog.Proofs.A002": "Li_2(1/(1+i)) equals 5 pi^2/96 - log^2(2)/8 plus i times (pi log(2)/8 - G).",
+    "LeanPolyLog.Proofs.A003": "Li_2((sqrt(5)-1)/2) equals pi^2/10 - log^2((1+sqrt(5))/2).",
+    "LeanPolyLog.Proofs.A004": "The integral from 0 to 1 of log(1+x^2)/x equals pi^2/24, correcting the tutorial's factor of two.",
+    "LeanPolyLog.Proofs.A005": "The integral from 0 to 1 of log^2(1+x^2)/x^3 equals pi^2/12 - log^2(2).",
+    "LeanPolyLog.Proofs.A006_cos": "The integral from 0 to pi/4 of log(cos x) equals G/2 - (pi/4) log(2).",
+    "LeanPolyLog.Proofs.A006_sin": "The integral from 0 to pi/4 of log(sin x) equals -G/2 - (pi/4) log(2).",
+    "LeanPolyLog.Proofs.A007": "The integral from 0 to pi/4 of x log(cos x) equals pi G/8 - pi^2 log(2)/32 - 21 zeta(3)/128.",
+    "LeanPolyLog.Proofs.A008": "The integral from 0 to pi/4 of x log(1+tan x) equals pi^2 log(2)/64 - pi G/8 + 21 zeta(3)/64.",
+    "LeanPolyLog.Proofs.A009": "The integral from 0 to pi/2 of x^2 cot x equals pi^2 log(2)/4 - 7 zeta(3)/8.",
+    "LeanPolyLog.Proofs.A010": "The integral from 0 to pi/4 of x^2 tan^2 x equals -G + pi^2/16 - pi^3/192 + pi log(2)/4.",
+    "LeanPolyLog.Proofs.A011": "The integral from 0 to 1 of Li_2(x)/(x sqrt(1-x^2)) equals 3 pi^2 log(2)/8 - 7 zeta(3)/16.",
+    "LeanPolyLog.Proofs.A012": "The integral from 0 to 1 of arctan(x) log(x)/(1+x) equals -pi^3/64 + G log(2)/2.",
+    "LeanPolyLog.Proofs.A013": "The integral from 0 to 1 of arctan(x) log^2(x)/(1+x) equals -pi^2 G/24 - pi^3 log(2)/32 + 21 pi zeta(3)/64.",
+    "LeanPolyLog.Proofs.A014": "The integral from 0 to 1 of log(x) log(1+x)/(1+x^2) equals 11 pi^3/128 + 3 pi log^2(2)/32 - 2 G log(2) - 3 Im Li_3((1+i)/2).",
+    "LeanPolyLog.Proofs.A015": "The integral from 0 to pi/2 of x log^2(sin x) equals Li_4(1/2) - 19 pi^4/2880 + log^4(2)/24 + pi^2 log^2(2)/12.",
+    "LeanPolyLog.Proofs.A016": "The integral from 0 to 1 of Li_3(x)/(x sqrt(1-x^2)) equals Li_4(1/2)/2 + 41 pi^4/5760 + log^4(2)/48 + pi^2 log^2(2)/6.",
+    "LeanPolyLog.Dilog.hasDerivAt_Li_succ": "For every natural s and nonzero complex z in the open unit disk, Li_(s+1) has derivative Li_s(z)/z at z.",
+    "LeanPolyLog.Dilog.Li_two_add_Li_two_div_sub_one": "For complex z of norm at most 1 and real part at most 1/2, Li_2(z) + Li_2(z/(z-1)) = -log^2(1-z)/2, with the principal logarithm.",
+    "LeanPolyLog.Arcsin.integral_Lir_div_mul_sqrt": "For s at least 2 and a measurable nonnegative weight w on (0,1] with integrable moments equal to 1/(n+1)^s, the integral from 0 to 1 of Li_s(x)/(x sqrt(1-x^2)) equals the integral from 0 to pi/2 of w(sin t) times (pi/2+t).",
+    "LeanPolyLog.Radial.integral_im_logCube": "If (log^3((1+r)/2)-log^3((1-r)/2))/r is interval integrable from 0 to 1, its integral equals the integral from 0 to pi of the imaginary part of the cube of the principal complex logarithm of (1+exp(i t))/2."
+  },
+  "classification": {
+    "msc2020": [
+      "33B30",
+      "26A36",
+      "30B10"
+    ],
+    "tags": [
+      "analysis",
+      "polylogarithms",
+      "special-functions",
+      "integration",
+      "complex-analysis"
+    ],
+    "branch": "analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/PolylogIntegrals.lean",
+  "statement_hash": "sha256:2da1577b80ecc8b89c48d7bb894a5795829952e6c46706ee374f942ca7404795"
+}

@@ -1,0 +1,66 @@
+{
+  "source": "leanpool",
+  "upstream_id": "qec-certificates",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/QECCertificates",
+  "version": 1,
+  "title": "Quantum code certificates and hypergraph-product theory",
+  "abstract": "Formalizes general binary row reduction, kernel bases and rank certificates; quantum-code distance bounds from witnesses and exhaustive low-weight enumeration; arbitrary-matrix hypergraph-product dimension and X/Z cleaning bounds; and CSS orthogonality of lifted products over finite groups. Includes a Pauli expression translation modulo global phase, a Boolean encoding with proved soundness and model extension, and sound checking of RUP additions in LRAT certificates, bridged to matrix-level distance bounds. Concrete code-family datasets, large certificate replays and measurement protocols are outside this import.",
+  "authors": [
+    "Shuoming An"
+  ],
+  "repository": "https://github.com/QCL-SUAT/QECCertificates",
+  "commit": "",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+  "entry_module": "LeanPool.QECCertificates",
+  "declarations": [
+    "QECCertificates.hgp_kunneth",
+    "QECCertificates.hgp_X_distance_ge",
+    "QECCertificates.hgp_Z_distance_ge",
+    "QECCertificates.lp_orthogonal",
+    "QECCertificates.Matrix.rank_eq_length_rowReduce",
+    "QECCertificates.eq_minWeight_of_decide",
+    "QECCertificates.LRAT.unsat_of_checkSteps",
+    "QECCertificates.LRAT.buildPair_complete",
+    "QECCertificates.LRAT.le_minWeight_of_unsat"
+  ],
+  "informal": {
+    "QECCertificates.hgp_kunneth": "For arbitrary finite binary matrices A and B, the number of columns of their hypergraph product minus its X and Z ranks equals nullity(A) times nullity(B) plus nullity(transpose A) times nullity(transpose B), expressed with natural-number rank differences.",
+    "QECCertificates.hgp_X_distance_ge": "If a binary vector is killed by the hypergraph-product X check and is outside the Z row space, its Hamming weight is at least the minimum of supplied lower bounds for nonzero vectors in the kernels of the first input and the transpose of the second input.",
+    "QECCertificates.hgp_Z_distance_ge": "Dually, a vector killed by the Z check and outside the X row space has weight at least the minimum of supplied lower bounds for the kernels of the transpose of the first input and the second input.",
+    "QECCertificates.lp_orthogonal": "For arbitrary matrices of binary-valued functions on a finite group, the left/right regular expansion gives lifted-product X and Z checks whose every pair of rows has zero binary dot product.",
+    "QECCertificates.Matrix.rank_eq_length_rowReduce": "The rank of a finite binary matrix equals the length of the verified row-reduction output for its list of rows.",
+    "QECCertificates.eq_minWeight_of_decide": "For two binary matrices, if d is at most the number of columns, exhaustive enumeration finds no vector of weight below d in the first kernel outside the second row space, and a supplied vector has those membership properties and weight d, then the minimum such weight is d. The empty-set distance convention is the number of columns plus one.",
+    "QECCertificates.LRAT.unsat_of_checkSteps": "Acceptance by the RUP certificate checker implies unsatisfiability of the original CNF. No correctness assumption on an external SAT solver is needed; the clause-database interface carries proved soundness laws.",
+    "QECCertificates.LRAT.buildPair_complete": "For a positive number n of input bits and nonempty row supports within that range, a Boolean assignment satisfying the parity constraints, odd bilinear pairing and weight bound extends to a model of buildPair while agreeing on all 2n input variables. The complementary soundness theorem extracts those constraints from every model.",
+    "QECCertificates.LRAT.le_minWeight_of_unsat": "For a positive number n of columns and k + 1 ≤ n, an unsatisfiable Boolean encoding gives a matrix-level distance lower bound of k + 1. Support-row correspondence, nonemptiness, index bounds and duplicate-free hypotheses are explicit. This composes with kernel-checked RUP replay."
+  },
+  "classification": {
+    "msc2020": [
+      "81P45",
+      "94B05",
+      "03B35"
+    ],
+    "tags": [
+      "quantum-error-correction",
+      "coding-theory",
+      "hypergraph-products",
+      "certificates"
+    ],
+    "branch": "quantum information and coding theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/QECCertificates.lean",
+  "statement_hash": "sha256:415b1c1112ffe64a7a9b81aba85aa0aed7d5374e80c269081172cb91f97b5af6"
+}

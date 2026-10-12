@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-02-000008",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000008",
-  "version": 4,
-  "title": "Optimality (Baek 2024) and uniqueness of Gerver's sofa, formalized in Lean 4",
-  "abstract": "The moving sofa problem asks for the largest area of a planar shape that can be moved around the right-angled corner of a hallway of unit width. This repository formalizes in Lean 4, with Mathlib, Jineon Baek's proof (arXiv:2411.19826) that Gerver's sofa, of area 2.2195..., is optimal: every numbered result of the paper, the results it cites (Schneider's area formula for convex bodies, and the existence and uniqueness of the solution of Romik's equations, which define Gerver's sofa), and the structure of Gerver's sofa (Theorem 8.4.1), which the paper states without proof.\n\nIt also proves that Gerver's sofa is the only moving sofa of maximum area up to rigid motions: a rotation followed by a translation maps every moving sofa of that area onto Gerver's sofa. Baek's paper does not prove this.\n\nFinally, it bridges Baek's definitions and those of Google DeepMind's formal-conjectures: the two notions of moving sofa agree, the sofa constant of formal-conjectures is the supremum of the areas of Baek's moving sofas, and the two definitions of Gerver's sofa, from Gerver's four constants and from Romik's equations, give the same set. Gerver's four constants are proved unique by elementary inequalities. Formal-conjectures' statements follow, including the uniqueness, which it lists as open.",
+  "version": 5,
+  "title": "Optimality, uniqueness and stability of Gerver's sofa from one coercive certificate, formalized in Lean 4",
+  "abstract": "The moving sofa problem asks for the largest area of a planar shape that can be moved around the right-angled corner of a hallway of unit width. Jineon Baek proved (arXiv:2411.19826) that Gerver's sofa G, of area 2.2195..., is optimal. His proof bounds the area of every large moving sofa by a concave functional Q of a triple (K, B, D) of convex bodies built from a cap K of the sofa, and shows that Q is largest at Gerver's triple, where it equals |G|.\n\nThis entry proves one estimate for Q, the coercive certificate, and derives three results from it. On an enlarged domain of triples, on which the cap need not satisfy Baek's injectivity condition, Q(K, B, D) <= |G|, and the cap K lies within Euclidean Hausdorff distance 2 sec(phi) sqrt(|G| - Q(K, B, D)) of the horizontal translate of Gerver's cap with the same leftmost point, where phi = 0.039... is Gerver's angle. The proof writes |G| - Q as a sum of nonnegative terms, and the energy terms among them also bound that distance. The bound is attained: Gerver's triple lies in the enlarged domain, and Q equals |G| there.\n\nFrom the certificate: optimality, Baek's theorem, proved without his Theorem 1.1.1 and without the balance argument of his Chapters 4 to 6; uniqueness, every moving sofa with the area of G is mapped onto G by a rotation and a translation (a translation suffices); and stability, after a translation a moving sofa of area |G| - epsilon lies within Euclidean Hausdorff distance C sqrt(epsilon) of G, their symmetric difference has area at most C' sqrt(epsilon), its rotation angle misses a right angle by at most C'' epsilon, and the exponent 1/2 cannot be improved. The Challenge also states the correspondence between Baek's definitions and those of Google DeepMind's formal-conjectures, and formal-conjectures' statements, among them the uniqueness, which it lists as open; here they are proved through the certificate.\n\nVersions 1 to 4 of this entry registered the formalization of Baek's paper with a first proof of uniqueness that uses his Theorem 1.1.1; they state the same optimality, uniqueness and formal-conjectures theorems, proved through Baek's argument, and the repository keeps their Challenge and Solution in baek/. This version proves those theorems through the certificate and adds the certificate and the stability. A script in the repository, scripts/AuditCoerciveRoute.lean, run by the continuous integration, checks that its proofs reach neither Baek's Theorem 1.1.1, nor the results of his balance argument, nor the main theorem and the equality analysis of the first proof of uniqueness.",
   "authors": [
     "The-Anh Vu-Le"
   ],
   "repository": "https://github.com/vltanh/lean4-moving-sofa",
-  "commit": "16653ae81e0e4f52a362bafae2ad3440100ad065",
+  "commit": "1174c5c25c1c66b807e368446d6682e8d0276759",
   "project_path": null,
   "declarations": [
     "Baek.gerver_params_exists",
@@ -17,13 +17,18 @@
     "Baek.gerver_sofa_area",
     "Baek.gerver_sofa_optimal",
     "Baek.gerver_sofa_unique",
+    "Baek.gerver_sofa_stable",
+    "Baek.gerver_sofa_angle_stable",
+    "Baek.gerver_sofa_stability_exponent",
     "Bridge.isMovingSofa_iff",
     "Bridge.sofaConstant_eq",
     "Bridge.gerversSofa_eq",
     "FormalConjectures.MovingSofa.GerversSofa.ABφθSpec.existsUnique",
     "FormalConjectures.MovingSofa.isMovingSofa_gerversSofa",
     "FormalConjectures.MovingSofa.sofaConstant_eq_volume_gerversSofa",
-    "FormalConjectures.MovingSofa.volume_eq_sofaConstant_iff_congruent_gerversSofa"
+    "FormalConjectures.MovingSofa.volume_eq_sofaConstant_iff_congruent_gerversSofa",
+    "Certificate.coercive_certificate",
+    "Certificate.gerver_triple"
   ],
   "informal": {},
   "classification": {
@@ -40,7 +45,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-10-04T10:16:22Z",
+  "published_at": "2026-10-08T06:43:06Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -54,11 +59,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "16653ae81e0e4f52a362bafae2ad3440100ad065",
+        "commit": "1174c5c25c1c66b807e368446d6682e8d0276759",
         "fork_repository": "PalomarArchive/vltanh--lean4-moving-sofa--dfc797b6e6b6",
         "source_repository": "vltanh/lean4-moving-sofa"
       }
     ]
   },
-  "statement_hash": "sha256:8bad64d03b22d91ab73e92e5d3f2ebade8d229752ef550234ed55ae0e1d3e249"
+  "statement_hash": "sha256:ca8a7de985c0a8fc6fc4354492e2aa2e923c43ae7fba2b723e2389822ba67bc1"
 }

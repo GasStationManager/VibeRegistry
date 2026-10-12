@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000015",
+  "version": 1,
+  "title": "Erdos607",
+  "abstract": "Machine-checked upper bound on Erdős problem 607. For n ≥ 2 let F(n) be the number of distinct multiplicity sets A(P) that can arise from a collection P of n points of the plane, where A(P) is the set of block sizes (point counts) of the lines determined by P. The proof shows that the lines of P form a pairwise-balanced design on the n points (every pair of points lies on exactly one line, and each line contains at least two points), so A(P) is exactly the set of block sizes of such a PBD. Hence F(n) is bounded by the number of PBD profile sets on n points, and the Colbourn–Phelps–Rödl (1984) Theorem 2.4 bound exp(c·√n) on that quantity gives F(n) ≤ exp(c·√n) for every n ≥ 2. The bound is stated for n ≥ 2 — the range where the bound is meaningful (a single point determines no line) — so the hypothesis is non-vacuous. The CPR-1984 PBD bound is a published theorem and is taken as the hypothesis hCPR; it is cited, not re-proved here. Together with the Szemerédi–Trotter (1983) lattice-grid lower bound F(n) ≥ exp(c'·√n) (also cited, not re-proved), the order of growth is F(n) = exp(Θ(√n)). This repository contains zero axioms and zero sorry in the proof development (the only sorry is the deliberate statement surface in Challenge.lean).",
+  "authors": [
+    "Raphael Delors"
+  ],
+  "repository": "https://github.com/raphaeldelors-code/palomar-erdos607",
+  "commit": "45ef2462f0a9f139734ac590238456229bca068b",
+  "project_path": null,
+  "declarations": [
+    "E607.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05D10",
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T14:37:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "45ef2462f0a9f139734ac590238456229bca068b",
+        "fork_repository": "PalomarArchive/raphaeldelors-code--palomar-erdos607--6888ed550193",
+        "source_repository": "raphaeldelors-code/palomar-erdos607"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c5c01aabe21a5aa6fb5ee8e405dde61fd71d1f791d253032a5c6df589aae71de"
+}

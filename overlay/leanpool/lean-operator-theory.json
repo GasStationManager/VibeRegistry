@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/savarin/lean-operator-theory",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.OperatorTheory",
   "declarations": [
     "PalomarCrouzeixPalencia.crouzeix_palencia",
@@ -49,5 +49,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/OperatorTheory.lean",
-  "statement_hash": "sha256:b694d987851b48bd1146d39cf9fac245211054a92094b9d1ea342cf579bb2413"
+  "statement_hash": "sha256:d981c85f193d0f4e6f270d37076ddf2248c014593d93d1a50da1f86a853dd035"
 }

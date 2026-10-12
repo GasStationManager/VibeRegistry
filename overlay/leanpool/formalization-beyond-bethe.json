@@ -1,0 +1,52 @@
+{
+  "source": "leanpool",
+  "upstream_id": "formalization-beyond-bethe",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/BeyondBethe",
+  "version": 1,
+  "title": "Beyond the Bethe approximation of the permanent",
+  "abstract": "Constructs a deterministic polynomial-time approximation algorithm for the permanent of every nonnegative rational matrix, with exponential base strictly smaller than the square root of two. The development includes stable-polynomial inequalities, rational convex optimization, finite-precision arithmetic, and a Turing-machine complexity proof.",
+  "authors": [
+    "Nima Anari",
+    "Samuel Schlesinger",
+    "Bolton Bailey",
+    "Christian Reitwiessner"
+  ],
+  "repository": "https://github.com/nimaanari/formalization-beyond-bethe",
+  "commit": "",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+  "entry_module": "LeanPool.BeyondBethe",
+  "declarations": [
+    "BeyondBethe.theoremOne"
+  ],
+  "informal": {
+    "BeyondBethe.theoremOne": "There is a fixed rational algorithm approximating the permanent of every nonnegative rational n-by-n matrix within c^n for an absolute c below sqrt(2), with a deterministic polynomial-time Turing-machine implementation."
+  },
+  "classification": {
+    "msc2020": [
+      "68W25",
+      "15A15"
+    ],
+    "tags": [
+      "permanent",
+      "approximation-algorithms",
+      "computational-complexity",
+      "stable-polynomials"
+    ],
+    "branch": "theoretical computer science"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/BeyondBethe.lean",
+  "statement_hash": "sha256:261fafdbc6830afc27e8c6f1aa436dffa0c903c07090e4d2f544cd2e6cbd53de"
+}

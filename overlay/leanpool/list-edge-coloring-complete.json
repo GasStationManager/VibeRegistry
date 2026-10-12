@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jtraverso/haggkvist-janssen",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.ListEdgeColoringComplete",
   "declarations": [
     "LeanPool.ListEdgeColoringComplete.exists_listEdgeColoring_complete"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ListEdgeColoringComplete.lean",
-  "statement_hash": "sha256:949d8fa2f84a9f881416b01bb4ce13c4fec1408c48526696bb0c2cb101162e31"
+  "statement_hash": "sha256:e2cbca676a12c57bc360efd0a8007ad2a401da0d12a39a02e140a151153ce632"
 }

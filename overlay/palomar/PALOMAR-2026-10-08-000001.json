@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-08-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-08-000001",
+  "version": 1,
+  "title": "Sharp Wasserstein propagation of chaos from correlated initial data",
+  "abstract": "A Lean 4 proof, checked against Mathlib, of a sharp quantitative propagation of chaos estimate for mean field diffusions dX_i = (a(X_i) + N^{-1} sum_j K(X_i, X_j)) dt + sqrt 2 dW_i with a globally Lipschitz one-body drift a and a bounded, globally Lipschitz pairwise interaction K. If every k-particle marginal of the (possibly correlated and singular) exchangeable initial law lies within squared quadratic Wasserstein distance C_0 (k/N)^2 of the corresponding power of the McKean-Vlasov initial law, then the same holds on every finite time interval [0, T] with an explicit constant C_T that depends neither on N nor on the dimension. No entropy bound, transport inequality or independence of the initial particles is assumed.",
+  "authors": [
+    "Yuhao Lei"
+  ],
+  "repository": "https://github.com/yuhaolei-ctrl/Sharp-W2-to-W2-Propagation-of-Chaos",
+  "commit": "84dbe881384ad2f0358857b025ef6fd824ebc9a1",
+  "project_path": null,
+  "declarations": [
+    "SharpChaos.sharp_propagation_of_chaos"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "60K35",
+      "82C22",
+      "60H10",
+      "35Q84",
+      "49Q22"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-08T01:43:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "84dbe881384ad2f0358857b025ef6fd824ebc9a1",
+        "fork_repository": "PalomarArchive/yuhaolei-ctrl--Sharp-W2-to-W2-Propagation-of-Chaos--916e37ae9fb6",
+        "source_repository": "yuhaolei-ctrl/Sharp-W2-to-W2-Propagation-of-Chaos"
+      }
+    ]
+  },
+  "statement_hash": "sha256:32f12343c19d68d4d199861376d41d4f3fd125a6551f9ca97a9070e91bbe268a"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-07-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-07-000004",
+  "version": 1,
+  "title": "Explicit Szemerédi–Trotter bounds over arbitrary fields",
+  "abstract": "We formalize four explicit Szemerédi–Trotter incidence bounds for m distinct points and n distinct affine lines in a field plane. In characteristic zero the bound is 3(mn)^(2/3) + m + n. In positive characteristic p, an arbitrary field admits the additional term 2mn/p. This term is absent when mn ≤ p³. Over the prime field ZMod p the additional term improves to mn/p without a size restriction. The development adapts the author's polynomial-method argument, uses generic coordinates for the improved linear term, and proves a finite-plane counting estimate for the prime-field refinement.",
+  "authors": [
+    "Mark Lewko"
+  ],
+  "repository": "https://github.com/mrklwk/szemeredi-trotter-lean",
+  "commit": "844228bc6c042e59373888d1b69f4e215d1c00e4",
+  "project_path": null,
+  "declarations": [
+    "IncidenceBounds.arbitrary_charZero",
+    "IncidenceBounds.arbitrary_charP",
+    "IncidenceBounds.subcritical",
+    "IncidenceBounds.prime_field"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C10",
+      "05B25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-07T06:46:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "844228bc6c042e59373888d1b69f4e215d1c00e4",
+        "fork_repository": "PalomarArchive/mrklwk--szemeredi-trotter-lean--f1954e3e06af",
+        "source_repository": "mrklwk/szemeredi-trotter-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:45dcbef4b4f3a3d7033fbaf3946c00d1db613a10897371d0122203f9f0ae8926"
+}

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/themathqueen/monlib4",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.Monlib4",
   "declarations": [
     "Matrix.aut_mat_inner",
@@ -76,5 +76,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Monlib4.lean",
-  "statement_hash": "sha256:df376b8bf1a394e01a808b7a10c85b68e17c03053d98673e3f4923cc803e3f62"
+  "statement_hash": "sha256:2b2b963ca59bbf97ff86671271c27160266864f24a2b6eb161f7cb3a3981d430"
 }

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000002",
+  "version": 1,
+  "title": "Nearly Minimax Rates for Functional Estimation Under Rough Random Design",
+  "abstract": "A Lean development of upper and local lower minimax bounds for nonlinear functionals of conditional means under bounded, rough random design. The generic theorem covers the root-n regime and the subcritical regime with its density-dependent stretched-exponential correction, logarithmic upper and lower factors, and a one-quarter minimax probability lower bound. The substantive development also contains projection, polynomial-estimator, Poisson reduction, lattice-prior, application, and causal-identification results. The selected Comparator surface is the generic theorem's two parts. The remaining logarithmic gap is unresolved.",
+  "authors": [
+    "P. M. Aronow",
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/pmaronow/roughregime-palomar",
+  "commit": "ec97825d7539266fd3ebd9d0527c34b0ba5d0f65",
+  "project_path": null,
+  "declarations": [
+    "RoughRegimeSubmission.mainUpper",
+    "RoughRegimeSubmission.mainLower"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "stat.ME"
+    ],
+    "msc2020": [
+      "62G05",
+      "62G08",
+      "62G20",
+      "62C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T00:11:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ec97825d7539266fd3ebd9d0527c34b0ba5d0f65",
+        "fork_repository": "PalomarArchive/pmaronow--roughregime-palomar--9ee2236482f9",
+        "source_repository": "pmaronow/roughregime-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9a57f73b93bc3764c86b3435522c1c77dabcb08b08015c6538e95a211fa7d817"
+}

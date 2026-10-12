@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/openai/LongGapsBetweenPrimes",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.LongGapsBetweenPrimes",
   "declarations": [
     "LongGapsBetweenPrimes.long_prime_gaps",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/LongGapsBetweenPrimes.lean",
-  "statement_hash": "sha256:183ab5c1d523fc1e2e5b88c7f2697316b315c9d95ffa1f3a874d7e74c5cb41a9"
+  "statement_hash": "sha256:f13859d3119c10a8003059362f9ce6556648ba9232d9c6a11a8265f45cca4119"
 }

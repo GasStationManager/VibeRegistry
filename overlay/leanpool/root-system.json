@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/Antoine-dSG/root_system",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.RootSystem",
   "declarations": [
     "An.rootPairing",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/RootSystem.lean",
-  "statement_hash": "sha256:4928756f0a5044aaa847fd3ea0e91557ecb98fe7d1fb8459356b5839b017c4ef"
+  "statement_hash": "sha256:328824c9f15064b4ecd36a761f81627deab8223d980a98128fb7093d2f5d385c"
 }

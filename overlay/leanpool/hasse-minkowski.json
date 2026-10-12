@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/jayyswan/hasse-minkowski",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.HasseMinkowski",
   "declarations": [
     "HasseMinkowski.hasseMinkowski",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/HasseMinkowski.lean",
-  "statement_hash": "sha256:7ae7c9778eae94d575f343da80ac4a10ac9fca878b00e49883d72354a0cb306d"
+  "statement_hash": "sha256:b7701e2da9161530f168dcfb8069e3fc37ee2a5dd2dc018c8f1de9106695e713"
 }

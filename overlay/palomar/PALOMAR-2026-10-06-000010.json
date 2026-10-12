@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-06-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-06-000010",
+  "version": 1,
+  "title": "Monotone-Light Factorization of Compact Hausdorff Surjections",
+  "abstract": "Every continuous surjection between compact Hausdorff spaces factors through a compact Hausdorff quotient that collapses exactly the connected components of each original fiber. The first map has connected fibers and the second has totally disconnected fibers. Any two such factorizations have a unique commuting homeomorphism. Empty spaces are permitted.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/monotone-light-factorization-lean",
+  "commit": "759906c53ae14a660ab0e473dcf075d859c5a5a9",
+  "project_path": null,
+  "declarations": [
+    "MonotoneLight.isClosed_fiberRel",
+    "MonotoneLight.exists_monotone_light_factorization",
+    "MonotoneLight.unique_monotone_light_factorization"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54C10",
+      "54D05",
+      "54D30",
+      "54F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-06T11:07:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "759906c53ae14a660ab0e473dcf075d859c5a5a9",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--monotone-light-factorization-lean--a4e3fc9d4555",
+        "source_repository": "Arthur742Ramos/monotone-light-factorization-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:069ae4bf3197ded89775d6b1c2045d4181beef1bec9fc8d78e80df91c04aa23e"
+}

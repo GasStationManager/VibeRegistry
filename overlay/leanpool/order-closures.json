@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/pedrotradacete/OrderClosures",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.OrderClosures",
   "declarations": [
     "OrderClosures.exists_weaklyFatou_not_equivalent_fatou",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/OrderClosures.lean",
-  "statement_hash": "sha256:85cda49016684fae073907ce326f5b99ab18989e288e3c176b3fb6aa3f9214ff"
+  "statement_hash": "sha256:04b71f974711954623edd816b41ff32665f9675ae549436e9e629011a1081aa1"
 }

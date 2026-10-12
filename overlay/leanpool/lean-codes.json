@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/bjbraams/lean-codes",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.CarlsonFunctions",
   "declarations": [
     "PalomarSnapshot.r_first_quadratic",
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CarlsonFunctions.lean",
-  "statement_hash": "sha256:92994a56501b8501c3402bace5d138d9a06c185ba7c5e47d39f5591ce345bccc"
+  "statement_hash": "sha256:1ed22dc93f03009c6760880b43c0e46870cf2458e4d90715eb96b3d5467dcea8"
 }

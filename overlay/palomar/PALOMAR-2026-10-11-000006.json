@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000006",
+  "version": 1,
+  "title": "Finite-size mean bias of the Sherrington-Kirkpatrick free energy",
+  "abstract": "Formalization of a fixed-temperature N^(-7/10) bound for the finite-size mean bias of the zero-field Sherrington-Kirkpatrick model with independent standard Gaussian couplings and the unnormalized partition function. For every beta > 1, a positive constant depending on beta bounds the nonnegative pressure gap for every integer N >= 2. The selected results also establish the thermodynamic limit for beta > 0, the corresponding free-energy-density and expected log-partition corrections, a positive exponent saving over 2/3, and a full-sequence little-o improvement. The independently readable interface defines the limiting pressure by a thermodynamic limit; Solution identifies it with the all-probability-profile Parisi variational value.",
+  "authors": [
+    "P. M. Aronow",
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/pmaronow/sk-mean-bias-palomar",
+  "commit": "7601a9d5ade08066632bc68b9a615e163f2dd02c",
+  "project_path": null,
+  "declarations": [
+    "SKMeanBias.thermodynamic_limit",
+    "SKMeanBias.main_mean_bias",
+    "SKMeanBias.free_energy_density_correction",
+    "SKMeanBias.log_partition_mean_correction",
+    "SKMeanBias.strictly_better_than_two_thirds",
+    "SKMeanBias.mean_bias_little_o_two_thirds"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "cond-mat.dis-nn"
+    ],
+    "msc2020": [
+      "82B44",
+      "60K35",
+      "60G15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T06:45:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7601a9d5ade08066632bc68b9a615e163f2dd02c",
+        "fork_repository": "PalomarArchive/pmaronow--sk-mean-bias-palomar--c8eac0abe48b",
+        "source_repository": "pmaronow/sk-mean-bias-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cb6b6293dce09ad97981d3013c6458542133a8a75bf04050fc316d9fab6e9081"
+}

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.PaperIVCliqueTree",
   "declarations": [
     "SimpleGraph.isChordal_iff_nonempty_subtreeRepresentation",
@@ -71,5 +71,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/PaperIVCliqueTree.lean",
-  "statement_hash": "sha256:f51ec6d33000454b51b9b2c8d497f44c141084fb2b5f818f55737b9529144249"
+  "statement_hash": "sha256:4184a0df31f77e7a51a45bc54e935ad7bc1aac66b388b0fa64161b565c415c88"
 }

@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/dsm054/kasami_cyclic_additive",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.KasamiCyclicAdditive",
   "declarations": [
     "KasamiCyclicAdditive.carlet_kasami_cyclic_additive_literature",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/KasamiCyclicAdditive.lean",
-  "statement_hash": "sha256:d63084b00415910d8e2d5c6cdeafbed6cb057bc2c02c71726e1f4e66757fa32b"
+  "statement_hash": "sha256:cc3578d0368add9fff0506453d8ab8edcb46e04274241693d9d76d14a653f416"
 }

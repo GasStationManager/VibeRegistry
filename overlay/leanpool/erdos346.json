@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/KitaKen1/erdos346-ratio-limit-lean",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.Erdos346",
   "declarations": [
     "Erdos346.intended_problem_if_limit_exists",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos346.lean",
-  "statement_hash": "sha256:5715753b7b54bd144fa680746c3b08a0ac024ece0b5ad8f5d114d3f3659f8fa6"
+  "statement_hash": "sha256:09ccec7622f12a04b874c83ced8365f10e43647feaded91c52ded9ec1e3c7736"
 }

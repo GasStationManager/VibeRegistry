@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/itpplasma/stafford38-formal",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.Stafford38",
   "declarations": [
     "Stafford38.universalStatement",
@@ -45,5 +45,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Stafford38.lean",
-  "statement_hash": "sha256:7d5660dc4a748a8589e5a023ce58d6510121dc65cbc2e2fb0b935d3bdfa30a03"
+  "statement_hash": "sha256:b9a0ff07c243c3e62dad6da90e999b531a812746f1d2393d59470cebcb7a6e5b"
 }

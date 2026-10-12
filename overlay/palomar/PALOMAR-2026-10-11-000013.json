@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000013",
+  "version": 1,
+  "title": "Michael's biquotient-map product and characterization theorems",
+  "abstract": "Formalization of Michael (1968), Theorems 1.2 and 1.3: arbitrary indexed products of biquotient continuous surjections are biquotient, without separation assumptions; for a Hausdorff target, biquotience is equivalent to quotientness of the product with every identity map and to the same property for paracompact test spaces. The cover definition, filter and ultrafilter bridges, and an actual Hausdorff paracompact counterexample topology on the underlying target set are proved. Reverse tests use the target universe; the forward implication is separately universe-polymorphic.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "dac5d2d127d25d61e972fc5d9fc442146c67440d",
+  "project_path": "topology/michael-biquotient",
+  "declarations": [
+    "Michael.IsBiquotientMap.piMap",
+    "Michael.IsBiquotientMap.prod_id_isQuotientMap",
+    "Michael.isBiquotientMap_iff_all_tests",
+    "Michael.isBiquotientMap_iff_paracompact_tests",
+    "Michael.isBiquotientMap_iff_liftsClusterPoints",
+    "Michael.isBiquotientMap_iff_liftsUltrafilters",
+    "Michael.exists_t2_paracompact_counterexample"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54C10",
+      "54B10",
+      "54A20",
+      "54D20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T10:09:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dac5d2d127d25d61e972fc5d9fc442146c67440d",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f3b3c5f9fd22f29e61cb609d3a85c4ccd1d70e4185004ab5290f3f95d054837c"
+}

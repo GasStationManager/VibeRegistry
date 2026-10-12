@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/savarin/lean-spectral-theory",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.SpectralTheory",
   "declarations": [
     "PalomarSpectralStone.spectral_theorem_intrinsic",
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SpectralTheory.lean",
-  "statement_hash": "sha256:5d2771fae87ae9360fbfa66e49eb4b0e1be3a71bfea4944fa741a31d7d9fc3c5"
+  "statement_hash": "sha256:403aebcb9bee8548b048b3245c35857138aa368f41918a8ed06bace3b1bb4e65"
 }

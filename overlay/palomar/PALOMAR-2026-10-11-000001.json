@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000001",
+  "version": 1,
+  "title": "Kinetic Aleksandrov estimates",
+  "abstract": "A Lean 4 / Mathlib formalisation of Aleksandrov maximum principles for kinetic equations d_t u + v.grad_x u - A : D_v^2 u = f in non-divergence form, with measurable, uniformly elliptic diffusion acting only in the velocity. For coefficients A(t,v) the estimate holds for every source exponent p > 2d+1; for autonomous coefficients a(x,v) in one space dimension for every p above a threshold 1 + beta_*(Lambda/lambda) < 4, where no exponent below 4 works uniformly in the ellipticity ratio; and for general measurable coefficients A(t,x,v) for every p >= 1 + 128 d^2 (Lambda/lambda)^2 / 3. In each case the estimate implies interior Hölder continuity of solutions; for coefficients A(t,x,v) this is the kinetic Krylov–Safonov theorem. The library also proves the parabolic Aleksandrov estimate of Krylov, the parabolic Harnack inequality of Krylov and Safonov, the terminal solution operators of the kinetic equation, and classical Dirichlet solvability on ellipsoidal cylinders. Hörmander's hypoellipticity theorem is taken from the formalisation hoermander-rothschild-stein.",
+  "authors": [
+    "Amélie Loher"
+  ],
+  "repository": "https://github.com/amelieloher/hypoelliptic-aleksandrov",
+  "commit": "d7e0125892d7bbd013c86c9c5d6a04e39e0168a6",
+  "project_path": null,
+  "declarations": [
+    "KineticAleksandrovChallenge.kinetic_aleksandrov_timeVelocity",
+    "KineticAleksandrovChallenge.kinetic_aleksandrov_timeVelocity_localised",
+    "KineticAleksandrovChallenge.kinetic_holder_timeVelocity",
+    "KineticAleksandrovChallenge.kinetic_aleksandrov_autonomous",
+    "KineticAleksandrovChallenge.kinetic_aleksandrov_autonomous_localised",
+    "KineticAleksandrovChallenge.kinetic_holder_autonomous",
+    "KineticAleksandrovChallenge.kinetic_aleksandrov_autonomous_counterexample",
+    "KineticAleksandrovChallenge.existsUnique_bellmanAdjointExponent",
+    "KineticAleksandrovChallenge.bellmanAdjointExponent_characterization",
+    "KineticAleksandrovChallenge.parabolic_aleksandrov",
+    "KineticAleksandrovChallenge.parabolic_harnack_unit_cylinder"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP",
+      "math.PR"
+    ],
+    "msc2020": [
+      "35K70",
+      "35B50",
+      "35B65",
+      "35Q84",
+      "35H10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T00:02:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d7e0125892d7bbd013c86c9c5d6a04e39e0168a6",
+        "fork_repository": "PalomarArchive/amelieloher--hypoelliptic-aleksandrov--29cafd061e52",
+        "source_repository": "amelieloher/hypoelliptic-aleksandrov"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5457ecbfd5ff56a755fa501c3c7ada41dfe0583e283219db979204fafd0f4823"
+}

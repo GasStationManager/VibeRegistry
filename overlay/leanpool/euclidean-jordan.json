@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ehrlich-b/euclidean-jordan",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.EuclideanJordan",
   "declarations": [
     "EuclideanJordan.frameBlock_isInternal",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/EuclideanJordan.lean",
-  "statement_hash": "sha256:692f771ad2e864f2fd51ec0429d36bbc4e5daf5f323724ed8058a13b57c707f9"
+  "statement_hash": "sha256:208a480af49e781c8b877a6b494e245756424fb956f91a2bbbe47c15423b84e5"
 }

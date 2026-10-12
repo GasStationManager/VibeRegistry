@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000009",
+  "version": 1,
+  "title": "Anomalous scaling limit of a Brownian particle in a log-correlated potential",
+  "abstract": "A Lean 4 formalization of the paper \"Anomalous scaling limit of a Brownian particle in a log-correlated potential\" by Armstrong, Bou-Rabee and Kuusi: the subdiffusive scaling limit of a Brownian particle whose drift is the gradient of a log-correlated random potential (Theorem A, in its introduction form and in its precise quenched form), quantitative homogenization of the Dirichlet problem uniformly in the infrared cutoff (Theorem B), and large-scale Hölder regularity with a Liouville theorem (Theorem C), together with the supporting coarse-graining, elliptic-regularity and Markov-process theory. The theorems hold for every random environment satisfying the paper's standing assumptions (a GMCModel). The development builds on Mathlib and on the public CoarseGraining and MarkovProcess libraries. The three headline theorems are independently checked by the comparator pairs under SubdiffusiveProcessAudit/.",
+  "authors": [
+    "Scott Armstrong",
+    "Ahmed Bou-Rabee",
+    "Tuomo Kuusi"
+  ],
+  "repository": "https://github.com/nitromannitol/subdiffusive-process",
+  "commit": "4c6b8fa60357a07fd5713e5104a6cc70f8e432dc",
+  "project_path": null,
+  "declarations": [
+    "SubdiffusiveProcessAudit.ProcessConvergence.theoremA"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.AP"
+    ],
+    "msc2020": [
+      "60K37",
+      "35R60",
+      "82B28"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T08:00:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4c6b8fa60357a07fd5713e5104a6cc70f8e432dc",
+        "fork_repository": "PalomarArchive/nitromannitol--subdiffusive-process--7f56d1d55d23",
+        "source_repository": "nitromannitol/subdiffusive-process"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3b994cbadc856418e805e9a92367509fa1776443d3a2a8212000a2dac910183d"
+}

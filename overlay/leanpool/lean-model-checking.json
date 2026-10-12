@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/kuruczgy/lean-model-checking",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.LeanModelChecking",
   "declarations": [
     "LeanModelChecking.for_any_LTL_formula_exists_an_equivalent_NBW",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/LeanModelChecking.lean",
-  "statement_hash": "sha256:bd0b72bf0fbdb378b86c95c35c0642cffe985b3fb5191dacb81b896547830393"
+  "statement_hash": "sha256:c4799a23b062684f7a903bbedf0c73e0012b7b3b918bb00ce7a04bc622cf7146"
 }

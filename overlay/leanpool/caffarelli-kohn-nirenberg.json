@@ -4,14 +4,14 @@
   "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CaffarelliKohnNirenberg",
   "version": 1,
   "title": "Caffarelli–Kohn–Nirenberg partial regularity",
-  "abstract": "Partial regularity for three-dimensional incompressible Navier–Stokes suitable weak solutions with locally L^q forcing, q > 5/2: quantitative epsilon regularity and vanishing parabolic one-dimensional Hausdorff measure of the singular set. Includes the supporting Sobolev, singular integral, pressure, heat-potential and parabolic Morrey infrastructure, equivalence of suitable-solution formulations, and a nonzero shear-flow example. Imports the dependency closure of these completed results.",
+  "abstract": "Partial regularity for three-dimensional incompressible Navier–Stokes suitable weak solutions with locally L^q forcing, q > 5/2: quantitative epsilon regularity and vanishing parabolic one-dimensional Hausdorff measure of the singular set. Includes the supporting Sobolev, singular integral, pressure, heat-potential and parabolic Morrey infrastructure, equivalence of suitable-solution formulations, and a nonzero shear-flow example. Includes the completed Leray, pressure, and linear regularity support needed by further Navier–Stokes regularity projects.",
   "authors": [
     "Scott Armstrong",
     "Vlad Vicol"
   ],
   "repository": "https://github.com/scottnarmstrong/CaffarelliKohnNirenberg",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.CaffarelliKohnNirenberg",
   "declarations": [
     "CKN.caffarelliKohnNirenberg",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/CaffarelliKohnNirenberg.lean",
-  "statement_hash": "sha256:b7a38406e64b6c4fa646848a64f5fdb180a0bcb5fc74d909b7d1b5556faa543a"
+  "statement_hash": "sha256:6326ea61d56c71c470dea87fcae5487e18d879f8cae7808b5c5a72cc01dc58d4"
 }

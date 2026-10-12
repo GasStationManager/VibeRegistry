@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/yuningyang19/parameter_free_gradient_p",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.ParameterFreeGradient",
   "declarations": [
     "V7.main",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ParameterFreeGradient.lean",
-  "statement_hash": "sha256:ff349585d56603858bc8f54de9d11669da6a64e536313e565a4ee68d9e527132"
+  "statement_hash": "sha256:273d498ec64f70a0d9d84795f7f4e2286fb6403042fbaff3d770185817a39500"
 }

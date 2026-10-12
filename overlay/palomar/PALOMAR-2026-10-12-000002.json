@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-12-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-12-000002",
+  "version": 1,
+  "title": "Aging in Spherical Spin Glass Dynamics",
+  "abstract": "Lean formalization of the spherical Gaussian spin-glass dynamics and its positive-semidefinite Cugliandolo--Kurchan limit, including the physical variational response, entropy and Fisher estimates, stationary translated clusters, general-spin selection and aging bounds, and stationary relaxation. Theorem 11.4 covers every integer p >= 3 and beta > 0. The cubic product inequality includes beta = beta_d; strictly positive Fisher-cost conclusions require beta > beta_d. The root Challenge retains the original complete-conclusions theorem with the five principal theorem groups and all-spin forward theorem, sharing CK, stationary-profile, dimension-subsequence, density and Fisher-majorant witnesses. The same file separately retains the original Proposition 5.7 statement for every CK solution, every late sequence and every raw translated cluster.",
+  "authors": [
+    "P. M. Aronow",
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/pmaronow/aging-palomar",
+  "commit": "d3f09f56462be6f73eb20733cb7963410409fa06",
+  "project_path": null,
+  "declarations": [
+    "SphericalAging.PalomarCompleteTheorems.exists_complete_conclusions",
+    "SphericalAging.PalomarStationarityCertificate.proposition5_7"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.AP"
+    ],
+    "msc2020": [
+      "60H10",
+      "82D30",
+      "60G15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-12T07:32:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d3f09f56462be6f73eb20733cb7963410409fa06",
+        "fork_repository": "PalomarArchive/pmaronow--aging-palomar--4b3b27b78e14",
+        "source_repository": "pmaronow/aging-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d6b0bd1effd0812b02ecc77a6809d103b1869b0441cf85ee17623a377e598d49"
+}

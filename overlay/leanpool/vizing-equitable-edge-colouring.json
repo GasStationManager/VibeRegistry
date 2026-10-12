@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.Vizing",
   "declarations": [
     "LeanPool.Vizing.exists_equitable_edge_colouring",
@@ -51,5 +51,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Vizing.lean",
-  "statement_hash": "sha256:d0f5d72e5a51eb2db2826d1dd31c5985e23fbbc8d971db0b43da8fe178fe39dd"
+  "statement_hash": "sha256:708e2670f34d1c811e8cef6b9c00579b853494790744450bbd7524b2461bf728"
 }

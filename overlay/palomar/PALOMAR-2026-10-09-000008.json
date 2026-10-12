@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-09-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-09-000008",
+  "version": 1,
+  "title": "Finite Chains of Two-Complexes and Acyclic Covers",
+  "abstract": "Whitehead's asphericity problem would have a negative answer if a non-aspherical two-complex began an infinite chain whose inclusions induce zero maps on second homotopy groups. This Lean formalization proves the article's main finite-length characterization: a connected two-complex K begins such chains of every finite length if and only if K has a connected acyclic regular cover. It also formalizes the finite acyclic enhancement.",
+  "authors": [
+    "Laurent Bartholdi",
+    "Roman Mikhailov"
+  ],
+  "repository": "https://github.com/laurentbartholdi/whitehead",
+  "commit": "e0683c947a3120af725ac7a29fc95a059798b64e",
+  "project_path": null,
+  "declarations": [
+    "Whitehead.TheoremA"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GT",
+      "math.GR"
+    ],
+    "msc2020": [
+      "55P15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-09T06:49:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e0683c947a3120af725ac7a29fc95a059798b64e",
+        "fork_repository": "PalomarArchive/laurentbartholdi--whitehead--359fad44528b",
+        "source_repository": "laurentbartholdi/whitehead"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4d7f556cb6d5cb1e37b9414e543619ea667ade333ec8bde385ab689e97337484"
+}

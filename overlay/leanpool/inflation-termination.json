@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/williamjblair/inflation-termination",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.InflationTermination",
   "declarations": [
     "TriangleInflation.Graph.classification_NW",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/InflationTermination.lean",
-  "statement_hash": "sha256:42d0123e39c557cbed15a8508ef6448a9f3cd5c0406a576acd0820c4081bc9d6"
+  "statement_hash": "sha256:d566020393b2c7581444a391544191a7b8f620a7a58143354cb73320a4892131"
 }

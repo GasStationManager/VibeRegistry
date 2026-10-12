@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/akopjan/nrr-aak",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.NandakumarRamanaRao",
   "declarations": [
     "HumanVerification.equalAreaEqualPerimeterPartition"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/NandakumarRamanaRao.lean",
-  "statement_hash": "sha256:dc55ce642b8b4e00751d29e049072f014dc9c4ff5fb7be2d1f7eea77e60980dd"
+  "statement_hash": "sha256:fc18c7b583104d36c98ae86c4ef0c506f0df3fa2e9c46627cd9288e9fc26d14a"
 }

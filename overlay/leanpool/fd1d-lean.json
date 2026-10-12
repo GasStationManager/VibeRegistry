@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/ykanoria/fd1d-lean",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.FullyDynamicMatching",
   "declarations": [
     "FD1D.V5.Palomar.optimalDynamicMatchingUpperBound"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FullyDynamicMatching.lean",
-  "statement_hash": "sha256:7453d9d90360d3d332c623cf9fa6b4d4feb86c35a44640497421f46d163508f8"
+  "statement_hash": "sha256:2209267c85b30de2f225506d87f5f2e6daf221cd0584c2a27755c3157ca9cec8"
 }

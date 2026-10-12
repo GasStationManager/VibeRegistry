@@ -1,0 +1,48 @@
+{
+  "source": "leanpool",
+  "upstream_id": "markoff-modp",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/MarkoffModP",
+  "version": 1,
+  "title": "Markoff mod p",
+  "abstract": "Lean 4 formalization of strong approximation for the Markoff surface modulo sufficiently large primes. The primary source is Bourgain-Gamburd-Sarnak.",
+  "authors": [
+    "Yuma Mizuno",
+    "Guanghao Li"
+  ],
+  "repository": "https://github.com/yuma-mizuno/markoff-modp",
+  "commit": "",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+  "entry_module": "LeanPool.MarkoffModP",
+  "declarations": [
+    "BGS.Markoff.reduction_surjective_of_explicitBound"
+  ],
+  "informal": {
+    "BGS.Markoff.reduction_surjective_of_explicitBound": "For primes exceeding the explicit bound, reduction of integral Markoff points to the Markoff surface modulo p is surjective as specified by the theorem."
+  },
+  "classification": {
+    "msc2020": [
+      "11D25"
+    ],
+    "tags": [
+      "markoff-equation",
+      "strong-approximation",
+      "finite-fields"
+    ],
+    "branch": "number theory"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/MarkoffModP.lean",
+  "statement_hash": "sha256:68dab4ec8be1b384d769b709e707c9f820db92951cf2e725cce703c2697320ca"
+}

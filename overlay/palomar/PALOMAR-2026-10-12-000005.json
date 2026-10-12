@@ -1,0 +1,66 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-12-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-12-000005",
+  "version": 1,
+  "title": "Erdős 1180: representing residues as sums of modular inverses with small denominators",
+  "abstract": "A complete Lean 4 proof of Erdős problem 1180 and its quantitative variants on representing every residue modulo a prime p as a sum of at most C(ε) modular inverses n⁻¹ (mod p) with 1 ≤ n ≤ p^ε and gcd(n, p) = 1. Formalizing Glibichuk's 8-fold bilinear covering theorem via additive energy and Cauchy–Davenport together with an inductive asymmetric two-block prime-reciprocal construction, this development proves the affirmative existence theorem for all ε > 0 and all primes p, the discrete large-prime bound C_asymp(ε) ≤ 8(⌊1/ε⌋ + 1)² = (8 + o(1))ε⁻² (and ≤ 32ε⁻² uniformly on (0, 1]), the asymmetric staircase bounds C_asymp(ε) ≤ 8k(k + 1) whenever (2k + 1)ε > 2 and C_asymp(ε) ≤ 8k whenever (2k - 1)ε > k (giving C_asymp(ε) ≤ 16 for ε > 2/3 and ≤ 24 for ε > 3/5), and Shparlinski's O(ε⁻³) bound. It also proves the large-prime pigeonhole lower bound 1/ε ≤ ⌈1/ε⌉ ≤ C_asymp(ε), the small-prime exponential lower bound 2^(1/ε) ≤ 4 C(ε), the strict separation C_asymp(1/n) < C(1/n) for all n ≥ 15, and the disproof of the unthresholded all-primes optimality statement.",
+  "authors": [
+    "Linmiao Xu"
+  ],
+  "repository": "https://github.com/linrock/math-proofs",
+  "commit": "ba96303b34a95ac458958c1eb0bbdee54733484a",
+  "project_path": "erdos-1180",
+  "declarations": [
+    "Erdos1180.Palomar.erdos_1180",
+    "Erdos1180.Palomar.erdos_1180_variants_glibichuk",
+    "Erdos1180.Palomar.erdos_1180_variants_shparlinski",
+    "Erdos1180.Palomar.erdos_1180_variants_lower_bound",
+    "Erdos1180.Palomar.erdos_1180_variants_lower_bound_large_primes",
+    "Erdos1180.Palomar.not_erdos_1180_variants_optimal",
+    "Erdos1180.Palomar.two_rpow_inv_le_four_mul_C",
+    "Erdos1180.Palomar.inv_le_CAsymptotic",
+    "Erdos1180.Palomar.natCeil_inv_le_CAsymptotic",
+    "Erdos1180.Palomar.CAsymptotic_le_thirty_two_mul_inv_sq",
+    "Erdos1180.Palomar.CAsymptotic_le_eight_mul_sq_of_one_lt_mul",
+    "Erdos1180.Palomar.CAsymptotic_le_eight_mul_succ_of_two_lt_mul",
+    "Erdos1180.Palomar.CAsymptotic_le_eight_mul_of_lt_mul",
+    "Erdos1180.Palomar.CAsymptotic_le_sixteen_of_two_thirds_lt",
+    "Erdos1180.Palomar.CAsymptotic_le_eight_mul_floor_inv_add_one_sq",
+    "Erdos1180.Palomar.eventually_CAsymptotic_le_eight_add_mul_inv_sq",
+    "Erdos1180.Palomar.CAsymptotic_inv_nat_lt_C_inv_nat"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B13",
+      "11T23"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-12T09:10:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ba96303b34a95ac458958c1eb0bbdee54733484a",
+        "fork_repository": "PalomarArchive/linrock--math-proofs--14cf37780a40",
+        "source_repository": "linrock/math-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7e11541aca2d73cae568990b33271fd8df4580f3546cf93df8a01fc42937410c"
+}

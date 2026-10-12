@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/langlerangle/nashembedding",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.NashEmbedding",
   "declarations": [
     "NashEmbeddingTheorem.nash_isometric_embedding"
@@ -43,5 +43,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/NashEmbedding.lean",
-  "statement_hash": "sha256:534525d0377ea3f57d01e0276dd9c65b71179582ff19f1d8efef64f9a5232f8f"
+  "statement_hash": "sha256:75c901c3c19514f1f1e51c6b90ed3225a49ce9e94ab3f6f08d58455e051e3880"
 }

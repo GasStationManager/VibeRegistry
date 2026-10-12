@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/zakharov2k/egz-formal-proof",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.ErdosGinzburgZiv",
   "declarations": [
     "EGZ.theorem_1_2",
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ErdosGinzburgZiv.lean",
-  "statement_hash": "sha256:baf83c25448d254d894460abe6b39b088c9e552b054199eebc5833a18f47cb1c"
+  "statement_hash": "sha256:955b6260a34a4439948b5652766ab1b202af62ba9a4126adfb2acceebaae1775"
 }

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/tadamcz/koethe",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.Koethe",
   "declarations": [
     "Koethe.KotherConjecture.variants.general_matrix.disproof",
@@ -56,5 +56,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Koethe.lean",
-  "statement_hash": "sha256:2856624ddb179c84ba0cc50824f641d2e84ac8e431a13d01510af46f9feb1b99"
+  "statement_hash": "sha256:b9eb330aec20bc3636e3be80db6c70af922b400917b0609cef6c3fa3573e1518"
 }

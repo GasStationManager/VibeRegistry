@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-06-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-06-000008",
+  "version": 1,
+  "title": "A Hausdorff–packing criterion for self-pinned distance sets",
+  "abstract": "For a Borel subset E of the Euclidean plane with Hausdorff dimension d in (1, 5/4], a strict upper bound on its packing dimension by the explicit piecewise curve B_H(d) ensures a point y in E whose pinned distance set has positive one-dimensional Lebesgue measure. The three branches are 2d-1, 1+r_2(d-1), and 1/(3-2d), with the transitions and algebraic root defined independently in Challenge.lean. This is a sufficient criterion with an additional packing-dimension hypothesis, not a resolution of the general planar Falconer conjecture.",
+  "authors": [
+    "Yongxi Lin"
+  ],
+  "repository": "https://github.com/CoolRmal/falconer-packing",
+  "commit": "70140ccedfb6de71342299523a21b1550df69ab9",
+  "project_path": null,
+  "declarations": [
+    "FalconerPacking.exists_pin_volume_pinnedDistances_pos"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "28A80",
+      "42B10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-06T08:09:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "70140ccedfb6de71342299523a21b1550df69ab9",
+        "fork_repository": "PalomarArchive/CoolRmal--falconer-packing--054762f09ea9",
+        "source_repository": "CoolRmal/falconer-packing"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e1ffb93a19e1f643fa383d74e2a003554829079bb7062ad8652196a72f7947f3"
+}

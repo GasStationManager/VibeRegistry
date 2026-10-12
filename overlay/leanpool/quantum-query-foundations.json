@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/troyjlee/quantum-query-complexity",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.QuantumQuery",
   "declarations": [
     "QuantumQueryComplexity.boundedErrorQQuery_characterized_by_advPM",
@@ -57,5 +57,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/QuantumQuery.lean",
-  "statement_hash": "sha256:f047cb920b54cbfcd296443562c94246eccdceb818c3e6e3ed503c71fea2c2c1"
+  "statement_hash": "sha256:de1e909badbb8e5811fe3fcb6c434ee55c1653e949a4dc61c45c0a26b513ad6f"
 }

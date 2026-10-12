@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Jue-Xu/Lean4LPD",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.LowWeightPauliDynamics",
   "declarations": [
     "Lean4LPD.PauliString.pauliNorm_layerStep_error_le_model_of_source_regime",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/LowWeightPauliDynamics.lean",
-  "statement_hash": "sha256:521ab176c7aeb4f91097f911fcdb581e27b019926ef8fed2020344ed9b77d311"
+  "statement_hash": "sha256:b7ef3509c6fce02a9ab2befc9168aa8a69e978cc1e451d99cf235663e92f1fc8"
 }

@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-09-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-09-000010",
+  "version": 1,
+  "title": "MaxSNP-completeness and APX-completeness of MAX-3-SAT and 3-OCCURRENCE MAX-3-SAT (the PCP theorem and hardness of approximation) in Lean 4",
+  "abstract": "A Lean 4 proof of the PCP theorem and of its consequences for approximation, for an explicit single-tape Turing machine model. The compared theorems are: the PCP theorem in gap form, that for a fixed fraction num/den > 0 every NP language reduces in polynomial time to 3-SAT so that members give satisfiable formulas and non-members give formulas of which every assignment leaves at least that fraction of the clauses unsatisfied (Complexity.pcp_gap); the PCP theorem in verifier form, NP = PCP(O(log n), O(1)) (Complexity.pcp_theorem); that the problems of the syntactic class MaxSNP0 are in NPO (Complexity.npo_maxSNP0); that MaxSNP-hard problems have no polynomial-time approximation scheme unless P = NP (Complexity.maxSNPHard_not_hasPTAS), even when a separate algorithm is allowed for each precision (Complexity.maxSNPHard_no_ptas); that MAX-3-SAT and 3-OCCURRENCE MAX-3-SAT are MaxSNP-complete (Complexity.max3SAT_maxSNPComplete, Complexity.max3SAT3_maxSNPComplete); and that both are APX-complete (Complexity.max3SAT_apxComplete, Complexity.max3SAT3_apxComplete). The statement, Challenge.lean, imports only Lean core and defines everything it uses: the machine model, P, NP and polynomial-time functions; probabilistically checkable proofs and gap reductions; optimization problems, approximation algorithms and schemes; NPO; L-reductions, the syntactic class MaxSNP0 of Papadimitriou and Yannakakis (structures of fixed input and solution signatures on a finite universe, and a well-formed quantifier-free formula) and the class MaxSNP of NPO problems L-reducible to it; APX and PTAS-reductions in the sense of Crescenzi and Trevisan; and the two problems.\nThe gap form of the PCP theorem is proved by Dinur's gap amplification: the 3-CNF gap map, its soundness and its implementation as a polynomial-time multi-stack Turing machine are taken from the Lean formalization of the Unique Games theorem in the OpenAI mathematics repository (194 files, adapted to the Lean module system and to Lean v4.35.0-rc2), and composed with the Cook-Levin reduction of the Palomar entry PALOMAR-2026-10-02-000013 (whose library is included). A simulation theorem carries polynomial time from Mathlib's multi-stack machines to the single-tape model. The verifier form samples clauses of the gap formula with O(log n) random bits. MaxSNP-hard problems have no approximation scheme because MAX-3-SAT L-reduces to them and an approximation scheme for MAX-3-SAT would decide the gap. MAX-3-SAT is put in MaxSNP0 by an explicit quantifier-free formula, and every MaxSNP0 problem L-reduces to it by the Papadimitriou-Yannakakis clause construction (one clause per falsifying pattern of atoms, split into 3-clauses with fresh variables, with an averaging bound for the constant; assignments are mapped back to structures of the solution signature). The MaxSNP0 problems are in NPO by an explicit polynomial-time parser and feasibility check, and a size bound for structures of a fixed signature. 3-OCCURRENCE MAX-3-SAT is reached in two L-reductions: copies of each variable linked along an explicit constant-degree expander (from the same OpenAI development), and then a torus gadget of implications. APX-hardness under PTAS-reductions needs a witness-recovering PCP theorem, which is proved here: an explicit deterministic decoder, shown polynomial-time, turns every assignment of the gap formula that satisfies more than the fraction 1 - num/den of its clauses into an assignment of the original formula and then into an NP certificate. With it every APX problem reduces to MAX-3-SAT by a threshold construction. Membership in APX uses a 2-approximation. The proof uses only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/Max3SAT-MaxSNP-APX-Lean4",
+  "commit": "10079b2a14bd0df47d2a24364133f6008b9c207f",
+  "project_path": null,
+  "declarations": [
+    "Complexity.pcp_gap",
+    "Complexity.pcp_theorem",
+    "Complexity.npo_maxSNP0",
+    "Complexity.maxSNPHard_no_ptas",
+    "Complexity.maxSNPHard_not_hasPTAS",
+    "Complexity.max3SAT_maxSNPComplete",
+    "Complexity.max3SAT3_maxSNPComplete",
+    "Complexity.max3SAT_apxComplete",
+    "Complexity.max3SAT3_apxComplete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "68Q17",
+      "68Q25",
+      "68W25",
+      "68Q15",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-09T11:47:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "10079b2a14bd0df47d2a24364133f6008b9c207f",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--Max3SAT-MaxSNP-APX-Lean4--da68bef5965e",
+        "source_repository": "RBarish-UTokyo/Max3SAT-MaxSNP-APX-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:606a89cc184bee7bd7b5f611c8000331995cd5076fe79ff136f4ebd7f0a95a16"
+}

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/dtq1997/zeta2-zeta3-linear-independence",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.Zeta32",
   "declarations": [
     "Zeta32.one_zeta_two_zeta_three_linearIndependent",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Zeta32.lean",
-  "statement_hash": "sha256:e27fd460744f3f75a3507426a7d585a9cb1d9a393f58840546c5c6fd0bd87d37"
+  "statement_hash": "sha256:c11115dfd94ba701e62880f26ab9b6d4a60864c7134bf07b9ff04e518c94892c"
 }

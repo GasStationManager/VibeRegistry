@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "formalizing-gmt",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/FormalizingGMT",
+  "version": 1,
+  "title": "Formalizing geometric measure theory",
+  "abstract": "A development of foundations and central results in geometric measure theory, including Hausdorff content and density bounds, weak convergence and compactness for Radon measures, tangent-measure machinery, Mattila's Lemmas 14.5--14.7, and Marstrand's integrality theorem for positive finite densities.",
+  "authors": [
+    "Theodore Meek",
+    "Ignacio Tejeda",
+    "Annie Cao",
+    "Nathan Pao"
+  ],
+  "repository": "https://github.com/uw-math-ai/FormalizingGMT",
+  "commit": "",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+  "entry_module": "LeanPool.FormalizingGMT",
+  "declarations": [
+    "mattila_14_10",
+    "mattila_14_11",
+    "MeasureTheory.Measure.weaklyConverges_iff_compactOpenBounds",
+    "MeasureTheory.exists_vaguelyConvergent_subseq_of_compact_bounded"
+  ],
+  "informal": {
+    "mattila_14_10": "If a Radon measure on Euclidean n-space has positive finite s-dimensional density on a set of positive measure, then s is a natural number.",
+    "mattila_14_11": "Every n-uniform measure on Euclidean n-space is a constant multiple of Lebesgue measure.",
+    "MeasureTheory.Measure.weaklyConverges_iff_compactOpenBounds": "Vague convergence of Radon measures on Euclidean space is equivalent to the Portmanteau compact-set upper and open-set lower bounds.",
+    "MeasureTheory.exists_vaguelyConvergent_subseq_of_compact_bounded": "A sequence of Radon measures on Euclidean space that is uniformly bounded on every compact set has a vaguely convergent subsequence."
+  },
+  "classification": {
+    "msc2020": [
+      "28A75",
+      "28A78",
+      "49Q15"
+    ],
+    "tags": [
+      "geometric-measure-theory",
+      "Hausdorff-measure",
+      "tangent-measures",
+      "weak-convergence"
+    ],
+    "branch": "measure theory and geometric analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/FormalizingGMT.lean",
+  "statement_hash": "sha256:48d70ede53b2ea47b5a681054d1c0e9396f28238a6f5a83992ef16dad465c5ef"
+}

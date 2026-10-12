@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-06-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-06-000009",
+  "version": 1,
+  "title": "A Lean 4 formalization of Catalan's conjecture (Mihăilescu's theorem)",
+  "abstract": "A complete Lean 4 formalization of Catalan's conjecture, proved by Preda Mihăilescu: 8 and 9 are the only consecutive positive proper perfect powers. The formal proof follows the cyclotomic proof in Yuri Bilu's expositions. Cassels' relations, Stickelberger annihilation, and height and counting estimates exclude the case in which one exponent is congruent to 1 modulo the other. Thaine's theorem on circular units, together with a Runge-type approximation argument, settles the remaining case. The class-field-theoretic input comes from a fixed, vendored subset of the ClassFieldTheory library. The registered results are four theorems: Catalan's conjecture over the natural numbers, in the form stated in Google DeepMind's Formal Conjectures; the same equation for integer bases greater than one; the classification of solutions of x^p − y^q = 1 with nonzero integer bases of either sign; and Mihăilescu's theorem that x^p = y^q + 1 has no solution in nonzero integers when p and q are odd primes. All four depend only on the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Yao Xu"
+  ],
+  "repository": "https://github.com/cadamcat/catalan-lean4",
+  "commit": "597469e8eba93909efc94892e6f7df5ea4951fe3",
+  "project_path": null,
+  "declarations": [
+    "PalomarCatalan.catalans_conjecture",
+    "PalomarCatalan.catalan_int",
+    "PalomarCatalan.catalan_int_signed",
+    "PalomarCatalan.mihailescu_odd_primes"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "11D61",
+      "11R18",
+      "11R29",
+      "11R37",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-06T08:38:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "597469e8eba93909efc94892e6f7df5ea4951fe3",
+        "fork_repository": "PalomarArchive/cadamcat--catalan-lean4--fdc727faf3c1",
+        "source_repository": "cadamcat/catalan-lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3385bdc349c99678ae0c341f7b53172203b43daac7864abaea18c678d5472f28"
+}

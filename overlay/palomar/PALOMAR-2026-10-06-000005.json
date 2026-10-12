@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-06-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-06-000005",
+  "version": 1,
+  "title": "Non-Cut Points of Hausdorff Continua",
+  "abstract": "Every nontrivial compact connected subset of a Hausdorff space contains two distinct points whose individual removals leave connected sets. A compact connected subset containing all non-cut points of a compact connected set equals that set.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/non-cut-points-lean",
+  "commit": "b1d0ed0338d098a4c84622828390cc84027df8dc",
+  "project_path": null,
+  "declarations": [
+    "NonCutPoints.exists_two_noncut_points",
+    "NonCutPoints.eq_of_contains_noncut_points"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54D05",
+      "54D30",
+      "54F15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-06T02:45:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b1d0ed0338d098a4c84622828390cc84027df8dc",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--non-cut-points-lean--51757670d602",
+        "source_repository": "Arthur742Ramos/non-cut-points-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5e8ed05152eac7884118b6e0d513a9679c3a9cf2e3982c3404db5e867aa8387d"
+}

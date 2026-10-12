@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/teorth/sendov",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.Sendov",
   "declarations": [
     "Sendov.sendov",
@@ -64,5 +64,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Sendov.lean",
-  "statement_hash": "sha256:ce897886ba9594263709079a45ea728d526c2b3d4f8a85b078ac0c75182211ff"
+  "statement_hash": "sha256:56b132ba841ff718f1ff6666f6f6c1a091f8642e8e38dabcb2d664aab7bdf3b5"
 }

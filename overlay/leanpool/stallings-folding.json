@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Arthur742Ramos/stallings-folding",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.StallingsFolding",
   "declarations": [
     "Stallings.folded_recognizer_exists",
@@ -50,5 +50,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/StallingsFolding.lean",
-  "statement_hash": "sha256:38985a2ad8cf634cd100e72169deee97cad6c6263b3576d0389053b9573a932b"
+  "statement_hash": "sha256:cf64eed9e24bc001282773aac91cdccb14ca39293bec393ecb9b4b93658dabb0"
 }

@@ -13,7 +13,7 @@
   ],
   "repository": "https://github.com/plby/HopfProblem",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.HopfProblem",
   "declarations": [
     "Mathoverflow1973.mathoverflow_1973",
@@ -53,5 +53,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/HopfProblem.lean",
-  "statement_hash": "sha256:715c808e38667fb472c375f4a438039cdb9dac90ddc7bdd0046fdb61c2f5c70d"
+  "statement_hash": "sha256:8ed1c2296747ada2c6443a16a170d7195dbaec0f7ac1d6ef68bd7aba6a431794"
 }

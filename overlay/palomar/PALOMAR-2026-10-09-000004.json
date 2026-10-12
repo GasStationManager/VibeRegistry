@@ -1,0 +1,47 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-09-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-09-000004",
+  "version": 2,
+  "title": "Explicit uniformly bounded bases of homogeneous holomorphic polynomials in every dimension",
+  "abstract": "We construct uniformly bounded orthonormal bases for homogeneous holomorphic polynomials on complex unit spheres. Fix d >= 2 and N >= 0, and put m = d-1 and L = N+d-1. For each multi-index alpha = (alpha_1,...,alpha_d) of nonnegative integers with sum N, define s_b(alpha) = b + alpha_1 + ... + alpha_b, 1 <= b <= m, and the normalized monomial M_alpha(z) = sqrt((N+d-1)! / ((d-1)! alpha_1! ... alpha_d!)) z_1^alpha_1 ... z_d^alpha_d. Let F be the normalized Fourier matrix, with entries F_(t,s) = L^(-1/2) exp(2 pi i t s/L), for 1 <= t,s <= L. For each increasing m-element subset T = {t_1,...,t_m} of {1,...,L}, define P_T(z) = sum_(|alpha|=N) det[F_(t_a,s_b(alpha))] exp(2 pi i sqrt(2) sum_r alpha_r^2) M_alpha(z), where the determinant is over 1 <= a,b <= m. These polynomials form an orthonormal basis with respect to surface measure of total mass one on the complex unit sphere. Their absolute values on the closed unit ball are bounded by a constant depending only on d, independently of N and T. The construction and proof are formalized in Lean.",
+  "authors": [
+    "Mark Lewko"
+  ],
+  "repository": "https://github.com/mrklwk/uniformly-bounded-holomorphic-bases",
+  "commit": "a91b7a0f08c5771f1c66435eac4a456a918ff384",
+  "project_path": null,
+  "declarations": [
+    "BourgainStatement.manuscript_main"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV",
+      "math.FA"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-10-11T09:52:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a91b7a0f08c5771f1c66435eac4a456a918ff384",
+        "fork_repository": "PalomarArchive/mrklwk--uniformly-bounded-holomorphic-bases--6ee7b12e3633",
+        "source_repository": "mrklwk/uniformly-bounded-holomorphic-bases"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9381dc4a84d2b08fd0f4111b7fdb631d08e7cec58bb3d64f2cdb4e1b805dfef9"
+}

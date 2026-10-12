@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/scottnarmstrong/bkarforestformula",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.BKARForestFormula",
   "declarations": [
     "BKAR.bkar_formula_forestIndex_cube_contributions"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/BKARForestFormula.lean",
-  "statement_hash": "sha256:7fc9556b277cd36ce60d1379221a6c7834b3b423cdf15d7489f3c300acf139d8"
+  "statement_hash": "sha256:8df59f27f3b096a0557fe6e7e6238125a3057dc7d4ecc83857bc6c97fcc7c653"
 }

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/stalex444/salem-theorem",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.SalemTheorem",
   "declarations": [
     "SalemTheorem.salem_theorem",
@@ -48,5 +48,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/SalemTheorem.lean",
-  "statement_hash": "sha256:d492ea611adf4af8d256b59e77e8aaad63aceb23b04e5beede58781be61b5432"
+  "statement_hash": "sha256:8f5d1ab4c502d41e5174692e990c0ee375cf2c8171447878cada14437b44759d"
 }

@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/boonsuan/4ap",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.FourAP",
   "declarations": [
     "FourAP.exists_fourAPFree_positive_permutation",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/FourAP.lean",
-  "statement_hash": "sha256:d3e1595c0e6b378dfd599f0fbb5651612260838fb35bcdbcc096dde35795b182"
+  "statement_hash": "sha256:c9e56b7ef3a010bcc76740fb556ad4c1361ab66e101a7694edd8267092514975"
 }

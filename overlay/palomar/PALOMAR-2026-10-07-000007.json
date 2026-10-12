@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-07-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-07-000007",
+  "version": 1,
+  "title": "LeanMMBound: the matrix multiplication exponent is below 2.3710449",
+  "abstract": "The matrix multiplication exponent ω is the least exponent such that n×n matrices can be multiplied in n^(ω+o(1)) operations. This repository proves in Lean 4 / Mathlib that ω < 2.3710449 over every commutative ring, improving the previous bound ω < 2.371177 (Dupont et al. 2026). ω is defined via the exact tensor rank of n×n matrix multiplication. The new ingredient is shared extraction across recursion levels of the asymmetric laser method. The formalization covers the full argument, from the Coppersmith–Winograd degeneration to an exact rational certificate checked in the Lean kernel. The construction and proof were produced largely by AI systems under the authors' direction.",
+  "authors": [
+    "Oliver Proudfoot",
+    "Andrew Perrault"
+  ],
+  "repository": "https://github.com/olliepro/LeanMMBound",
+  "commit": "93492a4dd1ee90fd98cd7b339af77bb8bbc8be55",
+  "project_path": null,
+  "declarations": [
+    "MatrixBounds.Numeric.SuppliedCertifiedPipeline.exponent_lt"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC",
+      "math.CO"
+    ],
+    "msc2020": [
+      "68Q17",
+      "68Q25",
+      "15A69",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-07T13:29:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "93492a4dd1ee90fd98cd7b339af77bb8bbc8be55",
+        "fork_repository": "PalomarArchive/olliepro--LeanMMBound--bc7df2f4d6b7",
+        "source_repository": "olliepro/LeanMMBound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:635775d3d69c84e879ccd57225476c22982dc3952a7b7aae6e3630ef8345bcf8"
+}

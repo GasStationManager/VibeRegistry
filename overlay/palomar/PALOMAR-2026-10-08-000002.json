@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-08-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-08-000002",
+  "version": 1,
+  "title": "A strongly tempered Meyer space of countably infinite Hamel dimension",
+  "abstract": "There exists a locally finite carrier Λ in the real line whose whole complex strongly tempered Meyer space has Hamel dimension ℵ₀. Both a tempered distribution and its distributional Fourier transform have local atomic formulas on Λ, with coefficient families whose absolute values are summable after division by some polynomial weight (1 + |x|)^N. The same carrier supports the entire space; finite-dimensional exponent layers prove the rank upper bound and independent original parity modes prove the lower bound. The radius schedule is selected classically. This is an existence theorem for one carrier, not an effective construction or a classification of all carriers.",
+  "authors": [
+    "Jamie Martin"
+  ],
+  "repository": "https://github.com/balancedscorpion/countably-infinite-dimension-strong-meyer-spaces",
+  "commit": "4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c",
+  "project_path": null,
+  "declarations": [
+    "CountablyInfiniteStrongCrystallineMeasures.strongCardinalClaim"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.FA"
+    ],
+    "msc2020": [
+      "42A38",
+      "46F12",
+      "52C23"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-08T03:47:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4d3163a0ce1dd93fa48b7d4677fe78db15c0af9c",
+        "fork_repository": "PalomarArchive/balancedscorpion--countably-infinite-dimension-strong-meyer-spaces--8319e9fa53b3",
+        "source_repository": "balancedscorpion/countably-infinite-dimension-strong-meyer-spaces"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f91373bb658f1ed25794b0a3ea1926a776e2a431cd75072182fbf6bf57998171"
+}

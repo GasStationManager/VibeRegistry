@@ -1,0 +1,51 @@
+{
+  "source": "leanpool",
+  "upstream_id": "conway-soifer-three",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/ConwaySoifer",
+  "version": 1,
+  "title": "Conway–Soifer covering conjecture for n = 3",
+  "abstract": "Proves that ten congruent closed equilateral triangles covering a filled equilateral triangle of side three have common side at least one, with arbitrary positions, rotations and overlaps. Consequently ten unit triangles cannot cover a triangle of side 3 + ε for ε > 0. Includes reusable finite halfspace and ray-endpoint geometry, orientation-independent support and area bounds, and verified Bernstein polynomial interval checkers. Four derived contact cases and 100 kernel-checked certificates close the proof without a certificate hypothesis.",
+  "authors": [
+    "Vladislav Kuznetsov"
+  ],
+  "repository": "https://github.com/AnanasClassic/conway-soifer-n3-lean",
+  "commit": "",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+  "entry_module": "LeanPool.ConwaySoifer",
+  "declarations": [
+    "ConwaySoifer.ten_triangle_cover_lower_bound",
+    "ConwaySoifer.no_ten_unit_triangle_cover"
+  ],
+  "informal": {
+    "ConwaySoifer.ten_triangle_cover_lower_bound": "Any ten congruent closed equilateral triangles covering the filled equilateral target of side three have common side at least one. Positions, rotations and overlaps are unrestricted.",
+    "ConwaySoifer.no_ten_unit_triangle_cover": "For every ε > 0, ten closed equilateral triangles of side one cannot cover the filled equilateral target of side 3 + ε, regardless of position or rotation."
+  },
+  "classification": {
+    "msc2020": [
+      "52C15",
+      "51M16"
+    ],
+    "tags": [
+      "discrete-geometry",
+      "triangle-covering",
+      "conway-soifer",
+      "bernstein-polynomials"
+    ],
+    "branch": "discrete geometry"
+  },
+  "license": "MIT",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/ConwaySoifer.lean",
+  "statement_hash": "sha256:1326e404428a23ea2f2bfbe01b88e1eb2da0d5839c48aaea827f147fe605c068"
+}

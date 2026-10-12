@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-06-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-06-000003",
+  "version": 1,
+  "title": "S(6) ≤ 1801 if R₄(3) ≤ 61: a centred Schur bound and the structure at the frontier",
+  "abstract": "A Lean 4 formalization, with Mathlib, of an upper bound for the Schur numbers in terms of the triangle Ramsey numbers, and of the structure of a colouring at the limit of that bound. If every colouring with k colours of the pairs of r points has a monochromatic triangle (R_k(3) ≤ r), then the interval [1, 2((k + 1)⌊(r − 1)/2⌋ + 1)] is not covered by k + 1 sumfree sets, so S(k + 1) ≤ 2(k + 1)⌊(r − 1)/2⌋ + 1. With R_2(3) ≤ 6 this gives S(3) ≤ 13, which is exact. Under the hypothesis R_4(3) ≤ 61, a computer-assisted claim of M. Tatarevic that this project does not prove, the pigeonhole step gives R_5(3) ≤ 302, and the bound then gives S(6) ≤ 1801; the hypothesis is an explicit argument (TriangleRamsey 4 61) of each theorem that uses it. The frontier theorems describe a Schur colouring of the largest interval that the bound allows. Let R_k(3) ≤ u + 1, (k + 1)u = 2t and m = (k + 2)t, and let c be a Schur colouring of [1, 2m + 1] with k + 2 colours. Then each colour occurs exactly t times in [1, m]; with q = c(m + 1), the neighbourhood of the centre m in the colour q is regular in every other colour; and c(m + 1 − d) = c(m + 1 + d) for every d in [1, m] with c(d) = q. For six colours under R_4(3) ≤ 61, a Schur colouring of [1, 1801] gives five sets of 60 points, each closed under x ↦ 1800 − x with no fixed point and with differences in at most four colours. These theorems do not exclude such a colouring and do not prove S(6) ≤ 1800. The arguments for the bound and for the frontier were first proposed by AI agents based on ChatGPT (OpenAI) in a project discussion. A Claude agent (Anthropic) audited the argument for the bound; the AI system Claude checked each step of the frontier argument, restated it with explicit hypotheses, and wrote all Lean proofs, under the direction of the author. The results have not been peer reviewed.",
+  "authors": [
+    "Adam McKenna"
+  ],
+  "repository": "https://github.com/mysticflounder/schur-centred-bound",
+  "commit": "6b1c69732d73428042efce8d563f67604320cad4",
+  "project_path": null,
+  "declarations": [
+    "ClassicalSchur.triangleRamsey_succ",
+    "ClassicalSchur.not_coveredBySumFree_Icc_of_triangleRamsey",
+    "ClassicalSchur.not_coveredBySumFree_Icc_fourteen_three",
+    "ClassicalSchur.not_coveredBySumFree_Icc_six_of_triangleRamsey_four_sixtyOne",
+    "ClassicalSchur.coveredBySumFree_of_schurColoring",
+    "ClassicalSchur.exists_schurColoring_of_coveredBySumFree",
+    "ClassicalSchur.card_filter_Icc_eq_of_frontier",
+    "ClassicalSchur.card_centralNbhd_of_frontier",
+    "ClassicalSchur.card_colorNbhd_centralNbhd_of_frontier",
+    "ClassicalSchur.color_eq_of_card_filter_eq",
+    "ClassicalSchur.color_reflect_of_frontier",
+    "ClassicalSchur.endpointNbhd_of_frontier",
+    "ClassicalSchur.even_of_frontier",
+    "ClassicalSchur.schur_six_frontier_structure"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05D10",
+      "11B75",
+      "05C55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-06T01:33:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6b1c69732d73428042efce8d563f67604320cad4",
+        "fork_repository": "PalomarArchive/mysticflounder--schur-centred-bound--746e036536c8",
+        "source_repository": "mysticflounder/schur-centred-bound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0fddacd736c0839635bceed87d9439d7ae05769658d2cbbd5108be0f4b53eafd"
+}

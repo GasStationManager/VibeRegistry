@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/sweeneyde/1mfld",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.OneManifold",
   "declarations": [
     "OneMfld.homeomorph_circle_or_unitInterval"
@@ -44,5 +44,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/OneManifold.lean",
-  "statement_hash": "sha256:8711cded5a6e502ce0eeb9139f2832f8e7c460fb98f8398e9939c369c87e99e9"
+  "statement_hash": "sha256:21cae2df6ee5e3047563f33d4832f35dfca7abe6a78cebb6735c43a38f1937d7"
 }

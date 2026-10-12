@@ -1,0 +1,68 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-06-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-06-000011",
+  "version": 1,
+  "title": "Structured orthogonal and unitary matrices: factorization, geometry and singularities",
+  "abstract": "Block-diagonal matrix factors interleaved with fixed coordinate permutations define low-parametric matrix families. This formalization proves orthogonal-factor sufficiency for two and three real layers, its complex unitary analogue, and explicit four-layer counterexamples over both fields. It establishes an exact two-factor cell-rank criterion and real and unitary cosine-sine exhaustion for the (p,2,p) shuffle family. Two-layer images with complete within-layer block sharing, arbitrary overlap and arbitrary fixed carriers have a smooth atlas in the inherited matrix topology, an exact tangent image, a smooth Frobenius projector, a whole-tangent-bundle Cayley retraction and smooth intrinsic gradient sections. Shared orthogonal block exponential curves have normal ambient acceleration and constant Frobenius speed under the no-off-diagonal-overlap condition. Three-layer (2,q,2) families have genuine topological singularities for every real q >= 3 and for odd unitary q >= 3. The full supported proof library is included; experimental special-unitary drafts and the explicitly listed remaining problems are not claimed.",
+  "authors": [
+    "Ali Aliev"
+  ],
+  "repository": "https://github.com/alialiev78/gs_Lean_formalization",
+  "commit": "1270ba6cf3050f53a4beb98f0d65ab7459d4494b",
+  "project_path": null,
+  "declarations": [
+    "GSPalomar.two_factor",
+    "GSPalomar.three_factor",
+    "GSPalomar.four_factor_counterexample",
+    "GSPalomar.unitary_two_factor",
+    "GSPalomar.unitary_three_factor",
+    "GSPalomar.unitary_four_factor_counterexample",
+    "GSPalomar.real_cs_exhaustion",
+    "GSPalomar.unitary_cs_exhaustion",
+    "GSPalomar.rank_one_cone_singularity",
+    "GSPalomar.real_three_factor_singularity",
+    "GSPalomar.real_singular_point",
+    "GSPalomar.unitary_singular_point",
+    "GSPalomar.orthogonal_shared_geometry",
+    "GSPalomar.unitary_shared_geometry",
+    "GSPalomar.two_factor_rank_criterion",
+    "GSPalomar.orthogonal_shared_block_geodesic"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "math.NA",
+      "math.RA"
+    ],
+    "msc2020": [
+      "15A23",
+      "15B10",
+      "53B21",
+      "57N35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-06T17:21:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1270ba6cf3050f53a4beb98f0d65ab7459d4494b",
+        "fork_repository": "PalomarArchive/alialiev78--gs_Lean_formalization--4e789898d047",
+        "source_repository": "alialiev78/gs_Lean_formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6b8695ef9f47f38112ac15aed8b9df5fd7b0f84d34f85827e501b64c3749ad11"
+}

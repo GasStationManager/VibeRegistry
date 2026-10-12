@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-10-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-10-000002",
+  "version": 1,
+  "title": "Nearly minimax variance estimation under rough random design",
+  "abstract": "Minimax root-mean-square bounds for estimating a constant conditional variance from independent random-design regression observations. The design density has fixed positive lower and upper bounds but no smoothness; covariate-dependent errors have uniformly bounded conditional fourth moments. For 1 < s < d/4, the proved bracket identifies the polynomial exponent 2(s+1)/(d+4) and the common explicit stretched-exponential factor, with a remaining logarithmic gap. It also proves the exponent corollary, the exact low-smoothness rate, and the parametric regime.",
+  "authors": [
+    "P. M. Aronow",
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/pmaronow/ccv-palomar",
+  "commit": "f3ef2ef312d44bbc693c1d5bea9cee654a29b598",
+  "project_path": null,
+  "declarations": [
+    "NearlyMinimax.Submission.paper_main",
+    "NearlyMinimax.Submission.exponent_limit",
+    "NearlyMinimax.Submission.polynomial_bounds",
+    "NearlyMinimax.Submission.low_smoothness",
+    "NearlyMinimax.Submission.parametric"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.ST",
+      "stat.TH"
+    ],
+    "msc2020": [
+      "62G05",
+      "62G08",
+      "62G20",
+      "62C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-10T04:35:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f3ef2ef312d44bbc693c1d5bea9cee654a29b598",
+        "fork_repository": "PalomarArchive/pmaronow--ccv-palomar--47775cd59e5a",
+        "source_repository": "pmaronow/ccv-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:afb583517a2ea889a9cf99934df61f1628270aa5997f48d47bf6e53b97dc7110"
+}

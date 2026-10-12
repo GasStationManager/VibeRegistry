@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/dcposch/kahn-kalai-lean",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.KahnKalai",
   "declarations": [
     "KahnKalai.covering_theorem",
@@ -47,5 +47,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/KahnKalai.lean",
-  "statement_hash": "sha256:23c790fa6f7391a7f8ca9363dfb2c1e8f2dc618fc63142824933d1b78ed133e2"
+  "statement_hash": "sha256:cbe3dc395d9359c08d03ea64498316f4c5ede48334b77f0f3200a58b37b4ab69"
 }

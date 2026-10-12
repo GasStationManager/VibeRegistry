@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-11-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000008",
+  "version": 1,
+  "title": "Integrability of Liouville theory: the Kupiainen–Rhodes–Vargas proof of the DOZZ formula",
+  "abstract": "A Lean 4 / Mathlib formalization of the theorem of A. Kupiainen, R. Rhodes and V. Vargas (Annals of Mathematics, 2020) that the three-point structure constants of Liouville conformal field theory on the Riemann sphere are given by the DOZZ formula of Dorn–Otto and Zamolodchikov–Zamolodchikov. The structure constants are defined probabilistically: for 0 < gamma < 2, cosmological constant mu > 0 and charges satisfying the extended Seiberg bounds, C_gamma(alpha_1, alpha_2, alpha_3) = 2 mu^(-s) gamma^(-1) Gamma(s) E[rho^(-s)], where rho integrates explicit power weights against the Gaussian multiplicative chaos of the Gaussian free field pinned on the equator. The formalization proves C_gamma = C_gamma^DOZZ, expressed through the Zamolodchikov function Upsilon_{gamma/2}, at every point of the domain where Gamma(s) is finite, and at every point including the poles for the unit-volume constant; and it proves that the probabilistic reflection coefficient, built from Brownian motion conditioned to stay negative and lateral chaos, equals R^DOZZ (Theorem 3.5). The theorems hold for every model of the field and chaos, and models are constructed. All prerequisites are proved: the construction, uniqueness and moment theory of Gaussian multiplicative chaos and the extended Seiberg bounds (David, Kupiainen, Rhodes and Vargas, 2016); the BPZ equations for degenerate four-point functions and the classification of their real single-valued solutions by the Gauss hypergeometric function (Kupiainen, Rhodes and Vargas, 2019); analytic continuation of correlation functions, tail estimates for multiplicative chaos, fusion asymptotics, the shift equations and the quotient argument. Errata found in the three papers, and the places where the Lean statements differ from them, are recorded in docs/ERRATA-AND-DEVIATIONS.md.",
+  "authors": [
+    "Scott Armstrong",
+    "Amélie Loher"
+  ],
+  "repository": "https://github.com/scottnarmstrong/DOZZ",
+  "commit": "5d770d1a6d69fac6dbb63060e8a89861bf3ee330",
+  "project_path": null,
+  "declarations": [
+    "DOZZChallenge.dozz_formula",
+    "DOZZChallenge.dozz_unitVolume",
+    "DOZZChallenge.dozz_existence",
+    "DOZZChallenge.IsUpsilon.unique",
+    "DOZZChallenge.isCircleAverage_law",
+    "DOZZChallenge.equatorGFF_GMC_unique_ae",
+    "DOZZChallenge.equatorGFF_GMC_nontrivial",
+    "DOZZChallenge.equatorGFF_GMC_law_transport",
+    "DOZZChallenge.equatorGFF_extendedSeiberg_rho_moment"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math-ph",
+      "math.MP",
+      "hep-th"
+    ],
+    "msc2020": [
+      "60G60",
+      "60G57",
+      "81T40",
+      "60J65",
+      "33C05",
+      "33B15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-11T07:06:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5d770d1a6d69fac6dbb63060e8a89861bf3ee330",
+        "fork_repository": "PalomarArchive/scottnarmstrong--DOZZ--ab6295909671",
+        "source_repository": "scottnarmstrong/DOZZ"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3801f7cb207d162176706f424d74274412320d3fdbf2929769ef5c9e13a7972e"
+}

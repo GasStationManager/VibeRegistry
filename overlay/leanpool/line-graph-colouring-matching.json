@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/jtraverso/lean-pool",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.GraphColouringMatching",
   "declarations": [
     "SimpleGraph.lineGraphColoringEquivMatchingDecomposition",
@@ -55,5 +55,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/GraphColouringMatching.lean",
-  "statement_hash": "sha256:20fe0bf87e8fcda37398fff1d15e61daaf0c0ca2d10effc4ad5c3b1d84e3c7f2"
+  "statement_hash": "sha256:6cff70ce5f4ca4b68302e07d28085abaea9306f7f7274b65f6c337a2ae8824bf"
 }

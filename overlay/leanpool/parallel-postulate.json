@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/Richiesutie/ParallelPostulate",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.ParallelPostulate",
   "declarations": [
     "ParallelPostulate.Hilbert.playfair_independent_continuous",
@@ -52,5 +52,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/ParallelPostulate.lean",
-  "statement_hash": "sha256:b6460bfd2dbf3e4b3f90453e1560e22bd1e0fcb89fd2355086a03b714fb9accd"
+  "statement_hash": "sha256:71865a2c5447a6f82ce0dfe36ce221cf7ded1028bf687843f4875f64b8dde3b5"
 }

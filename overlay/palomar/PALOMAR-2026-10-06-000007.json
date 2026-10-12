@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-06-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-06-000007",
+  "version": 1,
+  "title": "The Schur degree of block sums: L(4) = 16 and L(5) ≥ 49",
+  "abstract": "A Lean 4 formalization, with Mathlib, of the main results of the paper \"The Schur degree of block sums: L(4) = 16 and L(5) ≥ 49\" (paper/schur-degree-block-sums.md in this repository). Eliahou and Revuelta (Discrete Math. 344 (2021) 112332) defined a number L(n) through the Schur degree of the set of block sums of a sequence of positive integers, proved S(n−1) + 1 ≤ L(n) ≤ R_{n−1}(3) − 1 and S(n) ≤ n·L(n), and conjectured L(n) = S(n−1) + 1 (their Conjecture 5.6), that is, L(4) = 14 and L(5) = 45. The formalization proves L(4) = 16 (erL_four), 49 ≤ L(5) ≤ 65 (erL_five_bounds), the lift that turns a cover of the nonzero elements of ZMod m₁ × ZMod m₂ by q sets that are sumfree in the group into a sequence whose block sums have Schur degree at most q (lift_lemma), its corollary m₁m₂ ≤ L(n) (le_erL_of_groupPartition), and Theorem 4.1 and the upper bound of Proposition 5.3 of Eliahou and Revuelta, with the pigeonhole bound ramseyBound k in place of R_k(3) (le_sdeg_blockSums, erL_le). So Conjecture 5.6 is false for n = 4 and n = 5. The Lean upper bound for L(5) is 65, not the bound 61 of the paper: the formalization uses the pigeonhole bound R₄(3) ≤ 66 and not the bound R₄(3) ≤ 62 of Fettes, Kramer and Radziszowski. The finite checks use the Lean kernel (decide), with no native code. The sequence W, the lift, the proofs, the programs and the Lean formalization were produced with the AI system Claude (Anthropic; model Claude Opus 5.5) under the direction of the author.",
+  "authors": [
+    "Adam McKenna"
+  ],
+  "repository": "https://github.com/mysticflounder/schur-degree-block-sums",
+  "commit": "933000c135141347835300ca13b3a15ff050d03a",
+  "project_path": "lean",
+  "declarations": [
+    "ClassicalSchurClaims.erL_four",
+    "ClassicalSchurClaims.erL_five_bounds",
+    "ClassicalSchurClaims.le_erL_of_groupPartition",
+    "ClassicalSchurClaims.lift_lemma",
+    "ClassicalSchurClaims.le_sdeg_blockSums",
+    "ClassicalSchurClaims.erL_le"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05D10",
+      "11B75",
+      "05C55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-06T05:54:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "933000c135141347835300ca13b3a15ff050d03a",
+        "fork_repository": "PalomarArchive/mysticflounder--schur-degree-block-sums--b45c786b5e30",
+        "source_repository": "mysticflounder/schur-degree-block-sums"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a4693fb624d26b5476462f4d17f21208f5aa2287791ef22dfb275fcb97cbd04b"
+}

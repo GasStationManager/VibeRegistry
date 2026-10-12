@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-12-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-12-000003",
+  "version": 1,
+  "title": "Dowker's countable paracompactness, product normality and strict insertion characterization",
+  "abstract": "Formalization of Dowker (1951), Theorem 4: normality plus ordinary countable paracompactness of an arbitrary topological space X is equivalent to normality of X times the closed unit interval, and to strict continuous insertion between arbitrary real upper and lower semicontinuous functions h<g. No T1 or Hausdorff assumption on X, boundedness or uniform gap is added. Companion compact metrizable product theorem (Lemma 3) and countable-cover/decreasing-closed-sequence equivalences (Theorem 2) are included.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "ccc3ca43dc26c6774f2afd7f2b2223066451c362",
+  "project_path": "topology/dowker-characterization",
+  "declarations": [
+    "Dowker.normal_countablyParacompact_iff_normal_interval_product",
+    "Dowker.normal_countablyParacompact_iff_strict_insertion",
+    "Dowker.normal_interval_product_iff_strict_insertion",
+    "Dowker.CountablyParacompact.normal_compact_metrizable_product",
+    "Dowker.countablyParacompact_iff_nat_precise",
+    "Dowker.countablyParacompact_iff_closed_sequence_property"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54D15",
+      "54D20",
+      "54B10",
+      "54C30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-12T07:43:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ccc3ca43dc26c6774f2afd7f2b2223066451c362",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1fb4a4efac3762c1f0461b88705fd089263a9cee2e66556c95c6b34f3926d3ef"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "leanpool",
+  "upstream_id": "eilenberg-zilber",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/EilenbergZilber",
+  "version": 1,
+  "title": "Eilenberg–Zilber theorem for bisimplicial objects",
+  "abstract": "For a bisimplicial object X in an abelian category, constructs a chain homotopy equivalence between the total complex of the alternating face map double complex of X and the alternating face map complex of its diagonal. The equivalence is built from the shuffle map and the Alexander–Whitney map. On normalized complexes, shuffle followed by Alexander–Whitney is the identity, and the other composite is homotopic to the identity via the Eilenberg–Mac Lane recursive homotopy. The result is then transported to the unnormalized complexes along the Moore normalization comparisons. The development includes the combinatorics of (p, q)-shuffles, their signs, and the cancellation of diagonal boundary terms.",
+  "authors": [
+    "Jeffrey Li"
+  ],
+  "repository": "https://github.com/jeffrey-dot-li/lean-homology",
+  "commit": "",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+  "entry_module": "LeanPool.EilenbergZilber",
+  "declarations": [
+    "LeanPool.EilenbergZilber.BisimplicialObject.eilenbergZilber",
+    "LeanPool.EilenbergZilber.BisimplicialObject.eilenbergZilberNormalized"
+  ],
+  "informal": {
+    "LeanPool.EilenbergZilber.BisimplicialObject.eilenbergZilber": "For every bisimplicial object X in an abelian category, the total complex of the double complex obtained by taking alternating face map complexes in both simplicial directions is chain homotopy equivalent to the alternating face map complex of the diagonal simplicial object of X.",
+    "LeanPool.EilenbergZilber.BisimplicialObject.eilenbergZilberNormalized": "The total complex of the bi-normalized Moore double complex of X is chain homotopy equivalent to the normalized Moore complex of the diagonal, via the shuffle and Alexander–Whitney maps; shuffle followed by Alexander–Whitney is the identity."
+  },
+  "classification": {
+    "msc2020": [
+      "55U10",
+      "18G30",
+      "18G35"
+    ],
+    "tags": [
+      "eilenberg-zilber",
+      "bisimplicial-objects",
+      "shuffle-map",
+      "alexander-whitney",
+      "chain-homotopy"
+    ],
+    "branch": "algebraic topology"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "mix",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/EilenbergZilber.lean",
+  "statement_hash": "sha256:7db400d1775a1bde053d7cd98fb663ff08b38c147d055541f37634d89e0a4de1"
+}

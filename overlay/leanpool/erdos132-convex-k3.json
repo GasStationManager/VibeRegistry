@@ -10,7 +10,7 @@
   ],
   "repository": "https://github.com/lyfar/erdos-132-convex-k3-lean",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.Erdos132ConvexK3",
   "declarations": [
     "LeanPool.Erdos132ConvexK3.convex_top_three_degree_six",
@@ -65,5 +65,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/Erdos132ConvexK3.lean",
-  "statement_hash": "sha256:95a6e7ae9e976945beeb76e91b979c316133bbb25c000de049f2f9cc6d5235a4"
+  "statement_hash": "sha256:16813dcb22c078437571d2a2e32b2d636cbf25c8cfc94b51532218a8b38c027e"
 }

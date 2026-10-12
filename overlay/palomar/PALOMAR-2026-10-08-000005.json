@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-08-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-08-000005",
+  "version": 1,
+  "title": "Matrix multiplication exponent at most 9/4 over arbitrary fields",
+  "abstract": "This development extends OpenAI's Lean proof of the matrix multiplication exponent bound 9/4 from the complex numbers to every field, including finite fields and fields of positive characteristic. It generalizes Fourier separation and interpolation over each field's algebraic closure, descends tensor powers through one fixed finite coefficient algebra, and connects the resulting exact-rank bounds to the original division-free arithmetic-program model. The compared statements include the arithmetic exponent upper bound, nonvacuity and lower-bound checks, an explicit positive-epsilon operation-count theorem, and exact coordinatewise coefficient decompositions. The original numerical bound and complex-field construction are OpenAI's work; this fork contributes the arbitrary-field extension and its formal verification.",
+  "authors": [
+    "Sela Navot"
+  ],
+  "repository": "https://github.com/selanavot/matrix-multiplication-all-fields",
+  "commit": "8375e73ed454e3128500d10d87480c5dd597ff03",
+  "project_path": null,
+  "declarations": [
+    "ComparatorChecks.omega_bound",
+    "ComparatorChecks.admissible_bddBelow",
+    "ComparatorChecks.admissible_nonempty",
+    "ComparatorChecks.omega_lower",
+    "ComparatorChecks.epsilon_cost",
+    "ComparatorChecks.exact_coefficients"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC",
+      "cs.DS"
+    ],
+    "msc2020": [
+      "68Q17",
+      "68W30",
+      "15A69"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-08T15:59:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8375e73ed454e3128500d10d87480c5dd597ff03",
+        "fork_repository": "PalomarArchive/selanavot--matrix-multiplication-all-fields--d4d6744d47b0",
+        "source_repository": "selanavot/matrix-multiplication-all-fields"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b2f8ad3a948eb52ffd613d45e7400a2f75b737644388f241aff5d64835c8c38e"
+}

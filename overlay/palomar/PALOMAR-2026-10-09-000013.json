@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-09-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-09-000013",
+  "version": 1,
+  "title": "Replica symmetry up to the de Almeida–Thouless line in the Sherrington–Kirkpatrick model",
+  "abstract": "A Lean formalization of the positive-field Sherrington–Kirkpatrick results in Patrick Lopatto's arXiv:2604.11921v2. The selected registry claims are convergence of the expected finite-volume free energy to the concrete replica-symmetric Gaussian formula for beta > 0, h > 0, and AT parameter at most one, including equality; and an exact description of the positive-field AT boundary as a positive strictly increasing smooth graph on beta > 1, tending to zero at beta = 1 from the right, together with (1,0). The repository also contains the numbered PDE, stochastic-process, moment, and variational results documented in COVERAGE.md and results.json.",
+  "authors": [
+    "P. M. Aronow",
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/pmaronow/at-palomar",
+  "commit": "915bca99f46bad65629ef35c8be4bf8fc962af9a",
+  "project_path": null,
+  "declarations": [
+    "PalomarAT.replicaSymmetry",
+    "PalomarAT.smoothATBoundary"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math-ph"
+    ],
+    "msc2020": [
+      "82B44",
+      "60G15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-09T17:37:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "915bca99f46bad65629ef35c8be4bf8fc962af9a",
+        "fork_repository": "PalomarArchive/pmaronow--at-palomar--1a4bf753f431",
+        "source_repository": "pmaronow/at-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2ee7ddcdea15ea39f2f342b4626d7c293310b3d2103728408395e0adcd59441b"
+}

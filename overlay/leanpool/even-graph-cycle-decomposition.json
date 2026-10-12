@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/jtraverso/erdos-81-chordal-clique-partitions",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.EvenGraphCycles",
   "declarations": [
     "Finset.exists_cycleDecomp",
@@ -46,5 +46,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/EvenGraphCycles.lean",
-  "statement_hash": "sha256:31d9da3dc61e128c8ab6b47cc4ffa1c5aae902699090e558292eace3cfbec2d2"
+  "statement_hash": "sha256:3de0ac3ba9b53ebedda3e65790cba10adeec10e0a3b131c64fa08d471efdfa0b"
 }

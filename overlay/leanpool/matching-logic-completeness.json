@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/eveil-labs/matching-logic-lean",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.MatchingLogic",
   "declarations": [
     "MatchingLogic.global_completeness_entryIII",
@@ -56,5 +56,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MatchingLogic.lean",
-  "statement_hash": "sha256:1b5179177e822609a5b697776706c17a68ebcdf57e0a3fe236e26e08120f67db"
+  "statement_hash": "sha256:0c0498afdbe8454b01d146b9585a3cef4ca4760c8aa9f1dcfd19565127863001"
 }

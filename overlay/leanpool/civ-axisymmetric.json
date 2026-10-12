@@ -1,0 +1,59 @@
+{
+  "source": "leanpool",
+  "upstream_id": "civ-axisymmetric",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/CIVAxisymmetric",
+  "version": 1,
+  "title": "Regularity of asymptotically axisymmetric Navier–Stokes solutions",
+  "abstract": "Proves the Constantin–Ignatova–Vicol regularity theorem for suitable weak solutions of the three-dimensional forced Navier–Stokes equations with analytic forcing, anisotropic Type II bounds on the angular mean, and an axisymmetric core at each time. Includes the fully axisymmetric theorem, meridional smallness, interior spatial analyticity, the nonanalyticity consequence for singular solutions, and the comparison, Serrin, and Gustafson–Kang–Tsai results used in their proofs. Reuses Lean Pool's Caffarelli–Kohn–Nirenberg suitable-solution and analysis library.",
+  "authors": [
+    "Scott Armstrong",
+    "Vlad Vicol"
+  ],
+  "repository": "https://github.com/scottnarmstrong/CIVAxisymmetric",
+  "commit": "",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+  "entry_module": "LeanPool.CIVAxisymmetric",
+  "declarations": [
+    "CIV.mainTheorem",
+    "CIV.axisymmetricTheorem",
+    "CIV.meridionalSmallness",
+    "CIV.interiorAnalyticity",
+    "CIV.forceUnderCore"
+  ],
+  "informal": {
+    "CIV.mainTheorem": "A smooth suitable weak solution on the unit parabolic cylinder with globally finite energy, bounded C^2 spatially analytic force, anisotropic Type II bounds on its angular mean, and a positive axisymmetric core at every time is axisymmetric throughout the cylinder and bounded near the origin up to the terminal time.",
+    "CIV.axisymmetricTheorem": "An axisymmetric smooth suitable weak solution obeying the stated anisotropic Type II bounds and bounded C^2 force is bounded near the origin up to the terminal time.",
+    "CIV.meridionalSmallness": "Under the axisymmetric anisotropic hypotheses, the weighted meridional quantity tends uniformly to zero on a smaller cylinder as the terminal time approaches.",
+    "CIV.interiorAnalyticity": "Smooth solutions with locally uniformly spatially analytic forcing are locally uniformly spatially analytic in the interior.",
+    "CIV.forceUnderCore": "For a smooth suitable weak solution with globally finite energy, bounded C^2 forcing, angular-mean anisotropic bounds, and an axisymmetric core at every time, failure of boundedness near the origin implies that the force is not spatially analytic, is nonzero somewhere in the unit cylinder, and has a nonzero point in every smaller terminal cylinder."
+  },
+  "classification": {
+    "msc2020": [
+      "35Q30",
+      "35B65",
+      "35B33"
+    ],
+    "tags": [
+      "Navier–Stokes",
+      "axisymmetry",
+      "partial differential equations",
+      "regularity"
+    ],
+    "branch": "Analysis"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/CIVAxisymmetric.lean",
+  "statement_hash": "sha256:73dac0f79145b7cb22c5c2da22d20cec00ee8396d9a05a4cc399983261b91c58"
+}

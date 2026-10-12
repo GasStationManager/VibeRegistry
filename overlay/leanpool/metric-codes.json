@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/openai/ten-proofs",
   "commit": "",
-  "snapshot_commit": "5e0b39aee56fe9e23bae9bed852a42fef9260b92",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
   "entry_module": "LeanPool.MetricCodes",
   "declarations": [
     "MetricCodes.Johnson.main_binary_theorem",
@@ -54,5 +54,5 @@
     "sorry_free": true
   },
   "lean_source_path": "LeanPool/MetricCodes.lean",
-  "statement_hash": "sha256:d11e719d972765ec19d3c0331a35d0d2b944195e47717e251f0d3afe5303a15e"
+  "statement_hash": "sha256:e5c1fd17245a0319b49b326d99c9fa7f86ec6452c38a79ad738c0cf76e2ad50c"
 }

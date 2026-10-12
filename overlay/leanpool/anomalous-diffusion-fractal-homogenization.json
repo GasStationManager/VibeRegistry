@@ -1,0 +1,54 @@
+{
+  "source": "leanpool",
+  "upstream_id": "anomalous-diffusion-fractal-homogenization",
+  "upstream_url": "https://github.com/Vilin97/lean-pool/tree/main/LeanPool/AnomalousDiffusion",
+  "version": 1,
+  "title": "Anomalous diffusion by fractal homogenization",
+  "abstract": "For each positive Hölder exponent below one third, constructs a divergence-free periodic drift on the two-dimensional torus exhibiting anomalous dissipation for every mean-zero periodic H1 initial datum. The same drift admits uniform Hölder time estimates along a sequence of diffusivity intervals and two distinct vanishing-diffusivity limits for an explicit nonempty class of smooth data. Includes weak existence and uniqueness, Sobolev and Fourier/Galerkin infrastructure, flow derivatives, quantitative homogenization, and the multiscale construction. The no-selection result is the corrected version documented upstream, not the printed generality of the original paper's Proposition 5.5.",
+  "authors": [
+    "Scott Armstrong",
+    "Vlad Vicol"
+  ],
+  "repository": "https://github.com/scottnarmstrong/AVAnomalousDiffusion",
+  "commit": "",
+  "snapshot_commit": "01db1d7049cf9668bda1e9e106875ee1278b43e6",
+  "entry_module": "LeanPool.AnomalousDiffusion",
+  "declarations": [
+    "AVenhance.anomalous_dissipation_full",
+    "AVenhance.anomalous_dissipation",
+    "AVenhance.weak_wellposed"
+  ],
+  "informal": {
+    "AVenhance.anomalous_dissipation_full": "For every alpha strictly between zero and one third, one periodic, divergence-free drift has joint spatial and temporal alpha-Hölder regularity and continuity into the spatial Hölder class. It exhibits anomalous dissipation with a positive rate depending only on the initial L2-to-gradient ratio, uniform Hölder-in-time L2 bounds along diffusivity intervals accumulating at zero, and two distinct transport limits along separated diffusivity sequences for a smooth mean-zero data class containing arbitrarily high cosine modes.",
+    "AVenhance.anomalous_dissipation": "For every positive alpha below one third there exists a periodic, divergence-free alpha-Hölder drift and a rate function taking values in (0,1], depending only on the initial L2-to-gradient ratio, such that the limsup as positive diffusivity tends to zero of integrated gradient dissipation is at least the squared rate times the initial L2 energy, for every mean-zero periodic H1 datum and corresponding weak solutions.",
+    "AVenhance.weak_wellposed": "Every bounded measurable periodic drift with positive diffusivity and periodic-cell L2 initial datum has a weak solution, unique up to spatial almost-everywhere equality at every time in [0,1]."
+  },
+  "classification": {
+    "msc2020": [
+      "35B27",
+      "35Q35",
+      "76F30"
+    ],
+    "tags": [
+      "anomalous-dissipation",
+      "homogenization",
+      "advection-diffusion"
+    ],
+    "branch": "analysis of partial differential equations"
+  },
+  "license": "Apache-2.0",
+  "published_at": "",
+  "status": "verified",
+  "provenance": "AI",
+  "upstream_checks": {
+    "comparator": false,
+    "kernels": [
+      "lean"
+    ],
+    "human_signoff": false,
+    "llm_review": true,
+    "sorry_free": true
+  },
+  "lean_source_path": "LeanPool/AnomalousDiffusion.lean",
+  "statement_hash": "sha256:88a9d9c529dbeb05e81aed43ee4718ff5446772a28da1269b8285b5e158c8b1d"
+}

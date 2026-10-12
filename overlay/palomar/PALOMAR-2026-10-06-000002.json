@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-06-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-06-000002",
+  "version": 1,
+  "title": "Sierpinski Closed Partitions of Continua",
+  "abstract": "A nonempty compact connected Hausdorff space covered by countably many pairwise disjoint closed sets has one piece equal to the whole space. Includes arbitrary countable index types, empty pieces, finite partitions, and the continuous-choice corollary.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/sierpinski-closed-partition-lean",
+  "commit": "406069edac48c4845bbf303ecc83ee9ef000b99a",
+  "project_path": null,
+  "declarations": [
+    "Sierpinski.exists_eq_univ_of_nat_closed_partition",
+    "Sierpinski.exists_eq_univ_of_countable_closed_partition",
+    "Sierpinski.continuous_choice_eq_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54D05",
+      "54D30",
+      "54F15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-06T00:47:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "406069edac48c4845bbf303ecc83ee9ef000b99a",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--sierpinski-closed-partition-lean--fd6de382b003",
+        "source_repository": "Arthur742Ramos/sierpinski-closed-partition-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1a7b17ba43c29ad0209c631d5d7ad078b6db60a53ac7de9539d3ed0d67bcb709"
+}
