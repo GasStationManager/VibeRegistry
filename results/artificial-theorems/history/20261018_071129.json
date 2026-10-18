@@ -1,0 +1,133 @@
+{
+  "entry_id": "artificial-theorems",
+  "timestamp": "2026-10-18T07:02:32Z",
+  "commit": "9c0f970db29553e3c32bccb25fd13c3f54dc3a8e",
+  "lean_toolchain": "leanprover/lean4:v4.27.0",
+  "mathlib_tag": "v4.27.0",
+  "verification_level": 2,
+  "primary_check": "comparator",
+  "checks": {
+    "comparator": true,
+    "nanoda": true,
+    "definitions": false,
+    "safe_verify": false,
+    "lean4checker": false
+  },
+  "build_strategy": "copy",
+  "tools": {
+    "comparator": "6c40ab4fd9cf81328877464bd49392e3f03be06c",
+    "lean4export": "bd93e5ed12fbeea19f39ec3ead659c293b2b8a95",
+    "nanoda": "f67473ba5f9397266f89c7852082c9c914b5d219",
+    "landrun": "5283024a2f49b28046c3b4a06d7d775c058d4d80"
+  },
+  "theorems": [
+    {
+      "name": "QLS.Stoch.robbinsSiegmund_expBound",
+      "spec_module": "Registry.ArtificialTheorems.Opt.RobbinsSiegmund",
+      "impl_module": "ArtificialTheorems.Opt.RobbinsSiegmund",
+      "comparator": "fail",
+      "nanoda": "fail",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:fb0b2b8b1069da839cbe2daef552cc11976bb7d6865e1cabdbefc80b045036ae",
+      "signoffs": [
+        {
+          "github_user": "GasStationManager",
+          "date": "2026-02-17",
+          "issue": 1,
+          "status": "current"
+        }
+      ]
+    },
+    {
+      "name": "QLS.Stoch.robbinsSiegmund_full",
+      "spec_module": "Registry.ArtificialTheorems.Opt.RobbinsSiegmund",
+      "impl_module": "ArtificialTheorems.Opt.RobbinsSiegmund",
+      "comparator": "fail",
+      "nanoda": "fail",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:66258829305b8150922e40effa5f0ad206d0d4f11765bb6522eb2202db668dce",
+      "signoffs": [
+        {
+          "github_user": "GasStationManager",
+          "date": "2026-02-17",
+          "issue": 1,
+          "status": "current"
+        }
+      ]
+    },
+    {
+      "name": "convergence_stochastic_gradient_method",
+      "spec_module": "Registry.ArtificialTheorems.Opt.SGD",
+      "impl_module": "ArtificialTheorems.Opt.SGD",
+      "comparator": "fail",
+      "nanoda": "fail",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:d0fadfb9f91bd7033845b0d534fe489d051b6c6a1fec94b536eb712c92c1c01c",
+      "signoffs": []
+    },
+    {
+      "name": "SGDUniqueMin.convergence_simplified",
+      "spec_module": "Registry.ArtificialTheorems.Opt.SGDUniqueMin",
+      "impl_module": "ArtificialTheorems.Opt.SGDUniqueMin",
+      "comparator": "fail",
+      "nanoda": "fail",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:224f7c61562fb8263d474f51bda5ad328d3d6f597b64128d69cf78db4942d960",
+      "signoffs": []
+    },
+    {
+      "name": "VALUE_ITERATION_CONVERGENCE_COMPLETE",
+      "spec_module": "Registry.ArtificialTheorems.RL.ValueIterationComplete",
+      "impl_module": "ArtificialTheorems.RL.ValueIterationComplete",
+      "comparator": "fail",
+      "nanoda": "fail",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:a24c4794337feb021b922709c94d4cf3e0d6a16245c34b37ad59c5af3feed272",
+      "signoffs": []
+    },
+    {
+      "name": "ApproxValueIterationInt.INT_VALUE_ITERATION_APPROX",
+      "spec_module": "Registry.ArtificialTheorems.RL.ApproxValueIterationInt",
+      "impl_module": "ArtificialTheorems.RL.ApproxValueIterationInt",
+      "comparator": "fail",
+      "nanoda": "fail",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:2434c8b8c2729171d16c2c999c32573484f64dc587be1e5936fb8fc1f35b39af",
+      "signoffs": []
+    },
+    {
+      "name": "ApproxValueIterationInt.INT_VALUE_ITERATION_EVENTUAL_BALL",
+      "spec_module": "Registry.ArtificialTheorems.RL.ApproxValueIterationInt",
+      "impl_module": "ArtificialTheorems.RL.ApproxValueIterationInt",
+      "comparator": "fail",
+      "nanoda": "fail",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:ddccb9099c77c89f73a039a1535c68a60fc93350e4e1f631b436830d7e1888c9",
+      "signoffs": []
+    },
+    {
+      "name": "universal_approximation_cybenko",
+      "spec_module": "Registry.ArtificialTheorems.Approx.UniversalApprox",
+      "impl_module": "ArtificialTheorems.Approx.UniversalApprox",
+      "comparator": "fail",
+      "nanoda": "fail",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:624c726431ffe8ac24fd0b702be3dbb72d103d7d90145a6eee3337b0482c5675",
+      "signoffs": []
+    }
+  ],
+  "overall": "fail",
+  "signoff_summary": {
+    "total": 1,
+    "current": 1,
+    "stale": 0
+  }
+}

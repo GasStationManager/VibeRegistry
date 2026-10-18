@@ -1,6 +1,6 @@
 {
   "entry_id": "archon-first-proof",
-  "timestamp": "2026-10-11T08:20:13Z",
+  "timestamp": "2026-10-18T07:00:48Z",
   "commit": "35550f2bc0a58289bbe2342a64f10a46ada0f52f",
   "lean_toolchain": "leanprover/lean4:v4.28.0",
   "mathlib_tag": "v4.28.0",
@@ -17,7 +17,7 @@
   "tools": {
     "comparator": "10033e381ff7f2146859e21ab99ce01f9ed61c36",
     "lean4export": "048394e1afeeb52b0fa27bcf3f1ade2ff0f0ab6d",
-    "nanoda": "3a2407216ee84a75f9e1aead6803d0578be06ae7",
+    "nanoda": "f67473ba5f9397266f89c7852082c9c914b5d219",
     "landrun": "5283024a2f49b28046c3b4a06d7d775c058d4d80"
   },
   "theorems": [

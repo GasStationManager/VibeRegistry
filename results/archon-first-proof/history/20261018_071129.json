@@ -1,0 +1,51 @@
+{
+  "entry_id": "archon-first-proof",
+  "timestamp": "2026-10-18T07:00:48Z",
+  "commit": "35550f2bc0a58289bbe2342a64f10a46ada0f52f",
+  "lean_toolchain": "leanprover/lean4:v4.28.0",
+  "mathlib_tag": "v4.28.0",
+  "verification_level": 2,
+  "primary_check": "comparator",
+  "checks": {
+    "comparator": true,
+    "nanoda": true,
+    "definitions": false,
+    "safe_verify": false,
+    "lean4checker": false
+  },
+  "build_strategy": "copy",
+  "tools": {
+    "comparator": "10033e381ff7f2146859e21ab99ce01f9ed61c36",
+    "lean4export": "048394e1afeeb52b0fa27bcf3f1ade2ff0f0ab6d",
+    "nanoda": "f67473ba5f9397266f89c7852082c9c914b5d219",
+    "landrun": "5283024a2f49b28046c3b4a06d7d775c058d4d80"
+  },
+  "theorems": [
+    {
+      "name": "Problem4.harmonic_mean_inequality_full",
+      "spec_module": "Registry.ArchonFirstProof.Problem4",
+      "impl_module": "FirstProof.FirstProof4.Problem4",
+      "comparator": "pass",
+      "nanoda": "pass",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:96d8353b19f18e3c4d7ea42c02c3e1dca50f0ebba7487b4ec225c58deeda575c"
+    },
+    {
+      "name": "Problem6.exists_eps_light_subset",
+      "spec_module": "Registry.ArchonFirstProof.Problem6",
+      "impl_module": "FirstProof.FirstProof6.Problem6",
+      "comparator": "pass",
+      "nanoda": "pass",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:ff829a849b969f44b6b365cac5468140d1b298f7d6afd6f06e081e12b827fbfb"
+    }
+  ],
+  "overall": "pass",
+  "signoff_summary": {
+    "total": 0,
+    "current": 0,
+    "stale": 0
+  }
+}
