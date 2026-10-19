@@ -1,0 +1,64 @@
+[project]
+id = "viridis-canon-acc"
+name = "Viridis Canon: anytime-valid change detection"
+description = "Ville's inequality for nonnegative martingales (event and supremum forms), a change-time mixture test martingale with anytime false-alarm control, component dominance, and Wald's identity with an expected-delay bound; each hypothesis set instantiated by an explicit witness, including an iid Bernoulli likelihood-ratio stream"
+url = "https://github.com/jdhart81/viridis-canon"
+commit = "b03d6f56fefc86b0b1eed9e78f19c7f94f1cabf4"
+branch = "main"
+
+[lean]
+toolchain = "leanprover/lean4:v4.28.0"
+mathlib_tag = "v4.28.0"
+
+[[theorems]]
+spec_module = "Registry.ViridisCanon.ACC.NullMartingale"
+impl_module = "PaperFormalization.NullMartingale"
+names = [
+  "Viridis.Run129.PaperFormalization.ville_inequality",
+  "Viridis.Run129.PaperFormalization.ville_inequality_sup",
+  "Viridis.Run129.PaperFormalization.anytime_change_mixture_martingale",
+  "Viridis.Run129.PaperFormalization.anytime_change_ville_certificate",
+  "Viridis.Run129.PaperFormalization.anytime_change_ville_certificate_sup",
+]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.ViridisCanon.ACC.Dominance"
+impl_module = "PaperFormalization.Dominance"
+names = ["Viridis.Run129.PaperFormalization.change_component_dominance_and_penalty"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.ViridisCanon.ACC.Wald"
+impl_module = "PaperFormalization.Wald"
+names = [
+  "Viridis.Run129.PaperFormalization.wald_identity",
+  "Viridis.Run129.PaperFormalization.bounded_overshoot_expected_delay",
+]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[[theorems]]
+spec_module = "Registry.ViridisCanon.ACC.Witnesses"
+impl_module = "PaperFormalization.Witnesses"
+names = [
+  "Viridis.Run129.PaperFormalization.C12Witness.c12_nonvacuous",
+  "Viridis.Run129.PaperFormalization.C12Witness.c2_sup_nonvacuous",
+  "Viridis.Run129.PaperFormalization.C3Witness.c3_nonvacuous",
+  "Viridis.Run129.PaperFormalization.C4Witness.c4_nonvacuous",
+]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+note = "Non-vacuity witnesses: the hypotheses of the theorems above hold at explicit models (C12: iid Bernoulli(1/5) observations under Measure.infinitePi)."
+
+[checks]
+# Comparator is the primary check: sandboxed rebuild, kernel-level proof export,
+# statement/proof comparison, axiom allowlist.
+comparator = true
+# Replay comparator's export through the independent nanoda kernel as well.
+nanoda = true
+definitions = false
+safe_verify = false
+lean4checker = false
+
+[build]
+strategy = "copy"
+targets = "Series_ACC Registry"
