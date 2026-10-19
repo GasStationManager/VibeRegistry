@@ -2,7 +2,7 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-11-000004",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-11-000004",
-  "version": 1,
+  "version": 2,
   "title": "Exponential separation of analytic self-conformal sets on the real line: Lean formalisation",
   "abstract": "Lean 4 formalisation of exponential separation for analytic iterated function systems on the real line. Strong exponential separation holds on an open and dense subset in the C2 topology and follows from an explicit criterion involving dual projections. The development characterises conjugacy to self-similar systems and proves dimension consequences conditional on cited results of Rapaport and Bowen, including a drop in the L^q dimensions of the natural measure of a concrete three-map example.",
   "authors": [
@@ -11,7 +11,7 @@
     "Sascha Troscheit"
   ],
   "repository": "https://github.com/sascha2718/lean-dual-analytic-ifs",
-  "commit": "cf134207f9218a3eb3e0e4bcbd472af513eef9f6",
+  "commit": "0155d92226966a90fa219bbcb9d44d2ed89d84d2",
   "project_path": null,
   "declarations": [
     "Challenge.audit_sesc_open_dense",
@@ -40,7 +40,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-10-11T00:53:46Z",
+  "published_at": "2026-10-14T17:04:37Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -54,11 +54,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "cf134207f9218a3eb3e0e4bcbd472af513eef9f6",
+        "commit": "0155d92226966a90fa219bbcb9d44d2ed89d84d2",
         "fork_repository": "PalomarArchive/sascha2718--lean-dual-analytic-ifs--016e527776b7",
         "source_repository": "sascha2718/lean-dual-analytic-ifs"
       }
     ]
   },
-  "statement_hash": "sha256:3461572d4dc059b645132b2dcfba0a7258c2c1341781602c7b6cce40bd6e743e"
+  "statement_hash": "sha256:93a1a7d524c6e8d18412803a9e0173560e2ef2210c625eeddd0e8e5ee79bce5a"
 }

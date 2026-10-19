@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000024",
+  "version": 1,
+  "title": "Lossy Distance-Shell Tomography on Paths: Recovery from Mean and Covariance",
+  "abstract": "A substantive Lean development of two-leg identifiability under independent relay deletion and nearest-surviving-ancestor bypass. An interior path sensor observes anonymous counts at each contracted hop, superimposing both legs. For every known real survival probability strictly between zero and one, the mean and covariance identify the unordered pair of natural-valued leg populations. A sparse interface needs only the covariance diagonal and one adaptively selected column. The concrete law is a finite sum over independent Bernoulli relay masks. Ten selected statements additionally establish mean/fold equivalence, endpoint trace and degenerate-probability semantics, actual-model variance bounds, conditional integer reconstruction recurrences, and a logarithmic randomized-testing lower bound for actual paths of every length at least two. The full finite-sample probability guarantee is not claimed.",
+  "authors": [
+    "Lennart Rudolph"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "9a61a84e3a2e1494bc08b8eaf714c42f3f918325",
+  "project_path": "zenodo-23304384/palomar",
+  "declarations": [
+    "PalomarResults.LossyShell.endpoint_trace_equivalence",
+    "PalomarResults.LossyShell.probability_endpoints",
+    "PalomarResults.LossyShell.mean_eq_iff_fold_eq",
+    "PalomarResults.LossyShell.legs_eq_of_mean_covariance",
+    "PalomarResults.LossyShell.legs_eq_of_mean_covariance_sparse",
+    "PalomarResults.LossyShell.twoLegLaw_eq_iff",
+    "PalomarResults.LossyShell.variance_sensitive_bounds",
+    "PalomarResults.LossyShell.fold_recovery",
+    "PalomarResults.LossyShell.difference_recovery",
+    "PalomarResults.LossyShell.all_length_designed_lower_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.IT"
+    ],
+    "msc2020": [
+      "05C12",
+      "94A08"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T21:19:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9a61a84e3a2e1494bc08b8eaf714c42f3f918325",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:75467f29ace9dd991feb8e0d582a88c1f61acbe923661deff0a3039a7a3e6329"
+}

@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000006",
+  "version": 1,
+  "title": "Chordal, split, threshold and cograph structure",
+  "abstract": "A Lean 4 / Mathlib formalization of classical structure theorems for finite simple graphs. Chordal graphs: every minimal a–b separator is a clique, a nonempty finite chordal graph has a simplicial vertex, and a connected non-complete one has two non-adjacent simplicial vertices (Dirac 1961); a finite graph is chordal iff it has a perfect elimination order (Fulkerson–Gross 1965), iff it is the intersection graph of subtrees of a finite tree (Gavril 1974); a nonempty finite chordal graph has treewidth ω − 1, and every finite graph has ω ≤ tw + 1. Split graphs: split iff the graph and its complement are chordal, iff no induced 2K₂, C₄ or C₅ (Földes–Hammer 1977). Threshold graphs: threshold iff no induced 2K₂, C₄ or P₄ (Chvátal–Hammer 1977), iff split and a cograph (no induced P₄). Mathlib has none of these graph classes; their definitions are stated in the Challenge.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/chordal-split-threshold-graphs",
+  "commit": "ed65dcdc7339767d3e8e412420abbf54eae65ddb",
+  "project_path": null,
+  "declarations": [
+    "ChordalClasses.minimalSeparator_isClique",
+    "ChordalClasses.exists_isSimplicial",
+    "ChordalClasses.exists_two_nonadj_isSimplicial",
+    "ChordalClasses.isChordal_iff_exists_isPEO",
+    "ChordalClasses.cliqueNum_le_treewidth_succ",
+    "ChordalClasses.isSplit_iff_isChordal_and_compl",
+    "ChordalClasses.isSplit_iff_forbidden_induced_subgraphs",
+    "ChordalClasses.isCograph_iff_not_pathGraph_four_isIndContained",
+    "ChordalClasses.isThreshold_iff_isSplit_and_isCograph",
+    "ChordalClasses.isThreshold_iff_forbidden_induced_subgraphs",
+    "ChordalClasses.isChordal_iff_nonempty_subtreeRepresentation",
+    "ChordalClasses.treewidth_succ_eq_cliqueNum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C75",
+      "05C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T07:03:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ed65dcdc7339767d3e8e412420abbf54eae65ddb",
+        "fork_repository": "PalomarArchive/jtraverso--chordal-split-threshold-graphs--600d961f6749",
+        "source_repository": "jtraverso/chordal-split-threshold-graphs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fdb0d33b1550021202f12793d76ae9f5c271d75ad99156db202207f9a8bc4ca5"
+}

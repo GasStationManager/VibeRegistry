@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000006",
+  "version": 1,
+  "title": "Countable cellularity of arbitrary products via finite subproducts",
+  "abstract": "An arbitrary product of topological spaces satisfies the countable chain condition (CCC) whenever every finite subproduct does. For nonempty factors this is an equivalence. The proof includes an indexed uncountable delta-system lemma that permits repeated finite supports, and glues compatible cylinders over a finite common root. Arbitrary products of separable spaces are consequently CCC, without a cardinal bound or separation assumptions and allowing empty factors. Continuous-surjection preservation and the discrete-space countability criterion are proved companions. No unrestricted productivity of CCC factors or productively-CCC theorem is asserted.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "92f1a925329465c86a96b2f612fcd0d5345eed3b",
+  "project_path": "topology/product-countable-chain-condition",
+  "declarations": [
+    "ProductCCC.uncountable_delta_system",
+    "ProductCCC.hasCCC_pi_of_finite",
+    "ProductCCC.hasCCC_pi_iff",
+    "ProductCCC.hasCCC_pi_of_separable",
+    "ProductCCC.HasCCC.of_continuous_surjective",
+    "ProductCCC.hasCCC_discrete_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54B10",
+      "54A25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T05:12:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "92f1a925329465c86a96b2f612fcd0d5345eed3b",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3625ccdecb0f093a8d280d6e71da439e32478a9407cc28c50f9b6cd1ad90a09a"
+}

@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-13-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-13-000006",
+  "version": 1,
+  "title": "Erdős 1105: anti-Ramsey numbers for cycles and paths",
+  "abstract": "A complete Lean 4 proof of both parts of Erdős problem 1105 on the anti-Ramsey number AR(n, H), the maximum number of colors in a surjective edge-coloring of K_n with no rainbow copy of H. Part (i) proves the Erdős–Simonovits–Sós (1975) cycle formula AR(n, C_k) = ((k - 2) / 2 + 1 / (k - 1)) n + O(1) for every fixed k ≥ 3 (Montellano-Ballesteros and Neumann-Lara 2005; Choi 2011), together with the exact triangle value AR(n, C_3) = n - 1 and the explicit two-sided bounds ⌊n / (k - 1)⌋(choose(k - 1, 2) + 1) - 1 ≤ AR(n, C_k) ≤ ((k - 2) / 2 + 1 / (k - 1)) n - 1 for all n ≥ k ≥ 3 via private-color deletion and weak anticyclic block decompositions. Part (ii) proves the Simonovits–Sós (1984) and Yuan (2021) exact path formula AR(n, P_k) = max(choose(k - 2, 2) + 1, choose(ℓ - 1, 2) + (ℓ - 1)(n - ℓ + 1) + ε) for all n ≥ k ≥ 5, where ℓ = ⌊(k - 1) / 2⌋ and ε = 1 for odd k and 2 for even k, via representative-graph exchanges, finite host-window reduction, degree-core elimination, and 2-connected circumference bounds.",
+  "authors": [
+    "Linmiao Xu"
+  ],
+  "repository": "https://github.com/linrock/math-proofs",
+  "commit": "ba96303b34a95ac458958c1eb0bbdee54733484a",
+  "project_path": "erdos-1105",
+  "declarations": [
+    "Erdos1105.Palomar.erdos_1105_cycles",
+    "Erdos1105.Palomar.erdos_1105_paths",
+    "Erdos1105.Palomar.erdos_1105_parts_i",
+    "Erdos1105.Palomar.erdos_1105_parts_ii",
+    "Erdos1105.Palomar.antiRamseyNum_triangle",
+    "Erdos1105.Palomar.cycle_fullBlock_lower",
+    "Erdos1105.Palomar.cycle_real_lower",
+    "Erdos1105.Palomar.cycle_linear_upper"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C55",
+      "05C38",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-13T03:17:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ba96303b34a95ac458958c1eb0bbdee54733484a",
+        "fork_repository": "PalomarArchive/linrock--math-proofs--14cf37780a40",
+        "source_repository": "linrock/math-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:73ff159650dd5649194f731bd8467586157e18fd6966ee26354f762bd82c40f5"
+}

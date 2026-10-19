@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000015",
+  "version": 1,
+  "title": "The local dynamical structure of Δ* sets via a new Furstenberg family algebra",
+  "abstract": "This development formalizes in Lean 4 the results of the paper \"The local dynamical structure of Δ* sets via a new Furstenberg family algebra\", which strengthens the connection between the combinatorics of difference sets and the dynamics of group rotations.\nLet S be a discrete semigroup. A set A ⊆ S is syndetic if there is a finite F ⊆ S with S = ∪_{f ∈ F} f⁻¹A; a Δ set if there is a sequence s₁, s₂, … in S with s_j ∈ s_i A for all i < j; and a Bohr_0 set if it contains the preimage of an open neighborhood of the identity under a semigroup homomorphism from S to a finite-dimensional torus. Dually, a set is thick, a Δ* set, or a set of Bohr recurrence according as it meets every syndetic, every Δ, or every Bohr_0 subset of S. Bohr_0 sets in the integers are the almost periodic sets of classical interest, and Δ* sets are combinatorially large, being syndetic and rich in additive patterns.\nThe definition of a Δ set used here is the one given for general semigroups by Hindman, who calls these rQ sets, Q for quotient; in a commutative semigroup his left- and right-handed variants agree. It does not require the witnessing sequence to be injective, and so is slightly more inclusive than the classical difference-set definition. In the positive integers the two agree exactly: if A consists of positive integers and s_j − s_i ∈ A for all i < j then the sequence is strictly increasing, so A contains the difference set (S − S) ∩ ℕ of the infinite set S = {s₁, s₂, …}, and conversely. The two notions separate only in a semigroup containing an element a with sa = s for some s, where the constant sequence makes every set containing such an a a Δ set. In the integers the element 0 is of this kind, so a Δ set in the present sense is either a classical difference set or a set containing 0, and a Δ* set is exactly a classical Δ* set that contains 0.\nThe main result (Theorem A) is that Δ* sets in an arbitrary commutative semigroup carry local Bohr structure: if A ⊆ S is a Δ* set, then for every thick H ⊆ S there is a thick H′ ⊆ H and a Bohr_0 set B with A ∩ H′ = B ∩ H′. This generalizes results of Bergelson, Furstenberg and Weiss and of Host and Kra from the positive integers to arbitrary commutative semigroups by a purely topological-dynamical route in place of the ergodic- theoretic arguments used in the integer case. Theorem B is the dual formulation, in terms of Δ sets and sets of Bohr recurrence, that the proof actually establishes: if A ⊆ S admits a thick H such that A ∩ H′ is a set of Bohr recurrence for every thick H′ ⊆ H, then A is a Δ set. Theorem C exhibits a second instance of local structure by the same method: in a countable commutative semigroup, every C* set agrees with an IP* set on a thick subset of any prescribed thick set.  Theorem C also formulates the equivalent dual statement, just as Theorem B is in relation to Theorem A.\nTheorem D supplies the algebraic framework the arguments rest on. A Furstenberg family on a set S is an upward-closed collection of subsets of S. On the Furstenberg families of a non-empty set, two binary operations, family meet and family join, are described and shown to be associative, commutative and monotone. Together with the family dual, they satisfy De Morgan-type laws. Family join has appeared before in the literature; family meet, as presented here, is believed to be new. The algebra reduces the equivalence of Theorems A and B to a short computation and makes similar reformulations in Ramsey theory routine.\nThe proofs of Theorems A and B depend on a companion result, formalized here but the subject of another Palomar entry, that the regionally proximal relation is an equivalence relation for minimal actions of commutative semigroups. The development runs to roughly 20,000 lines of Lean across 17 files and formalizes every lemma, proposition, corollary and theorem of the paper; the registered statements are Theorems A, B, C and D. Proved along the way, and not available in Mathlib, is the classical fact that the characters of a compact abelian group separate its points.",
+  "authors": [
+    "Angelina Blahodatna",
+    "Lauren Detmold",
+    "Daniel Glasscock",
+    "Anh N. Le"
+  ],
+  "repository": "https://github.com/dglasscockUML/NSF_LEAPS",
+  "commit": "e275c4e2bb477c110f542e606dac0519963e964c",
+  "project_path": null,
+  "declarations": [
+    "DeltaIntro.DeltaTheoremA",
+    "DeltaIntro.DeltaTheoremB",
+    "DeltaIntro.DeltaTheoremC",
+    "DeltaIntro.DeltaTheoremD"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.DS"
+    ],
+    "msc2020": [
+      "05D10",
+      "37B05",
+      "37B20",
+      "22A20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T14:01:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e275c4e2bb477c110f542e606dac0519963e964c",
+        "fork_repository": "PalomarArchive/dglasscockUML--NSF_LEAPS--0bc2bbd0e51f",
+        "source_repository": "dglasscockUML/NSF_LEAPS"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6adf9fda4533694265289bbc2bb64a9b500ab34da7c608f0e23f392e2f793018"
+}

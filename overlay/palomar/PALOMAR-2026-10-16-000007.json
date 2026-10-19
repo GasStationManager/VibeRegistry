@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000007",
+  "version": 1,
+  "title": "Continuum hypothesis independence: a Flypitch reproduction",
+  "abstract": "An attributed adaptation of the Flypitch formal proof of two-sided syntactic independence of the continuum hypothesis from its explicitly encoded first-order ZFC theory. Cohen and collapse Boolean-valued models, together with soundness, establish that neither the encoded CH sentence nor its negation is derivable. The development uses an expanded language with definable set operations, collection and Zorn's lemma. It does not supply a formal translation to membership-only ZFC or determine the truth of CH for the ambient Lean reals. This is a reproduction of established work, not a new mathematical solution.",
+  "authors": [
+    "Alexander"
+  ],
+  "repository": "https://github.com/AItoBit/continuum-hypothesis-lean4",
+  "commit": "c8d3b542530e1b0c9817fad5febd6dfb0298f608",
+  "project_path": null,
+  "declarations": [
+    "ContinuumIndependence.independence_of_CH"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03E50",
+      "03E35",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T03:59:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c8d3b542530e1b0c9817fad5febd6dfb0298f608",
+        "fork_repository": "PalomarArchive/AItoBit--continuum-hypothesis-lean4--4139c0a678b3",
+        "source_repository": "AItoBit/continuum-hypothesis-lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:be30cca18d7966ac32608ab093b786486a7c772909af0937cf842cc6f780b468"
+}

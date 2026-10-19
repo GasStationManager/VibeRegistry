@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000018",
+  "version": 1,
+  "title": "Moore graphs of diameter two: the Hoffman–Singleton theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of the Hoffman–Singleton theorem on Moore graphs of diameter two. For a finite k-regular graph of diameter at most two: the Moore bound n ≤ k² + 1; if moreover the girth is at least five, then n = k² + 1 and the graph is strongly regular with parameters (k² + 1, k, 0, 1); and, if k ≥ 2, then k ∈ {2, 3, 7, 57}. Mathlib has strongly regular graphs and the spectral theorem for Hermitian matrices, but not this theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/moore-graphs-hoffman-singleton",
+  "commit": "8819ccfea5474fab3d1cbc17e703860a4e008254",
+  "project_path": null,
+  "declarations": [
+    "HoffmanSingleton.card_le",
+    "HoffmanSingleton.card_eq",
+    "HoffmanSingleton.isSRGWith",
+    "HoffmanSingleton.hoffman_singleton"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C50",
+      "05C35",
+      "05E30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T23:47:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8819ccfea5474fab3d1cbc17e703860a4e008254",
+        "fork_repository": "PalomarArchive/jtraverso--moore-graphs-hoffman-singleton--c0de8dabed2e",
+        "source_repository": "jtraverso/moore-graphs-hoffman-singleton"
+      }
+    ]
+  },
+  "statement_hash": "sha256:11b0f233bb9b04d39aee3707ef9a317688ac96896d06c46f35c48a80881ddaa7"
+}

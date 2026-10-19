@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-14-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-14-000001",
+  "version": 1,
+  "title": "The full Nagata–Smirnov metrization theorem",
+  "abstract": "A regular Hausdorff space is metrizable if and only if it has an open basis expressed as a countable union of locally finite families. Every layer can have arbitrary cardinality. The development proves the necessity using metric paracompactness, perfect normality from the basis, continuity of arbitrary locally finite bounded coordinates, and a compatible metric via a countable product of metric function spaces. It assumes neither second countability nor separability and includes empty spaces. This formalizes classical mathematics, without claiming new mathematics or first formalization priority.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "6aa68b2cb67719a187e64de29567443575eb560e",
+  "project_path": "topology/nagata-smirnov",
+  "declarations": [
+    "NagataSmirnov.nagata_smirnov",
+    "NagataSmirnov.metrizable_iff_sigmaLocallyFiniteBasis",
+    "NagataSmirnov.compatible_metric_iff",
+    "NagataSmirnov.HasSigmaLocallyFiniteBasis.perfectlyNormalSpace",
+    "NagataSmirnov.pseudoMetrizable_of_cozero_basis",
+    "NagataSmirnov.continuous_boundedCoordinates"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54E35",
+      "54D20",
+      "54D15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-14T06:49:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6aa68b2cb67719a187e64de29567443575eb560e",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:245e58a78f654d4e3dcc8044be3e73aff899f13e98c76c25d0ad5b588552dab6"
+}

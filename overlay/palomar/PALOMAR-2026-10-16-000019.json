@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000019",
+  "version": 1,
+  "title": "The Cauchy–Binet formula, Kirchhoff's matrix-tree theorem and Cayley's formula",
+  "abstract": "A Lean 4 / Mathlib formalization of the Cauchy–Binet formula for determinants of products of rectangular matrices over commutative rings (not in Mathlib), of Kirchhoff's matrix-tree theorem (the number of spanning trees of a finite graph is any principal cofactor of Mathlib's Laplacian matrix), and of Cayley's formula (n^(n−2) labelled trees on n ≥ 1 vertices), derived from the matrix-tree theorem for the complete graph.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/matrix-tree",
+  "commit": "aeab0f267c523dd3cac9a287b589f65a99d20d01",
+  "project_path": null,
+  "declarations": [
+    "KirchhoffCayley.cauchy_binet",
+    "KirchhoffCayley.matrix_tree",
+    "KirchhoffCayley.cayley"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C05",
+      "05C30",
+      "05C50",
+      "15A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T20:56:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "aeab0f267c523dd3cac9a287b589f65a99d20d01",
+        "fork_repository": "PalomarArchive/jtraverso--matrix-tree--5efe2b63de2b",
+        "source_repository": "jtraverso/matrix-tree"
+      }
+    ]
+  },
+  "statement_hash": "sha256:068034ad71a5e305c758a8b7e5e5eb029a4f3506491aad59c62614ec4a3673f8"
+}

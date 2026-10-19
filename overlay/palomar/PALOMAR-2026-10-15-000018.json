@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000018",
+  "version": 1,
+  "title": "Kuratowski's theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of Kuratowski's theorem: a finite graph is planar if and only if it contains no subdivision of K5 and no subdivision of K3,3. Planarity is the combinatorial notion (a rotation system of genus zero). The proof combines Wagner's minor characterization (from the author's planarity library) with three new lemmas: a subdivision of any finite graph H gives H as a minor; a K3,3 minor gives a K3,3 subdivision; a K5 minor gives a K5 or a K3,3 subdivision. The last two rest on joining up to four terminals inside a connected branch set to one centre or to two adjacent centres by internally disjoint paths.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/kuratowski",
+  "commit": "696ec897a9b91933037767d897670aa30ba3683a",
+  "project_path": null,
+  "declarations": [
+    "KuratowskiTheorem.isPlanar_K4",
+    "KuratowskiTheorem.not_isPlanar_K5",
+    "KuratowskiTheorem.not_isPlanar_K33",
+    "KuratowskiTheorem.isMinor_of_isTopologicalMinor",
+    "KuratowskiTheorem.isTopologicalMinor_K33_of_isMinor",
+    "KuratowskiTheorem.isTopologicalMinor_of_isMinor_K5",
+    "KuratowskiTheorem.isPlanar_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C10",
+      "05C83"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-15T22:14:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "696ec897a9b91933037767d897670aa30ba3683a",
+        "fork_repository": "PalomarArchive/jtraverso--kuratowski--c5380f41889a",
+        "source_repository": "jtraverso/kuratowski"
+      }
+    ]
+  },
+  "statement_hash": "sha256:38f62a471d76721959406007681597abb35a6337269e9634a2fdbaed83aecf2b"
+}

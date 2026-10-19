@@ -1,0 +1,74 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000013",
+  "version": 1,
+  "title": "Growth series of the triangle Coxeter groups (p, q, infinity), with the PGL(2,Z) instance: Padovan sphere sizes and growth rate the plastic number",
+  "abstract": "Kernel-checked proof, for every Coxeter system on three generators a, b, c with m(a,c) = p, m(b,c) = q, m(a,b) = infinity and p, q >= 2, of the growth-series identity in the ring of integer power series: (sum_n a(n) X^n) * (1 - (X + ... + X^(p-1))(X + ... + X^(q-1))) = (1 + X)(1 + ... + X^(p-1))(1 + ... + X^(q-1)), where a(n) is the number of group elements of Coxeter length n; together with its instances (2,3,inf), (2,4,inf), (3,3,inf) and, for (2,3,inf) = PGL(2,Z), the sphere sizes 1, 3, 5, 7, 9, 12, 16, ..., the Padovan identity a(n) = Pad(n+5) for n >= 2, the two-sided bounds 2 rho^n <= a(n) <= 4 rho^n (n >= 2), and the growth rate a(n)^(1/n) -> rho, the plastic number, the unique real root > 1 of x^3 = x + 1; and, for the whole family, monotonicity and symmetry in (p, q), the growth rate of every hyperbolic member, and the minimality of the plastic number. Twenty compared theorems: (1) the general identity for all p, q >= 2; (2) non-vacuity, a Coxeter matrix of that type exists for all p, q >= 2; (3)-(5) the three instances; (6) the (2,3,inf) sphere sizes a(0..4) = 1, 3, 5, 7, 9 and the recursion a(n+5) = a(n+3) + a(n+2) for all n; (7) that the recursion fails one step earlier, a(4) != a(2) + a(1); (8) a(n) = Pad(n+5) for n >= 2, for any sequence with the Padovan initial values and recursion; (9) existence and uniqueness of the plastic number; (10) the bounds; (11) the n-th-root limit; (12) monotonicity: a(n) of a (p,q,inf) system is at most a(n) of a (p',q',inf) system for p <= p', q <= q'; (13) symmetry in p and q; (14) 2 rho^n <= a(n), n >= 2, for every hyperbolic member; (15) for (p,q) != (2,2) exactly one tau > 1 solves (tau^-1 + ... + tau^-(p-1))(tau^-1 + ... + tau^-(q-1)) = 1; (16) a(n)^(1/n) -> tau; (17) tau strictly increasing in (p,q); (18) rho <= tau with equality exactly at (2,3), (3,2), so the plastic number is the minimal growth rate of the family; (19) tau < 2; (20) tau -> 2 as p, q -> infinity (for every sigma < 2 there is N with tau > sigma whenever p, q >= N). The family statements (12)-(20) give the growth rate of every hyperbolic (p, q, inf) group as the unique root tau > 1 of an explicit equation, strictly increasing in the labels, with the plastic number as the family minimum attained only at (2,3,inf) and (3,2,inf); they restrict to this family, and kernel-check there, Terragni's monotonicity (2016, Thm. A), Floyd's planar minimality (1992, p. 482) and the continuity of the growth rate (Floyd 1992; Yukita 2024). The mathematics is classical and no novelty is claimed for it: the growth series of a Coxeter group is rational and determined by its finite parabolic subgroups (Steinberg 1968; Humphreys 1990 Section 5.12); growth of planar hyperbolic Coxeter groups is Floyd 1992 and Cannon-Wagreich 1992, and the (2,3,inf), (2,4,inf) and (3,3,inf) sphere sequences are OEIS A096231, A179070 (shifted) and A054886, with generating functions derived there from Cannon-Wagreich Prop. 3.1 and, for A096231, the Padovan form a(n) = A000931(n+10) recorded; Floyd 1992 (p. 482) proves (2,3,inf) minimal among cusped planar groups and Kellerhals 2013 gives an alternative proof; Bucher-Talambutsa 2016 Prop. 18 proves statement (11) itself by a normal form and, with Mann's bound, the minimality of rho for PGL(2,Z) over all generating sets. The (p, q, inf) family is hyperbolic exactly when (p, q) differs from (2, 2); the affine (2, 2, inf) is included in (1). The contribution claimed is the kernel-checked general identity for all p, q at once, and the family statements (12)-(20) derived from it, from Mathlib's CoxeterSystem alone — Mathlib at this pin has no growth series, no exchange or deletion property and no parabolic-subgroup API — by constructing the amalgam normal forms, lifting their action to the group, proving Coxeter length equals normal-form length, and counting. No \"first formalization\" claim is made. Application, cited and not a claim of the entry: the (2,3,inf) group is the Weyl group of AE_3 = PGL(2,Z) (Feingold-Frenkel 1983) and, in the Damour-Henneaux-Nicolai billiard description of the Belinski-Khalatnikov-Lifshitz limit (a conjecture for generic singularities, Henneaux-Persson-Spindel 2008 Section 2.9), the reflection group of the billiard of 3+1-dimensional vacuum gravity near a spacelike singularity (Damour-Henneaux-Nicolai 2003 Section 8; Henneaux-Persson-Spindel 2008 Section 3.1), where a(n) counts the chambers reachable from the fundamental chamber after exactly n wall collisions over all initial data, so (10)-(11) give the growth rate of those outcomes (elementary reflection-group geometry, not formal content). Hypotheses are inline: the Coxeter system enters through Mathlib's CoxeterSystem with the three matrix entries as hypotheses, rho through its defining equation and 1 < rho, the Padovan sequence through its initial values and recursion; the compared statements use only core Mathlib vocabulary (CoxeterMatrix, CoxeterSystem, CoxeterSystem.length, Nat.card, PowerSeries.mk, Finset.range/Ico sums, Filter.Tendsto, Filter.atTop, nhds, real powers) — zero custom definitions. The pinned source of each Coxeter-specific imported definition, and of Nat.card and PowerSeries.mk, is quoted verbatim, with permalinks, in MATHLIB_DEFINITIONS.md (the remaining vocabulary is standard Mathlib and is not quoted), and DefinitionAudit.lean kernel-checks the facts the statements rely on (the entry 0 encodes infinity; length is the minimal word length; spheres are finite and Nat.card is their cardinality; every Coxeter matrix has a Coxeter system).",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/triangle-group-growth",
+  "commit": "874b6a264e1eb8adf06141686eabab8a7afbe583",
+  "project_path": null,
+  "declarations": [
+    "TriangleGrowth.growth_series",
+    "TriangleGrowth.triangle_matrix_exists",
+    "TriangleGrowth.growth_series_23",
+    "TriangleGrowth.growth_series_24",
+    "TriangleGrowth.growth_series_33",
+    "TriangleGrowth.sphere23_values",
+    "TriangleGrowth.sphere23_rec_fails_at_4",
+    "TriangleGrowth.sphere23_padovan",
+    "TriangleGrowth.plastic_exists_unique",
+    "TriangleGrowth.sphere23_growth_bounds",
+    "TriangleGrowth.sphere23_root_tendsto",
+    "TriangleGrowth.sphere_mono",
+    "TriangleGrowth.sphere_symm",
+    "TriangleGrowth.sphere_ge_plastic",
+    "TriangleGrowth.rate_exists_unique",
+    "TriangleGrowth.sphere_root_tendsto_rate",
+    "TriangleGrowth.rate_lt_rate",
+    "TriangleGrowth.plastic_le_rate",
+    "TriangleGrowth.rate_lt_two",
+    "TriangleGrowth.rate_tendsto_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "gr-qc",
+      "math-ph"
+    ],
+    "msc2020": [
+      "20F55",
+      "20F69",
+      "05A15",
+      "11B39",
+      "83C75",
+      "17B67"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T20:11:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "874b6a264e1eb8adf06141686eabab8a7afbe583",
+        "fork_repository": "PalomarArchive/stalex444--triangle-group-growth--258d69f6e936",
+        "source_repository": "stalex444/triangle-group-growth"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a2e7b67b043ad960b0d697082d8889e5325f0eb124040673035d232edc7e6bd3"
+}

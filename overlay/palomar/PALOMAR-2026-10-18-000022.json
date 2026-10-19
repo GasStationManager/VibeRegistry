@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000022",
+  "version": 1,
+  "title": "Robbins' theorem on strongly connected orientations",
+  "abstract": "A Lean 4 / Mathlib formalization of Robbins' theorem: a finite connected simple graph has a strongly connected orientation (a digraph with underlying graph G, never containing both u → v and v → u, in which every vertex reaches every other) if and only if no edge of it is a bridge. As a corollary, every finite 2-edge-connected graph on a nonempty vertex type has a strongly connected orientation. Mathlib has bridges, edge connectivity and digraphs, but not this theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/robbins-strong-orientation",
+  "commit": "076e734e9949720d3e4fcc2cc3cad4284871442c",
+  "project_path": null,
+  "declarations": [
+    "StrongOrientation.robbins",
+    "StrongOrientation.exists_strong_orientation_of_isEdgeConnected_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C20",
+      "05C40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T20:02:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "076e734e9949720d3e4fcc2cc3cad4284871442c",
+        "fork_repository": "PalomarArchive/jtraverso--robbins-strong-orientation--f05c2621ca9e",
+        "source_repository": "jtraverso/robbins-strong-orientation"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bd3222553537bad706a30efd7ca509deb4b6c13d40f1dba491d62ac0fd5c6c21"
+}

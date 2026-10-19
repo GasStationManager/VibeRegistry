@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000021",
+  "version": 1,
+  "title": "Alexandroff–Urysohn cover metrization",
+  "abstract": "A T0 space is metrizable if and only if it admits a sequence of open covers such that every intersecting pair of members at the next level has union contained in one member at the current level, and the point-stars form a neighborhood basis. Without separation the same criterion characterizes pseudometrizability. The proof constructs a countably generated co-membership uniformity with exactly the supplied topology. Covers have unrestricted cardinality; empty spaces are included. Classical mathematics, with no novelty or priority claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "8ff5eedba962cb74050fe6d5f0acd934ba830fc5",
+  "project_path": "topology/alexandroff-urysohn",
+  "declarations": [
+    "AlexandroffUrysohn.IsMetrizingSequence.exists_uniformity",
+    "AlexandroffUrysohn.pseudoMetrizable_iff",
+    "AlexandroffUrysohn.metrizable_iff",
+    "AlexandroffUrysohn.exists_compatibleMetric"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54E35",
+      "54E15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T21:58:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8ff5eedba962cb74050fe6d5f0acd934ba830fc5",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:52621fd3d85fcc8b023200a44d362f1c0dbea45bbb0d98033ca63ee7bbcc8eaf"
+}

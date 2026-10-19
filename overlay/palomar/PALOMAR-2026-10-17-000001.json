@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000001",
+  "version": 1,
+  "title": "A converse to the discrete four-vertex theorem",
+  "abstract": "Lean 4 / Mathlib formalization of the paper \"A converse to the discrete four-vertex theorem\", answering Tabachnikov's Problem 2. For every n >= 4, every cyclic sequence of positive numbers with two distinct plateau maxima and two distinct plateau minima is the sequence of circumradii of consecutive vertex triples of a simple, strictly convex, coherent polygon (circumcenters inside the vertex angles). Together with Dahlberg's discrete four-vertex theorem, also proved here, this characterizes the nonconstant radius sequences of such polygons. The realization can be chosen C^1 in the data near every nonconstant admissible sequence, but an explicit path of hexagon data admits no continuous choice of realizing polygons. The analogous characterization for circles tangent to three consecutive supporting lines (the converse to Wegner's four-edge theorem) is also proved.",
+  "authors": [
+    "Kristoffer Josefsson"
+  ],
+  "repository": "https://github.com/kejace/cd4vt",
+  "commit": "bfd433640794b11424be43ad4778566be9253ef4",
+  "project_path": null,
+  "declarations": [
+    "Gluck.Discrete.tabachnikov_converse_geometric",
+    "Gluck.Discrete.tabachnikov_radius_characterization",
+    "Gluck.Discrete.SideTangent.sideTangentConverse",
+    "Gluck.Discrete.SideTangent.realizesSideTangent_iff_admissible",
+    "Gluck.Discrete.localContinuousRealization_of_dfv",
+    "Gluck.Discrete.GlobalContinuity.no_continuous_regular_hexagon_path"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.DG"
+    ],
+    "msc2020": [
+      "53A70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T02:15:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "bfd433640794b11424be43ad4778566be9253ef4",
+        "fork_repository": "PalomarArchive/kejace--cd4vt--ab25e317db28",
+        "source_repository": "kejace/cd4vt"
+      }
+    ]
+  },
+  "statement_hash": "sha256:499e3188a451de72fbf2451b9bd246ba0d394e3c64ae051d7665d98f1cb1901e"
+}

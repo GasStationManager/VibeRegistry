@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000021",
+  "version": 1,
+  "title": "Classical bounds for graph Ramsey numbers",
+  "abstract": "A Lean 4 / Mathlib formalization of the classical bounds for graph Ramsey numbers: R(3, 3) = 6 (every graph on six vertices has a triangle or three independent vertices, and the pentagon has neither), the Erdős–Szekeres upper bound R(s, t) ≤ C(s + t − 2, s − 1), and Erdős's lower bound R(k, k) > 2^(k/2) for k ≥ 3, proved by a union bound over the edge sets of graphs on n vertices.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/ramsey-graph-bounds",
+  "commit": "562986a7ce9edf086c20b3a2b8c7d5ace2ffd843",
+  "project_path": null,
+  "declarations": [
+    "RamseyGraphs.ramsey_three_three_upper",
+    "RamseyGraphs.ramsey_three_three_lower",
+    "RamseyGraphs.erdos_szekeres",
+    "RamseyGraphs.erdos_lower_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C55",
+      "05D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-15T23:54:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "562986a7ce9edf086c20b3a2b8c7d5ace2ffd843",
+        "fork_repository": "PalomarArchive/jtraverso--ramsey-graph-bounds--d35ec49e7ff6",
+        "source_repository": "jtraverso/ramsey-graph-bounds"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e7644d1b7ab73a6d6e7da26216968717f3019d547f40fa997cc8768cb00d2b15"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000001",
+  "version": 1,
+  "title": "Hamiltonian s–t paths in solid grid graphs are decidable in polynomial time",
+  "abstract": "A computable algorithm, decideHamPath, that decides whether a solid grid graph (a finite set of lattice points with no holes, with an edge between points at distance 1) has a Hamiltonian path between two given distinct points, with a Lean 4 proof that it is correct. The problem was posed by Itai, Papadimitriou and Szwarcfiter (1982). The algorithm extends Sheffield's height-function algorithm for Hamiltonian cycles: each endpoint gets a phantom edge to a missing neighbour, and an endpoint with all eight neighbours present becomes a hole whose defect (a vortex) is handled by a slit height and a search over flip classes. The registered statement is correctness. The library also proves a polynomial step bound, 5 220 000 (|V| + 3)^6, for cost functions written beside the algorithm, and formalizes the Umans–Lenhart algorithm for Hamiltonian cycles in solid grid graphs.",
+  "authors": [
+    "Z. Zzyzek"
+  ],
+  "repository": "https://github.com/zzyzek/SolidGridGraphHamPath",
+  "commit": "2bacb1aa9851ed6c653dbc8b33044e898f0baecc",
+  "project_path": "lean",
+  "declarations": [
+    "SolidGridHam.HP.decideHamPath_correct"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "05C45",
+      "68R10",
+      "68Q25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T00:35:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2bacb1aa9851ed6c653dbc8b33044e898f0baecc",
+        "fork_repository": "PalomarArchive/zzyzek--SolidGridGraphHamPath--bb98b1926920",
+        "source_repository": "zzyzek/SolidGridGraphHamPath"
+      }
+    ]
+  },
+  "statement_hash": "sha256:146e1a6615ce14c9fa2bf267e7bf9f41769fefd1eb6a2cdeb9558b595501747f"
+}

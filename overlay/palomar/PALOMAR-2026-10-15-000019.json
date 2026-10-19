@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000019",
+  "version": 1,
+  "title": "Kőnig's theorems and Dilworth's theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of Kőnig's edge-colouring theorem: the line graph of a finite bipartite graph G is Δ(G)-colourable, and its chromatic number (the chromatic index of G) equals Δ(G). The proof colours edges one at a time with partial proper edge colourings, recolouring by an a/b Kempe-chain swap whose correctness rests on a parity argument in the bipartite graph; the lower bound comes from the edges at a vertex of maximum degree, which are pairwise adjacent in the line graph. Also formalized: the Kőnig–Egerváry theorem (a finite bipartite graph has a matching and a vertex cover of the same size, via Hall's theorem with deficiency, plus weak duality for all finite graphs), Dilworth's theorem (an antichain A and a partition into |A| chains, by Galvin's induction) and Mirsky's dual theorem (a chain C and a partition into |C| antichains, by the height function).",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/konig-edge-colouring",
+  "commit": "7c60f7efb69c1747aaf39e5dfa7a89d907cd84ef",
+  "project_path": null,
+  "declarations": [
+    "KonigEdgeColouring.lineGraph_colorable",
+    "KonigEdgeColouring.lineGraph_chromaticNumber_eq",
+    "KonigEgervary.card_matching_le_card_vertexCover",
+    "KonigEgervary.exists_matching_card_eq_vertexCover",
+    "Dilworth.dilworth",
+    "Dilworth.mirsky"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C70",
+      "06A07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-15T22:57:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7c60f7efb69c1747aaf39e5dfa7a89d907cd84ef",
+        "fork_repository": "PalomarArchive/jtraverso--konig-edge-colouring--5e0f844003ab",
+        "source_repository": "jtraverso/konig-edge-colouring"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b6c0593f06767d3fdcb0a3a0fb180fa8426e937c3cdff489fde83aba9483c49e"
+}

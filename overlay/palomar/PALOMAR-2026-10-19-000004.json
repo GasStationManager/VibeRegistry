@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000004",
+  "version": 1,
+  "title": "Omega-bounded Sigma-products and a sharp compactness criterion",
+  "abstract": "For arbitrary T1 omega-bounded factors with an explicit product basepoint, the countable-support Sigma-product is omega-bounded and countably compact. Every countable family is trapped, together with its ambient closure, in a closed compact coordinate box using one countable support. For compact Hausdorff factors, the Sigma-product is compact if and only if only countably many factors contain a point different from the basepoint. Uncountable discrete Boolean Sigma-products are countably compact but not compact. The index and factor universes are independent; the empty index and empty countable subsets are allowed. No first-countability or separability premise is added.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "0bdc86b6daf37e26dae68c451ed9d811247f075d",
+  "project_path": "topology/sigma-product-compactness",
+  "declarations": [
+    "SigmaCompact.exists_compact_trap",
+    "SigmaCompact.omegaBounded_sigmaProduct",
+    "SigmaCompact.countablyCompactSpace_sigmaProduct",
+    "SigmaCompact.omegaBounded_sigmaProduct_of_compact",
+    "SigmaCompact.compactSpace_sigmaProduct_iff",
+    "SigmaCompact.boolean_sigma_countablyCompact_not_compact"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54B10",
+      "54D30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T02:13:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0bdc86b6daf37e26dae68c451ed9d811247f075d",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1a345255f3319c577e8ad80cd18b134849d7b31c53cb4489a35bad67c564f247"
+}

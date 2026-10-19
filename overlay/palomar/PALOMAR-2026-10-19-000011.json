@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000011",
+  "version": 1,
+  "title": "Falconer's distance problem for stretched logarithmic gauges",
+  "abstract": "A Lean 4 formalization of Theorem 1.1 of the supplied October 2026 manuscript: every compact subset of the Euclidean plane with positive Hausdorff measure for the gauge r exp(-(log(1/r))^theta), with 2/3 < theta < 1, has a distance set of positive Lebesgue measure. The proof constructs gauge Frostman probabilities with finite logarithmic critical and Fourier energies, obtains the required radial Orlicz densities, and decomposes the measures into finite-depth regular pieces. Measurable directional tests and smooth masks define actual filtered distance measures with summable removed mass. Quantitative stationary phase, inverse operators, orthogonality, distance linearization, and space splitting prove all four induction recurrences for the actual energies. A weighted finite-tree argument yields summable frequency-shell bounds; Fourier reconstruction gives absolute continuity of a nonzero weighted distance measure and hence the stated positive Lebesgue measure. The target theorem builds without proof holes and uses only the three standard Lean axioms. Source adaptations are recorded under fidelity.",
+  "authors": [
+    "Yongxi Lin"
+  ],
+  "repository": "https://github.com/CoolRmal/falconer-theta-gauge",
+  "commit": "98d3222b42ba5fcaeb56068cf2d542c3d4851d80",
+  "project_path": null,
+  "declarations": [
+    "FalconerThetaGauge.theorem_one_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "28A80",
+      "42B10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T08:13:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "98d3222b42ba5fcaeb56068cf2d542c3d4851d80",
+        "fork_repository": "PalomarArchive/CoolRmal--falconer-theta-gauge--be7ec6402313",
+        "source_repository": "CoolRmal/falconer-theta-gauge"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2fc529419bddfff32c520aca5fff97a011a72d9c9244c1d43cc00861e20eae27"
+}

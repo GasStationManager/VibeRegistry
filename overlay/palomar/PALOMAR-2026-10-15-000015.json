@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000015",
+  "version": 1,
+  "title": "Localized two-eigenvalue bound for finite noncomplete graphs",
+  "abstract": "For every finite noncomplete simple graph with at least two vertices, the sum of the squares of its two largest ordered adjacency eigenvalues is bounded by the sum over unordered edges of 2(1-1/c(e)), where c(e) is the largest clique containing the edge. The proof establishes the concrete edge-clique scalar certificate and transfers it through the checked BN completely positive spectral lift. Connectedness is unnecessary.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/kkp-localized-spectral-bound",
+  "commit": "d3593f26e60c27d1cae1967f720f4dd59ad1c4d8",
+  "project_path": null,
+  "declarations": [
+    "LocalBN.edgeLocalizedNoncompleteUnordered"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C50",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-15T20:12:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d3593f26e60c27d1cae1967f720f4dd59ad1c4d8",
+        "fork_repository": "PalomarArchive/shaikidris--kkp-localized-spectral-bound--6e7c863269f5",
+        "source_repository": "shaikidris/kkp-localized-spectral-bound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:145c5f7b0fd02cddc7a967547f0692c1b20ee202308093066b8d5c4a3e409ff2"
+}

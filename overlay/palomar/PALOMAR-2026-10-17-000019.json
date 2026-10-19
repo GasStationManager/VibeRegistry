@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000019",
+  "version": 1,
+  "title": "Countable-density Hewitt–Marczewski–Pondiczery theorem",
+  "abstract": "A product of at most continuum many separable topological spaces is separable. The proof constructs a countable family of finite binary tables that realizes every finite assignment of natural-number labels, then applies dense sequences in the factors. No separation, metrizability, compactness or countable-base assumption on the factors is needed. Empty factors and empty index sets are allowed. A companion theorem proves the sharp criterion for discrete Boolean cubes: Bool^I is separable exactly when the index cardinality is at most continuum. This is the classical countable-density case; no arbitrary-cardinal or algebraic generalization, novelty or priority is claimed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "cd7ae6bc5f4a1e5569cbbe1a883b83e92eb07a0e",
+  "project_path": "topology/hewitt-marczewski-pondiczery",
+  "declarations": [
+    "HMP.finite_interpolation",
+    "HMP.denseRange_rows",
+    "HMP.continuum_bound_iff",
+    "HMP.separable_product_of_embedding",
+    "HMP.separable_product",
+    "HMP.coordinate_patterns_injective",
+    "HMP.boolean_cube_separable_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54B10",
+      "54D65",
+      "54A25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T23:57:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cd7ae6bc5f4a1e5569cbbe1a883b83e92eb07a0e",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:46febaee06600d6cc9020ddf1e0734b0be70103572f4abbdb4932eef912e406f"
+}

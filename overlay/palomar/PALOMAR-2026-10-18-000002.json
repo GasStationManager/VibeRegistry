@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000002",
+  "version": 1,
+  "title": "The graph removal lemma for every fixed graph",
+  "abstract": "A Lean 4 / Mathlib formalization of the graph removal lemma of Erdős, Frankl and Rödl for an arbitrary fixed finite graph H on k vertices: for every ε > 0 there is δ > 0, depending only on H and ε, such that every finite graph on n vertices with fewer than δ nᵏ labelled copies of H can be made H-free by deleting fewer than ε n² edges; equivalently (far form), a graph from which at least ε n² edges must be deleted to destroy all copies of H has at least δ nᵏ labelled copies. Also included is the counting lemma used in the proof: if parts s x (one for each vertex x of H) are robustly dense with density at least d along the edges of H, with 2kη ≤ dᵏ and #(s x) ≥ 4k/dᵏ, then at least (dᵏ/4)ᵏ ∏ #(s x) injective maps send H into G with f x ∈ s x. Mathlib has the regularity lemma and the triangle removal lemma, but not the removal lemma for a general H.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/graph-removal-lemma",
+  "commit": "589cf03ef1e4c80ea8cdd6be77778232c62dd37c",
+  "project_path": null,
+  "declarations": [
+    "RemovalLemma.card_copies_ge",
+    "RemovalLemma.le_labelledCopyCount_of_deleteFar",
+    "RemovalLemma.graph_removal"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T03:49:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "589cf03ef1e4c80ea8cdd6be77778232c62dd37c",
+        "fork_repository": "PalomarArchive/jtraverso--graph-removal-lemma--03befbbe3fbf",
+        "source_repository": "jtraverso/graph-removal-lemma"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b12c8b6522a94274d7140762a780d41cda054ece81705a2180c07fc3afeb18c4"
+}

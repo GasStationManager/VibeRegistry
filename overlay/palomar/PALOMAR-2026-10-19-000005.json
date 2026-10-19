@@ -1,0 +1,71 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000005",
+  "version": 1,
+  "title": "Exact db2 cascade norms and an optimal uniform constant",
+  "abstract": "Exact supremum-operator norms for the undecimated periodic db2 cascade. For every level j and every period N at least the support, the norm is c_j^d, where c_j = 1651/1395 - (4/63)4^{-j} + (1/180)16^{-j} - (1/1736)32^{-j}. For every positive period, aliasing included, the norm is at most (1651/1395)^d, and that power is the least constant with this uniform role. The free mass is strictly increasing, converges to 1651/1395, and the gap is at most (4/63)4^{-j}. Dimension zero is exactly 1. N at least the support is sufficient, not claimed necessary, and one fixed period is not claimed to attain the limit. At dimension zero the least-constant conclusion is 1 ≤ B; it does not force B = 1. The level-one kernel is the seven-tap half-autocorrelation, with norm (9/8)^d for N >= 7. Levels 1, 2 and 3 remain the exact values (299/256)^d, (9663/8192)^d and (309991/262144)^d for N >= 19, 43 and 91. Bibliographic priority of the closed form is unresolved; see docs/RELATED_WORK.md. A conditional propagation then carries a supplied summary Lipschitz bound and a supplied seminorm comparison through the level-one operator. Bottleneck stability, persistence diagrams and landscape non-expansiveness are hypotheses, not theorems. Those conditional statements are retained in the sources as auxiliaries and are not selected. Nineteen statements are selected. They are parts of this development, not nineteen independent contributions. The exposition of the cascade argument is docs/CASCADE_THEOREM.md.",
+  "authors": [
+    "Jaime Enrique Lincovil Curivil",
+    "César Daniel Reinoso Reinoso",
+    "Niels Pacheco-Barrios"
+  ],
+  "repository": "https://github.com/jelincovil/tws-palomar",
+  "commit": "eb2e7a7e48a5c96450bd514fb9346f3be1119e70",
+  "project_path": null,
+  "declarations": [
+    "TWSPeriodic.convolution_opNorm",
+    "TWSPeriodic.periodization_norm",
+    "TWSPeriodic.tensor_convolution_opNorm",
+    "TWSPeriodic.db2_filter_identification",
+    "TWSPeriodic.db2_opNorm",
+    "TWSPeriodic.db2_attains",
+    "TWSPeriodic.db2_lipschitz",
+    "TWSPeriodic.db2_opNorm_least",
+    "TWSPeriodic.cascade_level1_opNorm",
+    "TWSPeriodic.cascade_level2_opNorm",
+    "TWSPeriodic.cascade_level3_opNorm",
+    "TWSPeriodic.cascade_l1_formula",
+    "TWSPeriodic.cascade_opNorm_formula",
+    "TWSPeriodic.cascade_opNorm_uniform",
+    "TWSPeriodic.cascade_l1_gap",
+    "TWSPeriodic.cascade_l1_succ_lt",
+    "TWSPeriodic.cascade_l1_tendsto",
+    "TWSPeriodic.cascade_uniform_constant_least",
+    "TWSPeriodic.cascade_opNorm_d_zero"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.NA"
+    ],
+    "msc2020": [
+      "42C40",
+      "47A30",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T04:16:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "eb2e7a7e48a5c96450bd514fb9346f3be1119e70",
+        "fork_repository": "PalomarArchive/jelincovil--tws-palomar--d08d75e1d7b4",
+        "source_repository": "jelincovil/tws-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b67632e2bff765d4f336b0994254cd08fe251800a1db29404023e15b154e28bc"
+}

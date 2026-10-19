@@ -1,0 +1,82 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000009",
+  "version": 1,
+  "title": "Depth-labeled interpolation and substitution in Sacchetti's modal logics",
+  "abstract": "Classifies depth labelings in the modal logics wGL_n for positive n. Every simultaneous formula-valued substitution indexed by atom and depth label preserves theoremhood exactly when the labels satisfy c(k+n)=c(k) at every positive depth k. The interpolation equivalences identify the corresponding labeled property with its ordinary interpolation property and the same periodicity condition; the ordinary interpolation theorems remain explicit inputs. Further results classify period spectra, boxed-atom implications and composition of depth substitutions, and transfer a supplied ordinary interpolant while preserving syntax-tree node count and modal depth.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/modal-depth",
+  "commit": "8c5fc2afd424a0fc593c97031ada788befdc5b10",
+  "project_path": null,
+  "declarations": [
+    "ModalDepth.Contracts.uniform_classification",
+    "ModalDepth.Contracts.signed_classification",
+    "ModalDepth.Contracts.unsigned_classification",
+    "ModalDepth.Contracts.classification_given_inputs",
+    "ModalDepth.Contracts.residue_uniform",
+    "ModalDepth.Contracts.residue_signed",
+    "ModalDepth.Contracts.residue_unsigned",
+    "ModalDepth.Contracts.canonical_partition",
+    "ModalDepth.Contracts.finite_labels",
+    "ModalDepth.Contracts.positive_transitivity",
+    "ModalDepth.Contracts.unsigned_necessity",
+    "ModalDepth.Contracts.exact_depth_obstruction",
+    "ModalDepth.Contracts.incompatible_modulus",
+    "ModalDepth.Contracts.source_normalization",
+    "ModalDepth.Contracts.phase_preservation",
+    "ModalDepth.Contracts.decode_roundtrip",
+    "ModalDepth.Contracts.encoding_support",
+    "ModalDepth.Contracts.decoding_support",
+    "ModalDepth.Contracts.parity_with_inputs",
+    "ModalDepth.Contracts.depth_substitution_classification",
+    "ModalDepth.Contracts.phase_substitution_classification",
+    "ModalDepth.Contracts.failed_depth_substitution",
+    "ModalDepth.Contracts.period_gcd",
+    "ModalDepth.Contracts.common_depth_substitution",
+    "ModalDepth.Contracts.positive_period_spectrum",
+    "ModalDepth.Contracts.admissible_label_inclusion",
+    "ModalDepth.Contracts.boxed_implication",
+    "ModalDepth.Contracts.boxed_inequivalence",
+    "ModalDepth.Contracts.phase_composition",
+    "ModalDepth.Contracts.depth_composition_classification",
+    "ModalDepth.Contracts.encoding_reflection",
+    "ModalDepth.Contracts.translation_sizes",
+    "ModalDepth.Contracts.uniform_transfer_no_overhead",
+    "ModalDepth.Contracts.coarse_composition_obstruction"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03B45",
+      "03F45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T05:12:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8c5fc2afd424a0fc593c97031ada788befdc5b10",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--modal-depth--1f41adef1ac1",
+        "source_repository": "JD-Jones-ASES/modal-depth"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c3b7c3007629ca82bf7687d78947c9f2ac67a329c4e39f6139401e18ca32abb8"
+}

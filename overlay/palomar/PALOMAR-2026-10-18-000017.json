@@ -1,0 +1,73 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000017",
+  "version": 1,
+  "title": "Normalizers of the congruence subgroups Γ_H",
+  "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, about the normalizers in SL₂(ℝ) of every congruence subgroup Γ ⊇ Γ(N), that is, of every Γ_H for H ≤ SL₂(ℤ/N): Nor(Γ)/Γ is finite, of order at most [SL₂(ℤ) : Γ]·Σ_{D ∣ N} ψ(D); the local restrictions of Dose–Lido–Mercuri on the determinants of normalizing matrices; if, at every p ∣ N, H mod p fixes no line or H mod p^{v_p(N)} lies in a split Cartan subgroup, then Nor(Γ_H)/Γ_H ≅ N(H)/H; and at prime level the order is always [N(H) : H], or 2·[N(H) : H] when H fixes exactly one line. 21 theorems, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Filip Najman"
+  ],
+  "repository": "https://github.com/F-Najman/normalizer-lean",
+  "commit": "ea4445c0d991a65d54fc77af0af559f2322e8660",
+  "project_path": null,
+  "declarations": [
+    "NormalizerLean.GammaH_map",
+    "NormalizerLean.index_GammaH",
+    "NormalizerLean.ofZ_mem_normG_GammaH_iff",
+    "NormalizerLean.normG_GammaH_inf_SL2ZR",
+    "NormalizerLean.relIndex_normG_inf_SL2ZR",
+    "NormalizerLean.projSL_inv_mul_mem_GammaR",
+    "NormalizerLean.mem_normG_iff_of_reps",
+    "NormalizerLean.finite_BG",
+    "NormalizerLean.card_BG_le",
+    "NormalizerLean.isBorelMod_of_dvd_det",
+    "NormalizerLean.borel_shape",
+    "NormalizerLean.le_of_isSplitMod",
+    "NormalizerLean.normG_GammaH",
+    "NormalizerLean.BG_GammaH_equiv",
+    "NormalizerLean.card_BG_GammaH",
+    "NormalizerLean.fixesUniqueLine_iff",
+    "NormalizerLean.card_BG_GammaH_prime",
+    "NormalizerLean.card_BG_GammaH_prime_unique",
+    "NormalizerLean.normG_GammaH_prime_unique",
+    "NormalizerLean.BQ_equiv_BG",
+    "NormalizerLean.card_BG_GammaH_pmOne"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.GR"
+    ],
+    "msc2020": [
+      "11F06",
+      "20H05",
+      "14G35",
+      "14H37",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T15:52:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ea4445c0d991a65d54fc77af0af559f2322e8660",
+        "fork_repository": "PalomarArchive/F-Najman--normalizer-lean--cf363e35e356",
+        "source_repository": "F-Najman/normalizer-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cf2f446a7aa36f93ee89c6dbb9f5493bbf336aef6ba54929ff78bc8620a7c70f"
+}

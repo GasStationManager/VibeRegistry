@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000016",
+  "version": 1,
+  "title": "NumericalSemigroups: Huang's quadratic form, its positivity, and its n-generator kernel windows",
+  "abstract": "Lean 4 / Mathlib formalization around the quadratic form Q(n) = sum_{i,j in G} K(g(j) - g(i)) n_i n_j of Y. Huang (arXiv:2604.13238) on the gap diagram G of the numerical semigroup <a,b>, in two parts. Part A (Huang's results, two generators): the symmetric bilinear form B of Q satisfies B(1_D, 1_E) = dinv(D, E) for subdiagrams D, E (Huang's Theorem 1.2, formalized by AxiomProver and included in `Dinv/AxiomProver.lean`); from it this work proves Q(1_D) = dinv(D) and Q(1_D) > 0 for nonempty D (Theorem 1.1), B >= 0 on the cone of nonnegative decreasing functions, and the bound Q(n) >= n_i^2 / |G| for every coordinate i (Theorem 1.3, so Q(n) >= ||n||_inf^2 / |G|), which settles Huang's positive-definiteness conjecture for Q on that cone; Theorem 1.3 had not been formalized. Part B (the author's manuscript \"A Linear Algorithm for Huang's Quadratic Form on Numerical Semigroups and Density Asymptotics\", Flamandzki, 2026): for generators p_1,...,p_n the generalised kernel K^(n)(d) is the inclusion-exclusion sum over sub-multisets S of the generators of (-1)^|S| times the indicator of d >= sigma(S), where sigma(S) is the sum of S; it is a step function whose jumps are the parity function pi(s) = K(s) - K(s-1). Part B states and proves: (1) for two generators a < b, Q equals the sliding-window form sum_k n_k (W+_k - W-_k); (2) for any nonempty generator list, Q(n) is a sum over the breakpoints s of K of pi(s) times the tail pair-sum T(s) = sum_{j-i >= s} n_i n_j, with at most sigma + 1 breakpoints, and the number w of active windows (intervals between consecutive breakpoints on which K is nonzero) is at most sigma, and at most 2^n - 2 for n >= 2 distinct positive generators; and (3) for strictly increasing generators p_k >= 2 with log p_n = o(n), the density w(n)/(2^n - 1) is o(P(n)) where P(n) = prod (1 - 1/p_k), equivalently delta(n)/P(n) tends to 1 for delta(n) = P(n) - w(n)/(2^n - 1). The complexity claims of the manuscript (running times of the algorithms) and its computational tables and conjectures are not formalized. The substance of Part B is the exact breakpoint decomposition of Q, the identification of the inclusion-exclusion kernel with its recursive form, and the asymptotic squeeze. Zero sorries; depends only on the three standard Lean axioms. The file `Dinv/AxiomProver.lean` is third-party code under the MIT license (see NOTICE); everything else is Apache-2.0.",
+  "authors": [
+    "Artur Flamandzki"
+  ],
+  "repository": "https://github.com/Flaman55/NumericalSemigroups",
+  "commit": "a872b68c6a0d0f09fba702347fdc75b3b5ec8491",
+  "project_path": null,
+  "declarations": [
+    "Submission.quadForm_two_eq_linearForm2",
+    "Submission.quadForm_eq_breakpoint_sum",
+    "Submission.breakpoints_card_le",
+    "Submission.activeWindowCount_le_sigma",
+    "Submission.activeWindowCount_le_pow_sub_two",
+    "Submission.windowCount_isLittleO_mertensProd",
+    "Submission.gap_div_mertensProd_tendsto_one",
+    "RationalDinv.mem_gapFinset_iff",
+    "RationalDinv.armLength_spec",
+    "RationalDinv.legLength_spec",
+    "RationalDinv.dinvCond_iff_slopes",
+    "RationalDinv.bilinForm_eq_crossDinv",
+    "RationalDinv.quadForm_indicator_eq_dinv",
+    "RationalDinv.quadForm_indicator_pos",
+    "RationalDinv.bilinForm_nonneg_of_cone",
+    "RationalDinv.quadForm_ge_sq_div_card"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "20M14",
+      "11D07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T23:13:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a872b68c6a0d0f09fba702347fdc75b3b5ec8491",
+        "fork_repository": "PalomarArchive/Flaman55--NumericalSemigroups--8bd257374eb9",
+        "source_repository": "Flaman55/NumericalSemigroups"
+      }
+    ]
+  },
+  "statement_hash": "sha256:17d76e82b57d960afd428e88b8e63eeb3356789f19349308c3a15bf89507e93d"
+}

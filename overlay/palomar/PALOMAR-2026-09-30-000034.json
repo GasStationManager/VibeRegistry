@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-09-30-000034",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-30-000034",
-  "version": 1,
+  "version": 2,
   "title": "Formalization of a discrete Carleson theorem of Stein-Wainger type",
   "abstract": "This is a Lean 4 formalization of the main theorem of the papers arXiv:1907.00405 and arXiv:2107.14616 by Ben Krause and Joris Roos. The result concerns l^p boundedness for a  discrete maximal singular oscillatory operator of Stein-Wainger type, also called a discrete Carleson operator.",
   "authors": [
     "Joris Roos"
   ],
   "repository": "https://github.com/roos-j/lean-discretesw",
-  "commit": "aba0306bbb65ada1e7b412eed4f689f12a207f6e",
+  "commit": "b2c652acaf76541089e1b09079e5c0b3c86b98a8",
   "project_path": null,
   "declarations": [
     "discrete_carleson_stein_wainger"
@@ -26,7 +26,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-09-30T15:24:08Z",
+  "published_at": "2026-10-17T02:41:41Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -40,11 +40,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "aba0306bbb65ada1e7b412eed4f689f12a207f6e",
+        "commit": "b2c652acaf76541089e1b09079e5c0b3c86b98a8",
         "fork_repository": "PalomarArchive/roos-j--lean-discretesw--a92788269d63",
         "source_repository": "roos-j/lean-discretesw"
       }
     ]
   },
-  "statement_hash": "sha256:10900abe8cb4a8caff46064d1745096295cd604cc17380afc1b385a4ac2076a7"
+  "statement_hash": "sha256:7af766c4044b400c68960372265c94c136cfeb7f017ba840e30d0e8de22b9f8f"
 }

@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-14-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-14-000004",
+  "version": 1,
+  "title": "Erdős 836: vertex counts and pairwise edge intersections in 3-chromatic intersecting uniform hypergraphs",
+  "abstract": "A complete Lean 4 resolution of both parts of Erdős problem 836 (posed by Erdős and Shelah; Erdős and Lovász, 1975) on 3-chromatic intersecting r-uniform hypergraphs, together with structural bounds on the Erdős–Shelah codimension-one avoidance question. For Part (i), it formalizes Noga Alon's equitable-partition construction with (2r - 2) + C(2r - 2, r - 1) / 2 active vertices to disprove the O(r²) vertex bound for all r ≥ 2. For Part (ii), it adapts and generalizes Liam Price's minimal-blue bipartite double-counting argument to prove the universal bound r ≤ 2t + 1 when distinct edges meet in at most t vertices, establishing that every 3-chromatic intersecting r-uniform hypergraph has two distinct edges meeting in at least r/3 vertices, that linear intersecting hypergraphs are 2-colourable for r ≥ 4, and that avoiding pairwise intersection r - 1 forces minimum degree ≥ 3, degree ≥ 4 on multi-intersections, and |E(H)|, |V(H)| ≥ 9 at r = 4.",
+  "authors": [
+    "Linmiao Xu"
+  ],
+  "repository": "https://github.com/linrock/math-proofs",
+  "commit": "2c2d2f773f1dde69452b0cde525ff6ee633c49d0",
+  "project_path": "erdos-836",
+  "declarations": [
+    "Erdos836.Palomar.erdos_836.parts.i",
+    "Erdos836.Palomar.erdos_836.parts.ii",
+    "Erdos836.Palomar.exists_alon_fin_hypergraph",
+    "Erdos836.Palomar.not_erdos836QuadraticVertexQuestion",
+    "Erdos836.Palomar.erdos836LinearIntersectionConjecture_proved",
+    "Erdos836.Palomar.r_le_two_mul_add_one_of_forall_card_inter_le",
+    "Erdos836.Palomar.isTwoColorable_of_four_le_r_of_isLinearHypergraph",
+    "Erdos836.Palomar.r_le_five_of_not_hasPairwiseIntersectionAtLeast_three_of_not_isTwoColorable",
+    "Erdos836.Palomar.hasChromaticNumberThree_iff_not_isTwoColorable_of_isIntersecting",
+    "Erdos836.Palomar.three_le_vertexDegree_of_not_hasPairwiseIntersectionAtLeast_sub_one_of_not_isTwoColorable",
+    "Erdos836.Palomar.two_mul_r_add_one_le_card_activeVertices_of_not_hasPairwiseIntersectionAtLeast_sub_one",
+    "Erdos836.Palomar.four_le_vertexDegree_of_mem_inter_of_two_le_card_inter_of_not_hasPairwiseIntersectionAtLeast_sub_one",
+    "Erdos836.Palomar.three_mul_card_activeVertices_add_one_le_card_mul_r_of_four_le_r",
+    "Erdos836.Palomar.nine_le_card_and_nine_le_card_activeVertices_of_r_eq_four_of_not_hasPairwiseIntersectionAtLeast_three",
+    "Erdos836.Palomar.card_eq_seven_and_card_activeVertices_eq_seven_of_r_eq_three_of_isLinearHypergraph_of_not_isTwoColorable",
+    "Erdos836.Palomar.hasCodimensionOneAvoidingWitness_three"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C65",
+      "05D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-14T08:43:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2c2d2f773f1dde69452b0cde525ff6ee633c49d0",
+        "fork_repository": "PalomarArchive/linrock--math-proofs--14cf37780a40",
+        "source_repository": "linrock/math-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1e1f9d6ca0669ae896a3583b4598450ff7d1d76b7e528e3a354903c250f2d6f5"
+}

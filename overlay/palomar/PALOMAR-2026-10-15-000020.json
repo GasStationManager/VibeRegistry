@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000020",
+  "version": 1,
+  "title": "Menger's theorem and Hamiltonian cycles",
+  "abstract": "A Lean 4 / Mathlib formalization of Menger's theorem for finite graphs (set form with a minimum separator and as many vertex-disjoint paths, two-vertex form, edge form for Mathlib's IsEdgeReachable, and the global edge form for Mathlib's IsEdgeConnected) and of classical sufficient conditions for Hamiltonian cycles: the Bondy–Chvátal closure step, Ore's and Dirac's theorems, and the Chvátal–Erdős theorem (k-connected with independence number at most k implies Hamiltonian), whose proof uses Menger's theorem through the fan lemma.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/menger-hamiltonian",
+  "commit": "b6cf60e1910762fa411ca774fee148536246b545",
+  "project_path": null,
+  "declarations": [
+    "MengerTheorem.card_le_of_separates",
+    "MengerTheorem.exists_separator_and_paths",
+    "MengerTheorem.exists_separator_and_paths_of_not_adj",
+    "MengerTheorem.isEdgeReachable_iff",
+    "MengerTheorem.isEdgeConnected_iff",
+    "HamiltonianCycles.isHamiltonian_sup_edge_iff",
+    "HamiltonianCycles.ore",
+    "HamiltonianCycles.dirac",
+    "HamiltonianCycles.chvatal_erdos"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C40",
+      "05C45",
+      "05C38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-15T23:42:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b6cf60e1910762fa411ca774fee148536246b545",
+        "fork_repository": "PalomarArchive/jtraverso--menger-hamiltonian--0fd5dfe41e84",
+        "source_repository": "jtraverso/menger-hamiltonian"
+      }
+    ]
+  },
+  "statement_hash": "sha256:acc706324407fd197743820c86b99be2abd5143bfd9d9e186162ce5d77515dc2"
+}

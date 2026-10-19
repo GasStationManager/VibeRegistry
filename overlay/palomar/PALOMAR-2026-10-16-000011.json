@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000011",
+  "version": 1,
+  "title": "Berge's theorem and the Tutte–Berge formula",
+  "abstract": "A Lean 4 / Mathlib formalization of Berge's augmenting path theorem (a matching is maximum if and only if there is no augmenting path) and of the Tutte–Berge formula (the maximum size of a matching is the minimum over vertex sets U of (|V| + |U| − odd(G − U)) / 2), with the weak inequality for all matchings and vertex sets; the formula is derived from Mathlib's Tutte theorem by adding universal vertices.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/berge-matching",
+  "commit": "b9c91bfbbe08ee7266ee3cb3543dff4e4ca8bc8c",
+  "project_path": null,
+  "declarations": [
+    "BergeTheorem.isMaximum_iff_not_exists_augmenting",
+    "BergeTheorem.two_mul_card_add_le",
+    "BergeTheorem.exists_tutte_berge"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T10:37:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b9c91bfbbe08ee7266ee3cb3543dff4e4ca8bc8c",
+        "fork_repository": "PalomarArchive/jtraverso--berge-matching--b269b121c46f",
+        "source_repository": "jtraverso/berge-matching"
+      }
+    ]
+  },
+  "statement_hash": "sha256:462e6df69ba93fbef749078bc0fb67bbb226995a8db521902382e717e05582a6"
+}

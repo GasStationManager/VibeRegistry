@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-13-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-13-000010",
+  "version": 2,
+  "title": "A uniform zero-free region for Dedekind zeta functions",
+  "abstract": "A Lean formalization of Theorem 1.1 and Corollary 1.2 of A quasi-Riemann hypothesis for Dedekind zeta functions: for every number field K, its Dedekind zeta function has no zeros in Re(s) > 31/32. The formal statement asserts the existence of a holomorphic function away from 1 that agrees with Mathlib's Dedekind zeta function for Re(s) > 1 and is nonzero for Re(s) > 31/32 with s different from 1. The corollary gives the same zero-free bound for Hecke L-functions associated with finite-order Hecke characters, including s = 1 for nonprincipal characters. These characters are represented in Lean as ray class characters. This repository contains the substantive Lean development, including its Challenge and Solution.",
+  "authors": [
+    "Dean Cureton"
+  ],
+  "repository": "https://github.com/AxiomMath/DedekindZetaZeroFree",
+  "commit": "09afbb4ce6570c1615d58509dc197fc9f0956b7d",
+  "project_path": null,
+  "declarations": [
+    "DedekindZetaZeroFree.main",
+    "DedekindZetaZeroFree.heckeCorollary"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M41",
+      "11F70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-14T11:12:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "09afbb4ce6570c1615d58509dc197fc9f0956b7d",
+        "fork_repository": "PalomarArchive/AxiomMath--DedekindZetaZeroFree--42e46c822b86",
+        "source_repository": "AxiomMath/DedekindZetaZeroFree"
+      }
+    ]
+  },
+  "statement_hash": "sha256:56fa46f3acefbeb6a7f28264a56a19d4a2c06a6a458c6d421b9d4bf094ea2406"
+}

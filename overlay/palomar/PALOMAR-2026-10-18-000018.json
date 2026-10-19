@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000018",
+  "version": 1,
+  "title": "Distinct prime divisors of central binomial coefficients",
+  "abstract": "A formal proof of the classical asymptotic omega(binomial(2n,n)) times log n divided by n tending to log 4. The proof combines prime-power estimates, central-binomial bounds, a prime-factor cutoff, and elementary logarithmic limits; it does not use the prime number theorem. This strengthens the earlier finite lower-bound package to a full asymptotic theorem. It does not solve the uniform conjecture in Erdos problem 685 and claims no new mathematical theorem.",
+  "authors": [
+    "AItoBit"
+  ],
+  "repository": "https://github.com/AItoBit/erdos-685-elementary-lower-bound",
+  "commit": "c8618095373664c5c8ea35f78304abdd4ec41691",
+  "project_path": null,
+  "declarations": [
+    "Erdos685Research.tendsto_omega_centralBinom"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B65",
+      "11A51"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T16:53:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c8618095373664c5c8ea35f78304abdd4ec41691",
+        "fork_repository": "PalomarArchive/AItoBit--erdos-685-elementary-lower-bound--59d11b691a59",
+        "source_repository": "AItoBit/erdos-685-elementary-lower-bound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f6a66c7400f24a64dd65d8319798a4bda86bf113fb44c22059c79bdd781e0402"
+}

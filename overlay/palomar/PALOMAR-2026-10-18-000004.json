@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000004",
+  "version": 1,
+  "title": "Tamper-proofing with self-modifying code: a Lean formalization of the threat model",
+  "abstract": "Formalizes Gregory Morse and Tamas Kozsik's paper \"Tamper-Proofing with Self-Modifying Code\" (arXiv:2604.12407v1). The selected statement (PalomarSMT.mathematical_result, four results T1-T4) is an abstract threat model for checksum units whose opcode state lives in the memory they checksum: a system of units with regions and code, a timeline of write, execute, check, split-view and DMA events, adversary levels L0-L4, a cost contract with lower bounds on emulation, forgery and mediation, and eight structural assumptions A1-A8 (none of the form \"the attacker is detected\"). An effective alarm needs a unit with a response code (at least one response byte, all of it unmodified) and either a value mismatch or a positive number k of consecutive timing failures; A6 therefore includes k > 0 and A7 includes that every unit has a response byte. The four selected results are: for every well-formed timeline of a system satisfying A1-A8, if a protected byte outside the SMC opcode bytes (which legitimately vary) is executed while the fetch view differs from the original image, an effective alarm occurs somewhere in the timeline, not necessarily before that execution (T1; executing a changed protected opcode byte is outside the goal); in a faithful split-view run every iteration with a non-zero toggle (apart from the last) is mediated, and under A3 and A5 a faithful mediated check that the cost contract admits, with such an iteration, is a timing failure (T2; not every split-view attack is claimed detected); each of the eleven assumptions is necessary, by an explicit winning adversary against a system that satisfies all the others (T3); and every well-formed timeline at level L0 or L1 with the inline timer satisfies A1, A4 and A5, while there are winning adversaries against systems satisfying every other assumption at L1 with an operating-system timer, at L2 and at L4 (T4: the removed assumption is A5 at L1 with an operating-system timer and at L2, A1 at L2, A4 at L4). Proved in the same development but NOT part of this record (they are not in the Comparator configuration): the paper's Harvard/von Neumann observation (C01, C02), a general fact about observation-preserving simulation whose time bound assumes the per-read charge it uses; the three-quadword forgery of the checksum and the proof that two quadwords do not suffice (the selected T3 witness for A8 is a single two-quadword collision pair); the x86-64 model of the kernels, the static kernel against its C emulation, the 296-unit unrolled kernel at an abstract level and at the instruction level, the byte layout against assembler output, a clear-count contract checked against the paper's tables, timers, the noise estimator, the detection predicate and the data ratios, and native test vectors for the corrected sources.",
+  "authors": [
+    "Gregory Morse"
+  ],
+  "repository": "https://github.com/GregoryMorse/SelfModTamper",
+  "commit": "0a48a85e0f1884a50c6abdcf8617bd315a6b59c2",
+  "project_path": "lean",
+  "declarations": [
+    "PalomarSMT.mathematical_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CR",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "68M07",
+      "94A60",
+      "68Q60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T06:13:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0a48a85e0f1884a50c6abdcf8617bd315a6b59c2",
+        "fork_repository": "PalomarArchive/GregoryMorse--SelfModTamper--186bf1350036",
+        "source_repository": "GregoryMorse/SelfModTamper"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9b0ebd19abc013320e1b38b663bc59bd1f1f994601bc6fd50d1fe951c046f142"
+}

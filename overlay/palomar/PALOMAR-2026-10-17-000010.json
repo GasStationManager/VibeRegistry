@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000010",
+  "version": 1,
+  "title": "Rényi and Tsallis entropy monotonicity for Bernoulli sums",
+  "abstract": "Lean formalization of coordinatewise Rényi and Tsallis entropy monotonicity for finite independent Bernoulli sums on the closed half cube, for every real order in [0,2], as stated in Hillion-Johnson Conjecture 4.4. The complete core proves both entropy comparisons and the finite inverse-score association inequality. Concrete coefficient-law and entropy definitions are checked separately. VERIFICATION.md defines exact-source Linux acceptance and distinguishes historical association-only checkpoints.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/renyi-monotonicity",
+  "commit": "f990878ac03c85b08e80f8b169cbec5941d34e6a",
+  "project_path": null,
+  "declarations": [
+    "RenyiMonotonicity.renyi_monotone",
+    "RenyiMonotonicity.tsallis_monotone",
+    "RenyiMonotonicity.inverse_score_association",
+    "RenyiMonotonicity.bernoulliPolynomial_spec",
+    "RenyiMonotonicity.bernoulliSum_spec",
+    "RenyiMonotonicity.supportCard_spec",
+    "RenyiMonotonicity.powerSum_spec",
+    "RenyiMonotonicity.shannon_spec",
+    "RenyiMonotonicity.renyi_spec",
+    "RenyiMonotonicity.tsallis_spec",
+    "RenyiMonotonicity.expectation_spec"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "cs.IT"
+    ],
+    "msc2020": [
+      "60E15",
+      "94A17",
+      "60G50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T16:11:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f990878ac03c85b08e80f8b169cbec5941d34e6a",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--renyi-monotonicity--fd798efca654",
+        "source_repository": "JD-Jones-ASES/renyi-monotonicity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fec363f98c0bec37fc232a810b02b54a843b473982351d541a115fdf0c002671"
+}

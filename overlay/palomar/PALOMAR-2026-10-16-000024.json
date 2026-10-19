@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000024",
+  "version": 1,
+  "title": "Füredi's stability theorem and the Erdős–Simonovits stability theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of the stability theory of Turán's theorem. (1) Füredi's sharp stability theorem for cliques: a K_{p+1}-free graph on n vertices with at least t(n, p) − t edges (t(n, p) the number of edges of the Turán graph) has a p-partite subgraph with at least e(G) − t edges, via Füredi's partition inequality e(G) + Σᵢ e(G[Vᵢ]) ≤ e(K(V₁, …, V_p)); also edit distance at most 3t to a complete p-partite graph. (2) The Erdős–Simonovits stability theorem for every forbidden graph L with χ(L) ≤ p + 1: for every ε > 0 there are δ > 0 and n₀ such that every L-free graph on n ≥ n₀ vertices with at least (1 − 1/p) n²/2 − δn² edges differs from a complete p-partite graph in at most εn² edges, derived as in Füredi's paper from the regularity method. For this, the project extends Mathlib's regularity theory, which only treats triangles, with (3) the clique counting lemma in ε-uniform parts, (4) the clique removal lemma (fewer than δn^r copies of K_r can be destroyed by deleting fewer than εn² edges) and (5) the embedding lemma for any fixed graph with a proper colouring into pairwise uniform dense parts. Mathlib has Turán's theorem, Szemerédi's regularity lemma and triangle counting/removal, but none of (1)–(5).",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/turan-stability",
+  "commit": "3eb99033cc931add291781f77b7446dcba8f5f9d",
+  "project_path": null,
+  "declarations": [
+    "TuranStability.card_edgeSet_add_le",
+    "TuranStability.furedi",
+    "TuranStability.exists_partition_symmDiff_le",
+    "TuranStability.erdos_simonovits_stability",
+    "TuranStability.card_transversalCliques_ge",
+    "TuranStability.card_transversalCliques_ge_of_isUniform",
+    "TuranStability.card_cliqueFinset_ge",
+    "TuranStability.le_card_cliqueFinset_of_deleteFar",
+    "TuranStability.clique_removal",
+    "TuranStability.exists_embedding",
+    "TuranStability.exists_embedding_of_isUniform",
+    "TuranStability.isContained_of_isUniform",
+    "TuranStability.stability"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35",
+      "05C75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T23:58:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3eb99033cc931add291781f77b7446dcba8f5f9d",
+        "fork_repository": "PalomarArchive/jtraverso--turan-stability--e49ed8b57e3c",
+        "source_repository": "jtraverso/turan-stability"
+      }
+    ]
+  },
+  "statement_hash": "sha256:99a9c70e4c3ecc683605b457fa524bf13b161da551587d025b5ad64410450edc"
+}

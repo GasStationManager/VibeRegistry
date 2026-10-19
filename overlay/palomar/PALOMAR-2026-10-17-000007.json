@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000007",
+  "version": 1,
+  "title": "Sharp quartic Lyapunov boundaries and sextic separation for a planar cubic family",
+  "abstract": "For a specified planar homogeneous cubic family, positive definite real homogeneous quartic Lyapunov certificates exist with strict derivative exactly when the absolute parameter is below an explicit algebraic boundary, and with weak derivative exactly through that boundary. Its value is about 2.1281535330886186. At the positive endpoint the entire cone of quartics with nonpositive derivative is one explicit nonnegative ray, without any positivity assumption. The negative Lie derivative of the endpoint quartic is a cubic square with three distinct real zero lines. Exact integer certificates separate degrees two and four at parameter two, and degrees four and six at nine fourths. The formal statements use actual partial derivatives and allow unrestricted real coefficients.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/quartic-lyapunov",
+  "commit": "6b9b50561cf076e003ecfe1b442594c31a613f9e",
+  "project_path": null,
+  "declarations": [
+    "QuarticLyapunov.endpoint_classification",
+    "QuarticLyapunov.degree_separation",
+    "QuarticLyapunov.strict_classification",
+    "QuarticLyapunov.weak_classification",
+    "QuarticLyapunov.endpoint_explicit",
+    "QuarticLyapunov.endpoint_geometry",
+    "QuarticLyapunov.degree_preserving_contraction",
+    "QuarticLyapunov.boundary_isolation",
+    "QuarticLyapunov.endpoint_cone_classification",
+    "QuarticLyapunov.sextic_separation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC",
+      "math.DS"
+    ],
+    "msc2020": [
+      "34D20",
+      "93D05",
+      "14P10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T10:12:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6b9b50561cf076e003ecfe1b442594c31a613f9e",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--quartic-lyapunov--04cc1cb92bb9",
+        "source_repository": "JD-Jones-ASES/quartic-lyapunov"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e4a68cab4332a4b1424286205a43272cdff2519d15e0cc258f6240f11a08254e"
+}

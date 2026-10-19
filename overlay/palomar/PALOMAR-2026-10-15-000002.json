@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000002",
+  "version": 1,
+  "title": "Smirnov's local-to-global metrization theorem",
+  "abstract": "A space is metrizable if and only if it is Hausdorff, paracompact and locally metrizable. A reusable construction gives a sigma locally finite basis from any point-finite open cover of metrizable patches in a paracompact space, without a separation hypothesis. Local neighborhoods, the cover index and each basis layer may have arbitrary cardinality. The proof assumes no second countability, separability, local compactness or nonemptiness. Classical mathematics; no novelty or priority claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "20375446decf52134cb2788640fe19b580002c05",
+  "project_path": "topology/smirnov-local-metrization",
+  "declarations": [
+    "Smirnov.exists_sigmaLocallyFiniteBasis_of_pointFinite_open_cover",
+    "Smirnov.metrizable_of_open_cover",
+    "Smirnov.LocallyMetrizable.metrizableSpace",
+    "Smirnov.metrizable_iff_explicit",
+    "Smirnov.metrizable_iff_paracompact",
+    "Smirnov.compatible_metric_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54E35",
+      "54D20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-15T06:18:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "20375446decf52134cb2788640fe19b580002c05",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1c5716d8d49153035263089e88815ade1bf0275d85941efa76f4599f4a5337c2"
+}

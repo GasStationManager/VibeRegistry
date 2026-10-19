@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000011",
+  "version": 1,
+  "title": "Compact Hausdorff countable-network metrization",
+  "abstract": "For an arbitrary compact Hausdorff space, metrizability and second countability are each equivalent to the existence of a countable network of arbitrary subsets. A genuine Urysohn-function construction from pairs of network elements supplies continuous separation, and a compatible metric induces exactly the original topology. Supporting results give bounded-real-coordinate closed embeddings, preservation under continuous surjections, arbitrary-subspace heredity and compact-subspace metrization. Empty spaces and arbitrary universes are allowed. This is classical mathematics; no novelty or priority is claimed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "47aaba112beb17b7c0ca68f56356c5c829ee154d",
+  "project_path": "topology/compact-countable-network",
+  "declarations": [
+    "CountableNetwork.IsNetwork.exists_bounded_separating_family",
+    "CountableNetwork.metrizableSpace_of_countable_network",
+    "CountableNetwork.hasCountableNetwork_of_secondCountable",
+    "CountableNetwork.metrizable_iff_hasCountableNetwork",
+    "CountableNetwork.secondCountable_iff_hasCountableNetwork",
+    "CountableNetwork.exists_compatibleMetric",
+    "CountableNetwork.IsNetwork.exists_closedEmbedding",
+    "CountableNetwork.IsNetwork.image",
+    "CountableNetwork.HasCountableNetwork.of_continuous_surjective",
+    "CountableNetwork.HasCountableNetwork.subtype",
+    "CountableNetwork.metrizable_compact_subspace"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54E35",
+      "54D30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T17:50:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "47aaba112beb17b7c0ca68f56356c5c829ee154d",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2830c2c77f5f7f24e61ee6bc18fec918c9634825db057064fb498c6b63fb12df"
+}

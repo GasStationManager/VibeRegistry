@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000019",
+  "version": 1,
+  "title": "The Arithmetic of Time: the slowest settling clock on at most three letters is the Padovan substitution, unique up to mirror image, and both minimal rules are chiral",
+  "abstract": "Five compared theorems. Among all substitutions on at most three letters whose incidence matrix has a Pisot eigenvalue θ > 1, the least such θ is the plastic number ρ, the real root of x³ = x + 1, attained only by the Padovan rule a ↦ b, b ↦ c, c ↦ ab and its mirror c ↦ ba, up to renaming the letters; both minimal rules are chiral, in opposite directions. Precisely: (1) for a substitution σ on k ≤ 3 letters (images may be empty) and a real eigenvalue θ > 1 of its integer incidence matrix that is a Pisot number, ρ ≤ θ, and θ = ρ exactly when, after renaming the letters, σ is the Padovan rule or its mirror; no primitivity or unit hypothesis; (2) the same classification for every real eigenvalue, with no Pisot hypothesis; (3) a 3 × 3 natural matrix with characteristic polynomial x³ − x − 1 is the Padovan matrix after one simultaneous permutation of rows and columns; (4) Siegel's bound ρ ≤ θ for Pisot numbers of degree at most three (Siegel 1944, restricted; not new; proved through the minimal Mahler measures of registered entry PALOMAR-2026-08-31-000004); (5) under the Padovan rule the word ca is a factor of the fifth iterate from the seed a, and ac is a factor of no iterate from any seed; under its mirror, the reverse. The uniqueness was stated without proof by Mercat (2020) for substitutions on three letters; the contribution is a kernel-checked proof of the combined statement, for every real eigenvalue and with no primitivity, unit or non-erasing hypothesis (in the equality case these are consequences: θ = ρ forces k = 3 and characteristic polynomial x³ − x − 1), together with the chirality of both minimal rules. No first-formalization claim is made. That ρ itself is a Pisot eigenvalue of the Padovan matrix, so that the bound is attained, is proved in Supplement.lean and not compared. Companion of registered entry PALOMAR-2026-08-19-000006.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/arithmetic-of-time-slowest-clock",
+  "commit": "49eafbab4af8899b2a66469697bf74683a88ce87",
+  "project_path": null,
+  "declarations": [
+    "ArithmeticOfTime.padovan_minimal_unique",
+    "ArithmeticOfTime.padovan_eigenvalue_unique",
+    "ArithmeticOfTime.padovan_matrix_unique",
+    "ArithmeticOfTime.pisot_ge_plastic",
+    "ArithmeticOfTime.padovan_rules_chiral"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT",
+      "math.DS",
+      "physics.hist-ph"
+    ],
+    "msc2020": [
+      "68R15",
+      "11R06",
+      "37B10",
+      "00A79"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T17:59:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "49eafbab4af8899b2a66469697bf74683a88ce87",
+        "fork_repository": "PalomarArchive/stalex444--arithmetic-of-time-slowest-clock--3a9061e93169",
+        "source_repository": "stalex444/arithmetic-of-time-slowest-clock"
+      }
+    ]
+  },
+  "statement_hash": "sha256:31e845620d431a4b30db6fd9c029098cab8ed6e7a8287d4f3b538ee2c8d0dc47"
+}

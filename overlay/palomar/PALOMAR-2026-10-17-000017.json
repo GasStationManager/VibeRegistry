@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000017",
+  "version": 1,
+  "title": "Optimal Local Decompression: Uniform Finite-View Reduction",
+  "abstract": "A uniform finite-view reduction at the paper's counting-optimal k-bit vertex budget for odd maximum degree 2k-1. Given one total finite-view orientation rule with a sufficient one-bit advice guarantee, one decoder family is chosen before graph order, topology, markers, advice and payload. Every connected graph on Fin n with n>16(k+1) and degree at most 2k-1 admits an encoder recovering every edge bit at either endpoint from a 2^k-symbol vertex alphabet. The same total decoder is local across different connected graphs and arbitrary labelings, with no marker validity or encoded-input premise. Its explicit physical radius depends only on k and the oracle's radius, not n. Eight selected endpoints also cover storage capacity, advice-first coding, complete-graph counting, and bounded connected cell geometry. The external orientation algorithm, computability, general identifier assignments for the assembled theorem and mixed-component assembly remain outside the selected formal scope.",
+  "authors": [
+    "Lennart Rudolph"
+  ],
+  "repository": "https://github.com/lennrt/palomar-formalizations",
+  "commit": "9a61a84e3a2e1494bc08b8eaf714c42f3f918325",
+  "project_path": "zenodo-23346565/palomar",
+  "declarations": [
+    "PalomarDecompression.cubicCapacity",
+    "PalomarDecompression.oddDegreeCapacity",
+    "PalomarDecompression.markedAdviceCodec",
+    "PalomarDecompression.informationLowerBound",
+    "PalomarDecompression.largeComponentPartition",
+    "PalomarDecompression.arbitraryLabelCellGeometry",
+    "PalomarDecompression.boundedCellStability",
+    "PalomarDecompression.uniformFiniteViewReconstruction"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DC",
+      "math.CO"
+    ],
+    "msc2020": [
+      "68W15",
+      "05C85"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T23:30:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9a61a84e3a2e1494bc08b8eaf714c42f3f918325",
+        "fork_repository": "PalomarArchive/lennrt--palomar-formalizations--21c40838d48e",
+        "source_repository": "lennrt/palomar-formalizations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8b52e83447c833ff91d0261159e90badeda586dc4eb86895437bafe6337ad575"
+}

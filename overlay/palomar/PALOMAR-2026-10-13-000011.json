@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-13-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-13-000011",
+  "version": 1,
+  "title": "Low-discrepancy quasi-uniform digital nets in every dimension",
+  "abstract": "The main theorem (thm:A, Theorem A \"Every dimension\", of version 1) of the manuscript \"Low-discrepancy quasi-uniform digital nets in every dimension\", in one statement. For every dimension s >= 3, every integer base q >= 2 all of whose prime factors are at least s - 1, and every k >= 1, the explicit digital net P^{U*_s}_{k,q} over Z/qZ with N = q^(sk) points (Definition def:Ns for the places infinity, 0, 1, ..., s-2 -- the Faure-Hammersley frame in graph form with the gauges of prop:Ns and prop:Gs -- and the design U*_s of Definition def:Ustar, whose columns are short vectors of the lattices of admissible columns, chosen level by level by Babai rounding) (1) is a (0,sk,s)-net in base q, so every cell of side q^(-k) holds exactly one point, and every point of [0,1]^s lies within Euclidean distance sqrt(s) N^(-1/s) of a net point (covering radius); (2) if q >= 5 a*_s + 4, any two distinct net points have toroidal and Euclidean distance at least (1 - a*_s/q) N^(-1/s), for every k >= 1, and for k >= 2 and q > (s-1) a*_s some two distinct points are closer than (1 - a*_s/q + (s-1)(a*_s+1)^2/q^2) N^(-1/s) (first-order sharpness of a*_s). The constant a*_s = max_c sum_{d != c} max_j |E_{d,j}[c]| of def:Ustar satisfies a*_3 = 2 and, for s >= 4, a*_s <= 2(s-1)^(3/2) (3/2)^(s-2) (s-2)!, and this explicit bound is e^(s log s + O(s)) (|log(bound) - s log s| <= 3s). So a*_s <= e^(s log s + O(s)), an upper bound only. Matching bounds of the same order N^(-1/s) for arbitrary N-point sets (the volume argument behind \"optimal order\") are classical and not formalized.\nComparator configuration: comparatorHeadline.json (4 compared theorems, all proved, no sorry): Z3NetA.theoremA, and three theorems showing inside the entry that the data the definitions introduce by choice are the paper's -- Z3NetA.ustarCols_spec (the columns E_{d,j} of def:Ustar exist and are unique), Z3NetA.gamma_spec (gamma_j of lem:sat(ii) exists and is unique) and Z3NetA.net_wellDefined (the reduction R_S -> Z/qZ, a solution U' of the residual problem and the coefficients beta of prop:Gs exist, and the net built from any of them is the entry's net). The Challenge (Headline/Challenge.lean) imports only Mathlib and contains verbatim copies of the 43 definitions of the proof side (Z3Net/FDefs.lean, Z3Net/ThmADefs.lean) that the statement reaches. The Solution (Headline/Solution.lean) obtains the theorem from Z3NetA.thmA of the full formalization in the same Lake project (whose single configuration comparator.json covers all compared theorems of the statement library).",
+  "authors": [
+    "Leonhard Gruenschloss"
+  ],
+  "repository": "https://github.com/lgruen/separated-nets-lean",
+  "commit": "d7b5f50530f21871c58c462a049385c1e1c1b1fa",
+  "project_path": null,
+  "declarations": [
+    "Z3NetA.theoremA",
+    "Z3NetA.ustarCols_spec",
+    "Z3NetA.gamma_spec",
+    "Z3NetA.net_wellDefined"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.NA"
+    ],
+    "msc2020": [
+      "11K38",
+      "65C05",
+      "11K45",
+      "52C17",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-13T05:19:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d7b5f50530f21871c58c462a049385c1e1c1b1fa",
+        "fork_repository": "PalomarArchive/lgruen--separated-nets-lean--dda738bde113",
+        "source_repository": "lgruen/separated-nets-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:94496ed28f2d25b8d7df26b49d5b30cb1fc04a3cc641120746991ea8199b9458"
+}

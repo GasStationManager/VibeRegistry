@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000015",
+  "version": 1,
+  "title": "The Gallai–Hasse–Roy–Vitaver theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of the Gallai–Hasse–Roy–Vitaver theorem: if an orientation of a finite graph has no directed path on more than k vertices, the graph is k-colourable; and conversely every k-colourable graph has such an orientation. Hence the chromatic number is the minimum over orientations of the number of vertices of a longest directed path.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/gallai-roy",
+  "commit": "e737218bf80c3d3684d670f5f8aa9a8257e1a52f",
+  "project_path": null,
+  "declarations": [
+    "GallaiRoyTheorem.colorable_of_orientation",
+    "GallaiRoyTheorem.exists_orientation_of_colorable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T14:20:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e737218bf80c3d3684d670f5f8aa9a8257e1a52f",
+        "fork_repository": "PalomarArchive/jtraverso--gallai-roy--242cd45a936c",
+        "source_repository": "jtraverso/gallai-roy"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9914f8110058d4a071bfc8c0f4b8f89d4de63b94c127df3216e7f6b5113805e3"
+}

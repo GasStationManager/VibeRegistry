@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000001",
+  "version": 1,
+  "title": "Chvátal's and Pósa's degree conditions for Hamiltonian cycles",
+  "abstract": "A Lean 4 / Mathlib formalization of two classical degree-sequence conditions for Hamiltonicity of a finite simple graph on n ≥ 3 vertices with degrees d₁ ≤ ⋯ ≤ dₙ. Chvátal's theorem (1972): if for every i < n/2, dᵢ ≤ i implies d_{n−i} ≥ n − i, then the graph is Hamiltonian (stated without sorting: if at least i vertices have degree at most i, then at least i + 1 vertices have degree at least n − i). Pósa's theorem (1962): if for every k with 1 ≤ k < (n − 1)/2 fewer than k vertices have degree at most k, and, for odd n, at most (n − 1)/2 vertices have degree at most (n − 1)/2, then the graph is Hamiltonian. Mathlib has Hamiltonian cycles but neither theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/chvatal-posa-hamiltonian",
+  "commit": "6be0ebda7b457b85ad400f6d7f92ad156d6e7712",
+  "project_path": null,
+  "declarations": [
+    "HamiltonDegree.chvatal",
+    "HamiltonDegree.posa"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C45",
+      "05C07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T01:59:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6be0ebda7b457b85ad400f6d7f92ad156d6e7712",
+        "fork_repository": "PalomarArchive/jtraverso--chvatal-posa-hamiltonian--3158a08a16e2",
+        "source_repository": "jtraverso/chvatal-posa-hamiltonian"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f2eb69ed8b92d3b1ac82f490e68c98c0560d3eba5599915be22d3478b90bc8cf"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000008",
+  "version": 1,
+  "title": "The Nash-Williams–Tutte tree packing theorem and Nash-Williams' arboricity theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of three classical results on edge-disjoint trees and forests in finite simple graphs, none of which is in Mathlib. (1) The Nash-Williams–Tutte tree packing theorem: a graph has k edge-disjoint spanning trees if and only if every partition of its vertices into m parts has at least k(m − 1) edges between different parts. (2) Nash-Williams' arboricity theorem: the edges can be covered by k forests if and only if every nonempty vertex set S spans at most k(|S| − 1) edges. (3) The corollary that every 2k-edge-connected graph has k edge-disjoint spanning trees. Mathlib has no matroid union theorem and no graphic matroid; the proofs are direct edge-exchange arguments.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/nash-williams-trees",
+  "commit": "101e48847a929dd8102521f57723e2137989ce2e",
+  "project_path": null,
+  "declarations": [
+    "NashWilliamsTutte.tree_packing",
+    "NashWilliamsTutte.arboricity",
+    "NashWilliamsTutte.exists_trees_of_isEdgeConnected"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C05",
+      "05C70",
+      "05C40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T12:29:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "101e48847a929dd8102521f57723e2137989ce2e",
+        "fork_repository": "PalomarArchive/jtraverso--nash-williams-trees--9280327cd578",
+        "source_repository": "jtraverso/nash-williams-trees"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1ecf809fac8fabae7f4c3a34850b257bf040f143ed79a5d9ce0d15e68930abe9"
+}

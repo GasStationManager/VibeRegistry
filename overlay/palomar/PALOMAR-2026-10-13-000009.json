@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-13-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-13-000009",
+  "version": 1,
+  "title": "A lower bound of 21 for 3 × 3 matrix multiplication over every field",
+  "abstract": "Every exact bilinear algorithm for multiplying two 3 × 3 matrices over an arbitrary field uses at least 21 products of input linear forms. The theorem includes finite and infinite fields in every characteristic. The input linear forms and output matrices are unrestricted. This is a lower bound for exact bilinear complexity, not for border rank or general arithmetic circuits. The repository contains the proof development and an interface stated entirely with ordinary Mathlib matrices and linear maps.",
+  "authors": [
+    "Andrey Ivanov"
+  ],
+  "repository": "https://github.com/AIV5/mmrank21",
+  "commit": "cb1557b7ea80ea66fae4714628663d8c1df7a48d",
+  "project_path": null,
+  "declarations": [
+    "MMRank.Palomar.lower_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC",
+      "math.RA"
+    ],
+    "msc2020": [
+      "68Q17",
+      "15A69",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-13T04:02:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cb1557b7ea80ea66fae4714628663d8c1df7a48d",
+        "fork_repository": "PalomarArchive/AIV5--mmrank21--d9522a4ac481",
+        "source_repository": "AIV5/mmrank21"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d0178c5941d560aecd0e586ed54c0835b32047418a7fede53058f38e74ca4839"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-12-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-12-000008",
+  "version": 2,
+  "title": "Formalization of Carleson's theorem via the Lacey-Thiele approach",
+  "abstract": "This is a Lean 4 formalization of Theorem 1.1 from the paper \"Bounds for anisotropic Carleson operators\" by J. Roos, which generalizes the Lacey-Thiele proof for Carleson's theorem. The classical Carleson theorem on pointwise almost everywhere convergence of Fourier series is derived as a special case.",
+  "authors": [
+    "Joris Roos"
+  ],
+  "repository": "https://github.com/roos-j/lean-lt-carleson",
+  "commit": "1fde1f341dfdde6e69500bfe909ea1f77159d163",
+  "project_path": null,
+  "declarations": [
+    "anisotropic_carleson",
+    "classical_carleson"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "42B20",
+      "42B25",
+      "42A20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T21:03:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1fde1f341dfdde6e69500bfe909ea1f77159d163",
+        "fork_repository": "PalomarArchive/roos-j--lean-lt-carleson--3c5e40951aa7",
+        "source_repository": "roos-j/lean-lt-carleson"
+      }
+    ]
+  },
+  "statement_hash": "sha256:082334e5a22c31b1112c10459fddcd04bf69c759d0d36d63c2cb79fb3b1eea10"
+}

@@ -1,0 +1,111 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000014",
+  "version": 1,
+  "title": "Finite quantum designs: mutually unbiased bases, SIC-POVMs, and the Welch and Gerzon bounds",
+  "abstract": "A Lean 4 development of two structures of finite-dimensional quantum information, in the vocabulary of google-deepmind/formal-conjectures (Open Quantum Problems 13 and 23; the fourteen definitions restated character for character under their Apache-2.0 license, see NOTICE). A basis of C^d is a unitary matrix whose columns are the basis vectors; two bases U, V are mutually unbiased when every entry of U^* V has squared norm 1/d; HasMUBs d k says k pairwise unbiased bases exist and IsMaxMUBCount d k that k is the largest such number. Theorems: for d >= 2, HasMUBs d m implies m <= d + 1 (Wootters-Fields 1989; Bandyopadhyay-Boykin-Roychowdhury-Vatan 2002, Theorem 3.5: the identity and the m(d - 1) traceless combinations of the rank-one projectors are pairwise orthogonal in the d^2-dimensional matrix space), and the hypothesis is sharp since in dimension 1 every two bases are unbiased; restriction to subfamilies; the tensor bound HasMUBs m k and HasMUBs n k imply HasMUBs (m n) k (Klappenecker-Rötteler 2004, Lemma 3) and its corollary over the factorization (HasMUBs d k whenever k <= q + 1 for every exact prime-power divisor q of d), hence three mutually unbiased bases in every dimension d >= 2; for a finite field F of odd characteristic and size q, the standard basis and the q bases with entries psi(a x^2 + b x)/sqrt q (psi a nontrivial additive character) are q + 1 mutually unbiased bases (Klappenecker-Rötteler, Theorem 2), through the identity |sum_x psi(c x^2 + e x)|^2 = q for c != 0 proved by Weyl differencing; for q = 2^n the bases with entries i^(x^T S_a x) (-1)^(b . x)/sqrt q, S_a the {0, 1}-lifted Gram matrix of the trace form (x, y) -> Tr(a x y) of the field with 2^n elements (an equivalent form of the Galois-ring bases of Klappenecker-Rötteler, Theorem 3), through the mod-4 identity Q(x + y) = Q(x) + Q(y) + 2 x^T S y and the nondegeneracy of the trace form; so IsMaxMUBCount (p^k) (p^k + 1) for every prime power, HasCompleteMUBs d iff IsMaxMUBCount d (d + 1) for d >= 2, and the values 3, 5, 9 in dimensions 2, 4, 8 also by explicit kernel-checked tables. Weiner's gap (Weiner 2013, Corollary 3.4): any d mutually unbiased bases of C^d extend, by one more basis, to a complete set of d + 1, the given bases keeping their places, for every d (and in the existence form, HasMUBs d d implies HasCompleteMUBs d), by Weiner's proof with its operator-algebra steps written out. The orthogonal projection Phi onto the matrices with a constant diagonal in every one of the d bases has a Kraus form X -> sum_i K_i^* X K_i whose operators K_i have constant diagonals themselves (Weiner's Lemma 3.2, through his Lemma 2.1, sum_k A_k^* X A_k = Tr(X) 1 for an orthonormal basis A_k of the matrix space, recalled there from Werner 2001); at a fixed point X the Kadison-Schwarz defect sum_i K_i^* X^* X K_i - Phi(X)^* Phi(X) is the sum of the squares (X K_i - K_i X)^* (X K_i - K_i X) and has zero trace, so the K_i commute with one another and with their adjoints (in place of the Schwarz inequality and the multiplicative-domain theorem of Choi 1974 that the paper's Lemma 3.1 uses); and the rank-one projectors of a common eigenbasis of the K_i are fixed by Phi, hence have constant diagonals, hence are unbiased to every basis of the family. Corollaries: k >= d bases give a complete set; for d >= 2, d is never the maximal number (in particular mu(6) != 6), and the maximal number is d + 1 or below d. The maximal number mu(d): two bases in every dimension; HasMUBs (p^k) m iff m <= p^k + 1; mu(d) is unique, exists for d >= 2 and lies in [3, d + 1], and does not exist for d = 1; formal-conjectures' mutuallyUnbiasedBases_dim6_bounds, 3 <= mu(6) <= 7, left with sorry there. Reconstruction (Scott 2006, eq. (9)): a complete set of d + 1 bases determines every matrix, X = sum_{s,l} Tr(X P_{s,l}) P_{s,l} - Tr(X) 1 with P_{s,l} the projector onto column l of basis s (after Ivanović 1981 and Wootters-Fields 1989), and so does a SIC family, X = sum_i ((d + 1) Tr(X P_i) - Tr X)/d P_i (its projectors are linearly independent, Renes-Blume-Kohout-Scott-Caves 2004, section II). Second moments (Klappenecker-Rötteler 2005, Theorems 3 and 5; Renes-Blume-Kohout-Scott-Caves 2004, p. 4; Scott 2006, eq. (8)): for all matrices X, Y, sum_{s,l} Tr(X P_{s,l}) Tr(Y P_{s,l}) = Tr(XY) + Tr X Tr Y for a complete set and (d + 1) sum_i Tr(X P_i) Tr(Y P_i) = d (Tr(XY) + Tr X Tr Y) for a SIC family; hence the data Tr(X P_{s,l}), and the SIC-POVM outcomes Tr(X P_i)/d with the factor d(d + 1), give ||X||_HS^2 + |Tr X|^2, the Hilbert-Schmidt distance of two matrices with equal traces, and the purity Tr(rho^2) of a Hermitian rho with Tr rho = 1 (Larsen 1990, not read, as stated by Wu-Yu-Mølmer 2009; Scott 2006, eqs. (32), (36), (55)). A SIC family in C^d is d^2 unit vectors with pairwise squared overlap 1/(d + 1); HasSICPOVM d says one exists. Theorems: N unit vectors of C^d with one squared overlap c != 1 on every pair satisfy N <= d^2 (the absolute bound of Delsarte-Goethals-Seidel 1975, the complex form of Gerzon's bound; the rank-one projectors are linearly independent), and with c = 1 the family may be any length; for d >= 2, d^2 such vectors have c = 1/(d + 1) and resolve the identity, sum_i (1/d) |phi_i><phi_i| = 1, so every SIC family is a POVM (Renes-Blume-Kohout-Scott-Caves 2004), HasSICPOVM d holds iff C^d has d^2 equiangular unit vectors, and a family at the SIC angle has at most d^2 members; Welch's bound (Welch 1974, the bound for k = 1, in the frame-potential form of Benedetto-Fickus 2003): N unit vectors of C^d have sum_{i,j} |<phi_i, phi_j>|^2 >= N^2/d, by the Cauchy-Schwarz inequality for the identity and the frame operator in the matrix space; hence N >= 2 unit vectors with one squared overlap c on every pair have c >= (N - d)/(d (N - 1)), pairwise squared overlaps at most alpha with alpha d < 1 give N (1 - alpha d) <= d (1 - alpha) (the relative bound), and at most d^2 unit vectors have every pairwise squared overlap at most 1/(d + 1). Welch's equality case (Mixon-Needham-Shonkwiler-Villar, Proposition 1 and its proof): sum_{i,j} |<phi_i, phi_j>|^2 - N^2/d = ||S - (N/d) 1||_HS^2 for the frame operator S = sum_i |phi_i><phi_i|, so equality holds exactly for a tight frame; at equality in the relative bound every pairwise squared overlap is alpha and S = (N/d) 1 (Strohmer-Heath 2003, Theorem 2.3); d^2 unit vectors with every pairwise squared overlap at most 1/(d + 1) are a SIC family, and HasSICPOVM d holds iff such vectors exist; and pairwise squared overlaps at most 1/(d + 1) + epsilon give ||S/d - 1||_HS^2 <= (d^2 - 1) epsilon for d >= 1, a bound on the resolution of the identity only. SIC-POVMs exist in dimensions 2 (the tetrahedron), 3 (the Hesse configuration), 4 (the sixteen Weyl-Heisenberg translates of Appleby's exact fiducial, Appleby 2005, eq. (149), credited there to Zauner and to Renes et al.; covariance reduces the 240 overlaps to fifteen, proved by exact trigonometric and radical identities in cos(pi/8), sin(pi/8) and sqrt(2 + sqrt 5)) and 8 (Hoggar's 64 lines: the orbit of (-1 + 2i, 1, 1, 1, 1, 1, 1, 1)/sqrt 12 under the three-qubit Pauli group, Jedwab-Wiebe 2015, Example 4, checked by the kernel over all ordered pairs). Sixty compared statements, kernel-only. As of 2026-10-10 no formalization of the general bound, of the prime-power constructions, of the factorization corollary, of the complex absolute bound with its equality case, of Weiner's gap for general d, of Welch's bound, of the two reconstruction formulas for every matrix or of a SIC-POVM in dimension 4 was located in the Palomar registry, Mathlib, formal-conjectures, openai/math, physlib, the other Lean repositories searched, the Isabelle AFP, the Rocq package index or arXiv; none of the second moment of a SIC family with its norm, distance and purity forms, of Welch's deficit with its equality case, of the equality case of the relative bound, of the SIC family from d^2 vectors at or below the SIC angle or of the frame-defect bound was located in the Palomar registry, Mathlib, formal-conjectures, openai/math, physlib or the-omega-institute/trureturing. Read 2026-10-14, after that search: marozols/SIC-existence (public 2026-10-09, Lean v4.34.1, self-assessed, unregistered) states SICs in every dimension and, in RSIC.lean, the N = d^2 equality case, in its own vocabulary, so a dimension-4 SIC and that equality case exist elsewhere in Lean; the statements here are over formal-conjectures' definitions and were proved independently. The neighbours: the dimension-2 MUB case is formal-conjectures' mutuallyUnbiasedBases_dim2; the dimension-6 projector bound and the Kronecker lemma are in the XC0R fork of formal-conjectures (adapted here, see NOTICE); the dimension-2 and 3 SIC overlaps are in zblore/csd-lean4; the-omega-institute/trureturing kernel-checks the same 64 Hoggar vectors and the Hesse SIC in its own vocabulary, proves that the trace pairings with a complete family of rank-one contexts determine every matrix, proves the density-matrix formula under an assumed completeness hypothesis, and proves the second moment of a complete set in operator form with the purity identity for density matrices (complete_context_collision_conservation, 2026-08-28); openai/math holds mu(6) <= 5 and Weiner's gap at d = 6 (six_extend_to_seven), with lemmas for general n (commutator_trace_identity, commute_of_kraus_fixed, exists_joint_projection_basis) that make the same elementary move as the route here, the Schwarz defect of a Kraus map as a sum of squared commutators; the Kadison-Schwarz inequality for Kraus and completely positive maps is in physlib, QuAIR/Lean-QIT and kencyke/quantum-system. Not claimed: anything about dimension 6 beyond 3 <= mu(6) <= 7 and mu(6) != 6 (openai/math holds mu(6) <= 5), SICs in dimensions 5 to 7, that a family near the SIC angle is close to a SIC family, any first formalization.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/finite-quantum-designs-lean",
+  "commit": "5938504ecc632f9101d5ef17603879a08dad3866",
+  "project_path": null,
+  "declarations": [
+    "QuantumDesigns.hasMUBs_le",
+    "QuantumDesigns.hasMUBs_one_dim",
+    "QuantumDesigns.hasMUBs_of_le",
+    "QuantumDesigns.hasMUBs_mul",
+    "QuantumDesigns.hasMUBs_of_forall_primePow",
+    "QuantumDesigns.hasMUBs_three",
+    "QuantumDesigns.quadSum_normSq",
+    "QuantumDesigns.hasCompleteMUBs_of_odd_char",
+    "QuantumDesigns.isMaxMUBCount_odd_prime_pow",
+    "QuantumDesigns.hasCompleteMUBs_two_pow",
+    "QuantumDesigns.isMaxMUBCount_two_pow",
+    "QuantumDesigns.isMaxMUBCount_prime_pow",
+    "QuantumDesigns.hasCompleteMUBs_iff_isMaxMUBCount",
+    "QuantumDesigns.isMaxMUBCount_two",
+    "QuantumDesigns.isMaxMUBCount_four",
+    "QuantumDesigns.isMaxMUBCount_eight",
+    "QuantumDesigns.gerzon_bound",
+    "QuantumDesigns.gerzon_sharp",
+    "QuantumDesigns.gerzon_equality",
+    "QuantumDesigns.gerzon_frame",
+    "QuantumDesigns.isSICFamily_frame",
+    "QuantumDesigns.hasSICPOVM_iff_equiangular",
+    "QuantumDesigns.card_le_of_sicOverlapSq",
+    "QuantumDesigns.hasSICPOVM_two",
+    "QuantumDesigns.hasSICPOVM_three",
+    "QuantumDesigns.hasSICPOVM_eight",
+    "QuantumDesigns.hasCompleteMUBs_of_hasMUBs_self",
+    "QuantumDesigns.exists_isMUBFamily_extension",
+    "QuantumDesigns.hasCompleteMUBs_of_le_hasMUBs",
+    "QuantumDesigns.isMaxMUBCount_ne_self",
+    "QuantumDesigns.isMaxMUBCount_dichotomy",
+    "QuantumDesigns.hasMUBs_two",
+    "QuantumDesigns.hasMUBs_prime_pow_iff",
+    "QuantumDesigns.isMaxMUBCount_unique",
+    "QuantumDesigns.exists_isMaxMUBCount",
+    "QuantumDesigns.not_exists_isMaxMUBCount_one",
+    "QuantumDesigns.isMaxMUBCount_bounds",
+    "QuantumDesigns.mutuallyUnbiasedBases_dim6_bounds",
+    "QuantumDesigns.not_isMaxMUBCount_six_six",
+    "QuantumDesigns.mub_reconstruction",
+    "QuantumDesigns.sic_reconstruction",
+    "QuantumDesigns.welch_bound",
+    "QuantumDesigns.welch_bound_of_constantOverlap",
+    "QuantumDesigns.welch_card_bound",
+    "QuantumDesigns.card_le_of_overlapSq_le_sic",
+    "QuantumDesigns.hasSICPOVM_four",
+    "QuantumDesigns.mub_second_moment",
+    "QuantumDesigns.sic_second_moment",
+    "QuantumDesigns.mub_hilbert_schmidt",
+    "QuantumDesigns.sic_hilbert_schmidt",
+    "QuantumDesigns.mub_tomography_distance",
+    "QuantumDesigns.sic_tomography_distance",
+    "QuantumDesigns.mub_tomography_purity",
+    "QuantumDesigns.sic_tomography_purity",
+    "QuantumDesigns.welch_deficit",
+    "QuantumDesigns.welch_equality_iff_tight",
+    "QuantumDesigns.welch_relative_equality",
+    "QuantumDesigns.isSICFamily_of_overlapSq_le",
+    "QuantumDesigns.hasSICPOVM_iff_overlapSq_le",
+    "QuantumDesigns.frame_defect_le_of_overlapSq_le"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "math.CO"
+    ],
+    "msc2020": [
+      "81P15",
+      "05B30",
+      "52C35",
+      "11T24"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T13:52:58Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5938504ecc632f9101d5ef17603879a08dad3866",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--finite-quantum-designs-lean--49799ace49af",
+        "source_repository": "JD-Jones-ASES/finite-quantum-designs-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b74ce380c2352032b875313938c0a136899fdf6198cab37d37711ccbec0e031b"
+}

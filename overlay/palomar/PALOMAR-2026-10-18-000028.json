@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000028",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000028",
+  "version": 1,
+  "title": "Systolic growth in every genus",
+  "abstract": "This repository introduces and formally proves the lower bound 4/3 for the limit inferior of the supremal hyperbolic systole in genus g divided by log g. At present, this formalization is the theorem's only public statement and proof. This metadata records the result as an original proof; the published papers below are cited only as background for ingredients. The proof combines arithmetic hyperbolic surfaces, uniform representations by comparable prime cubes, and surface gluing followed by a smooth conformal change to curvature minus one that preserves the systole lower bound.",
+  "authors": [
+    "Nihar Gargava"
+  ],
+  "repository": "https://github.com/nihargargava/systole_bound",
+  "commit": "a54807b9bf6cbd61194c1fb78da380535ec8a871",
+  "project_path": null,
+  "declarations": [
+    "SystolicGrowth.systolic_growth_lower_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "math.NT"
+    ],
+    "msc2020": [
+      "53C22",
+      "32G15",
+      "11P32"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T22:10:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a54807b9bf6cbd61194c1fb78da380535ec8a871",
+        "fork_repository": "PalomarArchive/nihargargava--systole_bound--2ba371315fe1",
+        "source_repository": "nihargargava/systole_bound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8f7530cff6a8bf10d454cc0bffd6b2b4c9fabec2c0b29b65956be87d128cfb7c"
+}

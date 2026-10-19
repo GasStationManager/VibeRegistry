@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000009",
+  "version": 1,
+  "title": "Erdős Problem 408: distribution of iterated totient heights",
+  "abstract": "A Lean proof that the least k with φ_k(n) = 1 has normal order α log n for a constant 1 / log 3 ≤ α ≤ 1 / log 2, with mean-square error O(x (log x)² / (log log x)⁵). This answers the first two questions of Erdős Problem 408. The proof formalizes extensions of Theorems 3.1 and 6.1 of OpenAI's The Poisson-Dirichlet law for prime predecessors, and uses vendored Lean proofs of the zero-free half-plane re s > 7/8 for Dirichlet L-functions (openai/math) and of the weighted dilation graph results (Yao Xu's totient-fibers-lean4).",
+  "authors": [
+    "Jacob Parish"
+  ],
+  "repository": "https://github.com/plasma-ai/erdos-408",
+  "commit": "4ea44bf911f8668aec10ec25c4b309e8ed476666",
+  "project_path": null,
+  "declarations": [
+    "Erdos408.normal_order_rate",
+    "Erdos408.erdos_408.parts.i",
+    "Erdos408.erdos_408.parts.ii"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A25",
+      "11N37",
+      "11N64"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T07:20:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4ea44bf911f8668aec10ec25c4b309e8ed476666",
+        "fork_repository": "PalomarArchive/plasma-ai--erdos-408--545e2755076e",
+        "source_repository": "plasma-ai/erdos-408"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cccd51de24d078c06508e7402f3d6fe2aff518789dfa078ae25adcb25e3876ed"
+}

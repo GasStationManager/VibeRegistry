@@ -1,0 +1,73 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000013",
+  "version": 1,
+  "title": "Finite Observations and Recognition of the Compact Albert Algebra",
+  "abstract": "Let J=H_3(O), the real algebra of 3×3 Hermitian matrices over the division octonions, with product a∘b=(ab+ba)/2 and diagonal trace T. A frame p=(p_0,p_1,p_2) consists of trace-one elements satisfying p_i∘p_i=p_i, p_i∘p_j=0 for i≠j, and p_0+p_1+p_2=1. For frames p,q,r, record the 27 pair traces T(p_i∘q_j), T(q_j∘r_k), T(r_k∘p_i), and 27 triple traces T((p_i∘q_j)∘r_k), for i,j,k∈{0,1,2}. How much do these traces determine?\n\nEach trace list in some open neighborhood of the data with pair entries 1/3 and triple entries 1/9, in a fixed twenty-dimensional chart, determines exactly two equivalence classes. Equivalence means one product-and-trace-preserving real linear bijection acting on all nine labeled elements, without relabeling. The sign of the degree-nine scalar Phi distinguishes the classes. With x=p_2−p_0, y=q_2−q_0, z=r_2−r_0, define\n\nB(a,b) = T(a∘b),\nU_a(b) = 2a∘(a∘b)−(a∘a)∘b,\nPhi(x,y,z) = B((U_x U_y−U_y U_x)z,U_z(x∘y)).\n\nPhi's derivative uses Glennie's degree-eight vector polynomial.\n\nFor arbitrary x,y,z∈J, Phi≠0 implies that 1,x,y,z generate J.\n\nRecognition starts from a homogeneous cubic N on finite-dimensional real normed E, with N(e)=1 and g_e=−(1/3)D²(log N)_e positive definite on all E. A supplied linear equivalence ker(DN_e)≃ker T (the trace-zero subspace), matching g_e to B/3 and full vector-valued curvature tensors, yields an Albert algebra equivalence.\n\nConsider 27 fixed parenthesized products of a distinguished element and three chosen elements in a real inner-product space with bilinear multiplication. Exact matching with the Albert table of pairwise inner products, inner products of products with these expressions and full ambient squared product norms determines a unique isometric, product-preserving linear embedding of J onto the subspace they generate under products and linear combinations, preserving the distinguished element and chosen elements.\n\nFurther results give error bounds. All project exposition and Lean code are AI-generated under Robert MacGregor's direction. Robert is a non-mathematician and welcomes mathematical collaboration: macgregor@gmail.com. No novelty is asserted.",
+  "authors": [
+    "Robert MacGregor"
+  ],
+  "repository": "https://github.com/macgregor-sudo/compact-albert-recognition",
+  "commit": "40d3b344180d9ddb78aaa2876873377c1e631515",
+  "project_path": null,
+  "declarations": [
+    "Glennie.SubmissionR03.q26_eq_iff_fullLedger_eq",
+    "Glennie.SubmissionR03.division_free",
+    "Glennie.SubmissionR03.score_eq_two_phi",
+    "Glennie.SubmissionR03.atoms_generate_of_score",
+    "Glennie.SubmissionR03.nearby_sign_rigidity",
+    "Glennie.SubmissionR03.nearby_fibres_two_orbits",
+    "Glennie.SubmissionR03.q20_eq_iff_fullLedger_eq",
+    "Glennie.SubmissionR03.near_flat_scalar_margin",
+    "Glennie.SubmissionR03.signed_readout_margin",
+    "Glennie.SubmissionR03.finite_word_marked_recognition",
+    "Glennie.SubmissionR03.local_q26_score_orbit_test",
+    "Glennie.SubmissionR03.phi_nonzero_generation_stabilizer",
+    "Glennie.SubmissionR03.compact_local_phi_margin",
+    "Glennie.SubmissionR03.compact_feasible_element_recovery",
+    "Glennie.SubmissionR03.compact_noisy_feasible_element_recovery",
+    "Glennie.SubmissionR03.six_readout_displaced_generation",
+    "Glennie.SubmissionR03.diagonalN_defect_response_radius",
+    "Glennie.SubmissionR03.frame_noisy_diagonalN_defect_lower",
+    "Glennie.SubmissionR03.frame_noisy_represented_defect_lower",
+    "Glennie.SubmissionR04Quotient.admitted_orbit_quotient_homeomorph",
+    "Glennie.SubmissionR04Intrinsic.intrinsic_local_reconstruction",
+    "Glennie.Compact.GlennieFullDerivativeR01.hasFDerivAt_phiTriple",
+    "Glennie.Compact.GlennieFullDerivativeR01.eq_top_of_fderiv_phiTriple_ne_zero"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA",
+      "math.DG"
+    ],
+    "msc2020": [
+      "17C40",
+      "17C37",
+      "17C30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T13:15:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "40d3b344180d9ddb78aaa2876873377c1e631515",
+        "fork_repository": "PalomarArchive/macgregor-sudo--compact-albert-recognition--0d184e5e9908",
+        "source_repository": "macgregor-sudo/compact-albert-recognition"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a1b100a93147c9e85cb749e9fa1abfcc3d50a175545627ad3a230dae375b6f84"
+}

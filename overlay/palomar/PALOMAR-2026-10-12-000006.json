@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-12-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-12-000006",
+  "version": 1,
+  "title": "Sharp last-iterate bounds and extremal trajectories for constant-step gradient descent",
+  "abstract": "Exact final-gradient bounds for convex functions with Lipschitz gradient on real Hilbert spaces, under an initial-distance bound, for every horizon and nonnegative constant step. The factor is the maximum of reciprocal linear progress and the quadratic oscillation power, with genuine smooth convex attaining examples. The formalization includes the joint progress potential, complete sampled equality trajectories in both strict branches and at balance, and a direct transfer from actual constrained proximal minimizers to sharp residual and terminal objective-residual bounds. All ten principal declarations are listed in comparator.json; VERIFICATION.md records checks.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/thg-gradient-curve",
+  "commit": "134788107eb28be0459555383a482a350bc953a4",
+  "project_path": null,
+  "declarations": [
+    "THGGradient.last_gradient_bound",
+    "THGGradient.scalar_attainment",
+    "THGGradient.progress_joint_bound",
+    "THGGradient.progress_equality",
+    "THGGradient.oscillation_equality",
+    "THGGradient.balance_equality",
+    "THGGradient.proximal_residual_bound",
+    "THGGradient.proximal_residual_attainment",
+    "THGGradient.proximal_progress_tradeoff",
+    "THGGradient.proximal_objective_attainment"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC"
+    ],
+    "msc2020": [
+      "90C25",
+      "90C30",
+      "49M37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-12T09:24:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "134788107eb28be0459555383a482a350bc953a4",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--thg-gradient-curve--2e62e12d1521",
+        "source_repository": "JD-Jones-ASES/thg-gradient-curve"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9bf75fb8cf930fa12de6fdb078f0b0f9269e92a393a5f6dfdb7f5eb73e78cdcd"
+}

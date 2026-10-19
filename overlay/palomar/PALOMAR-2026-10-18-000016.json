@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000016",
+  "version": 1,
+  "title": "Spectral bounds on the chromatic and independence numbers",
+  "abstract": "A Lean 4 / Mathlib formalization of classical eigenvalue bounds for a finite simple graph G on a nonempty vertex type, with λ_max and λ_min the largest and smallest eigenvalues of its real adjacency matrix: the average degree is at most λ_max and λ_max is at most the maximum degree (Collatz–Sinogowitz); G is (⌊λ_max⌋ + 1)-colourable (Wilf 1967); if G has an edge, every proper colouring uses at least 1 − λ_max/λ_min colours (Hoffman 1970); and if G is k-regular with k ≥ 1, every independent set has at most n(−λ_min)/(k − λ_min) vertices (Hoffman's ratio bound). Mathlib has the spectral theorem for Hermitian matrices but none of these bounds.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/spectral-graph-bounds",
+  "commit": "8d8b4ce17e56165b5f1ad3b285fb141666804e1c",
+  "project_path": null,
+  "declarations": [
+    "AdjacencySpectrum.average_degree_le",
+    "AdjacencySpectrum.le_maxDegree",
+    "AdjacencySpectrum.wilf",
+    "AdjacencySpectrum.hoffman_chromatic",
+    "AdjacencySpectrum.hoffman_ratio"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C50",
+      "05C15",
+      "05C69"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T14:28:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8d8b4ce17e56165b5f1ad3b285fb141666804e1c",
+        "fork_repository": "PalomarArchive/jtraverso--spectral-graph-bounds--08d3a675ea5f",
+        "source_repository": "jtraverso/spectral-graph-bounds"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6977ec649284bb741da4aa993ac5e67e73e7dc30948f3715e4341ee7f4e08a98"
+}

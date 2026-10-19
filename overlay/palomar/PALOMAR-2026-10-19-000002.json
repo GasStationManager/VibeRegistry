@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000002",
+  "version": 1,
+  "title": "A Unified Kalman-Type Classification of Controllability for Linear Stochastic Systems",
+  "abstract": "Formalization of a finite algebraic classification of approximate, approximate null, exact null, and exact controllability for finite-dimensional linear stochastic systems with constant coefficients and independent Brownian drivers. A decreasing subspace sequence gives a common obstruction for the first three properties; exact controllability additionally requires full row rank of the stacked diffusion-control matrix. The development also covers stochastic integration, forward and backward equations, duality, finite rank tests, null feedback, and polynomial small-time energy bounds. The independent Palomar statement and its solution compile with Lean v4.35.0-rc2 and canonical Mathlib. Complete sandboxed mechanical preflight and editorial review are separate requirements; no registration is claimed.",
+  "authors": [
+    "Yu Wang"
+  ],
+  "repository": "https://github.com/MrGodfrey/LeanForCriteriaForLinearStochastic",
+  "commit": "c088eb9943197e88c4b046223239d4c4f0180513",
+  "project_path": "formalization",
+  "declarations": [
+    "LinearStochastic.Palomar.classification",
+    "LinearStochastic.Palomar.ito_unique"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC",
+      "math.PR"
+    ],
+    "msc2020": [
+      "93B05",
+      "93E03",
+      "60H10",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T00:59:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c088eb9943197e88c4b046223239d4c4f0180513",
+        "fork_repository": "PalomarArchive/MrGodfrey--LeanForCriteriaForLinearStochastic--aa37281509fc",
+        "source_repository": "MrGodfrey/LeanForCriteriaForLinearStochastic"
+      }
+    ]
+  },
+  "statement_hash": "sha256:723e517b3fcaba4df998eb62abaa5e782d98a1f04efbeeb75f4e27f85d0fcc50"
+}

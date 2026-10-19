@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000009",
+  "version": 1,
+  "title": "Jaeger's 4-flow theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of Jaeger's 4-flow theorem: every finite 4-edge-connected simple graph has a nowhere-zero integer 4-flow, i.e. an antisymmetric function on darts with values in {±1, ±2, ±3} that is conserved at every vertex. Also proved: a graph with two edge-disjoint spanning trees has its edges covered by two even subgraphs (a nowhere-zero ℤ₂ × ℤ₂-flow) and has a nowhere-zero integer 4-flow. Mathlib has no flows. Jaeger's 8-flow theorem for bridgeless graphs is not included.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/jaeger-four-flow",
+  "commit": "f80cdd9128c8ce918978db640cc50623286e21fd",
+  "project_path": null,
+  "declarations": [
+    "JaegerFlow.exists_even_cover_of_trees",
+    "JaegerFlow.exists_flow_of_trees",
+    "JaegerFlow.jaeger_four_flow"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C21",
+      "05C40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T10:01:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f80cdd9128c8ce918978db640cc50623286e21fd",
+        "fork_repository": "PalomarArchive/jtraverso--jaeger-four-flow--4443e53b8984",
+        "source_repository": "jtraverso/jaeger-four-flow"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cd24f7197a412e3eafa42133408a701b20e1f833989c8e75851eb089407bdd5f"
+}

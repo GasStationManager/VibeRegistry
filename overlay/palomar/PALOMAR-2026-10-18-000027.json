@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000027",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000027",
+  "version": 1,
+  "title": "Paracompact expansion and collectionwise separation",
+  "abstract": "Every locally finite indexed family of arbitrary subsets of a paracompact topological space admits a locally finite open expansion with the same index type, without separation assumptions. In a paracompact normal space, a discrete closed family admits a discrete locally finite open expansion whose closures are pairwise disjoint and lie in prescribed open neighborhoods. Consequently every paracompact Hausdorff space is collectionwise normal. Index and ambient types may be empty and have independent universes; the family has unrestricted cardinality. These are classical results; no novelty is claimed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "5ad14f00d92275a9e782fb9491dbfd8d8d8f9faf",
+  "project_path": "topology/collectionwise-normal",
+  "declarations": [
+    "Collectionwise.exists_open_expansion",
+    "Collectionwise.exists_subordinate_expansion",
+    "Collectionwise.discrete_closed_iff",
+    "Collectionwise.exists_discrete_expansion",
+    "Collectionwise.paracompact_hausdorff_collectionwise"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54D15",
+      "54D20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T21:59:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5ad14f00d92275a9e782fb9491dbfd8d8d8f9faf",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:36a38a27940c8f648f775e5c582eab5d947f8bb77055382f1da4edaa2a2f022c"
+}

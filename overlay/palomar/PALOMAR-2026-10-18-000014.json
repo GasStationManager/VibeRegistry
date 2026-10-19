@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000014",
+  "version": 1,
+  "title": "Fréchet–Urysohn Σ-products of first-countable spaces",
+  "abstract": "The countable-support Sigma-product of arbitrary first-countable topological factors, relative to an explicit basepoint and with the ordinary product-induced topology, is Frechet-Urysohn. An adaptive finite-coordinate schedule constructs a sequence from each set converging to any of its closure points. The index set may be arbitrary, including empty, and no separation assumption is used for this theorem. Companions give countable tightness and subspace inheritance, density in the full product, T1 countable-closure support control and sequential closedness, and nonsequentiality of an uncountable discrete Boolean cube. No normality, W-space, arbitrary Frechet-factor, compactness or novel-mathematics result is asserted.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "359ec3c4a3fff77a68c29d89714bf8a03acc9829",
+  "project_path": "topology/sigma-product-frechet",
+  "declarations": [
+    "SigmaFrechet.exists_sequence",
+    "SigmaFrechet.frechetUrysohnSpace",
+    "SigmaFrechet.countable_closure_support",
+    "SigmaFrechet.isSeqClosed_countableSupport",
+    "SigmaFrechet.countable_tightness",
+    "SigmaFrechet.subspace_frechetUrysohnSpace",
+    "SigmaFrechet.dense_countableSupport",
+    "SigmaFrechet.boolean_cube_not_sequential"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54B10",
+      "54A20",
+      "54D55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T13:22:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "359ec3c4a3fff77a68c29d89714bf8a03acc9829",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a32402c6682dfaa10964c4d8af1c1dadc0761238f9ea14db1c4b91beac255434"
+}

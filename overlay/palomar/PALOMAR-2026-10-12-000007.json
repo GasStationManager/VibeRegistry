@@ -1,0 +1,67 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-12-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-12-000007",
+  "version": 1,
+  "title": "Classical theorems of Fröhlich and Spencer: the Kosterlitz–Thouless transition, massless phases of abelian gauge theories, and Anderson localization",
+  "abstract": "A Lean 4 / Mathlib formalization of three papers of J. Fröhlich and T. Spencer (Communications in Mathematical Physics, 1981, 1982 and 1983), with the two-dimensional multiscale analysis in the finite-volume form of V. Kharash and R. Peled (2017). For the two-dimensional plane rotator it proves the Kosterlitz–Thouless transition: the two-point function decays exponentially at high temperature, while at low temperature it obeys the power-law lower bound of Theorem C and still tends to zero, so that there is no long-range order. The same multiscale expansion in charge ensembles gives the absence of screening and the power-law decay of fractional charges in two-dimensional Coulomb gases (Theorems A and B), the phase diagram of the Z_n clock models with an intermediate massless phase (Theorem 7.1), disorder bounds for the Villain model (Theorem D) and the roughening transition of the solid-on-solid model (Theorem 7.3), as well as the four finite-square theorems of Kharash and Peled. For the four-dimensional Villain U(1) lattice gauge theory at large beta it proves that the integer-valued dual gauge field has the exponential moments of a free massless field up to a renormalization of the coupling from beta to beta''(beta) with beta''/beta -> 1, in finite volume (2.93) and for every limit state along cubes; that a translation-invariant limit state has a field-strength correlation that is not summable, obtained as the limit of the finite-volume field-strength correlations, which is the paper's massless photon; the perimeter law of the Wilson loop at large beta and its area law at small beta; a perimeter law for the disorder operator of the Z_N gauge theories; and long-range order of the Villain XY model in every dimension D >= 3. For the Anderson tight-binding model on Z^nu at large disorder, or at high energy with Gaussian disorder, it proves exponential decay of the Green function with polynomially high probability, uniformly in the imaginary part of the energy (Theorem 1.2), its almost-sure decay, and the vanishing of the Kubo diffusion coefficient wherever the density of states is positive (Theorem 1.1). The FS82 statements are in finite volume or about limit points along cubes; the thermodynamic limits that the paper takes from Ginibre's inequalities are not formalized. Corrections to the printed texts are listed in the README.",
+  "authors": [
+    "Scott Armstrong",
+    "Amélie Loher"
+  ],
+  "repository": "https://github.com/scottnarmstrong/Frohlich-Spencer",
+  "commit": "e01623b7347c272eac9480f04743f38b8d0df223",
+  "project_path": null,
+  "declarations": [
+    "FSComparator.FS81.planeRotator_powerLaw_lower_bound",
+    "FSComparator.FS81.planeRotator_kosterlitzThouless_transition",
+    "FSComparator.FS81.conditionLambdaGas_secondMomentLimit_lower_bound",
+    "FSComparator.FS81.conditionLambdaGas_fracCorrelationLimit_upper_bound",
+    "FSComparator.FS81.clock_phase_diagram",
+    "FSComparator.FS81.clock_disorder_lowerBound",
+    "FSComparator.FS81.freeVillain_disorderLimit_upper_bound",
+    "FSComparator.FS81.sos_theorem73_dirichlet",
+    "FSComparator.FS81.sos_roughening_transition",
+    "FSComparator.FS81.villain_clock_theorem71_1",
+    "FSComparator.FS81.villain_clock_theorem71_2",
+    "FSComparator.FS81.villainClock_disorder_lowerBound_grid_exhausting",
+    "FroehlichSpencer.BKT.existsUnique_tendsto_planeRotatorTwoPoint",
+    "FroehlichSpencer.BKT.existsUnique_tendsto_clockTwoPoint"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math-ph",
+      "math.PR",
+      "math.SP"
+    ],
+    "msc2020": [
+      "47B80",
+      "81T25",
+      "82B20",
+      "82B26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-12T13:00:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e01623b7347c272eac9480f04743f38b8d0df223",
+        "fork_repository": "PalomarArchive/scottnarmstrong--Frohlich-Spencer--d2b386690b28",
+        "source_repository": "scottnarmstrong/Frohlich-Spencer"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bf403a4873c37fd031fa5b3e61f5d2135dad7fc693907480d8ee59e248e1e28d"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000017",
+  "version": 1,
+  "title": "Graphic sequences: the Erdős–Gallai and Havel–Hakimi theorems",
+  "abstract": "A Lean 4 / Mathlib formalization of the two classical characterizations of degree sequences of finite simple graphs: the Erdős–Gallai theorem (a non-increasing sequence is graphic if and only if its sum is even and every initial segment satisfies the Erdős–Gallai inequality) and the Havel–Hakimi theorem (a non-increasing sequence is graphic if and only if its first term is at most the number of remaining terms, the next d₀ terms are positive, and the reduced sequence is graphic).",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/degree-sequences",
+  "commit": "b49808e0c0aade945472b777047148399a582858",
+  "project_path": null,
+  "declarations": [
+    "GraphicSequences.isGraphic_iff_erdos_gallai",
+    "GraphicSequences.isGraphic_iff_havel_hakimi"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T16:09:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b49808e0c0aade945472b777047148399a582858",
+        "fork_repository": "PalomarArchive/jtraverso--degree-sequences--21c02be05315",
+        "source_repository": "jtraverso/degree-sequences"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4e9811452469bc081a223a5c35f5b3f6c0d5cbfe4f93b327efcdd3178ebf8770"
+}

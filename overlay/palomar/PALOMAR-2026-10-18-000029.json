@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000029",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000029",
+  "version": 1,
+  "title": "Galvin's theorem, the Dinitz problem and stable matchings",
+  "abstract": "A Lean 4 / Mathlib formalization of Galvin's theorem that the list chromatic index of a finite bipartite graph equals its maximum degree (if every edge has a list of at least Δ colours, a proper edge colouring can be chosen from the lists), of its corollary solving the Dinitz problem (an n × n array with lists of n symbols per cell admits a choice with distinct symbols in every row and column), and of the Gale–Shapley theorem on the existence of stable matchings with strict preferences and incomplete acceptability lists, which provides the kernels in Galvin's argument. Mathlib has line graphs and colourings but none of these results.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/galvin-dinitz",
+  "commit": "0aa98fc17e1e96ec408f7bad3198ce37a08d26fc",
+  "project_path": null,
+  "declarations": [
+    "ListEdgeColouring.gale_shapley",
+    "ListEdgeColouring.galvin",
+    "ListEdgeColouring.dinitz"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C70",
+      "91B68"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T22:51:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0aa98fc17e1e96ec408f7bad3198ce37a08d26fc",
+        "fork_repository": "PalomarArchive/jtraverso--galvin-dinitz--befd03f21f2b",
+        "source_repository": "jtraverso/galvin-dinitz"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4d0581477e508caad3b7f2925a486a98ad7a1639f73e48b43fcbe39d11d131d9"
+}

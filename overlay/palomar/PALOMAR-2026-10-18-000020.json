@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000020",
+  "version": 1,
+  "title": "The radian nine-gon is Euclidean Ramsey iff e^(i theta) is algebraic",
+  "abstract": "Theorem D: for real theta, the nine points (cos k theta, sin k theta), k = 0, ..., 8, of the Euclidean plane are distinct, lie on the unit circle and are not Euclidean Ramsey when tan(theta/2) is transcendental; and whenever they are distinct, they are Ramsey if and only if cos theta and sin theta are algebraic (that is, iff e^(i theta) is algebraic), if and only if tan(theta/2) is algebraic. This is an iff for a whole one-parameter family, where earlier explicit examples with a transcendental parameter (OpenAI's Proposition 7.7 and Corollary 7.5) settle single sets: the same nine-point pattern is Ramsey or not exactly as e^(i theta) is algebraic or transcendental. Nine is the exact threshold (eight consecutive multiples are Ramsey for every theta; by hand, in spherical-ramsey), and at theta = e the question becomes whether e^(i e) is algebraic, which appears to be open. Ramsey is OpenAI's definition from result 172 (for every r >= 2 there is D such that every r-colouring of R^D contains a monochromatic congruent copy). The statements are given in OpenAI's vocabulary plus the two-line definition of the nine points, and again with no definitions beyond Mathlib. The non-Ramsey direction mirrors OpenAI's nine-point proof (their Proposition 7.6): the coordinate field is Q(tan(theta/2)), its tensor square embeds in Q(T, U), and the denominator-cleared 9x9 evaluation matrix is nonsingular, certified at (T, U) = (2, 3) by an explicit integer triangular factorization checked by decide +kernel; OpenAI's linear obstruction concludes. The converse uses the theorem that finite spherical sets with algebraic coordinates are Ramsey (prior work of JD-Jones-ASES, Rogerhu12 and atimics; proved again here in Lean on OpenAI's development). The proof builds on OpenAI's complete Lean proof of the classification (openai/math fd4aeeb2), whose 35 files used here are included with header-only changes for the Lean module system. This repository is a module-system port, with no statement or proof line changed apart from a namespace rename, of Lean already public as rope AV3 of spherical-ramsey v1.1.0 (doi:10.5281/zenodo.23396387), packaged so that Theorem D can be checked on its own. All theorems depend on propext, Classical.choice and Quot.sound only.",
+  "authors": [
+    "Will Strinz"
+  ],
+  "repository": "https://github.com/wstrinz/radian-ramsey",
+  "commit": "37716c59241154354fcc23522253cac7416d6e2c",
+  "project_path": null,
+  "declarations": [
+    "OAI.EuclideanRamsey.Radian.radian_configuration",
+    "OAI.EuclideanRamsey.Radian.radian_not_ramsey",
+    "OAI.EuclideanRamsey.Radian.radian_ramsey_iff",
+    "OAI.EuclideanRamsey.Radian.radian_ramsey_iff_tan",
+    "RadianRamsey.radian_configuration_mathlib",
+    "RadianRamsey.radian_ramsey_iff_mathlib",
+    "RadianRamsey.radian_ramsey_iff_tan_mathlib"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05D10",
+      "52C10",
+      "11J81"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T18:08:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "37716c59241154354fcc23522253cac7416d6e2c",
+        "fork_repository": "PalomarArchive/wstrinz--radian-ramsey--bdc9bf4da594",
+        "source_repository": "wstrinz/radian-ramsey"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cfac32fa41d4bded38f8bdbf6d1aba1e03229027570675c644f9b989632be68d"
+}

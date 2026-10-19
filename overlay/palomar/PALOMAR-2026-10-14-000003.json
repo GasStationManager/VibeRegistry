@@ -1,0 +1,47 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-14-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-14-000003",
+  "version": 1,
+  "title": "Fixed-dimensional separated Euclidean distances below 0.74 n squared",
+  "abstract": "For every natural n at least 68000, the formalization constructs n injectively indexed points in the fixed Euclidean space R^458999. Distances between distinct points are at least one, distances attached to different unordered non-diagonal pairs differ by at least one, and both every pair distance and the diameter are strictly below (37/50)n^2. The dimension and threshold are explicit sufficient bounds; no optimality or independent priority review is claimed. This code-only port preserves the theorem of the cited public formalization. The full migrated build and final axiom audit have passed; the hosted sandboxed Comparator check has also passed.",
+  "authors": [
+    "John Tripodo"
+  ],
+  "repository": "https://github.com/jjtripodo-lgtm/erdos-670-verification",
+  "commit": "5510ffd94156d48dbe393ac619586b935212da79",
+  "project_path": "palomar",
+  "declarations": [
+    "Erdos488.Geometry.SeparatedDistances.FixedDimension.fixed_dimension_erdos_670"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-10-14T08:02:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5510ffd94156d48dbe393ac619586b935212da79",
+        "fork_repository": "PalomarArchive/jjtripodo-lgtm--erdos-670-verification--bff106c8148f",
+        "source_repository": "jjtripodo-lgtm/erdos-670-verification"
+      }
+    ]
+  },
+  "statement_hash": "sha256:95ef08abf6e697c86394cd34cd744f77f9bce0917705ed64aeb4d3b6ca0ebcb4"
+}

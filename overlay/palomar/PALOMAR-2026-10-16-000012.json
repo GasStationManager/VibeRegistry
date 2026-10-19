@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000012",
+  "version": 1,
+  "title": "Connected counterexamples to the exact color-critical two-eigenvalue bound",
+  "abstract": "For F=K5 minus one edge, a color-critical graph of chromatic number four, the graph formed from K(s,s,s) and K4 by one bridge is connected and F-free for every integer s at least three. It has 3s squared plus 7 edges, and the sum of squares of its two largest ordered adjacency eigenvalues exceeds 4m/3 by at least (656s squared-1366s+62)/(3(37s-1) squared)>0. The family has arbitrarily large edge counts, refuting the exact assertion in KKP Conjecture 1.16 and Li–Liu–Zhang Conjecture 5.4.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/kkp-connected-spectral-counterexamples",
+  "commit": "c611a4a733fe796809cd941f96ff8f2c294fd1ef",
+  "project_path": null,
+  "declarations": [
+    "KKP.connected_counterexample_family",
+    "KKP.unbounded_connected_counterexamples"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C50",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T12:43:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c611a4a733fe796809cd941f96ff8f2c294fd1ef",
+        "fork_repository": "PalomarArchive/shaikidris--kkp-connected-spectral-counterexamples--a1b9d82c88cb",
+        "source_repository": "shaikidris/kkp-connected-spectral-counterexamples"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1e4bd99c291505ca8fb40834ea04510a532a67fcfb0edabfe48f2248c5b6eabb"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000010",
+  "version": 1,
+  "title": "Exact fault images in priority controllers",
+  "abstract": "Exact reachable qualifier-set images for a finite priority controller with independent enable and request inputs and a specified first-stage bridge interface. The formal statements characterize detection through arbitrary Boolean qualifier observations, show that nonemptiness cannot be expressed by valid proper-coordinate relations, and classify a specified qualifier-only stuck-at fault. The selector and fault equations are explicit.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/priority-controller-phase1",
+  "commit": "f4c18653ccc2590ff6d2fe7ca2ff1d904d62681d",
+  "project_path": null,
+  "declarations": [
+    "Controller.Physical.separated_drive_one_set_pair_image_iff",
+    "Controller.Physical.not_bridgeDetectable_drive_zero",
+    "Controller.Physical.bridge_detectable_iff_exists_output",
+    "Controller.Physical.proper_projection_full",
+    "Controller.Physical.valid_local_relations_accept_zero",
+    "Controller.Physical.stuck_detectable_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM"
+    ],
+    "msc2020": [
+      "06E30",
+      "68Q60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T07:29:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f4c18653ccc2590ff6d2fe7ca2ff1d904d62681d",
+        "fork_repository": "PalomarArchive/shaikidris--priority-controller-phase1--d60f9fc1688f",
+        "source_repository": "shaikidris/priority-controller-phase1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7b01bc0617399619700b33aad25a28abc5a2f06a22d33f1f758a06638897e5a6"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000005",
+  "version": 2,
+  "title": "Formalization of a sharp cone square-function estimate via superorthogonality",
+  "abstract": "This is a Lean 4 formalization of Theorems 1.1 and 1.4 from the paper \"Diameter-free reverse inequalities and superorthogonality\" by A. Cushman, C. Demeter and S. Wu.\nTheorem 1.1 is a reverse square-function estimate in L^4 under a superorthogonality hypothesis that is weaker than the Type IV superorthogonality of Gressman-Pierce-Roos-Yung.\nTheorem 1.4 applies a similar estimate to the three-dimensional light cone, yielding a refinement of the reverse cone square-function estimate of Guth-Wang-Zhang.",
+  "authors": [
+    "Joris Roos"
+  ],
+  "repository": "https://github.com/roos-j/lean-superorthogonality",
+  "commit": "97b539920a2e141f1caa6d7be187bd878ff3c89e",
+  "project_path": null,
+  "declarations": [
+    "Superorthogonal.CDW.sqfct_estimate_of_superorthogonal",
+    "Superorthogonal.CDW.cone_sqfct_estimate"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "42B10",
+      "42B25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T00:58:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "97b539920a2e141f1caa6d7be187bd878ff3c89e",
+        "fork_repository": "PalomarArchive/roos-j--lean-superorthogonality--4ebd955d7e8b",
+        "source_repository": "roos-j/lean-superorthogonality"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5fe45e38d78363e04caaa056f9e9e7c460c513a668fd79b3a20d06028b17ad04"
+}

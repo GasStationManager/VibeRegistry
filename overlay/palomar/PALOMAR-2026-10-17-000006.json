@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000006",
+  "version": 1,
+  "title": "Low-dimensional exact counterexamples to the Recht–Ré inequality",
+  "abstract": "Five real symmetric PSD 3×3 integer matrices and five complex Hermitian PSD 2×2 Gaussian-integer matrices each have sum 100I and exact norm-of-averaged-product ratio 10329/10000 at n=k=5. The Lean statements use Mathlib positive semidefiniteness over the real and complex fields and the Euclidean operator norm. The rational formalization of De Sa's dimension-five norm-19/16 example is included as a supporting benchmark. The real symmetric dimension-two case is not resolved.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/rr-exact",
+  "commit": "141bddb9f263aa99c0c6a8be4af469389d2afca2",
+  "project_path": null,
+  "declarations": [
+    "RRExact.real_counterexample",
+    "RRExact.complex_counterexample"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC",
+      "math.FA"
+    ],
+    "msc2020": [
+      "15A45",
+      "15A60",
+      "47A30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T09:02:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "141bddb9f263aa99c0c6a8be4af469389d2afca2",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--rr-exact--5aef06347702",
+        "source_repository": "JD-Jones-ASES/rr-exact"
+      }
+    ]
+  },
+  "statement_hash": "sha256:833a8d4c97c50754869643458f09257f000663313988efdce85d0bc3e3d59dae"
+}

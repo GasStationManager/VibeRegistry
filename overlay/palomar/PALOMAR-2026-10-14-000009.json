@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-14-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-14-000009",
+  "version": 2,
+  "title": "Selection of the electromagnetic source tensor by covariance, conservation and the exchange law",
+  "abstract": "On a fixed flat Lorentz frame with metric diag(1,1,1,-1), sources are symmetric 4x4 tensor-valued functions of the six real components of an antisymmetric field. Twelve kernel-checked statements. Among all symmetric homogeneous quadratic sources (210 free coefficients), the six infinitesimal Lorentz covariance equations together with zero trace select the Maxwell stress (the electromagnetic energy-momentum tensor) up to a unique real scale, and a displayed certificate of 209 linear coefficient equations is equivalent to both laws. Among the same homogeneous quadratic sources, conservation alone - vanishing divergence on every source-free Maxwell/Bianchi first jet - selects the same line, with covariance, trace zero and Hodge invariance derived rather than assumed. The globally C^3 symmetric conserved sources are exactly an explicit seventeen-parameter family (constant, a six-parameter cross term, and the stress), and with covariance zero field value is equivalent to zero trace and to the stress line. Under the sourceful exchange law at current stiffness k (the real factor multiplying the jet current), every everywhere-differentiable symmetric source is a constant plus the Maxwell stress of scale exactly k, and conversely, with no polynomial, degree, C^3, covariance or trace hypothesis; zero field value selects the stress. Explicit counterexamples show that covariance and zero trace are each necessary in the quadratic selection, and that covariance and the zero-field normalization are each necessary in the C^3 selection. Uniqueness of the Maxwell stress tensor is classical (Fock 1964; Kerrighan 1982; Navarro-Sancho 2012; the classification of Maxwell conservation laws by Anco-Pohjanpelto 2001); the contribution is the constructive, kernel-checked development on the explicit register at finite regularity, with finite certificates, the covariance-free routes, and the differentiable-only sourceful statement. Pisot Dimensional Theory motivates the frame; no physical coupling is selected.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-em-source-selection",
+  "commit": "1c9ba637b5e664a88b6487d463515587616476e1",
+  "project_path": null,
+  "declarations": [
+    "PDTSourceSelection.quadraticSelection",
+    "PDTSourceSelection.quadraticUniqueness",
+    "PDTSourceSelection.finiteCertificate",
+    "PDTSourceSelection.conservationSelection",
+    "PDTSourceSelection.conservationHodgeInvariance",
+    "PDTSourceSelection.smoothClassification",
+    "PDTSourceSelection.smoothZeroFieldSelection",
+    "PDTSourceSelection.differentiableSourcefulClassification",
+    "PDTSourceSelection.differentiableNormalizedSelection",
+    "PDTSourceSelection.traceNecessity",
+    "PDTSourceSelection.covarianceNecessity",
+    "PDTSourceSelection.smoothNecessity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math-ph",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "15A72",
+      "35Q61",
+      "70S10",
+      "78A25",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T23:09:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1c9ba637b5e664a88b6487d463515587616476e1",
+        "fork_repository": "PalomarArchive/stalex444--pdt-em-source-selection--5e54ace28439",
+        "source_repository": "stalex444/pdt-em-source-selection"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6c07e6facedb771bbf742dd90e25fa9a2bb85ab0a70594a94b3ad6ccde088008"
+}

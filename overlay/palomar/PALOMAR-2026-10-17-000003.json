@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000003",
+  "version": 1,
+  "title": "Sneider's Gδ-diagonal metrization theorem",
+  "abstract": "A compact Hausdorff space is metrizable if and only if its diagonal is a Gδ subset of its square with the product topology. The proof supplies a cofinal countable family of finite intersections of closed diagonal neighborhoods and an actual metric inducing exactly the given topology. The underlying type is arbitrary and may be empty. A general supporting theorem proves countable neighborhood character of every closed Gδ set in a compact normal space. This is classical mathematics; no novelty or priority is claimed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "497432e5e02244f242cdfc8c0a43316de3aa5bdc",
+  "project_path": "topology/sneider-diagonal",
+  "declarations": [
+    "Sneider.exists_closed_countable_nhds_basis_of_isGδ",
+    "Sneider.nhdsSet_isCountablyGenerated_of_isGδ",
+    "Sneider.isGdelta_diagonal",
+    "Sneider.exists_closed_diagonal_basis",
+    "Sneider.metrizableSpace_of_isGdelta_diagonal",
+    "Sneider.metrizable_iff_isGdelta_diagonal",
+    "Sneider.exists_compatibleMetric"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54E35",
+      "54D30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T05:08:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "497432e5e02244f242cdfc8c0a43316de3aa5bdc",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:65fecc756e228edf573f742ec9129cfa70c4ac23d34ec8f9db5bc7bcc6368e91"
+}

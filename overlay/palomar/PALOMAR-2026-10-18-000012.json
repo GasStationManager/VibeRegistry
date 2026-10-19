@@ -1,0 +1,87 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000012",
+  "version": 1,
+  "title": "The normalizer of Γ₀(N): Newman's theorem, and the order and presentations of B(N)",
+  "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, about B(N) = Nor(Γ₀(N))/Γ₀(N), the normalizer of Γ₀(N) in SL₂(ℝ) modulo Γ₀(N), for every N ≥ 1: Newman's theorem describing the normalizer, in both directions; the order |B(N)| = 2^ω(n) ψ(N)/ψ(n), where h is the largest divisor of 24 with h² ∣ N and n = N/h²; generators and complete presentations of B(N) for every N; a criterion for B(N) to be the internal direct product of its local factors; B(18) ≅ S₄; and the errors in the published presentations: the Akbaş–Singerman relation fails in B(256), and Bars's presentations at levels 32, 64 and 128 define infinite groups, while completed presentations present B(32) and B(64) and Bars's presentation at level 256 presents B(256). 36 theorems, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Filip Najman"
+  ],
+  "repository": "https://github.com/F-Najman/normalizer-lean",
+  "commit": "ea4445c0d991a65d54fc77af0af559f2322e8660",
+  "project_path": null,
+  "declarations": [
+    "NormalizerLean.hPart_isGreatest",
+    "NormalizerLean.isAtkinLehner_mem_normalizer",
+    "NormalizerLean.exists_isAtkinLehner",
+    "NormalizerLean.isAtkinLehner_mul_inv_mem",
+    "NormalizerLean.S_mem_normalizer",
+    "NormalizerLean.newmanForm_mem_normalizer",
+    "NormalizerLean.newman",
+    "NormalizerLean.Gamma0_index",
+    "NormalizerLean.finite_B",
+    "NormalizerLean.card_B",
+    "NormalizerLean.card_B_explicit",
+    "NormalizerLean.conjGamma0n_le_normalizer",
+    "NormalizerLean.card_CN",
+    "NormalizerLean.B_mod_CN",
+    "NormalizerLean.closure_localGens",
+    "NormalizerLean.localPresentation",
+    "NormalizerLean.localEmbedding",
+    "NormalizerLean.globalPresentation",
+    "NormalizerLean.internalDirectProduct_iff",
+    "NormalizerLean.B18_equiv_perm",
+    "NormalizerLean.B18_not_C2_prod_A4",
+    "NormalizerLean.AS_quotient_matrix",
+    "NormalizerLean.AS_relation_fails",
+    "NormalizerLean.bars_word_matrix",
+    "NormalizerLean.bars_relation_holds",
+    "NormalizerLean.bars_lambda5_infinite",
+    "NormalizerLean.bars_lambda6_infinite",
+    "NormalizerLean.bars_lambda7_infinite",
+    "NormalizerLean.completed_lambda5_card",
+    "NormalizerLean.completed_lambda5",
+    "NormalizerLean.completed_lambda6_card",
+    "NormalizerLean.completed_lambda6",
+    "NormalizerLean.bars_lambda8_card",
+    "NormalizerLean.bars_lambda8",
+    "NormalizerLean.localRels_mem_Gamma0",
+    "NormalizerLean.globalRels_mem_Gamma0"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.GR"
+    ],
+    "msc2020": [
+      "11F06",
+      "20H05",
+      "20F05",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T12:04:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ea4445c0d991a65d54fc77af0af559f2322e8660",
+        "fork_repository": "PalomarArchive/F-Najman--normalizer-lean--cf363e35e356",
+        "source_repository": "F-Najman/normalizer-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f5aa216799a4b35b015a402f00f4ea7695c497c560ae22ea1a48750a2d6496fd"
+}

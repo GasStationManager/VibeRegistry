@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000025",
+  "version": 1,
+  "title": "GromovMilman",
+  "abstract": "Formalization of Theorem 1 (the Gromov–Milman conjecture on polynomials restricted to subspaces) from Dol'nikov–Karasev, \"Dvoretzky type theorems for multivariate polynomials and sections of convex bodies\" (arXiv:1009.0392): for any even d > 0 and any k, there exists n(d, k) such that every homogeneous polynomial of degree d on R^n (n >= n(d, k)) restricts on some k-dimensional subspace V to a scalar multiple of (x_1^2 + ... + x_n^2)^(d/2). The formalization provides an unconditional, constructive proof without sorry or external topological black boxes: Carlsson's theorem on non-abelian 2-groups is eliminated in favor of an elementary abelian Dold-type Borsuk–Ulam theorem ((Z/2)^r) proved from scratch on chain complexes and applied inductively level-by-level to iterated wreath products via block-structured join embeddings.",
+  "authors": [
+    "Arseniy Akopyan"
+  ],
+  "repository": "https://github.com/akopjan/Dolnikov-Karasev-Gromov-Milman",
+  "commit": "a32fae66a704d736f0c2c3ec9b14afd22979fe9f",
+  "project_path": null,
+  "declarations": [
+    "theorem1"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.DG",
+      "math.AT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52A20",
+      "55M20",
+      "55M35",
+      "14P99"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T21:41:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a32fae66a704d736f0c2c3ec9b14afd22979fe9f",
+        "fork_repository": "PalomarArchive/akopjan--Dolnikov-Karasev-Gromov-Milman--34d255f09ec7",
+        "source_repository": "akopjan/Dolnikov-Karasev-Gromov-Milman"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ed056d0d4424a153e18a359a0f9c1b56607e8385d29469daf1f9dafba40f4611"
+}

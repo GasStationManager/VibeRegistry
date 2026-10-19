@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000005",
+  "version": 1,
+  "title": "A sharp asymptotic spectral bound for forbidden subgraphs",
+  "abstract": "For every fixed finite graph F of chromatic number r+1 at least three and every positive epsilon, there is an edge threshold M such that every finite simple F-free graph G with m at least M satisfies F2(A_G) <= 2(1-1/r)m - (2(1-1/r)-1)Delta(G) + epsilon m. F2 is the sum of the squares of the two largest positive adjacency eigenvalues with missing terms padded by zero. The graphs may be disconnected. A companion theorem establishes agreement with the two largest ordered eigenvalue squares in the same eventual range. Enough edges force an F-free graph to be noncomplete; BN nonedge interlacing gives a nonnegative second ordered eigenvalue, so its positive-two energy equals the first two ordered eigenvalue squares. The proof checks ordinary clique removal through regularity and clique counting, derives weighted deletion, reuses the proved BN rank-two Gram inequality, and supplies the spectral lift, hub separation and uniform assembly.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/kkp-asymptotic-spectral-bound",
+  "commit": "8aa258c7a0b06ae96cfa56018bddd60ee643efd5",
+  "project_path": null,
+  "declarations": [
+    "KKP117.strengthened_asymptotic",
+    "KKP117.strengthened_ordered_asymptotic"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C50",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T07:40:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8aa258c7a0b06ae96cfa56018bddd60ee643efd5",
+        "fork_repository": "PalomarArchive/shaikidris--kkp-asymptotic-spectral-bound--16a8809ca472",
+        "source_repository": "shaikidris/kkp-asymptotic-spectral-bound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2383b8ae117e3cf52ef8032874b5a90d1d0000d3a33819d810115c25ba21f9f9"
+}

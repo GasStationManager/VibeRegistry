@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000010",
+  "version": 1,
+  "title": "Erdos 99 Partial Solution",
+  "abstract": "A formalization of a partial solution to Erdos Problem 99. It shows that Erdos Problem 99 holds for all sufficiently large n where h(n) is finite. Here, h(n) denotes the number of incongruence, diameter-minimizing sets of minimum separation at least 1.",
+  "authors": [
+    "Naveen Stewart"
+  ],
+  "repository": "https://github.com/Naveen18888/Erdos-99-Partial",
+  "commit": "d2bab08b0fbd5537310ec2e859107bbc042dd64d",
+  "project_path": null,
+  "declarations": [
+    "Erdos99.erdos99_finite_multiplicity",
+    "Erdos99.erdos99_finite_multiplicity_explicit",
+    "Erdos99.erdos99_of_finite_multiplicity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T06:19:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d2bab08b0fbd5537310ec2e859107bbc042dd64d",
+        "fork_repository": "PalomarArchive/Naveen18888--Erdos-99-Partial--eb341c8a0e5a",
+        "source_repository": "Naveen18888/Erdos-99-Partial"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9df5a292a93ef6b82ded4019f27d4ec7dd994c122bd79d491690ee8af5c9fc8d"
+}

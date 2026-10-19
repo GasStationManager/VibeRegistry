@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000003",
+  "version": 1,
+  "title": "Brooks' theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of Brooks' theorem: for k ≥ 3, a finite graph of maximum degree at most k without a (k+1)-clique is k-colourable (no connectedness assumption), and a finite connected graph that is neither complete nor an odd cycle is colourable with as many colours as its maximum degree. The proof uses greedy colourings in Lovász's style and an induction on the number of edges with a separation-and-gluing step.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/brooks",
+  "commit": "e82569027fe8582c647e297d7712af86af372b47",
+  "project_path": null,
+  "declarations": [
+    "BrooksColouring.colorable_of_cliqueFree",
+    "BrooksColouring.brooks"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T00:54:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e82569027fe8582c647e297d7712af86af372b47",
+        "fork_repository": "PalomarArchive/jtraverso--brooks--c255f4f55cbf",
+        "source_repository": "jtraverso/brooks"
+      }
+    ]
+  },
+  "statement_hash": "sha256:62165eb0bac3ddb5cea4fd4b3d90b9e6b3bb50a01b34c241163251875f57be18"
+}

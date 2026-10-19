@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000018",
+  "version": 1,
+  "title": "Algebraic points on a circle plus at most three arbitrary points are Euclidean Ramsey",
+  "abstract": "Theorem B(b): finitely many distinct points on a circle in the Euclidean plane (centre and radius arbitrary reals), all of whose coordinates are algebraic over Q except for the points with indices in a set T of at most three, form a Euclidean Ramsey configuration. Ramsey is OpenAI's definition from result 172 (for every r >= 2 there is D such that every r-colouring of R^D contains a monochromatic congruent copy). The theorem is stated in OpenAI's vocabulary and again in Mathlib vocabulary (Mathlib's Congruent). With the Möbius invariance of the Ramsey property (mobius-ramsey, Theorem C; the combination is by hand), it shows that every set in the class of Theorem A.10 of the appendix of Pálvölgyi's arXiv:2609.23327 is Ramsey; A.10 shows only that his derivation certificates cannot prove such sets non-Ramsey, and leaves their Ramsey status open. Proof: for at most six points, the six-concyclic-points theorem (prior work of JD-Jones-ASES, here with OpenAI's proved sufficiency); otherwise three algebraic points make the circle algebraic, a translation, rational rotation and scaling normalize it, and an explicit certificate (the separability idempotent of the number field of the algebraic points times a graph form through three points containing the exceptional ones) proves OpenAI's field criterion, after which OpenAI's sufficiency theorem concludes. The proof builds on OpenAI's complete Lean proof of the classification (openai/math fd4aeeb2), whose 28 files are included with header-only changes for the Lean module system. All theorems depend on propext, Classical.choice and Quot.sound only. Provenance: this repository is a port, to the Lean module system and Lean v4.35.0-rc2, of a Lean proof already public as rope AV5 of spherical-ramsey v1.1.0 (doi:10.5281/zenodo.23396387; a rope there is a self-contained Lean project checked by Comparator), with the same statements and proofs; it packages that one theorem as a standalone, Comparator-checked repository at a current toolchain (docs/PORT-LOG.md).",
+  "authors": [
+    "Will Strinz"
+  ],
+  "repository": "https://github.com/wstrinz/algebraic-plus-three-ramsey",
+  "commit": "fe257eca4be0d753839b7431b7ea142e47e48d4c",
+  "project_path": null,
+  "declarations": [
+    "OAI.EuclideanRamsey.ramsey_alg_plus_three",
+    "AlgebraicPlusThree.ramsey_alg_plus_three_mathlib"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "05D10",
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T17:54:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fe257eca4be0d753839b7431b7ea142e47e48d4c",
+        "fork_repository": "PalomarArchive/wstrinz--algebraic-plus-three-ramsey--47f072d2d8c0",
+        "source_repository": "wstrinz/algebraic-plus-three-ramsey"
+      }
+    ]
+  },
+  "statement_hash": "sha256:56fb94ff9c266be8d4f6ca182c9f4595174a3efbf152ac2b725c554e01b504dc"
+}

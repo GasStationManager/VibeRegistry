@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-12-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-12-000009",
+  "version": 1,
+  "title": "Hilbert functions of chopped ideals of general plane points",
+  "abstract": "Formalizes Theorem 1.1 and Corollary 5.1 of Hilbert Functions of Chopped Ideals of General Plane Points over arbitrary characteristic-zero fields: the full Hilbert function of degree-d chopped point ideals, the regular-sequence cases, the least stabilization degree, and the Expected Syzygy Conjecture.",
+  "authors": [
+    "Vlado Vojdanovski"
+  ],
+  "repository": "https://github.com/Vlado-V/chopped-plane-point-ideals",
+  "commit": "4200d41342404e66f177d067763c0d1c1dd2d768",
+  "project_path": null,
+  "declarations": [
+    "ChoppedPlanePaper.main_result",
+    "ChoppedPlanePaper.expected_syzygy_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.AC"
+    ],
+    "msc2020": [
+      "13D40",
+      "13D02",
+      "14N05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-12T23:12:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4200d41342404e66f177d067763c0d1c1dd2d768",
+        "fork_repository": "PalomarArchive/Vlado-V--chopped-plane-point-ideals--12d29da653d4",
+        "source_repository": "Vlado-V/chopped-plane-point-ideals"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d303e2df58678bb78de36b5aa68d5f1f1a697fb05f8b59a16e14fe5e9f441959"
+}

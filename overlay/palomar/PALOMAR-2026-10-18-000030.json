@@ -1,0 +1,85 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000030",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000030",
+  "version": 1,
+  "title": "Persistent failure of Euclidean quartic SOS exactness",
+  "abstract": "An explicit rational homogeneous cubic with 25 monomials in 14 real variables has maximum one on the Euclidean unit sphere and admits a positive degree-four moment functional with value 500753357629/500000000000. For every positive real regularization parameter, quadratic strength and cubic strength, the associated quartic has an explicitly attained global minimum whose shift is not a sum of squares of real polynomials. A quantitative strict separation bounds every SOS lower bound. The polynomial is stationary at zero with negative definite Hessian. A second explicit 25-term cubic, certified by the same rational functional, gives a unique global minimizer with positive-definite Hessian there and persistent SOS failure for all positive parameters. The exact sphere maximizers are classified. The proof combines an elementary quadratic-map contraction, a rational moment certificate, an ordinary SOS degree bound and an all-parameter radial factorization.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/persistent-sos",
+  "commit": "54dc5a01cc16e850e3350ba0aa1bd8a8e5b67c5d",
+  "project_path": null,
+  "declarations": [
+    "PersistentSOS.radius_eq_norm",
+    "PersistentSOS.cubic_abs_le",
+    "PersistentSOS.unit_sphere_attainment",
+    "PersistentSOS.cubic_unit_maximizers_coordinates",
+    "PersistentSOS.objective_all_minimizers",
+    "PersistentSOS.persistent_failure",
+    "PersistentSOS.minimum_shift_nonnegative",
+    "PersistentSOS.quantitative_sos_gap",
+    "PersistentSOS.sphere_moment_gap",
+    "PersistentSOS.stationary_origin",
+    "PersistentSOS.hessian_origin",
+    "PersistentSOS.qPoly_definition",
+    "PersistentSOS.cubicPoly_definition",
+    "PersistentSOS.sos_definition",
+    "PersistentSOS.quarticPoly_definition",
+    "PersistentSOS.objective_definition",
+    "PersistentSOS.minimizingRadius_definition",
+    "PersistentSOS.minimumValue_definition",
+    "PersistentSOS.separation_definition",
+    "PersistentSOS.unique_cubic_abs_le",
+    "PersistentSOS.unique_cubic_unit_maximizer",
+    "PersistentSOS.unique_objective_minimizer",
+    "PersistentSOS.unique_persistent_failure",
+    "PersistentSOS.unique_minimum_shift_nonnegative",
+    "PersistentSOS.unique_quantitative_sos_gap",
+    "PersistentSOS.unique_sphere_moment_gap",
+    "PersistentSOS.unique_stationary_origin",
+    "PersistentSOS.unique_hessian_origin",
+    "PersistentSOS.unique_hessian_minimizer",
+    "PersistentSOS.unique_hessian_posDef",
+    "PersistentSOS.uniqueCubicPoly_definition",
+    "PersistentSOS.uniqueCubic_definition",
+    "PersistentSOS.uniqueQuarticPoly_definition",
+    "PersistentSOS.uniqueObjective_definition",
+    "PersistentSOS.uniqueSeparation_definition"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC",
+      "math.AG"
+    ],
+    "msc2020": [
+      "90C22",
+      "14P10",
+      "90C26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T23:09:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "54dc5a01cc16e850e3350ba0aa1bd8a8e5b67c5d",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--persistent-sos--c23605c96657",
+        "source_repository": "JD-Jones-ASES/persistent-sos"
+      }
+    ]
+  },
+  "statement_hash": "sha256:05dba57c5c5768c3c7b7a7c21fe0ff476e4913d25ea5e8744c1652a3a0eec121"
+}

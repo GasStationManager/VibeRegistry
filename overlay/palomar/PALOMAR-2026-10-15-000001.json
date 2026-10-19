@@ -1,0 +1,81 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000001",
+  "version": 1,
+  "title": "Sharp universal support criterion for sub-Gaussian laws",
+  "abstract": "For every Borel probability law on the real line that is symmetric about zero and satisfies 0 < a <= |X| <= b almost surely, the support ratio b/a <= sqrt(3) + sqrt(2) guarantees E exp(t X) <= exp(t^2 E X^2 / 2) for every real t. The inequality is strict for nonzero t, and the actual variance is the optimal quadratic proxy. An explicit symmetric law on {-R,-1,1,R} violates the bound near zero for each larger ratio R. In the normalization 3-sqrt(6) <= X^2 <= 3+sqrt(6), the development also establishes the sharp eighth-order MGF gap with its optimal interiority coefficient, identifies the unique law with Gaussian fourth-moment contact, and proves the sharp global Wasserstein bound for the squared law at every feasible fourth-cumulant deficit, including attainment. The proof combines a convex endpoint reduction, control of the entire moment tail, exact rational Bernstein certificates, and an explicit affine transport coupling.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/support-criterion",
+  "commit": "f6185744e26f5862fd704ef637ebef3fd068cef5",
+  "project_path": null,
+  "declarations": [
+    "SupportCriterion.normalized_quantitative_gap",
+    "SupportCriterion.scaled_quantitative_gap",
+    "SupportCriterion.universal_support_criterion",
+    "SupportCriterion.universal_strict",
+    "SupportCriterion.variance_proxy_optimality",
+    "SupportCriterion.sharp_universal_ratio",
+    "SupportCriterion.fourth_deficit_decomposition",
+    "SupportCriterion.critical_law_rigidity",
+    "SupportCriterion.squared_transport_finiteness",
+    "SupportCriterion.squared_transport_bound",
+    "SupportCriterion.sharp_local_transport",
+    "SupportCriterion.local_transport_attainment",
+    "SupportCriterion.normalized_sharp_gap",
+    "SupportCriterion.normalized_sharp_gap_strict",
+    "SupportCriterion.scaled_sharp_gap",
+    "SupportCriterion.sharp_gap_coefficient_le",
+    "SupportCriterion.interiority_gap_coefficient_le",
+    "SupportCriterion.sharp_gap_intrinsic_coefficient_nonpos",
+    "SupportCriterion.global_squared_transport",
+    "SupportCriterion.fourth_deficit_range",
+    "SupportCriterion.global_transport_attainment",
+    "SupportCriterion.mgf_definition",
+    "SupportCriterion.variance_definition",
+    "SupportCriterion.fourthDeficit_definition",
+    "SupportCriterion.interiority_definition",
+    "SupportCriterion.symmetric_definition",
+    "SupportCriterion.normalizedSupport_definition",
+    "SupportCriterion.bandSupport_definition",
+    "SupportCriterion.criticalLaw_definition",
+    "SupportCriterion.symmetricTwoPoint_definition",
+    "SupportCriterion.counterexampleLaw_definition",
+    "SupportCriterion.squaredLaw_definition",
+    "SupportCriterion.wassersteinOne_definition"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "60E15",
+      "60E05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-15T00:45:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f6185744e26f5862fd704ef637ebef3fd068cef5",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--support-criterion--d7b34616c98d",
+        "source_repository": "JD-Jones-ASES/support-criterion"
+      }
+    ]
+  },
+  "statement_hash": "sha256:40b09f4009b3da788d4d448a7aba659da549e425fb2ad8a22fb014cabd08e639"
+}

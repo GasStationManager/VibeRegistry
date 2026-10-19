@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000003",
+  "version": 1,
+  "title": "The Häggkvist–Janssen bound on the list chromatic index of complete graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of the Häggkvist–Janssen theorem χ′ₗ(Kₙ) ≤ n: for arbitrary lists of at least n colours on the edges of the complete graph on n vertices (from an arbitrary colour type), there is a proper edge colouring, i.e. a colouring of Mathlib's line graph of ⊤, choosing every colour from the list of its edge. Orders 0 and 1 are included. The proof constructs an explicit local-rank certificate, shows by a forced-choice induction that the corresponding coefficient of an extended-star polynomial is nonzero, and applies Mathlib's combinatorial Nullstellensatz; it is an alternative presentation, not a literal translation of the article's argument.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/haggkvist-janssen",
+  "commit": "807e08bd7c480d4fae80c1b78377d23989d39ab0",
+  "project_path": null,
+  "declarations": [
+    "HaggkvistJanssen.exists_listEdgeColoring_complete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-15T06:34:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "807e08bd7c480d4fae80c1b78377d23989d39ab0",
+        "fork_repository": "PalomarArchive/jtraverso--haggkvist-janssen--3449623606b5",
+        "source_repository": "jtraverso/haggkvist-janssen"
+      }
+    ]
+  },
+  "statement_hash": "sha256:aaf47e15d6a5a75b43d2f1432e10bb4e1b59fd4c4188e7c0561d372d5f660dd1"
+}

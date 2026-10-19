@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000002",
+  "version": 1,
+  "title": "Erdos 662: corrected global threshold conjecture",
+  "abstract": "Disproves an explicitly corrected global threshold formulation of Erdos problem 662. For each radius, the conjecture bounds the average number of nearby points in every sufficiently large one-separated planar set by the unit triangular lattice's neighbor count. An exact rational oblique lattice and separated finite replicas violate the bound at radius six.",
+  "authors": [
+    "Colin Snyder",
+    "AItoBit"
+  ],
+  "repository": "https://github.com/AItoBit/erdos-662-proof",
+  "commit": "91f70364bf88c9ae8181aa82a703a7ba2d369901",
+  "project_path": null,
+  "declarations": [
+    "Erdos662.not_globalThresholdConjecture"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C15",
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T04:10:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91f70364bf88c9ae8181aa82a703a7ba2d369901",
+        "fork_repository": "PalomarArchive/AItoBit--erdos-662-proof--be0e76cca6f0",
+        "source_repository": "AItoBit/erdos-662-proof"
+      }
+    ]
+  },
+  "statement_hash": "sha256:953060775277e76b2672518ae183c835d3577676008d8232aef14b67f229a0e7"
+}

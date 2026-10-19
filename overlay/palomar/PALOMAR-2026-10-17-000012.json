@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000012",
+  "version": 1,
+  "title": "The connected size-Ramsey number of a four-edge matching versus a quadrilateral",
+  "abstract": "A Lean 4 / Mathlib formalization project for the connected size-Ramsey equality rhat_c(4K2, C4) = 17. The intended proof uses a universal C4 vertex-transversal bound 4 tau_4(G) <= |E(G)|, a classification of the connected equality cases through sixteen edges (C4, the 4-wheel, K_{3,3} minus an edge, the octahedron), an avoiding-colouring construction from a three-vertex transversal, and an explicit twelve-vertex, seventeen-edge host. Proofs are complete as of commit c8d54e2 (2026-10-17); the proof certificate is Solution.lean and its dependency closure. Formal adversary pass 1 and reviewer pass 1 are ACCEPT_WITH_FIXES (fixes applied); the CI comparator passed at 38bd345 (2026-10-17) with five records. A sixth record, the transversal half of Corollary C (SizeRamsey.connected_transversal_le_three), was registered on 2026-10-17 (commit cc2aec2); the CI comparator passed with six records at 46bf2d0 (2026-10-17, run 39034260971).",
+  "authors": [
+    "Ben Keene"
+  ],
+  "repository": "https://github.com/benkeene/size-ramsey",
+  "commit": "3233dcdd4807cbc808f68582d913c4f463047de2",
+  "project_path": null,
+  "declarations": [
+    "SizeRamsey.four_mul_tau4_le_edgeCount",
+    "SizeRamsey.equality_classification",
+    "SizeRamsey.connected_transversal_le_three",
+    "SizeRamsey.avoiding_coloring_le_sixteen",
+    "SizeRamsey.F17_spec",
+    "SizeRamsey.connectedSizeRamsey_eq_seventeen"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C55",
+      "05D10",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T19:02:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3233dcdd4807cbc808f68582d913c4f463047de2",
+        "fork_repository": "PalomarArchive/benkeene--size-ramsey--8458867bc4a3",
+        "source_repository": "benkeene/size-ramsey"
+      }
+    ]
+  },
+  "statement_hash": "sha256:54322c34b32872aeb13f48ac994db737404386815e97f51fa7111863a8f9cd13"
+}

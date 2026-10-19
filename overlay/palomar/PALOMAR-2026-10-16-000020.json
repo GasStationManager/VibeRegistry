@@ -1,0 +1,108 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000020",
+  "version": 1,
+  "title": "The augmented Descartes theorem in every dimension, its converses, and Soddy's two spheres",
+  "abstract": "A Lean 4 development of Section 3 of Lagarias, Mallows and Wilks, Beyond the Descartes circle theorem (Amer. Math. Monthly 109 (2002) 338-361), in the Lorentz form. An oriented sphere in R^n with centre x and signed radius r has the augmented curvature-centre row (|x|^2/r - r, 1/r, x/r); an oriented hyperplane <h, y> = delta with unit normal h has the row (2 delta, 0, h) (LMW Definition 3.2, (3.7)-(3.9)). Tangency is distance-encoded in LMW's oriented sense: two spheres dist^2 = (r + s)^2 (external tangency for two positive radii, internal when one radius is negative), a sphere and a hyperplane <h, x> - delta = -r, two hyperplanes opposite unit normals, LMW's oriented tangency pair by pair, and the converses deliver tangency in this sense; the compatible orientations of an oriented Descartes configuration (disjoint interiors, with the given orientations or all reversed) are proved separately for every solution, after multiplying each row's power polynomial by the total curvature, and for a valid, pairwise tangent family with positive total curvature for its own open interiors. Kernel-checked, for every n >= 1 (LMW's Section 3 assumes n >= 2; their Section 8, (8.4), is the identity on the line): the augmented matrix W of n + 2 pairwise tangent spheres of nonzero curvature, and of n + 2 pairwise tangent spheres and hyperplanes, satisfies W^T Q_n W = [[0, -4, 0], [-4, 0, 0], [0, 0, 2 I_n]] with Q_n = I - (1/n) 11^T (Theorem 3.3); every real solution W is the augmented matrix of exactly one family of valid, pairwise tangent oriented spheres and hyperplanes, and, when its second column has no zero, of exactly one pairwise tangent family of spheres (the converse of Theorem 3.3); the Soddy-Gosset relation (sum 1/r_i)^2 = n sum (1/r_i)^2 with and without hyperplanes (Theorem 1.2, (1.2)) and its form b^T Q_n b = 0 ((3.2)); the curvature-centre identity M^T Q_n M = diag(0, 2 I_n) (Theorem 3.2, (3.5)); at n = 2 the complex Descartes theorem (sum b_i z_i)^2 = 2 sum (b_i z_i)^2 and sum b_i (b_i z_i) = (1/2)(sum b_i)(sum b_i z_i) (Theorem 2.1, (2.2)-(2.3)); det Q_n = -2/n; and the three statements for Mathlib's EuclideanGeometry.Sphere (pairwise IsExtTangent, or one enclosing sphere to which the others are IsIntTangent, with curvature -1/r_e). The matrix identity is proved as LMW's Section 4 argument (Lemmas 4.3-4.4, (4.9)-(4.10)) run directly in Euclidean coordinates: W^T Q_n W is the target exactly when the rows of W have Lorentz norm 1 and pair to -1 under G = [[0, -1/2, 0], [-1/2, 0, 0], [0, 0, I_n]], since W G W^T = 2I - J and (2I - J)(Q_n/2) = I. Also proved: both halves of the converse of the Soddy-Gosset theorem, LMW's Theorem 3.1, about which they write \"We do not know an easy proof of this result; a proof appears in [16]\" ([16] is Graham-Lagarias-Mallows-Wilks-Yan III, whose arXiv versions 1-2 prove both halves as their Theorem 2.2 from the same base configuration and the transitivity of the Lorentz group, a section the published version omits). Existence: every nonzero b with (sum b_i)^2 = n sum b_i^2 is the curvature vector of a pairwise tangent family of spheres, where b_i is nonzero, and hyperplanes, where b_i = 0, and of a family of spheres when no b_i vanishes, by one Q_n-reflection from the configuration of two parallel hyperplanes and n unit spheres in the proof of GLMWY III's Theorem 6.1, or from its inversion in the unit sphere. Congruence: two valid, pairwise tangent families with the same curvatures, index by index, are carried one to the other by exactly one Euclidean motion x -> x O + t with O^T O = I, reflections and hyperplanes included, with O = (1/2) X^T Q_n X' and t = -(1/4) a^T Q_n X' for augmented matrices [a | b | X] and [a' | b | X'] and the motion's action on points, spheres and hyperplanes; W_1^-1 W_2 preserves the target form and fixes the curvature coordinate, and every such matrix is a motion matrix (GLMWY III's arXiv v1-v2 argue instead by the rigidity of a simplex of centres); its uniqueness and parameters are proved here. A motion preserves validity, curvature and tangency, so two valid, pairwise tangent families are congruent exactly when their curvature vectors agree. For every solution W: the total curvature B is nonzero, the open sets {y : B F_i(y) < 0}, F_i(y) = b_i |y|^2 - 2 <v_i, y> + a_i the power polynomial of row i (negative exactly inside a ball, outside a ball of negative radius, or on the side of a hyperplane its normal points to), are pairwise disjoint, at most two rows are hyperplanes, and no three boundaries pass through a finite point; for a valid, pairwise tangent family the total curvature is nonzero, at most two members are hyperplanes, and when the total curvature is positive the open interiors are pairwise disjoint. The converse of Theorem 3.2 in every dimension under the hypothesis of a nonzero first column (every real M with M^T Q_n M = diag(0, 2 I_n) and a nonzero first column is the curvature-centre matrix of exactly one family of valid, pairwise tangent oriented spheres and hyperplanes), which GLMWY I, Theorem 3.1 and its Remark, prove at n = 2 with that hypothesis and which LMW's printed converse (\"any real solution M\") and GLMWY III's arXiv v1-v2 Theorem 2.3 omit, together with the matrix at n = 2 with columns 0, e_0 - e_1, e_2 - e_3 (GLMWY I's configuration (3.15) with its first column zeroed; the matrix of four oriented lines with normals +-e_0, +-e_1), which solves the equation and is the curvature-centre matrix of no valid, pairwise tangent family. The existence of a configuration in every dimension (that configuration); for n >= 2 the Apollonian generators S_k = I + (2/(n-1)) e_k 1^T - (2n/(n-1)) e_k e_k^T of GLMWY III, (4.1), preserve Q_n and carry configurations to configurations, with the row formula (S_k W)_k = (2/(n-1)) sum_{i != k} W_i - W_k, and Soddy's two spheres (LMW, footnote 3; GLMWY III, Section 4.1), in the signed sense: the oriented spheres and hyperplanes tangent to n + 1 members of a configuration are exactly the missing member and its Apollonian reflection, two distinct objects whose curvatures sum to (2/(n-1)) times the sum of the others' curvatures. The planar Soddy-Gosset relation for four circles of positive radius, pairwise externally tangent or with one enclosing circle, is already in Lean in facebookresearch/atlas-lean (descartes_circle_theorem, not registered); rjwalters/lean-genius and carlok/LeanFrontier treat the planar relation as a definition (its two roots, the same over the complex numbers, integer reflections and parity; LeanFrontier checks it for one family of Ford circles and their tangent line), with no derivation from tangency; no other formalization of these statements was found by the dated searches.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/augmented-descartes-lean",
+  "commit": "44bdbf1dec3ffab07c97da8544aca6255826ded2",
+  "project_path": null,
+  "declarations": [
+    "AugmentedDescartes.lorentz_sphereRow_self",
+    "AugmentedDescartes.lorentz_sphereRow_eq_neg_one_iff",
+    "AugmentedDescartes.lorentz_sphereRow_planeRow_eq_neg_one_iff",
+    "AugmentedDescartes.lorentz_planeRow_eq_neg_one_iff",
+    "AugmentedDescartes.lorentz_row_self",
+    "AugmentedDescartes.lorentz_row_eq_neg_one_iff",
+    "AugmentedDescartes.row_injOn_valid",
+    "AugmentedDescartes.exists_orientedSphere_of_lorentz_self",
+    "AugmentedDescartes.augmented_identity_iff_lorentz",
+    "AugmentedDescartes.gram_eq_of_augmented_identity",
+    "AugmentedDescartes.augmented_descartes",
+    "AugmentedDescartes.augmented_descartes_general",
+    "AugmentedDescartes.augmented_descartes_converse",
+    "AugmentedDescartes.augmented_descartes_converse_spheres",
+    "AugmentedDescartes.soddy_gosset",
+    "AugmentedDescartes.soddy_gosset_general",
+    "AugmentedDescartes.soddy_gosset_iff_isotropic",
+    "AugmentedDescartes.curvature_center",
+    "AugmentedDescartes.curvature_center_general",
+    "AugmentedDescartes.complex_descartes",
+    "AugmentedDescartes.complex_descartes_mixed",
+    "AugmentedDescartes.det_descartesQ",
+    "AugmentedDescartes.sphere_soddy_gosset",
+    "AugmentedDescartes.sphere_soddy_gosset_enclosing",
+    "AugmentedDescartes.sphere_augmented_descartes",
+    "AugmentedDescartes.exists_configuration",
+    "AugmentedDescartes.exists_pairwiseTangent",
+    "AugmentedDescartes.converse_soddy_gosset",
+    "AugmentedDescartes.converse_soddy_gosset_spheres",
+    "AugmentedDescartes.curvature_center_converse",
+    "AugmentedDescartes.curvature_center_converse_needs_nonzero",
+    "AugmentedDescartes.apollonianGen_mem_aut",
+    "AugmentedDescartes.apollonian_reflection",
+    "AugmentedDescartes.apollonianGen_mul_apply",
+    "AugmentedDescartes.two_tangent_rows",
+    "AugmentedDescartes.two_tangent_spheres",
+    "AugmentedDescartes.same_curvature_motion",
+    "AugmentedDescartes.rigidMotion_parameters",
+    "AugmentedDescartes.rigidMotionPoint_isometry",
+    "AugmentedDescartes.rigidMotionMatrix_sphereRow",
+    "AugmentedDescartes.rigidMotionMatrix_planeRow",
+    "AugmentedDescartes.same_curvature_congruence",
+    "AugmentedDescartes.rowPower_sphereRow",
+    "AugmentedDescartes.rowPower_planeRow",
+    "AugmentedDescartes.rowPower_sphereRow_neg_iff_of_pos",
+    "AugmentedDescartes.rowPower_sphereRow_neg_iff_of_neg",
+    "AugmentedDescartes.rowPower_planeRow_neg_iff",
+    "AugmentedDescartes.augmented_orientation",
+    "AugmentedDescartes.augmented_orientation_disjoint",
+    "AugmentedDescartes.augmented_no_three_zero_curvatures",
+    "AugmentedDescartes.augmented_no_three_boundaries",
+    "AugmentedDescartes.rigidMotionOf_isValid",
+    "AugmentedDescartes.rigidMotionOf_curvature",
+    "AugmentedDescartes.lorentz_vecMul_rigidMotionMatrix",
+    "AugmentedDescartes.rigidMotionOf_tangent_iff",
+    "AugmentedDescartes.congruent_iff_same_curvature",
+    "AugmentedDescartes.tangent_family_curvature_sum_ne_zero",
+    "AugmentedDescartes.tangent_family_interiors_disjoint",
+    "AugmentedDescartes.tangent_family_two_hyperplanes"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C26",
+      "51M04",
+      "51B10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T21:13:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "44bdbf1dec3ffab07c97da8544aca6255826ded2",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--augmented-descartes-lean--1c7574ee15ad",
+        "source_repository": "JD-Jones-ASES/augmented-descartes-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:10af84cff7fee0f79633464371656ac55e8e635c991ea7fee6f3c56150ec81f9"
+}

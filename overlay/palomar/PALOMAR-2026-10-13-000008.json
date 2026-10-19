@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-13-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-13-000008",
+  "version": 2,
+  "title": "Pure infinitely self-modifying code",
+  "abstract": "Formalizes the corrected construction of pure infinitely self-modifying code from Gregory Morse's 2018 paper. An unbounded integer-address machine simulates finite Turing machines, preserves halting and divergence, writes code at every computational instruction, and admits a run changing unboundedly many fetched code fields from a literal identity-memory initializer whose memory is proved primitive recursive. Terminal interpreter journals occur on reached halted configurations of the numbered interpreter on the encoded finite input. The development includes a four-register MOV foundation, effective finite-machine interpretation, tape and head observations, and conditional bounded x86/x64 instruction, relocation and native-trace refinements. Finite hardware is not claimed to have unbounded memory.",
+  "authors": [
+    "Gregory Morse"
+  ],
+  "repository": "https://github.com/GregoryMorse/smcTuring",
+  "commit": "a514ef4dbfdd85c0c91242722887177100c84a7f",
+  "project_path": "lean",
+  "declarations": [
+    "PalomarSMC.mathematical_result",
+    "SmcTuring.Dolan.Encoding.zigzag_injective",
+    "SmcTuring.SMC.Concrete.data_owner",
+    "SmcTuring.SMC.Concrete.metadata_owner"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO"
+    ],
+    "msc2020": [
+      "03D10",
+      "68N30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T22:41:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a514ef4dbfdd85c0c91242722887177100c84a7f",
+        "fork_repository": "PalomarArchive/GregoryMorse--smcTuring--3626828fc241",
+        "source_repository": "GregoryMorse/smcTuring"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fb5effc6a4481c6d8f3c5bb79627023ddd47c21a236519dae6ca3ae5080414b2"
+}

@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000015",
+  "version": 1,
+  "title": "Countable-coordinate factorization for compact products",
+  "abstract": "Every continuous map from an arbitrary product of nonempty compact Hausdorff spaces into a metrizable space factors continuously through a countable subproduct. A uniform-space proof establishes countable coordinate dependence for uniformly continuous maps into separated countably generated uniform spaces. The factor for a fixed coordinate set is unique. Countably many maps share a countable coordinate set. Continuous injections into metrizable targets force only countably many nontrivial factors, giving the exact metrizability criterion for nonempty compact Hausdorff products. Empty index and empty selected-coordinate sets are allowed. These are classical results and no novelty or priority is claimed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "fc3f403c4d07356d2232e809f326f63a9ce9da45",
+  "project_path": "topology/countable-coordinate-factorization",
+  "declarations": [
+    "CountableCoordinates.finite_coordinates_of_entourage",
+    "CountableCoordinates.countable_coordinates_of_uniformContinuous",
+    "CountableCoordinates.countable_coordinates_of_continuous",
+    "CountableCoordinates.restrict_refill",
+    "CountableCoordinates.uniformContinuous_refill",
+    "CountableCoordinates.exists_countable_uniform_factorization",
+    "CountableCoordinates.exists_countable_continuous_factorization",
+    "CountableCoordinates.factor_unique",
+    "CountableCoordinates.exists_common_countable_factorization",
+    "CountableCoordinates.nontrivial_subset_of_injective",
+    "CountableCoordinates.countable_nontrivial_of_continuous_injective",
+    "CountableCoordinates.continuous_refill",
+    "CountableCoordinates.compact_product_metrizable_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54B10",
+      "54C05",
+      "54E35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T22:11:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fc3f403c4d07356d2232e809f326f63a9ce9da45",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e60c53a18b180d79b82806ec885ba28f3a782dfd70cf23131320c5a61b039352"
+}

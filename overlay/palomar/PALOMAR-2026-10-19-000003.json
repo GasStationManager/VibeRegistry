@@ -1,0 +1,96 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000003",
+  "version": 1,
+  "title": "Survival and transience above the compartment-division threshold",
+  "abstract": "Survival and transience are established throughout the strictly supercritical regime of the noncoagulating compartment model of Anderson, Howells and Rojas La Luz (https://arxiv.org/abs/2511.10223v4, Remark 4.8). Compartments produce molecules at rate b, degrade them at rate d per molecule, exit at rate e, and divide at rate f per molecule, with arbitrary conservative allocation between the daughters. For b,e,f > 0 and d >= 0 with bf > e(e+d), every finite nonempty family has positive probability of eternal survival, with an explicit product lower bound. For positive immigration intensity and any distribution of finite immigrant contents, the process is nonexplosive and the expected total physical occupation time of every compartment-count state has an explicit finite bound. This establishes the transience conjectured in Remark 4.8 without a moment assumption on immigrant contents. The quantitative bounds use a positive eigenweight of the mean system and a bounded multiplicative barrier; a distribution-dependent immigration constant sharpens the uniform occupation bound.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-compartment-division-threshold",
+  "commit": "c5dacf41f334ccc781c4bda691c388b6214befb2",
+  "project_path": null,
+  "declarations": [
+    "DividingCompartments.Paper.main_quantitative",
+    "DividingCompartments.Paper.explicit_occupation_mark",
+    "DividingCompartments.Paper.explicit_barrier_occupation",
+    "DividingCompartments.Paper.kappa_pos",
+    "DividingCompartments.Paper.kappa_le_kappaMark",
+    "DividingCompartments.strict_supercritical_source",
+    "DividingCompartments.Paper.example_survival_empty",
+    "DividingCompartments.Paper.example_survival_one",
+    "DividingCompartments.CountProcess.barrier_lt_one",
+    "DividingCompartments.CountProcess.projected_survival_bound",
+    "DividingCompartments.CountProcess.projected_occupation_bound",
+    "DividingCompartments.CountProcess.projected_source_nonexplosive",
+    "DividingCompartments.CountProcess.count_observable_generator",
+    "DividingCompartments.CountProcess.count_generator_cons",
+    "DividingCompartments.FiniteBranching.FiniteRateModel.total_positive",
+    "DividingCompartments.FiniteBranching.FiniteRateModel.jumpWeight_nonneg",
+    "DividingCompartments.FiniteBranching.FiniteRateModel.jumpWeight_sum",
+    "DividingCompartments.FamilySource.row_nonneg",
+    "DividingCompartments.FamilySource.dummy_mem",
+    "DividingCompartments.MarkovRenewal.Model.rate_pos",
+    "DividingCompartments.Immigration.family_total_lower",
+    "DividingCompartments.Immigration.step_probability",
+    "DividingCompartments.FiniteBranching.FiniteRateModel.markedStepLaw_probability",
+    "DividingCompartments.FiniteBranching.FiniteRateModel.markedKernel_markov",
+    "DividingCompartments.FiniteBranching.FiniteRateModel.pathKernel_markov",
+    "DividingCompartments.FamilySource.stateSingleton",
+    "DividingCompartments.MarkovRenewal.Model.stepProbability",
+    "DividingCompartments.MarkovRenewal.Model.markedProbability",
+    "DividingCompartments.MarkovRenewal.Model.markedMarkov",
+    "DividingCompartments.MarkovRenewal.Model.pathMarkov",
+    "DividingCompartments.Immigration.arrivalProbability",
+    "DividingCompartments.FiniteBranching.lastIndex_mem",
+    "DividingCompartments.FiniteBranching.lastState_measurable",
+    "DividingCompartments.CountProcess.main_literal",
+    "DividingCompartments.CountProcess.literal_characterization",
+    "DividingCompartments.CountProcess.jumpRate_formula",
+    "DividingCompartments.CountProcess.source_path_count",
+    "DividingCompartments.CountProcess.physicalSurvives_iff",
+    "DividingCompartments.CountProcess.physicalSurvives_measurable",
+    "DividingCompartments.CountProcess.empty_family_physical",
+    "DividingCompartments.PhysicalPath.reward_eq_holding_sum",
+    "DividingCompartments.PhysicalPath.grouped_state",
+    "DividingCompartments.PhysicalPath.grouped_holding_sum",
+    "DividingCompartments.PhysicalPath.restart_state",
+    "DividingCompartments.CountProcess.countSingleton",
+    "DividingCompartments.CountProcess.countScalarTower"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "q-bio.MN"
+    ],
+    "msc2020": [
+      "60J27",
+      "60J80",
+      "92C42"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T01:18:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c5dacf41f334ccc781c4bda691c388b6214befb2",
+        "fork_repository": "PalomarArchive/mmislan--palomar-compartment-division-threshold--29db348fffe5",
+        "source_repository": "mmislan/palomar-compartment-division-threshold"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d57e43c236a3fc64867c256df7e771fc8ce43c9cb5e142d39ffe9f8db82858fa"
+}

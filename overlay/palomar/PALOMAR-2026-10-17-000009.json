@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-17-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000009",
+  "version": 1,
+  "title": "Erdős' theorem on graphs of large girth and large chromatic number",
+  "abstract": "A Lean 4 / Mathlib formalization of Erdős' 1959 theorem: for every g and k there is a finite graph with girth greater than g and chromatic number greater than k. The formalization proves the structural form given by Erdős' probabilistic argument: for every g and every ε > 0, for all sufficiently large n there is a graph on n vertices with no cycle of length at most g in which every independent set has fewer than εn vertices; hence, for all large n, a graph on n vertices with girth greater than g that is not k-colourable. Mathlib has girth and chromatic number but not this theorem; Mycielski's construction (registered separately by another author) gives triangle-free graphs only.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/erdos-girth-chromatic",
+  "commit": "e41d7493430ba42f18da380192a4111763155064",
+  "project_path": null,
+  "declarations": [
+    "ErdosGirthChromatic.exists_girth_indep",
+    "ErdosGirthChromatic.exists_girth_not_colorable",
+    "ErdosGirthChromatic.exists_girth_chromaticNumber"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C38",
+      "05C80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-17T14:07:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e41d7493430ba42f18da380192a4111763155064",
+        "fork_repository": "PalomarArchive/jtraverso--erdos-girth-chromatic--0532ff066cce",
+        "source_repository": "jtraverso/erdos-girth-chromatic"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5160af8282504240fc3fbc2db2cff2610bbeb822e0671df15cfafc47b0f6c8b7"
+}

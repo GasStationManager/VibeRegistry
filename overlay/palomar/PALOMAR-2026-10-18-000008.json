@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000008",
+  "version": 1,
+  "title": "Planar Pólya–Szegő Buckling Inequality",
+  "abstract": "Lean formalization proving the planar Polya-Szego conjecture for the first buckling eigenvalue. For open planar sets of positive finite area, it proves the sharp area inequality and characterizes equality by exact equality with an open disk. It retains the original Sobolev-space, variational eigenvalue and Bessel definitions, and includes the disk eigenvalue and buckling–Dirichlet comparison.",
+  "authors": [
+    "Quanyu Tang",
+    "Haiqi Zhang"
+  ],
+  "repository": "https://github.com/QuanyuTang/polya-szego-planar-unconditional-palomar",
+  "commit": "5311f47821b5da92e81e75b7da5091d176c8deb9",
+  "project_path": null,
+  "declarations": [
+    "BucklingChallenge.area_inequality",
+    "BucklingChallenge.area_equality_iff",
+    "BucklingChallenge.polya_szego_buckling",
+    "BucklingChallenge.bucklingEig_ball",
+    "BucklingChallenge.buckling_ge_dirichlet"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-10-18T09:17:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5311f47821b5da92e81e75b7da5091d176c8deb9",
+        "fork_repository": "PalomarArchive/QuanyuTang--polya-szego-planar-unconditional-palomar--71f7b9b3d630",
+        "source_repository": "QuanyuTang/polya-szego-planar-unconditional-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:02dfdfa07e7f889316ab7f2dd5dff183460a8893a5f82619cb42020a161649bf"
+}

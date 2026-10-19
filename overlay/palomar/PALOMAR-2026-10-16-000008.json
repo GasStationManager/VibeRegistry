@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000008",
+  "version": 1,
+  "title": "Counterexamples to the restricted-sumset inverse theorem in arXiv:2609.10148v2",
+  "abstract": "Explicit finite counterexamples to Theorem A (Theorem 3.1) and Lemma 3.2 of Li and Liang, arXiv:2609.10148v2. In Z/13Z, sets of sizes seven and four satisfy all size hypotheses and have restricted sumset size nine, but neither is an arithmetic progression. A separate example in Z/11Z contradicts the lower bound of Lemma 3.2 as stated.",
+  "authors": [
+    "alexander"
+  ],
+  "repository": "https://github.com/AItoBit/restricted-sumsets-counterexamples",
+  "commit": "f2fec945b6c156edec290e15a7ab54bd3db2ba7c",
+  "project_path": null,
+  "declarations": [
+    "RestrictedSumsetsAudit.counterexample_main",
+    "RestrictedSumsetsAudit.counterexample_lemma"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B13",
+      "11B25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T04:09:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f2fec945b6c156edec290e15a7ab54bd3db2ba7c",
+        "fork_repository": "PalomarArchive/AItoBit--restricted-sumsets-counterexamples--cfd5634fbf4b",
+        "source_repository": "AItoBit/restricted-sumsets-counterexamples"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5a04e1dcc16d1d3be393c5a25edd20d3ce5486daabcaa5280b09b2c64e13ff81"
+}

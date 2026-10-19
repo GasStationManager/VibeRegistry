@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000008",
+  "version": 1,
+  "title": "Erdős Problem 173: monochromatic triangles in two-colorings of the plane",
+  "abstract": "A Lean proof that in every two-coloring of the plane any three distinct points that are not the vertices of an equilateral triangle, collinear points included, have a monochromatic congruent copy and at most one equilateral side length is missed, so at most one triangle up to congruence, degenerate or not, has no monochromatic copy. Alternating strips show that one equilateral triangle can be missed. This answers Erdős Problem 173 as Bloom states it and settles the conjecture of Erdős, Graham, Montgomery, Rothschild, Spencer and Straus that every non-equilateral triangle has a monochromatic copy, collinear triples included; it is new to our knowledge. The step from arbitrary to measurable colorings adapts OpenAI's rigidity theorem for wild character laws, extended here from the algebraic numbers to the algebraic closure of ℚ(x) in ℂ for every real x, and its transfer from proper to weak measurable colorings.",
+  "authors": [
+    "Jacob Parish"
+  ],
+  "repository": "https://github.com/plasma-ai/erdos-173",
+  "commit": "4a368a652753fab53272f7a747755876f04bc2cc",
+  "project_path": null,
+  "declarations": [
+    "Erdos173.erdos_173",
+    "Erdos173.erdos_173.variants.right_triangle",
+    "Erdos173.erdos_173.variants.equilateral_exception",
+    "Erdos173.erdos_173.variants.non_equilateral",
+    "Erdos173.erdos_173.variants.three_distinct_points"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "05D10",
+      "52C10",
+      "43A35",
+      "37A15",
+      "33C10",
+      "28A75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T05:51:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4a368a652753fab53272f7a747755876f04bc2cc",
+        "fork_repository": "PalomarArchive/plasma-ai--erdos-173--306cfcbb8ec3",
+        "source_repository": "plasma-ai/erdos-173"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c68c0108bb730799afd1133aabaebe2753b8a5aa60755080633a00eb69cc3cdc"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000007",
+  "version": 1,
+  "title": "Elementary bounds for Erdos problem 684",
+  "abstract": "Let U(n,k) be the full prime-power part of the binomial coefficient n choose k supported on primes at most k. For all sufficiently large n, there exists k at most n with k at most 514(log n)^2 and U(n,k) greater than n squared. For arbitrarily large n greater than one, U(n,k) equals one throughout k at most (log n)/8. This independent Mathlib-only implementation adapts the known residue averaging and prime-power obstruction of APSSV26 with coarse Chebyshev constants. It does not formalize that paper's sharper coefficients or Bae's stronger registered lower bound. The optimal order remains open and no mathematical novelty is claimed.",
+  "authors": [
+    "AItoBit"
+  ],
+  "repository": "https://github.com/AItoBit/erdos-684-elementary-bounds",
+  "commit": "a59cf65171b19dc7785b767d3b88ad8ef754f3eb",
+  "project_path": null,
+  "declarations": [
+    "Erdos684.upper_bound",
+    "Erdos684.frequently_smallPrimePart_eq_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B65",
+      "11N05",
+      "11A51"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T08:23:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a59cf65171b19dc7785b767d3b88ad8ef754f3eb",
+        "fork_repository": "PalomarArchive/AItoBit--erdos-684-elementary-bounds--bdca7179f9c0",
+        "source_repository": "AItoBit/erdos-684-elementary-bounds"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cb4dca7fdd96b4b835351d64ad94ad22fc0842d21fcaedd40d1a6b68c2e379ad"
+}

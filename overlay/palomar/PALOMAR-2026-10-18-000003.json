@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000003",
+  "version": 1,
+  "title": "Additive strengthening of Erdos problem 679: a known refutation",
+  "abstract": "For every real additive constant C and natural cutoff K, every sufficiently large natural n admits K < k < n with omega(n-k) at least log(k)/log(log(k)) + C. Here omega counts distinct prime factors. This independently implemented proof uses a fixed primorial residue window, elementary Chebyshev estimates and Stirling bounds. It refutes the known additive strengthening and does not resolve the main multiplicative question. No mathematical novelty is claimed.",
+  "authors": [
+    "AItoBit"
+  ],
+  "repository": "https://github.com/AItoBit/erdos-679-additive-refutation",
+  "commit": "4a53d358d1b7ade35d6f696f501c99b4d88c9e4c",
+  "project_path": null,
+  "declarations": [
+    "Erdos679.additive_refutation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A25",
+      "11N37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T06:05:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4a53d358d1b7ade35d6f696f501c99b4d88c9e4c",
+        "fork_repository": "PalomarArchive/AItoBit--erdos-679-additive-refutation--721a6d9e77f6",
+        "source_repository": "AItoBit/erdos-679-additive-refutation"
+      }
+    ]
+  },
+  "statement_hash": "sha256:506bc5436774b0b681ba6c8b65ff640aee9c37e615aa0ead611974f854422d4f"
+}

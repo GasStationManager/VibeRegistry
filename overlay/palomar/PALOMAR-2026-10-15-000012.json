@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000012",
+  "version": 2,
+  "title": "Solvability of divergence-form elliptic equations (Evans §6.2)",
+  "abstract": "A Lean 4 formalisation of the solvability theory of linear second-order elliptic operators in divergence form on a bounded domain,\n\n  -div(A grad u) + b · grad u + c u = f in Ω,   u = 0 on ∂Ω,\n\nwith A uniformly elliptic and every coefficient bounded and measurable. The drift b is unrestricted and the bilinear form is in general non-symmetric. The six compared statements are the results of Evans §6.2: the Gårding inequality, existence and uniqueness of the weak solution with no drift and a nonnegative zeroth-order coefficient, the Fredholm alternative, solvability against the transpose problem, the discrete set of exceptional shifts and boundedness of the inverse. They ask only that Ω be bounded and open, and the compact embedding of H_0^1(Ω) in L²(Ω) is proved. Interior regularity at every order, the maximum principles and the Dirichlet eigenvalue sequence are also proved in the library and appear without a Comparator configuration. Built on Mathlib with only Lean's standard axioms.",
+  "authors": [
+    "Alejandro Soto Franco",
+    "Kobe Marshall-Stevens"
+  ],
+  "repository": "https://github.com/alejandro-soto-franco/EllipticPDE",
+  "commit": "ec784093f30308ef770ff855ce624725adf6f870",
+  "project_path": "lean",
+  "declarations": [
+    "Palomar.garding",
+    "Palomar.weak_solution_of_nonneg_zeroth",
+    "Palomar.fredholm_alternative",
+    "Palomar.solvable_iff_orthogonal_transpose",
+    "Palomar.existence_three",
+    "Palomar.resolvent_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP"
+    ],
+    "msc2020": [
+      "35J25",
+      "47A53",
+      "35A01",
+      "35A02"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T04:19:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ec784093f30308ef770ff855ce624725adf6f870",
+        "fork_repository": "PalomarArchive/alejandro-soto-franco--EllipticPDE--bea407da0588",
+        "source_repository": "alejandro-soto-franco/EllipticPDE"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e4afc4607e2e54210cf0340dafa8417cb6fe38832af2ac2fa1c020527908eab4"
+}

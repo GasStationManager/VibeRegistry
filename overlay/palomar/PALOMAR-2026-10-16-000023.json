@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000023",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000023",
+  "version": 1,
+  "title": "Waist",
+  "abstract": "Formalization of waist inequalities for different settings: (1) Gromov's waist theorem for the round sphere S^n (the original proof in Memarian arXiv:0911.3972 has gaps; here a spherical adaptation of Klartag's proof is used); (2) An explicit positive lower bound on the unnormalized (n-k)-dimensional Hausdorff measure (Mathlib's muH[n-k], defined via sum of (diam U_i)^{n-k} without the unit-ball normalization factor omega_{n-k} / 2^{n-k}, in the chordal metric on S^n) of a fiber on the round sphere S^n: muH[n-k](f^{-1}(y)) >= 1 / (12 * 4^n * 3^k), yielding the positive lower bound (omega_{n-k} / 2^{n-k}) / (12 * 4^n * 3^k) for conventionally normalized Hausdorff measure (motivated by Gromov's 2003 conjecture of the sharp bound vol(S^{n-k}), which remains open for 1 < k < n; proved via Akopyan modification of Klartag's argument, Waists.sphere_hausdorff_waist); (3) The Gaussian waist inequality on (R^n, gamma_n) (Gromov 2003, Klartag arXiv:1608.04121); (4) The waist of the open unit cube (0,1)^n (Klartag arXiv:1608.04121); (5) The waist of the Euclidean ball B^n(R) with arbitrary center and radius (Akopyan-Karasev, arXiv:1608.06279); (6) The waist of a spherical ball of radius R < pi in S^n (Akopyan-Karasev, arXiv:1702.07513); (7) The waist of a hyperbolic ball of radius R in H^n (Akopyan-Karasev, arXiv:1702.07513); (8) The waist of an ellipsoid with semi-axes a_1 <= ... <= a_n (Akopyan-Karasev, arXiv:1608.06279, Corollary 1); (9) The waist of a box / parallelotope (0, a_1) x ... x (0, a_n) (Akopyan-Karasev, arXiv:1608.06279, Corollary 2). Supporting developments include: classical and tree Borsuk-Ulam theorems derived from combinatorial Tucker-type lemmas; Prékopa-Leindler and Brunn-Minkowski inequalities; spherical cap quasiconcavity; Archimedes' projection; and Frostman center measures.",
+  "authors": [
+    "Arseniy Akopyan"
+  ],
+  "repository": "https://github.com/akopjan/Waist-inequalities-lean-formalizatoin",
+  "commit": "e7823b4b1252ecf3cc9f9342529bad01cb3080fa",
+  "project_path": null,
+  "declarations": [
+    "Waists.sphere_waist",
+    "Waists.sphere_hausdorff_waist",
+    "Waists.gauss_waist",
+    "Waists.cube_waist",
+    "Waists.ball_waist",
+    "Waists.sphere_ball_waist",
+    "Waists.hyp_ball_waist",
+    "Waists.ellipsoid_waist",
+    "Waists.box_waist"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.DG"
+    ],
+    "msc2020": [
+      "53C23",
+      "52A20",
+      "28A75",
+      "60D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-16T22:56:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e7823b4b1252ecf3cc9f9342529bad01cb3080fa",
+        "fork_repository": "PalomarArchive/akopjan--Waist-inequalities-lean-formalizatoin--2c9b638aa757",
+        "source_repository": "akopjan/Waist-inequalities-lean-formalizatoin"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d9ec6df16f102d4663aee3f2755a6d6ff5b386b0f493da52838b4c7533fbb984"
+}

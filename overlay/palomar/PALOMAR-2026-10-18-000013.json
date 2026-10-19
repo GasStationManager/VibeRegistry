@@ -1,0 +1,69 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000013",
+  "version": 1,
+  "title": "Modular automorphisms of Cartan modular curves of prime level",
+  "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, about the normalizers in SL₂(ℝ) of the groups defining the split and non-split Cartan modular curves and their normalizer curves: for any level N, every element of the normalizer of a group containing Γ(N) is a rational matrix of a restricted form; X_sp(N) ≅ X₀(N²); X_sp(p) (p ≥ 5) and X_ns(p) (p odd) have exactly 2 modular automorphisms; X_sp⁺(p) (p ≥ 7) and X_ns⁺(p) (p ≥ 5) have none, and both bounds on p are sharp. 17 theorems, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Filip Najman"
+  ],
+  "repository": "https://github.com/F-Najman/normalizer-lean",
+  "commit": "ea4445c0d991a65d54fc77af0af559f2322e8660",
+  "project_path": null,
+  "declarations": [
+    "NormalizerLean.normG_level_form",
+    "NormalizerLean.normG_level_le_SL2ZR",
+    "NormalizerLean.index_GammaSp",
+    "NormalizerLean.conj_GammaSp",
+    "NormalizerLean.card_BG_GammaSp",
+    "NormalizerLean.card_BG_GammaSp_two_three",
+    "NormalizerLean.normG_GammaSp",
+    "NormalizerLean.card_BG_GammaSp_prime",
+    "NormalizerLean.normG_GammaSpPlus",
+    "NormalizerLean.card_BG_GammaSpPlus",
+    "NormalizerLean.GammaSpPlus_five_lt",
+    "NormalizerLean.index_GammaNs",
+    "NormalizerLean.normG_GammaNs",
+    "NormalizerLean.card_BG_GammaNs",
+    "NormalizerLean.normG_GammaNsPlus",
+    "NormalizerLean.card_BG_GammaNsPlus",
+    "NormalizerLean.GammaNsPlus_three_lt"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.GR"
+    ],
+    "msc2020": [
+      "11F06",
+      "14G35",
+      "14H37",
+      "11G18",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T12:14:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ea4445c0d991a65d54fc77af0af559f2322e8660",
+        "fork_repository": "PalomarArchive/F-Najman--normalizer-lean--cf363e35e356",
+        "source_repository": "F-Najman/normalizer-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c6949c1de3fb658f0ab5aeade9dc3333dc256c5f27be1b5a101efc95b0285d83"
+}

@@ -1,0 +1,90 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-18-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000021",
+  "version": 1,
+  "title": "Graham's bounds for list scheduling and LPT on identical machines: 2 − 1/m, 4/3 − 1/(3m) and their tight instances",
+  "abstract": "A Lean 4 development of Graham's two bounds for scheduling independent jobs on identical machines to minimize the makespan (R. L. Graham, Bounds for certain multiprocessing anomalies, Bell System Tech. J. 45 (1966) 1563-1581; Bounds on multiprocessing timing anomalies, SIAM J. Appl. Math. 17 (1969) 416-429; both restated with their examples in his survey Bounds on multiprocessing anomalies and related packing algorithms, AFIPS Spring Joint Computer Conference (1972) 205-217). n jobs of nonnegative real lengths p : Fin n -> R are run without interruption on m >= 1 identical machines; an assignment sigma : Fin n -> Fin m loads machine i with the sum of the lengths assigned to it, its makespan is the largest load, and optMakespan m p is the least makespan over all m^n assignments. A list schedule (IsListSchedule, in the index order) gives each job a machine whose load from the earlier jobs is least, under any tie-breaking (a relation, so every theorem covers every tie-breaking); an LPT schedule (IsLPTSchedule) is a list schedule of the jobs in some nonincreasing order of length. Theorems, kernel-only: every list schedule sigma and every assignment tau satisfy m * C(sigma) <= (2m - 1) * C(tau) (Graham 1966, his Theorem for the same number of processors and no precedence constraints), so C(sigma) <= (2 - 1/m) * optMakespan; the m(m - 1) unit jobs followed by one job of length m (Graham's example for his theorem on scheduling the k largest tasks optimally first, at k = 0, as his 1972 survey restates it; Lenstra-Shmoys, Chapter 9, p. 188) have optimum m and every list schedule of them in that order has makespan 2m - 1, so 2 - 1/m is the least constant (IsLeast); every LPT schedule sigma and every assignment tau satisfy 3m * C(sigma) <= (4m - 1) * C(tau) (Graham 1969, Theorem 2, announced in the closing remarks of the 1966 paper), so C(sigma) <= (4/3 - 1/(3m)) * optMakespan; when every job is longer than a third of C(tau), every LPT schedule is at least as good as tau, so LPT is optimal when every job exceeds a third of the optimum; Graham's 2m + 1 jobs 2m - 1, 2m - 1, 2m - 2, 2m - 2, ..., m + 1, m + 1, m, m, m (his pp. 425-426) are in nonincreasing order, have optimum 3m, attained by a list schedule in the order 2m - 1, ..., m + 1, m, m, 2m - 1, ..., m + 1, m (the definition grahamOrder, a permutation of the jobs whose lengths are that list), and every LPT schedule of them has makespan 4m - 1, for every m >= 1, so 4/3 - 1/(3m) is the least constant (IsLeast); and the elementary facts (list and LPT schedules exist, the optimum is attained, every load, every job and the average load are at most the makespan, relabeling the jobs preserves the makespan); Graham's omega_0, the least finishing time over all lists, equals the optimum over all assignments (every assignment is matched or improved by a list schedule in some order), so the bounds against every assignment are his; for his instance the optimum is attained by an explicit list (grahamOrder); and the third of the optimality theorem cannot be weakened (on three machines 9, 5, 5, 4, 4, 4, each job at least a third of the optimum 12, has an LPT schedule of makespan 13, so n <= 2m jobs do not make LPT optimal; Graham's 1972 survey prints Spencer's 6, 3, 3, 2, 2, 2 for the same purpose); and the position of a job on its machine: the (c + 1)-th job k placed on a machine of a list schedule of a nonincreasing p has (c + 1) p_k <= C(tau) for every assignment tau (the property of Chen 1993, as Della Croce-Scatamacchia 2020 restate it; proved here by an invariant on pairs of machines), hence the Coffman-Sethi form q m C(sigma) <= ((q + 1) m - 1) C(tau) for a machine with q jobs attaining the makespan of an LPT schedule (Coffman-Sethi 1976 as corrected by Chen 1993, as Della Croce-Scatamacchia restate it; the literature states it for q >= 3, for m >= 2 it is weaker than the 4/3 - 1/(3m) bound at q <= 2, and neither its attainment nor Chen's 4/3 - 1/(3(m - 1)) at q = 2 is proved here; Chen's and Coffman-Sethi's papers were not read). The proof of the LPT bound is by counting, not by his exchange argument: with k the job ending a heaviest machine, the average-load bound settles 3 p_k <= C(tau), and otherwise a count of the jobs up to k (every machine of tau holds at most two of them, those at least as long as the least load sit alone, each single-job machine of sigma contributes one) shows that k's machine ends by C(tau). Further: for a job k completing at the makespan of a list schedule of a nonincreasing p, the smaller of C(sigma) and 3 p_k is at most C(tau) for every tau, and C(sigma) <= 3 p_k certifies optimality; equality 3m C(sigma) = (4m - 1) C(tau) on m >= 2 machines forces 3 p_k = C(tau), equal loads before k, every load of tau equal to C(tau) and no positive job after k; Della Croce-Scatamacchia's Proposition 4, q (m - 1) C(sigma) <= ((q + 1)(m - 1) - 1) C(tau) when another machine holds q jobs before k and q + 2 <= m, proved from Chen's property; Dósa's theorem (2004, Theorem 2: Graham's example is the only tight one): every positive multiple of Graham's 2m + 1 jobs in any order attains the bound, and for a nonempty positive instance on m >= 2 machines a list schedule in nonincreasing order, or an LPT schedule in any order, attains 3m C(sigma) = (4m - 1) optMakespan only when the instance is a positive multiple of Graham's jobs, so the inequality is strict for every number of jobs other than 2m + 1; and for every fixed n >= 2m + 1 the constant 4/3 - 1/(3m) is the supremum (IsLUB) of C(sigma)/optMakespan over the LPT schedules of the positive instances with n jobs (the proof approaches it with Graham's jobs followed by small jobs; Dósa's Remark 1 asserts a strict gap for every n != 2m + 1, which can therefore hold at most for n < 2m + 1, not formalized here). Forty-one compared statements over nine fully specified definitions; the finite facts behind every statement are replayed exactly in the standard library by scripts/check_lpt.py. As of 2026-10-11 no kernel-checked proof of the 4/3 - 1/(3m) bound, of either equality family or of the optimality statement was located in the Palomar registry, Mathlib, formal-conjectures, openai/math, anthropics/formal-math, the Isabelle AFP, the Rocq package index, GitHub code search in Lean or arXiv; the AFP's Approximation_Algorithms proves a 3/2 bound for sorted greedy and the factor 2 for greedy, and two Lean repositories prove m * C <= sum p + (m - 1) * p_max over lists of naturals. No priority is claimed.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/graham-lpt-lean",
+  "commit": "c8ed035b407cc554faf4b68df0cf3edc70058977",
+  "project_path": null,
+  "declarations": [
+    "GrahamLPT.exists_isListSchedule",
+    "GrahamLPT.exists_isLPTSchedule",
+    "GrahamLPT.optMakespan_le",
+    "GrahamLPT.exists_makespan_eq_optMakespan",
+    "GrahamLPT.load_le_makespan",
+    "GrahamLPT.le_makespan_of_nonneg",
+    "GrahamLPT.sum_le_mul_makespan",
+    "GrahamLPT.makespan_comp",
+    "GrahamLPT.listSchedule_bound",
+    "GrahamLPT.listSchedule_le_optMakespan",
+    "GrahamLPT.unitJobs_optMakespan",
+    "GrahamLPT.unitJobs_listSchedule_makespan",
+    "GrahamLPT.isLeast_listSchedule_ratio",
+    "GrahamLPT.lpt_bound",
+    "GrahamLPT.lpt_le_optMakespan",
+    "GrahamLPT.lpt_optimal_of_third_lt",
+    "GrahamLPT.lpt_eq_optMakespan_of_third_lt",
+    "GrahamLPT.grahamJobs_antitone",
+    "GrahamLPT.grahamJobs_optMakespan",
+    "GrahamLPT.grahamOrder_bijective",
+    "GrahamLPT.grahamJobs_grahamOrder",
+    "GrahamLPT.grahamJobs_exists_optimal_listSchedule",
+    "GrahamLPT.grahamJobs_lpt_makespan",
+    "GrahamLPT.isLeast_lpt_ratio",
+    "GrahamLPT.exists_listSchedule_le",
+    "GrahamLPT.isLeast_listSchedule_makespan",
+    "GrahamLPT.nine_five_four_lpt_thirteen",
+    "GrahamLPT.nine_five_four_optMakespan",
+    "GrahamLPT.lpt_third_le_not_optimal",
+    "GrahamLPT.lpt_job_position_le",
+    "GrahamLPT.lpt_bound_of_card",
+    "GrahamLPT.lpt_critical_min_le",
+    "GrahamLPT.lpt_eq_optMakespan_of_critical_third",
+    "GrahamLPT.lpt_eq_bound_structure",
+    "GrahamLPT.lpt_bound_of_other_card",
+    "GrahamLPT.lpt_eq_bound_of_graham",
+    "GrahamLPT.graham_of_listSchedule_eq_bound",
+    "GrahamLPT.graham_of_lpt_eq_bound",
+    "GrahamLPT.lpt_eq_bound_iff_graham",
+    "GrahamLPT.lpt_lt_bound_of_card_ne",
+    "GrahamLPT.isLUB_lpt_ratio_of_card"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS"
+    ],
+    "msc2020": [
+      "90B35",
+      "68W25",
+      "68Q25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-18T18:18:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c8ed035b407cc554faf4b68df0cf3edc70058977",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--graham-lpt-lean--b75a6440d0fd",
+        "source_repository": "JD-Jones-ASES/graham-lpt-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a60f5a02c6ac3571c5debfcd49efbfc8e6c3d49b46b82223cfa59683292529cc"
+}

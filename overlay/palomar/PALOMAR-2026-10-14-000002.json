@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-14-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-14-000002",
+  "version": 1,
+  "title": "The sparsification theorem of Batson, Spielman and Srivastava",
+  "abstract": "Let (Ω, μ) be a measure space and a = (a_k) a family of m square-integrable functions whose Gram matrix ∫ a a* dμ is the identity. Then for every n ≥ m there are points x₁, …, xₙ ∈ Ω and weights w₁, …, wₙ > 0 with (1 − √((m−1)/n))² I ≼ ∑ᵢ wᵢ a(xᵢ) a(xᵢ)* ≼ (1 + √((m−1)/n))² I in the Loewner order. For the counting measure on a finite set Ω this is the theorem for finitely many vectors: if v_k ∈ ℂᵐ, k ∈ Ω, satisfy ∑_k v_k v_k* = I, then for every n ≥ m there are weights s_k ≥ 0, at most n of them nonzero, with (1 − √((m−1)/n))² I ≼ ∑_k s_k v_k v_k* ≼ (1 + √((m−1)/n))² I, so a reweighted subset of at most n of the vectors is a spectral sparsifier of their sum. The original theorem of Batson, Spielman and Srivastava has the constants (1 ∓ √(m/n))²; with m − 1 in place of m, following Chkifa, Dolbeault, Krieg and Ullrich, the statements here are slightly stronger.",
+  "authors": [
+    "Mario Ullrich"
+  ],
+  "repository": "https://github.com/mario-ullrich/Lean-Discretization",
+  "commit": "209d4bf72bec56fa7b181a24dacb8570b10a6986",
+  "project_path": null,
+  "declarations": [
+    "Discretization.bss",
+    "Discretization.bss_of_sum_eq_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "cs.DS"
+    ],
+    "msc2020": [
+      "42C15",
+      "15A45",
+      "65F55",
+      "05C50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-14T07:05:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "209d4bf72bec56fa7b181a24dacb8570b10a6986",
+        "fork_repository": "PalomarArchive/mario-ullrich--Lean-Discretization--19ad5284337e",
+        "source_repository": "mario-ullrich/Lean-Discretization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bbce4031ba99de8960751793b47933b7923f1c228d7ec8cc1d4726af1b3b488f"
+}
