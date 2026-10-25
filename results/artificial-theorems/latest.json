@@ -1,6 +1,6 @@
 {
   "entry_id": "artificial-theorems",
-  "timestamp": "2026-10-18T07:02:32Z",
+  "timestamp": "2026-10-25T07:21:32Z",
   "commit": "9c0f970db29553e3c32bccb25fd13c3f54dc3a8e",
   "lean_toolchain": "leanprover/lean4:v4.27.0",
   "mathlib_tag": "v4.27.0",
@@ -17,7 +17,7 @@
   "tools": {
     "comparator": "6c40ab4fd9cf81328877464bd49392e3f03be06c",
     "lean4export": "bd93e5ed12fbeea19f39ec3ead659c293b2b8a95",
-    "nanoda": "f67473ba5f9397266f89c7852082c9c914b5d219",
+    "nanoda": "37cb87b7e6cd6862ef2bd121faa9f4604f59fe96",
     "landrun": "5283024a2f49b28046c3b4a06d7d775c058d4d80"
   },
   "theorems": [

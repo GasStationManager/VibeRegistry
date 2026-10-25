@@ -1,6 +1,6 @@
 {
   "entry_id": "lean-zip",
-  "timestamp": "2026-10-18T06:59:43Z",
+  "timestamp": "2026-10-25T07:19:22Z",
   "commit": "e76f0813faa2893f09b83d027e52754041febc35",
   "lean_toolchain": "leanprover/lean4:v4.29.1",
   "mathlib_tag": "",
@@ -17,7 +17,7 @@
   "tools": {
     "comparator": "2a00b30df5e9173e70c4e4ec669fdf03da3163b9",
     "lean4export": "048394e1afeeb52b0fa27bcf3f1ade2ff0f0ab6d",
-    "nanoda": "f67473ba5f9397266f89c7852082c9c914b5d219",
+    "nanoda": "37cb87b7e6cd6862ef2bd121faa9f4604f59fe96",
     "landrun": "5283024a2f49b28046c3b4a06d7d775c058d4d80"
   },
   "theorems": [
