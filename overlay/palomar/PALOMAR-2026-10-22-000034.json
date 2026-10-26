@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000034",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000034",
+  "version": 1,
+  "title": "Continuous open images of Polish spaces",
+  "abstract": "Continuous open surjections preserve the strong Choquet property in arbitrary topological spaces. An explicit full-history strategy lifts each legal target play coherently, keeps the marked point, and maps an actual common source point. Consequently a continuous open metrizable image of a Polish space is Polish. A second-countable completely metrizable source gives a completely metrizable metrizable image. A regular Hausdorff codomain also suffices, by inherited second countability and Urysohn metrizability. These are classical results; no novelty or priority is claimed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "dfbeea7108d04be545185d5f868efbcd9c86c6e5",
+  "project_path": "topology/open-polish-images",
+  "declarations": [
+    "OpenPolish.imageStrategy_winning",
+    "OpenPolish.strong_image",
+    "OpenPolish.completelyMetrizable_image",
+    "OpenPolish.polish_image",
+    "OpenPolish.polish_image_of_t3"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54C10",
+      "54E50",
+      "54E52",
+      "91A44"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T15:12:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dfbeea7108d04be545185d5f868efbcd9c86c6e5",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cb39a4aa4640dc7ed6d0288ed9f55d8ad12f6d4b276217be2a8ef7f64161b39e"
+}

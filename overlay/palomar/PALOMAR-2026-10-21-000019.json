@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000019",
+  "version": 1,
+  "title": "Erdős #269: exact three-prime running-LCM identity and infinite kernel rank",
+  "abstract": "For pairwise distinct primes p, q, r and every nonzero x, the least common multiple of all smooth numbers p^i q^j r^k at most x equals the product of the three maximal pure prime powers below x. The reciprocal-height kernel K(i,j,k) built from that identity is constant on every logarithmic cell, and the first m positive jump values across the three prime channels number exactly 3m. Every finite exponent box sums to the height-fibre normal form, the sum over genuine running-LCM heights of the fibre cardinality divided by the height, and a multiplicative shell of width factor r inside a sorted exponent budget j satisfies 9 times its cardinality at most (j+3)^2. For every order n there are injective index families giving a nonsingular n by n minor of K uniformly in the remaining exponent layer, so K has infinite rank and no finite separable representation K(i,j,k) = sum over l < d of f_l(i) G_l(j,k) exists for any d. The smallest 2,3,5 rectangle has determinant exactly -1/15. Three distinct primes keep the three logarithm floors independent, which is what makes the running-LCM identity exact and the minors nonsingular in every order, and it removes every method that would evaluate the three-prime sum by finitely many separated factors. Priority for the three-prime structure has not been established, none of the seven theorems yields irrationality or transcendence, and Erdős #269 remains open.",
+  "authors": [
+    "Will Cook"
+  ],
+  "repository": "https://github.com/wcook04/plectis-erdos-lean",
+  "commit": "c39cea6a976747d132a848d26f110b9c608d5a45",
+  "project_path": null,
+  "declarations": [
+    "Erdos249257.ExternalVerification269ThreePrimeStructure.smoothPrefixLcm_eq_threePrimeHeight",
+    "Erdos249257.ExternalVerification269ThreePrimeStructure.threePrimeKernelQ_eq_of_sameLogCell",
+    "Erdos249257.ExternalVerification269ThreePrimeStructure.threePrimePositiveJumpSet_card",
+    "Erdos249257.ExternalVerification269ThreePrimeStructure.finiteSmoothKernelSum_groupedByHeight",
+    "Erdos249257.ExternalVerification269ThreePrimeStructure.smoothExponentShell_card_quadratic",
+    "Erdos249257.ExternalVerification269ThreePrimeStructure.kernel_235_minor_eq_neg_one_fifteen",
+    "Erdos249257.ExternalVerification269ThreePrimeStructure.threePrimeKernel_infiniteRank_and_noFiniteSeparation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B83",
+      "11A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T15:30:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c39cea6a976747d132a848d26f110b9c608d5a45",
+        "fork_repository": "PalomarArchive/wcook04--plectis-erdos-lean--26c7e2ff36da",
+        "source_repository": "wcook04/plectis-erdos-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b0bc59e59224a58a98415b480f7b6aa02fab7ae97457bff2e0276b186c85816a"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000028",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000028",
+  "version": 1,
+  "title": "Renyi's theorem, Renyi 1948: every large even number is a prime plus a number with at most 8 prime factors",
+  "abstract": "A sorry-free Lean 4 proof of Renyi's theorem: there is N0 such that every even N >= N0 is p + m with p prime, m >= 1 and Omega of m at most 8, where Omega counts prime factors with multiplicity, as Mathlib's ArithmeticFunction.cardFactors does. So the theorem is proved with the explicit constant K = 8. Also proved: a lower bound e^{-36} N / 2 log^2 N for the number of primes p < N with Omega of N - p at most 8; the same two statements with the weaker K = 13000; and the K = 8 statement written with Mathlib's Nat.IsAtMostAlmostPrime. The entry also proves twin_renyi_count, a derived analogue proved in this entry by the same sieve method, a twin-prime analogue of Renyi's theorem, not a result of Renyi 1948. The proof is a Brun type block sieve with Bonferroni levels whose remainders are bounded by the Bombieri-Vinogradov theorem proved in the same library; all thresholds are ineffective through Siegel's theorem. Nothing here is new mathematics: Pan has K = 4 and Chen 1973 has K = 2. Binary Goldbach is Omega of m equal to 1; it is open and is not claimed. The Lean code was written by an AI agent; the statements were checked against the literature by AI reviewers and are offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "4d87394fed5e86a866ec2335621dc1b57f2e0c9d",
+  "project_path": "entries/renyi1948",
+  "declarations": [
+    "LeanLab.PNTPort.BVMax.renyi8_fixedK",
+    "LeanLab.PNTPort.BVMax.renyi8_fixedK_count",
+    "LeanLab.PNTPort.BVMax.renyi_fixedK",
+    "LeanLab.PNTPort.BVMax.renyi_fixedK_count",
+    "LeanLab.PNTPort.BVMax.twin_renyi_count",
+    "LeanLab.PNTPort.BVMax.renyi8_isAtMostAlmostPrime"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11N35",
+      "11N36"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T11:47:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4d87394fed5e86a866ec2335621dc1b57f2e0c9d",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:997e23cdddd6b0b52bafadcef0a59948a33691dfa5f96e33c7b09620c6757d7e"
+}

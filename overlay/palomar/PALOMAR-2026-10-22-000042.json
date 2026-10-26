@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000042",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000042",
+  "version": 1,
+  "title": "Alexandrov–Urysohn characterization of Baire space",
+  "abstract": "A topological space is homeomorphic to Baire space, the countable product of discrete natural numbers, if and only if it is nonempty, Polish, has a basis of clopen sets, and every compact subset has empty interior. The construction partitions each nonempty clopen set into countably infinitely many distinct nonempty clopen children with arbitrarily small diameter. A fully branching shrinking scheme gives a continuous open bijective limit map and therefore a homeomorphism. The converse uses finite coordinate images of compact Baire subsets. This formalizes a classical theorem of Alexandrov and Urysohn; no novelty or priority claim is made.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "b77053ba8669ad046ec3c0d54d83a79724935a9f",
+  "project_path": "topology/baire-space-characterization",
+  "declarations": [
+    "BaireCharacterization.exists_clopen_partition",
+    "BaireCharacterization.exists_clopen_scheme",
+    "BaireCharacterization.ClopenScheme.image_cylinder",
+    "BaireCharacterization.nonempty_homeomorph_of_completeSpace",
+    "BaireCharacterization.nonempty_homeomorph",
+    "BaireCharacterization.baire_hasClopenBasis",
+    "BaireCharacterization.baire_compactInteriorEmpty",
+    "BaireCharacterization.nonempty_homeomorph_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN",
+      "math.LO"
+    ],
+    "msc2020": [
+      "54E50",
+      "54F65",
+      "03E15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T22:09:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b77053ba8669ad046ec3c0d54d83a79724935a9f",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9a8de75bac00bbfdaea03494cf6fde4edbe8ba38d4d42cefc67e83f7d1339a93"
+}

@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000015",
+  "version": 1,
+  "title": "Dimension growth, polynomial in the degree (Castryck–Cluckers–Dittmann–Nguyen)",
+  "abstract": "A Lean 4 formalisation of the main results of Castryck, Cluckers, Dittmann and Nguyen, \"The dimension growth conjecture, polynomial in the degree and without logarithmic factors\" (Algebra & Number Theory 14, 2020), incorporating the authors' 2026 addenda. It proves uniform bounds, polynomial in the degree, for the number of rational points of bounded height on varieties over Q. The bounds are: projective dimension growth N(X,B) ≤ C(n) d^(2n²+5n−5) B^dim X for integral X ⊆ P^n of degree d ≥ 5 (Theorem 1); N(X,B) ≤ C(n) d⁴ B^(2/d) for integral projective curves (Theorem 2); N_aff(X,B) ≤ C(n) d³ B^(1/d)(log B + d) for integral affine curves (Theorem 3); and C(N) d^(3N+9) B^(N−2) for affine hypersurfaces whose top-degree form is absolutely irreducible (Theorem 4). It also proves the lower-bound construction d² B^(2/d)/5 (Proposition 5), and the 2-torsion bound h₂(K) ≤ C(n) |disc K|^(1/2−1/(2n)) (log |disc K|)^(1−n mod 2) for all number fields of degree n ≥ 3 (Theorem 6). Degree and dimension are defined through Hilbert functions of the coordinate ring. Every constant depends only on the ambient dimension or field degree. The proofs construct the paper's determinant-method, projection and counting arguments in full. They include corrected versions of several intermediate lemmas whose printed forms are false.",
+  "authors": [
+    "Jason Davies"
+  ],
+  "repository": "https://github.com/jasondavies/ccdn-dimension-growth",
+  "commit": "bb025e7207f3a35a21b898629f5678b72aa7e44f",
+  "project_path": null,
+  "declarations": [
+    "CCDN.Submission.affineCount_set_finite",
+    "CCDN.Submission.projectiveCount_set_finite",
+    "CCDN.Submission.projective_dimension_growth",
+    "CCDN.Submission.projective_curve_bound",
+    "CCDN.Submission.affine_curve_bound",
+    "CCDN.Submission.affine_hypersurface_bound",
+    "CCDN.Submission.affine_hypersurface_bound_rat",
+    "CCDN.Submission.projective_plane_curve_lower_bound",
+    "CCDN.Submission.classGroup_two_torsion_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.AG"
+    ],
+    "msc2020": [
+      "11D45",
+      "11G35",
+      "14G05",
+      "11G50",
+      "11R29"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T07:58:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "bb025e7207f3a35a21b898629f5678b72aa7e44f",
+        "fork_repository": "PalomarArchive/jasondavies--ccdn-dimension-growth--ffcad32f3870",
+        "source_repository": "jasondavies/ccdn-dimension-growth"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0c910475f08d00d3ddab3d85c2000eae93b698214723b3902feba0f4a4cc39e4"
+}

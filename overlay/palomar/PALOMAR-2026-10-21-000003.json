@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000003",
+  "version": 1,
+  "title": "Lovász's bound on the Shannon capacity",
+  "abstract": "A Lean 4 / Mathlib formalization of Lovász's orthonormal-representation bound on the independence number (if u is an orthonormal representation of G with handle c and 1 ≤ t (c·u_i)² for every vertex, then α(G) ≤ t), of its multiplicativity under strong powers (α(G^⊠k) ≤ t^k), and of its application to the pentagon: α(C₅^⊠k)² ≤ 5^k for every k, Shannon's α(C₅^⊠2) = 5, and hence the Shannon capacity Θ(C₅) = √5. Mathlib has independence numbers but neither strong graph products nor the Shannon capacity.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/lovasz-theta",
+  "commit": "2d506b5abca378d9133b5e3f1264a5316843c9a7",
+  "project_path": null,
+  "declarations": [
+    "ShannonCapacity.indepNum_le",
+    "ShannonCapacity.indepNum_strongPow_le",
+    "ShannonCapacity.indepNum_strongPow_cycle_five",
+    "ShannonCapacity.indepNum_strongPow_cycle_five_two",
+    "ShannonCapacity.shannonCapacity_cycle_five"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.IT"
+    ],
+    "msc2020": [
+      "05C69",
+      "94A15",
+      "05C50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T01:15:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2d506b5abca378d9133b5e3f1264a5316843c9a7",
+        "fork_repository": "PalomarArchive/jtraverso--lovasz-theta--8c936f7e6f5c",
+        "source_repository": "jtraverso/lovasz-theta"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d8609d7494eb6ba55c08673820da8f16dae1f7440f932f0705d11ec050eda24f"
+}

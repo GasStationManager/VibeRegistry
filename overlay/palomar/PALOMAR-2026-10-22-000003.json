@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000003",
+  "version": 1,
+  "title": "Brun's theorem: the sum of the reciprocals of the twin primes converges, after Brun 1919, with the twin prime upper bound and every even gap",
+  "abstract": "A sorry-free Lean 4 proof of the theorem of V. Brun, La série 1/5 + 1/7 + 1/11 + 1/13 + ... où les dénominateurs sont nombres premiers jumeaux est convergente ou finie, Bull. Sci. Math. 43, 1919: the sum of the reciprocals of p and of p + 2 over the primes p with p + 2 prime converges. This is a sorry-free proof of a statement that lean-eval lists as a challenge, brun_constant_converges, proved here in the exact lean-eval form as well. With it, the twin prime upper bound, at most C N / log^2 N twin primes below N, which is stronger than the bound of Brun's paper; the same convergence for prime pairs p, p + h with any even gap h; a bound for those pairs with one constant for every gap; and its average over gaps. The bounds come from the Selberg sieve, ported from PrimeNumberTheoremAnd, not from Brun's sieve. Binary Goldbach and the twin prime conjecture are open and are not claimed. The Lean code was written by an AI agent and is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "3ba1189ed38f0a913828af00d72196eebd68777f",
+  "project_path": "entries/brun1919",
+  "declarations": [
+    "LeanLab.Brun1919.brun",
+    "LeanLab.Brun1919.twinUpper",
+    "LeanLab.Brun1919.LeanEvalBridge.brun_constant_converges",
+    "LeanLab.BrunGap.brun_gap",
+    "LeanLab.BrunGap.gapUpper_uniform",
+    "LeanLab.BrunGap.sum_gapCount_le"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N36",
+      "11N05",
+      "11A41"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T02:07:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3ba1189ed38f0a913828af00d72196eebd68777f",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4149b6cb3d5033929fdcfff64a23b9b445954d4aeb7c1e67b24ef66752277756"
+}

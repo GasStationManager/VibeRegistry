@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000004",
+  "version": 1,
+  "title": "Multiplicative bases and standardness of representation-finite algebras",
+  "abstract": "A complete Lean 4 formalization, built on Mathlib, of two classical theorems of Bautista, Gabriel, Roiter and Salmerón on finite-dimensional representation-finite algebras over an algebraically closed field. Theorem A: every such algebra, in any characteristic, has a normed multiplicative basis, that is, a basis containing a complete set of primitive orthogonal idempotents, closed under products up to zero, and meeting every power of the Jacobson radical in a basis of that power. Theorem B: every basic such algebra over a field of characteristic different from two is standard, that is, its category of indecomposable modules is equivalent to the mesh category of its Auslander–Reiten quiver by an equivalence sending each vertex to its module. The proof follows the deformation-theoretic approach of the formalized manuscript: the standard form is the graded algebra of the radical filtration of the category of indecomposable modules, and the original algebra is recovered as a filtered deformation of it. The Auslander–Reiten theory used is proved in the library.",
+  "authors": [
+    "Haruhisa Enomoto"
+  ],
+  "repository": "https://github.com/haruhisa-enomoto/multiplicative-bases-deformations",
+  "commit": "7b9f39f221d8a420a1531f487a3b93ae6d26ce85",
+  "project_path": null,
+  "declarations": [
+    "MultiplicativeBasisDeformations.Challenge.theoremA",
+    "MultiplicativeBasisDeformations.Challenge.theoremB"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RT",
+      "math.RA"
+    ],
+    "msc2020": [
+      "16G60",
+      "16G70",
+      "16G20",
+      "16S80",
+      "16E40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T08:00:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7b9f39f221d8a420a1531f487a3b93ae6d26ce85",
+        "fork_repository": "PalomarArchive/haruhisa-enomoto--multiplicative-bases-deformations--006b387b11ff",
+        "source_repository": "haruhisa-enomoto/multiplicative-bases-deformations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d7b2a6e6362d087557625bc387e05d137474aeef40838b8cc894cda52e4fddb8"
+}

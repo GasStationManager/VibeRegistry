@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000015",
+  "version": 1,
+  "title": "An FPT Algorithm for Maximum-Weight Independent Set in Embedded Graphs, in Lean 4",
+  "abstract": "A Lean 4 and Mathlib formalization of a fixed-parameter theorem of \"Maximum-weight independent set in embedded graphs parameterized by Euler genus and number of odd faces\" (forthcoming), with a provably correct implementation of the algorithm as one fixed program for an explicit sixteen-register pointer machine. Lean proves that for every graph drawn in a closed surface of Euler genus gamma whose complement has k regions of odd total boundary length, and all integer vertex weights, the program outputs a maximum-weight independent set within 2^(c (p size(p) + 1)) (N size(M))^c bit operations, where p = gamma + k, N = |V| + |E| + 1, M = max(1, max |w_v|), size(x) is the binary length of x and c is an absolute constant; that is, 2^O(p log(p+1)) poly(N, log(M+1)) with an absolute polynomial exponent. Surfaces are represented by finite combinatorial flag maps; orientable and nonorientable surfaces, disconnected and noncellular drawings, loops, multiple edges, isolated vertices and negative weights are covered. The algorithm solves one exact linear program per retained component over a finite-group network whose size depends only on p, using exact integral quotient coordinates, midpoint convexity of class minima and a coarse Jensen inequality, and recovers an optimal set from perturbed edge costs. The cost is a logarithmic bit-cost measure including an explicit stack simulation of recursive calls. The proofs use exactly propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/MaxWeightIS-FPT-EulerGenusOddFaces-Lean4",
+  "commit": "9d427d31eec04c5762495c296c846a5992bdb724",
+  "project_path": null,
+  "declarations": [
+    "MWIS.Spec.fpt_claim"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C69",
+      "05C10",
+      "68Q25",
+      "68R10",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T19:30:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9d427d31eec04c5762495c296c846a5992bdb724",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--MaxWeightIS-FPT-EulerGenusOddFaces-Lean4--16c781bfd122",
+        "source_repository": "RBarish-UTokyo/MaxWeightIS-FPT-EulerGenusOddFaces-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d5dca5aa22af1b9edf3acbc3dc687c81ea7b67f29e0641901e87e4e2535f5f9d"
+}

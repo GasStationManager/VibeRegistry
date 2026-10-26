@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000043",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000043",
+  "version": 1,
+  "title": "The Bondy–Simonovits even cycle theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of the Bondy–Simonovits theorem: for every k ≥ 2 there is a constant C such that every finite simple graph on n vertices with no cycle of length exactly 2k has at most C·n^(1+1/k) edges, i.e. ex(n, C_2k) = O(n^(1+1/k)). The statement is existential in C (the proof gives C = 16k + 4); the sharper constants of later work and the full range of even cycle lengths in Bondy–Simonovits's paper are not stated. Mathlib has walks and cycles but not this theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/bondy-simonovits",
+  "commit": "a4ca4b28a0d82735316fd73a5a11303231109fc7",
+  "project_path": null,
+  "declarations": [
+    "BondySimonovitsTheorem.bondy_simonovits"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35",
+      "05C38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T23:59:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a4ca4b28a0d82735316fd73a5a11303231109fc7",
+        "fork_repository": "PalomarArchive/jtraverso--bondy-simonovits--28aa00457e93",
+        "source_repository": "jtraverso/bondy-simonovits"
+      }
+    ]
+  },
+  "statement_hash": "sha256:33876f005d7e119edd36cfa0c46dcb5437aadab27f58326708dafeecf49a9b47"
+}

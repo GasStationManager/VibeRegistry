@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000038",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000038",
+  "version": 1,
+  "title": "Infinite rank of the three-prime running-LCM kernel",
+  "abstract": "For pairwise distinct primes p, q and r, the three-prime reciprocal running-LCM kernel has nonzero square minors of every order, with row and column indices chosen independently of the third exponent. Consequently it admits no finite rational separated representation. The selected entry also proves an exact rank formula for threshold-column matrices, an explicit two-by-two example at 2,3,5, separation in the two-prime comparison, and the four-base dyadic recurrence for the actual 2,3,5 sum. A uniform finite-rank approximation statement concerns the rescaled carry matrix. The stronger unit-determinant modular minors are in E269_08 and are outside this configuration. Infinite kernel rank does not prove irrationality of the running-LCM series. In the selected rank theorem the determinants remain nonzero for every fixed third exponent k using the same injective row and column maps. The distance theorem concerns a rescaled real carry matrix and is not an approximation lower bound for the original summable kernel.",
+  "authors": [
+    "Will Cook"
+  ],
+  "repository": "https://github.com/wcook04/plectis-erdos-lean",
+  "commit": "80024c64bc77a95249e34824a36bf43989f62ae6",
+  "project_path": null,
+  "declarations": [
+    "PalomarCorpus.E269.PaperStatementsA.dyadicBlockBase235_cases",
+    "PalomarCorpus.E269.PaperStatementsA.dyadicBlockBase235_mem_interval",
+    "PalomarCorpus.E269.PaperStatementsA.dyadicInternalPower_exponent_unique",
+    "PalomarCorpus.E269.PaperStatementsA.exists_dyadicInternalPower_iff_log_succ",
+    "PalomarCorpus.E269.PaperStatementsA.log_dyadic_succ_eq_of_no_internalPower",
+    "PalomarCorpus.E269.PaperStatementsA.paper_two_by_two_fixture",
+    "PalomarCorpus.E269.PaperStatementsA.paper_uniform_rank_and_nonseparation",
+    "PalomarCorpus.E269.PaperStatementsA.radix_eq_height_ratio",
+    "PalomarCorpus.E269.PaperStatementsA.threePrimeHeight_dyadicBlock_succ",
+    "PalomarCorpus.E269.PaperStatementsB.real_two_prime_separation",
+    "PalomarCorpus.E269.PaperStatementsC.long_actual_orbit",
+    "PalomarCorpus.E269.PaperStatementsE.uniform_rank_complete",
+    "PalomarCorpus.E269.PaperStructuresH.rank_cutMatrix"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B83",
+      "15A03",
+      "11J72"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T16:02:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "80024c64bc77a95249e34824a36bf43989f62ae6",
+        "fork_repository": "PalomarArchive/wcook04--plectis-erdos-lean--26c7e2ff36da",
+        "source_repository": "wcook04/plectis-erdos-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5f5bf70884e68707b5df789249530ef42e21e2d5749d6f2c4a25278dad59fe64"
+}

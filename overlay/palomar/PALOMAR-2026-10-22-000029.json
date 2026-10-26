@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000029",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000029",
+  "version": 1,
+  "title": "Szemerédi's theorem with random differences",
+  "abstract": "Lean 4 formalization of the main result of the preprint \"Szemerédi's theorem with random differences and arithmetic Kakeya\" by Gabriel Dahia (arXiv:2610.18859), a threshold for Szemerédi's theorem with random differences. For c = 1/100, k ≥ 3, δ > 0 and p ≥ C n^(-c / log log k), where C is a value of the Ackermann function depending on k and δ, a p-random set D of differences in {1, …, n} has the following property with probability at least 1 - exp(-n^(1 - c / log log k)): every subset of {1, …, n} with at least δn elements contains a k-term arithmetic progression with common difference in D. The proof uses the Green–Ruzsa construction of small sets containing a progression with every common difference, which is also formalized.",
+  "authors": [
+    "Gabriel Dahia"
+  ],
+  "repository": "https://github.com/gdahia/SzemerediWithRandomDifferences",
+  "commit": "ec1328dcdb8efe9c683124546358173c267b9522",
+  "project_path": null,
+  "declarations": [
+    "RandomDifferences.szemeredi_setBernoulli_exists_avoiding_le_exp"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B25",
+      "11B30",
+      "05D40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T11:52:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ec1328dcdb8efe9c683124546358173c267b9522",
+        "fork_repository": "PalomarArchive/gdahia--SzemerediWithRandomDifferences--be9159d18ec2",
+        "source_repository": "gdahia/SzemerediWithRandomDifferences"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3cb006be741f998370936879fdb41539e1ca503e1ab496c4973b4c08655f9c34"
+}

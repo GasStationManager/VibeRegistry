@@ -1,0 +1,71 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000017",
+  "version": 2,
+  "title": "Counting Steiner triple systems: Wilson (1974) and Linial–Luria (2013)",
+  "abstract": "A complete Lean 4 / Mathlib formalization of R. M. Wilson's \"Nonisomorphic Steiner triple systems\" (inequality (2.1), Theorems 1–4, Lemmas 3–5, including the exact numbers of Latin squares of orders 6, 7 and 8 and the bounds N(19) ≥ 2450, N(21) ≥ 2160980, N(25) ≥ 163929929318400) and of N. Linial and Z. Luria's \"An upper bound on the number of Steiner triple systems\" (Theorems 1.1 and 1.2 with explicit error terms). Version 2 adds a proof of the van der Waerden permanent theorem (Egorychev, Falikman), following Gurvits's proof as simplified by Laurent and Schrijver. The parts of Wilson's Theorems 2 and 3 that rely on it are stated both as implications from the hypothesis vdWPC, as in the paper, and unconditionally (theorem2_full, theorem3_full). Finite computations are kernel-checked certificates (no native_decide). Mathlib does not contain these results.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/counting-steiner-triple-systems",
+  "commit": "52fda83038df7442c576e17edffba591db703cb8",
+  "project_path": null,
+  "declarations": [
+    "CountingSTS.N_le_D",
+    "CountingSTS.D_le_factorial_mul_N",
+    "CountingSTS.theorem1",
+    "CountingSTS.lemma3",
+    "CountingSTS.lemma4",
+    "CountingSTS.lemma5_i",
+    "CountingSTS.lemma5_ii",
+    "CountingSTS.lemma5_iii",
+    "CountingSTS.theorem2",
+    "CountingSTS.theorem2_vdW",
+    "CountingSTS.theorem3",
+    "CountingSTS.theorem3_vdW",
+    "CountingSTS.van_der_waerden",
+    "CountingSTS.theorem2_full",
+    "CountingSTS.theorem3_full",
+    "CountingSTS.theorem4_i",
+    "CountingSTS.theorem4_ii",
+    "CountingSTS.theorem4_iii",
+    "CountingSTS.sts_upper_bound_explicit",
+    "CountingSTS.theorem_1_1",
+    "CountingSTS.oneFactorization_upper_bound_explicit",
+    "CountingSTS.theorem_1_2"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B07",
+      "05B15",
+      "05A16"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T17:22:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "52fda83038df7442c576e17edffba591db703cb8",
+        "fork_repository": "PalomarArchive/jtraverso--counting-steiner-triple-systems--25dd3ac3d9ea",
+        "source_repository": "jtraverso/counting-steiner-triple-systems"
+      }
+    ]
+  },
+  "statement_hash": "sha256:07d17db2fb69e73c51e94ec175fe59fd8326dc0c2d813dd3a366ed217b08c5d7"
+}

@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000022",
+  "version": 1,
+  "title": "Sums of primes, after Hardy and Littlewood 1923, Partitio Numerorum III, Theorems B to F proved without Hypothesis R",
+  "abstract": "A sorry-free Lean 4 proof, with no hypothesis, of Theorems B, C, D, E and F of G. H. Hardy and J. E. Littlewood, Some problems of Partitio Numerorum III, Acta Math. 44, 1923. Hardy and Littlewood proved these theorems on their Hypothesis R, a form of the generalized Riemann hypothesis for Dirichlet L-functions; here they are proved unconditionally, from Vinogradov's estimate for exponential sums over primes and the Siegel-Walfisz theorem, so the argument is not Hardy and Littlewood's own for Theorems B, D and E. Formalized: Theorem B, the asymptotic for the weighted count nu_r of n as an ordered sum of r primes, for every r at least 3 and n of the parity of r, with the singular series written as the paper's product over the odd primes dividing n, and nu_r of n is o of n^{r-1} for unlike parity; Theorem C, N_r of n is asymptotic to nu_r of n over log^r n; Theorem D, the ternary asymptotic with the constant C_3 and every large odd number a sum of three odd primes; Theorem E, the asymptotic for four odd primes, every large even number a sum of four odd primes, one of which may be assigned; and Theorem F, that an asymptotic of Conjecture A's shape for binary Goldbach can only carry the constant 2 C_2, together with a check that the printed formula 4.23 has a misprint. Theorem A of the paper is not formalized. Ternary Goldbach is Helfgott's theorem; binary Goldbach is open and is not claimed. The Lean code was written by an AI agent; the statements were written from the paper's page images by AI agents and are offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "3ba1189ed38f0a913828af00d72196eebd68777f",
+  "project_path": "entries/hardylittlewood1923",
+  "declarations": [
+    "LeanLab.HardyLittlewood1923.theoremB",
+    "LeanLab.HardyLittlewood1923.theoremB_unlike",
+    "LeanLab.HardyLittlewood1923.theoremB3",
+    "LeanLab.HardyLittlewood1923.theoremB4",
+    "LeanLab.HardyLittlewood1923.theoremC",
+    "LeanLab.HardyLittlewood1923.theoremD",
+    "LeanLab.HardyLittlewood1923.theoremD_ternary",
+    "LeanLab.HardyLittlewood1923.theoremE",
+    "LeanLab.HardyLittlewood1923.theoremE_four",
+    "LeanLab.HardyLittlewood1923.theoremE_assigned",
+    "LeanLab.HardyLittlewood1923.theoremF",
+    "LeanLab.HardyLittlewood1923.printed_423_false"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11P55",
+      "11N13"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T10:40:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3ba1189ed38f0a913828af00d72196eebd68777f",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7c96242bcd49d92872acd101c7c555f2359c3a68651b9afc0b1dd5158c810f44"
+}

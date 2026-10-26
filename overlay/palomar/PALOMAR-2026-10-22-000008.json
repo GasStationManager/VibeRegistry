@@ -1,0 +1,80 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000008",
+  "version": 1,
+  "title": "Classical Liénard equations of degree n ≥ 6 can have floor((n−1)/2)+4 limit cycles",
+  "abstract": "For the classical Liénard system dx/dt = y − F(x), dy/dt = −x, every polynomial in an explicit coefficient box of radius 10^−40 around a rational sextic has at least six limit cycles. For every integer n ≥ 6, a real polynomial of degree exactly n with F(0) = 0 is shown to have at least floor((n − 1)/2) + 4 limit cycles. An explicit rational polynomial of degree seven, obtained by adding 10^−41 x^7 to the sextic, has at least seven limit cycles. The conclusions provide global nonconstant periodic solutions with pairwise disjoint images, prescribed positive-axis crossings and isolating neighborhoods for the same periodic orbits. The construction combines rational integration certificates, half-return maps and a degree-raising argument.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-lienard-limit-cycles",
+  "commit": "7da225327c6cd62a3dc63926525377764ea8f454",
+  "project_path": null,
+  "declarations": [
+    "PlanarCycles.Lienard.SexticSix.sextic_six_limit_cycles",
+    "PlanarCycles.Lienard.SexticSix.lienard_lower_bound",
+    "PlanarCycles.Lienard.SexticSix.seven_limit_cycles_explicit",
+    "PlanarCycles.Lienard.LimitCycles._proof_1",
+    "PlanarCycles.Lienard.SexticSix.SixLimitCycles._proof_1",
+    "PlanarCycles.Lienard.Witness.InBox._proof_1",
+    "PlanarCycles.Lienard.Witness.InBox._proof_2",
+    "PlanarCycles.Lienard.Witness.InBox._proof_3",
+    "PlanarCycles.Lienard.Witness.InBox._proof_4",
+    "PlanarCycles.Lienard.Witness.InBox._proof_5",
+    "PlanarCycles.Lienard.Witness.InBox._proof_6",
+    "PlanarCycles.Lienard.Witness.InBox._proof_7",
+    "PlanarCycles.Lienard.Witness.InBox._proof_8",
+    "PlanarCycles.Lienard.Witness.InBox._proof_9",
+    "PlanarCycles.Lienard.Witness.InBox._proof_10",
+    "PlanarCycles.Lienard.Witness.InBox._proof_11",
+    "PlanarCycles.Lienard.Witness.InBox._proof_12",
+    "PlanarCycles.Lienard.Witness.InBox._proof_13",
+    "PlanarCycles.Lienard.Witness.InBox._proof_14",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_1",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_2",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_3",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_4",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_5",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_6",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_7",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_8",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_9",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_10",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_11",
+    "PlanarCycles.Lienard.SexticSix.centre._proof_12"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS"
+    ],
+    "msc2020": [
+      "34C07",
+      "34C25",
+      "68V15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T04:12:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7da225327c6cd62a3dc63926525377764ea8f454",
+        "fork_repository": "PalomarArchive/mmislan--palomar-lienard-limit-cycles--69a342c2f376",
+        "source_repository": "mmislan/palomar-lienard-limit-cycles"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4c7ba16a27464bb3c2275e7c3d37259849df6205b4691cb0974663e88c5f39c0"
+}

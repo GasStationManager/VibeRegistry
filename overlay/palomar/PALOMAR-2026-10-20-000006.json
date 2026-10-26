@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000006",
+  "version": 1,
+  "title": "Kneser's conjecture and the octahedral Tucker lemma",
+  "abstract": "A Lean 4 / Mathlib formalization of Lovász's theorem (Kneser's conjecture): for 0 < k and 2k ≤ n the Kneser graph KG(n, k) of k-subsets of an n-set, adjacent when disjoint, has chromatic number exactly n − 2k + 2; proved combinatorially from the octahedral Tucker lemma (an antipodal labelling of the nonzero sign vectors of length n by nonzero integers in [−m, m] with m < n has a complementary pair x ≼ y with λ(x) = −λ(y)), which is itself proved by Ky Fan's parity argument. Mathlib has neither Kneser graphs nor Tucker's lemma.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/kneser-lovasz",
+  "commit": "6699c87d87f4ddb159fc42271263fc429e63004a",
+  "project_path": null,
+  "declarations": [
+    "KneserTheorem.octahedral_tucker",
+    "KneserTheorem.lovasz_kneser"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05E45",
+      "55M20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T02:15:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6699c87d87f4ddb159fc42271263fc429e63004a",
+        "fork_repository": "PalomarArchive/jtraverso--kneser-lovasz--c99016c66bcc",
+        "source_repository": "jtraverso/kneser-lovasz"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9da079d46a7324a5c47dccd21b234627b9852e60a17f4836836163887dc4828a"
+}

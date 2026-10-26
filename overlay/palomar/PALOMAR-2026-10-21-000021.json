@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000021",
+  "version": 1,
+  "title": "All-base bases and integral relations for the totient kernel",
+  "abstract": "For every integer base k at least two and depth e at least one, the rational span of the sections n ↦ φ(k^j n+r) through level e has dimension k^e+1. An explicit retained family is a basis, every omitted section is an integer multiple of a retained section, and these reductions form a basis for all integral relations, with rank Σ_(1≤j<e) k^j. The entry also gives the full dyadic basis and an affine independence theorem. The retained positive residues satisfy k ∤ r, a weaker condition than gcd(k,r)=1. Martin’s earlier theorem already implies affine independence, and Coons proved non-k-regularity; the exact finite-level basis and integral normal form are the contribution here. This configuration does not prove irrationality of Σ φ(n)2^(-n). The retained family includes φ(n), φ(kn), and all positive residues r with k ∤ r at every level through e. The integral relations are indexed by omitted channels, each with coefficient one at its own channel, which supplies uniqueness over Z.",
+  "authors": [
+    "Will Cook"
+  ],
+  "repository": "https://github.com/wcook04/plectis-erdos-lean",
+  "commit": "9ab395cda99d13f8fcd16cf655fc17458b3eaa38",
+  "project_path": null,
+  "declarations": [
+    "PalomarCorpus.E249.CompleteKernelBases.displayed_all_base_kernel",
+    "PalomarCorpus.E249.CompleteKernelBases.displayed_full_dyadic_basis",
+    "PalomarCorpus.E249.TotientKernelBasis.allBaseTotientKernelBasisRankAndRelationDimension",
+    "PalomarCorpus.E249.TotientKernelBasis.allSlopeAffineTotientFormsLinearIndependent",
+    "PalomarCorpus.E249.TotientKernelBasis.displayed_integral_normal_form"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A25",
+      "11B83"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T17:28:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9ab395cda99d13f8fcd16cf655fc17458b3eaa38",
+        "fork_repository": "PalomarArchive/wcook04--plectis-erdos-lean--26c7e2ff36da",
+        "source_repository": "wcook04/plectis-erdos-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6558250c034776e0f497616e1ed8e5f5da603d690f8c428bcee128dd73df2d9c"
+}

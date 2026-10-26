@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000021",
+  "version": 1,
+  "title": "Iwaniec's linear sieve at the sifting limit and Jacobsthal's problem",
+  "abstract": "A Lean 4 formalization of H. Iwaniec, \"On the error term in the linear sieve\" (Acta Arith. 19, 1971) and \"On the problem of Jacobsthal\" (Demonstratio Math. 11, 1978). The headline result is Iwaniec's bound for Jacobsthal's problem: if m consecutive integers are each divisible by one of r ≥ 2 given primes, then m ≤ C (r log r)² for an absolute constant C. More strongly, every interval of length c ∏ (1 − 1/q)⁻¹ r² log r contains at least r² integers coprime to r given primes. Both the Theorem and the Corollary of the 1978 paper are proved, together with its Lemma 1 (the shifted sieve, both bounds) and Lemma 2. The 1971 paper is formalized in full: the Rosser–Iwaniec linear sieve at the sifting limit with general modulus k and arbitrary finite sequences (§2); the sieve functions f, F and the majorants 𝔐, 𝔚 defined by delay-differential equations, including F(3) = 2e^γ − 3 and the asymptotics of 𝔐 (§3); the main term with error O(1/log y) and support of size O(y / log² y) (§4, Theorems 4 and 5); and Theorem 1 with its Corollary, Theorem 2 (C₀(r) ≪ r² log² r) and Theorem 3 (§5). The prime number theorem with de la Vallée Poussin error term and Mertens' theorems come from a vendored copy of PrimeNumberTheoremAnd.",
+  "authors": [
+    "Jason Davies"
+  ],
+  "repository": "https://github.com/jasondavies/iwaniec-linear-sieve",
+  "commit": "c8d01549d2ae640b36ec198c1f0f6495f1b036cf",
+  "project_path": null,
+  "declarations": [
+    "IwaniecLinearSieve.iwaniecBound",
+    "IwaniecLinearSieve.iwaniec_theorem",
+    "IwaniecLinearSieve.theorem1_full",
+    "IwaniecLinearSieve.corollary_upper",
+    "IwaniecLinearSieve.corollary_lower",
+    "IwaniecLinearSieve.theorem2",
+    "IwaniecLinearSieve.theorem3_fst",
+    "IwaniecLinearSieve.theorem3_snd"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N35",
+      "11N36",
+      "11N05",
+      "11N25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T09:47:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c8d01549d2ae640b36ec198c1f0f6495f1b036cf",
+        "fork_repository": "PalomarArchive/jasondavies--iwaniec-linear-sieve--fcbfd18a0a25",
+        "source_repository": "jasondavies/iwaniec-linear-sieve"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3f5cf3d30648fbb13a9b8f2b8ac1ee3f5c994d009031e59bc64e451c75159648"
+}

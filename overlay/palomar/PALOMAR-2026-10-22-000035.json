@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000035",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000035",
+  "version": 1,
+  "title": "The expander mixing lemma and the Alon–Boppana bound",
+  "abstract": "A Lean 4 / Mathlib formalization of two basic results of spectral graph theory, stated through the adjacency quadratic form on vectors orthogonal to the all-ones vector: the expander mixing lemma of Alon and Chung (for a d-regular graph on n ≥ 2 vertices with |x·Ax| ≤ μ‖x‖² on 𝟙⊥, |e(S,T) − d|S||T|/n| ≤ μ√(|S||T|)), and the Alon–Boppana bound in Nilli's form (a d-regular graph, d ≥ 2, with two vertices at distance at least 2k + 4 has a nonzero x ⟂ 𝟙 with x·Ax ≥ (2√(d−1) − (2√(d−1) − 1)/(k+1))‖x‖²). Mathlib has adjacency matrices but neither result.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/expander-spectral",
+  "commit": "f96a99893d4d31495af5f8d9e6181f7b4c91e0ba",
+  "project_path": null,
+  "declarations": [
+    "ExpanderTheorem.expander_mixing",
+    "ExpanderTheorem.alon_boppana"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C50",
+      "05C48"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T15:25:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f96a99893d4d31495af5f8d9e6181f7b4c91e0ba",
+        "fork_repository": "PalomarArchive/jtraverso--expander-spectral--c7934103ea1e",
+        "source_repository": "jtraverso/expander-spectral"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1e3be075ce6e7279f30e43ff2d3cfb8d79000b27448788f5ac0483b279622093"
+}

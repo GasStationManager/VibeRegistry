@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000014",
+  "version": 1,
+  "title": "Hamiltonian paths in rectangular grid graphs (Itai, Papadimitriou and Szwarcfiter)",
+  "abstract": "A Lean 4 proof of the characterization of Hamiltonian paths in rectangular grid graphs by Itai, Papadimitriou and Szwarcfiter (1982, Theorem 3.2). For distinct vertices s and t of the width × height grid graph, a Hamiltonian path from s to t exists if and only if the problem is acceptable, that is, colour compatible (by the checkerboard colouring) and not one of the three forbidden configurations F1, F2, F3 on grids of width or height 1, 2 or 3. Necessity is proved for each forbidden case, where the paper only says \"a straightforward case analysis\". Sufficiency is proved by strong induction with an explicit reduction rule (strip two columns or split at a cut edge) and 596 kernel-checked base-case paths.",
+  "authors": [
+    "Z. Zzyzek (github: zzyzek)"
+  ],
+  "repository": "https://github.com/zzyzek/GridHam2D-Lean",
+  "commit": "45eec4d0c85c2d5b6d44a6bf032b2092536cecac",
+  "project_path": null,
+  "declarations": [
+    "GridHam.ips_characterization"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C45",
+      "05C38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T07:52:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "45eec4d0c85c2d5b6d44a6bf032b2092536cecac",
+        "fork_repository": "PalomarArchive/zzyzek--GridHam2D-Lean--3a2faf397fa6",
+        "source_repository": "zzyzek/GridHam2D-Lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:90747bbd63dca88170b8310a9fed941e5f60d7d84e88419100a1e83e3592d378"
+}

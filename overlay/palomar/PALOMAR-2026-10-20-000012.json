@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000012",
+  "version": 1,
+  "title": "Jin's theorem on dense triangle-free graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of Jin's theorem: a finite triangle-free graph on n vertices with minimum degree greater than 10n/29 is 3-colourable; and of its sharpness: for every m ≥ 1 the blow-up of the Grötzsch graph with weights 3m, 2m, 4m is a triangle-free 10m-regular graph on 29m vertices that is not 3-colourable (Häggkvist). This extends the case r = 2 of the Andrásfai–Erdős–Sós theorem, which is in Mathlib. Mathlib does not have Jin's theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/jin-triangle-free",
+  "commit": "ae47df0ddb29c58a71afed658f9bf74aef1b6e90",
+  "project_path": null,
+  "declarations": [
+    "JinTheorem.jin",
+    "JinTheorem.jin_sharp"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T08:37:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ae47df0ddb29c58a71afed658f9bf74aef1b6e90",
+        "fork_repository": "PalomarArchive/jtraverso--jin-triangle-free--8d9fbb5efd5d",
+        "source_repository": "jtraverso/jin-triangle-free"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b34c05fb6919d32574d72ee26900ef66afea1c3fe9a8a80af0d26ef2f9d32a95"
+}

@@ -2,19 +2,23 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-16-000011",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000011",
-  "version": 1,
-  "title": "Berge's theorem and the Tutte–Berge formula",
-  "abstract": "A Lean 4 / Mathlib formalization of Berge's augmenting path theorem (a matching is maximum if and only if there is no augmenting path) and of the Tutte–Berge formula (the maximum size of a matching is the minimum over vertex sets U of (|V| + |U| − odd(G − U)) / 2), with the weak inequality for all matchings and vertex sets; the formula is derived from Mathlib's Tutte theorem by adding universal vertices.",
+  "version": 2,
+  "title": "Berge's theorem, the Tutte–Berge formula and the Gallai–Edmonds theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of Berge's augmenting path theorem (a matching is maximum if and only if there is no augmenting path) and of the Tutte–Berge formula (the maximum size of a matching is the minimum over vertex sets U of (|V| + |U| − odd(G − U)) / 2), with the weak inequality for all matchings and vertex sets; the formula is derived from Mathlib's Tutte theorem by adding universal vertices. Version 2 adds the Gallai–Edmonds structure theorem: with D the vertices missed by some maximum matching, A their neighbours outside D and C the rest, the components of G[D] are factor-critical, G[C] has a perfect matching, every maximum matching matches A into distinct components of G[D], and 2ν(G) = |V| + |A| − c(G[D]).",
   "authors": [
     "Juan Pablo Traverso Gianini"
   ],
   "repository": "https://github.com/jtraverso/berge-matching",
-  "commit": "b9c91bfbbe08ee7266ee3cb3543dff4e4ca8bc8c",
+  "commit": "f01d042c071c778fb3f432312356136a92369076",
   "project_path": null,
   "declarations": [
     "BergeTheorem.isMaximum_iff_not_exists_augmenting",
     "BergeTheorem.two_mul_card_add_le",
-    "BergeTheorem.exists_tutte_berge"
+    "BergeTheorem.exists_tutte_berge",
+    "GallaiEdmondsTheorem.factorCritical",
+    "GallaiEdmondsTheorem.perfectMatching_C",
+    "GallaiEdmondsTheorem.maximumMatching_structure",
+    "GallaiEdmondsTheorem.two_mul_card_add"
   ],
   "informal": {},
   "classification": {
@@ -26,7 +30,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-10-16T10:37:40Z",
+  "published_at": "2026-10-19T17:54:52Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -40,11 +44,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "b9c91bfbbe08ee7266ee3cb3543dff4e4ca8bc8c",
+        "commit": "f01d042c071c778fb3f432312356136a92369076",
         "fork_repository": "PalomarArchive/jtraverso--berge-matching--b269b121c46f",
         "source_repository": "jtraverso/berge-matching"
       }
     ]
   },
-  "statement_hash": "sha256:462e6df69ba93fbef749078bc0fb67bbb226995a8db521902382e717e05582a6"
+  "statement_hash": "sha256:d2c3db7262e382eda4bd2ff8f5e1d84f1a2b0f5c50f731f038427d3981ae9ce7"
 }

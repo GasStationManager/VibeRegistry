@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000003",
+  "version": 1,
+  "title": "The Erdős–Pósa theorem for cycles",
+  "abstract": "A Lean 4 / Mathlib formalization of the Erdős–Pósa theorem: for every k, every finite simple graph either contains k vertex-disjoint cycles or has a set of at most c (k + 1)(log₂(k + 1) + 1) vertices meeting every cycle, for a fixed constant c (the proof gives c = 65); together with the qualitative Erdős–Pósa property and the easy converse that a feedback vertex set of size s rules out s + 1 disjoint cycles. Mathlib has acyclic graphs but not this theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/erdos-posa-cycles",
+  "commit": "67bfea6b3893ffdf57e76cd83c9c3538647bdec8",
+  "project_path": null,
+  "declarations": [
+    "CyclePacking.erdos_posa",
+    "CyclePacking.erdos_posa_bound",
+    "CyclePacking.not_disjointCycles_of_feedback"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C38",
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T01:09:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "67bfea6b3893ffdf57e76cd83c9c3538647bdec8",
+        "fork_repository": "PalomarArchive/jtraverso--erdos-posa-cycles--495ed139acca",
+        "source_repository": "jtraverso/erdos-posa-cycles"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c2b65d0084de785d63b5d7ba66335daff24039ea99b3446472eeb229e1465bee"
+}

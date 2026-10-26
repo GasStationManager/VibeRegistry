@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000009",
+  "version": 1,
+  "title": "Temporal cliques admit spanners of size O(n log n)",
+  "abstract": "Lean 4 / Mathlib formalization of the theorem that every temporal clique on n vertices admits a temporal spanner with O(n log n) edges. A temporal clique is the complete graph on a finite vertex set whose edges carry natural-number time labels, locally injective (two edges sharing an endpoint have distinct labels); a temporal spanner is a set of edges in which every vertex reaches every other one by a journey with non-decreasing labels. The result is due to Casteigts, Peters and Schoeters (ICALP 2019, JCSS 2021); the formal proof follows the dismountability-only proof of Carnevale, Casteigts and Corsini (SAND 2025, §§2–4), which reduces cliques to bi-cliques and concludes with the one-sided dismountability of Angrick et al. (ESA 2024). The compared statements give an explicit bound of 2n⌈log₂ n⌉ + 4n edges and the asymptotic O(n log n) form with a bound function chosen uniformly for all cliques. The work is supervised by Arnaud Casteigts and Karine Altisen.",
+  "authors": [
+    "Ethan Bargaud-Arm"
+  ],
+  "repository": "https://github.com/dracoanguis/temporal-graphs",
+  "commit": "79214ea8379246e8705cfeee95fb9dca090112e9",
+  "project_path": null,
+  "declarations": [
+    "TemporalCliqueSpanners.exists_isTemporalSpanner_card_le",
+    "TemporalCliqueSpanners.exists_isBigO_isTemporalSpanner"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C85",
+      "05C40",
+      "05C38",
+      "68R10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T10:57:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "79214ea8379246e8705cfeee95fb9dca090112e9",
+        "fork_repository": "PalomarArchive/dracoanguis--temporal-graphs--4bb3060d8f06",
+        "source_repository": "dracoanguis/temporal-graphs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6e402a50f46501dc8594983319c808d4c77a1d61b28cb1d3292e2305f0e28fd5"
+}

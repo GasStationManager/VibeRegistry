@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000014",
+  "version": 1,
+  "title": "Guarded detection and constrained eligible-set extensions",
+  "abstract": "Correctness and completeness of fault detection and extension over a supplied guarded decoder DAG, together with an executed native cold-detector bound.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/priority-controller-phase1",
+  "commit": "fc703dd3415e3a892536c0b624bf65b1ade2871d",
+  "project_path": null,
+  "declarations": [
+    "Controller.Public.guarded_bridge_detector_correct",
+    "Controller.Public.guarded_bridge_detector_complete",
+    "Controller.Cost.SharedDetectorCold.execution",
+    "Controller.Decoder.DAG.extendSet_some",
+    "Controller.Decoder.DAG.extendSet_none_iff",
+    "Controller.Decoder.DAG.extendSet_exists_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM"
+    ],
+    "msc2020": [
+      "68Q25",
+      "68Q60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T10:46:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fc703dd3415e3a892536c0b624bf65b1ade2871d",
+        "fork_repository": "PalomarArchive/shaikidris--priority-controller-phase1--d60f9fc1688f",
+        "source_repository": "shaikidris/priority-controller-phase1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9fcbd1b58b69c2f9e7457dd5169101c73f8d55fc3777140e5e909374e84a9c7d"
+}

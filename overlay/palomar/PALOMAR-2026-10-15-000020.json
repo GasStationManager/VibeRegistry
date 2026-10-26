@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-15-000020",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000020",
-  "version": 1,
-  "title": "Menger's theorem and Hamiltonian cycles",
-  "abstract": "A Lean 4 / Mathlib formalization of Menger's theorem for finite graphs (set form with a minimum separator and as many vertex-disjoint paths, two-vertex form, edge form for Mathlib's IsEdgeReachable, and the global edge form for Mathlib's IsEdgeConnected) and of classical sufficient conditions for Hamiltonian cycles: the Bondy–Chvátal closure step, Ore's and Dirac's theorems, and the Chvátal–Erdős theorem (k-connected with independence number at most k implies Hamiltonian), whose proof uses Menger's theorem through the fan lemma.",
+  "version": 2,
+  "title": "Menger's theorem, Hamiltonian cycles, long cycles and pancyclicity",
+  "abstract": "A Lean 4 / Mathlib formalization of Menger's theorem for finite graphs (set form with a minimum separator and as many vertex-disjoint paths, two-vertex form, edge form for Mathlib's IsEdgeReachable, and the global edge form for Mathlib's IsEdgeConnected) and of classical sufficient conditions for Hamiltonian cycles: the Bondy–Chvátal closure step, Ore's and Dirac's theorems, and the Chvátal–Erdős theorem (k-connected with independence number at most k implies Hamiltonian), whose proof uses Menger's theorem through the fan lemma. Version 2 adds the Erdős–Gallai theorems on long paths and cycles (no path on k vertices implies 2e ≤ (k − 2)n; no cycle of length at least k ≥ 3 implies 2e ≤ (k − 1)(n − 1)) and Bondy's pancyclicity theorem (a Hamiltonian graph with at least n²/4 edges is pancyclic or is K_{n/2,n/2}), proved on top of the same library.",
   "authors": [
     "Juan Pablo Traverso Gianini"
   ],
   "repository": "https://github.com/jtraverso/menger-hamiltonian",
-  "commit": "b6cf60e1910762fa411ca774fee148536246b545",
+  "commit": "35c5f684f9bfbd244bd0999ce725623ab571adb6",
   "project_path": null,
   "declarations": [
     "MengerTheorem.card_le_of_separates",
@@ -20,7 +20,10 @@
     "HamiltonianCycles.isHamiltonian_sup_edge_iff",
     "HamiltonianCycles.ore",
     "HamiltonianCycles.dirac",
-    "HamiltonianCycles.chvatal_erdos"
+    "HamiltonianCycles.chvatal_erdos",
+    "LongPathsCycles.erdos_gallai_path",
+    "LongPathsCycles.erdos_gallai_cycle",
+    "LongPathsCycles.bondy"
   ],
   "informal": {},
   "classification": {
@@ -30,11 +33,12 @@
     "msc2020": [
       "05C40",
       "05C45",
-      "05C38"
+      "05C38",
+      "05C35"
     ]
   },
   "license": "",
-  "published_at": "2026-10-15T23:42:15Z",
+  "published_at": "2026-10-19T12:56:13Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -48,11 +52,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "b6cf60e1910762fa411ca774fee148536246b545",
+        "commit": "35c5f684f9bfbd244bd0999ce725623ab571adb6",
         "fork_repository": "PalomarArchive/jtraverso--menger-hamiltonian--0fd5dfe41e84",
         "source_repository": "jtraverso/menger-hamiltonian"
       }
     ]
   },
-  "statement_hash": "sha256:acc706324407fd197743820c86b99be2abd5143bfd9d9e186162ce5d77515dc2"
+  "statement_hash": "sha256:65a310ae8dab376bf60f5cdc637f5ae4fdce2deb444788950672fcd7f0029b85"
 }

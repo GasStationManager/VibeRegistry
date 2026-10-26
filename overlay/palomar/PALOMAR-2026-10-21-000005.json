@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000005",
+  "version": 1,
+  "title": "Vinogradov's three primes theorem and almost all binary Goldbach, after Heath-Brown 1985, with the Siegel-Walfisz theorem",
+  "abstract": "A sorry-free Lean 4 proof of the main results of D. R. Heath-Brown, The ternary Goldbach problem, Rev. Mat. Iberoam. 1 (1985): the Siegel-Walfisz theorem in the form the paper quotes as (1.1), proved from a zero-free region for Dirichlet L-functions and Siegel's theorem; Theorem 1, sum over 2x < m <= 3x of |N2(m) - x S(m)| << x^2 (log x)^{-C}; Corollary 1 and the van der Corput, Chudakov, Estermann theorem that at most O(X (log X)^{-A}) even numbers up to X are not sums of two primes, and density zero; Corollary 2, Vinogradov's theorem that every sufficiently large odd number is a sum of three primes; and Corollary 3, infinitely many three-term arithmetic progressions of primes. All constants are ineffective, as in the paper. Binary Goldbach is not claimed. Lean code written by an AI agent; the statements were checked against the paper by AI reviewers and are offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "6d7ae7b40fb5550e836456fd2ff4d8587157aee7",
+  "project_path": "entries/heathbrown1985",
+  "declarations": [
+    "LeanLab.PNTPort.PsiChi.siegelWalfisz",
+    "LeanLab.PNTPort.PsiChi.heathBrown_theorem1",
+    "LeanLab.PNTPort.PsiChi.heathBrown_corollary1",
+    "LeanLab.PNTPort.PsiChi.goldbach_logPowerSaving",
+    "LeanLab.PNTPort.PsiChi.vinogradov_three_primes",
+    "LeanLab.PNTPort.PsiChi.three_primes_in_ap",
+    "LeanLab.PNTPort.PsiChi.goldbach_densityZero"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11N13",
+      "11M20",
+      "11P55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T02:05:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6d7ae7b40fb5550e836456fd2ff4d8587157aee7",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8b78ac029a782e846b067272f395eb4637910758bda410caab4422a81c050198"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000002",
+  "version": 2,
+  "title": "Wu 2008 Lemma 2.2, Chen's double sieve inequality, with the range of the last sum repaired",
+  "abstract": "A Lean 4 proof of the combinatorial inequality (2.2) of J. Wu, Chen's double sieve, Goldbach's conjecture and the twin prime problem, 2, Acta Arith. 131 (2008), Lemma 2.2: 4 D_{1,2} >= 3 Y1 + Y2 - Y3 - Y4 + Y5 + Y6 - 2 Y7 - Y8 - Y9 - Y10 - Y11 - error, where the Y_i are Wu's sieve sums over the sequence A = {N - p}. The printed proof drops part of the range of the triple sum produced by Buchstab's identity, so the printed Y11, over p4 < N^{1/2-2 kappa1}/p3, is not justified; this formalization proves the inequality with the full range N^{kappa2} <= p4 < N^{1/2-3 kappa1}, for every N > 1, every pair kappa1, kappa2 meeting Wu's hypotheses, any finite A of integers 0 < a < N coprime to N, and with Wu's O(N^{1-kappa1}) made explicit as 4N/(N^{kappa1}-1) for A = {N - p}. Version 2 adds Lemma 3.1 of R. Li, On Chen's theorem, Goldbach's conjecture and almost prime twins II, which is the same inequality at kappa1 = 1/11.49, kappa2 = 1/6.18 with the same gap, repaired. Lean code written by an AI agent; the statement was checked against the paper by AI reviewers and is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "4501f42c25c951fc2e461801ec661fdb3969a022",
+  "project_path": "entries/wu2008",
+  "declarations": [
+    "GoldbachLean.Wu2008.WuReal.wu_admissible",
+    "GoldbachLean.Wu2008.WuSum.lemma22_sum",
+    "GoldbachLean.Wu2008.WuSum.lemma22_wuA",
+    "GoldbachLean.Li2024.Lemma31.li_admissible",
+    "GoldbachLean.Li2024.Lemma31.lemma31_repaired"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11N35",
+      "11N36"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T05:45:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4501f42c25c951fc2e461801ec661fdb3969a022",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:53ed46c427c360665f54d72090bb101aa935b033fa0599683b8286a7a1d3996b"
+}

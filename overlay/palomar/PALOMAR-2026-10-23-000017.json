@@ -1,0 +1,67 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000017",
+  "version": 1,
+  "title": "Spanning-Tree Maximization Forces Isoperimetry in the Square Lattice",
+  "abstract": "Lean formalization of spanning-tree maximization over finite connected induced subgraphs of the square lattice. The development establishes edge isoperimetry of every maximizer, the maximum count and all maximizing lattice-isometry classes at every positive cardinality, and uniqueness of the canonical corner-strip domain for N >= 18. Nonuniqueness occurs exactly at N = 3, 8, 10, 13; the canonical count has exceptions at N = 7, 14, 17. It also establishes the sharp square-cardinality stability inequality, an exact scalar product formula and rational recurrence for corner-strip counts, the global extremal asymptotic expansion with O(N^(-1/2)) remainder, and the appendix's exact strip-energy Fourier identity, rectangular remainders, Green estimates, and explicit bounds.",
+  "authors": [
+    "Jiechen Zhang"
+  ],
+  "repository": "https://github.com/novou/spanning-tree-isoperimetry-lean",
+  "commit": "ab2ab3932cfad3eeac9a9f75d29c8982cffad54d",
+  "project_path": null,
+  "declarations": [
+    "SpanningTreeChallenge.maximizer_isoperimetric",
+    "SpanningTreeChallenge.maximum_value",
+    "SpanningTreeChallenge.maximizer_iff",
+    "SpanningTreeChallenge.nonuniqueness_iff",
+    "SpanningTreeChallenge.unique_large",
+    "SpanningTreeChallenge.sharp_stability",
+    "SpanningTreeChallenge.coefficient_optimal",
+    "SpanningTreeChallenge.scalar_resolvent",
+    "SpanningTreeChallenge.scalar_series",
+    "SpanningTreeChallenge.hankel_minor",
+    "SpanningTreeChallenge.scalar_chain",
+    "SpanningTreeChallenge.cornerStrip_product",
+    "SpanningTreeChallenge.cornerStrip_recurrence",
+    "SpanningTreeChallenge.extremal_count_asymptotic",
+    "SpanningTreeChallenge.strip_fourier_identity",
+    "SpanningTreeChallenge.strip_energy_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.DM"
+    ],
+    "msc2020": [
+      "05C05",
+      "05C35",
+      "05C50",
+      "05A16"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T20:22:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ab2ab3932cfad3eeac9a9f75d29c8982cffad54d",
+        "fork_repository": "PalomarArchive/novou--spanning-tree-isoperimetry-lean--e49031630410",
+        "source_repository": "novou/spanning-tree-isoperimetry-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4647517c70f728ccbe5979c55e1503657eec98906b1493cbb112a528636e5219"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000005",
+  "version": 1,
+  "title": "DedekindSubgroups: a congruence modulo 16 for sums of Dedekind sums over subgroups of odd order",
+  "abstract": "For k >= 2 and a subgroup H of odd order n of the unit group (Z/kZ)^x, the sum S(H,k) of the Dedekind sums s(h,k) over h in H satisfies: 12k S(H,k) is an integer congruent to n(k-1)(k-2) modulo 16, and the modulus 16 cannot be replaced by 32 (an explicit pair of order-3 subgroups of (Z/63Z)^x). The development also proves a congruence modulo 8 for every subgroup, a congruence for 2k S(H,k) when 3 does not divide k, and, for primes p > 3 and n > 1, that 2S(H,p) is an integer congruent to n(p-1)/2 modulo 8, which refines Louboutin's parity theorem and gives 12S(H,p) - p congruent to 3n(p-1) - p modulo 48. The proof formalizes Meyer's formula 12k s(h,k) = (k-1)(k-2) - 4I(h,k), where I(h,k) counts the inversions of x -> hx mod k, and the facts that these inversion counts are even on squares and equal for inverse elements.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/DedekindSubgroups-lean",
+  "commit": "cb87faf157821154dc1beef7aad753d889211ad9",
+  "project_path": null,
+  "declarations": [
+    "DedekindSubgroups.theorem_1_1",
+    "DedekindSubgroups.theorem_1_1_optimal",
+    "DedekindSubgroups.remark_3_4",
+    "DedekindSubgroups.corollary_4_1",
+    "DedekindSubgroups.theorem_1_2",
+    "DedekindSubgroups.theorem_1_2_louboutin"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11F20",
+      "11M20",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T01:51:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cb87faf157821154dc1beef7aad753d889211ad9",
+        "fork_repository": "PalomarArchive/jkfarland-bot--DedekindSubgroups-lean--eea92f4129af",
+        "source_repository": "jkfarland-bot/DedekindSubgroups-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8feee2f48a85564945156a2386a80385592fa84351753e98c670dcb04c889564"
+}

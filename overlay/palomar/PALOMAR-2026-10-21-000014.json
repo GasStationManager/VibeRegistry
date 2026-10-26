@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000014",
+  "version": 1,
+  "title": "Bounded conjunction and proper-basis algorithms",
+  "abstract": "Bounded-support and consistent selector-expansion laws for decoder DAGs, with complete native detection executions and checked emitted witnesses for bounded live conjunctions and proper bases. Selected time inequalities give a general XP bound, a polynomial bound for one live conjunction, and an FPT bound for healthy-one roots. Concrete source construction, total time and temporary word-storage proofs are supplied as companion declarations.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/priority-controller-phase1",
+  "commit": "a510ea7e76d9b10e21e7f4db8f57fd3a3468a090",
+  "project_path": null,
+  "declarations": [
+    "Controller.Decoder.DAG.exists_small_true_support",
+    "Controller.Decoder.DAG.exists_small_target_support",
+    "Controller.Decoder.DAG.expansion_identity",
+    "Controller.Decoder.DAG.global_selector_count",
+    "Controller.Decoder.DAG.cone_expansion_identity",
+    "Controller.Extensions.BoundedNativeComplete.execution",
+    "Controller.Extensions.BoundedNativeComplete.emitted_witness",
+    "Controller.Extensions.BoundedNativeComplete.xp_time",
+    "Controller.Extensions.BoundedNativeComplete.one_and_time",
+    "Controller.Extensions.BoundedNativeComplete.healthy_one_time",
+    "Controller.Extensions.ProperBasisComplete.execution"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC"
+    ],
+    "msc2020": [
+      "68Q25",
+      "68Q60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T06:01:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a510ea7e76d9b10e21e7f4db8f57fd3a3468a090",
+        "fork_repository": "PalomarArchive/shaikidris--priority-controller-phase1--d60f9fc1688f",
+        "source_repository": "shaikidris/priority-controller-phase1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5f719bbcc3b6bd9f89e319eeaf85d2e2f09e13f970da71787da774af3fe8d9a3"
+}

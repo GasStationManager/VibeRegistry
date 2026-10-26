@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000025",
+  "version": 1,
+  "title": "Lower and Upper Bounds for Glauber Dynamics from Typical States of the Low-Temperature Sherrington–Kirkpatrick Model",
+  "abstract": "Lean formalization of five manuscript result groups: Theorems 1.1, 1.3, and 1.6, and Corollaries 1.2 and 1.7. The barrier covers both clocks and every fixed threshold below one half, with exponent 7/30. The upper bound is the continuous-time statement for every fixed exponent saving between zero and one quarter. The fluctuation exponents and mean-bias lower bound have their stated positive exponent slack. Corollary 1.7 also explicitly concludes convergence of the finite-volume counting pressures to the limiting pressure. The manuscript and exact scope are included.",
+  "authors": [
+    "P. M. Aronow"
+  ],
+  "repository": "https://github.com/pmaronow/fluctuations-palomar",
+  "commit": "52e8a21a2497f28811a3154dea6d37e819ccc088",
+  "project_path": null,
+  "declarations": [
+    "LowerUpperBounds.theorem_1_1",
+    "LowerUpperBounds.corollary_1_2",
+    "LowerUpperBounds.theorem_1_3",
+    "LowerUpperBounds.theorem_1_6",
+    "LowerUpperBounds.corollary_1_7"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.LO"
+    ],
+    "msc2020": [
+      "60K35",
+      "82B44",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T23:55:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "52e8a21a2497f28811a3154dea6d37e819ccc088",
+        "fork_repository": "PalomarArchive/pmaronow--fluctuations-palomar--481fdf8438f9",
+        "source_repository": "pmaronow/fluctuations-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:84b9d155b6a1e97e6773d25389a514deeed0eb835f2a827bf9ba5b394b0780c6"
+}

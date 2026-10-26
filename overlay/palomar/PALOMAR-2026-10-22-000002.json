@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000002",
+  "version": 1,
+  "title": "Romanov's theorem: the integers of the form p + 2^k have positive lower density, with Erdős' complement, after Romanov 1934 and Erdős 1950",
+  "abstract": "A Lean 4 proof, with no unproved steps, of the theorem of N. P. Romanov, Über einige Sätze der additiven Zahlentheorie, Math. Ann. 109, 1934: the integers p + 2^k, p prime, have positive lower density, for k >= 0 and for k >= 1. With it, the result of P. Erdős, On integers of the form 2^k + p and some related problems, Summa Brasil. Math. 2, 1950: by a covering system, every 119477317 + 346729110 t is odd and is not p + 2^k, so the odd numbers that are not of that form also have positive lower density. Binary Goldbach is open and is not claimed. The Lean code was written by an AI agent and is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "5a11b2651e31507826f7423efbfa4e2d4d42a89f",
+  "project_path": "entries/romanov1934",
+  "declarations": [
+    "LeanLab.Romanov.romanov",
+    "LeanLab.Romanov.romanov_pos",
+    "LeanLab.Romanov.erdos_odd_not_sum",
+    "LeanLab.Romanov.erdos_density",
+    "LeanLab.Romanov.romanov_erdos"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11B05",
+      "11N36"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T00:44:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5a11b2651e31507826f7423efbfa4e2d4d42a89f",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6a879ec43a465ec1317ce89ec40cfb0fcab83822a6df39cd6b487fed4d3291ec"
+}

@@ -1,0 +1,105 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000020",
+  "version": 1,
+  "title": "Erdős problem #257: all base irrationality of the reciprocal Mersenne subseries for every infinite reciprocal summable support, with weighted mass and positive cover extensions, achievement set geometry, and exact greedy membership criteria",
+  "abstract": "Erdős problem 257 asks whether the sum over a in A of 1/(2^a - 1) is irrational for every infinite set A of positive integers. The principal theorem compared here settles the whole reciprocal summable regime at every integer base: if A is infinite and the sum over a in A of 1/a converges, then the sum over a in A of 1/(b^a - 1) is irrational for every integer b at least 2 (ReciprocalSupport.irrational_supportPowerSeries_of_summable_reciprocal). No pairwise coprimality, periodicity, density, or powerful support hypothesis appears. Paul Erdős printed the pairwise coprime case of exactly this statement, at every integer base, in 1968, and stated there that pairwise coprimality can be removed by a longer argument he did not print. The theorem compared here is that stated extension, proved independently. No priority over Erdős is claimed and no identification with his omitted argument is asserted. The consequence for the parent problem is a boundary condition: any infinite support witnessing a counterexample has divergent reciprocal sum. Erdős problem 257 remains open.\nThe readers are number theorists working on irrationality for Lambert type and reciprocal Mersenne series, and analysts who study subsum sets of convergent series. Erdős (1948) proved irrationality of the full support value at every integer base; Erdős (1968) proved the pairwise coprime reciprocal summable case; Duverney and Tachiya (2019) treated the squarefree support at every base 2^j; Tao and Teravainen proved the prime support case at base two. Duverney and Tachiya record the Erdős and Graham conjecture that the sum is irrational for every increasing sequence of exponents and describe their corollary as support for it. Each covers one distinguished family; none covers an arbitrary reciprocal summable support, nor the reciprocal divergent supports below.\nThree theorems state sufficient criteria that do not ask for reciprocal summability. Write h(a) for the P part of a at a finite nonempty prime set P. DivisibilityWeightedSupport.divisibilityWeightedClaim has two clauses: convergence of the sum over a in A of h(a)/(a(b^h(a) - 1)) at a fixed base b at least 2, for infinite A avoiding 0, gives irrationality at that base; the same weighted mass at base two on a host H avoiding 0 gives irrationality at every integer base at least 2 for every infinite subset of H. VariableExponentCover.strengthenedPositiveCoverClaim gives that hereditary all base conclusion for every infinite subset of the host of a positive fractional divisor cover of convergent one inverse power cost, and MixedWeightedCover.mixedSupportClaim combines the two criteria on one observation scale. LiteralWeightedCover.exists_weighted_not_strengthened_host makes the weighted enlargement strict: a weighted host of divergent reciprocal mass admitting no strengthened cover, whose infinite subsets are irrational at every integer base at least 2. DyadicObservationSummability records dyadic averaging estimates for weighted observation masses.\nFinitePeriodNoncollapse is exact finite support arithmetic: for finite nonempty F of positive exponents and integer base b at least 2, the reduced denominator of the sum over n in F of 1/(b^n - 1) is coprime to b, the order of b modulo it is exactly lcm F, and lcm F is strictly below that denominator once it is at least 2. RationalTailRigidity adds four necessary conditions on a hypothetical rational value p/(2^c v): an unbounded positive integer tail orbit with exact doubling recurrence, a sublogarithmic bound on zero windows of the divisor incidence coefficients, a reciprocal mass floor from the order of 2 modulo an odd reduced denominator when the reciprocals are summable, and a dyadic mass alternative. None contradicts a rational value. BooleanMobiusCarry gives exact coordinates: for an integer p and a positive natural q, a support avoiding 0 with some positive element and base two value p/q exists precisely when a positive square root bounded integer carry has Boolean Moebius normalised quotient. That characterisation permits finite supports, so it excludes no rational value.\nAchievementSetGeometry and FairCoding describe the set of all subsums of that series at base two. For every set J of allowed digit positions the supported coding map is injective with compact nowhere dense range, the range is perfect when J is infinite, and the Lebesgue measure obeys an exact dichotomy: 2^(-|F|) when the omitted positions form a finite set F, and zero when infinitely many are omitted. When 0 is not in J and the value coded by J read as exponents is rational, the supported set is Lebesgue null, which closes positive measure selection over a rational fibre. The fair product measure on digit strings pushes forward to Lebesgue measure restricted to the achievement set, and the preimage of the rationals is null. Perfectness and nowhere density of subsum sets are classical after Kakeya (1914), and Kovac and Tao record the fixed base Cantor structure; the measure dichotomy and the rational fibre null theorem are the additions.\nSix families give exact membership criteria for that set. GeneralRepairCriterion replaces a quantifier over supports by a pointwise inequality on one integer sequence: a nonnegative real lies in the set exactly when its greedy defect fails to increase at cofinally many scales, and when it fails to increase inside every window that starts at K and has width 2 times the integer square root of K plus 12. ScaledGreedyTrap identifies the set with the nonnegative reals whose scaled greedy remainder stays strictly below the barrier 2 at every scale. RationalMembership characterises a nonnegative rational target by infinitude of its skipped greedy ranks; PositiveSkipEquivalence and FourNinthsRepairWindows give the criteria at 1/2 and at 4/9; TwentyOneFatalBranch reduces membership of 1/21 to excluding one explicit fatal aligned branch. These are exact reformulations; they decide no target.\nTerminalScaledVanishing and ActualUpperSuccessor state conditional refutations of the universal assertion: an unconstructed terminal scaled vanishing sequence of finite Boolean support words, or an unconstructed realised upper run lower envelope, each produces an infinite support of value exactly 1/2. Neither theorem places 1/2 in the achievement set.\nIrrationality for an arbitrary infinite support is not proved, the memberships of 1/2, 4/9 and 1/21 are not decided, and the parent problem remains open.",
+  "authors": [
+    "Will Cook"
+  ],
+  "repository": "https://github.com/wcook04/plectis-erdos-lean",
+  "commit": "52f29ad173b04e3bac941b3663f2b9aebe5de0bb",
+  "project_path": null,
+  "declarations": [
+    "PalomarCorpus.E257.AchievementSetGeometry.supportedMersenneAchievementSet_geometry_and_volume",
+    "PalomarCorpus.E257.AchievementSetGeometry.volume_supportedMersenneAchievementSet_eq_zero_of_rat_value",
+    "PalomarCorpus.E257.ActualUpperSuccessor.actualUpperRightPacketLinearEscape_iff_successorLinearEscape",
+    "PalomarCorpus.E257.ActualUpperSuccessor.actualUpperSuccessorLinearEscape_completeCounterexample",
+    "PalomarCorpus.E257.BooleanMobiusCarry.BooleanMobiusCarryCertificate.reconstructsSupport",
+    "PalomarCorpus.E257.BooleanMobiusCarry.exists_booleanMobiusCarry_of_support_fraction",
+    "PalomarCorpus.E257.BooleanMobiusCarry.exists_normalized_support_fraction_iff_exists_booleanMobiusCarry",
+    "PalomarCorpus.E257.BooleanMobiusCarry.support_fraction_of_booleanMobiusCarry",
+    "PalomarCorpus.E257.DivisibilityWeightedSupport.divisibilityWeightedClaim",
+    "PalomarCorpus.E257.DyadicObservationSummability.dyadic_supportObservationMass_sum_le",
+    "PalomarCorpus.E257.DyadicObservationSummability.summable_dyadic_supportObservationMass",
+    "PalomarCorpus.E257.DyadicObservationSummability.tendsto_dyadic_supportObservationMass_mean",
+    "PalomarCorpus.E257.FairCoding.fairCoding_pushforward_eq_volume_restrict",
+    "PalomarCorpus.E257.FairCoding.fairCoding_rational_values_null",
+    "PalomarCorpus.E257.FairCoding.measurePreserving_fairCoding",
+    "PalomarCorpus.E257.FinitePeriodNoncollapse.finite_period_noncollapse_rat_den",
+    "PalomarCorpus.E257.FinitePeriodNoncollapse.lcm_lt_den_finiteErdosSum",
+    "PalomarCorpus.E257.FourNinthsRepairWindows.exists_repair_in_sqrt_window",
+    "PalomarCorpus.E257.FourNinthsRepairWindows.four_ninths_mem_iff_repairCofinal",
+    "PalomarCorpus.E257.FourNinthsRepairWindows.four_ninths_mem_iff_repair_sqrt_windows",
+    "PalomarCorpus.E257.FourNinthsRepairWindows.four_ninths_not_mem_of_strict_sqrt_window",
+    "PalomarCorpus.E257.GeneralRepairCriterion.mem_iff_greedyBinaryDefect_cofinal_repairs",
+    "PalomarCorpus.E257.GeneralRepairCriterion.mem_iff_greedyBinaryDefect_sqrt_windows",
+    "PalomarCorpus.E257.LiteralWeightedCover.exists_weighted_not_strengthened_host",
+    "PalomarCorpus.E257.LiteralWeightedCover.exists_weighted_obstruction_with_mixed_heredity",
+    "PalomarCorpus.E257.MixedWeightedCover.mixedSupportClaim",
+    "PalomarCorpus.E257.PositiveSkipEquivalence.cofinalPositiveHalfGreedySkips_iff_half_mem",
+    "PalomarCorpus.E257.PositiveSkipEquivalence.greedyMersenneRemainderRat_half_pos",
+    "PalomarCorpus.E257.RationalMembership.greedyMersenneSkippedSupport_infinite_iff_cofinal_skips",
+    "PalomarCorpus.E257.RationalMembership.infinite_greedyMersenneSkippedSupport_of_rat_mem",
+    "PalomarCorpus.E257.RationalMembership.rat_mem_mersenneAchievementSet_iff_cofinal_greedy_skips",
+    "PalomarCorpus.E257.RationalMembership.rat_mem_mersenneAchievementSet_iff_greedySkippedSupport_infinite",
+    "PalomarCorpus.E257.RationalTailRigidity.dyadic_support_fraction_reciprocalMass_diverges_or_gt_one",
+    "PalomarCorpus.E257.RationalTailRigidity.exists_unbounded_shifted_odd_tail_nat_state_of_support_fraction",
+    "PalomarCorpus.E257.RationalTailRigidity.one_div_oddOrder_le_reciprocalMass_of_support_fraction",
+    "PalomarCorpus.E257.RationalTailRigidity.supportCoeffZeroWindow_length_le_eps_logb_add",
+    "PalomarCorpus.E257.ReciprocalSupport.irrational_supportPowerSeries_of_summable_reciprocal",
+    "PalomarCorpus.E257.ScaledGreedyTrap.mem_mersenneAchievementSet_iff_scaledRemainder_cofinallyBounded",
+    "PalomarCorpus.E257.ScaledGreedyTrap.mersenneAchievementSet_eq_scaledGreedyTrap",
+    "PalomarCorpus.E257.ScaledGreedyTrap.one_div_twentyOne_mem_iff_scaledLowerBranchCofinally",
+    "PalomarCorpus.E257.ScaledGreedyTrap.one_div_twentyOne_mem_iff_scaledRemainder_cofinallyBounded",
+    "PalomarCorpus.E257.ScaledGreedyTrap.rat_mem_mersenneAchievementSet_iff_scaledLowerBranchCofinally",
+    "PalomarCorpus.E257.ScaledGreedyTrap.scaledGreedyRemainder_tendsto_atTop_of_not_mem",
+    "PalomarCorpus.E257.TerminalScaledVanishing.terminalScaledVanishing_completeCounterexample",
+    "PalomarCorpus.E257.TwentyOneFatalBranch.one_div_twenty_one_mem_iff_not_fatalAlignedBranch",
+    "PalomarCorpus.E257.TwentyOneFatalBranch.one_div_twenty_one_mem_mersenneAchievementSet_of_closedLowerStates",
+    "PalomarCorpus.E257.TwentyOneFatalBranch.twentyOneClosedRow_forces_quotientGreedy",
+    "PalomarCorpus.E257.TwentyOneFatalBranch.twentyOneFatalAlignedBranch_eventually_affine_supercapacity",
+    "PalomarCorpus.E257.TwentyOneFatalBranch.twentyOneFatalAlignedBranch_eventually_strict_supercapacity",
+    "PalomarCorpus.E257.VariableExponentCover.strengthenedPositiveCoverClaim"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CA",
+      "math.DS"
+    ],
+    "msc2020": [
+      "11J72",
+      "11A25",
+      "11A07",
+      "11B37",
+      "11B83",
+      "28A80",
+      "11K16"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T15:58:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "52f29ad173b04e3bac941b3663f2b9aebe5de0bb",
+        "fork_repository": "PalomarArchive/wcook04--plectis-erdos-lean--26c7e2ff36da",
+        "source_repository": "wcook04/plectis-erdos-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:12a495873769a921521344e08b1ff353cbac1174f808ff91bf19d5735f4384af"
+}

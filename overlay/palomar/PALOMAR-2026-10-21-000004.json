@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000004",
+  "version": 1,
+  "title": "Formalization of a curved three-dimensional simplex Hilbert transform",
+  "abstract": "This is a Lean 4 formalization of the main theorem from the paper \"A curved three-dimensional simplex Hilbert transform\" by P. Durcik, M. Fraccaroli and J. Roos.",
+  "authors": [
+    "Polona Durcik",
+    "Marco Fraccaroli",
+    "Joris Roos"
+  ],
+  "repository": "https://github.com/roos-j/lean-dfr",
+  "commit": "5c7595a83657b6c02f62ebf4f4ae1c02cb4109e4",
+  "project_path": null,
+  "declarations": [
+    "DFR.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "42B20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T01:55:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5c7595a83657b6c02f62ebf4f4ae1c02cb4109e4",
+        "fork_repository": "PalomarArchive/roos-j--lean-dfr--500ac5d1958e",
+        "source_repository": "roos-j/lean-dfr"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fb6356c57e4610c152ec87a9f32f8203dac14dc8e0cc9a69d9878fd29aeabf99"
+}

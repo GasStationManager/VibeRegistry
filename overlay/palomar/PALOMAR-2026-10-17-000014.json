@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-17-000014",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000014",
-  "version": 1,
+  "version": 2,
   "title": "First Betti numbers of five-generated numerical semigroups",
   "abstract": "A Lean 4 / Mathlib formalization project for (F) an explicit two-parameter family of minimally five-generated numerical semigroups <m, m+1, m+k, m+2k-1, m+2k>, m = 2kq+1, whose toric ideal has spanRank exactly 4k+2. Planned scope for (W), a proposed finite-width bound beta1 <= 2w+2 (4 <= w <= 40), not all formalized: the generic fiber-graph infrastructure, both algebraic bridges (only the upper bridge is formalized; the reverse bridge is not), the corrected singleton-counting decomposition beta1 + p = 5 + N, the pair-component antichain lemma and certificate-checker soundness (not yet written). Version 1 targets F; W is stated and excluded from the release comparator. F is sorry-free at 793e759.",
   "authors": [
     "Ben Keene"
   ],
   "repository": "https://github.com/benkeene/five-generator-betti",
-  "commit": "65cd1b7289ed27ff6ffec32c5644a8b4323918d2",
+  "commit": "8c57c1eaf991f5dbb1001fbc5f18835388787453",
   "project_path": null,
   "declarations": [
     "FiveGenBetti.family_spanRank_eq",
@@ -30,7 +30,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-10-17T21:42:26Z",
+  "published_at": "2026-10-23T11:04:50Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -44,11 +44,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "65cd1b7289ed27ff6ffec32c5644a8b4323918d2",
+        "commit": "8c57c1eaf991f5dbb1001fbc5f18835388787453",
         "fork_repository": "PalomarArchive/benkeene--five-generator-betti--724a4e2a049a",
         "source_repository": "benkeene/five-generator-betti"
       }
     ]
   },
-  "statement_hash": "sha256:a593d2b0b93462605216c76658eccbdea03ef119b487366b5fe1b3a8fd1b7465"
+  "statement_hash": "sha256:d0fb5e8ad25ae9d230ced58de5c5313dff52239e4ccaa09e824d0da4ae2d7e40"
 }

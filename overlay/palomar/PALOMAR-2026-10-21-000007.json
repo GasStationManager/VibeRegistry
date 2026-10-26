@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000007",
+  "version": 1,
+  "title": "Lovász's perfect graph theorems",
+  "abstract": "A Lean 4 / Mathlib formalization of Lovász's 1972 theorems on perfect graphs: a finite simple graph is perfect (every induced subgraph has chromatic number equal to its clique number) if and only if |S| ≤ α(G[S]) · ω(G[S]) for every vertex set S; and the perfect graph theorem conjectured by Berge, that a finite graph is perfect if and only if its complement is perfect. The proof follows Gasparian's linear-algebra argument. Mathlib has chromatic, clique and independence numbers but no perfect graphs.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/perfect-graphs",
+  "commit": "796922460172c4e51c39c96575d03957652c0bab",
+  "project_path": null,
+  "declarations": [
+    "PerfectGraphTheorem.isPerfect_iff_card_le",
+    "PerfectGraphTheorem.isPerfect_compl_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C17",
+      "05C15",
+      "05C69"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T02:39:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "796922460172c4e51c39c96575d03957652c0bab",
+        "fork_repository": "PalomarArchive/jtraverso--perfect-graphs--f01c6e39f696",
+        "source_repository": "jtraverso/perfect-graphs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ee6b9a28c1202ba9259276ea56931b977edc75d779a706a280d7a773d0e09c40"
+}

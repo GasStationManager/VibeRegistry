@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000019",
+  "version": 1,
+  "title": "Continuity of the phase transition for planar random-cluster and Potts models with 1 <= q <= 4 (Theorems 1, 2 and 3)",
+  "abstract": "A complete Lean 4 / Mathlib formalization of Theorems 1, 2 and 3 of Duminil-Copin, Sidoravicius and Tassion (arXiv:1505.04159v1). Theorem 3: for the random-cluster model on the square lattice with any real cluster weight q >= 1, at its critical point p_c, the following are equivalent: the origin lies in an infinite cluster with probability 0 under the wired measure; equality of the free and wired measures; infinite susceptibility of the free measure; sub-exponential decay of the free one-arm probability; and the RSW bound for free boundary conditions at distance n. Theorem 2: for 1 <= q <= 4 the wired measure at p_c gives probability 0 to the origin lying in an infinite cluster. Theorem 1: for the q-state Potts model with q = 2, 3, 4, the monochromatic Gibbs measure at beta_c gives its own colour at the origin probability exactly 1/q, so the phase transition is continuous. The critical points are the genuine phase-transition thresholds, whose existence the theorems assert; four further theorems prove that these critical points and the infinite-volume measures are unique; beyond this statement surface, the development also proves p_c = sqrt(q)/(1 + sqrt q) for every q >= 1 (PottsContinuity.BD12.isRCCriticalPoint_sqrt) and beta_c = log(1 + sqrt q) for every integer q >= 2 (PottsContinuity.Thm1.isPottsCriticalPoint_log_sqrt); these identifications are not checked by Comparator. The infinite-volume measures are limits along every exhaustion of the lattice, and their existence and uniqueness are proved. The external results that the paper cites and the proof uses (the value of p_c and the crossing estimates of Beffara-Duminil-Copin, the contour identity of the parafermionic observable in the form used in Section 4 of the paper, Theorem 4 of the paper, the Edwards-Sokal coupling, FKG and comparison inequalities, the domain Markov property, planar duality and topology) are proved here or taken from Mathlib; the Jordan-Schoenflies theorem and Brouwer's fixed-point theorem come from vendored libraries, and circle-degree and Jordan-curve facts from the Tau Ceti library. The only axioms are propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Zijie Zhuang"
+  ],
+  "repository": "https://github.com/zijie123123/PottsContinuity-lean",
+  "commit": "f458b1980a1a41ef5d7febc670fd16bdaadb48bf",
+  "project_path": null,
+  "declarations": [
+    "PottsContinuity.isPottsCriticalPoint_unique",
+    "PottsContinuity.isPottsInfiniteVolumeLimit_unique",
+    "PottsContinuity.isRCCriticalPoint_unique",
+    "PottsContinuity.isRCInfiniteVolumeLimit_unique",
+    "PottsContinuity.theorem_1",
+    "PottsContinuity.theorem_2",
+    "PottsContinuity.theorem_3"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math-ph"
+    ],
+    "msc2020": [
+      "82B20",
+      "82B26",
+      "82B43",
+      "60K35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T09:03:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f458b1980a1a41ef5d7febc670fd16bdaadb48bf",
+        "fork_repository": "PalomarArchive/zijie123123--PottsContinuity-lean--faa19bd318be",
+        "source_repository": "zijie123123/PottsContinuity-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:78e43329dfe77a897259bb6ea9b42f4f0c2f4c3eaa01b6691d81a846a330b1ab"
+}

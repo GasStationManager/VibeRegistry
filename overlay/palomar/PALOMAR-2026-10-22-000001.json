@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000001",
+  "version": 1,
+  "title": "The strong Choquet characterization of Polish spaces",
+  "abstract": "For every second-countable metrizable topological space, the second player has a winning full-history strong Choquet strategy if and only if the topology admits a complete metric, equivalently if and only if the space is Polish. Moves include a marked point which every response must retain. The difficult converse constructs a coherent countable response tree, proves the embedded image is Gδ, and transfers complete metrizability from the metric completion. Supporting results prove complete-metric winning strategies without second countability, complete metrizability of Gδ subsets of arbitrary complete metric spaces, actual legal-play existence and explicit empty-space behavior. This is classical mathematics; no novelty or priority is claimed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "f2ee17b609eec4788b85043f8ad504a63cd69d86",
+  "project_path": "topology/strong-choquet-polish",
+  "declarations": [
+    "StrongChoquet.exists_legalPlay",
+    "StrongChoquet.strong_of_isEmpty",
+    "StrongChoquet.strong_of_completeMetric",
+    "StrongChoquet.strong_of_completelyMetrizable",
+    "StrongChoquet.completelyMetrizable_iInter",
+    "StrongChoquet.completelyMetrizable_of_isGdelta",
+    "StrongChoquet.isGdelta_range_of_strong",
+    "StrongChoquet.completelyMetrizable_of_strong",
+    "StrongChoquet.strong_iff_completelyMetrizable",
+    "StrongChoquet.polish_iff_strong"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54E50",
+      "54E52",
+      "91A44"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T00:04:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f2ee17b609eec4788b85043f8ad504a63cd69d86",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1207b81e2c7b1c2e89c40a0d12385859117ab25dc2addeb4ce47367168d58fba"
+}

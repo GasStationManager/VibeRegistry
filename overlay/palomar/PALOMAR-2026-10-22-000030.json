@@ -1,0 +1,71 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000030",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000030",
+  "version": 1,
+  "title": "The least physical dimension of an inflation-symmetric model set, with the cubic, quartic and degree-12 inflations of x^3 - x - 1 and x^4 - x - 1",
+  "abstract": "Kernel-checked proofs, in Lean 4 + Mathlib, about cut-and-project schemes on a fixed integer lattice Z^iota invariant under an integer matrix A: splittings R^iota = E + H into A-invariant subspaces with Z^iota meeting H only in 0 and the projection of Z^iota to H dense in H, a window W in H (bounded, containing a relative ball), the model set Lambda(W) = {pi_E g : g in Z^iota, pi_H g in W}, and admissibility, some window with A Lambda(W) contained in Lambda(W) (inflation symmetry in Meyer's inclusion sense). The least physical dimension d(A) is the least dim E over admissible schemes. Thirteen compared theorems. (1) For every integer A, a scheme is admissible iff A is power-bounded on H; then the orbit window is a compact convex symmetric invariant window; the per-window criterion; and U(A) <= dim E, U(A) the number of eigenvalues of modulus > 1. (2) Kronecker's density criterion in cut-and-project form. (3) For every integer A with det A != 0, any chi_A: (a) d(A) is the sum over the distinct irreducible factors p of chi_A over Q of m_p u_p + c_p (m_p - r_1(p)), plus min(deg p, 2) when every root of p lies on the unit circle and r_1(p) = m_p, where m_p is the multiplicity, u_p and c_p count the roots of p of modulus > 1 and = 1, and r_1(p) = (2 dim ker p(A) - dim ker p(A)^2) / deg p (ranks over Q) is the number of Jordan blocks of size one at each root of p; (b) the value is an invariant of rational similarity; (c) the factors with all roots on the unit circle are the cyclotomic ones; and (d) for chi_A squarefree every invariant splitting is E = ker q_E(A), H = ker q_H(A) with chi_A = q_E q_H, it is admissible iff the roots of q_H lie in the closed unit disk and every irreducible rational factor of chi_A shares a root with q_E, and d(A) = U(A) + circleCount(A), counting 1 for each factor x - 1, x + 1 and 2 for each other cyclotomic factor, each with its multiplicity. (4) For det A != 0 and hyperbolic A, any chi_A and no diagonalizability: a scheme is admissible iff E contains the unstable set iff H lies in the stable set; an invariant splitting carries an admissible scheme iff E contains the unstable set; d(A) = U(A), attained only by the unstable/stable splitting. (5) For det A != 0, any chi_A: d(A) = 1 iff chi_A is irreducible with exactly one root of modulus > 1 (a real root, a Pisot or Salem number up to sign, or an integer on Z^1), or A = +-1 in any rank; in the irreducible case every admissible line is the eigenline. (6) If A^k = 1: every factor is cyclotomic and d = sum of min(deg p, 2) over the distinct factors; the same for chi_A squarefree with all roots on the unit circle; every integer matrix with chi_A = Phi_n, n >= 3 (multiplication by a primitive n-th root of unity), needs exactly a plane. (7) Jordan blocks on the circle: I_2 and the Jordan block J_2 both have chi = (x - 1)^2, for which the squarefree count of (3), with x - 1 counted twice, gives 2, but d = 1 and 2; 1 + J_2(1) and 1 + J_3(1) have d = 2 and 3. (8) Multiplication by rho, rho^-1, Q and theta = -Q^-1 = 1 - Q^3 on Z[rho] and Z[Q] (rho^3 = rho + 1, Q^4 = Q + 1): d = 1, 2, 3, 1. (9) On Z[rho] (x) Z[Q] (degree 12), multiplication by every alpha other than 0, +-1 is nonsingular (det != 0) and hyperbolic with d = U; for rho, theta, rho Q and Q the values are 4, 3, 5, 9. (10) rho and theta act on their unstable spaces as real scalars, and the spectral projection carries the quartic (resp. cubic) sector onto them with the Gram pairing GramRho (x) GramQ equal to that of GramQ (resp. GramRho), of types (3,1) and (2,1). (11) The scheme of Q on Z^4 with an interval window: a segment, an explicit Q-invariant model set in R^3, determinant -1/q' on E, non-real moduli, and the types (2,1) and (1,0) of the trace form on E and H. (12) A Salem witness, the companion of x^4 - x^3 - x^2 - x + 1: not hyperbolic, d = 1. (13) Every model set is a Delone set (Mathlib's Delone.DeloneSet) with uniformly discrete difference set. The mathematics of (1), (2), (4), (5) for irreducible chi_A, and (13), and of (6) for chi_A = Phi_n, is known in other formulations (Masakova-Mazac-Pelantova 2021; Kronecker, Pleasants 2000; Harriss-Koivusalo-Walton 2025, preprint; Meyer 1972, 1995; Lagarias 1999; Solomyak 2020; the classical cyclotomic model sets; Moody 1997); (1) and (4) are stated with no diagonalizability hypothesis. The scheme and model set of (11) are, in substance, instances of Masakova-Mazac-Pelantova Thm 13.1 and of Harriss-Koivusalo-Walton Section 3.4, and are not new. For squarefree chi_A the count of (3) also follows from the arguments of Masakova-Mazac-Pelantova (Lemma 5.1, Prop. 8.1(iii), Cor. 13.4), stated there for generic (aperiodic) schemes; the lattice-first least physical dimension was not found stated in the sources read (search completed 2026-10-20). Beyond the cited cases, the entry proves the least physical dimension for every nonsingular integer matrix (3), including what lies outside the diagonalizable class of Masakova-Mazac-Pelantova: a Jordan block of size >= 2 at an eigenvalue on the unit circle counts in full (the terms c_p (m_p - r_1(p)), which vanish for diagonalizable A), and at a cyclotomic factor with such a block the blocks of size one cost nothing, the internal space being tilted into the socle of the larger blocks; the witnesses are J_2, 1 + J_2(1) and 1 + J_3(1) (7). Every admissible scheme of an A with such a block at a root of unity has Z^iota meeting E in a nonzero vector. It also proves the characterization of every admissible splitting for squarefree chi_A ((3)(d)), non-generic splittings included (its necessity half is the injectivity argument of Masakova-Mazac-Pelantova, Lemma 5.1), and (1) for every integer matrix and (4) for every nonsingular hyperbolic integer matrix, with no diagonalizability hypothesis; for diagonalizable A and generic schemes, the uniqueness of the minimal scheme in (4) and of the minimal physical line in (5) is immediate from Masakova-Mazac-Pelantova, Cor. 13.4. For det A != 0 and squarefree chi_A with a factor Phi_n, n not in {1, 2, 3, 4, 6}, the minimal scheme is not unique, by (3)(d). The companion matrices are multiplication by rho and Q in the power bases by definition, so Crho^i (x) CQ^j is multiplication by rho^i Q^j in the product basis. That the rho^i Q^j are a Z-basis of the ring of integers of Q(rho, Q) is statement (8) of the author's registered entry PALOMAR-2026-10-21-000012 (stalex444/pdt-hermite-signature-compositum@5aa870e98236ba240561b798265c629df8c2d031); that GramRho, GramQ and GramRho (x) GramQ are the Gram matrices of the trace forms in these bases is statements (8), (9) and (19) of the author's registered entry PALOMAR-2026-09-02-000014, in which Q(rho) (x) Q(Q) is the field Q(rho, Q) (its (23)). These are cited, not compared. Application (cited, not a claim of the entry): In the author's Pisot Dimensional Theory, Q(rho) is the arithmetic of three-dimensional space and Q(Q) the arithmetic of four-dimensional spacetime, and their compositum K, whose integers are Z[rho] (x) Z[Q], is the parent of both (the author's registered entry PALOMAR-2026-10-21-000012 (stalex444/pdt-hermite-signature-compositum@5aa870e98236ba240561b798265c629df8c2d031), statements (7), (8)). A model set is the shadow of a lattice cut through a window, a standard mathematical model of a quasicrystal (Moody 2000). Read through the theory, this entry's theorems fix how many dimensions each of the theory's inflations needs to be the symmetry of one, and which ones.\nSpace inflates the parent through spacetime, and spacetime inflates it through space. On the parent's lattice the plastic inflation rho needs exactly four physical dimensions, and only one scheme attains four (4, 9). Those four are a copy of spacetime's: rho has a single expanding embedding in Q(rho), the real one, and the spectral projection maps the quartic sector onto them, carrying Z[Q] with its trace form unchanged, of Lorentzian type (3,1) (10). rho acts on them as a pure dilation by rho = 1.3247..., the same stretch in every direction (10). Symmetrically, the unit theta = -Q^-1 = 1 - Q^3 needs exactly three, and those three are a copy of space's: Q(rho)'s real space with its form of type (2,1) unchanged, dilated by t = -1/q' = 1.3803... (8, 9, 10). Taken over all three embeddings of Q(rho) instead of the one expanding embedding, the form on the quartic sector is tripled: the factor 3 of statement (13) of PALOMAR-2026-10-21-000012.\nThe clock needs one dimension; the ruler needs five. On Z[rho] the plastic inflation needs exactly one: the line, over a two-dimensional window at the complex place (8). The plastic substitution's control-point sets are regular model sets in this scheme, with Rauzy-fractal windows in C (Baake and Grimm 2020), and in the theory the line is time and its points are the ticks (PALOMAR-2026-08-19-000006, PALOMAR-2026-10-18-000019). The coupling ruler rho Q, which generates the parent field (Q(rho Q) = K; statement (15) of PALOMAR-2026-10-21-000012, where Z[rho Q] has index 53 in the integers; PALOMAR-2026-09-01-000005), needs exactly five, over a seven-dimensional window (9): one real and two complex expanding places, a dimension neither sector has.\nThe parent holds no circle, so every minimal scheme is forced. Off the parent, eigenvalues on the unit circle can change the count: a Salem inflation's circle eigendirections lie in the internal space and cost nothing, so it still needs only a line (5, 12), but multiplication by a primitive n-th root of unity, n >= 3, needs exactly a plane, and every element of finite order n >= 3 needs at least one (6). The parent has none. No element of K other than +-1 has a conjugate on the unit circle (statement (17) of PALOMAR-2026-10-21-000012), so every inflation of the parent by an element other than 0 and +-1 is hyperbolic, needs exactly as many dimensions as it has expanding embeddings (a complex place counts twice), and has a unique minimal scheme (4, 9).",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-inflation-model-set-dimension",
+  "commit": "c41d9d29f9c86fb0f849df79b03e713d3405a5eb",
+  "project_path": null,
+  "declarations": [
+    "ModelSetDimension.admissibility_criterion",
+    "ModelSetDimension.kronecker_density_criterion",
+    "ModelSetDimension.least_physical_dimension",
+    "ModelSetDimension.hyperbolic_case",
+    "ModelSetDimension.dimension_one_pisot_or_salem",
+    "ModelSetDimension.finite_order_case",
+    "ModelSetDimension.jordan_block_witnesses",
+    "ModelSetDimension.sector_rings",
+    "ModelSetDimension.compositum_lattice",
+    "ModelSetDimension.compositum_dilations",
+    "ModelSetDimension.quartic_model_set",
+    "ModelSetDimension.salem_witness",
+    "ModelSetDimension.modelSet_isMeyer"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.DS",
+      "math.NT",
+      "math-ph",
+      "gr-qc",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "52C23",
+      "37D20",
+      "11R06",
+      "11J71",
+      "11R04",
+      "15A21",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T11:57:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c41d9d29f9c86fb0f849df79b03e713d3405a5eb",
+        "fork_repository": "PalomarArchive/stalex444--pdt-inflation-model-set-dimension--6934a2b28ed6",
+        "source_repository": "stalex444/pdt-inflation-model-set-dimension"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b4dba6ea60d2b33e719eb0b6fd30f7e4293bd43c183f79f3be07e471f7a6ed97"
+}

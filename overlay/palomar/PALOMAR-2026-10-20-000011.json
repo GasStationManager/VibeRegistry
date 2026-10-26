@@ -1,0 +1,70 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000011",
+  "version": 1,
+  "title": "Normalizers of congruence subgroups at mixed level: Γ_{H₁}(N₁) ∩ Γ_{H₂}(N₂)",
+  "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, about the normalizer in SL₂(ℝ) of Γ = Γ_{H₁}(N₁) ∩ Γ_{H₂}(N₂) for coprime N₁ and N₂, the group of the fibre product X_{H₁} ×_{X(1)} X_{H₂}, where H₁ ≤ SL₂(ℤ/N₁) is such that, at every p ∣ N₁, H₁ mod p fixes no line or H₁ mod p^{v_p(N₁)} lies in a split Cartan subgroup, and H₂ ≤ SL₂(ℤ/N₂) is arbitrary. Nor(Γ) ≤ Nor(Γ_{H₂}(N₂)); an element (det m)^{−1/2}·m of Nor(Γ_{H₂}(N₂)) normalizes Γ iff m mod N₁ normalizes H₁; and |Nor(Γ)/Γ| is [N(H₁) : H₁] times the number of classes of Nor(Γ_{H₂})/Γ_{H₂} whose determinant mod N₁ is the determinant of an element of the normalizer of H₁ in GL₂(ℤ/N₁). Explicit forms follow for Γ_Δ(N₂) (the class of an Atkin–Lehner involution w_Q contains an element of Nor(Γ) iff Q mod N₁ is such a determinant) and for H₂ of prime level fixing exactly one line; corollaries for Γ(N₁), Γ_ns⁺(p) and Γ_sp⁺(p); and an example: for the quaternion group Q₈ ≤ SL₂(F₇), the determinants are the squares, and Γ_{Q₈}(7) ∩ Γ₀(3) has 6 modular automorphisms, not 12, because the Fricke involution of X₀(3) does not lift. 18 theorems, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Filip Najman"
+  ],
+  "repository": "https://github.com/F-Najman/normalizer-lean",
+  "commit": "ced09d036011ea091d0f2a4acb681cf2a43dbb7e",
+  "project_path": null,
+  "declarations": [
+    "NormalizerLean.isUnit_det_of_mem_normG_inf",
+    "NormalizerLean.normG_inf_le",
+    "NormalizerLean.mem_normG_inf_iff",
+    "NormalizerLean.normG_inf_inf_eq",
+    "NormalizerLean.relIndex_inf_normG",
+    "NormalizerLean.exists_mul_mem_normG_inf_iff",
+    "NormalizerLean.card_BG_inf",
+    "NormalizerLean.card_BG_inf_of_isNormDet",
+    "NormalizerLean.card_BG_inf_GammaDelta",
+    "NormalizerLean.card_BG_inf_prime_unique",
+    "NormalizerLean.card_BG_inf_prime_unique_of_not",
+    "NormalizerLean.card_BG_Gamma_inf",
+    "NormalizerLean.card_BG_GammaNsPlus_inf",
+    "NormalizerLean.card_BG_GammaSpPlus_inf",
+    "NormalizerLean.isNormDet_Q8mod7_iff",
+    "NormalizerLean.card_BG_Q8mod7",
+    "NormalizerLean.card_BG_Q8mod7_inf_two",
+    "NormalizerLean.card_BG_Q8mod7_inf_three"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.GR"
+    ],
+    "msc2020": [
+      "11F06",
+      "20H05",
+      "14G35",
+      "14H37",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T05:49:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ced09d036011ea091d0f2a4acb681cf2a43dbb7e",
+        "fork_repository": "PalomarArchive/F-Najman--normalizer-lean--cf363e35e356",
+        "source_repository": "F-Najman/normalizer-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fc8d7019fb6af6e7a5295158780ff27f312f6ae3e51d921bd25f53df9901e06e"
+}

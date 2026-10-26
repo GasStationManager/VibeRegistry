@@ -1,0 +1,86 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000012",
+  "version": 1,
+  "title": "Kuhn poker: the value −1/18, all optimal strategies, and the solution at every ante and bet",
+  "abstract": "A Lean 4 development of Kuhn's simplified two-person poker (Kuhn 1950): three cards 1 < 2 < 3, one dealt to each player with the six deals equiprobable, an ante of a from each player and a single bet of b, player I acting first, the five courses of play of Kuhn's p. 98 with payoffs a (pass-pass, to the higher card), a to II (pass-bet-pass), a + b to the higher card (pass-bet-bet), a to I (bet-pass) and a + b to the higher card (bet-bet). The definitions are built from the game tree: a behaviour strategy of I is a pair of functions on the three cards (the probability of betting first, the probability of calling after passing and facing a bet), one of II likewise (the probability of betting after a pass, the probability of calling a bet); the payoff is the average over the six deals; a strategy guarantees v when it is valid and earns at least v (holds the opponent to at most v) against every valid strategy of the opponent; the game has value v when each player has a strategy guaranteeing v; an equilibrium is a saddle point. For Kuhn's game a = b = 1, kernel-checked: the value is -1/18 (a game has at most one value), an equilibrium exists, every equilibrium pays I exactly -1/18, and a pair is an equilibrium iff each strategy guarantees -1/18; II's optimal strategy is unique at all six information sets (bet after a pass with the 1, 2, 3 with probabilities 1/3, 0, 1; call with probabilities 0, 1/3, 1 - Kuhn's (xi, eta) = (1/3, 1/3) with the four coordinates he removed as superfluous now proved forced); I's optimal strategies are exactly Kuhn's one-parameter family (bet the 1 with probability alpha and fold it, never bet the 2 first and call with it with probability alpha + 1/3, bet the 3 with probability 3 alpha and call with it, for alpha in [0, 1/3], the call with the 3 being unconstrained exactly when 3 alpha = 1, where that information set is unreached); in the normal form with Kuhn's coding of the 27 and 64 pure strategies, his essential 8 x 4 matrix is six times the game matrix, his twelve basic optimal mixed strategies (A)-(L) and II's two guarantee -1/18, and a mixed strategy is optimal iff its realization plan lies on the family (I) or its marginals are II's strategy (II). For every ante a > 0 and bet b > 0 (Kuhn's pp. 102-103, stated there without proof, and the region b > 2a he does not state): the value is -b^2/(6(2a + b)) for b <= a, -b(2a - b)/(6(2a + b)) for a <= b <= 2a and 0 for b >= 2a, with explicit guaranteeing strategies in each case; in Case 3 the calling probability eta with the 2 ranges over [(2a - b)/(2a + b), b/(2a + b)], and the interval printed on p. 102, b/(2a + b) <= eta <= (a + b)/(2a + b), fails at its upper end (at a = 2, b = 3 and eta = 5/7 II's Case 3 strategy does not guarantee the value). Every guarantee is a finite nonnegative-product identity (the gap between the payoff and the value is a sum of products of the opponent's probabilities and their complements with coefficients nonnegative on the case's region: polynomials in a, b and the free parameter, at general stakes built from a, b, 2a + b, a - b, 2a - b, 4a - b, b - 2a and the interval factors (2a + b)eta - (2a - b), b - (2a + b)eta, 2(a - b) - (2a + b)xi, and, in the optimal-set theorems, the slacks of their stated inequalities), and every \"only if\" is a linear certificate from finitely many pure strategies (the coefficients rationals at a = b = 1 and, at general stakes, polynomials in a, b and the free parameter nonnegative on the case's region); no formal library found by the dated search holds the game. Beyond Kuhn's statements: the two certificate identities are stated as theorems; the equilibria of Kuhn's game are exactly the pairs (kuhnI α k, kuhnII) with α in [0, 1/3], k in [0, 1] and 3α = 1 or k = 1; and at general stakes the optimal sets are determined - I's strategy is unique for b < a (up to the unreached call with the 3) and for a < b <= 2a, is Kuhn's family on the diagonal b = a at every scale, and for b >= 2a never bets the 1 or the 2 first, folds them, and with the 3 is cut out by one inequality (a single strategy at b = 2a; beyond it a two-dimensional set in which I may also bet the 3 first, with probability at most (b - 2a)/b), so Kuhn's one-parameter family is optimal only at b = a; II's strategy is unique on the diagonal at every scale and a segment for b <= a (the bet with the 2 after a pass free in [0, 2(a - b)/(2a + b)], so Kuhn's 'unique optimal mode of behavior' in Case 1 holds in his behaviour parameters only); for a <= b < 2a its bets after a pass are forced, (b/(2a + b), 0, 1), and its calls form a polytope of three inequalities; for b > 2a it never bets the 1 or the 2 after a pass, never calls with them, and calls with the 3 with probability at least 4a/(2a + b), its bet with the 3 free; and on the line b = 2a its optimal set is a five-dimensional polytope (the bet with the 2 after a pass zero and, with bets (p, 0, r) and calls (s, t, w), 2p <= r, s + t <= p, 1 <= t + w, 1 + p + s <= 2w; nine vertices, replayed); at every ante a > 0 and bet b > 0 every equilibrium pays the value and a pair is an equilibrium iff each strategy guarantees it, so the equilibria are exactly the pairs of optimal strategies, on b = 2a explicitly; the corrected Case 3 interval is sharp, and the printed one holds only at its lower end. A second correction, a misprint, is noted in the documentation: p. 101's table gives β = 5/12 for (I) and (J), where p. 100's mixtures and p. 101's own formula give 7/12.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/kuhn-poker-lean",
+  "commit": "352a870a3702229cd6823966940dbd8a92fb281b",
+  "project_path": null,
+  "declarations": [
+    "KuhnPoker.hasValue_one_one",
+    "KuhnPoker.hasValue_unique",
+    "KuhnPoker.exists_isEquilibrium",
+    "KuhnPoker.payoff_of_isEquilibrium",
+    "KuhnPoker.isEquilibrium_iff",
+    "KuhnPoker.guarantees₂_iff",
+    "KuhnPoker.guarantees₁_iff",
+    "KuhnPoker.essentialMatrix_eq",
+    "KuhnPoker.basic₁_guarantees",
+    "KuhnPoker.basic₂_guarantees",
+    "KuhnPoker.hasMixedValue",
+    "KuhnPoker.guaranteesMixed₁_iff",
+    "KuhnPoker.guaranteesMixed₂_iff",
+    "KuhnPoker.hasValue_general",
+    "KuhnPoker.kuhnValue_one_one",
+    "KuhnPoker.guarantees_case_one",
+    "KuhnPoker.guarantees_case_three",
+    "KuhnPoker.guarantees_case_four",
+    "KuhnPoker.upper_certificate",
+    "KuhnPoker.lower_certificate",
+    "KuhnPoker.isEquilibrium_iff_explicit",
+    "KuhnPoker.case_one_I_unique",
+    "KuhnPoker.case_one_II_iff",
+    "KuhnPoker.diagonal_II_unique",
+    "KuhnPoker.diagonal_I_iff",
+    "KuhnPoker.case_three_I_unique",
+    "KuhnPoker.case_three_II_iff",
+    "KuhnPoker.case_three_II_set",
+    "KuhnPoker.case_three_printed_interval",
+    "KuhnPoker.case_three_printed_upper_end_fails",
+    "KuhnPoker.case_four_I_iff",
+    "KuhnPoker.case_four_II_iff",
+    "KuhnPoker.boundary_II_certificate",
+    "KuhnPoker.boundary_II_iff",
+    "KuhnPoker.payoff_of_isEquilibrium_general",
+    "KuhnPoker.isEquilibrium_general_iff",
+    "KuhnPoker.boundary_isEquilibrium_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.GT"
+    ],
+    "msc2020": [
+      "91A05",
+      "91A18",
+      "91A60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T08:58:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "352a870a3702229cd6823966940dbd8a92fb281b",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--kuhn-poker-lean--d0abc54be31f",
+        "source_repository": "JD-Jones-ASES/kuhn-poker-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9105280a113b43716b6e0682601719407e8b2c52e0f731fb37bd110059d30e41"
+}

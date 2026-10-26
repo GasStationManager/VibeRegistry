@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000036",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000036",
+  "version": 1,
+  "title": "Cubic-rate irrationality for reciprocal sums",
+  "abstract": "Every positive strictly increasing zero-indexed integer sequence a with n^3(a_n^2/a_(n+1) - 1 - 3/n) tending to zero has an irrational reciprocal sum. The entry also states the exact integer-tail and number-field steps used to exclude the resulting cubic profile: positive-density exceptions, primitive gcd reduction, square specialisation, scale twelve, forbidden words modulo seven, and regular-rate extraction. The printed one-indexed paper theorem uses its stated finite-prefix argument. The separate bounded-increment Sylvester criterion in the paper is outside this configuration, and the unrestricted Erdős problem #243 remains open. The selected Challenge explicitly retains the strict monotonicity and positivity of a, the HasSum witness for its reciprocal series, and the n³-scaled rate limit. It does not silently infer that rate from the weaker condition a_(n+1)/a_n² → 1.",
+  "authors": [
+    "Will Cook"
+  ],
+  "repository": "https://github.com/wcook04/plectis-erdos-lean",
+  "commit": "eb6cd7ceae9ff5c5bceeb514cac749c30861d8c6",
+  "project_path": null,
+  "declarations": [
+    "PalomarCorpus.E243.CompletePaperRecords.fixed_offsets_periodic_lowerDensity",
+    "PalomarCorpus.E243.PaperStatementsA.cubic_profile_gcd_stabilisation_and_primitive_shape",
+    "PalomarCorpus.E243.PaperStatementsA.primitive_zero_density_paper_multiplier_lemma",
+    "PalomarCorpus.E243.PaperStatementsG.regular_rate_extraction",
+    "PalomarCorpus.E243.PaperStatementsL.canonical_tail_ratio_quantitative",
+    "PalomarCorpus.E243.PaperStatementsN.regular_rate_extraction_cubic",
+    "PalomarCorpus.E243.PaperStatementsP.scale_twelve_of_square_in_rootField",
+    "PalomarCorpus.E243.PaperStructuresAC.cubic_exclusion_unconditional",
+    "PalomarCorpus.E243.PaperStructuresAC.cubic_rate_irrationality_unconditional",
+    "PalomarCorpus.E243.PaperStructuresAC.squareSpecialisation",
+    "PalomarCorpus.E243.PaperStructuresAC.transport_square_unconditional",
+    "PalomarCorpus.E243.PaperStructuresAD.minus_one_forbidden_word",
+    "PalomarCorpus.E243.PaperStructuresAD.plus_one_forbidden_word"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11B83",
+      "11R11"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T15:50:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "eb6cd7ceae9ff5c5bceeb514cac749c30861d8c6",
+        "fork_repository": "PalomarArchive/wcook04--plectis-erdos-lean--26c7e2ff36da",
+        "source_repository": "wcook04/plectis-erdos-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f1a515d3264ecf0a6e3879064458846b4dbc9c1432d74fb9535f0b8b64f401c0"
+}

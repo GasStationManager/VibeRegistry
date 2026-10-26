@@ -1,11 +1,11 @@
 # Sign-off packet — Lean Statistical Learning Theory
 
-*Generated 2026-10-19 08:24 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-10-26 08:25 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `stat-learning`
 - **Upstream**: https://github.com/YuanheZ/lean-stat-learning-theory @ `7b82b1323c80`
 - **Lean**: leanprover/lean4:v4.27.0-rc1
-- **Machine checks**: comparator, nanoda — overall **fail** at 2026-10-18T07:02:44Z
+- **Machine checks**: comparator, nanoda — overall **fail** at 2026-10-25T07:21:57Z
 - **Informal statements**: none adopted yet — run `python3 scripts/fetch_blueprint_statements.py entries/stat-learning.toml`
 
 ## What you are attesting

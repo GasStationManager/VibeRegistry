@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000003",
+  "version": 1,
+  "title": "Sierpiński's characterization of the rationals",
+  "abstract": "Every nonempty countable metrizable topological space without isolated points is homeomorphic to the rational numbers with their usual topology. Conversely, these four properties characterize spaces homeomorphic to the rationals. A clopen basis is derived from the hypotheses. Scheduled binary clopen splits give each point an address with both bits arbitrarily far out; the induced lexicographic order is proved dense, without endpoints, and to generate exactly the original topology. The countable dense-order isomorphism theorem then gives the homeomorphism. This formalizes classical mathematics; no mathematical novelty or priority claim is made.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "d33817461fadbe8d7498a237b0c5bc27dc044afb",
+  "project_path": "topology/sierpinski-rationals",
+  "declarations": [
+    "SierpinskiRationals.countable_hasClopenBasis",
+    "SierpinskiRationals.exists_binary_scheme",
+    "SierpinskiRationals.BinaryScheme.code_has_both_bits",
+    "SierpinskiRationals.BinaryScheme.codeOrder_topology",
+    "SierpinskiRationals.nonempty_homeomorph",
+    "SierpinskiRationals.nonempty_homeomorph_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54F65",
+      "54E35",
+      "06A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T03:59:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d33817461fadbe8d7498a237b0c5bc27dc044afb",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4d9fcfa2fc2e3eea2779bd9a8dfcb5fa05cf7fe14fdaf52475ee9531ba66747b"
+}

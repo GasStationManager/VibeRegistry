@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000018",
+  "version": 1,
+  "title": "Erdős #257: irrationality for every reciprocal-summable support and every integer base",
+  "abstract": "For every infinite set A of exponents whose reciprocal sum converges and every integer base b at least two, the series with terms 1/(b^a - 1) supported on A is irrational. The theorem settles the whole reciprocal-summable support regime at once and uniformly in the base, with no pairwise-coprimality, periodicity, density or powerful-support hypothesis, and with the zero exponent normalised to zero by real division. Any counterexample to the universal Erdős Problem 257 must therefore be supported on a set whose reciprocal sum diverges. The mechanism produces close returns of shifted binary support atoms from an LCM-prefix orbit-mean argument, transfers them to every radix through a uniform pointwise inequality bounding the base-b atom displacement by twice the binary one, and closes with an exact radix integer orbit. Erdős proved the pairwise-coprime case at base two and stated that pairwise coprimality can be removed by a more complicated argument without printing that argument; the base-two proof here is an independent reconstruction, the passage to every integer base is a local strengthening, and no theorem-priority claim is made and no identification with Erdős's omitted argument is asserted. The audience is analytic number theorists working on irrationality of Mersenne-type reciprocal subseries. Reciprocal-divergent supports are untouched, so the universal Erdős Problem 257 remains open.",
+  "authors": [
+    "Will Cook"
+  ],
+  "repository": "https://github.com/wcook04/plectis-erdos-lean",
+  "commit": "c39cea6a976747d132a848d26f110b9c608d5a45",
+  "project_path": null,
+  "declarations": [
+    "Erdos249257.ExternalVerification257ReciprocalSupport.irrational_supportPowerSeries_of_summable_reciprocal"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T14:53:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c39cea6a976747d132a848d26f110b9c608d5a45",
+        "fork_repository": "PalomarArchive/wcook04--plectis-erdos-lean--26c7e2ff36da",
+        "source_repository": "wcook04/plectis-erdos-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3089883b43043e7c09bc4478d45ac016c934666aab3aba1e0619f2bb06a61cc6"
+}

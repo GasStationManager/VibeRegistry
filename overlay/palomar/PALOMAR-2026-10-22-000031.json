@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000031",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000031",
+  "version": 1,
+  "title": "Sum of sets in several dimensions",
+  "abstract": "Lean 4 formalization of Ruzsa's lower bound for sumsets in ℝ^D: if A and B are finite sets with B nonempty and |B| ≤ |A|, and A + B has affine dimension d, then |A + B| ≥ |A| + Σ_{t=1}^{|B|-1} min(d, |A| - t). For d ≥ 1 and |A| ≥ d + 1 the bound is attained in ℝ^d. The closed form |A + B| ≥ |A| + d|B| - d(d+1)/2, the asymmetric form of Freiman's lemma, is derived from the bound, and so is the bound 2κ - 1, for a real κ, on the Freiman dimension of a set X with |X + X| ≤ κ|X|.",
+  "authors": [
+    "Gabriel Dahia"
+  ],
+  "repository": "https://github.com/gdahia/SumOfSetsInSeveralDimensions",
+  "commit": "1f8da867debcce675e07cac515ea9598c1245a92",
+  "project_path": null,
+  "declarations": [
+    "SumOfSetsInSeveralDimensions.card_add_sum_min_le_card_add_of_finrank_span_sub_eq'",
+    "SumOfSetsInSeveralDimensions.card_add_mul_card_le_card_add_add_of_le_finrank_span_sub'",
+    "SumOfSetsInSeveralDimensions.sInf_card_add_eq_add_sum_min'",
+    "SumOfSetsInSeveralDimensions.sInf_card_add_of_finrank_span_sub_right_eq_add_sum_min'",
+    "SumOfSetsInSeveralDimensions.card_add_sum_min_le_card_add_of_isAddFreimanIso_of_finrank_span_sub_eq'",
+    "SumOfSetsInSeveralDimensions.le_two_mul_sub_one_of_isAddFreimanIso_of_finrank_span_sub_eq'"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P70",
+      "11B13",
+      "11B75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T12:07:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1f8da867debcce675e07cac515ea9598c1245a92",
+        "fork_repository": "PalomarArchive/gdahia--SumOfSetsInSeveralDimensions--b6eb5931139c",
+        "source_repository": "gdahia/SumOfSetsInSeveralDimensions"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e3d3a91fce88dc156635263069cf5fe96182c85d4a95d46c644a25eac5a0fcc9"
+}

@@ -1,0 +1,72 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000007",
+  "version": 1,
+  "title": "The normalizer of Γ_Δ(N) for every N and every Δ",
+  "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, about the normalizer in SL₂(ℝ) of Γ_Δ(N) for every N ≥ 1 and every subgroup Δ ≤ (ℤ/N)ˣ, with or without −1. Let h* be the largest h with h² ∣ N, d² ≡ 1 (mod h) for every d ∈ Δ, and Δ ⊇ ker((ℤ/N)ˣ → (ℤ/(N/h))ˣ); let n* = N/h*² and D* = diag(h*, 1). Then D*⁻¹Γ₀(n*)D* ≤ Nor(Γ_Δ(N)) ≤ D*⁻¹Γ₀(n*)⁺D*; an Atkin–Lehner element w_Q of level n* (conjugated by D*) normalizes Γ_Δ(N) iff ι*_Q(Δ̄) = Δ̄, where ι*_Q inverts the components of (ℤ/(N/h*))ˣ at the primes of Q; so Nor(Γ_Δ(N)) is described exactly, its index over Γ_Δ(N) is [(ℤ/N)ˣ : Δ]·ψ(N)/ψ(n*)·#{Q ∥ n* : ι*_Q(Δ̄) = Δ̄}, and Nor(Γ_Δ(N)) ≤ Nor(Γ₀(N)) iff h* ∣ h(N). This is Zemel's determination of these normalizers, restated in closed form. 20 theorems, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Filip Najman"
+  ],
+  "repository": "https://github.com/F-Najman/normalizer-lean",
+  "commit": "a077781321ca0d52ba3a972a42e081f30534c4d2",
+  "project_path": null,
+  "declarations": [
+    "NormalizerLean.isHStar_one",
+    "NormalizerLean.isHStar_hStar",
+    "NormalizerLean.dvd_hStar",
+    "NormalizerLean.hStar_dvd_hDelta",
+    "NormalizerLean.hStar_top",
+    "NormalizerLean.hStar_pmOne",
+    "NormalizerLean.hStar_pmOne_four",
+    "NormalizerLean.hStar_deltaPm_sq",
+    "NormalizerLean.Gamma0Star_le_normG",
+    "NormalizerLean.Gamma0R_le_Gamma0Star",
+    "NormalizerLean.normG_le_MStar",
+    "NormalizerLean.MStar_le_MDelta",
+    "NormalizerLean.isIotaStable_one",
+    "NormalizerLean.conj_mem_normG_iff",
+    "NormalizerLean.mem_normG_GammaDeltaR_iff",
+    "NormalizerLean.card_BG_GammaDeltaR_hStar",
+    "NormalizerLean.wStar_eq_sIota",
+    "NormalizerLean.normG_GammaDeltaR_le_Norm0_iff",
+    "NormalizerLean.card_BG_GammaDeltaR_50",
+    "NormalizerLean.card_BG_GammaDeltaR_4_bot"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.GR"
+    ],
+    "msc2020": [
+      "11F06",
+      "20H05",
+      "14G35",
+      "14H37",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T03:23:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a077781321ca0d52ba3a972a42e081f30534c4d2",
+        "fork_repository": "PalomarArchive/F-Najman--normalizer-lean--cf363e35e356",
+        "source_repository": "F-Najman/normalizer-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:20c9c7e24b3888a626a3eb2ededbb98fd558b46074bc65566db53da14cd57d97"
+}

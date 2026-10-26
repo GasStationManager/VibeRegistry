@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000018",
+  "version": 1,
+  "title": "Lavrentieff's Gδ homeomorphism extension theorem",
+  "abstract": "Every homeomorphism between arbitrary subsets of completely metrizable spaces extends to a homeomorphism between Gδ supersets contained in the respective closures. Empty subsets and ambient spaces are included. A zero-oscillation construction first gives a Gδ continuous extension domain for maps to complete metric spaces. Restricting the two continuous extensions gives mutually inverse maps. The arbitrary supplied topologies are preserved by compatible complete metrics. Classical mathematics, with no mathematical novelty or priority claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "a8c08adf51ec122bff60955a260a3b2f772ea0ac",
+  "project_path": "topology/lavrentieff-extension",
+  "declarations": [
+    "Lavrentieff.extensionDomain_isGδ",
+    "Lavrentieff.subset_extensionDomain",
+    "Lavrentieff.cauchy_at_extensionDomain",
+    "Lavrentieff.continuous_extension",
+    "Lavrentieff.isGδ_inter_preimage",
+    "Lavrentieff.extend_inverse_maps",
+    "Lavrentieff.homeomorph_extension",
+    "Lavrentieff.completely_metrizable_extension"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54C20",
+      "54E50",
+      "54H05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T20:31:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a8c08adf51ec122bff60955a260a3b2f772ea0ac",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5a4bd6bf7fa83d93c75a4bbaa86d53016b2fbdcc1a0772e0d17d434b69346cb2"
+}

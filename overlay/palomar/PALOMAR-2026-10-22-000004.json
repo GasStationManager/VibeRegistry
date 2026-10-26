@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000004",
+  "version": 1,
+  "title": "The 50-color theorem for t-perfect graphs",
+  "abstract": "A Lean proof that every finite t-perfect graph is 50-colorable. Here t-perfection means equality between the stable set polytope and the polytope described by coordinate, edge, and odd-cycle inequalities.",
+  "authors": [
+    "Sang-il Oum"
+  ],
+  "repository": "https://github.com/sangiloum/t-perfect-graph-50",
+  "commit": "6301e85869f500458f9ca8cbf76391aab238fea5",
+  "project_path": null,
+  "declarations": [
+    "TPerfect.Palomar.fiftyColor"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C17"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T02:51:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6301e85869f500458f9ca8cbf76391aab238fea5",
+        "fork_repository": "PalomarArchive/sangiloum--t-perfect-graph-50--e081d6d70d64",
+        "source_repository": "sangiloum/t-perfect-graph-50"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9ef88791ad30ef25095ff5d49b009674e232e85822b82bfcc6a819e778273bc6"
+}

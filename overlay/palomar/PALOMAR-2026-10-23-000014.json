@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000014",
+  "version": 1,
+  "title": "Erdős Problem 1063: a lower bound for n_k and the structure of the exceptional index",
+  "abstract": "For k ≥ 2 let n_k be the least n ≥ 2k such that n − i divides the binomial coefficient C(n, k) for all but exactly one 0 ≤ i < k (Erdős Problem 1063; Erdős and Selfridge 1983; OEIS A389360; Guy's Unsolved Problems in Number Theory, B31). Using the definition of n_k from google-deepmind/formal-conjectures verbatim, this project proves two results in Lean 4 with Mathlib. (1) For every k ≥ 2, n_k ≥ W'_k = ∏_{p^a ∥ k} p^(a + ⌊log_p(k − 1)⌋); the bound is attained in the sense that n_k − i₀ = W'_k for k = 4, 6, 14. (2) If n ≥ 2k, e < k, and every n − i with 0 ≤ i < k, i ≠ e, divides C(n, k), then e = n mod k and D(k, e) = ∏_{p^a ∥ k} p^(a + v_p(C(k − 1, e)) + ⌊log_p max(e, k − 1 − e)⌋) divides n − e. Result (2) was proved informally by the user rickyc in the erdosproblems.com discussion thread for the problem. It is the structural input of the exhaustive searches that extend the OEIS table (by jbell31 for 60 ≤ k ≤ 75, and by the author for k up to 140): an admissible n with exceptional index e must lie in the residue class e modulo D(k, e). This formalization makes the minimality of those computed values depend only on verified mathematics and on the search code; jbell31 had noted in the thread that a Lean proof of this divisibility would close that gap. formal-conjectures records upper bounds and small values of n_k but no general lower bound. The development also proves the Erdős–Selfridge observation and that Cambie's number k · lcm(1, …, k − 1) is admissible, so the lower bound holds for every k ≥ 2 without further assumptions.",
+  "authors": [
+    "Paul Lee"
+  ],
+  "repository": "https://github.com/Paulee314/erdos1063-lean",
+  "commit": "ba104cbcf0bb7c555a8b2f0d58018989a08c638e",
+  "project_path": null,
+  "declarations": [
+    "Erdos1063.erdos_1063.variants.lower_bound",
+    "Erdos1063.erdos_1063.variants.exception_dvd"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B65",
+      "11A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T19:23:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ba104cbcf0bb7c555a8b2f0d58018989a08c638e",
+        "fork_repository": "PalomarArchive/Paulee314--erdos1063-lean--51246827a056",
+        "source_repository": "Paulee314/erdos1063-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d5a5ca4599466fc9151fbd73cfe4d17d6571e0eeb5c888250277bcdbfe41ab34"
+}

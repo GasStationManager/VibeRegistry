@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000015",
+  "version": 1,
+  "title": "RamanujanNestedRadicals: convergence and exact values of Ramanujan-type nested radicals",
+  "abstract": "Lean 4 / Mathlib formalization of the results of the author's paper \"Nested Radicals of Ramanujan's Type with Arbitrary Coefficient Sequences\" (Flamandzki, 2026). For a coefficient sequence a : N -> R, the radical of depth d is built by the recursion R_k = sqrt(1 + a_k R_{k+1}) from a seed; `Submission.rollUp a T d` is the depth-d truncation with seed T and `Submission.truncRadical a d` uses the seed 1. For a root order n >= 2 the square root is replaced by the n-th root (`Submission.rollUpN`) and, for the classical unbounded family, by the signed recursion with radicand (-1)^n + a_k R_{k+1} (`Submission.rollUpNS`), whose coefficients are a_k = altSum n (N + k - 1) for the alternating polynomial altSum n x = x^(n-1) - x^(n-2) + ... +- 1. Four statements are submitted: (1) for real N >= 2 and a_k = N + k - 2 the square-root truncations converge to exactly N (for N = 3 this is Ramanujan's radical; the statement is known, see the sources, and is the base case); (2) for every root order n >= 2, both parities, the truncations of the signed family converge to exactly N, which is not treated in the sources listed below (the only place where parity enters is the sign (-1)^n); (3) an arbitrary-profile theorem: if R_k >= 1 and the coefficients are the ones for which R satisfies the recursion exactly, R_k^n = 1 + a_k R_{k+1}, then the depth-d truncation with seed 1 satisfies 0 <= R_1 - T_d <= R_1 prod_{j<d} (1 - 1/R_j), and it converges to exactly R_1 whenever the sum of 1/R_k diverges (it contains every constant profile and the classical family for every even n, with an explicit rate; it is not stated in version 2 of the paper; version 3 states it). The development (`RamanujanNested/`, 24 modules) contains further results that are not advertised in `Challenge.lean`: boundedness and monotonicity, controlled negative coefficients, the inverse construction, the closed-form identity chain for every n, the constant-coefficient exact-target radical for every n, an oscillatory family, and existence of a limit for linear and prime coefficient families at every root order. The paper's numerical tables, algorithms as running code, and informal discussion are not formalized. Zero sorries; depends only on the three standard Lean axioms.",
+  "authors": [
+    "Artur Flamandzki"
+  ],
+  "repository": "https://github.com/Flaman55/RamanujanNestedRadicals",
+  "commit": "2b932baf2e72426583ef47a1bb23b4458879e959",
+  "project_path": null,
+  "declarations": [
+    "Submission.truncRadical_classical_tendsto",
+    "Submission.truncRadicalNS_tendsto",
+    "Submission.rollUpN_profile_gap",
+    "Submission.rollUpN_profile_tendsto"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.NT"
+    ],
+    "msc2020": [
+      "40A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T06:41:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2b932baf2e72426583ef47a1bb23b4458879e959",
+        "fork_repository": "PalomarArchive/Flaman55--RamanujanNestedRadicals--2d1f8fc5c68d",
+        "source_repository": "Flaman55/RamanujanNestedRadicals"
+      }
+    ]
+  },
+  "statement_hash": "sha256:36410c570b42e2e12fc07eed617743d8b2e0fdecaa993e8e20266061fa7d0ff0"
+}

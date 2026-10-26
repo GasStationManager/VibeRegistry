@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000019",
+  "version": 1,
+  "title": "Bergman projection weak type constants",
+  "abstract": "A Lean formalization of weak type (1,1) constants for the Bergman projection and its positive-kernel counterpart on the unit disk. The proved results are the sharp unweighted constants, weighted positive-kernel constants, and upper and lower weighted bounds for the complex projection. A further theorem characterizes Euclidean disks among bounded simply connected open regions using their reproducing Bergman kernels, without boundary regularity assumptions. All seven main comparison targets are proved using only the standard permitted Lean axioms.",
+  "authors": [
+    "Yongxi Lin"
+  ],
+  "repository": "https://github.com/CoolRmal/bergman-weak-type",
+  "commit": "600df3646a6070299e831b565a3be0585483ee2c",
+  "project_path": null,
+  "declarations": [
+    "BergmanWeakType.projection_constant_eq_one",
+    "BergmanWeakType.positiveProjection_constant_eq_one",
+    "BergmanWeakType.weightedPositiveProjection_constant_eq",
+    "BergmanWeakType.one_le_weightedProjection_constant",
+    "BergmanWeakType.weightedProjection_constant_le",
+    "BergmanWeakType.boundaryConstant_le_weightedProjection_constant",
+    "BergmanWeakType.positive_constant_eq_one_iff_disk"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV",
+      "math.FA"
+    ],
+    "msc2020": [
+      "30H20",
+      "42B35",
+      "47B38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T16:56:53Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "600df3646a6070299e831b565a3be0585483ee2c",
+        "fork_repository": "PalomarArchive/CoolRmal--bergman-weak-type--ec67cb3168c4",
+        "source_repository": "CoolRmal/bergman-weak-type"
+      }
+    ]
+  },
+  "statement_hash": "sha256:76c627fe384fd1868be933f8d1a8a0529ac7abea2939e9efb5634cfa9836aeae"
+}

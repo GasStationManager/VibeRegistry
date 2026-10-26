@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000013",
+  "version": 1,
+  "title": "Robust absorption for typed triangles",
+  "abstract": "Typed triangle decomposition results from Paper II: a typical-host theorem under three-step links for four-label families; its nearly complete and balanced deductions with explicit type-weight hypotheses; a semidense two-label mixed-triangle theorem; a computer-assisted typical-host theorem for every admissible four-label family; and a terminal absorber obtained from a bounded signed certificate and explicit physical hinge supply. Divisibility includes global edge counts and local degree profiles. The typical-host hypotheses are retained; the result is not asserted for arbitrary divisible hosts. The repository contains the substantive proof development, including the finite family census and conserved-family constructions, with a small independent Mathlib-only Challenge.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/typed-triangle-absorption",
+  "commit": "673c6d4118b5679783bafa7606fd2c611161a254",
+  "project_path": null,
+  "declarations": [
+    "PartitionedTriangleAbsorption.BlowupB.teoremaB_of_keevash",
+    "PartitionedTriangleAbsorption.BlowupB.teoremaB_balanced",
+    "PaddedGeneral.RealInverse.keevashTypedSpec_of_threeStepLinks",
+    "PartitionedTriangleAbsorption.BlowupB.FiniteCensus.keevashTypedSpec_of_admissible",
+    "PartitionedTriangleAbsorption.BlowupB.F0Direct.theorem146_ordered",
+    "PartitionedTriangleAbsorption.BlowupB.LemmaSC.absorber_onePart"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C35",
+      "05B05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T19:17:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "673c6d4118b5679783bafa7606fd2c611161a254",
+        "fork_repository": "PalomarArchive/jtraverso--typed-triangle-absorption--055c1b37404f",
+        "source_repository": "jtraverso/typed-triangle-absorption"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6a9cae3685329f2ad678033256ee78543930f32b4a81f1ae19c2418cc7635d65"
+}

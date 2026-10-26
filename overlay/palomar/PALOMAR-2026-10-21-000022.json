@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000022",
+  "version": 1,
+  "title": "Kriz-Nordentoft non-vanishing for twists of elliptic curve L-series",
+  "abstract": "Formalizes the first case of Theorem 1.1 of the paper \"Horizontal p-adic L-functions\" by Daniel Kriz and Asbjørn Nordentoft, https://arxiv.org/abs/2310.20678.",
+  "authors": [
+    "David Loeffler"
+  ],
+  "repository": "https://github.com/loefflerd/KN-scratch",
+  "commit": "1817019f3e06978bc594e9af151a4966d1f3a356",
+  "project_path": null,
+  "declarations": [
+    "PalomarChallenge.elliptic_curve_nonvanishing_of_quadratic_seed"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11F67"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T22:43:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1817019f3e06978bc594e9af151a4966d1f3a356",
+        "fork_repository": "PalomarArchive/loefflerd--KN-scratch--18c86a7cf53d",
+        "source_repository": "loefflerd/KN-scratch"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cc03a77d1381e061c742fd91ad7bcca20e1b440b48571f242d8dae234213519e"
+}

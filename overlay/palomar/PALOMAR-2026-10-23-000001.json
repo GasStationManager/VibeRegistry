@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000001",
+  "version": 1,
+  "title": "Brouwer characterization of Cantor space",
+  "abstract": "A topological space is homeomorphic to Cantor space, the countable product of discrete Boolean spaces, if and only if it is nonempty, compact, metrizable, has a basis of clopen sets, and has no isolated points. A full binary clopen scheme decides an enumerated basis one element at each depth. Its point-address map is continuous; compact nested intersections realize every binary branch, and basis decisions separate points. A continuous bijection from a compact space to the Hausdorff Cantor space is a homeomorphism. This formalizes a classical theorem of Brouwer; no mathematical novelty or priority claim is made.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "ea2e84471cdd230fd133a9e2e3b0dfc25e1a7f0f",
+  "project_path": "topology/cantor-space-characterization",
+  "declarations": [
+    "CantorCharacterization.exists_clopen_split",
+    "CantorCharacterization.exists_deciding_split",
+    "CantorCharacterization.exists_binary_scheme",
+    "CantorCharacterization.BinaryScheme.continuous_code",
+    "CantorCharacterization.BinaryScheme.surjective_code",
+    "CantorCharacterization.BinaryScheme.injective_code",
+    "CantorCharacterization.nonempty_homeomorph_of_secondCountable",
+    "CantorCharacterization.cantor_hasClopenBasis",
+    "CantorCharacterization.cantor_perfectSpace",
+    "CantorCharacterization.nonempty_homeomorph",
+    "CantorCharacterization.nonempty_homeomorph_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN",
+      "math.LO"
+    ],
+    "msc2020": [
+      "54F65",
+      "54D30",
+      "03E15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T00:15:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ea2e84471cdd230fd133a9e2e3b0dfc25e1a7f0f",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f290fb5094ad8ef2280880fc1feb5c3361ad7acfdcd53c3f3c93c70a2c5a02fe"
+}

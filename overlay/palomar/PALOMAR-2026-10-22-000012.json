@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000012",
+  "version": 1,
+  "title": "The fourth consecutive Dirichlet eigenvalue ratio",
+  "abstract": "An unconditional Lean proof of the strict inequality lambda_5 / lambda_4 < C_N for every nonempty bounded connected open subset of Euclidean space of dimension at least two, with variational Dirichlet eigenvalues and the sharp Bessel-zero constant. No boundary regularity is assumed.",
+  "authors": [
+    "Jiachen Shi",
+    "Quanyu Tang"
+  ],
+  "repository": "https://github.com/RGConj/fourth-consecutive-ratio-palomar",
+  "commit": "55ff1f42612a01b2fbe4a1eafc618cdcf83c3b75",
+  "project_path": null,
+  "declarations": [
+    "FourthRatio.fourth_consecutive_ratio",
+    "FourthRatio.fourth_consecutive_ratio_div"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.SP",
+      "math.AP"
+    ],
+    "msc2020": [
+      "35P15",
+      "35J05",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T06:12:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "55ff1f42612a01b2fbe4a1eafc618cdcf83c3b75",
+        "fork_repository": "PalomarArchive/RGConj--fourth-consecutive-ratio-palomar--7bffb90c1b7a",
+        "source_repository": "RGConj/fourth-consecutive-ratio-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a7c1346dc58069c5076f29a11addc8846f78fc04bbee15f83c5d98c6c781e80e"
+}

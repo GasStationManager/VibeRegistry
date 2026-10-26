@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000026",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000026",
+  "version": 1,
+  "title": "The Bombieri-Vinogradov theorem, Bombieri 1965 and A. I. Vinogradov 1965, classical form with the maximum over y <= x",
+  "abstract": "A sorry-free Lean 4 proof of the Bombieri-Vinogradov theorem in its classical form: for every A > 0 there is B > 0 such that the sum over q <= x^{1/2} (log x)^{-B} of the maximum over y <= x and over reduced residues a mod q of |psi(y; q, a) - y/phi(q)| is << x (log x)^{-A}. The same form is proved for theta(y; q, a), for pi(y; q, a) against liD(y)/phi(q) with liD(y) the sum of 1/log n over 2 <= n <= y, and for pi(y; q, a) against pi(y)/phi(q), the level of distribution 1/2 input of sieve methods. The proof runs from a zero-free region for Dirichlet L-functions and Siegel's theorem through the Siegel-Walfisz theorem, the multiplicative large sieve and Vaughan's identity; all constants are ineffective, as in the papers. Binary Goldbach is open and is not claimed. The Lean code was written by an AI agent; the statements were checked against the literature by AI reviewers and are offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "4d87394fed5e86a866ec2335621dc1b57f2e0c9d",
+  "project_path": "entries/bombierivinogradov1965",
+  "declarations": [
+    "LeanLab.PNTPort.BVMax.bombieriVinogradovMax",
+    "LeanLab.PNTPort.BVMax.bombieriVinogradovMax_at_x",
+    "LeanLab.PNTPort.BVMax.bvTheta",
+    "LeanLab.PNTPort.BVMax.bvPi",
+    "LeanLab.PNTPort.BVMax.bvPiPi"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N13",
+      "11N35",
+      "11M20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T11:08:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4d87394fed5e86a866ec2335621dc1b57f2e0c9d",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:52e15de43a5cb3b078745b935fbebc323d9b3d7eab9255da931c6720f21e5a7f"
+}

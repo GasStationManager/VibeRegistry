@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000037",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000037",
+  "version": 1,
+  "title": "Uniform sparse rationalisation of dyadic series",
+  "abstract": "Given any convergent dyadic series with nonnegative integer coefficients, any finite prefix and any eventually unbounded correction allowance, one common permitted set of upper Banach density zero supports nonnegative integer corrections realising every target in a nondegenerate interval above the original sum. Each fixed modulus eventually divides both corrections and cumulative corrections beyond a cutoff independent of the target. With polylogarithmic allowance, the selected theorem also bounds support in dyadic windows and preserves empirical block distributions in total variation for lengths o(log log X), uniformly in the target. The entry additionally states exact prime-to-gap summation identities and tail rationality criteria. It does not select the prime-gap joint countermodel, which in the paper uses named outside inputs, and makes no claim that corrected cumulative positions are prime or that the original prime series is irrational.",
+  "authors": [
+    "Will Cook"
+  ],
+  "repository": "https://github.com/wcook04/plectis-erdos-lean",
+  "commit": "34ab2ba6304c936a3537fd1cd8a91f23bbf2e575",
+  "project_path": null,
+  "declarations": [
+    "PalomarCorpus.E251.PaperStatementsA.bounded_test_finite_coupling",
+    "PalomarCorpus.E251.PaperStatementsC.real_dyadic_orbit_eq_true_tail_iff",
+    "PalomarCorpus.E251.PaperStatementsG.dyadicPartialSumQ_eq_start_add_differences",
+    "PalomarCorpus.E251.PaperStatementsG.infinite_prime_gap_identity",
+    "PalomarCorpus.E251.PaperStatementsG.irrationality_reformulation",
+    "PalomarCorpus.E251.PaperStatementsG.prime0_dyadic_summation_by_parts",
+    "PalomarCorpus.E251.PaperStatementsG.rationality_classification",
+    "PalomarCorpus.E251.PaperStatementsH.real_block_identity",
+    "PalomarCorpus.E251.PaperStatementsI.local_target_interval",
+    "PalomarCorpus.E251.UniformSparseRationalisation.arbitrary_word_sparse_rationalisation_uniform",
+    "PalomarCorpus.E251.UniformSparseRationalisation.polylogarithmic_word_interval_uniform"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11B83",
+      "11A41"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T15:56:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "34ab2ba6304c936a3537fd1cd8a91f23bbf2e575",
+        "fork_repository": "PalomarArchive/wcook04--plectis-erdos-lean--26c7e2ff36da",
+        "source_repository": "wcook04/plectis-erdos-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ed452133feb694b6a43e9f93928d79b917e1386ff5305f46d7be4e095d5b2de1"
+}

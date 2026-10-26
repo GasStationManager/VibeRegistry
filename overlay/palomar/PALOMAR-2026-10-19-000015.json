@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000015",
+  "version": 1,
+  "title": "Barker sequences of odd length have length 1, 3, 5, 7, 11 or 13",
+  "abstract": "A Lean 4 development of the classification of Barker sequences of odd length. A Barker sequence of length n is a sequence h of n signs whose aperiodic autocorrelations C(k), the sum over j < n - k of h(j) h(j + k), satisfy |C(k)| <= 1 for 0 < k < n. Turyn and Storer (1961) stated, and gave a proof, that a Barker sequence of odd length n > 1 has length 3, 5, 7, 11 or 13 (length 1 is admitted here: it has no nontrivial shift). Theorem 1(iv) of Turyn–Storer, on which their proof relies, is false as stated (Willms 2014, explicit counterexamples); per Schmidt–Willms (footnote 1) parts (ii) and (iii) imply (iv) on a corrected range that suffices for the induction, and independent proofs exist (Borwein–Erdélyi 2013; Schmidt–Willms 2016, the proof formalized here). The proof formalized is that of Schmidt and Willms (2016), recast so that the classification needs no enumeration of sequences: for odd n and m = (n - 1)/2, odd shifts have autocorrelation 0 and even shifts (-1)^m (from C(u) + C(n - u) = n mod 4); skew-symmetry h(k) h(n - 1 - k) = (-1)^(m + k); the folded identity, the sum over k <= w of (-1)^k h(k) h(w - k), equals 1 for every even w <= n - 3; the doubling law h(u - 1) h(u) = h(2u - 1) h(2u) for 1 <= u <= (n - 3)/2; Schmidt and Willms's Lemmas 3 and 4 in sign-change form (for n >= 7 and h(0) = h(1), with p the first sign change and q the first sign change not divisible by p, both are odd and 2q - 3 <= n <= p + q + 1, Lemma 4 by one generating-function identity for the folded sums); and an endgame that leaves n in {7, 11, 13}, excluding n = 9 by skew-symmetry and doubling, with the alternation h(j) -> (-1)^j h(j) for the normalization h(0) = h(1). Eight witnesses, one at each length 1, 2, 3, 4, 5, 7, 11 and 13, are Barker by decide, and every Barker sequence of odd length equals a fixed sequence of its length (canon) up to negation and alternation, by a kernel enumeration of the 2^n sign patterns at each of the six odd lengths. Also proved: the even reduction of Turyn and Storer's footnote 2, that a Barker sequence of even length n > 2 has 4 | n and yields a real circulant Hadamard matrix of order n. Given the even-length classification as an explicit hypothesis (every Barker sequence of positive even length has length 2 or 4, the statement even_length_eq_two_or_four of openai/math, family 179), a Barker sequence of positive length n exists exactly when n is 1, 2, 3, 4, 5, 7, 11 or 13, and every Barker sequence has length at most 13; the same follows from the hypothesis that real circulant Hadamard matrices of positive order exist only at orders 1 and 4 (the forward direction of exists_iff_order_one_or_four of openai/math), through the even reduction. The seven definitions are restated from openai/math's two challenge files, character for character except the two Fin-bound proofs inside aperiodic (explicit terms in place of by omega, which under the module system yields module-private auxiliary theorems the comparator rejects), so its two theorems discharge the hypotheses, even_length_eq_two_or_four by unfolding alone and exists_iff_order_one_or_four by unfolding and Iff.mp; they are not proved here. The restated definitions and the adapted parts named in NOTICE derive from Apache-2.0 work of OpenAI (NOTICE, LICENSES/Apache-2.0.txt); the rest is MIT.",
+  "authors": [
+    "JD Jones"
+  ],
+  "repository": "https://github.com/JD-Jones-ASES/ob-lean",
+  "commit": "7826a8c0249678cfcb4c606e88d9fb978b316989",
+  "project_path": null,
+  "declarations": [
+    "OddBarker.odd_length_mem",
+    "OddBarker.odd_exists_iff",
+    "OddBarker.unique",
+    "OddBarker.aperiodic_eq",
+    "OddBarker.skew",
+    "OddBarker.fold",
+    "OddBarker.doubling",
+    "OddBarker.run_bounds",
+    "OddBarker.four_dvd_of_even",
+    "OddBarker.existsRealCirculantHadamard_of_even",
+    "OddBarker.exists_iff_of_even",
+    "OddBarker.length_le_thirteen_of_even",
+    "OddBarker.exists_iff_of_circulantHadamard",
+    "OddBarker.length_le_thirteen_of_circulantHadamard"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B83",
+      "05B10",
+      "94A55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T11:06:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7826a8c0249678cfcb4c606e88d9fb978b316989",
+        "fork_repository": "PalomarArchive/JD-Jones-ASES--ob-lean--7dc0abfeb8f8",
+        "source_repository": "JD-Jones-ASES/ob-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:df998989e6a0e4840d72bc2bd51d8456d0829ecd9b36de910ede1533b285e2b5"
+}

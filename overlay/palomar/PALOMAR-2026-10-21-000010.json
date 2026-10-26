@@ -1,0 +1,98 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000010",
+  "version": 1,
+  "title": "Chemical heredity without genetic templates",
+  "abstract": "Acquisition and retention of catalytic function are established for a four-compartment chemical model with three prescribed catalyst types and finite resources. Starting with at least 512 copies of each of two old catalyst types per compartment, arbitrary candidate counts and arbitrary fuel occupancy, a seeding phase ends at time 30. At the fixed beta = 4,000,000 operating point, the joint mission through time 60 has failure probability at most 0.004517975690072193. It includes applicable count floors of 16 for both actual complementary daughters, 3,000,000 service credits, at least five initiating divisions per compartment after seed withdrawal, and eleven current-population recoveries interleaved with ten selected actual divisions by time 55.5. Seven simultaneous resource ceilings are enforced by one finite-stock process, with the first attempted excess entering failure. The proof connects the marked physical-time law, deterministic seed withdrawal, stopped recovery and resource accounting to the complete mission.",
+  "authors": [
+    "Michael Mislan"
+  ],
+  "repository": "https://github.com/mmislan/palomar-template-free-heredity",
+  "commit": "771a4dbad576d336e7e054a2d6a71958ea547711",
+  "project_path": null,
+  "declarations": [
+    "P161Formal.template_free_heredity_finite_stock",
+    "P161Formal.fixedGridService._proof_1",
+    "P161Formal.failureCeiling._proof_1",
+    "CTMCHeredity20261019.canonicalSeedFreeCF3._proof_2",
+    "CTMCHeredity20261019.canonicalSeedFreeCF3._proof_1",
+    "CTMCHeredity20261019.V2.SeedSwitch.blockDuration._proof_1",
+    "CTMCHeredity20261019.cutPrefixArrival._proof_1",
+    "CTMCHeredity20261019.V2.PhysicalSplice.prefixSplice._proof_1",
+    "CTMCHeredity20261019.V2.SeedSwitch.canonicalSeedOnCF3._proof_3",
+    "CTMCHeredity20261019.V2.SeedSwitch.canonicalSeedOnCF3._proof_2",
+    "CTMCHeredity20261019.V2.SeedSwitch.canonicalSeedOnCF3._proof_1",
+    "P161Formal.literalSourcePar._proof_2",
+    "P161Formal.literalSourcePar._proof_1",
+    "P161Formal.globalSourceDivisionAt._proof_1",
+    "P161Formal.emptyStockPopulation._proof_1",
+    "P161Formal.sourceRealizedObservations._proof_1",
+    "P161Formal.protectedFloors._proof_1",
+    "P161Formal.seedCoefficient._proof_1",
+    "P161Formal.renewalMission._proof_2",
+    "P161Formal.divisionMarkRate._proof_2",
+    "P161Formal.renewalMission._proof_1",
+    "CTMCHeredity20261019.V4.TwoPhaseLaw.terminalKernel._proof_1",
+    "CTMCHeredity20261019.canonicalSeedFree_valid",
+    "CTMCHeredity20261019.CF3MarkedKernel.rate_positive",
+    "FunctionalCapacity.cf3._proof_2",
+    "CTMCHeredity20261019.CF3MarkedKernel.core_channel_bound",
+    "CTMCHeredity20261019.CF3Marked.coreChannels._proof_1",
+    "FunctionalCapacity.Site.comp._proof_2",
+    "FunctionalCapacity.Site.dec._proof_2",
+    "FunctionalCapacity.Site.inc._proof_2",
+    "FunctionalCapacity.cf3._proof_1",
+    "CTMCHeredity20261019.MarkedKernel.kernel._proof_2",
+    "CTMCHeredity20261019.MarkedKernel.kernel._proof_1",
+    "CTMCHeredity20261019.CF3MarkedKernel.instMeasurableSingletonClassState",
+    "HybridCTMC.Kernel.eventKernel_markov",
+    "HybridCTMC.Kernel.eventKernel._proof_1",
+    "HybridCTMC.Kernel.eventKernel._proof_2",
+    "HybridCTMC.Kernel.clockKernel._proof_1",
+    "HybridCTMC.Kernel.pmf._proof_1",
+    "CTMCHeredity20261019.V2.SeedSwitch.afterSwitchKernel._proof_1",
+    "CTMCHeredity20261019.V2.RawOperated.measurable_nextState",
+    "CTMCHeredity20261019.V2.RawOperated.segmentKernel._proof_1",
+    "CTMCHeredity20261019.V2.RawOperated.instMeasurableSingletonClassSourceState",
+    "CTMCHeredity20261019.V2.RawOperated.rawLaw._proof_1",
+    "CTMCHeredity20261019.V2.Operated.tailKernel._proof_1",
+    "CTMCHeredity20261019.V2.SeedSwitch.seedOn_valid",
+    "P161Formal.sourceGlobalInitial._proof_1",
+    "P161Formal.sourceChemConsumed._proof_1",
+    "P161Formal.sourceStockStep._proof_1"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.LO"
+    ],
+    "msc2020": [
+      "60J27",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T04:14:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "771a4dbad576d336e7e054a2d6a71958ea547711",
+        "fork_repository": "PalomarArchive/mmislan--palomar-template-free-heredity--7897efb38133",
+        "source_repository": "mmislan/palomar-template-free-heredity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7455d31cbc8ef1d27087c258754ca78a76a76f7f0df6ce17781bd9dca8cde429"
+}

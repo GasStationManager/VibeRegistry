@@ -1,0 +1,46 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000027",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000027",
+  "version": 1,
+  "title": "Noncrossing Two-Nearest-Predecessor Orders on Nearly Circular Ellipses",
+  "abstract": "We prove a uniform all-cardinality existence theorem for noncrossing chronological two-nearest-predecessor graphs on sufficiently near-circular ellipses. Put R = sqrt(2/sin(2*pi/5) - 1). For every ellipse with semiaxes a >= b > 0 and a/b <= R, and every finite set of at least three distinct boundary sites, there is an order starting with a triangle in which every subsequent site is joined to exactly its two Euclidean-nearest earlier sites. All edges persist, and no two independent edges properly cross. Cartesian-lexicographic order resolves equal-distance predecessor ties. The sufficient ratio bound includes equality, all finite cardinalities and arbitrarily close distinct sites. The interest lies in planarity despite compulsory distance-ranked edges: unlike conventional convex-polygon triangulation, the two incoming edges cannot be chosen just to avoid crossings. The constructive proof uses recursive metric-ear deletion; the accompanying manuscript also gives an exact-real comparison-model algorithm, whose complexity is not a separately compared Lean claim. The bound is not claimed to be sharp; historical priority remains unestablished. The repository also contains formally proved supporting geometry and a concrete noncircular corollary, but these are not submitted as independent research results in the selected Comparator configuration.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/ellipse-theorem",
+  "commit": "4c9357026442675255c69bb823edf76a3f47cb86",
+  "project_path": null,
+  "declarations": [
+    "ETSHTS.clm0107_exact"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-10-22T11:40:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4c9357026442675255c69bb823edf76a3f47cb86",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--ellipse-theorem--2c279fcb83d1",
+        "source_repository": "jfairfaxball-348/ellipse-theorem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7f1c806fce6fdd3edb902549362a21193d5ceb2127a598417854311274247784"
+}

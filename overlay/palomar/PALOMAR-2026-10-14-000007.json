@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-14-000007",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-14-000007",
-  "version": 1,
-  "title": "Write-Execute computation: a Lean formalization of Self-Spectre with errata",
+  "version": 2,
+  "title": "Write-Execute Computation and Self-Spectre",
   "abstract": "Formalizes Gregory Morse's 2019 paper \"Self-Spectre, Write-Execute and the Hidden State\": the Write-Execute half unconditionally, the Self-Spectre half as conditional theorems over an abstract speculation contract. An ideal word-level machine whose only operations are a store and a jump, with no data reads, simulates finite Turing machines step for step, preserving halting, divergence and the tape; a finite image is exact until its guard faults. The development proves the jump-table lookup, the 8-bit tables, wide ADD, SUB, SHL, SHR, XOR, 32x32 multiplication, 64/32 division, two-step modular reduction, modular exponentiation with its multiplication count, the AES-128 T-table cipher and the Write-Execute AES procedure against FIPS-197. The Self-Spectre half is proved as a conditional result under an abstract speculation contract (a branch predictor and a speculation window as parameters, rollback of the architectural state, persistence of the cache): the Fig. 1 mistraining schedule, the Fig. 2 victim leak with the mix-order reload from a cleared probe array, the speculation-depth boundary (touch trace for any cache, observable reload hits from a cleared probe array) and the hidden Write-Execute computation. Supporting byte-level x86/x64 models of Figs. 5, 6 and 7 and native vectors for the corrected C and MASM sources accompany the selected statement.",
   "authors": [
     "Gregory Morse"
   ],
   "repository": "https://github.com/GregoryMorse/selfspectre",
-  "commit": "fe720739a11adeb1e9e2b2b13948cc6a7586920d",
+  "commit": "0a59532e8bfdefc0b132aaebf8f609d6474b7cc9",
   "project_path": "lean",
   "declarations": [
     "PalomarWE.mathematical_result"
@@ -27,7 +27,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-10-14T13:02:02Z",
+  "published_at": "2026-10-20T01:41:21Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -41,11 +41,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "fe720739a11adeb1e9e2b2b13948cc6a7586920d",
+        "commit": "0a59532e8bfdefc0b132aaebf8f609d6474b7cc9",
         "fork_repository": "PalomarArchive/GregoryMorse--selfspectre--a1f730509db7",
         "source_repository": "GregoryMorse/selfspectre"
       }
     ]
   },
-  "statement_hash": "sha256:99ddb88fd73c7f0f80fcf3cfb0649def60dd65c6ea8fde69ed9f326ac39e5be1"
+  "statement_hash": "sha256:b7c508317e7de7bdcfe97951179877cd5271b24733455b6e973b8a2d3e146c26"
 }

@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000015",
+  "version": 1,
+  "title": "Dual-Horn models and vertex covers in priority controllers",
+  "abstract": "Dual-Horn satisfiability and finite graph vertex covers are represented by physical bridge detection in finite priority controllers. The constructions preserve the declared variable or vertex universe, have linear counted decoder size, and count eligible detecting qualifier sets rather than primary-input assignments.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/priority-controller-phase1",
+  "commit": "4defc1bfee6f82a50c5d48e6ad4fe6e01df73cc0",
+  "project_path": null,
+  "declarations": [
+    "Controller.Reductions.DualHorn.model_bridge_detectable_iff",
+    "Controller.Reductions.DualHorn.decoder_size_linear",
+    "Controller.Reductions.DualHorn.decoder_formulaForest",
+    "Controller.Reductions.coverDAG_size_linear",
+    "Controller.Reductions.cover_detection_count",
+    "Controller.Reductions.cover_physical_detects_only_covers",
+    "Controller.Reductions.cover_realizer_detects_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM"
+    ],
+    "msc2020": [
+      "06E30",
+      "68Q25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T11:17:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4defc1bfee6f82a50c5d48e6ad4fe6e01df73cc0",
+        "fork_repository": "PalomarArchive/shaikidris--priority-controller-phase1--d60f9fc1688f",
+        "source_repository": "shaikidris/priority-controller-phase1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:407e2395e2b8165d0ee45e848002d14e3d4f4a34a00953fc2174788c014e6d87"
+}

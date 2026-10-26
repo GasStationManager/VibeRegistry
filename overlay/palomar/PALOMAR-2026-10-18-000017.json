@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-18-000017",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000017",
-  "version": 1,
+  "version": 2,
   "title": "Normalizers of the congruence subgroups Γ_H",
   "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, about the normalizers in SL₂(ℝ) of every congruence subgroup Γ ⊇ Γ(N), that is, of every Γ_H for H ≤ SL₂(ℤ/N): Nor(Γ)/Γ is finite, of order at most [SL₂(ℤ) : Γ]·Σ_{D ∣ N} ψ(D); the local restrictions of Dose–Lido–Mercuri on the determinants of normalizing matrices; if, at every p ∣ N, H mod p fixes no line or H mod p^{v_p(N)} lies in a split Cartan subgroup, then Nor(Γ_H)/Γ_H ≅ N(H)/H; and at prime level the order is always [N(H) : H], or 2·[N(H) : H] when H fixes exactly one line. 21 theorems, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
   "authors": [
     "Filip Najman"
   ],
   "repository": "https://github.com/F-Najman/normalizer-lean",
-  "commit": "ea4445c0d991a65d54fc77af0af559f2322e8660",
+  "commit": "e7ca694d9e349326e03e5acfa4e41ed823e4e2dc",
   "project_path": null,
   "declarations": [
     "NormalizerLean.GammaH_map",
@@ -49,7 +49,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-10-18T15:52:29Z",
+  "published_at": "2026-10-20T03:13:37Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -63,11 +63,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "ea4445c0d991a65d54fc77af0af559f2322e8660",
+        "commit": "e7ca694d9e349326e03e5acfa4e41ed823e4e2dc",
         "fork_repository": "PalomarArchive/F-Najman--normalizer-lean--cf363e35e356",
         "source_repository": "F-Najman/normalizer-lean"
       }
     ]
   },
-  "statement_hash": "sha256:cf2f446a7aa36f93ee89c6dbb9f5493bbf336aef6ba54929ff78bc8620a7c70f"
+  "statement_hash": "sha256:253511a7ab6781795c16b71f7be219c101f2615555cc55e8591269e4775c97e7"
 }

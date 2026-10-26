@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000016",
+  "version": 2,
+  "title": "Canonical streaming enumeration of eligible detections",
+  "abstract": "Canonical eligible-set enumeration with actual prefix traversal, exact returned sets, detecting emitted witnesses, iterator delay and native program resource bounds.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/priority-controller-phase1",
+  "commit": "a510ea7e76d9b10e21e7f4db8f57fd3a3468a090",
+  "project_path": null,
+  "declarations": [
+    "Controller.Cost.Enumeration.execution",
+    "Controller.Cost.Enumeration.results_exact",
+    "Controller.Cost.Enumeration.canonical_result_detects",
+    "Controller.Cost.Enumeration.iterator_delay",
+    "Controller.Cost.Enumeration.delay_bound",
+    "Controller.Cost.Enumeration.program_words_bound",
+    "Controller.Cost.Enumeration.execution_output_sensitive",
+    "Controller.Cost.Enumeration.stream_step"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM"
+    ],
+    "msc2020": [
+      "68Q25",
+      "68Q60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T20:09:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a510ea7e76d9b10e21e7f4db8f57fd3a3468a090",
+        "fork_repository": "PalomarArchive/shaikidris--priority-controller-phase1--d60f9fc1688f",
+        "source_repository": "shaikidris/priority-controller-phase1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d58a32655fa6b582618ce7c894e2cbf50f3ba149ca027f514433ae261aface28"
+}

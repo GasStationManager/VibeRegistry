@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-18-000023",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000023",
-  "version": 1,
+  "version": 2,
   "title": "Normalizers of Γ_Δ(N): the group M_Δ, finiteness, and a coset count",
-  "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, about the normalizers in SL₂(ℝ) of the groups Γ_Δ(N) between Γ₁(N) and Γ₀(N), and the quotients Nor(Γ_Δ(N))/Γ_Δ(N), which are the modular automorphism groups of the curves X_Δ(N) when −1 ∈ Δ, and twice as large otherwise: the matrices allowed by the generalized Newman bound h_Δ form a group M_Δ = D⁻¹Γ₀(n_Δ)⁺D, D = diag(h_Δ, 1), which contains Nor(Γ_Δ(N)) and contains Γ₀(N) with finite index, so Nor(Γ_Δ(N))/Γ_Δ(N) is finite for every Δ; its order is [(ℤ/N)ˣ : Δ] times the number of pairs (σ, H), with σ in a fixed set of representatives of Γ₀(N)\\SL₂(ℤ) and H a Hermite normal form, such that σH normalizes Γ_Δ(N); and h_Δ = h(N) except under three explicit conditions on N and Δ. 11 theorems, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
+  "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, about the normalizers in SL₂(ℝ) of the groups Γ_Δ(N) between Γ₁(N) and Γ₀(N), and the quotients Nor(Γ_Δ(N))/Γ_Δ(N), which for −1 ∈ Δ are the modular automorphism groups of the curves X_Δ(N): the matrices allowed by the generalized Newman bound h_Δ form a group M_Δ = D⁻¹Γ₀(n_Δ)⁺D, D = diag(h_Δ, 1), which contains Nor(Γ_Δ(N)) and contains Γ₀(N) with finite index, so Nor(Γ_Δ(N))/Γ_Δ(N) is finite for every Δ; its order is [(ℤ/N)ˣ : Δ] times the number of pairs (σ, H), with σ in a fixed set of representatives of Γ₀(N)\\SL₂(ℤ) and H a Hermite normal form, such that σH normalizes Γ_Δ(N); and h_Δ = h(N) except under three explicit conditions on N and Δ. 11 theorems, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
   "authors": [
     "Filip Najman"
   ],
   "repository": "https://github.com/F-Najman/normalizer-lean",
-  "commit": "0b0b1c3bd30848a7d7e1d3b453e512ee2430ad6b",
+  "commit": "17c911351938f13d620262a54de45c275db9de57",
   "project_path": null,
   "declarations": [
     "NormalizerLean.coe_MDelta",
@@ -39,7 +39,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-10-18T20:27:22Z",
+  "published_at": "2026-10-19T16:15:47Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -53,11 +53,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "0b0b1c3bd30848a7d7e1d3b453e512ee2430ad6b",
+        "commit": "17c911351938f13d620262a54de45c275db9de57",
         "fork_repository": "PalomarArchive/F-Najman--normalizer-lean--cf363e35e356",
         "source_repository": "F-Najman/normalizer-lean"
       }
     ]
   },
-  "statement_hash": "sha256:769ac5de9fd4931532d4272ba7df5eaa615dd64e68b7c61671a2605788788ff6"
+  "statement_hash": "sha256:b6b94146a9ea98c928d3a1ab51b04169a3ac244d325683e92421dcf6211bb2f8"
 }

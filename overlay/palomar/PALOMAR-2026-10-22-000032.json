@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000032",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000032",
+  "version": 1,
+  "title": "An exact average Goldbach representation formula, after Goldston and Suriajaya",
+  "abstract": "A sorry-free Lean 4 proof, with no hypothesis, of Theorem 1, equation 11, of D. A. Goldston and A. I. Suriajaya, On an average Goldbach representation formula of Fujii, Nagoya Math. J. 250, 2023, 511 to 532, arXiv 2110.14250v2. With psi_2(n) the sum over m + m' = n of Lambda(m) Lambda(m'), for every integer N >= 2 the sum over n <= N of psi_2(n) equals N^2/2 - 2 times the sum over nontrivial zeros rho of N^{rho+1} divided by rho times rho+1, minus 2 log 2pi - 1/2 times N, plus 2 zeta'/zeta at -1, minus the sum over k >= 1 of N^{1-2k} divided by k times 2k-1, plus E(N), an exact identity with E(N) the integral of equation 12. The zero sum counts zeros with multiplicity. Derived results of this entry, not statements of the paper, show that E(N) does not depend on the radius r, that every term is real, that the zero sum converges absolutely, and the case N = 2. Binary Goldbach is open and is not claimed; this is an average over n. An AI agent wrote the Lean code; the statements were checked against the paper by an AI agent and are offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "07f4a5ff80e4d31549dddea605bd2fff3a85ca0f",
+  "project_path": "entries/goldstonsuriajaya2021",
+  "declarations": [
+    "LeanLab.GoldbachAverage.U1440.gs_theorem1_full",
+    "LeanLab.GoldbachAverage.U1440.gs_theorem1_full_real",
+    "LeanLab.GoldbachAverage.U1440.EGS_indep_r",
+    "LeanLab.GoldbachAverage.U1440.EGS_im_eq_zero",
+    "LeanLab.GoldbachAverage.U1440.logDeriv_zeta_neg_one_im",
+    "LeanLab.GoldbachAverage.U1440.Z1_im_eq_zero",
+    "LeanLab.GoldbachAverage.U1440.zeroSum_summable",
+    "LeanLab.GoldbachAverage.U1440.trivSum_bounds",
+    "LeanLab.GoldbachAverage.U1440.gs_theorem1_of_full",
+    "LeanLab.GoldbachAverage.U1440.gs_theorem1_full_at_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11M26",
+      "11N05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T12:44:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "07f4a5ff80e4d31549dddea605bd2fff3a85ca0f",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:76031fadd712a17a63c3691c7b60ab36ff06da782ad5ed27f64f99e719f48a48"
+}

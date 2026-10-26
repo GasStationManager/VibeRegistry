@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-18-000012",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000012",
-  "version": 1,
+  "version": 2,
   "title": "The normalizer of Γ₀(N): Newman's theorem, and the order and presentations of B(N)",
   "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, about B(N) = Nor(Γ₀(N))/Γ₀(N), the normalizer of Γ₀(N) in SL₂(ℝ) modulo Γ₀(N), for every N ≥ 1: Newman's theorem describing the normalizer, in both directions; the order |B(N)| = 2^ω(n) ψ(N)/ψ(n), where h is the largest divisor of 24 with h² ∣ N and n = N/h²; generators and complete presentations of B(N) for every N; a criterion for B(N) to be the internal direct product of its local factors; B(18) ≅ S₄; and the errors in the published presentations: the Akbaş–Singerman relation fails in B(256), and Bars's presentations at levels 32, 64 and 128 define infinite groups, while completed presentations present B(32) and B(64) and Bars's presentation at level 256 presents B(256). 36 theorems, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
   "authors": [
     "Filip Najman"
   ],
   "repository": "https://github.com/F-Najman/normalizer-lean",
-  "commit": "ea4445c0d991a65d54fc77af0af559f2322e8660",
+  "commit": "e7ca694d9e349326e03e5acfa4e41ed823e4e2dc",
   "project_path": null,
   "declarations": [
     "NormalizerLean.hPart_isGreatest",
@@ -63,7 +63,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-10-18T12:04:27Z",
+  "published_at": "2026-10-20T02:04:47Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -77,11 +77,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "ea4445c0d991a65d54fc77af0af559f2322e8660",
+        "commit": "e7ca694d9e349326e03e5acfa4e41ed823e4e2dc",
         "fork_repository": "PalomarArchive/F-Najman--normalizer-lean--cf363e35e356",
         "source_repository": "F-Najman/normalizer-lean"
       }
     ]
   },
-  "statement_hash": "sha256:f5aa216799a4b35b015a402f00f4ea7695c497c560ae22ea1a48750a2d6496fd"
+  "statement_hash": "sha256:ba78262153e0bdcdc01a0dc8114e9f71cd5f4675936f11cdad7ed6252e01b341"
 }

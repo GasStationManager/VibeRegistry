@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000006",
+  "version": 2,
+  "title": "Two-scale Kakeya upper Minkowski lower bound",
+  "abstract": "We prove that every bounded Kakeya set in Rⁿ, n ≥ 4, has upper Minkowski dimension at least 0.597n. Here a Kakeya set contains a unit line segment in every direction. This improves the asymptotic coefficient c_KT = 1/α = 0.596968283237… in the Katz–Tao bound 1 + c_KT(n−1), where α is the unique root of α³−4α+2 = 0 in (1,2). The proof combines arithmetic estimates for line segments with geometric estimates for tubes at two different widths.",
+  "authors": [
+    "Mark Lewko"
+  ],
+  "repository": "https://github.com/mrklwk/kakeya-two-scale-lean",
+  "commit": "1eba4ec16c6894aa2390b1c1bcb7d2c0e1c5a46c",
+  "project_path": null,
+  "declarations": [
+    "PalomarKakeya.upperMinkowski_lower"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.CO"
+    ],
+    "msc2020": [
+      "42B25",
+      "28A75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T05:35:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1eba4ec16c6894aa2390b1c1bcb7d2c0e1c5a46c",
+        "fork_repository": "PalomarArchive/mrklwk--kakeya-two-scale-lean--545e237f3070",
+        "source_repository": "mrklwk/kakeya-two-scale-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a8cda77eef1a0400de14f84fec34d02fd9725ef559f91d8e699dd1e769429dcf"
+}

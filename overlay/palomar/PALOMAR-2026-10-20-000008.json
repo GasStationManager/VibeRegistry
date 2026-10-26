@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000008",
+  "version": 1,
+  "title": "Oxtoby's Banach–Mazur characterization of Baire spaces",
+  "abstract": "An arbitrary topological space is Baire if and only if the first player has no winning full-history strategy in the nested nonempty-open Banach–Mazur game. The proof constructs a compatible play with one common point from disjoint dense response levels, and constructs a winning strategy from failure of Baireness. It separately verifies compatible-play existence, equality of the two players’ intersections and the empty-space boundary. No separation, countability or metric hypothesis is imposed. This is classical mathematics, not a novelty or determinacy claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "59d4a50df466480e88ab71bc1f3527bfe0bf1811",
+  "project_path": "topology/banach-mazur-baire",
+  "declarations": [
+    "BanachMazur.exists_compatiblePlay",
+    "BanachMazur.follows_intersection_eq",
+    "BanachMazur.exists_commonPoint_play",
+    "BanachMazur.not_firstWins_of_baireSpace",
+    "BanachMazur.exists_firstWins_of_not_baireSpace",
+    "BanachMazur.baireSpace_iff_no_firstWins",
+    "BanachMazur.isEmpty_firstStrategy"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54E52",
+      "91A44"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T03:42:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "59d4a50df466480e88ab71bc1f3527bfe0bf1811",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:95282ca30b74393338c90c9e8f4d05611218373a1c5aa8c40eb7bdfe55064aba"
+}

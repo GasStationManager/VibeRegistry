@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000006",
+  "version": 1,
+  "title": "The Graham–Pollak theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of the Graham–Pollak theorem: the edge set of the complete graph K_n cannot be partitioned into fewer than n − 1 complete bipartite graphs, together with the matching construction by n − 1 stars. Biclique decompositions are encoded by families of pairs of disjoint vertex sets covering every pair of distinct vertices exactly once. Mathlib does not contain this theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/graham-pollak",
+  "commit": "68d32f0faf102fc1716ac89ffc861eefe897e749",
+  "project_path": null,
+  "declarations": [
+    "GrahamPollakTheorem.graham_pollak",
+    "GrahamPollakTheorem.exists_bicliqueDecomposition"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T08:40:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "68d32f0faf102fc1716ac89ffc861eefe897e749",
+        "fork_repository": "PalomarArchive/jtraverso--graham-pollak--3485c9d9d4a5",
+        "source_repository": "jtraverso/graham-pollak"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a0b5815c2e7a9ab5f80c29380b71b5ee744914d61e029b9af648aae81a580f67"
+}

@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000013",
+  "version": 1,
+  "title": "Banach–Mazur determinacy for Baire-property targets",
+  "abstract": "For any complete metric space and any target set with the property of Baire, the Banach–Mazur category game is determined: the first player has a winning full-history strategy exactly when the target is nonmeagre, and the second exactly when it is meagre. A win for the first player means one target point lies in every move. The proof constructs meagre-target avoidance without metric assumptions and shrinking closed-trap target forcing in complete metric spaces; it proves actual joint-play existence and excludes simultaneous winners. Empty spaces and equal nested moves are explicit. This is classical mathematics, with no novelty or general determinacy claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "0377aacab289fee8153cdec87fd8a1be06b9ec2c",
+  "project_path": "topology/banach-mazur-category",
+  "declarations": [
+    "CategoryGame.exists_jointPlay",
+    "CategoryGame.not_both_winning",
+    "CategoryGame.residual_has_dense_open_sequence",
+    "CategoryGame.second_winning_of_isMeagre",
+    "CategoryGame.open_residual_witness",
+    "CategoryGame.first_winning_of_open_residual",
+    "CategoryGame.first_winning_of_nonmeagre",
+    "CategoryGame.determined_of_baireMeasurable",
+    "CategoryGame.first_winning_iff_nonmeagre",
+    "CategoryGame.second_winning_iff_isMeagre"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54E52",
+      "91A44",
+      "03E15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T05:24:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0377aacab289fee8153cdec87fd8a1be06b9ec2c",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8d937ca9651b69919ea2494b8771e16357db1c7bf7f7db324990891c4279c69c"
+}

@@ -1,0 +1,74 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000039",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000039",
+  "version": 1,
+  "title": "An explicit rational-base irrationality region for Zudilin's Lambert series",
+  "abstract": "For coprime integers a > b >= 1 satisfying b^μ < a, equivalently log b / log a < θ*, the selected Lean theorems prove irrationality of F(a/b). They include the base 31/4 and every positive integer power, plus associated irrationality-measure bounds. The region excludes 3/2. This configuration does not select the paper's later sharp fixed-base asymptotic or all-rank Hankel results.",
+  "authors": [
+    "Will Cook"
+  ],
+  "repository": "https://github.com/wcook04/plectis-erdos-lean",
+  "commit": "8d47efd230e041b76b8233a49164ca798977053c",
+  "project_path": null,
+  "declarations": [
+    "PalomarCorpus.E1049.PaperStatementsA.contour_enclosure",
+    "PalomarCorpus.E1049.PaperStatementsA.four_rpow_mu_lt_thirtyOne",
+    "PalomarCorpus.E1049.PaperStatementsA.inv_bvMu_eq",
+    "PalomarCorpus.E1049.PaperStatementsA.omega_indicator",
+    "PalomarCorpus.E1049.PaperStatementsA.paperBvMu_eq",
+    "PalomarCorpus.E1049.PaperStatementsA.printed_bvMu",
+    "PalomarCorpus.E1049.PaperStatementsA.printed_bv_cutoff",
+    "PalomarCorpus.E1049.PaperStatementsA.printed_contour",
+    "PalomarCorpus.E1049.PaperStatementsA.printed_four_rpow_bvMu",
+    "PalomarCorpus.E1049.PaperStatementsA.printed_four_rpow_mu",
+    "PalomarCorpus.E1049.PaperStatementsA.printed_log_ratio",
+    "PalomarCorpus.E1049.PaperStatementsA.thirtyoneFour_between_rpow",
+    "PalomarCorpus.E1049.PaperStatementsA.thirtyoneFour_ratio_chain",
+    "PalomarCorpus.E1049.PaperStatementsA.zudilinC0_enclosure",
+    "PalomarCorpus.E1049.PaperStatementsA.zudilinJ_enclosure",
+    "PalomarCorpus.E1049.PaperStatementsA.zudilin_rpow_lt_iff_contourRegion",
+    "PalomarCorpus.E1049.PaperStatementsG.thirtyoneFour_outside_bv_inside_contour",
+    "PalomarCorpus.E1049.PaperStatementsI.rational_base_measure_uniform",
+    "PalomarCorpus.E1049.PaperStatementsI.thirtyoneFour_power_measure_lt_301",
+    "PalomarCorpus.E1049.PaperStatementsJ.rational_base_threshold",
+    "PalomarCorpus.E1049.PaperStatementsJ.rational_base_threshold_log",
+    "PalomarCorpus.E1049.PaperStatementsJ.thirtyoneFour_irrational",
+    "PalomarCorpus.E1049.PaperStatementsJ.thirtyoneFour_pow_irrational",
+    "PalomarCorpus.E1049.RationalBaseRegion.rational_base_power_measure",
+    "PalomarCorpus.E1049.RationalBaseRegion.thirtyone_four_power_measure_lt_301"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11J82",
+      "33D15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T16:09:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8d47efd230e041b76b8233a49164ca798977053c",
+        "fork_repository": "PalomarArchive/wcook04--plectis-erdos-lean--26c7e2ff36da",
+        "source_repository": "wcook04/plectis-erdos-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:53894919b45e2325c1c6c0117fedf0cf6de4f14b8ce3291f32006206eff0e28d"
+}

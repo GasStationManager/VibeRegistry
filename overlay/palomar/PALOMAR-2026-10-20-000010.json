@@ -1,0 +1,71 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000010",
+  "version": 2,
+  "title": "FixedOrderFactor: the order-r correction factor for mean squares of L(1, chi), and the factor 35/34",
+  "abstract": "For an integer r >= 2 and a finite set N of primes, the random Euler product model for Dirichlet characters of order r replaces chi(q) by independent uniform r-th roots of unity. The development proves that the order-r local factor E|1 - z/q|^(-2) equals (1 + q^-r)/((1 - q^-2)(1 - q^-r)), that its ratio to the full-circle factor (1 - q^-2)^(-1), multiplied over the primes outside N, is zeta^(N)(r)^2 / zeta^(N)(2r), that this correction factor is also the sum of (ab)^-r over the coprime pairs of integers prime to N, and that the model mean is zeta^(N)(2) zeta^(N)(r)^2 / zeta^(N)(2r). The factor exceeds 1, decreases strictly in r and tends to 1; for r = 2k and N empty it equals -binom(4k,2k) B_{2k}^2/(2 B_{4k}). For r = 4 and N = {2} it is 35/34, the ratio by which the limit of Louboutin's mean square of L(1, chi) with the factor at 2 removed changes when the average is restricted to quartic characters; with the forced factor 4/5 at 2 the development also proves the constants pi^2/10, 7 pi^2/68, 7 pi^2/36 and 7/136 = (1/20)(35/34) = (7/72)(9/17). It also identifies the pairs the model keeps: for positive m, n the average of z^m conj(z^n) is 1 exactly when m/n is an r-th power in Q, that is when (m, n) = (d a^r, d b^r) with a, b coprime, and 0 otherwise. Modulo a single prime p with r | p - 1 it proves the finite-character counterpart: there are exactly r Dirichlet characters mod p with chi^r = 1, the sum of chi(a) conj(chi(b)) over them is r when a/b is a nonzero r-th power mod p and 0 otherwise, so every pair (d a^r, d b^r) prime to p survives with sum r; by contrast, summed over all characters mod p, chi(m) conj(chi(n)) has sum 0 for distinct m, n < p.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/FixedOrderFactor-lean",
+  "commit": "0149a0e54cb853c0ba07e8f59234751d7b8efb55",
+  "project_path": null,
+  "declarations": [
+    "FixedOrderFactor.muAvg_eq",
+    "FixedOrderFactor.tendsto_muAvg",
+    "FixedOrderFactor.modelMean_eq",
+    "FixedOrderFactor.hasProd_correctionFactor",
+    "FixedOrderFactor.hasProd_muAvg",
+    "FixedOrderFactor.tendsto_modelMean",
+    "FixedOrderFactor.hasSum_coprime_pairs",
+    "FixedOrderFactor.correctionFactor_even",
+    "FixedOrderFactor.correctionFactor_eq_mul",
+    "FixedOrderFactor.one_lt_correctionFactor",
+    "FixedOrderFactor.correctionFactor_succ_lt",
+    "FixedOrderFactor.tendsto_correctionFactor",
+    "FixedOrderFactor.correctionFactor_four_two",
+    "FixedOrderFactor.localTerm_I_half",
+    "FixedOrderFactor.quartic_constants",
+    "FixedOrderFactor.sum_char_pow_eq_one",
+    "FixedOrderFactor.card_char_pow_eq_one",
+    "FixedOrderFactor.sum_char_pow_eq_one_of_pow",
+    "FixedOrderFactor.sum_char_all",
+    "FixedOrderFactor.div_eq_pow_iff",
+    "FixedOrderFactor.model_pair_average"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M06",
+      "11M20",
+      "11R42",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T03:47:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0149a0e54cb853c0ba07e8f59234751d7b8efb55",
+        "fork_repository": "PalomarArchive/jkfarland-bot--FixedOrderFactor-lean--c8161d9d4229",
+        "source_repository": "jkfarland-bot/FixedOrderFactor-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0293c9e0f399223bc270ed0535fe0165437a81a464067e28adcd96ac5c6bb319"
+}

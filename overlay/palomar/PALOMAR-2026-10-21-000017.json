@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000017",
+  "version": 1,
+  "title": "Induced Erdős–Sauer: an n log log n bound",
+  "abstract": "We formalize in Lean an O_k(n log log n) bound for the induced Erdős–Sauer problem. For every fixed integer k >= 3, there is a constant C_k > 0 such that every finite simple graph on n >= 1 vertices with more than C_k n log(log(4n)) edges contains a nonempty induced k-regular subgraph. The result is unconditional, and the constants depending on k are not optimized.",
+  "authors": [
+    "Matija Bucic",
+    "Fankang He",
+    "Hyunwoo Lee"
+  ],
+  "repository": "https://github.com/mbucic4/Induced-Erdos-Sauer",
+  "commit": "6990e58d8ec5f771ac3a3a76adfdfd341702bdfe",
+  "project_path": null,
+  "declarations": [
+    "InducedRegular.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-10-21T12:39:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6990e58d8ec5f771ac3a3a76adfdfd341702bdfe",
+        "fork_repository": "PalomarArchive/mbucic4--Induced-Erdos-Sauer--c05b72bc138e",
+        "source_repository": "mbucic4/Induced-Erdos-Sauer"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3e27ea524d7b00e3590290cb56711e1e33325e2ad439b8d43d4baf786048f0e2"
+}

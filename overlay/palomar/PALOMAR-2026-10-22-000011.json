@@ -1,0 +1,66 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000011",
+  "version": 1,
+  "title": "Critical recovery, query lower bounds and binary-native width",
+  "abstract": "Critical detecting-set counts, physical test-list and black-box query lower bounds, and critical-set and cycle recovery through a fixed source-reading program. Primal/incidence treewidth bounds concern specification and complete binary-expanded native CNF graphs; a conditional cover-layout theorem bounds treewidth, net-cutwidth and block width. Strong and deletion backdoors into Horn, renamable-Horn and two-CNF have cardinality at least the bus count for both native and specification formulas.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/priority-controller-phase1",
+  "commit": "a510ea7e76d9b10e21e7f4db8f57fd3a3468a090",
+  "project_path": null,
+  "declarations": [
+    "Controller.Cost.CriticalSets.cycle_complete",
+    "Controller.Cost.CriticalSets.cycle_unique",
+    "Controller.Boundaries.physical_test_list_lower_bound",
+    "Controller.Boundaries.criticalSets_card_one",
+    "Controller.Boundaries.criticalSets_card_many",
+    "Controller.Cost.CriticalSets.critical_complete",
+    "Controller.Boundaries.deterministic_one_bus",
+    "Controller.Boundaries.deterministic_many_buses",
+    "Controller.Boundaries.randomized_mixture_lower_bound",
+    "Controller.Graph.NativeWidth.primal_treewidth_lower",
+    "Controller.Graph.NativeWidth.incidence_treewidth_lower",
+    "Controller.Boundaries.Backdoors.native_backdoor_lower_bound",
+    "Controller.Boundaries.Backdoors.specification_backdoor_lower_bound",
+    "Controller.Graph.CoverCircuit.linear_width_obstruction",
+    "Controller.Cost.CriticalSourceScan.critical_physical_recovery",
+    "Controller.Cost.CriticalSourceScan.cycle_physical_recovery",
+    "Controller.Graph.BoundedNativeWidth.primal_treewidth_lower",
+    "Controller.Graph.BoundedNativeWidth.incidence_treewidth_lower"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC"
+    ],
+    "msc2020": [
+      "68Q25",
+      "68Q60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T04:48:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a510ea7e76d9b10e21e7f4db8f57fd3a3468a090",
+        "fork_repository": "PalomarArchive/shaikidris--priority-controller-phase1--d60f9fc1688f",
+        "source_repository": "shaikidris/priority-controller-phase1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:edb47c60ce2c5ed51db8045e4ee7213f609f0dea5db6a9377a42d42e91af0493"
+}

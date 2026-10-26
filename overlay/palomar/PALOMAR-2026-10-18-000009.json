@@ -2,19 +2,25 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-18-000009",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000009",
-  "version": 1,
-  "title": "Jaeger's 4-flow theorem",
-  "abstract": "A Lean 4 / Mathlib formalization of Jaeger's 4-flow theorem: every finite 4-edge-connected simple graph has a nowhere-zero integer 4-flow, i.e. an antisymmetric function on darts with values in {±1, ±2, ±3} that is conserved at every vertex. Also proved: a graph with two edge-disjoint spanning trees has its edges covered by two even subgraphs (a nowhere-zero ℤ₂ × ℤ₂-flow) and has a nowhere-zero integer 4-flow. Mathlib has no flows. Jaeger's 8-flow theorem for bridgeless graphs is not included.",
+  "version": 3,
+  "title": "Jaeger's 4-flow and 8-flow theorems and Seymour's 6-flow theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of Jaeger's 4-flow theorem: every finite 4-edge-connected simple graph has a nowhere-zero integer 4-flow, i.e. an antisymmetric function on darts with values in {±1, ±2, ±3} that is conserved at every vertex. Also proved: a graph with two edge-disjoint spanning trees has its edges covered by two even subgraphs (a nowhere-zero ℤ₂ × ℤ₂-flow) and has a nowhere-zero integer 4-flow. Version 2 adds Jaeger's 8-flow theorem: every finite bridgeless graph has its edges covered by three even subgraphs and has a nowhere-zero integer 8-flow; conversely a graph with a nowhere-zero flow has no bridge. Version 3 adds Seymour's 6-flow theorem (every finite bridgeless graph has a nowhere-zero integer 6-flow) and Tutte's theorem relating group and integer flows (for k > 0, every nowhere-zero ℤ/k-flow φ lifts to a nowhere-zero integer k-flow ψ with ψ ≡ φ mod k, and conversely an integer k-flow reduces modulo k to a nowhere-zero ℤ/k-flow). Mathlib has no flows.",
   "authors": [
     "Juan Pablo Traverso Gianini"
   ],
   "repository": "https://github.com/jtraverso/jaeger-four-flow",
-  "commit": "f80cdd9128c8ce918978db640cc50623286e21fd",
+  "commit": "623dd0dd718f93de06d4dc792e116dd32ef97553",
   "project_path": null,
   "declarations": [
     "JaegerFlow.exists_even_cover_of_trees",
     "JaegerFlow.exists_flow_of_trees",
-    "JaegerFlow.jaeger_four_flow"
+    "JaegerFlow.jaeger_four_flow",
+    "EightFlowTheorem.exists_even_cover_three",
+    "EightFlowTheorem.jaeger_eight_flow",
+    "EightFlowTheorem.not_isBridge_of_flow",
+    "SixFlowTheorem.integer_flow_of_zmod",
+    "SixFlowTheorem.zmod_flow_of_integer",
+    "SixFlowTheorem.seymour_six_flow"
   ],
   "informal": {},
   "classification": {
@@ -27,7 +33,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-10-18T10:01:43Z",
+  "published_at": "2026-10-21T02:16:21Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -41,11 +47,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "f80cdd9128c8ce918978db640cc50623286e21fd",
+        "commit": "623dd0dd718f93de06d4dc792e116dd32ef97553",
         "fork_repository": "PalomarArchive/jtraverso--jaeger-four-flow--4443e53b8984",
         "source_repository": "jtraverso/jaeger-four-flow"
       }
     ]
   },
-  "statement_hash": "sha256:cd24f7197a412e3eafa42133408a701b20e1f833989c8e75851eb089407bdd5f"
+  "statement_hash": "sha256:01686521a0ee8251e2ecc712f211e03b9df60bfd20325ccf2298b39e6c3151b6"
 }

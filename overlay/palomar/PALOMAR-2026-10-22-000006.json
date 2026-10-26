@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000006",
+  "version": 1,
+  "title": "An XP Algorithm for Maximum-Weight Independent Set in Embedded Graphs, in Lean 4",
+  "abstract": "A Lean 4 and Mathlib formalization of Theorem 1 of \"Maximum-weight independent set in embedded graphs parameterized by Euler genus and number of odd faces\" (forthcoming), with a provably correct implementation of the algorithm as one fixed program for an explicit sixteen-register pointer machine. Lean proves that for every graph drawn in a closed surface of Euler genus gamma whose complement has k regions of odd total boundary length, and all rational vertex weights, the program outputs a maximum-weight independent set within f(gamma + k) * N^(D(gamma, k) + C) * (L + 1)^b bit operations, with D(gamma, k) = max {0, gamma + k - 2, gamma - 1}, improved to max {0, gamma + k - 2} on orientable surfaces; f is an explicit computable function and C, b are absolute constants. Surfaces are represented by finite combinatorial flag maps; disconnected and noncellular drawings, loops, multiple edges, isolated vertices and negative weights are covered. The cost is a logarithmic bit-cost measure including an explicit stack simulation of recursive calls. The proofs use exactly propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/MaxWeightIS-XP-EulerGenusOddFaces-Lean4",
+  "commit": "00f581e7401feedce30699ae94763d4afbfb2f6f",
+  "project_path": null,
+  "declarations": [
+    "WeightedMIS.Spec.main_claim"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C69",
+      "05C10",
+      "68Q25",
+      "68R10",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T03:38:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "00f581e7401feedce30699ae94763d4afbfb2f6f",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--MaxWeightIS-XP-EulerGenusOddFaces-Lean4--d2352eb8b1e4",
+        "source_repository": "RBarish-UTokyo/MaxWeightIS-XP-EulerGenusOddFaces-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:17094c6e4cb7d5983fc775f15870a533a84ddb924f6180802c974c692de80ead"
+}

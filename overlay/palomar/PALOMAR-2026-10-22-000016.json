@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000016",
+  "version": 1,
+  "title": "The Erdős–Szemerédi sunflower conjecture",
+  "abstract": "A Lean formalization of the main vector bound, the explicit set-family bound, and the no-prefactor conjecture in Proof of the Erdős-Szemerédi sunflower conjecture by Matija Bucić, Fankang He, and Hyunwoo Lee (arXiv:2610.26686). The complete proof development uses Mathlib and contains no unresolved proof holes or nonstandard axioms.",
+  "authors": [
+    "Matija Bucić",
+    "Fankang He",
+    "Hyunwoo Lee"
+  ],
+  "repository": "https://github.com/mbucic4/erdos-szemeredi-sunflowers",
+  "commit": "8b5dc7ba9fa9e64faad39a0ab5badf74cc89f8b7",
+  "project_path": null,
+  "declarations": [
+    "ErdosSzemeredi.vector_bound",
+    "ErdosSzemeredi.set_bound",
+    "ErdosSzemeredi.sunflower_conjecture"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05D05",
+      "05D40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T08:04:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8b5dc7ba9fa9e64faad39a0ab5badf74cc89f8b7",
+        "fork_repository": "PalomarArchive/mbucic4--erdos-szemeredi-sunflowers--2a579c35c2b2",
+        "source_repository": "mbucic4/erdos-szemeredi-sunflowers"
+      }
+    ]
+  },
+  "statement_hash": "sha256:df9010ecaa74cb47c0cd1ea24fda6ea0a2fdf58bf1fc097a64b184deda0a95e9"
+}

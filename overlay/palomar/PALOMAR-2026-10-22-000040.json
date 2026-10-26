@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000040",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000040",
+  "version": 1,
+  "title": "Carry and divisor-channel criteria for the factorial-minus-one reciprocal series",
+  "abstract": "For the reciprocal series with denominators n! - 1, the selected Lean theorems give an exact carry characterization of rationality, divisor-channel coordinates, and a finite gcd moment certificate. Companion-orbit and complementary tail criteria are included with their stated hypotheses. These structural results do not certify the paper's large computed denominator exclusions or resolve the irrationality question.",
+  "authors": [
+    "Will Cook"
+  ],
+  "repository": "https://github.com/wcook04/plectis-erdos-lean",
+  "commit": "d8db022f33199491ba88d47fac6d66f8690f2c1a",
+  "project_path": null,
+  "declarations": [
+    "PalomarCorpus.E68.PaperStatementsA.carry_characterisation",
+    "PalomarCorpus.E68.PaperStatementsA.companion_orbit_boundary",
+    "PalomarCorpus.E68.PaperStatementsA.divisor_channel_coordinates",
+    "PalomarCorpus.E68.PaperStatementsA.finite_channel_moment_certificate",
+    "PalomarCorpus.E68.PaperStatementsA.finite_channel_moment_certificate_eq",
+    "PalomarCorpus.E68.PaperStatementsA.global_complementary_criterion_nat"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J72",
+      "11A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T17:06:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d8db022f33199491ba88d47fac6d66f8690f2c1a",
+        "fork_repository": "PalomarArchive/wcook04--plectis-erdos-lean--26c7e2ff36da",
+        "source_repository": "wcook04/plectis-erdos-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:45ca969ade203b515c20cea8fa6ec5ba3d25b07d395ecd4977a4d843d4657875"
+}

@@ -1,0 +1,120 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000008",
+  "version": 1,
+  "title": "Improved zero-density estimates for the Riemann zeta function",
+  "abstract": "We establish improved zero-density estimates for the Riemann zeta function relative to the bounds previously released in PALOMAR-2026-10-11-000010 v1 and PALOMAR-2026-10-09-000005 v1. Let N(σ,T) count the nontrivial zeros with Re ρ ≥ σ and |Im ρ| ≤ T, with analytic multiplicity. For T ≥ 2 and ε > 0, our bounds have the form N(σ,T) ≤ C(σ,ε)T^((1−σ)A(σ)+ε). The native quantitative bounds improve those earlier power curves for 12/17 < σ ≤ 3/4 and 7/9 < σ ≤ 7/8. The displayed power-curve comparison continues for 7/8 < σ < 17/19, where the imported OpenAI result already gives N(σ,T)=0. Later Lean-formalized refinements also give a zero-free region below 7/8 [Collet26]; our comparisons near 7/8 concern the named earlier results. Table 1 gives all the proved contribution curves and their full ranges, including A(σ)=12/(9σ−1) on [5/7,113/153] and A(σ)=255/(153σ+7) on [113/153,3/4]. Figure 1 compares the cumulative curves.",
+  "authors": [
+    "Mark Lewko"
+  ],
+  "repository": "https://github.com/mrklwk/zeta-density-39-over-17-lean",
+  "commit": "c55fc0088bd4d7e61c5934abc5dd9153e8cb2f5d",
+  "project_path": null,
+  "declarations": [
+    "LewkoDensityPalomar.provider_P1",
+    "LewkoDensityPalomar.provider_P2",
+    "LewkoDensityPalomar.provider_P3",
+    "LewkoDensityPalomar.provider_P4",
+    "LewkoDensityPalomar.provider_P5",
+    "LewkoDensityPalomar.provider_P6",
+    "LewkoDensityPalomar.provider_P7",
+    "LewkoDensityPalomar.provider_P8",
+    "LewkoDensityPalomar.provider_P9",
+    "LewkoDensityPalomar.provider_P10",
+    "LewkoDensityPalomar.provider_P11",
+    "LewkoDensityPalomar.provider_P12",
+    "LewkoDensityPalomar.provider_P13",
+    "LewkoDensityPalomar.provider_P14",
+    "LewkoDensityPalomar.provider_P15",
+    "LewkoDensityPalomar.provider_P16",
+    "LewkoDensityPalomar.provider_P17",
+    "LewkoDensityPalomar.provider_P18",
+    "LewkoDensityPalomar.provider_P19",
+    "LewkoDensityPalomar.provider_P20",
+    "LewkoDensityPalomar.provider_P21",
+    "LewkoDensityPalomar.provider_P22",
+    "LewkoDensityPalomar.provider_P23",
+    "LewkoDensityPalomar.provider_P24",
+    "LewkoDensityPalomar.provider_P25",
+    "LewkoDensityPalomar.provider_P26",
+    "LewkoDensityPalomar.provider_P27",
+    "LewkoDensityPalomar.provider_P28",
+    "LewkoDensityPalomar.provider_P29",
+    "LewkoDensityPalomar.provider_P30",
+    "LewkoDensityPalomar.provider_P31",
+    "LewkoDensityPalomar.piece_G1",
+    "LewkoDensityPalomar.piece_G2",
+    "LewkoDensityPalomar.piece_G3",
+    "LewkoDensityPalomar.piece_G4",
+    "LewkoDensityPalomar.piece_G5",
+    "LewkoDensityPalomar.piece_G6",
+    "LewkoDensityPalomar.piece_G7",
+    "LewkoDensityPalomar.piece_G8",
+    "LewkoDensityPalomar.piece_G9",
+    "LewkoDensityPalomar.piece_G10",
+    "LewkoDensityPalomar.piece_B1",
+    "LewkoDensityPalomar.piece_B2",
+    "LewkoDensityPalomar.piece_B3",
+    "LewkoDensityPalomar.piece_B4",
+    "LewkoDensityPalomar.piece_B5",
+    "LewkoDensityPalomar.piece_B6",
+    "LewkoDensityPalomar.piece_O1",
+    "LewkoDensityPalomar.piece_O2",
+    "LewkoDensityPalomar.piece_O3",
+    "LewkoDensityPalomar.piece_O4",
+    "LewkoDensityPalomar.piece_O5",
+    "LewkoDensityPalomar.piece_O6",
+    "LewkoDensityPalomar.piece_O7",
+    "LewkoDensityPalomar.piece_O8",
+    "LewkoDensityPalomar.piece_O9",
+    "LewkoDensityPalomar.piece_O10",
+    "LewkoDensityPalomar.piece_O11",
+    "LewkoDensityPalomar.piece_O12",
+    "LewkoDensityPalomar.piece_O13",
+    "LewkoDensityPalomar.piece_O14",
+    "LewkoDensityPalomar.piece_O15",
+    "LewkoDensityPalomar.piece_O16",
+    "LewkoDensityPalomar.piece_O17",
+    "LewkoDensityPalomar.piece_O18",
+    "LewkoDensityPalomar.piece_O19",
+    "LewkoDensityPalomar.piece_O20",
+    "LewkoDensityPalomar.piece_O21",
+    "LewkoDensityPalomar.piece_O22",
+    "LewkoDensityPalomar.global39over17",
+    "LewkoDensityPalomar.uniform_P29",
+    "LewkoDensityPalomar.uniform_P30",
+    "LewkoDensityPalomar.uniform_P31"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T03:18:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c55fc0088bd4d7e61c5934abc5dd9153e8cb2f5d",
+        "fork_repository": "PalomarArchive/mrklwk--zeta-density-39-over-17-lean--524c4cd16d2b",
+        "source_repository": "mrklwk/zeta-density-39-over-17-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:104183c288fa239c0b1a4ee76df8f4fe9c6d99219b9e5635086834c5ae51edcf"
+}

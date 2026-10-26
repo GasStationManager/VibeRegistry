@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000023",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000023",
+  "version": 1,
+  "title": "Selected Sidon subset theorems of Ma–Tang (partial paper formalization)",
+  "abstract": "Lean 4 proofs of the exact largest-Sidon-subset guarantee g(n)=ceil((n+1)/2) for finite weak Sidon sets, its asymptotic density 1/2, convergence and the optimal-constant characterization for finite (4,5)-sets, and the upper bound cStar<=4/7. The project also proves the finite three-uniform transversal bound 4tau<=n+m used in the exact guarantee. This is a partial formalization of Ma–Tang, arXiv:2602.23282v2: Theorem5.3 and the lower9/17 bound in Theorem1.6 remain unproved.",
+  "authors": [
+    "AItoBit"
+  ],
+  "repository": "https://github.com/AItoBit/ma-tang-sidon-lean",
+  "commit": "5b60244934f6f220007f549ecff4e94bb5f2ee65",
+  "project_path": null,
+  "declarations": [
+    "SidonSubmission.weak_sidon_limit",
+    "SidonSubmission.exact_weak_sidon_size",
+    "SidonSubmission.four_five_limit",
+    "SidonSubmission.density_upper",
+    "SidonSubmission.transversal_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B75",
+      "05C65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T23:06:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5b60244934f6f220007f549ecff4e94bb5f2ee65",
+        "fork_repository": "PalomarArchive/AItoBit--ma-tang-sidon-lean--69dcb652e001",
+        "source_repository": "AItoBit/ma-tang-sidon-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f15f6493ce1c83821a3d79a0e9c847695367dfee0df527ab9b22dd3f233d59e7"
+}

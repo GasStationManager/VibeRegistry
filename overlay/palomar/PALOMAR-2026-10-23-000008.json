@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000008",
+  "version": 1,
+  "title": "Control flow obfuscation with irreducible loops and self-modifying code",
+  "abstract": "Lean 4 development (no Mathlib) of the mathematics, algorithms and security statements of Morse, Alqaradaghi and Kozsik, \"Control flow obfuscation with irreducible loops and self-modifying code\": a self-modifying-code solver for 2-SAT and the planted instance generator as an algorithm, the extremal numbers of irreducible loops and multiple-entry edges (the families Kn and Mn), the irreducible-loop transformations of Figures 5 and 6, the Boolean control-flow graphs of AES, and the security statements of Section 5.1 relative to an explicit structural threat model. Two Challenges are submitted from one development: Challenge.lean (solver, extremal numbers, transformations, security model) and ChallengeAES.lean (the AES graphs); a Challenge may have at most 1,000 lines.",
+  "authors": [
+    "Gregory Morse"
+  ],
+  "repository": "https://github.com/GregoryMorse/smcdynirredloops",
+  "commit": "41400824a9980a186a4f481c9a9075d44dea42fc",
+  "project_path": "lean",
+  "declarations": [
+    "PalomarSIL.mathematical_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CR",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "68N30",
+      "68R10",
+      "94A60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T10:50:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "41400824a9980a186a4f481c9a9075d44dea42fc",
+        "fork_repository": "PalomarArchive/GregoryMorse--smcdynirredloops--ae6bdd8f7f4c",
+        "source_repository": "GregoryMorse/smcdynirredloops"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4b359dc91d0566cc6c632946c188b2e4ac82169c2945508826af906a5c4d048c"
+}

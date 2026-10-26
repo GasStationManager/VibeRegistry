@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000014",
+  "version": 1,
+  "title": "Stephan 2026: superlinear complexity of the (3/2)^n steering word",
+  "abstract": "A minimal Lean 4 / Mathlib formalization of R. Stephan, Superlinear complexity of the (3/2)^n steering word (arXiv:2607.11648), built on the repository's libraries ArithmeticHeights and DiophantineApproximation, whose p-adic Subspace Theorem it uses. Write (3/2)^n = m_n + ε_n with m_n the nearest integer and t_n = 2 m_{n+1} − 3 m_n. The library Stephan2026a is sorry-free and within Lean's three standard axioms. It proves Theorem 1.1, the subword complexity p_T(k) of the steering word T = (t_n) satisfies p_T(k)/k → ∞, together with the numbered results on its proof path: the repetition identity and its corollaries (§2), the reduction to the Diophantine kernel (K) (§3), and the kernel itself, by Ridout-type and three-variable applications of the Subspace Theorem (§4). The open problems of §5 and Conjecture A.2 are stated in Stephan2026a/Problems.lean. Two statements are compared, both forms of Theorem 1.1.",
+  "authors": [
+    "Ralf Stephan"
+  ],
+  "repository": "https://github.com/rwst/Subspace-Theorems",
+  "commit": "09835cb23557ae5ae0cf55a9c4ab9055f5d60338",
+  "project_path": null,
+  "declarations": [
+    "SteeringWord.tendsto_complexity_div",
+    "SteeringWord.exists_forall_lt_complexity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "68R15",
+      "11J87",
+      "11J54",
+      "11J71",
+      "37B10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T10:57:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "09835cb23557ae5ae0cf55a9c4ab9055f5d60338",
+        "fork_repository": "PalomarArchive/rwst--Subspace-Theorems--9bd9bba330e8",
+        "source_repository": "rwst/Subspace-Theorems"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f0e0a8be1d47b325882e2248a589ca561f453fb54c2e480bbb50340b3a74a684"
+}

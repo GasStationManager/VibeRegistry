@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000011",
+  "version": 1,
+  "title": "Almost all graphs are determined by their generalized spectrum",
+  "abstract": "A complete Lean 4 and Mathlib formalization of the theorem that almost all graphs are determined by their generalized spectrum, which is Haemers' conjecture for the generalized spectrum. The generalized spectrum of a graph is the spectrum of its adjacency matrix A together with the spectrum of the adjacency matrix J - I - A of its complement, and a graph is determined by its generalized spectrum (DGS) if every graph with the same generalized spectrum is isomorphic to it. The main theorem, DGSMain.almost_all_graphs_are_DGS, states that the proportion of the graphs on the vertex set {0, ..., n-1} that are DGS tends to 1 as n tends to infinity; that is, the random graph G(n, 1/2) is DGS with probability tending to one. This is Theorem 1.1 of the accompanying paper, and the formalization contains its whole proof: the reduction to local failures at primes through the rational orthogonal matrices relating generalized cospectral graphs, Seidel switching, Fourier analysis of random symmetric matrices over finite rings, inverse Littlewood-Offord estimates over finite fields, rank estimates for random symmetric matrices modulo primes, and the exclusion of rational factors of the characteristic polynomial of a random symmetric sign matrix with zero diagonal. The results that the paper quotes from the literature are also proved: Kneser's addition theorem, the theorem of Johnson and Newman on generalized cospectral graphs, and the cases used of the theorems of Tao and Vu (a random symmetric sign matrix has simple spectrum) and of O'Rourke and Touri (G(n, 1/2) is controllable), the last two by a new argument based on the methods of the paper. The proof uses only the standard axioms propext, Quot.sound and Classical.choice.",
+  "authors": [
+    "Ziqing Xiang"
+  ],
+  "repository": "https://github.com/ziqingxiang/dgs",
+  "commit": "7499bbb80a966cb3abef8856a8cec183cb3c1d99",
+  "project_path": null,
+  "declarations": [
+    "DGSMain.almost_all_graphs_are_DGS"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C50",
+      "05C80",
+      "15B52",
+      "60B20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T14:40:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7499bbb80a966cb3abef8856a8cec183cb3c1d99",
+        "fork_repository": "PalomarArchive/ziqingxiang--dgs--69c88ffb0770",
+        "source_repository": "ziqingxiang/dgs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:69a8a54e1ede75f1baa1de24f7a0e5e03050f736077f24cee3fd756ed0298cdd"
+}

@@ -1,0 +1,46 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000010",
+  "version": 1,
+  "title": "A universal group with thirteen relators",
+  "abstract": "Lean 4 proof that there exists a presentation with two generators and thirteen relators whose group contains an isomorphic copy of every finitely presented group. The construction combines a universal finitely presented input, positive preparation, word recognition, a six-generator nineteen-relator host, and a final HNN compression.",
+  "authors": [
+    "Qiuyu Ren"
+  ],
+  "repository": "https://github.com/32805433/Universal-Group",
+  "commit": "6416dd36ad22f3684583457f234519bafc851396",
+  "project_path": null,
+  "declarations": [
+    "UniversalGroup.exists_two_generator_thirteen_relator_universal_group"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-10-22T04:42:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6416dd36ad22f3684583457f234519bafc851396",
+        "fork_repository": "PalomarArchive/32805433--Universal-Group--c6f245e5a65e",
+        "source_repository": "32805433/Universal-Group"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fddb8d76ce3f396b34855402a6be36f917585822f37611d40f364bcf73534f98"
+}

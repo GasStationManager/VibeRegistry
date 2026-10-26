@@ -2,18 +2,27 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-16-000003",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000003",
-  "version": 1,
-  "title": "Brooks' theorem",
-  "abstract": "A Lean 4 / Mathlib formalization of Brooks' theorem: for k ≥ 3, a finite graph of maximum degree at most k without a (k+1)-clique is k-colourable (no connectedness assumption), and a finite connected graph that is neither complete nor an odd cycle is colourable with as many colours as its maximum degree. The proof uses greedy colourings in Lovász's style and an induction on the number of edges with a separation-and-gluing step.",
+  "version": 2,
+  "title": "Brooks' theorem, degree-choosability and blocks",
+  "abstract": "A Lean 4 / Mathlib formalization of Brooks' theorem: for k ≥ 3, a finite graph of maximum degree at most k without a (k+1)-clique is k-colourable (no connectedness assumption), and a finite connected graph that is neither complete nor an odd cycle is colourable with as many colours as its maximum degree. The proof uses greedy colourings in Lovász's style and an induction on the number of edges with a separation-and-gluing step. Version 2 adds the Erdős–Rubin–Taylor / Borodin theorem (a finite connected graph is degree-choosable, i.e. colourable from any lists with |L(v)| ≥ deg(v), if and only if it is not a Gallai tree: some block is neither complete nor an odd cycle), Brooks' theorem for lists (Vizing 1976), and a library of blocks of graphs (blocks as maximal nonseparable vertex sets, cut vertices, unique block per edge, blocks meeting in at most one vertex, the block–cut tree of a connected graph, and the agreement of the block and induced-subgraph descriptions of Gallai trees).",
   "authors": [
     "Juan Pablo Traverso Gianini"
   ],
   "repository": "https://github.com/jtraverso/brooks",
-  "commit": "e82569027fe8582c647e297d7712af86af372b47",
+  "commit": "b99e6f500256586626396de9c2d6fd4d96119d60",
   "project_path": null,
   "declarations": [
     "BrooksColouring.colorable_of_cliqueFree",
-    "BrooksColouring.brooks"
+    "BrooksColouring.brooks",
+    "BlockStructure.exists_unique_block_of_adj",
+    "BlockStructure.inter_subsingleton",
+    "BlockStructure.exists_isBlock_superset",
+    "BlockStructure.isCutVertex_iff",
+    "BlockStructure.blockCutGraph_isTree",
+    "BlockStructure.gallai_iff",
+    "DegreeChoosability.degree_choosable_iff",
+    "DegreeChoosability.degree_choosable_iff_blocks",
+    "DegreeChoosability.list_brooks"
   ],
   "informal": {},
   "classification": {
@@ -21,11 +30,12 @@
       "math.CO"
     ],
     "msc2020": [
-      "05C15"
+      "05C15",
+      "05C40"
     ]
   },
   "license": "",
-  "published_at": "2026-10-16T00:54:08Z",
+  "published_at": "2026-10-19T14:20:40Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -39,11 +49,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "e82569027fe8582c647e297d7712af86af372b47",
+        "commit": "b99e6f500256586626396de9c2d6fd4d96119d60",
         "fork_repository": "PalomarArchive/jtraverso--brooks--c255f4f55cbf",
         "source_repository": "jtraverso/brooks"
       }
     ]
   },
-  "statement_hash": "sha256:62165eb0bac3ddb5cea4fd4b3d90b9e6b3bb50a01b34c241163251875f57be18"
+  "statement_hash": "sha256:30f1512f49ad4f685258e3313fc26ea1232aadba7150f49dece9d1ba79869856"
 }

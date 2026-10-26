@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000020",
+  "version": 1,
+  "title": "Shelah's bound for the Hales–Jewett numbers",
+  "abstract": "Lean 4 formalization of Shelah's proof of the Hales–Jewett theorem. For k ≥ 1 letters and r colors, every coloring with r colors of the words of length n over k letters has a monochromatic combinatorial line when n is at least the Ackermann function at level 5 and argument 2k + r.",
+  "authors": [
+    "Gabriel Dahia"
+  ],
+  "repository": "https://github.com/gdahia/ShelahHalesJewett",
+  "commit": "8a91fc0e8a9617f8ade16ccb3b56e543990c9f45",
+  "project_path": null,
+  "declarations": [
+    "Combinatorics.Line.exists_mono_of_ack_le'"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.LO"
+    ],
+    "msc2020": [
+      "05D10",
+      "03D20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T09:09:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8a91fc0e8a9617f8ade16ccb3b56e543990c9f45",
+        "fork_repository": "PalomarArchive/gdahia--ShelahHalesJewett--631f33ff5a77",
+        "source_repository": "gdahia/ShelahHalesJewett"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d9814271778d4ef94fc2ee07969bdcc87d3fd4a30f701c6b181a5a93459263ae"
+}

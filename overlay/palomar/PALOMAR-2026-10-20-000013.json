@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000013",
+  "version": 1,
+  "title": "Forest detection and attained healthy-zero maximum weight",
+  "abstract": "Formula-forest detection execution and nonnegative-weight optimal detecting sets for healthy-zero observations. Complete source construction and word-storage proofs are supplied as checked companion modules.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/priority-controller-phase1",
+  "commit": "4defc1bfee6f82a50c5d48e6ad4fe6e01df73cc0",
+  "project_path": null,
+  "declarations": [
+    "Controller.Cost.ForestOriginalSemantics.original_physical_execution",
+    "Controller.Optimization.Weights.forest_maximum_weight",
+    "Controller.Optimization.Weights.forest_physical_maximum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM"
+    ],
+    "msc2020": [
+      "68Q25",
+      "68Q60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T10:11:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4defc1bfee6f82a50c5d48e6ad4fe6e01df73cc0",
+        "fork_repository": "PalomarArchive/shaikidris--priority-controller-phase1--d60f9fc1688f",
+        "source_repository": "shaikidris/priority-controller-phase1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c51647462052c04f4163caf33c7c36691c239f560b5f22d662a2c2a1ffe5123d"
+}

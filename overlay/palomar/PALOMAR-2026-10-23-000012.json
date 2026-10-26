@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000012",
+  "version": 1,
+  "title": "The Euclidean algorithm is not optimal among uniform processes",
+  "abstract": "For every coprime pair a > b ≥ 1 there is a straight-line derivation of gcd(a, b) that uses only the remainder operation on available values and makes at most (6 + o(1)) log₂ a / log₂ log₂ a remainder calls, uniformly in b ≤ a; Euclid's algorithm needs about 1.44 log₂ a calls in the worst case. The proof stores a prefix of the Euclidean remainder sequence, shows that its consecutive pairs stay distinct modulo every sufficiently large modulus, and uses close residues to shrink the modulus by three remainder calls at a time. Consequently the intrinsic calls(rem)-complexities of the gcd and of coprimeness, in the sense of Moschovakis's Abstract Recursion and Intrinsic Complexity, are O(log a / log log a). This refutes Conjecture 3.4 of Moschovakis's 2012 notes \"Absolute lower bounds for uniform processes\" and the version (4F-5) of the Main Conjecture in the book, both for the structure (ℕ, rem, eq0) and for Nε = (ℕ, rem, eq0, eq1). The Main Conjecture for algorithms (deterministic or nondeterministic recursive programs) is not addressed and remains open. Lower bounds are also formalized: every gcd certificate needs at least as many remainder facts as the shortest derivation, and the coprimeness complexity is at least (1 − ε) log₂ log₂ N on all but o(N²) coprime pairs below N.",
+  "authors": [
+    "Jason Davies"
+  ],
+  "repository": "https://github.com/jasondavies/euclid-uniform-processes",
+  "commit": "40279dd42196cc2f9dd6c14ecc3844b6822bff44",
+  "project_path": null,
+  "declarations": [
+    "ShortGCD.uniform_real_bound_six",
+    "ShortGCD.uniform_intrinsic_bound_six",
+    "ShortGCD.not_conjecture_3_4",
+    "ShortGCD.not_conjecture_3_4_literal",
+    "ShortGCD.not_main_conjecture_4F5",
+    "ShortGCD.not_main_conjecture_4F5_Neps",
+    "ShortGCD.not_main_conjecture_4F5_literal",
+    "ShortGCD.exists_certifiesCoprimeness",
+    "ShortGCD.exists_certifiesGcd",
+    "ShortGCD.G_le_callsRemGcd",
+    "ShortGCD.G_le_callsGcd",
+    "ShortGCD.callsCoprimeness_eq_G",
+    "ShortGCD.tendsto_card_callsCoprimeness_loglog"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "03D15",
+      "68Q17",
+      "11A05",
+      "11Y16"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T15:23:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "40279dd42196cc2f9dd6c14ecc3844b6822bff44",
+        "fork_repository": "PalomarArchive/jasondavies--euclid-uniform-processes--bdc1e4418483",
+        "source_repository": "jasondavies/euclid-uniform-processes"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1227a5b9297ff78144027bb039eefd279aecf26cf057d10a36a876a2d90c047f"
+}

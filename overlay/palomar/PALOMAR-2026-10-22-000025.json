@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000025",
+  "version": 1,
+  "title": "Conditional on RH: the number of Goldbach representations on average, after Languasco and Zaccagnini",
+  "abstract": "Conditional on RH: a sorry-free Lean 4 proof of Theorem 1 of A. Languasco and A. Zaccagnini, The number of Goldbach representations of an integer, Proc. Amer. Math. Soc. 140 2012, 795 to 804. With G(n) the sum over m1 + m2 = n of Lambda(m1) Lambda(m2), Mathlib's RiemannHypothesis, taken as an explicit hypothesis of the theorem and never as an axiom, implies that the sum over n <= N of G(n) equals N^2/2 - 2 times the sum over nontrivial zeros rho of N^{rho+1} divided by rho times rho+1, plus O(N log^3 N), for N >= 2. The weaker earlier error terms of Fujii, O((N log N)^{4/3}), and of Bhowmik and Schlage-Puchta, O(N log^5 N), follow and are stated too. The zero sum counts zeros with multiplicity, and its absolute convergence is proved unconditionally. Binary Goldbach is open and is not claimed; this is an average over n. An AI agent wrote the Lean code; the statements were checked against the papers by an AI agent and are offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "559706d617bc554787e10dba07066dc63ab69cb5",
+  "project_path": "entries/languascozaccagnini2012",
+  "declarations": [
+    "LeanLab.GoldbachAverage.lz_theorem1_proved",
+    "LeanLab.GoldbachAverage.bsp_upper_proved",
+    "LeanLab.GoldbachAverage.fujii_proved",
+    "LeanLab.GoldbachAverage.lz_zeroSum_summable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11M26",
+      "11N05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T10:59:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "559706d617bc554787e10dba07066dc63ab69cb5",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a2e33e205edb10b5340f990200b8f18e392dc8cfa8b80ac17f67a7f9d9baeff8"
+}

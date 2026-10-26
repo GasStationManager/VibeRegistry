@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000009",
+  "version": 1,
+  "title": "The Baire product theorem for Choquet spaces",
+  "abstract": "An arbitrary Baire topological space times a space with a winning full-history second-player Banach–Mazur strategy is Baire. A disjoint dense rectangle tree yields, for each prescribed nonempty open fiber region, a dense Gδ set of parameters with a common-point fiber witness for every countable dense-open product family. An explicit shrinking-ball strategy establishes alpha-favorability of complete metric spaces. Empty factors and legal-play existence are treated explicitly. This is classical mathematics, not a novelty or determinacy claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "51def6feb5e4469cce2396dfa4c9fa4f3b933d82",
+  "project_path": "topology/choquet-baire-product",
+  "declarations": [
+    "ChoquetProduct.follows_intersection_eq",
+    "ChoquetProduct.exists_compatiblePlay",
+    "ChoquetProduct.alphaFavorable_of_isEmpty",
+    "ChoquetProduct.exists_dense_isGdelta_fiber_witness",
+    "ChoquetProduct.baireSpace_prod",
+    "ChoquetProduct.metricStrategy_wins",
+    "ChoquetProduct.alphaFavorable_of_completeMetric",
+    "ChoquetProduct.baireSpace_prod_completeMetric"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54E52",
+      "54B10",
+      "91A44"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-20T04:22:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "51def6feb5e4469cce2396dfa4c9fa4f3b933d82",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:502f8f0fec6b45a2e088b3f2ab686a224ef84f3bbb23f364410f78f3fd0bbdec"
+}

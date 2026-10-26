@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000018",
+  "version": 1,
+  "title": "Analysis of a left-shift binary GCD algorithm (Shallit–Sorenson 1994), with a proof of its sum-of-squares conjecture",
+  "abstract": "A complete Lean 4 formalization of Jeffrey Shallit and Jonathan Sorenson, \"Analysis of a Left-Shift Binary GCD Algorithm\" (J. Symbolic Computation 17, 1994). LSBGCD replaces (u, v) by v and the distance from u to the nearer of the shifted multiples 2^e v and 2^(e+1) v, where 2^e v ≤ u < 2^(e+1) v. The formalization proves that the algorithm computes the gcd, and proves Theorem 1.1: for every n, the lexicographically least ordered input taking exactly n iterations, its six closed forms in powers of 2 ± √3, and the order-16 linear recurrence satisfied by both coordinates. It proves in full generality Ramharter's theorem on continuant-minimising permutations (Theorem 5.1, quoted in the paper from Ramharter 1983), for arbitrary positive digits with repetition and with uniqueness up to reversal. It also proves the paper's binary minimiser classification (Theorem 5.2) and the sharp logarithmic iteration bound of §7 with an explicit additive constant. In addition it proves the sum-of-squares conjecture stated without proof at the end of §6: for n ≥ 2, among ordered positive inputs taking exactly n iterations, u² + v² is uniquely minimised by consecutive terms of the printed recurrence, which are denominators of convergents to √3. A limited literature search found no earlier proof of this conjecture, but its novelty has not been established.",
+  "authors": [
+    "Jason Davies"
+  ],
+  "repository": "https://github.com/jasondavies/lsbgcd",
+  "commit": "8423f4e77e1ab3a13423530151d69a1ef7125510",
+  "project_path": null,
+  "declarations": [
+    "Lsbgcd.gcd_correct",
+    "Lsbgcd.isWorstCase_unique",
+    "Lsbgcd.worstCase_odd",
+    "Lsbgcd.worstCase_four_mul",
+    "Lsbgcd.worstCase_four_mul_add_two",
+    "Lsbgcd.worstCase_order16",
+    "Lsbgcd.theorem5_1",
+    "Lsbgcd.iterations_le_sharp_log",
+    "Lsbgcd.sum_squares_conjecture",
+    "Lsbgcd.sum_squares_minimizer_eq"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "cs.DS"
+    ],
+    "msc2020": [
+      "11A05",
+      "11Y16",
+      "11A55",
+      "68W40",
+      "05A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T08:57:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8423f4e77e1ab3a13423530151d69a1ef7125510",
+        "fork_repository": "PalomarArchive/jasondavies--lsbgcd--07b4ce21a846",
+        "source_repository": "jasondavies/lsbgcd"
+      }
+    ]
+  },
+  "statement_hash": "sha256:06b87b867e01ae0ef86d5225eea3738b01cbcee819f832292fadca68c481c2fc"
+}

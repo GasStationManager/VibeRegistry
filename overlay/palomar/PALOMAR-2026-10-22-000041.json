@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000041",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000041",
+  "version": 1,
+  "title": "Open Baire-space representation of Polish spaces",
+  "abstract": "Every nonempty Polish space is the image of Baire space, the product of countably many discrete natural-number spaces, under a continuous open surjection. The proof constructs a countably branching nonempty open scheme with nested closures, covering children and geometrically shrinking diameters. The image of each basic cylinder is proved exactly equal to its scheme open set. This yields openness and surjectivity of the limit map; existence is also characterized by nonemptiness. These are classical results, with no novelty or priority claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "87652c909a92afded15aad86a901d8c11dd75ed8",
+  "project_path": "topology/open-baire-representation",
+  "declarations": [
+    "OpenBaire.exists_open_refinement",
+    "OpenBaire.exists_open_scheme",
+    "OpenBaire.OpenScheme.image_cylinder",
+    "OpenBaire.exists_continuous_open_surjective_of_completeSpace",
+    "OpenBaire.exists_continuous_open_surjective",
+    "OpenBaire.exists_continuous_open_surjective_iff_nonempty"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54C10",
+      "54E50",
+      "54E52",
+      "03E15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T17:49:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "87652c909a92afded15aad86a901d8c11dd75ed8",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:85f587d6d793af630980ae3a4dcbf3ffb410f6d3a8e68bed91b1390eb6e69600"
+}

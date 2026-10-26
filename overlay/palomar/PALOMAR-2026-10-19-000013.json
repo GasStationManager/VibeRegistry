@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-19-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-19-000013",
+  "version": 1,
+  "title": "The Alon–Tarsi theorem and 3-choosability of planar bipartite graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of the Alon–Tarsi theorem: if a finite simple graph has an orientation whose numbers of even and odd Eulerian subdigraphs differ, then it can be properly coloured from any lists larger than the out-degrees; and of its corollary that every finite planar bipartite graph is 3-choosable. Planarity is the combinatorial notion of a plane map (a rotation system of genus zero) of the registered entry PALOMAR-2026-10-15-000005, whose definitions are reproduced verbatim in the Challenge. The proof uses the graph polynomial and Mathlib's Combinatorial Nullstellensatz, Euler's formula for plane maps, and an out-degree-2 orientation obtained from Hall's theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/alon-tarsi-choosability",
+  "commit": "4ab98b11f340ea2160b34d0b57ef7102452b98cc",
+  "project_path": null,
+  "declarations": [
+    "OrientationColouring.alon_tarsi",
+    "OrientationColouring.choosable_three_of_isPlanar_bipartite"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C10",
+      "05C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-19T09:59:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4ab98b11f340ea2160b34d0b57ef7102452b98cc",
+        "fork_repository": "PalomarArchive/jtraverso--alon-tarsi-choosability--e8601c7736f7",
+        "source_repository": "jtraverso/alon-tarsi-choosability"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b9035f0832df19fc3a83fd6adf7fd1cdc7a95bb4aaa5ba2611b17a13e4750b49"
+}

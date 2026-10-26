@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000016",
+  "version": 1,
+  "title": "Ordinary resolution for native encodings and observation wrappers",
+  "abstract": "Checked ordinary-resolution construction for the native controller encoding and supported observation wrappers, with cubic inference bounds and the displayed derived-literal storage bound.",
+  "authors": [
+    "Idris Ali Shaik"
+  ],
+  "repository": "https://github.com/shaikidris/priority-controller-phase1",
+  "commit": "a510ea7e76d9b10e21e7f4db8f57fd3a3468a090",
+  "project_path": null,
+  "declarations": [
+    "Controller.Cost.NativeResolution.native_refutation_encoded_cubic",
+    "Controller.Cost.NativeResolution.compactNativeCompile_complete",
+    "Controller.Cost.NativeResolution.compactNativeCompile_checked",
+    "Controller.Cost.NativeResolution.canonical_derived_literal_storage",
+    "Controller.Cost.WrapperResolution.runOptional_complete_cubic",
+    "Controller.Cost.WrapperResolution.runSelected_complete_cubic",
+    "Controller.Cost.WrapperResolution.runOptional_checked",
+    "Controller.Cost.WrapperResolution.runSelected_checked",
+    "Controller.Cost.NativeResolution.canonical_refutation_resources"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC"
+    ],
+    "msc2020": [
+      "68Q25",
+      "68Q60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T07:11:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a510ea7e76d9b10e21e7f4db8f57fd3a3468a090",
+        "fork_repository": "PalomarArchive/shaikidris--priority-controller-phase1--d60f9fc1688f",
+        "source_repository": "shaikidris/priority-controller-phase1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:95a01903c6f06a9e2f87e329bf9c7e830f4c48335488a1a684c27258ae60a9ec"
+}

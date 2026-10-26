@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000009",
+  "version": 1,
+  "title": "The Nash–Williams triangle-decomposition theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of the Nash–Williams theorem for large graphs proved by Delcourt and Postle: there is N such that every finite simple graph on n ≥ N vertices that is triangle-divisible (3 divides the number of edges and every degree is even) and has minimum degree at least 3n/4 has a triangle decomposition; together with Delcourt–Postle's fractional threshold (every graph with 3n ≤ 4δ has a fractional triangle decomposition) and their fractional stability theorem (with an additional order threshold). The proof follows their extremal/non-extremal case division but does not assume their Theorem 13.16, whose proof is assigned to an unpublished manuscript: the extremal residuals are decomposed with typed absorption results developed in the same project, and the non-extremal case with a protected covering-round argument. The development has 1,070 modules.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/nash-williams-lean",
+  "commit": "2603197abdbf0a600ec663f6f046f70fbd209d4a",
+  "project_path": null,
+  "declarations": [
+    "NashWilliamsTheorem.nash_williams",
+    "NashWilliamsTheorem.fractional_nash_williams",
+    "NashWilliamsTheorem.fractional_stability"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T03:28:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2603197abdbf0a600ec663f6f046f70fbd209d4a",
+        "fork_repository": "PalomarArchive/jtraverso--nash-williams-lean--252fc7828395",
+        "source_repository": "jtraverso/nash-williams-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:69ecbb9479d377b8ab89462863c55457ac4839c8ea93b464c7bda7ad11ae8688"
+}

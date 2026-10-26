@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000007",
+  "version": 1,
+  "title": "Fifth dimension subgroups: D₅ = γ₅ when G/γ₂ is finite of exponent 3, candidates for a counterexample, and a reduction of Kourovka 20.84",
+  "abstract": "Lean 4 / Mathlib formalization accompanying S. Vorobev, \"On the inclusion D_5(G) ⊆ γ_4(G): reductions, the Lie-ring proof, and evidence\" (preprint, 2026; submitted to arXiv math.GR on 2026-10-22). The integral dimension subgroups D_n(G) = {g ∈ G : g − 1 ∈ Δ(G)^n} are defined from the augmentation ideal of Mathlib's integral group ring. Kourovka Problem 20.84 asks whether D_5(G) ⊆ γ_4(G) for every group; it is open and is not claimed here. Unconditional results: D_5(G) = γ_5(G) whenever G/γ_2(G) is finite of exponent 3, and more generally whenever G/γ_2(G) is a finite 3-group whose cubes form a cyclic group (paper, Theorems 6.6 and 6.8; the inclusion part of Tahara's 1981 description of D_5 is formalized for this); D_5(G) lies in the Jennings product M_5(G) for finite 2-groups of class at most 3; and, for \"candidates\" (the paper's minimal-counterexample shape among finite 2-groups of class 3), there is no candidate of order 2^11 with Q/P_3 ≅ Z/4 × (Z/2)^7 and none of order 2^11 and rank at least 8 (paper, Lemma 5.6 and Proposition 5.7). Conditional results, with every assumption an explicit hypothesis: the reduction of Problem 20.84 to finite 2-groups of class exactly 3 assuming D_3 = γ_3, Passi's D_4^2 ⊆ γ_4 and Gruenberg's residual theorem (Proposition 2.1); a minimal counterexample is a candidate assuming D_3 = γ_3 (Lemma 5.2); and D_5 = 1 for groups of order 2^11, class at most 3 and rank at least 8, assuming D_3 = γ_3 and the paper's computer result for order 2^10 (Proposition 5.7, D_5 form).",
+  "authors": [
+    "Stanislav Vorobev"
+  ],
+  "repository": "https://github.com/ispacex/group-dimension",
+  "commit": "533dc1c66d26de4863983fc303382151a593df3a",
+  "project_path": null,
+  "declarations": [
+    "GroupDimension.Palomar.D_five_eq_gamma_five_of_exp_three",
+    "GroupDimension.Palomar.D_five_eq_gamma_five_of_cubes_cyclic",
+    "GroupDimension.Palomar.D_five_le_jennings",
+    "GroupDimension.Palomar.not_isCandidate_of_quotient_z4",
+    "GroupDimension.Palomar.false_of_card_expCentral_two_le",
+    "GroupDimension.Palomar.not_isCandidate_of_rank",
+    "GroupDimension.Palomar.dimensionQuestion5_iff_class_three",
+    "GroupDimension.Palomar.isCandidate_of_minimal",
+    "GroupDimension.Palomar.D_five_eq_bot_of_rank"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR"
+    ],
+    "msc2020": [
+      "20F14",
+      "20D15",
+      "20C05",
+      "16S34"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T09:02:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "533dc1c66d26de4863983fc303382151a593df3a",
+        "fork_repository": "PalomarArchive/ispacex--group-dimension--061786557a7a",
+        "source_repository": "ispacex/group-dimension"
+      }
+    ]
+  },
+  "statement_hash": "sha256:af3eb1f2846996f85a3163a992cb0bf9e8de82f6d73e7dcc89cae52ab9be4bde"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-23-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000016",
+  "version": 1,
+  "title": "Mader's theorem on highly connected subgraphs",
+  "abstract": "A Lean 4 / Mathlib formalization of Mader's 1972 theorem in the form of Diestel's Theorem 1.4.3: for k ≥ 1, every nonempty finite simple graph with average degree at least 4k has a (k + 1)-connected induced subgraph H with e(H)/|H| > e(G)/|G| − k. Vertex connectivity is defined by deletion of fewer than k vertices (same definition as in the Menger–Hamiltonicity entry). Mathlib does not contain vertex connectivity or this theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/mader-connectivity",
+  "commit": "b471abcdfbb303aabc1af26f4531e080729bb469",
+  "project_path": null,
+  "declarations": [
+    "MaderTheorem.mader"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C40",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-23T20:07:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b471abcdfbb303aabc1af26f4531e080729bb469",
+        "fork_repository": "PalomarArchive/jtraverso--mader-connectivity--54c8125a286e",
+        "source_repository": "jtraverso/mader-connectivity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c8ca4ee307355f6f223319507e2ecb4c171eb9148e6cee0ef0e9ed0cea4e59c8"
+}

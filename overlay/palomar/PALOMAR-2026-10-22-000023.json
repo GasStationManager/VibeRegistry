@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-22-000023",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-22-000023",
+  "version": 1,
+  "title": "Conditional on RH: the Cesàro average of the number of Goldbach representations, after Goldston and Yang",
+  "abstract": "Conditional on RH: a sorry-free Lean 4 proof of Theorem 2 of D. A. Goldston and L. Yang, The average number of Goldbach representations, arXiv 1601.06902, in Prime numbers and representation theory, Science Press 2017. With G(n) the sum over m1 + m2 = n of Lambda(m1) Lambda(m2), Mathlib's RiemannHypothesis, taken as an explicit hypothesis of the theorem and never as an axiom, implies that the sum over n <= N of 1 - n/N times G(n) equals N^2/6 - 2 times the sum over nontrivial zeros rho of N^{rho+1} divided by rho times rho+1 times rho+2, plus O(N), for N >= 2. The zero sum counts zeros with multiplicity, and its absolute convergence is proved unconditionally. Binary Goldbach is open and is not claimed; this is an average over n. An AI agent wrote the Lean code; the statements were checked against the paper by an AI agent and are offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "3ba1189ed38f0a913828af00d72196eebd68777f",
+  "project_path": "entries/goldstonyang2016",
+  "declarations": [
+    "LeanLab.GoldbachAverage.gy_theorem2_proved",
+    "LeanLab.GoldbachAverage.gy_zeroSum_summable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11M26",
+      "11N05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-22T10:45:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3ba1189ed38f0a913828af00d72196eebd68777f",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5215f86b861b123dbfcfd588d4cc5589830ce4615264cb2ac662ea11f16434e1"
+}

@@ -1,0 +1,74 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-21-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-21-000012",
+  "version": 1,
+  "title": "Hermite's signature theorem and the coprime compositum, with the degree-12 compositum of x^3 - x - 1 and x^4 - x - 1",
+  "abstract": "Kernel-checked proofs, in Lean 4 + Mathlib, of six general theorems and twelve statements about one number field. General: (1) Hermite's signature theorem for every real polynomial f, degenerate case included and with no monic hypothesis: the power-sum Hankel (Hermite) form H_f has sigPos = #R + #C+, sigNeg = #C+, rank sigPos + sigNeg = #D and radical of dimension deg f - #D, where D, R, C+ are the distinct complex roots, the real ones, and those in the upper half plane; (2) its number-field form (classical, Hermite-Sylvester; in number-field form credited to O. Taussky 1968): the trace form Tr_{K/Q}(x^2) of a number field K has type (r1 + r2, r2), and is positive definite iff K is totally real; (3) the places of a linearly disjoint compositum L = K1 K2: r1(L) = r1(K1) r1(K2) and 2 r2(L) = [K1:Q][K2:Q] - r1(K1) r1(K2); (4) the signed discriminant of such a compositum with coprime discriminants, d_L = d_{K1}^[K2:Q] d_{K2}^[K1:Q], the sign included; (5) the trace projection [E:F]^-1 Tr_{E/F} onto a subfield F, the orthogonal decomposition E = F + F^perp for Tr_{E/Q}(xy) with F^perp = ker Tr_{E/F}, the restriction of the trace form of E to F as [E:F] times the trace form of F, and the type (r1(E) + r2(E) - r1(F) - r2(F), r2(E) - r2(F)) of its restriction to ker Tr_{E/F}; (6) the squarefree-discriminant criterion (a textbook exercise). The field: the compositum L of Q(rho) and Q(Q), rho and Q roots of x^3 - x - 1 and x^4 - x - 1, built as the tower K3 = Q[X]/(X^3 - X - 1), L = K3[Y]/(Y^4 - Y - 1), of degree 12: (7) the setting (degrees 3, 4, 12; linearly disjoint sectors); (8) O_{Q(rho)} = Z[rho], O_{Q(Q)} = Z[Q], discriminants -23 and -283, O_L = Z[rho, Q] with basis rho^i Q^j; (9) d_L = (-23)^4 (-283)^3 = -6342648595267; (10) places (1,1), (2,1), (2,5) and the trace-form type (7,5) of L, derived from (2) and (3) with no root located; (11) the relative traces on the product basis; (12) Tr(-alpha^-1) = 1 for alpha^n = alpha + 1 in degree n, the unit sections -Q^-1 and -rho^-1 of the relative traces, their surjectivity on rings of integers and the integral splittings of ranks 3 + 9 and 4 + 8; (13) the orthogonal decompositions of L along the two sectors, with restrictions 4 Tr and 3 Tr of types (2,1), (3,1) and complements of types (5,4), (4,4); (14) the covolume 2^-5 23^2 283 sqrt(283) of O_L in Mathlib's normalization, which is 4 times the product covol(O_{Q(rho)})^4 covol(O_{Q(Q)})^3; (15) the discriminant -23^4 53^2 283^3 of the degree-12 polynomial, which is the minimal polynomial of rho Q, and the index [O_L : Z[rho Q]] = 53; (16) the subfield lattice {Q, Q(rho), Q(Q), L}; (17) root-rigidity and circle-freeness of L; (18) Smyth's lower bound for the Mahler measure on O_L, with Smyth's theorem as an explicit hypothesis (cited, not proved). Eighteen compared theorems. The mathematics of (1)-(6) is classical and no novelty is claimed for it; the contribution is the kernel-checked proofs: (1), (2) and (5) from Mathlib's sigPos, sigNeg (D. Loeffler) and, for (2) and (5), Algebra.traceForm, between which Mathlib has no theorem at the pinned revision; (3) and (4) from Mathlib's infinite places and linear disjointness. The proof modules also prove, not compared, that sigPos and sigNeg are additive over orthogonal direct sums and invariant under positive scaling over any linearly ordered field, and that the signature of a rational matrix form is unchanged by base change to R; Mathlib at the pin has none of these. Mathlib prior art is used and not re-proved: X. Roblot's theorem on the absolute value of the discriminant of a coprime compositum (statement (4) adds the sign) and his theorem on its ring of integers (used in (8)). The definiteness corollary of (1) (real-rooted iff H_f positive semidefinite) was formalized in Lean 4 by P. Alexandersson (RealRooted, 2026-09-27) before this entry; (1) proves the full rank/signature/radical count, from which that corollary follows. No prior formalization of the rank and signature count of the Hermite form, or of the trace-form signature (r1 + r2, r2) of a number field, was found by a search on 2026-10-19 (Mathlib, the Isabelle AFP, Coq/MathComp, HOL Light, Lean 4 community repositories, Zenodo, arXiv); the existing root-counting formalizations use sign variations of remainder sequences. The sector inputs of the field at the level of Q are ported from the author's registered entry PALOMAR-2026-09-02-000014 and are not compared; (7) and the minimal-polynomial clause of (15) re-prove facts certified in the author's registered entry PALOMAR-2026-09-01-000005 and are not new. Application (cited, not a claim of the entry): In the author's Pisot Dimensional Theory, Q(rho) is the arithmetic of three-dimensional space and Q(Q) the arithmetic of four-dimensional spacetime, and their compositum K is the parent of both. Read through the theory, this entry's theorems make six conclusions exact.\nSpace and spacetime are the only worlds the parent contains. The fields between Q and K have degrees 3 and 4 and no others: Q(rho) and Q(Q) are K's only proper subfields other than Q (16). An intermediate sub-arithmetic of the parent has dimension 3 or 4, and nothing else; there is no 2-, 6- or other intermediate world.\nThe world is a product, not a sum. K is the tensor product of the two sectors, 12 = 3*4 (7), and its integers are exactly Z[rho] (x) Z[Q] (8). The parent's discrete structure is built from the two sectors' lattices and nothing else.\nThe parent's geometry is the product of space's and spacetime's. The trace form of K has type (7,5) (10), and it is the tensor product of the sectors' own forms (PALOMAR-2026-09-02-000014): (2,1) (x) (3,1), with 2*3 + 1*1 = 7 and 2*1 + 1*3 = 5. On the quartic sector the form is 3 times spacetime's own, of Lorentzian type (3,1); on the cubic sector, 4 times space's, of type (2,1) (13). The one time direction is not put in by hand: it is what the parent's form is on spacetime.\nAll of the parent's asymmetry between space and time is spacetime's. The parent's excess of positive over negative directions, 7 - 5 = 2, is exactly spacetime's 3 - 1 = 2. The eight dimensions orthogonal to spacetime are perfectly balanced, four positive and four negative (5, 13).\nBoth sectors are recovered from the parent. The relative traces, divided by the relative degrees [K:Q(rho)] = 4 and [K:Q(Q)] = 3, are the orthogonal projections onto the sectors (5), and the traces themselves carry the parent's lattice onto Z[rho] and Z[Q] (12). Every element of space and of spacetime is the shadow of an element of the parent.\nThe parent is built from minimizers, and joining them creates nothing smaller. Each sector's generator is a minimizer, certified in the author's registered entries: x^3 - x - 1 and x^4 - x - 1 attain the least Mahler measure above 1 among irreducible integer polynomials of degrees 3 and 4 (PALOMAR-2026-08-31-000004); rho is the least Pisot eigenvalue of any substitution on at most three letters, the slowest settling clock (PALOMAR-2026-10-18-000019), and the growth rate of the triangle group (2,3,infinity) = PGL(2,Z), the slowest of the hyperbolic triangle groups (p,q,infinity) (PALOMAR-2026-10-17-000013). K is the compositum of the two minimizers, and a single number generates all of it: rho*Q, the theory's coupling ruler (15; PALOMAR-2026-09-01-000005). Minimality survives the join. No element of K other than +/-1 has a conjugate on the unit circle (17), so the parent contains no Salem number, and with Smyth's theorem every nonzero integer of K other than +/-1 has Mahler measure at least rho (18), with equality at rho itself (PALOMAR-2026-08-31-000004). The 3D generator is the smallest nontrivial size in the whole twelve-dimensional arithmetic, exactly as in degree 3. In the theory, rho is the ground of minimality and therefore the ground of three-dimensional structure; joining space to spacetime keeps that ground.\nThe two sectors are the two sides of the Pisot boundary. rho is a Pisot number, and the Padovan substitution tiling, whose characteristic polynomial is x^3 - x - 1, is a regular model set with pure-point diffraction (Baake and Grimm 2020): the ordered, classical sector. It is handed, the arrow of time: its tiling flow is neither mutually locally derivable from nor topologically conjugate to its mirror image (Gaehler 2026, Example 10 and Remark 7, where the Padovan rule is varrho_R after renaming a <-> c), and in the factor language the author's registered entries PALOMAR-2026-08-19-000006, PALOMAR-2026-09-04-000004 and PALOMAR-2026-10-18-000019 certify it: ca occurs and ac never does. Q is not Pisot (PALOMAR-2026-09-01-000012), and every primitive self-similar tiling of the line with expansion Q has no non-trivial pure-point spectrum (Solomyak 1997): the quantum sector, which cannot settle on a line. This is the arithmetic of a quasicrystal (superspace crystallography: de Wolff 1974; Janner and Janssen 1977; cut-and-project: de Bruijn 1981; Kramer and Neri 1984; Duneau and Katz 1985; Elser 1986): a higher-dimensional lattice, O_K in R^2 x C^5, from which the sector lattices are recovered by the traces (12).",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-hermite-signature-compositum",
+  "commit": "5aa870e98236ba240561b798265c629df8c2d031",
+  "project_path": null,
+  "declarations": [
+    "HermiteSignatureCompositum.hermite_signature",
+    "HermiteSignatureCompositum.traceForm_signature",
+    "HermiteSignatureCompositum.places_compositum",
+    "HermiteSignatureCompositum.discr_compositum",
+    "HermiteSignatureCompositum.trace_projection",
+    "HermiteSignatureCompositum.squarefree_discr_criterion",
+    "HermiteSignatureCompositum.setting",
+    "HermiteSignatureCompositum.integral_structure",
+    "HermiteSignatureCompositum.discr_L",
+    "HermiteSignatureCompositum.places_and_type",
+    "HermiteSignatureCompositum.relative_traces",
+    "HermiteSignatureCompositum.unit_sections",
+    "HermiteSignatureCompositum.orthogonal_decompositions",
+    "HermiteSignatureCompositum.covolume_L",
+    "HermiteSignatureCompositum.ruler_minpoly_index",
+    "HermiteSignatureCompositum.subfield_lattice",
+    "HermiteSignatureCompositum.rootRigid_circle_free",
+    "HermiteSignatureCompositum.mahlerMeasure_ge_of_smyth"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math-ph",
+      "gr-qc",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "11E10",
+      "11E12",
+      "12D10",
+      "11R04",
+      "11R29",
+      "11R21",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-21T04:45:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5aa870e98236ba240561b798265c629df8c2d031",
+        "fork_repository": "PalomarArchive/stalex444--pdt-hermite-signature-compositum--de3680e74099",
+        "source_repository": "stalex444/pdt-hermite-signature-compositum"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d901a07b1259ffe49d7fcc95404879fd21bfa1de27577abcb8cd9e07c3182689"
+}
