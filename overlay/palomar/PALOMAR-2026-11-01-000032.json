@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000032",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000032",
+  "version": 1,
+  "title": "The Hamiltonicity threshold of the random graph G(n, p) (Komlós–Szemerédi)",
+  "abstract": "A Lean 4 / Mathlib formalization of the sharp Hamiltonicity threshold of the binomial random graph: if ω(n) → ∞, then G(n, (log n + log log n + ω(n))/n) is Hamiltonian with probability tending to 1, and G(n, (log n + log log n − ω(n))/n) is Hamiltonian with probability tending to 0 (Komlós–Szemerédi 1983; Bollobás 1984). The edge probability is clipped to [0, 1] (min 1 above, max 0 below). The statements are given in the finite product model of the registered entry PALOMAR-2026-10-28-000021 (one independent Bernoulli(p) coin per pair of distinct vertices of Fin n) and, as corollaries, for Mathlib's SimpleGraph.binomialRandom with the edge probability projected to [0, 1]. Hamiltonicity is Mathlib's SimpleGraph.IsHamiltonian.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/komlos-szemeredi-hamiltonicity",
+  "commit": "9a69e6d92eb29200d50580b9a54d07a4b37c28b8",
+  "project_path": null,
+  "declarations": [
+    "KomlosSzemerediThreshold.isHamiltonian_of_log_add_loglog_add",
+    "KomlosSzemerediThreshold.not_isHamiltonian_of_log_add_loglog_sub",
+    "KomlosSzemerediThreshold.isHamiltonian_binomialRandom",
+    "KomlosSzemerediThreshold.not_isHamiltonian_binomialRandom"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C80",
+      "05C45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T22:52:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9a69e6d92eb29200d50580b9a54d07a4b37c28b8",
+        "fork_repository": "PalomarArchive/jtraverso--komlos-szemeredi-hamiltonicity--b380d65dec62",
+        "source_repository": "jtraverso/komlos-szemeredi-hamiltonicity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f08b68dbc50ccc940debbf69ce227acb060181ced2b1c3cf3215399c32f2d1c4"
+}

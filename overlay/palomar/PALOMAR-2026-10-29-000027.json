@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000027",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000027",
+  "version": 1,
+  "title": "The two-locus sampling recursion of the coalescent with recombination: existence, uniqueness, and probabilistic interpretation",
+  "abstract": "This entry formalizes the two-locus sampling recursion of the coalescent with recombination, with finitely many alleles at each locus and parent-independent mutation. For positive mutation rates and nonnegative recombination rate, a solution exists and is unique, over any linearly ordered field. For real parameters, the solution at a sample typed at both loci equals the probability that the typed ancestral recombination graph, in which a mutation removes the ancestry of a lineage at that locus and assigns a type to the sample members it carries, ends with exactly the types of the sample. The solution sums to 1 over all typings of a sample of given size, tends to the product of the one-locus sampling probabilities as the recombination rate tends to infinity, and at recombination rate 0 gives a solution of a one-locus recursion on pairs of alleles. With mutation rates 0, the expected total branch length of the genealogy at locus A of a sample of size n is 2 times the sum of 1/(i + 1) for i < n − 1. The transition matrix of the typed ancestral chain is shown to be nonnegative with unit row sums.",
+  "authors": [
+    "X. Lee",
+    "N. Volkov"
+  ],
+  "repository": "https://github.com/cenozoic-works/rhone-theory",
+  "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+  "project_path": null,
+  "declarations": [
+    "Rhone.Palomar.SamplingRecursion.exists_isSolution",
+    "Rhone.Palomar.SamplingRecursion.isSolution_unique",
+    "Rhone.Palomar.SamplingRecursion.measure_hit_ever_initT",
+    "Rhone.Palomar.SamplingRecursion.sum_q_cSample",
+    "Rhone.Palomar.SamplingRecursion.tendsto_q_qHat",
+    "Rhone.Palomar.SamplingRecursion.isSolutionOneG_q_rho_zero",
+    "Rhone.Palomar.SamplingRecursion.expected_total_length",
+    "Rhone.LinearAlgebra.Recursion.exists_isSolution",
+    "Rhone.Coalescent.TypedAncestralChain.transS_nonneg",
+    "Rhone.Coalescent.TypedAncestralChain.sum_transS"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "q-bio.PE",
+      "math.PR"
+    ],
+    "msc2020": [
+      "92D10",
+      "60J90",
+      "60J10",
+      "92D15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T14:50:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+        "fork_repository": "PalomarArchive/cenozoic-works--rhone-theory--fb903f3fec24",
+        "source_repository": "cenozoic-works/rhone-theory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:acdd9bfa1b18d3e8e5ef01fc69bf569415e4d028b6961ab2dd69693209b3a49c"
+}

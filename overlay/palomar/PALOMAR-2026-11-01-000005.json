@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000005",
+  "version": 3,
+  "title": "Triangle decompositions of dense tripartite graphs and completion of partial Latin squares",
+  "abstract": "A Lean 4 / Mathlib formalization of Corollary 1.6 for r = 3 of Barber, Kühn, Lo, Osthus and Taylor, \"Clique decompositions of multipartite graphs and completion of Latin squares\" (J. Combin. Theory Ser. A 151 (2017), arXiv:1603.01043): fractional triangle decompositions above a threshold give triangle decompositions above the same threshold. Precisely: if δ ≥ 3/4 and, for every ε > 0, every K₃-divisible tripartite graph with three parts of size n ≥ n₀(ε) and minimum partite degree at least (δ + ε)n has a fractional triangle decomposition, then for every ε > 0 there is n₀ such that every K₃-divisible tripartite graph with parts of size n ≥ n₀ and minimum partite degree at least (δ + ε)n has a triangle decomposition (BKLOT2017.corollary_1_6). The hypothesis δ ≥ 3/4 is an extra assumption of the Lean statement: the article does not need it because the fractional threshold is known to be at least 3/4, which is not formalized here. Combined with the fractional bound of Allsop, Bowtell, Lesgourgues and Petrova (pinned entry PALOMAR-2026-10-30-000008), this gives the unconditional statement with threshold 0.769 − 1/20000 (BKLOT2017.corollary_1_6_ablp). The proof follows the iterative absorption of the article (absorbers, vortex of partitions with random reserves, cover-down, balancing graph, assembly) but replaces the regularity-based Section 8 by a route through the fractional threshold and the Haxell–Rödl transfer. Version 2 adds Theorem 1.4 and Corollary 3.2 for r = 3, the completion of partial Latin squares: for every ε > 0 and all large n, every partial Latin square of order n in which every row, every column and every symbol is used at most (1 − δ − ε)n times extends to a Latin square, above the fractional threshold δ ≥ 3/4 (BKLOT2017.theorem_1_4, from Cor16 δ by BKLOT2017.corollary_3_2) and unconditionally with 1 − δ = 0.231 + 1/20000 (BKLOT2017.theorem_1_4_ablp).",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/triangle-decompositions-tripartite",
+  "commit": "fd5c713e00cc03454878cdfc3acd8a7c9b0c19de",
+  "project_path": null,
+  "declarations": [
+    "BKLOT2017.corollary_1_6",
+    "BKLOT2017.corollary_1_6_ablp",
+    "BKLOT2017.corollary_3_2",
+    "BKLOT2017.theorem_1_4",
+    "BKLOT2017.theorem_1_4_ablp"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05B15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T19:13:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fd5c713e00cc03454878cdfc3acd8a7c9b0c19de",
+        "fork_repository": "PalomarArchive/jtraverso--triangle-decompositions-tripartite--9560d1b43409",
+        "source_repository": "jtraverso/triangle-decompositions-tripartite"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f97e6e9b78298af64ff7720bb1fcbf572dcd825acb3b54cbfe74f20b15a468dc"
+}

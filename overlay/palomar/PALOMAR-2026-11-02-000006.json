@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000006",
+  "version": 1,
+  "title": "Erdős Problem 654: distinct distances from a point when no four points are concyclic",
+  "abstract": "Erdős asked whether, for every set of n points in the plane with no four on a circle, some point has at least (1 - o(1))n distinct distances to the other points. Feng et al. (arXiv:2601.22401; construction found by their agent Aletheia) answered no, using 4m points on the coordinate axes at powers of 2 and 3. This formalization proves the negative answer and their statement (for every m >= 10 there are 4m points, no four on a circle, each with at most 3m - 1 distinct distances to the other points), using a different set on the same axes: (±2i, 0) and (0, ±(2j - 1)) for 1 <= i, j <= m. An auxiliary lemma gives the bound for every m >= 1.",
+  "authors": [
+    "Daniel Veljjanoski"
+  ],
+  "repository": "https://github.com/veljjanoski/erdos654-palomar",
+  "commit": "fd7a8dc3cf52f6dcadcf5c6bcd05a2dc387dc64f",
+  "project_path": null,
+  "declarations": [
+    "Erdos654.erdos_654.parts.i",
+    "Erdos654.erdos_654.variants.feng"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T07:04:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fd7a8dc3cf52f6dcadcf5c6bcd05a2dc387dc64f",
+        "fork_repository": "PalomarArchive/veljjanoski--erdos654-palomar--f4a26de82c4d",
+        "source_repository": "veljjanoski/erdos654-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fc537593a447140c79cb9e270e24b32bbc28fcc2a0e81260435e336172cf39e9"
+}

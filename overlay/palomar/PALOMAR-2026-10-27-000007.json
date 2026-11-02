@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000007",
+  "version": 1,
+  "title": "Nearly linear directed cycles in vertex-transitive digraphs",
+  "abstract": "Formalization of the near-linear directed-cycle theorem: for every real epsilon greater than zero, all sufficiently large finite connected vertex-transitive loopless digraphs on n vertices contain a simple directed cycle of length at least n^(1-epsilon). Connectedness means connectedness of the underlying undirected graph; cycles of length two are allowed. This is Theorem 1.5 of the archived revised manuscript by Bowen Li and Abhishek Methuku, with repaired arguments and replacement lemmas in its proof dependencies. It does not assert Hamiltonicity.",
+  "authors": [
+    "Abhishek Methuku"
+  ],
+  "repository": "https://github.com/methuku-git-hub/Nearly-linear-directed-cycles-in-vertex-transitive-digraphs",
+  "commit": "16f43c7731a2d973e989c5e9006b62088dd3068d",
+  "project_path": "directed-cycles-lean",
+  "declarations": [
+    "DirectedCycles.nearly_linear_directed_cycles"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C20",
+      "05C38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T15:15:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "16f43c7731a2d973e989c5e9006b62088dd3068d",
+        "fork_repository": "PalomarArchive/methuku-git-hub--Nearly-linear-directed-cycles-in-vertex-transitive-digraphs--46027483f00e",
+        "source_repository": "methuku-git-hub/Nearly-linear-directed-cycles-in-vertex-transitive-digraphs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1a459b34c54b7325ec935c18bc061c4603fea901b77da4875c67350ce92b0621"
+}

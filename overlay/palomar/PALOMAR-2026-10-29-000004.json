@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000004",
+  "version": 1,
+  "title": "Complete-split extremizers for the fractional triangle-cover deficit on chordal graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of the main result of the author's preprint \"Complete-Split Extremizers for a Fractional Triangle-Cover Functional on Chordal Graphs\" (Erdős #81 series, Paper II). For a finite simple graph G let τ₃*(G) be its fractional triangle cover number (the least total weight of a nonnegative weighting of vertex pairs giving every triangle weight at least one on its edges) and Φ_τ(G) = |E(G)| − 2τ₃*(G). For every n ≥ 1, every chordal graph on n vertices satisfies Φ_τ(G) ≤ ⌊(2n + 1)²/24⌋, and equality is attained by a complete-split graph K_p ∨ K̄_q with p + q = n (Theorem 1.2). Chordality and fractional triangle covers use the definitions of two registered entries.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/erdos81-complete-split-extremizers",
+  "commit": "7961c3aba6062b03de3df28f42d339c1aec145d8",
+  "project_path": null,
+  "declarations": [
+    "ErdosPaperII.theorem_1_2",
+    "ErdosPaperII.exists_completeSplit_eq_floor"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C75",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T02:59:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7961c3aba6062b03de3df28f42d339c1aec145d8",
+        "fork_repository": "PalomarArchive/jtraverso--erdos81-complete-split-extremizers--398c83aea952",
+        "source_repository": "jtraverso/erdos81-complete-split-extremizers"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5dc40c190005618fad2b9dde9575d5616d3020590f256aca2ea42b34e5437266"
+}

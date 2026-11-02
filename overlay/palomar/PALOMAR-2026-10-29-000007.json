@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000007",
+  "version": 1,
+  "title": "The Corrádi–Hajnal theorem on vertex-disjoint cycles",
+  "abstract": "A Lean 4 / Mathlib formalization of the Corrádi–Hajnal theorem (1963): every finite simple graph on at least 3k vertices with minimum degree at least 2k contains k vertex-disjoint cycles. Cycles are closed walks that are cycles in Mathlib's sense; the theorem is also stated with the definition of disjoint cycles of the registered Erdős–Pósa entry (k pairwise disjoint vertex sets, each inducing a subgraph that is not acyclic). Both hypotheses are shown to be needed: for k ≥ 2 the complete graph on 3k − 1 vertices has minimum degree 3k − 2 ≥ 2k and no k disjoint cycles, and for m ≥ 2k the complete bipartite graph K_{2k−1, m} has at least 3k vertices and minimum degree 2k − 1 and no k disjoint cycles. Mathlib has cycles and minimum degree but not this theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/corradi-hajnal",
+  "commit": "2b85adcc37a9a057fb0cb72bc08774027f9ea077",
+  "project_path": null,
+  "declarations": [
+    "CorradiHajnalTheorem.corradi_hajnal",
+    "CorradiHajnalTheorem.corradi_hajnal_sets",
+    "CorradiHajnalTheorem.three_mul_le_card_of_hasDisjointCycles",
+    "CorradiHajnalTheorem.not_hasDisjointCycles_top",
+    "CorradiHajnalTheorem.not_hasDisjointCycles_completeBipartite"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C38",
+      "05C70",
+      "05C07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T03:24:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2b85adcc37a9a057fb0cb72bc08774027f9ea077",
+        "fork_repository": "PalomarArchive/jtraverso--corradi-hajnal--20f84b4c2e6d",
+        "source_repository": "jtraverso/corradi-hajnal"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6181345fbf229ee5895d37dc7eee4380ca1fb85e793ce640246354c7c45d6483"
+}

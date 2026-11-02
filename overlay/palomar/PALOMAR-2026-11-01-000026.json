@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000026",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000026",
+  "version": 1,
+  "title": "Full beta lambda calculus and finite Turing machine computability",
+  "abstract": "Closed untyped de Bruijn lambda terms under full beta reachability of Church numerals compute exactly the unary partial numerical functions computed by finite three-symbol unary Turing machines. The package defines translations in both directions and proves pointwise numerical-result and no-result equivalences.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy José Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "0160b1ea1af92434ad40e27f2fe84e4ea837a026",
+  "project_path": "lambda-turing",
+  "declarations": [
+    "LambdaTuring.lambdaComputable_iff_unaryMachine",
+    "LambdaTuring.packagedLambdaToMachine_correct",
+    "LambdaTuring.packagedLambdaToMachine_no_result",
+    "LambdaTuring.Machine.machineToLambda_correct",
+    "LambdaTuring.Machine.machineToLambda_no_result",
+    "LambdaTuring.explicitPackagedTranslations_correct"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-01T16:11:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0160b1ea1af92434ad40e27f2fe84e4ea837a026",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:84f732ea8ee9a3d82be9f6485c87e64fb7ec34472665dc9202ffd7a92ba0a9b1"
+}

@@ -1,0 +1,82 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000005",
+  "version": 1,
+  "title": "The two-qubit Hardy ladder: the closed form P_K*(q) and its unique maximiser for every K, Hardy's optimum at K = 1, and the optimum (8 rho^2 + rho - 11)/25 in the cubic field Q(rho) at K = 2",
+  "abstract": "Kernel-checked optimum of Hardy's K-step ladder for two qubits (Hardy 1993; Hardy 1997; Boschi, Branca, De Martini and Hardy 1997), for a real Schmidt state c0|00> + c1|11> and real projective settings, the probabilities written out as squared real amplitudes. For every K: under the ladder constraints P(A_K = 1, B_K = 1) <= q^2 (1 - q^{2K})^2 / ((1 + q^2)(1 + q^{2K+1})^2), q = c1/c0, with equality attained (Cereceda 2002, eqs. (18)-(19)); the probability is below 1/2 (the two-qubit, real-settings case of a bound that follows in every dimension from Cereceda 2016, eq. (9), with Wehner 2006), and for every eps > 0 and every large enough K some state and settings exceed 1/2 - eps (the \"(50 - delta)%\" of Hardy 1997 and Boschi et al. 1997). For every K >= 1 the maximiser of the closed form on (0, 1) is the unique zero there of Cereceda's polynomial m_K (Cereceda 2002, eq. (20), stated there without proof): the derivative of the closed form, the existence and uniqueness of the zero, the maximum and its uniqueness, and, over all Schmidt states and real settings, the optimum, its attainment at the Schmidt ratio r, and that every optimal configuration has Schmidt ratio r or 1/r (attainment at 1/r follows from the uncompared symmetry). Worked instances: the K = 1 optimum is phi^{-5} = (5 sqrt 5 - 11)/2 (Hardy 1993), attained at a state with 2 c0 c1 = 3 - sqrt 5 and only where 2 c0 c1 = 3 - sqrt 5 (Hardy's condition); the K = 2 optimum is (8 rho^2 + rho - 11)/25 = 0.17455..., rho the plastic number (the real root of x^3 - x - 1), attained at Schmidt weights c0^2 = rho^{-1}, c1^2 = rho^{-5} (c1/c0 = rho^{-2}) and only where {c0^2, c1^2} = {rho^{-1}, rho^{-5}}. The value 0.17455 is in print numerically; the closed form, the maximiser rho^{-2}, the weights and the minimal polynomial 25x^3 + 17x^2 + 2x - 1 of the value were not found in the literature searched (2026-10-28) and are the entry's new content. Also: the K = 2 value is not totally real (its minimal polynomial has a non-real complex root). Optimality over complex settings is not formalised. Thirty compared statements.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/hardy-ladder",
+  "commit": "5764ec4a239fcb14f8de263372fc906bd217f349",
+  "project_path": null,
+  "declarations": [
+    "HardyLadder.Entry.ladder_prob_le",
+    "HardyLadder.Entry.ladder_prob_attained",
+    "HardyLadder.Entry.ladder_prob_lt_half",
+    "HardyLadder.Entry.ladder_prob_approaches_half",
+    "HardyLadder.Entry.hasDerivAt_ladder_value",
+    "HardyLadder.Entry.existsUnique_mK_root",
+    "HardyLadder.Entry.ladder_value_isGreatest_of_mK_root",
+    "HardyLadder.Entry.eq_of_ladder_value_eq_of_mK_root",
+    "HardyLadder.Entry.ladder_prob_le_of_mK_root",
+    "HardyLadder.Entry.ladder_prob_attained_of_ratio",
+    "HardyLadder.Entry.ratio_of_ladder_prob_eq_of_mK_root",
+    "HardyLadder.Entry.hardy_K1_isGreatest",
+    "HardyLadder.Entry.hardy_value_eq",
+    "HardyLadder.Entry.hardy_K1_eq_iff_quartic",
+    "HardyLadder.Entry.hardy_K1_existsUnique",
+    "HardyLadder.Entry.ladder_K1_le",
+    "HardyLadder.Entry.ladder_K1_attained",
+    "HardyLadder.Entry.ladder_K1_hardy_condition_of_eq",
+    "HardyLadder.Entry.existsUnique_cubic",
+    "HardyLadder.Entry.hardy_K2_isGreatest",
+    "HardyLadder.Entry.hardy_K2_eq_iff_inv_sq",
+    "HardyLadder.Entry.hardy_K2_eq_iff_cubic",
+    "HardyLadder.Entry.hardy_K2_existsUnique",
+    "HardyLadder.Entry.ladder_K2_le",
+    "HardyLadder.Entry.ladder_K2_attained",
+    "HardyLadder.Entry.ladder_K2_weights_of_eq",
+    "HardyLadder.Entry.minpoly_value",
+    "HardyLadder.Entry.finrank_adjoin_value",
+    "HardyLadder.Entry.irreducible_25",
+    "HardyLadder.Entry.exists_nonreal_root_minpoly_value"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "math.NT",
+      "math-ph"
+    ],
+    "msc2020": [
+      "81P40",
+      "81P13",
+      "11R16",
+      "26C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-30T06:29:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5764ec4a239fcb14f8de263372fc906bd217f349",
+        "fork_repository": "PalomarArchive/stalex444--hardy-ladder--2d054ded5cc9",
+        "source_repository": "stalex444/hardy-ladder"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1765410970252881bf20455a7bbc7901b3d4150cf02065451bd5b08b7dcf4d0c"
+}

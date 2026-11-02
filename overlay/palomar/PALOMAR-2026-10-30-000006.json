@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000006",
+  "version": 1,
+  "title": "Proof of WOWII Conjecture 96 (DeLaVina, Graffiti.pc)",
+  "abstract": "A Lean 4 proof of Conjecture 96 of Written on the Wall II (Graffiti.pc): every connected graph G on at least two vertices satisfies α(G) ≤ 1 + min_v disteven(v)·(max_v l(v) − 1), where disteven(v) is the number of vertices at even distance from v and l(v) is the independence number of the neighbourhood of v. The proof gives the stronger bound α(G) ≤ 1 + disteven(v)·(L − 1) for every vertex v, which is sharp for stars.",
+  "authors": [
+    "Rhett (@v3ai)"
+  ],
+  "repository": "https://github.com/v3ai/openmath",
+  "commit": "a5525a12ad7c35c64ac14839f505ee2624016401",
+  "project_path": null,
+  "declarations": [
+    "WrittenOnTheWallII.GraphConjecture96.conjecture96"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C69",
+      "05C12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-30T08:20:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a5525a12ad7c35c64ac14839f505ee2624016401",
+        "fork_repository": "PalomarArchive/v3ai--openmath--acbc289e0f4a",
+        "source_repository": "v3ai/openmath"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b7294edc340fa1926a212e31594b0094059c1e0792e6b873ecce588ecffe6cfb"
+}

@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000004",
+  "version": 1,
+  "title": "The orthogonal art gallery problem is ∃ℝ-complete (point-point and point-boundary), in Lean 4",
+  "abstract": "A Lean 4 formalization of material in a forthcoming manuscript entitled \"The Orthogonal Art Gallery Problem is ∃ℝ-complete\". A Lean 4 and Mathlib proof, for an explicit single-tape Turing machine model, that deciding whether an orthogonal simple polygon (every edge horizontal or vertical) with rational corners can be guarded by g guards is ∃ℝ-complete under polynomial-time many-one reductions, both when the guards must see the whole polygon (point-point) and when they must see only its boundary (point-boundary). Both problems also reduce to ETR by formulas whose only variables are the 2g coordinates of the guards. As far as we could determine, hardness for orthogonal polygons was open: it is treated neither by Abrahamsen, Adamaszek and Miltzow (J. ACM 2021) nor by Stade (SoCG 2025). The hardness proof is a new construction derived from Stade's polygon: needles become corridors, wedges become rectangles with needle cutters, the slanted mouths of the copy nooks are kept through helper guards pinned by four-armed crosses, and the addition gadgets are replaced by new orthogonal rooms. Its visibility, pinning and coverage facts are checked by the kernel as certificates (cone propagation with a symbolic height parameter, polynomial sign tests for the copy nooks, coverage by convex items). The proofs use only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/OrthogonalArtGalleryProblem-ExistsR-Lean4",
+  "commit": "88aa383397d3c8a896ba127307a6073cf9765f2b",
+  "project_path": null,
+  "declarations": [
+    "ArtGallery.agpOrth_inER",
+    "ArtGallery.agpOrth_inER_guard_variables",
+    "ArtGallery.agpOrth_erComplete",
+    "ArtGallery.agpOrthPointBoundary_inER",
+    "ArtGallery.agpOrthPointBoundary_inER_guard_variables",
+    "ArtGallery.agpOrthPointBoundary_erComplete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CG",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "68U05",
+      "68Q17",
+      "14P10",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T08:04:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "88aa383397d3c8a896ba127307a6073cf9765f2b",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--OrthogonalArtGalleryProblem-ExistsR-Lean4--e79dd810627e",
+        "source_repository": "RBarish-UTokyo/OrthogonalArtGalleryProblem-ExistsR-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:699a9e86325886dadf049b9d445c2b270f8bae012918f4a7e3994aacc678436e"
+}

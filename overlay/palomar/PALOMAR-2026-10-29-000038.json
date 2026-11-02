@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000038",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000038",
+  "version": 1,
+  "title": "A finite two-temperature lower bound for the GHR sum-difference constant",
+  "abstract": "The Gyarmati-Hennecart-Ruzsa constant C₃ₐ is the supremum of real exponents theta for which every K > 1 admits a positive constant c and arbitrarily large nonempty finite integer sets X with nonempty partners Y satisfying |X+Y| <= K|X| and c|X+Y|^theta <= |X-Y|. This formalization proves the strict bound C₃ₐ > 60709/50000 = 1.21418. A finite type at depth 10^13, separate difference and sum tilts, cyclic compression, and a proved finite-set principle supply the bound. The result concerns extremal sumset and difference-set growth in additive combinatorics. The paper's general limiting theorem is outside the formalized claim.",
+  "authors": [
+    "Carson Olafson"
+  ],
+  "repository": "https://github.com/carson-olaf/c3a-two-temperature-bound",
+  "commit": "033952dc1ca04e62a7b2a341561d07c9809437b9",
+  "project_path": "formalization/lean",
+  "declarations": [
+    "PalomarC3a.c3a_gt_121418"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T20:42:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "033952dc1ca04e62a7b2a341561d07c9809437b9",
+        "fork_repository": "PalomarArchive/carson-olaf--c3a-two-temperature-bound--5342854df778",
+        "source_repository": "carson-olaf/c3a-two-temperature-bound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0c596c5251962264109e1a9bb544359b897ef81f568207c198774b0fac89a74a"
+}

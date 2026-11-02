@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000022",
+  "version": 1,
+  "title": "Two application notes of the Erdős #81 series: realizability transfer and exact chordal stability",
+  "abstract": "A Lean 4 / Mathlib formalization of the two research notes of the author's Erdős #81 series, in one package. Note I, \"From realizability certificates to the Erdős 81 bound\": a realizability certificate of Paper V for an auxiliary conflict system whose target is the physical system of copies of K₃ and K₄ in G (conflict when they share an edge, gain C(|K|,2) − 1), with q ≥ 1 classes and budget q·e(G) + cost ≤ q·T + w(X), gives a clique partition of G into pieces of order at most four with at most T pieces (note_I_partition_of_certificate; no chordality); a physical packing with e(G) − g(P) ≤ T does the same (note_I_partition_of_paid_packing); with a certified fractional optimum w, the far branch (e(G) − w < n²/6 − ηn², every η > 0, large n, no chordality) and the near branch (chordal, n ≥ 4·10¹², η = 10⁻¹⁶) give partitions with at most M(n) = ⌊n(n+1)/6⌋ pieces (note_I_far_certificate, note_I_near_certificate); assembled through the transfer, every large chordal graph has such a partition (note_I_erdos81_eventual) and every chordal graph one with at most M(n) + b pieces for an absolute b (note_I_erdos81_all_orders). Note II, \"Exact stability for nearly extremal chordal clique partitions\": for n large, every chordal graph on n vertices with cp(G) ≤ M(n) and 2000 (M(n) − cp(G)) ≤ n has the root P = {v : n < 2 deg v}, which is a clique, with cp(G) = B(n,|P|) − A − 2m = cp_{≤4}(G), M − cp = (M − B) + A + 2m, edit distance to K_P ∨ I_O equal to A + m and at most M − cp, and (6|P| − 2n − 1)² ≤ 24(M − cp) + 25 (note_II_eventual_root_stability). Seven statements; the thresholds N and the constant b are existential.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/erdos81-series-notes",
+  "commit": "01be11e33fc4f416d5ef5df4d71aec936bc48023",
+  "project_path": null,
+  "declarations": [
+    "ErdosSeriesNotes.note_I_partition_of_certificate",
+    "ErdosSeriesNotes.note_I_partition_of_paid_packing",
+    "ErdosSeriesNotes.note_I_far_certificate",
+    "ErdosSeriesNotes.note_I_near_certificate",
+    "ErdosSeriesNotes.note_I_erdos81_eventual",
+    "ErdosSeriesNotes.note_I_erdos81_all_orders",
+    "ErdosSeriesNotes.note_II_eventual_root_stability"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C35",
+      "05C75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T15:01:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "01be11e33fc4f416d5ef5df4d71aec936bc48023",
+        "fork_repository": "PalomarArchive/jtraverso--erdos81-series-notes--4dbca61df10f",
+        "source_repository": "jtraverso/erdos81-series-notes"
+      }
+    ]
+  },
+  "statement_hash": "sha256:00ff3b53d31fbc6e130979472eadcd5c31160e010d1cfcb6054dab0f61fd4964"
+}

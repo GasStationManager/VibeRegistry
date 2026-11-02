@@ -1,0 +1,67 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000020",
+  "version": 1,
+  "title": "Colorability and realizability defects in resource-dominated packing relaxations",
+  "abstract": "A Lean 4 / Mathlib formalization of the main results of the author's preprint \"Colorability and Realizability Defects in Resource-Dominated Packing Relaxations\" (Erdős #81 series, Paper V). For a conflict system (finite objects with a symmetric irreflexive conflict relation) and a multiset X of objects, the loss between fractional and integral packings is bounded by the colourability defect D_q of the conflict graph H[X] of the copies (Lemma 3.1, Corollary 3.2, Theorems 3.3, 3.4, 3.4w), and, more generally, by the cost of a realizability certificate whose classes are realized in a fixed target system (Theorems 4.2 and 4.4). Applications: host completion through list edge colouring of bipartite multigraphs (Theorem 5.2: Galvin and Borodin–Kostochka–Woodall; Corollary 5.3; Example 5.5, a quadratic separation on K_{r,r}), the vertex-copy inequalities ν₃*(G_{v→u}) + ν₃*(G_{u→v}) ≤ 2ν₃*(G), ν₃(G_{v→u}) + ν₃(G_{u→v}) ≤ 2ν₃(G) + oct(H[T₂]) and ≤ 3ν₃(G) for triangle packings (Theorems 6.1, 6.2, Corollary 6.2a) and mixed triangle/K₄ copy inequalities (Theorem 7.3). Eighteen statements in all.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/erdos81-colorability-realizability-defects",
+  "commit": "0c2f7dff52e5c578f39191c4905dd12248e7bb9a",
+  "project_path": null,
+  "declarations": [
+    "ErdosPaperV.lemma_3_1",
+    "ErdosPaperV.corollary_3_2",
+    "ErdosPaperV.theorem_3_4",
+    "ErdosPaperV.theorem_3_3",
+    "ErdosPaperV.theorem_3_4w",
+    "ErdosPaperV.theorem_4_2",
+    "ErdosPaperV.theorem_4_2_nu",
+    "ErdosPaperV.theorem_4_4",
+    "ErdosPaperV.theorem_5_2_galvin",
+    "ErdosPaperV.theorem_5_2_bkw",
+    "ErdosPaperV.corollary_5_3_galvin",
+    "ErdosPaperV.corollary_5_3_bkw",
+    "ErdosPaperV.example_5_5",
+    "ErdosPaperV.theorem_6_1",
+    "ErdosPaperV.theorem_6_2",
+    "ErdosPaperV.corollary_6_2a",
+    "ErdosPaperV.theorem_7_3_fractional",
+    "ErdosPaperV.theorem_7_3_integral"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C15",
+      "90C27"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T13:29:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0c2f7dff52e5c578f39191c4905dd12248e7bb9a",
+        "fork_repository": "PalomarArchive/jtraverso--erdos81-colorability-realizability-defects--59ae4ccb591d",
+        "source_repository": "jtraverso/erdos81-colorability-realizability-defects"
+      }
+    ]
+  },
+  "statement_hash": "sha256:80fe6c14953d37588df705db84dc274f17adfbac73bbae7d51f0539301f1cf31"
+}

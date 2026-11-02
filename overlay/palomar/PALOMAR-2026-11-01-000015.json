@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000015",
+  "version": 1,
+  "title": "Odd zeta values and powers of pi",
+  "abstract": "Lean proofs of three-Lambert-series formulas for pi^(4m-1), pi^(4m+1), zeta(4m-1) and zeta(4m+1), for m>=1, together with a separate formula for pi and the signs of the rational denominator coefficients.",
+  "authors": [
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/lopatto/plouffe-palomar-public",
+  "commit": "206334982fff64ce420f5e3d8a3f40f68845075e",
+  "project_path": null,
+  "declarations": [
+    "Plouffe.Results.oddPi",
+    "Plouffe.Results.oddZeta",
+    "Plouffe.Results.evenPi",
+    "Plouffe.Results.evenZeta",
+    "Plouffe.Results.piBase",
+    "Plouffe.Results.denominatorSigns"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M06",
+      "11Y60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T11:05:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "206334982fff64ce420f5e3d8a3f40f68845075e",
+        "fork_repository": "PalomarArchive/lopatto--plouffe-palomar-public--0b4aa4e79b2d",
+        "source_repository": "lopatto/plouffe-palomar-public"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9e72c000958bf33da7b26fd894824636068f477fec237af1d7ecfcc846877919"
+}

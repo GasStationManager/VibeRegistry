@@ -1,0 +1,69 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000013",
+  "version": 1,
+  "title": "QuadraticFloor: quadratic floor sums and the trace of a quartic Bernoulli number",
+  "abstract": "For an odd prime p and integers A, B, C, the alternating floor sum S_{A,B,C}(p) is the sum over 0 <= n < p of (-1)^floor((A n^2 + B n + C)/p). The development proves the root-count reduction of S_{A,B,C}(p) to a sum of Legendre symbols over an arithmetic progression when A + B is even, and, for a positive odd A, an odd prime p not dividing A and an admissible pair (B odd, prime to A, 1 <= B^2 - 4AC < 4A), the square-class decomposition: S_{A,B,C}(p) equals (-1)^C minus the average over the Dirichlet characters psi modulo A of conj(psi(B))^2 times the first Bernoulli number, at modulus 8Ap, of the odd character eta_p chi_{-4}^{delta} psi, where eta_p is the Kronecker character of discriminant -8p. Consequently the sum depends only on the square class of B modulo A. At A = 1 and A = 3 this gives the floor sums in terms of Bernoulli numbers of quadratic characters (which are class numbers by Dirichlet's formula, not formalized). At A = 5 the difference S_{5,3,0}(p) - S_{5,1,0}(p) is the real part of the first Bernoulli number of the quartic character Theta_p = eta_p chi_{-4} xi of conductor 40p, with xi(2) = i; this real part is an even integer whose residue modulo 4 is given by an explicit indicator z_1 - z_3. Finally the sums with A = 1 and fixed shifts a, b are classified: for odd a in terms of S_{1,1,0}(p) and an oriented sum of Legendre symbols, for even a by an explicit finite formula that is bounded and eventually constant in p.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/QuadraticFloor",
+  "commit": "7e51a19db5a27cf064bf5d2f8845812fe1070077",
+  "project_path": null,
+  "declarations": [
+    "QuadraticFloor.root_count",
+    "QuadraticFloor.eta_eq",
+    "QuadraticFloor.window_form",
+    "QuadraticFloor.half_sum_zero_of_periodic",
+    "QuadraticFloor.half_sum_zero_of_even",
+    "QuadraticFloor.bern_antiperiodic",
+    "QuadraticFloor.square_class_decomposition",
+    "QuadraticFloor.floorSum_universal",
+    "QuadraticFloor.floorSum_eq_of_sq_modEq",
+    "QuadraticFloor.exists_admissible",
+    "QuadraticFloor.floorSum_one",
+    "QuadraticFloor.floorSum_three",
+    "QuadraticFloor.quadratic_half",
+    "QuadraticFloor.quartic_split",
+    "QuadraticFloor.quartic_mod_four",
+    "QuadraticFloor.monic_odd",
+    "QuadraticFloor.monic_even",
+    "QuadraticFloor.monic_even_bound",
+    "QuadraticFloor.monic_even_eventually_const"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A15",
+      "11B68",
+      "11R29",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T07:18:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7e51a19db5a27cf064bf5d2f8845812fe1070077",
+        "fork_repository": "PalomarArchive/jkfarland-bot--QuadraticFloor--5b8de45d541a",
+        "source_repository": "jkfarland-bot/QuadraticFloor"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7ad0eeedb1fd72658301fcb73c5dd0f473c8f5623b5b8fb6de15350f2da4f785"
+}

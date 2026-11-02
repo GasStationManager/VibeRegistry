@@ -1,0 +1,72 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000009",
+  "version": 1,
+  "title": "QuarterSumLadder: the quarter-sum ladder and the weight-two congruences",
+  "abstract": "For a prime p = 1 (mod 8) and a quartic character chi modulo p (even, with w = chi(2) = +-1), the development proves that the coordinates of B_(2,chi) = c0 + i c1 are integers with c0 = 4(E_1 + E_-1), c1 = 4(E_i + E_-i) and c0 + c1 = p - 1 modulo 8, and that 8 divides both exactly when w = 1, i.e. when 2 is a fourth power. A Gauss-Lehmer product argument gives the quartic Gauss lemma w = (-1)^(R_1 + R_3) for the quarter counts R_r, the parity of the four quarter counts when w = 1, and the parity of R_2 through the order of 2. For the quarter sum Omega = x + iy (2N(Omega) = h^-(K) for the imaginary cyclic quartic field K of conductor 4p, not formalized) it proves criteria in the quarter counts for 2^k | 2N(Omega), 2 <= k <= 6, a classical evaluation of the fourth, the coordinate valuation formula, a congruence modulo 16 linking c0 - c1 to x - y, and the valuation of B_(2,chi) at 1 + i on its first three cases.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/Quartersumladder",
+  "commit": "756129d46275e42fb4b27b833d156f2a025a2c21",
+  "project_path": null,
+  "declarations": [
+    "QuarterSumLadder.even_quartic_setting",
+    "QuarterSumLadder.class_sizes",
+    "QuarterSumLadder.weight_two_integrality",
+    "QuarterSumLadder.weight_two_coefficient_congruence",
+    "QuarterSumLadder.weight_two_mod_eight",
+    "QuarterSumLadder.gauss_lehmer_product",
+    "QuarterSumLadder.quartic_gauss_lemma",
+    "QuarterSumLadder.quarter_interval_formula",
+    "QuarterSumLadder.doubling_orbit_parity",
+    "QuarterSumLadder.parity_patterns",
+    "QuarterSumLadder.quarter_sum_expansion",
+    "QuarterSumLadder.ladder_bottom",
+    "QuarterSumLadder.ladder_bottom_valuation",
+    "QuarterSumLadder.ladder_fourth",
+    "QuarterSumLadder.ladder_fourth_classical",
+    "QuarterSumLadder.second_quarter_parity",
+    "QuarterSumLadder.coordinate_valuation_formula",
+    "QuarterSumLadder.ladder_fifth",
+    "QuarterSumLadder.weight_two_comparison",
+    "QuarterSumLadder.weight_two_trichotomy",
+    "QuarterSumLadder.weight_two_trichotomy_valuation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R29",
+      "11B68",
+      "11A15",
+      "11R16",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T09:33:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "756129d46275e42fb4b27b833d156f2a025a2c21",
+        "fork_repository": "PalomarArchive/jkfarland-bot--Quartersumladder--354ba71655d0",
+        "source_repository": "jkfarland-bot/Quartersumladder"
+      }
+    ]
+  },
+  "statement_hash": "sha256:560548d05f66a7a434ff5556ad8bde9cb25e61abc0e692d91dfc89fc81680320"
+}

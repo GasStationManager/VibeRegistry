@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000002",
+  "version": 1,
+  "title": "The additive theorem for 2-transitive Galois groups (Girstmair; Dixon, Theorem 1') and its representation-theoretic engine",
+  "abstract": "Kernel-checked proofs, in Lean 4 + Mathlib, of the homogeneous case and, at the roots, of the printed form (relations with value in K), with coefficients in any field K of characteristic 0, of the additive theorem for 2-transitive Galois groups (Girstmair, Manuscripta Math. 39 (1982) 81-97, Proposition 4, Assertion 3, p. 86, for every field whose characteristic does not divide |G|; stated by J. D. Dixon, Acta Arith. 82 (1997) 293-302, as Theorem 1', p. 301, with its proof omitted), of its representation-theoretic engine (classical: Huppert, Endliche Gruppen I, p. 597, Satz 20.2, as cited by Girstmair, Acta Arith. 89 (1999) 53-96, p. 78; used by Dixon on p. 297, in the proof of Theorem 1(ii), citing Curtis-Reiner Section 32B), and of two criterion forms over any field whose hypothesis is the irreducibility of the augmentation module instead of 2-transitivity (the 'if' direction of Girstmair 1982, Proposition 4, Assertion 2, in its module form). Eight compared theorems, in namespace DixonRelations, in this order. (1) zeroSum_irreducible, the engine: for a finite group G acting 2-transitively on a finite set Omega with 2 <= |Omega| and a field K of characteristic 0, the augmentation (zero-sum) subspace V0 = {f : Omega -> K | sum_x f x = 0} of the permutation module Omega -> K is an irreducible K[G]-module; proved in the substantive form of simplicity, that a G-invariant subspace W <= V0 with W != bot equals V0. The G-action is the permutation representation (g . f) x = f (g^{-1} . x), and a subrepresentation is a Submodule together with an explicit invariance hypothesis. (2') additive_core_of_irreducible, the zero-sum criterion form: for any field K, any group G (finite or not) acting on a finite Omega, an injective family alpha : Omega -> L into a K-vector space L, K-linear maps phi g with phi g (alpha x) = alpha (g . x) (no homomorphism property assumed), and the hypothesis hirr (every nonzero G-invariant K-subspace of V0 is V0, word for word the conclusion of (1); it holds vacuously when V0 = 0, that is |Omega| <= 1), any c with sum_x c x = 0 and sum_x c x . alpha x = 0 is 0. (2) additive_core, the zero-sum form for an abstract family: the same conclusion for K of characteristic 0 and a finite group G acting 2-transitively on Omega with 2 <= |Omega|; it is (1) followed by (2'). (3) additive_roots_no_relation, the zero-sum form at the roots: for K of characteristic 0 and an irreducible f in K[X] of degree >= 2 whose Galois group acts 2-transitively on the roots of f in the splitting field, any K-valued coefficient tuple c on the roots with sum_r c r = 0 and sum_r c r . r = 0 is 0; G = f.Gal, Omega = f.rootSet f.SplittingField (with Mathlib's instance Polynomial.Gal.galActionAux), the family is the inclusion of the root set, phi g is the field automorphism g read as a K-linear map (the compatibility holds by rfl), and 2 <= |Omega| follows from card_rootSet_eq_natDegree with separability from Irreducible.separable; f.SplittingField appears in the 2-transitivity hypothesis and in the types of c and of the relation hypothesis. (3) is the zero-sum part (value 0, coefficient sum 0) of the homogeneous case of Dixon's Theorem 1' at the roots; the full homogeneous case at the roots is (5), and the inhomogeneous case is (6). (4') relModule_le_span_one_of_irreducible, the span-one criterion form: under the hypotheses of (2') and a transitive action, every coefficient tuple c with sum_x c x . alpha x = 0 is a scalar multiple of the all-ones tuple, i.e. relModule K alpha is contained in the line K . (fun _ => 1). This is the 'if' direction of Girstmair 1982, Proposition 4, Assertion 2 (p. 86: \"If G is primitive on G/H, (G,H) admits only trivial relations over K iff the complementary module U(G/H) of K epsilon_0 is simple\"), whose hypothesis is, like hirr, the simplicity of a module; Girstmair 1999 restates it in character form as Proposition 12 (p. 78), \"essentially contained in Proposition 4 of [11]\". (4') assumes transitivity in place of primitivity; for a transitive action, hirr already forces primitivity (elementary, not formalized: the zero-sum functions constant on the blocks of a nontrivial block system form a nonzero proper invariant subspace of V0), so the difference is one of form only. (4) relModule_le_span_one, the span-one form: the same conclusion under the hypotheses of (2); it is (1) followed by (4'). (5) relModule_roots_le_span_one, the span-one form at the roots: under the hypotheses of (3), relModule K of the root family (fun r => (r : f.SplittingField)) is contained in K . (fun _ => 1); it is (4) at the roots. (6) roots_inhomogeneous_iff_const, Dixon's printed form at the roots: under the hypotheses of (3), sum_r c r . r = algebraMap K f.SplittingField k for some k in K if and only if c is constant; in Dixon's notation this is U = K.e. Dixon's Theorem 1' is stated for any subfield K of C and for relations with value in K; compared statements (2), (3), (4) and (5) concern its homogeneous case (value 0) and (6) its printed form (value in K), for every field K of characteristic 0, and (2') and (4') take any field. Girstmair 1982 states the additive theorem for every field whose characteristic does not divide |G|, so characteristic 0 is a sub-case of his hypothesis; (2') and (4') take any field, but their content is carried by hirr, which this entry proves only in characteristic 0 and only for 2-transitive actions, as (1). An uncompared bridge, BDS.isAtom_zeroSumSubrep_iff, shows that hirr together with V0 != bot is atomicity of V0 in Mathlib's lattice of subrepresentations of the permutation representation on Omega -> K. (1) is proved by an elementary, character-free stabilizer-averaging argument; Dixon (p. 297) cites Curtis-Reiner Section 32B for the statement only; Curtis-Reiner was not consulted, and nothing is claimed about its proof. (2') applies hirr to relModule K alpha meet V0 and uses injectivity of alpha; (4') shows that a relation and each of its translates differ by a zero-sum relation, so the relation is G-invariant, hence constant by transitivity (no averaging); the forward direction of (6) argues in the same way at the roots for a relation with value in K, using (2), and its reverse direction uses that the sum of the roots of a separable polynomial is fixed by every automorphism of the splitting field, which is Galois over K, and so lies in K. This formalizes classical results; it is not new mathematics. Research context: additive and multiplicative relations among conjugate algebraic numbers are studied in Girstmair (1982, 1999), Smyth (1986), Drmota-Skalba (1991), Baron-Drmota-Skalba (1995), Dixon (1997) and Zheng (2021); in the sources read for this entry the doubly transitive additive case is derived from the criterion and character theory in one sentence (Girstmair 1982, p. 86), set aside because the doubly transitive pairs are classified (Girstmair 1999, p. 78), and stated with its proof omitted (Dixon 1997, p. 301); this entry gives a complete, character-free, machine-checked proof. The namespace BDS of the two entry definitions is the development's historical name (after Baron-Drmota-Skalba); no result of Baron-Drmota-Skalba is formalized. Formalization status (search of 2026-10-28 for the six statements (1), (2'), (2), (3), (4') and (4) as stated here, at the repository heads listed in README.md; a search result, not a guarantee): none of the six statements searched was found in any prover; (5) and (6), searched for on 2026-10-29 at the repository heads listed in README.md, were not found either. The fact behind the reverse direction of (6), that the sum of the roots lies in the base field, is in Mathlib at the pin in Vieta form (Polynomial.Splits.nextCoeff_eq_neg_sum_roots_mul_leadingCoeff), for the multiset of roots. The S_n case of (1) is formalized in augmentation form over every field in which |Omega| != 0 (every field when |Omega| = 2), in particular over Q, in TauCeti (TauCeti.isIrreducible_standardRepresentation, since 2026-08-05) and as Specht-module irreducibility over C in openai/math; the general 2-transitive case of (1) is formalized in character form over C in AxiomMath/CFSG (CFSG.permutation_character_orbit_count, public since 2026-10-27), the closest item found: CFSG also defines the same V0 over C under the same action (CFSG.Wreathed.CentralSL2.sumZeroSubrep) and computes its character, from which the C case of (1) in submodule form would follow in a few lines, but no theorem stating it was found. NOT formalized and NOT claimed: the MULTIPLICATIVE theorem (Dixon Theorem 1(ii), and, per Zheng 2021, arXiv:1912.07202v1, p. 2, Baron-Drmota-Skalba 1995, Theorem 3), under which 2-transitivity does NOT force triviality: for a prime p and b in Q not a p-th power, X^p - b has Galois group AGL(1,p) over Q, acting sharply 2-transitively on the roots, and the ratios of its roots are p-th roots of unity, nontrivial multiplicative relations; Dixon's Theorem 1(ii) gives necessary conditions for that exception; none of that multiplicative content is proved or claimed here. The additive theorem carries no such exception, because the additive module cannot contain any e_gamma - e_delta (Dixon, p. 301). Also not formalized: the 2-transitivity of any particular Galois group (a hypothesis in (1), (2), (3), (4), (5) and (6)); any case of hirr other than the 2-transitive one, (1); the imprimitive case (Girstmair 1982, Proposition 4, Assertion 1; Girstmair 1999, Proposition 12, first sentence) and the fact that hirr forces primitivity for a transitive action; the 'only if' direction of the criterion, the character form of its hypothesis, and the converse of Assertion 3 that Girstmair 1982 states for a splitting field; and the identification of Omega -> K with the scalar extension of Omega -> Q.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/bds-dixon-additive-relations",
+  "commit": "2d422c1b10e3823105ae6f3b68a439dee6f8d4a7",
+  "project_path": null,
+  "declarations": [
+    "DixonRelations.zeroSum_irreducible",
+    "DixonRelations.additive_core_of_irreducible",
+    "DixonRelations.additive_core",
+    "DixonRelations.additive_roots_no_relation",
+    "DixonRelations.relModule_le_span_one_of_irreducible",
+    "DixonRelations.relModule_le_span_one",
+    "DixonRelations.relModule_roots_le_span_one",
+    "DixonRelations.roots_inhomogeneous_iff_const"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.RT",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "11R04",
+      "11R32",
+      "20B20",
+      "20C15",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-30T00:17:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2d422c1b10e3823105ae6f3b68a439dee6f8d4a7",
+        "fork_repository": "PalomarArchive/stalex444--bds-dixon-additive-relations--fce081589bee",
+        "source_repository": "stalex444/bds-dixon-additive-relations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4762b63fb9f64becd2fd8f922a1972c1e52300d6705ed4ddcc6ba9ce8e691db2"
+}

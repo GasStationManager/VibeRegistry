@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000001",
+  "version": 1,
+  "title": "There is no universal Fσ equivalence relation",
+  "abstract": "There is no universal Fσ equivalence relation. This is the main result of arxiv:2610.31052. More detail: An equivalence relation E on a Polish space X is said to be Fσ if it is a countable union of closed subsets of X × X. For equivalence relations E and F on Polish spaces X and Y, we say that E is Borel reducible to F, written E ≤_B F, if there exists a Borel function f : X → Y such that for all x, y ∈ X, we have x E y if and only if f(x) F f(y). An Fσ equivalence relation E is universal if for every Fσ equivalence relation F, we have F ≤_B E. The theorem states that there's no such relation.",
+  "authors": [
+    "Konrad Deka"
+  ],
+  "repository": "https://github.com/konrad-012/no-universal-fsigma",
+  "commit": "310d90d3553ccf01c4e7276262df6d687db82bb7",
+  "project_path": null,
+  "declarations": [
+    "NoUniversalFSigma.not_isUniversalFSigma"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03E15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T06:23:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "310d90d3553ccf01c4e7276262df6d687db82bb7",
+        "fork_repository": "PalomarArchive/konrad-012--no-universal-fsigma--3c484f5fcb28",
+        "source_repository": "konrad-012/no-universal-fsigma"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5c1a115168ce71f8a253f907723a4d655d6dafe95d11fe98dfccf4ccd3cbba5b"
+}

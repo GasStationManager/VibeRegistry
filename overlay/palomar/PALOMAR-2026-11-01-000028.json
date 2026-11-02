@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000028",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000028",
+  "version": 1,
+  "title": "On the Riemann hypothesis and the difference between primes",
+  "abstract": "A Lean 4 proof of Theorems 1, 2 and 3 of A. W. Dudek, On the Riemann hypothesis and the difference between primes, Int. J. Number Theory 11, 2015, arXiv 1402.6417. Each theorem is conditional on the Riemann hypothesis, the paper's own hypothesis, stated with Mathlib's RiemannHypothesis. Theorem 2: for every real x at least 2 there is a prime in the interval from x - (4/pi) sqrt(x) log x to x. Theorem 1: there is c > 0 such that the interval from x to x + c sqrt(x) log x holds more than sqrt(x) primes for every real x at least 2. Theorem 3: for every epsilon > 0 and all large x there is a prime in the interval from x - (1 + epsilon) sqrt(x) log x to x. Each theorem also takes one cited input as an explicit hypothesis, never as an axiom: HSWN70 gZ, the zero count of Hasanalizade, Shen and Wong, arXiv 2107.06506, Corollary 1.2, for T at least 70, stated for gZ, the ordinates of the nontrivial zeros of the Riemann zeta function counted with multiplicity. The paper cites the zero count of Trudgian 2014 at this point, whose constant Hasanalizade, Shen and Wong report to be in error; the corrected count is used instead. The bounds of Schoenfeld 1976 for psi - theta, which the paper also cites, are not an input here: the needed estimate is proved. Dudek's Lemma 4 and the explicit formula for psi_1 are proved as well. An AI agent, Claude, wrote the Lean code, with the ported PrimeNumberTheoremAnd files credited to their authors in PORTING.md; the statements were checked against the paper by AI agents and are offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "da5cf9edad7896290771dfcab8feee2906399e3d",
+  "project_path": "entries/dudek2014",
+  "declarations": [
+    "LeanLab.PNTPort.ExplicitPsi1.Trivial.theorem2_of_RH_hsw",
+    "LeanLab.Dudek2014.Theorem1H.theorem1_of_RH_hsw",
+    "LeanLab.Dudek2014.AbstractC3.theorem3_of_RH_hsw"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N05",
+      "11M26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T16:23:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "da5cf9edad7896290771dfcab8feee2906399e3d",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0e2b474c23c27d8e23fbfc385cb3e73e99390b94b4f9fde03811efbfbfe2990f"
+}

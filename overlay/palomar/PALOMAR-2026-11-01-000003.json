@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000003",
+  "version": 1,
+  "title": "Reductions for Erdős Problem 919",
+  "abstract": "Erdős Problem 919 asks for a graph on the ordinal omega_2 squared with chromatic number aleph_2, or aleph_1, such that every subgraph on a vertex set of smaller order type has chromatic number at most aleph_0. This formalization proves in ZFC that the aleph_2 question is equivalent to the first question of Erdős Problem 918, that the aleph_1 question is equivalent to the existence of a graph on aleph_2 vertices that is not countably chromatic although all its subgraphs on aleph_1 vertices are, that the aleph_2 question implies the aleph_1 question, and that the aleph_1 question has a positive answer under the continuum hypothesis. The proof blows a graph on omega_2 up to a graph on omega_2 times omega_2 in the lexicographic order. It does not settle either question in ZFC.",
+  "authors": [
+    "Manan Gupta"
+  ],
+  "repository": "https://github.com/mnn31/erdos-919-palomar",
+  "commit": "b1aababb75cd555fab236a2217ec8ada6ce047cf",
+  "project_path": null,
+  "declarations": [
+    "Erdos919.erdos_919.variants.iff_erdos_918_i",
+    "Erdos919.erdos_919.variants.aleph_1_iff",
+    "Erdos919.erdos_919.variants.aleph_2_imp_aleph_1",
+    "Erdos919.erdos_919.variants.aleph_1_of_CH"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.LO"
+    ],
+    "msc2020": [
+      "05C15",
+      "03E05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T07:52:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b1aababb75cd555fab236a2217ec8ada6ce047cf",
+        "fork_repository": "PalomarArchive/mnn31--erdos-919-palomar--c8f0a00ed613",
+        "source_repository": "mnn31/erdos-919-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a7f4ddb69455f08e6c46bfe5c4b6e0fbca96b7ae53cd60161c19d932e21067ba"
+}

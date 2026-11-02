@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000032",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000032",
+  "version": 1,
+  "title": "Classical identities and a limit theorem of selection theory",
+  "abstract": "This entry collects classical identities and a limit theorem from selection theory. The identities are stated for finite populations; Geiringer's limit theorem is stated for the deterministic infinite-population recombination model on finitely many loci with a common finite allele set. Fisher's fundamental theorem is stated, in Ewens' interpretation, as the equality of the partial change in mean fitness (the change in allele frequencies under selection, weighted by least-squares average effects) with the additive genetic variance divided by mean fitness, for arbitrary genotype frequencies and any number of loci, together with nonnegativity of that change. A grouped covariance decomposition and a multilevel Price equation are stated as identities for arbitrary weights. Hamilton's rule is derived from the least-squares regression of fitness on own and social genotypes, and the existence of the Lande–Arnold gradient, equal to the inverse phenotypic covariance matrix applied to the vector of selection differentials, is stated under a nonsingular phenotypic covariance. Geiringer's theorem is stated as convergence of repeated recombination to the product of the single-locus marginals, under the condition that every pair of loci is separated with positive probability.",
+  "authors": [
+    "X. Lee",
+    "N. Volkov"
+  ],
+  "repository": "https://github.com/cenozoic-works/rhone-theory",
+  "commit": "40430cc1c60bb35b2b4872a6c9583b71cc363e7a",
+  "project_path": null,
+  "declarations": [
+    "Rhone.Palomar.SelectionTheorems.fisher_fundamental_theorem",
+    "Rhone.Palomar.SelectionTheorems.fisher_partial_nonneg",
+    "Rhone.Palomar.SelectionTheorems.grouped_covariance_decomposition",
+    "Rhone.Palomar.SelectionTheorems.multilevel_price_equation",
+    "Rhone.Palomar.SelectionTheorems.hamilton_from_leastSquares",
+    "Rhone.Palomar.SelectionTheorems.lande_arnold_gradient_exists",
+    "Rhone.Palomar.SelectionTheorems.geiringer_recombination_converges"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "q-bio.PE",
+      "math.PR"
+    ],
+    "msc2020": [
+      "92D15",
+      "92D10",
+      "60J10",
+      "62J05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T16:57:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "40430cc1c60bb35b2b4872a6c9583b71cc363e7a",
+        "fork_repository": "PalomarArchive/cenozoic-works--rhone-theory--fb903f3fec24",
+        "source_repository": "cenozoic-works/rhone-theory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:29b6235ab2b4ee9aca000d6bdd01c73b775c9a2172ccf35b5beda18eaaa2aa8b"
+}

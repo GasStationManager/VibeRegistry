@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000004",
+  "version": 1,
+  "title": "Nash-Williams' weak orientation theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of Nash-Williams' weak orientation theorem (1960): every 2k-edge-connected finite graph has a k-arc-connected orientation, i.e. one in which every nonempty proper vertex set is left by at least k arcs. It is proved for finite loopless multigraphs given by an edge family, and stated for simple graphs with Mathlib's SimpleGraph.IsEdgeConnected and orientations as Mathlib Digraphs. The proof is by induction on the number of edges, with Mader's lemma (a minimally 2k-edge-connected multigraph has a vertex of degree 2k) and Lovász's splitting lemma, both proved in the project. Mathlib does not contain these results.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/nash-williams-orientation",
+  "commit": "3412d885cf3ba6680770cb8014df96af8fa3d042",
+  "project_path": null,
+  "declarations": [
+    "NashWilliamsOrientation.nash_williams",
+    "NashWilliamsOrientation.nash_williams_simple"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C20",
+      "05C40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T01:56:58Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3412d885cf3ba6680770cb8014df96af8fa3d042",
+        "fork_repository": "PalomarArchive/jtraverso--nash-williams-orientation--96d643fb4df4",
+        "source_repository": "jtraverso/nash-williams-orientation"
+      }
+    ]
+  },
+  "statement_hash": "sha256:84086e1957ec90bb9947baf5e193b3bb5c8d93c4486ee7f3d6e85380b3105532"
+}

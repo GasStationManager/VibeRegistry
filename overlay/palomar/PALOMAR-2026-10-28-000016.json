@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000016",
+  "version": 2,
+  "title": "An explicit version of Chen's theorem assuming the Generalized Riemann Hypothesis",
+  "abstract": "A Lean 4 proof, conditional on the Generalized Riemann Hypothesis and on four cited results, that every even integer N at least e^{e^{13.375}} is the sum of a prime and a square-free number greater than 1 with at most two prime factors. The four cited inputs are explicit hypotheses of the theorem, never axioms: Thm5J, Thm6J and Thm7J, the Lean Lab's transcriptions of Theorems 5, 6 and 7 of M. Bordignon and V. Starichkova, An explicit version of Chen's theorem assuming the Generalized Riemann Hypothesis, Ramanujan J. 64, 2024, 1213 to 1242; and LinearSieveT4 1/8349 112 114, the transcription of their Theorem 4, the explicit linear sieve of Bordignon, Johnston and Starichkova with the Table 1 row epsilon inverse 6100, C1 = 112, C2 = 114. In version 2 each of Thm5J, Thm6J and Thm7J also takes 0 <= C1 and 0 <= C2 as premises right after the sieve hypothesis, matching Table 1, which lists positive constants only. These transcriptions use the Lean normalisation U_N = 2 e^{-gamma} C2 Pi_N, twice the U_N printed in the journal; see the fidelity section. GRH for Dirichlet L-functions is the premise inside the conclusion ChenThreshold13375. The journal's own Corollary 1 has the threshold e^{e^{14}}; the threshold e^{e^{13.375}} comes from re-choosing the Section 5.4 parameters inside the authors' method, alpha = 0.00256, A = 10, u = 1500, epsilon = 1/8349, epsilon1 = 10^-20. The numeric inputs are proved here: epsilon at 1500 is below 1/8349 by a kernel certificate, decide +kernel in eleven window modules, and the Section 5.4 bracket combination is at least the main-term constant minus 10^-5, a one-sided lower bound. Chen's weighted inequality, the journal's Lemma 9, is proved unconditionally. Binary Goldbach is open and is not claimed. An AI agent, Claude, wrote all the Lean code; the statements were checked against the paper by AI agents and are offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "dda6b8b6ae7facde041f6c61f152e7be2b9771d4",
+  "project_path": "entries/bordignonstarichkova2024grh",
+  "declarations": [
+    "LeanLab.BS2022GRH.Cert1575.chenThreshold13375_of_deep_closed",
+    "LeanLab.BS2022GRH.Cert1575.eps1500",
+    "LeanLab.BS2022GRH.Cert1567.bracket13375_holds",
+    "LeanLab.BS2022GRH.ChenThresholdGRH.lemma9J_holds"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11N36",
+      "11M26",
+      "11Y35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T16:08:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dda6b8b6ae7facde041f6c61f152e7be2b9771d4",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5e6b531c42148187aa3ed10b15e40502f8a613005e427dc78071e17be3c5d827"
+}

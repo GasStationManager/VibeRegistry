@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000003",
+  "version": 2,
+  "title": "Sharp reset thresholds for bounded-response synchronization games with a sink",
+  "abstract": "Lean 4 / Mathlib statements of the theorem M(n,k) = sum_{i=1}^{n-1} ceil(i/k) for k = 1 or n <= k+3 (Lipin-Volkov k-game on automata with a sink), rendered as an upper and a lower bound, with the headline case M(5,2) = 6, proved in Solution.lean from the development SinkReset.Plan written in the conductor formalize run 2026-10-25_formalize-sinkresetthresholds. The endpoints k = 1 (Rystsov's tight bound n(n-1)/2) and k = n-1 were known from Lipin-Volkov; the new content is M(k+2,k) = k+2 and M(k+3,k) = k+4 for k >= 2, including the non-divisible pairs (4,2) and (5,3), which the Lipin-Volkov conjecture (stated for k | n-1 only) does not cover; (5,2) is the first pair with k | n-1 that is neither endpoint, i.e. the first pair on which the Lipin-Volkov conjecture itself was open ((4,2) is the first non-endpoint pair of all).",
+  "authors": [
+    "Ben Keene"
+  ],
+  "repository": "https://github.com/benkeene/sink-reset-thresholds",
+  "commit": "0a4048a517c5a1e6382e0726f39ea125eddb658a",
+  "project_path": null,
+  "declarations": [
+    "SinkReset.reset_word_le_of_isAk",
+    "SinkReset.exists_isAk_reset_ge",
+    "SinkReset.five_two_reset_word_le",
+    "SinkReset.five_two_exists_isAk_reset_ge"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.FL",
+      "math.CO"
+    ],
+    "msc2020": [
+      "68Q45",
+      "68Q70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-31T00:04:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0a4048a517c5a1e6382e0726f39ea125eddb658a",
+        "fork_repository": "PalomarArchive/benkeene--sink-reset-thresholds--5ab2cff24b71",
+        "source_repository": "benkeene/sink-reset-thresholds"
+      }
+    ]
+  },
+  "statement_hash": "sha256:39c5200accc12b137f9405719b0b0d999bd7fb6d4cbab80a436ec0189199b71d"
+}

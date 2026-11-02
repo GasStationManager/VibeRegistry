@@ -1,0 +1,76 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000034",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000034",
+  "version": 1,
+  "title": "On the local geometry of the tight 39-point code in 𝕆P²",
+  "abstract": "Cohn, Kumar and Minton constructed a universally optimal code of thirty-nine points in the octonionic projective plane 𝕆P², whose existence was conjectured by Hoggar. Its points form thirteen mutually unbiased Jordan frames, and a four-parameter phase family deforms the code through such configurations. This Lean development describes their local geometry under the automorphism group F₄. At every nonresonant phase, every nearby real solution of the defining equations belongs to one of four smooth families of labelled configurations. In a local slice for F₄, their union has normal form R⁴ × ⋃ᵢ₌₁⁴ R⁶ᵢ, with the R⁶ᵢ in direct sum. The distance to the localized family union is bounded by a phase-dependent constant times the square root of the residual, and the exponent 1/2 is sharp in the ambient configuration space. On an explicit open dense subset of the nonresonant phases, the complexified families are exactly the top-dimensional components of the complex solution germ, each generically reduced. Every neighbourhood of the original code in the space of unlabelled tight 39-point codes modulo F₄ contains points of local dimension 10.\n\nThe results are local, the resonant germ at the original code is not classified, and lower-dimensional complex components are not excluded. For exact frames and strongly convex C² overlap potentials, we prove a two-sided comparison of the energy gap with squared overlap errors and, near each nonresonant orbit, a quartic lower bound in distance to the localized family union. Except for attributed third-party material, all text and code are AI-generated under Robert R. MacGregor’s direction. Robert is an amateur who welcomes collaboration (macgregor@gmail.com).",
+  "authors": [
+    "Robert R. MacGregor"
+  ],
+  "repository": "https://github.com/macgregor-sudo/tight-39-code",
+  "commit": "46f01c135aacea9003435e7f1dc99b4a69568e83",
+  "project_path": null,
+  "declarations": [
+    "CKM.NativeTightCodeConsumer.code_bound",
+    "CKM.NativeTightCodeConsumer.code_bound_sharp",
+    "CKM.NativeTightCodeConsumer.tight_code_iff_frames",
+    "SupportedStress.supported_stress_local_criterion",
+    "CKM.NativeExactFrameEnergy.native_energy_sandwich",
+    "CompactAlbert.native_idempotent_iff_scaled_specialUnitary_of_literal_quartet_readouts",
+    "CompactAlbert.nativeComplementaryPoint_scaled_hidden_inverse",
+    "CompactAlbert.native_complementary_frame_iff_exists_central_order",
+    "CompactAlbert.native_ordered_central_triples_overlap_iff_hilbertSchmidt",
+    "CKM.NativeUnlabelledSlice.literalCfg_mem_tightLocus",
+    "Option2StatementCode.exists_goodAvoid_codeClass_mem_nhds_one",
+    "Option2StatementA1.state_equivalence",
+    "Option2StatementA1.quartet_fixer_classification",
+    "Option2StatementA1.quartet_fixer_converse",
+    "Option2StatementCode.originalCode_no_open24_chart",
+    "Option2StatementCode.originalCode_no_charted24_neighborhood",
+    "Option2StatementA3.finrank_original_derivative_kernel",
+    "Option2StatementA1.nine_frame_array",
+    "Option2StatementA3Matrix.unrestricted_matrix_normal_form",
+    "Option2StatementA3Matrix.firstOrder_dimension",
+    "Option2StatementA3Matrix.resonance_count_cases",
+    "Option2StatementA2.full_A2",
+    "Option2StatementA5Slice.native_A5_geometry",
+    "Option2StatementA4.full_A4",
+    "Option2StatementA6.native_A6",
+    "Option2StatementCode.native_A7_local_dimension",
+    "Option2StatementR.native_real_endpoint",
+    "Option2StatementR.normal_form_exists",
+    "Option2StatementR.native_exact_frame_quartic_stability_near_orbit"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "math.CO",
+      "math.RA"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-10-29T17:30:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "46f01c135aacea9003435e7f1dc99b4a69568e83",
+        "fork_repository": "PalomarArchive/macgregor-sudo--tight-39-code--ae805be97afb",
+        "source_repository": "macgregor-sudo/tight-39-code"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2794729bf0d6e5cb845c7bb1afc40fd213911f9e664d10682fa3675e851c7aa6"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000009",
+  "version": 1,
+  "title": "A formal proof of an affine reverse Faber-Krahn inequality",
+  "abstract": "The three principal manuscript results M01, M02 and M03, with their original domains and quantifier order. M01: one finite C>0 before every n>0 and compact convex Euclidean body K with nonempty interior; there exists a literal real special-linear matrix S with finite actual H0 Rayleigh infimum on interior(S K) and lambda_1(interior(S K))*volume(K)^(2/n)<=C*n. M02: one finite C>0 before every n>0 and origin-symmetric compact convex volume-one K with nonempty interior in maximal Gaussian measure position; its actual H0 Rayleigh infimum is at most C*n. M03: for each real P>=2 one finite C(P)>0 precedes every n>0, every even isotropic probability law nu satisfying the conventional compact-set IsLogConcaveMeasure condition, least Poincare constant at most P and finite actual Gaussian-relative Fisher information, and every origin-symmetric compact convex body D with nonempty interior supporting nu almost everywhere; lambda_1(interior D)<=C(P)*(n+sqrt(n*I(nu|gamma))). The log-concave density is derived from the law's original finite-information hypothesis; no density witness, covariance lower bound, ellipsoid-existence conclusion or desired spectral estimate is an additional premise. This standalone combined M01/M02/M03 package passed its own ordinary Linux sandboxed Comparator --paranoid with all six configured kernels. Its actual build, complete fixed-statement comparison, private proof inspection, axiom reports and separate AI reviews are retained under verification/.",
+  "authors": [
+    "Matthew J. Colbrook",
+    "George Stepaniants"
+  ],
+  "repository": "https://github.com/MColbrook/Affine-reverse-Faber-Krahn-problem",
+  "commit": "8da3a495c1e4ca178ae216c01ae44826fbe1a7cc",
+  "project_path": null,
+  "declarations": [
+    "AffineFK.affine_reverse_faber_krahn_principal_results"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.SP",
+      "math.MG"
+    ],
+    "msc2020": [
+      "35P15",
+      "52A23"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T09:19:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8da3a495c1e4ca178ae216c01ae44826fbe1a7cc",
+        "fork_repository": "PalomarArchive/MColbrook--Affine-reverse-Faber-Krahn-problem--47d3b15fd525",
+        "source_repository": "MColbrook/Affine-reverse-Faber-Krahn-problem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ab1ac12c7dee7145258833b896604bffb5d5be773ca7a2de4e2cde92d6a473e4"
+}

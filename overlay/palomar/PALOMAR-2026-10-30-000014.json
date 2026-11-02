@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000014",
+  "version": 2,
+  "title": "Maximality of the Došen–Petrić Boolean Category",
+  "abstract": "Let P be a nonempty set of propositional variables. The freely generated zero-identity Boolean category B(P) of Došen and Petrić is maximal: every congruence on its arrows preserved by the arrow operations and uniform formula substitution is either equality or identifies every pair of parallel arrows. The formalization gives two proofs of maximality and proves the congruence dichotomy. It also proves that the identity and zero endomorphism of each variable are distinct, and that there is no arrow from the terminal object to the initial object.",
+  "authors": [
+    "Florian Lengyel"
+  ],
+  "repository": "https://github.com/flengyel/Dosen-Petric-Maximality",
+  "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+  "project_path": null,
+  "declarations": [
+    "DosenPetric.Palomar.maximality",
+    "DosenPetric.Palomar.short_maximality",
+    "DosenPetric.Palomar.congruence_dichotomy",
+    "DosenPetric.Palomar.identity_ne_zero",
+    "DosenPetric.Palomar.no_top_to_bot"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CT",
+      "math.LO"
+    ],
+    "msc2020": [
+      "03G30",
+      "03F07",
+      "18A32"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T15:13:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+        "fork_repository": "PalomarArchive/flengyel--Dosen-Petric-Maximality--63db84754d7f",
+        "source_repository": "flengyel/Dosen-Petric-Maximality"
+      }
+    ]
+  },
+  "statement_hash": "sha256:90eee16b871e1946e6e0041fcf31a0cce10aa380ba69a8b76f32d3aea89e4e1e"
+}

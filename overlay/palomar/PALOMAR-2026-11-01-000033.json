@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000033",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000033",
+  "version": 1,
+  "title": "Light 3-stars in plane graphs of minimum face size five (Madaras)",
+  "abstract": "A Lean 4 / Mathlib formalization of Theorem 1.1 of Madaras (2004), for finite simple graphs with the combinatorial planarity (genus-zero rotation systems) of the registered entry Kuratowski's theorem. In every plane map of a finite simple graph of minimum degree at least three whose faces all have length at least five, some vertex x of degree three has three distinct neighbours a, b, c with deg a = deg b = 3 and deg c ≤ 4 (light_star3); in particular the star K1,3 is light, with degree sum at most 13. One statement. The proof is a discharging argument on the rotation system with charges deg − 4 and ℓ − 4 in which every face gives each corner at a 3-vertex a weight depending only on the degrees of the two neighbours along the face, and vertices of degree at least five give 1/5 to each 3-neighbour; the local inequalities are checked by decide in the kernel. This replaces the article's transfer of charge between adjacent 3-vertices.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/madaras-light-stars",
+  "commit": "053a5caff546c2f700025081e5d3e0b7bf873f62",
+  "project_path": null,
+  "declarations": [
+    "MadarasTheorem.light_star3"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C10",
+      "05C07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T22:57:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "053a5caff546c2f700025081e5d3e0b7bf873f62",
+        "fork_repository": "PalomarArchive/jtraverso--madaras-light-stars--fec46a2c19c6",
+        "source_repository": "jtraverso/madaras-light-stars"
+      }
+    ]
+  },
+  "statement_hash": "sha256:803aeb8a77568ed300fbb0c8a3e99a74323b93fb8505edf5bf35345fe86ad1cf"
+}

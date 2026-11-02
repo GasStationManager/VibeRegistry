@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000024",
+  "version": 1,
+  "title": "Natural cohomology of general Steiner bundles",
+  "abstract": "Formalizes Theorem 1.1 of Natural Cohomology of General Steiner Bundles. Over every characteristic-zero field, for all n >= 1, t >= 1, and r >= n, a nonempty principal open of t by (t+r) matrices of linear forms on projective n-space has maximal rank in every homogeneous degree. The transposes give exact Steiner presentations of actual rank-r locally free sheaves, whose integer twists each have at most one nonzero sheaf cohomology group. The coefficient open is nonempty over the original field.",
+  "authors": [
+    "Vlado Vojdanovski"
+  ],
+  "repository": "https://github.com/Vlado-V/natural-cohomology-steiner",
+  "commit": "d557f602d8f083eceef3c625f9bcee5b6d2beefc",
+  "project_path": null,
+  "declarations": [
+    "NaturalCohomologySteinerPaper.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.AC"
+    ],
+    "msc2020": [
+      "14F06",
+      "14J60",
+      "13D02"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T13:14:53Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d557f602d8f083eceef3c625f9bcee5b6d2beefc",
+        "fork_repository": "PalomarArchive/Vlado-V--natural-cohomology-steiner--892b302995be",
+        "source_repository": "Vlado-V/natural-cohomology-steiner"
+      }
+    ]
+  },
+  "statement_hash": "sha256:97d6a6179586f5c292b4bbdffd1b4835676c0bd045deb6390d80593a626d19fe"
+}

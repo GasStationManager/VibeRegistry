@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000020",
+  "version": 1,
+  "title": "Category Hewitt–Savage zero-one law for infinite Baire products",
+  "abstract": "A subset A of X^J with the property of Baire, invariant under every permutation moving only finitely many indices, is meagre or has meagre complement when J is infinite and the actual product space X^J is Baire. A corollary covers countable products of any Polish space. Finite-support displacement, cylinder mixing and the category contradiction are proved, not assumed.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "2fb199d3c35ec0aa7c51bb4331de8c1f7ab31a07",
+  "project_path": "topology/hewitt-savage-category",
+  "declarations": [
+    "HewittSavage.category_zero_one",
+    "HewittSavage.polish_sequence_zero_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN",
+      "math.DS"
+    ],
+    "msc2020": [
+      "54E52",
+      "54B10",
+      "37B02"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T12:08:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2fb199d3c35ec0aa7c51bb4331de8c1f7ab31a07",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:58283017985c9ddd787378d3b63ecf705e0d5da479adbe1f03ec94aeaacd1fa5"
+}

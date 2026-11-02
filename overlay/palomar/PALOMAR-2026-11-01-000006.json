@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000006",
+  "version": 1,
+  "title": "Optimal clique partitions under local perturbations",
+  "abstract": "A Lean 4 / Mathlib formalization of the main results of the author's preprint \"Optimal Clique Partitions under Local Perturbations\" (Erdős #81 series, Paper VI). For a graph G on n vertices with a core P of size p = ⌊(n+1)/3⌋, h = Δ(G △ (K_P ∨ I_O)) and u, s, m the numbers of core, crossing and exterior edges: if p ≥ 18h + 1 then cp(G) = cp_{≤4}(G) = s − u − 2m = M(n) + C − A − 2m with M(n) = ⌊n(n+1)/6⌋ (Theorem A), and cp_{≤3}(G) − cp(G) = m (Theorem B); if p ≥ 63h, every assignment of the orders 4 or 5 to the exterior edges is realized by an optimal partition (Theorem C); for p ≥ 16 each assignment has at least p^{⌊p²/64⌋} optimal partitions and 2^m p^{⌊p²/64⌋} ≤ N(G) ≤ (n+1)^{5e(G)} (Theorem E). Also: the formula for other core sizes in an explicit window (Proposition 2.1), the intrinsic maximum over all cores (§8.1), the exact optimum with one exceptional vertex, cp = cp_{≤4} = cp*_= = s − u − 2m + D(a,b), ν₃ = ν₃* = u + min(a,b) and the restriction gap (Theorem D), and the complete-join variant cp(G) = M(n) − 2m (Theorem A.1). Twelve statements in all. The constants 18, 63, 16 and 24 are those of the paper; their optimality is not claimed.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/erdos81-optimal-clique-partitions",
+  "commit": "719e39baf9d0e356a13f6bfe36b60b4ad5e910d6",
+  "project_path": null,
+  "declarations": [
+    "ErdosPaperVI.theorem_A",
+    "ErdosPaperVI.theorem_B",
+    "ErdosPaperVI.theorem_C",
+    "ErdosPaperVI.proposition_2_1",
+    "ErdosPaperVI.intrinsic_maximum",
+    "ErdosPaperVI.theorem_D",
+    "ErdosPaperVI.theorem_D_fractional",
+    "ErdosPaperVI.theorem_D_triangles",
+    "ErdosPaperVI.theorem_D_gap",
+    "ErdosPaperVI.theorem_E_prescription",
+    "ErdosPaperVI.theorem_E",
+    "ErdosPaperVI.theorem_A_1"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T08:21:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "719e39baf9d0e356a13f6bfe36b60b4ad5e910d6",
+        "fork_repository": "PalomarArchive/jtraverso--erdos81-optimal-clique-partitions--2ba058ab4ee3",
+        "source_repository": "jtraverso/erdos81-optimal-clique-partitions"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4d2d226621881426344983afc294797cc075b2ebf1318721bfbbdbd4c96b6af3"
+}

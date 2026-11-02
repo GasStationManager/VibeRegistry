@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000008",
+  "version": 1,
+  "title": "Finite-Lp vorticity nonuniqueness for two-dimensional Euler",
+  "abstract": "A Lean 4 formalization of nonuniqueness for the unforced incompressible Euler equations on the two-dimensional square torus. For each finite real exponent p at least one and each positive time interval, the selected theorem constructs a common mean-zero, divergence-free initial datum in L2 and W1p, and two distinct weak solutions continuous in time with values in L2. Their distributional vorticities have strongly measurable Lp-valued representatives that are essentially bounded in time. This is the two-dimensional finite-Lp question in the first part of Buckmaster and Vicol's Problem 6. The full proof and reproducibility checks have passed.",
+  "authors": [
+    "Tao Tao",
+    "Haiqi Zhang"
+  ],
+  "repository": "https://github.com/geogleswift-glitch/-euler2d-finite-lp-nonuniqueness-palomar",
+  "commit": "ad7deb36ea565f34bdb784e9153073c5a220d46a",
+  "project_path": null,
+  "declarations": [
+    "PalomarEuler.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP"
+    ],
+    "msc2020": [
+      "35Q31",
+      "76B03"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T04:48:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ad7deb36ea565f34bdb784e9153073c5a220d46a",
+        "fork_repository": "PalomarArchive/geogleswift-glitch---euler2d-finite-lp-nonuniqueness-palomar--538bf2aa90ac",
+        "source_repository": "geogleswift-glitch/-euler2d-finite-lp-nonuniqueness-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1b06c48abe78f8a97032b3ffc29f672e0703251414da447b6a98422d6b501e39"
+}

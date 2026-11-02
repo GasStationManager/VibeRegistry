@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000001",
+  "version": 1,
+  "title": "Generic strongly transitive sequences in weakly mixing Polish systems",
+  "abstract": "For a continuous weakly mixing self-map of a nonempty Polish space, a comeagre set of countable sequences has every finite prefix dense under the corresponding diagonal forward orbit. A nonempty dense G-delta subset of such sequences is constructed through countable-product transitivity and a countable-basis Baire argument.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "b507c8fd789af8ac5dee356ea2a85444209e401d",
+  "project_path": "topology/strongly-transitive-sequences",
+  "declarations": [
+    "StrongTransitive.residual_dense_orbits",
+    "StrongTransitive.countable_power_transitive",
+    "StrongTransitive.dense_prefix_orbit",
+    "StrongTransitive.residual_strong_sequences",
+    "StrongTransitive.exists_dense_Gdelta_strong_sequences"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.GN"
+    ],
+    "msc2020": [
+      "37B05",
+      "37B02"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T00:58:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b507c8fd789af8ac5dee356ea2a85444209e401d",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:02c32864aaac1be397a79355db63055a64668e32e9e5e2b64bd1ac097eb742a1"
+}

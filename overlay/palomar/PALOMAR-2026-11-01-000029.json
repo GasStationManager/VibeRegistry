@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000029",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000029",
+  "version": 1,
+  "title": "Mémoire sur les nombres premiers",
+  "abstract": "A Lean 4 proof, with no unproved steps and no hypotheses, of explicit two-sided bounds for Chebyshev's function psi from P. L. Chebyshev, Mémoire sur les nombres premiers, 1852, with Chebyshev's constant A = log 2/2 + log 3/3 + log 5/5 - log 30/30 = 0.92129.... For every natural number n at least 30, psi of n is at least A n - 5 log n + 2 log 30 - 1; for every natural number n, psi of n is at most 6A/5 n + 2 log^2 n + 160. The proof uses Chebyshev's combination of log n!, log of the factorials of n/2, n/3 and n/5, and log of the factorial of n/30, as in the paper, with error terms weaker than Chebyshev's. Mathlib has Chebyshev type bounds only with the constants log 2 and log 4. The Lean code was written by an AI agent and is offered for human audit. Goldbach's conjecture is open and is not claimed.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "da5cf9edad7896290771dfcab8feee2906399e3d",
+  "project_path": "entries/chebyshev1852",
+  "declarations": [
+    "GoldbachLean.Chebyshev1852.Explicit.psi_ge_chebyshev30",
+    "GoldbachLean.Chebyshev1852.Explicit.psi_le_chebyshev30"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N05",
+      "11A41"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T17:16:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "da5cf9edad7896290771dfcab8feee2906399e3d",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8263c5013d134f6551863bf60ebaf7b256bae9b9c9dd999bbdafe3a9029ff0f8"
+}

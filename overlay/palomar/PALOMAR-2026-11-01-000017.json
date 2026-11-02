@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000017",
+  "version": 1,
+  "title": "Fluctuation bounds for first-passage percolation",
+  "abstract": "A Lean 4 / Mathlib formalization of two papers of S. Armstrong and A. Bou-Rabee on the fluctuations of passage times in first-passage percolation. \"Curvature and variance in lattice first-passage percolation\": for independent, identically distributed edge weights on Z^d, d >= 2, whose law nu has an exponential moment and nu({0}) below the critical probability of bond percolation (Assumption (W)), and for constants delta in (0, 1], r > 0, Lambda >= 0 and lambda > 0, there are epsilon > 0 and C such that E exp(|T(0, x) - mu(x)| / (C |x|^((1 - epsilon)/2))) <= 2 for every unit vector xi in R^d, rational or not, at which the time constant mu has a quadratic expansion on the orthogonal hyperplane with these constants (Assumption (Curv): a linear term, a quadratic form at least lambda |h|^2, and a remainder at most Lambda |h|^(2 + delta) for |h| <= r), and every x in Z^d other than 0 within distance |x|^(3/4) of the ray through xi; epsilon and C do not depend on the direction (Theorem 1.1). The repository also proves the variance bound that follows, Var T(0, x) <= 2 C^2 |x|^(1 - epsilon), and Var T(0, floor(n xi)) <= n^(1 - epsilon) for every sufficiently large integer n, uniformly in the direction, the floor taken coordinatewise. \"Fluctuation bounds for rotationally invariant first-passage percolation\": for the random density psi(chi * W) of Gaussian white noise W on R^d, d >= 2, with chi smooth, radial and supported in the closed unit ball and psi continuous with values between two positive constants, the passage time T over rectifiable curves has a time constant mu = lim t^(-1) E T(0, t e_1), and there are epsilon > 0 and C such that E exp(|T(0, x) - mu |x|| / (C |x|^((1 - epsilon)/2))) <= 2 for every point x with |x| >= 1 (Theorem 1.1); the same holds for every density of white noise or of a homogeneous Poisson process that is jointly measurable, determined by the noise in the closed unit ball around each point, bounded between two positive constants and equivariant under rotations and translations (Assumption A, Theorem 1.2). The repository also proves the variance bounds that follow, Var T(0, t e_1) <= t^(1 - epsilon) for every sufficiently large t and Var T(0, x) <= |x|^(1 - epsilon) for every point x with |x| sufficiently large. Every result of the literature that the proofs cite is stated and proved in the repository.",
+  "authors": [
+    "Scott Armstrong",
+    "Ahmed Bou-Rabee"
+  ],
+  "repository": "https://github.com/nitromannitol/FPP-variance",
+  "commit": "cfe58d1d241d86bd831c2e1b3c61273200fb780b",
+  "project_path": null,
+  "declarations": [
+    "IsotropicMetric.lintegral_exp_passageTime_le",
+    "IsotropicMetric.variance_passageTime_le",
+    "IsotropicMetric.variance_passageTime_le_norm",
+    "IsotropicMetric.exists_isWhiteNoise"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "60K35",
+      "82B43",
+      "60K37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T11:19:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cfe58d1d241d86bd831c2e1b3c61273200fb780b",
+        "fork_repository": "PalomarArchive/nitromannitol--FPP-variance--3142b5c4e24c",
+        "source_repository": "nitromannitol/FPP-variance"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9f0d28f063dbb64083864cd67ba72c75ac71f7c173ed8542eaaa54d2a90733dd"
+}

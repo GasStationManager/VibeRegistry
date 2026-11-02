@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000006",
+  "version": 1,
+  "title": "Proofs and corrections of OEIS conjectures",
+  "abstract": "Machine-checked proofs of conjectures recorded in 29 entries of the On-Line Encyclopedia of Integer Sequences (OEIS), together with corrections of the four conjectured statements that turn out to be false. Most of the sequences are coefficients of formal power series defined by functional equations, and most of the results describe their residues modulo small integers. The results form six families and a group of further results: the equation A(x*A - m*x*A^2) = x^2 (parity, residues modulo m^2, binary-digit divisibility and prime exponents for every m, with corrected residue classifications modulo 9 and 16 for A396843 and A396844); consecutive iterates F = x + F^{o r}*F^{o(r+1)} (every integer iterate modulo 2r, A396099, A396798, A396807); scaled inverses A(x - x*A(qx)/q) = x (every coefficient is 1 modulo q+1, and for even q the odd coefficients are exactly at the powers of 2, A393856-A393859); theta-series substitutions and theta-type sums (square patterns modulo 4, corrected for A380680, and a congruence modulo 16 for A355872); Catalan-type equations (residues modulo 2, 4 and 8 governed by powers of 2, A393172, A393171, A389536, A397588, A195194); equations with an exact halving step (residues modulo 4, 9 and 3, A389537, A389542, A389474, A389475); and further results on A396093, A392210, A396102 and its family F^{o r} = (1+x)*F^{o(r-1)}, A380056, A397346 and the greedy sequence A394576. Each family has its own Comparator configuration, and each OEIS entry has a self-contained paper in the repository.",
+  "authors": [
+    "Dev D. Goyal"
+  ],
+  "repository": "https://github.com/dvgyl/oeis-proofs",
+  "commit": "55ad2bd4804b6bcefeeb6c21eb06eac8b09c45d8",
+  "project_path": "lean",
+  "declarations": [
+    "OEISProofs.HannaFamily.existsUnique",
+    "OEISProofs.HannaFamily.odd_coeff",
+    "OEISProofs.HannaFamily.even_coeff",
+    "OEISProofs.HannaFamily.modEq_sq",
+    "OEISProofs.HannaFamily.pow_digitSum_dvd",
+    "OEISProofs.HannaFamily.prime_pow_dvd",
+    "OEISProofs.HannaFamily.residues_mod_nine",
+    "OEISProofs.HannaFamily.residues_mod_sixteen"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B50",
+      "05A15",
+      "13F25",
+      "11B83",
+      "68V15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T15:09:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "55ad2bd4804b6bcefeeb6c21eb06eac8b09c45d8",
+        "fork_repository": "PalomarArchive/dvgyl--oeis-proofs--bfcab5911989",
+        "source_repository": "dvgyl/oeis-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:dc20b1ca8983ff75df940d4dfb1fd344d3abd2d540ae3e3a8376c7b42f7ff8ea"
+}

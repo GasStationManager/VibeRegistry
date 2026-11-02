@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000022",
+  "version": 1,
+  "title": "Nowhere-zero 3-flows in 6-edge-connected graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of the theorem of Lovász, Thomassen, Wu and Zhang: every finite 6-edge-connected simple graph has a nowhere-zero integer 3-flow (the weak 3-flow conjecture). The proof formalizes Theorem 3.1 of the paper (β-orientations of multigraphs modulo 3) and Tutte's lifting theorem. Only simple graphs are stated; the paper's multigraph version and its results on modulo k-orientations for k > 3 are not stated. Mathlib does not contain this theorem.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/three-flows",
+  "commit": "2e0bc7c111b2e6d05d81ce9bd1c2dc58a4184f4c",
+  "project_path": null,
+  "declarations": [
+    "ThreeFlowTheorem.three_flow_of_six_edge_connected"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C21",
+      "05C40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T13:02:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2e0bc7c111b2e6d05d81ce9bd1c2dc58a4184f4c",
+        "fork_repository": "PalomarArchive/jtraverso--three-flows--4989d8f20572",
+        "source_repository": "jtraverso/three-flows"
+      }
+    ]
+  },
+  "statement_hash": "sha256:35988689ec3e162f2b31c60d504ce42ff678cd256954a2549be031e0494407e8"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000010",
+  "version": 1,
+  "title": "Absolutely maximally entangled states of seven parties: for d >= 2, AME(7, d) exists exactly when d >= 3",
+  "abstract": "Machine-checked proofs that no absolutely maximally entangled state of seven qubits exists, and that for local dimension d >= 2 an absolutely maximally entangled state of seven parties exists exactly when d >= 3. The statements and definitions are Formal Conjectures' (Open Quantum Problem 35), copied verbatim into Challenge.lean, so this entry proves Formal Conjectures' own statements; one proof step inside the definition combineFirst is changed so that Comparator can match it, and the definition is unchanged. The proofs follow Huber, Gühne and Siewert (2017) and Shi, Zhang, Zhao and Li (2026).",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/fc-ame-7",
+  "commit": "974bf30aa49e4bf4b1d8f0be2eb22b9ce02cde42",
+  "project_path": null,
+  "declarations": [
+    "OpenQuantumProblem35.ame_7_2_not_exists",
+    "OpenQuantumProblem35.ame_7_exists_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph"
+    ],
+    "msc2020": [
+      "81P40",
+      "81P45",
+      "05B15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T10:18:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "974bf30aa49e4bf4b1d8f0be2eb22b9ce02cde42",
+        "fork_repository": "PalomarArchive/zblore--fc-ame-7--9b396af5b5e0",
+        "source_repository": "zblore/fc-ame-7"
+      }
+    ]
+  },
+  "statement_hash": "sha256:51b85822d18cdae5d6180e69f465b912fdbd597043adc178821b14b69b1763aa"
+}

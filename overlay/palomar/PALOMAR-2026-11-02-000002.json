@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000002",
+  "version": 1,
+  "title": "Weighted independent sets in clique-free graphs",
+  "abstract": "A Lean formalization of a weighted independent-set existence bound for finite clique-free graphs. For every integer r at least four, positive real degree weights s, and nonnegative real objective weights a, a K_r-free graph has an independent set whose a-weight is at least c_r times the sum of a_v f(s(N(v))/s_v), where f is Shearer's function. The coefficient is the explicit positive rational c_r = 1/(1 + 1152 B_0 r), with a fixed absolute constant B_0, and has proved upper and lower bounds of order 1/r. The proof combines scalar potentials, a weighted triangle dichotomy, sparse neighborhood restriction, deletion identities, and compactness induction.",
+  "authors": [
+    "Ewan Davies"
+  ],
+  "repository": "https://github.com/ed359/cliquefree",
+  "commit": "40a7ec158d5f88bb23f16ad1d13c74814082a095",
+  "project_path": "lean",
+  "declarations": [
+    "CliquefreeResults.weighted_existence",
+    "CliquefreeResults.weighted_existence_explicit"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C69",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T04:01:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "40a7ec158d5f88bb23f16ad1d13c74814082a095",
+        "fork_repository": "PalomarArchive/ed359--cliquefree--a6ed8a252ebb",
+        "source_repository": "ed359/cliquefree"
+      }
+    ]
+  },
+  "statement_hash": "sha256:aa4e11b07a8b77ac8b861227d3aa11a974c51294417a014cb82656472b88d5eb"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000007",
+  "version": 1,
+  "title": "Erdős Problem 657: Straus's observation on isosceles-free point sets with few distances",
+  "abstract": "Erdős asked whether a set of n points in the plane with no isosceles triangle must determine at least f(n)n distinct distances for some f(n) tending to infinity, and asked the same in R^k for each fixed k. Straus observed that no such bound holds uniformly in the dimension. In the form stated in formal-conjectures: for every k there are 2^k points in R^k with no isosceles triangle and at most 2^k - 1 distinct distances. This formalization proves that statement, using the points whose i-th coordinate is 0 or sqrt(2^i); the sources consulted do not record Straus's own construction.",
+  "authors": [
+    "Daniel Veljjanoski"
+  ],
+  "repository": "https://github.com/veljjanoski/erdos657-palomar",
+  "commit": "e44e1eb1d4a525f66a7a297235c956a29f56a535",
+  "project_path": null,
+  "declarations": [
+    "Erdos657.erdos_657.variants.straus"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T07:11:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e44e1eb1d4a525f66a7a297235c956a29f56a535",
+        "fork_repository": "PalomarArchive/veljjanoski--erdos657-palomar--cb468b3c329a",
+        "source_repository": "veljjanoski/erdos657-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a6794e8465866d574da2fbbe9aae2ad4f7bd6756f6d04ebc6d7b669cccf0fb0f"
+}

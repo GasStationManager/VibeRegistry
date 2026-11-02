@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000002",
+  "version": 1,
+  "title": "fc-poisson-2",
+  "abstract": "A machine-checked proof that the Poisson conjecture fails for two canonical pairs, and hence for every n >= 2, following the explicit counterexample of C. D. Long (2026). The statements and definitions are Formal Conjectures' (PoissonConjecture.lean, arXiv math/0608009), copied verbatim into Challenge.lean, so this entry proves Formal Conjectures' own statements.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/fc-poisson-2",
+  "commit": "aa723b8e6d5d5fcc8b87ea7116816c0f29ed6312",
+  "project_path": null,
+  "declarations": [
+    "PoissonConjecture.poisson_conjecture",
+    "PoissonConjecture.poisson_conjecture.variants.dimension_two",
+    "PoissonConjecture.poisson_conjecture.variants.dimension_three",
+    "PoissonConjecture.poisson_conjecture.variants.dimension_ge_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA"
+    ],
+    "msc2020": [
+      "17B63",
+      "14R15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T06:34:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "aa723b8e6d5d5fcc8b87ea7116816c0f29ed6312",
+        "fork_repository": "PalomarArchive/zblore--fc-poisson-2--d5df9c01ad01",
+        "source_repository": "zblore/fc-poisson-2"
+      }
+    ]
+  },
+  "statement_hash": "sha256:567b3ac8892a976d3a40071ef7861a1bc846df6fb804dcbd8ec76cd617d25ce5"
+}

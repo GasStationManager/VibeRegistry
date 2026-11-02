@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000025",
+  "version": 1,
+  "title": "Weak mixing times minimality: transitivity of the product",
+  "abstract": "A continuous weakly mixing self-map of a nonempty compact Hausdorff space has a transitive actual heterogeneous product with any continuous pointwise forward-minimal self-map of a nonempty compact space. Surjectivity, arbitrarily late thick hitting blocks, syndetic hitting gaps and their intersection are proved.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "2fae123025f57f2f74220c01ffea7148fc6e3a11",
+  "project_path": "topology/weak-mixing-minimal-product",
+  "declarations": [
+    "WeakMinimal.surjective_of_weakMixing",
+    "WeakMinimal.hitting_thick",
+    "WeakMinimal.minimal_hitting_syndetic",
+    "WeakMinimal.thick_meets_syndetic",
+    "WeakMinimal.weakMixing_minimal_product"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.GN"
+    ],
+    "msc2020": [
+      "37B05",
+      "37B02"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T14:08:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2fae123025f57f2f74220c01ffea7148fc6e3a11",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1e3e814b06e36e713890c683d6d7a40e3d4c6f67664ae0ce8e5ffaa9fecb5071"
+}

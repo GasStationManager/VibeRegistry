@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000027",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000027",
+  "version": 1,
+  "title": "Weak and strong βη-normalization in pure type systems with βη-conversion",
+  "abstract": "A Lean formalization of the Barendregt-Geuvers-Klop conjecture, \"weak normalization implies strong normalization\", for the pure type systems PTS_βη of Geuvers (Logics and Type Systems, 1993), whose conversion rule uses βη-conversion. For every PTS specification, with no functionality assumption, it proves two theorems about the legal terms of PTS_βη. If every legal term is weakly βη-normalizing, then every legal term is strongly βη-normalizing. If every legal term is weakly β-normalizing, then every legal term is strongly βη-normalizing. The proof adapts OpenAI's 2026 proof of the β case for PTS_β, whose Lean files are included. An η-step can delete a λ-annotation, so the proof works from a weaker hypothesis, that every legal term has a β-reduct with no β-redex outside its λ-domains. Conversion is handled through domain erasure, candidates are indexed by βη-normal forms of erased types, and observation values are made η-canonical.",
+  "authors": [
+    "Ankit Pradhan",
+    "Cole Vick",
+    "Ruijie Fang",
+    "Carl Kwan"
+  ],
+  "repository": "https://github.com/localmotiveproofs/PTS-beta-eta",
+  "commit": "9d0b54a7d5f6747410212c40acf53d12544eb2e6",
+  "project_path": null,
+  "declarations": [
+    "PureTypeSystem.weak_implies_strong_betaEta",
+    "PureTypeSystem.weak_beta_implies_strong_betaEta"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.LO",
+      "math.LO"
+    ],
+    "msc2020": [
+      "03B40",
+      "03B38",
+      "68N18",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T22:33:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9d0b54a7d5f6747410212c40acf53d12544eb2e6",
+        "fork_repository": "PalomarArchive/localmotiveproofs--PTS-beta-eta--3b8074510794",
+        "source_repository": "localmotiveproofs/PTS-beta-eta"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a77de1fdaaec7df0ce437d1ef12e2fa1eb17012876cd36edb06ac46aeca2e755"
+}

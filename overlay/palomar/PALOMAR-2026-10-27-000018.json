@@ -1,0 +1,67 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000018",
+  "version": 1,
+  "title": "BandParity: the band-parity sum of a quartic character, two laws modulo 4",
+  "abstract": "For a prime p = 5 (mod 8) let chi be the quartic Dirichlet character with chi(2) = i, with values in the Gaussian integers, and let C(p) = f + i e be the sum of chi(n) (-1)^floor(n^2/p) over 0 < n < p/2. The development proves that f = (p-1)/4 (mod 4) and e = kappa (mod 4) for every such p, where kappa is the sum of the Legendre symbols (n/p) over 0 < n < p/4. The mechanism is a matching lemma: for sign functions sigma, tau and a bijection pi, the correlation sum sigma(x) tau(pi x) is congruent modulo 4 to the sum of the two marginals minus the number of terms, so it does not depend on pi. Along the way it proves the parity dictionary (-1)^floor(n^2/p) = s(n) s(n^2) with s(x) = (-1)^<x>, the coset form f = sum over the fourth powers H of s(u) s(u^2) and e = the same sum over 2H, the lag identity sum over 2H of s(u) s(2u) = kappa exactly, the exact coset parities sum_H s = k + 2t and sum_{2H} s = t - 2k where B_{1,chi} = k + i t, and the Coordinate Congruence kappa = (p-1)/4 + k + t (mod 4). It also proves the odd-subgroup congruence: for an odd modulus N >= 3, a subgroup H of (Z/N)^x of odd order h, a coset X = xH and an even exponent e >= 2, the band-parity sum of X and -X over (0, N/2) equals sum over X of s(u) s(u^e) and is congruent to h - 2 alpha(X) - 2 alpha(X^e) modulo 4, where alpha counts elements with odd least residue.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/Bandparity",
+  "commit": "890a306dcb94aaf290ca390e553f9c2ba39de246",
+  "project_path": null,
+  "declarations": [
+    "BandParity.matching",
+    "BandParity.matching_indep",
+    "BandParity.existsUnique_pinned",
+    "BandParity.neg_one_pow_band",
+    "BandParity.T_eq",
+    "BandParity.odd_k",
+    "BandParity.odd_t",
+    "BandParity.bandSum_re",
+    "BandParity.bandSum_im",
+    "BandParity.lag_identity",
+    "BandParity.bandSum_re_modEq",
+    "BandParity.bandSum_im_modEq",
+    "BandParity.coset_parities",
+    "BandParity.bandSum_im_modEq_coords",
+    "BandParity.coordinate_congruence",
+    "BandParity.cosetBandSum_eq",
+    "BandParity.odd_subgroup_congruence"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A15",
+      "11L40",
+      "11R29",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T19:19:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "890a306dcb94aaf290ca390e553f9c2ba39de246",
+        "fork_repository": "PalomarArchive/jkfarland-bot--Bandparity--4643317fd5e0",
+        "source_repository": "jkfarland-bot/Bandparity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b684f218360ae7925dd5399dc93426cadc5f8d73ef7f4eca005665bb68dd3ae6"
+}

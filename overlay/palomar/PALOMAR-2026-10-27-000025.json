@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000025",
+  "version": 1,
+  "title": "The Art Gallery Problem is ∃ℝ-complete: point-point, boundary-point and point-boundary variants, in Lean 4",
+  "abstract": "A Lean 4 and Mathlib formalization of Abrahamsen, Adamaszek and Miltzow, \"The Art Gallery Problem is ∃ℝ-complete\" (J. ACM 2021), together with Stade's point-boundary variant (SoCG 2025), for an explicit single-tape Turing machine model. Lean proves that deciding whether a simple polygon with rational corners can be guarded by g guards is ∃ℝ-complete under polynomial-time many-one reductions in each of the three variants known to be ∃ℝ-complete: point guards guarding the whole polygon (Theorem 1, also for integer corners), guards on the boundary guarding the whole polygon (the boundary-point variant of the paper's §7.2), and point guards guarding only the boundary (Stade's theorem); that ETR-INV is ∃ℝ-complete; that the guard sets of the paper's Section 5 polygon correspond exactly to the solutions of an ETR-INV instance (Theorem 54, with the range condition made explicit) and encode the solutions of any ETR formula (Theorem 55); that every real algebraic number is the x-coordinate of a guard in every optimal guard set of some polygon with rational corners (Theorem 2); and that some x-monotone polygon with integer corners can be guarded by three guards but needs four rational guards (Theorem 4). The development provides reusable material on the existential theory of the reals: formulas and their codes, the class ∃ℝ, ETR-INV and ETR-INV-REV with polynomial-time reductions from ETR, and an elementary proof of the doubly exponential solution bound that the paper cites from Schaefer and Štefankovič. It partially answers the open problem of the paper's §7.2 on the number of variables: all three art gallery problems reduce to ETR by formulas whose only variables are the 2g coordinates of the guards (the paper uses (n+g)^6 variables for n corners). Point-point and point-boundary hardness is proved through Stade's construction; the paper's own Section 5 construction is formalized for Theorems 54 and 55, with gadget visibility facts checked as kernel-evaluated certificates, and a modification of it (guard segments on shallow bays in the boundary, re-laid-out addition gadgets) gives boundary-point hardness. The proofs use only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/ArtGalleryProblem-ExistsR-Lean4",
+  "commit": "7bfe29cbdad3b057fc5e83397973d554773282e6",
+  "project_path": null,
+  "declarations": [
+    "ArtGallery.etrinv_erComplete",
+    "ArtGallery.agp_inER",
+    "ArtGallery.agp_inER_guard_variables",
+    "ArtGallery.agp_erComplete",
+    "ArtGallery.agpInt_erComplete",
+    "ArtGallery.etrinv_guard_correspondence",
+    "ArtGallery.etr_guard_correspondence",
+    "ArtGallery.algebraic_guard_coordinate",
+    "ArtGallery.irrational_guards_needed",
+    "ArtGallery.agpPointBoundary_inER_guard_variables",
+    "ArtGallery.agpPointBoundary_erComplete",
+    "ArtGallery.agpBoundaryPoint_inER_guard_variables",
+    "ArtGallery.agpBoundaryPoint_erComplete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CG",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "68U05",
+      "68Q17",
+      "14P10",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T20:59:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7bfe29cbdad3b057fc5e83397973d554773282e6",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--ArtGalleryProblem-ExistsR-Lean4--2c020da058c7",
+        "source_repository": "RBarish-UTokyo/ArtGalleryProblem-ExistsR-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3bfc3f10a2bf085703934d1ba88d3729f4faa5cfa35d8d8cccbca20d4da9d003"
+}

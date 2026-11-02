@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000003",
+  "version": 1,
+  "title": "Kirkman's theorem on Steiner triple systems",
+  "abstract": "A Lean 4 / Mathlib formalization of Kirkman's 1847 theorem: for v ≥ 1, a Steiner triple system on v points (a family of 3-subsets covering every pair of distinct points exactly once) exists if and only if v ≡ 1 or 3 (mod 6). Sufficiency is proved by Bose's and Skolem's constructions from Steiner quasigroups. Mathlib does not contain Steiner triple systems.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/kirkman-steiner-triple-systems",
+  "commit": "18551414d822f7fa4fb7535dc43733c4b316c3a8",
+  "project_path": null,
+  "declarations": [
+    "KirkmanTheorem.kirkman"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T01:47:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "18551414d822f7fa4fb7535dc43733c4b316c3a8",
+        "fork_repository": "PalomarArchive/jtraverso--kirkman-steiner-triple-systems--37adc3898c80",
+        "source_repository": "jtraverso/kirkman-steiner-triple-systems"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4f40ce7ddfb765cb4c1b119f0f0d53024d4711e45de9c3ca4c7d8e4dccb7d064"
+}

@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000036",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000036",
+  "version": 1,
+  "title": "Extremal Sidon sets: Fourier uniformity and partition regularity",
+  "abstract": "A Lean formalization of Ortega and Prendiville's results on Sidon sets in integer intervals. It proves Fourier bounds for near-maximal and largest Sidon sets, equidistribution in progressions and Bohr sets, and monochromatic solutions to partition regular linear equations in at least five variables. It also proves sharp obstruction constructions and records a correction to the paper's dimension-independent approximation claim.",
+  "authors": [
+    "Tomas Ortega"
+  ],
+  "repository": "https://github.com/TomasOrtega/Sidon",
+  "commit": "735de6d7c67b81a28b1e07e3f2661dbc17bb89d6",
+  "project_path": null,
+  "declarations": [
+    "SidonSubmission.sidon_fourier_uniformity",
+    "SidonSubmission.sidon_improved_fourier_uniformity",
+    "SidonSubmission.largest_sidon_fourier_uniformity",
+    "SidonSubmission.sidon_progression_equidistribution",
+    "SidonSubmission.sidon_smooth_equidistribution",
+    "SidonSubmission.sidon_regular_bohr_equidistribution",
+    "SidonSubmission.sidon_partition_regularity",
+    "SidonSubmission.eventually_exists_sharp_odd_obstruction",
+    "SidonSubmission.exists_eventually_sharp_residue_obstruction",
+    "SidonSubmission.QuantitativeRado.exists_integer_colouring_without_positive_monochromatic_linearSolution",
+    "SidonSubmission.BandwidthCounterexample.not_exists_uniform_dimension_bandwidth",
+    "SidonSubmission.IsSidonSet.card_le_sqrt_add_four_mul_rpow"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B13",
+      "11B75",
+      "05D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T18:00:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "735de6d7c67b81a28b1e07e3f2661dbc17bb89d6",
+        "fork_repository": "PalomarArchive/TomasOrtega--Sidon--9a23311e73c2",
+        "source_repository": "TomasOrtega/Sidon"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6fff77a5561f46d981c3346d7d717f3571f621950cfc6c50218bfab953bab4de"
+}

@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000021",
+  "version": 1,
+  "title": "Linked-pair panels: panel laws are determined by finitely many Laplace values",
+  "abstract": "This entry formalizes panels of linked site pairs observed through a reporting channel, with the pair coalescence time T following a probability law on the non-negative reals. All L sites of a panel share the same time T; given T = t, the sites are reported independently, and at each site the two lineages share one latent type with weight e^(−kt) and have independent types otherwise, each type being reported through a channel that maps K latent types to probability distributions on a finite set of labels. For an informative channel (one whose rows are not all equal) and a panel of length L, the panel laws of two time laws agree for all outcomes if and only if their Laplace transforms agree at the points rk for r = 0, …, L. If the channel erases all information, every panel law agrees. If the transforms agree up to L and differ at the next point, then panels of length L agree but some panel of length L + 1 differs. For k > 0, agreement of all panels of all lengths is equivalent to equality of the time laws.",
+  "authors": [
+    "X. Lee",
+    "N. Volkov"
+  ],
+  "repository": "https://github.com/cenozoic-works/rhone-theory",
+  "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+  "project_path": null,
+  "declarations": [
+    "Rhone.Palomar.LinkedPairPanel.panel_eq_iff",
+    "Rhone.Palomar.LinkedPairPanel.panel_erased",
+    "Rhone.Palomar.LinkedPairPanel.next_moment_upgrade",
+    "Rhone.Palomar.LinkedPairPanel.all_panels_eq_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.ST",
+      "q-bio.PE"
+    ],
+    "msc2020": [
+      "62F03",
+      "62B15",
+      "44A10",
+      "92D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T12:13:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+        "fork_repository": "PalomarArchive/cenozoic-works--rhone-theory--fb903f3fec24",
+        "source_repository": "cenozoic-works/rhone-theory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b1d3272268ae6f5046625f9bc33266c2c4e930c07222b81baa705fae75f6fd56"
+}

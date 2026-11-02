@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000021",
+  "version": 1,
+  "title": "A Cauchy-Schwarz inequality for real powers: proof, equality cases and weighted forms",
+  "abstract": "For a vector v with nonnegative entries and a real number p, write v^p for the vector of p-th powers of its entries. Johnston, Plosker, Torrance and Varona (arXiv:2507.10327, Conjecture 5.1) conjectured that ‖v^p‖ ‖w^p‖ - ⟨v^p, w^p⟩ ≤ ‖v‖^p ‖w‖^p - ⟨v, w⟩^p for every real p ≥ 2 and all vectors v, w in ℝⁿ with positive entries, with the Euclidean norm and inner product. They proved it for integer p and showed that it fails for 1 < p < 2. This formalization proves the conjecture for every real p ≥ 2 and all vectors with nonnegative entries. It also determines every case of equality: for p > 2 equality holds exactly when v and w are linearly dependent or each has at most one nonzero entry, and for p = 2 there is one further family supported on two coordinates. Finally, for positive coordinate weights ω used in every norm and inner product, the weighted inequality holds for all nonnegative vectors exactly when ω_i ω_j ≥ 1 for all i ≠ j, a condition that does not depend on p. The proof shows that a 2 × 2 entrywise-power defect matrix is positive semidefinite, using a double integral formula and the Cauchy-Schwarz inequality for integrals. The conjecture and its equality cases were also proved, independently and concurrently, by Johnston and Sababheh (arXiv:2610.12063).",
+  "authors": [
+    "Pragyaan Gaur"
+  ],
+  "repository": "https://github.com/pragyaangaur/Real-Power-Cauchy-Schwarz",
+  "commit": "8b7b39288079ad5b778b616efebd385816bf03d2",
+  "project_path": null,
+  "declarations": [
+    "RealPowerCauchySchwarz.conjecture_5_1",
+    "RealPowerCauchySchwarz.inequality",
+    "RealPowerCauchySchwarz.equality_cases_of_two_lt",
+    "RealPowerCauchySchwarz.equality_cases_two",
+    "RealPowerCauchySchwarz.weighted_characterisation"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.CA"
+    ],
+    "msc2020": [
+      "26D15",
+      "15A45",
+      "15B48"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T20:12:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8b7b39288079ad5b778b616efebd385816bf03d2",
+        "fork_repository": "PalomarArchive/pragyaangaur--Real-Power-Cauchy-Schwarz--904aaabd6ae3",
+        "source_repository": "pragyaangaur/Real-Power-Cauchy-Schwarz"
+      }
+    ]
+  },
+  "statement_hash": "sha256:351cb5ed33fffb9bf2dd31b6e3a756df3fe302bcc2774facefa0f330dafe4e36"
+}

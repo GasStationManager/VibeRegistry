@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000006",
+  "version": 1,
+  "title": "Knaster–Reichbach homeomorphism extension on Cantor space",
+  "abstract": "Every homeomorphism between closed nowhere-dense subsets of Cantor space extends to a homeomorphism of the entire Cantor space, with exact pointwise agreement. Cantor space is the usual product topology on Nat -> Bool. Empty prescribed subsets are included. The proof constructs matched finite clopen refinements by alternating binary coordinate splits, then obtains mutually inverse continuous limit maps. Classical result; no novelty or priority claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "04f7b3ae1bf2e1ab42fb2b7c259176ed8ce143e8",
+  "project_path": "topology/knaster-reichbach",
+  "declarations": [
+    "KnasterReichbach.exists_homeomorph_extension"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54C20",
+      "54F65",
+      "54E45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T02:09:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "04f7b3ae1bf2e1ab42fb2b7c259176ed8ce143e8",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9af50c0647d081e9d5c79897d506ada13e76d9c3a238c22e9493bef12a2693c6"
+}

@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000010",
+  "version": 1,
+  "title": "Short sums of certain arithmetic functions (Nair–Tenenbaum)",
+  "abstract": "A Lean 4 formalization of Nair and Tenenbaum's uniform upper bounds for short sums of nonnegative arithmetic functions evaluated at integer polynomial values. Theorem 1 retains the coefficient-independent height threshold and the restricted-discriminant dependence of the bound. Theorem 2 gives a greatest-prime-factor bound with a strict exponential gain for arbitrary nonconstant irreducible integer polynomials, including those with fixed prime divisors. Theorem 3 treats prime arguments with the explicit constant-term correction. The development also proves the ten corollaries on progressions, Hooley moments, smooth values, shifted primes, dyadic averages, and Goldbach representations, and Lemma 2 for general class-M weights. Corollary 6 has an explicit nonconstancy condition; the printed Lemma 1 has a checked counterexample and the required replacements are proved.",
+  "authors": [
+    "Jason Davies"
+  ],
+  "repository": "https://github.com/jasondavies/nair-tenenbaum-short-sums",
+  "commit": "9c3c9236a66f9ba1e04a237089ff836adde0cd6c",
+  "project_path": null,
+  "declarations": [
+    "NairTenenbaum.Submission.theoremOne",
+    "NairTenenbaum.Submission.theoremTwo",
+    "NairTenenbaum.Submission.theoremThree",
+    "NairTenenbaum.Submission.corollaryOne",
+    "NairTenenbaum.Submission.corollaryTwo",
+    "NairTenenbaum.Submission.corollaryThree",
+    "NairTenenbaum.Submission.corollaryFour",
+    "NairTenenbaum.Submission.corollaryFive",
+    "NairTenenbaum.Submission.corollarySix",
+    "NairTenenbaum.Submission.corollarySeven",
+    "NairTenenbaum.Submission.corollaryEight",
+    "NairTenenbaum.Submission.corollaryNine",
+    "NairTenenbaum.Submission.corollaryTen",
+    "NairTenenbaum.Submission.lemmaTwo"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N37",
+      "11N36",
+      "11N25",
+      "11N32"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-30T12:33:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9c3c9236a66f9ba1e04a237089ff836adde0cd6c",
+        "fork_repository": "PalomarArchive/jasondavies--nair-tenenbaum-short-sums--561e0b32d0f1",
+        "source_repository": "jasondavies/nair-tenenbaum-short-sums"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4976aadd023f2912e29cdf4a805031825b0bcbe38cf3946886f7d053f40e5cad"
+}

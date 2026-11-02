@@ -2,19 +2,26 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-18-000029",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-18-000029",
-  "version": 1,
-  "title": "Galvin's theorem, the Dinitz problem and stable matchings",
-  "abstract": "A Lean 4 / Mathlib formalization of Galvin's theorem that the list chromatic index of a finite bipartite graph equals its maximum degree (if every edge has a list of at least Δ colours, a proper edge colouring can be chosen from the lists), of its corollary solving the Dinitz problem (an n × n array with lists of n symbols per cell admits a choice with distinct symbols in every row and column), and of the Gale–Shapley theorem on the existence of stable matchings with strict preferences and incomplete acceptability lists, which provides the kernels in Galvin's argument. Mathlib has line graphs and colourings but none of these results.",
+  "version": 2,
+  "title": "Galvin's theorem for bipartite multigraphs, the Dinitz problem and stable matchings",
+  "abstract": "A Lean 4 / Mathlib formalization of Galvin’s theorem for finite bipartite multigraphs: every assignment of finite edge lists of size at least the maximum incidence degree admits a proper edge coloring, with parallel edges counted separately. It includes ordinary edge coloring with Δ colors and the matching lower bound, and the Borodin–Kostochka–Woodall theorem for local lists (lists of size at least the larger degree of the two ends of each edge suffice). The previously registered simple-graph Galvin theorem, Dinitz problem and Gale–Shapley stable matching theorem are retained.",
   "authors": [
     "Juan Pablo Traverso Gianini"
   ],
   "repository": "https://github.com/jtraverso/galvin-dinitz",
-  "commit": "0aa98fc17e1e96ec408f7bad3198ce37a08d26fc",
+  "commit": "84dcda4c2a760f2b52b7e813affe7e6968f8bfce",
   "project_path": null,
   "declarations": [
     "ListEdgeColouring.gale_shapley",
     "ListEdgeColouring.galvin",
-    "ListEdgeColouring.dinitz"
+    "ListEdgeColouring.dinitz",
+    "GalvinMultigraph.galvin_of_degree_bound",
+    "GalvinMultigraph.galvin",
+    "GalvinMultigraph.konig",
+    "GalvinMultigraph.degree_bounds_of_proper",
+    "GalvinMultigraph.maxDegree_le_of_proper",
+    "GalvinMultigraph.colorable_iff",
+    "GalvinMultigraph.galvin_local"
   ],
   "informal": {},
   "classification": {
@@ -28,7 +35,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-10-18T22:51:37Z",
+  "published_at": "2026-10-29T03:45:32Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -42,11 +49,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "0aa98fc17e1e96ec408f7bad3198ce37a08d26fc",
+        "commit": "84dcda4c2a760f2b52b7e813affe7e6968f8bfce",
         "fork_repository": "PalomarArchive/jtraverso--galvin-dinitz--befd03f21f2b",
         "source_repository": "jtraverso/galvin-dinitz"
       }
     ]
   },
-  "statement_hash": "sha256:4d0581477e508caad3b7f2925a486a98ad7a1639f73e48b43fcbe39d11d131d9"
+  "statement_hash": "sha256:bd6f1233d923e1129fbfda941a00bdacb1e988b01f61c8c026f13145227b79b2"
 }

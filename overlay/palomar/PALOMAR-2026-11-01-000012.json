@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000012",
+  "version": 1,
+  "title": "The height of the infection tree",
+  "abstract": "A Lean formalization of all 31 numbered results of The height of the infection tree under the embedded SIR epidemic model, with six explicit statement corrections or endpoint conventions. The height theorem retains arbitrary asymptotic infection-rate sequences and the full Bernoulli mixture across early extinction and macroscopic survival. The strong profile theorem retains exact lattice heights, the Gaussian logarithmic correction and compact-parameter uniformity. These results concern probabilists studying random trees, branching processes and epidemic geometry. The proposed Palomar entry selects the two main theorems and the following parameter-uniform strengthening; the full library and result-by-result coverage record are included.",
+  "authors": [
+    "Igor Kortchemski"
+  ],
+  "repository": "https://github.com/igor-kortchemski/height-infection-tree",
+  "commit": "f1a5b7dfdcc9b3d6f7665d9e99535760c181c47f",
+  "project_path": null,
+  "declarations": [
+    "HeightPaper.mainTheorem",
+    "HeightPaper.strongProfileTheorem",
+    "HeightPaper.uniformStrongProfileTheorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "60C05",
+      "60J80",
+      "60F05",
+      "05C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T10:09:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f1a5b7dfdcc9b3d6f7665d9e99535760c181c47f",
+        "fork_repository": "PalomarArchive/igor-kortchemski--height-infection-tree--91eaf1437dd5",
+        "source_repository": "igor-kortchemski/height-infection-tree"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f98642db230c82bc73cf190cf810da89e5726d61edd9db4fad5499e0bbe0a561"
+}

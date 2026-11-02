@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000042",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000042",
+  "version": 1,
+  "title": "Generic IP-transitive points in weakly mixing systems",
+  "abstract": "For a continuous map of a second-countable Baire Hausdorff space with topologically transitive square, a residual set of points has IP entering times into every nonempty open set. A nonempty space has a nonempty dense G-delta family of such points; square hitting times are infinite.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "2beccde9cbc4d96e4248662417d1490a2140eb9f",
+  "project_path": "topology/ip-transitive-points",
+  "declarations": [
+    "IPTransitive.weak_mixing_infinite_hits",
+    "IPTransitive.positive_pair_returns_yield_ip",
+    "IPTransitive.residual_ip_transitive",
+    "IPTransitive.exists_dense_Gdelta_ip_transitive"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.GN"
+    ],
+    "msc2020": [
+      "37B05",
+      "37B20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T23:51:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2beccde9cbc4d96e4248662417d1490a2140eb9f",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:876817d917ce0e6106a7dc7fdb1a4197e473864ea63d3ccca1d8253b2ff775e3"
+}

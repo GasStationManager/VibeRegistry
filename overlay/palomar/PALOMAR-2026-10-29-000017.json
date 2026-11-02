@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000017",
+  "version": 1,
+  "title": "An explicit block-recursive formula for solutions of the two-locus sampling recursion",
+  "abstract": "This entry formalizes an explicit block-recursive formula for the solution of the two-locus sampling recursion under parent-independent mutation, with two alleles at each locus, positive mutation rates, and nonnegative recombination rate, over any ordered field. The explicit expression equals every solution of the recursion and is itself a solution, so it is the unique solution. Lumping statements show that merging alleles, by pushing configurations forward along maps between allele sets of any sizes, carries solutions to solutions, and that when every allele class is merged into two classes the lumped values are given by the explicit two-allele formula at the merged allele frequencies. A variant of the explicit formula, for any number of alleles at one locus and two at the other, is shown to equal every solution of the recursion.",
+  "authors": [
+    "X. Lee",
+    "N. Volkov"
+  ],
+  "repository": "https://github.com/cenozoic-works/rhone-theory",
+  "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+  "project_path": null,
+  "declarations": [
+    "Rhone.Palomar.ExplicitFormula.q_eq_qExplicit",
+    "Rhone.Palomar.ExplicitFormula.qExplicit_isSolution",
+    "Rhone.Palomar.ExplicitFormula.lump_isSolution",
+    "Rhone.Palomar.ExplicitFormula.lumping_eq_qExplicit",
+    "Rhone.Palomar.ExplicitFormula.q_eq_qExplicitKB2"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "q-bio.PE",
+      "math.PR"
+    ],
+    "msc2020": [
+      "92D10",
+      "60J90",
+      "92D15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T11:15:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+        "fork_repository": "PalomarArchive/cenozoic-works--rhone-theory--fb903f3fec24",
+        "source_repository": "cenozoic-works/rhone-theory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ed5a0f93d23b87cf41bdc018d31be4ac5a3e1f7b43de1838c732a2c12ae0bf6b"
+}

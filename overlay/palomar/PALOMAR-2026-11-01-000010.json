@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000010",
+  "version": 2,
+  "title": "Rare subtree patterns in size-conditioned Bienaymé trees: Poisson approximation and declumping",
+  "abstract": "Lean proofs of the four Introduction theorems of Rare subtree patterns in size-conditioned Bienaymé trees: Poisson approximation and declumping, including periodic offspring laws. Secondary results, proof departures, manuscript corrections and remaining background obligations are recorded in FORMALIZATION_REPORT.md.",
+  "authors": [
+    "Igor Kortchemski"
+  ],
+  "repository": "https://github.com/igor-kortchemski/rare-subtree-patterns",
+  "commit": "fc5ef722392b1af41e8b9d5fc45d5a521b7823dd",
+  "project_path": null,
+  "declarations": [
+    "PoissonDeclumping.poissonApproximation",
+    "PoissonDeclumping.poissonApproximation2",
+    "PoissonDeclumping.maxString",
+    "PoissonDeclumping.maxLeafHeight"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "60J80",
+      "60G50",
+      "05C05",
+      "05C80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T18:03:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fc5ef722392b1af41e8b9d5fc45d5a521b7823dd",
+        "fork_repository": "PalomarArchive/igor-kortchemski--rare-subtree-patterns--f9fcaac4b38e",
+        "source_repository": "igor-kortchemski/rare-subtree-patterns"
+      }
+    ]
+  },
+  "statement_hash": "sha256:525cf645b307f2ebff17d98353e4533f21252aa95ad8aef0069f542d32aed93d"
+}

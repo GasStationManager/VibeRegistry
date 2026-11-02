@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000014",
+  "version": 1,
+  "title": "The Critical 2D KPZ Process",
+  "abstract": "A Lean 4 formalization of \"The Critical 2D KPZ Process\" by Berger, Caravenna, Clark, Dunlap, Gu, Liu, Nakajima, Sun, Tsai, Xie and Zygouras (arXiv:2610.31614, version 1), together with selected inputs and adaptations in the form these proofs need. For directed polymers on Z^2 in a Gaussian environment at critical disorder, it proves the existence of a critical 2D stochastic heat flow, defined as the joint limit in law of the rescaled partition functions (Theorem A). The centred log-partition function converges in law, in the local negative Sobolev spaces H^{-a}_loc and jointly in finitely many times and initial data, to the critical 2D KPZ process (Theorem 1.2). The process satisfies the comparison principle in the initial data. For flat initial data, its averages at scale epsilon, divided by sqrt(log log(1/epsilon)), converge in law to a centred Gaussian (Theorem 1.4(i)); it has a radial covariance kernel equivalent to log log(1/|z|) at the diagonal (Theorem 1.4(ii)), is not a signed measure (Proposition 1.5), is not Gaussian (Theorem 1.6), is invariant under translations and rotations and covariant under scaling (Proposition 1.8), and its pairing with each nonnegative test function has a law of Ehrhard type (Proposition 3.8). It also proves strict skewness, twice differentiable response to initial data, Brownian motion across scales and the finite-dimensional GFF tangent (Theorems A–D of Scott Armstrong’s note). The parameter theta is fixed. Built on Mathlib. All proofs use only Lean's standard axioms.",
+  "authors": [
+    "Scott Armstrong"
+  ],
+  "repository": "https://github.com/scottnarmstrong/Critical2DKPZ",
+  "commit": "f1c98dacb2a83737096bd976019dfa2c5986ee5a",
+  "project_path": null,
+  "declarations": [
+    "Critical2DKPZAudit.criticalKPZ_main"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math-ph"
+    ],
+    "msc2020": [
+      "60H17",
+      "60F17",
+      "60G60",
+      "82D60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T06:53:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f1c98dacb2a83737096bd976019dfa2c5986ee5a",
+        "fork_repository": "PalomarArchive/scottnarmstrong--Critical2DKPZ--4b43cc0f06bc",
+        "source_repository": "scottnarmstrong/Critical2DKPZ"
+      }
+    ]
+  },
+  "statement_hash": "sha256:466192dabb9b5d0ee9bae0cd70d9eec775553fa808a10a62d28d6487c156a82c"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000012",
+  "version": 1,
+  "title": "Ray-Chaudhuri–Wilson: uniform families with restricted intersections",
+  "abstract": "Formalizes Theorem 3 of On t-designs (1975): a k-uniform family of subsets of an n-element ground set whose distinct-pair intersection sizes lie in L ⊆ {0,...,k−1} has at most binomial(n,|L|) members. Includes the actual-intersection-spectrum formulation, the uniform one-intersection bound, and equality examples consisting of all s-subsets.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/restricted-intersections",
+  "commit": "ebb90800eda4ec83cc18c6da2135b8718757f6e2",
+  "project_path": null,
+  "declarations": [
+    "IntersectionBounds.rayChaudhuriWilson",
+    "IntersectionBounds.card_le_choose_spectrum",
+    "IntersectionBounds.uniform_fisher",
+    "IntersectionBounds.sharp_example"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05D05",
+      "05B05",
+      "15A03"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T05:26:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ebb90800eda4ec83cc18c6da2135b8718757f6e2",
+        "fork_repository": "PalomarArchive/jtraverso--restricted-intersections--ad53241811dd",
+        "source_repository": "jtraverso/restricted-intersections"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6fc50ef26f8e037c4add636ce20049ac4bce25352dc0dea947af53bcb9e7c725"
+}

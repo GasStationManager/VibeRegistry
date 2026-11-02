@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000026",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000026",
+  "version": 1,
+  "title": "CONDITIONAL on Perelli-Pintz-Salerno 1984 and Perelli-Pintz 1993: Halupczok's ternary Goldbach mean value theorem with primes in progressions and short intervals, repaired",
+  "abstract": "CONDITIONAL on two cited results, both taken as explicit hypotheses of the theorems and never as axioms: PPS1984Remark, the printed Remark on p. 530 of A. Perelli, J. Pintz and S. Salerno, Bombieri's theorem in short intervals, 1984, and PP1993Goldbach, the Goldbach analogue of Theorem 3 of A. Perelli and J. Pintz, On the exceptional set for Goldbach's problem in short intervals, 1993, established in its sections 3 to 5 but not printed as a numbered theorem. These are the inputs that the paper's own proof quotes as its Theorems 2.1 and 2.3. PP1993Goldbach is therefore a weaker citation than a numbered theorem: it is the unnumbered Goldbach analogue that Halupczok says the proof of Perelli and Pintz can be adapted to give, stated here in the general form that argument yields. Under the two hypotheses, a complete Lean 4 proof of a repaired form of Theorem 1.2 of K. Halupczok, Goldbach's problem with primes in arithmetic progressions and in short intervals, J. Theor. Nombres Bordeaux 25, 2013, 331 to 351: summed over moduli q <= Q, the weighted count of p1 + p2 + p3 = n with p1 = a mod q and p1, p2 in short intervals differs from its singular series main term T(n, q, a) Y1 Y2 by << Y1 Y2 L^-A. As printed, the theorem sums over all q <= Q with the printed T, which does not vanish when a and q have a common factor, while the prime sum then is empty, so the printed statement fails, for example at a = 3, q = 3. The repair takes the main term to be 0 for such q, or equivalently restricts to q coprime to a. The entry also proves that the two hypotheses imply the paper's Theorems 2.1 and 2.3, as derived results of this entry. Binary Goldbach is open and is not claimed; ternary Goldbach is a theorem of Helfgott. An AI agent wrote the Lean code; the statements were checked against the sources by an AI agent and are offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "12f09bfeca2ae00988fa039e2e82c6de4d147108",
+  "project_path": "entries/halupczok2012",
+  "declarations": [
+    "LeanLab.Halupczok2012.theorem2Zeroed_U1510",
+    "LeanLab.Halupczok2012.theorem2_U1510",
+    "LeanLab.Halupczok2012.theorem3_of_remark",
+    "LeanLab.Halupczok2012.theorem5_of_PP1993"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11N13",
+      "11P55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T14:09:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "12f09bfeca2ae00988fa039e2e82c6de4d147108",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c2d82de810b400e7d253b9bf13712aac5315d35bafffacc96a7ab7b9b2fdc1d6"
+}

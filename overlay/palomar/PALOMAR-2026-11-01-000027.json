@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000027",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000027",
+  "version": 1,
+  "title": "Erdős Problem 935: powerful parts of products of consecutive integers",
+  "abstract": "For the powerful part Q_2(m) of m, this formalization proves that limsup Q_2(n(n+1)...(n+l))/n^2 is infinite for every l >= 2 (the second question of Erdős Problem 935), and at least 1 for every l >= 1 (a consequence of a result of Mahler noted by Erdős). Both use solutions of the Pell equation x^2 = 8y^2 + 1.",
+  "authors": [
+    "Daniel Veljjanoski"
+  ],
+  "repository": "https://github.com/veljjanoski/erdos935-palomar",
+  "commit": "80decbdd1cca367db2185caf5e62acefc28a71d6",
+  "project_path": null,
+  "declarations": [
+    "Erdos935.erdos_935.parts.ii",
+    "Erdos935.erdos_935.variants.mahler",
+    "Erdos935.erdos_935.variants.ell_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N25",
+      "11D09"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T16:17:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "80decbdd1cca367db2185caf5e62acefc28a71d6",
+        "fork_repository": "PalomarArchive/veljjanoski--erdos935-palomar--ecd785d21a46",
+        "source_repository": "veljjanoski/erdos935-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e83f2b34ba9fdb600fd4c592029eafafaccc605dc6cb2cb94ac142985c705929"
+}

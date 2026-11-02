@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000011",
+  "version": 1,
+  "title": "The Murty–Simon conjecture on diameter-2-critical graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of the proof by Sanjana Das and Jacob Fox of the Murty–Simon conjecture (arXiv:2610.39032, 2026). A graph is diameter-2-critical if its diameter is 2 and deleting any edge increases the diameter. Theorem 1.1: every diameter-2-critical graph on n vertices has at most ⌊n²/4⌋ edges (murty_simon), and a diameter-2-critical graph with ⌊n²/4⌋ edges is isomorphic to K_{⌈n/2⌉,⌊n/2⌋} (murty_simon_equality). Also: for n ≥ 3, K_{⌈n/2⌉,⌊n/2⌋} is diameter-2-critical with ⌊n²/4⌋ edges, so the bound is attained (murty_simon_sharp); Lemma 1.2, |E(G) \\ M| ≤ |non-edges of G| for every maximal matching M of a diameter-2-critical graph G (lemma_1_2); and Lemma 1.3, a diameter-2-critical graph with equality in Lemma 1.2 for every maximal matching is triangle-free (lemma_1_3). Five statements; the bound holds for every n, with no lower bound on n.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/murty-simon-conjecture",
+  "commit": "adadd2fbd0ba9e9c71faadd105f357f7b12a814f",
+  "project_path": null,
+  "declarations": [
+    "MurtySimonConjecture.murty_simon",
+    "MurtySimonConjecture.murty_simon_equality",
+    "MurtySimonConjecture.murty_simon_sharp",
+    "MurtySimonConjecture.lemma_1_2",
+    "MurtySimonConjecture.lemma_1_3"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35",
+      "05C12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T10:02:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "adadd2fbd0ba9e9c71faadd105f357f7b12a814f",
+        "fork_repository": "PalomarArchive/jtraverso--murty-simon-conjecture--efb269fbdc27",
+        "source_repository": "jtraverso/murty-simon-conjecture"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4d8e719b152abe8d1cbaa33a49cd51020ebb5b8ef7f58dd0af56ca94ada3480f"
+}

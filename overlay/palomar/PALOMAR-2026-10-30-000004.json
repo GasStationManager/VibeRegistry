@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000004",
+  "version": 1,
+  "title": "PCF all the way down",
+  "abstract": "Let k be a field of characteristic zero and let f: X → X be a finite surjective map of integral k-schemes of finite type. By the critical locus of f we mean the image in X of the critical locus of the map induced on the normalization of X. By the branch locus we mean the image of the critical locus under f.\n\nWe say that f is post-critically finite (PCF) if, for every irreducible divisor D contained in the branch locus, the forward orbit f(D) ∪ f^2(D) ∪ … is algebraic, that is, a finite union of subvarieties, taken as a closed subscheme with its reduced induced structure.\n\nWe prove that if f is PCF and A is a preperiodic divisor for f with f^{r+s}(A) = f^r(A), then, setting B = f^r(A) and g = f^s, the restriction of g to B is PCF.\n\nThis proves the PCF all the way down conjecture: restricting again to preperiodic divisors and iterating gives PCF maps at every stage.",
+  "authors": [
+    "Taylor Dupuy",
+    "Thomas Tucker",
+    "Zhuoran Wang"
+  ],
+  "repository": "https://github.com/tdupu/pcfawd-formalization",
+  "commit": "05890ba0b0453c289157df45c5bbe472551b1025",
+  "project_path": "char-zero/lean",
+  "declarations": [
+    "PaperCharZero.Palomar.theoremA",
+    "PaperCharZero.Palomar.cor_pcfawd",
+    "PaperCharZero.Palomar.existsUnique_isNormalizationLift",
+    "PaperCharZero.Palomar.exists_pointClosure_restriction"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.AG",
+      "math.NT"
+    ],
+    "msc2020": [
+      "37P55",
+      "14E22"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-30T05:22:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "05890ba0b0453c289157df45c5bbe472551b1025",
+        "fork_repository": "PalomarArchive/tdupu--pcfawd-formalization--6c7356c18760",
+        "source_repository": "tdupu/pcfawd-formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:afc568ab47659b0ba1b5459f2b356d81a262b39aa752454afe395a7b352aee58"
+}

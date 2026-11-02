@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000012",
+  "version": 1,
+  "title": "Dynamic dimensional reduction in the Abelian sandpile",
+  "abstract": "A Lean 4 formalization of the paper \"Dynamic dimensional reduction in the Abelian sandpile\" by Bou-Rabee (Comm. Math. Phys. 390 (2022); arXiv:2009.05968), in a corrected edition of the arXiv source: dimensional reduction and self-similarity of the parallel toppling odometer (Theorem 1.1), the corresponding statements for the sandpile (Corollary 1.1) and the regularity proposition (Proposition 4.1) proved with them by one joint induction over dimension, side length and time, together with every lemma, corollary and proposition of Sections 2 and 3. The main results are stated as published. The four Mathlib-only comparator pairs under DimRedAudit/ check Theorem 1.1, Corollary 1.1 and Proposition 4.1.",
+  "authors": [
+    "Ahmed Bou-Rabee"
+  ],
+  "repository": "https://github.com/nitromannitol/Dynamic-Dimensional-Reduction",
+  "commit": "108b7212ce189a1effa009dcda3c8a14bf542ba7",
+  "project_path": null,
+  "declarations": [
+    "DimRed.StatementAudit.DimensionalReduction.dimensional_reduction",
+    "DimRed.StatementAudit.DimensionalReduction.terminal_dimensional_reduction"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math-ph"
+    ],
+    "msc2020": [
+      "82C27",
+      "37B15",
+      "39A12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T16:17:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "108b7212ce189a1effa009dcda3c8a14bf542ba7",
+        "fork_repository": "PalomarArchive/nitromannitol--Dynamic-Dimensional-Reduction--5bb9a631a373",
+        "source_repository": "nitromannitol/Dynamic-Dimensional-Reduction"
+      }
+    ]
+  },
+  "statement_hash": "sha256:231d1e27ce4d567117605a52a92fe256a66f7032b832ca158230970b44b39dfe"
+}

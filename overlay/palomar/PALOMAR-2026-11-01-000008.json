@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000008",
+  "version": 1,
+  "title": "Erdős Problem 835 when k + 1 is composite: the chromatic number of J(2k, k) exceeds k + 1",
+  "abstract": "Erdős Problem 835 asks whether, for some k > 2, the k-element subsets of a 2k-element set can be coloured with k + 1 colours so that every (k + 1)-element set sees all k + 1 colours among its k-element subsets; equivalently, whether the Johnson graph J(2k, k) has chromatic number k + 1 for some k > 2. Jie Ma and Quanyu Tang showed that this fails whenever k + 1 is not prime. This Lean 4 formalization proves, with Mathlib only: the equivalence between the colouring property and χ(J(2k, k)) = k + 1 for k > 0; χ(J(2k, k)) > k + 1 for every k > 2 with k + 1 composite; the consequence for every odd k > 2; and χ(J(18, 9)) > 10. The proof is a double count of the k-subsets of one colour inside a (k + j)-set, which forces k + 1 to divide (k + j).choose j for 1 ≤ j ≤ k; a prime p < k + 1 dividing k + 1 violates this at j = p. The case where k + 1 is prime, and so the problem itself, remains open; no new mathematics is claimed.",
+  "authors": [
+    "Matt Stokes"
+  ],
+  "repository": "https://github.com/stokes/erdos835-palomar",
+  "commit": "3a8d4cb348203b172c050917eaf1fa03679f002f",
+  "project_path": null,
+  "declarations": [
+    "Erdos835Palomar.johnson_chromaticNumber_composite",
+    "Erdos835Palomar.property_iff_chromaticNumber",
+    "Erdos835Palomar.johnson_chromaticNumber_odd",
+    "Erdos835Palomar.johnsonGraph_18_9_chromaticNumber"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T09:13:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3a8d4cb348203b172c050917eaf1fa03679f002f",
+        "fork_repository": "PalomarArchive/stokes--erdos835-palomar--5d4bc0756c73",
+        "source_repository": "stokes/erdos835-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b9c420b8301b42d7484693573a3e56012a21e78c333e185a89b5df4d08977829"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000003",
+  "version": 1,
+  "title": "Discrete Beurling number systems with integer error below every power, without a zero-free half-plane (assuming the short-interval prime number theorem (84))",
+  "abstract": "A Lean 4 / Mathlib formalization of S. Lavery, \"Discrete Beurling number systems with integer error below every power of x and no zero-free half-plane\". The headline theorem, BModel.one_zero_system_exists, constructs a discrete Beurling generalized number system whose integer counting function satisfies N(x) = x + O_ε(x^ε) for every ε > 0, while its zeta function is zero-free on no half-plane Re s > 1 − ε (a discrete [1, 0]-system in the sense of Broucke–Debruyne–Révész). The second theorem, BModel.corollary_2_2_complete, is Corollary 2.2: the answer to Question Q (must N(x) = Ax + O(x^θ) with θ < 1/2 force a zero-free half-plane?) is negative. The project also proves Theorem A for every θ ∈ (0, 1/2 − 10⁻⁴]: a system with N(x) = x + O(x^θ log* x) whose zeta function has zeros ρ_k with 1 − Re ρ_k = (log log x_k + O(1))/log x_k, i.e. at distance 1·log log x_k / log x_k from the line Re s = 1. The method is integer-first: a randomised greedy rule chooses each generalized prime so that the integer count tracks a target x + R(x) whose oscillation R plants the zeros; the main work is a positive drift for the queue of composites at every scale, using a Beurling–Saias-type resolvent bound, a local prime number theorem for the realised system and a cluster-counting theorem, with numerical certificates checked by the Lean kernel (decide +kernel). In Lean both theorems are conditional on one explicit hypothesis, BaseRange.Huxley84, eq. (84) of the paper: a short-interval prime number theorem for the rational primes (relative error ≤ (log q)⁻³ on every interval of length ≥ (2q)^{7/12} in [q, 2q], for large q). This is a known theorem (Heath-Brown 1988 with the de la Vallée Poussin error term) that is not in Mathlib; it is a hypothesis of the theorems, not an axiom. The paper and the formalization were produced with heavy AI assistance (Claude agents; the Lean development was started by Aristotle, Harmonic) and have had no human expert review.",
+  "authors": [
+    "Samuel Lavery"
+  ],
+  "repository": "https://github.com/samlavery/Beurling",
+  "commit": "c5dcd1dda76ddf95119d1fc6a0470786e8f0d3e8",
+  "project_path": null,
+  "declarations": [
+    "BModel.one_zero_system_exists",
+    "BModel.corollary_2_2_complete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N80",
+      "11M41",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T05:53:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c5dcd1dda76ddf95119d1fc6a0470786e8f0d3e8",
+        "fork_repository": "PalomarArchive/samlavery--Beurling--e0dcf0ff884f",
+        "source_repository": "samlavery/Beurling"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7da7a3095b6575fb83ca9ca60f90f1a1021f79c47cea58ce71f945af28da417c"
+}

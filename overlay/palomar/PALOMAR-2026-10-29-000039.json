@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000039",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000039",
+  "version": 1,
+  "title": "Determination Patterns in Infinite Dependency Models",
+  "abstract": "A Lean development of determination in infinite Boolean dependency models, including pattern realization, attainable determinate regions, contextual uniqueness, source-labelled spines, and a copy-majority representation. The Comparator configurations select separately scoped parts of this development; no single component is asserted to cover the whole paper.",
+  "authors": [
+    "Arthur Freitas Ramos"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "5d035afa3d50bc9a4c3058232d5b5a2c57475026",
+  "project_path": "causal-efficacy/determination-patterns",
+  "declarations": [
+    "DeterminationPatterns.exact_pattern_from_components"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03B35",
+      "06A06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T22:16:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5d035afa3d50bc9a4c3058232d5b5a2c57475026",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:54f34d440ad31a7439b3d8de89cd033ce2945f8e582a13fd6256c67af88239b9"
+}

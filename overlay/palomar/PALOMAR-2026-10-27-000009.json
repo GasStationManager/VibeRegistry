@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000009",
+  "version": 1,
+  "title": "The optimal Hessian bound for convex four-body central configurations",
+  "abstract": "A Lean 4 and Mathlib formalization of Conjecture 7.3 of arXiv:2609.35632 on the central configurations of the planar Newtonian four-body problem. At every strictly convex central configuration of four positive masses, the Hessian form Q of U + (λ/2)I is at least two thirds of its radial part K, and strictly so wherever K is positive. In the notation of the paper this is λ_max(G) < 1/3 for the explicit 2×2 matrix G of its Proposition 3.5, and by its Proposition 7.2 the constant 2/3 is optimal. It sharpens Theorem B of the paper, Q ≥ K/4. The definitions and the reduction to the normal form of Corbera, Cors and Roberts are those of the registered development lean4body-uniqueness. The new parts are a majorant that pays only the largest eigenvalue of S(y), an exact test that is positive definite exactly when λ_max(G) < 1/3, and a computer-assisted proof of that test: a branch and bound with interval arithmetic over the three-dimensional set of normalized convex central configurations, reduced by a symmetry to half of it, and an exact Taylor-form theorem at the corner where the margin of the test vanishes. Lean's kernel checks the certificates with `decide +kernel`. The trusted base is Lean's kernel, including its built-in arithmetic on natural-number literals (GMP-accelerated), and the proofs use only Lean's three standard axioms.",
+  "authors": [
+    "Tejasvi Singh Tomar"
+  ],
+  "repository": "https://github.com/tejasvi/lean4body-optimal-bound",
+  "commit": "4967a62ec6f41d075d1808bbfd091927bcfe9c7b",
+  "project_path": null,
+  "declarations": [
+    "C4.conj_sharp",
+    "C4.conj_sharp_strict"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math-ph"
+    ],
+    "msc2020": [
+      "70F10",
+      "70F15",
+      "65G40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T15:53:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4967a62ec6f41d075d1808bbfd091927bcfe9c7b",
+        "fork_repository": "PalomarArchive/tejasvi--lean4body-optimal-bound--f84a3aa41f81",
+        "source_repository": "tejasvi/lean4body-optimal-bound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ca7c00c3c93c4afd26f5518a9b092c249733d8b531ae5967b4ff7def49d8b01c"
+}

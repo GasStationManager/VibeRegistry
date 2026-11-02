@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000011",
+  "version": 1,
+  "title": "SmallRatio: Dedekind sums along Euclid's algorithm and the small-ratio formula",
+  "abstract": "For a prime p and 0 < h < p, the Dedekind sum s(h,p) is determined, up to an explicit error of order log p, by the fractions of small height congruent to plus or minus h: with the sum over the coprime pairs u, v >= 1 with uv < p/2, |12 s(h,p) - p sum ([hv = u mod p] - [hv = -u mod p])/(uv)| <= 6n <= 12 log_2 p + 6, where n is the length of Euclid's algorithm on (p, h). Summed over any set H of residues, in particular over a subgroup of odd order, this gives |12 sum_{h in H} s(h,p) - p S_H(p)| <= |H| (12 log_2 p + 6), where S_H(p) is the signed sum of 1/(uv) over the coprime pairs with uv < p/2 and u/v in H or -H. The development proves Dedekind reciprocity from scratch (by counting lattice points), the identities of Euclid's algorithm and the bound n <= 2 log_2 k + 1, the alternating-sum form 12 s(h,k) = sum (-1)^{j+1} k/(r_j q_{j-1}) + E with |E| <= 4n, and Legendre's pairing of the small coprime pairs with the steps of the algorithm, by a lattice-basis argument instead of continued fractions.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/SmallRatios",
+  "commit": "7e757a973e1297239400c90182e1b507ea48b7c0",
+  "project_path": null,
+  "declarations": [
+    "SmallRatio.reciprocity",
+    "SmallRatio.euclid_terminates",
+    "SmallRatio.euclid_identity",
+    "SmallRatio.euclid_congruence",
+    "SmallRatio.euclid_length",
+    "SmallRatio.along_euclid",
+    "SmallRatio.pairing",
+    "SmallRatio.pairs_coprime",
+    "SmallRatio.small_ratio",
+    "SmallRatio.small_ratio_log",
+    "SmallRatio.sum_over_set",
+    "SmallRatio.small_ratio_subgroup"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11F20",
+      "11A55",
+      "11M20",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-30T14:01:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7e757a973e1297239400c90182e1b507ea48b7c0",
+        "fork_repository": "PalomarArchive/jkfarland-bot--SmallRatios--f4f4c3f555bc",
+        "source_repository": "jkfarland-bot/SmallRatios"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2b6c4280dab823f25797f5ba312d0cddf95bd647a2c04b673f89225d11816942"
+}

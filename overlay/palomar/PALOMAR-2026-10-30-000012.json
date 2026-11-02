@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000012",
+  "version": 1,
+  "title": "Uniform attachment with freezing: Scaling limits — Lean formalization",
+  "abstract": "A Lean 4 and Mathlib formalization of arXiv:2308.00484, \"Uniform attachment with freezing: Scaling limits\", published in Ann. Inst. H. Poincaré Probab. Statist. 61(4) 2679–2708 (2025). It proves the Introduction's height theorem, the subcritical Gromov–Hausdorff–Prokhorov (GHP) limit to a measured segment, the critical GHP limit to a random compact measured real tree T(f) together with its geometric properties (leaves carry the mass; binary if and only if the reciprocal-square integral diverges; root condensation otherwise), and the supercritical distance-matrix limit in its corrected zero-diagonal form. All numbered intermediate results are proved, several in corrected or qualified forms. The CRT corollary (cor:CRT) is not formalized. Height and forward-tree modules are adapted from the companion formalization of \"Uniform attachment with freezing\" by the same contributor (not yet public; see docs/companion-provenance.md).",
+  "authors": [
+    "Igor Kortchemski"
+  ],
+  "repository": "https://github.com/igor-kortchemski/uniform-attachment-freezing-scaling-limits",
+  "commit": "8bace72d36cdf7d250414f3d98acfaa415de23d9",
+  "project_path": null,
+  "declarations": [
+    "FreezingStatements.height_scaling_limit",
+    "FreezingStatements.subcritical_scaling_limit",
+    "FreezingStatements.critical_scaling_limit",
+    "FreezingStatements.supercritical_distance_matrix_limit",
+    "FreezingStatements.bounded_population_GH_limit"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.CO"
+    ],
+    "msc2020": [
+      "60C05",
+      "05C80",
+      "60F05",
+      "60J80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-30T14:32:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8bace72d36cdf7d250414f3d98acfaa415de23d9",
+        "fork_repository": "PalomarArchive/igor-kortchemski--uniform-attachment-freezing-scaling-limits--3350ab0eb2af",
+        "source_repository": "igor-kortchemski/uniform-attachment-freezing-scaling-limits"
+      }
+    ]
+  },
+  "statement_hash": "sha256:89461e9e71b6eaaef7d140f267338b615219300a51d8fb50b6a3838773e31bdf"
+}

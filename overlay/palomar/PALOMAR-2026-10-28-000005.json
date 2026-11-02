@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000005",
+  "version": 1,
+  "title": "Edmonds cardinality matroid intersection",
+  "abstract": "Cardinality min-max theorem for two finite Mathlib matroids with the same ground, attained primal-dual certificates, exact-size feasibility and the equal-rank common-base criterion.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/edmonds-matroid-intersection",
+  "commit": "824e019d4c845e8d0ebd8638fd94f19040115cbd",
+  "project_path": null,
+  "declarations": [
+    "Edmonds.rank_contract_add",
+    "Edmonds.common_le_partition",
+    "Edmonds.exists_common_ge",
+    "Edmonds.exists_common_card_iff",
+    "Edmonds.intersection_certificate",
+    "Edmonds.matroid_intersection",
+    "Edmonds.common_base_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B35",
+      "90C27"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T02:03:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "824e019d4c845e8d0ebd8638fd94f19040115cbd",
+        "fork_repository": "PalomarArchive/jtraverso--edmonds-matroid-intersection--3c509773d989",
+        "source_repository": "jtraverso/edmonds-matroid-intersection"
+      }
+    ]
+  },
+  "statement_hash": "sha256:80e947ba981e58661d8fe05f9bf9887b81024f4e2cff4323a802d1e2adb8a00d"
+}

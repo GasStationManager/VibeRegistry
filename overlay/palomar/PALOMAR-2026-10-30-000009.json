@@ -1,0 +1,66 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000009",
+  "version": 1,
+  "title": "A dimension-free weak-type (1,1) bound for the Gaussian Riesz transforms",
+  "abstract": "A complete Lean 4 / Mathlib formalization of the main results of Gutiérrez and Manfredi, \"A direct obstacle proof of a dimension-free weak-type (1,1) bound for the Gaussian Riesz transforms\" (arXiv:2610.26478). For the Gaussian measure dγₙ = π^{-n/2} e^{-|x|²} dx on ℝⁿ, the Ornstein–Uhlenbeck operator L = -½Δ + x·∇ and the normalized gradient D = 2^{-1/2}∇, the vector Riesz transform R_γ = D L^{-1/2} Π₀ has exactly one linear extension to L¹(γₙ) satisfying t·γₙ{|R_γ f| > t} ≤ 2‖f‖₁ for all t > 0, in every dimension n (Theorem 5.1). The proof goes through a Gaussian obstacle decomposition F = g + L^{1/2}u, with existence, uniqueness and the variational characterization of u, and the identification Dom(L^{1/2}) ⊆ W^{1,2}(γₙ) (Theorem 3.1). Also formalized: the principal-value realization of the extension by the Gaussian Riesz kernels (Proposition 5.3), the coordinatewise, historically normalized and unnormalized-measure bounds (Corollary 5.4), and the complex-valued bound with constant 8/π (Corollary 5.5). The Hermite basis of L²(γₙ) and the spectral calculus of L are built from Mathlib; there is no sorry and no axiom beyond propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Cristian E. Gutiérrez",
+    "Juan J. Manfredi"
+  ],
+  "repository": "https://github.com/na0b/gaussianriesz-lean",
+  "commit": "dc16c5de824a20c0164947c3a3e157887d9844c0",
+  "project_path": null,
+  "declarations": [
+    "GaussianRiesz.obstacle_decomposition",
+    "GaussianRiesz.obstacle_decomposition_unique",
+    "GaussianRiesz.sqrt_domain_sobolev",
+    "GaussianRiesz.endpoint_theorem",
+    "GaussianRiesz.pv_identification",
+    "GaussianRiesz.coordinate_endpoint_bound",
+    "GaussianRiesz.spectral_normalization_bound",
+    "GaussianRiesz.unnormalized_measure_invariance",
+    "GaussianRiesz.complex_endpoint_theorem",
+    "GaussianRiesz.GaussIsProb",
+    "GaussianRiesz.HermiteFunMemLp",
+    "GaussianRiesz.HermiteL2Orthonormal",
+    "GaussianRiesz.HermiteL2Complete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.FA"
+    ],
+    "msc2020": [
+      "42B20",
+      "42C10",
+      "35J86",
+      "47A60",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-30T11:32:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dc16c5de824a20c0164947c3a3e157887d9844c0",
+        "fork_repository": "PalomarArchive/na0b--gaussianriesz-lean--aa7b9db0230e",
+        "source_repository": "na0b/gaussianriesz-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cb6e9b1260c05cf8d6a30d05a03f3010c35afe5374487889ae06ca2d31687669"
+}

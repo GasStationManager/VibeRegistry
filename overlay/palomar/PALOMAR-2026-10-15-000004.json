@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000004",
+  "version": 2,
+  "title": "Vizing's theorem and equitable edge colourings",
+  "abstract": "A Lean 4 / Mathlib formalization of Vizing's theorem: every finite simple graph G has a proper edge colouring with Δ(G) + 1 colours, stated with Mathlib's line graph (G.lineGraph is (Δ(G) + 1)-colourable, hence χ'(G) ≤ Δ(G) + 1), proved with fans and Kempe chain exchanges. It also proves the equitable refinement: for every c ≥ Δ(G) + 1 there is a proper edge colouring with colours Fin c in which any two colour classes (including unused colours) differ in size by at most one (McDiarmid 1972), obtained by balancing a Vizing colouring with alternating-component moves that strictly decrease a square energy. Version 2 adds the lower bound Δ(G) ≤ χ'(G) (the edges at a vertex of maximum degree form a clique of the line graph) and hence the dichotomy χ'(G) ∈ {Δ(G), Δ(G) + 1} (class 1 / class 2).",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/vizing",
+  "commit": "33b2de836095cf92bc1dec33b6f8787e4036bbc6",
+  "project_path": null,
+  "declarations": [
+    "Vizing.lineGraph_colorable",
+    "Vizing.lineGraph_chromaticNumber_le",
+    "Vizing.exists_equitable_edge_colouring",
+    "Vizing.maxDegree_le_lineGraph_chromaticNumber",
+    "Vizing.lineGraph_chromaticNumber_eq_or"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T13:11:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "33b2de836095cf92bc1dec33b6f8787e4036bbc6",
+        "fork_repository": "PalomarArchive/jtraverso--vizing--01fa5f875100",
+        "source_repository": "jtraverso/vizing"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a32d30ae63f1df0ceec4348c94d84028101f0eb872b2c548bbb63dfe6c80cd1d"
+}

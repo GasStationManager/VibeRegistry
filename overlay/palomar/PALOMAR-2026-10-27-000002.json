@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000002",
+  "version": 1,
+  "title": "A smaller upper bound for superpermutations",
+  "abstract": "For the shortest superpermutation length S(n), construct covering words with asymptotic bound S(n) <= n! + (n-1)! + (n-2)! + (926683/1814400 + o(1))(n-3)!. The development proves an explicit finite bound for every n >= 14 and its numerical consequences. The coefficient is approximately 0.510738. The argument combines a finite selection, a verified connector cover, and transport to larger alphabets.",
+  "authors": [
+    "Jay Pantone"
+  ],
+  "repository": "https://github.com/jaypantone/2026-10-superpermutation-upper-palomar",
+  "commit": "b24e151fdf30ccdbae0e6fe5ab56fa325771722d",
+  "project_path": null,
+  "declarations": [
+    "SuperpermutationUpper.finite_bound",
+    "SuperpermutationUpper.asymptotic_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A05",
+      "68R15",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T14:19:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b24e151fdf30ccdbae0e6fe5ab56fa325771722d",
+        "fork_repository": "PalomarArchive/jaypantone--2026-10-superpermutation-upper-palomar--55dbe9a9f984",
+        "source_repository": "jaypantone/2026-10-superpermutation-upper-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:44847343f9831de83fb05b5ff22e0ae386f6df034eb4e2511e984f4c8b10e720"
+}

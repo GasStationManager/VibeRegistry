@@ -1,0 +1,69 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-30-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000013",
+  "version": 1,
+  "title": "Machine-Checked Christofides 3/2-Approximation and Polyhedral Complexity Barriers for the Traveling Salesperson Problem in Lean 4",
+  "abstract": "This formalization develops a machine-checked theory of the Traveling Salesperson Problem (TSP) on finite undirected graphs over Fin n in Lean 4 across two principal modules. First, in Christofides.lean (compared against ChallengeChristofides.lean), we formalize the complete Christofides-Serdyukov 3/2-approximation algorithm for Metric TSP: the Minimum Spanning Tree (MST) lower bound (cost(T) <= OPT), Euler's handshaking parity invariant for odd-degree vertices, the minimum-weight perfect matching upper bound on odd-degree vertices (2 * cost(M) <= OPT) via alternating matching decomposition of shortcut cycles, multigraph degree parity of T U M, constructive existence of Eulerian circuits via Hierholzer cycle splicing and complete Christofides certificates, metric walk shortcutting contraction, and the unconditional 3/2-approximation guarantee in both exact integer scaling and real arithmetic. Second, in TSPComplexity.lean (compared against ChallengeTSPComplexity.lean), we formalize polyhedral and complexity-theoretic barriers for Decision TSP: a fuel-bounded branch-and-cut state machine with verified soundness, completeness, and support-pruned cycle-separation rank decision equivalence; the Dantzig-Fulkerson-Johnson (DFJ) subtour cut inequality (every valid tour crosses any proper nonempty cut at least twice); the continuous Held-Karp LP relaxation embedding; a machine-checked proof that the 10-vertex Petersen graph fractional assignment (x_e = 2/3) strictly separates the Held-Karp relaxation from the integral TSP polytope with zero slack on singleton cuts and slack >= 2/3 on all nontrivial cuts; Yannakakis DFJ slack matrix nonnegativity and conditional Fiorini-Rothvoss PSD extension complexity scaling; and polynomial-time reductions from Hamiltonian Cycle and gadget-parameterized 3-SAT to Decision TSP.",
+  "authors": [
+    "Ian McNelly"
+  ],
+  "repository": "https://github.com/IanMcNelly/lean4-tsp-complexity-christofides",
+  "commit": "73c122b96051de95d29b6977cdc2a10b56e2af2b",
+  "project_path": null,
+  "declarations": [
+    "IJM.TSP.MSTCost_le_OPT",
+    "IJM.TSP.even_card_oddDegreeVertices",
+    "IJM.TSP.perfectMatching_card_two_mul",
+    "IJM.TSP.matchingCost_le_half_OPT",
+    "IJM.TSP.multigraph_degree_even",
+    "IJM.TSP.circuitCost_eq_treeCost_add_matchingCost",
+    "IJM.TSP.shortcutCircuit_isTour",
+    "IJM.TSP.shortcut_tourCost_le_circuitCost",
+    "IJM.TSP.christofides_circuit_approx_ratio_nat",
+    "IJM.TSP.christofides_circuit_approx_ratio",
+    "IJM.TSP.christofides_approx_ratio_nat",
+    "IJM.TSP.christofides_approx_ratio",
+    "IJM.TSP.exists_christofidesCertificate",
+    "IJM.TSP.christofides_certificate_approx_ratio_nat_unconditional",
+    "IJM.TSP.christofides_certificate_approx_ratio_unconditional"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "cs.CC",
+      "math.CO",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "68W25",
+      "68Q17",
+      "90C27",
+      "05C45",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-30T23:06:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "73c122b96051de95d29b6977cdc2a10b56e2af2b",
+        "fork_repository": "PalomarArchive/IanMcNelly--lean4-tsp-complexity-christofides--7c1f1ecba67b",
+        "source_repository": "IanMcNelly/lean4-tsp-complexity-christofides"
+      }
+    ]
+  },
+  "statement_hash": "sha256:158bcaa1513777ef2b6f5530dbb57ce37af610a4e2dad20c557eb86f572e422e"
+}

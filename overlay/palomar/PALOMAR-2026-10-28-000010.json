@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000010",
+  "version": 1,
+  "title": "Edmonds' perfect matching polytope and matching polytope",
+  "abstract": "A Lean 4 / Mathlib formalization of Edmonds' theorems (1965) for finite simple graphs: the convex hull of the incidence vectors of the perfect matchings is {x ≥ 0, x(δ(v)) = 1 for every vertex v, x(δ(S)) ≥ 1 for every odd set S}, and the convex hull of the incidence vectors of all matchings is {x ≥ 0, x(δ(v)) ≤ 1, x(E[S]) ≤ (|S| − 1)/2 for every odd S}. Vectors are indexed by the edges of the graph, the convex hull is Mathlib's convexHull, and matchings are Mathlib's Subgraph.IsMatching and Subgraph.IsPerfectMatching. The perfect matching theorem is proved for multigraphs by induction with shrinking of tight odd cuts; the matching polytope follows by the doubling construction. Mathlib does not contain these results.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/edmonds-matching-polytope",
+  "commit": "6198b8314ac88a5638120fcf15d5b58c024caaab",
+  "project_path": null,
+  "declarations": [
+    "EdmondsPolytope.edmonds_perfect_matching_polytope",
+    "EdmondsPolytope.edmonds_matching_polytope"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.OC"
+    ],
+    "msc2020": [
+      "05C70",
+      "90C27",
+      "52B12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T05:12:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6198b8314ac88a5638120fcf15d5b58c024caaab",
+        "fork_repository": "PalomarArchive/jtraverso--edmonds-matching-polytope--a32c69454bfc",
+        "source_repository": "jtraverso/edmonds-matching-polytope"
+      }
+    ]
+  },
+  "statement_hash": "sha256:83b3fbe447c20d6dbb1a470dc8c7a5239dcb889d2cc9aaa8532246452529c9c4"
+}

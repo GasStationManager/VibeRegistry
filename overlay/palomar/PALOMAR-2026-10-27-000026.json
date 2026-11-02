@@ -1,0 +1,46 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000026",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000026",
+  "version": 1,
+  "title": "birthday-paradox-non-backtracking-regular-graphs",
+  "abstract": "A Lean 4 and Mathlib formalization (found by Codex GPT 5.6 Sol) of the main theorem of the author's recent arxiv preprint\tarXiv:2608.26321.  This is the Birthday Paradox for non-backtracking walks on regular graphs of degree at least 3: such a walk of length k has high probability of self-intersecting when k is significantly greater than sqrt(n), where n is the number of vertices of the graph. This resolves a conjecture of Noga Alon and Yuval Peres for the fixed degree case.",
+  "authors": [
+    "Benjamin Dozier"
+  ],
+  "repository": "https://github.com/benjamin-dozier/birthday-nonbacktracking",
+  "commit": "7f4be1aae157cadcbb9511bd6b9ee187d60fb662",
+  "project_path": null,
+  "declarations": [
+    "birthday_paradox"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-10-27T21:22:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7f4be1aae157cadcbb9511bd6b9ee187d60fb662",
+        "fork_repository": "PalomarArchive/benjamin-dozier--birthday-nonbacktracking--438e6e1a5dc3",
+        "source_repository": "benjamin-dozier/birthday-nonbacktracking"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d6a46a0831fb2db455465035ee8ef476617f8dd96426498fd507a5fbe995d9ce"
+}

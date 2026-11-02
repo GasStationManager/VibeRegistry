@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000008",
+  "version": 1,
+  "title": "Kac's return-time formula for any measure-preserving map",
+  "abstract": "A machine-checked proof of Kac's return-time formula. For a measure-preserving map f and a measurable set A, the integral over A of the first return time to A equals the measure of the points whose orbit ever meets A. The return time is valued in the extended naturals, infinite for a point that never returns, and with that convention the formula holds for every measure, with no finiteness, sigma-finiteness, conservativity or ergodicity assumption. For an ergodic map of a probability space and mu(A) > 0 the integral is 1, so the mean return time to A, starting in A, is 1 / mu(A).",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/kac-lean",
+  "commit": "bfeb867d5a9b469cb11139c296e9bd41706e0992",
+  "project_path": null,
+  "declarations": [
+    "Kac.lintegral_returnTime",
+    "Kac.lintegral_returnTime_eq_one",
+    "Kac.setLAverage_returnTime"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS"
+    ],
+    "msc2020": [
+      "37A05",
+      "37A40",
+      "28D05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T08:37:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "bfeb867d5a9b469cb11139c296e9bd41706e0992",
+        "fork_repository": "PalomarArchive/zblore--kac-lean--6ba0bed3c87b",
+        "source_repository": "zblore/kac-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4ab14bb7ce8cdaa10aabe15cc1e47968e9d15ad5c926ab2e47dbe525608059df"
+}

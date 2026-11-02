@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000028",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000028",
+  "version": 1,
+  "title": "Perron's extremal solutions of the Bernoulli one-phase problem: viscosity, inner variational and one-sided minimizing solutions, and free boundary structure in the plane",
+  "abstract": "A Lean 4 formalization of the main results of Abedin, Feldman and Stinson on Perron's extremal solutions of the one-phase Bernoulli free boundary problem Δu = 0 in {u > 0} ∩ U, |∇u| = Q on ∂{u > 0} ∩ U. Let U ⊂ ℝᵈ, d ≥ 2, be open, bounded and connected with C² boundary, and let Q be Lipschitz on the closure of U with 0 < Q_min ≤ Q ≤ Q_max. Theorem 1.1: the smallest supersolution above a smooth strict subsolution g with g > 0 on ∂U is (i) a viscosity solution in U, (ii) an inner variational solution in U for some χ (the first domain variation of the Alt–Caffarelli energy ∫ |∇u|² + Q² χ vanishes), and (iii) a downward minimizer of that energy on a ball around each free boundary point; the largest subsolution below a smooth strict supersolution g has the same three properties, with upward minimality in (iii). Corollary 1.2, in ℝ²: (i) the free boundary of the smallest supersolution is the disjoint union of a relatively open set, near each point of which u is a classical solution (a C^{1,γ} free boundary, u harmonic in {u > 0}, ∇u continuous up to the free boundary with |∇u| = Q there), and a set at each point x₀ of which every blow-up limit of u is the two-plane function Q(x₀)|y · e| for some unit vector e; (ii) the largest subsolution is a classical solution near every free boundary point. Every notion, including viscosity solutions, smooth strict sub- and supersolutions, Perron's classes, inner variational solutions, Sobolev functions, the one-sided minimizers, blow-up limits and classical solutions, is written out from Mathlib definitions. A fifth statement is the necklace example, a rigorous version, with different parameters, of the numerical example in Figure 1 of the paper: in ℝ² with Q ≡ 1 there are a domain and data, with the same boundary values for both problems, whose smallest supersolution and largest subsolution are both nontrivial and differ on a set of positive measure, the smallest supersolution has a two-plane point, and a minimizer of the Alt–Caffarelli energy with the same boundary data exists and differs from both extremal solutions on sets of positive measure. It also shows that the hypotheses of the other statements can be met and that their conclusions are not degenerate.",
+  "authors": [
+    "William M. Feldman"
+  ],
+  "repository": "https://github.com/willmfeldman/bernoulli-perron-variational",
+  "commit": "2abc33271f023fcb309e6c8cd07e229a352ed911",
+  "project_path": "challenges/main-results",
+  "declarations": [
+    "challenge_main_smallest",
+    "challenge_main_largest",
+    "challenge_corollary_2d_smallest",
+    "challenge_corollary_2d_largest",
+    "challenge_necklace_example"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP"
+    ],
+    "msc2020": [
+      "35R35",
+      "35D40",
+      "49Q10",
+      "35J25",
+      "35B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T22:39:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2abc33271f023fcb309e6c8cd07e229a352ed911",
+        "fork_repository": "PalomarArchive/willmfeldman--bernoulli-perron-variational--092f2994d791",
+        "source_repository": "willmfeldman/bernoulli-perron-variational"
+      }
+    ]
+  },
+  "statement_hash": "sha256:dcf1adfcd2fcf4e12e1e4dd227950e0a6806049050a4a465ffe0897f4a733fb4"
+}

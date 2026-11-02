@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000016",
+  "version": 1,
+  "title": "Superfluid stiffness and nonclassical rotational inertia of the dilute hard-sphere Bose gas",
+  "abstract": "Lean 4 formalization of the principal superfluid-stiffness, nonclassical rotational-inertia, winding, and high-temperature normal-phase results of the supplied manuscript, with concrete hard-sphere path measures and Dirichlet-form response definitions.",
+  "authors": [
+    "P. M. Aronow",
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/pmaronow/superfluidity-palomar",
+  "commit": "5baea1d13edcb17ec0d7746c8c7ad23ae7ddcd35",
+  "project_path": null,
+  "declarations": [
+    "SFLean.Submission.theorem_1_1",
+    "SFLean.Submission.theorem_1_2",
+    "SFLean.Submission.normal_challenge",
+    "SFLean.Submission.winding_challenge",
+    "SFLean.Submission.winding_tightness"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math-ph"
+    ],
+    "msc2020": [
+      "82B10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T11:12:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5baea1d13edcb17ec0d7746c8c7ad23ae7ddcd35",
+        "fork_repository": "PalomarArchive/pmaronow--superfluidity-palomar--b00b337f39aa",
+        "source_repository": "pmaronow/superfluidity-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6e26befe22d03d65d92fe90b42217daec725cc25d1d202fdc622a48cccac9e73"
+}

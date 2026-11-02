@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000010",
+  "version": 1,
+  "title": "A prespecified betting test of panmixia against a two-deme history: size and power",
+  "abstract": "This entry formalizes a prespecified fixed-sample test, based on independent blocks of three linked sites observed at three sampled tips with four allelic states, of a panmictic null model against a two-deme alternative. Under the null, the three-tip genealogy follows the coalescent with a time-varying pair-coalescence rate r, and sites mutate under the four-state equal-rates model with scale k. For every nonnegative locally integrable rate r whose integrated clock diverges and every k > 0, the rejection probability with at least 72,000,000,000 independent blocks is at most 1/20. For one specific two-island alternative, with all three tips sampled in the same deme, the rejection probability is at least 4/5 with exactly 72,000,000,000 blocks and at least 19/20 with exactly 250,000,000,000 blocks. The test, its features, its betting factors, its localization tolerance, and its threshold are fixed numerical choices given in the Challenge.",
+  "authors": [
+    "X. Lee",
+    "N. Volkov"
+  ],
+  "repository": "https://github.com/cenozoic-works/rhone-theory",
+  "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+  "project_path": null,
+  "declarations": [
+    "Rhone.Palomar.ConcreteBettingTest.concrete_uniform_pan_size",
+    "Rhone.Palomar.ConcreteBettingTest.concrete_source_power_eighty",
+    "Rhone.Palomar.ConcreteBettingTest.concrete_source_power_ninety_five"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "q-bio.PE",
+      "math.ST"
+    ],
+    "msc2020": [
+      "92D10",
+      "62F03",
+      "60J90"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T05:15:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+        "fork_repository": "PalomarArchive/cenozoic-works--rhone-theory--fb903f3fec24",
+        "source_repository": "cenozoic-works/rhone-theory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c6a00b1eda05852b6ea05e39f7289d7b8afc00d52819bf18829a97bf6b9da8a0"
+}

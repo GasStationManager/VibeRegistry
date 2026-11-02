@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000037",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000037",
+  "version": 1,
+  "title": "Auslander–Yorke dichotomy for minimal metric maps",
+  "abstract": "For a continuous map of a metric space with every forward natural orbit dense, either the map is sensitive in the open-set pair sense or its natural iterate family is equicontinuous at every point. Stable open sets are propagated using dense orbits and finite early-time continuity. On nonempty spaces nonsensitivity is equivalent to equicontinuity; no compactness or uniform-equicontinuity assertion is required.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "5c3ff130a8d8ecf6f4021f72ad6241dcf15703cd",
+  "project_path": "topology/auslander-yorke-dichotomy",
+  "declarations": [
+    "AuslanderYorke.equicontinuous_of_stable_open_sets",
+    "AuslanderYorke.minimal_dichotomy",
+    "AuslanderYorke.minimal_not_sensitive_iff_equicontinuous"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.GN"
+    ],
+    "msc2020": [
+      "37B05",
+      "37B02"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T18:29:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5c3ff130a8d8ecf6f4021f72ad6241dcf15703cd",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:739bf580b9d1277af3df0f3e3d23ebde3e6d0136bfa8751fe01562b4aff98d59"
+}

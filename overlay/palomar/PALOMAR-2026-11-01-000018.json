@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000018",
+  "version": 1,
+  "title": "Rational structures on quivers and a generalization of Gelfand's equivalence: Theorem B",
+  "abstract": "For every field E of characteristic 0 and every integer l >= 0 (lambda = l^2), the category HC_lambda(sl_2, SO(2))_E of E-rational Harish-Chandra modules for (sl_2, SO(2)) with generalized infinitesimal character lambda is equivalent to the category Rep^nil(Gamma_E) of finite-dimensional nilpotent representations of an E-rational quiver Gamma_E: the Gelfand quiver (with the relation a_- b_- = a_+ b_+) if l >= 1 and the cyclic quiver if l = 0, carrying the action of Gal(E(sqrt(-1))/E) that swaps the two outer vertices when sqrt(-1) is not in E.  For E = C this is Gelfand's classical equivalence; E = Q is Theorem A of the paper.  Harish-Chandra modules over E are modelled by Galois descent: an E-vector space M_E together with the weight decomposition and the sl_2-action on L_E (x)_E M_E, L_E = E(sqrt(-1)), and the condition that these structures are defined over E.  The compared statement asserts the existence of an equivalence; the underlying formalization proves that the paper's explicit functor E_E is one.",
+  "authors": [
+    "Fabian Januszewski"
+  ],
+  "repository": "https://github.com/drjanosch42/rational_quivers",
+  "commit": "414ccfd961f476a878c2d2aa1e54b42a50210de3",
+  "project_path": "palomar",
+  "declarations": [
+    "RQStatement.Palomar.theoremB",
+    "RQStatement.Palomar.imagUnit_nonempty"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RT",
+      "math.RA"
+    ],
+    "msc2020": [
+      "16G20",
+      "22E47",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T13:09:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "414ccfd961f476a878c2d2aa1e54b42a50210de3",
+        "fork_repository": "PalomarArchive/drjanosch42--rational_quivers--4579e87e6be2",
+        "source_repository": "drjanosch42/rational_quivers"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c56235c67f83e3b5e15a4b959361e06f10f6b9379d8a6a7b75423c8e16660cbb"
+}

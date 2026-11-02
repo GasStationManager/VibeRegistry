@@ -2,19 +2,28 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-17-000009",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-17-000009",
-  "version": 1,
-  "title": "Erdős' theorem on graphs of large girth and large chromatic number",
-  "abstract": "A Lean 4 / Mathlib formalization of Erdős' 1959 theorem: for every g and k there is a finite graph with girth greater than g and chromatic number greater than k. The formalization proves the structural form given by Erdős' probabilistic argument: for every g and every ε > 0, for all sufficiently large n there is a graph on n vertices with no cycle of length at most g in which every independent set has fewer than εn vertices; hence, for all large n, a graph on n vertices with girth greater than g that is not k-colourable. Mathlib has girth and chromatic number but not this theorem; Mycielski's construction (registered separately by another author) gives triangle-free graphs only.",
+  "version": 2,
+  "title": "Graphs of large girth and large chromatic number: Erdős, Mycielski, and the fractional chromatic number of Mycielski graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of three classical results on graphs with large chromatic number. (1) Erdős' 1959 theorem: for every g and k there is a finite graph with girth greater than g and chromatic number greater than k, in the structural form given by the probabilistic argument (for every ε > 0 and all large n, a graph on n vertices with girth greater than g whose independent sets have fewer than εn vertices). (2) Mycielski's 1955 construction M(G): it preserves and reflects triangle-freeness, M(G) is (k+1)-colourable exactly when G is k-colourable, χ(M(G)) = χ(G) + 1 for every finite G, and iterating from K₂ gives triangle-free graphs with 3·2ⁿ − 1 vertices and chromatic number n + 2. (3) Larsen, Propp and Ullman (1995): for the fractional chromatic number χ_f (least total weight of a fractional colouring by independent sets), χ_f(M(G)) = χ_f(G) + 1/χ_f(G) for every finite graph G with at least one vertex. Version 2 adds (2) and (3); the statements of version 1 are unchanged. Mathlib has girth and chromatic number but none of these theorems, and no fractional chromatic number.",
   "authors": [
     "Juan Pablo Traverso Gianini"
   ],
   "repository": "https://github.com/jtraverso/erdos-girth-chromatic",
-  "commit": "e41d7493430ba42f18da380192a4111763155064",
+  "commit": "05407c110b29ebb412667c688b2758d23bc744dd",
   "project_path": null,
   "declarations": [
     "ErdosGirthChromatic.exists_girth_indep",
     "ErdosGirthChromatic.exists_girth_not_colorable",
-    "ErdosGirthChromatic.exists_girth_chromaticNumber"
+    "ErdosGirthChromatic.exists_girth_chromaticNumber",
+    "Mycielski.card_vertex",
+    "Mycielski.graph_cliqueFree_three_iff",
+    "Mycielski.colorable_succ_iff",
+    "Mycielski.chromaticNumber_graph",
+    "Mycielski.card_familyVertex",
+    "Mycielski.family_cliqueFree_three",
+    "Mycielski.family_chromaticNumber",
+    "Mycielski.exists_triangleFree_chromaticNumber_ge",
+    "FractionalColouring.fracChromaticNumber_mycielski"
   ],
   "informal": {},
   "classification": {
@@ -24,11 +33,12 @@
     "msc2020": [
       "05C15",
       "05C38",
-      "05C80"
+      "05C80",
+      "05C72"
     ]
   },
   "license": "",
-  "published_at": "2026-10-17T14:07:50Z",
+  "published_at": "2026-10-28T09:12:39Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -42,11 +52,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "e41d7493430ba42f18da380192a4111763155064",
+        "commit": "05407c110b29ebb412667c688b2758d23bc744dd",
         "fork_repository": "PalomarArchive/jtraverso--erdos-girth-chromatic--0532ff066cce",
         "source_repository": "jtraverso/erdos-girth-chromatic"
       }
     ]
   },
-  "statement_hash": "sha256:5160af8282504240fc3fbc2db2cff2610bbeb822e0671df15cfafc47b0f6c8b7"
+  "statement_hash": "sha256:0656276976758ed82f86137727cfd78a5b1132e01f9b31d08381e4fa7c261d80"
 }

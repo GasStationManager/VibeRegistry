@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-27-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-27-000019",
+  "version": 1,
+  "title": "Algebraic E1 degeneration from explicit d′d″ identities",
+  "abstract": "For actual commuting integer-indexed double complexes over a field, componentwise image/kernel identities imply biclosed representatives of vertical cohomology classes and vanishing of every higher differential of the column-filtered signed total complex. The genuine first quotient page identifies with vertical cohomology; canonical recurrence agrees on actual representatives and covers all next-page classes. Finite rectangular support gives actual quotient stabilization and a canonical identification with the associated graded of total cohomology with its finite, exhaustive, separated induced filtration. Classical conditional algebraic mathematics; no analytic compact-Kähler theorem or novelty claim.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "Ruy Jose Guerra Barretto de Queiroz",
+    "David Barros Hulak"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "906804093ffc4f35224b35ae3bff6536bd56a372",
+  "project_path": "algebraic-hodge/ddbar-pilot",
+  "declarations": [
+    "AlgebraicHodgePilot.exists_closed_representative",
+    "AlgebraicHodgePilot.Column.all_differentials_zero",
+    "AlgebraicHodgePilot.Column.associatedSequence_transition_next",
+    "AlgebraicHodgePilot.Column.associatedSequence_transition_covers",
+    "AlgebraicHodgePilot.Column.cohomologyFiltration_exhaustive_separated",
+    "AlgebraicHodgePilot.Column.bounded_e1_degeneration",
+    "AlgebraicHodgePilot.Column.boundedStableGradedIso_closed",
+    "AlgebraicHodgePilot.Column.zeroPageHomologyIso_π"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AT"
+    ],
+    "msc2020": [
+      "18G40",
+      "55T05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-27T19:26:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "906804093ffc4f35224b35ae3bff6536bd56a372",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:025bf3b4385ee8343371dc087ceb61f84e52a6d78c485811cdd2f2390eea1268"
+}

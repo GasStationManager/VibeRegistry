@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000029",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000029",
+  "version": 1,
+  "title": "Baire-measurable regularization on comeagre G-delta subspaces",
+  "abstract": "For any topological source and second countable target, open inverse images have the property of Baire exactly when the function restricts continuously to some comeagre G-delta subspace. A Baire-source corollary also proves density. The countable basis synchronization and converse relative-open argument are proved internally.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "cd0eda5641493e1cbfe3801a8f1cd3ec8f32b3fc",
+  "project_path": "topology/baire-measurable-regularization",
+  "declarations": [
+    "BaireRegularization.exists_continuous_restriction",
+    "BaireRegularization.bpPreimages_of_restriction",
+    "BaireRegularization.bpPreimages_iff_continuous_restriction",
+    "BaireRegularization.exists_dense_continuous_restriction"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN",
+      "math.LO"
+    ],
+    "msc2020": [
+      "54H05",
+      "54E52",
+      "03E15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T17:56:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cd0eda5641493e1cbfe3801a8f1cd3ec8f32b3fc",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:30cc7e2879a0a3c637300b970c0af7adc5f4626bbeae3a445ef4d69fb477a553"
+}

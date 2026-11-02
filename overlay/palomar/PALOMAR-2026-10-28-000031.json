@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-28-000031",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-28-000031",
+  "version": 1,
+  "title": "A proof of the spectral isometry conjecture for C*-algebras",
+  "abstract": "A formal proof that every unital surjective complex-linear spectral isometry between arbitrary complex unital C*-algebras is an algebraic Jordan isomorphism. The development also proves that a bounded generator whose exponentials are unital spectral isometries at every complex parameter is an associative derivation, and that every surjective spectral isometry is a unital Jordan isomorphism multiplied by its prescribed central unitary value at the identity.",
+  "authors": [
+    "Matthew J. Colbrook",
+    "George Stepaniants"
+  ],
+  "repository": "https://github.com/MColbrook/Proof-of-the-spectral-isometry-conjecture-for-C-star-algebras",
+  "commit": "e08ba6700e58aff2ba00565b83ee24b71b226ed8",
+  "project_path": null,
+  "declarations": [
+    "SpectralIsometry.main_result",
+    "SpectralIsometry.entire_group",
+    "SpectralIsometry.normalization"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OA",
+      "math.FA"
+    ],
+    "msc2020": [
+      "46L05",
+      "47A65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-28T21:09:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e08ba6700e58aff2ba00565b83ee24b71b226ed8",
+        "fork_repository": "PalomarArchive/MColbrook--Proof-of-the-spectral-isometry-conjecture-for-C-star-algebras--ad4c932ac884",
+        "source_repository": "MColbrook/Proof-of-the-spectral-isometry-conjecture-for-C-star-algebras"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0488064ab4b42dfce26a360bf26d9698e9ea0301131a4fadf9ef241e94ea5007"
+}

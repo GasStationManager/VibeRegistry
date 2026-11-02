@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000013",
+  "version": 1,
+  "title": "Linearity bounds for APN functions",
+  "abstract": "Lean 4 formalization of linearity bounds for almost perfect nonlinear (APN) maps F: 𝔽₂ⁿ → 𝔽₂ⁿ. Write N = 2ⁿ and let L(F) denote the maximum Walsh magnitude over components indexed by nonzero vectors. For n ≥ 5, the formalization establishes L(F) ≤ N − 6, together with L(F) ≤ N − √N/4 − 2 when n is even. For n ≥ 4, ordering the Walsh magnitudes in nonincreasing order as L_k(F) gives L_k(F) ≤ (N/√k)√(1 + (2^(k−1) − 1)/N) for 1 ≤ k ≤ N(N − 1). In particular, L₂(F) ≤ 2⌊N/3⌋ and L₄(F) ≤ N/2. Further bounds relate linearity to the count q of nonplateaued components with nonzero indices. In odd dimension, q > 0 implies L(F)² ≤ N(1 + √(q(N − 1))). In even dimension, whenever 1/2 ≤ C < 1, the condition q ≤ (4C − C² − 1)N/4 + 1 implies L(F) ≤ CN. Additional results sharpen the upper bound on the linearity in certain odd dimensions and constrain the second-largest Walsh magnitude when the linearity is close to N.",
+  "authors": [
+    "Christof Beierle",
+    "Lukas Kölsch"
+  ],
+  "repository": "https://github.com/cbe90/Linearity-bounds-for-APN-functions",
+  "commit": "d470936098c6cb9671da7eae0dacd1871eeba262",
+  "project_path": null,
+  "declarations": [
+    "APNLinearity.linearity_upper_bounds",
+    "APNLinearity.linearity_bound_of_odd_dimension_and_exact_two_power",
+    "APNLinearity.ranked_walsh_coefficient_bounds",
+    "APNLinearity.second_linearity_bound_of_near_maximal_linearity",
+    "APNLinearity.linearity_bounds_of_nonplateaued_component_count"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.IT"
+    ],
+    "msc2020": [
+      "06E30",
+      "05B10",
+      "11B13",
+      "11T71"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T10:16:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d470936098c6cb9671da7eae0dacd1871eeba262",
+        "fork_repository": "PalomarArchive/cbe90--Linearity-bounds-for-APN-functions--5adccdc1401a",
+        "source_repository": "cbe90/Linearity-bounds-for-APN-functions"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c429f2eb4deacb3a1198169ff3d7f12d074b641a5157a493703d9d105ea9dd9e"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000014",
+  "version": 1,
+  "title": "Dimension-free KLS Poincare bound for isotropic log-concave densities (smooth compactly supported tests)",
+  "abstract": "A Lean 4 / Mathlib library for Poincare inequalities, log-concave probability measures and stochastic localization. Its dimension-free KLS theorem bounds the intrinsic local-slope Poincare constant by one universal constant times the covariance operator norm, including dimension zero and singular affine supports, for log-concave probability laws with finite second moment. The proof follows Bizeul-Klartag-Lehec through finite-horizon cutoff localization, the compact Letwin constant-8 quadratic variance bound and approximation. Supporting results include Cheeger-Buser comparisons, covariance and energy interfaces and moment-map calculus. This entry checks the pinned OpenAI density formulation: for every n >= 1 and isotropic measurable log-concave probability density, Var(f) <= C * E|grad f|^2 for every smooth compactly supported real test, with one positive C before all dimensions and laws. No numerical final KLS constant, formal equivalence with the paper's locally Lipschitz L^2 test class, or uncut Eldan construction is claimed.",
+  "authors": [
+    "Lazyfill"
+  ],
+  "repository": "https://github.com/human-ai-mathematics/kls-lean",
+  "commit": "33fff6ea218ae07e42115bd1eacfcf7d39c534cb",
+  "project_path": "integrations/palomar",
+  "declarations": [
+    "KLSOpenAI.kls"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.FA",
+      "math.MG"
+    ],
+    "msc2020": [
+      "60E15",
+      "52A40",
+      "46E35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T10:53:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "33fff6ea218ae07e42115bd1eacfcf7d39c534cb",
+        "fork_repository": "PalomarArchive/human-ai-mathematics--kls-lean--8718ac61eac9",
+        "source_repository": "human-ai-mathematics/kls-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:54c5de636e15a2818322c122c40c7da787df7a8b01c4e74fe663940d3d1fe8bc"
+}

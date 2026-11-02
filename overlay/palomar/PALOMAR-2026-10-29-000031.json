@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000031",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000031",
+  "version": 1,
+  "title": "When one finite block of linked sites separates a three-sample genealogy from every panmictic history",
+  "abstract": "This entry formalizes conditions under which a single finite block of linked sites separates a three-sample genealogy from every panmictic history. A law of the two coalescence-interval lengths and the tree shape of three sampled sequences is uniformly separated at mutation scale k > 0 when some block of L completely linked sites, observed under the equal-rates mutation model, has a law at ℓ1 distance at least a fixed ε > 0 from the block law of every panmictic history (any nonnegative, locally integrable, time-varying coalescence rate with a diverging integrated clock), at every mutation scale and for every alphabet size K ≥ 2. For laws with nonnegative interval lengths, a positive first coalescence time, and a regular first-survival profile matching the first coalescence time, uniform separation holds if and only if the law differs from the panmictic law with the profile's rate, in which the tree shape is uniform and independent of the times; a version for laws of the interval lengths alone, with a uniform independent shape, is also given. For three-sample symmetric island histories with time-varying coalescence and migration rates under the stated integrability hypotheses, uniform separation holds if and only if the history is not the one with all three lineages starting in the same island, no migration, and a diverging integrated coalescence clock. For finite-phase histories, separation is equivalent to failure of a density identity characterizing the panmictic form.",
+  "authors": [
+    "X. Lee",
+    "N. Volkov"
+  ],
+  "repository": "https://github.com/cenozoic-works/rhone-theory",
+  "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+  "project_path": null,
+  "declarations": [
+    "Rhone.Palomar.WeakRegularSeparation.nonnegative_internal_branch_separation_iff",
+    "Rhone.Palomar.WeakRegularSeparation.regular_profile_uniform_criterion",
+    "Rhone.Palomar.WeakRegularSeparation.island_uniformlySeparated_iff",
+    "Rhone.Palomar.WeakRegularSeparation.finitePhase_uniformlySeparated_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "q-bio.PE",
+      "math.PR"
+    ],
+    "msc2020": [
+      "92D10",
+      "60J90",
+      "62F03"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T16:15:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+        "fork_repository": "PalomarArchive/cenozoic-works--rhone-theory--fb903f3fec24",
+        "source_repository": "cenozoic-works/rhone-theory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:54ea3475302a51fae6670bf3f18315556540f1cceaa481cbb5e58e56312340e0"
+}

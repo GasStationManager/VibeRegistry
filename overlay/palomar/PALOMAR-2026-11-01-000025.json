@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000025",
+  "version": 1,
+  "title": "Light stars and paths in planar graphs of minimum degree five (Jendrol'–Madaras)",
+  "abstract": "A Lean 4 / Mathlib formalization of Theorems 1, 2 and 3 of Jendrol' and Madaras (1996), for finite simple graphs with the combinatorial planarity (genus-zero rotation systems) of the registered entry Kuratowski's theorem. Every planar graph of minimum degree at least five has: a vertex X of degree five with three distinct neighbours A1, A2, A3 such that deg A1 = 5, deg A2 ≤ 6 and deg A3 ≤ 7, or deg A1 = deg A2 = deg A3 = 6 (light_star, Theorem 1; in particular a 5-vertex with three neighbours of degree at most seven, \"Lebesgue's star\"); a vertex of degree five with four distinct neighbours of degree at most ten (light_star4, Theorem 2); and a path on four vertices whose degrees sum to at most 23 (light_path4, Theorem 3). Three statements. The proofs are discharging arguments run on the rotation system with face charges instead of triangulating or using edge-maximal counterexamples; the local analyses (32768, 16384, 32768 and 100000 configurations) and the parity of an 11-cycle are checked by decide in the kernel.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/lebesgue-light-stars",
+  "commit": "76c43b645dc6dbf14dbf6d5151fac448a1c34835",
+  "project_path": null,
+  "declarations": [
+    "LebesgueTheorem.light_star",
+    "LebesgueTheorem.light_star4",
+    "LebesgueTheorem.light_path4"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C10",
+      "05C07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T15:55:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "76c43b645dc6dbf14dbf6d5151fac448a1c34835",
+        "fork_repository": "PalomarArchive/jtraverso--lebesgue-light-stars--768fd26189ef",
+        "source_repository": "jtraverso/lebesgue-light-stars"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b494265f3b8a4f9adb147a3b594fbdf46b4ed4e67f6a842d44e9cd0555431064"
+}

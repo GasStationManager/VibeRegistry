@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-01-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000024",
+  "version": 2,
+  "title": "Borodin's light triangles in planar graphs of minimum degree five",
+  "abstract": "A Lean 4 / Mathlib formalization of Borodin's theorem on light triangles, for finite simple graphs with the combinatorial planarity (genus-zero rotation systems) of the registered entry Kuratowski's theorem. The weight of a triangle is the sum of the degrees of its vertices. Every plane map of a graph of minimum degree at least five has a face of length three of weight at most 17 (light_face), and hence a planar graph of minimum degree at least five has a triangle of weight at most 17 (light_triangle). Two statements. The proof is a discharging argument run on the rotation system, with face charges in place of an edge-maximal counterexample; the local analysis at 5-vertices (32768 configurations of neighbour degrees capped at eight and corner types) is checked by decide in the kernel.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/borodin-light-triangles",
+  "commit": "5a2639b3fc7d14491f1c79de46fa49cb38c64ddf",
+  "project_path": null,
+  "declarations": [
+    "BorodinTheorem.light_face",
+    "BorodinTheorem.light_triangle"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C10",
+      "05C07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-01T19:01:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5a2639b3fc7d14491f1c79de46fa49cb38c64ddf",
+        "fork_repository": "PalomarArchive/jtraverso--borodin-light-triangles--5777cc51dc6e",
+        "source_repository": "jtraverso/borodin-light-triangles"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3fcff815f4260ce110c7b48b67f0839fa7d05758e66a1bad0069191969089393"
+}

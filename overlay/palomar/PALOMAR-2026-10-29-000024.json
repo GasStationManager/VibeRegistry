@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000024",
+  "version": 1,
+  "title": "No formula with denominators of bounded degree, in the total mutation parameter or in rho, for the two-locus sampling recursion",
+  "abstract": "This entry formalizes results on the degree of denominators of any closed-form expression for the solution of the two-locus sampling recursion of the coalescent with recombination, with two alleles at each locus and parent-independent mutation. The mutation rates, the recombination rate rho, and the allele frequencies are independent indeterminates, and the recursion is solved over a field of rational functions in them. An expression is built from rational constants, arbitrary coefficients from the coefficient field, the rates, sums, products, and quotients; it is admissible at degree D when every divisor evaluates to a nonzero polynomial of degree at most D in a designated variable (rho, or the total mutation rate theta_A + theta_B). A closure lemma shows that admissible expressions in inputs with bounded denominators have bounded denominators. For the sample of two lineages that carry the same haplotype at both loci, no admissible expression of degree one in rho, and none of degree two in the total mutation rate, equals the value of the solution; variants bound the total degree of the divisors in the three rates instead. For the samples of m lineages typed at locus A only and m typed at locus B only, all of allele 0, for every bound D there is an m ≥ 2 at which no admissible expression of degree D, in the total mutation rate or in rho, equals the value of the solution. Existence and uniqueness of the solutions are also stated in these settings.",
+  "authors": [
+    "X. Lee",
+    "N. Volkov"
+  ],
+  "repository": "https://github.com/cenozoic-works/rhone-theory",
+  "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+  "project_path": null,
+  "declarations": [
+    "Rhone.Palomar.NoEwensFormula.boundedDen_eval",
+    "Rhone.Palomar.NoEwensFormula.no_degree_one_formula",
+    "Rhone.Palomar.NoEwensFormula.no_degree_one_formula_total",
+    "Rhone.Palomar.NoEwensFormula.no_degree_two_formula",
+    "Rhone.Palomar.NoEwensFormula.no_degree_two_formula_total",
+    "Rhone.Palomar.NoEwensFormula.exists_isSolutionπ",
+    "Rhone.Palomar.NoEwensFormula.isSolutionπ_unique_s22",
+    "Rhone.Palomar.NoEwensFormula.no_bounded_degree_formula",
+    "Rhone.Palomar.NoEwensFormula.existsUnique_uniform_solution",
+    "Rhone.Palomar.NoEwensFormula.no_bounded_recombination_degree_formula",
+    "Rhone.Palomar.NoEwensFormula.existsUnique_recomb_solution"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AC",
+      "q-bio.PE"
+    ],
+    "msc2020": [
+      "12E05",
+      "92D10",
+      "13P15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T13:50:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "babec8449a724c270450c7c0e2cd3985ccc2a989",
+        "fork_repository": "PalomarArchive/cenozoic-works--rhone-theory--fb903f3fec24",
+        "source_repository": "cenozoic-works/rhone-theory"
+      }
+    ]
+  },
+  "statement_hash": "sha256:031b98c2873f1125cbfe94bf53e9810d5ac1af3dcf347cbd6fe44c28cfbbd875"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-29-000033",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-29-000033",
+  "version": 1,
+  "title": "Weak mixing and thick common multi-sensitivity",
+  "abstract": "A continuous surjective weakly mixing map on a nontrivial metric space admits one positive separation constant such that every finite family of nonempty open sets has arbitrarily long, arbitrarily late blocks of common positive separation times. Witness pairs may depend on the set and time. Finite-family common hitting thickness and separated open targets are proved.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "b1bfaf3132bfe83accdb4e18519cb4064a858f76",
+  "project_path": "topology/weak-mixing-thick-multisensitivity",
+  "declarations": [
+    "ThickSensitive.separated_open_targets",
+    "ThickSensitive.finite_hitting_thick",
+    "ThickSensitive.weakMixing_thick_multisensitive"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.GN"
+    ],
+    "msc2020": [
+      "37B05",
+      "37B02"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-10-29T17:20:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b1bfaf3132bfe83accdb4e18519cb4064a858f76",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c8451fc381dcc50d258b64e317099f79545e3f64cfc247d00a43b600f7c8c50b"
+}
