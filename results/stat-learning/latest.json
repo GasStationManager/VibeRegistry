@@ -1,6 +1,6 @@
 {
   "entry_id": "stat-learning",
-  "timestamp": "2026-11-01T08:46:08Z",
+  "timestamp": "2026-11-08T08:39:43Z",
   "commit": "7b82b1323c80f0c21ca449fd12e1c24315ae9782",
   "lean_toolchain": "leanprover/lean4:v4.27.0-rc1",
   "mathlib_tag": "v4.27.0",
@@ -17,7 +17,7 @@
   "tools": {
     "comparator": "6d5870e7fbc782c8a97f2491104ff3aa7a966da3",
     "lean4export": "bd93e5ed12fbeea19f39ec3ead659c293b2b8a95",
-    "nanoda": "8de7e0c4ed3052745a7f8725164efd9e76d84c56",
+    "nanoda": "0da9f98feadd3a0a2ef4b3dbcf52a298a6fef929",
     "landrun": "5283024a2f49b28046c3b4a06d7d775c058d4d80"
   },
   "theorems": [
