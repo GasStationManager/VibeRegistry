@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000012",
+  "version": 1,
+  "title": "Spectral Geometry — exact multiplicity of a compact crossing on an infinite octagonal graph",
+  "abstract": "On the real square-summable states of the infinite centered octagonal cut-and-project vertex graph, take the graph Laplacian with edge weight 1/16, onsite potential V(x)=1+|p(x)|² and natural domain D(V). Add t times the coordinate projection onto the eight neighbors of the origin. At t*=17/16+√2 the two alternating ring modes meet at E*=13/4+√2. The full eigenspace at E* has real dimension exactly two. Every solution of the eigenvector equation is its amplitude at the lift (1,0,0,0) times the first compact state plus its amplitude at (1,1,0,0) times the second. No support restriction is assumed. Locality, symmetry and a strictly positive exterior energy force the exterior part to vanish; the complete central kernel supplies the two ring patterns.",
+  "authors": [
+    "Alessandro Odasso"
+  ],
+  "repository": "https://github.com/alexodas/spectral_geometry",
+  "commit": "624da4b3805930db8023fa8c61fdc83193efc306",
+  "project_path": null,
+  "declarations": [
+    "SpectralGeometry.AmmannBeenker.admitted_zero",
+    "SpectralGeometry.AmmannBeenker.mate_involutive",
+    "SpectralGeometry.AmmannBeenker.centralLift_admitted",
+    "SpectralGeometry.AmmannBeenker.crossing_eigenvector_representation",
+    "SpectralGeometry.AmmannBeenker.crossingEigenspace_finrank"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.SP",
+      "math.FA"
+    ],
+    "msc2020": [
+      "47A10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T12:31:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "624da4b3805930db8023fa8c61fdc83193efc306",
+        "fork_repository": "PalomarArchive/alexodas--spectral_geometry--d3c275959859",
+        "source_repository": "alexodas/spectral_geometry"
+      }
+    ]
+  },
+  "statement_hash": "sha256:273abb19abb543692edb784d7aa1bdf79076bd42a3f7180fdc2dba17db92246e"
+}

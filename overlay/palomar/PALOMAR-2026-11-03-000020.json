@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000020",
+  "version": 1,
+  "title": "Pointwise Ergodic Theorems Along $\\lfloor p^c\\rfloor$ for Every $c>1$",
+  "abstract": "Lean 4 formalization of the variational estimate, common pointwise limit for von Mangoldt and prime averages, and logarithmic Mobius cancellation in Pointwise Ergodic Theorems Along $\\lfloor p^c\\rfloor$ for Every $c>1$. The author selected the a.e. conclusion for the submitted prime-convergence statement. All results are stated for sigma-finite measure-preserving systems.",
+  "authors": [
+    "Anastasios Fragkos"
+  ],
+  "repository": "https://github.com/anastasiosfragkosmath/Pointwise-Ergodic-Theorems-Along-floor-p-c-Palomar-Submission",
+  "commit": "87f3fd829cde98edbc5eaa3deee462c598b920b0",
+  "project_path": null,
+  "declarations": [
+    "FractionalPrimes.Final.Palomar.primePowerVariation",
+    "FractionalPrimes.Final.Palomar.primeAverageConvergence",
+    "FractionalPrimes.Final.Palomar.mobiusAverageTendsToZero"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.NT"
+    ],
+    "msc2020": [
+      "37A30",
+      "37A44"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T11:06:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "87f3fd829cde98edbc5eaa3deee462c598b920b0",
+        "fork_repository": "PalomarArchive/anastasiosfragkosmath--Pointwise-Ergodic-Theorems-Along-floor-p-c-Palomar-Submission--5e3a7d4f7e18",
+        "source_repository": "anastasiosfragkosmath/Pointwise-Ergodic-Theorems-Along-floor-p-c-Palomar-Submission"
+      }
+    ]
+  },
+  "statement_hash": "sha256:dae8a229435927d10e53fc05986734f3da53585af0d873c7163b19a510dd125c"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000016",
+  "version": 2,
+  "title": "Plantholt's overfull criterion for graphs of high minimum degree, with 1-factorization theorems for dense regular graphs (6/7 and 11/12)",
+  "abstract": "A Lean 4 / Mathlib formalization of Theorem 1.2 of M. Plantholt, Overfull conjecture for graphs with high minimum degree (J. Graph Theory 47, 2004), and of a 1-factorization theorem for dense regular graphs in the style of Chetwynd and Hilton (1989). theorem_1_2: if c ≥ 3/4 is such that every regular graph of even order n and degree at least c n is 1-factorizable, and G has even order n with (3δ − Δ)/2 ≥ c n, then G is Class 1 (χ′ = Δ) if and only if G has no Δ-overfull subgraph. lineGraph_colorable_of_isRegular: a d-regular graph of even order 2n with 11 n ≤ 6 d is d-edge-colourable, i.e. 1-factorizable; this is a weaker form of Chetwynd–Hilton 1989, Theorem 2 (d ≥ ½(√7 − 1)|V|), proved with the same architecture. overfull_criterion: Plantholt's theorem with c = 11/12, i.e. if G has even order n and 11 n ≤ 6 (3δ − Δ), then G is Class 1 if and only if it has no Δ-overfull subgraph. lineGraph_colorable_of_isRegular67: the theorem of Chetwynd and Hilton (Proc. London Math. Soc. 50, 1985) that a d-regular graph of even order 2n with 12 n ≤ 7 d (degree at least 6/7 of the order) is 1-factorizable. overfull_criterion67: Plantholt's theorem with c = 6/7, i.e. even order n and 12 n ≤ 7 (3δ − Δ). Five statements. A Δ-overfull subgraph has an odd number ≥ 3 of vertices and more than Δ ⌊|V(H)|/2⌋ edges; edge colourings are colourings of the line graph.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/plantholt-overfull-criterion",
+  "commit": "f8900944da7743b1facd771139c9ebdbfd8aaa28",
+  "project_path": null,
+  "declarations": [
+    "Plantholt.theorem_1_2",
+    "OneFactor.lineGraph_colorable_of_isRegular",
+    "OneFactor.overfull_criterion",
+    "OneFactor.lineGraph_colorable_of_isRegular67",
+    "OneFactor.overfull_criterion67"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-05T02:57:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f8900944da7743b1facd771139c9ebdbfd8aaa28",
+        "fork_repository": "PalomarArchive/jtraverso--plantholt-overfull-criterion--d61ff43b5134",
+        "source_repository": "jtraverso/plantholt-overfull-criterion"
+      }
+    ]
+  },
+  "statement_hash": "sha256:847c6e6aeb5015b8d8f09a73c144b9f9414de995d2d2731e14b815625b00b40a"
+}

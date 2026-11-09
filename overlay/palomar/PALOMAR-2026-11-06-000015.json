@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000015",
+  "version": 1,
+  "title": "Gale's feasibility theorem, the Gale–Ryser theorem and Hoffman's circulation theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of D. Gale, A theorem on flows in networks (Pacific J. Math. 7, 1957) and of Hoffman's circulation theorem (A. J. Hoffman, 1960, in the form of A. Schrijver, A Course in Combinatorial Optimization, Theorems 4.6 and 4.7). A network is a finite node type N with capacities c : N → N → ℝ, c ≥ 0 (finite capacities only); a flow is f : N → N → ℝ with f x y + f y x = 0 and f ≤ c; a demand d : N → ℝ is feasible if some flow has net inflow ∑_y f y x ≥ d x at every node. feasibility: d is feasible if and only if d(Sᶜ) ≤ c(S, Sᶜ) for every S ⊆ N (Gale's Feasibility Theorem). feasibility_int: the same for integer c and d with an integer flow (Gale's remark). feasibility_second: Gale's second formulation (for every set Y of nodes of positive demand, some flow meets the demand at all nodes of nonpositive demand and the aggregate demand of Y). gale_ryser_unsorted, gale_ryser: for a : Fin m → ℕ and b : Fin n → ℕ, a 0-1 matrix with row sums at most a i and column sums b j exists if and only if ∑_{j∈Y} b j ≤ ∑_i min(a i, |Y|) for all column sets Y, equivalently, for b nonincreasing, ∑_{j<k} b j ≤ ∑_{j<k} #{i | j < a i} for all k ≤ n (Gale's Problem I, §3). gale_ryser_exact: if moreover ∑ a = ∑ b, the row sums can be made exactly a (the Gale–Ryser theorem). hoffman, hoffman_int: on a finite directed multigraph (arc type A, tail and head maps src, tgt : A → V) with bounds d ≤ c on the arcs (real, respectively integer), there is a circulation f (real, respectively integer) with d ≤ f ≤ c if and only if d(δ^in(U)) ≤ c(δ^out(U)) for every U ⊆ V. Eight statements; no definitions beyond Mathlib's.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/gale-hoffman-feasibility",
+  "commit": "fa52c29c24edf7e9afdb487df3764affd43c51c7",
+  "project_path": null,
+  "declarations": [
+    "GaleHoffman.feasibility",
+    "GaleHoffman.feasibility_int",
+    "GaleHoffman.feasibility_second",
+    "GaleHoffman.gale_ryser_unsorted",
+    "GaleHoffman.gale_ryser",
+    "GaleHoffman.gale_ryser_exact",
+    "GaleHoffman.hoffman",
+    "GaleHoffman.hoffman_int"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.OC"
+    ],
+    "msc2020": [
+      "90B10",
+      "05C21",
+      "05B20",
+      "90C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T15:58:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fa52c29c24edf7e9afdb487df3764affd43c51c7",
+        "fork_repository": "PalomarArchive/jtraverso--gale-hoffman-feasibility--31485ec5ef29",
+        "source_repository": "jtraverso/gale-hoffman-feasibility"
+      }
+    ]
+  },
+  "statement_hash": "sha256:218886effa1cd2ccab430b03148ffd002064874ebba324db2c16fdb0d3e1fa9b"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000009",
+  "version": 1,
+  "title": "Thomassen: exponentially many 5-list-colourings of planar graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of C. Thomassen, Exponentially many 5-list-colorings of planar graphs (J. Combin. Theory Ser. B 97, 2007): a finite planar graph with n vertices, every vertex of which has a list of at least five colours, has at least 2^{n/9} distinct list colourings (two_rpow_card_div_nine_le_ncard_listColourings: (2 : ℝ) ^ (n / 9) ≤ the number of maps f : V → C with f v ∈ L v and f u ≠ f v on every edge). Planarity is combinatorial: a plane map is a rotation system whose hypermap with the dart reversal has Euler defect 0 (definitions copied verbatim from the registered entry thomassen-girth-five, PALOMAR-2026-10-28-000023, so that the Challenge depends on Mathlib only). The proof follows the paper: Theorems 1–4, Claims 8–13 and the lemmas on generalized wheels they use are proved for an abstract interface of near-triangulations, which is realised by plane near-triangulations using the separation theorems of the dependency; every planar graph is a spanning subgraph of a plane near-triangulation. One statement; the definitions of the Challenge are compared with those of the Solution.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/thomassen-many-list-colourings",
+  "commit": "109f88ec9084d00e523bbc7fc558faa86428da52",
+  "project_path": null,
+  "declarations": [
+    "ThomassenManyColourings.two_rpow_card_div_nine_le_ncard_listColourings"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C10",
+      "05C30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T05:28:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "109f88ec9084d00e523bbc7fc558faa86428da52",
+        "fork_repository": "PalomarArchive/jtraverso--thomassen-many-list-colourings--2e1f89cb92de",
+        "source_repository": "jtraverso/thomassen-many-list-colourings"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1068faa8a8cfa7e3c4c7e6d937c0a43b538eb23c5e313869cfda445d70f68efc"
+}

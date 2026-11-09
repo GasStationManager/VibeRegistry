@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000024",
+  "version": 1,
+  "title": "Sparse multi-base representations and asymptotic Hadamard existence",
+  "abstract": "Lean formalization of sparse multi-base representations and unconditional asymptotic Hadamard existence, gap, flatness and conditioning bounds. The required logarithm-ratio separation is proved independently from mathlib.",
+  "authors": [
+    "Joshua Mark"
+  ],
+  "repository": "https://github.com/L-iet/HadamardBound",
+  "commit": "4b8a125af5c8c94e183df8ddc1a4e9f262f9abbe",
+  "project_path": null,
+  "declarations": [
+    "HadamardMultibase.sparseRepresentationBound",
+    "HadamardMultibase.Complete.main_bound",
+    "HadamardMultibase.Complete.tau_bound",
+    "HadamardMultibase.Complete.quantitative_gap_bound",
+    "HadamardMultibase.Complete.subpolynomial_gap_bound",
+    "HadamardMultibase.Complete.flat_orthogonal_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05B20",
+      "11J25",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T19:11:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4b8a125af5c8c94e183df8ddc1a4e9f262f9abbe",
+        "fork_repository": "PalomarArchive/L-iet--HadamardBound--887c6734621c",
+        "source_repository": "L-iet/HadamardBound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3fa59c30c6cbae8365de5fae76f7e67b35ba5e7c8c29a8cb03d39f26eed4e897"
+}

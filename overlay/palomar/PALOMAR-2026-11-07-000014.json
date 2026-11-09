@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000014",
+  "version": 1,
+  "title": "Classification of globally periodic rational difference equations",
+  "abstract": "A complete classification of the globally periodic rational difference equations x_{n+K} = (A_0 + A_1 x_n + ... + A_K x_{n+K-1}) / (B_0 + B_1 x_n + ... + B_K x_{n+K-1}) with nonnegative coefficients, acting on positive initial data, answering Problem 11 of Gasull's survey of open problems in low-dimensional dynamical systems. Such an equation is globally periodic (every positive solution satisfies x_{n+p} = x_n for a common p >= 1) if and only if, up to rescaling x_n -> alpha x_n and unfolding (multiplying every index by an integer), it is one of the five known examples: x_{n+1} = x_n, x_{n+1} = 1/x_n, x_{n+2} = x_{n+1}/x_n, the Lyness equation x_{n+2} = (1 + x_{n+1})/x_n, and Todd's period-8 equation x_{n+3} = (1 + x_{n+1} + x_{n+2})/x_n. The result holds at every order K. Previously the question had been settled for K in {1, 2, 3, 4, 5, 7, 9, 11} (Cima, Gasull and Mañosas 2004) and for some special families, but the general case was open.",
+  "authors": [
+    "John F. Rudge"
+  ],
+  "repository": "https://github.com/johnrudge/periodic_difference",
+  "commit": "2895c36b6fc9ba4483e2539c06fd9778dce04b6f",
+  "project_path": null,
+  "declarations": [
+    "PeriodicDifference.Problem11.problem11_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS"
+    ],
+    "msc2020": [
+      "39A23",
+      "39A20",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T20:07:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2895c36b6fc9ba4483e2539c06fd9778dce04b6f",
+        "fork_repository": "PalomarArchive/johnrudge--periodic_difference--005fe8d63ceb",
+        "source_repository": "johnrudge/periodic_difference"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b4850e098dc43b11f89ee191896b5553e38d636a19e3ad9b47a46d89d1a16876"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000030",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000030",
+  "version": 1,
+  "title": "Does freezing impede the growth of random recursive trees?",
+  "abstract": "We formalize the principal results of “Does freezing impede the growth of random recursive trees?” for uniform attachment trees with freezing. We prove uniform height lower bounds over all admissible operation sequences with n attachment steps: the height is at least e log n − 5 log log n with probability tending to one, uniformly over these sequences, and the same lower bound holds for expected height for sufficiently large n. We also formalize deletion comparisons: deleting attachment or freezing steps can increase expected height, whereas deleting the attachment–freezing pair at the first change of sign stochastically decreases height.",
+  "authors": [
+    "Igor Kortchemski"
+  ],
+  "repository": "https://github.com/igor-kortchemski/freezing-growth-rrt",
+  "commit": "72427804ae5471cca98ab5c8ec3297c0599ad042",
+  "project_path": null,
+  "declarations": [
+    "FreezingGrowth.Paper.theorem_1_2",
+    "FreezingGrowth.Paper.theorem_1_3",
+    "FreezingGrowth.Paper.proposition_1_1_i",
+    "FreezingGrowth.Paper.proposition_1_1_ii",
+    "FreezingGrowth.Paper.proposition_1_1_iii"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C05",
+      "60C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T22:18:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "72427804ae5471cca98ab5c8ec3297c0599ad042",
+        "fork_repository": "PalomarArchive/igor-kortchemski--freezing-growth-rrt--ada01ff63875",
+        "source_repository": "igor-kortchemski/freezing-growth-rrt"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a366cbd52eb921b3979d999e18dd715946f5616f6338050ad1413b6c9f1fceba"
+}

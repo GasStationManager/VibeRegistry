@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000012",
+  "version": 1,
+  "title": "Finite sequence routing formulations and continuous timing",
+  "abstract": "A qualified finite sequence-routing formalization connecting the complete source binary rows with padded elementary customer routes and exact transition cost. For fixed valid slots, explicit zero-depot clock/travel conditions give continuous timing feasibility through the earliest-schedule recurrence and an attained minimum total return over timing assignments. Capacity and global route optimization are outside scope.",
+  "authors": [
+    "David E. Bernal Neira"
+  ],
+  "repository": "https://github.com/bernalde/sequence-routing-formulations",
+  "commit": "6272abea8b3e45a60a9a37a29413722c94929613",
+  "project_path": null,
+  "declarations": [
+    "Chapter10.Sequence.palomar_literal_iff_decoded",
+    "Chapter10.Sequence.palomar_literal_decodes_elementary_paths",
+    "Chapter10.Sequence.palomar_bounded_traces_encode",
+    "Chapter10.Sequence.palomar_decoded_cost",
+    "Chapter10.Sequence.palomar_literal_timing_iff_schedules",
+    "Chapter10.Sequence.palomar_literal_timing_exists_iff",
+    "Chapter10.Sequence.palomar_literal_duration_minimum",
+    "Chapter10.Sequence.padSlots._proof_2",
+    "Chapter10.Sequence.penultimate._proof_2",
+    "Chapter10.Sequence.second._proof_2"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC"
+    ],
+    "msc2020": [
+      "90C27",
+      "90C11"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T13:28:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6272abea8b3e45a60a9a37a29413722c94929613",
+        "fork_repository": "PalomarArchive/bernalde--sequence-routing-formulations--b3c9c063cd6c",
+        "source_repository": "bernalde/sequence-routing-formulations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8ce7c95e2da99c16afa204571d4704f36f1447c92662156e735327fb1fac7d9e"
+}

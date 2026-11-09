@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000011",
+  "version": 1,
+  "title": "Triangle decompositions of typical graphs of fixed density (Keevash, Counting designs, Theorem 2.1, weaker form)",
+  "abstract": "A Lean 4 / Mathlib formalization of a weaker, fixed-density form of Theorem 2.1 of P. Keevash, Counting designs (J. Eur. Math. Soc. 20, 2018). density G is |E(G)| / C(n, 2); IsTypical G c h says that every nonempty set S of at most h vertices has (1 ± |S| c) d(G)^|S| n common neighbours; Tridivisible G says that every degree is even and 3 divides |E(G)|; IsTriangleDecomposition G D says that D is a family of triangles of G and every edge lies in exactly one of them. typical_triangle_decomposition: there is h such that for every d0 > 0 there are c0 > 0 and n0 such that every (c0, h)-typical tridivisible graph on n ≥ n0 vertices with density at least d0 has a triangle decomposition. This is weaker than the article in two ways: the density is bounded below by a fixed constant (the article allows d(G) > n^(-10^-7) with c < c0 d(G)^(10^6)), and the typicality is (c, h)-typicality for an absolute, not explicit, h (the article assumes c-typicality, which concerns only degrees and pairs). One statement.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/keevash-typical-triangle-decompositions",
+  "commit": "6eb072d132ff300374286b314a4ae7ef6512a8b4",
+  "project_path": null,
+  "declarations": [
+    "KeevashCounting.typical_triangle_decomposition"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05B07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T12:24:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6eb072d132ff300374286b314a4ae7ef6512a8b4",
+        "fork_repository": "PalomarArchive/jtraverso--keevash-typical-triangle-decompositions--6ac21d20076b",
+        "source_repository": "jtraverso/keevash-typical-triangle-decompositions"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a129c7b966dfe7d188031f73bd76149d90178c1e5e5f8d0db74cdd451cb199dc"
+}

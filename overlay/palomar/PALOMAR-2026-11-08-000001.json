@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-08-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-08-000001",
+  "version": 1,
+  "title": "Pálvölgyi's cyclic heptagon is not Euclidean Ramsey, so Graham's spherical-set conjecture (formal-conjectures erdos_174.variants.graham) is false; and generic seven points on a circle are not Ramsey (Theorem A.3 of arXiv:2609.23327)",
+  "abstract": "For every transcendental r > 2, the seven points (0, 0) and (j, ±√(j(2r − j))), j ∈ {1, 3, 4}, lie on the circle of centre (r, 0) and radius r and are not Euclidean Ramsey (Pálvölgyi, A cyclic non-Ramsey heptagon, arXiv:2609.23327, Theorem 1); consequently not every finite cospherical subset of a Euclidean space is Ramsey. The second statement is the negation of the conjecture that every finite spherical set is Ramsey (posed by Erdős, Graham, Montgomery, Rothschild, Spencer and Straus in 1973), in exactly the form in which google-deepmind/formal-conjectures states it as erdos_174.variants.graham (formal-conjectures PR #7706, which re-tags that statement as solved and links this proof). Ramsey is formal-conjectures' definition, Erdos174.IsRamsey, copied byte for byte: a finite set A in R^n such that for every number k ≥ 1 of colours there is a dimension d for which every k-colouring of R^d has a monochromatic distance-preserving copy of A. All four compared statements use only Mathlib and that definition. The conjecture was refuted in September 2026 by Pálvölgyi's paper (whose proofs it attributes to ChatGPT) and by OpenAI's classification of finite Euclidean Ramsey configurations, whose Lean proof (openai/math) already exhibits non-Ramsey twelve- and nine-point sets on a circle in OpenAI's own vocabulary. The proof here is Pálvölgyi's derivation-energy argument run against OpenAI's tensor criterion: a derivation D of R with D r = 1, the pairing x ⊗ y ↦ D x · D y on OpenAI's coefficient tensor ring, the weights 2, −2, −2, 2, 2, −1, −1 and the energy −24/((2r − 1)(2r − 3)(2r − 4)) ≠ 0 show that the heptagon fails OpenAI's field criterion, and the necessity half of OpenAI's classification (proved in their Lean) turns that into not Ramsey; formal-conjectures' IsRamsey, which also allows the dimension d = 0, is then reduced to OpenAI's Ramsey. The witness for the second statement is the heptagon at r = 2 + OpenAI's Liouville-type parameter, which is transcendental. Also proved, with the same definition: Theorem A.3 of the paper's appendix as printed, without its measure clause (for distinct t1, t2, t3 and t4, ..., t7 algebraically independent over Q(t1, t2, t3), the seven points ((1 − ti²)/(1 + ti²), 2ti/(1 + ti²)) are not Ramsey; the appendix is labelled by its author as written by ChatGPT and unchecked), and its corollary for seven parameters algebraically independent over Q, in the shape of OpenAI's nine-point theorem (distinct points on the unit circle, not Ramsey). Its proof follows the appendix: Lemma A.1 in its symmetric form, a derivation vanishing on Q(t1, t2, t3) with prescribed values on t4, ..., t7, weighted moments by Lagrange interpolation, and again the necessity half of OpenAI's classification. The 16 OpenAI Lean files the proofs import are included, ported to the Lean module system by header-only changes. All proofs depend on propext, Classical.choice and Quot.sound only.",
+  "authors": [
+    "Carlos Toledo"
+  ],
+  "repository": "https://github.com/carlostoledo1891/heptagon-ramsey-lean",
+  "commit": "e33842e9d5842539a36bf90d1a6b13f887cc4462",
+  "project_path": null,
+  "declarations": [
+    "HeptagonRamsey.Heptagon.heptagon_counterexample",
+    "HeptagonRamsey.Heptagon.graham_false'",
+    "HeptagonRamsey.Generic.generic_seven_not_isRamsey",
+    "HeptagonRamsey.Generic.seven_circle_configuration_isRamsey"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "05D10",
+      "52C10",
+      "12H05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-08T00:13:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e33842e9d5842539a36bf90d1a6b13f887cc4462",
+        "fork_repository": "PalomarArchive/carlostoledo1891--heptagon-ramsey-lean--d564b7debfa7",
+        "source_repository": "carlostoledo1891/heptagon-ramsey-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c5589c2121c31b7171c0444d33ffe7837af6e707cbfe0efe2376611fd5593229"
+}

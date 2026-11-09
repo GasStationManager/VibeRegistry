@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000005",
+  "version": 1,
+  "title": "A tight bound for Green's arithmetic triangle removal lemma in vector spaces",
+  "abstract": "Lean 4 formalisation of the main results of Jacob Fox and László Miklós Lovász, A tight bound for Green's arithmetic triangle removal lemma in vector spaces (arXiv:1606.01230): the arithmetic triangle removal lemma in F_p^n with a polynomial bound (Theorem 1), the Kleinberg–Sawin–Speyer bound on multicolored sum-free families (Theorem 2), the count of triangles spanned by vertex-disjoint triangles (Theorem 3), and the tightness of the exponent in Theorem 1 (the second part of Theorem 1).",
+  "authors": [
+    "Gabriel Dahia"
+  ],
+  "repository": "https://github.com/gdahia/ArithmeticTriangleRemovalInVectorSpaces",
+  "commit": "d85eab5aefb2828e020effd49d94ce61f1052a66",
+  "project_path": null,
+  "declarations": [
+    "ArithmeticTriangleRemovalInVectorSpaces.exists_subset_card_sdiff_add_le_forall_add_ne_zero'",
+    "ArithmeticTriangleRemovalInVectorSpaces.card_le_rpow_one_sub_c_mul'",
+    "ArithmeticTriangleRemovalInVectorSpaces.div_pow_rpow_C_mul_sq_le_card_triangles'",
+    "ArithmeticTriangleRemovalInVectorSpaces.le_rpow_C_sub_of_forall_exists_subset'"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B30",
+      "05D40",
+      "11T99"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T03:21:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d85eab5aefb2828e020effd49d94ce61f1052a66",
+        "fork_repository": "PalomarArchive/gdahia--ArithmeticTriangleRemovalInVectorSpaces--1c243b7207c3",
+        "source_repository": "gdahia/ArithmeticTriangleRemovalInVectorSpaces"
+      }
+    ]
+  },
+  "statement_hash": "sha256:74e1ab46ff341ac7ecc6243fe52c5d2a16eebaca3f82aeb0ba9f3108687be1a5"
+}

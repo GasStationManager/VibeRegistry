@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000006",
+  "version": 1,
+  "title": "The natural proofs barrier (Razborov and Rudich)",
+  "abstract": "A Lean 4 proof of Theorem 4.1 of A. A. Razborov and S. Rudich, Natural proofs (1997). If a generator G_k from k bits to 2k bits, computed by circuits of polynomial size, has hardness at least 2^(k^ε) for some ε > 0 and infinitely many k, then no P/poly-natural combinatorial property is useful against P/poly. The proof follows the paper. The generator gives Goldreich–Goldwasser–Micali functions of n variables with polynomial-size circuits, which a useful property must reject. The circuit that decides the large constructive subproperty then tells these functions apart from random functions. A hybrid argument over the levels of the tree and over the nodes of a level, with all other nodes fixed, gives a circuit of size 2^O(n) that tells one output of G_k apart from a uniform string with advantage 2^(-O(n)), which contradicts the hardness for n a small power of k.",
+  "authors": [
+    "Z. Zzyzek (github: zzyzek)"
+  ],
+  "repository": "https://github.com/zzyzek/NaturalProof-Lean",
+  "commit": "8c1df29730a2f34d3513b693a5bac5d33abe1520",
+  "project_path": null,
+  "declarations": [
+    "NaturalProofs.natural_proofs_barrier"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC"
+    ],
+    "msc2020": [
+      "68Q17",
+      "68Q06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T07:13:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8c1df29730a2f34d3513b693a5bac5d33abe1520",
+        "fork_repository": "PalomarArchive/zzyzek--NaturalProof-Lean--d11789d55c00",
+        "source_repository": "zzyzek/NaturalProof-Lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:97ac3ebb8511dc0f8fa1f4378cf21c93f5b18f31d4fe3e7cdc48cb0b7e4a1527"
+}

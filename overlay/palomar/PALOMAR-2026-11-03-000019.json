@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000019",
+  "version": 1,
+  "title": "Fractional clique decompositions of dense partite graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of the main theorem of R. Montgomery, \"Fractional clique decompositions of dense partite graphs\" (arXiv:1603.01039; Combin. Probab. Comput. 26 (2017)): for r ≥ 3, every balanced K_r-divisible r-partite graph with parts of size n in which every vertex has at least (1 − 1/(10⁶r³))n neighbours in every other part has a fractional K_r-decomposition (Theorem 1.1); and its non-partite consequence: every graph on n vertices with minimum degree at least (1 − 1/(10⁶r³))n has a fractional K_r-decomposition. The whole proof is formalized: clique counts (Proposition 3.2, Lemma 3.3), the two gadgets (Lemmas 4.2, 4.3), the splitting lemma (Lemma 4.4), the moving lemmas (Lemmas 5.2, 5.3, 5.6) and the final averaging. Not formalized: Theorem 1.2 (integral decompositions), which also needs the fractional-to-exact transfer of Barber, Kühn, Lo, Osthus and Taylor.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/montgomery-fractional-clique-decompositions",
+  "commit": "c638d93a5dd3fc3758c1c09c44672e2c3d6e3ba9",
+  "project_path": null,
+  "declarations": [
+    "Montgomery2016.theorem_1_1",
+    "Montgomery2016.fracCliqueDecomp_of_minDegree"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T09:22:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c638d93a5dd3fc3758c1c09c44672e2c3d6e3ba9",
+        "fork_repository": "PalomarArchive/jtraverso--montgomery-fractional-clique-decompositions--db620b60fa20",
+        "source_repository": "jtraverso/montgomery-fractional-clique-decompositions"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4216e561dc47dc8fc2b383c4508158333436121f018e746739d9c8918e5c1e1d"
+}

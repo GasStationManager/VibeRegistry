@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000006",
+  "version": 1,
+  "title": "Bounded finite conic-union hulls",
+  "abstract": "The boxed finite conic-union continuous hull and compact lift. Finite bounds, explicit dependent residual dimensions and cone hypotheses are retained. Empty branches/index sets are allowed; this is not a general whole-GDP ideality theorem.",
+  "authors": [
+    "David E. Bernal Neira"
+  ],
+  "repository": "https://github.com/bernalde/bounded-conic-hulls",
+  "commit": "83eab15081781a8316a57b561b02a705e822adf9",
+  "project_path": null,
+  "declarations": [
+    "PalomarConicHull.exact_hull",
+    "PalomarConicHull.compact_lift",
+    "PalomarConicHull.closed_hull"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC"
+    ],
+    "msc2020": [
+      "90C30",
+      "90C11"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T03:27:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "83eab15081781a8316a57b561b02a705e822adf9",
+        "fork_repository": "PalomarArchive/bernalde--bounded-conic-hulls--98c094f50ef5",
+        "source_repository": "bernalde/bounded-conic-hulls"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7928e0085975fac8493d777a402f0e7c8080b73d9048e06ea60a8ad6fa121091"
+}

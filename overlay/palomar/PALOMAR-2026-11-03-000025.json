@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000025",
+  "version": 1,
+  "title": "Goldbach numbers in short intervals of length x^(26/1075+ε)",
+  "abstract": "A Lean 4 proof that for every ε > 0 and all large natural x there is a Goldbach number, an even sum of two primes, in the interval from x to x + 3 x^(26/1075+ε). The theorem is conditional on two cited results taken as explicit hypotheses, never as axioms, and neither is proved here: LiRow052, R. Li, arXiv 2308.04458, Theorem 2, the row θ = 0.52, primes in the intervals from n - n^(0.52+ε) to n with a lower bound of the right order, with some positive constant since the printed constant differs between versions of the paper; and LiPrintedExceptionalCount, R. Li, arXiv 2407.05651 v6, Theorem 1.1, primes in the intervals from n to n + n^(1/21.5+ε) for almost all n. The argument adapts Theorem 7.1 of arXiv 2407.05651 v6, page 27, exponent 21/860 from the 0.525 of Baker, Harman and Pintz. The exponent 26/1075 is lower by 1/4300, and the gain is only the replacement of 0.525 by Li's 0.52. Li prints this exponent himself, as Theorem 7 of arXiv 2308.04458, with no ε and no factor 3, so this is a formal check of a known result and not a new exponent. Li's later note, Primes in almost all short intervals II, claims 1/22+ε in place of 1/21.5+ε, so 26/1075 is not claimed as the best exponent. Both cited papers are used here in their arXiv preprint form. Proved with no cited input: the passage from a count of primes in the intervals below n to a count in the windows from x - 2Y to x - Y, and the combinatorial step from the two counts to a Goldbach number. Binary Goldbach is open and is not claimed. AI agents wrote the Lean code, Claude, Codex and Gemini, as listed in PORTING.md, and it is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "d0d978d2cf565be71d6949ce529ed5503affa72e",
+  "project_path": "entries/goldbachshort1075",
+  "declarations": [
+    "LeanLab.GoldbachShort78.goldbach_short_1075",
+    "LeanLab.GoldbachShort78.windowCount_of_backward",
+    "LeanLab.GoldbachShort78.goldbach_of_counts",
+    "LeanLab.GoldbachShort78.exponent_1075"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11N05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T19:21:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d0d978d2cf565be71d6949ce529ed5503affa72e",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1b440d54d0aa0a770206b81c3f4cd36beedfeca28f5a0ee0b17b1d83a3eddd75"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000002",
+  "version": 1,
+  "title": "Balanced edge colourings: Balister–Kostochka–Li–Schelp 2004, Theorems 1, 6, 10(2) and Corollary 12",
+  "abstract": "A Lean 4 / Mathlib formalization of four results of P. N. Balister, A. V. Kostochka, H. Li and R. H. Schelp, Balanced edge colorings (J. Combin. Theory Ser. B 90, 2004). Edge colourings with k colours are colourings of the line graph with Fin k; the palette of a vertex is the set of colours of its edges; numPal C S counts the vertices with palette S and cost C is the sum of the squares of these counts. theorem1 (Theorem 1): in a k-colouring of least cost, palettes of the same size are used numbers of times differing by at most two. theorem6 (Theorem 6): a proper 3-colouring of the edges (a map Sym2 V → Fin 3 proper at every vertex) can be replaced by a proper 4-colouring in which distinct vertices with the same key see different colour sets, when two distinct vertices with equal key, degree and colour set have degree 3 and no three distinct vertices of degree 3 share a key. theorem10 (Theorem 10, part 2): if 3 ≤ k, Δ(G) ≤ k, n_0, n_1, n_2 ≤ 1, n_3, n_4, n_k ≤ 2, n_{k-1} ≤ k + 1 and n_d ≤ (d-4)/(d-3) · min(2 C(k-3, d-3), C(k, d)) - 2 for 5 ≤ d ≤ k - 2 (n_d the number of vertices of degree d), then G has a strong (vertex-distinguishing) edge colouring with k + 1 colours. corollary12 (Corollary 12): if Δ(G) ≥ √(2n) + 4 (n vertices), δ(G) ≥ 5 and k is least with n_d ≤ C(k, d) for all d, then G has a strong edge colouring with k + 1 colours and every strong edge colouring uses at least k colours. Four statements.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/balanced-edge-colourings",
+  "commit": "736c78e6addcdb77e95cd83e4e44c5c0700f13ef",
+  "project_path": null,
+  "declarations": [
+    "BklsPalomar.theorem1",
+    "BklsPalomar.theorem6",
+    "BklsPalomar.theorem10",
+    "BklsPalomar.corollary12"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T01:24:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "736c78e6addcdb77e95cd83e4e44c5c0700f13ef",
+        "fork_repository": "PalomarArchive/jtraverso--balanced-edge-colourings--a527efb7f56f",
+        "source_repository": "jtraverso/balanced-edge-colourings"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d4a3a921fef1503f4139868f1892c3ee24b9e449643b1c4667c754673f7c5f6f"
+}

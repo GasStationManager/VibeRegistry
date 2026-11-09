@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-11-02-000005",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000005",
-  "version": 1,
+  "version": 2,
   "title": "BandParityTower: the band-parity tower and its limit modulo eight",
   "abstract": "For a prime p let a = v_2(p-1), m = (p-1)/2^a, H_a the subgroup of (Z/p)^x of order m and s(x) = (-1)^<x>. The development proves the tower of band-parity laws of Paper I of the author's series: the cyclotomic tower (every coordinate of the band-parity sum of the character of order 2^a is congruent modulo 4 to an explicit count), the band-parity tower f_a = sum over H_a of s(u) s(u^2) = m (mod 4) at every odd prime, the doubling count sum over 2H_a of s(u) s(2u) = 2 N_a - m, the imaginary law e_a = 2 N_a - m (mod 4) at every prime p = 1 (mod 4) with its level-3 form, the collapse e_a = +-f_a when 2 is a 2^(a-1)-th power residue, and E. Lehmer's criterion for 2 to be a 2k-th power residue. It also proves the power-map family, the companion law Re C = Im C = kappa (mod 4) at p = 1 (mod 8), and Lehmer-type invariants of the inversion map modulo 4; and, modulo 8, the joint-parity form, the dichotomy, squaring cycles and the order-three pair, the defect lemma, odd multipliers as floor sums and the fifth-interval formula linking M_H(5) to B_{1,theta_p}.",
   "authors": [
     "Joseph S. Farland"
   ],
   "repository": "https://github.com/jkfarland-bot/Bandparitytower",
-  "commit": "5eb71672dcda927c4b76a76bd955eb80dc724a50",
+  "commit": "fd1508a32a25bbe8a6070aee6128e6e7aca1b1b9",
   "project_path": null,
   "declarations": [
     "BandParityTower.Ha_spec",
@@ -54,7 +54,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-11-02T06:53:23Z",
+  "published_at": "2026-11-03T07:22:35Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -68,11 +68,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "5eb71672dcda927c4b76a76bd955eb80dc724a50",
+        "commit": "fd1508a32a25bbe8a6070aee6128e6e7aca1b1b9",
         "fork_repository": "PalomarArchive/jkfarland-bot--Bandparitytower--5c24f1f12bf3",
         "source_repository": "jkfarland-bot/Bandparitytower"
       }
     ]
   },
-  "statement_hash": "sha256:5e8f1854e37a1979f7473aab38ee2b345b6653d09f04dd532a02a30cdd9d6ce0"
+  "statement_hash": "sha256:b53f6b26f65f94877b8579a9850cad2f2ab0ffc7331741c219d36102bee53ccf"
 }

@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000018",
+  "version": 1,
+  "title": "Weil Bounds Toolkit",
+  "abstract": "A Lean 4 formalization of the classical prime-modulus Kloosterman-Weil bound |S_p(m,n)| <= 2 sqrt(p) for nonzero m, n, proved by the Carlitz-Stepanov method following Harcos's exposition, together with an exact Chinese-remainder factorization of unit Kloosterman sums, a squarefree-modulus bound for a unit first coefficient, a bound for the sum defined at the reduced modulus q/gcd(A,q), and interval-length-uniform and weighted bounds for centered incomplete reciprocal sums.",
+  "authors": [
+    "Charlie Dorsey"
+  ],
+  "repository": "https://github.com/charliedorsey/weil-bounds-toolkit",
+  "commit": "0f3e4c3010bb0e7c4e514ddb5bd3a0a0e082bf68",
+  "project_path": null,
+  "declarations": [
+    "RML.ExpSum.Weil.prime_bound",
+    "RML.ExpSum.Weil.weil1948_bound",
+    "RML.ExpSum.Weil.kloostermanSumPrime_eq_weilKloostermanPrime",
+    "RML.ExpSum.Weil.kloostermanUnitSum_crt",
+    "RML.ExpSum.Weil.squarefreeUnitNumerator_bound",
+    "RML.ExpSum.Weil.reducedModulus_pos",
+    "RML.ExpSum.Weil.reducedModulusSum_bound",
+    "RML.ExpSum.Weil.centeredReducedIntervalSum_bound",
+    "RML.ExpSum.Weil.weightedCenteredReducedIntervalSum_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "11L05",
+      "11T23",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T09:10:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0f3e4c3010bb0e7c4e514ddb5bd3a0a0e082bf68",
+        "fork_repository": "PalomarArchive/charliedorsey--weil-bounds-toolkit--fdaf04f318ed",
+        "source_repository": "charliedorsey/weil-bounds-toolkit"
+      }
+    ]
+  },
+  "statement_hash": "sha256:65199765e099f9051c0c3a4396a928c2a57a59dbaba4251baaab419c199befec"
+}

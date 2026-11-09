@@ -1,0 +1,79 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000019",
+  "version": 1,
+  "title": "MellinDuality: Mellin duality for the band-parity companion",
+  "abstract": "For an odd prime p, an odd character chi modulo p and m >= 0, the multiplier family C(a) = sum over 0 < n < p/2 of chi(n) (-1)^(n + <a n^(2m)>) has Fourier transform over the characters 2 sum_a conj(psi)(a) C(a) = G(conj psi) G(chi psi^(2m)), with the multiplier constant G(psi) = sum_m psi(m) (-1)^m = 2 (1 - 2 psi(2)) B_(1,psi). The development proves this Mellin duality over any commutative ring, its inversion over the odd complex characters and its form bilinear in first Bernoulli numbers, the half-sum identity, the exponent family and its two collapses. At p = 5 (mod 8), for the quartic character, it proves the coset decomposition of the family, its exact sums over the cosets of the fourth powers, conjugate dynamics, the two second-moment identities, the decomposition of the second-order products of the band-parity companion by coprime pairs, and Parseval's identity for the band weight. Through the inversion and Parseval's identity over the odd characters it proves, for every a not divisible by p, the exact second moment sum over odd chi of |sum over odd psi of psi(a) (1 - 2 conj(psi)(2)) (1 - 2 chi(2) psi(2)^2) B_(1,conj psi) B_(1,chi psi^2)|^2 = ((p - 1)/2)^4.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/MellinDuality",
+  "commit": "1a5228293f894c9779404d39808b250705e30137",
+  "project_path": null,
+  "declarations": [
+    "MellinDuality.multiplier_constant_half",
+    "MellinDuality.multiplier_constant_even",
+    "MellinDuality.half_sum_identity",
+    "MellinDuality.multiplier_constant_bern",
+    "MellinDuality.mellin_duality",
+    "MellinDuality.mellin_duality_inverse",
+    "MellinDuality.mellin_duality_bernoulli",
+    "MellinDuality.mellin_duality_quartic",
+    "MellinDuality.parity_dictionary",
+    "MellinDuality.exponent_family_dual",
+    "MellinDuality.exponent_collapse_first",
+    "MellinDuality.exponent_collapse_second",
+    "MellinDuality.cosets_as_fibers",
+    "MellinDuality.coset_decomposition",
+    "MellinDuality.gamma_identities",
+    "MellinDuality.exponent_terminal_values",
+    "MellinDuality.coset_trace_values",
+    "MellinDuality.coset_trace_second",
+    "MellinDuality.family_mean_values",
+    "MellinDuality.conjugate_dynamics_squaring",
+    "MellinDuality.second_moments",
+    "MellinDuality.gcd_decomposition",
+    "MellinDuality.band_sum_interval",
+    "MellinDuality.pair_structure_identities",
+    "MellinDuality.parseval_identity",
+    "MellinDuality.parseval_any_weight",
+    "MellinDuality.multiplier_family_interval",
+    "MellinDuality.parseval_odd_characters",
+    "MellinDuality.bernoulli_mean_square_identity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11L40",
+      "11A15",
+      "11B68",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T21:07:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1a5228293f894c9779404d39808b250705e30137",
+        "fork_repository": "PalomarArchive/jkfarland-bot--MellinDuality--0105682cec7c",
+        "source_repository": "jkfarland-bot/MellinDuality"
+      }
+    ]
+  },
+  "statement_hash": "sha256:328b55bbdfa2f755cea0479bb9d10d56df29f6c6377db590e453a3f22d83c6c0"
+}

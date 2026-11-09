@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000009",
+  "version": 1,
+  "title": "Representation embeddings and the third Brauer–Thrall conjecture",
+  "abstract": "A Lean 4 formalization, built on Mathlib, of the principal results of the paper Representation embeddings and the third Brauer–Thrall conjecture. Over an algebraically closed field, every representation-infinite finite-dimensional algebra admits a faithful representation embedding of a colimit-closed category of Kronecker modules that preserves infinite dimensions (Theorem A). Hence, for every infinite cardinal κ, it has 2^κ pairwise non-isomorphic indecomposable modules of dimension κ whose endomorphism rings are local with residue field k and whose radicals satisfy (rad End M)^n = 0 for one n ≤ max(30, 4 dim A) independent of κ; for κ ≥ |k| this is the largest possible number (Corollary 1.1, in full). Weaker parts of the corollary are also compared: modules of every infinite dimension, the endomorphism control without the count and the bound, and the count without the bound. The cited inputs are proved in the library: Bongartz's Theorem 6 and Göbel and Simson's rigid families over infinite fields.",
+  "authors": [
+    "Haruhisa Enomoto"
+  ],
+  "repository": "https://github.com/haruhisa-enomoto/third-brauer-thrall-conjecture",
+  "commit": "26160bbb12b9b1af0cfb3094fedfeda6a019bc4a",
+  "project_path": null,
+  "declarations": [
+    "LargeIndecomposable.Challenge.theoremA",
+    "LargeIndecomposable.Challenge.corollaryDimension",
+    "LargeIndecomposable.Challenge.corollaryRadical",
+    "LargeIndecomposable.Challenge.corollaryCount",
+    "LargeIndecomposable.Challenge.corollaryCountBounded"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RT",
+      "math.RA"
+    ],
+    "msc2020": [
+      "16G20",
+      "16G60",
+      "16G10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T09:14:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "26160bbb12b9b1af0cfb3094fedfeda6a019bc4a",
+        "fork_repository": "PalomarArchive/haruhisa-enomoto--third-brauer-thrall-conjecture--34e355fd96c9",
+        "source_repository": "haruhisa-enomoto/third-brauer-thrall-conjecture"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a9e47904b92ba0699bc97f55d072cde668b5505643de57cd0f70afdfae20014d"
+}

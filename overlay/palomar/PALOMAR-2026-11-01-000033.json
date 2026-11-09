@@ -2,17 +2,18 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-11-01-000033",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000033",
-  "version": 1,
-  "title": "Light 3-stars in plane graphs of minimum face size five (Madaras)",
-  "abstract": "A Lean 4 / Mathlib formalization of Theorem 1.1 of Madaras (2004), for finite simple graphs with the combinatorial planarity (genus-zero rotation systems) of the registered entry Kuratowski's theorem. In every plane map of a finite simple graph of minimum degree at least three whose faces all have length at least five, some vertex x of degree three has three distinct neighbours a, b, c with deg a = deg b = 3 and deg c ≤ 4 (light_star3); in particular the star K1,3 is light, with degree sum at most 13. One statement. The proof is a discharging argument on the rotation system with charges deg − 4 and ℓ − 4 in which every face gives each corner at a 3-vertex a weight depending only on the degrees of the two neighbours along the face, and vertices of degree at least five give 1/5 to each 3-neighbour; the local inequalities are checked by decide in the kernel. This replaces the article's transfer of charge between adjacent 3-vertices.",
+  "version": 2,
+  "title": "Light 3-stars and light pairs of faces in plane graphs of minimum face size five (Madaras)",
+  "abstract": "A Lean 4 / Mathlib formalization of Theorems 1.1 and 1.3 of Madaras (2004), for finite simple graphs with the combinatorial planarity (genus-zero rotation systems) of the registered entry Kuratowski's theorem. In every plane map of a finite simple graph of minimum degree at least three whose faces all have length at least five, some vertex x of degree three has three distinct neighbours a, b, c with deg a = deg b = 3 and deg c ≤ 4 (light_star3); in particular the star K1,3 is light, with degree sum at most 13. In the same setting, some face of length five shares an edge with a face of length at most six such that all vertices of both faces have degree at most nine (light_pair; the two faces may coincide when the graph is not 2-connected). Two statements. The proof of Theorem 1.1 is a discharging argument on the rotation system with charges deg − 4 and ℓ − 4 in which every face gives each corner at a 3-vertex a weight depending only on the degrees of the two neighbours along the face, and vertices of degree at least five give 1/5 to each 3-neighbour; the local inequalities are checked by decide in the kernel. This replaces the article's transfer of charge between adjacent 3-vertices. Theorem 1.3 is proved by a second discharging with charges 2 deg − 6 and ℓ − 6: vertices give their charge to their corners, and every face gives 1/5 across each edge to an adjacent poor face (length five, all degrees at most five, at most one of degree at least four).",
   "authors": [
     "Juan Pablo Traverso Gianini"
   ],
   "repository": "https://github.com/jtraverso/madaras-light-stars",
-  "commit": "053a5caff546c2f700025081e5d3e0b7bf873f62",
+  "commit": "4d897b00e73b0742ce0ef346a0a5dd2482ff3048",
   "project_path": null,
   "declarations": [
-    "MadarasTheorem.light_star3"
+    "MadarasTheorem.light_star3",
+    "MadarasTheorem.light_pair"
   ],
   "informal": {},
   "classification": {
@@ -25,7 +26,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-11-01T22:57:52Z",
+  "published_at": "2026-11-02T12:27:17Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -39,11 +40,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "053a5caff546c2f700025081e5d3e0b7bf873f62",
+        "commit": "4d897b00e73b0742ce0ef346a0a5dd2482ff3048",
         "fork_repository": "PalomarArchive/jtraverso--madaras-light-stars--fec46a2c19c6",
         "source_repository": "jtraverso/madaras-light-stars"
       }
     ]
   },
-  "statement_hash": "sha256:803aeb8a77568ed300fbb0c8a3e99a74323b93fb8505edf5bf35345fe86ad1cf"
+  "statement_hash": "sha256:9bd1e22c5dc2c26fb989e3cb5bae5f365278523651125477f73173d4687404a2"
 }

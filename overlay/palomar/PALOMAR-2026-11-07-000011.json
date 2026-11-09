@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000011",
+  "version": 1,
+  "title": "The three squares theorem (Gauss–Legendre)",
+  "abstract": "A Lean 4 / Mathlib proof of the three squares theorem of Legendre (1798) and Gauss (1801): a natural number is a sum of three squares if and only if it is not of the form 4^a (8 b + 7) (sum_three_sq_iff), with the corollary that every n ≡ 3 (mod 8) is x₀² + x₁² + x₂² for some x : Fin 3 → ℤ (exists_sum_sq_of_mod_eight_eq_three). The proof uses ternary quadratic forms of determinant one: a positive definite integral ternary form of determinant one is equivalent to x² + y² + z² (proved with Minkowski's convex body theorem), and for n ≢ 0 (mod 4), n ≢ 7 (mod 8) such a form with diagonal entry n is built from a prime in an arithmetic progression (Dirichlet's theorem, as in Mathlib) and quadratic reciprocity for the Jacobi symbol. Two statements; no definitions beyond Mathlib's.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/three-squares-gauss-legendre",
+  "commit": "783ec66b0db2ff2acf75cc2cd22a9e69737411b5",
+  "project_path": null,
+  "declarations": [
+    "GaussLegendre.sum_three_sq_iff",
+    "GaussLegendre.exists_sum_sq_of_mod_eight_eq_three"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11E25",
+      "11D85",
+      "11H06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T08:58:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "783ec66b0db2ff2acf75cc2cd22a9e69737411b5",
+        "fork_repository": "PalomarArchive/jtraverso--three-squares-gauss-legendre--2afaf7563d29",
+        "source_repository": "jtraverso/three-squares-gauss-legendre"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b9549958e3cbb53c3538340d9330be6724e3faabd2d9fcaf21f11c1f3f355a05"
+}

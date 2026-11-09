@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000013",
+  "version": 1,
+  "title": "The Johnson bound for the independence number of the Johnson graph",
+  "abstract": "The Johnson graph J(n, k) has the k-subsets of an n-set as vertices, two of them adjacent when they share k - 1 elements; an independent set is a constant-weight binary code of length n, weight k and minimum distance 4. This Lean 4 formalization proves Johnson's 1962 bound α(J(n, k)) ≤ johnsonBound n 4 k, where johnsonBound is the recursive bound A(n, d, w) ≤ ⌊n/w · A(n - 1, d, w - 1)⌋, as stated in google-deepmind/formal-conjectures (Erdős Problem 835), where it is a solved statement left without proof. The proof is by recursion on (n, k): double counting the pairs (point, member) and shortening the members through a point. No new mathematics is claimed.",
+  "authors": [
+    "Carles Marín"
+  ],
+  "repository": "https://github.com/karlesmarin/johnson-bound-palomar",
+  "commit": "6eb8dad56bc31d0e5b0b64ad0931281bcbd71703",
+  "project_path": null,
+  "declarations": [
+    "Erdos835.indepNum_johnson_le_johnsonBound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C69",
+      "94B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T13:26:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6eb8dad56bc31d0e5b0b64ad0931281bcbd71703",
+        "fork_repository": "PalomarArchive/karlesmarin--johnson-bound-palomar--8922f511b953",
+        "source_repository": "karlesmarin/johnson-bound-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:196bbfd00b2ced040270e94296b69c20c4d7aaff7f3f2cc7a3ef6ed539d7b85a"
+}

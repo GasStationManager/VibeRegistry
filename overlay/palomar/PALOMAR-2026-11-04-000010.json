@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000010",
+  "version": 1,
+  "title": "OSreconstruction",
+  "abstract": "A machine-checked proof of the Osterwalder-Schrader correspondence between Euclidean Schwinger functions and relativistic Wightman distributions, in both directions, for every spatial dimension d >= 1. The Euclidean side is a family of Schwinger functions on the zero-diagonal Schwartz space (OS II's test space) satisfying E0-E4; the relativistic side is a family of tempered distributions satisfying the Wightman function axioms (Poincare covariance, spectrum condition, locality, positivity, Hermiticity, clustering). They are linked by a Wick pairing: one holomorphic kernel on the forward tube whose boundary values give the Wightman distribution and whose restriction to Wick- rotated points gives the Schwinger function. Three theorems are verified: E'->R (OS axioms plus linear growth yield Wick-paired Wightman distributions); E'->R' in OS II's form (with growth E0' (4.1), the Wightman distributions exist, satisfy the output bound R0' (4.3), and are unique among Wick-paired families; the two growth conditions are proved equivalent); and R->E (every Wightman family yields, via an explicit constructor, Schwinger functions satisfying E0-E4, with no growth hypothesis). The asymmetry is OS II's correction of OS I and is reproduced faithfully: growth is assumed on the Euclidean side and not recovered, so the two directions do not compose to a biconditional. Scope: theorems about Wightman functions, not the GNS reconstruction of operators. Four conventions are weaker than the textbook ones and are visible in the Challenge: the forward tube carries the extra condition Im z_0 in the open forward cone; locality is stated for adjacent transpositions; reflection positivity goes through a totalized coercion onto zero-diagonal tests; growth is a hypothesis, not a conclusion. To our knowledge this is the first machine-checked proof of the OS reconstruction theorem; its audience is constructive and axiomatic QFT, where it is the bridge every Euclidean construction crosses. The companion formalization of the massive free field and the Proca Wick square inhabits its hypotheses.",
+  "authors": [
+    "Xi Yin",
+    "Michael R. Douglas",
+    "Anna Mei"
+  ],
+  "repository": "https://github.com/mrdouglasny/OSreconstruction-comparator",
+  "commit": "93cdb40e728ba27b7b1b55efc30d57f7b43de9aa",
+  "project_path": null,
+  "declarations": [
+    "OSReconstructionAudit.e_to_r",
+    "OSReconstructionAudit.e_to_r_osii",
+    "OSReconstructionAudit.r_to_e"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math-ph",
+      "hep-th"
+    ],
+    "msc2020": [
+      "81T05",
+      "81T08",
+      "46F12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T13:05:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "93cdb40e728ba27b7b1b55efc30d57f7b43de9aa",
+        "fork_repository": "PalomarArchive/mrdouglasny--OSreconstruction-comparator--c95d4150d61b",
+        "source_repository": "mrdouglasny/OSreconstruction-comparator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5061f1527c239474c3bfd05b182664df2fd25fe3c3d06c9f9c0ed1a3e73a81fd"
+}

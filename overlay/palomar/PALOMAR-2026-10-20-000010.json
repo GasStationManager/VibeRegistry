@@ -1,0 +1,81 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-20-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-20-000010",
+  "version": 3,
+  "title": "FixedOrderFactor: the order-r correction factor for mean squares of L(1, chi), and the factor 35/34",
+  "abstract": "For an integer r >= 2 and a finite set N of primes, the random Euler product model for Dirichlet characters of order r replaces chi(q) by independent uniform r-th roots of unity. The development proves that the order-r local factor E|1 - z/q|^(-2) equals (1 + q^-r)/((1 - q^-2)(1 - q^-r)), that its ratio to the full-circle factor (1 - q^-2)^(-1), multiplied over the primes outside N, is zeta^(N)(r)^2 / zeta^(N)(2r), that this correction factor is also the sum of (ab)^-r over the coprime pairs of integers prime to N, and that the model mean is zeta^(N)(2) zeta^(N)(r)^2 / zeta^(N)(2r). The factor exceeds 1, decreases strictly in r and tends to 1; for r = 2k and N empty it equals -binom(4k,2k) B_{2k}^2/(2 B_{4k}). For r = 4 and N = {2} it is 35/34, the ratio by which the limit of Louboutin's mean square of L(1, chi) with the factor at 2 removed changes when the average is restricted to quartic characters; with the forced factor 4/5 at 2 the development also proves the constants pi^2/10, 7 pi^2/68, 7 pi^2/36 and 7/136 = (1/20)(35/34) = (7/72)(9/17). It also identifies the pairs the model keeps: for positive m, n the average of z^m conj(z^n) is 1 exactly when m/n is an r-th power in Q, that is when (m, n) = (d a^r, d b^r) with a, b coprime, and 0 otherwise. Modulo a single prime p with r | p - 1 it proves the finite-character counterpart: there are exactly r Dirichlet characters mod p with chi^r = 1, the sum of chi(a) conj(chi(b)) over them is r when a/b is a nonzero r-th power mod p and 0 otherwise, so every pair (d a^r, d b^r) prime to p survives with sum r; by contrast, summed over all characters mod p, chi(m) conj(chi(n)) has sum 0 for distinct m, n < p. Release v1.2 adds the finite part of the Chebyshev bias in families p = a (mod M) of fixed order r: with rho_s(t) the average of exp(2 pi i u t/s) over the units u mod s, the sum over t < s of rho_s(c t) is s when s | c and 0 otherwise; for M > 0 and s | M the squares in Z/s x| (Z/M)^x give the prime-square term of the explicit formula as s times the square-root count beta(M, a, s) = #{y in (Z/M)^x : y^2 = a, y = -1 (mod s)}, a count of residue classes (the same finite-sum identity over the representatives 0 <= x < M holds for all M and s > 0, but is only an arithmetic identity there: vacuous at M = 0, representative-dependent when s does not divide M); beta does not decrease as s decreases along divisibility, at s = r it is 0 unless a is a square in H = ker((Z/M)^x -> (Z/r)^x) and is then the number of square roots of 1 in H; and for the imaginary families (r even, M = 2r, a = 1 + r) beta vanishes for every s unless 8 | r, and for s = r/d with d odd in every case.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/FixedOrderFactor-lean",
+  "commit": "74f4fc5b5253c181a2ba67bf3220a7c0b5fcf6fd",
+  "project_path": null,
+  "declarations": [
+    "FixedOrderFactor.muAvg_eq",
+    "FixedOrderFactor.tendsto_muAvg",
+    "FixedOrderFactor.modelMean_eq",
+    "FixedOrderFactor.hasProd_correctionFactor",
+    "FixedOrderFactor.hasProd_muAvg",
+    "FixedOrderFactor.tendsto_modelMean",
+    "FixedOrderFactor.hasSum_coprime_pairs",
+    "FixedOrderFactor.correctionFactor_even",
+    "FixedOrderFactor.correctionFactor_eq_mul",
+    "FixedOrderFactor.one_lt_correctionFactor",
+    "FixedOrderFactor.correctionFactor_succ_lt",
+    "FixedOrderFactor.tendsto_correctionFactor",
+    "FixedOrderFactor.correctionFactor_four_two",
+    "FixedOrderFactor.localTerm_I_half",
+    "FixedOrderFactor.quartic_constants",
+    "FixedOrderFactor.sum_char_pow_eq_one",
+    "FixedOrderFactor.card_char_pow_eq_one",
+    "FixedOrderFactor.sum_char_pow_eq_one_of_pow",
+    "FixedOrderFactor.sum_char_all",
+    "FixedOrderFactor.div_eq_pow_iff",
+    "FixedOrderFactor.model_pair_average",
+    "FixedOrderFactor.sum_orbitAvg_mul",
+    "FixedOrderFactor.sum_orbitAvg_eq_zero",
+    "FixedOrderFactor.sum_orbitAvg_square_finite",
+    "FixedOrderFactor.sqrtCount_eq_card_zmod",
+    "FixedOrderFactor.sum_orbitAvg_square",
+    "FixedOrderFactor.sqrtCount_le_of_dvd",
+    "FixedOrderFactor.sqrtCount_top",
+    "FixedOrderFactor.sqrtCount_top_dichotomy",
+    "FixedOrderFactor.sqrtCount_imaginary",
+    "FixedOrderFactor.sqrtCount_table"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M06",
+      "11M20",
+      "11R42",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T05:22:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "74f4fc5b5253c181a2ba67bf3220a7c0b5fcf6fd",
+        "fork_repository": "PalomarArchive/jkfarland-bot--FixedOrderFactor-lean--c8161d9d4229",
+        "source_repository": "jkfarland-bot/FixedOrderFactor-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:17a81f07921125b40f4fc21cedf825f5426241008bdd0879bd22fafae829f993"
+}

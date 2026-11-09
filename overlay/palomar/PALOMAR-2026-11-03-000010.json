@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000010",
+  "version": 1,
+  "title": "Computable bijection between recursive computations and closed lambda terms",
+  "abstract": "Constructs computable inverse maps between recursive-code/input pairs and all closed lambda terms, preserving defined evaluation as Church-zero observation.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy José Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "adf433d5f4fd3a9558dc27bcf9f0ae51fdc8a35d",
+  "project_path": "lambda-closed-bijection",
+  "declarations": [
+    "LambdaTuring.codeInput_closedTerm_bijection"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-03T03:57:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "adf433d5f4fd3a9558dc27bcf9f0ae51fdc8a35d",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3d79fe2a47a6de47372aec7ae8b548d6b6defa6e657bb8eaf1bb15c9412416ac"
+}

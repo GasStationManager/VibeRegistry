@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000005",
+  "version": 1,
+  "title": "Schatten-class truncated Toeplitz operators",
+  "abstract": "Lean formalization of Schatten-class truncated Toeplitz operator results from the local Lopatto–Rochberg manuscript. Includes analytic and coanalytic Besov classifications for every real p>0, compactness and interpolation criteria, splitting and polynomial-symbol results, and Hilbert–Schmidt energy, differential and squared-kernel quotient descriptions.",
+  "authors": [
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/lopatto/tto-palomar",
+  "commit": "b0bbb4c39145f643482d8bc1215301aabafe3dc2",
+  "project_path": null,
+  "declarations": [
+    "TTO.Paper.Proved.besovClassificationTheorem",
+    "TTO.Paper.Proved.compactClassificationTheorem",
+    "TTO.Paper.Proved.interpolatingClassificationTheorem",
+    "TTO.Paper.Proved.perturbedKernelBasisClassificationTheorem",
+    "TTO.Paper.Proved.gapSplittingTheorem",
+    "TTO.Paper.Proved.canonicalGapSplittingTheorem",
+    "TTO.Paper.Proved.finiteAtomClassificationTheorem",
+    "TTO.Paper.Proved.polynomialClassificationTheorem",
+    "TTO.Paper.Proved.hilbertSchmidtEnergyTheorem",
+    "TTO.Paper.Proved.differentialRealizationTheorem",
+    "TTO.Paper.Proved.coanalyticBesovTheorem",
+    "TTO.Paper.Proved.squaredKernelQuotientTheorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.CV"
+    ],
+    "msc2020": [
+      "47B35",
+      "47B10",
+      "30H10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T05:08:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b0bbb4c39145f643482d8bc1215301aabafe3dc2",
+        "fork_repository": "PalomarArchive/lopatto--tto-palomar--089a37d5d448",
+        "source_repository": "lopatto/tto-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c6ca98c4c0c61eae7145a34bc7316eed28f7abac30abf6aa45968c3a2f4b4043"
+}

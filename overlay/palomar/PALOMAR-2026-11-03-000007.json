@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000007",
+  "version": 1,
+  "title": "Productive closed lambda languages and one-one completeness",
+  "abstract": "Formalizes a non-extensional creative-to-one-one completeness argument for predicates on closed lambda syntax, using uniform finite avoidance and computable fresh-output selection.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy José Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "b6eb1988de2ddf8794eb3c3781eb34bc37f2bc7a",
+  "project_path": "lambda-myhill",
+  "declarations": [
+    "LambdaTuring.avoidance_fixed_codes",
+    "LambdaTuring.finite_homogeneous_avoidance",
+    "LambdaTuring.manyOne_reduction_has_injective_fibers",
+    "LambdaTuring.injective_outside_prefix",
+    "LambdaTuring.oneOne_sequence_from_manyOne",
+    "LambdaTuring.closed_productive_oneOne_hard",
+    "LambdaTuring.closed_productive_oneOne_complete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-03T02:24:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b6eb1988de2ddf8794eb3c3781eb34bc37f2bc7a",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f18dba3b607d1b154f0562c321cb9a38e7c04709482e8f034748f856500d0f62"
+}

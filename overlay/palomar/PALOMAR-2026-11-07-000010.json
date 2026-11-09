@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000010",
+  "version": 1,
+  "title": "Critical trees are neither too short nor too fat",
+  "abstract": "Lean 4 proofs of the main results of Addario-Berry, Donderwinkel and Kortchemski, \"Critical trees are neither too short nor too fat\" (arXiv:2311.06163). For every critical offspring law, the height of the size-conditioned Bienaymé tree divided by log n tends to infinity and its width divided by n tends to zero in probability, along admissible sizes. These bounds are sharp: for every function f tending to infinity, a single critical offspring law has limsup P(height < f(n) log n) = 1 and limsup P(width > n/f(n)) = 1. For critical offspring laws in the local domain of attraction of the asymmetric Cauchy law (mu_n = L(n)/n^2 with L slowly varying), the height divided by an explicit scale h_n and the width divided by n E[Y 1{Y >= a_n}] both converge to 1 in probability, and height times width is O_P(n log n). The entry also includes the stochastic ordering of heights of uniform labelled trees with given degree sequences (Addario-Berry and Donderwinkel, Theorem 9), used in the paper. All 23 named results of the paper (its theorem, proposition, lemma and corollary environments) are proved in the repository; this Palomar entry compares the headline results.",
+  "authors": [
+    "Igor Kortchemski"
+  ],
+  "repository": "https://github.com/igor-kortchemski/critical-trees-height-width",
+  "commit": "96b7595cda3a0dedf6f97af3dbcae2ed694c0b11",
+  "project_path": null,
+  "declarations": [
+    "CriticalTrees.Universal.critical_height_width",
+    "CriticalTrees.Optimality.critical_short_wide",
+    "CriticalTrees.Cauchy.cauchy_height_width",
+    "CriticalTrees.Cauchy.cauchy_height_mul_width",
+    "CriticalTrees.Optimality.stochastic_order_height",
+    "CriticalTrees.LabeledTree.instFinite",
+    "CriticalTrees.Law.ennreal_isScalarTower",
+    "CriticalTrees.Law.isProbabilityMeasure_sizeLaw",
+    "CriticalTrees.Cauchy.IsLocalCauchy.admissibleAtTop_eq_atTop"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.CO"
+    ],
+    "msc2020": [
+      "60J80",
+      "60C05",
+      "05C05",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T07:38:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "96b7595cda3a0dedf6f97af3dbcae2ed694c0b11",
+        "fork_repository": "PalomarArchive/igor-kortchemski--critical-trees-height-width--9e15c313896f",
+        "source_repository": "igor-kortchemski/critical-trees-height-width"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6ae48c90f99fe7f2518357a203ebc051fdec20d061369de11b4b47d6dc52ef13"
+}

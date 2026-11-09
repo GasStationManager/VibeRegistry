@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000014",
+  "version": 1,
+  "title": "Bicolouring Steiner triple systems (Colbourn–Dinitz–Rosa product, Dinitz–Stinson conditions)",
+  "abstract": "A Lean 4 / Mathlib formalization of the product theorem of Colbourn, Dinitz and Rosa for bicoloured Steiner triple systems and of the necessary conditions of Dinitz and Stinson. A bicolouring of an STS colours the points so that every block receives exactly two colours. bicolourable3_mul (CDR 1999, Theorem 2.4): if there is an (a, b, c)-bicolourable STS(u) with c = max(a, b, c) and c ≤ a + b, and an (x, y, z)-bicolourable STS(v), then there is an (ax + by + cz, ay + bz + cx, az + bx + cy)-bicolourable STS(uv). Dinitz–Stinson Proposition 1.2: for a bicoloured STS on v points with colour classes of sizes c_k, 3 Σ c_k (c_k − 1) = v (v − 1) (IsSTS.three_mul_sum); no two distinct colour classes have size 2 (not_two_classes_of_size_two); and with three colour classes at most one class size is odd (Bicolourable3.not_two_odd). Four statements. The proof of Theorem 2.4 includes Lemma 2.3 of the article (forbidden latin squares exist when max(a, b, c) ≤ n/2), Ryser's theorem on completing latin arrays, and de Werra's equalized edge colourings of bipartite graphs.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/cdr-bicolouring-sts",
+  "commit": "a768a98a648e94ad38d0d84501867c999927c546",
+  "project_path": null,
+  "declarations": [
+    "CDR.bicolourable3_mul",
+    "CDR.IsSTS.three_mul_sum",
+    "CDR.not_two_classes_of_size_two",
+    "CDR.Bicolourable3.not_two_odd"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B07",
+      "05C15",
+      "05B15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T16:31:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a768a98a648e94ad38d0d84501867c999927c546",
+        "fork_repository": "PalomarArchive/jtraverso--cdr-bicolouring-sts--063de2d8ca97",
+        "source_repository": "jtraverso/cdr-bicolouring-sts"
+      }
+    ]
+  },
+  "statement_hash": "sha256:80ebdd5eced46fead5b33892c9b11211e0e5d56b4894c7665fbba5e9dcbab3c5"
+}

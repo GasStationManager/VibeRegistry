@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000008",
+  "version": 1,
+  "title": "Finite optimal-polish discovery for center-cut histories",
+  "abstract": "A qualified actual-trial history theorem for convex MINLP, with full source definitions, pre-discovery exactness and fixed-fiber NLP polishing.",
+  "authors": [
+    "David E. Bernal Neira"
+  ],
+  "repository": "https://github.com/bernalde/center-cut-discovery",
+  "commit": "9e758271673df45b9ea7c6205d2c36d45e6f1e5e",
+  "project_path": null,
+  "declarations": [
+    "PalomarCenterCut.finite_optimal_polish"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC"
+    ],
+    "msc2020": [
+      "90C11",
+      "90C25",
+      "90C30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T04:27:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9e758271673df45b9ea7c6205d2c36d45e6f1e5e",
+        "fork_repository": "PalomarArchive/bernalde--center-cut-discovery--42489b741fc3",
+        "source_repository": "bernalde/center-cut-discovery"
+      }
+    ]
+  },
+  "statement_hash": "sha256:aaee0c3d0251822e25cb943e29556cb5d20bad70953fcc1592e38bc731efede6"
+}

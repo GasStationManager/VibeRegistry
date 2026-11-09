@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000011",
+  "version": 1,
+  "title": "Infinite cycles in the interchange process in five dimensions (Elboim-Sly), formalized in Lean 4",
+  "abstract": "A complete Lean 4 formalization of D. Elboim and A. Sly, Infinite cycles in the interchange process in five dimensions (arXiv:2211.17023v3). In the interchange process on Z^d, each edge carries an independent rate-one Poisson clock and swaps the particles at its endpoints when it rings; run for time beta, it yields a random permutation pi_beta of Z^d. Toth conjectured that pi_beta has infinite cycles for d >= 3 and beta large; Elboim and Sly proved this for d >= 5. The library proves their Theorem 1 (for d >= 5 and beta large, pi_beta almost surely has an infinite cycle), the quantitative bound from its proof (the cycle of the origin is finite with probability less than 2/beta), and the multiscale induction behind both, Theorem 3.2, whose hypotheses (H1)-(H5) control relaxed times, local probabilities, displacement, a Brownian coupling and the proximity of two walks for the cyclic random walk at every scale. The model is constructed on the infinite lattice (Poisson clocks, existence and uniqueness of particle trajectories, bijectivity of pi_s), and nothing the paper cites is assumed: Poisson point processes and their exploration, the zero-one law, continuous-time random walk estimates, Brownian motion and its hitting and escape estimates, Freedman's inequality and the strong approximations are proved from Mathlib. Zaitsev's multidimensional KMT theorem, the paper's one external input, is replaced by two couplings proved in the library: a KMT coupling for Poisson increments and a strong approximation for bounded sign-symmetric vectors; the exponent of the Brownian coupling in (H4) becomes 41/100 instead of 2/5, and Theorem 1 is unchanged. Every statement is checked against a Mathlib-only restatement with leanprover/comparator, and the library uses only Lean's standard axioms.",
+  "authors": [
+    "Scott Armstrong",
+    "Ahmed Bou-Rabee"
+  ],
+  "repository": "https://github.com/scottnarmstrong/elboim-sly",
+  "commit": "3191c5f9c55c0662ee0bc92b8c79ff27f22f7d46",
+  "project_path": null,
+  "declarations": [
+    "ElboimSly.Challenge.existsUnique_trajectories",
+    "ElboimSly.Challenge.interchangePi_bijective",
+    "ElboimSly.Challenge.poisson_kmt_coupling",
+    "ElboimSly.Challenge.x1theta_coupling",
+    "ElboimSly.Challenge.ind_main",
+    "ElboimSly.Challenge.root_R1",
+    "ElboimSly.Challenge.root_R2"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math-ph"
+    ],
+    "msc2020": [
+      "60K35",
+      "82B20",
+      "60G50",
+      "60J65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T13:21:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3191c5f9c55c0662ee0bc92b8c79ff27f22f7d46",
+        "fork_repository": "PalomarArchive/scottnarmstrong--elboim-sly--d81692a9777a",
+        "source_repository": "scottnarmstrong/elboim-sly"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ac3be3aa6611027b00b45ae6c2a5b6dcd19f1c65baefe50a1bac682b9dd0f211"
+}

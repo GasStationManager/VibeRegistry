@@ -1,0 +1,46 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-08-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-08-000003",
+  "version": 1,
+  "title": "Central limit theorem for the complex eigenvalues of Gaussian random matrices",
+  "abstract": "This project formalizes the main central limit theorem of “Central limit theorem for the complex eigenvalues of Gaussian random matrices” by Advay Goel, Patrick Lopatto, and Xiaoyu Xie (arXiv:2306.10243v2), using an expanded local manuscript as the detailed proof source. The local manuscript was prepared to ease autoformalization by adding details to the proofs. Its main theorem (Theorem 1.3) is identical to the main theorem of the arXiv version: the hypotheses and conclusion are unchanged. Only this main theorem is advertised.",
+  "authors": [
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/lopatto/ginoe-clt-public",
+  "commit": "1a366f8c390b57b15af88bf5d12b320785c866f5",
+  "project_path": null,
+  "declarations": [
+    "Paper.principalTheorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-08T00:57:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1a366f8c390b57b15af88bf5d12b320785c866f5",
+        "fork_repository": "PalomarArchive/lopatto--ginoe-clt-public--74aa5bd58c51",
+        "source_repository": "lopatto/ginoe-clt-public"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cd6d86bd57d99fa2b5a08a4d460e09fa6a3686a4c26d06e3d6e94d288ff24756"
+}

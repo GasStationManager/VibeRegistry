@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000023",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000023",
+  "version": 1,
+  "title": "Deterministic generalized k-server: tower lower bound and strict upper bound",
+  "abstract": "For generalized k-server, each named server moves in its own metric space, a request specifies one point per space, and matching any coordinate serves the request. The development proves a height-k tower lower bound on the deterministic competitive ratio on k real lines for k at least three, allowing arbitrary additive constants. It also proves existence of a lazy deterministic algorithm on arbitrary metric spaces with arbitrary positive movement weights and prescribed initial configuration, with an explicit factor depending only on k and no additive cost or horizon input. The refined deterministic factor is at most tower(k+4) for k at least two.",
+  "authors": [
+    "Andrea Celli",
+    "Jeffrey Theodore Rigos Champion",
+    "Valerio Cini",
+    "Nemanja Draganic",
+    "Marek Elias",
+    "Mariana Botelho da Gama",
+    "Paul Lou",
+    "Giulio Malavolta",
+    "Emmanuela Orsini",
+    "Adam Polak",
+    "Mariana Rio Costa",
+    "Laura Sanita",
+    "Jonas Benjamin Schmidt"
+  ],
+  "repository": "https://github.com/marek-elias/generalized-k-server-lean",
+  "commit": "a0ef235a4cc8e1f1e695f0440f0a9dc369e3c804",
+  "project_path": "formalization",
+  "declarations": [
+    "GeneralizedKServer.TowerLowerBound.full_line_tower_lower_bound",
+    "GeneralizedKServer.UpperBound.fsc_standard_weighted",
+    "GeneralizedKServer.UpperBound.refined_tower_standard_weighted"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS"
+    ],
+    "msc2020": [
+      "68W27",
+      "68W40",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T17:59:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a0ef235a4cc8e1f1e695f0440f0a9dc369e3c804",
+        "fork_repository": "PalomarArchive/marek-elias--generalized-k-server-lean--3bcf583a5b2e",
+        "source_repository": "marek-elias/generalized-k-server-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:50c808b4ae88224b141d24df4903e68e795639f5f4b476d875870d863b6d7d1c"
+}

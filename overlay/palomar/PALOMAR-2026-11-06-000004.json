@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000004",
+  "version": 1,
+  "title": "Finite-order exponential mixing does not imply the central limit theorem",
+  "abstract": "A Lean 4 formalization of Theorems A, B, and C of the paper. It constructs stationary processes with finite-order exponential mixing and no Gaussian subsequential limit, then realizes the phenomenon in analytic and smooth dynamical systems.",
+  "authors": [
+    "Bernat Bassols Cornudella",
+    "Matheus M. Castro"
+  ],
+  "repository": "https://github.com/Manzatto/finite-order-mixing-does-not-imply-clt",
+  "commit": "7e3e00b06a78c76ea7208d6e327fb022d6a39ba7",
+  "project_path": null,
+  "declarations": [
+    "PalomarEntry.theoremA",
+    "PalomarEntry.theoremB",
+    "PalomarEntry.theoremC"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.PR"
+    ],
+    "msc2020": [
+      "37A25",
+      "37D20",
+      "60F05",
+      "60G10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T02:06:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7e3e00b06a78c76ea7208d6e327fb022d6a39ba7",
+        "fork_repository": "PalomarArchive/Manzatto--finite-order-mixing-does-not-imply-clt--7708e4e5bb7f",
+        "source_repository": "Manzatto/finite-order-mixing-does-not-imply-clt"
+      }
+    ]
+  },
+  "statement_hash": "sha256:409d2669abb700b09b5b18889e4f898464152cac01cff2e456e7f3dbf0b3e8f3"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000003",
+  "version": 1,
+  "title": "Baranyai's theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of Baranyai's theorem: if k divides n, the k-subsets of an n-set can be partitioned into (n−1 choose k−1) parallel classes, each a partition of the set into n/k blocks of size k (a 1-factorization of the complete k-uniform hypergraph); and of Baranyai's rounding lemma: every real matrix can be rounded entrywise to floors or ceilings so that all row sums, column sums and the total are also rounded. The proof includes the integral max-flow theorem for integer capacities. Mathlib has neither result.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/baranyai-theorem",
+  "commit": "0ff6d6f4005b0b68114e0b99e6d342742918b629",
+  "project_path": null,
+  "declarations": [
+    "BaranyaiTheorem.rounding",
+    "BaranyaiTheorem.baranyai"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C65",
+      "05C70",
+      "90C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T01:56:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0ff6d6f4005b0b68114e0b99e6d342742918b629",
+        "fork_repository": "PalomarArchive/jtraverso--baranyai-theorem--0fb5997ac7ea",
+        "source_repository": "jtraverso/baranyai-theorem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4a7426f5aad54d45a91f03c78efa91417fe150b0b4418a0a618c33fc6c073498"
+}

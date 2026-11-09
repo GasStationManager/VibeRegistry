@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000013",
+  "version": 1,
+  "title": "Existence of the q-colorability threshold for sparse random graphs",
+  "abstract": "For every integer q at least 3, the formalization proves the existence of a limiting q-colorability threshold for sparse random graphs. A single constant alpha_q in [1/2, log(q)/log(q/(q-1))] gives the transition for the uniform model with floor(c n) edges and the transition at d = 2 alpha_q for the binomial model with edge probability d/n. For every fixed eta in (0,1), there is C > 0 such that, for all sufficiently large n, the first loss of q-colorability under independent uniform additions of unordered pairs of distinct vertices lies within C n (log n)^(-3/2) steps of deterministic integer centers with probability at least 1-eta. The centers divided by n converge to the same alpha_q. Repeated edges are retained in this process. The scope is Theorems 1.1 and 1.2 of the included manuscript.",
+  "authors": [
+    "P. M. Aronow",
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/pmaronow/q-colorability-palomar",
+  "commit": "f31c25fbba9ecf72305de746ec1b64c8be327f26",
+  "project_path": null,
+  "declarations": [
+    "ThresholdChallenge.main"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C80",
+      "05C15",
+      "60C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T15:56:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f31c25fbba9ecf72305de746ec1b64c8be327f26",
+        "fork_repository": "PalomarArchive/pmaronow--q-colorability-palomar--02f63be3fbb9",
+        "source_repository": "pmaronow/q-colorability-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f461acc5dc1fa16e80b4e1f241348b6104d654d6acd179f0573f083ec6d0c744"
+}

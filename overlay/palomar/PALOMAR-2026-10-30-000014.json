@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-30-000014",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-30-000014",
-  "version": 2,
+  "version": 3,
   "title": "Maximality of the Došen–Petrić Boolean Category",
-  "abstract": "Let P be a nonempty set of propositional variables. The freely generated zero-identity Boolean category B(P) of Došen and Petrić is maximal: every congruence on its arrows preserved by the arrow operations and uniform formula substitution is either equality or identifies every pair of parallel arrows. The formalization gives two proofs of maximality and proves the congruence dichotomy. It also proves that the identity and zero endomorphism of each variable are distinct, and that there is no arrow from the terminal object to the initial object.",
+  "abstract": "Let P be a nonempty set of propositional variables. The freely generated zero-identity Boolean category B(P) of Došen and Petrić is maximal: every congruence on its morphisms preserved by the operations on morphisms and uniform formula substitution is either equality or identifies every pair of parallel morphisms. The formalization gives two proofs of maximality and proves the congruence dichotomy. It also proves that the identity and zero endomorphism of each variable are distinct, and that there is no morphism from the terminal object to the initial object.",
   "authors": [
     "Florian Lengyel"
   ],
   "repository": "https://github.com/flengyel/Dosen-Petric-Maximality",
-  "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+  "commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
   "project_path": null,
   "declarations": [
     "DosenPetric.Palomar.maximality",
@@ -31,7 +31,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-11-01T15:13:30Z",
+  "published_at": "2026-11-03T15:09:39Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -45,11 +45,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "5dbee39bea09539bd130f729e82636419f71f920",
+        "commit": "76a4ea71f257746bb6ea2cb2e686e85914c7347c",
         "fork_repository": "PalomarArchive/flengyel--Dosen-Petric-Maximality--63db84754d7f",
         "source_repository": "flengyel/Dosen-Petric-Maximality"
       }
     ]
   },
-  "statement_hash": "sha256:90eee16b871e1946e6e0041fcf31a0cce10aa380ba69a8b76f32d3aea89e4e1e"
+  "statement_hash": "sha256:ef615573143869b9288daac9a8a667e126e50aa4bcabbed68adbbd3d64c1fa24"
 }

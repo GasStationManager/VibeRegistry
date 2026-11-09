@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000015",
+  "version": 1,
+  "title": "QuarticPairing: the pairing of the twists in Conjecture 1.2 of David, Dunn, Hamieh and Lin",
+  "abstract": "Conjecture 1.2 of C. David, A. Dunn, A. Hamieh and H. Lin (arXiv:2306.11875) asserts that the sums S_beta(X; l) of normalized quartic Gauss sums g(c) over primary primes c of Z[i] with N(c) <= X and c = beta (mod 4), twisted by (conj(c)/|c|)^l and weighted by the von Mangoldt function, are b_beta X^(3/4) + O(X^(1/2+eps)) with b_beta nonzero when l = 0 and O(X^(1/2+eps)) when l is nonzero. The development proves that if g(c)^2 = -kappa c/|c| for a fixed unit kappa on the support of the weight (the identity (1.2) of the same paper), then g(c) conj(c)/|c| = -kappa conj(g(c)), so S_beta(X; 1) = -kappa conj(S_beta(X; 0)), and the cases l = 0 and l = 1 of the conjecture force b_beta = 0, which the conjecture excludes; the same holds when the identity fails on an exceptional set of weight O(X^(1/2+eps)). More generally S_beta(X; 1 - l) = -kappa conj(S_beta(X; l)) for every l. The corrected conjecture, with main term -kappa conj(b_beta) X^(3/4) at l = 1, is shown equivalent under the identity to its cases l <= 0, and that main term is shown to be the only one compatible with the case l = 0. It also proves the pairing identities A(nu^3, -m) = -kappa conj A(nu, m) for the twisted moments and the fact behind the special role of order four: if |g| = 1 and g^k = xi then conj(g) = g^(k-1) conj(xi). The Gauss sum and the von Mangoldt function are abstract functions on the Gaussian integers, so no quartic residue symbol is defined.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/QuarticPairing",
+  "commit": "7ad815405be5e161e2c48dd9d4413ae5a214b9b8",
+  "project_path": null,
+  "declarations": [
+    "QuarticPairing.pointwise_pairing",
+    "QuarticPairing.pairing_of_twists",
+    "QuarticPairing.pairing_of_twists_defect",
+    "QuarticPairing.pairing_identities",
+    "QuarticPairing.why_quartic",
+    "QuarticPairing.conjecture12_inconsistent",
+    "QuarticPairing.conjecture12_inconsistent_of_defect",
+    "QuarticPairing.reflection_of_twists",
+    "QuarticPairing.amended_conjecture_consistent",
+    "QuarticPairing.main_term_one_forced"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11L05",
+      "11R18",
+      "11N13",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T16:14:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7ad815405be5e161e2c48dd9d4413ae5a214b9b8",
+        "fork_repository": "PalomarArchive/jkfarland-bot--QuarticPairing--f9e7ccd774c6",
+        "source_repository": "jkfarland-bot/QuarticPairing"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f82bc816d0cd651b600ebaa94797e6f1ee5d297ed68f6d4b2582c8082c72d459"
+}

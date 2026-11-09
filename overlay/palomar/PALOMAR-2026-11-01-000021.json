@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-11-01-000021",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-01-000021",
-  "version": 1,
+  "version": 2,
   "title": "Clique partitions of chordal graphs: quantitative stability and sharp eventual bounds",
-  "abstract": "A Lean 4 / Mathlib formalization of the chordal results of the author's preprint \"Clique partitions with rooted simplicial defect: quantitative stability and sharp eventual bounds\" (Erdős #81 series, Paper IV). With M(n) = ⌊n(n+1)/6⌋: there is b such that every chordal graph on n vertices has a clique partition into pieces of order at most four with at most M(n) + b pieces (Theorem A); for n large every chordal graph on n vertices has one with at most M(n) pieces, and some chordal graph on n vertices has one with exactly M(n) pieces that is optimal among all clique partitions (Theorem B, the bound asked in Erdős Problem #81 and its sharpness); 1/6 is the least quadratic coefficient (§6.3); the uniform mixed rounding of fractional triangle/K₄ packings (Theorem 3.1); integral stability with explicit constants and edit distance at most 16δ to a complete-split graph, for 0 ≤ δ ≤ γn² with γ = 10⁻¹⁶/4 (Theorem 6.1); same-root control of near-optimal partitions: one clique root satisfies all the conclusions of Theorem 6.1 and, for it, every partition with at most M(n) + τ pieces has at most τ + 48δ noncanonical pieces (Corollary 6.1a); the root-defect identity (6.7b); and the eventual classification of the extremal chordal graphs as complete-split graphs with a core of optimal size (Corollary 6.2). Eight statements. The thresholds N are existential; b and N are not claimed optimal.",
+  "abstract": "A Lean 4 / Mathlib formalization of the chordal results of the author's preprint \"Clique partitions with rooted simplicial defect: quantitative stability and sharp eventual bounds\" (Erdős #81 series, Paper IV). With M(n) = ⌊n(n+1)/6⌋: there is b such that every chordal graph on n vertices has a clique partition into pieces of order at most four with at most M(n) + b pieces (Theorem A); for n large every chordal graph on n vertices has one with at most M(n) pieces, and some chordal graph on n vertices has one with exactly M(n) pieces that is optimal among all clique partitions (Theorem B, the bound asked in Erdős Problem #81 and its sharpness); 1/6 is the least quadratic coefficient (§6.3); the uniform mixed rounding of fractional triangle/K₄ packings (Theorem 3.1); integral stability with explicit constants and edit distance at most 16δ to a complete-split graph, for 0 ≤ δ ≤ γn² with γ = 10⁻¹⁶/4 (Theorem 6.1); same-root control of near-optimal partitions: one clique root satisfies all the conclusions of Theorem 6.1 and, for it, every partition with at most M(n) + τ pieces has at most τ + 48δ noncanonical pieces (Corollary 6.1a); the root-defect identity (6.7b); and the eventual classification of the extremal chordal graphs as complete-split graphs with a core of optimal size (Corollary 6.2). Version 2 adds the fixed-defect results for graphs of rooted simplicial defect at most s: the sharp eventual bound Q_s(n) = M(n + s) − C(s + 1, 2), attained by a partition optimal among all clique partitions (Theorem C); same-root stability with A_s = 2·10⁴¹·(s + 1)⁸ for 0 ≤ δ ≤ γn², edit distance at most A_s δ, at most τ + (1 + 7A_s)δ noncanonical pieces carrying at most 10τ + 10(1 + 7A_s)δ edges (Theorem C′); comparison with an optimal-size template at distance at most A_s δ + n√((1 + 4A_s)δ) and the equality case cp = c₄ = Q_s(n) (Corollary 6.3); the necessity of the square-root term (Proposition 6.3a); the bounds F₄(G) ≤ M(n − s) + ns (minus C(s + 1, 2) when 4s ≤ n) and their integral form up to εn² (Proposition 6.4); the sublinear-defect bound n²/6 + o(n²) and root stability (Theorem 6.5); the bound Q_s(n) for all s ≤ S once n ≥ T(P(S)), an explicit tower (Corollary 6.6); and the annex inequality: a chordal K_{d+2}-free graph has fractional triangle packing number at most ν₃ + (10 + d/2)n (G.1). 21 statements. The thresholds N and γ in Theorems B, C, C′ and Corollary 6.3 are existential; b, N, A_s and the tower are not claimed optimal.",
   "authors": [
     "Juan Pablo Traverso Gianini"
   ],
   "repository": "https://github.com/jtraverso/erdos81-chordal-quantitative-stability",
-  "commit": "0e1cd910f2e77955cd8165e80fffb6d8dae91378",
+  "commit": "39104cffdbc26ee96eeb9091d9f75bfecf6d540e",
   "project_path": null,
   "declarations": [
     "ErdosPaperIV.theorem_A",
@@ -19,7 +19,20 @@
     "ErdosPaperIV.theorem_6_1",
     "ErdosPaperIV.corollary_6_1a",
     "ErdosPaperIV.identity_6_7b",
-    "ErdosPaperIV.corollary_6_2"
+    "ErdosPaperIV.corollary_6_2",
+    "ErdosPaperIV.theorem_C",
+    "ErdosPaperIV.theorem_C_prime",
+    "ErdosPaperIV.corollary_6_3",
+    "ErdosPaperIV.corollary_6_3_equality",
+    "ErdosPaperIV.proposition_6_3a",
+    "ErdosPaperIV.proposition_6_3a_deficit_one",
+    "ErdosPaperIV.proposition_6_4",
+    "ErdosPaperIV.proposition_6_4_integral",
+    "ErdosPaperIV.theorem_6_5_partition_bound",
+    "ErdosPaperIV.theorem_6_5_stability",
+    "ErdosPaperIV.corollary_6_6",
+    "ErdosPaperIV.corollary_6_6_sMax",
+    "ErdosPaperIV.chordal_gap_linear_cliqueFree"
   ],
   "informal": {},
   "classification": {
@@ -33,7 +46,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-11-01T14:52:47Z",
+  "published_at": "2026-11-03T16:59:28Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -47,11 +60,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "0e1cd910f2e77955cd8165e80fffb6d8dae91378",
+        "commit": "39104cffdbc26ee96eeb9091d9f75bfecf6d540e",
         "fork_repository": "PalomarArchive/jtraverso--erdos81-chordal-quantitative-stability--77dfe98a72ff",
         "source_repository": "jtraverso/erdos81-chordal-quantitative-stability"
       }
     ]
   },
-  "statement_hash": "sha256:27b5f061da08a51606fcb26768b7efef65bf4b895fa8a93539e1dd62c51eaf09"
+  "statement_hash": "sha256:7e71cec972cf4554bdfdcf8aeb654090d7a9a2e740190ba4ef3a947056c52fad"
 }

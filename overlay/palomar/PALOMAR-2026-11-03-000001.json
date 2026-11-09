@@ -1,0 +1,66 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000001",
+  "version": 1,
+  "title": "QuadraticFloorII: fibre sums and quartic traces at conductor 8lp",
+  "abstract": "Sequel to QuadraticFloor. For an odd prime p, the alternating floor sums S_{A,B,C}(p) = sum over 0 <= n < p of (-1)^floor((A n^2 + B n + C)/p) with admissible (B, C) are averages of first Bernoulli numbers of the odd characters vartheta_{p,psi} = eta_p chi_{-4}^delta psi modulo 8Ap. The development proves that, weighted by psi_0(b)^2 and summed over the units b modulo A, these sums give minus the sum of B_{1,vartheta_{p,psi}} over the fibre psi^2 = psi_0^2, which is real when psi_0^4 = 1; that for a prime l = 1 (mod 4), a quartic character xi modulo l and an odd prime p != l the real part of B_{1,Theta_{l,p}}, Theta_{l,p} = vartheta_{p,xi}, and the Bernoulli number of eta_p (./l) are signed combinations of floor sums (the case l = 13 included); the Euler-factor relation B_{1,f 1_{l does not divide}}^{(ml)} = (1 - f(l)) B_{1,f}^{(m)} and the class-number shapes of the coefficients three and five; the quarter-range formula B_{1,vartheta_{p,psi}}^{(8Ap)} = -sum_{0<x<=2Ap} vartheta_{p,psi}(x); and an elementary proof that both coordinates of B_{1,Theta_{l,p}}^{(8lp)} are even integers, for every odd prime p. Every Bernoulli number is taken at a stated modulus; 8lp is the conductor of Theta_{l,p} only for p != l.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/QuadraticFloorII",
+  "commit": "86f0b48f6a9384da671762c5da8b0eaf9cf0c807",
+  "project_path": null,
+  "declarations": [
+    "QuadraticFloorII.euler_factor",
+    "QuadraticFloorII.euler_factor_eta",
+    "QuadraticFloorII.floorSum_three_class",
+    "QuadraticFloorII.class_twentyfour",
+    "QuadraticFloorII.class_forty",
+    "QuadraticFloorII.fibre_sum",
+    "QuadraticFloorII.fibre_sum_real",
+    "QuadraticFloorII.quartic_exists",
+    "QuadraticFloorII.quartic_fibres",
+    "QuadraticFloorII.conductor_trace",
+    "QuadraticFloorII.conductor_quadratic",
+    "QuadraticFloorII.conductor_thirteen",
+    "QuadraticFloorII.quarter_range",
+    "QuadraticFloorII.conductor_even",
+    "QuadraticFloorII.quartic_trace_even"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A15",
+      "11B68",
+      "11R29",
+      "11R16",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T00:07:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "86f0b48f6a9384da671762c5da8b0eaf9cf0c807",
+        "fork_repository": "PalomarArchive/jkfarland-bot--QuadraticFloorII--8a16fe08886e",
+        "source_repository": "jkfarland-bot/QuadraticFloorII"
+      }
+    ]
+  },
+  "statement_hash": "sha256:36023ff9d59014fffb13d50b7499894aee2e08b985094c4618d0af06523333f5"
+}

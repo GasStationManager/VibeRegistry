@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000009",
+  "version": 1,
+  "title": "Log-Sobolev inequality on finite cyclic groups",
+  "abstract": "Lean verification of the inequality in Theorem 1: the word-length log-Sobolev inequality on ZMod n for n ≥ 4 and nonnegative real functions.",
+  "authors": [
+    "Xinyuan Xie",
+    "Haonan Zhang"
+  ],
+  "repository": "https://github.com/XinyuanXie-hub/cyclic-lsi-new",
+  "commit": "e05a9dc89e5c6843f2c769960a919bc7b3f99f19",
+  "project_path": null,
+  "declarations": [
+    "CyclicLsi.theorem1"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.FA"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-09T04:14:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e05a9dc89e5c6843f2c769960a919bc7b3f99f19",
+        "fork_repository": "PalomarArchive/XinyuanXie-hub--cyclic-lsi-new--1a736ea3ef06",
+        "source_repository": "XinyuanXie-hub/cyclic-lsi-new"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a48e5443c11d2fae7ad584b6edd2e2821c1c8a66827f0c1d8066c7ba3ef109ef"
+}

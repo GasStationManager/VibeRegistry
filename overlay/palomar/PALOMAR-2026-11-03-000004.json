@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000004",
+  "version": 1,
+  "title": "Productive complements and one-one completeness for extensional lambda properties",
+  "abstract": "Formalizes a general constructive reduction from productivity and an injectivization theorem for numerical-extensional closed lambda languages.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy José Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "1e6513fb59a5e5947992e4937ce4c05f4a0a4109",
+  "project_path": "lambda-productive",
+  "declarations": [
+    "LambdaTuring.productiveSingleton_codes",
+    "LambdaTuring.closed_productive_uniform_codes",
+    "LambdaTuring.closed_productive_uniform_primrec",
+    "LambdaTuring.closed_productive_RE_hard",
+    "LambdaTuring.injectivizeSyntax_computable",
+    "LambdaTuring.injectivizeSyntax_primrec",
+    "LambdaTuring.injectivizeSyntax_injective",
+    "LambdaTuring.closed_extensional_injectivize",
+    "LambdaTuring.closed_productive_extensional_oneOne_hard",
+    "LambdaTuring.closed_productive_extensional_oneOne_primrec",
+    "LambdaTuring.closed_productive_extensional_oneOne_complete",
+    "LambdaTuring.closed_zero_extensional_creative"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-03T01:03:58Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1e6513fb59a5e5947992e4937ce4c05f4a0a4109",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:efb75a0ec7142d5abbc06ab8f75671334189d86e1d087a9b09f2ab9d8142cd8d"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000001",
+  "version": 1,
+  "title": "Complete minors and average degree (Kostochka–Thomason)",
+  "abstract": "A Lean 4 / Mathlib formalization of the Kostochka–Thomason theorem, following the short proof of Alon, Krivelevich and Sudakov. complete_minor_of_edges (their Theorem 1): there is d0 such that for every integer d ≥ d0, every nonempty finite simple graph with at least d·|V| edges has the complete graph K_t as a minor for every natural number t ≤ d / (10 √(ln d)). kostochka_thomason: there is a constant c > 0 such that for every integer d ≥ 2, every nonempty finite simple graph with at least d·|V| edges (average degree at least 2d) has a K_t minor for every t ≤ c·d / √(ln d). Minors are branch-set models, with the definition of the registered entry Mader's theorem and Hadwiger's conjecture for t ≤ 4, whose library is a pinned dependency. Two statements; the thresholds d0 and c are existential (the proof gives d0 = ⌈exp(R0²)⌉ + 1 with R0 ≥ 1400).",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/kostochka-thomason-minors",
+  "commit": "c7ddf34b1e4f9ba71932003c91176e2e6bb92d9f",
+  "project_path": null,
+  "declarations": [
+    "KostochkaThomason.complete_minor_of_edges",
+    "KostochkaThomason.kostochka_thomason"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C83",
+      "05C35",
+      "05C80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T00:54:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c7ddf34b1e4f9ba71932003c91176e2e6bb92d9f",
+        "fork_repository": "PalomarArchive/jtraverso--kostochka-thomason-minors--045d5f0fff3c",
+        "source_repository": "jtraverso/kostochka-thomason-minors"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ce31f9782954d36627e3b4b409bfe0abad4343fec92b373d5f552dd88be06538"
+}

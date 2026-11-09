@@ -1,11 +1,11 @@
 # Sign-off packet — Archon FirstProof Results
 
-*Generated 2026-11-02 10:27 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-11-09 10:48 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `archon-first-proof`
 - **Upstream**: https://github.com/frenzymath/Archon-FirstProof-Results @ `35550f2bc0a5`
 - **Lean**: leanprover/lean4:v4.28.0
-- **Machine checks**: comparator, nanoda — overall **pass** at 2026-11-01T08:45:08Z
+- **Machine checks**: comparator, nanoda — overall **pass** at 2026-11-08T08:37:45Z
 - **Informal statements**: none adopted yet — run `python3 scripts/fetch_blueprint_statements.py entries/archon-first-proof.toml`
 
 ## What you are attesting

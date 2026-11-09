@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000002",
+  "version": 1,
+  "title": "The Anning-Erdős theorem: an infinite set of points in the plane with integer distances lies on a line",
+  "abstract": "A machine-checked proof that an infinite set of points in the Euclidean plane whose pairwise distances are all integers is contained in a line (Anning and Erdős, 1945). Formal Conjectures states it next to the Erdős-Ulam problem on dense rational-distance sets, which is open; its audience is distance problems in discrete geometry. It is the statement erdos_ulam_problem.variants.anning_erdos of Formal Conjectures (ErdosUlamProblem.lean), which marks it research solved. The result is classical and no priority is claimed. The proof follows Erdős's short argument: for three points A, B, C not on a line, the differences |PA| - |PB| and |PA| - |PC| take finitely many values, and in place of the bound on how often two hyperbolas meet, each pair of values is shown to allow only finitely many points P, as the roots of a quadratic in |PA|.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/fc-anning-erdos",
+  "commit": "5b3e4ae17a1a7d37faf639f0ef194f1ef42af3a4",
+  "project_path": null,
+  "declarations": [
+    "ErdosUlamProblem.erdos_ulam_problem.variants.anning_erdos"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C10",
+      "51K05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T00:14:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5b3e4ae17a1a7d37faf639f0ef194f1ef42af3a4",
+        "fork_repository": "PalomarArchive/zblore--fc-anning-erdos--c5a5e76ece97",
+        "source_repository": "zblore/fc-anning-erdos"
+      }
+    ]
+  },
+  "statement_hash": "sha256:14253b9b2015e4ce685ebe36142eff64269c89293848f938eff9da5b862ec7be"
+}

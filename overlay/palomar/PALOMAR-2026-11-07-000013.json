@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000013",
+  "version": 1,
+  "title": "The Banach-Mazur rotation problem in finite dimensions: a transitive isometry group forces a Euclidean norm",
+  "abstract": "A machine-checked proof that a finite-dimensional real normed space whose linear isometries act transitively on the unit sphere is Euclidean. This is the finite-dimensional case of the Mazur rotations problem, which appeared in Banach's 1932 book and is surveyed by Cabello Sanchez, Ferenczi and Randrianantoanina; its audience is the geometry of Banach spaces and their symmetries. It is the statement banach_mazur_rotation_problem.finite_dimensional of Formal Conjectures (BanachMazurRotation.lean), which marks it research solved. The result is classical and no priority is claimed. The proof takes the classical route: the isometries form a compact group, averaging a squared Euclidean norm over Haar measure gives an invariant quadratic form, and transitivity makes it a multiple of the squared norm. Mathlib has no topology on the isometry group, so the entry also builds it as a compact topological group with Haar measure. The general problem for separable Banach spaces, which Formal Conjectures marks research open, is not addressed.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/fc-banach-mazur",
+  "commit": "b72450ef02de7b022d8d21b80884da581ac21daf",
+  "project_path": null,
+  "declarations": [
+    "BanachMazurRotation.banach_mazur_rotation_problem.finite_dimensional"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.MG"
+    ],
+    "msc2020": [
+      "46B04",
+      "46C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T17:14:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b72450ef02de7b022d8d21b80884da581ac21daf",
+        "fork_repository": "PalomarArchive/zblore--fc-banach-mazur--c06cb0f1aa44",
+        "source_repository": "zblore/fc-banach-mazur"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cff10ec52230382c15322d821c857c35e0d214f09d283cdc897f39ca26355d56"
+}

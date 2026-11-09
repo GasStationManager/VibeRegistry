@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000015",
+  "version": 1,
+  "title": "A call-by-name to call-by-value CPS adequacy theorem",
+  "abstract": "Proves closed-source weak call-by-name convergence is equivalent to weak call-by-value convergence of a concrete CPS translation with exact translated-value readback.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy José Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "a38472ab8b3283ffb88fd258eaa57a490242e40c",
+  "project_path": "lambda-cps-adequacy",
+  "declarations": [
+    "LambdaTuring.weakCBVStep_deterministic",
+    "LambdaTuring.weakCBVPath_beta",
+    "LambdaTuring.nameToValueCPS_scoped",
+    "LambdaTuring.nameToValueCPS_substAt",
+    "LambdaTuring.cbv_value_implies_name_value",
+    "LambdaTuring.head_to_valueCPS_forward",
+    "LambdaTuring.valueCPS_reflect_exact",
+    "LambdaTuring.valueCPS_terminates_iff_head_value",
+    "LambdaTuring.discardOmega_cps_terminates"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-03T05:16:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a38472ab8b3283ffb88fd258eaa57a490242e40c",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fcce4e3ca8ec56dcd936dbd4eb3ffc3548e0263384171782d989862df7ec5af2"
+}

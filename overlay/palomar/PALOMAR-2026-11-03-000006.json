@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000006",
+  "version": 1,
+  "title": "Erdős Problem 1033: a butterfly blow-up beating 2(√3 - 1)",
+  "abstract": "Lean 4 / Mathlib proof that the Bollobás–Erdős question of Erdős Problem 1033 has a negative answer. For every t ≥ 1 an explicit blow-up of the butterfly graph (two triangles sharing a vertex) on n = 668t vertices has 111561t² > n²/4 edges, and every triangle has degree sum exactly 978t, while 978/668 < 2(√3 - 1). Hence it is false that every graph on n vertices with more than n²/4 edges has a triangle with degree sum at least (2(√3 - 1) - o(1))n.",
+  "authors": [
+    "ukniusanqian-alt"
+  ],
+  "repository": "https://github.com/ukniusanqian-alt/erdos654-lean",
+  "commit": "3146ec1b4c120e366c10bbb92dec8de596cd7aa1",
+  "project_path": null,
+  "declarations": [
+    "Erdos1033.erdos_1033"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T02:13:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3146ec1b4c120e366c10bbb92dec8de596cd7aa1",
+        "fork_repository": "PalomarArchive/ukniusanqian-alt--erdos654-lean--6efa91ab92f2",
+        "source_repository": "ukniusanqian-alt/erdos654-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e19462023c50955fd008851bdd0e41f71c0a2c2a3114d8dac266f596b81b1cb4"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000029",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000029",
+  "version": 1,
+  "title": "Helfgott's Proposition 6.2 on the ternary Goldbach minor arcs",
+  "abstract": "A Lean 4 proof of Lemma 6.1 and Proposition 6.2 of H. A. Helfgott, The ternary Goldbach conjecture is true, arXiv 1312.7748v2, Section 6.1, pages 46 to 48. Lemma 6.1 is a summation by parts bound. Proposition 6.2 turns l2 bounds on S1 over the major arcs and l-infinity bounds on S2 off them into a bound for the integral of |S1|^2 |S2| over the minor arcs, without the factor log x that a plain product of norms would lose. Lemma 6.1 is stated as in the paper. Proposition 6.2 is given in three forms: an abstract measure form with a natural upper endpoint; the arcs of display 3.5 for a finite exponential polynomial S1 and a natural upper endpoint; and absolutely summable coefficients with a real upper endpoint, over any increasing measurable family of sets. The hypotheses 6.4 and 6.5 of the Proposition stay hypotheses, as in the paper, and are not proved for any exponential sum. This is one step of Helfgott's proof. The ternary Goldbach theorem itself is not formalized here, nor is Theorem 6.3 of the paper. Binary Goldbach is open and is not claimed. AI agents wrote the Lean code, Claude, Codex and other lab agents, as listed in PORTING.md, and it is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "d0d978d2cf565be71d6949ce529ed5503affa72e",
+  "project_path": "entries/helfgott62",
+  "declarations": [
+    "LeanLab.Helfgott2013.U1538.lemma61_paper",
+    "LeanLab.Helfgott2013.U1538.prop62",
+    "LeanLab.Helfgott2013.U1538.prop62_arcs",
+    "LeanLab.Helfgott2013.U1538.prop62_series_real"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11P55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T22:12:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d0d978d2cf565be71d6949ce529ed5503affa72e",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1a52f43a1e36f0d75ce3611c4140f6051ff8ffda1e13f2c4feed27e2a62237d2"
+}

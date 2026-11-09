@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-16-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-16-000001",
+  "version": 2,
+  "title": "Mader's theorem and Hadwiger's conjecture for t ≤ 4",
+  "abstract": "A Lean 4 / Mathlib formalization of Mader's theorem (a nonempty finite graph of average degree at least 2^(r−2) has a K_r minor), of Dirac's lemma (a graph without a K4 minor has a vertex of degree at most two, hence at most 2n − 3 edges for n ≥ 2), of Mader's bound for K5 (a graph on n ≥ 3 vertices with at least 3n − 5 edges has a K5 minor; equivalently, without a K5 minor it has at most 3n − 6 edges; added in version 2), and of Hadwiger's conjecture for t ≤ 4 (graphs without a K3 minor are 2-colourable, graphs without a K4 minor are 3-colourable). Minors are branch-set models.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/hadwiger-mader",
+  "commit": "a1ffd32233475c21ad474b2f80d57614911df9b0",
+  "project_path": null,
+  "declarations": [
+    "HadwigerMader.mader",
+    "HadwigerMader.exists_degree_le_two",
+    "HadwigerMader.card_edgeFinset_le",
+    "HadwigerMader.isMinor_K5_of_card_edgeFinset",
+    "HadwigerMader.card_edgeFinset_le_of_not_isMinor_K5",
+    "HadwigerMader.colorable_two_of_not_isMinor_K3",
+    "HadwigerMader.colorable_three_of_not_isMinor_K4"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C83",
+      "05C15",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T23:12:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a1ffd32233475c21ad474b2f80d57614911df9b0",
+        "fork_repository": "PalomarArchive/jtraverso--hadwiger-mader--a4b96dfb7362",
+        "source_repository": "jtraverso/hadwiger-mader"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1bc8828eb1df2c44f840698c669a498cff072a70beb34c4c0a32aa97eb2a24b9"
+}

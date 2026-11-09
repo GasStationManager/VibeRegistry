@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000014",
+  "version": 1,
+  "title": "An absolutely maximally entangled state of twelve five-level systems: AME(12, 5) exists",
+  "abstract": "A machine-checked proof that an absolutely maximally entangled state of twelve five-level systems exists. The statement and definitions are Formal Conjectures' (Open Quantum Problem 35, `ame_12_5_open`), copied verbatim into Challenge.lean, so this entry proves Formal Conjectures' own statement; one proof step inside the definition combineFirst is changed so that Comparator can match it, and the definition is unchanged. The witness is the graph state of the AME(12, 5) graph of S. Bevins and Y. Bidav. The proof is a general graph-state criterion over ZMod 5 plus 924 kernel-checked cut certificates.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/fc-ame-12-5",
+  "commit": "e8c1e58c7e4dd324868b6ed6a4ce59b103e2797f",
+  "project_path": null,
+  "declarations": [
+    "OpenQuantumProblem35.ame_12_5_open"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph"
+    ],
+    "msc2020": [
+      "81P40",
+      "05C50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T15:55:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e8c1e58c7e4dd324868b6ed6a4ce59b103e2797f",
+        "fork_repository": "PalomarArchive/zblore--fc-ame-12-5--8ab2faddd2de",
+        "source_repository": "zblore/fc-ame-12-5"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2763379fd6c144f37b3c6535c39a696a6cdd242540b431c499b87ebba2b09592"
+}

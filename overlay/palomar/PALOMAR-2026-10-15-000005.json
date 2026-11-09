@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-15-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-15-000005",
+  "version": 2,
+  "title": "Wagner's planarity criterion and list colouring of planar and K5-minor-free graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of classical results on planar graphs and graphs without a K5 minor. (1) Wagner's theorem (1937): a finite graph is planar if and only if it has neither K5 nor K3,3 as a minor. (2) Škrekovski's theorem (1998): every finite graph without a K5 minor is 5-choosable, proved along the route of Wood and Linusson, and Thomassen's theorem (1994) that every finite planar graph is 5-choosable, as a corollary. (3) DP-colouring: every finite graph without a K5 minor (Li–Wang, 2022), hence every finite planar graph (Dvořák–Postle, 2018), is DP-5-colourable. (4) Voigt's theorem (1993): an explicit planar graph on 238 vertices with lists of four colours has no proper list colouring, so 5 cannot be lowered to 4; its planarity and non-colourability are checked by kernel reduction. (5) Wagner's equivalence of the Four Colour Theorem with Hadwiger's conjecture for K5 (neither side is proved). (6) Wagner's structure theorem (1937, added in version 2): a finite graph has no K5 minor if and only if it is a spanning subgraph of a graph obtained by clique-sums of order at most three, keeping the clique edges, from planar graphs and copies of the Wagner graph V8. Planarity is defined combinatorially, by rotation systems of genus zero (Euler defect 0); as sanity checks K4 is planar and K5, K3,3 are not.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/planar-list-colouring",
+  "commit": "5b262124ae6c99661cf1e75bd0351cc7faab80c5",
+  "project_path": null,
+  "declarations": [
+    "PlanarChoosability.isPlanar_iff_minorFree",
+    "PlanarChoosability.k5MinorFree_iff_exists_k5Decomp",
+    "PlanarChoosability.choosableWith_five_of_k5MinorFree",
+    "PlanarChoosability.choosableWith_five_of_isPlanar",
+    "PlanarChoosability.dpColourableWith_five_of_k5MinorFree",
+    "PlanarChoosability.dpColourableWith_five_of_isPlanar",
+    "PlanarChoosability.exists_isPlanar_not_choosableWith_four",
+    "PlanarChoosability.fourColour_iff_hadwigerFive",
+    "PlanarChoosability.isPlanar_K4",
+    "PlanarChoosability.not_isPlanar_K5",
+    "PlanarChoosability.not_isPlanar_K33"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C10",
+      "05C15",
+      "05C83"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T23:18:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5b262124ae6c99661cf1e75bd0351cc7faab80c5",
+        "fork_repository": "PalomarArchive/jtraverso--planar-list-colouring--03a15f1929ab",
+        "source_repository": "jtraverso/planar-list-colouring"
+      }
+    ]
+  },
+  "statement_hash": "sha256:303540282a871e84415a179cbdee66fc97b20b19269e6ed0346be2597d22516d"
+}

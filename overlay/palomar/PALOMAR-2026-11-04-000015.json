@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000015",
+  "version": 1,
+  "title": "Odd-ordered Cayley graphs satisfy Erdős–Gyárfás",
+  "abstract": "Every Cayley graph of a finite group of odd order with an inverse-closed, identity-free generating set of size at least three contains a simple cycle of length 2^n for some n ≥ 2. For a noncyclic group of odd order, two such cycles can be chosen as translates meeting at exactly one vertex. A symmetric figure-eight lifts through an abelian normal subgroup of an odd-order group, and a power-of-two cycle lifts through a normal 2-subgroup of a finite group. The cycle conclusion also holds for finite nilpotent groups with a generating set satisfying the same degree condition.",
+  "authors": [
+    "Michael C. Burkhart"
+  ],
+  "repository": "https://github.com/burkh4rt/Cayley-Erdos-Gyarfas-Formalized",
+  "commit": "111aa033acfab934208ce6b2e0cebecacfd6bd24",
+  "project_path": null,
+  "declarations": [
+    "CayleyErdősGyárfás.odd_order_cayley_contains_two_power_cycle",
+    "CayleyErdősGyárfás.noncyclic_odd_order_symmetric_figure_eight",
+    "CayleyErdősGyárfás.symmetric_figure_eight_lifts_of_abelian",
+    "CayleyErdősGyárfás.two_power_cycle_lifts_of_normal_two_subgroup",
+    "CayleyErdősGyárfás.nilpotent_cayley_contains_two_power_cycle"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.GR"
+    ],
+    "msc2020": [
+      "05C38",
+      "05C25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T17:00:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "111aa033acfab934208ce6b2e0cebecacfd6bd24",
+        "fork_repository": "PalomarArchive/burkh4rt--Cayley-Erdos-Gyarfas-Formalized--b92d034f77c5",
+        "source_repository": "burkh4rt/Cayley-Erdos-Gyarfas-Formalized"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1c8c8ad6c1344b23f7d81569008ed2597498f7c8ec257c106bc855c0281b3a0b"
+}

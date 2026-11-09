@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000009",
+  "version": 1,
+  "title": "Erdős Problem 654: the Aletheia counterexample",
+  "abstract": "Lean 4 / Mathlib proof that Erdős Problem 654 has a negative answer: for every m ≥ 10 there is a set of n = 4m points in the Euclidean plane, no four on a circle, in which every point has fewer than 3n/4 distinct distances to the other points. Consequently it is false that every n-point planar set with no four concyclic points has a point with (1 - o(1))n distinct distances. The construction (Aletheia; Feng et al., arXiv:2601.22401) places the points (0, ±3^(k+1)) and (±2^(j+1), 0) on the two coordinate axes.",
+  "authors": [
+    "ukniusanqian-alt"
+  ],
+  "repository": "https://github.com/ukniusanqian-alt/erdos654-lean",
+  "commit": "3146ec1b4c120e366c10bbb92dec8de596cd7aa1",
+  "project_path": null,
+  "declarations": [
+    "Erdos654.erdos_654.variants.feng",
+    "Erdos654.erdos_654.parts.i"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T03:27:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3146ec1b4c120e366c10bbb92dec8de596cd7aa1",
+        "fork_repository": "PalomarArchive/ukniusanqian-alt--erdos654-lean--6efa91ab92f2",
+        "source_repository": "ukniusanqian-alt/erdos654-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:032bad615fc7bcb38c1dd0dd1eb14e3b87fc4cb6361680871a78e42ccfa90fa4"
+}

@@ -1,0 +1,71 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000031",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000031",
+  "version": 1,
+  "title": "ConjCoord: a class number congruence modulo 16 for p = 5 (mod 16) and Conjecture coord of Paper V",
+  "abstract": "For primes p = 5 (mod 16), p = a^2 + b^2 with b even, the companion note proves h(-8p) = h(-4p) + 8 [b = +-6 (mod 16)] (mod 16), which settles Conjecture 5.3 of Paper V of the K Project series. The proof writes 4(h(-8p) - h(-4p)) as a combination of representation numbers of x^2 + 2y^2 + 4z^2 and x^2 + 2y^2 + 2z^2. It shows that a weight-2 form Phi built from sieved theta series vanishes modulo 256, by Sturm's theorem and a finite check below the bound 512, and reads off the coefficient at p. This development formalizes the proof with the modular input (Serre-Stark modularity and Sturm's theorem) and Gauss's three-square class number formula as explicit hypotheses. It proves the finite check by kernel computation, the iteration of Sturm's theorem, the inversion of theta(1), the bijections relating the ternary forms to sums of three squares, the uniqueness argument for p = a^2 + b^2, the congruence, Conjecture 5.3 given Paper V Theorem 5.2(iv), and the corollaries on the octant sum and with Desnoux's congruence.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/ConjCoord",
+  "commit": "c956f4808ba6c6f15a1d4234a04cd8fc56be2711",
+  "project_path": null,
+  "declarations": [
+    "ConjCoord.tCoeff_check",
+    "ConjCoord.phi_eq",
+    "ConjCoord.phi_check",
+    "ConjCoord.sturm_iter",
+    "ConjCoord.phi_dvd",
+    "ConjCoord.tCoeff_dvd",
+    "ConjCoord.r3_eq_three_mul_reps122",
+    "ConjCoord.r3_two_mul_eq",
+    "ConjCoord.reps112_eq",
+    "ConjCoord.lemma3",
+    "ConjCoord.two_sq_unique",
+    "ConjCoord.gCount_prime",
+    "ConjCoord.reps_congruence",
+    "ConjCoord.r3_congruence",
+    "ConjCoord.class_number_congruence",
+    "ConjCoord.conjecture_coord",
+    "ConjCoord.octant_sum",
+    "ConjCoord.octant_nonresidues",
+    "ConjCoord.desnoux_halves_exact",
+    "ConjCoord.desnoux_corollary"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R29",
+      "11E25",
+      "11F37",
+      "11A15",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T22:25:53Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c956f4808ba6c6f15a1d4234a04cd8fc56be2711",
+        "fork_repository": "PalomarArchive/jkfarland-bot--ConjCoord--9304a71ebfc2",
+        "source_repository": "jkfarland-bot/ConjCoord"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a757e2c77cddfbdba079ea902afd445129060022ea9e6806ec6848058f316046"
+}

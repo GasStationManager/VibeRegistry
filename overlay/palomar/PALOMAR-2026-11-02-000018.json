@@ -1,0 +1,68 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000018",
+  "version": 1,
+  "title": "The Arithmetic of Time: reversible units of a degree-nine field. The units of K = LM (L, M cubic) with rank-one Hermitian symbol are exactly those of trivial relative norm to L and to M, a group of rank two, and exactly those whose Schur multipliers run both ways",
+  "abstract": "Kernel-checked proofs, in Lean 4 + Mathlib, of ten statements. Let K be a number field of degree 9 containing a totally real cubic field L and a cubic field M with one real place. Then K = LM has signature (3, 3), and its nine embeddings are the pairs (lambda, mu). A slot assignment, fixed by a labelling of L's embeddings and a non-real embedding mu_1 of M, places the nine conjugates of x in K in a 3 x 3 Hermitian array, the symbol of x; the symbol of x^-1 is its entrywise (Hadamard) inverse. (1) For every finite index type, a positive semidefinite complex matrix with no zero entry has positive semidefinite Hadamard inverse iff it is w w* (rank one); (2) for every complex matrix with no zero entry (positive semidefiniteness not assumed), the Schur multipliers of the matrix and of its Hadamard inverse are both completely positive iff it is w w*. Statements 1-2 are supporting lemmas. (3) The setting: L and M are linearly disjoint, L M = K, and K has 3 real and 3 complex places. (4) The slot assignment exists, is a bijection Fin 3 x Fin 3 ~ (K -> C) with real diagonal and conjugate-symmetric slots, and is unique. (5) For x != 0 in K, the symbol of x is rank one iff N_{K/L}(x) and N_{K/M}(x) are one and the same positive rational number. (6) For a unit u, the symbol is rank one iff N_{K/L}(u) = N_{K/M}(u) = 1. (7) These units H are torsion-free and their logarithmic embedding spans a Z-module of rank 2, so H is isomorphic to Z^2 (the isomorphism is not itself a Lean term). (8) For a unit u, the Schur multipliers of the symbols of u and of u^-1 are both completely positive iff u is in H. (9) There is a unit of infinite order all of whose powers run both ways. (10) The degree-four contrast: in a field with two real places and one complex place, both Schur multipliers of the 2 x 2 place symbol of a unit u and of u^-1 are completely positive iff u is positive at both real places and |sigma(u)| = 1. Statements 4-6, 8 and 9 hold for every labelling and every non-real mu_1. The compositum place bookkeeping is ported, with citation, from the registered entry PALOMAR-2026-10-21-000012; it is not re-proved. Application to time (no compared statement asserts it): in the arithmetic of time the tick is multiplication by a unit; if a unit acts by multiplication on a Hermitian register of its places and an admissible tick must be completely positive, then in degree four a tick u != 1 runs both ways only through a conjugate on the unit circle (Salem type); in a field such as Q(Q), Q^4 = Q + 1, the only such elements are +-1 (not proved in this entry; it follows from statement 17 of the registered entry PALOMAR-2026-10-21-000012, since Q(Q) is contained in Q(rho, Q)), so there the arithmetic gives time a direction; in degree nine a rank-two group of units runs both ways, so the direction is not a property of arithmetic in general: it rests on the degree-four shape and on Q(Q) having no conjugate on the unit circle. The ticks are completely positive, not trace-non-increasing. Companion of the registered entry PALOMAR-2026-08-19-000006 (the arithmetic of time), whose README Scope section is reproduced verbatim in this entry's README.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/arithmetic-of-time-reversible-units-degree-nine",
+  "commit": "723197b0d1d48fbe12bf19e81683de0090c5ce5c",
+  "project_path": null,
+  "declarations": [
+    "DegreeNine.hadamardInv_posSemidef_iff",
+    "DegreeNine.cp_both_iff_rankOne",
+    "DegreeNine.compositum_setting",
+    "DegreeNine.slot_assignment_exists_unique",
+    "DegreeNine.rankOne_iff_relNorm_eq_ratCast",
+    "DegreeNine.unit_rankOne_iff",
+    "DegreeNine.relNormKernel_torsionFree_rank_two",
+    "DegreeNine.reversible_iff",
+    "DegreeNine.exists_reversible",
+    "DegreeNine.quartic_reversible_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.OA",
+      "math.RA",
+      "quant-ph",
+      "math-ph",
+      "physics.hist-ph"
+    ],
+    "msc2020": [
+      "11R27",
+      "11R16",
+      "11R06",
+      "15B48",
+      "47B49",
+      "81P47",
+      "00A79"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T20:25:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "723197b0d1d48fbe12bf19e81683de0090c5ce5c",
+        "fork_repository": "PalomarArchive/stalex444--arithmetic-of-time-reversible-units-degree-nine--30ddb83bb682",
+        "source_repository": "stalex444/arithmetic-of-time-reversible-units-degree-nine"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fff774289813ebcc4938099f8e6d56ce389ec06f2947b5e45cada2a537c34db2"
+}

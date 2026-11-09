@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000013",
+  "version": 1,
+  "title": "Light paths and only paths in 3-connected planar graphs (Fabrici–Jendrol')",
+  "abstract": "A Lean 4 / Mathlib formalization of the two theorems of Fabrici and Jendrol' (1997), for finite simple graphs with the combinatorial planarity (genus-zero rotation systems) of the registered entry Kuratowski's theorem. Theorem 1 (light_path): a 3-connected planar graph that contains a path on k ≥ 1 vertices contains such a path whose vertices all have degree at most 5k. Theorem 2 (only_paths_light): for every connected planar graph H that is not a path (not isomorphic to pathGraph on its vertex count) and every m, there is a 3-connected planar graph containing a copy of H in which every copy of H (an injective edge-preserving map) has a vertex of degree at least m. Two statements. Theorem 1 follows the proof reproduced in the Jendrol'–Voss survey (maximal counterexample, chords at major vertices, a major vertex with at most five major neighbours). Theorem 2 uses a different construction from the article's: H is completed to an edge-maximal planar graph, whose faces are triangles, and two chains of repeated stellations are inserted in every face, so that the light vertices induce disjoint paths; the result is a plane triangulation, hence 3-connected. The extremal example for 5k is not formalized.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/fabrici-jendrol-light-paths",
+  "commit": "00ea06f84dc1b2b33d58a2b17361fc3a58189814",
+  "project_path": null,
+  "declarations": [
+    "FabriciJendrolTheorem.light_path",
+    "FabriciJendrolTheorem.only_paths_light"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C10",
+      "05C38",
+      "05C07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T15:29:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "00ea06f84dc1b2b33d58a2b17361fc3a58189814",
+        "fork_repository": "PalomarArchive/jtraverso--fabrici-jendrol-light-paths--422e9fe618e5",
+        "source_repository": "jtraverso/fabrici-jendrol-light-paths"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3a63cc56b8c9701c1be89a1103a09970bdb258d56040fa60db749fb4909f481b"
+}

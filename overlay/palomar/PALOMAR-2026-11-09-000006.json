@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000006",
+  "version": 1,
+  "title": "Statistical thresholds for Tensor PCA",
+  "abstract": "We formalize in Lean the principal statistical and constrained-landscape results of Statistical thresholds for Tensor PCA by Jagannath, Lopatto and Miolane, following a local expanded manuscript prepared solely by Patrick Lopatto, the formalization’s maintainer. This elaborated manuscript was prepared to facilitate autoformalization. At nonnegative signal strength in the ordered Gaussian tensor model, we prove the detection threshold below and above criticality for even orders k ≥ 6. For k ≥ 3, we prove the maximum-likelihood value limit at every nonnegative signal strength and the maximum-likelihood absolute-overlap limit away from criticality. We prove optimality bounds for independently randomized measurable unit estimators at nonnegative noncritical strengths, and tensor MMSE formulas at positive noncritical strengths. We also prove the discontinuous overlap transition, consistent testing among fixed nonempty finite families of distinct supercritical strengths, constrained expected and almost-sure energy limits for signed overlaps in [-1,1], and associated variational and landscape conclusions. Almost-sure limits concern fixed parameters and allow arbitrary coupling across dimensions. For interior overlaps, the four-parameter variational reduction establishes equality of infima; unrestricted minimizer attainment is not claimed.",
+  "authors": [
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/lopatto/tensor-pca-public",
+  "commit": "bb8819c75d4c469e58bbe39b30856901751f87cb",
+  "project_path": null,
+  "declarations": [
+    "TensorPCA.Paper.discontinuousTransition",
+    "TensorPCA.Paper.fourParameterReduction",
+    "TensorPCA.Paper.detection",
+    "TensorPCA.Paper.tensorMMSE",
+    "TensorPCA.Paper.estimatorOptimality",
+    "TensorPCA.Paper.mleValue",
+    "TensorPCA.Paper.mleOverlap",
+    "TensorPCA.Paper.mleAttainment",
+    "TensorPCA.Paper.finiteStrengthTesting",
+    "TensorPCA.Paper.variationalConclusions",
+    "TensorPCA.Paper.landscape",
+    "TensorPCA.Paper.constrainedLimit"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.ST"
+    ],
+    "msc2020": [
+      "60B20",
+      "82B44"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T01:14:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "bb8819c75d4c469e58bbe39b30856901751f87cb",
+        "fork_repository": "PalomarArchive/lopatto--tensor-pca-public--596c51e1784c",
+        "source_repository": "lopatto/tensor-pca-public"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0654e9510f93fd11986909ed9ead6a74800edc3ef2c7b5c58ea5d76571b1dc89"
+}

@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-05-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-05-000001",
+  "version": 1,
+  "title": "Equitable strong (vertex-distinguishing) edge colourings: Rudašová–Soták, Theorem 3.1",
+  "abstract": "A Lean 4 / Mathlib formalization of Theorem 3.1 of J. Rudašová and R. Soták, Vertex-distinguishing proper edge colourings of some regular graphs (Discrete Math. 308, 2008). exists_equitable_strong: if a finite simple graph G has a strong (vertex-distinguishing) proper edge colouring with m colours and m ≤ k, then G has an equitable strong proper edge colouring with k colours. One statement. Edge colourings are colourings of the line graph; the palette of a vertex is the set of colours of its edges; strong means distinct vertices have distinct palettes; equitable means the colour classes differ in size by at most one.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/rudasova-sotak-equitable-strong",
+  "commit": "57535a7c821a3186349a815482b5e3a4b987d9d6",
+  "project_path": null,
+  "declarations": [
+    "Balanced.exists_equitable_strong"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-05T01:09:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "57535a7c821a3186349a815482b5e3a4b987d9d6",
+        "fork_repository": "PalomarArchive/jtraverso--rudasova-sotak-equitable-strong--3f0f0beea131",
+        "source_repository": "jtraverso/rudasova-sotak-equitable-strong"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b21239a0361da070f2111992f8969678093e5b4b6ad8d8d42d4d77131db9c439"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000027",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000027",
+  "version": 1,
+  "title": "Exact beta-step cost of call-by-name CPS translation",
+  "abstract": "Proves an exact affine relationship between weak call-by-name head contractions and weak call-by-value contractions of a CPS translation, including translated closing-context tests.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy José Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "212a1fdd2cd74d1f776929a3949c3775d4492a7a",
+  "project_path": "lambda-cps-exact-cost",
+  "declarations": [
+    "LambdaTuring.WeakNameEvalCount.cps_forward",
+    "LambdaTuring.WeakNameEvalCount.head_steps",
+    "LambdaTuring.WeakNameEvalCount.cps_identity",
+    "LambdaTuring.cps_identity_exact_cost",
+    "LambdaTuring.LambdaContext.cps_context_exact_cost"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-03T21:19:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "212a1fdd2cd74d1f776929a3949c3775d4492a7a",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:caf51326529bb4627f89f2931a2cfd85f487cf91be93183435ebbdbc6f12b3c2"
+}

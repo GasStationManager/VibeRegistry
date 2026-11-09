@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000006",
+  "version": 1,
+  "title": "The Strong Perfect Graph Theorem",
+  "abstract": "A Lean 4 proof of the Strong Perfect Graph Theorem of Chudnovsky, Robertson, Seymour and Thomas: a finite graph is perfect if and only if it is Berge. A graph is perfect if every induced subgraph has chromatic number equal to its clique number. It is Berge if neither the graph nor its complement contains an induced cycle of odd length at least five. The proof follows the paper of Chudnovsky, Robertson, Seymour and Thomas (Annals of Mathematics, 2006). It formalizes the decomposition theorem for Berge graphs (Theorem 1.3 of the paper) through the numbered results of Sections 2 to 24. It also proves the earlier results that the paper cites, among them Lovász's weak perfect graph theorem, the results of Cornuéjols and Cunningham on 2-joins, of Chvátal and Sbihi on homogeneous pairs, of Chvátal on star cutsets, and of Roussel and Rubio. The statement in Challenge.lean uses only Mathlib's definitions of induced subgraphs, chromatic number, clique number, cycle graphs and induced containment.",
+  "authors": [
+    "Arshia Soltani Moakhar",
+    "Iman Gholami",
+    "Max Springer",
+    "Mahdi JafariRaviz",
+    "MohammadTaghi Hajiaghayi"
+  ],
+  "repository": "https://github.com/mahdi-jfri/StrongPerfectGraphTheorem",
+  "commit": "f81220fa3d8ebf987d44ab452f3abadb13c0ac2d",
+  "project_path": null,
+  "declarations": [
+    "SimpleGraph.strong_perfect_graph_theorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.DM"
+    ],
+    "msc2020": [
+      "05C17",
+      "05C75",
+      "05C15",
+      "05C69",
+      "05C76"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T05:17:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f81220fa3d8ebf987d44ab452f3abadb13c0ac2d",
+        "fork_repository": "PalomarArchive/mahdi-jfri--StrongPerfectGraphTheorem--4ef2d1ded49b",
+        "source_repository": "mahdi-jfri/StrongPerfectGraphTheorem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3026f221842c8097e42f6ec65fa03392c7787ab95e1bf2b63a562ad1adbb2114"
+}

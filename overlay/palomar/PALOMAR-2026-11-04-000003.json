@@ -1,0 +1,68 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000003",
+  "version": 1,
+  "title": "FixedNumerator: the local step in extending a theorem on quartic Gauss sums over primes to a fixed numerator",
+  "abstract": "Theorem 1.1 of C. David, A. Dunn, A. Hamieh and H. Lin (arXiv:2306.11875) bounds the sums of normalized quartic Gauss sums g(c) over primary primes c of Z[i] in a class modulo 4, twisted by (c/|c|)^l. The companion note extends it to g(nu, c) with any fixed numerator nu. The only new ingredient is a local identity that splits off the primes dividing nu from the coprimality conditions of the Type I Dirichlet series. This development formalizes that step from the identities of DDHL Section 3, taken as hypotheses on an abstract symbol and Gauss sum: the splitting identity g(mu, pi^k c') = (-1)^C(c', pi^k) g(mu, pi^k) g(mu pi^(2k), c') with no condition linking mu and pi, and DDHL (3.6). It proves the identity for the truncated series as an exact finite identity (Lemma 2.2), and removes pi from the coprimality condition for every valuation e = ord_pi(mu) (Corollary 2.3): on the series prime to pi the valuation reduces modulo 4; for every e the splitting has the terms k = 4j <= e and k = e + 1; and for the four exact valuations e = 1, 3 it gives single equations with an explicit finite inverse, for e = 0, 2 the coupled pair of DDHL (8.6)-(8.7). It also proves lower bounds for the determinants on Re s >= 1 and the 2-adic facts behind the signs.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/FixedNumerator",
+  "commit": "817fb1416c9d54140c6bbdd9b2d08f37b481d934",
+  "project_path": null,
+  "declarations": [
+    "FixedNumerator.ddhl_3_6",
+    "FixedNumerator.splitting_identity",
+    "FixedNumerator.numerator_period",
+    "FixedNumerator.primary_sq_mod_four",
+    "FixedNumerator.sign_class_invariant",
+    "FixedNumerator.sign_even_power",
+    "FixedNumerator.lemma_2_2",
+    "FixedNumerator.two_term_split",
+    "FixedNumerator.corollary_2_3_odd",
+    "FixedNumerator.corollary_2_3_odd_inverse",
+    "FixedNumerator.corollary_2_3_coupled",
+    "FixedNumerator.corollary_2_3_reduce",
+    "FixedNumerator.corollary_2_3_general",
+    "FixedNumerator.determinant_lower",
+    "FixedNumerator.determinant_ne_zero",
+    "FixedNumerator.determinant_r1",
+    "FixedNumerator.determinant_r3",
+    "FixedNumerator.determinant_coupled"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11L05",
+      "11R18",
+      "11N13",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T01:56:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "817fb1416c9d54140c6bbdd9b2d08f37b481d934",
+        "fork_repository": "PalomarArchive/jkfarland-bot--FixedNumerator--e1e50d0a0024",
+        "source_repository": "jkfarland-bot/FixedNumerator"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f4bef154fe9edad2660ed35a337f4ff90f937cdfbb9e05c660fba249d0f61c46"
+}

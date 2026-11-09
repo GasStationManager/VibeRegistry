@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-08-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-08-000002",
+  "version": 1,
+  "title": "Four squares in caps, and Jacobi's four-square theorem for odd N",
+  "abstract": "A Lean 4 / Mathlib proof of two results on sums of four squares. (1) Jacobi's four-square theorem for odd N: the number of x : Fin 4 → ℤ with x₀² + x₁² + x₂² + x₃² = N equals 8 ∑_{d ∣ N} d (jacobi_four_squares_odd), following the proof of Andrews, Ekhad and Zeilberger (1993): two finite q-series identities proved by WZ telescoping, combined into a finite identity that is read modulo X^{N+1} in ℚ⟦X⟧. (2) Four squares in caps (four_squares_in_caps): for every unit vector q ∈ ℝ⁴ and every δ > 0 there is M₀ such that every odd m ≥ M₀ is β₀² + β₁² + β₂² + β₃² with β : Fin 4 → ℤ and |βᵢ − √m qᵢ| ≤ δ √m for all i, i.e. the integer points of the sphere of radius √m meet every cap of fixed angular radius. The proof uses the Duke–Friedlander–Iwaniec delta method (in Heath-Brown's form) with Gaussian weights: an exact formula through the theta transformation, Fourier bounds for the cut-off weight, and the Weil bound for Kloosterman sums, imported from the Weil Bounds Toolkit (PALOMAR-2026-11-03-000018) as a lake dependency. The main term is not evaluated: it depends on the center of the cap only through its norm, so comparing caps with a grid of centers reduces the theorem to the lower bound r₄(m) ≥ 8m for odd m, which (1) provides. All constants are effective but not explicit in the statement (M₀ is existential). Two statements; no definitions beyond Mathlib's.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/four-squares-in-caps",
+  "commit": "a1fcaafb270c099ea773706912192adbfec19a83",
+  "project_path": null,
+  "declarations": [
+    "FourSquaresInCaps.jacobi_four_squares_odd",
+    "FourSquaresInCaps.four_squares_in_caps"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11E25",
+      "11P55",
+      "11L05",
+      "05A30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-08T00:24:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a1fcaafb270c099ea773706912192adbfec19a83",
+        "fork_repository": "PalomarArchive/jtraverso--four-squares-in-caps--308878e49a2e",
+        "source_repository": "jtraverso/four-squares-in-caps"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9bf1c34f5054b53cb041d77c6c054d07e0500dc8365cd2c38b72854dd90bd504"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000008",
+  "version": 1,
+  "title": "The Reinhardt conjecture, formalized in Lean 4",
+  "abstract": "The Reinhardt problem asks for the centrally symmetric convex disk in the plane whose densest packing by congruent copies is least dense. Karl Reinhardt (1934) and, independently, Kurt Mahler (1947) found the smoothed octagon, a regular octagon whose corners are cut off by arcs of hyperbolas, each asymptotic to the next two side lines, with greatest packing density delta_oct = (8 - 4 sqrt 2 - log 2)/(2 sqrt 2 - 1) = 0.902414..., and Reinhardt conjectured that no centrally symmetric convex disk packs worse. The conjecture has been open since 1934; Thomas Hales cast it as a problem of Bolza in the calculus of variations (2011) and then as an optimal control problem on SL2(R) (2017), and Hales and Koundinya Vajjha studied that problem in Packings of Smoothed Polygons (2024).\n\nThis entry proves the conjecture with its equality case. Every centrally symmetric convex disk has greatest packing density at least delta_oct, with equality if and only if the disk is the image of the smoothed octagon under an invertible affine map; and the smoothed octagon, in Reinhardt's description, is a centrally symmetric convex disk of greatest packing density delta_oct.\n\nThe proof follows Hales's control formulation. A worst disk is realized by a global minimizer of the control problem, which lifts to a Pontryagin extremal, stays in Hales and Vajjha's compact domain, switches finitely often and is normal. Its switch signs fall into five classes, each excluded for periods with at least six pieces by scalar estimates; periods with at most five pieces cost at least the octagon's area, with equality only for the octagon. The scalar estimates are inequalities, polynomial identities, monotonicity and convexity arguments; a few polynomial signs are checked by explicit Bernstein expansions, and no interval cover is used. The geometric and control-theoretic foundations, among them Fejes Toth's lattice theorem, Theorem 5.0.2 of Hales and Vajjha and the Pontryagin maximum principle, come from the pinned libraries lean4-smoothed-polygon and lean4-optimal-control.",
+  "authors": [
+    "The-Anh Vu-Le"
+  ],
+  "repository": "https://github.com/vltanh/lean4-smoothed-octagon",
+  "commit": "9ba6bf8630c70d6a0f11ecfef15021cb83df8c40",
+  "project_path": null,
+  "declarations": [
+    "ReinhardtChallenge.octagon_density",
+    "ReinhardtChallenge.reinhardt",
+    "ReinhardtChallenge.reinhardt_equality"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.OC"
+    ],
+    "msc2020": [
+      "52C15",
+      "52A10",
+      "52A40",
+      "49K15",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T03:03:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9ba6bf8630c70d6a0f11ecfef15021cb83df8c40",
+        "fork_repository": "PalomarArchive/vltanh--lean4-smoothed-octagon--d62079f856f3",
+        "source_repository": "vltanh/lean4-smoothed-octagon"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7cb274e5a6c7df2d1ee80be01db56230ed1f28c44d98c88da27e34b23f5a18bd"
+}

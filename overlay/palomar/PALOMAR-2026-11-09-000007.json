@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000007",
+  "version": 1,
+  "title": "Conditional logarithmic partner ranks in exponential matching markets",
+  "abstract": "Switching costs relax pairwise stability by requiring both members of a blocking pair to gain more than a common nonnegative cost. In balanced markets with n firms and n workers and independent rate-one exponential utilities, this package proves a conditional benchmark for ordinal partner ranks in Lean. Fix a matching and condition the market on its stability. If twice the cost divided by log n tends to rho in [0,1), the conditional probability that average one-based firm partner rank is at most n^t tends to (t-rho)/(1-rho) for every rho<t<1; rank 1 is best. Equivalently, the logarithm of average firm rank divided by log n converges in distribution to the uniform law on [rho,1]. Bounded or vanishing costs give rho=0, with persistent dispersion across polynomial rank scales under this conditioning. The theorem removes the original conjecture's supercritical lower bound. The proof also includes positive conditioning probability, exact integral identities, score limits, and rank-transfer estimates. This fixed-matching conditioning does not determine ranks under a uniform stable lottery in an ordinary random market, or dispersion of stable outcomes within a typical realized market. An accompanying working paper presenting these results and their economic interpretation is in preparation. A link will be added here when it is publicly available.",
+  "authors": [
+    "Bo Cowgill"
+  ],
+  "repository": "https://github.com/bocowgill/conditional-log-rank",
+  "commit": "51cad25b3b813abfc86ee74805a472b7622294c5",
+  "project_path": null,
+  "declarations": [
+    "ConditionalLogRank.stability_probability_pos",
+    "ConditionalLogRank.logRankLaw",
+    "ConditionalLogRank.supercriticalLogRankLaw"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.CO"
+    ],
+    "msc2020": [
+      "60C05",
+      "05A16",
+      "91B68"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T02:14:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "51cad25b3b813abfc86ee74805a472b7622294c5",
+        "fork_repository": "PalomarArchive/bocowgill--conditional-log-rank--7adf2e33554d",
+        "source_repository": "bocowgill/conditional-log-rank"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5b3fdb08066fa67d60d2f6a5e0307cd5e76fd5de227201f58bb1fbe2f674e20e"
+}

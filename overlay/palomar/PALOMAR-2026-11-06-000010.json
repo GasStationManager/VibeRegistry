@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000010",
+  "version": 1,
+  "title": "Generic Degree Three in JC(3): Collision Geometry and Galois Group S3",
+  "abstract": "Motivated by Alpöge's generic-degree-three counterexample to JC(3), we formalize the collision geometry of complex three-dimensional Keller maps of that degree. Using classical Keller–Galois rigidity, we identify the residual generic collision factor with the normal closure of the induced function-field extension, whose Galois group is S3. The decomposition separates the diagonal and proves nonvanishing of the collision obstruction.",
+  "authors": [
+    "Chloe van der Vlugt"
+  ],
+  "repository": "https://github.com/what-social-construct/jacobian-collision-geometry",
+  "commit": "67872a1b3e6c6a85e6c93ac0079b023282bc1510",
+  "project_path": null,
+  "declarations": [
+    "CollisionIdeals.Palomar.PaperOne.genericDegreeThreeS3Collision"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.GR"
+    ],
+    "msc2020": [
+      "14R15",
+      "12F10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T11:28:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "67872a1b3e6c6a85e6c93ac0079b023282bc1510",
+        "fork_repository": "PalomarArchive/what-social-construct--jacobian-collision-geometry--7f1cf30d8794",
+        "source_repository": "what-social-construct/jacobian-collision-geometry"
+      }
+    ]
+  },
+  "statement_hash": "sha256:510177232a1a61d08a15100ebb28f11e2eea9062460fcbce6ab2802173d7c7bd"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000002",
+  "version": 1,
+  "title": "The Colbourn–Dinitz–Rosa conjecture and the exact block-type spectrum",
+  "abstract": "A Lean 4 formalization of two results on strictly 3-bicolored Steiner triple systems. For every positive triple of class sizes a,b,c, existence is equivalent to n=a+b+c being 1 or 3 modulo 6, the identity a²+b²+c²-ab-ac-bc=n, and the exclusion of two classes of size 2. For every sufficiently large admissible profile, the number of AAC blocks is characterized exactly by two explicit arithmetic tests. The first result settles the class-size conjecture posed by Colbourn, Dinitz and Rosa in 1999; the second applies the typed absorption theorems of Triangle decompositions III. Both statements are compared in one shared development.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/cdr-palomar-kernel",
+  "commit": "5d1e6fe301e5fc01c92f6145aa34fddfe9c2bd10",
+  "project_path": null,
+  "declarations": [
+    "CDRBicolour.cdr_conjecture",
+    "CDRBicolour.cdr_characterization",
+    "CDRBicolour.Absorption.Corners.cdr_type_spectrum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B07",
+      "05C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T02:21:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5d1e6fe301e5fc01c92f6145aa34fddfe9c2bd10",
+        "fork_repository": "PalomarArchive/jtraverso--cdr-palomar-kernel--853fb49173b4",
+        "source_repository": "jtraverso/cdr-palomar-kernel"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c3d8eb49933340bdbe7d89858c9131f9b0f553658d06ef87ccc51e677bc58c80"
+}

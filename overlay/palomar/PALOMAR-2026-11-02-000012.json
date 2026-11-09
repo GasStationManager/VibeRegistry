@@ -1,0 +1,68 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000012",
+  "version": 1,
+  "title": "Checking the odd Goldbach conjecture up to 10^20",
+  "abstract": "A Lean 4 formalization of the mathematics of Y. Saouter, Checking the odd Goldbach conjecture up to 10^20, Math. Comp. 67, 1998, 863 to 866. Proved with no hypothesis: Lemma 1, the paper's form of Theorem 5 of Brillhart, Lehmer and Selfridge 1975, for every even F; Theorem 1, the primality criterion for N = 2^22 R + 1 below 10^20 with R odd and any base a with a^((N-1)/2) = -1 modulo N; Lemma 2 by quadratic reciprocity; Theorem 2, the case of base 5; the primality of the 100 rungs of Table 1 and of the first and last primes printed in the paper. The printed ladder constant 1258213 is a misprint for 12582913, and this repair is proved. The entry does not reverify Saouter's computation: his ladder of about 250 million rungs is checked only through its first 100 rungs. As a derived result, not a theorem of the paper, every odd number from 7 to 10^20 is a sum of three primes, conditional on one cited input taken as an explicit hypothesis, never as an axiom: EvenGoldbachUpTo of 4 * 10^18, the published computation of T. Oliveira e Silva, S. Herzog and S. Pardi, Math. Comp. 83, 2014, not proved here. That proof uses Saouter's prime ladder with 25 Proth rungs as in Helfgott and Platt, so the paper's range is reproduced by a different ladder on a much larger even input than Saouter's 4 * 10^11. Ternary Goldbach for all odd numbers is Helfgott's theorem, from his 2013 preprint, and is not formalized here. Binary Goldbach is open and is not claimed. AI agents wrote the Lean code, which is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "39d1ce6db8b634233ed29c2aa3e3dcf1218400dc",
+  "project_path": "entries/saouter1998",
+  "declarations": [
+    "GoldbachLean.Saouter1998.Paper.N_form",
+    "GoldbachLean.Saouter1998.Paper.N_three",
+    "GoldbachLean.Saouter1998.Paper.printed_three_ne",
+    "GoldbachLean.Saouter1998.Paper.printed_not_form",
+    "GoldbachLean.Saouter1998.Paper.printed_gap",
+    "GoldbachLean.Saouter1998.Paper.last_prime_form",
+    "GoldbachLean.Saouter1998.Paper.lemma2",
+    "GoldbachLean.Saouter1998.BLS.lemma1",
+    "GoldbachLean.Saouter1998.Thm2.theorem2",
+    "GoldbachLean.Saouter1998.Thm2.last_prime",
+    "GoldbachLean.Saouter1998.Thm2.first_prime",
+    "GoldbachLean.Saouter1998.Thm1.theorem1",
+    "GoldbachLean.Saouter1998.Thm1.theorem1_int",
+    "GoldbachLean.Saouter1998.Table1.table1_head",
+    "GoldbachLean.Saouter1998.Table1.table1_gaps",
+    "GoldbachLean.Saouter1998.Table1.printed_three_composite",
+    "GoldbachLean.Saouter1998.Table1Thm2.table1_prime_thm2",
+    "GoldbachLean.Saouter1998.ProthLadder.ternaryGoldbachUpTo_1e20_of_even",
+    "GoldbachLean.Saouter1998.ProthLadder.ternaryGoldbachUpTo_293_vacuity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11Y11",
+      "11A51"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T15:12:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "39d1ce6db8b634233ed29c2aa3e3dcf1218400dc",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2494b642c0ad4dc352c9d7980ba23b76466dcc2524185e22ce8ac4f39b9aceb3"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000007",
+  "version": 1,
+  "title": "A Schur 6-colouring of [1, 538]",
+  "abstract": "A Lean 4 check, with Lean core only, of the existence of a colouring of the integers 1 to 538 with 6 colours and no monochromatic x + y = z, with x = y allowed. So the integers 1 to 538 are the union of six sum-free sets, which gives S(6) ≥ 538 for the Schur number S(6). The largest lower bound in the sources that the author read on 3 November 2026 is S(6) ≥ 537, by Chen, Zhu and Long. The paper paper/schur-six-538.md in this repository states the result.",
+  "authors": [
+    "Adam McKenna"
+  ],
+  "repository": "https://github.com/mysticflounder/schur-538",
+  "commit": "c3306693e01496162241bb7630ff2f19bd1482b7",
+  "project_path": "lean",
+  "declarations": [
+    "SchurWitness538.schur_six_538"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05D10",
+      "11B75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T07:55:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c3306693e01496162241bb7630ff2f19bd1482b7",
+        "fork_repository": "PalomarArchive/mysticflounder--schur-538--cfe21f28d86f",
+        "source_repository": "mysticflounder/schur-538"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ae9a3915c87363660862aa294031553988e6e796f82fd47f8ff76116f28f1c79"
+}

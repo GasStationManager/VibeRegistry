@@ -1,0 +1,78 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000008",
+  "version": 1,
+  "title": "Uniform attachment with freezing: local limits and geometric Bienaymé trees",
+  "abstract": "Lean proofs of the local-limit criterion and geometric Bienaymé limit for uniform attachment trees with freezing. The selected conclusions characterize convergence by the divergence of the freezing reciprocal sum, identify the common limit for approximating schedules, and identify the iid-sign limit as a Bienaymé tree with offspring probabilities (1-p)p^k for 0 <= p < 1. The compared carrier is chronological; the full ambient transport is proved in the library outside these selected targets. This entry covers T01–T02 and shares its proof repository with the other result groups.",
+  "authors": [
+    "Igor Kortchemski"
+  ],
+  "repository": "https://github.com/igor-kortchemski/uniform-attachment-with-freezing",
+  "commit": "48410b254fbc5d8c1a483acb8309338baa479a6f",
+  "project_path": null,
+  "declarations": [
+    "Freezing1.local_convergence_equivalences",
+    "Freezing1.local_convergence_common_limit",
+    "Freezing1.ForwardAnnealed.iid_signs_geometric_local_limit",
+    "Freezing1.ForwardAnnealed.planeLimitLaw_isBienayme",
+    "Freezing1.ForwardAnnealed.planeLimitLaw_eq_geometricBienaymeLaw",
+    "Freezing1.ForwardAnnealed.planeLimitLaw_offspring_mass",
+    "Freezing1.Forward.transitionLaw_probability",
+    "Freezing1.Forward.treeLaw_valid",
+    "Freezing1.LocalTree.tendsto_iff_balls",
+    "Freezing1.Forward.ValidAt.localBall_graph_distance",
+    "Freezing1.Forward.ValidAt.localBalls_valid",
+    "Freezing1.Forward.ValidAt.localTreeOfState_balls",
+    "Freezing1.ForwardInfiniteHistory.map_eval",
+    "Freezing1.ForwardInfiniteHistory.tendsto_localLimit_of_exists",
+    "Freezing1.ForwardInfiniteHistory.map_eval_localTree",
+    "Freezing1.PlaneTree.bienaymeLaw_map_degree",
+    "Freezing1.PlaneTree.geometricBienaymeLaw_probability",
+    "Freezing1.PlaneTree.exists_unique_bienaymeLaw",
+    "Freezing1.LocalTree.canonical_planeOffspring",
+    "Freezing1.LocalTree.degree_toPlaneTree",
+    "Freezing1.LocalTree.continuous_toPlaneTree",
+    "Freezing1.ForwardAnnealed.treeLaw_zero_parameter",
+    "Freezing1.ForwardAnnealed.treeLaw_one_parameter",
+    "Freezing1.ForwardAnnealed.map_eval",
+    "Freezing1.ForwardAnnealed.transitionLaw_apply_split",
+    "Freezing1.ForwardAnnealed.fullLaw_tendsto_localLimit",
+    "Freezing1.ForwardAnnealed.aemeasurable_localLimit",
+    "Freezing1.extinctionTime_le_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.CO"
+    ],
+    "msc2020": [
+      "60C05",
+      "05C80",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T12:00:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "48410b254fbc5d8c1a483acb8309338baa479a6f",
+        "fork_repository": "PalomarArchive/igor-kortchemski--uniform-attachment-with-freezing--cb6c42153258",
+        "source_repository": "igor-kortchemski/uniform-attachment-with-freezing"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0bc49507d02809ffcff8ad4b5956d9743867b8ec7f7ba9aa4ece104d9febb302"
+}

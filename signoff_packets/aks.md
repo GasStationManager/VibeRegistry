@@ -1,11 +1,11 @@
 # Sign-off packet — AKS Sorting Networks
 
-*Generated 2026-11-02 10:27 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-11-09 10:48 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `aks`
 - **Upstream**: https://github.com/girving/aks @ `f172ac6c2e46`
 - **Lean**: leanprover/lean4:v4.29.0-rc4
-- **Machine checks**: comparator, nanoda — overall **pass** at 2026-11-01T08:49:27Z
+- **Machine checks**: comparator, nanoda — overall **pass** at 2026-11-08T08:39:23Z
 - **Informal statements**: none adopted yet — run `python3 scripts/fetch_blueprint_statements.py entries/aks.toml`
 
 ## What you are attesting

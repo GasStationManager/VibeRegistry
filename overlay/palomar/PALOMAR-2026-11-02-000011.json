@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000011",
+  "version": 1,
+  "title": "Erdős Problem 393: f(n) tends to infinity, assuming the abc conjecture",
+  "abstract": "Let f(n) be the least m >= 1 such that n! = a_1 ... a_t with a_1 < ... < a_t = a_1 + m. Assuming the abc conjecture, f(n) tends to infinity. The proof follows Luca's proof that abc implies finitely many solutions of P(x) = n!, for the polynomials prod_{i in T} (x + i): for a fixed set T of d offsets, the shift y = d a + sum(T) gives d^d prod_{i in T} (a + i) = y^d + y^k R(y) with k + deg R <= d - 2 and R(0) != 0, and abc, with rad(n!) <= 4^n, bounds y by an exponential in n, while y^d >= n!. It does not assume Luca's theorem; only the reduction from f(n) to these polynomials is specific to Problem 393.",
+  "authors": [
+    "Daniel Veljjanoski"
+  ],
+  "repository": "https://github.com/veljjanoski/erdos393-palomar",
+  "commit": "ec05768609980a27995453bc1701e6fa3004d675",
+  "project_path": null,
+  "declarations": [
+    "Erdos393.erdos_393.variants.luca"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11D85",
+      "11B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T12:56:29Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ec05768609980a27995453bc1701e6fa3004d675",
+        "fork_repository": "PalomarArchive/veljjanoski--erdos393-palomar--a3779df4131c",
+        "source_repository": "veljjanoski/erdos393-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7fd640ad1cacbfd2bea5a5694d98db5bb60518aaca57654e838ff1d32f4ff1f5"
+}

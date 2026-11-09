@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000004",
+  "version": 1,
+  "title": "Sparse kernels and necessary sampling for binary Walsh matrices",
+  "abstract": "Finite quantitative sparse-kernel and necessary expected-row bounds for independently subsampled binary Walsh matrices, with uniform asymptotic and recovery/RIP consequences.",
+  "authors": [
+    "Patrick Lopatto"
+  ],
+  "repository": "https://github.com/lopatto/fourier-formalization-public",
+  "commit": "eda7f225c99611efa2fd0ee3547ce8ffbb913f2e",
+  "project_path": null,
+  "declarations": [
+    "Paper.finiteKernel",
+    "Paper.uniformKernel",
+    "Paper.finiteRecovery",
+    "Paper.necessarySampling",
+    "Paper.boundedOrthonormalExample",
+    "Paper.finiteDecoderComplex"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.FA"
+    ],
+    "msc2020": [
+      "42C10",
+      "60B20",
+      "94A20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T03:14:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "eda7f225c99611efa2fd0ee3547ce8ffbb913f2e",
+        "fork_repository": "PalomarArchive/lopatto--fourier-formalization-public--597ad0c5f1d9",
+        "source_repository": "lopatto/fourier-formalization-public"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cf52c0684ada2a662dc8a9fc3eb6ca6a3ff4208e4264c14d1f04e3d4720dd7df"
+}

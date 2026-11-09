@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000002",
+  "version": 1,
+  "title": "Two-colour Zig-Zag Numberlink on rectangles",
+  "abstract": "A Lean 4 proof that two-colour Zig-Zag Numberlink on rectangular grids (the paired 2-disjoint path cover problem: two vertex-disjoint paths s0 → t0 and s1 → t1 that together visit every cell) is decided by an explicit procedure, and that an explicit construction finds a solution whenever one exists. For both sides at least 11, an instance is solvable exactly when it passes a finite catalogue of forbidden patterns; for a side at most 10, a plug dynamic program decides it. The finite cases of the characterization are 21 boxes of slice certificates and 59 window certificates, all checked by the kernel.",
+  "authors": [
+    "Z. Zzyzek (github: zzyzek)"
+  ],
+  "repository": "https://github.com/zzyzek/R2K2ZZN",
+  "commit": "6567375a4c4574d26237756819e2ce4b027bf119",
+  "project_path": "proof",
+  "declarations": [
+    "ZZN.T.solvableBT_main",
+    "ZZN.T.fires3T_iff_solvable",
+    "ZZN.T.solveZZNT_main"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C38",
+      "05C85",
+      "68R10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T01:09:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6567375a4c4574d26237756819e2ce4b027bf119",
+        "fork_repository": "PalomarArchive/zzyzek--R2K2ZZN--d5b713a305c5",
+        "source_repository": "zzyzek/R2K2ZZN"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6a58b29f96d96c95a02147ee4731667950340c7b84a660981ea7427991fb8dd7"
+}

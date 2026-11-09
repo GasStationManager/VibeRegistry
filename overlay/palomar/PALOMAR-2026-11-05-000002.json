@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-05-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-05-000002",
+  "version": 1,
+  "title": "SmallGroups",
+  "abstract": "Lean 4 proofs of four existence theorems: a two-generator, three-relator universal group with infinite cyclic abelianization and a displayed normal generator; an effective two-generator, four-relator family with undecidable triviality and universal nontrivial members; a torsion-free two-generator, four-relator group with undecidable word problem, infinite cyclic abelianization, and a displayed normal generator; and an effective two-generator, five-relator family with undecidable triviality whose members are all torsion-free.",
+  "authors": [
+    "Qiuyu Ren"
+  ],
+  "repository": "https://github.com/32805433/Small-Groups",
+  "commit": "4a302a9ce13b5aa39f1db413df511be39df4ef31",
+  "project_path": null,
+  "declarations": [
+    "SmallPresentationStatements.exists_two_three_universal_with_abelianization_Z",
+    "SmallPresentationStatements.exists_two_four_universal_adian_rabin_family",
+    "SmallPresentationStatements.exists_torsion_free_two_four_with_abelianization",
+    "SmallPresentationStatements.exists_torsion_free_two_five_adian_rabin_family"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GR",
+      "math.LO"
+    ],
+    "msc2020": [
+      "20F05",
+      "20F10",
+      "03D35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-05T01:15:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4a302a9ce13b5aa39f1db413df511be39df4ef31",
+        "fork_repository": "PalomarArchive/32805433--Small-Groups--ca9d6275f086",
+        "source_repository": "32805433/Small-Groups"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4103e7a2219f91955a109380febe686eb0b07962bb39bb2d563e254c57c4a6f1"
+}

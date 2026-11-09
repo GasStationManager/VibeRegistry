@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000022",
+  "version": 1,
+  "title": "A quantitative homotopy-interleaving gap over the cyclic-four group algebra",
+  "abstract": "Over the group algebra F2[C4] of the cyclic group of order four in characteristic two, we give an explicit five-stage real-indexed persistence diagram F of unbounded chain complexes. Its stages are shifts of the periodic free resolution of the trivial module, on half-open intervals [i, i+1), with zero diagram before time 0 and from time 5 on. We compare three distances from F to the zero diagram: the homology interleaving distance (supremum over all degrees of the interleaving distances of the F2-homology persistence modules); the interleaving distance in an arbitrary localisation of the category of whole real diagrams at the objectwise quasi-isomorphisms (the derived category of real diagrams); and the strict homotopy-interleaving distance, which allows arbitrary finite zigzags of objectwise quasi-isomorphisms of both entire diagrams, including nonzero acyclic replacements of zero. The Lean development proves d_CohI(F,0) = 1/2 < d_IHC(F,0) = 1 < 5/4 <= d_HI(F,0) <= 5/2. So the three distances are quantitatively separated by a single explicit example. The lower bound for the strict metric comes from a fourfold defining-system obstruction for the resolution. The derived upper bound comes from a natural nullhomotopy of the two-unit shift. The upper bound 5/2 for the strict metric is witnessed directly, because every five-unit shift of F vanishes.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/Homology-Homotopy-and-Applications",
+  "commit": "f35677b710df2de38b2ef237b40ca4ad7ff7298b",
+  "project_path": null,
+  "declarations": [
+    "C4Separation.distance_separation",
+    "C4Separation.stageD_comp_stageD",
+    "C4Separation.xComp_comm"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AT",
+      "math.CT"
+    ],
+    "msc2020": [
+      "55N31",
+      "18G80",
+      "55U35",
+      "20J06",
+      "55U15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T16:04:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f35677b710df2de38b2ef237b40ca4ad7ff7298b",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--Homology-Homotopy-and-Applications--084333bf7174",
+        "source_repository": "jfairfaxball-348/Homology-Homotopy-and-Applications"
+      }
+    ]
+  },
+  "statement_hash": "sha256:43d8ba73b9d4a3d8601d39d4e2c146fcfed5f420785406fe62a3c6d74526e84d"
+}

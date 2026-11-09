@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000005",
+  "version": 1,
+  "title": "Written on the Wall II, Conjecture 84: tree(G) ≥ 2 rad(G) / δ(G)",
+  "abstract": "A complete Lean 4 / Mathlib formalization of Conjecture 84 of DeLaViña's \"Written on the Wall II\" (conjectures of Graffiti.pc): for every finite simple connected graph G with positive minimum degree δ(G), the maximum number of vertices of an induced subtree satisfies tree(G) ≥ 2·rad(G)/δ(G). The formal statement is the one recorded in google-deepmind/formal-conjectures (WrittenOnTheWallII/GraphConjecture84.lean, theorem `conjecture84`), copied verbatim together with its definition of `largestInducedTreeSize`. The proof formalizes the argument of J. J. Gebendorfer's manuscript \"Induced trees in graphs with a cut vertex\" (28 October 2026): the case δ(G) ≥ 2 follows from a diametral geodesic, and the case δ(G) = 1 from the stronger theorem tree(G) ≥ 2·rad(G) for every connected graph with a cut vertex, proved by a minimal-counterexample reduction to a 2-connected core with pendant paths of equal positive length. Along the way the induced-tree consequence tree(H) ≥ 2·rad(H) − 1 of Chung's induced-path bound (Erdős–Saks–Sós 1986, Theorem 2.2) is proved, which is all the argument needs.",
+  "authors": [
+    "Yixing Zhang"
+  ],
+  "repository": "https://github.com/ProblemHunter/wowii84-lean",
+  "commit": "722b098bafb5371c1e7c7f23b3f7f9d8a7fb22aa",
+  "project_path": null,
+  "declarations": [
+    "WrittenOnTheWallII.GraphConjecture84.conjecture84"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C05",
+      "05C12",
+      "05C69"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T01:55:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "722b098bafb5371c1e7c7f23b3f7f9d8a7fb22aa",
+        "fork_repository": "PalomarArchive/ProblemHunter--wowii84-lean--d3b3e16202d4",
+        "source_repository": "ProblemHunter/wowii84-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8cc7e911a955b034b33d81631ebcdb95bd6c65096504f908db2067a40dc0d513"
+}

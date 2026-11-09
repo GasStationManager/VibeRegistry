@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000016",
+  "version": 1,
+  "title": "Finite nonlinear MkCS exact penalty thresholds",
+  "abstract": "An adapted finite nonlinear QUBO formalization for the maximum k-colorable vertex-subset problem: binary-domain attainment, ordered color-pair normalization, weak optimal-value equality with auxiliary repair, strict optimizer feasibility, the one-color exception and attained boundary ties.",
+  "authors": [
+    "David E. Bernal Neira"
+  ],
+  "repository": "https://github.com/bernalde/finite-mkcs-penalties",
+  "commit": "9a7a1a98809aeda6f5fcd67a262aa4a3f482ab6c",
+  "project_path": null,
+  "declarations": [
+    "PalomarMkCS.solution"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC",
+      "math.CO"
+    ],
+    "msc2020": [
+      "90C27",
+      "90C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T18:32:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9a7a1a98809aeda6f5fcd67a262aa4a3f482ab6c",
+        "fork_repository": "PalomarArchive/bernalde--finite-mkcs-penalties--7675c9280d97",
+        "source_repository": "bernalde/finite-mkcs-penalties"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5e665cb1be9bf5a688805f7a89ce75076e1ba1c26febecbf8fc9a3d4fc554f40"
+}

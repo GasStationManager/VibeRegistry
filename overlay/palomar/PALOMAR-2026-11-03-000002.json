@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000002",
+  "version": 1,
+  "title": "Recursion and effective inseparability for closed lambda programs",
+  "abstract": "Proves a uniform recursion theorem for closed lambda numerical semantics and a productive-map effective inseparability result for the closed zero and one numeral languages.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy José Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "0d60a72299f83786929a45a29a2ddc2dba921572",
+  "project_path": "lambda-recursion",
+  "declarations": [
+    "LambdaTuring.lambda_recursion_with_parameters",
+    "LambdaTuring.lambda_computable_self_code",
+    "LambdaTuring.closed_numerical_self_code",
+    "LambdaTuring.closedZeroOne_recursively_inseparable",
+    "LambdaTuring.closedZeroOne_effectively_inseparable",
+    "LambdaTuring.codeAcceptsTerm_re",
+    "LambdaTuring.rePredicate_has_code"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-03T00:24:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0d60a72299f83786929a45a29a2ddc2dba921572",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fa78f823f4677a0c0e40a39a327f2930e4b2dca3966aab26789f8a59fa839545"
+}

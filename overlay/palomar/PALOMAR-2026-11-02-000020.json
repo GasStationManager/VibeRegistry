@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000020",
+  "version": 1,
+  "title": "Cofinite numerical domains of closed lambda programs",
+  "abstract": "Classifies cofinite numerical domains of closed untyped lambda programs under full beta reduction, using finite-injury markers and computable three-quantifier normal forms.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy José Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "1111f087c076c058a005e54e9d2b62c612db2ca8",
+  "project_path": "lambda-cofinite",
+  "declarations": [
+    "LambdaTuring.closedCofinite_normalForm_complete",
+    "LambdaTuring.closedCofinite_hard",
+    "LambdaTuring.closedCofinite_has_bounded_form",
+    "LambdaTuring.codeCofinite_manyOne_equiv"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-02T22:20:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1111f087c076c058a005e54e9d2b62c612db2ca8",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ea3c88c6f15f223cf7d902ef41d1fd73d4e5a58ddd8dc83bab8e636d90116b1b"
+}

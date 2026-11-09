@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000026",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000026",
+  "version": 1,
+  "title": "A finite-machine observer for lambda normal forms",
+  "abstract": "Constructs one finite Turing machine that distinguishes Church-numeral and nonnumerical full-beta normal forms and does not halt exactly when no normal form is reachable.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy José Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "39a700432c21c58cd845f0e84f811459fd8cded1",
+  "project_path": "lambda-normal-machine",
+  "declarations": [
+    "LambdaTuring.normalMachine_exists"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-03T21:03:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "39a700432c21c58cd845f0e84f811459fd8cded1",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9d2fb6205631bba7b068a8ad8fcf5415d302884c5429f0cb51909236d23f4993"
+}

@@ -1,0 +1,72 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-08-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-08-000006",
+  "version": 1,
+  "title": "Finite integer penalties and literal routing QUBO transport",
+  "abstract": "A complete source-based finite penalty/energy family: the generic full ordered QUBO identity and strict integer-row minimizer equivalence, consistent fixed-coordinate energy/minimizer transport, and the literal incidence, time-indexed arc and sequence applications. The statements retain actual rows, repeated costs, full offsets, source free/fixed partitions, feasibility conditions, strict sufficient thresholds and finite source energy attainment. Capacity, physical route completeness and solver/quantum performance are outside scope.",
+  "authors": [
+    "David E. Bernal Neira"
+  ],
+  "repository": "https://github.com/bernalde/routing-penalty-adapters",
+  "commit": "95f2a288a6c50ea6eaabde90c2515885197796cf",
+  "project_path": null,
+  "declarations": [
+    "Chapter10.palomar_source_route_penalty_proposition",
+    "Chapter10.Algebra.palomar_integer_penalty_zero_iff",
+    "Chapter10.Algebra.palomar_integer_penalty_gap",
+    "Chapter10.Routing.Arc.palomar_matrix_iff_literal",
+    "Chapter10.Routing.Arc.palomar_arc_penalty_zero_iff",
+    "Chapter10.Routing.Arc.palomar_arc_minimizers_exact",
+    "Chapter10.Routing.Arc.palomar_actual_arc_qubo_identity",
+    "Chapter10.SequencePenalty.palomar_source_penalty_sums",
+    "Chapter10.SequencePenalty.palomar_penalty_zero_iff",
+    "Chapter10.SequencePenalty.palomar_objective_range",
+    "Chapter10.SequencePenalty.palomar_objective_range_printed",
+    "Chapter10.SequencePenalty.palomar_minimizers_exact",
+    "Chapter10.SequencePenalty.palomar_source_energy_matrix_identity",
+    "Chapter10.SequencePenalty.palomar_domain_iff_split_fixed",
+    "Chapter10.SequencePenalty.palomar_source_fixed_energy_identity",
+    "Chapter10.SequencePenalty.palomar_source_fixed_min_transport",
+    "Chapter10.SequencePenalty.palomar_reduced_minimizers_exact",
+    "Chapter10.SequencePenalty.palomar_source_energy_attainment",
+    "Chapter10.Algebra.palomar_full_qubo_identity",
+    "Chapter10.Algebra.palomar_integer_penalty_minimizers_exact",
+    "Chapter10.Algebra.palomar_fixed_qubo_identity",
+    "Chapter10.Algebra.palomar_fixed_qubo_min_transport",
+    "Chapter10.Sequence.penultimate._proof_2",
+    "Chapter10.Sequence.second._proof_2"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC"
+    ],
+    "msc2020": [
+      "90C09",
+      "90C11"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-08T04:41:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "95f2a288a6c50ea6eaabde90c2515885197796cf",
+        "fork_repository": "PalomarArchive/bernalde--routing-penalty-adapters--1acf02c66f83",
+        "source_repository": "bernalde/routing-penalty-adapters"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bb74cd316ee83a12a542c61827b78382ea323759ec3e0f1f68f9b8f2943fceeb"
+}

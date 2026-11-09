@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000013",
+  "version": 1,
+  "title": "Counting sets with small sumset",
+  "abstract": "Lean 4 formalization of Green's paper Counting sets with small sumset, and the clique number of random Cayley graphs. For a finite abelian group Γ, let S_k^m(Γ) be the family of the sets X in Γ with |X| = k whose restricted sumset X ∔ X = {x + y : x, y in X, x ≠ y} has m elements. The paper bounds |S_k^m(Γ)| for Γ = Z/NZ and Γ = F_2^n, through a bound for the number of Freiman isomorphism classes of sets with small restricted sumset in a vector space. It deduces that the Cayley sum graph of a random subset of Z/NZ almost surely has clique number at most 160 log_2 N, and that the Cayley graph of a random subset of F_2^n almost surely has clique number between C_1 n log_2 n and C_2 n log_2 n. The formalization proves these results with C_1 = 1/4 and C_2 = 308, both as limits and as explicit bounds on the number of exceptional sets.",
+  "authors": [
+    "Gabriel Dahia"
+  ],
+  "repository": "https://github.com/gdahia/CountingSetsWithSmallSumset",
+  "commit": "8d89dcad03b9b4e5f50336300c9bee4dcfc2cff2",
+  "project_path": null,
+  "declarations": [
+    "CountingSetsWithSmallSumset.card_cliqueNum_cayleySumGraph_gt_le'",
+    "CountingSetsWithSmallSumset.tendsto_card_cliqueNum_cayleySumGraph_le'",
+    "CountingSetsWithSmallSumset.exists_cliqueNum_le_and_indepNum_le'",
+    "CountingSetsWithSmallSumset.card_cliqueNum_addCayley_lt_or_gt_le'",
+    "CountingSetsWithSmallSumset.tendsto_card_le_cliqueNum_addCayley_le'"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P70",
+      "11B13",
+      "11B30",
+      "05C80",
+      "05C55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T04:59:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8d89dcad03b9b4e5f50336300c9bee4dcfc2cff2",
+        "fork_repository": "PalomarArchive/gdahia--CountingSetsWithSmallSumset--cf69438b9516",
+        "source_repository": "gdahia/CountingSetsWithSmallSumset"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d85b950233bab48eaa03436e81df981e74e98b5175f6e40d2dcc539159334e57"
+}

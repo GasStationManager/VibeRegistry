@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-07-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000003",
+  "version": 2,
+  "title": "Bigon-free dichotomy for combinatorial pseudoline arrangements",
+  "abstract": "A combinatorial arrangement of pseudolines in the real projective plane, given as a generalised map with flags labelled by lines, in which no line carries fewer than three vertices, is four lines in general position or contains five lines in general position, a pencil of three and a pencil of two in which none of these five lines joins the two centres, or the complete quadrangle.",
+  "authors": [
+    "Michel Hua"
+  ],
+  "repository": "https://github.com/Commutator-IO/grothendieck-project-palomar",
+  "commit": "b07575971433706a6aa9769cd6053b9cd57e8bfc",
+  "project_path": null,
+  "declarations": [
+    "Grothendieck.Folder80Maps2.PseudolineMap.map_dichotomy"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C30",
+      "52C40",
+      "05C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-07T06:27:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b07575971433706a6aa9769cd6053b9cd57e8bfc",
+        "fork_repository": "PalomarArchive/Commutator-IO--grothendieck-project-palomar--0467237398c3",
+        "source_repository": "Commutator-IO/grothendieck-project-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:62222ff0aa705d1689f280e2b6ee4a2843bc315b74f419be8ee564e522ceeefa"
+}

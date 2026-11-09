@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000014",
+  "version": 1,
+  "title": "Full beta normal-order normalization for untyped lambda terms",
+  "abstract": "Defines the deterministic full-beta leftmost-outermost strategy and proves it reaches any reachable normal form on de Bruijn terms, including open terms.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy José Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "dacdaecaca4acb9927ad803bed44a6060731f80b",
+  "project_path": "lambda-normal-order",
+  "declarations": [
+    "LambdaTuring.normalOrderStep_primrec",
+    "LambdaTuring.normalOrderStep_sound",
+    "LambdaTuring.normalOrderStep_none_iff",
+    "LambdaTuring.normalOrderStep_abs",
+    "LambdaTuring.normalOrderStep_root",
+    "LambdaTuring.normalOrderStep_app_left",
+    "LambdaTuring.normalOrderStep_app_right",
+    "LambdaTuring.normalOrder_normalizes_to",
+    "LambdaTuring.normalOrder_stops_iff_normalizable",
+    "LambdaTuring.normalOrder_infinite_iff_not_normalizable",
+    "LambdaTuring.normalOrderRun_normal_unique"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-03T05:08:58Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dacdaecaca4acb9927ad803bed44a6060731f80b",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3503fe6423d751cfde26e1a4d3fa23062c52a9fee146f11d4867613eee7dd9d7"
+}

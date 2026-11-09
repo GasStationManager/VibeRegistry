@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000016",
+  "version": 1,
+  "title": "Erdős Problem 338: restricted order of robust sets of positive lower density",
+  "abstract": "If A \\ F is a basis for every finite set F and A has positive lower density, then A has a restricted order: every sufficiently large integer is a sum of a bounded number of distinct elements of A. This is a partial result on Erdős Problem 338 (Erdős and Graham ask whether every such A, without the density condition, has a restricted order). The proof counts pairs to show that, for every R, the numbers with at least R representations as a sum of two distinct elements of A have positive lower density, uniformly in R; uses Kneser's theorem for finite abelian groups to write all large numbers of one residue class as sums of a bounded number of such numbers; fixes the residue class with distinct elements of A; and chooses the representations greedily so that all summands are distinct.",
+  "authors": [
+    "Daniel Veljjanoski"
+  ],
+  "repository": "https://github.com/veljjanoski/erdos338-palomar",
+  "commit": "a699263d0f7cdce0e5b3026bce86eab30973d0f8",
+  "project_path": null,
+  "declarations": [
+    "Erdos338.erdos_338.variants.lowerDensity_pos"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B13",
+      "11B05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T06:08:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a699263d0f7cdce0e5b3026bce86eab30973d0f8",
+        "fork_repository": "PalomarArchive/veljjanoski--erdos338-palomar--f0e315c84cd0",
+        "source_repository": "veljjanoski/erdos338-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6a0634e0dbbb2523c13198bfb5112fe3d097b4fa0c85993af1c42c2650328ae8"
+}

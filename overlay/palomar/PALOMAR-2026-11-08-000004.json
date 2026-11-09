@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-08-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-08-000004",
+  "version": 1,
+  "title": "Overfull criteria for edge colouring (Plantholt; Chen–Cao; Cao–Chen–Jing–Shan), unified",
+  "abstract": "A thin wrapper that restates, in one vocabulary and with Mathlib definitions only, the overfull criteria proved in PALOMAR-2026-11-04-000016 and PALOMAR-2026-11-04-000009. class_two_iff_overfull_subgraph: a finite simple graph of even order n with 12 n ≤ 7 (3δ − Δ) is of class two (its line graph is not Δ-colourable) iff it has a Δ-overfull subgraph (odd order at least 3, more than Δ (|V(H)| − 1)/2 edges); this is Plantholt's criterion with Chetwynd–Hilton's 6/7. critical_overfull: a Δ-critical graph (connected, class two, every edge-deleted subgraph Δ-colourable) with 2n + 5δ ≤ 3Δ + 6 (Chen–Cao), or 3n + 7δ ≤ 4Δ + 10 (Cao–Chen–Jing–Shan, variant), or 3n + 7δ ≤ 4Δ + 17 and n + δ ≥ 27 (Cao–Chen–Jing–Shan) has odd order, is overfull (|E| > Δ ⌊n/2⌋), and so is a Δ-overfull subgraph of itself. The only new proof is the elementary step from overfullness to odd order at least 3 (degree sum) and the conversion to the subgraph form. Two statements; no definitions beyond Mathlib's.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/overfull-criteria",
+  "commit": "2af917da6f41ebf2275c4ee4b21d5861e02fac49",
+  "project_path": null,
+  "declarations": [
+    "OverfullCriteria.class_two_iff_overfull_subgraph",
+    "OverfullCriteria.critical_overfull"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-08T02:02:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2af917da6f41ebf2275c4ee4b21d5861e02fac49",
+        "fork_repository": "PalomarArchive/jtraverso--overfull-criteria--2e39e1179caf",
+        "source_repository": "jtraverso/overfull-criteria"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6aaf867a67b0e73dfda8cf843514297fe5c315d5f49e90b8ba7c10cb33749a13"
+}

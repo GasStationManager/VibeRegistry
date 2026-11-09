@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000007",
+  "version": 1,
+  "title": "Maximum-modulus points of entire functions (Erdős Problem 1117), in Lean 4",
+  "abstract": "A Lean 4 formalization of both maximum-modulus counting questions of Hayman–Lingham Problem 2.16 (Erdős Problem 1117). For an entire function f and a radius r, let ν(f, r) be the number of points on the circle |z| = r where |f| attains its maximum on that circle. The registered theorem proves two things: some non-monomial entire function has ν(f, r) unbounded along radii tending to infinity; and for every non-monomial entire function there is one finite bound B with ν(f, r) ≤ B along a cofinal set of radii, so the counts never tend to infinity. The first part follows Pardo-Simón and Sixsmith's finite-order construction and proves the approximation step of Rempe-Gillen that it uses; the second follows Li's cofinal-bound argument. The theorem depends only on the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Yao Xu"
+  ],
+  "repository": "https://github.com/cadamcat/max-modulus-points-lean4",
+  "commit": "661c39563de20e92f3edde7fef840518608304dc",
+  "project_path": null,
+  "declarations": [
+    "MaxModulusPoints.Blueprint.main"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV",
+      "math.DS"
+    ],
+    "msc2020": [
+      "30D20",
+      "30D15",
+      "37F10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T06:45:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "661c39563de20e92f3edde7fef840518608304dc",
+        "fork_repository": "PalomarArchive/cadamcat--max-modulus-points-lean4--b325250ba921",
+        "source_repository": "cadamcat/max-modulus-points-lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a785f6d201a048b82ea15f8c336d5672ef5e93f041b0a8ed5f1a9192067d464d"
+}

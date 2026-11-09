@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-04-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-04-000004",
+  "version": 2,
+  "title": "Resolution of Singularities of an Algebraic Variety Over a Field of Characteristic Zero",
+  "abstract": "Heisuke Hironaka's 1964 papers 'Resolution of singularities of an algebraic variety over a field of characteristic zero I,II' were seminal achievements in the history of algebraic geometry. They had inestimable impact on a broad range of research areas in mathematics including geometry, topology, number theory, differential equations, and mathematical physics. The achievement was recognised by a Fields medal awarded to Hironaka in 1970. The papers constitute a veritable tour de force contained in 217 densely-packed pages. The algebraic and combinatorial complexity of the papers is daunting, especially towards the later portions, and have led to a significant level of persistent incomprehension even on the part of domain experts. Because more transparent proofs of the same result appeared in the 1990s, the question of understanding the original papers in detail has become somewhat forgotten. In the associated repository, we have formalised Hironaka's argument in full, modulo results he cites. We have also compiled an erratum, and included complementary arguments for a few portions of the paper that had non-trivial gaps. In a separate publication, we will give some of the narrative background, the interesting story of the mathematical community's tortuous efforts to understand these great works. The size of the formalization has forced us to split this work over three Palomar entries, one for each comparator configuration. The related entries can be found at PALOMAR-2026-11-03-000021 and PALOMAR-2026-11-04-000012 respectively.",
+  "authors": [
+    "Daattavya Aggarwal",
+    "Minhyong Kim",
+    "Oisin Kim"
+  ],
+  "repository": "https://github.com/daattavya98/HironakaLean-public",
+  "commit": "820454d700ba07af249bbeafaa72d204350c3101",
+  "project_path": null,
+  "declarations": [
+    "Hironaka.MainTheorem.Ch0.exists_isInvertible_subsheaf_pullback",
+    "Hironaka.RationalApplication.question_E",
+    "Hironaka.FunctionFieldPair.exists_isObtainedBy_dominates",
+    "Hironaka.FunctionFieldPair.exists_higherDirectImage_structureSheaf",
+    "Hironaka.FunctionFieldPair.exists_isObtainedBy_nonsingular_projective"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG"
+    ],
+    "msc2020": [
+      "14E15",
+      "14B05",
+      "14E05",
+      "13H05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-04T21:03:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "820454d700ba07af249bbeafaa72d204350c3101",
+        "fork_repository": "PalomarArchive/daattavya98--HironakaLean-public--80b69563f5e6",
+        "source_repository": "daattavya98/HironakaLean-public"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e5f2258bb6921dcd973baf10950ac66aabd0256f051a032e9ea9a83817cff8b2"
+}

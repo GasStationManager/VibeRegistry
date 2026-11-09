@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000008",
+  "version": 1,
+  "title": "The Dixmier conjecture implies the Jacobian conjecture, and is false in dimension 3 and above",
+  "abstract": "A machine-checked proof that, over a field of characteristic zero, the Dixmier conjecture in dimension n implies the Jacobian conjecture in dimension n (Bass, Connell and Wright, 1982), and so, with an explicit counterexample to the Jacobian conjecture padded to every dimension n >= 3 and proved here, that the Dixmier conjecture is false in every dimension n >= 3. The four statements and their definitions are Formal Conjectures' (DixmierConjecture.lean, arXiv math/0608009), copied verbatim into Challenge.lean, so this entry proves Formal Conjectures' own statements. The proof builds the polynomial representation of the Weyl algebra, shows it faithful in characteristic zero, and uses the classical Weyl-algebra lift described by Bass, Connell and Wright (1982, p. 297), who credit Vaserstein and Kac.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/fc-dixmier-jacobian",
+  "commit": "14d09da17dc21fa0a5532b3153ef50a3b87fe4a8",
+  "project_path": null,
+  "declarations": [
+    "DixmierConjecture.dixmier_conjecture",
+    "DixmierConjecture.dixmier_conjecture.variants.dimension_three",
+    "DixmierConjecture.dixmier_conjecture.variants.dimension_ge_three",
+    "DixmierConjecture.dixmier_conjecture.variants.jacobian_implication"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA",
+      "math.AG"
+    ],
+    "msc2020": [
+      "16S32",
+      "14R15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T08:42:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "14d09da17dc21fa0a5532b3153ef50a3b87fe4a8",
+        "fork_repository": "PalomarArchive/zblore--fc-dixmier-jacobian--ab9dd48aec47",
+        "source_repository": "zblore/fc-dixmier-jacobian"
+      }
+    ]
+  },
+  "statement_hash": "sha256:24612651008ef4df06c8a1bcdaa8b8f7dc9ec443b5c0d1029f09d60cb7d30e1c"
+}

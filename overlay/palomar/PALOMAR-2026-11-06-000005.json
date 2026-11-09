@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000005",
+  "version": 1,
+  "title": "The settling sum of the plastic number: sum_{n >= 1} ||rho^n||^2 = rho. The squared distances from the powers of the plastic number to the nearest integers sum to the plastic number itself; the even-power trace of its two hidden conjugates is rho; with the general cubic complex-pair form",
+  "abstract": "Kernel-checked proofs, in Lean 4 + Mathlib, of six statements. Write ||x|| = |x - round x| for the distance from a real number to the nearest integer, and let rho be the plastic number, the real root of x^3 = x + 1 and the smallest Pisot number (Siegel 1944). Convergence of sum_{n >= 1} ||theta^n||^2 for a Pisot number theta is elementary, and Pisot (1938) proved the converse; neither gives the value. (1) For every real rho with rho^3 = rho + 1, sum_{n >= 1} ||rho^n||^2 = rho (as a HasSum). (2) The tsum form of (1). (3) For every complex alpha != rho with alpha^3 = alpha + 1 (one of the two conjugates inside the unit disc), sum_{n >= 0} (alpha^(2n) + conj(alpha)^(2n)) = rho: the even-power trace of the hidden pair is the generator, the mechanism behind (1), because x^3 - x - 1 = (x - 1) x (x + 1) - 1 makes the resolvent trace sum_{roots} 1/(1 - r^2) vanish. (4) For a real theta, a complex alpha with ||alpha|| < 1, and integers a, b, c that are the elementary symmetric functions of (theta, alpha, conj alpha): sum_{n >= 1} (S_n - theta^n)^2 = Re(geo alpha), where S_n are the Newton power sums of x^3 - a x^2 + b x - c and geo alpha = alpha^2/(1 - alpha^2) + conj(alpha)^2/(1 - conj(alpha)^2) + 2 alpha conj(alpha)/(1 - alpha conj(alpha)). (5) Under the same hypotheses, for every N with ||alpha||^N < 1/4, sum_{n >= 1} ||theta^n||^2 = Re(geo alpha) + sum_{n = 1}^{N} (||theta^n||^2 - (S_n - theta^n)^2): Pisot's convergence in quantitative form for the cubic complex-pair case; (1) is the case a = 0, b = -1, c = 1, N = 10 (the smallest N with rho^(-N/2) < 1/4; the n = 10 correction term is zero), with Re(geo alpha) = 2 rho^2 + 3 rho - 2 and correction 2 - 2 rho - 2 rho^2. (6) x^3 = x + 1 has exactly one real solution. Statements 4-5 assume neither theta > 1 nor irreducibility. Pisot's theorem itself is not formalized. Not compared, proved in the repository's library only: the threshold from which the Perrin numbers are the nearest integers to rho^n (n >= 10, sharp at n = 9), a claim previously stated without proof at OEIS A001608 (R. Stephan, 2002); it was a compared statement in the withdrawn submissions of 2026-11-03/04 and was removed from the compared set on 2026-11-05 so that every compared result is one first presented here. Application to time (no compared statement asserts it): in the arithmetic of time the tick is multiplication by rho on Q(rho) and the record is the integer lattice; statement 1 says the total squared distance by which the tick history falls short of its record is exactly one tick's unit, rho, and statement 3 says that unit is returned by the two conjugates that are not seen; the quartic companion Q, Q^4 = Q + 1, is not Pisot, so by Pisot's theorem its series diverges (not proved here). That physical time is this arithmetic is the identification stated in the companion entry PALOMAR-2026-08-19-000006 (the arithmetic of time), as an identification; the theorems here are its arithmetic content. That entry's README Scope section is reproduced verbatim in this entry's README.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/arithmetic-of-time-settling-sum",
+  "commit": "a0f3d9903e91e4e99f80b70d1eeade39b82d7d3e",
+  "project_path": null,
+  "declarations": [
+    "SettlingSum.plastic_settling_sum",
+    "SettlingSum.plastic_tsum",
+    "SettlingSum.plastic_even_trace",
+    "SettlingSum.cubic_trace_sum",
+    "SettlingSum.cubic_settling_sum",
+    "SettlingSum.existsUnique_root"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math-ph",
+      "physics.hist-ph"
+    ],
+    "msc2020": [
+      "11R06",
+      "11J71",
+      "11B39",
+      "00A79"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T02:55:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a0f3d9903e91e4e99f80b70d1eeade39b82d7d3e",
+        "fork_repository": "PalomarArchive/stalex444--arithmetic-of-time-settling-sum--82edf6e366e4",
+        "source_repository": "stalex444/arithmetic-of-time-settling-sum"
+      }
+    ]
+  },
+  "statement_hash": "sha256:342a0b6bb05c402b50789542bcd17a7d16d1c911c2b460784b91706a6c7bf30c"
+}

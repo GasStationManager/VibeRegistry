@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000001",
+  "version": 1,
+  "title": "The Minimum Number of Coprime Adjacencies in a Permutation",
+  "abstract": "A Lean 4 formalization of the exact minimum number of coprime adjacent pairs over all permutations of the first n positive integers, valid unconditionally for every n at least four. The proof constructs optimal paths in the graph joining noncoprime integers.",
+  "authors": [
+    "Guillaume Sidoine"
+  ],
+  "repository": "https://github.com/gsidoine/coprime-adjacencies-lean",
+  "commit": "4ccf4a1d94ccf83473bcacf87ddd9117274ec945",
+  "project_path": null,
+  "declarations": [
+    "CoprimeAdjacencies.exact_minimum_coprime_adjacencies"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C38",
+      "11A41"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T00:08:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4ccf4a1d94ccf83473bcacf87ddd9117274ec945",
+        "fork_repository": "PalomarArchive/gsidoine--coprime-adjacencies-lean--389f43e9404a",
+        "source_repository": "gsidoine/coprime-adjacencies-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:070330edf7e2c0be3eb1575ddcfdf63c9c8271cc76b92a83081e1bd8c99a43e0"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000004",
+  "version": 1,
+  "title": "The orthogonal boundary-point art gallery problem is ∃ℝ-complete, in Lean 4",
+  "abstract": "A Lean 4 formalization of material in a forthcoming manuscript entitled \"The Orthogonal Art Gallery Problem is ∃ℝ-complete\". A Lean 4 and Mathlib proof, for an explicit single-tape Turing machine model, that deciding whether an orthogonal simple polygon (every edge horizontal or vertical) with rational corners can be guarded by g points of its boundary, which together must see the whole closed polygon (the boundary-point variant), is ∃ℝ-complete under polynomial-time many-one reductions. The orthogonal point-point and point-boundary variants are the subject of the author's earlier entry PALOMAR-2026-11-01-000004 v1, whose definitions this entry reuses unchanged. For general polygons the boundary-point variant is treated by Abrahamsen, Adamaszek and Miltzow (J. ACM 2021); orthogonal polygons are not. The hardness proof is a new construction: the ETR-INV instance is compiled to rows of fourteen relation profiles, and the polygon is a hub with one floor slot per variable and one door per row, behind each of which hangs an orthogonal wing (a staircase corridor ending in an arithmetic room) whose boundary guards copy the slot values through the door and enforce the row relation. Its finite visibility facts are kernel-checked certificates on the wing charts, parametric in the size and value parameters. The proofs use only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/OrthogonalArtGalleryProblem-BoundaryPointVariant-ExistsR-Lean4",
+  "commit": "2a85b75f31661e89d545efdb3c6e2d3c3e54aa09",
+  "project_path": null,
+  "declarations": [
+    "ArtGallery.agpOrthBoundaryPoint_erComplete"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CG",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "68U05",
+      "68Q17",
+      "14P10",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T01:01:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2a85b75f31661e89d545efdb3c6e2d3c3e54aa09",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--OrthogonalArtGalleryProblem-BoundaryPointVariant-ExistsR-Lean4--cae60e8d7b29",
+        "source_repository": "RBarish-UTokyo/OrthogonalArtGalleryProblem-BoundaryPointVariant-ExistsR-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c924f9d6f9522d90a446e204454cf26339ee4aeb5c3dccd7cd8bbcaac9694f23"
+}

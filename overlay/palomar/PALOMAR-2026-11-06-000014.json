@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-06-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000014",
+  "version": 1,
+  "title": "Reasonable bounds for restricted polynomial progressions in F_p^n",
+  "abstract": "A complete Lean 4 / Mathlib formalization of Theorem 1.1 of Burgin, Fragkos, Kruzel, Lacey and Stokolosa (arXiv:2610.12831). For k ≥ 2 there are M_k ≤ exp(7 k log k) and P_k ≤ exp exp(25 k² log k), and an absolute constant C₁, such that for every prime p ≥ P_k there are C, c > 0 with the following property. Every A ⊆ F_p^n with n > exp^{(K)}(1) and density at least C / (log^{(K)} n)^c, where K = k^{C₁ k}, contains a restricted polynomial progression x, x + P_1(y), …, x + P_{k-1}(y), with P_j(y) = (y_1^j, …, y_n^j) and y ∈ {0, 2, 3, …, M_k}^n \\ {0}. Moreover, the k points of any such progression are pairwise distinct. The formalization also proves the two theorems that the paper cites from the literature and does not prove. The first is the inverse theorem of Bhangale, Khot, Liu and Minzer for noise stability under distributions with no abelian embedding (Theorem 1.4 of the paper, which is Theorem 1 of their \"On approximability of satisfiable k-CSPs: VII\"), in full generality. The second is Dimitrov's theorem on the Schinzel–Zassenhaus conjecture (Theorem 5.11 of the paper). Only Lean's standard axioms are used.",
+  "authors": [
+    "Michael Lacey"
+  ],
+  "repository": "https://github.com/lacey-gatech/restricted-polynomials-lean",
+  "commit": "74d50a348e889711901a77defee87b92f94c89db",
+  "project_path": null,
+  "declarations": [
+    "RestrictedPolynomials.main_theorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B30",
+      "05D10",
+      "11T06",
+      "11R06"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-06T15:32:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "74d50a348e889711901a77defee87b92f94c89db",
+        "fork_repository": "PalomarArchive/lacey-gatech--restricted-polynomials-lean--6ab22760b885",
+        "source_repository": "lacey-gatech/restricted-polynomials-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:47f9b5d838eea741cacdcc14804f23afb0af3073e4288f753cd604613c406632"
+}

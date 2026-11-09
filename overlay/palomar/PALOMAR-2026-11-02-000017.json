@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-02-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-02-000017",
+  "version": 1,
+  "title": "Exact directed L/X diameter of the symmetric group",
+  "abstract": "For every n >= 5, the directed Cayley graph of the symmetric group S_n with unit-cost generators L = (0 1 ... n-1) and X = (0 1) has diameter (3n^2 - 8n + 12)/4 for even n and (3n^2 - 8n + 9)/4 for odd n. The formalization proves matching upper and lower bounds, and the existence of a literal L/X word within the sharp bound between every ordered pair of permutations. The independent statement takes the maximum of minimum word lengths over all ordered pairs. No inverse shift is included among the unit-cost moves.",
+  "authors": [
+    "S. Uskov",
+    "A. Chervov",
+    "F. Levkovich-Maslyuk",
+    "I. Litvak",
+    "A. Smolensky",
+    "A. Soibelman"
+  ],
+  "repository": "https://github.com/snow-ghost/glushkov-lx-lean",
+  "commit": "3f84d514ac5ff5c34c3a5892a577accbb8b180c0",
+  "project_path": null,
+  "declarations": [
+    "PalomarLX.boundedRouting",
+    "PalomarLX.exactDiameter"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.GR"
+    ],
+    "msc2020": [
+      "05C12",
+      "05C25",
+      "20B30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-02T20:11:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3f84d514ac5ff5c34c3a5892a577accbb8b180c0",
+        "fork_repository": "PalomarArchive/snow-ghost--glushkov-lx-lean--3fb7240a5481",
+        "source_repository": "snow-ghost/glushkov-lx-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:77dee9430cbf0d2c35b8a5a57959d5f92b18b79052adbd24650f96eff7ccb263"
+}

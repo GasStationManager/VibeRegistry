@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-08-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-08-000007",
+  "version": 1,
+  "title": "Walecki's decompositions of complete graphs into Hamiltonian cycles and paths",
+  "abstract": "A Lean 4 / Mathlib proof of Walecki's theorem: for every m, the complete graph on 2m + 1 vertices is the edge-disjoint union of m Hamiltonian cycles (hamiltonian_cycles_odd), and the complete graph on 2m vertices is the edge-disjoint union of m Hamiltonian paths (hamiltonian_paths_even). Both are stated for an arbitrary finite vertex type of the given cardinality, with Mathlib's Walk.IsHamiltonianCycle and Walk.IsHamiltonian, pairwise disjoint edge lists, and every edge of the complete graph on some cycle (path). The proof is Walecki's zig-zag construction: on ZMod (2m) the paths i, i+1, i−1, i+2, i−2, …, i+m (0 ≤ i < m) are Hamiltonian; an edge {x, y} of the i-th path has x + y ∈ {2i, 2i+1}, which makes the paths edge-disjoint, and m (2m − 1) = C(2m, 2) shows that they cover all edges; closing each path through a new vertex gives the cycles. Two statements; no definitions beyond Mathlib's.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/walecki-decompositions",
+  "commit": "5e8a6eab7b0c8dacc4eb41b5c480bb90ed449a0e",
+  "project_path": null,
+  "declarations": [
+    "WaleckiDecomposition.hamiltonian_cycles_odd",
+    "WaleckiDecomposition.hamiltonian_paths_even"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-08T05:00:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5e8a6eab7b0c8dacc4eb41b5c480bb90ed449a0e",
+        "fork_repository": "PalomarArchive/jtraverso--walecki-decompositions--15ec67c941b9",
+        "source_repository": "jtraverso/walecki-decompositions"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7585ce8a763c21648bc4b30725bdc7e5d1f72691bdbd3cfa7fc71cd021cf5cc0"
+}

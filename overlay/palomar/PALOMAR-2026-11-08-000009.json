@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-08-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-08-000009",
+  "version": 1,
+  "title": "Fournier's theorem: graphs whose maximum-degree vertices induce a forest are of class one",
+  "abstract": "A Lean 4 / Mathlib proof of Fournier's theorem (1973): if the vertices of maximum degree of a finite simple graph G induce a forest, then G has a proper edge colouring with Δ(G) colours (fournier: G.lineGraph.Colorable G.maxDegree under (G.induce {v | G.degree v = G.maxDegree}).IsAcyclic). The proof takes an edge-minimal subgraph H of G that is not Δ(G)-edge-colourable; Vizing's theorem gives Δ(H) = Δ(G), and Vizing's adjacency lemma applied to every edge xy of H gives a neighbour of x of maximum degree other than y, so the maximum-degree vertices of H span a subgraph of minimum degree at least 2 inside the forest, which is impossible (the end of a longest path). Vizing's theorem and the adjacency lemma are imported as lake dependencies from PALOMAR-2026-10-15-000004 and PALOMAR-2026-11-04-000009. One statement; no definitions beyond Mathlib's.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/fournier-class-one",
+  "commit": "b7baf7b17023d2a2a6dd9650c0706fcabb3bc227",
+  "project_path": null,
+  "declarations": [
+    "Fournier.fournier"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-08T06:31:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b7baf7b17023d2a2a6dd9650c0706fcabb3bc227",
+        "fork_repository": "PalomarArchive/jtraverso--fournier-class-one--5f73bebe9b0a",
+        "source_repository": "jtraverso/fournier-class-one"
+      }
+    ]
+  },
+  "statement_hash": "sha256:965fd74d550fe6c20a7339c1ecb94576735a7778fc96f0ae67c4a86073b52bc0"
+}

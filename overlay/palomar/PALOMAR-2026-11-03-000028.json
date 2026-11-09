@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-03-000028",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-03-000028",
+  "version": 1,
+  "title": "The Jacobian conjecture in dimension 2n implies the Poisson conjecture in dimension n",
+  "abstract": "A machine-checked proof that, over a field of characteristic zero, the Jacobian conjecture in dimension 2n implies the Poisson conjecture in dimension n (K. Adjamagbo and A. van den Essen, 2007, Theorem 7). The statement and definitions are Formal Conjectures' (poisson_conjecture.variants.jacobian_implication in PoissonConjecture.lean, arXiv math/0608009), copied verbatim into Challenge.lean, so this entry proves Formal Conjectures' own statement. A Poisson endomorphism's Jacobian matrix lies in Mathlib's symplectic group, so its determinant is a unit; the Jacobian conjecture then gives a polynomial inverse.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/fc-jacobian-poisson",
+  "commit": "e395ab52d16b1c26b354daecf0c62b361f01c7a8",
+  "project_path": null,
+  "declarations": [
+    "PoissonConjecture.poisson_conjecture.variants.jacobian_implication"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA",
+      "math.AG"
+    ],
+    "msc2020": [
+      "14R15",
+      "17B63"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-03T21:59:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e395ab52d16b1c26b354daecf0c62b361f01c7a8",
+        "fork_repository": "PalomarArchive/zblore--fc-jacobian-poisson--4d0d84a331c9",
+        "source_repository": "zblore/fc-jacobian-poisson"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e05299ecc14d57bc16962b9c8dcc83dc95d6a03d96e0682798f904a57b984b19"
+}
