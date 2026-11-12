@@ -43,4 +43,3 @@ lean4checker = false
 [build]
 strategy = "copy"
 targets = "LeanDirac Solution Registry"
-
