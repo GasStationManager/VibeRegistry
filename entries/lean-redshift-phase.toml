@@ -1,0 +1,28 @@
+[project]
+id = "lean-redshift-phase"
+name = "C19 coupled-phase propagating gap"
+description = "Positivity of the propagating phase mode in a declared coupled C19 cubic-lattice branch"
+url = "https://github.com/gpartin/LeanRedShiftDerivation"
+commit = "e2f41976c32b3ef60470aa27f9eea6dcb10cbc26"
+branch = "main"
+
+[lean]
+toolchain = "leanprover/lean4:v4.33.1"
+mathlib_tag = "v4.33.1"
+
+[[theorems]]
+spec_module = "Registry.LeanRedshiftPhase.CoupledPhase"
+impl_module = "RedshiftLWFormal.Core.RedshiftLW005CoupledPhaseBranch"
+names = ["RedshiftLWFormal.redshiftLW_phase_propagating_gap_positive"]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[checks]
+comparator = true
+nanoda = true
+definitions = false
+safe_verify = false
+lean4checker = false
+
+[build]
+strategy = "copy"
+targets = "RedshiftLWFormal Registry"
