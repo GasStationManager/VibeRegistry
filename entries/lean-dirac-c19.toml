@@ -1,0 +1,45 @@
+[project]
+id = "lean-dirac-c19"
+name = "Cubical C19 first-order factorization"
+description = "An eight-corner cubical first-order symbol whose square is the isotropic quadratic C19 continuum symbol"
+url = "https://github.com/gpartin/LeanDiracDerivation"
+commit = "9eef7df27e29298dae58d563a1608b00102048df"
+branch = "submission/palomar"
+
+[lean]
+toolchain = "leanprover/lean4:v4.35.0-rc2"
+mathlib_tag = "v4.35.0-rc2"
+
+[[theorems]]
+spec_module = "Registry.LeanDiracC19.Challenge"
+impl_module = "Solution"
+names = [
+  "LFMDiracChallenge.cellFlip0",
+  "LFMDiracChallenge.cellFlip1",
+  "LFMDiracChallenge.cellFlip2",
+  "LFMDiracChallenge.cellBit0",
+  "LFMDiracChallenge.cellBit1",
+  "LFMDiracChallenge.cellBit2",
+  "LFMDiracChallenge.cubeIncidenceFlip",
+  "LFMDiracChallenge.cubeIncidenceSign",
+  "LFMDiracChallenge.cubeIncidenceGamma",
+  "LFMDiracChallenge.cubeParityBeta",
+  "LFMDiracChallenge.cubeIncidenceLinear",
+  "LFMDiracChallenge.cubeDiracSymbol",
+  "LFMDiracChallenge.c19ContinuumSpeed",
+  "LFMDiracChallenge.c19ContinuumDiracSymbol",
+  "LFMDiracChallenge.c19ContinuumScalarSymbol",
+  "LFMDiracChallenge.main_result",
+]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[checks]
+comparator = true
+nanoda = true
+definitions = true
+safe_verify = false
+lean4checker = false
+
+[build]
+strategy = "copy"
+targets = "LeanDirac Solution Registry"
