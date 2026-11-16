@@ -1,0 +1,36 @@
+[project]
+id = "lean-klein-gordon"
+name = "Lean Klein-Gordon Derivation"
+description = "Exact C19 isotropic quadratic moment and explicit quartic finite-spacing error bound"
+url = "https://github.com/gpartin/LeanKleinGordonDerivation"
+commit = "fed494f8e9b9ad6b0c1f1b6afd2fda08072339df"
+branch = "main"
+
+[lean]
+toolchain = "leanprover/lean4:v4.33.1"
+mathlib_tag = "v4.33.1"
+
+[[theorems]]
+spec_module = "Registry.KleinGordon.C19Continuum"
+impl_module = "KleinGordonFormal.Core.KleinGordon004Continuum"
+names = [
+  "KleinGordonFormal.c19_isotropic_moment",
+  "KleinGordonFormal.c19_speed_squared",
+  "KleinGordonFormal.c19_spatial_error",
+]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[checks]
+comparator = true
+nanoda = false
+definitions = false
+safe_verify = false
+lean4checker = false
+
+[build]
+strategy = "copy"
+targets = "KleinGordonFormal"
+
+[tools]
+safe_verify_rev = "main"
+lean4checker_rev = "v4.33.1"
