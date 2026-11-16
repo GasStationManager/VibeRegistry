@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000015",
+  "version": 1,
+  "title": "Wigner's theorem for the rays of C^N: unitary or antiunitary, unique up to a phase",
+  "abstract": "A machine-checked proof of Wigner's theorem for the complex projective space of C^N. Let f be any map from rays to rays that preserves the transition probability |<psi, phi>|^2 / (|psi|^2 |phi|^2). Then f is induced by a unitary or by an antiunitary (a unitary after coordinatewise complex conjugation), and in each case the inducing operator is unique up to a global phase. Nothing else is assumed about f: not linearity, not continuity, not bijectivity. The theorem is stated twice, with linear isometries (wigner, wigner_unique, wigner_unique_antiunitary) and with unitary matrices acting on rays (wigner_unitaryGroup, wigner_unitaryGroup_unique, wigner_unitaryGroup_unique_antiunitary). Mathlib, at the pinned commit, has no Wigner theorem. The proof was first completed in the author's csd-lean4 library on 2 July 2026 (commit c26c0954). Two other Lean proofs are listed under related_formalizations: one for maps on unit vectors of C^n, completed on 13 July 2026, and one whose existence theorem covers complex Hilbert spaces of any dimension, at a snapshot dated 31 October 2026. This proof is independent of both. The theorem is classical and no priority is claimed for it.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/wigner-lean",
+  "commit": "5f5c8784bdc789cf846073f80e2e23997475e52a",
+  "project_path": null,
+  "declarations": [
+    "Projectivization.wigner",
+    "Projectivization.wigner_unique",
+    "Projectivization.wigner_unique_antiunitary",
+    "Projectivization.wigner_unitaryGroup",
+    "Projectivization.wigner_unitaryGroup_unique",
+    "Projectivization.wigner_unitaryGroup_unique_antiunitary"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "math-ph"
+    ],
+    "msc2020": [
+      "81P16",
+      "15A86",
+      "47N50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T10:15:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5f5c8784bdc789cf846073f80e2e23997475e52a",
+        "fork_repository": "PalomarArchive/zblore--wigner-lean--380596a3cd96",
+        "source_repository": "zblore/wigner-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:71d8e99d126bb0fe8c8eef99889f5eebe7082eeaca94c20df51ead7bed4c8397"
+}

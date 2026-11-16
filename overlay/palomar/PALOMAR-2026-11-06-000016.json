@@ -2,17 +2,18 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-11-06-000016",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-06-000016",
-  "version": 1,
-  "title": "Finite nonlinear MkCS exact penalty thresholds",
-  "abstract": "An adapted finite nonlinear QUBO formalization for the maximum k-colorable vertex-subset problem: binary-domain attainment, ordered color-pair normalization, weak optimal-value equality with auxiliary repair, strict optimizer feasibility, the one-color exception and attained boundary ties.",
+  "version": 2,
+  "title": "Finite MkCS exact penalties, universal thresholds and sequential repair",
+  "abstract": "A finite-graph formalization of nonlinear and linear QUBO penalties for the maximum k-colorable vertex-subset problem. It retains the earlier nonlinear interface and adds jointly optimized binary slack arrays, exact sequential feasibility repair, strict versus weak penalty guarantees, one-color exceptions and universal value thresholds. An unchanged companion follows the manuscript’s strict nonlinear single-slot-deletion proof.",
   "authors": [
     "David E. Bernal Neira"
   ],
   "repository": "https://github.com/bernalde/finite-mkcs-penalties",
-  "commit": "9a7a1a98809aeda6f5fcd67a262aa4a3f482ab6c",
+  "commit": "58196a3025f9de8b36c396c331cde221542ef6a3",
   "project_path": null,
   "declarations": [
-    "PalomarMkCS.solution"
+    "PalomarMkCS.solution",
+    "PalomarMkCS.extension_solution"
   ],
   "informal": {},
   "classification": {
@@ -26,7 +27,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-11-06T18:32:41Z",
+  "published_at": "2026-11-09T14:28:48Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -40,11 +41,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "9a7a1a98809aeda6f5fcd67a262aa4a3f482ab6c",
+        "commit": "58196a3025f9de8b36c396c331cde221542ef6a3",
         "fork_repository": "PalomarArchive/bernalde--finite-mkcs-penalties--7675c9280d97",
         "source_repository": "bernalde/finite-mkcs-penalties"
       }
     ]
   },
-  "statement_hash": "sha256:5e665cb1be9bf5a688805f7a89ce75076e1ba1c26febecbf8fc9a3d4fc554f40"
+  "statement_hash": "sha256:b347112844f6b7762f515e24234a1b82f442793c684a9c576d86bb15cadc9809"
 }

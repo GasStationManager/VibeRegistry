@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000009",
+  "version": 1,
+  "title": "OEIS A000262 and A082579: Bala's Theorem 1 (periodicity modulo every k)",
+  "abstract": "If Σ a(n) x^n/n! = F(x) exp(x G(x)) with F, G integer power series and G(0) = 1, then a(n+k) ≡ a(n) (mod k) for all n, k (Bala 2017, Theorem 1). Hence A000262 (exp(x/(1−x))) and A082579 (exp(x/(1−x)^2)) satisfy k | a(n+k) − a(n) for k >= 2.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "b452164b17ccd6ed00110e9610a3cc023611d326",
+  "project_path": null,
+  "declarations": [
+    "OeisA262.bala_theorem1",
+    "OeisA262.a000262",
+    "OeisA262.a082579"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B50",
+      "05A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T08:17:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b452164b17ccd6ed00110e9610a3cc023611d326",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a4ddfe51cb62256476230f28b923ae8917ed2539f71c03267ddaabdce1296214"
+}

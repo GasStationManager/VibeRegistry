@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-12-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-12-000015",
+  "version": 1,
+  "title": "Smale's mean value constant equals 4",
+  "abstract": "A Lean 4 proof that Smale's mean value constant equals 4. For a complex polynomial p of degree d >= 2 with p(0) = 0 and p'(0) != 0, let S(p) be the minimum of |p(c)/(c p'(0))| over the critical points c of p, let K(d) be the supremum of S(p) over all such p of degree d, and let K* be the supremum of K(d) over d >= 2. In 1981 Smale proved K* <= 4 and asked whether 4 can be replaced by 1 (and asked it again in 2000). The formalization proves K* = lim_{d -> oo} K(d) = 4, which is Theorem 1.1 of D. Goel, \"Smale's mean value constant (1981) equals 4\". It also proves Smale's bound K(d) <= 4, that K(d) does not decrease with d, and that K(d) < 4 for every d.\nComparison with Smale's conjecture. Smale asked whether K* = 1. That was disproved in 2026 (Adamczewski's Lean disproof; Adamczewski and Colbrook). Jatar and Ng then proved K* > 1.1018, and the author proved K* > 1.1559. This project does not prove the conjecture: it answers Smale's question in the negative. K* equals 4, Smale's own bound, so no constant smaller than 4 works for all degrees. In each single degree the constant stays below 4: K(d) <= 4^((d-2)/(d-1)) (Beardon, Minda and Ng, 2002), and K(d) < 4 - 2.263/sqrt(d) for d >= 8 (Crane, 2007). So the supremum K* is not attained.",
+  "authors": [
+    "Dave Goel"
+  ],
+  "repository": "https://github.com/david44hello/paper_smale-mean-value-constant-equals-4",
+  "commit": "72511404d60696455d07604a6f6cb2e97aad44b4",
+  "project_path": "lean",
+  "declarations": [
+    "Smale.P030.Rows.thm_1_1",
+    "Smale.P030.kstar_eq_four",
+    "Smale.P030.tendsto_Kd_four"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV"
+    ],
+    "msc2020": [
+      "30C10",
+      "30C15",
+      "30C55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-12T22:23:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "72511404d60696455d07604a6f6cb2e97aad44b4",
+        "fork_repository": "PalomarArchive/david44hello--paper_smale-mean-value-constant-equals-4--529012bffd21",
+        "source_repository": "david44hello/paper_smale-mean-value-constant-equals-4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b91b2821a7602492a7c4bc804f2fd78cba3ed16a206cf2ad52fe92b6cd4b36b4"
+}

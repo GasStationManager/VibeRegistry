@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000010",
+  "version": 1,
+  "title": "Equivariant isometric embeddings via Günther's method",
+  "abstract": "A Lean 4 / Mathlib formalization of the algebraic and functional-analytic core of a proof, by Günther's method, of the Moore–Schlafly theorem (Math. Z. 173, 1980): a compact Riemannian manifold with an isometric action of a compact Lie group has an isometric embedding into Euclidean space that is equivariant for an orthogonal representation. It proves unconditionally, with no analytic hypotheses, the equivariant Günther perturbation theorem on the flat torus ℝⁿ/2πℤⁿ: for a map u whose first and second derivatives have a dual frame, with Fourier coefficients in a weighted Wiener algebra, every small symmetric h is realized as a metric perturbation, ⟨∂ᵢ(u+v), ∂ⱼ(u+v)⟩ = ⟨∂ᵢu, ∂ⱼu⟩ + hᵢⱼ pointwise, with a linear bound on v, and u+v inherits every translation-and-rotation symmetry of the data and is real if the data are real. It also proves unconditionally the equivariant Günther fixed point theorem in a Banach space, together with the equivariance of its solution map and its Lipschitz dependence on the data; the uniqueness, least-norm property, equivariance and coordinate independence of the pointwise Nash–Günther right inverse; the freeness of the Veronese map; and the Haar-averaged invariant inner product used in the approximation step. It proves the main theorem for general compact manifolds only conditionally, from explicitly stated analytic hypotheses on an abstract embedding problem.",
+  "authors": [
+    "Roger Schlafly"
+  ],
+  "repository": "https://github.com/schlafly1/equivariant-embedding",
+  "commit": "dff9e81a282d20fb0979ff37d71993725ebcb422",
+  "project_path": null,
+  "declarations": [
+    "EquivEmbed.gunther_fixed_point_equivariant",
+    "EquivEmbed.gunther_solution_map_equivariant",
+    "EquivEmbed.gunther_solution_map_lipschitz",
+    "EquivEmbed.flat_torus_equivariant_perturbation",
+    "EquivEmbed.nash_gunther_right_inverse",
+    "EquivEmbed.nash_gunther_right_inverse_equivariant",
+    "EquivEmbed.veronese_map_free",
+    "EquivEmbed.haar_averaged_inner_product",
+    "EquivEmbed.equivariant_gunther_perturbation",
+    "EquivEmbed.equivariant_isometric_embedding_conditional"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "53C42",
+      "57S15",
+      "58J05",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T06:13:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dff9e81a282d20fb0979ff37d71993725ebcb422",
+        "fork_repository": "PalomarArchive/schlafly1--equivariant-embedding--d7dee15bb253",
+        "source_repository": "schlafly1/equivariant-embedding"
+      }
+    ]
+  },
+  "statement_hash": "sha256:80638beb8304f516c4099ec3203f8a78a1343c1a8bff87e5fcb38d76a3639ff4"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000011",
+  "version": 1,
+  "title": "OEIS A396804: a(n) mod 5 is never 3 (Hanna's conjecture)",
+  "abstract": "For A(x) = Σ a(n) x^n/n! with A(x) = x exp(A∘A∘A∘A(x)), every a(n) (n >= 1) is an integer not congruent to 3 mod 5. Conjectured by Paul D. Hanna; an informal proof is in Vladimir Reshetnikov's ProveIt report (2026). The Lean proof is different.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "f1418c529c22be32c090b063d4be463188ea7a72",
+  "project_path": null,
+  "declarations": [
+    "OeisA396804.exists_unique_solution",
+    "OeisA396804.conjecture_mod_five"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05A15",
+      "11B50",
+      "13F25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T09:23:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f1418c529c22be32c090b063d4be463188ea7a72",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:87c56c2d5fc0daf10a6a5ea6db064c27b8ed3a158efd27586bfafd52a2a5e28a"
+}

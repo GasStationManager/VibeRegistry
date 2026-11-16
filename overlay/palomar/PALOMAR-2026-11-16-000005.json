@@ -1,0 +1,68 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000005",
+  "version": 1,
+  "title": "OEIS A258377–A258381: Bala's 2-adic periodicity for the type-B series",
+  "abstract": "For N ≥ 1 let A_N(z) = 1 + a(1)z + ⋯ be the series with A^(N+1)(z) = 1/(1 − z)·(BINOMIAL(BINOMIAL(A(z))))^N, where BINOMIAL is the binomial transform; A258377–A258381 are N = 1, …, 5. The package proves for every N that A_N exists, is unique and has integer coefficients, that every a(n) is odd, that a(n + 2^(k−1)) ≡ a(n) (mod 2^k) for all k ≥ 1, and that for k ≥ 3 the least period of a(n) mod 2^k is exactly 2^(k−1) if and only if N ≡ 1 or 2 (mod 4). This settles Peter Bala's 2017 observations on the five entries: odd terms for A258377, A258379 and A258381, period 2^(k−1) for A258377 and A258381, terms ≡ 1 (mod 4) for A258378 and ≡ 1 (mod 8) for A258380, periods dividing 2^(k−1) for A258378–A258380, and his worked examples modulo 4, 8, 16 and 32. His remarks on residues modulo 3 and 5 are not covered.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "2329f9d4bebb30be1bb59e40476a89b44d6e034c",
+  "project_path": null,
+  "declarations": [
+    "OeisA258377.isSolution_iff",
+    "OeisA258377.existsUnique",
+    "OeisA258377.exists_int_coeff",
+    "OeisA258377.odd",
+    "OeisA258377.periodic",
+    "OeisA258377.leastPeriodMod_dvd",
+    "OeisA258377.shift_sub",
+    "OeisA258377.leastPeriodMod_eq_iff",
+    "OeisA258377.a258377",
+    "OeisA258377.a258377_examples",
+    "OeisA258377.a258378",
+    "OeisA258377.a258378_examples",
+    "OeisA258377.a258379",
+    "OeisA258377.a258379_examples",
+    "OeisA258377.a258380",
+    "OeisA258377.a258380_examples",
+    "OeisA258377.a258381",
+    "OeisA258377.a258381_examples"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05A15",
+      "11B50",
+      "11A07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T02:04:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2329f9d4bebb30be1bb59e40476a89b44d6e034c",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:aff8b68f6c710052923d81b069a32c82303a3158c8e27fa3dbb29ca89b5aedf2"
+}

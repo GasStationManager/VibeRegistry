@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-15-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-15-000008",
+  "version": 2,
+  "title": "Collatz m-cycles for m ≤ 91 (conditional on Bařina's 2^71 check) and an explicit linear-form bound for log 2 and log 3",
+  "abstract": "Lean 4 / Mathlib formalization of two results. (1) An explicit lower bound for the linear form Λ = (K + L) log 2 − K log 3: for every K ≥ 2438425051595107335801557824 and every L, Λ cannot satisfy 0 < Λ < 100 · 2^(1 − K/2^68). This new self-contained bound is proved from Mathlib using explicit symmetric multipoint Padé approximants (the z = x(70 − x) kernel of Salikhov and Bouchelaghem–He–Li–Wu) together with an elementary bound on lcm(1, …, n), replacing the use of Rhin's (1987) effective irrationality measure in Collatz cycle arguments. (2) An independent proof of Hercher's (2023) theorem on Collatz m-cycles: assuming Bařina's 2025 computer verification that every integer 1 ≤ k ≤ 2^71 reaches 1 under the Collatz map (passed as an explicit hypothesis), there is no non-trivial cycle of the shortcut Collatz map with m ≤ 91 local minima. Rather than Hercher's finite search and Rhin's (1987) bound, the proof here combines a Raney-type rotation of the cycle, a telescopic lower bound on every local minimum, a 2-adic unimodular reduction, and a kernel-checked chain of continued-fraction steps that forces the number of odd steps past the range of (1). The definitions of the shortcut map and of m-cycles follow Moritz Firsching's formal-conjectures specification. This is an incremental m-cycle certificate plus a formalization; it does not address general cycles or divergent orbits. Both theorems use only propext, Classical.choice and Quot.sound. Four supporting statements are also compared: the trivial cycle 1 → 2 → 1 is a 1-cycle through 1 and through 2, every m-cycle has m ≥ 1, and (under the same hypothesis) every element of a non-trivial cycle exceeds 2^71.",
+  "authors": [
+    "Hamed Sadeghi",
+    "Moritz Firsching",
+    "Goran Žužić"
+  ],
+  "repository": "https://github.com/hamsade-google/collatz-mcycles-lean",
+  "commit": "7938ce2ba880e376d163e0a984bb865c38af2d3a",
+  "project_path": null,
+  "declarations": [
+    "CollatzMCycles.Diophantine.terminal",
+    "CollatzMCycles.not_isMCycle_of_le_91_of_barina",
+    "CollatzMCycles.two_pow_71_lt_iterate",
+    "CollatzMCycles.IsMCycle.ne_zero",
+    "isMCycle_one_one",
+    "isMCycle_one_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B83",
+      "11J86",
+      "11J82",
+      "68V15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T05:33:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7938ce2ba880e376d163e0a984bb865c38af2d3a",
+        "fork_repository": "PalomarArchive/hamsade-google--collatz-mcycles-lean--d5fa10cd6589",
+        "source_repository": "hamsade-google/collatz-mcycles-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d06d403fc0b73058ce7eaa20a4562f090910f7530579217108d920dd2a4f9e07"
+}

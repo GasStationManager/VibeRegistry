@@ -1,0 +1,70 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-13-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-13-000009",
+  "version": 1,
+  "title": "Condensation in subcritical Cauchy Bienaymé trees",
+  "abstract": "Lean 4 and Mathlib formalization of Condensation in subcritical Cauchy Bienaymé trees (Kortchemski–Vetter, arXiv:2503.07530v2). For size-conditioned subcritical Bienaymé trees with offspring probabilities asymptotic to L(n)/n², where L is measurable and slowly varying, the development proves condensation of the maximal degree, the geometric depth of the condensation vertex, logarithmic tree height and its tightness criterion. It also proves the underlying one-big-jump principle by two routes, the stable limit, maximal-degree fluctuations and second-order height asymptotics. The development also proves the corrected five-case classification of heavy-tailed offspring laws up to Kennedy equivalence (exponential tilting), including critical and subcritical cases, under the necessary assumption of positive mass at zero. Four source statements are formalized in corrected form, with the corrections documented. Background assertions refuted by counterexamples and external citations are distinguished in the coverage report. The comparison interface contains twenty results whose proofs use only the three standard axioms.",
+  "authors": [
+    "Igor Kortchemski"
+  ],
+  "repository": "https://github.com/igor-kortchemski/condensation-subcritical-cauchy-bienayme-trees",
+  "commit": "7657e83e15c74bd92ba1bd068c7c4bf36ca22178",
+  "project_path": null,
+  "declarations": [
+    "SubcriticalCauchy.Bienayme.main_maxDegree_condensation",
+    "SubcriticalCauchy.Bienayme.main_secondMaxDegree_negligible",
+    "SubcriticalCauchy.Bienayme.main_maxDegreeDepth_geometric",
+    "SubcriticalCauchy.Bienayme.main_height_log",
+    "SubcriticalCauchy.Bienayme.main_height_tight_iff",
+    "SubcriticalCauchy.Bienayme.paper_deleted_maximum_tvDist",
+    "SubcriticalCauchy.Bienayme.paper_attached_forest_tvDist",
+    "SubcriticalCauchy.Bienayme.paper_height_lower",
+    "SubcriticalCauchy.Bienayme.paper_height_upper",
+    "SubcriticalCauchy.Bienayme.exists_cauchyOneLaw",
+    "SubcriticalCauchy.Bienayme.paper_stable_limit",
+    "SubcriticalCauchy.Bienayme.paper_maxDegree_fluctuations",
+    "SubcriticalCauchy.Bienayme.paper_height_second_order_log",
+    "SubcriticalCauchy.Bienayme.paper_height_second_order_pow",
+    "SubcriticalCauchy.Bienayme.berger_local_limit",
+    "SubcriticalCauchy.Bienayme.paper_eq26",
+    "SubcriticalCauchy.Bienayme.paper_eq33",
+    "SubcriticalCauchy.Bienayme.paper_route_deleted_maximum_tvDist",
+    "SubcriticalCauchy.Bienayme.paper_heavyTail_classification",
+    "SubcriticalCauchy.ArmendarizLoulakis.al_criterion"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "60J80",
+      "60F05",
+      "60G50",
+      "05C80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-13T14:16:45Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7657e83e15c74bd92ba1bd068c7c4bf36ca22178",
+        "fork_repository": "PalomarArchive/igor-kortchemski--condensation-subcritical-cauchy-bienayme-trees--8f6883cf7a9e",
+        "source_repository": "igor-kortchemski/condensation-subcritical-cauchy-bienayme-trees"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6c175c5c6d849be9a650808ec8a8c8114a377f36c54ef48dfb2722ff7e20a7e1"
+}

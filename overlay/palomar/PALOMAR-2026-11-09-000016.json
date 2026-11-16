@@ -1,0 +1,74 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000016",
+  "version": 1,
+  "title": "Complete finite connectivity checker and exact cut procedure",
+  "abstract": "Actual finite assignment pool, exact-minimum choice, complete connectivity checker, genuine disconnected-fiber boundary cuts, strict progress and history preservation yield terminal optimum or cap-relative infeasibility; cap n covers every finite fiber. All existing owning control propositions are complete compared SUPPORT components.",
+  "authors": [
+    "David E. Bernal Neira"
+  ],
+  "repository": "https://github.com/bernalde/appa-finite-exact-cut-procedure",
+  "commit": "dfc588cb8156acd17896eef17d5d010d2e247091",
+  "project_path": null,
+  "declarations": [
+    "AppendixATheory.allFiberCheck_eq_true_iff",
+    "AppendixATheory.solveEmbedding_terminal",
+    "AppendixAPaths.palomar_connectedCheck_eq_true_iff",
+    "AppendixATheory.palomar_allFiberCheck_eq_true_iff",
+    "AppendixATheory.palomar_cutHolds_iff_sourceCutRow",
+    "AppendixATheory.palomar_rejectedCut_valid",
+    "AppendixATheory.palomar_retainCut_card_lt",
+    "AppendixATheory.palomar_cutRun_correct",
+    "AppendixATheory.palomar_masterPool_iff_source_rows",
+    "AppendixATheory.palomar_solveEmbedding_correct",
+    "AppendixATheory.palomar_solveEmbedding_none_iff",
+    "AppendixATheory.palomar_solveEmbedding_some_optimal",
+    "AppendixATheory.palomar_solveEmbedding_terminal",
+    "AppendixATheory.palomar_solveEmbedding_history_preserves",
+    "AppendixATheory.palomar_solveEmbedding_rejection_bound",
+    "AppendixATheory.palomar_solveEmbedding_full_cap_none_iff",
+    "AppendixATheory.palomar_returned_monolithic_optimum",
+    "AppendixATheory.palomar_returned_none_iff_monolithic_infeasible",
+    "AppendixATheory.palomar_exactMin_singleton",
+    "AppendixATheory.palomar_singleton_rejection_control",
+    "AppendixATheory.palomar_disconnected_checker_rejects",
+    "AppendixATheory.palomar_disconnected_actual_one_rejection",
+    "AppendixATheory.palomar_reversed_procedure_optimum",
+    "AppendixATheory.palomar_empty_logical_procedure",
+    "AppendixATheory.palomar_zero_cap_procedure",
+    "AppendixATheory.palomar_impossible_size_procedure"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC"
+    ],
+    "msc2020": [
+      "05C83",
+      "90C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T15:37:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dfc588cb8156acd17896eef17d5d010d2e247091",
+        "fork_repository": "PalomarArchive/bernalde--appa-finite-exact-cut-procedure--da317206f62f",
+        "source_repository": "bernalde/appa-finite-exact-cut-procedure"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f14fd892a9f3d82e5cf3216fba6698c1a50c359f4ae9f0d227891d47df589f20"
+}

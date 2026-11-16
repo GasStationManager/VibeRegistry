@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000006",
+  "version": 1,
+  "title": "OEIS A371710: Hanna's mod-3 pattern",
+  "abstract": "The e.g.f. A(x) = Σ a(n)xⁿ/n! of OEIS A371710 satisfies Σ_{n≥0} (A(x)^n − x)^n/n! = 1. The package proves that exactly one A ∈ ℚ[[x]] does, that A(0) = 0 and every a(n) is an integer, and Paul D. Hanna's 2024 conjecture that a(6n + k) ≡ [2, 0, 2, 1, 2, 2](k) (mod 3) for n > 0 and k = 0, …, 5. It also proves the stronger pattern a(m) ≡ 2 for even m ≥ 2 and a(m) ≡ 1 − m for odd m ≥ 3, modulo 3.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "2329f9d4bebb30be1bb59e40476a89b44d6e034c",
+  "project_path": null,
+  "declarations": [
+    "OeisA371710.a371710_existsUnique",
+    "OeisA371710.a371710_constantCoeff",
+    "OeisA371710.a371710_integral",
+    "OeisA371710.a371710_mod_three",
+    "OeisA371710.a371710_mod_three_strong"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05A15",
+      "11B50",
+      "13F25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T02:22:18Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2329f9d4bebb30be1bb59e40476a89b44d6e034c",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:400d48982a9968befa748832fe2c635b68b54b4c81b97a93a1a75e88b8e36ad0"
+}

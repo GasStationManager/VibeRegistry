@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-10-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-10-000002",
+  "version": 1,
+  "title": "The irrationality exponent of small-height lacunary series",
+  "abstract": "Let N >= 2 be an integer, let u_1 < u_2 < ... be positive integers with liminf u_{j+1}/u_j >= 2, and let lambda_j be nonzero rational numbers with log H(lambda_j) = o(u_j), where H(a/b) = max(|a|, b) in lowest terms. The series x = sum_j lambda_j N^{-u_j} converges absolutely, is irrational, and has irrationality exponent limsup u_{j+1}/u_j, finite or infinite. The coefficients may have arbitrary signs, and the boundary case liminf u_{j+1}/u_j = 2 is included, with ratios allowed to approach 2 from below. The proof compares continued-fraction denominator gaps of consecutive truncations. A perturbation lemma places each new gap in at least one of five classes: bounded, inherited, central, short, or reflected. The reflected class gives the estimate needed at the boundary ratio 2. This project formalizes the paper's main theorem in Lean 4 with Mathlib.",
+  "authors": [
+    "Ruiyi Zhang"
+  ],
+  "repository": "https://github.com/ryzfsu/small-height-lacunary-irrationality-exponent",
+  "commit": "a1208b6d1c06fd63e1daf90c1342c23a62267742",
+  "project_path": null,
+  "declarations": [
+    "Paper4.theorem_1"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11J82",
+      "11J70",
+      "11B83"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-10T02:24:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a1208b6d1c06fd63e1daf90c1342c23a62267742",
+        "fork_repository": "PalomarArchive/ryzfsu--small-height-lacunary-irrationality-exponent--6d14f8388280",
+        "source_repository": "ryzfsu/small-height-lacunary-irrationality-exponent"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6c7ab519a2de326b94c4314acbc9b5410e5136d771a4bfda911b258d354500cf"
+}

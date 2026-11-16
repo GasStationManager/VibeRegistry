@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000019",
+  "version": 1,
+  "title": "Invariant bilinear forms on the Lorentz Lie algebra so(3,1): the two-parameter family a tr(XY) + b tr(H(X)Y), with sl(2,C), the exponential criterion and the complexification",
+  "abstract": "Kernel-checked proofs, in Lean 4 + Mathlib, of nine statements about the Lie algebra L of the linear endomorphisms of four-dimensional Minkowski space that are skew-adjoint for the Minkowski form. Main theorem, (6): a real bilinear form B on L satisfies B([Z,X],Y) + B(X,[Z,Y]) = 0 for all X, Y, Z if and only if B(X,Y) = a tr(XY) + b tr(H(X)Y) for exactly one pair of real numbers (a,b); every such form is symmetric. Here tr(XY) is the trace form of L acting on Minkowski space and H is the operator of (4). For a real simple Lie algebra whose complexification is simple the invariant symmetric bilinear forms are the multiples of the Killing form; for a complex simple Lie algebra regarded as a real one they form a plane (Francis-Staite and Leistner, Proposition 4.1). L is of the second kind: it is sl(2,C) regarded as a real Lie algebra ((1), (2)), H is multiplication by -i under that isomorphism ((4)), and tr(H(X)Y) is a second invariant form, not a multiple of the Killing form (Olafsson and Quiroga-Barranco, Remark A.10, where it is, up to a nonzero factor, K(X, J Y)). Read with X as a field strength, tr(XX) and tr(H(X)X) are, up to normalisation, the Maxwell term and the theta term (Tong's names); that reading is not formalized. Statements (1)-(5): sl(2,C), the exponential criterion, the operator H and the complexification; (2) and (4) are the structure behind the second term of (6). (1) On Mathlib's own objects, with nothing carried: Mathlib's so' (Fin 1) (Fin 3) R is isomorphic, as a real Lie algebra, to sl(2,C) (Mathlib's sl (Fin 2) C with scalars restricted to R), by the explicit map X -> -(1/2) sum_k (beta_k + i theta_k) sigma_k, where beta_k and theta_k are the boost and rotation entries of X and sigma_k are the Pauli matrices. (2) On the carried copy of Minkowski space: L has dimension 6; the same map is an isomorphism of real Lie algebras from L onto sl(2,C); the three boost generators and the three rotation generators are in L, the boost along the axis k goes to -(1/2) sigma_k and the rotation in the plane of the two other axes goes to -(i/2) sigma_k. (3) The exponential criterion: a continuous linear endomorphism A is in L if and only if exp(tA) is in the carried type ProperLorentz for every real t; the statement also records that the Minkowski form used for L has the carried minkowskiSquare as its quadratic form. (4) The explicit operator H (the boost along the axis k goes to minus the rotation in the plane of the two other axes, and that rotation goes to the boost) maps L into L, is real-linear there, satisfies H[X,Y] = [X,HY] and H(HX) = -X, and the isomorphism of (2) carries it to multiplication by -i on sl(2,C). (5) The complexification C (x)_R L is isomorphic, as a complex Lie algebra, to sl(2,C) x sl(2,C), and the two maps (1/2)(1 + iH) and (1/2)(1 - iH) are the projections onto the two factors, H being the operator of (4) extended C-linearly. Controls: (7) for the definite diagonal form diag(1,1,1,1) the Lie algebra of skew matrices is isomorphic to so(3) x so(3), for the split form diag(1,1,-1,-1) it is isomorphic to sl(2,R) x sl(2,R), and neither of the two is isomorphic to sl(2,C) as a real Lie algebra; (8) there is a bilinear form on L that is not a tr(XY) + b tr(H(X)Y) for any real a, b; (9) there is a continuous linear endomorphism A with exp(A) in ProperLorentz and A not in L. Numbering as in comparator.json. Statement (1) and part (b) of statement (2) are one isomorphism on two presentations; they are not two results. The Challenge imports Mathlib only. The definitions of Minkowski space and of the Lorentz transformations (Spacetime, minkowskiSquare, ProperLorentz and eight more) are copies carried textually from the public statement of the Yang-Mills release, repository github.com/yang-mills-group/OpenAI-YM-20261028, commit 3456e5e75cf8d4cd558955a5c7638fba2d68f464, file PublicTheory.lean, under the Apache License, Version 2.0; the source file is not imported. Statement (6) is proved from the classification of the linear maps R of L with R[X,Y] = [X,RY], which is the subject of a separate entry in preparation and is not compared here. Audience. Formal developments that use the Lorentz Lie algebra as an object. physlib's lorentzAlgebra is Mathlib's so' (Fin 1) (Fin 3) R, the object of (1); physlib also proves that the complex coefficient tensors with four vector indices invariant under SL(2,C) acting through the Lorentz group are combinations of the three pairings of the metric and the alternating symbol (independence is not proved there). The Yang-Mills release works with the Lorentz Lie algebra of this entry as the predicate tangent (X^T = -theta X theta) on its own 4 x 4 matrix type, splits it into rotations and boosts (tangent_parts), and proves, under its hypothesis Spin.Port, that its Wick-rotated map into operators on field labels respects brackets whenever the first argument is a boost (rank_bracket), in YM/Next/BOUNDARY/Derived.lean; it does not state or use any of the nine statements here, and its matrix type is not the carried Spacetime. The monograph project hairer/humanise-yang-mills proves that invariant bilinear forms on the compact colour algebra are scalar multiples using a positive invariant inner product (manuscript/existence/trace-free-rank.tex, lines 34-51, commit 0f00ae72); (6) shows that on so(3,1), which is simple but has no such inner product, the invariant forms are a two-parameter family. No one at these projects was contacted, and none of them has asked for or endorsed this entry. Literature. This entry formalizes known mathematics; the clauses not found printed are listed below. (1) and (2) are the Lie-algebra form of Spin(3,1) = SL(2,C) (Woit, Quantum Theory, Groups and Representations, sections 40.2 and 40.4; the formula is printed on generators in section 41.2; Olafsson and Quiroga-Barranco, Lemma A.1, state so(3,1) = sl(2,C)_R); (3) is the description of the Lie algebra of a matrix group by its one-parameter subgroups (Hall, arXiv:math-ph/0005032, Definition 3.13; proved there for O(n;k), which includes O(3;1), Chapter 3, section 5.6), stated here for the proper orthochronous subgroup, and (9) is an exercise of that chapter; (4) is the Hodge operator on so(3,1) (Wise, Class. Quantum Grav. 27 (2010) 155010, Appendix); (5) is the splitting of the complexified Lorentz algebra (Woit, section 40.2; Sahlmann and Seeger, Class. Quantum Grav. 41 (2024) 075010, section 2.2.1); (6) is the description of the invariant bilinear forms of a complex simple Lie algebra regarded as a real one (Olafsson and Quiroga-Barranco, Transform. Groups 17 (2012), Remark A.10; Francis-Staite and Leistner, Transform. Groups 26 (2021), Proposition 4.1); parts (a) and (b) of (7) are the companion isomorphisms in the two other signatures (Woit, section 21.2; Olafsson and Quiroga-Barranco, Remark A.2); (8) holds by a count of dimensions (the bilinear forms on L have dimension 36 and the forms of statement 6 are a plane). Not found printed in the sources read: the clause of (4) on multiplication by -i, and parts (c) and (d) of (7); README.md says how each follows from what is printed. Prior formalization, recorded under related_formalizations (search of 2026-11-13): no formalization of a compared statement was found. The counterparts for groups of (1), (2), (5), (7a) and (7b) are in TauCeti, and the homomorphism from SL(2,C) onto the restricted Lorentz group is in physlib; every ingredient of (1) and (2) is in TauCeti and was not found combined there. The equivalence of (3) is proved in TauCeti as a general theorem for the unitary group of a complete normed real algebra with a continuous involution (the form-preservation part of (3) is a case of it, by a reading that was not compiled), for the matrix groups O(n), SO(n), SL(n), SU(n) and the symplectic group, and for the Spin groups; its direction from the algebra to the group is proved for Lorentz matrices in physlib and in OSreconstruction; it was not found with both directions for the Lorentz group or another indefinite orthogonal group of linear maps. For (6), TauCeti has the uniqueness of invariant forms over an algebraically closed field and physlib the invariant coefficient tensors with four vector indices. For (5), TauCeti has extension of scalars for the skew-adjoint matrices of a Gram matrix and the complexifications of so(n) and su(n); the splitting into sl(2,C) x sl(2,C) was not found. The Hodge operator of Euclidean four-space on matrices is in github.com/openai/math. Not formalized: no covering map from SL(2,C) to ProperLorentz, no Lie group structure, no connectedness statement, no statement that every element of ProperLorentz is an exponential; other dimensions and signatures beyond (7); the identification of L with two-forms; the Killing form; the invariant forms of the complexification. Also proved in the library, not compared: Minkowski space from a number field. For a number field K with exactly two real places and exactly one complex place there is a real-linear equivalence e from Mathlib's mixedSpace K onto Spacetime with minkowskiSquare(e x) = -Tr_{K/Q}(x^2) for every x in K, and conjugation by e is an isomorphism of real Lie algebras onto L from the Lie algebra of the endomorphisms of mixedSpace K that are skew-adjoint for the form that restricts to Tr_{K/Q}(x^2) on K. This is proved in the library of this entry and is not compared.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/minkowski-lorentz-algebra",
+  "commit": "91aee70f9daddadda2f97f4694b9b4352430ecba",
+  "project_path": null,
+  "declarations": [
+    "MinkowskiLorentz.so'_one_three_lieEquiv_sl2C",
+    "MinkowskiLorentz.lorentzAlgebra_lieEquiv_sl2C",
+    "MinkowskiLorentz.mem_lorentzAlgebra_iff_exp",
+    "MinkowskiLorentz.hodgeEnd_complexStructure",
+    "MinkowskiLorentz.complexification_lieEquiv",
+    "MinkowskiLorentz.invariant_bilinForm_iff",
+    "MinkowskiLorentz.definite_split_signature",
+    "MinkowskiLorentz.exists_bilinForm_not_trace_form",
+    "MinkowskiLorentz.exists_exp_mem_not_mem_lorentzAlgebra"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RT",
+      "math-ph",
+      "gr-qc",
+      "hep-th"
+    ],
+    "msc2020": [
+      "17B20",
+      "22E43",
+      "17B05",
+      "15A63",
+      "17B81",
+      "83A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T14:24:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91aee70f9daddadda2f97f4694b9b4352430ecba",
+        "fork_repository": "PalomarArchive/stalex444--minkowski-lorentz-algebra--34c1409c6a74",
+        "source_repository": "stalex444/minkowski-lorentz-algebra"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e346f343d98802e809fe2a82cb75184c32244ab35f12560e0ba133bd47180624"
+}

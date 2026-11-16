@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-15-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-15-000004",
+  "version": 1,
+  "title": "Bounds on the Erdős-Rado number k(6,3): 30 ≤ k(6,3) ≤ 32 (Erdős Problem #112)",
+  "abstract": "A Lean 4 proof that 30 ≤ k(6,3) ≤ 32. Here k(n,3) is the Erdős-Rado number: the least k such that every oriented graph on k vertices has n vertices with no arc between any two of them, or a transitive triangle (vertices x, y, z with arcs x → y, y → z and x → z). The lower bound is an explicit oriented graph on 29 vertices with no transitive triangle and no 6 independent vertices. The upper bound shows that every oriented graph on 32 vertices has one or the other; it rests on a counting argument and on one finite case analysis (every oriented graph on 14 vertices with no transitive triangle and no 4 independent vertices is 6-regular), which is carried out by 49 computations inside Lean's kernel. The upper bounds k(3,3) ≤ 9, k(4,3) ≤ 15 and k(5,3) ≤ 23 are proved on the way and are not cited. The whole proof is checked by the kernel, with no native_decide, and uses only the axioms propext, Quot.sound and Classical.choice. Before this work the bounds that followed from published results were 26 ≤ k(6,3) ≤ 33. The result gives bounds only: k(6,3) is 30, 31 or 32, its value is not determined, and Erdős Problem #112, which asks for k(n,m) in general, remains open. As of 14 November 2026 the community database of Erdős problems lists #112 as unformalized, and the public Lean statements of the problem known to the author prove no bound; to the author's knowledge this is the first machine-checked result on the problem.",
+  "authors": [
+    "Tyler Satchel Orden"
+  ],
+  "repository": "https://github.com/Tyorden/erdos-112-lean",
+  "commit": "e86685633ba879e3b02f31281dc2c7a8ce996bcc",
+  "project_path": null,
+  "declarations": [
+    "Erdos112.k63_bounds"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C55",
+      "05C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-15T12:15:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e86685633ba879e3b02f31281dc2c7a8ce996bcc",
+        "fork_repository": "PalomarArchive/Tyorden--erdos-112-lean--8987a7d4c431",
+        "source_repository": "Tyorden/erdos-112-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:37461cbfe273afc53a403f87818fec90d975ab1d7740dd73009505be725a4f9b"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000020",
+  "version": 1,
+  "title": "The lower bound R(5,5) ≥ 43: a kernel-checked Ramsey graph on 42 vertices",
+  "abstract": "A Lean 4 / Mathlib proof of Exoo's lower bound R(5,5) ≥ 43 for the diagonal graph Ramsey number: there is a simple graph on 42 vertices with no clique of size 5 and no independent set of size 5. The proof defines a clique scan on natural-number bit masks, proves that a scan with the result `false` excludes every clique of the given size, and lets the Lean kernel evaluate the scan on one explicit graph and on its complement (`decide +kernel`, no `native_decide`). The statement is the one that the Formal Conjectures repository records as `RamseyNumbers.ramsey_number_five_five_lower_bound`. The value of R(5,5) is open; 43 has been the best known lower bound since 1989.",
+  "authors": [
+    "Arth Singh"
+  ],
+  "repository": "https://github.com/Arth-Singh/ramsey-r55-lower-bound",
+  "commit": "9128e900ed3de9429e1dab817d93b308a054e104",
+  "project_path": null,
+  "declarations": [
+    "RamseyR55.ramsey_number_five_five_lower_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05D10",
+      "05C55",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T18:02:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9128e900ed3de9429e1dab817d93b308a054e104",
+        "fork_repository": "PalomarArchive/Arth-Singh--ramsey-r55-lower-bound--ca60e509a154",
+        "source_repository": "Arth-Singh/ramsey-r55-lower-bound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4d09859c549369569bc369cd5ccb5545a2954daef96f3592cd3d7593264511ac"
+}

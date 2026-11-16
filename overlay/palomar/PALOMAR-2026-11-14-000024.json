@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000024",
+  "version": 1,
+  "title": "Erdős Problem 1111: Wagon's bound",
+  "abstract": "Every finite graph with no clique of size t and chromatic number at least C(t,2)+1 has two anticomplete vertex sets that each induce a graph of chromatic number at least 2 (Wagon 1980, as noted by El-Zahar and Erdős). In Erdős Problem 1111, d(t,c) is the least d such that every finite graph with clique number less than t and chromatic number at least d has two anticomplete vertex sets A, B with χ(G[A]) ≥ c and χ(G[B]) ≥ c (El-Zahar and Erdős 1985). So the result says d(t,2) ≤ C(t,2)+1. Two anticomplete sets that each induce a graph of chromatic number at least 2 are the same as an induced 2K₂.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "6d83e8abde581b91eb1dde2b397136c5d218db64",
+  "project_path": null,
+  "declarations": [
+    "Erdos1111.erdos_1111.variants.wagon"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C69"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T22:22:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6d83e8abde581b91eb1dde2b397136c5d218db64",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:554b890f4a36e2afd0d5c986c97c8ce8110171dfeb9296471c0d222c531a2041"
+}

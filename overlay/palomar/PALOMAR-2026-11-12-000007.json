@@ -1,0 +1,66 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-12-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-12-000007",
+  "version": 1,
+  "title": "Graphs whose core has maximum degree two: Hilton–Zhao structure and the Cariolaro–Cariolaro theorem",
+  "abstract": "A Lean 4 / Mathlib formalization of results on finite simple graphs G whose core (the vertices of maximum degree Δ) has maximum degree at most two, stated as: every vertex of degree Δ has at most two neighbours of degree Δ. Hilton–Zhao (1992): if G is connected and not Δ-edge-colourable, then G − e is Δ-edge-colourable for every edge e, every vertex has at least two neighbours of degree Δ (so the core is 2-regular), and every vertex has degree at least Δ − 1, with equality somewhere when Δ ≥ 3 (hiltonZhao_critical, hiltonZhao_two_le, hiltonZhao_core_regular, hiltonZhao_min_degree, hiltonZhao_min_degree_eq); corollaries: class one when some vertex of degree Δ has at most one neighbour of degree Δ, or some vertex has degree at most Δ − 2. For Δ = 3: a connected class-two graph is a petal graph (Cariolaro–Cariolaro Lemma 3: degrees 2 or 3, the degree-3 vertices induce a 2-regular graph, degree-2 vertices have only degree-3 neighbours) and 3|E| = 4|V|; and if some component of the core carries no internal petal (no vertex of degree below 3 adjacent to two of its vertices) then G is 3-edge-colourable (Cariolaro–Cariolaro Lemma 7, for a single core cycle). The graph P* (Petersen minus a vertex) is defined on Fin 9, proved isomorphic to the Petersen graph minus a vertex, and shown to satisfy the hypotheses, to be connected, of class two and not overfull. Cariolaro–Cariolaro (2003): a connected graph with Δ = 3 whose core has maximum degree at most two is not 3-edge-colourable if and only if it is isomorphic to P* (cariolaro_iff, cariolaro). The proof recolours one core cycle with its petals in a colouring of G − e (criticality): a combinatorial chorded-cycle lemma (a cyclic sequence of vertices with chords and external restrictions has a proper 3-edge-colouring whose missing colours differ along chords and avoid the restrictions, unless it is the hexagon with three antipodal chords or a chordless odd cycle with constant restrictions) proved by induction with safe local reductions; the arc reduction rests on a finite automaton whose reachable states are checked by decide. Vizing's theorem and Vizing's adjacency lemma are lake dependencies on PALOMAR-2026-10-15-000004 and PALOMAR-2026-11-04-000009; Kempe chains and their end-point lemma come from the former.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/hilton-zhao-cariolaro",
+  "commit": "9cc9a2c48913f6a8feeb266416ea6517f52eed51",
+  "project_path": null,
+  "declarations": [
+    "CoreDeg2.hiltonZhao_critical",
+    "CoreDeg2.hiltonZhao_two_le",
+    "CoreDeg2.hiltonZhao_core_regular",
+    "CoreDeg2.hiltonZhao_min_degree",
+    "CoreDeg2.hiltonZhao_min_degree_eq",
+    "CoreDeg2.colorable_of_core_deg_le_one",
+    "CoreDeg2.colorable_of_low_degree",
+    "CoreDeg2.petal_structure",
+    "CoreDeg2.three_mul_card_edgeFinset",
+    "CoreDeg2.colorable_of_card_edgeFinset",
+    "CoreDeg2.colorable_of_noInternalPetal",
+    "CoreDeg2.pStar_iso",
+    "CoreDeg2.pStar_maxDegree",
+    "CoreDeg2.pStar_core",
+    "CoreDeg2.pStar_connected",
+    "CoreDeg2.pStar_not_colorable",
+    "CoreDeg2.pStar_not_overfull",
+    "CoreDeg2.cariolaro_iff",
+    "CoreDeg2.cariolaro"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-12T15:03:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9cc9a2c48913f6a8feeb266416ea6517f52eed51",
+        "fork_repository": "PalomarArchive/jtraverso--hilton-zhao-cariolaro--88e275c68991",
+        "source_repository": "jtraverso/hilton-zhao-cariolaro"
+      }
+    ]
+  },
+  "statement_hash": "sha256:00952b2dea96d6a955bf6df4df622b1c0e7a3da7641639cccad34597ea2750c7"
+}

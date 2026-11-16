@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000019",
+  "version": 2,
+  "title": "Pairwise rigidity of principal upper cones of Turing degrees",
+  "abstract": "This submission strengthens PALOMAR-2026-11-09-000019 and is proposed as the next version of that existing registration, using the same repository and Comparator configuration path. Version 1 states that no proper principal upper cone of the ordinary Turing degrees is order-isomorphic to the whole degree structure. This revision proves that two principal upper cones are order-isomorphic if and only if their base degrees are equal, and that every such isomorphism fixes every underlying degree. Consequently, every individual cone has only the identity automorphism. Both compared statements concern arbitrary order isomorphisms, without regularity, determinacy, persistence, or model-existence hypotheses. The earlier theorem remains valid as a special case; this is a substantive strengthening, not a correction or retraction of version 1, whose record and archived source remain unchanged.",
+  "authors": [
+    "Bjørn Kjos-Hanssen"
+  ],
+  "repository": "https://github.com/bjoernkjoshanssen/tt-auto",
+  "commit": "99621af8867a5d272b16eb1454a15f59fb43e9ea",
+  "project_path": null,
+  "declarations": [
+    "OAI.TuringRigidity.TwoConeMain.cones_orderIso_iff",
+    "OAI.TuringRigidity.TwoConeMain.cone_iso_apply_val"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03D28",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-11T18:07:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "99621af8867a5d272b16eb1454a15f59fb43e9ea",
+        "fork_repository": "PalomarArchive/bjoernkjoshanssen--tt-auto--cacc37a71645",
+        "source_repository": "bjoernkjoshanssen/tt-auto"
+      }
+    ]
+  },
+  "statement_hash": "sha256:68c0d70fa6f804fcd6ee72cca8f23f825734e842c0a72c6a464c279ac5cc547f"
+}

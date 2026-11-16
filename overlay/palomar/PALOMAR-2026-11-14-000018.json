@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000018",
+  "version": 1,
+  "title": "Cyclic n × n Latin Squares Representing Solutions of (n, c)-Coins Problems",
+  "abstract": "Formalization of incremental n × n Latin squares and cyclic incremental n × n Latin squares representing n + 1 solutions of (n, c)-coins problems simultaneously for all 0 ≤ c ≤ n. We prove that (1) for every n ≥ 4, any incremental n × n Latin square represents valid (n, c)-coins solutions for all 0 ≤ c ≤ n simultaneously via value thresholding, and (2) for every n ≥ 4 with n ∉ {4, 6}, there exists a column permutation p such that the cyclic Latin square L(i, j) = (i + p(j)) mod n is incremental, using an injective-majorization principle across four infinite modular families modulo 6 and the four exceptional dimensions n ∈ {8, 9, 15, 21}, together with explicit non-cyclic incremental Latin squares for n = 4 and n = 6.",
+  "authors": [
+    "Marc Duponcheel",
+    "Luc Duponcheel"
+  ],
+  "repository": "https://github.com/LucDuponcheelAtGitHub/incremental-nc-coins",
+  "commit": "f115fd40818af99fe0052777620885faf3cf07d6",
+  "project_path": null,
+  "declarations": [
+    "IncrementalCyclic.incremental_represents_nc_coins",
+    "IncrementalCyclic.exists_cyclic_incremental",
+    "IncrementalCyclic.exists_incremental_ge_4",
+    "IncrementalCyclic.exists_incremental_representing_nc_coins"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B15",
+      "00A08"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T14:13:15Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f115fd40818af99fe0052777620885faf3cf07d6",
+        "fork_repository": "PalomarArchive/LucDuponcheelAtGitHub--incremental-nc-coins--cd2f559ffdfa",
+        "source_repository": "LucDuponcheelAtGitHub/incremental-nc-coins"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f6513a73f711659fa9280dd233d07ebcc29a9df9320cf79527b4987f37a48802"
+}

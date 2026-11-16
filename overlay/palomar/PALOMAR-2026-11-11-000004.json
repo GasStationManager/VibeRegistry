@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-11-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-11-000004",
+  "version": 1,
+  "title": "An Unconditional Artin–Matthews Theorem for Simultaneous Primitive Roots",
+  "abstract": "For a nonempty finite set of integers excluding 0, 1, and −1, consider the primes for which every integer in the set is a primitive root. When neither Matthews obstruction occurs, the simultaneous primitive primes have a lower bound of order x/log x in every sufficiently large real dyadic interval (x, 2x] and positive lower relative density among the primes. When either obstruction occurs, the simultaneous primitive primes form a finite set. This is Theorem 1.1 of the accompanying paper.",
+  "authors": [
+    "Vlado Vojdanovski"
+  ],
+  "repository": "https://github.com/Vlado-V/unconditional-artin-matthews",
+  "commit": "04f62f04d704c1e2cedbe291b48417812c2911ac",
+  "project_path": null,
+  "declarations": [
+    "ArtinMatthewsPaper.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N64",
+      "11F30",
+      "11N36",
+      "11R45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-11T18:17:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "04f62f04d704c1e2cedbe291b48417812c2911ac",
+        "fork_repository": "PalomarArchive/Vlado-V--unconditional-artin-matthews--e15f405bc758",
+        "source_repository": "Vlado-V/unconditional-artin-matthews"
+      }
+    ]
+  },
+  "statement_hash": "sha256:13ec36c8c46b52560eba0f6483c25cce3cc56dbf6cc01a46ddf850e5d25ee448"
+}

@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-12-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-12-000009",
+  "version": 1,
+  "title": "Gallai–van der Waerden numbers from m-th power residue colourings",
+  "abstract": "A Lean 4 and Mathlib proof of two lower-bound constructions for the Gallai–van der Waerden numbers GW(r; k, l) of Mao, Ozeki, Robertson and Wang (the least M such that for every n ≥ M, every exact r-colouring of {1, …, n} contains a rainbow k-term or a monochromatic l-term arithmetic progression), for rainbow (m + 1)-term progressions and every m. Let p > l ≥ 2 be a prime with p ≡ 1 (mod m) such that (i) for every i in {0, …, m} the m residues j − i (j ≠ i, 0 ≤ j ≤ m) do not lie in m distinct m-th power classes modulo p, and (ii) no l consecutive integers in [1, p − 1] lie in one class. Theorem 4: colouring x in [1, (l − 1)p] by (x − 1)^((p − 1)/m) mod p (the m-th power class of x − 1, and a new colour 0 on the zero class x ≡ 1 (mod p)) uses exactly m + 1 colours and has no rainbow (m + 1)-term and no monochromatic l-term progression, so GW(m + 1; m + 1, l) > (l − 1)p. Theorem 8: if instead the zero class 1 + kp (0 ≤ k ≤ l − 1) of [1, (l − 1)p + 1] is coloured by s ≥ 2 new colours z(k), where z uses all s colours and has no rainbow (m + 1)-term progression, the colouring uses exactly m + s colours and is good, so GW(m + s; m + 1, l) > (l − 1)p + 1. The formalization proves both theorems for every such m, l, p (and s, z), the resulting bounds for GW (unconditionally for every threshold with the defining property, and for the number itself given that a threshold exists), and five instances with l = 4: GW(4; 4, 4) > 327, GW(5; 5, 4) > 1059, GW(6; 6, 4) > 2253, GW(6; 4, 4) > 328 and GW(8; 5, 4) > 1060.",
+  "authors": [
+    "Arhan Canli"
+  ],
+  "repository": "https://github.com/arhancanli/quantavane-gw-residue-power",
+  "commit": "670813a3004fcd02bd9f7d4dc51cb7011897f4e0",
+  "project_path": null,
+  "declarations": [
+    "GwPower.theorem4",
+    "GwPower.exists_goodExactColouring",
+    "GwPower.lt_of_gwProperty",
+    "GwPower.lt_GW",
+    "GwPower.theorem8",
+    "GwPower.exists_goodExactColouring_split",
+    "GwPower.lt_of_gwProperty_split",
+    "GwPower.lt_GW_split",
+    "GwPower.gw_4_4_4",
+    "GwPower.gw_5_5_4",
+    "GwPower.gw_6_6_4",
+    "GwPower.gw_6_4_4",
+    "GwPower.gw_8_5_4"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05D10",
+      "11B25",
+      "11A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-12T18:15:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "670813a3004fcd02bd9f7d4dc51cb7011897f4e0",
+        "fork_repository": "PalomarArchive/arhancanli--quantavane-gw-residue-power--3f119d24c57d",
+        "source_repository": "arhancanli/quantavane-gw-residue-power"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8651ecaaa489dfed1b35da4674e2f8a2af2f45473116c943cece299688a7d1c7"
+}

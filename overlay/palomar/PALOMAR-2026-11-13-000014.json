@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-13-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-13-000014",
+  "version": 1,
+  "title": "TxGraffiti Conjecture 2 is false (Fischer's counterexample)",
+  "abstract": "TxGraffiti Conjecture 2 asserts Z(G) ≤ α(G) + 1 for every connected graph G of maximum degree at most 3 other than K4, where Z is the zero forcing number and α the independence number (recorded by Davila, Brimkov and Pepper, arXiv:2507.17780). Mikko Fischer found a connected 24-vertex counterexample (arXiv:2607.23664). The package certifies that Fischer's graph is connected, has maximum degree 3, zero forcing number at least 11 and independence number at most 9.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "9b2a1eeaa6d00172a8e08351ed43b896e21ce950",
+  "project_path": null,
+  "declarations": [
+    "Arxiv2507_17780.tx_graffiti_conjecture_2"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C69",
+      "05C50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-13T18:12:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9b2a1eeaa6d00172a8e08351ed43b896e21ce950",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:45ace76e25536f030c719b278e8da346ca94e32940128e3dfeeb2d8fbfdf193a"
+}

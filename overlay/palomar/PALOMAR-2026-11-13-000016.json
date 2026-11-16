@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-13-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-13-000016",
+  "version": 1,
+  "title": "OEIS A396843: integral construction and oddness (Hanna's conjecture)",
+  "abstract": "The ordinary generating function A(x) of OEIS A396843, with A(0) = 0 and A'(0) = 1, satisfies A(x A(x) − 3x A(x)^2) = x^2. The package proves that this equation has exactly one integer power-series solution and that every term a(n) with n ≥ 1 is odd, as conjectured by Paul D. Hanna (OEIS A396843, 2026). An earlier Lean proof of the oddness is in the-omega-institute/trureturing PR #6773.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "9b2a1eeaa6d00172a8e08351ed43b896e21ce950",
+  "project_path": null,
+  "declarations": [
+    "OeisA396843.source_existence",
+    "OeisA396843.conjecture"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05A15",
+      "11B50",
+      "13F25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-13T20:18:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9b2a1eeaa6d00172a8e08351ed43b896e21ce950",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e646aad761768280fa536d689bda7aa3bcba4f612414fc51d336f7209e4aa2ba"
+}

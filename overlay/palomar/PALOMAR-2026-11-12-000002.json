@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-12-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-12-000002",
+  "version": 2,
+  "title": "Conformal Killing and Killing fields of flat pseudo-Euclidean space: classification for n >= 3 in every signature, the two dimension counts, and the divergence of the current of a symmetric tensor field",
+  "abstract": "Kernel-checked proofs, in Lean 4 + Mathlib, of nine statements about R^n with a diagonal metric eta whose entries are +1 or -1 (every signature). A covector field omega is conformal Killing when it is C^3 and d_i omega_j + d_j omega_i = 2 phi eta_ij for some function phi, and Killing when it is C^3 and d_i omega_j + d_j omega_i = 0. (1) For n >= 3 the conformal Killing fields are exactly the members of an explicit family: translations, rotations (an antisymmetric matrix), the dilation and the special conformal fields. (2) In every dimension the Killing fields are exactly the affine fields a + A x with A antisymmetric. (3) For n >= 3 the conformal Killing fields form a real vector space of finite dimension (n+1)(n+2)/2. (4) In every dimension the Killing fields form a real vector space of finite dimension n(n+1)/2. (5) A control for the hypothesis n >= 3 of (1): in the Euclidean plane there is a conformal Killing field that is not a member of the family for any values of its parameters, the matrix being any real matrix, antisymmetric or not (the witness in the proof is the real and imaginary parts of z^3). Statements (6)-(9) are statements about conserved currents: they say which fields give conserved currents. (6) If a tensor field T and a covector field omega are differentiable at a point x, T(x) is symmetric and the conformal Killing equation holds at x with factor phi, then the current J^i = sum_j T^ij omega_j satisfies div J = (div T) . omega + phi tr_eta T at x. (7) A C^3 field is conformal Killing if and only if the current of every differentiable, symmetric, divergence-free, eta-trace-free tensor field against it is divergence-free. (8) A C^3 field is Killing if and only if the current of every differentiable, symmetric, divergence-free tensor field against it is divergence-free. (9) For n >= 1 the dilation omega_j = eta_j x_j is conformal Killing and is not Killing. The Challenge imports Mathlib only and carries the definitions its statements use (the partial derivative, the two equations, the family, the two solution spaces as submodules, the divergences, the current and the metric trace), each with its convention. Statements (1)-(4) are classical: (1) and (3) are the classification of the conformal Killing fields of R^{p,q}, p + q >= 3, and the count of their parameters (Schottenloher 2008, Theorem 1.7; Ginsparg 1988, section 1.1), the infinitesimal counterpart of Liouville's theorem on conformal maps; (2) and (4) are the Killing fields of flat space and their number. (6) is the standard identity behind the conserved currents of a trace-free stress tensor, and (5) and (9) are standard examples. In (7) and (8) the direction from the equation to conserved currents is (6); the other direction was not found stated in the sources read for this entry, is elementary (it is proved by testing on constant tensor fields, so it is a pointwise fact of linear algebra) and is not claimed as new. No statement is claimed as a new theorem. Scope: diagonal metrics with entries +1 or -1 (a general constant metric, reached by a linear change of coordinates, is not formalized); C^3 covector fields on all of R^n; the numbers in (3) and (4) are dimensions of real vector spaces, with no Lie bracket and no isomorphism with so(p+1,q+1) stated; the finite conformal maps (Liouville's theorem itself) are not formalized; nothing is said about compactly supported tensor fields in (7) and (8). Prior formalization, recorded under related_formalizations: the identity (6), with its corollary for conserved trace-free tensors, is formalized for n = 4 and signature (1,3), for tensors of tempered distributions, in github.com/openai/math; special cases of the currents are in the Yang-Mills release github.com/yang-mills-group/OpenAI-YM-20261028 and in facebookresearch/atlas-lean, and Killing fields on Riemannian manifolds are in atlas-lean and in TauCetiProject/TauCeti. In a dated search no formalization was found of (1)-(5) or of the direction of (7) and (8) from conserved currents to the equation. Application (cited; no compared statement asserts it): for n = 4 and a Lorentzian signature the spaces of (3) and (4) have dimensions 15 and 10, the infinitesimal conformal symmetries and the infinitesimal isometries of Minkowski space, and (6) is the conservation law for the currents of a conserved symmetric stress tensor against them, trace-free in the conformal case.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/conformal-killing-flat",
+  "commit": "8869b23e96d737ef9424dbb8796d91c6256b7acd",
+  "project_path": null,
+  "declarations": [
+    "FlatConformalKilling.conformalKilling_iff_family",
+    "FlatConformalKilling.killing_iff_affine",
+    "FlatConformalKilling.finrank_conformalKilling",
+    "FlatConformalKilling.finrank_killing",
+    "FlatConformalKilling.plane_conformalKilling_not_family",
+    "FlatConformalKilling.div_current_of_conformal",
+    "FlatConformalKilling.currents_conserved_iff_conformalKilling",
+    "FlatConformalKilling.currents_conserved_iff_killing",
+    "FlatConformalKilling.dilation_conformalKilling_not_killing"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DG",
+      "math-ph",
+      "gr-qc",
+      "hep-th"
+    ],
+    "msc2020": [
+      "53C18",
+      "53B30",
+      "35N05",
+      "70S10",
+      "81T40",
+      "83A05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-13T23:17:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8869b23e96d737ef9424dbb8796d91c6256b7acd",
+        "fork_repository": "PalomarArchive/stalex444--conformal-killing-flat--43bc2d3753b9",
+        "source_repository": "stalex444/conformal-killing-flat"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cbb4e3f7f94f9f435aac657ed7c8f08a0034b8b2b3a57b65831bc327b57b2184"
+}

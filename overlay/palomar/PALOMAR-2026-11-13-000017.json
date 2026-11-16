@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-13-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-13-000017",
+  "version": 1,
+  "title": "The 1-2-3 conjecture with weights 1..5 (Kalkowski–Karoński–Pfender)",
+  "abstract": "Every finite simple graph without an isolated edge has edge weights in {1,...,5} such that adjacent vertices have different weighted degrees (Kalkowski, Karoński and Pfender 2010). The {1,...,30} bound of Addario-Berry et al. (2007) follows as a corollary. The 1-2-3 conjecture itself (Karoński, Łuczak and Thomason 2004), with weights {1, 2, 3}, was later proved by Keusch (2024); this entry formalizes the earlier {1,...,5} theorem, not Keusch's proof.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "9b2a1eeaa6d00172a8e08351ed43b896e21ce950",
+  "project_path": null,
+  "declarations": [
+    "OneTwoThreeConjecture.one_two_three_conjecture.variants.one_to_five",
+    "OneTwoThreeConjecture.one_two_three_conjecture.variants.one_to_thirty"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C78"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-13T21:03:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9b2a1eeaa6d00172a8e08351ed43b896e21ce950",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ade4c0860730acc63b3d89869070b3fa046aa87e1bca013ccad76cd49bcbba47"
+}

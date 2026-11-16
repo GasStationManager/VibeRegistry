@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-15-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-15-000005",
+  "version": 1,
+  "title": "The Knill-Laflamme theorem: a set of errors is correctable on a quantum code exactly when P E_i^† E_j P = c_ij P",
+  "abstract": "A machine-checked proof of the Knill-Laflamme theorem for finite-dimensional quantum codes, in two forms. For a nonzero code given by an orthogonal projector P and a finite family of arbitrary error matrices E_i, the condition P E_i^† E_j P = c_ij P for some matrix c holds if and only if some quantum channel, with any finite number of Kraus operators, undoes each error on every code state up to its own scalar (knill_laflamme), and also if and only if some channel undoes the combined noise rho -> sum_i E_i rho E_i^† up to a scalar (knill_laflamme_sum). The errors need not form a channel. The recovery is constructed explicitly. Mathlib, at the pinned commit, has no quantum error correction. Four other Lean proofs of the channel form are known to me, one earlier and three later than this proof (listed under related_formalizations); this proof is independent of all four. The theorem is classical and no priority is claimed.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/knill-laflamme-lean",
+  "commit": "f680e2d5f616bb423fb814f1471b07387729fffd",
+  "project_path": null,
+  "declarations": [
+    "QuantumInfo.knill_laflamme",
+    "QuantumInfo.knill_laflamme_sum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph"
+    ],
+    "msc2020": [
+      "81P73",
+      "81P47"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-15T15:14:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f680e2d5f616bb423fb814f1471b07387729fffd",
+        "fork_repository": "PalomarArchive/zblore--knill-laflamme-lean--6f20e7cab180",
+        "source_repository": "zblore/knill-laflamme-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:69ce54692f7e6c29870fe20561167f53339a3067b04b680b6144e96eb9bc1101"
+}

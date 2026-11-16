@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000012",
+  "version": 2,
+  "title": "Existence of stationary mean-field games by monotonicity methods",
+  "abstract": "Lean formalization of three existence theorems for discounted stationary first-order mean-field games in positive dimension. Under the paper's monotonicity and respective growth hypotheses, the results give strong solutions for standard power growth and singular congestion, and weak solutions for weak growth. Each result includes density integrability, Sobolev regularity, nonnegativity, identification of the returned weak gradient, and its integrability. The congestion result permits infinite Hamiltonian limits at zero mass and a general continuous limiting flux; the weak-growth result imposes no boundary condition on the original Hamiltonian. The independent Challenge contains the definitions and statements; Solution connects them to the included proof development.",
+  "authors": [
+    "Rita Ferreira",
+    "Diogo Gomes",
+    "Melih Üçer"
+  ],
+  "repository": "https://github.com/dlcvag/StationaryMFG-Palomar",
+  "commit": "d38766829295cde776d07331393a2d54bd20e3e5",
+  "project_path": null,
+  "declarations": [
+    "StationaryMFGChallenge.Theorems.SimplePower.thm_main_simplePowerGrowth_paper",
+    "StationaryMFGChallenge.Theorems.Congestion.thm_main_congestion_growth_paper",
+    "StationaryMFGChallenge.Theorems.InfimalConvolution.thm_main_weak_power_growth_paper"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP",
+      "math.OC"
+    ],
+    "msc2020": [
+      "49N80",
+      "35A01",
+      "91A16"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-10T04:09:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d38766829295cde776d07331393a2d54bd20e3e5",
+        "fork_repository": "PalomarArchive/dlcvag--StationaryMFG-Palomar--dd253f2069fa",
+        "source_repository": "dlcvag/StationaryMFG-Palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0caa9358808f7b8959347d90f19e5f6be8f7e16263253cdc7acfb008fe04cb7b"
+}

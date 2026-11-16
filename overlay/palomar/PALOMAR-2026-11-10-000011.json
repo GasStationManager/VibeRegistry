@@ -1,0 +1,81 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-10-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-10-000011",
+  "version": 1,
+  "title": "Conditional stable laws and rare-event limits for absorbing Markov chains",
+  "abstract": "A Lean 4 formalisation of Theorems A–F for absorbing Markov chains on compact metric spaces under Hypothesis H. The results give conditional Poisson point-process and shrinking-target limits, stable laws and their Gaussian boundary, an L2 central limit theorem, exponential concentration, and conditional laws of large numbers. The registry statement exposes the canonical path laws, local admissibility, and normalised spectral data; existence of the spectral data is proved from H.",
+  "authors": [
+    "Bernat Bassols Cornudella",
+    "Matheus M Castro"
+  ],
+  "repository": "https://github.com/Manzatto/conditional-stable-laws",
+  "commit": "aa1361dd32ddc3383c9c0440318b3a40293d478e",
+  "project_path": null,
+  "declarations": [
+    "ConditionedStableLaws.CanonicalChain.killedTransition_mass_le_one",
+    "ConditionedStableLaws.singularObservable_pos",
+    "ConditionedStableLaws.measurable_singularObservable",
+    "ConditionedStableLaws.NormalizationBridge.positivePowerScale_pos",
+    "ConditionedStableLaws.LocallyFinitePointMeasure.measurable_empirical",
+    "ConditionedStableLaws.RandomPointMeasure.measurable_normalizedObservation",
+    "ConditionedStableLaws.measurable_positiveExtension",
+    "ConditionedStableLaws.positiveExtension_pos",
+    "ConditionedStableLaws.AnnularPoissonClouds.powerLaw_probability",
+    "ConditionedStableLaws.AnnularPoissonClouds.positiveIntegral_laplace",
+    "ConditionedStableLaws.AnnularPoissonClouds.unitCompensatedStable_characteristic_real",
+    "ConditionedStableLaws.AnnularPoissonClouds.fullyCompensatedStable_characteristic_real",
+    "ConditionedStableLaws.AnnularPoissonClouds.measurable_unitCompensatedStable",
+    "ConditionedStableLaws.AnnularPoissonClouds.positiveIntegral_aemeasurable",
+    "ConditionedStableLaws.StableIdentification.positiveIntegral_isStable",
+    "ConditionedStableLaws.StableIdentification.unitCompensatedStable_isStable",
+    "ConditionedStableLaws.StableIdentification.fullyCompensatedStable_isStable",
+    "ConditionedStableLaws.Submission.conditionedProbability_eq",
+    "ConditionedStableLaws.Submission.poissonLimit",
+    "ConditionedStableLaws.Submission.eigenData",
+    "ConditionedStableLaws.Submission.TheoremA",
+    "ConditionedStableLaws.Submission.TheoremB",
+    "ConditionedStableLaws.Submission.TheoremC",
+    "ConditionedStableLaws.Submission.TheoremD",
+    "ConditionedStableLaws.Submission.TheoremE",
+    "ConditionedStableLaws.Submission.TheoremF",
+    "ConditionedStableLaws.Submission.positiveExtension_eq",
+    "ConditionedStableLaws.Submission.positiveIntegral_eq",
+    "ConditionedStableLaws.Submission.fullyCompensatedStable_eq"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.DS"
+    ],
+    "msc2020": [
+      "60F05",
+      "60G55",
+      "60J05",
+      "37A50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-10T19:24:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "aa1361dd32ddc3383c9c0440318b3a40293d478e",
+        "fork_repository": "PalomarArchive/Manzatto--conditional-stable-laws--c4e6501f83a4",
+        "source_repository": "Manzatto/conditional-stable-laws"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0bc2f2bd923b41872a7f852bf8bacc6a4604a99f4a852c815d92de0a01c5a1a6"
+}

@@ -1,0 +1,73 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-11-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-11-000007",
+  "version": 1,
+  "title": "On the structure of countable hyperspaces of regular subcontinua",
+  "abstract": "For a metric continuum X, D(X) is the hyperspace of subcontinua of X that are the closure of their interior, with the Hausdorff metric. The project formalizes the theorem that a countable D(X) is a G-delta subset of the hyperspace of subcontinua, hence completely metrizable and scattered with dense isolated points, so that D(X) is never homeomorphic to the rationals; together with the structure theory behind it (independent families, blister theorem, complement lemma, absorption by minimal elements, decreasing intersections, density of minimal elements, D-atomic continua, the cardinality dichotomy).",
+  "authors": [
+    "Lucas Alves de Almeida"
+  ],
+  "repository": "https://github.com/LucasAlves8Sp/On-the-Structure-of-Countable-Hyperspaces-of-Regular-Subcontinua",
+  "commit": "959fb91b14b6eaf038f9042183ed2f021904e0ce",
+  "project_path": null,
+  "declarations": [
+    "RegularSubcontinua.isRegSubcontinuum_iff_exists_mem_regular",
+    "RegularSubcontinua.card_eq_continuum_of_independent",
+    "RegularSubcontinua.card_eq_continuum_of_blisters",
+    "RegularSubcontinua.complement_lemma",
+    "RegularSubcontinua.isFiniteUnion_operations",
+    "RegularSubcontinua.components_of_isFiniteUnion",
+    "RegularSubcontinua.absorption",
+    "RegularSubcontinua.minimal_disjoint_interior",
+    "RegularSubcontinua.decreasing_intersection",
+    "RegularSubcontinua.dense_interior_minimal",
+    "RegularSubcontinua.atomicFamily_basic",
+    "RegularSubcontinua.atomicFamily_coding",
+    "RegularSubcontinua.atomicFamily_open_of_mem",
+    "RegularSubcontinua.atomicFamily_discrete",
+    "RegularSubcontinua.isGdelta_regular_of_isDAtomic",
+    "RegularSubcontinua.structure_theorem",
+    "RegularSubcontinua.main_theorem",
+    "RegularSubcontinua.not_homeomorphic_rat",
+    "RegularSubcontinua.no_continuum_with_regular_hyperspace_rat",
+    "RegularSubcontinua.dichotomy",
+    "RegularSubcontinua.no_rational_chain",
+    "RegularSubcontinua.dichotomy_exclusive",
+    "RegularSubcontinua.countable_hypothesis_satisfiable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54F16",
+      "54B20",
+      "54F15",
+      "54H05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-11T22:20:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "959fb91b14b6eaf038f9042183ed2f021904e0ce",
+        "fork_repository": "PalomarArchive/LucasAlves8Sp--On-the-Structure-of-Countable-Hyperspaces-of-Regular-Subcontinua--ffe1aa587930",
+        "source_repository": "LucasAlves8Sp/On-the-Structure-of-Countable-Hyperspaces-of-Regular-Subcontinua"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6af64d34b10bcb57b469f769f711671b5cc0a8e12663495a435c88e8b7c8da48"
+}

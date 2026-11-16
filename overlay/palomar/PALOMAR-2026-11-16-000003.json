@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000003",
+  "version": 1,
+  "title": "OEIS A363985 and siblings: Bala's p^(3r) supercongruences for u_m, every integer m",
+  "abstract": "For an integer m let u_m(n) = Σ_{k=0}^{n} (−4)^{n−k} C(n,k) C(mn+k, k) C(2k, k), with the binomial C(mn+k, k) taken as a polynomial in its top. The package proves that u_m(np^r) ≡ u_m(np^{r−1}) (mod p^{3r}) for every integer m, every prime p ≥ 5 and all n, r ≥ 1. This is the u-half of Peter Bala's 2023 conjecture on OEIS A363985. It covers A363985 (m = 2), A363987 (m = 3), A363989 (m = 4) and A362676 (m = −1, up to the sign (−1)^n), each stated as its own theorem. The companion v-half of the conjecture (A363986, A363988, A363990) is not covered. Osburn and Sahu's tower for the generalized Domb numbers needs a factor C(n,k)^A with A ≥ 2. The proof here first writes u_m(N) = Σ_j (−1)^j C(mN, N−j) C(2j,j) C(2N−2j, N−j), where C(mN, N−j) occurs only once. The missing powers of p come from the super Catalan factorization of C(2j,j) C(2N−2j, N−j) and from half-block sums of j^{−2}, as in Osburn–Sahu–Straub's proofs of their Theorems 1.3 and 1.2.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "2329f9d4bebb30be1bb59e40476a89b44d6e034c",
+  "project_path": null,
+  "declarations": [
+    "OeisA363985.u_tower",
+    "OeisA363985.a363985_tower",
+    "OeisA363985.a363987_tower",
+    "OeisA363985.a363989_tower",
+    "OeisA363985.a362676_tower"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A10",
+      "11A07",
+      "11B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T01:02:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2329f9d4bebb30be1bb59e40476a89b44d6e034c",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:81717eb925d350f9950d7051e30a922f330f796a737598fa7d37585c436e4b65"
+}

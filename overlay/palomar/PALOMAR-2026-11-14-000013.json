@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000013",
+  "version": 1,
+  "title": "An 8-regular graph of girth 7 on 768 vertices",
+  "abstract": "A Lean 4 and Mathlib proof that there is an 8-regular simple graph of girth 7 on 768 vertices (Mathlib's SimpleGraph, IsRegularOfDegree and girth), so that the order n(8, 7) of an (8, 7)-cage is at most 768; the House of Graphs cage table listed 774 when this was written. The graph is data (adjacency lists in a binary trie). Lean's kernel checks (decide +kernel, no native_decide) that it is simple and 8-regular, and, for every vertex v and every two neighbours x ≠ y, that the ends of the non-backtracking walks of length at most 3 starting with the edge v x are disjoint from those starting with v y. A cycle of length at most 6 would contradict this at one of its vertices, and an explicit 7-cycle gives girth exactly 7.",
+  "authors": [
+    "Arhan Canli"
+  ],
+  "repository": "https://github.com/arhancanli/quantavane-cage-8-7",
+  "commit": "593719d9713eaf81f23e2364e973824ac208bbc4",
+  "project_path": null,
+  "declarations": [
+    "Cage87.exists_regular_girth_seven"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35",
+      "05C38",
+      "51E12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T10:05:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "593719d9713eaf81f23e2364e973824ac208bbc4",
+        "fork_repository": "PalomarArchive/arhancanli--quantavane-cage-8-7--b176c239a81e",
+        "source_repository": "arhancanli/quantavane-cage-8-7"
+      }
+    ]
+  },
+  "statement_hash": "sha256:dd67b95247b0078abdd3a99f772ad78306cd93ad060338733523ffb08b74f980"
+}

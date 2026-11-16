@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-13-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-13-000018",
+  "version": 1,
+  "title": "OEIS A053175: Hankel determinants of the Catalan–Larcombe–French numbers",
+  "abstract": "For every n, 2^(n(n+3)) divides the (n+1)×(n+1) Hankel determinant det[a(i+j)] of the Catalan–Larcombe–French numbers a, and the quotient is a positive odd integer. This is Zhi-Wei Sun's conjecture (2013), proved by Zhu and Sun (2018).",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "9b2a1eeaa6d00172a8e08351ed43b896e21ce950",
+  "project_path": null,
+  "declarations": [
+    "OeisA53175.conjecture"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B83",
+      "15A15",
+      "05A10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-13T21:12:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9b2a1eeaa6d00172a8e08351ed43b896e21ce950",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:15d802529a99285591d63a6cc3916697d1ba7f1a6d03ab8d8bfeb503f77eab02"
+}

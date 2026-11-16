@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000013",
+  "version": 1,
+  "title": "Actual warm pump-to-hard-OA composition",
+  "abstract": "Full concrete two-stage execution retaining the actual pump seed, incumbent, histories, successful no-goods and strictly pre-last-success normals, then corrected hard OA without reinitialization. Derived choices and exact combined counts accompany certified infeasibility or epsilon-optimal original feasibility.",
+  "authors": [
+    "David E. Bernal Neira"
+  ],
+  "repository": "https://github.com/bernalde/warm-pump-hard-oa",
+  "commit": "4af08acae443bff6738f8b630675c1bed34c27ed",
+  "project_path": null,
+  "declarations": [
+    "Chapter02.fiberLinearRow._proof_1",
+    "Chapter03.OAKKT.FixedLICQ._proof_3",
+    "Chapter03.OAKKT.FixedLICQ._proof_2",
+    "Chapter03.OAKKT.FixedLICQ._proof_1",
+    "Chapter03.OAKKT.restrict._proof_1",
+    "Chapter03.FP.intY._proof_1",
+    "Chapter02.linearFormCLM._proof_2",
+    "Chapter02.integerBox_finite",
+    "Chapter02.linearForm_affine",
+    "Chapter02.linearForm_continuous",
+    "Chapter03.OAExec.closed_gap_witness",
+    "Chapter03.PumpOA.pump_loop_seed_valid",
+    "Chapter03.PumpOA.palomar_qualified_source_pump_oa"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC"
+    ],
+    "msc2020": [
+      "90C11",
+      "90C30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T14:35:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4af08acae443bff6738f8b630675c1bed34c27ed",
+        "fork_repository": "PalomarArchive/bernalde--warm-pump-hard-oa--a3eb11e2b90f",
+        "source_repository": "bernalde/warm-pump-hard-oa"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e61bfdd1dba2886a72a814c3ad515604f319050a98c055d9503d691bba74aacc"
+}

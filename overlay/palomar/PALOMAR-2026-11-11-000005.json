@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-11-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-11-000005",
+  "version": 1,
+  "title": "Ramanujan's congruences for the one-dimensional cusp spaces",
+  "abstract": "A general theorem and its six instances. The theorem (congr_of): let k = 12 + 4a + 6b; if the space M_{k−12} of level-one modular forms has rank one and 2k/B_k = D/ℓ with ℓ and D coprime integers, then the q-expansion coefficients of Δ·E₄^a·E₆^b are integers congruent to σ_{k−1}(n) modulo ℓ, for every n. The hypothesis holds exactly for k = 12, 16, 18, 20, 22, 26, where the cusp space is spanned by this one form, and the instances are the congruences modulo the numerator of B_k/2k: 691, 3617, 43867, 174611 = 283·617, 77683 = 131·593 and 657931. The case k = 12 is Ramanujan's τ(n) ≡ σ₁₁(n) (mod 691); the other five are the remaining congruences of this kind at level one. The statements are for every n and use only Mathlib definitions; the Bernoulli numbers B_12 to B_26 are computed in Lean, not assumed. Integrality comes from the product formula for Δ, expanded by Mathlib's pentagonal number theorem, and the integer coefficients 240σ₃ and −504σ₅ of E₄ and E₆. The congruence comes from one exact identity in M_k: E₄^(a+3)·E₆^b − E_k vanishes at the cusp, so dividing by Δ (Mathlib's discriminantEquiv) gives a form in M_{k−12}, which is one-dimensional and spanned by E₄^a·E₆^b; hence E₄^(a+3)·E₆^b − E_k = c·Δ·E₄^a·E₆^b, with c read off from the q¹-coefficient. Since E_k = 1 − (2k/B_k)∑σ_{k−1}(n)qⁿ, multiplying by the numerator of B_k/2k and reducing shows that the Eisenstein series is congruent to the cusp form. The argument is proved once for general (a, b) and applied to the six cases.",
+  "authors": [
+    "Richard Morley-Smith"
+  ],
+  "repository": "https://github.com/rmorleysmith/morley-smith-formal",
+  "commit": "eb7622dba72c0d84e040b24ae1ab5560d0f88110",
+  "project_path": null,
+  "declarations": [
+    "RamanujanCongruences.congr_of",
+    "RamanujanCongruences.congr_12",
+    "RamanujanCongruences.congr_16",
+    "RamanujanCongruences.congr_18",
+    "RamanujanCongruences.congr_20",
+    "RamanujanCongruences.congr_22",
+    "RamanujanCongruences.congr_26"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11F33",
+      "11F11",
+      "11B68"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-11T18:23:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "eb7622dba72c0d84e040b24ae1ab5560d0f88110",
+        "fork_repository": "PalomarArchive/rmorleysmith--morley-smith-formal--c62fec5eab58",
+        "source_repository": "rmorleysmith/morley-smith-formal"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e5f597666b7366920fae082e3f11758f0c8183763902ed15c12f6e3b3c89aac3"
+}

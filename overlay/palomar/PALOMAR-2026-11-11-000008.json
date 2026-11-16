@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-11-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-11-000008",
+  "version": 1,
+  "title": "Herstein's theorem on Jordan homomorphisms onto prime rings, in Smiley's form for characteristic different from 2 and in his form for every characteristic, with the Jacobson-Rickart domain theorem and an example for each hypothesis",
+  "abstract": "Kernel-checked proofs, in Lean 4 + Mathlib, of six statements. An additive map phi between associative rings is a Jordan homomorphism when phi(ab + ba) = phi(a)phi(b) + phi(b)phi(a). (1) A Jordan homomorphism onto a prime ring without 2-torsion is a homomorphism or an anti-homomorphism (phi(ab) = phi(b)phi(a)): Herstein's theorem (1956, Theorem H) in the form Smiley gave it (1957, p. 428), with characteristic 3 admitted; an additive map of rings, no identity assumed. (2) The domain form in every characteristic (Jacobson and Rickart 1950, Theorem 2): an additive map with phi(a^2) = phi(a)^2 and phi(aba) = phi(a)phi(b)phi(a), into a ring without zero divisors, is multiplicative or anti-multiplicative, with no surjectivity and no hypothesis on 2. (3)-(5) Each hypothesis of (1) is needed; each statement asserts that one hypothesis fails, that the others hold, and that the map is neither multiplicative nor anti-multiplicative: (3) from 2x2 into 4x4 integer matrices, not onto, the target prime and without 2-torsion (witness a -> diag(a, a^T)); (4) on pairs of 2x2 integer matrices, onto, the target not prime (witness (a, b) -> (a, b^T)); (5) from F_2 x F_2 onto F_2, a prime ring with 2-torsion (witness (x, y) -> x + y). (6) The theorem in every characteristic (Smiley 1957, Added in proof, p. 429): an additive map with the two identities of (2), onto a prime ring, is a homomorphism or an anti-homomorphism, with no hypothesis on 2; it implies (1), and (5) shows that the Jordan identity alone does not suffice when the ring has 2-torsion. The compared statements add no definition: the identities on the map and the conditions on the target ring are written out as universally quantified statements, the maps are Mathlib's AddMonoidHom, and onto is Function.Surjective. Statements 1, 2 and 6 formalize theorems of the 1950s and statements 3-5 are standard examples; nothing here is a new theorem. The proof of (1) follows the argument written out by Beidar, Bresar and Chebotar (2003, Proposition 3.1), not Smiley's; the proof of (2) is Jacobson and Rickart's; the proof of (6) is Smiley's, through his lemma that a prime ring in which every commutator squares to zero is commutative. Not formalized: the semiprime generalizations. A prior formalization of the case of complex-linear maps between unital complex algebras exists in github.com/openai/math and is recorded under related_formalizations; statements (1) and (6) contain that case. Application (cited; no compared statement asserts it): the self-adjoint elements of an algebra of observables are closed under the symmetrized product and not, in general, under the product; applied to the identity map, (1) says that on a prime ring without 2-torsion the symmetrized product determines the associative product up to reversing the order of the factors.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/herstein-jordan-homomorphisms",
+  "commit": "34dffa8aace3a1b565b11cbb561db3a58fa203da",
+  "project_path": null,
+  "declarations": [
+    "JordanPrime.jordan_onto_prime",
+    "JordanPrime.twoIdentity_into_domain",
+    "JordanPrime.onto_needed",
+    "JordanPrime.prime_needed",
+    "JordanPrime.two_needed",
+    "JordanPrime.twoIdentity_onto_prime"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA",
+      "math-ph",
+      "quant-ph"
+    ],
+    "msc2020": [
+      "16W10",
+      "16N60",
+      "17C50",
+      "81R15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-11T23:11:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "34dffa8aace3a1b565b11cbb561db3a58fa203da",
+        "fork_repository": "PalomarArchive/stalex444--herstein-jordan-homomorphisms--865f53090a9e",
+        "source_repository": "stalex444/herstein-jordan-homomorphisms"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b72faa54351e072023aebfc1bc42ce8961f9893f942dec4d4d87df7ea720da07"
+}

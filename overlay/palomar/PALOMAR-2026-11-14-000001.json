@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000001",
+  "version": 1,
+  "title": "Improved last-iterate bounds for SGD with and without replacement",
+  "abstract": "For a finite family of differentiable convex beta-smooth losses with a population minimizer, this formalization proves an expected last-iterate population-loss bound for stochastic gradient descent under uniform sampling with replacement and uniform sampling without replacement. With delta = min(1, 2 - eta beta), the bound is 280000 times log(T+2)^3 / log(2+log(T+2)) times [R^2 / (delta^3 eta T) + eta sigma_star^2 / delta^4]. It holds for all 0 < eta beta < 2, every positive WR horizon, and every WOR horizon through one full pass, including T = n. Under interpolation at eta = 1/beta, this yields O(beta R^2 log(T)^3 / (T log log(T))). The two compared theorems use the actual finite sampling averages and the usual SGD recursion. All history estimates and stochastic sampling identities are proved from the stated assumptions.",
+  "authors": [
+    "Yimin Zhong"
+  ],
+  "repository": "https://github.com/lowrank/last-iterate-sgd-bound",
+  "commit": "82241483b73d53c8084edb33a7d946d070674562",
+  "project_path": null,
+  "declarations": [
+    "SGDLastIterate.noisy_wr_wor",
+    "SGDLastIterate.interpolation_wr_wor"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "msc2020": [
+      "90C15",
+      "90C25",
+      "68T05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T02:03:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "82241483b73d53c8084edb33a7d946d070674562",
+        "fork_repository": "PalomarArchive/lowrank--last-iterate-sgd-bound--a41228437425",
+        "source_repository": "lowrank/last-iterate-sgd-bound"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3848b8126b516e15da5150fd2f46547cebd96d823be5218e339b36c8a612ac79"
+}

@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-09-05-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-09-05-000007",
+  "version": 4,
+  "title": "Stafford 3.8",
+  "abstract": "Lean formalization of Stafford's Conjecture 3.8 for every characteristic-zero field and every Weyl-algebra rank, proving that each nonzero d admits F, R, and S with 1 = d*R + F*d*S. The development also proves an exact Bernstein-degree fixed-source strengthening and derived localization, adjoint, and evolutionary results.",
+  "authors": [
+    "Christopher Albert"
+  ],
+  "repository": "https://github.com/itpplasma/stafford38-formal",
+  "commit": "1029fdb382eee06e7b59bcf32801f40931e2079a",
+  "project_path": null,
+  "declarations": [
+    "Stafford38Challenge.universalStatement",
+    "Stafford38Challenge.theorem_1_1",
+    "Stafford38Challenge.corollary_6_3",
+    "Stafford38Challenge.corollary_6_3_stablyCyclic",
+    "Stafford38Challenge.leftHandedIdentity",
+    "Stafford38Challenge.corollary_6_3_left",
+    "Stafford38Challenge.localizedDifferentialIdentity",
+    "Stafford38Challenge.principalOpenDifferentialIdentity",
+    "Stafford38Challenge.laurentDifferentialIdentity",
+    "Stafford38Challenge.fractionFieldDifferentialIdentity",
+    "Stafford38Challenge.evolutionaryIdentity"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA"
+    ],
+    "msc2020": [
+      "16S32"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-11T13:43:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1029fdb382eee06e7b59bcf32801f40931e2079a",
+        "fork_repository": "PalomarArchive/itpplasma--stafford38-formal--e4b6caf6307d",
+        "source_repository": "itpplasma/stafford38-formal"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c1204fe0416a5cd6a5e885e31f431e3d4aeaeedf48ce41a103e74e5cce173783"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000012",
+  "version": 1,
+  "title": "Proth's criterion and the prime ladder reduction for ternary Goldbach up to 8.875 · 10^30",
+  "abstract": "Lean 4 proofs, with no unproved steps, of two results from H. A. Helfgott and D. J. Platt, Numerical verification of the ternary Goldbach conjecture up to 8.875 · 10^30, Experimental Mathematics 22, 2013, arXiv:1305.3062. First, Proth's criterion of Section 2, Theorem 2.3 in existential form; the converse printed after it, for every such a, is proved as converse but not compared: a Proth number N = k 2^n + 1 with 0 < k < 2^n is prime if and only if some integer a has Jacobi symbol -1 over N and a raised to the power N - 1 over 2 is -1 mod N. Second, Theorem 4.1, every odd number from 7 to T = 8875694145621773516800000000000 is a sum of three primes, derived from the two computations the paper rests on, which are explicit hypotheses and are not proved here: binary Goldbach for every even number from 4 to 4 · 10^18, the verification of Oliveira e Silva, Herzog and Pardi, and for each of the 492700 ranges of width 2^54 · 10^9 of Section 4 a ladder of odd primes with gaps at most 4 · 10^18 - 2 that starts within 2 · 10^18 above the left end point and ends less than 2 · 10^18 below the right end point, the paper's own computation. The entry does not verify any ladder or any binary Goldbach case, so it does not prove ternary Goldbach up to T; it proves that the paper's computations imply it. Ternary Goldbach is Helfgott's theorem and binary Goldbach is open; neither is claimed. AI agents wrote the Lean code, Claude by Anthropic, as listed in PORTING.md, and it is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "0e201f43acf714d7821daadf5963c06d961132e8",
+  "project_path": "entries/helfgottplatt2013",
+  "declarations": [
+    "LeanLab.HelfgottPlatt.U1455.proth_iff",
+    "LeanLab.HelfgottPlatt.U6816.theorem4_1_of_ranges"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11Y11",
+      "11Y16"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T06:26:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0e201f43acf714d7821daadf5963c06d961132e8",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2e677c4f93aa779a04e04be730fe5527b4e6b8c7966624392d9f10b3402a77ea"
+}

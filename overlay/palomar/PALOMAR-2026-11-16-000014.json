@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000014",
+  "version": 1,
+  "title": "Written on the Wall II Conjecture 19: lower bound on the largest induced bipartite subgraph size from average eccentricity and neighborhood independence",
+  "abstract": "Lean 4 / Mathlib formalization of Conjecture 19 from E. DeLaVina's Written on the Wall II (Graffiti.pc) collection, matching the exact statement in google-deepmind/formal-conjectures (WrittenOnTheWallII.GraphConjecture19.conjecture19). For every finite, nontrivial, connected simple graph G, the size b(G) of a largest induced bipartite subgraph is bounded below by the floor of the sum of the average vertex eccentricity and the maximum local neighborhood independence number sup_v l(v). The proof picks a vertex u maximising l(u), sets e = (G.eccent u).toNat and D = G.diam, and constructs an induced bipartite subgraph as a disjoint union of independent subsets B_d inside the distance spheres {v | G.dist u v = d} colored by distance parity. When D ≤ e, one geodesic vertex per sphere 2 ≤ d ≤ e together with {u} and an independent neighborhood subset I ⊆ N(u) of size l(u) gives b(G) ≥ e + l(u). When e < D, the average eccentricity is strictly less than D, and pairing geodesic vertices from u toward a diametral pair x, y on overlapping spheres (separated by distance at least 2 via the triangle inequality) gives b(G) ≥ D − 1 + l(u). The proof uses only propext, Classical.choice, and Quot.sound, with no sorry and no native_decide.",
+  "authors": [
+    "Hamed Sadeghi"
+  ],
+  "repository": "https://github.com/hamsade-google/wowii-conjecture-19-lean",
+  "commit": "949a857bfb20f75c38f57317c4e2c29e2c18aa1b",
+  "project_path": null,
+  "declarations": [
+    "WrittenOnTheWallII.GraphConjecture19.conjecture19"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C12",
+      "05C35",
+      "05C69",
+      "68V15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T08:33:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "949a857bfb20f75c38f57317c4e2c29e2c18aa1b",
+        "fork_repository": "PalomarArchive/hamsade-google--wowii-conjecture-19-lean--680f9cc9219e",
+        "source_repository": "hamsade-google/wowii-conjecture-19-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1e60b67e01932ee281b4495f4a744676ac37e23d6763441dd923705f0879d1d1"
+}

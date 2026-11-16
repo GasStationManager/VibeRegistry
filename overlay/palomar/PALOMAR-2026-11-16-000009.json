@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000009",
+  "version": 1,
+  "title": "Convergence of the tug-of-war scheme for the normalized p-Laplacian",
+  "abstract": "A Lean 4 formalization, on top of Mathlib, of the convergence of\np-harmonious functions, the solutions of the dynamic programming principle\nof tug-of-war with noise, to the viscosity solution of the Dirichlet problem\nfor the normalized p-Laplacian, 2 <= p < infinity, as the step size tends to\nzero, on bounded open sets satisfying the exterior sphere condition with\ncontinuous bounded boundary data. The compared theorem gives, for every step\nsize, a p-harmonious function with the given data, uniformly bounded, whose\nhalf-relaxed limits agree on the closure of the domain, equal the data on\nits boundary, and are the uniform limit of the family. The development also\nproves the asymptotic expansion of the scheme, the viscosity property of the\nhalf-relaxed limits, existence and uniqueness for the discrete problem, the\ncomparison principle and uniqueness for the limit equation, Aleksandrov's\ntheorem and Jensen's lemma.",
+  "authors": [
+    "Juan J. Manfredi",
+    "Behrooz Moosavi"
+  ],
+  "repository": "https://github.com/BehroozMoosavi/tugofwar_formalization",
+  "commit": "4d379ec55c677b4e69cf00b09bdeaa2fa61715e6",
+  "project_path": null,
+  "declarations": [
+    "PLaplacian.pharmonious_exists_converge"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "35J92",
+      "35D40",
+      "49L20",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T04:29:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4d379ec55c677b4e69cf00b09bdeaa2fa61715e6",
+        "fork_repository": "PalomarArchive/BehroozMoosavi--tugofwar_formalization--4467ca87acfb",
+        "source_repository": "BehroozMoosavi/tugofwar_formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e0b67fc6bdf579262135d5713fcd4752dfc774c105f2b0153ac07d6601fe0314"
+}

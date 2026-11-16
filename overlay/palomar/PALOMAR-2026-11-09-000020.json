@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000020",
+  "version": 1,
+  "title": "Unrestricted Boolean multiplicative complexity of the 3x3 low-half multiplier",
+  "abstract": "Formalizes the target lowMul3, the three low bits of the product of two 3-bit integers (the product modulo 8), in the unrestricted XOR--AND circuit model of arXiv:2608.30238v1, where XOR and constants are free and either input of a paid AND gate may reuse arbitrary earlier nonlinear wires. Phase 1 proves that the three ANF coordinates agree with integer multiplication modulo 8 on all 64 inputs, and gives an explicit six-gate circuit, one of whose gates reuses two earlier nonlinear wires. Phase 2 adds the derivative lemma (Lemma 8 of the four-gate note in paper/notes/). Phase 3 proves the normal form (Lemma 1), Lemma 2, the pi2 / iota layer with Lemma 8 in the paper's form, Lemma 4 (kernel) and Lemma 6, excludes lambda = 5, and reduces MC(lowMul3) = 6 to four explicit statements. Phase 4 proves the four-linear-gate case (StarFree, Theorem 12 of the note). Phases 5 and 6 prove the three-linear-gate case (lambdaCase_three), so MC(lowMul3) = 6 follows from LambdaCase 1 and LambdaCase 2. The development proves both remaining cases, including TwoClaim and the shared modular feedback lemmas. LowHalfMul3Solution.lean proves the unconditional theorem mc_lowMul3.",
+  "authors": [
+    "Bshara Alhodali"
+  ],
+  "repository": "https://github.com/bishara74/lowhalf-mul3",
+  "commit": "b6c00ef8d94ff578585b428270df1af271a96bd6",
+  "project_path": null,
+  "declarations": [
+    "UnrestrictedBooleanMul.LowHalfMul3.mc_lowMul3"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CC"
+    ],
+    "msc2020": [
+      "68Q06",
+      "68Q17",
+      "94D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T22:04:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b6c00ef8d94ff578585b428270df1af271a96bd6",
+        "fork_repository": "PalomarArchive/bishara74--lowhalf-mul3--c49c0da1e89d",
+        "source_repository": "bishara74/lowhalf-mul3"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d463c4e82a96f66b3762375a91790babed4d9c00cf532c49e9e483cdf99162d7"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000022",
+  "version": 2,
+  "title": "Keevash, Counting designs, Theorem 2.1: triangle decompositions of typical graphs",
+  "abstract": "A Lean 4 / Mathlib formalization of Theorem 2.1 of P. Keevash, \"Counting designs\" (arXiv:1504.02909): there are c₀ > 0 and n₀ such that every graph G on n ≥ n₀ vertices with all degrees even and 3 | e(G) that is (c,h)-typical, with density d(G) > n^(-10^-7) and c ≤ c₀·d(G)^(10^6), has a triangle decomposition; h = 2 (the paper's c-typical case, KeevashTri.theorem_2_1_ctyp, new in v2) and h = 16 (KeevashTri.theorem_2_1, v1). (c,h)-typical means |⋂_{x∈S} G(x)| = (1 ± |S|c)·d(G)^|S|·n for every vertex set S with |S| ≤ h; for h = 2 this is degrees (1 ± c)·d(G)·n and pair codegrees (1 ± 2c)·d(G)²·n (the paper asks (1 ± c) for pairs, so the hypothesis here is slightly weaker). The density and typicality thresholds are the paper's (n^(-10^-7) and c₀·d^(10^6)); c₀ and n₀ are not explicit. Quantitative internals of the c-typical proof: c_e = max(c, n^(-1/10)), goodness parameter c' = c_e^(1/4), at most η = 16c'^2·n + 4/(c'^2·d^16) bad one-vertex extensions of a c'-good set of at most 15 vertices. The proof follows the paper's strategy (random algebraic template over F₂^a, Nibble, Cover, Hole, Completion), with every random greedy algorithm of the Completion replaced by a deterministic potential (pessimistic-estimator) argument. Earlier registered entries are imported as lake dependencies: the hypergraph matching nibble of Ehard–Glock–Joos (PALOMAR-2026-10-17-000004) and the Steiner triple system material of PALOMAR-2026-10-22-000017 v2. Mathlib does not contain this result.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/keevash-triangle-decompositions",
+  "commit": "274272da83ddb513437e4394bb79995c215954ee",
+  "project_path": null,
+  "declarations": [
+    "KeevashTri.theorem_2_1",
+    "KeevashTri.theorem_2_1_ctyp"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05B07",
+      "05C80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T07:29:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "274272da83ddb513437e4394bb79995c215954ee",
+        "fork_repository": "PalomarArchive/jtraverso--keevash-triangle-decompositions--8091ac93e742",
+        "source_repository": "jtraverso/keevash-triangle-decompositions"
+      }
+    ]
+  },
+  "statement_hash": "sha256:503167017add5c0e76538088e06e2e680211aaa741f72c739815fdb97f5bd4eb"
+}

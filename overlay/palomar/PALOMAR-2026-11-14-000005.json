@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000005",
+  "version": 1,
+  "title": "Multiplying 9 × 10 by 10 × 11 matrices with 640 multiplications",
+  "abstract": "A Lean 4 and Mathlib proof that the matrix multiplication tensor ⟨9, 10, 11⟩ has rank at most 640 over the rationals. Two compared theorems: 640 triples of rational matrices decompose the tensor (∑ᵢ uᵢ[a, b] vᵢ[c, d] wᵢ[e, f] = [b = c ∧ a = e ∧ d = f]), and the same triples form a bilinear algorithm A * B = ∑ᵢ (∑ uᵢ[a, b] A[a, b]) (∑ vᵢ[c, d] B[c, d]) wᵢ over every field of characteristic zero. The scheme, scaled to integers, is data; Lean's kernel checks it (decide +kernel, no native_decide) slice by slice with the coefficients packed into large integers, and a soundness proof for every input turns the 90 slice checks, a range check and a bound check into the tensor identity. The smallest rank listed for this format in the Lille catalogue was 644 when this was written.",
+  "authors": [
+    "Arhan Canli"
+  ],
+  "repository": "https://github.com/arhancanli/quantavane-fmm-9x10x11",
+  "commit": "f4e076c036a6a8bd2402a24e8f468d550bbb5234",
+  "project_path": null,
+  "declarations": [
+    "MatMul9x10x11.exists_tensor_decomposition",
+    "MatMul9x10x11.exists_bilinear_algorithm"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.SC",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "68Q25",
+      "15A69",
+      "68W30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T07:04:58Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f4e076c036a6a8bd2402a24e8f468d550bbb5234",
+        "fork_repository": "PalomarArchive/arhancanli--quantavane-fmm-9x10x11--a96afb5c9a72",
+        "source_repository": "arhancanli/quantavane-fmm-9x10x11"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5fff95ac12fa97f4d3bf14b33eeaae4ac284b7004f2e6c19c78f545bb2f044cc"
+}

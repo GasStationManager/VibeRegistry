@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000004",
+  "version": 1,
+  "title": "OEIS A364111: Bala's p^(3r) supercongruences",
+  "abstract": "For integers A ≥ 2 and B, C ≥ 1 let u(N) = Σ_{k=0}^{N} C(N+k−1, k)^A C(2N−2k, N−k)^B C(2k, k)^C. The package proves that u(np^r) ≡ u(np^{r−1}) (mod p^{3r}) for every prime p ≥ 5 and all n, r ≥ 1, as conjectured by Peter Bala (OEIS A364111, 2023), and the case (A, B, C) = (2, 1, 1), which is A364111 itself. The proof uses Coster's method, as Osburn and Sahu did for the generalized Domb numbers.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "2329f9d4bebb30be1bb59e40476a89b44d6e034c",
+  "project_path": null,
+  "declarations": [
+    "OeisA364111.u_supercongruence",
+    "OeisA364111.a_supercongruence"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A10",
+      "11A07",
+      "11B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T01:13:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2329f9d4bebb30be1bb59e40476a89b44d6e034c",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:177213ba35ceafb68315af3521621152185fb7ca42aff3571294f830cff9d5df"
+}

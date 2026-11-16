@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-09T10:48:22Z",
+  "generated_at": "2026-11-16T10:32:11Z",
   "counts": {
-    "total": 2369,
+    "total": 2398,
     "registry": 30,
-    "overlay": 2339,
+    "overlay": 2368,
     "with_informal": 1114,
     "signed_off": 2,
     "mathlib_conflicts": 0
   },
   "mathlib_names": {
     "source": "https://leanprover-community.github.io/mathlib4_docs/declarations/declaration-data.bmp",
-    "fetched_at": "2026-11-09T10:48:22Z",
-    "declarations": 433177,
-    "sha256": "3fcb5fb7732c97291bf7a26513e7763d997fd9d364d6a087cbb438913b668ba0",
+    "fetched_at": "2026-11-16T10:32:10Z",
+    "declarations": 434233,
+    "sha256": "c829695ffcae093276e3785cca7eb0c1372e6ea300c141ccfb4cf3fafeb87aed",
     "file": "data/mathlib-names.tsv.gz",
     "note": "Snapshot of current Mathlib docs; entries pin older Mathlib revisions."
   }

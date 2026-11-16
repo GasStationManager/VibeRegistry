@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-15-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-15-000001",
+  "version": 1,
+  "title": "Sharp logarithmic Kakeya estimates in every dimension",
+  "abstract": "We formalize two sharp logarithmic Kakeya upper bounds in every integer dimension n ≥ 2. For 0 < δ ≤\n1, the Kakeya maximal operator takes the largest average of |f| over open radius-δ neighborhoods of\nunit segments in each direction. Its norm from Lⁿ(ℝⁿ) to Lⁿ(Sⁿ⁻¹) is at most Cₙ[log(2/δ)]^((n−1)/n).\nThe tube estimate applies to any finite family of N unit directions with pairwise Euclidean distance\nat least δ, arbitrary centers, and nonnegative weights aⱼ. Let Tⱼ be the open radius-2δ neighborhood\nof the corresponding centered unit segment, let 1_T denote the indicator of T, and set q = n/(n−1).\nThe integral over ℝⁿ of (∑ⱼ aⱼ 1_{Tⱼ})^q is at most Cₙ log(2/δ) δ^(n−1) ∑ⱼ aⱼ^q. All constants\ndepend only on n. The same estimate holds for radius-δ tubes. Hölder's inequality gives tube-union\nvolume at least cₙNδ^(n−1)/[log(2/δ)]^(n−1), and a direction net gives volume at least\ncₙ/[log(2/δ)]^(n−1) for the δ-neighborhood of every Kakeya set. This matches the construction of\nFernández-Delgado and de la Salle. The estimates imply the Kakeya maximal function conjecture and\nfull Minkowski dimension for every bounded Kakeya set. Written lower-bound arguments establish\noptimality of the logarithmic powers. Only the two upper estimates are Lean theorems; the geometric\nconsequences and sharpness arguments are not formalized here. The accompanying abstract and summary\ngive the fully typeset statements.",
+  "authors": [
+    "Mark Lewko"
+  ],
+  "repository": "https://github.com/mrklwk/kakeya-sharp",
+  "commit": "0ffa953d9275d86b1caef5763464b067f994064f",
+  "project_path": null,
+  "declarations": [
+    "KakeyaPalomar.sharpMaximalBound",
+    "KakeyaPalomar.sharpTubeBound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "42B25",
+      "28A75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-15T05:13:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0ffa953d9275d86b1caef5763464b067f994064f",
+        "fork_repository": "PalomarArchive/mrklwk--kakeya-sharp--2ffc2923742c",
+        "source_repository": "mrklwk/kakeya-sharp"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7ad40fcb2aa8028ec100f9fc041fd73d975fbbf3e37a3e513e74c5e38558fd9e"
+}

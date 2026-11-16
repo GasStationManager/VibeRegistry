@@ -1,0 +1,82 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000004",
+  "version": 1,
+  "title": "Special transformations in algebraically closed valued fields",
+  "abstract": "A Lean formalization of special transformations and RV lifting in algebraically closed valued fields of pure characteristic zero. The first Comparator configuration selects Theorem 5.5 and Corollary 5.6: special-bijection deformation to RV-pullbacks and preparation of polynomial RV values. Genuine saturation and a small original parameter set are explicit. Jacobian and measured-lifting results remain in the larger verified library but are outside this first submission claim.",
+  "authors": [
+    "Yimu Yin"
+  ],
+  "repository": "https://github.com/daviddhilbert/special-transformations",
+  "commit": "dd3a4a02aeedcaf322c52186fc25a959145455a6",
+  "project_path": null,
+  "declarations": [
+    "SpecialTransformations.Section5.Paper.theorem_5_5",
+    "SpecialTransformations.Section5.Paper.corollary_5_6",
+    "SpecialTransformations.Milestone0.Transfer.vf_zero_mem",
+    "SpecialTransformations.Milestone0.Transfer.rv_mem",
+    "SpecialTransformations.Section4.coordinate_equality_definable",
+    "SpecialTransformations.Section4.tuple_domain_definable",
+    "SpecialTransformations.Milestone0.Transfer.vf_zero_ne_one",
+    "SpecialTransformations.Milestone0.Transfer.vf_one_mem",
+    "SpecialTransformations.Milestone0.Transfer.vf_left_distrib",
+    "SpecialTransformations.Milestone0.Transfer.vf_add_mem",
+    "SpecialTransformations.Milestone0.Transfer.vf_mul_mem",
+    "SpecialTransformations.Milestone0.Transfer.vfInv_zero",
+    "SpecialTransformations.Milestone0.Transfer.vf_mul_inv_or_zero",
+    "SpecialTransformations.Milestone0.Transfer.vfInv_val",
+    "SpecialTransformations.Milestone0.Transfer.vf_mul_one",
+    "SpecialTransformations.Milestone0.Transfer.vf_mul_comm",
+    "SpecialTransformations.Milestone0.Transfer.vf_mul_assoc",
+    "SpecialTransformations.Milestone0.Transfer.vf_add_neg",
+    "SpecialTransformations.Milestone0.Transfer.vf_neg_mem",
+    "SpecialTransformations.Milestone0.Transfer.vf_add_comm",
+    "SpecialTransformations.Milestone0.Transfer.vf_add_zero",
+    "SpecialTransformations.Milestone0.Transfer.vf_add_assoc",
+    "SpecialTransformations.DefinableGeometry.Space.definable_univ",
+    "SpecialTransformations.DefinableGeometry.Map.definable_image",
+    "SpecialTransformations.Section5.SpecialBijection.bijective",
+    "SpecialTransformations.DefinableGeometry.Space.RelationDefinable.comp",
+    "SpecialTransformations.DefinableGeometry.Space.RelationDefinable.congr",
+    "SpecialTransformations.DefinableGeometry.Space.relation_eq_definable",
+    "SpecialTransformations.DefinableGeometry.Space.Definable.left_relation",
+    "SpecialTransformations.DefinableGeometry.Space.RelationDefinable.inter",
+    "SpecialTransformations.DefinableGeometry.Space.RelationDefinable.swap",
+    "SpecialTransformations.Section5.canonicalMap_value",
+    "SpecialTransformations.Section5.Focus.etaMap_value",
+    "SpecialTransformations.Section4.realSpace_diagonal_definable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03C60",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T05:17:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dd3a4a02aeedcaf322c52186fc25a959145455a6",
+        "fork_repository": "PalomarArchive/daviddhilbert--special-transformations--255d43589738",
+        "source_repository": "daviddhilbert/special-transformations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6c6415a55b4fea98265317f1775e68868c32fb624f885888786f64b6b0f5ff47"
+}

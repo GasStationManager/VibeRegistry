@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000015",
+  "version": 1,
+  "title": "Pretorsion theories and image-closed subcategories",
+  "abstract": "A Lean 4 formalization, built on Mathlib, of the paper Pretorsion theories and image-closed subcategories, in two parts. Structure: for a finite-dimensional algebra Λ over a field, a subcategory Z of mod Λ is image-closed iff Z = Gen Z ∩ Cogen Z iff Z = T ∩ F for a pretorsion theory (T, F) (Theorem A), and the pretorsion theories of mod Λ form a complete lattice with the meets and joins of the paper (Theorem 3.6). Enumeration: for the linearly oriented quiver 1 → ⋯ → n, the pretorsion theories, weighted by q to the number of indecomposables in T ∩ F, and the image-closed subcategories, weighted by q to their number of indecomposables, sum to the q-Gandhi polynomials B_{n+1}(1, q) and C_{n+1}(1, q) of Han and Zeng (Theorem B), with the two-variable refinements of Theorems 7.5 and 8.5. At q = 1 these are the Genocchi numbers g_{2n+4} and the median Genocchi numbers H_{2n+3}; that classical evaluation is not formalized. The library also proves the other numbered statements of the paper, including the convex geometry of image closure (Section 4.3), and the cited inputs they use.",
+  "authors": [
+    "Haruhisa Enomoto"
+  ],
+  "repository": "https://github.com/haruhisa-enomoto/pretorsion-image-closed",
+  "commit": "da7ea8e902a2bba856c78f8af53b9c24e0dc3a06",
+  "project_path": null,
+  "declarations": [
+    "PretorsionImageClosed.Challenge.theoremA",
+    "PretorsionImageClosed.Challenge.completeLattice",
+    "PretorsionImageClosed.Challenge.gandhiPretorsion",
+    "PretorsionImageClosed.Challenge.gandhiImageClosed",
+    "PretorsionImageClosed.Challenge.theoremBPretorsion",
+    "PretorsionImageClosed.Challenge.theoremBImageClosed"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RT",
+      "math.CT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "16G20",
+      "18E40",
+      "05A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T11:02:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "da7ea8e902a2bba856c78f8af53b9c24e0dc3a06",
+        "fork_repository": "PalomarArchive/haruhisa-enomoto--pretorsion-image-closed--b3c0f441f315",
+        "source_repository": "haruhisa-enomoto/pretorsion-image-closed"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7979bc0411311839e1835e886f688f5e453517ef11a0dce819c7ea7a81b331ba"
+}

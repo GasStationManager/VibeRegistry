@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-13-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-13-000001",
+  "version": 1,
+  "title": "P1 publication: Factorial cumulants and optimal quadratic error",
+  "abstract": "Actual heterogeneous factorial-count identities, with repeated-index corrections, and the unconditional optimal 41/30 power for the third factorial cumulant. Absolute triple activity has the same upper exponent. The fourth-cumulant decomposition retains the positive compatible quartic mass and distinguishes 5/3 and 3/2 errors; the exact quadratic Poisson–Charlier approximation has matching 4/3 upper and lower power bounds.",
+  "authors": [
+    "Brice Pouly"
+  ],
+  "repository": "https://github.com/Vulkin-prog/paper-p1-lean",
+  "commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+  "project_path": "RegistryV2",
+  "declarations": [
+    "PaperP1Registry.V2.CumulantsOptimality.factorial_source",
+    "PaperP1Registry.V2.CumulantsOptimality.third_exact_identity",
+    "PaperP1Registry.V2.CumulantsOptimality.fourth_exact_identity",
+    "PaperP1Registry.V2.CumulantsOptimality.principal_second_equivalent",
+    "PaperP1Registry.V2.CumulantsOptimality.optimal_third_cumulant",
+    "PaperP1Registry.V2.CumulantsOptimality.absolute_triple_activity",
+    "PaperP1Registry.V2.CumulantsOptimality.quartic_non_cancellation",
+    "PaperP1Registry.V2.CumulantsOptimality.quadratic_optimality"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.NT"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-13T01:03:24Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d6a0f6c5109886127526677603eb6b74e8c0cd82",
+        "fork_repository": "PalomarArchive/Vulkin-prog--paper-p1-lean--91e74cc11e7f",
+        "source_repository": "Vulkin-prog/paper-p1-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a7d4405b032d1ff98db098bea9cfc4b16cc829ce7a8381f909ff88d355e572c4"
+}

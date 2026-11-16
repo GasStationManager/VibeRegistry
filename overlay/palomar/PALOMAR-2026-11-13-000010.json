@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-13-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-13-000010",
+  "version": 3,
+  "title": "Primes p for which Ω(p − 2) is odd (Green's Problem 64)",
+  "abstract": "For infinitely many primes p, Ω(p − 2) is odd, where Ω counts prime factors with multiplicity. We assign nonnegative weights to integers u in [x, 2x] with Ω(u) odd. Using a shifted correlation estimate, we sieve the values u + 2 and obtain a lower bound for the combined weight of primes and products of two large primes. A separate upper bound for the contribution from those products leaves positive weight on primes for every sufficiently large x.\nProof development and Lean formalization by gpt-6 astra.",
+  "authors": [
+    "Igor Inozemtsev"
+  ],
+  "repository": "https://github.com/inozemtsev/formal-math",
+  "commit": "43f0988e15c2e1b9fb28b931e6fbb0cf9f7a70cc",
+  "project_path": "proofs/green64",
+  "declarations": [
+    "Green64.green_64"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N36",
+      "11N05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-15T14:23:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "43f0988e15c2e1b9fb28b931e6fbb0cf9f7a70cc",
+        "fork_repository": "PalomarArchive/inozemtsev--formal-math--e12c822a627e",
+        "source_repository": "inozemtsev/formal-math"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bb1a5810ae210559170a4857f675720c0e13bc40ef9125f3d33c29ecb39e8a02"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-14-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-14-000008",
+  "version": 1,
+  "title": "Erdős Problem 494: Selfridge–Straus, A is determined by its k-sums when |A| has a prime factor p > k, and when k = 4, |A| > 12",
+  "abstract": "For a finite set A of complex numbers, the multiset of k-element subset sums together with |A| determines A when |A| is divisible by a prime p > k, and when k = 4 and |A| > 12 (Selfridge–Straus 1958).",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "d19e7fcb821eaaa86bee1c9415343dc034cd5ed5",
+  "project_path": null,
+  "declarations": [
+    "Erdos494.erdos_494.variants.card_divisible_by_prime_gt_k",
+    "Erdos494.erdos_494.variants.k_eq_4_card_gt_12"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B75",
+      "05A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-14T08:03:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d19e7fcb821eaaa86bee1c9415343dc034cd5ed5",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:32533734c71f6081d2db1b3ab26647eee64dc0d0406b697b6fa494e37b7e3a4c"
+}

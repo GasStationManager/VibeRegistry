@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-12-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-12-000006",
+  "version": 1,
+  "title": "Chetwynd–Hilton 1989: regular graphs of degree at least ½(√7 − 1)|V| are 1-factorizable",
+  "abstract": "A Lean 4 / Mathlib proof of Theorem 2 of Chetwynd and Hilton, \"1-factorizing regular graphs of high degree — an improved bound\" (Discrete Math. 75 (1989)): a d-regular simple graph of even order with d ≥ ½(√7 − 1)|V| (≈ 0.823|V|) is d-edge-colourable (CH89.lineGraph_colorable_of_isRegular_sqrt7), with the integer form |V| = 2n, 7n² ≤ (d + n)² (CH89.lineGraph_colorable_of_isRegular_nat). The article's proof of Theorem 1 contains an unjustified step (\"we may moreover suppose that x_j comes before w_j in the list (r_m, …, r_t, l_1, …, l_m)\"), which fails for an arbitrary maximal matching M₀; the formalization repairs it by choosing M₀ to minimize −K·#covered + max(T, T′), T = u_Y − u_X − μ, ordering the edges of M₀ (mixed ones outside, XX/YY alternately) and pairing X with Y by Hall's theorem with one dummy, so that at most one pair is bad, which the article's extra step q + 1 absorbs. The constant ½(√7 − 1) of the article is obtained exactly. Theorem 1 (staircase classes peeled off as near 1-factors, core of Theorem 5, re-insertion of v* and w) is assembled from the pinned dependency PALOMAR-2026-11-04-000016; Lemma 3 (a pair with r(r − 1) ≤ (2n − 1)p common non-neighbours) and the parameter inequality r(r − 1) − (2n − 1)(5n − 3d − 1) = (d + n)² − 7n² + n + 1 are proved here. Two statements; no definitions beyond Mathlib's.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/chetwynd-hilton-1989",
+  "commit": "0f6e485529e810843ea13814d19c8d67b15568b9",
+  "project_path": null,
+  "declarations": [
+    "CH89.lineGraph_colorable_of_isRegular_sqrt7",
+    "CH89.lineGraph_colorable_of_isRegular_nat"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-12T14:20:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0f6e485529e810843ea13814d19c8d67b15568b9",
+        "fork_repository": "PalomarArchive/jtraverso--chetwynd-hilton-1989--88e35be60ebe",
+        "source_repository": "jtraverso/chetwynd-hilton-1989"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e8f4f141998f9208bf11e5adc9398705a556835fc2adce9e38f9c49f589bace5"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000017",
+  "version": 1,
+  "title": "Erdős Problem 881 for k = 2: infinite deletions from asymptotic bases of order two",
+  "abstract": "Erdős Problem 881 asks whether every minimal additive basis A of order k (one from which no infinite set can be removed while keeping a basis of order k) contains an infinite set B such that A \\ B is a basis of order k + 1. This formalization settles the case k = 2 in the formulation of google-deepmind/formal-conjectures, where a basis of order n is an asymptotic basis: all but finitely many natural numbers are sums of exactly n elements of A. It proves the stronger statement that every asymptotic additive basis of order 2 in the natural numbers, minimal or not, contains an infinite set whose removal leaves an asymptotic additive basis of order 3. The proof splits on whether some positive difference occurs infinitely often in A. If one does, a sparse set of elements in one residue class, each of whose removal is compensated through two fixed shifts, can be deleted together. If none does, elements are deleted one at a time while the representations already used are protected, and a combinatorial argument shows that this process never gets stuck. As a corollary it answers a question of Erdős and Nathanson (1980): a minimal asymptotic basis of order 3 cannot be an asymptotic basis of order 2. The cases k >= 3 of Problem 881 remain open.",
+  "authors": [
+    "Bruce Lee"
+  ],
+  "repository": "https://github.com/BruceLoveLee000/erdos-lean-proofs",
+  "commit": "caacb396739c327a3444ab69ce56a68b4d8887fd",
+  "project_path": "palomar/erdos881-k2",
+  "declarations": [
+    "Erdos881K2.infinite_deletion_of_two_basis",
+    "Erdos881K2.erdos_881_two",
+    "Erdos881K2.not_minimal_three_of_two_basis"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B13"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T17:10:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "caacb396739c327a3444ab69ce56a68b4d8887fd",
+        "fork_repository": "PalomarArchive/BruceLoveLee000--erdos-lean-proofs--ec10dc3a1c3b",
+        "source_repository": "BruceLoveLee000/erdos-lean-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b5eadaa0ff5058e092f825f7e7308da9e393a36ecf70b6556ab4a17dd7ff939e"
+}

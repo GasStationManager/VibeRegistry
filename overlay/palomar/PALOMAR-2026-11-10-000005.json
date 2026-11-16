@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-10-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-10-000005",
+  "version": 1,
+  "title": "A continuum whose hyperspace of regular subcontinua is homeomorphic to the irrationals",
+  "abstract": "For a metric continuum X, a subcontinuum is regular if it equals the closure of its interior, and D(X) denotes the hyperspace of regular subcontinua with the Hausdorff metric. Camargo, Ordoñez and Ramírez asked whether D(X) can be homeomorphic to the rationals or to the irrationals. This project formalizes in Lean 4 with Mathlib the complete proof of the affirmative answer for the irrationals: there is a nondegenerate compact connected set X in the Hilbert space ℓ² such that D(X) is homeomorphic to the Baire space ℕ^ℕ and to the space of irrational numbers. The continuum X is the closure of a countable tree of scaled copies of the Knaster continuum, realized in ℓ² as the inverse limit of the tent map. The formalization proves that the regular subcontinua of X are coded exactly by the nonempty, convex sets of pieces that satisfy a density condition. It shows that this coding is a homeomorphism onto a nonempty, zero-dimensional G_δ subset of a Cantor cube in which every compact set has empty interior. It then concludes with the Alexandrov–Urysohn characterization of the Baire space and the homeomorphism between ℕ^ℕ and the irrationals. Both classical results are also proved in the project.",
+  "authors": [
+    "Lucas Alves de Almeida"
+  ],
+  "repository": "https://github.com/LucasAlves8Sp/A-CONTINUUM-WHOSE-HYPERSPACE-OF-REGULAR-SUBCONTINUA-IS-HOMEOMORPHIC-TO-THE-IRRATIONALS",
+  "commit": "1261e4bc3eefa83f95df9db1346949845930bf6d",
+  "project_path": null,
+  "declarations": [
+    "RegSub.theoremA_l2"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN"
+    ],
+    "msc2020": [
+      "54B20",
+      "54F15",
+      "54F16",
+      "54H05",
+      "54F65",
+      "54E52"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-10T04:23:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1261e4bc3eefa83f95df9db1346949845930bf6d",
+        "fork_repository": "PalomarArchive/LucasAlves8Sp--A-CONTINUUM-WHOSE-HYPERSPACE-OF-REGULAR-SUBCONTINUA-IS-HOMEOMORPHIC-TO---e112193dc556",
+        "source_repository": "LucasAlves8Sp/A-CONTINUUM-WHOSE-HYPERSPACE-OF-REGULAR-SUBCONTINUA-IS-HOMEOMORPHIC-TO-THE-IRRATIONALS"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ac06770a03ce98b863dd65309f3a1e2d06f992d96dd834085d87d70922622942"
+}

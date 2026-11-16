@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-12-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-12-000005",
+  "version": 1,
+  "title": "Siegel's theorem on L(1, χ) for real Dirichlet characters",
+  "abstract": "A Lean 4 / Mathlib proof of Siegel's theorem (1935): for every ε > 0 there is c > 0 with c·N^(-ε) ≤ ‖L(1, χ)‖ for every real non-principal Dirichlet character χ modulo N (SiegelThm.siegel, with Mathlib's DirichletCharacter.LFunction; χ need not be primitive). The proof is Goldfeld's (1974): F = ζ·L(χ₁)L(χ₂)L(χ₁χ₂) has non-negative Dirichlet coefficients with a₁ = 1; its regular part G = F − λ/(s−1) is expanded in a Taylor series at s = 2, with Cauchy's estimate on the circle |s−2| = 3/2 (where |G| ≤ 4000 (N₁N₂)²), giving ‖λ‖ ≥ (1−β)/2 · (50000 (N₁N₂)²)^(−4(1−β)) whenever Re F(β) ≤ 0 and 7/8 ≤ β < 1; Siegel's dichotomy (an exceptional zero in [1−ε/16, 1) or none, in which case χ₁ is the character mod 4) gives the ineffective constant. Characters that induce the same character as χ₁ are handled with the Euler factors (∏_{p∣n}(1−1/p) ≥ c(η)n^(−η)). Two auxiliary statements are also compared: the integral representation L(s, χ) = s∫_1^∞ A(t) t^(−s−1) dt on Re s > 0 (SiegelThm.LFunction_eq_integral, via Mathlib's Abel summation for Re s > 1, a Mellin-transform holomorphy argument and the identity theorem) and ‖∑_{k≤M} χ(k)‖ ≤ N (SiegelThm.norm_sum_Icc_le). Mathlib is the only dependency; Mathlib's continuation of ζ is not used (ζ(s) = 1/(s−1) + 1 − s∫_1^∞{t}t^(−s−1) dt is proved directly). Three statements; no definitions beyond Mathlib's.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/siegel-theorem",
+  "commit": "dbe9353374a11317bdd2d436e264536258c5762f",
+  "project_path": null,
+  "declarations": [
+    "SiegelThm.siegel",
+    "SiegelThm.LFunction_eq_integral",
+    "SiegelThm.norm_sum_Icc_le"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11M20",
+      "11R42"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-12T14:03:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dbe9353374a11317bdd2d436e264536258c5762f",
+        "fork_repository": "PalomarArchive/jtraverso--siegel-theorem--fcfb5ef237dc",
+        "source_repository": "jtraverso/siegel-theorem"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9c131ce335de8f06d13791e012a2b6089cffedc10814222218c0ff73cd5f546e"
+}

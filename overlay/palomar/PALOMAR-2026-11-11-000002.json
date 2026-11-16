@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-11-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-11-000002",
+  "version": 1,
+  "title": "Separated distances in the fixed space R^29",
+  "abstract": "For every natural N there is n at least N and an n-point set in the single fixed Euclidean space R^29 whose distances on different unordered pairs of distinct points differ by at least one, with diameter strictly below (499/500)n^2. The sizes n form an unbounded set; no claim is made for every large n. As a consequence the formalization proves the negation of the fixed-dimension proposition for Erdős Problem 670 exactly as stated in Formal Conjectures at commit 2f91d251c07fbbaf9435166d47c11e884a08a6cf, using d = 29 and epsilon = 1/1000. No optimality, smallest dimension or independent priority review is claimed.",
+  "authors": [
+    "John Tripodo"
+  ],
+  "repository": "https://github.com/jjtripodo-lgtm/erdos-670-r29",
+  "commit": "6d629227b1e8d21ab9f09d8a3a667015e78e468a",
+  "project_path": null,
+  "declarations": [
+    "Erdos670.erdos_670.variants.tripodo",
+    "Erdos670.erdos_670"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-11T04:33:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6d629227b1e8d21ab9f09d8a3a667015e78e468a",
+        "fork_repository": "PalomarArchive/jjtripodo-lgtm--erdos-670-r29--a538ff44c09c",
+        "source_repository": "jjtripodo-lgtm/erdos-670-r29"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fb3b2ace180bf83aba735b0af1013ddd9b82804a899d17c74744bb863740a103"
+}

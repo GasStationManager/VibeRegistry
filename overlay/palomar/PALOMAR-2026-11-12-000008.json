@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-12-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-12-000008",
+  "version": 1,
+  "title": "Erdős–Wilson: almost every graph is of class one",
+  "abstract": "A Lean 4 / Mathlib proof of the theorem of Erdős and Wilson (1977) that almost every graph is of class one: among the 2^C(n,2) labelled graphs on Fin n, the proportion whose line graph is Δ(G)-colourable tends to 1 (erdos_wilson). On the way it proves that almost every graph has a unique vertex of maximum degree (tendsto_unique_maxDegree) and that a graph with at most one vertex of maximum degree is of class one (colorable_of_subsingleton_maxDegree, the special case of Fournier's theorem imported from PALOMAR-2026-11-08-000009). The probabilistic part is a second-moment argument with explicit binomial estimates: with X the number of vertices of degree at least a threshold k, P(X = 0) ≤ 1/(n tl_k) + bp_{k-1}^2/(4 tl_k^2) and P(two distinct vertices of equal degree ≥ k) ≤ n^2 Σ_{i ≥ k-1} bp_i^2, where bp, tl are the point probabilities and upper tails of Bin(n-2, 1/2); the joint law of two degrees is computed exactly by a symmetric-difference (translation) argument on the set of graphs, and k is chosen adaptively. Only qualitative statements (limits) are stated; no rate of convergence is claimed. Three statements; no definitions beyond Mathlib's.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/erdos-wilson-class-one",
+  "commit": "e24f896005a8678e16ac1c7ac943184fdda6d852",
+  "project_path": null,
+  "declarations": [
+    "ErdosWilson.colorable_of_subsingleton_maxDegree",
+    "ErdosWilson.tendsto_unique_maxDegree",
+    "ErdosWilson.erdos_wilson"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-12T17:04:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e24f896005a8678e16ac1c7ac943184fdda6d852",
+        "fork_repository": "PalomarArchive/jtraverso--erdos-wilson-class-one--4c8ce3683ee9",
+        "source_repository": "jtraverso/erdos-wilson-class-one"
+      }
+    ]
+  },
+  "statement_hash": "sha256:596e2786906ca335453bd3d5c70372ffe73e3ab1952af24105541baf8bf278ef"
+}

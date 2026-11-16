@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-09-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-09-000010",
+  "version": 1,
+  "title": "IETFree — almost every pair of interval exchange transformations does not generate a free group",
+  "abstract": "A Lean 4 formalization of the paper's main theorem: for any permutations π and σ of the d and e intervals, the set of pairs of length vectors (λ, μ) for which the two interval exchange transformations f_{π,λ} and f_{σ,μ} generate a free group of rank 2 has measure zero. The development contains the irreducible case (Theorem 2.6, from unique ergodicity, rigidity by translations and the Diophantine condition), the almost-everywhere Diophantine property (Proposition 2.5, from the easy direction of Khintchine–Groshev), Lemma 3.1 (the length map of the composition is injective and absolutely continuous), the reduction of the general case to the blocks between consecutive pair-splitting singularities (Lemmas 3.2 and 3.3), Lemma 3.4 (a word trivial on a block, obtained by rescaling the block and applying Theorem 2.6 to it), and the assembly of the per-block words into a single nontrivial word. Masur–Veech unique ergodicity and Veech's rigidity are proved as well, by the Rauzy–Veech induction (`IETFree/RauzyVeech/`, `IETFree/Rigidity/`, `IETFree/UniqueErgodicity/`), so the main theorem is unconditional. The remark that follows the main theorem — the relation of a trivial word is robust, so the pairs that do not generate a free group contain an open set of full measure — is proved in `IETFree/Pair/RobustRelation/`: the symbolic data of an arbitrary word and the robustness at a point of the conull set `Ω'` (`evalWord_eventually_eq_one`), and the assembly of the open conull set (`exists_isOpen_subset_hasRelation_of_ae`), which `ChallengeSolved.lean` feeds with the a.e. relation it proves from `main` — the conclusion on `Δ_π × Δ_σ` is `exists_isOpen_ae_exists_nontrivial_evalWordEquiv_eq_one`.",
+  "authors": [
+    "Sébastien Gouëzel"
+  ],
+  "repository": "https://github.com/sgouezel/IETFree",
+  "commit": "94c4455c3243ff4229cd5e0c58af6f97879777b7",
+  "project_path": null,
+  "declarations": [
+    "IntervalExchange.coe_mkIETEquiv",
+    "IntervalExchange.main",
+    "IntervalExchange.Pair.exists_isOpen_ae_exists_nontrivial_evalWordEquiv_eq_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS"
+    ],
+    "msc2020": [
+      "37E05",
+      "37A15",
+      "37C85",
+      "37A25",
+      "20E05",
+      "11J83"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-09T11:37:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "94c4455c3243ff4229cd5e0c58af6f97879777b7",
+        "fork_repository": "PalomarArchive/sgouezel--IETFree--9c6a211e1e75",
+        "source_repository": "sgouezel/IETFree"
+      }
+    ]
+  },
+  "statement_hash": "sha256:59385299aa5fc2d70f279cee845986071076f591d8a63a81174fcfeef5386c48"
+}

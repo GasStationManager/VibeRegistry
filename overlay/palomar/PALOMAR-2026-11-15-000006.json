@@ -1,0 +1,118 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-15-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-15-000006",
+  "version": 1,
+  "title": "Nowakowska Theory of Actions (1982) in Lean 4",
+  "abstract": "A Lean 4 / Mathlib (v4.36.0-rc2) formalization of Maria Nowakowska's A Formal Theory of Actions (Syntax and Semantics of Behaviour; chapter dated 1982; Praxiological Studies, 1983), synthesizing the parts of Language of Motivation and Language of Actions (1973) that 1982 cites for omitted proofs and for the motivational calculus (here: §§2.1.4, 2.2.4, 5.1–5.3). Framing: rigorous reconstruction/verification of her action–motivation–promise material (precision gaps closed in Lean), plus a formalization contribution proving CF ∩ Regular so Promise/Offense CF theorems are unconditional. Headline compared claims include card_conflictFamilies (her stated 113), Attainable_iff_reaches_length (reachability realization), arrow_impossibility in the finite 2×3 encoding, unconditional PromiseClosed/OffenseClosed.isContextFree with factor-minimal HatU, Language.IsContextFree.inter_regular, and stringDuration_pi / timed ψ-membership. Clinical Arrow abbrevs and MotCalc samples are supporting packaging, not claimed novelty. Maria Nowakowska did not participate in or endorse this formalization. Lean was written with AI-agent assistance under Lars Warren Ericson's direction and review. There is no sorry in the Actions/ development, no project-defined axiom, and Mathlib is the only Lake dependency. Palomar Registration: TBD.",
+  "authors": [
+    "Lars Warren Ericson"
+  ],
+  "repository": "https://github.com/catskillsresearch/nowakowska1982",
+  "commit": "dc5a32bf960fbd23e74fbdfae9e7cb288f1cd59b",
+  "project_path": null,
+  "declarations": [
+    "Actions.ActionAutomaton.Reaches.admissible",
+    "Actions.ActionAutomaton.admissible_cons_nextState",
+    "Actions.ActionAutomaton.mem_language_iff",
+    "Actions.ActionAutomaton.mem_language_iff_exists_reaches",
+    "Actions.ActionAutomaton.nextState_eq",
+    "Actions.ActionAutomaton.nil_mem_language",
+    "Actions.ActionAutomaton.singleton_admissible",
+    "Actions.ActionAutomaton.toActionSystem.Attainable_iff_reaches_length",
+    "Actions.ActionAutomaton.toActionSystem.mem_L_iff",
+    "Actions.ActionSystem.EffortDominated.refl",
+    "Actions.ActionSystem.HatT.subset",
+    "Actions.ActionSystem.HatU.subset",
+    "Actions.ActionSystem.NonParasitic.append_left_right",
+    "Actions.ActionSystem.NonParasitic.of_mem_L",
+    "Actions.ActionSystem.OffenseClosed.isContextFree",
+    "Actions.ActionSystem.Prax.Min_subset",
+    "Actions.ActionSystem.Prax.subset",
+    "Actions.ActionSystem.PromiseClosed.isContextFree",
+    "Actions.ActionSystem.PromiseClosed.mono",
+    "Actions.ActionSystem.RinvUnwanted.mem_iff",
+    "Actions.ActionSystem.RinvWanted.empty",
+    "Actions.ActionSystem.RinvWanted.mem_iff",
+    "Actions.ActionSystem.Rinv_subset_L",
+    "Actions.ActionSystem.stringDuration.nil_not_pos",
+    "Actions.ActionSystem.stringDuration_pauseString",
+    "Actions.ActionSystem.strongly_implies_weakly",
+    "Actions.ActionSystem.weakly_iff_strongly_singleton",
+    "Actions.Arrow.arrow_dictator_of_unanimity_IIA",
+    "Actions.Arrow.arrow_impossibility",
+    "Actions.Arrow.BlindObedience.of_not_sovereignty",
+    "Actions.Arrow.CompulsiveOrHedonistic.of_dictator",
+    "Actions.Arrow.CompulsiveOrHedonistic.of_not_lack",
+    "Actions.Arrow.NeuroticAllOrNothing.of_not_IIA",
+    "Actions.Arrow.scale1Dictator.IIA",
+    "Actions.Arrow.scale1Dictator.compulsive",
+    "Actions.Arrow.scale1Dictator.not_lack",
+    "Actions.Arrow.scale1Dictator.sovereignty",
+    "Actions.Arrow.scale1Dictator.unanimity",
+    "Actions.Arrow.scale2Dictator.IIA",
+    "Actions.Arrow.scale2Dictator.not_lack",
+    "Actions.Arrow.scale2Dictator.sovereignty",
+    "Actions.Arrow.scale2Dictator.unanimity",
+    "Actions.Conflicts.card_conflictFamilies",
+    "Actions.MixedSystem.LM.mem_iff",
+    "Actions.MixedSystem.LM.of_pure_actions",
+    "Actions.MixedSystem.MotivationalConsistency.wanted_unwanted_disjoint",
+    "Actions.MixedSystem.O'_offenseClosed",
+    "Actions.MixedSystem.O_promiseClosed",
+    "Actions.MixedSystem.Psi.mem_iff",
+    "Actions.MixedSystem.Psi.pi_mem_of_motivationalConsistency",
+    "Actions.MixedSystem.Satisfiable.of_motivationalConsistency",
+    "Actions.MixedSystem.W_disjoint",
+    "Actions.MixedSystem.pi.stringDuration_pi",
+    "Actions.MotCalc.SampledSemImp.epistemicModel",
+    "Actions.Toy.HatU_offenseU",
+    "Actions.Toy.Prax_empty_example",
+    "Actions.Toy.nil_not_mem_promiseT",
+    "Actions.Toy.offenseU_closed",
+    "Actions.Toy.offenseU_finiteHorizon",
+    "Actions.Toy.promiseT_closed",
+    "Actions.Toy.toy_pause_duration",
+    "Actions.Toy.toy_work_duration",
+    "Actions.Toy.twoGoals_conflict",
+    "Actions.Toy.work_attains",
+    "Actions.Toy.work_mem_promiseT",
+    "Actions.Toy.work_string_duration",
+    "Language.IsContextFree.inter_regular"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "03B70",
+      "68Q45",
+      "91B14",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-15T17:23:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dc5a32bf960fbd23e74fbdfae9e7cb288f1cd59b",
+        "fork_repository": "PalomarArchive/catskillsresearch--nowakowska1982--f1f43cf45c7b",
+        "source_repository": "catskillsresearch/nowakowska1982"
+      }
+    ]
+  },
+  "statement_hash": "sha256:12e5f36031cc0e42fcbf48b99104115497414f4154446b2cd56960df7c68b60b"
+}

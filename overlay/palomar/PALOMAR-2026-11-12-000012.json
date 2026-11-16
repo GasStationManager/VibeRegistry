@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-12-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-12-000012",
+  "version": 1,
+  "title": "Vizing's adjacency lemma, the multifan lemma and Kierstead's lemma, as a standalone module",
+  "abstract": "A thin wrapper that exposes, with Mathlib definitions only, the basic recolouring lemmas of edge-colouring theory proved inside PALOMAR-2026-11-04-000009 (overfull-critical-graphs). vizing_adjacency_lemma (Vizing 1965): if G is of class two (its line graph is not Δ(G)-colourable) and G − xy is Δ(G)-edge-colourable, then x has at least Δ − d(y) + 1 neighbours of degree Δ other than y. critical_two_maxDegree_neighbours: every vertex of a Δ-critical graph has at least two neighbours of degree Δ. multifan_lemma (Stiebitz–Scheide–Toft–Favrholdt, Theorem 2.1): for a Δ(G)-colouring of G − x y₀ of a class-two graph, a multifan at x is elementary and x is joined to every fan vertex by a path coloured with any colour free at x and any colour free at that vertex. kierstead_lemma (Kierstead 1984): a Kierstead path whose interior vertices y₂, …, y_{L−2} have degree below Δ is elementary. Partial edge colourings are symmetric functions V → V → Option (Fin k); five definitions (proper partial edge colouring, colouring of G − ab, free colour, multifan, Kierstead path). The only new proof is the corollary (from Vizing's lemma) and the translation to the colourings of the Vizing entry.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/vizing-adjacency-lemmas",
+  "commit": "ef2c05cff377f965f9274b578b96133bf42b52af",
+  "project_path": null,
+  "declarations": [
+    "VizingAdj.vizing_adjacency_lemma",
+    "VizingAdj.critical_two_maxDegree_neighbours",
+    "VizingAdj.multifan_lemma",
+    "VizingAdj.kierstead_lemma"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-12T20:03:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ef2c05cff377f965f9274b578b96133bf42b52af",
+        "fork_repository": "PalomarArchive/jtraverso--vizing-adjacency-lemmas--9a689d4f8f8e",
+        "source_repository": "jtraverso/vizing-adjacency-lemmas"
+      }
+    ]
+  },
+  "statement_hash": "sha256:87f52feecba60e1ee181f81cd537f80d301d5284c77353888c0655406a4e789d"
+}

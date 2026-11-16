@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-12-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-12-000003",
+  "version": 1,
+  "title": "Gallai–van der Waerden numbers from quadratic-residue colourings",
+  "abstract": "A Lean 4 and Mathlib proof of a lower-bound construction for the Gallai–van der Waerden numbers GW(r; 3, l) of Mao, Ozeki, Robertson and Wang: the least m such that for every n ≥ m, every exact r-colouring of {1, …, n} contains a rainbow 3-term or a monochromatic l-term arithmetic progression. Theorem 1: let l ≥ 4 and let p > l be a prime with p ≡ 1 (mod 8) such that no l consecutive integers in [1, p − 1] have the same Legendre symbol modulo p; let s ≥ 2 and let z colour {0, …, l − 1} onto s colours with no rainbow 3-term progression. Colour x in [1, (l − 1)p + 1] by its quadratic character of x − 1 (two colours) when x ≢ 1 (mod p), and the point x = 1 + kp by the new colour 2 + z(k). This colouring uses all s + 2 colours and has no rainbow 3-term and no monochromatic l-term progression, so GW(s + 2; 3, l) > (l − 1)p + 1. The formalization proves Theorem 1 for every such l, p, s and z, the resulting bound for GW (unconditionally for every threshold with the defining property, and for the number itself given that a threshold exists), and the instance (l, p) = (4, 17), which gives GW(4; 3, 4) > 52 and GW(5; 3, 4) > 52.",
+  "authors": [
+    "Arhan Canli"
+  ],
+  "repository": "https://github.com/arhancanli/quantavane-gw-residue",
+  "commit": "be8cde77420f724366fb292451866c2ee931a5dc",
+  "project_path": null,
+  "declarations": [
+    "GwResidue.theorem1",
+    "GwResidue.exists_goodExactColouring",
+    "GwResidue.lt_of_gwProperty",
+    "GwResidue.lt_GW",
+    "GwResidue.gw_r4_l4",
+    "GwResidue.gw_r5_l4"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05D10",
+      "11B25",
+      "11A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-12T10:17:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "be8cde77420f724366fb292451866c2ee931a5dc",
+        "fork_repository": "PalomarArchive/arhancanli--quantavane-gw-residue--1fa86a952d26",
+        "source_repository": "arhancanli/quantavane-gw-residue"
+      }
+    ]
+  },
+  "statement_hash": "sha256:74ba4424a0905cd847439f681c07c77d7ec2c6422d3e046b1ffef2f919273bae"
+}

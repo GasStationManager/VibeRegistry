@@ -1,0 +1,76 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-13-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-13-000004",
+  "version": 1,
+  "title": "Nonexistence of directed strongly regular graphs by rank arguments",
+  "abstract": "Lean 4 and Mathlib proofs that no directed strongly regular graph exists for 28 parameter sets (v, k, t, λ, μ). A directed strongly regular graph is a 0-1 matrix A with zero diagonal, all row and column sums equal to k and A² = tI + λA + μ(J − I − A). Nine of the parameter sets are those of the paper below: (50, 11, 7, 0, 3), (68, 13, 7, 0, 3), (100, 16, 7, 0, 3), (108, 19, 9, 0, 4), (55, 16, 12, 1, 6), (66, 10, 5, 4, 1), (91, 12, 6, 5, 1), (96, 15, 10, 9, 1) and (28, 6, 3, 2, 1); the tenth set of the paper, (48, 9, 5, 0, 2), is not formalized. The same lemmas exclude eight further sets, and a formalized complement lemma excludes eleven complementary sets. The proofs compare the rank of A − θI, for a root θ of the quadratic x² − (λ − μ)x − (t − μ), with a submatrix of A prescribed at one vertex. For (28, 6, 3, 2, 1) one case is a SAT refutation whose LRAT certificate the Lean kernel checks with decide +kernel. The theorems use only propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Iurii Ivanov"
+  ],
+  "repository": "https://github.com/Nosdormas/melete-math",
+  "commit": "55b78b56c3e56874ccf46b90855640b11b961a4b",
+  "project_path": "dsrg-rank-method/lean",
+  "declarations": [
+    "DsrgRank.ClosedNbhd_no_50_11_7_0_3",
+    "DsrgRank.ClosedNbhd_no_54_13_9_0_4",
+    "DsrgRank.ClosedNbhd_no_64_17_13_0_6",
+    "DsrgRank.ClosedNbhd_no_68_13_7_0_3",
+    "DsrgRank.ClosedNbhd_no_70_15_9_0_4",
+    "DsrgRank.ClosedNbhd_no_78_19_13_0_6",
+    "DsrgRank.ClosedNbhd_no_88_23_17_0_8",
+    "DsrgRank.ClosedNbhd_no_100_16_7_0_3",
+    "DsrgRank.ClosedNbhd_no_108_19_9_0_4",
+    "DsrgRank.ClosedNbhd_no_110_31_25_0_12",
+    "DsrgRank.LeftKer_no_55_16_12_1_6",
+    "DsrgRank.TwinMuOne_no_40_9_6_5_1",
+    "DsrgRank.TwinMuOne_no_66_10_5_4_1",
+    "DsrgRank.TwinMuOne_no_91_12_6_5_1",
+    "DsrgRank.TwinMuOne_no_96_15_10_9_1",
+    "DsrgRank.Twin_no_80_19_13_12_2",
+    "DsrgRank.Case28_no_28_6_3_2_1",
+    "DsrgRank.Case28_no_28_21_18_15_18",
+    "DsrgRank.compl_no_40_30_27_21_27",
+    "DsrgRank.compl_no_50_38_34_29_28",
+    "DsrgRank.compl_no_55_38_34_27_24",
+    "DsrgRank.compl_no_66_55_50_45_50",
+    "DsrgRank.compl_no_68_54_48_43_42",
+    "DsrgRank.compl_no_80_60_54_42_54",
+    "DsrgRank.compl_no_91_78_72_66_72",
+    "DsrgRank.compl_no_96_80_75_65_75",
+    "DsrgRank.compl_no_100_83_74_69_68",
+    "DsrgRank.compl_no_108_88_78_72_70"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C20",
+      "05E30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-13T06:03:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "55b78b56c3e56874ccf46b90855640b11b961a4b",
+        "fork_repository": "PalomarArchive/Nosdormas--melete-math--c62e2f56db1d",
+        "source_repository": "Nosdormas/melete-math"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1ab8ff89b0fad2f1c294e382be4953e68b222ca3fba3464fb0f8df91076a3441"
+}

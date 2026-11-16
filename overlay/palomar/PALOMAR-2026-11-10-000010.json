@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-10-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-10-000010",
+  "version": 1,
+  "title": "Exact LRX diameter of the symmetric group",
+  "abstract": "For every n >= 4 the Cayley graph of S_n with unit-cost generators L = (0 1 ... n-1), R = L inverse, and X = (0 1) has diameter n*(n-1)/2. The formalization proves upper and lower bounds and a literal L/R/X word of at most that length between every ordered pair of permutations. The independent Challenge defines the moves, their word evaluation, and the undirected Cayley graph using Mathlib alone.",
+  "authors": [
+    "S. Uskov",
+    "A. Chervov",
+    "F. Levkovich-Maslyuk",
+    "I. Litvak",
+    "A. Smolensky",
+    "A. Soibelman",
+    "Dia Taha"
+  ],
+  "repository": "https://github.com/snow-ghost/lrx-lean",
+  "commit": "9cffbfbab7e1d6f5be1012c3caf608478f5af5b6",
+  "project_path": null,
+  "declarations": [
+    "PalomarLRX.boundedRouting",
+    "PalomarLRX.exactDiameter"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.GR"
+    ],
+    "msc2020": [
+      "05C12",
+      "05C25",
+      "20B30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-10T19:17:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9cffbfbab7e1d6f5be1012c3caf608478f5af5b6",
+        "fork_repository": "PalomarArchive/snow-ghost--lrx-lean--49af8803720c",
+        "source_repository": "snow-ghost/lrx-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5230a6a283f68765741447854d04c37e13e9098a306fbd8540d4607c0d343b5e"
+}

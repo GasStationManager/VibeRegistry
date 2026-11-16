@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000013",
+  "version": 1,
+  "title": "On Goldbach's problem: proof that almost all even positive integers are sums of two primes",
+  "abstract": "A Lean 4 proof, with no unproved steps, of the main result of T. Estermann, On Goldbach's problem: proof that almost all even positive integers are sums of two primes, Proc. London Math. Soc. series 2, volume 44, 1938, pages 307-314. Let Q of n be the number of even positive integers less than n that are not sums of two primes. The Introduction on page 307 states that, as n tends to infinity, Q of n is O of n log^-a n for every positive a; this is the compared theorem, LeanLab.Estermann1938.main. The proof is not Estermann's circle method text: it bounds Q of n by E of n plus 1, where E of X counts the even 4 <= m <= X that are not sums of two primes, and uses the bound E of X << X log^-A X for every A, proved by Heath-Brown's 1985 route from the Siegel-Walfisz theorem. That bound is already a compared theorem of the registered entry heathbrown1985 of this repository, LeanLab.PNTPort.PsiChi.goldbach_logPowerSaving, whose Challenge states the same E of X bound; this entry adds Estermann's own count Q of n and his big O form, and the Lean closure is the same as that entry's plus one file. Binary Goldbach is open and is not claimed. AI agents, Claude by Anthropic, wrote the lab's Lean code; the ported zeta function code is by the PrimeNumberTheoremAnd contributors, as listed in PORTING.md. It is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "0e201f43acf714d7821daadf5963c06d961132e8",
+  "project_path": "entries/estermann1938",
+  "declarations": [
+    "LeanLab.Estermann1938.main"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11P55",
+      "11N13"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T07:03:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0e201f43acf714d7821daadf5963c06d961132e8",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0f4b3197a7bfcf2c406be2ee631673f3ae6ebd2abbdef1c1cc9c25cc1520b179"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-13-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-13-000003",
+  "version": 1,
+  "title": "OEIS A002454: the odd-order permanent identity (She–Sun–Xia)",
+  "abstract": "For every n and every primitive complex (2n+1)-th root of unity ζ, the permanent of the 2n × 2n matrix with entries 1 on the diagonal and (1 + ζ^(j−k))/(1 − ζ^(j−k)) off it equals 4^n (n!)^2/(2n+1). Zhi-Wei Sun posed the identity in OEIS A002454 (2022), and She, Sun and Xia proved it (arXiv:2208.12167, Theorem 1.3(ii)). The proof formalizes the determinant approach of Guo, Li, Tao and Wei.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "8d4df1333a708c3103b5a939523e63481bb49ec0",
+  "project_path": null,
+  "declarations": [
+    "OeisA2454.conjecture"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "15A15",
+      "11C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-13T05:01:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8d4df1333a708c3103b5a939523e63481bb49ec0",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:70b50249738af550d1a826716a2b810fdf49a653668daf16d56ac616d5bb4343"
+}

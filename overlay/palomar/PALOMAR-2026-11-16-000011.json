@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000011",
+  "version": 1,
+  "title": "Lower bounds for Naslund's crossing problem",
+  "abstract": "Lean 4 / Mathlib proofs of the first lower bounds above the trivial bound n for Naslund's crossing problem (J. Combin. Theory Ser. A 174 (2020), Problem 12). P(n) is the least r + s such that the tensor [x1 = x4][x2 = x3] on [n]^4 is a sum of r tensors of rank one along {12|34} and s tensors of rank one along {13|24}; in matrix form, the least rank B + rank R(C) over all splittings S_n = B + C of the swap matrix, where R is the realignment. Over every field the project proves P(n) ≥ 4n/3 for n ≥ 3, P(n) ≥ 15n/11 for n ≥ 5, P(n) ≥ 67n/49 for n ≥ 7, P(n) ≥ n + 3 for n ≥ 4, P(5) ≥ 8, P(6) ≥ 9, and P(4) = 7 (with a split that attains 7). The results are original.",
+  "authors": [
+    "Arth Singh"
+  ],
+  "repository": "https://github.com/Arth-Singh/crossing-lower-bounds",
+  "commit": "3d302668a9f3928021ea33a8ef53ca2ad63d37c7",
+  "project_path": null,
+  "declarations": [
+    "Crossing.four_thirds",
+    "Crossing.fifteen_elevenths",
+    "Crossing.sixtyseven_fortyninths",
+    "Crossing.add_three",
+    "Crossing.four_eq_seven",
+    "Crossing.five_ge_eight",
+    "Crossing.six_ge_nine"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "15A69",
+      "15A03",
+      "68Q17",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T06:20:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3d302668a9f3928021ea33a8ef53ca2ad63d37c7",
+        "fork_repository": "PalomarArchive/Arth-Singh--crossing-lower-bounds--306d5bc61d5e",
+        "source_repository": "Arth-Singh/crossing-lower-bounds"
+      }
+    ]
+  },
+  "statement_hash": "sha256:30f933512b1c16c266e9e0225ff06eb7d191a504b8c0594969d7d6153cd82479"
+}

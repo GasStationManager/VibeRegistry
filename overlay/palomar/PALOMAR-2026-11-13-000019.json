@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-13-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-13-000019",
+  "version": 1,
+  "title": "Kolberg's theorem: the partition function takes each parity infinitely often",
+  "abstract": "The partition number p(n) is even for infinitely many n and odd for infinitely many n (Kolberg 1959). The proof uses Euler's pentagonal number theorem over F_2.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "9b2a1eeaa6d00172a8e08351ed43b896e21ce950",
+  "project_path": null,
+  "declarations": [
+    "PartitionParity.kolberg"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11P83",
+      "05A17"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-13T21:18:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9b2a1eeaa6d00172a8e08351ed43b896e21ce950",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:decc55d4d4dbdbab1d5a4341c3be1c4856f56a7bddc91464d7137e51bae9e23b"
+}

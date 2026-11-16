@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-10-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-10-000001",
+  "version": 1,
+  "title": "The fixed-point theorems of Brouwer, Kakutani and Schauder, with an analytic proof of Brouwer's theorem and one through Sperner's lemma",
+  "abstract": "A Lean 4 / Mathlib proof of Brouwer's fixed-point theorem in every finite dimension: a continuous map of a nonempty compact convex subset of a finite-dimensional real normed space into itself has a fixed point. Also proved: the same for closed balls of a finite-dimensional real inner product space, and the no-retraction theorem, that the unit sphere of such a space is not a retract of its closed unit ball.\n\nThe proof is analytic, along the lines of Milnor (1978) and Rogers (1980), and uses no homology, degree theory or simplicial approximation. A C1 retraction r of the closed unit ball onto its sphere is ruled out with the change of variables formula: for small t > 0 the map x + t(r(x) - x) sends the open ball bijectively onto itself with positive Jacobian determinant, so the integral of that determinant over the ball, a polynomial in t, equals the volume of the ball for every t, whereas at t = 1 it vanishes. Brouwer's theorem follows for C1 self-maps of the ball by the ray construction, for continuous ones by smoothing by convolution, and for compact convex sets through the nearest-point retraction. Brouwer's theorem has earlier formal proofs in HOL Light, Isabelle/HOL and Mizar, in Coq for the plane, in Lean 3 through singular homology, and in Lean 4 for the plane and for the standard simplex; this proof is independent of them. A second proof follows Knaster, Kuratowski and Mazurkiewicz (1929): Sperner's lemma for the iterated barycentric subdivisions of the simplex, by counting facets mod 2, then the KKM lemma and Brouwer's theorem for the simplex; Kakutani's and Schauder's proofs use this one, the proof of Brouwer's theorem that both papers cite.\n\nKakutani's fixed-point theorem (1941) and Schauder's fixed-point theorem (1930) are derived from Brouwer's. Kakutani's: a set-valued map of a nonempty compact convex subset of a finite-dimensional real normed space, with closed graph and nonempty convex values, has a point x in its own value at x; it is proved by Kakutani's argument (piecewise-linear approximations on barycentric subdivisions of a simplex, Brouwer, a limit along a subsequence, then a retraction for general compact convex sets), and a second time through a partition of unity. Schauder's: a continuous self-map of a nonempty compact convex subset of a real normed space of any dimension has a fixed point, and so does a continuous self-map of a nonempty closed convex subset of a real Banach space with relatively compact image; it is proved by Schauder's argument, a simplicial approximation on a fine triangulation of the convex hull of a finite epsilon-net and Brouwer's theorem, then compactness, with Mazur's theorem for the second form, and a second time through Schauder's projection.",
+  "authors": [
+    "The-Anh Vu-Le"
+  ],
+  "repository": "https://github.com/vltanh/lean4-fixed-point",
+  "commit": "5f650f00b1db63837a452696331a98ca886b94a8",
+  "project_path": null,
+  "declarations": [
+    "FixedPointChallenge.brouwer",
+    "FixedPointChallenge.brouwer_closedBall",
+    "FixedPointChallenge.no_retraction",
+    "FixedPointChallenge.kakutani",
+    "FixedPointChallenge.schauder",
+    "FixedPointChallenge.schauder_of_isCompact_closure_image"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN",
+      "math.AT",
+      "math.CA",
+      "math.FA"
+    ],
+    "msc2020": [
+      "55M20",
+      "54H25",
+      "47H10",
+      "47H04",
+      "54C60",
+      "26B10",
+      "26B15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-10T01:03:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5f650f00b1db63837a452696331a98ca886b94a8",
+        "fork_repository": "PalomarArchive/vltanh--lean4-fixed-point--8e5eb7b662e1",
+        "source_repository": "vltanh/lean4-fixed-point"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3bb92803bdf116978e4035cfda09daa79dd07591178b550775aa9be64a4ac6ca"
+}
