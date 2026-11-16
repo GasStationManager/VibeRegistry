@@ -30,3 +30,8 @@ status = "pending-infrastructure"
 # pipeline is deferred pending a local rework of the build_copy strategy
 # (avoid mutating the impl's lakefile so comparator's sandboxed `lake build`
 # doesn't trip the trace-mismatch check). See entries/lean-zip.toml.
+
+[[entries]]
+id = "viridis-canon-acc"
+config = "entries/viridis-canon-acc.toml"
+status = "pending"
