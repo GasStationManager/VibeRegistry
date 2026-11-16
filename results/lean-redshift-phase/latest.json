@@ -1,0 +1,41 @@
+{
+  "entry_id": "lean-redshift-phase",
+  "timestamp": "2026-11-16T02:58:32Z",
+  "commit": "e2f41976c32b3ef60470aa27f9eea6dcb10cbc26",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_tag": "v4.33.1",
+  "verification_level": 2,
+  "primary_check": "comparator",
+  "checks": {
+    "comparator": true,
+    "nanoda": true,
+    "definitions": false,
+    "safe_verify": false,
+    "lean4checker": false
+  },
+  "build_strategy": "copy",
+  "tools": {
+    "comparator": "c0c5a52d2aff92b457c3e5ed4a68c1ebc5795809",
+    "lean4export": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+    "nanoda": "0da9f98feadd3a0a2ef4b3dbcf52a298a6fef929",
+    "landrun": "5283024a2f49b28046c3b4a06d7d775c058d4d80"
+  },
+  "theorems": [
+    {
+      "name": "RedshiftLWFormal.redshiftLW_phase_propagating_gap_positive",
+      "spec_module": "Registry.LeanRedshiftPhase.CoupledPhase",
+      "impl_module": "RedshiftLWFormal.Core.RedshiftLW005CoupledPhaseBranch",
+      "comparator": "pass",
+      "nanoda": "pass",
+      "safe_verify": "skip",
+      "lean4checker": "skip",
+      "spec_hash": "sha256:f01a68d760811ed8b2d8df7865d39b5e4d894ae295908c5ad6bfbe9aeff9ba99"
+    }
+  ],
+  "overall": "pass",
+  "signoff_summary": {
+    "total": 0,
+    "current": 0,
+    "stale": 0
+  }
+}
