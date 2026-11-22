@@ -1,131 +1,146 @@
 module
 
-public import Mathlib
+public import Mathlib.Data.Complex.Basic
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 
 public section
 
 /-!
-# Cubical C19 first-order factorization
+# V2 native-vacuum C19 Dirac bridge
 
-Eight complex amplitudes live on the corners of a cube. The three signed
-corner flips are fixed by cubical incidence and orientation. The theorem
-states that the resulting first-order cubical symbol, applied twice, is
-exactly the isotropic quadratic C19 continuum symbol.
-
-This is an algebraic operator claim. It does not claim a localized electron,
-physical spin, or an exact finite-spacing Dirac equation.
+This standalone statement surface records three connected facts from the V2
+derivation: the exact zero-energy vacuum and its action tangent, the cubical
+first-order square root of that tangent's isotropic symbol, and the exhaustive
+two-sector decomposition preserved by the same first-order operator.  No
+prepared background, localized electron, or experimental claim is assumed.
 -/
 
-namespace LFMDiracChallenge
+namespace LFMDiracV2Challenge
 
 noncomputable section
 
-abbrev CubeCorner := Fin 8
-abbrev Cell8 := CubeCorner → ℂ
+open Complex
 
-/-- Flip the first parity bit of an eight-corner cube. -/
-def cellFlip0 : CubeCorner → CubeCorner
+def chi0 : ℝ := 19
+abbrev Momentum := Fin 3 → ℝ
+abbrev Corner := Fin 8
+abbrev Cell8 := Corner → ℂ
+
+def nativeSitePotential (rhoPsi rhoChi : ℝ) : ℝ :=
+  (rhoChi - chi0^2)^2 / 4 + rhoChi * rhoPsi / 2 + rhoPsi^2 / 4
+
+def c19TransportSymbol (momentum : Momentum) : ℝ :=
+  8 * ((1 - Real.cos (momentum 0)) +
+    (1 - Real.cos (momentum 1)) +
+    (1 - Real.cos (momentum 2)) +
+    (1 - Real.cos (momentum 0) * Real.cos (momentum 1)) +
+    (1 - Real.cos (momentum 0) * Real.cos (momentum 2)) +
+    (1 - Real.cos (momentum 1) * Real.cos (momentum 2)))
+
+def uniformModalPotential
+    (eps : ℝ) (amplitude : ℂ) (momentum : Momentum) : ℝ :=
+  nativeSitePotential (Complex.normSq ((eps : ℂ) * amplitude)) (chi0^2) +
+    Complex.normSq ((eps : ℂ) * amplitude) / 2 *
+      c19TransportSymbol momentum
+
+def nativeTangentSymbol (momentum : Momentum) : ℝ :=
+  chi0^2 + c19TransportSymbol momentum
+
+theorem exact_vacuum_has_zero_potential :
+    nativeSitePotential 0 (chi0^2) = 0 := by
+  sorry
+
+theorem native_action_gives_c19_tangent
+    (eps : ℝ) (amplitude : ℂ) (momentum : Momentum) :
+    uniformModalPotential eps amplitude momentum =
+      eps^2 * Complex.normSq amplitude / 2 * nativeTangentSymbol momentum +
+        eps^4 * Complex.normSq amplitude ^ 2 / 4 := by
+  sorry
+
+def cellFlip0 : Corner → Corner
   | 0 => 4 | 1 => 5 | 2 => 6 | 3 => 7
   | 4 => 0 | 5 => 1 | 6 => 2 | _ => 3
 
-/-- Flip the second parity bit of an eight-corner cube. -/
-def cellFlip1 : CubeCorner → CubeCorner
+def cellFlip1 : Corner → Corner
   | 0 => 2 | 1 => 3 | 2 => 0 | 3 => 1
   | 4 => 6 | 5 => 7 | 6 => 4 | _ => 5
 
-/-- Flip the third parity bit of an eight-corner cube. -/
-def cellFlip2 : CubeCorner → CubeCorner
+def cellFlip2 : Corner → Corner
   | 0 => 1 | 1 => 0 | 2 => 3 | 3 => 2
   | 4 => 5 | 5 => 4 | 6 => 7 | _ => 6
 
-/-- Read the third parity bit of a cube corner. -/
-def cellBit2 : CubeCorner → Nat
-  | 0 | 2 | 4 | 6 => 0
-  | _ => 1
+def cellBit0 : Corner → Nat
+  | 0 | 1 | 2 | 3 => 0 | _ => 1
 
-/-- Read the first parity bit of a cube corner. -/
-def cellBit0 : CubeCorner → Nat
-  | 0 | 1 | 2 | 3 => 0
-  | _ => 1
+def cellBit1 : Corner → Nat
+  | 0 | 1 | 4 | 5 => 0 | _ => 1
 
-/-- Read the second parity bit of a cube corner. -/
-def cellBit1 : CubeCorner → Nat
-  | 0 | 1 | 4 | 5 => 0
-  | _ => 1
+def cellBit2 : Corner → Nat
+  | 0 | 2 | 4 | 6 => 0 | _ => 1
 
-/-- Select the corner flip associated with one of the three cube axes. -/
-def cubeIncidenceFlip (axis : Fin 3) : CubeCorner → CubeCorner :=
-  match axis with
-  | 0 => cellFlip0
-  | 1 => cellFlip1
-  | _ => cellFlip2
+def incidenceFlip (axis : Fin 3) : Corner → Corner :=
+  match axis with | 0 => cellFlip0 | 1 => cellFlip1 | _ => cellFlip2
 
-/-- The orientation sign for an axis crossing at a cube corner. -/
-def cubeIncidenceSign (axis : Fin 3) (corner : CubeCorner) : ℂ :=
+def incidenceSign (axis : Fin 3) (corner : Corner) : ℂ :=
   match axis with
   | 0 => 1
   | 1 => if cellBit0 corner = 0 then 1 else -1
   | _ => if (cellBit0 corner + cellBit1 corner) % 2 = 0 then 1 else -1
 
-/-- The signed incidence operation along one cube axis. -/
-def cubeIncidenceGamma (axis : Fin 3) (amplitude : Cell8) : Cell8 :=
-  fun corner =>
-    cubeIncidenceSign axis corner *
-      amplitude (cubeIncidenceFlip axis corner)
+def incidenceGamma (axis : Fin 3) (amplitude : Cell8) : Cell8 := fun corner =>
+  incidenceSign axis corner * amplitude (incidenceFlip axis corner)
 
-/-- Grade a corner amplitude by even or odd cube parity. -/
-def cubeParityBeta (amplitude : Cell8) : Cell8 :=
-  fun corner =>
-    if (cellBit0 corner + cellBit1 corner + cellBit2 corner) % 2 = 0 then
-      amplitude corner
-    else
-      -amplitude corner
+def parityBeta (amplitude : Cell8) : Cell8 := fun corner =>
+  if (cellBit0 corner + cellBit1 corner + cellBit2 corner) % 2 = 0 then
+    amplitude corner
+  else -amplitude corner
 
-/-- The linear combination of the three signed cube-incidence operations. -/
-def cubeIncidenceLinear
-    (k0 k1 k2 : ℂ) (amplitude : Cell8) : Cell8 :=
-  fun corner =>
-    k0 * cubeIncidenceGamma 0 amplitude corner +
-    k1 * cubeIncidenceGamma 1 amplitude corner +
-    k2 * cubeIncidenceGamma 2 amplitude corner
+def firstOrderSymbol
+    (mass k0 k1 k2 : ℂ) (amplitude : Cell8) : Cell8 := fun corner =>
+  mass * parityBeta amplitude corner +
+    k0 * incidenceGamma 0 amplitude corner +
+    k1 * incidenceGamma 1 amplitude corner +
+    k2 * incidenceGamma 2 amplitude corner
 
-/-- Add a parity-graded rest coefficient to the cubical incidence symbol. -/
-def cubeDiracSymbol
-    (mass k0 k1 k2 : ℂ) (amplitude : Cell8) : Cell8 :=
-  fun corner =>
-    mass * cubeParityBeta amplitude corner +
-      cubeIncidenceLinear k0 k1 k2 amplitude corner
+def quadraticSymbol
+    (mass k0 k1 k2 : ℂ) (amplitude : Cell8) : Cell8 := fun corner =>
+  (mass^2 + k0^2 + k1^2 + k2^2) * amplitude corner
 
-/-- The isotropic long-wavelength speed fixed by the C19 stencil moments. -/
-def c19ContinuumSpeed : ℝ := Real.sqrt 12
+theorem cubical_first_order_square
+    (mass k0 k1 k2 : ℂ) (amplitude : Cell8) :
+    firstOrderSymbol mass k0 k1 k2
+        (firstOrderSymbol mass k0 k1 k2 amplitude) =
+      quadraticSymbol mass k0 k1 k2 amplitude := by
+  sorry
 
-/-- The cube-incidence first-order symbol at C19 continuum normalization. -/
-def c19ContinuumDiracSymbol
-    (mass : ℂ) (momentum : Fin 3 → ℝ) (amplitude : Cell8) : Cell8 :=
-  cubeDiracSymbol mass
-    (c19ContinuumSpeed * momentum 0)
-    (c19ContinuumSpeed * momentum 1)
-    (c19ContinuumSpeed * momentum 2) amplitude
+def cubeFlavor (amplitude : Cell8) : Cell8 := fun corner =>
+  let sign : ℝ := if cellBit2 corner = 0 then 1 else -1
+  (sign : ℂ) * Complex.I * amplitude (cellFlip1 (cellFlip2 corner))
 
-/-- The isotropic quadratic low-momentum symbol of the C19 stencil. -/
-def c19ContinuumScalarSymbol
-    (mass : ℂ) (momentum : Fin 3 → ℝ) (amplitude : Cell8) : Cell8 :=
-  fun corner =>
-    (mass ^ 2 + (12 : ℂ) *
-      ((momentum 0 : ℂ) ^ 2 + (momentum 1 : ℂ) ^ 2 +
-        (momentum 2 : ℂ) ^ 2)) * amplitude corner
+def plusProjection (amplitude : Cell8) : Cell8 := fun corner =>
+  (amplitude corner + cubeFlavor amplitude corner) / 2
 
-/--
-The cubical signed-incidence first-order symbol squares exactly to the
-isotropic quadratic symbol obtained from the low-momentum C19 stencil.
--/
-theorem main_result
-    (mass : ℂ) (momentum : Fin 3 → ℝ) (amplitude : Cell8) :
-    c19ContinuumDiracSymbol mass momentum
-        (c19ContinuumDiracSymbol mass momentum amplitude) =
-      c19ContinuumScalarSymbol mass momentum amplitude := by
+def minusProjection (amplitude : Cell8) : Cell8 := fun corner =>
+  (amplitude corner - cubeFlavor amplitude corner) / 2
+
+theorem cubical_two_sector_classification :
+  (∀ amplitude,
+    (fun corner => plusProjection amplitude corner +
+      minusProjection amplitude corner) = amplitude) ∧
+  (∀ amplitude, cubeFlavor (plusProjection amplitude) = plusProjection amplitude) ∧
+  (∀ amplitude, cubeFlavor (minusProjection amplitude) =
+    fun corner => -minusProjection amplitude corner) ∧
+  (∀ amplitude, cubeFlavor amplitude = amplitude →
+    cubeFlavor amplitude = (fun corner => -amplitude corner) → amplitude = 0) ∧
+  (∀ mass k0 k1 k2 amplitude, cubeFlavor amplitude = amplitude →
+    cubeFlavor (firstOrderSymbol mass k0 k1 k2 amplitude) =
+      firstOrderSymbol mass k0 k1 k2 amplitude) ∧
+  (∀ mass k0 k1 k2 amplitude,
+    cubeFlavor amplitude = (fun corner => -amplitude corner) →
+    cubeFlavor (firstOrderSymbol mass k0 k1 k2 amplitude) =
+      fun corner => -firstOrderSymbol mass k0 k1 k2 amplitude corner) := by
   sorry
 
 end
 
-end LFMDiracChallenge
+end LFMDiracV2Challenge

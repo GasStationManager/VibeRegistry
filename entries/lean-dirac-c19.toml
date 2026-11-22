@@ -1,35 +1,33 @@
 [project]
 id = "lean-dirac-c19"
-name = "Cubical C19 first-order factorization"
-description = "An eight-corner cubical first-order symbol whose square is the isotropic quadratic C19 continuum symbol"
+name = "Native-vacuum C19 Dirac bridge and two-sector classification"
+description = "A native zero-vacuum action tangent, cubical first-order square root, and exhaustive preserved two-sector split"
 url = "https://github.com/gpartin/LeanDiracDerivation"
-commit = "9eef7df27e29298dae58d563a1608b00102048df"
-branch = "submission/palomar"
+commit = "1869d1706b95f1f18c3a04b3cb14b177b6bd3295"
+branch = "submission/palomar-v2-free-dirac"
 
 [lean]
-toolchain = "leanprover/lean4:v4.35.0-rc2"
-mathlib_tag = "v4.35.0-rc2"
+toolchain = "leanprover/lean4:v4.33.1"
+mathlib_tag = "v4.33.1"
 
 [[theorems]]
 spec_module = "Registry.LeanDiracC19.Challenge"
 impl_module = "Solution"
 names = [
-  "LFMDiracChallenge.cellFlip0",
-  "LFMDiracChallenge.cellFlip1",
-  "LFMDiracChallenge.cellFlip2",
-  "LFMDiracChallenge.cellBit0",
-  "LFMDiracChallenge.cellBit1",
-  "LFMDiracChallenge.cellBit2",
-  "LFMDiracChallenge.cubeIncidenceFlip",
-  "LFMDiracChallenge.cubeIncidenceSign",
-  "LFMDiracChallenge.cubeIncidenceGamma",
-  "LFMDiracChallenge.cubeParityBeta",
-  "LFMDiracChallenge.cubeIncidenceLinear",
-  "LFMDiracChallenge.cubeDiracSymbol",
-  "LFMDiracChallenge.c19ContinuumSpeed",
-  "LFMDiracChallenge.c19ContinuumDiracSymbol",
-  "LFMDiracChallenge.c19ContinuumScalarSymbol",
-  "LFMDiracChallenge.main_result",
+  "LFMDiracV2Challenge.chi0",
+  "LFMDiracV2Challenge.nativeSitePotential",
+  "LFMDiracV2Challenge.c19TransportSymbol",
+  "LFMDiracV2Challenge.uniformModalPotential",
+  "LFMDiracV2Challenge.nativeTangentSymbol",
+  "LFMDiracV2Challenge.firstOrderSymbol",
+  "LFMDiracV2Challenge.quadraticSymbol",
+  "LFMDiracV2Challenge.cubeFlavor",
+  "LFMDiracV2Challenge.plusProjection",
+  "LFMDiracV2Challenge.minusProjection",
+  "LFMDiracV2Challenge.exact_vacuum_has_zero_potential",
+  "LFMDiracV2Challenge.native_action_gives_c19_tangent",
+  "LFMDiracV2Challenge.cubical_first_order_square",
+  "LFMDiracV2Challenge.cubical_two_sector_classification",
 ]
 permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
 
