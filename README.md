@@ -22,11 +22,12 @@ The registry itself does not contain proof code. It contains:
 <!-- BEGIN REGISTRY TABLE -->
 | Entry | Theorems | Lean | Checks | Sign-offs | Status |
 |-------|----------|------|--------|-----------|--------|
-| [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration (8 theorems) | v4.27.0 | comparator | 1 sign-off | Verified |
-| [Lean Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare (16 theorems) | v4.27.0-rc1 | comparator | — | Verified |
-| [AKS Sorting Networks](https://github.com/girving/aks) | O(log n)-depth sorting networks (1 theorems) | v4.29.0-rc4 | comparator | — | Verified |
-| [Archon FirstProof Results](https://github.com/frenzymath/Archon-FirstProof-Results) | Harmonic-mean inequality, epsilon-light graph subsets (2 theorems) | v4.28.0 | comparator | — | Verified |
+| [ArtificialTheorems](https://github.com/GasStationManager/ArtificialTheorems) | Robbins-Siegmund, SGD convergence, Value Iteration (8 theorems) | v4.27.0 | comparator +nanoda | 1 sign-off | Failed |
+| [Lean Statistical Learning Theory](https://github.com/YuanheZ/lean-stat-learning-theory) | Gaussian concentration, Dudley's integral, Efron-Stein, Poincare (16 theorems) | v4.27.0-rc1 | comparator +nanoda | — | Failed |
+| [AKS Sorting Networks](https://github.com/girving/aks) | O(log n)-depth sorting networks (1 theorems) | v4.29.0-rc4 | comparator +nanoda | — | Verified |
+| [Archon FirstProof Results](https://github.com/frenzymath/Archon-FirstProof-Results) | Harmonic-mean inequality, epsilon-light graph subsets (2 theorems) | v4.28.0 | comparator +nanoda | — | Verified |
 | [lean-zip](https://github.com/kim-em/lean-zip) | 3 theorems | v4.29.1 | comparator +nanoda | — | Failed |
+| [Lean Klein-Gordon Derivation](https://github.com/gpartin/LeanKleinGordonDerivation) | 3 theorems | v4.33.1 | — | — | Pending |
 <!-- END REGISTRY TABLE -->
 
 ## Overlay and search
