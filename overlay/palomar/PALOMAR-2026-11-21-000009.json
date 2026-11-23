@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000009",
+  "version": 1,
+  "title": "Cutoff via rigidity for curved diffusions",
+  "abstract": "Lean 4 formalization of Chafaï and Fathi, \"On cutoff via rigidity for high dimensional curved diffusions\" (Comptes Rendus Mathématique 363 (2025) 1103-1121), in the corrected version arXiv:2412.15969v5. The submitted statement surface PalomarChallenge.lean (Comparator configuration comparator-palomar.json) states the theorems and corollaries of the paper (Theorems 1.1, 1.5, 1.7, 1.9, 3.1, 3.6, Corollaries 1.3, 1.4, 1.6): 9 theorems. The repository also contains a larger surface, Challenge.lean with comparator.json (69 theorems: remarks, examples and Section 4 as well). Both are proved with the standard axioms only. Some statements are restricted or amended; every difference with arXiv v5 is listed in fidelity.divergences.",
+  "authors": [
+    "Djalil Chafaï"
+  ],
+  "repository": "https://github.com/djalilchafai/cutoff-rigidity-diffusions",
+  "commit": "f3bf3663cfe743aaf74cd76bb2a7076c816a176f",
+  "project_path": null,
+  "declarations": [
+    "CutCur.main_wasserstein_estimate",
+    "CutCur.wasserstein_cutoff",
+    "CutCur.information_cutoff",
+    "CutCur.convex_interaction",
+    "CutCur.convex_interaction_cutoff",
+    "CutCur.product_condition_cutoff",
+    "CutCur.euclidean_gaussian_factorization",
+    "CutCur.riemannian_wasserstein_estimate",
+    "CutCur.riemannian_gaussian_splitting"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.DG"
+    ],
+    "msc2020": [
+      "60J60",
+      "47D07",
+      "53C21",
+      "58J50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T06:57:02Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f3bf3663cfe743aaf74cd76bb2a7076c816a176f",
+        "fork_repository": "PalomarArchive/djalilchafai--cutoff-rigidity-diffusions--3734c4a89888",
+        "source_repository": "djalilchafai/cutoff-rigidity-diffusions"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bcddce3d63346a57b142b1172d76095ac5c2db71c989e8c2e5b2c9b8cb0c63e0"
+}

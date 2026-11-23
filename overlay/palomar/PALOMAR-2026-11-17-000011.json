@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000011",
+  "version": 1,
+  "title": "Temporal cliques admit linear spanners",
+  "abstract": "Lean 4 / Mathlib formalization of the theorem that every temporal clique on n vertices admits a temporal spanner with at most 7n edges. A temporal clique is the complete graph on a finite vertex set whose edges carry natural-number time labels, locally injective (two edges sharing an endpoint have distinct labels); a temporal spanner is a set of edges in which every vertex reaches every other one by a journey with non-decreasing labels. The result and its proof are due to Júlia Baligács (arXiv:2606.05156, 2026): the dismountability of Carnevale, Casteigts and Corsini (SAND 2025) reduces cliques to extremally matched bi-cliques, which are then covered by simple and extended stars. The compared statements give the explicit bound 7n and the asymptotic O(n) form with a bound function chosen uniformly for all cliques. They use the same definitions as the registered O(n log n) entry. This repository is a thin wrapper: it contains only the statement and the bridge to the temporal-graphs library, the substantive formalization, on which it depends through its lakefile at the commit given below (release alpha-0.2.0 of the library, on its branch prepared for Palomar). The work is supervised by Arnaud Casteigts and Karine Altisen.",
+  "authors": [
+    "Ethan Bargaud-Arm"
+  ],
+  "repository": "https://github.com/dracoanguis/soumission-linear-spanners",
+  "commit": "f569fc7a084845d58491cc3752544149109212ff",
+  "project_path": null,
+  "declarations": [
+    "TemporalCliqueSpanners.exists_isTemporalSpanner_card_le_seven_mul",
+    "TemporalCliqueSpanners.exists_isBigO_isTemporalSpanner_linear"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DM",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C85",
+      "05C40",
+      "05C38",
+      "68R10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T13:20:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f569fc7a084845d58491cc3752544149109212ff",
+        "fork_repository": "PalomarArchive/dracoanguis--soumission-linear-spanners--45e7d958a403",
+        "source_repository": "dracoanguis/soumission-linear-spanners"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b369d7be31591da277c9fbb8d63e40385db362ba50330b54b7fe6a4c917d30f7"
+}

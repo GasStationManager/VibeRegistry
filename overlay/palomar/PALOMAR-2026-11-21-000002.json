@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000002",
+  "version": 1,
+  "title": "The Two-Step Hardy Ladder in Higher Dimensions",
+  "abstract": "For the ideal two-step Boschi–Hardy ladder with three binary settings per observer and five exact zeros, the fixed-state maximum for four positive Schmidt coefficients is the best of three disjoint pairings. The proof covers arbitrary complex binary effects and gives attaining projective measurements. Equality at the two-qubit plastic-constant value holds exactly when both pairs have smaller-to-larger ratio ρ⁻². A finite mixture of pure components through Schmidt rank four obeys the same ceiling. Every full-rank pure qutrit is strictly below it. A pure state with twelve distinct positive Schmidt weights attains the value through six orthogonal qubit sectors.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-hardy-ladder-higher-dimensions",
+  "commit": "c9946d77c639d89bee866ae19a47f3f5bc0fcb7f",
+  "project_path": null,
+  "declarations": [
+    "HardyExtension.four_level_frame_maximum",
+    "HardyExtension.four_level_ceiling",
+    "HardyExtension.four_level_equality",
+    "HardyExtension.three_level_effect_bound",
+    "HardyExtension.full_rank_three_strict",
+    "HardyExtension.rank_one_endpoint",
+    "HardyExtension.codimension_one_endpoint",
+    "HardyExtension.sector_outcome_probability",
+    "HardyExtension.twelve_level_attainment",
+    "HardyExtension.four_level_measurement_bound",
+    "HardyExtension.four_level_mixture_bound",
+    "HardyExtension.four_level_measurement_maximum",
+    "HardyExtension.four_level_measurement_equality"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "math-ph"
+    ],
+    "msc2020": [
+      "81P40",
+      "81P45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T00:30:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c9946d77c639d89bee866ae19a47f3f5bc0fcb7f",
+        "fork_repository": "PalomarArchive/stalex444--pdt-hardy-ladder-higher-dimensions--ce9e6630cb65",
+        "source_repository": "stalex444/pdt-hardy-ladder-higher-dimensions"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5b214a17e410b384cb0fddb404bcec2b4d0028efab253d2bed0ddca031d7eb2b"
+}

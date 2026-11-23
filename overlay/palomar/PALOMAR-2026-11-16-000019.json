@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000019",
+  "version": 1,
+  "title": "Prescribed block types and abundance in bicolored Steiner triple systems",
+  "abstract": "Four Lean results for bicolored Steiner triple systems. For each fixed number k >= 3 of color classes, sufficiently large compatible labelled profiles with positive class and type margins admit exact prescribed block-type counts while completing any sufficiently sparse allowed packing. Uniformly over such prescribed matrices, the logarithm of the number of realizations has optimal leading coefficient 1/6 in n squared times log n. For any fixed K, the same exact type matrix has K realizations with distinct Pasch counts. For every fixed k >= 4, all sufficiently large admissible orders admit a k-bicoloring. The final threshold is ineffective.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/cdr-palomar-kernel",
+  "commit": "dd0a6595d5c45372ffadd19a35e3775e9b930f55",
+  "project_path": null,
+  "declarations": [
+    "CDRBicolour.KBicolor.kbicolour_completion_types_exact",
+    "CDRBicolour.KBicolor.optimal_prescribed_type_count_of_three_le",
+    "CDRBicolour.KBicolor.kbicolour_types_exact_many_pasch_counts",
+    "CDRBicolour.PaperIII.bicolourable_eventually_unconditional"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05B07",
+      "05C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T14:20:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "dd0a6595d5c45372ffadd19a35e3775e9b930f55",
+        "fork_repository": "PalomarArchive/jtraverso--cdr-palomar-kernel--853fb49173b4",
+        "source_repository": "jtraverso/cdr-palomar-kernel"
+      }
+    ]
+  },
+  "statement_hash": "sha256:95e1a8c9fa3164c1e134b6ed2eb7c655913e854fe5ee678f42afd91411c06ec1"
+}

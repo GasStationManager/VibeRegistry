@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000004",
+  "version": 1,
+  "title": "A necessary and sufficient condition for edge universality of Wigner matrices",
+  "abstract": "A Lean 4 / Mathlib proof of Theorem 1.2 of Lee and Yin, \"A necessary and sufficient condition for edge universality of Wigner matrices\" (Duke Math. J. 163 (2014), arXiv:1206.2251), for real symmetric Wigner matrices and the largest eigenvalue lambda_N. Let x_12 be an off-diagonal entry. Sufficiency: if s^4 P(|x_12| >= s) -> 0 as s -> infinity (condition (1.4)), then the distribution of N^{2/3}(lambda_N - 2) agrees with that of the GOE up to a shift N^{-delta} and an additive error epsilon_N -> 0 uniform in s (the comparison (4.9)). Necessity: if (1.4) fails, then limsup_N P(lambda_N >= 3) > 0, and N^{2/3}(lambda_N - 2) is not tight and converges in distribution to no probability law. No result of another work is assumed: the local semicircle law, rigidity, the Green function comparison and the edge universality results that the paper cites are proved in the library from Mathlib.",
+  "authors": [
+    "Jun Yin"
+  ],
+  "repository": "https://github.com/JYin80/Lean-WEdgeNS_arXiv-1206.2251",
+  "commit": "e17aa26215b7a1eef8cf97e6bbfaef2029d1d77b",
+  "project_path": null,
+  "declarations": [
+    "WEdgeNS.necessity",
+    "WEdgeNS.necessity_not_tight",
+    "WEdgeNS.necessity_no_limit",
+    "WEdgeNS.sufficiency"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "60B20",
+      "15B52"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T05:38:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e17aa26215b7a1eef8cf97e6bbfaef2029d1d77b",
+        "fork_repository": "PalomarArchive/JYin80--Lean-WEdgeNS_arXiv-1206.2251--8d7892b3e6b7",
+        "source_repository": "JYin80/Lean-WEdgeNS_arXiv-1206.2251"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bb27410b79deb3176b552c8edcbcf832bcb73683f2f37d8de8900dca0a95e7aa"
+}

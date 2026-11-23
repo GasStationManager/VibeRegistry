@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000004",
+  "version": 1,
+  "title": "The integral generators of least Mahler measure of the field of x^3 - x - 1 and x^4 - x - 1",
+  "abstract": "Kernel-checked proofs, in Lean 4 + Mathlib, of three statements, all about one field. Let L = QQ(rho, Q) be the field generated over the rationals QQ by a root rho of x^3 - x - 1 and a root Q of x^4 - x - 1, a number field of degree 12 (below, QQ denotes the rationals and Q the root). For a number field K and x in K write H(x) = Height.mulHeight1 x for Mathlib's multiplicative height of x relative to K (the [K:QQ]-th power of the absolute Weil height), and T2(x) = sum over the [K:QQ] ring homomorphisms sigma : K -> C of |sigma x|^2. M(x) is the Mahler measure of the minimal polynomial of an algebraic integer x over Z. (1) The nonzero algebraic integers x of L with H(x) <= H(rho Q) are exactly the fourteen elements +-1, +-rho^(+-1), +-Q^(+-1), +-(rho Q)^(+-1). (2) Every algebraic integer x of L with QQ(x) = L has M(rho Q) <= M(x), with equality exactly for x in {rho Q, -rho Q, (rho Q)^-1, -(rho Q)^-1}; since rho Q generates L (proved in the repository, not compared), the least Mahler measure of an integral generator of L (Dubickas's M(O_L)) is M(rho Q), attained at these four elements only. (3) Let x be an algebraic integer of L with QQ(x) = L such that M(x) <= M(y) for every algebraic integer y of L with QQ(y) = L, and such that sigma(x) is a real Perron number (Lind's definition) for some embedding sigma : L -> C; then x = rho Q (one direction only: that rho Q satisfies these hypotheses is proved in the repository, HeightT2.ρQ_perronNumber_generator_selected, and not compared). The Challenge imports Mathlib only and carries the definition block of the author's registered entry PALOMAR-2026-10-21-000012 (the field L and its elements) and one definition of this entry (IsPerronNumber). Proved in the repository and not compared, none claimed as this entry's: (i) the inequality T2(x) <= H(x)^2 + n - 1 for x in a number field of degree n, which is Lemma 6 of Dubickas (Rev. Mat. Iberoam. 39 (2023)) applied to the squares max(1, |sigma x|)^2; (ii) its case of equality, T2(x) = H(x)^2 + (n - 1) exactly when x is a root of unity (for n >= 2; HeightT2.sum_norm_sq_eq_mulHeight₁_sq_add_iff); Lemma 6 states no case of equality, no statement of it in print was located (README.md, \"Relation to the literature\", lists where it was searched) and novelty is not claimed; (iii) the identity that, for subfields K1, K2 of a number field E, linearly disjoint over QQ with K1 v K2 = E, the T2 Gram matrix of the product family b_i c_j is the Kronecker product of the T2 Gram matrices G_b and G_c of b and c (the T2 Gram matrix of a family b in a number field K has entries sum over sigma : K -> C of sigma(b_i) conj(sigma(b_k))) (HeightT2.t2Gram_compositum); special cases are in print (Popov and Zarhin 2021, Lemma 8(iii), coprime cyclotomic fields; Lyubashevsky, Peikert and Regev 2013, eq. (2.6); Bayer-Fluckiger, Oggier and Viterbo 2004, Prop. 6, totally real Galois fields with coprime discriminants), it is the Hermitian counterpart of the trace-form identity of the author's entry PALOMAR-2026-09-02-000014 (statement 3), on a totally real field the T2 Gram matrix is the trace Gram matrix, and novelty is not claimed; (iv) the coordinate bound (HeightT2.coord_sq_le_sum_norm_sq): with b, c finite and E_ii the diagonal matrix unit at (i, i), if s, t >= 0 and Re G_b - s E_ii and Re G_c - t E_jj are positive semidefinite, then every rational coefficient vector a satisfies s t a_ij^2 <= T2(sum a_kl b_k c_l), with T2 taken in E; for families that are bases it is the bound (2.9) of Fincke and Pohst (1985) applied to the Kronecker product of the two Gram matrices, it also covers singular Gram matrices, and novelty is not claimed; (v) that rho Q satisfies the hypotheses of statement (3). The proofs of the three compared statements use the instance of (i) for L in the copied library (RulerSelection.Emb.T2_le_embHeight_sq_add) and a direct proof of the content of (iii) for L and its power bases (RulerSelection.Emb.T2_coords, from RulerSelection.Emb.sum_norm_sq_tensor); they use neither (ii) nor the theorems (iii) and (iv) as stated; (iv) is proved from the matrix lemma RulerSelection.Kron.kron_ge_diag that they use (README.md, \"The proofs\").",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-integral-generator-heights",
+  "commit": "c00797c899a74f6ecaaa1305112dd51bf1df0e40",
+  "project_path": null,
+  "declarations": [
+    "IntegralGeneratorHeights.mulHeight₁_le_mulHeight₁_ρQ_iff",
+    "IntegralGeneratorHeights.mahlerMeasure_generator_min",
+    "IntegralGeneratorHeights.perronNumber_generator_selection"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "cs.LO",
+      "math-ph"
+    ],
+    "msc2020": [
+      "11R06",
+      "11G50",
+      "11R04",
+      "11R21",
+      "11C08",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T01:33:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c00797c899a74f6ecaaa1305112dd51bf1df0e40",
+        "fork_repository": "PalomarArchive/stalex444--pdt-integral-generator-heights--19c60b2061e7",
+        "source_repository": "stalex444/pdt-integral-generator-heights"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cd581ce3f9a237599d8ccfd829d7faa33ec195a9086620fb96cfa1665d8d3db1"
+}

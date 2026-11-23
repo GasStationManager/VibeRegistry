@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000029",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000029",
+  "version": 1,
+  "title": "The newform of weight 2 and level 11",
+  "abstract": "The first newform of weight 2 with trivial character, the one attached to the elliptic curves of conductor 11, is constructed and characterised completely, in one statement that uses only Mathlib definitions. f(z) = η(z)²η(11z)² = q∏(1 − qⁿ)²(1 − q¹¹ⁿ)² (LMFDB 11.2.a.a) is a cusp form of weight 2 for Γ₀(11) with integer coefficients a(n), a(1) = 1, a(2) = −2. It spans the cusp forms of weight 2 for Γ₀(11); a modular form of that weight and level agreeing with it up to q² (the Sturm bound) equals it; and its coefficients satisfy the Hecke relations a(m)a(n) = ∑_{d | (m,n), 11 ∤ d} d·a(mn/d²), hence multiplicativity and the prime-power recursions. Method: (1) η² has a multiplier on SL(2,ℤ), exp(2πiψ(γ)/12), with ψ an explicit function of the entries modulo 12, proved from the S and T laws and a finite check; (2) for γ in Γ₀(11) the multipliers of η²(z) and η²(11z) cancel because 11 ≡ −1 (mod 12); (3) vanishing at the cusps follows from f¹² = Δ(z)Δ(11z); (4) a cusp form of weight 2 and level 11 with a₁ = 0 vanishes, because its norm to level one has weight 24 and order at least 3 at ∞; (5) the Hecke operators preserve the one-dimensional space, and the coefficient formula gives the relations; (6) integrality comes from the pentagonal number theorem.",
+  "authors": [
+    "Richard Morley-Smith"
+  ],
+  "repository": "https://github.com/rmorleysmith/morley-smith-formal",
+  "commit": "fd4093022be1377799c60950e004ee95b96514a9",
+  "project_path": "tau-track",
+  "declarations": [
+    "LevelEleven.exists_newform"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11F11",
+      "11F20",
+      "11F25",
+      "11F30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T18:22:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fd4093022be1377799c60950e004ee95b96514a9",
+        "fork_repository": "PalomarArchive/rmorleysmith--morley-smith-formal--c62fec5eab58",
+        "source_repository": "rmorleysmith/morley-smith-formal"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7b36b5f7ab9450245e705d298554509343e8d80fa99154a01cb7696fed95b442"
+}

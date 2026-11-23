@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000029",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000029",
+  "version": 1,
+  "title": "Uniqueness Characterization of Fibonacci-Sum Permutations (Layman's Conjecture / Hajnal Conjecture 1)",
+  "abstract": "Unconditional Lean 4 + Mathlib formalization proving that there exists a unique permutation p of {1, ..., k} with every i + p(i) a Fibonacci number if and only if k belongs to Layman's sequence w(n) = floor(F_{n+3} / sqrt(5)) (equivalently Hajnal's M4 sequence). Formalizes Hajnal's (2022) \"only if\" direction and Reshetnikov's (2015, OEIS A097083) floor formula alongside a step-lemma proof of the \"if\" direction (Hajnal Conjecture 1). Companion write-up and dated prior-work searches (arXiv, OEIS, zbMATH, CORE 2026-11-20, Google Scholar 2026-11-22) are published at https://mathdiscoveries.org/results/fibonacci-sum-permutations; the \"if\" direction was not found in those logged searches (MathSciNet and print problem sections remain unsearched).",
+  "authors": [
+    "Tyler B. Hughes"
+  ],
+  "repository": "https://github.com/mathdiscoveries/fibonacci-sum-permutations",
+  "commit": "3a59cef3f7b3d9052454f129a4fa46aba2431982",
+  "project_path": null,
+  "declarations": [
+    "FibSumPermChallenge.layman_unique_if",
+    "FibSumPermChallenge.hajnal_conjecture_1",
+    "FibSumPermChallenge.hajnal_conjecture_1_M4",
+    "FibSumPermChallenge.w_eq_floor_fib_div_sqrt5"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05A05",
+      "11B39"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T21:24:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3a59cef3f7b3d9052454f129a4fa46aba2431982",
+        "fork_repository": "PalomarArchive/mathdiscoveries--fibonacci-sum-permutations--01f07b6eeb86",
+        "source_repository": "mathdiscoveries/fibonacci-sum-permutations"
+      }
+    ]
+  },
+  "statement_hash": "sha256:26a0013cdc5f5b1e335b49a783f67b9146783154c8254578fbf24cdb74f11340"
+}

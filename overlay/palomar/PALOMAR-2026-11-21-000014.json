@@ -1,0 +1,66 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000014",
+  "version": 1,
+  "title": "Frobenius: Frobenius congruences for the Möbius function and the exact number of divisor levels",
+  "abstract": "For a prime p and k >= 1, the least L for which the Möbius function is congruent modulo p^k to a sum of zeta^z * E_p(g_z) over the levels z <= L, with zeta^z the Dirichlet powers of zeta, E_p the Frobenius pushforward (E_p g)(j^p) = g(j) and integer valued g_z, is S(p^k) - 1, where S(p^k) is the Kempner value, the least N with p^k dividing N!. The same upper bound holds for the Dirichlet inverse of every f with f(1) a unit, over every commutative ring; over Z and Z_p it is exact as soon as there are n primes q with p not dividing f(q) and p^n >= S(p^k), with no multiplicativity assumed. In the power series rings Z[[x_1, ..., x_n]] and Z_p[[x_1, ..., x_n]] with the lift x_i -> x_i^p, and in the Dirichlet ring over Z and Z_p, the exact level count of every unit is given by a depth-flag formula of Legendre type. The development also proves Conjecture 4 of Kauers, Krattenthaler and Müller for every prime p: the least t-degree of a monic A in Z[z][t] with A(z, Phi_p(z)) congruent to 0 modulo p^gamma, where Phi_p(z) is the sum of z^(p^n), is S(p^gamma).",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/frobenius",
+  "commit": "8587838137d563ef938e2d0db66ac31043cce7ad",
+  "project_path": null,
+  "declarations": [
+    "Frobenius.mobius_levels",
+    "Frobenius.kkm_degrees",
+    "Frobenius.kkm_conjecture4",
+    "Frobenius.kkm_greatest_modulus",
+    "Frobenius.dirichlet_identity",
+    "Frobenius.dirichlet_upper",
+    "Frobenius.dirichlet_lower_int",
+    "Frobenius.dirichlet_exact_int",
+    "Frobenius.dirichlet_lower_padic",
+    "Frobenius.dirichlet_exact_padic",
+    "Frobenius.flag_formula_int",
+    "Frobenius.flag_formula_padic",
+    "Frobenius.dirichlet_flag_formula_int",
+    "Frobenius.dirichlet_flag_formula_padic"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.AC"
+    ],
+    "msc2020": [
+      "11A25",
+      "11B50",
+      "13F25",
+      "13A35",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T13:51:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8587838137d563ef938e2d0db66ac31043cce7ad",
+        "fork_repository": "PalomarArchive/jkfarland-bot--frobenius--d69c21251349",
+        "source_repository": "jkfarland-bot/frobenius"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ef6150126ba223c0f55a39dccc512158b1a3876b781f4e7ac8e0d99d96322227"
+}

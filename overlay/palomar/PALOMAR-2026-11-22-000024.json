@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000024",
+  "version": 1,
+  "title": "Perfect and maximum matchings by Mucha-Sankowski elimination on a word RAM, in Lean 4",
+  "abstract": "A Lean 4 and Mathlib formalization of randomized perfect-matching and maximum-matching algorithms through the Tutte matrix, on an explicit word RAM (unit cost per instruction, including natural division and remainder; natural registers and memory cells bounded by a word bound W along the run). The machine also has exact real registers; both statements require the program to be a word program, containing no real instruction, so that every run uses only the bounded natural words. Two theorems are compared. (1) There is one fixed word program such that, for every simple graph G on the vertices 0, ..., n - 1 whose m edges (u, v), u < v, are listed once, every prime p and every W with W >= p^2 + p and W >= 3 n^2 + n + 3 m + 6, the program run on the input words (n, p, m, then u, v and the value x{u, v} in 0, ..., p - 1 for each listed edge) halts, for every substitution x of the indeterminates of the Tutte matrix by elements of ZMod p (a function on the unordered pairs of vertices), within 62 n^3 + 116 n^2 + 91 n + 24 n (floor(log2 p) + 1) + 27 m + 31 steps; and if G has a perfect matching, the fraction of the substitutions x for which the printed words are not the pairs of a perfect matching of G (every pair an edge, every vertex exactly once) is at most n / p. The program builds the substituted Tutte matrix, inverts it by Gauss-Jordan elimination modulo p and runs the elimination of Mucha and Sankowski with rank-two updates of the inverse. (2) There is one fixed word program such that, for every such G, p and W with W >= p^2 + p and W >= 15 n^2 + 2 n + 3 m + 6, the program run on the input words (n, p, m; for each listed edge u, v and the value z{u, v} in 0, ..., p - 1; then for all i, j < n the words i, n + j and the value z{i, n + j}) halts, for every assignment z in ZMod p to the unordered pairs of the 2n vertices of G padded with n vertices adjacent to every vertex of G, within 522 n^3 + 579 n^2 + 248 n + 60 n (floor(log2 p) + 1) + 54 m + 58 steps; and the fraction of the assignments z for which the printed words are not the pairs of a maximum matching of G (a matching with at least as many pairs as any matching of G) is at most 2n / p. This program computes the rank r of the substituted Tutte matrix of G modulo p (twice the matching number with high probability, by Lovasz's theorem), pads G with n - r vertices adjacent to every vertex, runs the elimination algorithm on the padded graph and prints the matched pairs of original vertices. The proofs use only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/MuchaSankowski-PerfectAndMaximumMatching-WordRAM-Lean4",
+  "commit": "42b6847a8529f51dd1ac7f2b192b889e5e3a2704",
+  "project_path": null,
+  "declarations": [
+    "MuchaSankowski.elimination_matching_machine",
+    "MuchaSankowski.max_matching_machine"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "68W20",
+      "68Q25",
+      "15A09",
+      "15A03"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T19:53:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "42b6847a8529f51dd1ac7f2b192b889e5e3a2704",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--MuchaSankowski-PerfectAndMaximumMatching-WordRAM-Lean4--1922d64e086a",
+        "source_repository": "RBarish-UTokyo/MuchaSankowski-PerfectAndMaximumMatching-WordRAM-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c72ac6c867488b49dd01b092cd802450773ae69e1db866f6656595907d7cc6d6"
+}

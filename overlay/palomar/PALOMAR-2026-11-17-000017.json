@@ -1,0 +1,79 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000017",
+  "version": 1,
+  "title": "Bounded Fubini in algebraically closed valued fields",
+  "abstract": "A Lean formalization of Forey and Yin's Theorem 5.17. For two definable maps to a common mixed VF/RV base, parameter-definable RV lifts of every pair of fibres with equal bounded residue-field evaluations imply equal bounded invariants of the total VF classes. The saturated canonical equicharacteristic-zero model and small generated-ground hypotheses are explicit. The submission selection contains this one theorem; necessary definition helpers may accompany its vocabulary.",
+  "authors": [
+    "Yimu Yin"
+  ],
+  "repository": "https://github.com/daviddhilbert/Fubini-theorems",
+  "commit": "40e4e23f0b34f87d753f0456a943463c9ab52ab0",
+  "project_path": null,
+  "declarations": [
+    "FubiniStatement.bounded_fubini",
+    "SpecialTransformations.Section3.Values.vrv_eq_infinity_iff",
+    "SpecialTransformations.Milestone0.Transfer.rv_zero_mem",
+    "SpecialTransformations.Milestone0.RVCalc.le_trans_rv",
+    "SpecialTransformations.Milestone0.RVCalc.le_refl_rv",
+    "SpecialTransformations.Section8.normalize_eq_of_isCanonical",
+    "SpecialTransformations.DefinableGeometry.Space.definable_univ",
+    "DiamondIntegral.Section3.GammaGroundDefinable.of_real",
+    "DiamondIntegral.Section3.GammaGroundContext.nontrivial_definable_gamma",
+    "SpecialTransformations.Section3.Values.infinity_eq_zero",
+    "SpecialTransformations.Section3.Values.presentation_compatible",
+    "SpecialTransformations.Milestone0.VFValued.exists_valuation_predV",
+    "SpecialTransformations.Section3.Values.vf_value_eq_iff",
+    "SpecialTransformations.Milestone0.Transfer.rv_mem",
+    "CanonicalRV.encodedRv_surjective",
+    "SpecialTransformations.Section3.Values.vrv_surjective",
+    "SpecialTransformations.Section3.GammaParameters.value_surjective",
+    "DiamondIntegral.Section4.GammaGroupNames.one_definable_base",
+    "DiamondIntegral.Section3.GammaGroundDefinable.compl",
+    "DiamondIntegral.Section3.GammaGroundDefinable.inter",
+    "DiamondIntegral.Section5.ShapedGammaCell.definable",
+    "DiamondIntegral.Section2.NontrivialDefinableGamma.mono",
+    "SpecialTransformations.Section3.GammaParameters.small_union_range_carrier",
+    "FubiniStatement.rawRVSpace_data",
+    "FubiniStatement.rawVFSpace_data",
+    "FubiniStatement.gammaSpace_data",
+    "FubiniStatement.rvGroupoid_hom",
+    "FubiniStatement.vfField_operations"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.AG"
+    ],
+    "msc2020": [
+      "03C60",
+      "12J25",
+      "14E18",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T18:34:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "40e4e23f0b34f87d753f0456a943463c9ab52ab0",
+        "fork_repository": "PalomarArchive/daviddhilbert--Fubini-theorems--89fa7656dd56",
+        "source_repository": "daviddhilbert/Fubini-theorems"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a138642ae4528a312ebd6293727fb8ae36b2aedd8cd9ae077ee5803d7990e4b1"
+}

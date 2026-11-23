@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000031",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000031",
+  "version": 1,
+  "title": "The Fibonacci remainder and Lucas norm of the product resultant for xⁿ − x − 1",
+  "abstract": "Let Rₙ(t) be the resultant in x of x² − x − 1 and tⁿ − txⁿ⁻¹ − xⁿ. For every n ≥ 3, we compute Rₙ(t) explicitly in ℤ[t], prove that its remainder modulo t² − t − 1 is (−F₂ₙ + (−1)ⁿ⁺¹)t − F₂ₙ₋₁, and identify the algebra norm of its residue in ℤ[φ] as (−1)ⁿ⁺¹L₂ₙ₋₁. The absolute norm is at least 11, with equality exactly when n = 3. This formalizes Stephanie Alexander’s Theorem 2 for the product resultant and derives the sharp minimum.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/fibonacci-lucas-resultant",
+  "commit": "6eb7af0e0423bebf7f671a362c2571404232cff4",
+  "project_path": null,
+  "declarations": [
+    "FibonacciLucasResultant.resultant_closed_form",
+    "FibonacciLucasResultant.fibonacci_remainder",
+    "FibonacciLucasResultant.lucas_norm_and_minimum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11B39",
+      "11C08"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T19:24:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6eb7af0e0423bebf7f671a362c2571404232cff4",
+        "fork_repository": "PalomarArchive/stalex444--fibonacci-lucas-resultant--e9726f4e75f0",
+        "source_repository": "stalex444/fibonacci-lucas-resultant"
+      }
+    ]
+  },
+  "statement_hash": "sha256:699f3edd5b40eb69d35c850aec12e0f4fbad54855b49d6d28d2986c3f4fd13cd"
+}

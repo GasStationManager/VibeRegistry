@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000015",
+  "version": 1,
+  "title": "Kasteleyn orientations and the Pfaffian method for plane graphs, with a linear-time orientation, in Lean 4",
+  "abstract": "A Lean 4 and Mathlib formalization of Kasteleyn's method for counting perfect matchings of plane graphs. Graphs are Mathlib simple graphs on a finite vertex type (no loops, no multiple edges); a rotation system is a permutation of the darts that cycles the darts leaving each vertex, its faces are the cycles of the face permutation, and it is plane if the graph is connected and Euler's formula V + F = E + 2 holds. A Kasteleyn orientation with respect to a face f0 is an orientation of the edges in which every face other than f0 has an odd number of clockwise darts. Since faces are cycles of darts, a graph without edges has no faces in this representation; a connected graph without edges is a single vertex, which is not plane in this sense and is treated by a separate theorem. Five theorems are compared: (1) every rotation system of a connected graph with at least one edge has a Kasteleyn orientation with respect to any face f0; (2) for a plane rotation system, a Kasteleyn orientation and edge weights in any commutative ring, the Pfaffian of the signed weighted adjacency matrix (defined by expansion along the first row for a linear order on the vertices) equals, up to a sign +1 or -1, the sum over the perfect matchings of the products of their edge weights; (3) with unit weights the Pfaffian is plus or minus the number of perfect matchings and the determinant of the signed adjacency matrix is its square; (4) one fixed program for an explicit word RAM (unit cost per instruction, natural registers and memory cells bounded by a word bound W along the run) computes a Kasteleyn orientation of every rotation system of a connected graph with at least one edge, with F faces and S darts, given by a standard encoding of 4 + F + 3S words, within 36F + 39S + 27 steps with every natural word at most 4F + 5S + 8; (5) a connected graph without edges has one vertex, no darts and no perfect matching, and the Pfaffian and determinant identities of (2) and (3) hold for it, both sides being 0. The proofs use only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/Kasteleyn-Pfaffian-WordRAM-Lean4",
+  "commit": "e7e967074349944cf909a772218b5fda5c274485",
+  "project_path": null,
+  "declarations": [
+    "Kasteleyn.orientation_exists",
+    "Kasteleyn.pfaffian_formula",
+    "Kasteleyn.matching_count",
+    "Kasteleyn.linear_time_orientation",
+    "Kasteleyn.edgeless_case"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.DS"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C10",
+      "05C85",
+      "15A15",
+      "68Q25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T14:24:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e7e967074349944cf909a772218b5fda5c274485",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--Kasteleyn-Pfaffian-WordRAM-Lean4--a380c7938f5a",
+        "source_repository": "RBarish-UTokyo/Kasteleyn-Pfaffian-WordRAM-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7469092af01b9fffe76e3fcea560f1d116b242afe046c4735847c2bf282453c1"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000005",
+  "version": 1,
+  "title": "OEIS A173774: Sun's integrality conjecture (Andersen 2010)",
+  "abstract": "a(n) = (1/n) Σ_{k<n} (21k+8) C(2k,k)^3 is an integer divisible by 4 C(2n,n). Zhi-Wei Sun conjectured this in February 2010. Kasper Andersen confirmed it in a reply on the NMBRTHRY list by identifying a(n)/(4 C(2n,n)) with A112029(n−1). Sun records Andersen's identity in his paper Super congruences and Euler numbers (Sci. China Math. 2011).",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "2d98cec293e789475e9cf9372472c600ecb2c64b",
+  "project_path": null,
+  "declarations": [
+    "OeisA173774.conjecture"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B65",
+      "05A10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T02:20:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2d98cec293e789475e9cf9372472c600ecb2c64b",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e827f2f4c32043ece31e5abb20186a26e0ca86caf7c6560b78276f27ef03d466"
+}

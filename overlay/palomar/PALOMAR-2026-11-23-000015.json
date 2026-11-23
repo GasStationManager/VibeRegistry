@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000015",
+  "version": 1,
+  "title": "Gabor Frames of Totally Positive Functions",
+  "abstract": "We formally verify in Lean 4 the following statement: if g : ℝ → ℝ is a continuous, integrable and totally positive function and if α, β > 0 satisfy αβ < 1, then the Gabor system {e^{2πiβnx} g(x − αm) : m, n ∈ ℤ} is a frame for L²(ℝ). This is the new implication in the solution of the frame set problem for totally positive functions, which is Theorem 1.1 of the paper \"Gabor Frames of Totally Positive Functions: A Complete Characterization\" by de Dios Pont, Gröchenig, Liehr, Shafkulovska and Taylor (arXiv:2608.04992).",
+  "authors": [
+    "Jaume de Dios Pont",
+    "Karlheinz Gröchenig",
+    "Lukas Liehr",
+    "Irina Shafkulovska",
+    "Mitchell A. Taylor"
+  ],
+  "repository": "https://github.com/lukasliehr/TotallyPositive",
+  "commit": "3bd4ba9b85bf1655f606c265c33e48a0d66372f5",
+  "project_path": null,
+  "declarations": [
+    "gaborAtom_memL2",
+    "gaborCoefficients_summable",
+    "TPFrameSet"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.CA"
+    ],
+    "msc2020": [
+      "42A82",
+      "42C15",
+      "47A53"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T09:58:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "3bd4ba9b85bf1655f606c265c33e48a0d66372f5",
+        "fork_repository": "PalomarArchive/lukasliehr--TotallyPositive--22b1a45d03a7",
+        "source_repository": "lukasliehr/TotallyPositive"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1780d238634deab7010251b2075582e20067d42ec203d681ab60c1d1355a307f"
+}

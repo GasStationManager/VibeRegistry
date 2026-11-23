@@ -1,0 +1,71 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000016",
+  "version": 1,
+  "title": "Entropy and large deviations for Latin squares",
+  "abstract": "A large deviation principle for uniform labeled Latin squares in the full ordered Latinon cut distance, at speed n squared with extended relative entropy as a good rate function. The space retains both row and column orders. For every finite family of strict order patterns and every finite-rate target, the development gives bilateral local logarithmic counts with binomial finite normalization and second-order constant -2. Neighborhood radii may depend on the target and are chosen before the order threshold. Empty compatible fibers have eventually empty finite neighborhoods. The proof includes a uniform lower counting theorem for bounded positive tristochastic profiles and a transportation correction with exact support, bounded entries and l1 cost at most 5/2 times the total margin defect. The entropy convention is Ent = -KL.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/latinon-entropy-ldp-lean",
+  "commit": "ec7025d0ecc2292292f3928183e9f03db420f379",
+  "project_path": null,
+  "declarations": [
+    "LatinonEntropy.latinonCutDistance_self",
+    "LatinonEntropy.latinonCutDistance_symm",
+    "LatinonEntropy.latinonCutDistance_triangle",
+    "LatinonEntropy.finiteLatinMeasure_xy",
+    "LatinonEntropy.finiteLatinMeasure_xz",
+    "LatinonEntropy.finiteLatinMeasure_yz",
+    "LatinonEntropy.latinon_rate_lowerSemicontinuous",
+    "LatinonEntropy.latinon_full_cut_compact",
+    "LatinonEntropy.latinon_rate_sublevels_compact",
+    "LatinonEntropy.closed_uniform_latinon_upper",
+    "LatinonEntropy.open_uniform_latinon_lower",
+    "LatinonEntropy.finite_rate_standard_pattern_log_count",
+    "LatinonEntropy.empty_standard_pattern_fiber_eventually_zero",
+    "LatinonEntropy.finite_latin_tensor_lower_bound",
+    "LatinonEntropy.correction_lemma_five",
+    "LatinonEntropy.latinonSymbolKernel._proof_1",
+    "LatinonEntropy.uniformLatinonMeasure_order_preserving",
+    "LatinonEntropy.uniformLatinonMeasure_xy_uniform",
+    "LatinonEntropy.uniformLatinonMeasure_xz_uniform",
+    "LatinonEntropy.uniformLatinonMeasure_yz_uniform",
+    "LatinonEntropy.latinArrayToLatinonMeasure._proof_1"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05B15",
+      "60F10",
+      "94A17"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T17:05:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ec7025d0ecc2292292f3928183e9f03db420f379",
+        "fork_repository": "PalomarArchive/jtraverso--latinon-entropy-ldp-lean--62688703585a",
+        "source_repository": "jtraverso/latinon-entropy-ldp-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1610ed03dc7c675a7c15a8414d18ea08f578a34068e13ec405ecae1d25bb4bf3"
+}

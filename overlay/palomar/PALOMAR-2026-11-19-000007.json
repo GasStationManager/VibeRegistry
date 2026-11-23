@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000007",
+  "version": 1,
+  "title": "Sharp Cartesian Lipschitz bounds for three-dimensional Newtonian point-source fields",
+  "abstract": "For the three-dimensional Newtonian inverse-square field, we determine the exact sharp Cartesian Lipschitz coefficient C3. It is the global maximum on [0,1] of f(t)=(2+6t-2t^2)/(1+2t^2)^(5/2), attained at the unique root t* in [9/50,1/5] of 2t^3-8t^2-4t+1=0. For any finite set of point sources with arbitrary centers a_i, masses 0<=m_i<=M, G>=0 and Cartesian clearance d>0 at both observation points P,Q, the exact Newtonian acceleration g satisfies ||g(P)-g(Q)||_infinity <= (n G M C3/d^3)||P-Q||_infinity. The segment from P to Q need not remain outside the excluded cubes. The coefficient is optimal universally across configurations: for the unit source at the origin it is the least constant controlling all safe pairs. Euclidean radii occur in the physical force law; clearance and force differences use the Cartesian supremum norm.",
+  "authors": [
+    "Alessandro Odasso"
+  ],
+  "repository": "https://github.com/alexodas/NewtonianLipschitzOptimality",
+  "commit": "74f12a8510a4b0087b56f2b309e6ad99fbd26420",
+  "project_path": null,
+  "declarations": [
+    "PalomarNewtonian.scalarMaximum",
+    "PalomarNewtonian.globalCubicSensitivityAndOptimality"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP",
+      "math.NA"
+    ],
+    "msc2020": [
+      "26A16",
+      "70F10",
+      "65G30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T04:27:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "74f12a8510a4b0087b56f2b309e6ad99fbd26420",
+        "fork_repository": "PalomarArchive/alexodas--NewtonianLipschitzOptimality--6096814133e1",
+        "source_repository": "alexodas/NewtonianLipschitzOptimality"
+      }
+    ]
+  },
+  "statement_hash": "sha256:39a143226fcf4157e2bd332f26f6d2ebd7b09ac92c010e481531ff2c8d01ff35"
+}

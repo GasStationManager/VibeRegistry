@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000019",
+  "version": 1,
+  "title": "Serrin epigraph monotonicity and rigidity",
+  "abstract": "Lean 4 and Mathlib proofs of three theorems on Serrin's overdetermined problem in epigraphs. Let Ω ⊂ ℝⁿ, n ≥ 2, be the epigraph of a continuously differentiable function g on ℝⁿ⁻¹, and let u be positive, twice continuously differentiable in Ω and continuously differentiable up to the boundary, with −Δu = f(u) in Ω, u = 0 on ∂Ω, and outward normal derivative equal to a negative constant on ∂Ω. The reaction f is continuously differentiable on [0, ∞) and satisfies f(s) − s f′(s) ≥ 0 for s > 0. (1) If log(1 + ∫_{Ω∩B_R} u²)/R has liminf zero as R → ∞, then the vertical derivative ∂u/∂xₙ is positive throughout Ω. (2) If moreover f > 0 on (0, 1), f(1) = 0, f′(1) < 0 and u < 1, and n ≤ 8, then g is affine and u depends only on the distance to the hyperplane ∂Ω. (3) Under the assumptions of (2) with n ≥ 9 instead, the same conclusion holds when g has a global linear lower bound or a global linear upper bound. Theorems (2) and (3) are the rigidity theorem of Beuvin and Farina for vertically monotone solutions (arXiv:2502.04812, Theorem 2.1, which builds on work of Wang and Wei), with the monotonicity hypothesis removed by theorem (1), for this class of reactions. Every step is proved in Lean from Mathlib, using only the standard axioms.",
+  "authors": [
+    "Yongxi (Aaron) Lin"
+  ],
+  "repository": "https://github.com/CoolRmal/serrin-epigraph",
+  "commit": "494822e27c536d515504bbb591ee64fe7d5c3777",
+  "project_path": null,
+  "declarations": [
+    "SerrinEpigraph.verticalDerivative_pos",
+    "SerrinEpigraph.rigidity_of_dimension_le_eight",
+    "SerrinEpigraph.rigidity_of_oneSidedLinearBound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP"
+    ],
+    "msc2020": [
+      "35J61",
+      "35N25",
+      "35B06",
+      "35R35",
+      "49Q05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T18:21:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "494822e27c536d515504bbb591ee64fe7d5c3777",
+        "fork_repository": "PalomarArchive/CoolRmal--serrin-epigraph--10340c714b04",
+        "source_repository": "CoolRmal/serrin-epigraph"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fcd104d1bfcc66e404cd2eef12e67607a6d06904e2b7f20718b33911814608b8"
+}

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000011",
+  "version": 1,
+  "title": "Cop-win graphs are exactly the dismantlable graphs (Nowakowski-Winkler), and trees have cop number 1",
+  "abstract": "A machine-checked proof of the Nowakowski-Winkler theorem in the game of cops and robbers: a finite graph has cop number 1 if and only if it is dismantlable. A vertex u is a corner if some other vertex w has N[u] contained in N[w] (closed neighbourhoods), and a graph is dismantlable if corners can be deleted one at a time until one vertex is left. The proof defines a one-cop game played inside a vertex set, with a bridge lemma showing that on the whole vertex set it is exactly Formal Conjectures' game CopsCatchWithin with one cop. A general shadow-map lemma says that if f maps S into T, sends legal moves to legal moves, and a cop on f x can reach every vertex the robber can step to from x, then a cop that wins on T also wins on S, by chasing the robber's shadow f r. Folding a corner onto the vertex that covers it is such a map, so induction on dismantlability gives one direction. For the converse, following the robber's longest escape gives a corner just before capture: the robber's vertex, covered by the cop's. Folding that corner away is a retract, and a cop that wins on a set also wins on any retract of it by standing on the image of its position, so induction on the number of vertices shows every cop-win finite graph is dismantlable. As a corollary, every finite nonempty tree is dismantlable (each leaf is a corner covered by its neighbour) and so has cop number 1. This is the statement meyniel_conjecture.variants.tree of Formal Conjectures, which marks it research solved. The mathematics is classical and no mathematical priority is claimed; to our knowledge this is the first published Lean 4 formalisation.",
+  "authors": [
+    "Finn Doolan"
+  ],
+  "repository": "https://github.com/finndoolan-m/cop-win-lean",
+  "commit": "cc23f10713de5bdfb6afdb466ffb5547ea42fe1e",
+  "project_path": null,
+  "declarations": [
+    "CopWin.copNumber_eq_one_iff_dismantlable",
+    "CopWin.Dismantlable.copNumber_eq_one",
+    "MeynielConjecture.meyniel_conjecture.variants.tree"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C57",
+      "91A43",
+      "05C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T08:13:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cc23f10713de5bdfb6afdb466ffb5547ea42fe1e",
+        "fork_repository": "PalomarArchive/finndoolan-m--cop-win-lean--784c5e990702",
+        "source_repository": "finndoolan-m/cop-win-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4c7a3fd44eb8136f9e20e6503f84d842403ba1588e3a5198cd84c27b6142aa02"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000013",
+  "version": 1,
+  "title": "Grünbaum's zone question at k = 10",
+  "abstract": "A rhombic monohedral polyhedron of spherical type (surface homeomorphic to a sphere, adjacent faces not coplanar) with exactly 30 faces, all of them congruent rhombi whose diagonals are in the golden ratio, in which every zone has exactly 10 faces, and whose translates by a lattice tile space face to face. This gives an example for k = 10 for the question of B. Grunbaum (Math. Intelligencer 32(4), 2010): \"Given an even integer k >= 4, is there a rhombic monohedral parallelohedron such that every zone has exactly k faces?\", where he wrote that \"no information is available for any k >= 10\". The witness is DICTO's Grunbaum-Escher Triacontahedron GET B: the rhombic triacontahedron less four oblate golden rhombohedra, a union of 16 golden rhombohedra (its exact model also has 32 vertices and 60 edges; these counts are properties of the witness, checked in the model, not part of the theorem). Two calibration theorems check that the zone definition gives 4 for the cube and 6 for the rhombic dodecahedron. Earlier solids of the same family (the rhombic triacontahedron with four corners indented) were shown on the web as space-fillers, without proof, without zone sizes and without reference to Grunbaum's question: by D. Hall (Sketchfab, 2016; the same solid as G. Inchbald's dimpled rhombic triacontahedron, by 2023) and by J. Kostick (vZome, 2022), whose concavo-convex triacon array shows GET A, a sibling of GET B. So this entry does not claim the first example for k = 10. GET B itself was not found in the sources checked. Since GET B is an indentation of the triacontahedron and is proved here to be a parallelohedron, it is also a counterexample to Grunbaum's tentative remark (same paper) that \"none of the other isozonohedra obtainable by indentation of F or T seem to be parallelohedra\". The proof checks exact data in Z[phi] by kernel evaluation (zones, congruence, separating normals, contacts, face matching, cone separation from an interior point) and derives the tiling from volume = covolume with Mathlib's fundamental domains. The entry is meant for researchers on parallelohedra and space-filling polyhedra (nonconvex parallelohedra, Venkov-McMullen belt theory) and on golden-rhombohedron polyhedra.",
+  "authors": [
+    "DICTO"
+  ],
+  "repository": "https://github.com/DICTOR-Master/grunbaum-k10-lean",
+  "commit": "a6b16c25d80fa90ea28259bad6a53d7e81d01779",
+  "project_path": null,
+  "declarations": [
+    "GrunbaumK10.cube_everyZoneHas",
+    "GrunbaumK10.rhombicDodecahedron_everyZoneHas",
+    "GrunbaumK10.grunbaum_k10",
+    "GrunbaumK10.grunbaum_k10_parallelohedron"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C22",
+      "52B10",
+      "52C07",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T13:37:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a6b16c25d80fa90ea28259bad6a53d7e81d01779",
+        "fork_repository": "PalomarArchive/DICTOR-Master--grunbaum-k10-lean--952a56f0689a",
+        "source_repository": "DICTOR-Master/grunbaum-k10-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9b08f5d0705e0f5cb63386cbfc1f085a4d1eae0526e99ba39638058d6325b860"
+}

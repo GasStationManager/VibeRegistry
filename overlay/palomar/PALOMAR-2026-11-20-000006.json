@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000006",
+  "version": 1,
+  "title": "Heilbronn's triangle problem in the unit square: nine points",
+  "abstract": "The Heilbronn number H_n of the unit square is the largest possible least area of a triangle with vertices at three of n points in the closed unit square. This entry proves H₉ = (9√65 − 55)/320 ≈ 0.0548760, and that it is attained only by the configuration of Comellas and Yebra (2002), with two points on each side of the square and one inside, up to the eight symmetries of the square and relabelling.\n\nThe proof normalizes a maximizing configuration by affine maps into five families, by the corners of the square it occupies, and excludes or classifies each family by geometric case analysis, sharp inequalities in the chamber of eleven tight triangles, strict local optimality, and polynomial certificates checked by Lean's kernel, about 434,000 weighted terms in all. We found no exact proof of H₉ before this one: a branch and bound had bounded it in an interval, and mixed-integer optimization had found it within solver tolerances (a preprint that claimed a proof in March 2026 withdrew the claim). The repository treats each number of points as a separate entry; nine points is the first.",
+  "authors": [
+    "The-Anh Vu-Le"
+  ],
+  "repository": "https://github.com/vltanh/lean4-heilbronn",
+  "commit": "a405d9b79c16eb34dc1c199b765d69231c7d17cf",
+  "project_path": null,
+  "declarations": [
+    "Heilbronn.Nine.optimal_value",
+    "Heilbronn.Nine.heilbronn_number",
+    "Heilbronn.Nine.optimal_configurations"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C10",
+      "52A40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T05:18:47Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a405d9b79c16eb34dc1c199b765d69231c7d17cf",
+        "fork_repository": "PalomarArchive/vltanh--lean4-heilbronn--0daea5201695",
+        "source_repository": "vltanh/lean4-heilbronn"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f7d76f7cce245f1d117763a9a610a8827b1fadc2396b04801686d7b80d0e348a"
+}

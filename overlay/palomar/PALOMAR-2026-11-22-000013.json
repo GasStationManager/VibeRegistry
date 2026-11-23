@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000013",
+  "version": 1,
+  "title": "Formal Proof of OEIS A189286 Integrality and 2-adic Divisibility Conjectures",
+  "abstract": "Complete Lean 4 formal proofs of two conjectures by Zhi-Wei Sun (2011) on OEIS A189286, defined by a(n) = (sum_{k=0}^n C(6k,3k) C(3k,k) C(6(n-k),3(n-k)) C(3(n-k),n-k)) / ((2n-1) C(3n,n)). This combined submission proves two distinct results: (1) an independent, self-contained elementary proof of the previously proved integrality conjecture (conjecture_1; earlier proved in T. Adamczewski, arXiv:2608.11941), via termwise p-adic divisibility using Legendre's formula and a 3-adic lifting argument; and (2) an original proof of Conjecture (ii) (conjecture_3: for every n >= 1, 8 divides a(n) and a(n)/8 is odd iff n is a power of two), via Kummer's theorem, binary submask counting, and a fixed-point-free involution mod 4. As of November 2026, conjecture_3 was listed without proof on OEIS A189286 and marked research open in FormalConjectures/OEIS/189286.lean, though no exhaustive literature search is claimed to rule out other proofs.",
+  "authors": [
+    "Yuto Nakahara"
+  ],
+  "repository": "https://github.com/YutoNakahara/oeis-a189286-lean",
+  "commit": "10c9f2d2514e13715dfdfea20acf628bbdcd8c78",
+  "project_path": null,
+  "declarations": [
+    "OeisA189286.conjecture_1",
+    "OeisA189286.conjecture_3"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B65",
+      "11A07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T09:35:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "10c9f2d2514e13715dfdfea20acf628bbdcd8c78",
+        "fork_repository": "PalomarArchive/YutoNakahara--oeis-a189286-lean--5b0bb14d1eae",
+        "source_repository": "YutoNakahara/oeis-a189286-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:34fe7ef0d7bd0cb2c7ec268a44d58cb9695b75f8c44c04b89599fd2bbf00c37d"
+}

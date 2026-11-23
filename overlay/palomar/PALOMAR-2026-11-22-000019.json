@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000019",
+  "version": 1,
+  "title": "Partial Results and Regular-Polygon Moment Obstruction for Erdős Problem #132 (Rare Planar Distances)",
+  "abstract": "Lean 4 and Mathlib formalization of partial results toward Erdős Problem #132 (rare planar distances: whether every n >= 5 points in ℝ² determine at least two distances occurring between 1 and n times). Using only propext, Quot.sound, and Classical.choice (no sorry, no native_decide), the repository proves unconditionally: (1) the Hopf–Pannwitz diameter theorem (fc_hopf_pannwitz); (2) sharpness at n = 4 via the unit rhombus (fc_four_points); (3) g(2) = 5, i.e., no 6-point planar 2-distance set exists (no_six_point_two_dist); (4) Erdős #132 for n = 5 and n = 6 via kernel-verified 3x3 Gram-minor integer Positivstellensatz certificates across all 1,024 K_5 edge 2-colorings and all 30 symmetric (1,7,7) 6-point extensions (fc_erdos_fishburn); and (5) a general m >= 4 regular-polygon 2nd/4th-moment obstruction theorem (no_regPoly_violator_extension, reducing impossibility to 3m > 9). Combining even-size endpoint descent with this unconditional moment obstruction yields fc_fourteen_of_wei_and_class13, which establishes a conditional reduction for n = 14 depending on two explicit hypotheses not proved here: Wei's bound g(6) = 13 (hwei) and the unproved 13-point <= 6-distance classification restricted to multiplicities <= 15 (hclass13). Both an unconditional resolution of n = 14 and the full conjecture for arbitrary n >= 5 (with the asymptotic growth question) remain open.",
+  "authors": [
+    "Tomasz Tarłowski"
+  ],
+  "repository": "https://github.com/tomasztarlowski/erdos-132-rare-distances",
+  "commit": "8590096f00883707179fa262b04f675c80155c83",
+  "project_path": null,
+  "declarations": [
+    "Matematyka.Erdos132.fc_hopf_pannwitz",
+    "Matematyka.Erdos132.fc_four_points",
+    "Matematyka.Erdos132.no_six_point_two_dist",
+    "Matematyka.Erdos132.fc_erdos_fishburn",
+    "Matematyka.Erdos132.no_regPoly_violator_extension",
+    "Matematyka.Erdos132.fc_fourteen_of_wei_and_class13"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "52C10",
+      "05D99",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T17:25:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8590096f00883707179fa262b04f675c80155c83",
+        "fork_repository": "PalomarArchive/tomasztarlowski--erdos-132-rare-distances--4d55ad276d5c",
+        "source_repository": "tomasztarlowski/erdos-132-rare-distances"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5c5c14edfe93da84e249d514003e9be80921df0f0bdd21b39a87363e5c33046b"
+}

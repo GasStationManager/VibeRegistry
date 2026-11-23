@@ -1,0 +1,47 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000008",
+  "version": 1,
+  "title": "Stability of Szarek's inequality with best constant",
+  "abstract": "Verification of Theorems 1 and 2 on the stability of Szarek's inequality with best constant, as shown in the source.",
+  "authors": [
+    "Xinyuan Xie"
+  ],
+  "repository": "https://github.com/XinyuanXie-hub/Szarek-stability",
+  "commit": "6fefbc6fdde87c207325a2a6fd0edb61126a5879",
+  "project_path": null,
+  "declarations": [
+    "Szarek.theorem1",
+    "Szarek.theorem2"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-21T06:38:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6fefbc6fdde87c207325a2a6fd0edb61126a5879",
+        "fork_repository": "PalomarArchive/XinyuanXie-hub--Szarek-stability--8fcf4547ca1e",
+        "source_repository": "XinyuanXie-hub/Szarek-stability"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bd8e6abe12c9f375bcefe74ebf1ee8d8d1dfcdbe420ef881bef2254d6b6e6025"
+}

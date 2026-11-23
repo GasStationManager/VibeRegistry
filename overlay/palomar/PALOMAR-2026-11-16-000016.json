@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000016",
+  "version": 1,
+  "title": "OEIS A003024 and A188457: Bala's exp-integrality conjectures, with Gauss congruences for every q",
+  "abstract": "For an integer q let a_q(0) = 1 and a_q(n) = Σ_{k=1}^n (−1)^(k+1) C(n,k) q^(k(n−k)) a_q(n−k). Then a_2 is OEIS A003024 (labeled acyclic digraphs) and a_3 is OEIS A188457 (acyclic 2-multidigraphs). The package proves the Gauss congruences a_q(np^r) ≡ a_q(np^(r−1)) (mod p^r) for every integer q, every prime p and all n, r ≥ 1. Hence exp(Σ_{n≥1} a_q(n) xⁿ/n) has integer coefficients for every q. The cases q = 2 and q = 3 are Peter Bala's 2016 conjectures in A003024 and A188457; the first also shows that every term of A188490 is an integer.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+  "project_path": null,
+  "declarations": [
+    "OeisA003024.gauss_congruence",
+    "OeisA003024.exp_integral",
+    "OeisA003024.a003024_exp_integral",
+    "OeisA003024.a188457_exp_integral"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.NT"
+    ],
+    "msc2020": [
+      "05A15",
+      "05C30",
+      "11B50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T12:27:36Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cd857fd38ab2d562eda8d0788ae0a0ca0cbfa988cd1ed5dcfc97455e4de77c6c"
+}

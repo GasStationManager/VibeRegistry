@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000030",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000030",
+  "version": 1,
+  "title": "Lower Bounds on Diameter-Preserving Spanning Subgraphs of the Hypercube",
+  "abstract": "Unconditional Lean 4 + Mathlib formalization for Graham and Harary's hypercube diameter-preserving spanning subgraph problem: proves the universal lower bound 2^n + ceil((2^n - 2n)/(n - 1)) <= f(n) for all n >= 2, raises the asymptotic second-term coefficient to 3/2 on the scale 2^n/(n - 1), and certifies 39 <= f(5) <= 40, f(6) >= 76, f(7) >= 150, f(8) >= 294, and improved lower bounds through dimension n = 32. Companion write-up and prior-work search log (including Google Scholar sweep on 2026-11-22) are published at https://mathdiscoveries.org/results/hypercube-edge-bounds; no priority is claimed over unread sources (the full body of Bouabdallah-Delorme-Djelloul 1995 and Djelloul's 1993 thesis could not be accessed).",
+  "authors": [
+    "Tyler B. Hughes"
+  ],
+  "repository": "https://github.com/mathdiscoveries/hypercube-edge-bounds",
+  "commit": "57ce13fa40d44b25a53a6d1c55c77dcb8f09a204",
+  "project_path": null,
+  "declarations": [
+    "HypercubeChallenge.theorem1_f_lower_bound_nat",
+    "HypercubeChallenge.theorem5_asymptotic_three_halves",
+    "HypercubeChallenge.f_five_bounds",
+    "HypercubeChallenge.f_six_ge_76",
+    "HypercubeChallenge.f_seven_ge_150",
+    "HypercubeChallenge.f_eight_ge_294",
+    "HypercubeChallenge.theorem14_bounds_17_to_32"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35",
+      "05C12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T21:50:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "57ce13fa40d44b25a53a6d1c55c77dcb8f09a204",
+        "fork_repository": "PalomarArchive/mathdiscoveries--hypercube-edge-bounds--42641d0206a7",
+        "source_repository": "mathdiscoveries/hypercube-edge-bounds"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8445944b45cbb07cd4c809a3def79551bf741fe45ed09fe14b825406c9756a94"
+}

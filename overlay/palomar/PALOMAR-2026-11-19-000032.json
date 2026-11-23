@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000032",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000032",
+  "version": 1,
+  "title": "Goldbach numbers in sparse sequences: Theorem 2 on exponential sums",
+  "abstract": "A Lean 4 proof of Theorem 2 of J. Brüdern and A. Perelli, Goldbach numbers in sparse sequences, Ann. Inst. Fourier 48, 1998, pages 353 to 378, stated on page 354 and proved in section 8 of the paper. The result is conditional on Theorem 1 of A. A. Karacuba 1973, as cited in the paper's Lemma 10 on pages 370 and 371, which is taken as the explicit hypothesis Lemma10DQ5 and never as an axiom. Let F of x be exp of log x to the power gamma, with 1 < gamma < 3/2. Theorem 2 says that for 0 < c < 1 and 0 < C < gamma - 1 there are kappa > 0 and a constant B such that, for every integer N >= 1 and every real alpha with F of 2N to the power -c <= |alpha| <= F of N to the power C, the exponential sum of e of alpha F of n over N <= n <= 2N has absolute value at most B N exp of -kappa times log N to the power 3 - 2 gamma. The Lean proves the steps of section 8 from Lemma 10: the derivative formulas of Lemmas 11 and 12 for the polynomials Q and q, the bounds of Lemmas 13 to 16 on the derivatives of F, the choice of the parameters, and the application of Lemma 10. Karacuba's theorem itself is not proved here. Binary Goldbach and the paper's Theorem 1 on Goldbach numbers near F of n are not claimed. AI agents wrote the Lean code, as listed in PORTING.md, and it is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "93b86c05bb441be2ac0b3f06cc4c8624f8e8d0eb",
+  "project_path": "entries/brudernperelli1998thm2",
+  "declarations": [
+    "LeanLab.ExceptionalSet.U1539.theorem2_of_named_dq5"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11L07",
+      "11P32"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T20:10:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "93b86c05bb441be2ac0b3f06cc4c8624f8e8d0eb",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:6f317322bbad255b276153471e9f49758942c9981be17bdabae28498d22125b5"
+}

@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000003",
+  "version": 1,
+  "title": "Sharp i.i.d. tail probabilities and large hypergraph matchings",
+  "abstract": "A Lean formalization of the sharp upper tail bound for sums of independent identically distributed nonnegative random variables, including all maximizing laws and boundary cases, and the exact Erdős matching bound with its equality classification for every fixed uniformity k >= 3 and all sufficiently large matching parameters, uniformly over n >= k(s+1).",
+  "authors": [
+    "Heng Li",
+    "Xizhi Liu"
+  ],
+  "repository": "https://github.com/xliu2022/sharp-tail-matching-lean",
+  "commit": "c9903fa4df457a1075ef2fc8f6b98afeb4734308",
+  "project_path": null,
+  "declarations": [
+    "SharpTailMatching.sharp_tail_bound",
+    "SharpTailMatching.sharp_tail_attained",
+    "SharpTailMatching.critical_mean_exists_unique",
+    "SharpTailMatching.sharp_tail_equality",
+    "SharpTailMatching.zero_mean_iff",
+    "SharpTailMatching.one_sample_equality",
+    "SharpTailMatching.tail_eq_one_iff",
+    "SharpTailMatching.large_matching_bound",
+    "SharpTailMatching.large_matching_equality"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C65",
+      "05C70",
+      "60E15",
+      "68V15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T01:34:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c9903fa4df457a1075ef2fc8f6b98afeb4734308",
+        "fork_repository": "PalomarArchive/xliu2022--sharp-tail-matching-lean--5aa591ec9a25",
+        "source_repository": "xliu2022/sharp-tail-matching-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:edea42dae646a35beafc7f93822f3901fb254af570a22183e1b2e82a63879f8a"
+}

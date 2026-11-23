@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000018",
+  "version": 1,
+  "title": "Strassen's algorithm, inversion in O(M(n)) and nested dissection with fast matrix multiplication, in Lean 4",
+  "abstract": "A Lean 4 and Mathlib formalization, in the arithmetic cost model, of fast matrix multiplication and its use in Gaussian elimination. Algorithms are written in a writer monad that charges one unit for every addition, subtraction, negation, multiplication and inversion performed through its primitives; costs are statements about these explicit algorithms, whose definitions are part of the statements. A matrix multiplication algorithm is a counted procedure together with proofs that it computes the product and performs at most M(n) operations on n x n matrices, M monotone. Six theorems are compared: (1) over every ring, Strassen's algorithm on matrices of size 2^k computes the product with exactly 7^k multiplications and 6(7^k - 4^k) additive operations; (2) 2 < log2(7) < 3, and over every ring Strassen's algorithm padded with zeros to the next power of two is a multiplication algorithm with at most 49 n^(log2 7) operations for n >= 1, whose bound satisfies 4 M(2^k) <= M(2^(k+1)) and 1 <= M(1); (3) over a field, for every multiplication algorithm whose bound satisfies these two conditions, block inversion of diag(A, 1) padded to size 2^ceil(log2 n) returns the inverse and the determinant of an n x n matrix A whose leading principal minors are all nonzero, and performs fewer than 5 M(2^ceil(log2 n)) operations (at most 5 C 2^omega n^omega when n >= 1, omega >= 0 and M(m) <= C m^omega for all m >= 1); (4)-(6) for every field K, every multiplication algorithm over K with M(m) <= C m^omega for m >= 1, omega > 2, satisfying the two conditions above, and every plane graph (respectively the square of a plane graph of maximum degree at most D) on n vertices, there is a separator tree covering all vertices such that block elimination along it computes the determinant of every matrix over K whose off-diagonal nonzero entries are edges of that graph, provided the elimination meets only invertible blocks (theorem (6): no such hypothesis for positive definite matrices, on squares of plane graphs, over a field with a partial order and a star structure satisfying IsOrderedRing, PosMulReflectLT and StarRing, such as the real numbers), with at most (5 C 2^omega + 2C + 2)(2T + 1)^omega / (1 - (2/3)^(omega/2 - 1)) n^(omega/2) operations, T = 50000, respectively T = 40 (1062 (D + 1)^2 + 1). Plane graphs are rotation systems of connected Mathlib simple graphs satisfying Euler's formula, so they have at least one edge (faces are cycles of darts, and the one-vertex graph has none). The proofs use only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/FastGaussianElimination-Lean4",
+  "commit": "df458a8744e1cbe02cb4ca51f391344a3f11cbb7",
+  "project_path": null,
+  "declarations": [
+    "FastGE.strassen_count",
+    "FastGE.strassen_exponent",
+    "FastGE.inverse_determinant",
+    "FastGE.planar_fast_determinant",
+    "FastGE.square_fast_determinant",
+    "FastGE.square_fast_determinant_posDef"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "math.NA"
+    ],
+    "msc2020": [
+      "68Q25",
+      "68W40",
+      "65F05",
+      "65F50",
+      "15A15",
+      "05C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T16:22:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "df458a8744e1cbe02cb4ca51f391344a3f11cbb7",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--FastGaussianElimination-Lean4--ed1f476985a1",
+        "source_repository": "RBarish-UTokyo/FastGaussianElimination-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bbd037ba2a38e6859558fd527973966c1164e8e99b131deb754cca7fdf28af5c"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000024",
+  "version": 1,
+  "title": "Rank-three obstructions to coordinate projection volumes",
+  "abstract": "For every n at least five, every positive hollow symmetric rank-three matrix lies outside the closure of actual complementary coordinate projection-volume arrays. The entry includes its inertia, strict perturbation and unconditional open-family conclusions. For every 1 <= k < n it also records the exact mixed-volume compactification by finite marked segments and the affine-dimension bound, including replacement of every marked representation.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "693374cb5d131eb313aea7a191e9f56adc9b189b",
+  "project_path": "rank_three_projection_volumes",
+  "declarations": [
+    "PalomarRankThree.theorem11_euclidean",
+    "PalomarRankThree.theorem31_euclidean",
+    "PalomarRankThree.theorem31_euclidean_closure",
+    "PalomarRankThree.theorem31_euclidean_renormalize_dimension",
+    "PalomarRankThree.exists_open_counterexamples"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG"
+    ],
+    "msc2020": [
+      "52A20",
+      "52A38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T16:34:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "693374cb5d131eb313aea7a191e9f56adc9b189b",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e93118ca38b186ace2263f5225570d8b72a1bb2d08ed4d91bf32e0c59122a6e6"
+}

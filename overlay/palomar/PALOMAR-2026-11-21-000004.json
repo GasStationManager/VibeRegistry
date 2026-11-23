@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000004",
+  "version": 1,
+  "title": "The Dehn–Hadwiger invariant in four dimensions",
+  "abstract": "Hadwiger (Math. Ann. 127, 1954) extended Dehn's invariant to convex polytopes in R^n: for the faces of codimension 2, the sum of their (n-2)-dimensional volume tensored with the dihedral angle modulo rational multiples of pi is kept under dissection. This entry defines that invariant from the set alone, in every finite-dimensional real inner product space: at each point the cone of directions that stay in the set, its lineality space, and, where that space has codimension 2, the angle of the cone in the orthogonal plane; the invariant sums (n-2)-dimensional Hausdorff measure tensored with the angle class, in R tensor_Q (R / Q pi). It proves the bridge: scissors-congruent convex polytopes (pieces are convex polytopes moved by isometries) have the same invariant, in every dimension, also for finite unions of convex polytopes. In R^4 it computes the invariant of the six regular polytopes: zero for the tesseract, the 16-cell, the 24-cell and the 120-cell; for the 5-cell it is A5 tensor arccos(1/4) and for the 600-cell A600 tensor (4 pi / 3 - arccos(1/4)), where A is the area of the ridge points, positive in both; arccos(1/4) is not a rational multiple of pi (Niven's theorem in Mathlib). Hence no similar copy of the 5-cell or of the 600-cell is scissors congruent to a similar copy of the tesseract, the 16-cell, the 24-cell or the 120-cell, and, because the 600-cell's dihedral angle is 4 pi / 3 minus the 5-cell's, their invariants have opposite signs and no similar copy of the 5-cell is scissors congruent to a similar copy of the 600-cell. The non-congruence of the regular simplex and the cube is Hadwiger's (1954, section V); the entry claims no new mathematics, only the formalization. The 600-cell needs the face structure: at every ridge point the two tight facets are neighbours across a triangle; this is proved from exact Z[phi] data (its 600 facet normals, 120 corners and, for every facet, its four corners and four neighbours) checked by kernel evaluation, with a barycentric argument on the facet. Not formalized: Jessen's converse in R^4 (equal volume and equal invariant imply scissors congruence), Hadwiger's other invariants in higher dimensions, and the identification of the set invariant with the face sum for every convex polytope (the six polytopes are computed directly). The library reuses the Dehn Canon development (registered PALOMAR-2026-11-20-000003) for convex polytopes, cones, wedge angles, cuts and dissections. Audience: researchers on scissors congruence, valuations on polytopes and regular polytopes, and Mathlib contributors.",
+  "authors": [
+    "DICTO"
+  ],
+  "repository": "https://github.com/DICTOR-Master/dehn-hadwiger-4d-lean",
+  "commit": "5a2cf4ca1b3a5f14f9e2cfd5596189219bdd31e9",
+  "project_path": null,
+  "declarations": [
+    "DehnHadwiger4D.dehnHadwiger_eq_of_scissorsCongruent",
+    "DehnHadwiger4D.dehnHadwigerSum_eq_of_scissors",
+    "DehnHadwiger4D.dehnHadwiger_tesseract",
+    "DehnHadwiger4D.dehnHadwiger_cell16",
+    "DehnHadwiger4D.dehnHadwiger_cell24",
+    "DehnHadwiger4D.arccos_quarter_not_ratPi",
+    "DehnHadwiger4D.dehnHadwiger_cell5_eq",
+    "DehnHadwiger4D.dehnHadwiger_cell5_ne_zero",
+    "DehnHadwiger4D.dehnHadwiger_cell120",
+    "DehnHadwiger4D.dehnHadwiger_cell600_eq",
+    "DehnHadwiger4D.dehnHadwiger_cell600_ne_zero",
+    "DehnHadwiger4D.similarCell5_not_scissorsCongruent",
+    "DehnHadwiger4D.similarCell600_not_scissorsCongruent",
+    "DehnHadwiger4D.similarCell5_not_scissorsCongruent_similarCell600"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG"
+    ],
+    "msc2020": [
+      "52B45",
+      "52B11",
+      "52B15",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T02:15:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5a2cf4ca1b3a5f14f9e2cfd5596189219bdd31e9",
+        "fork_repository": "PalomarArchive/DICTOR-Master--dehn-hadwiger-4d-lean--76fe98726f40",
+        "source_repository": "DICTOR-Master/dehn-hadwiger-4d-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:529e8bf3228d3129dc007d713e76d73b0056131c615db4d7fb8187b6ad0bfbed"
+}

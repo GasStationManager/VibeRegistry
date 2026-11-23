@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000023",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000023",
+  "version": 1,
+  "title": "Directed Cayley non-isomorphism and abelian generation dichotomy",
+  "abstract": "For exceptional three-increment directed Cayley graphs in an abelian group, under the displayed torsion, nondegeneracy and generation assumptions, the reflected pair is isomorphic exactly when the singleton and half-turn increments do not generate the ambient group. A separate theorem proves non-isomorphism for two explicit three-increment digraphs on Z/(12r)Z for every positive natural r, with no affine restriction on vertex equivalences. These are adaptations of prior public Couret formalizations; mathematical novelty and independent human review are not established.",
+  "authors": [
+    "Alexandre Couret"
+  ],
+  "repository": "https://github.com/alexcour/couret-finite-verifications",
+  "commit": "4427850aabc46ef835de2eeb5013c6bd6c36155f",
+  "project_path": null,
+  "declarations": [
+    "Couret.PalomarCayley.abelian_isomorphism_iff",
+    "Couret.PalomarCayley.cyclic_nonisomorphism"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T19:43:50Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4427850aabc46ef835de2eeb5013c6bd6c36155f",
+        "fork_repository": "PalomarArchive/alexcour--couret-finite-verifications--331d9268956b",
+        "source_repository": "alexcour/couret-finite-verifications"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9362f3f9b65fb0a5ff80a9de5c9a90423931841b166fed00267751d957a03288"
+}

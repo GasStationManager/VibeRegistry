@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000015",
+  "version": 1,
+  "title": "Sums of primes and squares of primes in short intervals: Theorem 1 from Proposition 1",
+  "abstract": "A Lean 4 proof of Theorem 1 of A. V. Kumchev and J. Y. Liu, Sums of primes and squares of primes in short intervals, arXiv 0801.0130, display 9 on page 2, derived from the assumed hypothesis Eq33Hyp: the mean square bound of display 33 of the paper's Proposition 1, page 8, for the primes and the sifted function of display 34 with the weights f1 and f2 of page 15, the input the paper obtains on page 15 by verifying the hypotheses of Proposition 1 for these functions. For n in H2, the even n not congruent to 1 mod 3, R2 of n counts the representations n = p1 + p2^2 with p1 prime in the window from X - Y to X and p2 prime between half the square root of Y and the square root of Y, where Y is X to the 7/12 + eps/2. The theorem says that for every A > 0 there is B > 0 such that, for every delta > 0 and eps > 0, R2 of n is the main term r2 of n times the singular series truncated at log X to the B, up to a relative error K times log X to the -1 + delta, for all but at most C H / log X to the A of the n in H2 with X < n <= X + H. It is proved on the range X to the 7/18 + eps <= H <= X to the 1 - eps that the proof on page 16 writes after display 55, and on the printed range X to the 7/18 + eps <= H <= X when eps is at most 5/18. The Lean proves itself the steps from display 33 to Theorem 1: the Chebyshev step from display 33 to display 53, the lower bound for the singular series from displays 48 and 49 with Lemma 3.8, the residual estimate of Proposition 2 on pages 16 and 17, and the circle method assembly of displays 53 to 55. Neither Proposition 1 nor the paper's verification of its hypotheses on page 15 is proved here. Binary Goldbach and the conjecture that every large n in H2 that is not a square is a prime plus the square of a prime remain open and are not claimed. AI agents wrote the Lean code, as listed in PORTING.md; the proof reuses code ported from PrimeNumberTheoremAnd, written by its contributors, and is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "556b939d324b63616dceac222ba6f47bd979ce65",
+  "project_path": "entries/kumchevliu2007thm1",
+  "declarations": [
+    "LeanLab.KumchevLiu2007.Task129W.thm1_written_of_eq33",
+    "LeanLab.KumchevLiu2007.Task129W.thm1_full_of_written_small_eps",
+    "LeanLab.KumchevLiu2007.Task129W.written_range_nonempty"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11P55",
+      "11N36"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T07:19:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "556b939d324b63616dceac222ba6f47bd979ce65",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:796124cd92d5fb372e7eb5d9c0c1fcd58207f7ac67e9b509a69e560a2dfa7f8f"
+}

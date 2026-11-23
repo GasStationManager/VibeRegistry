@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000005",
+  "version": 1,
+  "title": "Volume polynomials and the Heine–Shephard problem",
+  "abstract": "The principal results of the included paper characterize volume-polynomial realizability. In dimension d at least three the n-body coefficient locus is semialgebraic exactly for n at most two; the entry includes the polytope clause, forced nonsemialgebraic shapes, and the countable rational quadratic characterization with strict separation, finite certificates, rejection termination and rational polytope reconstruction.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "32e9521931df4ceeb91fcc382f71fc05240998f8",
+  "project_path": "volume_polynomials_status",
+  "declarations": [
+    "PalomarVolumePolynomials.semialgebraicity_iff",
+    "PalomarVolumePolynomials.polytope_locus_not_semialgebraic",
+    "PalomarVolumePolynomials.shape_forcing",
+    "PalomarVolumePolynomials.countable_characterization",
+    "PalomarVolumePolynomials.nonrealizable_strict_inequality",
+    "PalomarVolumePolynomials.finite_rational_certificate",
+    "PalomarVolumePolynomials.rational_rejection_terminates",
+    "PalomarVolumePolynomials.rational_polytope_reconstruction",
+    "VolumePolynomials.positive_nhds_le_cofinite",
+    "VolumePolynomials.polynomial_evaluation_germ_isUnit",
+    "VolumePolynomials.RationalHulls.realPoint_zero",
+    "VolumePolynomials.RationalHulls.vertices_finite",
+    "VolumePolynomials.ShapeConditions.palomarBodyAIndexBound",
+    "VolumePolynomials.ShapeConditions.palomarAssignmentIndexBound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG"
+    ],
+    "msc2020": [
+      "52A38",
+      "14P10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T05:10:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "32e9521931df4ceeb91fcc382f71fc05240998f8",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:78c22e6618036bd2af872467775aac3c25d60b1a46256d3e21bfa6c47084fe07"
+}

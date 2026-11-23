@@ -1,0 +1,93 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000018",
+  "version": 1,
+  "title": "Lyasoff 2016 Asian options and exp-BM integral in Lean 4",
+  "abstract": "A Lean 4 / Mathlib formalization of Andrew Lyasoff, \"Another look at the integral of exponential Brownian motion and the pricing of Asian options\", Finance Stoch. 20 (2016) 1061–1096. Framing: rigorous reconstruction/verification of the paper’s joint-density, Fokker–Planck, foliation, π/π/2 contour, Yor (1.1)/Rem 5.1, and Asian pricing material. The Comparator family is all 40 proof-chart theorems, each proved using only propext, Quot.sound, and Classical.choice (including time_reversal, Prop 2.2, Dufresne, joint Fokker–Planck, the §4 conditional rearrangements theorem_4_1_pde / theorem_4_1_striking / formula_4_6 / theorem_4_5, the four cond_density_satisfies_* existence results, g_solves_contour_equation, yor_formula, pi_formula, S_closed_form, SfunC.hasDerivAt, hasDerivAt_integral_Re_Ffun, asian_price_formula, asian_delta), together with compared density/integrand definitions. Tables 1–4 are reported numerical data only (definitions, no theorems), outside Comparator. `hasDerivAt_integral_Re_Ffun` uses the tilted-density/Girsanov route rather than global `(u,w)` domination. Project rule: no Lean `axiom` declarations. The §4 rearrangement theorems are conditional implications (they assume the foliation PDE / striking / ODE / Laplace inputs); the cond_density_satisfies_* theorems discharge those inputs by exhibiting a conditional density (Brownian-scaled Yor) that satisfies each of them. Andrew Lyasoff did not participate in or endorse this formalization. Lean was written with AI-agent assistance under Lars Warren Ericson’s direction and review. There is no sorry in the compared Lyasoff2016 development for the Comparator family, and Mathlib plus pinned public Git dependencies supply the analytic/probabilistic stack.",
+  "authors": [
+    "Lars Warren Ericson"
+  ],
+  "repository": "https://github.com/catskillsresearch/lyasoff2016",
+  "commit": "2c80684d62f4c38762b01519a0cc983d11951bb2",
+  "project_path": null,
+  "declarations": [
+    "Lyasoff2016.time_reversal",
+    "Lyasoff2016.lemma_2_1",
+    "Lyasoff2016.prop_2_2",
+    "Lyasoff2016.scaling_relations",
+    "Lyasoff2016.girsanov_density",
+    "Lyasoff2016.infinite_integral_finite",
+    "Lyasoff2016.Z_stationary",
+    "Lyasoff2016.dufresne_zero_flux",
+    "Lyasoff2016.perpetuity_inv_moment",
+    "Lyasoff2016.perpetuity_neg_moments",
+    "Lyasoff2016.dufresne_theorem_sigma_one",
+    "Lyasoff2016.dufresne_theorem",
+    "Lyasoff2016.ito_expInt_test_product",
+    "Lyasoff2016.ito_timeReversed_expInt_test_product",
+    "Lyasoff2016.joint_dynkin_Aop_product",
+    "Lyasoff2016.weak_joint_fokker_planck_product",
+    "Lyasoff2016.eq_zero_of_integral_product_eq_zero",
+    "Lyasoff2016.jointFokkerPlanckAdjoint_eq_zero",
+    "Lyasoff2016.fokker_planck_joint",
+    "Lyasoff2016.remark_3_2",
+    "Lyasoff2016.theorem_4_1_pde",
+    "Lyasoff2016.theorem_4_1_striking",
+    "Lyasoff2016.formula_4_6",
+    "Lyasoff2016.prop_4_4",
+    "Lyasoff2016.theorem_4_5",
+    "Lyasoff2016.cond_density_satisfies_theorem_41_pde",
+    "Lyasoff2016.cond_density_satisfies_striking",
+    "Lyasoff2016.cond_density_satisfies_foliation_ode",
+    "Lyasoff2016.cond_density_satisfies_laplace_inputs",
+    "Lyasoff2016.g_solves_contour_equation",
+    "Lyasoff2016.remark_5_1",
+    "Lyasoff2016.pi_formula",
+    "Lyasoff2016.yor_formula",
+    "Lyasoff2016.S_zero",
+    "Lyasoff2016.S_closed_form",
+    "Lyasoff2016.benchmark_k_zero",
+    "Lyasoff2016.asian_price_formula",
+    "Lyasoff2016.asian_delta",
+    "Lyasoff2016.SfunC.hasDerivAt",
+    "Lyasoff2016.hasDerivAt_integral_Re_Ffun"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "q-fin.PR",
+      "math.CA"
+    ],
+    "msc2020": [
+      "60H30",
+      "60J65",
+      "91G20",
+      "35K10",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T08:35:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2c80684d62f4c38762b01519a0cc983d11951bb2",
+        "fork_repository": "PalomarArchive/catskillsresearch--lyasoff2016--8ca0f2d743aa",
+        "source_repository": "catskillsresearch/lyasoff2016"
+      }
+    ]
+  },
+  "statement_hash": "sha256:764084252d8b3ce25e763d14ec997b7012ce9ae9d23d32de9610ee506ca99b49"
+}

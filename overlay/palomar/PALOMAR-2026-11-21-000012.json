@@ -1,0 +1,64 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000012",
+  "version": 2,
+  "title": "M2Polymath: the exact degree of divisor-sum identities for the prime-counting function modulo prime powers",
+  "abstract": "Consider integer combinations f = sum_z c_z (G_z * h_z) of Dirichlet convolutions in which each core G_z is the Dirichlet power zeta^z (z >= 0) or mu^|z| (z < 0) and each correction h_z vanishes on squarefree integers greater than 1. Target D_k asks that f(q) = p^v u_q (mod p^(v+k)) at every prime q with p not dividing u_q, and that f(n) = 0 (mod p^(v+k)) whenever n has at least two distinct prime factors; summing an f that meets a strong form of D_k (one value at every prime power) gives pi(x) modulo p^k. The development proves that, for every prime p and every k >= 1, the least Z for which some combination with degrees in {-Z..Z} meets D_k is S(p^ceil(k/2)), and with degrees in {1..Z} (no inverse factors) it is S(p^k), where S(m) is the least s with m dividing s! (the Kempner function). As corollaries no combination detects primes modulo p, and the divided target needs a degree divisible by p. It also proves D_3(x) = floor(x^(1/3)) + 3H(x), where H(x) counts triples (a, b, c) with abc <= x, a <= b and a < c, and certifies an algorithm for pi(x) mod 3 through D_3.",
+  "authors": [
+    "Joseph S. Farland"
+  ],
+  "repository": "https://github.com/jkfarland-bot/M2Polymath",
+  "commit": "47f63036342b3cfc956a7f92d1d47c160cf3f8d4",
+  "project_path": null,
+  "declarations": [
+    "M2Polymath.exact_degree_cheap",
+    "M2Polymath.exact_degree_signed",
+    "M2Polymath.no_prime_detection",
+    "M2Polymath.degree_p_needed",
+    "M2Polymath.mod9_iff",
+    "M2Polymath.d3_ternary",
+    "M2Polymath.piMod3_correct",
+    "M2Polymath.normCount_one_and_eight_dvd",
+    "M2Polymath.normCount_prime_pow",
+    "M2Polymath.normCount_mod8",
+    "M2Polymath.normCount_parity",
+    "M2Polymath.blockStep_fast_path",
+    "M2Polymath.blockStep_tail_short",
+    "M2Polymath.block_count"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A25",
+      "11N05",
+      "11Y16",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T02:35:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "47f63036342b3cfc956a7f92d1d47c160cf3f8d4",
+        "fork_repository": "PalomarArchive/jkfarland-bot--M2Polymath--035ba11eb7da",
+        "source_repository": "jkfarland-bot/M2Polymath"
+      }
+    ]
+  },
+  "statement_hash": "sha256:072c7e935a2349d503316f8fd23356e65d08adc5439261bf6bb0610ab04cac92"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000016",
+  "version": 1,
+  "title": "OEIS A357513: u_m(p-1) ≡ 0 (mod p^4) for all primes p ≥ 2m + 6",
+  "abstract": "For m ≥ 0 let u_m(n) be the numerator of the sum over k = 1, ..., n of binomial(n,k)^2 binomial(n+k,k)^2 / k^(2m+1). Peter Bala conjectured in OEIS A357513 (2022) that u_m(p-1) ≡ 0 (mod p^4) for all primes p, with finitely many exceptions that depend on m. This project gives a Lean 4 / Mathlib proof of that statement: for every m and every prime p ≥ 2m + 6, p^4 divides u_m(p-1). The proof writes T_k = binomial(p-1,k) binomial(p-1+k,k) as T_k^2 ≡ p^2/k^2 - 2p^3/k^3 (mod p^4), reduces the sum to the harmonic-type sums H(s) = sum of k^(-s) over 1 ≤ k ≤ p-1, shows H(2m+4) ≡ 0 (mod p) with the power sums of the finite field F_p, and shows H(2m+3) ≡ 0 (mod p^2) by pairing k with p - k. The compared theorem is the statement `OeisA357513.general_supercongruence` of the Formal Conjectures repository. The result is not new: Ondrej Kutal proved it in July 2026, with the exact set of exceptional primes and a Lean formalization. The proof here was found independently of Kutal's work and gives only the bound p < 2m + 6 on the exceptional primes.",
+  "authors": [
+    "Felix Pernegger"
+  ],
+  "repository": "https://github.com/felixpernegger/oeis-a357513-supercongruence",
+  "commit": "15ac7d538051d0d06d5f74e159b14a0242860ff3",
+  "project_path": null,
+  "declarations": [
+    "OeisA357513.general_supercongruence"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A07",
+      "11B65",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T14:28:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "15ac7d538051d0d06d5f74e159b14a0242860ff3",
+        "fork_repository": "PalomarArchive/felixpernegger--oeis-a357513-supercongruence--db7d38bb5850",
+        "source_repository": "felixpernegger/oeis-a357513-supercongruence"
+      }
+    ]
+  },
+  "statement_hash": "sha256:12d2f466faeafb14fd50724b0e08be96c9a59519e4bf8037a853c2373e7fcd9d"
+}

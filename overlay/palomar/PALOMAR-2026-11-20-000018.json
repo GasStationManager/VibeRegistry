@@ -1,0 +1,75 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000018",
+  "version": 1,
+  "title": "When a Gate from X⁴−X−1 Entangles Two Qubits",
+  "abstract": "An integral unit constructed from the roots of X⁴−X−1 gives a two-qubit diagonal phase gate whose output on the plus product state has concurrence 0.99813134 rounded to eight decimal places. One use entangles a normalized pure product exactly when both qubits have nonzero amplitudes on both basis states. The maximum occurs exactly when both qubits have equal basis probabilities. Among irreducible trace-zero monic integer quartics with two real roots and a complex conjugate pair, require both the generating root and the three squared complementary-pair sums to be algebraic units. For this fixed embedding assignment, phase rule and one use, the joint maximum over all normalized pure product inputs and all eligible polynomial presentations is reached at four polynomials: X⁴±X−1 and X⁴−2X²±X+1. They present the same field by the generators ±Q and ±Q². All other eligible polynomials have squared concurrence at most 307/356, for coefficients of any height.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-quartic-unit-entanglement",
+  "commit": "436232f7be657942d91618d396ea58207e6832b9",
+  "project_path": null,
+  "declarations": [
+    "QuarticGate.root_phase",
+    "QuarticGate.family_separation",
+    "QuarticGate.distinguished_attains",
+    "QuarticGate.integral_unit_equation",
+    "QuarticGate.joint_unit",
+    "QuarticGate.joint_unit_values",
+    "QuarticGate.square_generator",
+    "QuarticGate.square_generator_pair_sum",
+    "QuarticGate.general_phase_symbol",
+    "QuarticGate.phase_symbol",
+    "QuarticGate.concurrence_interval",
+    "QuarticGate.unit_criterion",
+    "QuarticGate.all_height_classification",
+    "QuarticGate.all_four_attain",
+    "QuarticGate.maxima_irreducible",
+    "QuarticGate.maximum_and_equality",
+    "QuarticGate.same_generated_field",
+    "QuarticGate.Onset.product_iff_det_zero",
+    "QuarticGate.Onset.gated_det",
+    "QuarticGate.Onset.entangles_iff",
+    "QuarticGate.Onset.quartic_entangles_iff",
+    "QuarticGate.Onset.one_application_from_plus_product",
+    "QuarticGate.Onset.concurrence_factorization",
+    "QuarticGate.Onset.product_input_maximum",
+    "QuarticGate.Onset.plus_attains",
+    "QuarticGate.Onset.global_product_maximum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "quant-ph"
+    ],
+    "msc2020": [
+      "11R16",
+      "81P40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T18:30:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "436232f7be657942d91618d396ea58207e6832b9",
+        "fork_repository": "PalomarArchive/stalex444--pdt-quartic-unit-entanglement--e98a99114c0e",
+        "source_repository": "stalex444/pdt-quartic-unit-entanglement"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b45d6ba72f8c8f2960f061f8a2725ba2aeeeec5525f2cad31738179e5f137e9b"
+}

@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000027",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000027",
+  "version": 2,
+  "title": "Strong Dirac Counterexamples for All n >= 8 and Infinite Refutation of Grunbaum's 2010 Conjecture",
+  "abstract": "Unconditional Lean 4 + Mathlib formalization in the Euclidean plane R^2 proving: (1) every n >= 8 admits a non-collinear n-point set with every point incident to at most floor(n/2) connecting lines (self-contained across all 12 residue classes modulo 12, adapting Felsner's family for several classes and adding an explicit 8-deletion construction for n = 12k + 11, k >= 2); (2) three infinite straight-line knight-lattice families with deficit 5/2 below n/2 (n = 60s + 53 and n = 60s + 69 for all s >= 0, and n = 60s + 61 for all s >= 1); and (3) a refutation of Grunbaum's 2010 conjecture G(n) = 2 * floor(n/4) by at least 2 across four infinite congruence classes modulo 60. Companion write-ups and logged prior-work searches (arXiv, CORE, Google Scholar as of 2026-11-22, and surveys through 2025) are published at mathdiscoveries.org/results/few-lines-through-every-point and mathdiscoveries.org/results/few-lines-five-halves-short; neither the n = 12k + 11 construction nor infinite straight-line families with deficit > 3/2 were found in those logged searches, though paywalled pages 323-326 of Akiyama et al. (2011) and print monographs remain unread/unsearched.",
+  "authors": [
+    "Tyler B. Hughes"
+  ],
+  "repository": "https://github.com/mathdiscoveries/strong-dirac",
+  "commit": "d32235ce1237cc5ec50b5aeb9ee982cda24c5dd9",
+  "project_path": null,
+  "declarations": [
+    "StrongDiracChallenge.dirac_counterexample_all_ge_8",
+    "StrongDiracChallenge.dirac_counterexample_all_odd_ge_9",
+    "StrongDiracChallenge.familyA_deficit_five_halves",
+    "StrongDiracChallenge.familyB_deficit_five_halves",
+    "StrongDiracChallenge.familyC_deficit_five_halves",
+    "StrongDiracChallenge.refutes_grunbaum_2010"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C10",
+      "52C30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T02:54:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d32235ce1237cc5ec50b5aeb9ee982cda24c5dd9",
+        "fork_repository": "PalomarArchive/mathdiscoveries--strong-dirac--0a813dd22194",
+        "source_repository": "mathdiscoveries/strong-dirac"
+      }
+    ]
+  },
+  "statement_hash": "sha256:88b3fb8e560720a48b09a79021d91f7592d0cfce77a2b1e901999c7af3ad5821"
+}

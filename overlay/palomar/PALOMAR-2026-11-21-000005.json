@@ -1,0 +1,102 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000005",
+  "version": 1,
+  "title": "Numerical Linear Algebra, Explained: Twenty Problem Resolutions",
+  "abstract": "Lean formalizations accompanying twenty numerical linear algebra problem resolutions. They give uniform matrix-product growth and local 1/d-Hölder continuity of the joint spectral radius; two real generators with any prescribed nonnegative polynomial growth exponent; and sharp losses 2^r and 4^r for randomly pivoted Cholesky and LU. They show that concave matrix functions can destroy spectral approximation guarantees and amplify nuclear-norm excess without bound, and give sharp Frobenius transfer bounds with and without semidefinite order. Further results are the random-row adversarial deletion limit and sharp universal deletion constant, a pointwise strict tensor-train bound with unchanged worst-case supremum, and curves with rank savings delayed through any prescribed finite range of tensor powers. Counterexamples concern derivative roots of nonnegative characteristic polynomials, a q-permanent subset inequality, a geometric-mean norm inequality, and weighted log-majorisation. The development also proves the rectangular Rowland-Wu Sinkhorn identity, disconnected quotients of minimal positive semidefinite factors, stable nonsynchronised equilibria on random cubic graphs with high probability, and NP-hardness of exact determinant ranges and solution hulls for regular tridiagonal interval matrices. This repository prepares the proofs for Palomar through a single repository-root Challenge/Solution interface selecting all twenty problem resolutions. Seventeen component environments have recorded Lean 4.35.0 compilation and selected-axiom checks; the combined environment has separate current evidence. Official Palomar and independent NanoDa verification remain pending submission.",
+  "authors": [
+    "Matthew J. Colbrook",
+    "George Stepaniants"
+  ],
+  "repository": "https://github.com/MColbrook/NLA-formal-verification-20-problems",
+  "commit": "d46c1b54e85af6790d3ac0df59a9bbe8d2faaf4d",
+  "project_path": null,
+  "declarations": [
+    "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+    "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+    "NLA.MF05.Paper.paper_real_uniform_holder",
+    "NLA.MF12.Paper.paper_main_realization",
+    "NLA.MF12.Paper.paper_rational_realization",
+    "NLA.RA02.Paper.paper_sup_worst_case_constants",
+    "NLA.RA08.Paper.paper_spectral_failure",
+    "NLA.RA08.Paper.verified_paper_nuclear_counterexample",
+    "NLA.RA09.paper_ordered_matrix_norm_relative",
+    "NLA.RA09.paper_ordered_sharpness",
+    "NLA.RA09.paper_unordered_matrix_norm_relative",
+    "NLA.RA09.paper_unordered_sharpness",
+    "NLA.IE21.Paper.paper_random_rows",
+    "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+    "NLA.IE22.Paper.paper_universal_squared_rate",
+    "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+    "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+    "Reference.LexTensorCompletion.lexCard_eq_card",
+    "NLA.TR27.Paper.paper_full_family",
+    "NLA.TR27.Paper.coordinateProjection_surjective",
+    "NLA.TR27.Paper.coordinateProjection_kernel",
+    "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+    "NLA.TR27.Paper.tensor_reps_nonzero",
+    "NLA.IS03.paper_counterexample",
+    "NLA.NM04.Paper.paper_rowland_wu_identity",
+    "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness",
+    "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+    "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty",
+    "IV04.Paper.Computational.actual_paper_iv_det",
+    "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+    "NLA.MI19.Paper.paper_counterexample",
+    "NLA.MI21.Paper.paper_counterexample",
+    "NLA.MI22.Paper.paper_counterexample",
+    "NLA.MI22.Paper.paper_conjecture_false",
+    "NLA.MI22.singularValue._proof_1",
+    "Complexity.NTM.trace._proof_6",
+    "NLA.TR27.Paper.pivotIndex._proof_2",
+    "NLA.TR27.Paper.recoveryIndex._proof_2",
+    "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+    "Reference.LexTensorCompletion.lexIndex._proof_5",
+    "Reference.LexTensorCompletion.lexIndex._proof_2",
+    "NLA.IE21.matrixMap._proof_6",
+    "NLA.IE21.matrixMap._proof_4"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NA",
+      "math.FA",
+      "math.PR",
+      "math.AG",
+      "cs.CC"
+    ],
+    "msc2020": [
+      "15A18",
+      "15A23",
+      "15A45",
+      "15A60",
+      "15A69",
+      "65F10",
+      "65F55",
+      "68Q25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T02:41:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d46c1b54e85af6790d3ac0df59a9bbe8d2faaf4d",
+        "fork_repository": "PalomarArchive/MColbrook--NLA-formal-verification-20-problems--9c9b2f2379c4",
+        "source_repository": "MColbrook/NLA-formal-verification-20-problems"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4097d562062a2b31495485c89f6cfc35db0f39126e6b2dde70257d7f1d3776ec"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000012",
+  "version": 1,
+  "title": "Nearly Quadratic Additive Gaps for Edge-Clique Partitions of Split Graphs",
+  "abstract": "For all sufficiently large n there is an n-vertex split graph that stays connected after removing any set of fewer than ceiling(n/5) vertices. Its exact edge-clique partition number exceeds the fractional optimum by at least a positive constant times n^2 (log n)^(-5/2) times exp(-2 sqrt(log(24/7) log n)). The same lower bound holds with the fractional optimum restricted to cliques of order at most four. The construction combines a local triangle-packing obstruction, a signed weight estimate on affine blocks, and host assignments in a split graph.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/split-clique-partition-gap",
+  "commit": "ccb5444b2ecdff9de1d6221133633a25a224953d",
+  "project_path": null,
+  "declarations": [
+    "GapExtremal.R434.nearly_quadratic_gap_with_linear_connectivity",
+    "GapExtremal.R434.nearly_quadratic_gap_with_fractional_pieces_at_most_four"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C70",
+      "05C40",
+      "05C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T09:28:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ccb5444b2ecdff9de1d6221133633a25a224953d",
+        "fork_repository": "PalomarArchive/jtraverso--split-clique-partition-gap--6582873a5c40",
+        "source_repository": "jtraverso/split-clique-partition-gap"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c3af40c515ccc972538b1a9b87c3ca69ee4ad726a72acacc79f5677cdfec474c"
+}

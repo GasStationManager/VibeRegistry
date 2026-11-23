@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000017",
+  "version": 1,
+  "title": "Integral zero-sum incidence identities and Davenport constants in rank three",
+  "abstract": "A Lean 4 formalization of the paper of C. G. Pop, G. C. Rad and G. C. Țurcaș on the Davenport constant of finite abelian groups of rank three. An incidence identity of degree t of a sequence is a family of coefficients indexed by its zero-sum subsequences whose sum is one and whose moments of degree 1 to t vanish. Theorem A (a transfer principle): if every sequence of L(t) terms over a finite abelian group Q has such an identity over F_p, or over the integers, then D(Q ⊕ H) ≤ L(D(H) − 1) for every finite abelian p-group H. Theorem B: for m = 2, 3, 4, every sequence of m(t + 3) − 2 terms over C_m^3 has an integral identity of degree t, and the invariant κ_t(C_m^3; K) equals m(t + 3) − 2 for every field K of characteristic zero or prime to m. Corollary C: D(C_{mp^a} ⊕ C_{mp^b} ⊕ C_{mp^c}) = m(p^a + p^b + p^c) − 2 for m = 2, 3, 4, every prime p not dividing m and 0 ≤ a ≤ b ≤ c; in particular D(C_15^3) = 43 and D(C_20^3) = 58. All lemmas, propositions, theorems and corollaries of the paper are formalized. The computer-assisted Lemmas 5.1(1) and 5.3 are checked by Lean's kernel, and every result depends only on the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Claudiu G. Pop",
+    "George C. Rad",
+    "George C. Țurcaș"
+  ],
+  "repository": "https://github.com/CiprianRad/Davenport_Project_Palomar",
+  "commit": "cf5f90fcb0bca8c5e441bc8e8db02bc6e0aaac74",
+  "project_path": null,
+  "declarations": [
+    "DavenportProject.exists_length_forcing_zeroSet",
+    "DavenportProject.exists_length_without_separator",
+    "DavenportProject.davenport_prod_le_of_hasIncidenceIdentity_zmod",
+    "DavenportProject.davenport_prod_le_of_hasIncidenceIdentity_int",
+    "DavenportProject.hasIncidenceIdentity_cube",
+    "DavenportProject.kappa_cube_le",
+    "DavenportProject.kappa_cube_eq",
+    "DavenportProject.davenport_zmod_prod_three",
+    "DavenportProject.davenport_cube_fifteen",
+    "DavenportProject.davenport_cube_twenty"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11B75",
+      "11P70",
+      "20K01"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T15:40:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cf5f90fcb0bca8c5e441bc8e8db02bc6e0aaac74",
+        "fork_repository": "PalomarArchive/CiprianRad--Davenport_Project_Palomar--8a6995d2cc93",
+        "source_repository": "CiprianRad/Davenport_Project_Palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8358e4fd8cee984ad2dcbaee848ce53c66f0b3deb84cd357491e94dd8d2da38c"
+}

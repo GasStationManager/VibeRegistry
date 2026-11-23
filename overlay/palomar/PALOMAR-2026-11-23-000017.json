@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000017",
+  "version": 1,
+  "title": "A One-Edge Change Splits Two Energy Levels in an Infinite Ammann–Beenker Graph",
+  "abstract": "We study how local changes affect waves in an infinite Ammann–Beenker network, a mathematical model with an octagonal structure.\n\nAt a particular energy, the network has two localized wave patterns, which we call A and B. An earlier theorem, registered with Palomar as PALOMAR-2026-11-06-000012, proved that these two patterns account for all independent states at that energy in the entire infinite network.\n\nFurther results proved in Lean establish that, at this special setting, no other real energy level lies within a distance of 1/128 of their common energy.\n\nWe can influence the two localized patterns in two different ways.\n\nThe first is to change a parameter that affects the first ring of the network. This raises or lowers the energy of A by exactly the parameter change, while leaving the energy of B unchanged. Both patterns remain exact eigenstates of the infinite system, without spreading outside their original localized forms. The spectral gap was proved at the original setting; for sufficiently small changes to this parameter, separation from the other energy levels also follows from the general eigenvalue-stability estimates already established in Lean.\n\nThe second is to change the strength of a single edge connecting the two rings. Here the situation is more subtle. One combination of the original patterns, called the dark state, remains protected at the original energy. The other, called the bright state, responds to the change and interacts with the rest of the infinite network.\n\nOur main theorem proves what actually happens in this second case. For a sufficiently small, nonzero edge change, there are exactly two distinct real energy levels represented by eigenvectors in a specified narrow range. One remains fixed, while the other moves upward when the edge is strengthened and downward when it is weakened. Each level has only one independent wave pattern.\n\nThe theorem also gives two precise numerical guarantees. The moving energy differs from the original energy plus one quarter of the edge change by no more than 112 times the square of that change. For a normalized wave at the moving energy, the size of the part extending beyond the original two-state space is at most 64 times the square root of 7, multiplied by the absolute size of the edge change.\n\nThis means that we can make the external part of the moving wave as small as desired while keeping the two energy levels distinct. These are exact results for the infinite system, not predictions from a simplified two-state model.\n\nWhat happens if the edge change is temporary? Separate theorems, already proved in Lean, study an edge change applied for a period of time and then switched off. They give a bound on the wave's component outside the original two-state space: no more than 512 times the absolute size of the edge change, multiplied by the initial wave's size. This bound is independent of the duration of the pulse and of the time elapsed after switching it off.\n\nThese temporal conclusions are conditional: they assume that the supplied evolution preserves norms, preserves the operator's mathematical domain, and commutes with the relevant Hamiltonian during each stage. A general physical quantum propagator has not yet been constructed in this formalization.\n\nThe results fit together in a natural way. Changing the first-ring parameter offers an exact way to adjust the relative energies of the two original patterns without changing their shapes. Changing the connecting edge produces a genuine energy separation involving a bright-derived state, while the associated spreading into the infinite network can be kept small. The temporal results complement these spectral findings by showing that, under suitable evolution assumptions, the wave remains close to the original two-state space during and after a temporary edge change.\n\nTogether, these results provide a mathematical foundation for investigating whether changes to the first-ring parameter and to the connecting edge can be combined to control localized waves. They do not yet prove that any desired mixture of the two original patterns can be prepared. The results concern the real infinite-operator model, not a separately proved classification of the complete complex spectrum.\n\nThe research direction was conceived and directed by Alessandro Odasso, who is not a mathematician. According to the maintainer, AI generated the mathematical proofs and Lean formalizations under his direction. The originality and scientific significance of these results have not yet been independently assessed.",
+  "authors": [
+    "Alessandro Odasso"
+  ],
+  "repository": "https://github.com/alexodas/spectral_geometry",
+  "commit": "7b68540619ab45e5233b2d5ec8273829b3fbba77",
+  "project_path": null,
+  "declarations": [
+    "SpectralGeometry.AmmannBeenker.admitted_zero",
+    "SpectralGeometry.AmmannBeenker.mate_involutive",
+    "SpectralGeometry.AmmannBeenker.compactA_mem_domain",
+    "SpectralGeometry.AmmannBeenker.compactB_mem_domain",
+    "SpectralGeometry.AmmannBeenker.compactSiteA_admitted",
+    "SpectralGeometry.AmmannBeenker.compactSiteB_admitted",
+    "SpectralGeometry.AmmannBeenker.crossing_final_signed_bright_spectral_splitting"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.SP",
+      "cond-mat.mes-hall"
+    ],
+    "msc2020": [
+      "47A55",
+      "47B25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T11:14:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7b68540619ab45e5233b2d5ec8273829b3fbba77",
+        "fork_repository": "PalomarArchive/alexodas--spectral_geometry--d3c275959859",
+        "source_repository": "alexodas/spectral_geometry"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cd68fc955414a4e6ae186f808a779e773268a13645d873c137668e340d02d589"
+}

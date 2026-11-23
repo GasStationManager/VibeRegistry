@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000006",
+  "version": 1,
+  "title": "Prime numbers and powers of two",
+  "abstract": "A Lean 4 proof of the theorem of Yu. V. Linnik, Prime numbers and powers of two, Trudy Mat. Inst. Steklov 38, 1951, pages 152 to 169, in its qualitative form: conditional on the generalized Riemann hypothesis for Dirichlet L-functions, there is a constant K such that every sufficiently large even integer is the sum of two primes and at most K powers of two, each power 2^v with v >= 1. The one hypothesis is GRH, taken as an explicit hypothesis and never as an axiom: for every modulus q >= 1, every Dirichlet character chi modulo q and every s in the open strip 0 < Re s < 1, if the L-function of chi vanishes at s then Re s = 1/2. The constant K is not explicit. The theorem printed on page 154 is an asymptotic formula for the number of representations of N as two primes and exactly k powers of two, for each fixed k >= 3; the entry proves the qualitative consequence that Linnik draws from it on pages 168 and 169, and not the asymptotic formula itself. Linnik 1953 and Gallagher 1975 later removed the hypothesis GRH, and the gallagher1975 entry of this repository is the unconditional result. The route uses a repaired bound for the mixed integral of page 160 with log N to the power 7 in place of the power 6 printed in display 5.5, whose power 6 form the lab could not derive; the extra logarithm does not change the conclusion. Binary Goldbach, the case K = 0, is open and is not claimed. AI agents wrote the Lean code, Claude by Anthropic and Codex by OpenAI, as listed in PORTING.md, and it is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "30e57afca5a1386e777c9dc5d3d008a57454f777",
+  "project_path": "entries/linnik1951",
+  "declarations": [
+    "LeanLab.Linnik1951.linnik1951_decomposed_final_b1122"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11P55",
+      "11M26"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T05:10:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "30e57afca5a1386e777c9dc5d3d008a57454f777",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5f705ee1f02140e5a0a11b9ef78b2de4f7020152174687497ed51c2d8f1ccf09"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000035",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000035",
+  "version": 1,
+  "title": "An asymptotic formula for the equality count in Erdős Problem 878(iv)",
+  "abstract": "The equality count for the functions f and F of Erdős Problem 878 is asymptotic to an explicit sum of logarithmic integrals indexed by the cofactor of the largest prime. Finite polynomial tests determine the sets of integration. The argument controls the discarded integers and sums a quantitative prime number theorem over the resulting intervals.",
+  "authors": [
+    "Rivka Lipkovitz"
+  ],
+  "repository": "https://github.com/rivkalipko/erdos-878-cofactor-asymptotic",
+  "commit": "38d5164065e85d6ef02d1c39253389da1ca64fff",
+  "project_path": null,
+  "declarations": [
+    "Erdos878.erdos_878.parts.iv"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N37",
+      "11N25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T21:30:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "38d5164065e85d6ef02d1c39253389da1ca64fff",
+        "fork_repository": "PalomarArchive/rivkalipko--erdos-878-cofactor-asymptotic--8c13af4ed1bb",
+        "source_repository": "rivkalipko/erdos-878-cofactor-asymptotic"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3572b7053897b7f866f0cf7654027c345f8e8aa48976e73ae6c1dbb47ec4bbf5"
+}

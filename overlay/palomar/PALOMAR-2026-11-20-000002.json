@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000002",
+  "version": 1,
+  "title": "Smyth’s Theorem in Lean — The Plastic Number ρ as a Sharp Lower Bound for Mahler Measure",
+  "abstract": "In every degree, an integer polynomial with nonzero constant coefficient whose reverse differs from both it and its negative has multiplicative Mahler measure at least the plastic number. The cubic x³ − x − 1 attains the bound. In the compositum of its root and a root of x⁴ − x − 1, the least Mahler measure of an algebraic integer other than 0 and ±1 equals the plastic number. Each element uses its own minimal polynomial over ℤ. We also deduce Siegel’s theorem that the plastic number is the smallest Pisot number.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/smyth-mahler-bound-rho",
+  "commit": "41bc4f35be759b02602e2884bf70307d95b9e1c3",
+  "project_path": null,
+  "declarations": [
+    "SmythEntry.nonreciprocal_mahler_bound",
+    "SmythEntry.plastic_cubic_attains",
+    "SmythEntry.compositum_minimum",
+    "SmythEntry.plastic_is_least_pisot"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R06",
+      "11R04"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T01:09:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "41bc4f35be759b02602e2884bf70307d95b9e1c3",
+        "fork_repository": "PalomarArchive/stalex444--smyth-mahler-bound-rho--e094f5c12569",
+        "source_repository": "stalex444/smyth-mahler-bound-rho"
+      }
+    ]
+  },
+  "statement_hash": "sha256:debaa76dfc00762744e1b048152821c33aee45aada3bd67595cc497e3b1690d6"
+}

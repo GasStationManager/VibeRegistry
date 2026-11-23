@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000010",
+  "version": 1,
+  "title": "The speed of biased random walk on leafless Bienaymé trees is monotone",
+  "abstract": "Conditional on the two interval verifications of Appendix A, this Lean 4 and Mathlib formalization proves Theorem 1.1 of the paper. For every offspring law with no mass at zero and mean 1 < m < ∞, the speed v of the λ-biased random walk on the Bienaymé tree, constructed as the almost-sure limit of |X_n|/n, is positive and C^1 on [0, m) and strictly decreasing there, with v'(λ) < 0 for 0 < λ < m and right derivative -2 E[1/ν] at 0. The hypotheses are the closed propositions CertACovers and CertBCovers that the interval verifications of Lemmas A.1 and A.2 check, over all feasible normalized data; the proof derives the two lemmas from them at the actual law. The two propositions are proved in a companion repository, not in this one.",
+  "authors": [
+    "Igor Kortchemski"
+  ],
+  "repository": "https://github.com/igor-kortchemski/monotonicity-speed-biased-random-walk-palomar",
+  "commit": "71148d0db9d1fe1df6a1f43b04387255dfa5cea6",
+  "project_path": null,
+  "declarations": [
+    "LPPMonotonicity.speed_monotone_of_interval_certificates"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR"
+    ],
+    "msc2020": [
+      "60K37",
+      "60J80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T07:40:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "71148d0db9d1fe1df6a1f43b04387255dfa5cea6",
+        "fork_repository": "PalomarArchive/igor-kortchemski--monotonicity-speed-biased-random-walk-palomar--59fb2c7c6aed",
+        "source_repository": "igor-kortchemski/monotonicity-speed-biased-random-walk-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2c363b19b37d1bdb6edd78e759dfe3f0af0fe3d656fe538c4ef709bafdca3cc3"
+}

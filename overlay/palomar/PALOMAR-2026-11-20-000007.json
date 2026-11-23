@@ -1,0 +1,68 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000007",
+  "version": 1,
+  "title": "Sharp bounds for indecomposable graphical-zonotope summands: main",
+  "abstract": "Principal path construction and simultaneous sharp bounds; exact 3-tree, clique-book, multipartite and lattice classifications. It also constructs, for every n ≥ 10, K5-free graphs of treewidth four with 3n − 5 edges supporting full-dimensional lattice indecomposable polytopal summands; no proper edge-subgraph supports a full-dimensional indecomposable polytopal weak summand.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "2505d4b11cf6f2c7d34e58ff830b8ff71c3fb3d9",
+  "project_path": "graphical_zonotopes_main_clean_status",
+  "declarations": [
+    "PalomarGraphicalMain.direction_bounds_polytopal",
+    "PalomarGraphicalMain.threeTree_classification_polytopal",
+    "PalomarGraphicalMain.admissible_threeTree_lattice_witness",
+    "PalomarGraphicalMain.PathResults.principal_path_theorem",
+    "PalomarGraphicalMain.clique_book_classification",
+    "PalomarGraphicalMain.SaturatedDirections.paper_theorem_7_12",
+    "PalomarGraphicalMain.DiamondBook.paper_theorem_8_1",
+    "PalomarGraphicalMain.SparseFamily.paper_theorem_8_2_polytopal",
+    "PalomarGraphicalMain.TwoHub.two_singleton_classification",
+    "PalomarGraphicalMain.four_partite_spanning_threeTrees",
+    "PalomarGraphicalMain.threeTree_lattice_dilation",
+    "PalomarGraphicalMain.unit_lattice_classification",
+    "PalomarGraphicalMain.optimal_k5_free_dilation",
+    "PalomarGraphicalMain.DoubledParts.principal_boolean_phase_theorem",
+    "PalomarGraphicalMain.zeta_injective",
+    "PalomarGraphicalMain.actualRootEdge_symm",
+    "PalomarGraphicalMain.zeta_add",
+    "PalomarGraphicalMain.zeta_smul"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52B11",
+      "52B12",
+      "05C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T05:25:25Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2505d4b11cf6f2c7d34e58ff830b8ff71c3fb3d9",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:32a2b13d5a384782c5c7d92f2459613fefc7efb375eb106d7a5d1f50aa5d3661"
+}

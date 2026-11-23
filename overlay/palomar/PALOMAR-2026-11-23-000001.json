@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000001",
+  "version": 1,
+  "title": "The localization scale of the block Anderson model in one dimension at arbitrary coupling and volume",
+  "abstract": "A Lean 4 / Mathlib proof of the main results of Yin, \"The Localization Scale of the Block Anderson Model in One Dimension at Arbitrary Coupling and Volume\" (arXiv:2611.09776). The model is H = (g (S + S^{-1}) tensor I_W + diag(V_1, ..., V_L)) / max{1, g} on C^L tensor C^W, with independent GUE blocks V_a of size W and the cyclic shift S of Z_L. Theorem 1.4: for 0 < kappa < 1/2 and all D, tau > 0, for all large W, every L >= 3 and every coupling g >= 0, the expected fraction of the eigenvalues in the bulk energy set J_{g,kappa,L} that are simple and whose eigenvector has localization length between W^{-tau} l and W^{tau} l, where l = min{WL, max{W, W^2 g^2}}, is at least 1 - W^{-D}. Corollary 1.5: if also L <= W^{B_L}, then with probability at least 1 - W^{-D} this holds for every eigenvalue in J_{g,kappa,L}. No result of another work is assumed; every result that the paper uses is proved in the library from Mathlib.",
+  "authors": [
+    "Jun Yin"
+  ],
+  "repository": "https://github.com/JYin80/Lean-LSBA1d_arXiv-2611.09776",
+  "commit": "0bf3b6f81d68fbd5f9a0cad60948d5a5490dab24",
+  "project_path": null,
+  "declarations": [
+    "LSBA.thm1_4",
+    "LSBA.cor1_5"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math-ph"
+    ],
+    "msc2020": [
+      "60B20",
+      "82B44",
+      "47B80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T00:51:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0bf3b6f81d68fbd5f9a0cad60948d5a5490dab24",
+        "fork_repository": "PalomarArchive/JYin80--Lean-LSBA1d_arXiv-2611.09776--f8bedbb60686",
+        "source_repository": "JYin80/Lean-LSBA1d_arXiv-2611.09776"
+      }
+    ]
+  },
+  "statement_hash": "sha256:26e81caaca0cdd02b5ce160421f997157ab56286e56f8b0d91a7249fbeb8623a"
+}

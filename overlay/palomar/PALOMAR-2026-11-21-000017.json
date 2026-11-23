@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000017",
+  "version": 2,
+  "title": "EML trees: zero-equivalence and root existence are undecidable, assuming Richardson's theorem",
+  "abstract": "The binary operator eml(x, y) = exp(x) - ln(y), with the constant 1 and a variable x, generates the elementary functions (Odrzywolek, arXiv:2603.21852). We formalize, in Lean 4 with Mathlib, a computable translation of Richardson expressions (built from rationals, pi, ln 2, x, +, *, sin, exp and |.|) into EML trees evaluated over the complex numbers with the principal logarithm. The translation preserves the value at every real x, including 0 and negative values, and no compiled tree ever applies log to 0 at any real input. Consequently, assuming Richardson's theorem as an explicit hypothesis, deciding whether an EML tree is identically zero on the reals, and deciding whether it has a real root, are both not computable. Both results also hold when log 0 is left undefined or is assigned any fixed value, so they do not depend on a convention for log 0. With the same compiler, three further problems are undecidable under the same hypothesis: whether two EML trees agree at every real x, whether a tree takes a negative real value at some real x, and whether a tree is constant on the reals (using continuity of Richardson expressions). The delicate part is controlling the branch cuts of the complex logarithm: signed arithmetic is carried out through positive quantities, pi and sin are obtained through complex values with imaginary parts kept inside (-pi, pi], and the absolute value is computed as a times the sign of a, where the sign is read off the branch cut of log without ever taking log 0.",
+  "authors": [
+    "Aritra Pramanik"
+  ],
+  "repository": "https://github.com/Aritra-Pramanik/eml-richardson",
+  "commit": "968d1d2bdf9d1fd63a348459452ee4e14726c467",
+  "project_path": null,
+  "declarations": [
+    "EmlRichardson.decE_encE",
+    "EmlRichardson.encE_decE",
+    "EmlRichardson.decR_encR",
+    "EmlRichardson.encR_decR",
+    "EmlRichardson.compiler_exists",
+    "EmlRichardson.eml_zero_undecidable_final",
+    "EmlRichardson.eml_root_undecidable_final",
+    "EmlRichardson.eml_zero_undecidable_partial",
+    "EmlRichardson.eml_root_undecidable_partial",
+    "EmlRichardson.eml_zero_undecidable_any",
+    "EmlRichardson.eml_root_undecidable_any",
+    "EmlRichardson.eml_equiv_undecidable",
+    "EmlRichardson.eml_neg_undecidable",
+    "EmlRichardson.eml_const_undecidable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "03D35",
+      "03B25",
+      "26A09",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T05:58:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "968d1d2bdf9d1fd63a348459452ee4e14726c467",
+        "fork_repository": "PalomarArchive/Aritra-Pramanik--eml-richardson--cd27d8167e1f",
+        "source_repository": "Aritra-Pramanik/eml-richardson"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4bb345fdb3a041ea9acb03aa1500c162d40c611029a135a6fc940ce9e8c4d498"
+}

@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000025",
+  "version": 1,
+  "title": "Sharp bounds for indecomposable graphical-zonotope summands: consequences",
+  "abstract": "Graphical-zonotope constructions, book spectra, prescribed-coordinate criteria and lattice decompositions, together with the sharp least positive real dilation admitting a full-dimensional lattice indecomposable summand for path joins and path cubes.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "5cf7a010db12bc8dbdf949562cbfcb3b27185476",
+  "project_path": "graphical_zonotopes_consequences_clean",
+  "declarations": [
+    "PalomarGraphicalConsequences.small_count_lattice_books",
+    "PalomarGraphicalConsequences.threshold_book_interval",
+    "PalomarGraphicalConsequences.two_threshold_four_bridge",
+    "PalomarGraphicalConsequences.two_threshold_five_bridge",
+    "PalomarGraphicalConsequences.book_upper_interval",
+    "PalomarGraphicalConsequences.lattice_dimension_spectrum",
+    "PalomarGraphicalConsequences.positive_dimension_spectrum",
+    "PalomarGraphicalConsequences.prescribed_coordinate_criterion",
+    "PalomarGraphicalConsequences.exponential_family",
+    "PalomarGraphicalConsequences.corollary_nine_four",
+    "PalomarGraphicalConsequences.one_singleton_decomposition",
+    "PalomarGraphicalConsequences.four_small_parts_decomposition",
+    "PalomarGraphicalConsequences.actualRootEdge_symm",
+    "PalomarGraphicalConsequences.PathJoin.adjacency_symm",
+    "PalomarGraphicalConsequences.boolean_decomposition_every_dimension"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52B11",
+      "52B12",
+      "05C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T16:42:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5cf7a010db12bc8dbdf949562cbfcb3b27185476",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5e97d929e28ba6e3f88dc292061eb8c1613525ffa09ff522ec334bb94131c28f"
+}

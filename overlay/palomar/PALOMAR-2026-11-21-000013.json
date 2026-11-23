@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000013",
+  "version": 1,
+  "title": "Formalization of Iwasawa Theory in Lean",
+  "abstract": "A formal proof of Iwasawa's classical class-number growth theorem. For an increasing tower of finite cyclic Galois extensions K_n/K of a number field with degrees p^n, the p-adic multiplicity of the class number of K_n equals mu*p^n + lambda*n + nu for all sufficiently large n, with natural mu and lambda and integer nu. The compared statement uses only Mathlib concepts. Its proof constructs the union as a Z_p-extension and discharges the Hilbert class field inputs using the external Nyll class field theory library. The library also contains the cyclotomic specialization. This formalizes a known theorem and makes no claim of a new mathematical result.",
+  "authors": [
+    "Jz Pan (acmepjz / acme_pjz)",
+    "caosip",
+    "njw",
+    "pelicanhere",
+    "Nick Adfor",
+    "Pietro Monticone",
+    "Shouxin Zhang"
+  ],
+  "repository": "https://github.com/acmepjz/lean-iwasawa",
+  "commit": "7666c16fe9ee69c3930435970f569b3d0b08b127",
+  "project_path": "IwasawalibCFT",
+  "declarations": [
+    "NumberField.multiplicity_classNumber_eq_of_finrank_eq_pow"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R23",
+      "11R37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T13:12:10Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7666c16fe9ee69c3930435970f569b3d0b08b127",
+        "fork_repository": "PalomarArchive/acmepjz--lean-iwasawa--3703da3cda4a",
+        "source_repository": "acmepjz/lean-iwasawa"
+      }
+    ]
+  },
+  "statement_hash": "sha256:29d8a83fd51d8e89d98f60bda35bc2e1805cbb32deb3c647c0f48a1d801660a4"
+}

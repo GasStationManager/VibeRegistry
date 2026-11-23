@@ -2,14 +2,14 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-11-07-000001",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-07-000001",
-  "version": 2,
+  "version": 3,
   "title": "The Lennon–Pittel conjecture on random stable matchings",
   "abstract": "We prove the Lennon–Pittel conjecture for balanced stable marriage with independent, uniform strict preferences. Let S_n count the stable complete matchings between two sides of size n. For every positive nonincreasing sequence epsilon_n tending to zero, the probability that S_n is at least epsilon_n times its expectation tends to one. This gives a lower-tail estimate at the scale of Pittel's first-moment asymptotic. An accompanying working paper is in preparation.",
   "authors": [
     "Bo Cowgill"
   ],
   "repository": "https://github.com/bocowgill/lennon-pittel",
-  "commit": "4a226289bd2d5c0c5f28b7768d0aabaf0e0e55e3",
+  "commit": "cf950d0596591bba912b1568aa394f99986f8191",
   "project_path": null,
   "declarations": [
     "LennonPittel.lennon_pittel_conjecture"
@@ -26,7 +26,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-11-09T02:24:46Z",
+  "published_at": "2026-11-20T12:19:29Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -40,11 +40,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "4a226289bd2d5c0c5f28b7768d0aabaf0e0e55e3",
+        "commit": "cf950d0596591bba912b1568aa394f99986f8191",
         "fork_repository": "PalomarArchive/bocowgill--lennon-pittel--98843913db2b",
         "source_repository": "bocowgill/lennon-pittel"
       }
     ]
   },
-  "statement_hash": "sha256:5c158512297c7113207c9df49ac37657249859c9a1c454182e7924a5fa1e3beb"
+  "statement_hash": "sha256:79fe6c0168697e3f148ca2743e9b9297733fbe9b92c31440e677bcdc2f265971"
 }

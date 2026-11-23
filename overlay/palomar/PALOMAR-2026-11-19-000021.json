@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000021",
+  "version": 1,
+  "title": "Inverse Greedy — five-vertex exponential-clock uniformity classification",
+  "abstract": "Formal classification of positive-rate independent exponential-clock random greedy maximal-independent-set uniformity for all finite simple graphs on at most five vertices: exactly the five-vertex path is excluded, up to graph isomorphism.",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "repository": "https://github.com/jfairfaxball-348/Inverse-Greedy",
+  "commit": "f4079bc46017e0b393f3678a0ab710eab1490116",
+  "project_path": null,
+  "declarations": [
+    "PalomarEGU.graphs_le_five_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C85",
+      "60C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T14:07:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f4079bc46017e0b393f3678a0ab710eab1490116",
+        "fork_repository": "PalomarArchive/jfairfaxball-348--Inverse-Greedy--2d78bbb79f10",
+        "source_repository": "jfairfaxball-348/Inverse-Greedy"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a7c85adddab420bf24efbee49d183cfc44e92ea0eee5b8a3d9fe75979b8d0fca"
+}

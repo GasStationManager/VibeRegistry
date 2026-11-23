@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000008",
+  "version": 1,
+  "title": "The Solovay-Kitaev theorem for Clifford+T words, with the Dawson-Nielsen exponent",
+  "abstract": "A machine-checked proof of the Solovay-Kitaev theorem for single-qubit Clifford+T circuits. A word is a finite sequence of the letters H, T and T^-1 (with T^-1 = T^7), and its value is the product of the letters' 2 x 2 matrices. There are constants K > 0 and e > 0 such that for every epsilon with 0 < epsilon <= e, every U in SU(2) is within epsilon of the value of a word of length at most K log(1/epsilon)^c, in the operator norm, where c = log 5 / log(3/2), about 3.97, is Dawson and Nielsen's exponent. A second theorem places c strictly between 3 and 4. The word approximates U itself, not U up to a phase. K and e are not computed. The proof was first completed in the author's csd-lean4 library on 6 October 2026 (commit 01e973e9). The theorem is classical and no priority is claimed for it.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/solovay-kitaev-lean",
+  "commit": "4579418fe09fefdfee33f54e018c854e14ff86fb",
+  "project_path": null,
+  "declarations": [
+    "solovay_kitaev",
+    "exponent_mem_Ioo"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "math.GR"
+    ],
+    "msc2020": [
+      "81P68",
+      "81P65",
+      "68Q12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T08:38:03Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4579418fe09fefdfee33f54e018c854e14ff86fb",
+        "fork_repository": "PalomarArchive/zblore--solovay-kitaev-lean--fce91b0dec44",
+        "source_repository": "zblore/solovay-kitaev-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5dc701d92beb0736f118182fb3d707ffd04fce6c1340ce6357783d12f3e4f952"
+}

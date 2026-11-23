@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000014",
+  "version": 1,
+  "title": "Irreducibility for symmetric Rademacher matrices",
+  "abstract": "A Lean 4 formalization of the stretched-exponential upper bound on the probability of reducibility over the rationals for the characteristic polynomial of a symmetric matrix with independent fair upper-triangular signs.",
+  "authors": [
+    "Tao Hu",
+    "Quanyu Tang"
+  ],
+  "repository": "https://github.com/QuanyuTang/symmetric-rademacher-irreducibility-palomar",
+  "commit": "989715eb14950af5c370843ec812f801eda73132",
+  "project_path": null,
+  "declarations": [
+    "PalomarBernoulli.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.NT"
+    ],
+    "msc2020": [
+      "60B20",
+      "12E05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T09:28:39Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "989715eb14950af5c370843ec812f801eda73132",
+        "fork_repository": "PalomarArchive/QuanyuTang--symmetric-rademacher-irreducibility-palomar--36e2b696fbcc",
+        "source_repository": "QuanyuTang/symmetric-rademacher-irreducibility-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:33a2e5a1d458a5333a89c3f8066478fe9ee70052a452d3d62540886b394db6ad"
+}

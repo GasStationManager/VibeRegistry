@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000005",
+  "version": 1,
+  "title": "An extriangulated category with no triangulated embedding",
+  "abstract": "A Lean 4 formalization, built on Mathlib, of the paper An extriangulated category with no triangulated embedding. Over every field k there is an essentially small k-linear extriangulated category with no triangulated embedding into a triangulated category in any universe, whose countable families of objects lie in extension-closed subcategories with algebraic realizations, and which is hereditary and Krull–Schmidt, has enough injectives and ℵ₁ isomorphism classes of indecomposables with endomorphism ring k, extension spaces of dimension at most one between indecomposables, and morphism spaces of countable dimension (Theorem A). It is the category C(D) attached to an inverse system D of vector spaces with surjective transition maps over an ordinal; C(D) has a triangulated embedding iff every projection lim D → D_i is surjective iff it has an algebraic realization (Theorem B). The library also proves Propositions 2.3, 4.4 and 4.6, Corollary 2.4, Example 4.2, Jech's Aronszajn tree and Bergman's lemma on linearized inverse limits.",
+  "authors": [
+    "Haruhisa Enomoto"
+  ],
+  "repository": "https://github.com/haruhisa-enomoto/extriangulated-triangulated-embedding",
+  "commit": "55753837fae8ae68dcaae3f1b366ae9c1dfc7e02",
+  "project_path": null,
+  "declarations": [
+    "ExtriangulatedRealization.Challenge.theoremA",
+    "ExtriangulatedRealization.Challenge.theoremB",
+    "ExtriangulatedRealization.Challenge.theoremB_necessity",
+    "ExtriangulatedRealization.Challenge.proposition_2_3",
+    "ExtriangulatedRealization.Challenge.corollary_2_4",
+    "ExtriangulatedRealization.Challenge.proposition_4_4",
+    "ExtriangulatedRealization.Challenge.proposition_4_6"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CT",
+      "math.RT",
+      "math.LO"
+    ],
+    "msc2020": [
+      "18G80",
+      "18G25",
+      "18E05",
+      "03E05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T06:18:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "55753837fae8ae68dcaae3f1b366ae9c1dfc7e02",
+        "fork_repository": "PalomarArchive/haruhisa-enomoto--extriangulated-triangulated-embedding--a9d953640c23",
+        "source_repository": "haruhisa-enomoto/extriangulated-triangulated-embedding"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3a40429cd16641c9ad304665ba15811167e7eac29c5dc8da0eaf818d686145a1"
+}

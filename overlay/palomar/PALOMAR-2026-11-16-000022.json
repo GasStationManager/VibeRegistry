@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000022",
+  "version": 1,
+  "title": "OEIS A339946 and A361717: Bala's prime-level supercongruences",
+  "abstract": "Let a_m(n) = [x^(mn)] 1/P_n((1−x)/(1+x)), where P_n is the Legendre polynomial; OEIS A339946 is the case m = 1. The package proves Peter Bala's 2022 conjecture that a_m(p) ≡ a_m(1) = 2 (mod p^5) for every m ≥ 1 and every prime p ≥ 7, and with it his 2020 conjecture a(p) ≡ a(1) (mod p^5) for A339946. It shows that the range p ≥ 7 is optimal: a_m(5) ≡ 2 + 625m² (mod 5^5), so the congruence at p = 5 holds exactly when 5 divides m. It also proves Bala's Conjecture 2 for OEIS A361717: Σ_{k=0}^{p−2} C(p−2, k)² C(p−1+k, k) ≡ 1 − 2p − p² (mod p³) for every prime p ≠ 3. Bala's entry lists A103882 and the Apéry numbers A005258 and A005259 as coefficients of similar Legendre-polynomial expressions that satisfy supercongruences u(np^k) ≡ u(np^(k−1)) (mod p^(3k)), and it presents a(p) ≡ a(1) (mod p^5) as a stronger congruence. A361717 is of the same type: A005258(n) = [x^n] (1−x)^(−1) P_n((1+x)/(1−x)) and A361717(n+1) = [x^n] (1−x)^(−2) P_n((1+x)/(1−x)) (Bala, December 2020 and August 2026). Supercongruences of Apéry-like sequences are a research topic; see Straub (Algebra & Number Theory, 2014) and the references there.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+  "project_path": null,
+  "declarations": [
+    "OeisA339946.am_congr",
+    "OeisA339946.a339946_congr",
+    "OeisA339946.a361717_conj2",
+    "OeisA339946.am_five",
+    "OeisA339946.am_five_congr_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A10",
+      "11A07",
+      "11B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T16:32:43Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9336e11a8d69e9afd37e889816a720fa2d1e9a9737d15b6c7cbeaa89ffce9c7f"
+}

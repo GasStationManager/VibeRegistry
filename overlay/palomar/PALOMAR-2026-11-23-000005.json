@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000005",
+  "version": 1,
+  "title": "A verified finite oracle reduction for Hamiltonicity",
+  "abstract": "Concrete weighted 3-CNF queries with exact model-count preservation, explicit formula/query/randomness bounds and a finite fair-bit one-sided exact-count-oracle guarantee for simple rooted Hamiltonian graphs. No machine-runtime, space, recovery or ETH conclusion.",
+  "authors": [
+    "Will Strinz"
+  ],
+  "repository": "https://github.com/wstrinz/hamiltonicity-oracle-reduction",
+  "commit": "18fee0e66fdaa4705eae0b2d1494e7abaf31de9c",
+  "project_path": null,
+  "declarations": [
+    "HamiltonicityOracle.query_exact_count",
+    "HamiltonicityOracle.query_size",
+    "HamiltonicityOracle.fair_sample_space",
+    "HamiltonicityOracle.finite_oracle_reduction"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.DS",
+      "math.CO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-23T02:47:22Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "18fee0e66fdaa4705eae0b2d1494e7abaf31de9c",
+        "fork_repository": "PalomarArchive/wstrinz--hamiltonicity-oracle-reduction--b297950dcd97",
+        "source_repository": "wstrinz/hamiltonicity-oracle-reduction"
+      }
+    ]
+  },
+  "statement_hash": "sha256:40be6c57658876d95c62e38cc8c0d02af4ab5c719d207f247398e0a79a1db37a"
+}

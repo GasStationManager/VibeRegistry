@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000010",
+  "version": 1,
+  "title": "Certified Positivity: the explicit formula for Suzuki's zeta screw function, and positive semidefiniteness of its Gram kernel on every finite grid under the Riemann Hypothesis",
+  "abstract": "Suzuki's screw function of the Riemann zeta function is the even function Psi defined, for t >= 0, as an archimedean profile minus the von Mangoldt weighted prime sum over n <= e^t of Lambda(n)/sqrt(n) times (t - log n); its Krein Gram kernel is G(t,u) = Psi(t) + Psi(u) - Psi(t-u). This entry uses exactly the Lean definitions of Psi and G from the registered entry PALOMAR-2026-11-14-000017 (RequestProject/V5_1.lean) and proves two results about them in Lean 4 and Mathlib.\n(1) Explicit formula, unconditional. For every real t >= 0, Psi(t), viewed as a complex number, equals the unconditionally convergent sum (a tsum over the subtype of zeros) over the nontrivial zeros rho of riemannZeta, that is the zeros with 0 < Re rho < 1, of m(rho) (exp((rho - 1/2) t) - 1) / (rho - 1/2)^2, where m(rho) is the analytic order of riemannZeta at rho. This is Suzuki's zero-sum representation of the screw function (arXiv:2206.03682, Theorem 1.1(2), eq. (1.3)). In Lean: ScrewRH.Psi_eq_tsum_zeros (t : R) (ht : 0 <= t) : ((V5_1.Psi t : R) : C) = tsum over rho in Z of zeroTerm t rho.\n(2) Gram positivity, conditional on the Riemann Hypothesis. Assuming Mathlib's RiemannHypothesis (as a hypothesis), for every N and every grid t : Fin N -> R, the N by N matrix (G(t_i, t_j)) is positive semidefinite in the quadratic-form sense: x^T M x >= 0 for every real vector x. In Lean: ScrewRH.screw_gram_psd_of_RH : RiemannHypothesis -> for all (N : Nat) (t : Fin N -> R), Horizon.IsPSDq (Matrix.of fun i j => V5_1.G (t i) (t j)). This is the direction RH implies positivity of Suzuki's Theorem 1.2 (that -Psi is a screw function in Krein's sense), restricted to finite grids. Both compared results use only propext, Quot.sound and Classical.choice.\nCombined with a Lean proof of RiemannHypothesis, (2) becomes the unconditional statement that the Gram matrix of G is positive semidefinite on every finite grid. Such a proof was announced by Levent Alpöge in November 2026 and has been reported compiled and kernel-checked by several independent parties, on Lean v4.33.1. This entry does not import that proof and makes no claim about it; result (2) is compared and verified here only as the implication from Mathlib's RiemannHypothesis.\nSignificance. The registered entry certifies positivity of the genuine screw kernel on explicit grids (three Gram matrices at fixed rational nodes); this entry upgrades that, conditionally on RiemannHypothesis, to every finite grid. It is to our knowledge the first Lean formalization of Suzuki's zero-sum representation of the screw function and of the direction RH implies screw-function positivity. Scope: positive semidefinite, not strictly positive definite; real test vectors (for this real symmetric kernel equivalent to Suzuki's complex condition (1.5), but the complex form is not stated); the converse direction (positivity implies RH) is not formalized; and nothing is claimed about the Riemann Hypothesis itself.",
+  "authors": [
+    "Rohan Badade"
+  ],
+  "repository": "https://github.com/gnostrich/certified-positivity",
+  "commit": "a0d74d09db4d3058a1c99cd8ab9fcfee4bbc7fa5",
+  "project_path": null,
+  "declarations": [
+    "ChallengeScrewRH.Psi_eq_tsum_zeros",
+    "ChallengeScrewRH.screw_gram_psd_of_RH"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.LO"
+    ],
+    "msc2020": [
+      "11M26",
+      "11M06",
+      "42A82",
+      "68V20",
+      "15B48"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T08:13:56Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a0d74d09db4d3058a1c99cd8ab9fcfee4bbc7fa5",
+        "fork_repository": "PalomarArchive/gnostrich--certified-positivity--79bf1f217491",
+        "source_repository": "gnostrich/certified-positivity"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fdd5155110e78b9509a28ed664828a8fc1035da71b6df38ddb0f279fb982ad94"
+}

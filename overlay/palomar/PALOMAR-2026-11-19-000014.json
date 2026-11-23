@@ -1,0 +1,98 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000014",
+  "version": 1,
+  "title": "Characterizations of polymatroidal ideals",
+  "abstract": "A monomial ideal is polymatroidal exactly when every monomial localization has an actual linear free resolution. Universal pure reverse lexicographic colon quotients characterize the minimal generator antichain even without prior equigeneration. Ordinary ideal integral closedness together with local equigeneration gives another characterization. The real convex hull equals the full lower-rank polytope, and the actual ideal integral closure is the ideal of all its integer bases. A genuine finite linear presentation together with the prescribed distance-four exchange condition also characterizes polymatroidality. The selected consequences include genuine quotient-socle recognition, field independence, localization of universal quotients, every monomial term order, exact retained-variable Koszul homological-position tests through the degree/dimension and triangular cutoffs of Theorems4.2/4.9, exact codimension bands and attained minimum testing-set sizes, exact necessary and sufficient variable-order coverage, sharp test-number formulas and bounds, fixed-degree logarithmic asymptotics, and sharp uniform rejection fractions with attained examples and independent repeated-test bounds.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "921727a9d6ecd21cb68951c9c07787ddfb8c5ee2",
+  "project_path": "polymatroidal_ideals",
+  "declarations": [
+    "Characterizations.exists_degree_test_size",
+    "Characterizations.exists_universal_test_size",
+    "Characterizations.monomialIdeal_polymatroidal_iff_local_linear",
+    "Characterizations.polymatroidal_iff_universal_pure_revlex",
+    "Characterizations.local_linearResolutions_field_independent",
+    "Characterizations.polymatroidal_iff_integrallyClosed_localEquigenerated",
+    "Characterizations.polymatroidal_iff_all_termOrder_linearQuotients",
+    "Characterizations.polymatroidal_iff_universal_revlex",
+    "Characterizations.universalTestNumber_ge_four",
+    "Characterizations.universalTestNumber_one",
+    "Characterizations.universalTestNumber_two",
+    "Characterizations.universalTestNumber_three",
+    "Characterizations.orderTestNumber_small_degree",
+    "Characterizations.orderTestNumber_small_dimension",
+    "Characterizations.orderTestNumber_two",
+    "Characterizations.orderTestNumber_three",
+    "Characterizations.orderTestNumber_high_degree",
+    "Characterizations.orderTestNumber_logarithmic_upper",
+    "Characterizations.orderTestNumber_counting_lower",
+    "Characterizations.orderTestNumber_signature_bound",
+    "Characterizations.orderTestNumber_isTheta_log",
+    "Characterizations.rejection_fraction_lower_bound",
+    "Characterizations.exists_sharp_rejection_family",
+    "Characterizations.rejection_fraction_displayed",
+    "Characterizations.exists_sharp_rejection_displayed",
+    "Characterizations.independent_tests_miss_bound",
+    "Characterizations.rejection_fraction_three",
+    "Characterizations.exists_sharp_rejection_three",
+    "Characterizations.rejection_fraction_two",
+    "Characterizations.exists_sharp_rejection_two",
+    "Characterizations.polymatroidal_iff_pure_localization_band",
+    "Characterizations.polymatroidal_iff_localization_band",
+    "Characterizations.universalOrderTests_iff_coverage",
+    "Characterizations.degreeOrderTests_iff_coverage",
+    "Characterizations.polymatroidal_iff_local_socles",
+    "Characterizations.universal_pure_revlex_localization",
+    "Characterizations.Isolators.localizationTestSufficient_iff",
+    "Characterizations.Isolators.pureLocalizationTestSufficient_iff",
+    "Characterizations.Isolators.localizationTest_minimum",
+    "Characterizations.Isolators.pureLocalizationTest_minimum",
+    "Characterizations.convexHull_generators_eq_lowerRankPolytope",
+    "Characterizations.integralOverIdeal_iff_mem_canonicalLowerBases",
+    "Characterizations.integralClosure_set_eq",
+    "Characterizations.exchange_of_order_coverage",
+    "Characterizations.Presentation.polymatroidal_iff_linearPresentation_distanceFour",
+    "PalomarPolymatroidal.degree_cutoff_iff",
+    "PalomarPolymatroidal.degree_dimension_cutoff_iff",
+    "PalomarPolymatroidal.triangular_cutoff_iff"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AC",
+      "math.CO"
+    ],
+    "msc2020": [
+      "13D02",
+      "13F20",
+      "05B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T07:08:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "921727a9d6ecd21cb68951c9c07787ddfb8c5ee2",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:31870498502d89c000da26cd2cde37ee5019846d2f389035eac7db5753370e34"
+}

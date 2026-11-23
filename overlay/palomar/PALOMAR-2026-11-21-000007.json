@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000007",
+  "version": 1,
+  "title": "The planar separator theorem and nested dissection, with a linear-time separator program on a word RAM, in Lean 4",
+  "abstract": "A Lean 4 and Mathlib formalization of the planar separator theorem of Lipton and Tarjan and of nested dissection. A plane graph is a Mathlib simple graph on a finite vertex type with a rotation system (a permutation of the darts cycling the darts at each vertex) such that the graph is connected and Euler's formula |V| + |F| = |E| + 2 holds for the set F of faces (so it has at least one edge: faces are cycles of darts, and the one-vertex graph has none). Eight theorems are compared: (1) the separator theorem with constant 6: for nonnegative vertex weights of total at most 1, a set of at most 6 sqrt(n) vertices splits the n vertices into two parts with no edge between them, each of weight at most 2/3; (2) the same for every set U of vertices, with at most 6 sqrt(|U|) vertices of U; (3) every plane graph has a separator tree covering all vertices in which every subtree with k vertices has a separator (or leaf set) and a boundary of at most 50000 sqrt(k) vertices each and parts of at most 2k/3 vertices; (4) the same for the square of a plane graph of maximum degree at most D, with 40 (1062 (D + 1)^2 + 1) in place of 50000; (5) for any separator tree with constants alpha and beta, the filled graph of elimination in its nested dissection order has at most alpha (alpha + beta) n (1 + log_{3/2} n) edges; (6), (7) for every plane graph, and for the square of every plane graph of maximum degree at most D, there are a separator tree covering all vertices and the permutation listing its nested dissection order such that the filled graph of that order has at most 2 T^2 n (1 + log_{3/2} n) edges (T as in (3) and (4)), and, for every matrix over a field whose off-diagonal nonzero entries are edges of the graph, permuted into that order, elimination restricted to the filled graph computes exactly the matrix after the n in-place elimination steps M_ij - M_ik M_kk^(-1) M_kj, with at most 48 T^3 n^(3/2) ring operations counted in a writer monad that charges every addition, subtraction, negation, multiplication and inversion of the explicit algorithm; the inverse is Lean's totalized field inverse (0^(-1) = 0), so these steps are Gaussian elimination without pivoting when the pivots are nonzero and leave the matrix unchanged at a zero pivot; (8) one fixed program for an explicit word RAM (unit cost per instruction, natural registers and memory cells bounded by W along the run) prints, for a plane graph with n vertices, m darts and natural vertex weights, a separator of at most 6 sqrt(n) + 3 vertices whose two parts each weigh at most 2/3 of the total, within 320m + 191n + 403 steps for word bounds at least 16m + 12n + 3 (total weight) + 22. The proofs use only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/PlanarSeparator-NestedDissection-WordRAM-Lean4",
+  "commit": "0b5373fd782ef11c5b049f03fa69506948092c05",
+  "project_path": null,
+  "declarations": [
+    "PlanarSeparator.separator_theorem",
+    "PlanarSeparator.separator_theorem_induced",
+    "PlanarSeparator.sepTree_exists",
+    "PlanarSeparator.square_sepTree_exists",
+    "PlanarSeparator.fill_bound",
+    "PlanarSeparator.planar_nested_dissection",
+    "PlanarSeparator.square_nested_dissection",
+    "PlanarSeparator.separator_machine"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.DS"
+    ],
+    "msc2020": [
+      "05C10",
+      "05C85",
+      "65F05",
+      "65F50",
+      "68Q25",
+      "68W40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T06:10:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "0b5373fd782ef11c5b049f03fa69506948092c05",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--PlanarSeparator-NestedDissection-WordRAM-Lean4--199851cfb370",
+        "source_repository": "RBarish-UTokyo/PlanarSeparator-NestedDissection-WordRAM-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9e3a3020ca30dadd1de1f1c7dba664d314169bf6ab978bd5e0e9023f763979e8"
+}

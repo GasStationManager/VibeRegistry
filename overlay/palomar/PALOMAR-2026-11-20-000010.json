@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000010",
+  "version": 1,
+  "title": "The Golden Ratio as the Sharp Mahler Bound for Nonreciprocal Polynomials with Odd Coefficients",
+  "abstract": "Every integer polynomial with all coefficients odd that differs from both signs of its reverse has multiplicative Mahler measure at least (1 + √5)/2. The polynomial x² − x − 1 meets all these hypotheses and attains the bound.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/golden-mahler-bound-odd",
+  "commit": "a433fcc7d66394587f5d66347178dbe172a1e787",
+  "project_path": null,
+  "declarations": [
+    "GoldenMahlerEntry.odd_mahler_bound",
+    "GoldenMahlerEntry.golden_quadratic_attains"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R09",
+      "11C08"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T10:18:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a433fcc7d66394587f5d66347178dbe172a1e787",
+        "fork_repository": "PalomarArchive/stalex444--golden-mahler-bound-odd--7f68a210afb1",
+        "source_repository": "stalex444/golden-mahler-bound-odd"
+      }
+    ]
+  },
+  "statement_hash": "sha256:214e932d191098f0a1d51dedcd222fb9a322e4a19e65e20dd2c6a2378f41b323"
+}

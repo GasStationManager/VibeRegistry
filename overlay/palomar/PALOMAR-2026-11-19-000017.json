@@ -1,0 +1,85 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000017",
+  "version": 1,
+  "title": "Sharp bounds for indecomposable graphical-zonotope summands: separator",
+  "abstract": "Complete positive-response gluing, exact kernel dimension and extremality criterion, unique positive relation, closing-boundary lift invariance, and induced/clique separator capacities.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "cd3e377f195c808c860c445c420fd3ef388e46b2",
+  "project_path": "graphical_zonotopes_separator",
+  "declarations": [
+    "PalomarGraphicalSeparator.Separator.assembled_boundary_lift_transfer",
+    "PalomarGraphicalSeparator.Separator.positive_response_gluing_finite",
+    "PalomarGraphicalSeparator.Separator.induced_separator_capacity_finite",
+    "PalomarGraphicalSeparator.Separator.clique_separator_capacity_finite",
+    "PalomarGraphicalSeparator.Separator.Partition.clique_unique_branch",
+    "PalomarGraphicalSeparator.Separator.globalFunction_mem",
+    "PalomarGraphicalSeparator.Separator.componentPartition",
+    "PalomarGraphicalSeparator.zeta_injective",
+    "PalomarGraphicalSeparator.Separator.positive_response_gluing",
+    "PalomarGraphicalSeparator.zeta_add",
+    "PalomarGraphicalSeparator.zeta_smul",
+    "PalomarGraphicalSeparator.Separator.branchOf_spec",
+    "PalomarGraphicalSeparator.coefficientFill_add",
+    "PalomarGraphicalSeparator.coefficientFill_smul",
+    "PalomarGraphicalSeparator.graphicalSpace_zero",
+    "PalomarGraphicalSeparator.graphicalSpace_add",
+    "PalomarGraphicalSeparator.graphicalSpace_smul",
+    "PalomarGraphicalSeparator.delta_add",
+    "PalomarGraphicalSeparator.delta_smul",
+    "PalomarGraphicalSeparator.Gluing.response_add",
+    "PalomarGraphicalSeparator.Gluing.response_smul",
+    "PalomarGraphicalSeparator.Gluing.privateKernel_zero",
+    "PalomarGraphicalSeparator.Gluing.privateKernel_add",
+    "PalomarGraphicalSeparator.Gluing.privateKernel_smul",
+    "PalomarGraphicalSeparator.Polyhedral.tightKernel_zero",
+    "PalomarGraphicalSeparator.Polyhedral.tightKernel_add",
+    "PalomarGraphicalSeparator.Polyhedral.tightKernel_smul",
+    "PalomarGraphicalSeparator.Separator.joinCoordinates_add",
+    "PalomarGraphicalSeparator.Separator.joinCoordinates_smul",
+    "PalomarGraphicalSeparator.Separator.privateEmbed_add",
+    "PalomarGraphicalSeparator.Separator.privateEmbed_smul",
+    "PalomarGraphicalSeparator.boundarySlack_add",
+    "PalomarGraphicalSeparator.boundarySlack_smul",
+    "PalomarGraphicalSeparator.Separator.boundaryEmbed_smul",
+    "PalomarGraphicalSeparator.Separator.boundaryEmbed_add"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52B11",
+      "52B12",
+      "05C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T08:12:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cd3e377f195c808c860c445c420fd3ef388e46b2",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3995680903b505615c4dc122c6e1e0b03c7eb5fdeb20e5373ff06889fefe354c"
+}

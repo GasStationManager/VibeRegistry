@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000010",
+  "version": 1,
+  "title": "The sharp vertex bound for conditional decomposability",
+  "abstract": "For every dimension d at least 3, the least number of vertices of a conditionally Minkowski decomposable convex d-polytope is 4d-4. The formalization proves the universal lower bound, all-dimensional attainment, the literal least-number formulation, and the stronger statement that below this threshold decomposability is determined by the face lattice. Polytopes are actual finite convex hulls with their extreme vertices, and Minkowski summands may have any affine dimension.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "d56c76be36b7748817af351d26e547fec17b1310",
+  "project_path": "conditional_decomposability",
+  "declarations": [
+    "Papers.Polytopes.conditional_decomposability_sharp",
+    "Papers.Polytopes.conditional_vertex_count_isLeast",
+    "Papers.Polytopes.decomposability_determined_by_face_lattice_below_threshold",
+    "Papers.Polytopes.decomposable_iff_of_face_iso_below_threshold",
+    "Papers.Polytopes.conditional_decomposability_attainment"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52B05",
+      "52B11"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T05:27:44Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d56c76be36b7748817af351d26e547fec17b1310",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:985d0997b07912045c07de9f89203b91439e39b84722f28810bc2eeaa403f503"
+}

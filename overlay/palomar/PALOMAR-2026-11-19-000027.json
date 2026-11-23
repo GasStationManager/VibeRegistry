@@ -1,0 +1,77 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000027",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000027",
+  "version": 1,
+  "title": "Sharp bounds for indecomposable graphical-zonotope summands: spectra",
+  "abstract": "Support and separator constraints for indecomposable graphical-zonotope summands, planar classification, and exact dimension spectra for 3-trees and partial 3-trees, with lattice attainment and intrinsic incidence forests. Includes tree-join and three-hub book dimension formulas, Hamiltonian 3-tree lattice witnesses, and K5-free graphs with full-dimensional indecomposable lattice weak summands but no admissible spanning 3-tree.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "8d31bfd25b5aa713bcc1bc43f5b7c9d4c8d23889",
+  "project_path": "graphical_zonotopes_spectra_clean",
+  "declarations": [
+    "PalomarGraphicalSpectra.paper_corollary_5_2",
+    "PalomarGraphicalSpectra.triangle_components_le_three",
+    "PalomarGraphicalSpectra.threeTree_dimension_and_spectrum",
+    "PalomarGraphicalSpectra.partial_threeTree_piecewise_maximum",
+    "PalomarGraphicalSpectra.partial_threeTree_full_dimension_spectrum",
+    "PalomarGraphicalSpectra.paper_corollary_6_9_tree_join",
+    "PalomarGraphicalSpectra.partial_threeTree_support_classification",
+    "PalomarGraphicalSpectra.three_hub_book_maximum",
+    "PalomarGraphicalSpectra.paper_corollary_8_5",
+    "PalomarGraphicalSpectra.refined_support_of_dimension_ge_three",
+    "PalomarGraphicalSpectra.planar_full_iff_threeTree",
+    "PalomarGraphicalSpectra.planar_component_dimension_spectrum",
+    "PalomarGraphicalSpectra.actualRootEdge_symm",
+    "PalomarGraphicalSpectra.PathJoin.adjacency_symm",
+    "PalomarGraphicalSpectra.tetrahedronIntersection_symm",
+    "PalomarGraphicalSpectra.fourFamilyEdges_symm",
+    "PalomarGraphicalSpectra.TreeJoin.hubAdjacency_symm",
+    "PalomarGraphicalSpectra.TreeJoin.hubAdjacency_irrefl",
+    "PalomarGraphicalSpectra.incidenceAdjacency_symm",
+    "PalomarGraphicalSpectra.incidenceAdjacency_irrefl",
+    "PalomarGraphicalSpectra.threeTree_incidence_isTree",
+    "PalomarGraphicalSpectra.partial_threeTree_incidence_isAcyclic",
+    "PalomarGraphicalSpectra.hamiltonian_threeTree_lattice_witness",
+    "PalomarGraphicalSpectra.planar_full_iff_threeTree_finite",
+    "PalomarGraphicalSpectra.planar_component_dimension_spectrum_finite",
+    "PalomarGraphicalSpectra.partial_threeTree_polytope_support",
+    "PalomarGraphicalSpectra.induced_admissible_threeTree_witness"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52B11",
+      "52B12",
+      "05C10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T17:32:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "8d31bfd25b5aa713bcc1bc43f5b7c9d4c8d23889",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:02e813821297e2713ec8718fb1d75ce422150063159308cfc154ab9efd8ffefd"
+}

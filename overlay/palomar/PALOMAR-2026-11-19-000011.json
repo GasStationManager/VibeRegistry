@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000011",
+  "version": 1,
+  "title": "Universal cold spots of E8 and related lattices",
+  "abstract": "For E6, E8, the dual E7 lattice, the integral Barnes-Wall lattice BW16, and D_n plus in every even dimension n at least eight, the global minima of every positive-parameter Gaussian lattice sum are precisely all deep holes. The result extends to arbitrary nonzero positive mixtures whenever the literal nonnegative energy is finite at all ambient points. The full squared covering-radius table is proved with actual attainment: 4/3, 1, 7/8, 3, and n/8 in the respective normalizations.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "9fcbca1143471e6e25c337def9897b58377e0b4c",
+  "project_path": "cold_spots",
+  "declarations": [
+    "PalomarColdSpots.lattice_theorem_1_1",
+    "PalomarColdSpots.lattice_covering_radius_table",
+    "PalomarColdSpots.lattice_corollary_1_2",
+    "PalomarColdSpots.eisEmbed_zero_proof",
+    "PalomarColdSpots.eisEmbed_add_proof",
+    "PalomarColdSpots.zeroSum_zero_proof",
+    "PalomarColdSpots.zeroSum_add_proof",
+    "PalomarColdSpots.zeroSum_smul_proof",
+    "PalomarColdSpots.project8_zeroSum_proof"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.NT"
+    ],
+    "msc2020": [
+      "52C07",
+      "11H31"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T06:08:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9fcbca1143471e6e25c337def9897b58377e0b4c",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b9c031fd63ba38b7066a05aed1116cf7567ecf0e64ffa46a852431b7e69f8cd5"
+}

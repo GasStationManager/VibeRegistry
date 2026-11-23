@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000006",
+  "version": 1,
+  "title": "The Kreisel-Kurz heptagon: seven points in the plane, no three on a line, no four on a circle, with integer distances",
+  "abstract": "A machine-checked proof that there are seven points in the Euclidean plane, no three on a line and no four on a circle, whose 21 pairwise distances are all integers. This is the case n = 7 of Erdős Problem 213, which asks whether such sets exist for every n; for n >= 8 the question is open, and seven is the largest size known. The proof checks the integral heptagon of diameter 22270 found by Kreisel and Kurz (2008), using the exact coordinates they give, each of the form (a, b sqrt 2002) with a, b rational. Writing every point this way reduces the three conditions to integer identities: each squared distance, each triangle's cross product and each four-point circle determinant equals an explicit integer times a power of 2227 (and, for the last two, sqrt 2002), and the kernel checks those integers with decide. The geometric half proves that a collinear triple has zero cross product and that four concyclic points have zero circle determinant. The construction is classical and no mathematical priority is claimed. It is the statement erdos_213.variants.KK08 of Formal Conjectures, which marks it research solved.",
+  "authors": [
+    "Finn Doolan"
+  ],
+  "repository": "https://github.com/finndoolan-m/erdos-213-heptagon",
+  "commit": "9b88098545008bd15b6cf4aaf2cc831337c05d56",
+  "project_path": null,
+  "declarations": [
+    "Erdos213.erdos_213.variants.KK08"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.CO"
+    ],
+    "msc2020": [
+      "52C10",
+      "11D09"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T06:27:08Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9b88098545008bd15b6cf4aaf2cc831337c05d56",
+        "fork_repository": "PalomarArchive/finndoolan-m--erdos-213-heptagon--e35e85bd8f41",
+        "source_repository": "finndoolan-m/erdos-213-heptagon"
+      }
+    ]
+  },
+  "statement_hash": "sha256:41d1258bef2cb8364d1b30a48205d6c99182dca92affab173be6ea761090b442"
+}

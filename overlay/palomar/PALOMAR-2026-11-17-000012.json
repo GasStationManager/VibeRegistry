@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000012",
+  "version": 1,
+  "title": "Infinite Auslander–Reiten components over perfect fields",
+  "abstract": "An unconditional Lean proof that a representation-infinite finite-dimensional algebra over a perfect field has infinitely many connected Auslander–Reiten components, using actual finite-dimensional left modules and radical-square arrows.",
+  "authors": [
+    "Wen Chang",
+    "Quanyu Tang"
+  ],
+  "repository": "https://github.com/QuanyuTang-alt/c3-perfect-field-palomar",
+  "commit": "26f6b51626baa0aa1040e1acf5b214219e06a176",
+  "project_path": null,
+  "declarations": [
+    "PalomarC3.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RT",
+      "math.RA"
+    ],
+    "msc2020": [
+      "16G60",
+      "16G10",
+      "16G20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T13:28:05Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "26f6b51626baa0aa1040e1acf5b214219e06a176",
+        "fork_repository": "PalomarArchive/QuanyuTang-alt--c3-perfect-field-palomar--0747ce40fe13",
+        "source_repository": "QuanyuTang-alt/c3-perfect-field-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:07b3922a02753c5dd03b65bb76e720683d8cac72a9241d4def3c2b94654ee869"
+}

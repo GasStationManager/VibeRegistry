@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000016",
+  "version": 1,
+  "title": "Regular induced subgraphs in bounded independent-edge arrays",
+  "abstract": "Lean formalization of regular induced subgraph bounds for finite random graphs with independent, possibly unequal edge probabilities bounded away from zero and one. The selected theorems give two logarithmic lower bounds, and exact-order guarantees for arrays with equal expected degrees, Lipschitz kernels, and bounded-rank symmetric completions. The library also develops the degree-vector estimates, the overlap second moment, and a product model with matching square-root bounds.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/Math-Formalization",
+  "commit": "251dd555eb636ac0eddb2387b348bad7f5539894",
+  "project_path": "combinatorics/bounded-independent-edge-regular-subgraphs",
+  "declarations": [
+    "BoundedEdgeRegularSubgraphs.theorem1_1_arbitrary",
+    "BoundedEdgeRegularSubgraphs.theorem1_1_equalDegrees",
+    "BoundedEdgeRegularSubgraphs.theorem1_1_lipschitz",
+    "BoundedEdgeRegularSubgraphs.theorem1_1_lowRank"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C80",
+      "05C07",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T07:28:38Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "251dd555eb636ac0eddb2387b348bad7f5539894",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--Math-Formalization--4c88ddbef95a",
+        "source_repository": "Arthur742Ramos/Math-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b6c15201fae3638364b9a1bf7a4eed8748ea5cd1063ceddb3c6d0512428192b5"
+}

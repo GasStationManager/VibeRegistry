@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000036",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000036",
+  "version": 1,
+  "title": "Power loss for the local Mizohata–Takeuchi estimate on smooth hypersurfaces",
+  "abstract": "Lean 4 formalization of the following power-type loss in the local  Mizohata–Takeuchi estimate. For each $0<\\beta\\le 1$, there is an exponent $\\alpha_\\beta>0$ such that, in every dimension $d\\ge 1$, each $C^{2,\\beta}$ hypersurface $\\Sigma\\subset\\mathbb{R}^{d+1}$ whose second fundamental form is nonzero at some point satisfies $\\mathcal{C}_\\Sigma(R)\\ge c_\\Sigma R^{\\alpha_\\beta}$ for all $R\\ge R_\\Sigma$. Here $\\mathcal{C}_\\Sigma(R)$ is the local Mizohata–Takeuchi constant, and the positive constant $c_\\Sigma$ and threshold $R_\\Sigma$ may depend on $\\Sigma$.",
+  "authors": [
+    "Hannah Cairo",
+    "Inbo Gottlieb Fenves",
+    "Vjekoslav Kovač",
+    "Itamar Oliveira",
+    "Dmitrii Zakharov",
+    "Ruixiang Zhang"
+  ],
+  "repository": "https://github.com/VjekoKovac/lean-mt",
+  "commit": "385e57cbe89355213183e3ff1f4442d1ecc4fc85",
+  "project_path": null,
+  "declarations": [
+    "MT.powerlossMT"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.AP"
+    ],
+    "msc2020": [
+      "42B10",
+      "44A12",
+      "11B30",
+      "11R80"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T22:17:55Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "385e57cbe89355213183e3ff1f4442d1ecc4fc85",
+        "fork_repository": "PalomarArchive/VjekoKovac--lean-mt--5c0ec11e5f50",
+        "source_repository": "VjekoKovac/lean-mt"
+      }
+    ]
+  },
+  "statement_hash": "sha256:8c3a4ac52a300b459ac9e0d62c47201890f272a81506f7e54ccbba4c7cd7f3d7"
+}

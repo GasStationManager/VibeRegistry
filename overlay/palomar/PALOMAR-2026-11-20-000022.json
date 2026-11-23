@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000022",
+  "version": 1,
+  "title": "The Unfair 0–1 Polynomial Conjecture for Trinomial Factors",
+  "abstract": "If a product of two monic real polynomials with nonnegative coefficients is binary and one factor has exactly three nonzero coefficients, both factors are binary. Two independent finitely supported integer laws are each uniform on their support when their sum is uniform on its support and one law has exactly three support points. This formalization uses Fourier series.",
+  "authors": [
+    "Alessandro Baravelli"
+  ],
+  "repository": "https://github.com/esonde/unfair-polynomials-conjecture",
+  "commit": "7241a53bed334df9cf8ef635d51e32ae29706a9e",
+  "project_path": "lean/v2",
+  "declarations": [
+    "UnfairTrinomial.trinomial_factor",
+    "UnfairTrinomial.uniform_of_independent_random_variables"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "11C08",
+      "11B83"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T20:33:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7241a53bed334df9cf8ef635d51e32ae29706a9e",
+        "fork_repository": "PalomarArchive/esonde--unfair-polynomials-conjecture--c30bdd017e83",
+        "source_repository": "esonde/unfair-polynomials-conjecture"
+      }
+    ]
+  },
+  "statement_hash": "sha256:56e9631db2efa746a01b80b5a8e60662a50a02338bbd05e42de432e1e82e4c26"
+}

@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000024",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000024",
+  "version": 1,
+  "title": "The stable manifold theorem for a hyperbolic fixed point of a smooth map, with the hyperbolic splitting",
+  "abstract": "A Lean 4 / Mathlib proof of the stable manifold theorem for maps, in graph form. Let f be of class C^n, 1 <= n <= infinity, on a neighborhood of a fixed point p of a finite-dimensional real normed space E, with derivative A = Df(p) invertible and hyperbolic (no complex eigenvalue of modulus 1), and let E_s and E_u be the stable and unstable subspaces of A. Then there are a neighborhood N of p and maps h_s : E_s -> E_u and h_u : E_u -> E_s, of class C^n and vanishing with their derivatives at 0, such that for every neighborhood U of p inside N, the local stable set of f in U (the points whose forward orbit stays in U and tends to p) is the graph {p + x + h_s(x)} of h_s over a neighborhood of 0 in E_s, and the local unstable set (the points with a backward orbit in U tending to p) is the graph {p + y + h_u(y)} of h_u over a neighborhood of 0 in E_u. Inside a small neighborhood of p the convergence is automatic: the local stable set in U is the set of points whose forward orbit stays in U, and the local unstable set the set of points with a backward orbit in U. The stable side is also proved without invertibility, with one h_s for every neighborhood inside a small ball around p. Also proved: the hyperbolic splitting E = E_s (+) E_u for a hyperbolic linear map of a finite-dimensional real space, with E_s and E_u the kernels of the factors of the characteristic polynomial with roots inside and outside the unit circle.\n\nThe proof is Perron's method on the Banach space of bounded sequences. The splitting comes from a factorization of the characteristic polynomial and Gelfand's formula, and gives an exponential dichotomy. After a cut-off by a bump function, f is a globally small Lipschitz perturbation F of A near p; the bounded forward orbits of F are the fixed points of a contraction built from the Lyapunov-Perron operator, and form the graph of a Lipschitz map over E_s. Smoothness of every order comes at once, without the fiber contraction theorem: the composition operator x -> phi o x is C^n on bounded sequences when phi is, and the inverse function theorem on the space of bounded sequences makes the graph C^n. The unstable side is the stable side of the local inverse of f. No earlier formal proof of the theorem for maps was found; a concurrent Lean 4 development (TauCeti) proves stable and unstable manifolds for equilibria of vector fields.",
+  "authors": [
+    "The-Anh Vu-Le"
+  ],
+  "repository": "https://github.com/vltanh/lean4-stable-manifold",
+  "commit": "4909ed2eb6bdc504f86ccb455e544315f11d3860",
+  "project_path": null,
+  "declarations": [
+    "StableManifoldChallenge.stable_manifold_forall_nhds",
+    "StableManifoldChallenge.stable_manifold",
+    "StableManifoldChallenge.hyperbolic_splitting",
+    "StableManifoldChallenge.stableSubspace_symm",
+    "StableManifoldChallenge.localStableSet_symm"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.DS",
+      "math.FA"
+    ],
+    "msc2020": [
+      "37D10",
+      "37D05",
+      "37C05",
+      "37C25",
+      "46T20",
+      "47J07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T21:15:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4909ed2eb6bdc504f86ccb455e544315f11d3860",
+        "fork_repository": "PalomarArchive/vltanh--lean4-stable-manifold--f310633bb994",
+        "source_repository": "vltanh/lean4-stable-manifold"
+      }
+    ]
+  },
+  "statement_hash": "sha256:083d6944b25fd098c24fa42d78ae6eed608f64421be399028faef85a93411276"
+}

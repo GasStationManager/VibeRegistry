@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000023",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000023",
+  "version": 1,
+  "title": "OEIS A012780: Bala's periodicity conjecture for arcsin(tan x)",
+  "abstract": "Let a(n) = (2n+1)! [x^(2n+1)] arcsin(tan x) (OEIS A012780). The package proves that every a(n) is an integer and Peter Bala's 2026 conjecture that a(n) mod k is eventually periodic with period dividing φ(k), for every k ≥ 1. It also proves the prime-power congruences behind it: a(n + 2^(e−1)) ≡ a(n) (mod 2^e) for all n, and a(n + φ(p^e)) ≡ a(n) (mod p^e) for odd primes p and 2n ≥ e, and the conjecture with that explicit pre-period. It also proves that a(n + 2) ≢ a(n) (mod 8) for every n, so the Carmichael function λ(k) cannot replace φ(k). Bala's φ(k)-periodicity conjectures for exponential generating functions are recent research targets: Kallat proved Bala's conjectures for A158690 (arXiv:2609.07238), and Blanco Gómez proved the φ(k)-period for the Euler numbers A000364, where Bala's stronger claim of pure periodicity fails (Zenodo 23150466, Theorem 2.2). Kallat's general theorem gives λ(k)-periods, so by the mod-8 result it does not cover A012780.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+  "project_path": null,
+  "declarations": [
+    "OeisA012780.bala_conjecture",
+    "OeisA012780.bala_explicit",
+    "OeisA012780.period_two_pow",
+    "OeisA012780.period_odd_prime_pow",
+    "OeisA012780.not_period_two_mod_eight"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A15",
+      "11A07",
+      "11B50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T17:26:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:75fb53ffe3237228549d547d0a67268a6034952d0253f05b980053135238e88d"
+}

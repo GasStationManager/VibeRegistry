@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000001",
+  "version": 1,
+  "title": "Flows and shortest paths in plane graphs, with machine programs including the maximum-flow algorithm of Borradaile, Klein, Mozes, Nussbaum and Wulff-Nilsen, in Lean 4",
+  "abstract": "A Lean 4 and Mathlib formalization of maximum flows and shortest paths. Plane graphs are combinatorial maps (darts with a reversal, a tail vertex, a face and a next dart along the face boundary) whose graph and dual are connected and which satisfy Euler's formula V + F = D/2 + 2. The machine statements are about one explicit word RAM (unit cost per instruction, natural registers and memory cells bounded by a word bound W along the run) and fixed encodings of the inputs as lists of natural numbers; each asserts one fixed program for all inputs. Six theorems are compared: (1) the max-flow min-cut theorem for a network with nonnegative integer capacities and disjoint sets of sources and sinks: some flow and some cut have equal value and capacity, so the flow is maximum and the cut minimum; (2) the theorem of Miller and Naor: on a plane map, given an antisymmetric g with net outflow b at every vertex, a b-flow within the capacities u exists if and only if the dual graph with lengths u - g has a feasible potential; (3) a program decides, for every well-formed encoding of a plane map with V vertices, F faces and S darts, natural capacities, supplies and demands, whether a feasible flow exists, within 26 (S + 2)(V + F + 2) steps; (4) a program prints, for each vertex of a digraph with n vertices, m arcs and natural lengths, its distance from a source capped at a given value INF (so INF for unreachable vertices), within (n + m + 1)(36 floor(log2 n) + 143) steps; (5) a program prints the size of a maximum matching of a bipartite graph with n vertices and m arcs within 80 (n + 1)(n + m + 1) steps; (6) there are a program and constants c and k such that, for every well-formed encoding of a plane map (loops allowed) with n darts, K vertices, natural capacities and disjoint sets of sources and sinks, and every word bound W >= c (7 s)^k, where s is n + K plus the total capacity plus 2, the program prints a maximum flow from the sources to the sinks, as a table of flow values together with a valid index into it for every dart, within c (n + K + 1)(floor(log2 n) + 1)^3 steps; this is the algorithm of Borradaile, Klein, Mozes, Nussbaum and Wulff-Nilsen. The proofs use only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Robert D. Barish"
+  ],
+  "repository": "https://github.com/RBarish-UTokyo/PlanarMaxFlow-WordRAM-Lean4",
+  "commit": "cfeb331b18ac14bccc38ef44ca640f0dff3f8c0a",
+  "project_path": null,
+  "declarations": [
+    "PlanarFlow.maxflow_mincut",
+    "PlanarFlow.miller_naor",
+    "PlanarFlow.feasible_flow_machine",
+    "PlanarFlow.dijkstra_machine",
+    "PlanarFlow.bipartite_matching_machine",
+    "PlanarFlow.maxflow_machine"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.DS"
+    ],
+    "msc2020": [
+      "05C10",
+      "05C21",
+      "05C38",
+      "05C70",
+      "05C85",
+      "68Q25",
+      "68W40",
+      "90C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T00:41:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cfeb331b18ac14bccc38ef44ca640f0dff3f8c0a",
+        "fork_repository": "PalomarArchive/RBarish-UTokyo--PlanarMaxFlow-WordRAM-Lean4--1da9fc63e2d0",
+        "source_repository": "RBarish-UTokyo/PlanarMaxFlow-WordRAM-Lean4"
+      }
+    ]
+  },
+  "statement_hash": "sha256:453aabd5f65b7f465a84bfbe160b434a902fc05d8d8f2f2af82af9f8fdbef461"
+}

@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000010",
+  "version": 2,
+  "title": "Three IM and one CM shared values",
+  "abstract": "Two nonconstant meromorphic functions on the complex plane sharing four pairwise distinct Riemann-sphere values, three IM and one CM, share all four values CM, without a growth assumption.",
+  "authors": [
+    "Pengcheng Fang",
+    "Tao Hu",
+    "Yanyang Li",
+    "Quanyu Tang",
+    "Haiqi Zhang"
+  ],
+  "repository": "https://github.com/QuanyuTang/three-im-one-cm-formalization",
+  "commit": "2874a773c15da244347c6a6ccdc1a30e9bdd2a26",
+  "project_path": null,
+  "declarations": [
+    "ThreeIMOneCM.three_IM_one_CM"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV"
+    ],
+    "msc2020": [
+      "30D35",
+      "30D45"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T04:20:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2874a773c15da244347c6a6ccdc1a30e9bdd2a26",
+        "fork_repository": "PalomarArchive/QuanyuTang--three-im-one-cm-formalization--7211372cc44a",
+        "source_repository": "QuanyuTang/three-im-one-cm-formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e69f79082182e469ebc4a81619f132fdc8e58d82c222b5244ff632a704118d91"
+}

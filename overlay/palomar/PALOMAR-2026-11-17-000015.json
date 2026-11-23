@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000015",
+  "version": 1,
+  "title": "Superposition in disjoint variables for the infinity Laplace equation",
+  "abstract": "A complete Lean 4 / Mathlib formalization of the three main theorems of Liu, Manfredi and Zhou, \"Superposition property in disjoint variables for the infinity Laplace equation\" (RIMS Kôkyûroku Bessatsu B99 (2026); arXiv:2508.17106). If u is a viscosity subsolution (resp. supersolution, solution) of -Δ∞u = f in a domain U ⊆ ℝⁿ and v one of -Δ∞v = g in a domain V ⊆ ℝᵐ, with f and g continuous, then w(x, y) = u(x) + v(y) is a viscosity subsolution (resp. supersolution, solution) of -Δ∞w = f(x) + g(y) in U × V. For a continuous, degenerate elliptic and sub-additive operator L, the sum of viscosity subsolutions of L(∇u, ∇²u) = f and L(∇v, ∇²v) = g is a subsolution of L(∇w, ∇²w) = f + g. On proper geodesic metric spaces, the disjoint sum of functions satisfying comparison with cones (from above, below, or both) satisfies comparison with cones on the product with the sum metric d_X + d_Y. Mathlib lacks the Crandall–Ishii–Lions theorem on sums, so its ingredients (sup-convolution, Alexandrov's theorem, Jensen's lemma) are formalized along the way; there is no sorry and no axiom beyond propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Qing Liu",
+    "Juan J. Manfredi",
+    "Xiaodan Zhou"
+  ],
+  "repository": "https://github.com/na0b/superposition-lean",
+  "commit": "ac529d14d5a91f24d2c23e45fa4432b80025e5e8",
+  "project_path": null,
+  "declarations": [
+    "Superposition.infsuper_subsolution",
+    "Superposition.infsuper_supersolution",
+    "Superposition.infsuper_solution",
+    "Superposition.superposition_common_subsolution",
+    "Superposition.superposition_cone_above",
+    "Superposition.superposition_cone_below",
+    "Superposition.superposition_cone_both"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP",
+      "math.MG"
+    ],
+    "msc2020": [
+      "35J94",
+      "35D40",
+      "35J70",
+      "30L99",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T16:36:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ac529d14d5a91f24d2c23e45fa4432b80025e5e8",
+        "fork_repository": "PalomarArchive/na0b--superposition-lean--947ff850f6cf",
+        "source_repository": "na0b/superposition-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:03662f2ec2513b7946f46edaf37bf89e8fa4b15c1ecd78dd22641202e3aff467"
+}

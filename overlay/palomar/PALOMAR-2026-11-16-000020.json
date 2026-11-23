@@ -1,0 +1,67 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000020",
+  "version": 1,
+  "title": "OEIS A000464: Bala's conjectures for sin x / cos 2x",
+  "abstract": "Let a(n) = (2n+1)! [x^(2n+1)] sin x / cos 2x (OEIS A000464: 1, 11, 361, 24611, …; Glaisher, 1914). Peter Bala made four conjectures on it in 2021. The package refutes the first as stated: modulo every multiple of 81, (a(n))_{n≥1} is not purely periodic with any period, because a(55) ≡ 65 ≢ 11 = a(1) (mod 81). It proves the corrected form, a(n + φ(k)) ≡ a(n) (mod k) whenever 2n + 1 is at least the exponent of every odd prime in k, so the conjecture holds eventually for every k and from n = 1 when no odd prime exponent of k exceeds 3. It proves the other three conjectures: the Gauss congruences a(np^k + i) ≡ a(np^(k−1) + i) (mod p^k) for every shift i, with the integrality of exp(Σ a(n+i) x^n/n); a(mn) ≡ a(m)^n (mod 2^(2v₂(m)+4)); and a(2mn) ≡ a(n)^(2m), a((2m+1)n) ≡ a(n)^(2m+1) (mod 2^(v₂(m)+4)). Behind them are a(n + 2^(e−1)) ≡ a(n) (mod 2^e) for every n, and a(n + (p−1)p^(e−1)/2) ≡ (−1)^((p−1)/2) a(n) (mod p^e) for odd primes p and 2n + 1 ≥ e. The period can be sharpened from φ(k) to the Carmichael function λ(k): a(n + 2^(e−2)) ≡ a(n) (mod 2^e) for e ≥ 3, so a(n + λ(k)) ≡ a(n) (mod k) under the same condition on n, and λ(8) = 2 cannot be lowered, since a(1) ≢ a(0) (mod 8). Bala's congruence conjectures for exponential generating functions are recent targets in the study of congruences for Euler-type numbers: Kallat proved Bala's conjectures for A158690 (arXiv:2609.07238), and Blanco Gómez refuted the same pure-periodicity wording for the Euler numbers A000364 and proved its eventual form (Zenodo 23150466, Theorem 2.2). The odd-prime congruence is known (Blanco Gómez, Zenodo 23407292, Theorem 1), and the 2-adic period follows quickly from Nishibuchi's criterion (arXiv:2610.11648, Prop. 3.4). No earlier treatment of the failure modulo 81 or of the power congruences 3) and 4) was found.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+  "project_path": null,
+  "declarations": [
+    "OeisA000464.not_conjecture1",
+    "OeisA000464.not_periodic_of_eighty_one_dvd",
+    "OeisA000464.a_fifty_five",
+    "OeisA000464.period_two_pow",
+    "OeisA000464.period_two_pow_of_three_le",
+    "OeisA000464.antiperiod_odd_prime_pow",
+    "OeisA000464.period_odd_prime_pow",
+    "OeisA000464.period_totient",
+    "OeisA000464.conjecture1_eventual",
+    "OeisA000464.conjecture1_of_exponent_le_three",
+    "OeisA000464.period_carmichael",
+    "OeisA000464.conjecture1_carmichael_eventual",
+    "OeisA000464.carmichael_eight_sharp",
+    "OeisA000464.conjecture2",
+    "OeisA000464.conjecture2_exp_integral",
+    "OeisA000464.conjecture3",
+    "OeisA000464.conjecture4"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A15",
+      "11A07",
+      "11B68"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T15:05:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:67db20194f0a454bb1681bf92f2a126d29ee37fd4dbd3bb5145a0bddc1918ab9"
+}

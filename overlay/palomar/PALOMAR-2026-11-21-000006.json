@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000006",
+  "version": 1,
+  "title": "Cycles of the four-digit Kaprekar map in even bases",
+  "abstract": "The four-digit Kaprekar map in base B sends an integer 0 <= x < B^4, written with four base-B digits (leading zeros allowed), to the descending arrangement of its digits minus the ascending arrangement. A cycle is a periodic orbit through an input whose digits are not all equal. Cycles are counted up to cyclic shift, including fixed points of least period one. This formalization uses only Lean 4 core and Std and proves Theorem 1 of R. Galyavin, \"Cycles of the four-digit Kaprekar map in even bases\" (2026). For B = m*2^n with m odd, n >= 1 and m >= 5, each cycle of the folded map on odd difference pairs lifts to a cycle of the same length. There is one additional cycle of length n+1 if 2^n is 1 modulo m, or one of length 2(n+1) if m = 5 and n is 2 modulo 4. The two conditions are mutually exclusive and the list is exhaustive. For m = 3, odd n gives one cycle of length 3(n+1), and even n gives two cycles of lengths n+1 and 2(n+1). Base two has two fixed points. In base 2^n for odd n >= 3 there are (n-1)/2 cycles of each length n and n+2. For even n >= 2 there are (n-2)/2 cycles of each of those lengths, one of length n/2 and one of length n/2+1. The map is stated directly as digit sorting and subtraction on natural numbers.",
+  "authors": [
+    "Rustem Galyavin"
+  ],
+  "repository": "https://github.com/galyavin/kaprekar-cycles-lean",
+  "commit": "da1c63f6fe2a221f102261a7407690255cbe143a",
+  "project_path": null,
+  "declarations": [
+    "PalomarKaprekar.cycles_odd_core",
+    "PalomarKaprekar.cycles_core_three",
+    "PalomarKaprekar.cycles_base_two",
+    "PalomarKaprekar.cycles_higher_powers_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.DS"
+    ],
+    "msc2020": [
+      "11A63",
+      "37P99"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T05:59:28Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "da1c63f6fe2a221f102261a7407690255cbe143a",
+        "fork_repository": "PalomarArchive/galyavin--kaprekar-cycles-lean--cd27c54d5598",
+        "source_repository": "galyavin/kaprekar-cycles-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1c8fd64b3bb60dcb581043e727ae09a5aa355c10c66c7cf56ef334b38ebefb38"
+}

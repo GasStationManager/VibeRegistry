@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000009",
+  "version": 1,
+  "title": "Realization fields of four-polytopes and simple-vertex deletion",
+  "abstract": "A seventeen-vertex four-polytope has a face lattice realizable over a subfield of the reals exactly when that subfield contains the square root of five. In particular, this polytope has no rational realization. In every dimension, deleting a simple vertex from a full-dimensional nonsimplex yields a polytope of the same dimension whose face lattice is determined by the original marked face lattice. Deletion preserves all real realization fields and the density of rational labelled realizations.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "713e1b19491419c1cb4c222bc51b8c957c43474e",
+  "project_path": "small_nonrational_upper_deletion",
+  "declarations": [
+    "SmallNonrational.theoremOne",
+    "SmallNonrational.seventeenVertexNonrational",
+    "SmallNonrational.theoremThree"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52B11",
+      "52B05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T05:21:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "713e1b19491419c1cb4c222bc51b8c957c43474e",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d70f8ed1e6478411d7f8581e63caa405e937ca47ffe6c87e4fdc2568a25a2dca"
+}

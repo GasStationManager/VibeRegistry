@@ -1,0 +1,56 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000003",
+  "version": 1,
+  "title": "The Dehn Canon: Hilbert's Third Problem, Machine-Checked",
+  "abstract": "Dehn's answer to Hilbert's third problem, with the Dehn invariant defined from the solid as a set of points in 3-space rather than from a list of edges. For a set P, the invariant dehnSet P in R (x)_Q (R/Q pi) adds, over the angle classes theta, the length (1-dimensional Hausdorff measure) of the points of P whose cone of directions has a line as its lineality space and the angle class theta there, the angle being 2 pi times the area of the cone in the unit disc across that line divided by the area of the disc. Proved: (1) Hilbert's problem in his words: two tetrahedra on one and the same base triangle, with apexes at the same distance 1 from its plane and volume 1/6, that are neither scissors congruent nor equicomplementable (pieces: convex polytopes moved by isometries); (2) for every convex polytope with interior points, dehnSet P equals the classical sum over its edges of length (x) dihedral angle, with edges, facets and dihedral angles also defined from the set (Dehn's invariant in Jessen's tensor form); (3) the bridge: scissors-congruent convex polytopes have the same invariant, in every 3-dimensional real inner product space, and for finite unions of convex polytopes the total over the pieces does not depend on the dissection and is kept by scissors congruence; (4) Dehn's theorem: no similar copy of the regular tetrahedron is scissors congruent to a similar copy of the cube. The theorem is classical (Dehn 1901) and already formalized in Lean in FormalBook's chapter 10, in an abstract model of edges and angles; what is added here is the set-defined invariant, the proved bridge from geometric dissections, its agreement with the edge sum, and Hilbert's statement for tetrahedra as point sets. The entry is meant for researchers in formalized geometry and in scissors congruence: since the invariant and the bridge are stated for sets and for every dissection into convex polytopes, they can serve as a base in Lean for Sydler's converse, Jessen's work in four dimensions and a theory of valuations in Mathlib; none of these is attempted here.",
+  "authors": [
+    "DICTO"
+  ],
+  "repository": "https://github.com/DICTOR-Master/dehn-canon-lean",
+  "commit": "9ea20f6dfd64fc3f10f64b1fb59a754a77e5cf57",
+  "project_path": null,
+  "declarations": [
+    "DehnCanon.hilbert_third_problem",
+    "DehnCanon.dehnSet_eq_edge_sum",
+    "DehnCanon.dehnSet_eq_of_scissorsCongruent",
+    "DehnCanon.dehnSum_eq_of_scissors",
+    "DehnCanon.similarTetra_not_scissorsCongruent_similarCube"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.HO"
+    ],
+    "msc2020": [
+      "52B45",
+      "52B10",
+      "51M20",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T04:20:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "9ea20f6dfd64fc3f10f64b1fb59a754a77e5cf57",
+        "fork_repository": "PalomarArchive/DICTOR-Master--dehn-canon-lean--54a9b72c3bc9",
+        "source_repository": "DICTOR-Master/dehn-canon-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:49e50c23efdb7e7124336e3d84cbd84c2274bc55963adbe452f6b1938c0a440d"
+}

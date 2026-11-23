@@ -1,0 +1,86 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000005",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000005",
+  "version": 1,
+  "title": "Integration in algebraically closed valued fields",
+  "abstract": "Two geometric preparation theorems for integration in algebraically closed valued fields. Proposition 3.19 partitions an original-base definable VF bijection into finitely many definable pieces on which it is open-to-open. Lemma 4.8 decomposes an original-Gamma-base definable subset of VF squared into two-cell fibres of a definable map to a finite RV power. The cell positioning graph and both paradigms are definable over the original base together with the output RV tuple. Actual saturation, characteristic, parameter-base and named-value hypotheses remain in the formal statements. The larger repository develops Sections 2–7, including ordinary and measured integration; those additional results are outside this Palomar selection.",
+  "authors": [
+    "Yimu Yin"
+  ],
+  "repository": "https://github.com/daviddhilbert/integration-in-ACVF",
+  "commit": "cd36b96fe5f8c662950875a9edc646ad6290f28a",
+  "project_path": null,
+  "declarations": [
+    "CanonicalRV.encodedRv_surjective",
+    "IntegrationInACVF.Section3.ImaginaryParameters.tuplePresentation._proof_3",
+    "IntegrationInACVF.Section3ACVF.FullOpenToOpenPartition.proposition_3_19",
+    "IntegrationInACVF.Section3ACVF.ParameterPresentation.decode_surjective",
+    "IntegrationInACVF.Section4.Cells.rawMap_vf",
+    "IntegrationInACVF.Section4.lemma_4_8",
+    "SpecialTransformations.Milestone0.RVCalc.le_refl_rv",
+    "SpecialTransformations.Milestone0.RVCalc.le_trans_rv",
+    "SpecialTransformations.Milestone0.Transfer.rv_mem",
+    "SpecialTransformations.Milestone0.Transfer.rv_zero_mem",
+    "SpecialTransformations.Milestone0.Transfer.vfInv_val",
+    "SpecialTransformations.Milestone0.Transfer.vfInv_zero",
+    "SpecialTransformations.Milestone0.Transfer.vf_add_assoc",
+    "SpecialTransformations.Milestone0.Transfer.vf_add_comm",
+    "SpecialTransformations.Milestone0.Transfer.vf_add_mem",
+    "SpecialTransformations.Milestone0.Transfer.vf_add_neg",
+    "SpecialTransformations.Milestone0.Transfer.vf_add_zero",
+    "SpecialTransformations.Milestone0.Transfer.vf_left_distrib",
+    "SpecialTransformations.Milestone0.Transfer.vf_mul_assoc",
+    "SpecialTransformations.Milestone0.Transfer.vf_mul_comm",
+    "SpecialTransformations.Milestone0.Transfer.vf_mul_inv_or_zero",
+    "SpecialTransformations.Milestone0.Transfer.vf_mul_mem",
+    "SpecialTransformations.Milestone0.Transfer.vf_mul_one",
+    "SpecialTransformations.Milestone0.Transfer.vf_neg_mem",
+    "SpecialTransformations.Milestone0.Transfer.vf_one_mem",
+    "SpecialTransformations.Milestone0.Transfer.vf_zero_mem",
+    "SpecialTransformations.Milestone0.Transfer.vf_zero_ne_one",
+    "SpecialTransformations.Milestone0.VFValued.exists_valuation_predV",
+    "SpecialTransformations.Section3.GammaParameters.value_surjective",
+    "SpecialTransformations.Section3.Values.infinity_eq_zero",
+    "SpecialTransformations.Section3.Values.presentation_compatible",
+    "SpecialTransformations.Section3.Values.vf_value_eq_iff",
+    "SpecialTransformations.Section3.Values.vf_value_mul",
+    "SpecialTransformations.Section3.Values.vf_value_one",
+    "SpecialTransformations.Section3.Values.vf_value_zero",
+    "SpecialTransformations.Section3.Values.vrv_eq_infinity_iff",
+    "SpecialTransformations.Section3.Values.vrv_surjective"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO"
+    ],
+    "msc2020": [
+      "03C60",
+      "12J25",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T06:13:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "cd36b96fe5f8c662950875a9edc646ad6290f28a",
+        "fork_repository": "PalomarArchive/daviddhilbert--integration-in-ACVF--f5a94e7545df",
+        "source_repository": "daviddhilbert/integration-in-ACVF"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f54997ac69dffc19016226fc52f5af439c0ecd5beb322a2e1025ca7be3d8af8f"
+}

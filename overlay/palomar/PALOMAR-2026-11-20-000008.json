@@ -1,0 +1,81 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000008",
+  "version": 1,
+  "title": "Dimension and identifiability of three-sunlet models",
+  "abstract": "Normalized Latin systems of every order m at least five have three-sunlet image dimension 5m-4 in every characteristic, including the original finite abelian-group coordinates. Two transitive derangement families give the stated dimension 3m+2c-2. Complex generic fibers have unique unordered toric decomposition, normalized degree twice the square of the loop abelianization order, and the character-wreath Galois group. The model is rational over Q. Prime nonassociative loops give precisely two normalized general preimages; cyclic models of every order at least six admit rational reconstruction from the literal 8m-12 retained coordinates. Orbit and inverse-stable partition identifications have the complete dimension classification, which yields the full binary level-one network formula including triangles and two leaves.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "b1fff7af3ee3758645529514c7bfb343bc0cf04c",
+  "project_path": "three_sunlet_models",
+  "declarations": [
+    "Sunlet.paper_theorem_1_1",
+    "Sunlet.GroupCoordinates.paper_theorem_1_1_original_coordinates",
+    "Sunlet.paper_theorem_2_3_literal",
+    "Sunlet.ComplexPaper.generic_unique_unordered_decomposition",
+    "Sunlet.ComplexPaper.normalized_generic_degree",
+    "Sunlet.ComplexPaper.normalized_isGalois",
+    "Sunlet.ComplexPaper.paper_theorem_4_2_algebraic_fibers",
+    "Sunlet.NormalizedLatinSystem.model_rational",
+    "Sunlet.ComplexPaper.paper_corollary_5_1_point_ambiguity",
+    "Sunlet.ComplexPaper.paper_corollary_5_1_degree",
+    "Sunlet.CyclicSelectedField.paper_theorem_6_1_all_orders",
+    "Sunlet.OrbitClasses.paper_theorem_7_1",
+    "Sunlet.OrbitHeight.inverse_stable_original_coordinates_order_free",
+    "Sunlet.OrbitClasses.paper_corollary_7_4",
+    "Sunlet.NetworkTheorem.paper_corollary_8_1_leaf_cut",
+    "Sunlet.NetworkTheorem.paper_corollary_8_1_unrestricted_leaf_cut",
+    "Sunlet.addTranslationPerm_apply",
+    "Sunlet.ToricPairAlgebra.genericVariable_ne_zero",
+    "Sunlet.ToricPairAlgebra.embeddedTorus_base",
+    "Sunlet.CyclicSparseWitness.shift_ne_zero",
+    "Sunlet.NormalizedLatinSystem.generic_normalized_equation_iff",
+    "PolynomialImage.rational_form_of_mem",
+    "Sunlet.CyclicSelectedField.observedNormalizedField_eq_modelImageField",
+    "Sunlet.palomarSixNeZero",
+    "Sunlet.palomarNeZeroOfFiveLe",
+    "Sunlet.palomarNeZeroOfSixLe",
+    "Sunlet.palomarTranslationLeft",
+    "Sunlet.palomarTranslationRight",
+    "Sunlet.ToricPairAlgebra.palomarPolynomialIsDomain",
+    "Sunlet.CyclicSelectedField.palomarNormalizedEquation",
+    "Sunlet.GroupCoordinates.palomarTranslationNormalized",
+    "Sunlet.GroupCoordinates.palomarTranslationColumnBijective"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "math.ST"
+    ],
+    "msc2020": [
+      "14M25",
+      "62R01"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T06:10:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b1fff7af3ee3758645529514c7bfb343bc0cf04c",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a08f5f15155750077a0c196591b63e0459d06f47d41c34b7947688b6199f99e9"
+}

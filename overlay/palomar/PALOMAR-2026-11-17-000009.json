@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000009",
+  "version": 1,
+  "title": "Keevash, The existence of designs II, Lemma 3.8 (ext*): extensions in the random algebraic template",
+  "abstract": "A Lean 4 / Mathlib formalization of Lemma 3.8 (Lemma ext*) of P. Keevash, \"The existence of designs II\" (arXiv:1802.05900): in the random algebraic template M* built from independent uniform injections f_j : [n] → F_{p^a}-like field K (j < z), random colours T_e and orders π_e of the r-sets, random A_φ and activations, the number of configurations of an extension all of whose atoms γ(ψ) lie below ∂^γ M* is at least an explicit expectation-type lower bound minus 2εN^v, except with an explicit failure probability (a with-high-probability statement in the regime described below). The statement DesignsII.TParams.lemma_3_8 is fully quantitative, an explicit finite-N bound: the lower bound is |C|·(z+1−kd)_m·(a^m − m²·K_c·(n^(q−r))^(m−2))·p^m − 2εN^v (K_c occurs once, also for m = 2) with a = ω|V(Φ)|^(q−r) − (q−r)·s·n^(q−r−1), K_c = q^(r+1) n^(q−r−1) q^r n^(q−r) (1+C(q,r)) and p = (2N^(q−r))^(-1) z^(-C(q,r)) ((q−r)!/q!)^C(q,r) |𝒜|^(-1) k_min/N_act, and the failure probability is at most C(z,kd)·p_deg^kd + 2exp(−ε²N/(2c₁)) + 2exp(−ε²N/(2c₂)) with explicit constants c₁ = c₁(z,q,r,m,Δ) and c₂ = c₂(z,q,r,m,Δ,Smax), where Smax bounds the sizes of the non-colour coordinates (|𝒜|, N_act, ...) (p_deg = |F|^s N^(s−1) (N−s)!/N! bounds the probability that a colour is degenerate at the s fixed vertices). The bound holds for all permitted parameters. Asymptotic remarks (the Lean theorem itself is a finite-N inequality): every term of the failure probability tends to 0 as N → ∞ when s ≥ 1, 1 ≤ kd ≤ z and z, q, r, m, Δ, Smax, |F|, s, kd and ε > 0 are fixed (it does not for kd = 0 or s = 0). No claim is made that the lower bound is positive: for m ≥ 1 it is ≤ 0 for instance if m > z+1−kd, k_min = 0 or a ≤ 0, and for any m if 2εN^v exceeds the main term (for m = 0, the empty configuration, the main term is |C|). When q > r and m ≥ 2 the correction is at most a constant times n^((q−r)m−1), hence o(a^m) if moreover a ≥ c·n^(q−r) for a fixed c > 0; when q = r or m = 1 it need not be of lower order. The hypotheses are those of the paper: Φ is a Σ-adapted [q]-complex, (Φ, γ[G]) is (ω,h)-extendable (Definition 2.9), the copies used are Φ-embeddings of A = Σ^≤ and those with γ(φ) ≤_γ G are activated with threshold ≥ k_min. The proof follows the paper (Lemma e|E for the conditional probabilities given the fixed vertices, a two-stage Lipschitz concentration for the covering count, the template decomposition of Designs I Lemma 3.3), with the corrections recorded under fidelity. Mathlib does not contain this result.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/keevash-designs-ii-extension-lemma",
+  "commit": "033861405884cecb052530b636e2f76e51aa21f5",
+  "project_path": null,
+  "declarations": [
+    "DesignsII.TParams.lemma_3_8"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05B05",
+      "05C70",
+      "60C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T10:20:11Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "033861405884cecb052530b636e2f76e51aa21f5",
+        "fork_repository": "PalomarArchive/jtraverso--keevash-designs-ii-extension-lemma--34b2df4b4733",
+        "source_repository": "jtraverso/keevash-designs-ii-extension-lemma"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cdefe18ce699ac2ea517b47432f6752e620becf50c6c5ed2d5996911a2a90cf9"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000013",
+  "version": 1,
+  "title": "Three gauge-coupling windows isolate the roots of x³ − x − 1 and x⁴ − x − 1 in bounded polynomial families",
+  "abstract": "Let ρ and Q be the roots greater than one of x³ − x − 1 and x⁴ − x − 1. We classify the ordered triples (a,b,p) in three inequalities motivated by the inverse fine-structure constant, the weak mixing angle and the strong coupling, with p any natural number. For real roots of monic integer polynomials drawn from the same family, the unique passing triple is (ρ,Q,15) when the degree and coefficient height bounds are (4,3) or (6,2). Both families include reducible polynomials of degree at least two with nonzero constant term. The same triple is the unique solution when a and b are roots of an irreducible monic cubic and quartic, respectively, of height at most ten, with the product ab of norm −1 in ℚ(a,b) over ℚ. Two explicit quartics show where this classification fails. One gives a second pair at height eleven with the same norm. The other gives a second pair at height ten with product norm +1. Both pass at p = 15.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-arithmetic-classification",
+  "commit": "96ec711a1dc10a81ede064976f1fd19a9a94690f",
+  "project_path": null,
+  "declarations": [
+    "ArithmeticClassification.cell_classification",
+    "ArithmeticClassification.norm_classification",
+    "ArithmeticClassification.height_eleven_counterexample",
+    "ArithmeticClassification.positive_norm_counterexample"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11R04",
+      "11R27",
+      "12D10",
+      "65G20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T06:26:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "96ec711a1dc10a81ede064976f1fd19a9a94690f",
+        "fork_repository": "PalomarArchive/stalex444--pdt-arithmetic-classification--bd928956462b",
+        "source_repository": "stalex444/pdt-arithmetic-classification"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f59704422b8168f73bdab289fdd1299b8c8e66dbed5aeb064a6594a449a8a48d"
+}

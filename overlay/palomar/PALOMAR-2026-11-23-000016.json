@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000016",
+  "version": 1,
+  "title": "Conditional ZF-independence of the exact 192-state machine",
+  "abstract": "A binary 192-state machine with a contextual scanner that, under consistency of first-order ZF, runs forever and has no ZF proof of its nonhalting. Arithmetic Sigma-1 soundness implies unprovability in both directions. The halting sentence expresses the literal machine's behavior in every ZF model.",
+  "authors": [
+    "James Chang"
+  ],
+  "repository": "https://github.com/jamesyc/BusyBeaver",
+  "commit": "bd3f7575b2277addb6c043201b0404d6016564be",
+  "project_path": "ZF192",
+  "declarations": [
+    "PalomarZF192.exact192Claim",
+    "PalomarZF192.nonhalting_of_consistent"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "03F30",
+      "03D10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T10:44:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "bd3f7575b2277addb6c043201b0404d6016564be",
+        "fork_repository": "PalomarArchive/jamesyc--BusyBeaver--390b52bb5ea7",
+        "source_repository": "jamesyc/BusyBeaver"
+      }
+    ]
+  },
+  "statement_hash": "sha256:15586f4c6c1382d39adc9cf8ef3463fc5468f3446e773c1a7012732d52104f7d"
+}

@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000020",
+  "version": 1,
+  "title": "Brück's conjecture",
+  "abstract": "Let f be a nonconstant entire function of finite hyper-order outside the positive integers. If f and its derivative share a finite complex value a counting multiplicities, then f' - a = c(f - a) on the complex plane for a nonzero complex constant c.",
+  "authors": [
+    "Pengcheng Fang",
+    "Tao Hu",
+    "Yanyang Li",
+    "Quanyu Tang",
+    "Haiqi Zhang"
+  ],
+  "repository": "https://github.com/QuanyuTang/bruck-conjecture-formalization",
+  "commit": "00f71637fc70ed8d12f51d79f6ff2f211592d6b4",
+  "project_path": null,
+  "declarations": [
+    "Bruck.bruck_conjecture"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CV"
+    ],
+    "msc2020": [
+      "30D35",
+      "30D15",
+      "34M10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T20:25:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "00f71637fc70ed8d12f51d79f6ff2f211592d6b4",
+        "fork_repository": "PalomarArchive/QuanyuTang--bruck-conjecture-formalization--f860a85f57e4",
+        "source_repository": "QuanyuTang/bruck-conjecture-formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:759c89d8c87164b79fccec613e67d280e2166df914617fc0847cf7e85a19ae15"
+}

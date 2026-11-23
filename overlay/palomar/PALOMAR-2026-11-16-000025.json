@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000025",
+  "version": 1,
+  "title": "A Quadratic Lower Bound for Fourier RIP with Tree-Structured Sparsity",
+  "abstract": "Lean 4 formalization of an explicit lower bound for uniformly row-subsampled discrete Fourier transforms acting on canonical binary-heap tree-sparse vectors. With constant distortion, at least half of frequency sequences violate tree-RIP when 20000 m <= k min(k, log_2(N/k)), with an explicit quadratic corollary. The proof uses broom supports, Fejer-kernel concentration, simultaneous Diophantine approximation, and finite counting. A full-DFT isometry theorem checks the normalization and nonvacuity of the definitions.",
+  "authors": [
+    "Chinmay Hegde"
+  ],
+  "repository": "https://github.com/chinmayhegde/fourier-tree-rip-palomar",
+  "commit": "d35425b021e53164165e9916fc26f80cec6303a1",
+  "project_path": null,
+  "declarations": [
+    "FourierTreeRIP.broom_lower_bound",
+    "FourierTreeRIP.fourier_tree_rip_lower_bound",
+    "FourierTreeRIP.fourier_tree_rip_quadratic",
+    "FourierTreeRIP.full_dft_isometry",
+    "FourierTreeRIP.treeRIP_full_dft"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NA",
+      "cs.IT"
+    ],
+    "msc2020": [
+      "42B05",
+      "94A12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T23:26:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d35425b021e53164165e9916fc26f80cec6303a1",
+        "fork_repository": "PalomarArchive/chinmayhegde--fourier-tree-rip-palomar--c15efdd0560b",
+        "source_repository": "chinmayhegde/fourier-tree-rip-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3643a321f1023fece483c46230277fc59ca17462b6814db47888183030ddca59"
+}

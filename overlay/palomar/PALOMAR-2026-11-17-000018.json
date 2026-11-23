@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000018",
+  "version": 1,
+  "title": "OEIS A183128, A183129 and four siblings: Hanna's binomial-power exponential conjectures, with his non-integrality notes",
+  "abstract": "For U ∈ 1 + zℤ[[z]] put B(n,k) = [z^k] U(z)^n. Paul D. Hanna conjectured in 2010 that exp(Σ_{n≥1} [Σ_k B(n,k)^(e(n,k)) x^k] xⁿ/n) has integer coefficients for six choices of U and e: B = C(n+k−1,k) with e = k²+1 (A183128), k²+k (A183129), n (A181076) and n+k−1 (A181078), and B = C(n,k) with e = n+k (A181082) and n+k+1 (A181084). The package proves all six, and Hanna's notes that the exponents k² and k²+k−1 (in A183128, A183129) and k (in A181070, with B = C(n,k)) do not give integer series. The six conjectures follow from a general criterion on e, in the style of Dold's congruences along the rays (n,k) → (pn,pk), proved here for the diagonal series and any U; its corollaries cover constant exponents and polynomial exponents under a divisibility condition. A converse shows the non-integrality for a class of exponents. Integrality of exp(Σ c(n)xⁿ/n) is governed by Dold's congruences, which arise in topology and dynamics (see the survey of Byszewski, Graff and Ward, Bull. London Math. Soc. 53 (2021)). The congruence B(pn,pk) ≡ B(n,k) used here is a Gauss congruence for the coefficients of the rational function 1/(1 − yU(z)) when U is rational, in the sense studied by Beukers, Houben and Straub (Acta Arith. 184 (2018)).",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+  "project_path": null,
+  "declarations": [
+    "OeisA181076.a183128_integral",
+    "OeisA181076.a183129_integral",
+    "OeisA181076.a183128_note",
+    "OeisA181076.a183129_note",
+    "OeisA181076.a181070_note",
+    "OeisA181076.a181076_integral",
+    "OeisA181076.a181078_integral",
+    "OeisA181076.a181082_integral",
+    "OeisA181076.a181084_integral",
+    "OeisA181076.integral_of_criterion",
+    "OeisA181076.integral_of_const_exponent",
+    "OeisA181076.integral_of_polynomial_exponent",
+    "OeisA181076.not_integral_of_exponent"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A15",
+      "11B65",
+      "13F25"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T19:31:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b88217e440bebd07143d4f2b7c308fe5936f18787cc950eb1606b8ddf8077682"
+}

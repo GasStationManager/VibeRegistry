@@ -1,0 +1,46 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-18-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-18-000003",
+  "version": 1,
+  "title": "Generalized Oberwolfach problem: prescribed 2-factor decompositions",
+  "abstract": "A Lean formalization of a prescribed 2-factor decomposition theorem for sufficiently large even-regular graphs. The minimum-degree threshold is determined by ordinary cycle-decomposition thresholds for an arbitrary nonempty set of permitted cycle lengths; the order threshold is uniform in that set and in the prescribed list of factors.",
+  "authors": [
+    "Abhishek Methuku"
+  ],
+  "repository": "https://github.com/methuku-git-hub/generalized-oberwolfach-lean",
+  "commit": "c0d30d23c6c58dc41c03c9ce126e1ce1d846519a",
+  "project_path": null,
+  "declarations": [
+    "Oberwolfach.mainTheoremProof"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-18T04:35:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c0d30d23c6c58dc41c03c9ce126e1ce1d846519a",
+        "fork_repository": "PalomarArchive/methuku-git-hub--generalized-oberwolfach-lean--6c6bccd9b67d",
+        "source_repository": "methuku-git-hub/generalized-oberwolfach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f8483887dc339bd3c9c655e9764b535f856e1a56b498870f2cb9bbd7a615a805"
+}

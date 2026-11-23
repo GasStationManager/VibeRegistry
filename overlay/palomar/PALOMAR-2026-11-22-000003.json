@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000003",
+  "version": 2,
+  "title": "R(12,12) ≥ 1661: a red/blue colouring of the edges of K_1660 with no monochromatic K_12",
+  "abstract": "The diagonal Ramsey number R(12,12) is at least 1661: there is a simple graph on 1660 vertices such that neither the graph nor its complement contains a clique on 12 vertices, that is, a red/blue colouring of the edges of K_1660 with no monochromatic K_12. The graph is built from the Mathon–Shearer (11,11)-colouring M(797) on 1596 vertices by deleting a set of 21 vertices, which contains two antipodal pairs of M(797), and adding 85 core vertices, each of which copies a deleted vertex or has a single colour towards the remaining 1575 vertices. The proof is a clone-projection argument with an antipodal rule. It uses that M(797) has no monochromatic K_11 (proved in Lean here, following r1212-1642), that antipodal vertices of M(797) have opposite colours towards every other vertex, and finite checks on the 85 core vertices that the Lean kernel evaluates with decide +kernel. The construction and the proof are described in the preprint hexagon:2611.00248. This repository is a port of the formalization in https://github.com/YueMa0/r1212-1661 (Lean 4.32.1) to Lean 4.35.0 and the module system.",
+  "authors": [
+    "Yue Ma"
+  ],
+  "repository": "https://github.com/YueMa0/r1212-1661-palomar",
+  "commit": "133b6d3934d76329a83ba07b7f7a33a0517de723",
+  "project_path": null,
+  "declarations": [
+    "R1212.lower_bound_1661"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C55",
+      "05D10",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T07:52:52Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "133b6d3934d76329a83ba07b7f7a33a0517de723",
+        "fork_repository": "PalomarArchive/YueMa0--r1212-1661-palomar--7c268b84007e",
+        "source_repository": "YueMa0/r1212-1661-palomar"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1dcfcb696389962f61afc95f9c12c1ea1daac2ada8542bf4db36017579ee0e3c"
+}

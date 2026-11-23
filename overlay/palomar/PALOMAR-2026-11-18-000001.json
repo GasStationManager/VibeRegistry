@@ -1,0 +1,72 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-18-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-18-000001",
+  "version": 1,
+  "title": "The kernel and measure representations of Latinons agree",
+  "abstract": "On the ground space [0,1], the Latinons of Garbe, Hancock, Hladky and Sharifzadeh, described by Markov kernels with a measure-preserving order map, and the Latinons of the Latinon preprint, described by measures on the unit cube with uniform two-dimensional marginals, are the same objects up to null sets. The correspondence preserves the cut distance, the pattern densities and the entropy, including the value minus infinity; the entropy comparison uses the conditional chain rule for relative entropy, also proved here. Consequently Conjecture 12.4 of Garbe et al., stated with their own definitions and with entropy taken as the negative of relative entropy, follows from the counting theorem of the Latinon preprint. Both the finite case and the case of supremum minus infinity are stated.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/latinon-ghhs-bridge-lean",
+  "commit": "7ebcc4b46c78fc900e8d6a9f0881dbb918940fdb",
+  "project_path": null,
+  "declarations": [
+    "GHHSBridge.toLatinonMeasure_ofLatinonMeasure",
+    "GHHSBridge.ofLatinonMeasure_toLatinonMeasure_kernel",
+    "GHHSBridge.ghhsCutDistance_eq",
+    "GHHSBridge.ghhsPatternDensity_eq",
+    "GHHSBridge.klDiv_compProd_right_eq_lintegral",
+    "GHHSBridge.ghhsEntropy_eq",
+    "GHHSBridge.ghhsEntSup_eq",
+    "GHHSBridge.ghhsConjecture_12_4",
+    "GHHSBridge.ghhsConjecture_12_4_bot",
+    "GHHSBridge.ghhsConjecture_12_4_bot'",
+    "GHHSBridge.GHHSLatinon.measure_xy",
+    "GHHSBridge.GHHSLatinon.measure_xz",
+    "GHHSBridge.GHHSLatinon.measure_yz",
+    "GHHSBridge.ae_row_permuton_of_xz",
+    "GHHSBridge.ae_col_permuton_of_yz",
+    "LatinonEntropy.latinonSymbolKernel_reconstruct",
+    "LatinonEntropy.latinonSymbolKernel._proof_1",
+    "LatinonEntropy.uniformLatinonMeasure_order_preserving",
+    "LatinonEntropy.uniformLatinonMeasure_xy_uniform",
+    "LatinonEntropy.uniformLatinonMeasure_xz_uniform",
+    "LatinonEntropy.uniformLatinonMeasure_yz_uniform",
+    "GHHSBridge.patternCellKernel._proof_1"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05B15",
+      "60F10",
+      "94A17"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-18T00:18:16Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7ebcc4b46c78fc900e8d6a9f0881dbb918940fdb",
+        "fork_repository": "PalomarArchive/jtraverso--latinon-ghhs-bridge-lean--4d27af40ceb0",
+        "source_repository": "jtraverso/latinon-ghhs-bridge-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1fae253a9d8b1f9036d2f9e2544a3d02d9bda9b530e51227d15f036a0c8bbffe"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000001",
+  "version": 1,
+  "title": "Rational Recovery on a Common Ruler",
+  "abstract": "For the rational plane curve parametrization x ↦ ((x-1)/x^n, (x-1)^2/(x-K)^m) with real K>1 and integers n,m at least two, the index of its coordinate field in R(x) is one except at (n,m,K)=(2,4,2), where it is two. In the exceptional case the involution x ↦ x/(x-1) preserves both coordinates.",
+  "authors": [
+    "Stephanie Alexander"
+  ],
+  "repository": "https://github.com/stalex444/pdt-common-ruler-gauge-inverse",
+  "commit": "b971cf53f38173ad0b037a3fc9acb80f7d636e51",
+  "project_path": null,
+  "declarations": [
+    "PDTGauge.Result.joint_degree_classification"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AG",
+      "cs.SC"
+    ],
+    "msc2020": [
+      "14H50",
+      "12F05",
+      "68W30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T01:36:35Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b971cf53f38173ad0b037a3fc9acb80f7d636e51",
+        "fork_repository": "PalomarArchive/stalex444--pdt-common-ruler-gauge-inverse--c2f4b0855b3c",
+        "source_repository": "stalex444/pdt-common-ruler-gauge-inverse"
+      }
+    ]
+  },
+  "statement_hash": "sha256:1fb87becdca3a6b800df742179753baf5fa1cdb4bd1f877825274f804870e828"
+}

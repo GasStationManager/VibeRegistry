@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000001",
+  "version": 1,
+  "title": "Born weights are Fubini-Study volumes",
+  "abstract": "A machine-checked proof that Born weights are Fubini-Study volumes. For a ray [z] of C^(M+1), a pure state measured in the standard basis, its Born probability vector is (|<e_0, z>|^2, ..., |<e_M, z>|^2) / |z|^2, a point of the probability simplex (also the moment map of the torus action on CP^M). Let mu be any probability measure on CP^M invariant under every unitary; there is exactly one, the Fubini-Study measure. The identity is proved as two volume identities and a frequency corollary. First (born_vector_uniform_of_invariant): for a pure state chosen with law mu, the Born probability vector is uniformly distributed on the simplex, so the Fubini-Study measure of the states whose Born vector lies in a region R is M! times the Lebesgue measure of R in free coordinates. Second, for a given state (born_weight_eq_measure_cell, born_weight_eq_measure_apexCell): for a unit vector psi, cone the simplex from the Born vector of psi; the states whose Born vector lies in the cell opposite vertex i have mu-measure |<e_i, psi>|^2, the Born weight of outcome i. This holds for every unit psi, including those with vanishing coordinates, and the cells depend on psi. Third (born_frequencies_tendsto_born_weights): invariant sampling reproduces the Born weights as long-run frequencies; for pure states drawn pairwise independently with law mu, almost surely the fraction of draws in the cell opposite vertex i tends to |<e_i, psi>|^2, by the strong law of large numbers. The theorems show that Born weights are Fubini-Study volumes; they do not derive the Born rule or say why measurement outcomes follow it. The first form is classical: Archimedes' hat-box theorem for M = 1 and in general the Duistermaat-Heckman pushforward for the torus action on CP^M. The proof does not use the Duistermaat-Heckman theorem; it goes through Gaussians, proves the first form, and derives the second and third from it. The second and third are elementary corollaries of the first; no source stating them in this form was located. No priority or novelty is claimed.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/born-volume-lean",
+  "commit": "f010a36f123a02b04c9fa52bc0a7fb1a4188ef99",
+  "project_path": null,
+  "declarations": [
+    "BornVolume.born_vector_uniform_of_invariant",
+    "BornVolume.born_weight_eq_measure_cell",
+    "BornVolume.born_weight_eq_measure_apexCell",
+    "BornVolume.born_frequencies_tendsto_born_weights"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "quant-ph",
+      "math-ph",
+      "math.PR"
+    ],
+    "msc2020": [
+      "81P16",
+      "53D20",
+      "28C10",
+      "60E05",
+      "60F15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T00:18:06Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f010a36f123a02b04c9fa52bc0a7fb1a4188ef99",
+        "fork_repository": "PalomarArchive/zblore--born-volume-lean--ba31e2110539",
+        "source_repository": "zblore/born-volume-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:307afe62436698145d2152b4174f81d23c8e959b828c59d3771d70651886977a"
+}

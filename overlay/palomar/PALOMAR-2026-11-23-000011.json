@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000011",
+  "version": 1,
+  "title": "The exceptional set of the Goldbach problem",
+  "abstract": "A Lean 4 proof, with no unproved steps, of Theorem 3.1 of G. Bhowmik and L. Grimmelt, The exceptional set of the Goldbach problem, arXiv 2607.27282 v2, 2026, page 9, a result the paper attributes to Hardy and Littlewood. Let E of X be the number of even integers up to X that are not a sum of two primes. The theorem is conditional on two hypotheses, Theta < 3/4 and the zero bound at Theta: every zero of every Dirichlet L-function, for every modulus and every character, primitive or not, has real part at most Theta, stated for the zeros in the open strip 0 < Re s < 1 of Mathlib's DirichletCharacter.LFunction. Under them, for every epsilon > 0 there is a constant C with E of X at most C times X to the power 2 Theta - 1/2 + epsilon for every X >= 1. The zero bound is unproved for every Theta below 1 and false for every Theta below 1/2, since the Riemann zeta function has zeros on the critical line; the generalized Riemann hypothesis gives it at Theta = 1/2, and then the bound X to the power 1/2 + epsilon. No cited input enters: the explicit formula for psi of x and chi with a primitive character, Davenport chapter 19, the Gallagher type mean square estimates of the major and minor arcs and the zero expansion are all proved in the entry. Binary Goldbach is open and is not claimed. Claude and Codex agents wrote the Lean code, with ported PrimeNumberTheoremAnd files and two other ported files credited to their authors in PORTING.md; it is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "016cb630df376e158b83eb02935337b57537d269",
+  "project_path": "entries/bhowmikgrimmelt2026",
+  "declarations": [
+    "LeanLab.BhowmikGrimmelt2026.theorem31_ported1122"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11P32",
+      "11M26",
+      "11P55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T08:24:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "016cb630df376e158b83eb02935337b57537d269",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f584a099b537420f1f891262a18130520579b880785e22e7447576deba4250ce"
+}

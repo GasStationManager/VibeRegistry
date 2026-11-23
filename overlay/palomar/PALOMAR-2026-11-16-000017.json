@@ -1,0 +1,62 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000017",
+  "version": 1,
+  "title": "OEIS A372211–A372213 and A351859: Bala's p^(3k) towers for [x^(rN)] f^(sN), f = (1 − x^m)^m/((1 − x^a)^a (1 − x^b)^b)",
+  "abstract": "For a, b ≥ 1 and m = a + b let f(x) = (1 − x^m)^m/((1 − x^a)^a (1 − x^b)^b) and u_{r,s}(N) = [x^(rN)] f(x)^(sN). The package proves the supercongruences u_{r,s}(np^k) ≡ u_{r,s}(np^(k−1)) (mod p^(3k)) for every prime p ≥ 5 with p ∤ abm, all r ≥ 1, s ∈ ℤ and n, k ≥ 1, and the same for Bala's variant f⁻(x) = (1 − x^m)^m/((1 + x^a)^a (1 + x^b)^b). As corollaries it proves Peter Bala's 2024 conjectures for A372212 ((a, b) = (2, 5), p ≥ 11), A372213 ((3, 4), p ≥ 11, and also p = 5), A372211 ((2, 3), p ≥ 7, both forms), his 2022 conjectures for A351859 (G₃ = (1 + x + x² + x³)⁴/(1 + x + x²)³, p ≥ 5, both forms), and his general clauses for all (a, b) and sufficiently large p, for f and for f⁻ (both read with the power n, as [x^n] f(x)^n and [x^n] f⁻(x)^n). A372211 at p = 5 is not claimed; it is open. For a = b = 1, u_{1,1}(n) = C(2n, n), and the towers are the classical Jacobsthal–Kazandzidis congruences (see Meštrović's survey, cited in A351859). Supercongruences of this strength for diagonals of rational functions are studied for Apéry-like numbers (Straub, Algebra Number Theory 8 (2014)) and for framings of rational functions (Müller, arXiv:2104.10754).",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+  "project_path": null,
+  "declarations": [
+    "OeisA372211.u_tower",
+    "OeisA372211.general_tower",
+    "OeisA372211.a372211_tower",
+    "OeisA372211.u372211_tower",
+    "OeisA372211.a372212_tower",
+    "OeisA372211.u372212_tower",
+    "OeisA372211.a372213_tower",
+    "OeisA372211.u372213_tower",
+    "OeisA372211.a351859_tower",
+    "OeisA372211.a351859_rs_tower",
+    "OeisA372211.um_tower",
+    "OeisA372211.general_variant_tower"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11A07",
+      "11B65",
+      "05A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T13:04:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:2bb72ccad437908fc82fc283a6421dc1ac0cbb9d7729392305cee2a60280df36"
+}

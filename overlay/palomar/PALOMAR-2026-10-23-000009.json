@@ -2,18 +2,18 @@
   "source": "palomar",
   "upstream_id": "PALOMAR-2026-10-23-000009",
   "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-23-000009",
-  "version": 2,
-  "title": "Temporal cliques admit linear spanners",
-  "abstract": "Lean 4 / Mathlib formalization of the theorem that every temporal clique on n vertices admits a temporal spanner with at most 7n edges. A temporal clique is the complete graph on a finite vertex set whose edges carry natural-number time labels, locally injective (two edges sharing an endpoint have distinct labels); a temporal spanner is a set of edges in which every vertex reaches every other one by a journey with non-decreasing labels. The result and its proof are due to Júlia Baligács (arXiv:2606.05156, 2026): the dismountability of Carnevale, Casteigts and Corsini (SAND 2025) reduces cliques to extremally matched bi-cliques, which are then covered by simple and extended stars. The compared statements give the explicit bound 7n and the asymptotic O(n) form with a bound function chosen uniformly for all cliques. They use the same definitions as the registered O(n log n) entry of the same repository. The work is supervised by Arnaud Casteigts and Karine Altisen.",
+  "version": 3,
+  "title": "Temporal cliques admit spanners of size O(n log n)",
+  "abstract": "Lean 4 / Mathlib formalization of the theorem that every temporal clique on n vertices admits a temporal spanner with O(n log n) edges. A temporal clique is the complete graph on a finite vertex set whose edges carry natural-number time labels, locally injective (two edges sharing an endpoint have distinct labels); a temporal spanner is a set of edges in which every vertex reaches every other one by a journey with non-decreasing labels. The result is due to Casteigts, Peters and Schoeters (ICALP 2019, JCSS 2021); the formal proof follows the dismountability-only proof of Carnevale, Casteigts and Corsini (SAND 2025, §§2–4), which reduces cliques to bi-cliques and concludes with the one-sided dismountability of Angrick et al. (ESA 2024). The compared statements give an explicit bound of 2n⌈log₂ n⌉ + 4n edges and the asymptotic O(n log n) form with a bound function chosen uniformly for all cliques. The work is supervised by Arnaud Casteigts and Karine Altisen. Version 3 restores this statement, unchanged since version 1: version 2 registered by mistake another result of the same repository, the 7n bound of Baligács (2026), which now has its own entry. The proof is that of the library release alpha-0.2.0, in which the O(n log n) bound is an instance of a generic induction on cliques shared with the 7n bound.",
   "authors": [
     "Ethan Bargaud-Arm"
   ],
   "repository": "https://github.com/dracoanguis/temporal-graphs",
-  "commit": "96c320b0107ca7c45f6a598ed037baba183c1d14",
+  "commit": "6f15fa354f8fc0abf343fb7cd78c7273558a5d39",
   "project_path": null,
   "declarations": [
-    "TemporalCliqueSpanners.exists_isTemporalSpanner_card_le_seven_mul",
-    "TemporalCliqueSpanners.exists_isBigO_isTemporalSpanner_linear"
+    "TemporalCliqueSpanners.exists_isTemporalSpanner_card_le",
+    "TemporalCliqueSpanners.exists_isBigO_isTemporalSpanner"
   ],
   "informal": {},
   "classification": {
@@ -29,7 +29,7 @@
     ]
   },
   "license": "",
-  "published_at": "2026-11-06T02:14:33Z",
+  "published_at": "2026-11-18T11:26:18Z",
   "status": "registered",
   "upstream_checks": {
     "comparator": true,
@@ -43,11 +43,11 @@
   "preservation": {
     "repositories": [
       {
-        "commit": "96c320b0107ca7c45f6a598ed037baba183c1d14",
+        "commit": "6f15fa354f8fc0abf343fb7cd78c7273558a5d39",
         "fork_repository": "PalomarArchive/dracoanguis--temporal-graphs--4bb3060d8f06",
         "source_repository": "dracoanguis/temporal-graphs"
       }
     ]
   },
-  "statement_hash": "sha256:fb4026b7a5800db5485c837a4b44c603f2b06d57e071850b62966a19e7e87e12"
+  "statement_hash": "sha256:a7684366f869ba1bbe9fd5de60aad13f7e7423aa6433096d3be54a161b7a1782"
 }

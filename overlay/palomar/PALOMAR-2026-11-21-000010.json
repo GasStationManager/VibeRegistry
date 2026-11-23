@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000010",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000010",
+  "version": 1,
+  "title": "The Gerstenhaber dimension bound for three commuting matrices over arbitrary fields",
+  "abstract": "Three commuting square matrices of size n over any field generate a unital subalgebra of dimension at most n. The proof studies the actions on the kernel and cokernel of a nilpotent generator.",
+  "authors": [
+    "Yan-cheng Lin"
+  ],
+  "repository": "https://github.com/lin522026298/three-commuting-matrices",
+  "commit": "54c3e27589c55fa18f8679ef01b1e30feb2a9915",
+  "project_path": null,
+  "declarations": [
+    "Gerstenhaber.finrank_adjoin_triple_le"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.RA"
+    ],
+    "msc2020": [
+      "15A27",
+      "13E10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T07:04:20Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "54c3e27589c55fa18f8679ef01b1e30feb2a9915",
+        "fork_repository": "PalomarArchive/lin522026298--three-commuting-matrices--dc7f96466a87",
+        "source_repository": "lin522026298/three-commuting-matrices"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f4e3d138a0c40d14e2c2c46aaba76b997f3c1e61a6b6cce1c2d58963517c99dc"
+}

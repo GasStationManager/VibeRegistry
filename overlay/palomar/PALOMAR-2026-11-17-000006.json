@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000006",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000006",
+  "version": 2,
+  "title": "Kulaichev's Sri Yantra is unique",
+  "abstract": "Nine isosceles triangles with a common axis in a circle of diameter 1 that meet Huet's conditions in Chiodo's form (the two great triangles inscribed, seven apexes on bases, the 18 marmas and the 6 corner touches), Kulaichev's four conditions (a)-(d) and the admissibility of DICTO's paper #103 (Theorem 1) form exactly one figure (identified with the yantra of #103 Theorem 10 through the slope interval). Its slope w7/b7 is proved to lie in an interval of width 2^-21, [0.7504382776..., 0.7504387544...]; #103 gives the slope as 0.7504385160222140244..., a value computed outside Lean that lies in this interval. This settles Kulaichev's 1984 uniqueness question for admissible (well-formed) figures. The proof combines a kernel-checked branch-and-bound interval certificate (64,613 boxes in 10 charts, with proved monotone-split and slope enclosures), a Krawczyk box (uniqueness by a contraction, existence by Banach's fixed-point theorem), the forced construction from the geometry, and a verified sparse-polynomial normaliser for the identities between them. Not formalised: DICTO's study (outside Lean) finds one other real solution of the same equations, at w7/b7 = 0.66866..., which is not admissible (bases out of order, two negative half-widths), so it is not a yantra. Audiences: the history of mathematics (Kulaichev's question in the Indian Journal of History of Science, called still open in 2021), sacred geometry (the construction of the Sri Yantra), and computer-assisted proof in geometry (a certified interval computation checked by Lean's kernel).",
+  "authors": [
+    "DICTO"
+  ],
+  "repository": "https://github.com/DICTOR-Master/kulaichev-yantra-lean",
+  "commit": "6bf9e0401c673ccf1030794493650331b7962b25",
+  "project_path": null,
+  "declarations": [
+    "KulaichevYantra.kulaichev_unique",
+    "KulaichevYantra.kulaichev_slope"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG",
+      "math.HO"
+    ],
+    "msc2020": [
+      "51M04",
+      "51M15",
+      "65G20",
+      "01A32",
+      "03B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T12:09:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6bf9e0401c673ccf1030794493650331b7962b25",
+        "fork_repository": "PalomarArchive/DICTOR-Master--kulaichev-yantra-lean--77426e05c719",
+        "source_repository": "DICTOR-Master/kulaichev-yantra-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:20b1b2e5e4bb6edc9ff0ccf133382a51293e0ad552774265cd03dfea004dabf5"
+}

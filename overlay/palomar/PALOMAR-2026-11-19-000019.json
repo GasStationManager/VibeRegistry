@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000019",
+  "version": 1,
+  "title": "Erdős Problem 708 for four and five moduli: g(4) = 5 and g(5) = 6",
+  "abstract": "Let g(n) be minimal such that, for any n distinct integers at least two and any set I of consecutive integers whose length is the largest of them, some g(n) elements of I have a product that the product of the n integers divides (Erdős Problem 708). The formalization proves g(4) = 5 and g(5) = 6, stated with exact cardinality as in the source: for four (five) such integers every such interval contains five (six) elements with this property, and for some four (five) integers and some interval no smaller number of elements suffices. Because every such set of n integers has largest element at least n + 1, exact cardinality and \"at most\" cardinality give the same value when g(n) = n + 1. The formalization proves both forms: the source's exact reading, and the at-most reading with the definitions of the open Formal Conjectures pull request #4388 for Erdős Problem 708, copied verbatim. The general question, whether g(n) is at most 2n or (2 + o(1))n, is not addressed.",
+  "authors": [
+    "John Tripodo"
+  ],
+  "repository": "https://github.com/jjtripodo-lgtm/erdos-708-g4-g5",
+  "commit": "00fbb23c3084daa88ea420aa9c74177127d5283f",
+  "project_path": null,
+  "declarations": [
+    "Erdos708.erdos_708.variants.four",
+    "Erdos708.erdos_708.variants.five",
+    "Erdos708.erdos_708.variants.g_four",
+    "Erdos708.erdos_708.variants.g_five"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A05",
+      "11B75"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T09:09:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "00fbb23c3084daa88ea420aa9c74177127d5283f",
+        "fork_repository": "PalomarArchive/jjtripodo-lgtm--erdos-708-g4-g5--64e5cb707030",
+        "source_repository": "jjtripodo-lgtm/erdos-708-g4-g5"
+      }
+    ]
+  },
+  "statement_hash": "sha256:f8cc2c0ecf3d9f44addecbb7912703909287cdf83d775da733001db66a0a69f7"
+}

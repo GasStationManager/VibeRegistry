@@ -1,0 +1,65 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000023",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000023",
+  "version": 1,
+  "title": "Prime-power intersections, regularity and sharp local obstructions for polymatroidal ideals",
+  "abstract": "Polymatroidality is equivalent to local equigeneration and an intersection presentation by ordinary coordinate-prime powers, with the exact lower-rank factorization of integral closure. For a nonzero equigenerated monomial ideal whose proper monomial localizations are polymatroidal, the actual integral closure is polymatroidal and its quotient by the ideal has finite length. The maximum hole degree determines actual Koszul regularity, and the least actual maximal-ideal power giving a polymatroidal ideal equals regularity minus generating degree. Deleting one Veronese generator has the complete stated fine and total nonlinear Betti strand. Exact pure and mixed isolators realize the smallest possible degrees and the sharp first nonlinear homological positions at every admissible localization, including necessity of the outer-band generation tests.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "4ea2b2da88a492fd2a80f5ad181f5f9d7c70ff43",
+  "project_path": "polymatroidal_ideals_supplemental",
+  "declarations": [
+    "PalomarPolymatroidal.minimal_closure_finiteLength",
+    "PalomarPolymatroidal.maximal_hole_regularity",
+    "PalomarPolymatroidal.least_power_regularity_difference",
+    "PalomarPolymatroidal.Simplicial.boundary_mem",
+    "PalomarPolymatroidal.Simplicial.chainDifferential_comp",
+    "PalomarPolymatroidal.integral_closure_prime_power_factors",
+    "PalomarPolymatroidal.intersection_type_iff",
+    "PalomarPolymatroidal.koszulFaces_downward",
+    "PalomarPolymatroidal.deleted_generator_nonlinear_strand",
+    "PalomarPolymatroidal.exists_pure_isolator",
+    "PalomarPolymatroidal.exists_mixed_isolator",
+    "PalomarPolymatroidal.unique_bad_degree_lower_bound",
+    "PalomarPolymatroidal.pure_unique_bad_degree_lower_bound",
+    "PalomarPolymatroidal.exists_sharp_isolator",
+    "PalomarPolymatroidal.exists_outer_band_isolator"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AC",
+      "math.CO"
+    ],
+    "msc2020": [
+      "13D02",
+      "13F20",
+      "05B35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T16:27:17Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4ea2b2da88a492fd2a80f5ad181f5f9d7c70ff43",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:724d461be77a708dc85e97aa65b2e8862e49ba9aa04cebb0aae97a346fd28aef"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000019",
+  "version": 1,
+  "title": "The Bilinear Hilbert Transform Along the Primes",
+  "abstract": "Lean 4 formalization of the main theorem of The Bilinear Hilbert Transform Along the Primes. The discrete bilinear Hilbert transform along the primes, H_P(f,g)(x) = sum over n != 0 of Lambda(|n|)/n f(x-n) g(x+n), with Lambda the von Mangoldt function, satisfies ||H_P(f,g)||_{l^r} <= C ||f||_{l^p} ||g||_{l^q} for all finitely supported f, g on the integers, whenever p, q > 1, 1/r = 1/p + 1/q, 2/p + 3/q < 3 and 3/p + 2/q < 3 (the Banach range and part of the quasi-Banach range). The proof is assembled from frozen, author-approved intermediate theorems: a restricted-type tri-tile estimate with an epsilon-loss, the smooth truncated bilinear Hilbert transform on the line and on the integers, a vector-valued bilinear form estimate on R x Z/P, the key proposition p:key0, and the U^3 approximation of the von Mangoldt function, which is taken from the author's earlier formalization of A Variation Norm Carleson Theorem Along the Primes (its import closure is included in this repository, see related_formalizations). All results are checked by Lean and depend only on the standard axioms.",
+  "authors": [
+    "Anastasios Fragkos"
+  ],
+  "repository": "https://github.com/anastasiosfragkosmath/Prime_BHT_Palomar_Submission",
+  "commit": "37e79d9b22162fdb2d4f0b7de020ee97a28b7746",
+  "project_path": null,
+  "declarations": [
+    "PrimeBHT.Statements.t_maintheorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.NT"
+    ],
+    "msc2020": [
+      "42B20",
+      "11L20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T20:23:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "37e79d9b22162fdb2d4f0b7de020ee97a28b7746",
+        "fork_repository": "PalomarArchive/anastasiosfragkosmath--Prime_BHT_Palomar_Submission--56115c7da4b2",
+        "source_repository": "anastasiosfragkosmath/Prime_BHT_Palomar_Submission"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e7d1294ce6b94a8d205b5773d0fbf57edfee222f621b47e3ddc227d1ad187eb1"
+}

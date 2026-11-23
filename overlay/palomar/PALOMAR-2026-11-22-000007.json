@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000007",
+  "version": 1,
+  "title": "A Lean proof of the Ramsey lower bound R(3,18) >= 101",
+  "abstract": "There exists a simple graph on Fin 100 with no triangle and no independent set of size 18. This is the witness formulation of R(3,18) > 100. The proof checks the adjacency data of the 100-vertex graph published in Zenodo record 24285935. In the complement, a greedy coloring bounds the clique size at each search node and the branches cover all candidates that exceed the color bound. Lean checks the resulting subproblems and their composition using only Lean core and Std.",
+  "authors": [
+    "Rustem Galyavin"
+  ],
+  "repository": "https://github.com/galyavin/ramsey-r3-18-lean",
+  "commit": "eaaf56f7e886c6f84e28f4e5c60bb72a1bcb4718",
+  "project_path": null,
+  "declarations": [
+    "PalomarRamsey.ramsey_three_eighteen_gt_100"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05D10",
+      "05C55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T06:35:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "eaaf56f7e886c6f84e28f4e5c60bb72a1bcb4718",
+        "fork_repository": "PalomarArchive/galyavin--ramsey-r3-18-lean--7c2e1afceea5",
+        "source_repository": "galyavin/ramsey-r3-18-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3a8499b26b7a79761ba8b46fca6be63678d59fd9ee0d4db3c1381c20a62922b2"
+}

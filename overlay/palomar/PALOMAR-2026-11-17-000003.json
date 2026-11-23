@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000003",
+  "version": 1,
+  "title": "OEIS A340882 and A340883: Bala's pre-period conjectures, refuted, with the exact pre-period",
+  "abstract": "Peter Bala (OEIS, February 2021) defined the polynomials R(n, q) = Σ_{k<n} x^(k²) Π_{j=k+1}^{n−1} (x^(2j) − 1), x = 1 + q, as the rows of a q-series (OEIS A340882); their values a(n) = R(n, 1) are A340883 (1, 5, 91, 6245, …). He noted that, q-adically, R(2n + 1, q − 1) and −R(2n, q − 1) tend to Euler's product Π(1 − q^n). He conjectured that for all integers q and N the sequence R(n, q) mod N is purely periodic or periodic after one term (A340882), and that A340883 modulo m has pre-period 0 or 1 and least period dividing φ(m) (A340883, conjecture 1). The package refutes both conjectures and gives the exact answer. For every q and N ≥ 1 it determines the pre-period of R(n, q) mod N: the maximum, over the primes p dividing both N and 1 + q, of an explicit function of v_p(N) and v_p(1 + q). So A340882 holds for (q, N) exactly when 1 + q = 0 or v_p(N) ≤ 5 v_p(1 + q) for every such prime, and it holds for every N exactly when q ∈ {−2, −1, 0}. For A340883 the pre-period is at most 1 exactly when 64 ∤ m (modulo 64 the sequence is 1, 5, 27, 37, 27, 37, …), while the period part, a(n + φ(m)) ≡ a(n) (mod m) after the pre-period, holds for every m. The proof starts from the recurrence R(n + 1) = (x^(2n) − 1) R(n) + x^(n²). For a prime p ∤ x and x^o ≡ 1 (mod p^e), the first o terms of the sum for R(n + o) vanish modulo p^e and the others match those of R(n). For p ∣ x, the exact valuations v_p(R(n + 2) − R(n)) = c(n) v_p(x), with c(1) = 1, c(2) = 5 and c(n) = 2n for n ≥ 3, give the pre-period modulo p^e, and the Chinese remainder theorem gives it modulo N. For completeness the package also proves Bala's conjecture 2) for A340883: for coprime m₁ and m₂ the period modulo m₁m₂ is the lcm of the two periods. This is the Chinese remainder theorem for sequences that are eventually periodic modulo every m, and it is not claimed as new. The audience is number theorists who study congruences and periodicity modulo m of sequences defined by q-series. Bala's periodicity conjecture for A158690, whose e.g.f. 1 + Σ_{m≥1} Π_{j=1}^{m} (1 − e^(−(2j−1)t)) uses the same products Π(1 − x^(2j−1)), was proved in a recent note (Kallat, arXiv:2609.07238): the sequence is eventually periodic modulo every k with period dividing φ(k). That note gives a pre-period bound that it does not claim to be sharp; for A340882 this package determines the pre-period exactly. Bala's companion conjectures for A340881 were proved in 2026 (umaia1234/agentic-conjectures), and those for A340880 are not part of this package. No earlier treatment of A340882 or of A340883's conjecture 1) was found.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+  "project_path": null,
+  "declarations": [
+    "OeisA340882.not_conjecture_A340882",
+    "OeisA340882.conjecture_A340882_iff",
+    "OeisA340882.conjecture_A340882_fails",
+    "OeisA340882.prePeriod_spec",
+    "OeisA340882.conjecture_A340882_iff_local",
+    "OeisA340882.not_conjecture1_A340883",
+    "OeisA340882.a_mod_64",
+    "OeisA340882.conjecture1_A340883_prePeriod_iff",
+    "OeisA340882.a_period_totient",
+    "OeisA340882.conjecture1_A340883_iff",
+    "OeisA340882.conjecture2_A340883"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A30",
+      "11A07",
+      "11B50"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T00:21:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7f9ba02644117006786575cd543117266f066ec387377f3281a4dd2d0844d37c"
+}

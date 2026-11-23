@@ -1,0 +1,61 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000028",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000028",
+  "version": 1,
+  "title": "Undecidability of mixed-volume realization",
+  "abstract": "Rational membership in the complete forty-four-body cubic coefficient locus is co-recursively enumerable complete even for nonnegative coefficients, with point-padding extensions. For rational automata with at least one alphabet letter, the uniform algorithm produces the complete cubic array and the quadratic section whose realizability is equivalent to the universal cutpoint condition. Corollary 5.1 fixes a rational quadratic family from the probability simplex in R28 to cubic coefficient arrays for 91 bodies. Even when a rational coefficient input is promised to lie in the real image of this fixed family, deciding its mixed-volume realizability is undecidable. This is a promise problem on that family, not unrestricted membership in its image. The explicit three-parameter, twelve-body section in Theorem 6.1 has infinitely many boundary planes and obstructs semialgebraicity.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "2770695745f82092647619d29714ebe6be661001",
+  "project_path": "mixed_volume_realization_clean",
+  "declarations": [
+    "PalomarMixedVolume.MainResults.theorem_1_1",
+    "PalomarMixedVolume.MainResults.theorem_1_1_all_n",
+    "PalomarMixedVolume.MainResults.theorem_4_3",
+    "PalomarMixedVolume.FixedSection.corollary_5_1_exists",
+    "PalomarMixedVolume.ScalarSection.theorem_6_1",
+    "PalomarMixedVolume.ScalarSection.theorem_6_1_all_n",
+    "MixedVolume.RationalCode.eval_surjective",
+    "MixedVolume.EffectiveSigns.nonnegative_primrec",
+    "MixedVolume.EffectiveSigns.allNonnegative_primrec",
+    "MixedVolume.CoefficientCoding.nonnegative_primrec",
+    "PalomarMixedVolume.LiteralEvaluation.realCharZero",
+    "MixedVolume.ScalarPolynomial.stateLabel_bound",
+    "MixedVolume.ScalarPolynomial.imageLabel_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG"
+    ],
+    "msc2020": [
+      "52A38",
+      "03D35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T18:08:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2770695745f82092647619d29714ebe6be661001",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0e21c0ac1cf254b13664ae835b3ddfa7f64eee9835e452bee2ca6a86b8331d6b"
+}

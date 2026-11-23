@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000020",
+  "version": 1,
+  "title": "BooleanThreshold",
+  "abstract": "Verification of the asymptotic count of Boolean threshold functions and the linear dependence probability of independent uniform sign vectors.",
+  "authors": [
+    "Xinyuan Xie"
+  ],
+  "repository": "https://github.com/XinyuanXie-hub/BooleanThreshold",
+  "commit": "20954df4139daa40da1659eaf5bbc44ab65350a7",
+  "project_path": null,
+  "declarations": [
+    "BooleanThreshold.theorem1",
+    "BooleanThreshold.theorem7"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.CO"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-20T19:37:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "20954df4139daa40da1659eaf5bbc44ab65350a7",
+        "fork_repository": "PalomarArchive/XinyuanXie-hub--BooleanThreshold--bab55e2017a9",
+        "source_repository": "XinyuanXie-hub/BooleanThreshold"
+      }
+    ]
+  },
+  "statement_hash": "sha256:53a5622fe55a60bf6ce11d103fc4954b07fd3fd9f2b0a751e8837400c0985b66"
+}

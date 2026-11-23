@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000016",
+  "version": 1,
+  "title": "Erdős–Kac theorem",
+  "abstract": "A complete formalisation, in Lean 4 with Mathlib, of the Erdős–Kac theorem: the number of distinct prime factors ω(n), centred by log log N and scaled by sqrt(log log N), satisfies a central limit theorem on {1, …, N}. The proof goes through Mertens' second theorem and a truncated sieve whose moments are compared with an independent-prime model. Moment comparison is carried over to characteristic functions by a Taylor truncation of exp(iτs), whose remainder is controlled by a uniform even-moment bound; the model characteristic function converges to the Gaussian, and Lévy's continuity theorem finishes.",
+  "authors": [
+    "Runming He"
+  ],
+  "repository": "https://github.com/HeRunming/erdos-kac-lean",
+  "commit": "60a2004452b6610ea69302b31bf66bd8365ff60e",
+  "project_path": null,
+  "declarations": [
+    "ErdosKac.erdos_kac"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.PR"
+    ],
+    "msc2020": [
+      "11K65",
+      "60F05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T15:09:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "60a2004452b6610ea69302b31bf66bd8365ff60e",
+        "fork_repository": "PalomarArchive/HeRunming--erdos-kac-lean--73f4a0cd9a63",
+        "source_repository": "HeRunming/erdos-kac-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:682cd882f59ec114858b5cb8d11c42b065b3046953ddd0db4f2eb01734568756"
+}

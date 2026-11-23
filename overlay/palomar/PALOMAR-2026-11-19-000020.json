@@ -1,0 +1,60 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000020",
+  "version": 1,
+  "title": "Convergence of the one-particle quantum symmetric simple exclusion process to the KPZ equation",
+  "abstract": "A complete Lean 4 / Mathlib formalization of the main theorem (Theorem 1.2) of G. Barraquand, \"Convergence of the one-particle quantum symmetric simple exclusion process to the KPZ equation\" (2026). In the one-particle quantum symmetric simple exclusion process (QSSEP) on a box of size L in Z (or on Z), a wave function evolves unitarily under hopping amplitudes given by independent complex Brownian motions, and its squared modulus P(t,x) is a random probability distribution on the lattice. The theorem states that, in a window of size n^{1/2} at distance of order n^{3/4} from the origin, the suitably tilted and rescaled measures built from P converge in distribution, in the space C([0,T], M_+(R)) of continuous paths of finite measures with the weak topology, to the solution Z of the multiplicative stochastic heat equation started from a Dirac mass (whose logarithm solves the KPZ equation), for every sequence n_k going to infinity and all system sizes L_k with L_k / n_k^{3/4} going to infinity. The statement quantifies over every realization of the QSSEP and every solution of the stochastic heat equation on arbitrary filtered probability spaces. Since Mathlib has no stochastic integration, the Ito integral (as a limit in probability of Riemann sums), space-time white noise and the Ito-Walsh integral are defined in elementary terms in the statement file. Seven companion theorems show that these definitions are not vacuous and determine the objects: existence and pathwise uniqueness of the wave function, existence of a space-time white noise, well-posedness and Ito's isometry for the Walsh integral, uniqueness and nonnegativity of the solution of the stochastic heat equation. All eight theorems are proved from Mathlib and the standard axioms.",
+  "authors": [
+    "Guillaume Barraquand"
+  ],
+  "repository": "https://github.com/guillaumebarraquand/1particleQSSEPtoKPZ",
+  "commit": "786dab5c28d5213ac0718f1f2e212dfda9954339",
+  "project_path": null,
+  "declarations": [
+    "QSSEPtoKPZ.main_theorem",
+    "QSSEPtoKPZ.exists_isWaveFunction",
+    "QSSEPtoKPZ.isWaveFunction_unique",
+    "QSSEPtoKPZ.exists_isWhiteNoise",
+    "QSSEPtoKPZ.IsWalshIntegral.ae_eq",
+    "QSSEPtoKPZ.IsWalshIntegral.isometry",
+    "QSSEPtoKPZ.isMildSolution_unique",
+    "QSSEPtoKPZ.IsMildSolution.nonneg"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math-ph"
+    ],
+    "msc2020": [
+      "60H15",
+      "82C22",
+      "60F05",
+      "60K35",
+      "81S22"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T09:33:37Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "786dab5c28d5213ac0718f1f2e212dfda9954339",
+        "fork_repository": "PalomarArchive/guillaumebarraquand--1particleQSSEPtoKPZ--a92673ad4dc7",
+        "source_repository": "guillaumebarraquand/1particleQSSEPtoKPZ"
+      }
+    ]
+  },
+  "statement_hash": "sha256:a55818fd2722036222f55c158fc8835bdb86c6fd838f4d6bdb9acc61282741e2"
+}

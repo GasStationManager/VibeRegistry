@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000033",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000033",
+  "version": 1,
+  "title": "BKT asymptotics for the quenched free energy of hierarchical pinning",
+  "abstract": "Lean 4 and Mathlib formalization of the paper \"BKT asymptotics for the quenched free energy of hierarchical pinning\" (Hexagon preprint 2611.00654v1), except the Gaussian example of its introduction. For B > 2, a disorder W > 0 with E W = 1 and a field h, the partition functions on the diamond hierarchical lattice satisfy R_0 = e^h W and R_{n+1} = (R_n R_n' + B - 1) / B with independent copies; the free energy is F(h) = lim 2^{-n} E log R_n(h) and h_c = sup {h : F(h) = 0}. The main theorem states that if h_c exceeds the annealed critical point h_a = log(B - 1), then with theta = log 2 / log B, a = log B and Pi_n = prod_{j<n} E R_j(h_c)^theta, the residues l_3 = lim E[R_n^theta (log R_n - a)^3] / Pi_n and kappa = lim d/dh E[R_n(h)^theta (log R_n(h) - a)] at h_c, divided by Pi_n, exist and are positive, Pi_n ~ 3 a^3 n^2 / (2 l_3), and sqrt(u) log F(h_c + u) -> -pi log 2 / sqrt(gamma) as u decreases to 0, with gamma = 3 a^2 kappa / (2 l_3): the Berezinskii-Kosterlitz-Thouless law with explicit constant. All 24 numbered results of the paper are proved, including the basic bounds, critical moments, return to one, the critical product, the field response, the scaling limit and its identification with an explicit profile, continuation before the pole, and the upper and lower free-energy bounds through a hard integer-valued recursion. Three routine identities of Section 1 are used but not exported as standalone declarations.",
+  "authors": [
+    "Igor Kortchemski"
+  ],
+  "repository": "https://github.com/igor-kortchemski/BKT-hierarchical-pinning",
+  "commit": "f6c13a4134d8b0a1246f9ba7760a3c5a73db50bb",
+  "project_path": null,
+  "declarations": [
+    "DiamondPinning.integrable_lawR",
+    "DiamondPinning.integrable_tiltedLogPower",
+    "DiamondPinning.integrable_log_lawR",
+    "DiamondPinning.freeEnergy_tendsto",
+    "DiamondPinning.criticalPoint_isGreatest",
+    "DiamondPinning.bkt"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math-ph"
+    ],
+    "msc2020": [
+      "60K35",
+      "82B44",
+      "60K37",
+      "82B27"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T20:29:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f6c13a4134d8b0a1246f9ba7760a3c5a73db50bb",
+        "fork_repository": "PalomarArchive/igor-kortchemski--BKT-hierarchical-pinning--3f3e2f9a7869",
+        "source_repository": "igor-kortchemski/BKT-hierarchical-pinning"
+      }
+    ]
+  },
+  "statement_hash": "sha256:41da18108396b30fd51b89496d5ae8335119915f0c2b573c425386dbf7a1dae4"
+}

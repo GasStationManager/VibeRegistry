@@ -1,11 +1,11 @@
 # Sign-off packet — ArtificialTheorems
 
-*Generated 2026-11-16 10:32 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
+*Generated 2026-11-23 11:40 UTC by `scripts/generate_signoff_packet.py`. Do not edit by hand.*
 
 - **Entry**: `artificial-theorems`
 - **Upstream**: https://github.com/GasStationManager/ArtificialTheorems @ `9c0f970db295`
 - **Lean**: leanprover/lean4:v4.27.0
-- **Machine checks**: comparator, nanoda — overall **fail** at 2026-11-15T08:56:29Z
+- **Machine checks**: comparator, nanoda — overall **fail** at 2026-11-22T09:26:57Z
 - **Informal statements**: none adopted yet — run `python3 scripts/fetch_blueprint_statements.py entries/artificial-theorems.toml`
 
 ## What you are attesting

@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000008",
+  "version": 1,
+  "title": "Counting matchings in near-regular hypergraphs: Glock-Joos-Kim-Kühn-Lichev, Theorem 3.5 without conflicts",
+  "abstract": "A lower bound for the number of matchings of a given size in an almost regular uniform hypergraph with small codegrees. For every k >= 2 there is eps_0 > 0 such that for every eps in (0, eps_0) there is d_0 such that, for all d >= d_0, every k-uniform hypergraph H on n <= exp(d^{eps^3}) vertices with (1 - d^{-eps}) d <= delta(H) <= Delta(H) <= d and codegrees at most d^{1-eps} has, for every natural number m <= (1 - d^{-eps^3}) n / k, at least ((1 - d^{-eps^4}) d / e^{k-1})^m matchings with m edges. This is Theorem 3.5 of Glock, Joos, Kim, Kühn and Lichev, Conflict-free hypergraph matchings, in the case of an empty conflict system, stated for every integral size up to the paper's value of m. The proof analyses the random greedy matching process on a finite history tree: the remaining degrees follow the trajectory d(1 - tk/n)^{k-1}, tracked with explicit errors by Freedman's inequality for stopped supermartingales, and the count follows by comparing the probability of each sequence of chosen edges with the number of available edges at each step. The constants eps_0 = 1/(64k^2) and d_0 = max(2, 2^{16/eps}, (19200k^4)^{2/eps}) are explicit.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/gjkkl-matching-count",
+  "commit": "2d51367b7777a669de247e10b5e93229c8e06f1c",
+  "project_path": null,
+  "declarations": [
+    "GJKKL.Main.gjkkl_theorem_3_5"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C65",
+      "05C70",
+      "05D40",
+      "60G42"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T05:13:34Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2d51367b7777a669de247e10b5e93229c8e06f1c",
+        "fork_repository": "PalomarArchive/jtraverso--gjkkl-matching-count--531f66fb4289",
+        "source_repository": "jtraverso/gjkkl-matching-count"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b51f8fc67cd53a2f1ca9391234d409ffac1f06da160e4fa195d152fcd18bc28d"
+}

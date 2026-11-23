@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000014",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000014",
+  "version": 1,
+  "title": "Expected linear time for the relative neighborhood graph of uniform points in the unit cube",
+  "abstract": "A Lean 4 proof about an algorithm (SPoIF, Secure Posts on Increasing Fence) that computes the relative neighborhood graph of N points of the unit cube in three dimensions. The points are binned into a grid of about N cells. For each point p, a cube of grid cells around p (the fence) grows until the points collected inside it cut every patch of its surface off from p: a patch is cut off by a collected point q when it lies beyond the plane through q with normal q - p, so that q lies in the lune of p and any point beyond the patch. The neighbours of p are then found among the collected points by the direct lune test. Two theorems are proved. Correctness: for any points of the cube, the neighbours reported at each point are exactly its neighbours in the relative neighborhood graph. Expected linear time: for N independent uniform points of the cube, the expected operation count of the whole algorithm is at most C N for a constant C.",
+  "authors": [
+    "Z. Zzyzek (github: zzyzek)"
+  ],
+  "repository": "https://github.com/zzyzek/ExpectedLinearTimeRNG3D-Paper",
+  "commit": "27327ee65966414753a88383473346f77cde8534",
+  "project_path": "lean",
+  "declarations": [
+    "Rng3d.output_iff",
+    "Rng3d.expected_linear"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "cs.CG"
+    ],
+    "msc2020": [
+      "68U05",
+      "68W40",
+      "60D05",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T10:37:12Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "27327ee65966414753a88383473346f77cde8534",
+        "fork_repository": "PalomarArchive/zzyzek--ExpectedLinearTimeRNG3D-Paper--de3e9f579488",
+        "source_repository": "zzyzek/ExpectedLinearTimeRNG3D-Paper"
+      }
+    ]
+  },
+  "statement_hash": "sha256:5f1945e57e47dd8d851e72f042d4aea3fa705ff14528a654e353dcb473439348"
+}

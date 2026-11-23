@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000015",
+  "version": 1,
+  "title": "The Pontryagin maximum principle, Filippov's theorem and Noether's theorem for optimal control",
+  "abstract": "A Lean 4 formalization, with Mathlib, of three results of optimal control: the Pontryagin maximum principle and Filippov's theorem, following A. A. Agrachev and Yu. L. Sachkov, Control Theory from the Geometric Viewpoint (Encyclopaedia of Mathematical Sciences 87, Springer, 2004), Chapter 12 and Theorem 10.1, and Noether's theorem for optimal control, following H. J. Sussmann, Symmetries and integrals of motion in optimal control (Banach Center Publications 32, 1995), Theorem 4.1. Control systems q' = f(q, u) live on an open subset of a finite-dimensional real normed space, with measurable controls and trajectories in the sense of Caratheodory.\n\nThe maximum principle is proved with free terminal time, an integral cost and mixed boundary conditions (q(0), q(T)) in N, for strong local minimizers, with C^1 data and a compact control set: there are nu <= 0 and a Lipschitz covector curve p, with (nu, p(t)) nonzero for every t, that satisfy the adjoint equation, the maximum condition and the vanishing of the Hamiltonian for almost every t, and the transversality condition. Agrachev and Sachkov leave this case to the reader; their Lemmas 12.1 and 12.2 and Theorems 12.1-12.5 (the geometric maximum principle, free time without cost, and integral costs with fixed, separated and mixed boundary conditions) are proved too. Filippov's theorem: for a continuous control system with compact control set, convex velocity sets and bounded velocities, the attainable sets at time T and up to time T are compact; hence optimal controls exist for integral costs whose extended velocity sets are convex, with fixed or free terminal time. Both results are also proved, by the same argument, for problems posed on part of the space: trajectories confined to a closed set S (the dynamics and the cost need only be continuous, the velocities bounded and the velocity sets convex on S x U), starting in a compact set, with initial and terminal points in a closed relation, and terminal times in a window [T0, T1]. Noether's theorem: if every map of the flow of a C^1 vector field Y is a symmetry of the system that leaves the cost invariant (it may permute the controls), the momentum p(t)(Y(q(t))) is constant along every pair (q, p) that satisfies the adjoint equation and the maximum condition, for any multiplier and any set of control values. Sussmann's Theorem 4.1, for a Lie algebra acting by such symmetries and his biextremals, follows, and so does a maximum principle whose multiplier keeps every such momentum constant.\n\nEverything the proofs use is proved: existence, uniqueness and differentiable dependence of Caratheodory solutions, the variations formula and needle variations, Lebesgue points, measurable selection (Kuratowski-Ryll-Nardzewski), and the flows of C^1 vector fields with their derivative at time 0. Brouwer's fixed-point theorem is taken from the separate Lean package FixedPoint. No axiom beyond Lean's standard three is used.",
+  "authors": [
+    "The-Anh Vu-Le"
+  ],
+  "repository": "https://github.com/vltanh/lean4-optimal-control",
+  "commit": "7668df1add5113d6d20383663332307070919579",
+  "project_path": null,
+  "declarations": [
+    "OptimalControlChallenge.maximum_principle",
+    "OptimalControlChallenge.isCompact_reachableSet",
+    "OptimalControlChallenge.isCompact_reachableSetLE",
+    "OptimalControlChallenge.exists_optimal_fixedTime",
+    "OptimalControlChallenge.exists_optimal_freeTime",
+    "OptimalControlChallenge.noether"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.OC"
+    ],
+    "msc2020": [
+      "49K15",
+      "49J15",
+      "93B03",
+      "93C15",
+      "34A12",
+      "70H33"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T14:20:27Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7668df1add5113d6d20383663332307070919579",
+        "fork_repository": "PalomarArchive/vltanh--lean4-optimal-control--502e9f9ed14e",
+        "source_repository": "vltanh/lean4-optimal-control"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3568dae1a62c05ff4261151fca0d81e7db434787a28920cdcf0d72e0f548312c"
+}

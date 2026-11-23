@@ -1,0 +1,98 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000025",
+  "version": 1,
+  "title": "The Double Midset Conjecture for Metric Continua",
+  "abstract": "Lean 4 / Mathlib formalization of the paper \"The Double Midset Conjecture for Metric Continua\" (Lucas Alves de Almeida, 22 November 2026), which proves the Loveland-Wayment conjecture: a nondegenerate compact connected metric space in which every pair of distinct points has exactly two equidistant points is homeomorphic to the circle (Theorem A). Formalized: every definition, lemma, fact (in the form used), proposition, corollary and theorem of Sections 2-12, including Theorems A, B and C, the converse (the Euclidean circle has the DMP), the characterization of the metrizable continua admitting a DMP metric, and the facts that arcs and simple triods are finite trees. Not formalized: figures, remarks and the open questions of Section 13, and R. L. Moore's general theorem behind Fact 2.5 (only its consequence \"a dendrite without branch points is an arc\" is proved, which is all the paper uses).",
+  "authors": [
+    "Lucas Alves de Almeida"
+  ],
+  "repository": "https://github.com/LucasAlves8Sp/Double-midset-conjecture-for-metric-continua",
+  "commit": "aa5681a7c48f59e8eb59b492989781ddd79ea98b",
+  "project_path": null,
+  "declarations": [
+    "DoubleMidset.Paper.lemma_2_2_a",
+    "DoubleMidset.Paper.lemma_2_2_b",
+    "DoubleMidset.Paper.fact_2_3_D1",
+    "DoubleMidset.Paper.fact_2_3_D2",
+    "DoubleMidset.Paper.fact_2_3_D3",
+    "DoubleMidset.Paper.fact_2_3_D4",
+    "DoubleMidset.Paper.lemma_2_4",
+    "DoubleMidset.Paper.fact_2_5",
+    "DoubleMidset.Paper.lemma_2_7",
+    "DoubleMidset.Paper.tree_facts",
+    "DoubleMidset.Paper.lemma_2_8_i",
+    "DoubleMidset.Paper.lemma_2_8_ii",
+    "DoubleMidset.Paper.lemma_2_8_iii",
+    "DoubleMidset.Paper.lemma_2_9",
+    "DoubleMidset.Paper.prop_3_1",
+    "DoubleMidset.Paper.prop_3_2",
+    "DoubleMidset.Paper.cor_3_4",
+    "DoubleMidset.Paper.lemma_4_2",
+    "DoubleMidset.Paper.lemma_4_3",
+    "DoubleMidset.Paper.lemma_4_4",
+    "DoubleMidset.Paper.theorem_4_5",
+    "DoubleMidset.Paper.cor_4_6",
+    "DoubleMidset.Paper.eq_5_2",
+    "DoubleMidset.Paper.lemma_5_4",
+    "DoubleMidset.Paper.cor_5_5",
+    "DoubleMidset.Paper.lemma_5_6",
+    "DoubleMidset.Paper.lemma_6_2",
+    "DoubleMidset.Paper.lemma_6_3",
+    "DoubleMidset.Paper.prop_6_5",
+    "DoubleMidset.Paper.lemma_6_6",
+    "DoubleMidset.Paper.cor_6_7",
+    "DoubleMidset.Paper.lemma_7_1",
+    "DoubleMidset.Paper.lemma_7_2",
+    "DoubleMidset.Paper.lemma_7_3",
+    "DoubleMidset.Paper.lemma_7_4",
+    "DoubleMidset.Paper.lemma_8_1",
+    "DoubleMidset.Paper.prop_8_2_a",
+    "DoubleMidset.Paper.prop_8_2_b",
+    "DoubleMidset.Paper.lemma_9_2",
+    "DoubleMidset.Paper.prop_9_3",
+    "DoubleMidset.Paper.theorem_10_1",
+    "DoubleMidset.Paper.theorem_11_1",
+    "DoubleMidset.Paper.theorem_A",
+    "DoubleMidset.Paper.circle_hasDMP",
+    "DoubleMidset.Paper.theorem_A_iff",
+    "DoubleMidset.Paper.theorem_B",
+    "DoubleMidset.Paper.theorem_C"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.GN",
+      "math.MG"
+    ],
+    "msc2020": [
+      "54F15",
+      "54E35",
+      "54F50",
+      "51K05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T20:21:23Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "aa5681a7c48f59e8eb59b492989781ddd79ea98b",
+        "fork_repository": "PalomarArchive/LucasAlves8Sp--Double-midset-conjecture-for-metric-continua--542de79819d6",
+        "source_repository": "LucasAlves8Sp/Double-midset-conjecture-for-metric-continua"
+      }
+    ]
+  },
+  "statement_hash": "sha256:34c51bf22678c20d6e65f614163baff33fbfd0ce53873b50f607dc92ba243473"
+}

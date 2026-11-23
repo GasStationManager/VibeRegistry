@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000002",
+  "version": 1,
+  "title": "When the noncommutative AM-GM inequality holds",
+  "abstract": "For arbitrary real positive semidefinite matrices A_i whose sum is at most n I, the uniform average W of ordered products of m distinct matrices satisfies -I <= W <= I when n >= 2 ceil(m/2)^2. When n >= 4m^2 its lower bound improves to -(1-1/(2m)) I. The formalization also proves the stronger lower bound -(1-1/m) I at the quadratic threshold, the original sine-node criterion, and the cubic-size corollary. The statements retain the original arbitrary PSD and sum-at-most-nI hypotheses. Harmonic decomposition, positive root quadratures, matrix Gram factors, normalized coefficient extraction, and the original rounded-node lower-bound proof are constructed in the repository.",
+  "authors": [
+    "Yimin Zhong"
+  ],
+  "repository": "https://github.com/lowrank/noncommutative-amgm-lean",
+  "commit": "26ecfa508fd375e3d8fae87a4526d0be5efd8b3f",
+  "project_path": null,
+  "declarations": [
+    "AMGMSubmission.quadratic_bounds",
+    "AMGMSubmission.strengthened_lower",
+    "AMGMSubmission.endpoint_lower",
+    "AMGMSubmission.sine_bounds",
+    "AMGMSubmission.cubic_bounds"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.PR",
+      "math.OC"
+    ],
+    "msc2020": [
+      "15A45",
+      "47A63",
+      "41A55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T00:31:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "26ecfa508fd375e3d8fae87a4526d0be5efd8b3f",
+        "fork_repository": "PalomarArchive/lowrank--noncommutative-amgm-lean--265ca3d9affd",
+        "source_repository": "lowrank/noncommutative-amgm-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0cd0185b3f56da5b864370d8d3832cf0c02d2be2a4a5101d725617ab7306f0e6"
+}

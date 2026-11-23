@@ -1,0 +1,100 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000017",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000017",
+  "version": 1,
+  "title": "Cutoff phenomenon for fast diffusion and porous medium equations",
+  "abstract": "Formalization of the paper \"On the cutoff phenomenon for fast diffusion and porous medium equations\" by D. Chafaï, M. Fathi and N. Simonov. For the Fokker–Planck version of the fast diffusion / porous medium equation in ℝᵈ started from a Dirac mass, whose solution is an explicit rescaled Barenblatt profile, the quadratic Wasserstein distance, the Tsallis-type relative entropy and the Fisher information to equilibrium, maximized over initial points in a ball of radius r√d, exhibit a cutoff phenomenon as d → ∞: they jump from +∞ to 0 at the critical time max(1,α)/2 · log d for a fixed self-similarity exponent α ≠ 1/2, and at 1/2 · log d for a fixed exponent m > 1. The formalization also covers the Wasserstein distance between a measure and its image under an affine map with positive semidefinite linear part, the exact Gamma-function formulas for the moments and Lᵐ norms of the full-space and compactly supported Barenblatt profiles and their high-dimensional asymptotics, the normalization of the Barenblatt profile, and the fact that the explicit solution solves the equation.",
+  "authors": [
+    "Djalil Chafaï"
+  ],
+  "repository": "https://github.com/djalilchafai/cutoff-fastdiff",
+  "commit": "6621bf2a7779c7fb7cbda04bb7c860d853c5c516",
+  "project_path": null,
+  "declarations": [
+    "Cutfast.barenblattConst_spec",
+    "Cutfast.solution_isProbabilityDensity",
+    "Cutfast.equilibrium_isProbabilityDensity",
+    "Cutfast.solution_hasDerivAt",
+    "Cutfast.fdeSolution_hasDerivAt",
+    "Cutfast.fdeSolution_isProbabilityDensity",
+    "Cutfast.solution_eq_fdeSolution",
+    "Cutfast.tendsto_fdeSolution_zero",
+    "Cutfast.tendsto_solution_zero",
+    "Cutfast.tendsto_solution_atTop",
+    "Cutfast.integrable_sq_mul_equilibrium_iff",
+    "Cutfast.wassersteinSq_eq_top",
+    "Cutfast.relEntropy_hasDerivAt",
+    "Cutfast.relEntropy_eq_bregman",
+    "Cutfast.tsallis_strictConvexOn_tendsto_log",
+    "Cutfast.tendsto_barenblatt_one",
+    "Cutfast.tendsto_fdeSolution_one",
+    "Cutfast.tendsto_solution_one",
+    "Cutfast.cutoff_wassersteinSq",
+    "Cutfast.cutoff_relEntropy",
+    "Cutfast.cutoff_fisherInfo",
+    "Cutfast.cutoff_fixedExponent_wassersteinSq",
+    "Cutfast.cutoff_fixedExponent_relEntropy",
+    "Cutfast.cutoff_fixedExponent_fisherInfo",
+    "Cutfast.cutoff_wassersteinSq_radius",
+    "Cutfast.cutoff_relEntropy_radius",
+    "Cutfast.cutoff_fisherInfo_radius",
+    "Cutfast.cutoff_fixedExponent_wassersteinSq_radius",
+    "Cutfast.cutoff_fixedExponent_relEntropy_radius",
+    "Cutfast.cutoff_fixedExponent_fisherInfo_radius",
+    "Cutfast.wassersteinSq_map_affine",
+    "Cutfast.wassersteinSq_elliptic",
+    "Cutfast.fullBarenblatt_moment",
+    "Cutfast.fullBarenblatt_integral_rpow",
+    "Cutfast.fullBarenblatt_asymptotics",
+    "Cutfast.compactBarenblatt_moment",
+    "Cutfast.compactBarenblatt_integral_rpow",
+    "Cutfast.compactBarenblatt_asymptotics",
+    "Cutfast.compactBarenblatt_fixedExponent_asymptotics",
+    "Cutfast.compactBarenblatt_support",
+    "Cutfast.student_law",
+    "Cutfast.student_moments",
+    "Cutfast.tendsto_student_gaussian",
+    "Cutfast.student_fisherSnedecor",
+    "Cutfast.barenblatt_eq_student",
+    "Cutfast.barenblatt_student_dMinusOne",
+    "Cutfast.sphereUniform_map_projFirst",
+    "Cutfast.stdGaussian_map_sphereUniform",
+    "Cutfast.sphereUniform_map_stereoProj"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP",
+      "math.PR"
+    ],
+    "msc2020": [
+      "35K55",
+      "35B40",
+      "49Q22",
+      "60J60"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T15:28:46Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6621bf2a7779c7fb7cbda04bb7c860d853c5c516",
+        "fork_repository": "PalomarArchive/djalilchafai--cutoff-fastdiff--5f4cb94ba48d",
+        "source_repository": "djalilchafai/cutoff-fastdiff"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3eb5dee44178d65fdb6b15cbba2aca55f345918370e7256bc58616f76c7f6cb0"
+}

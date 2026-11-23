@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000012",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000012",
+  "version": 1,
+  "title": "One extra worker rules out the square-root welfare compromise",
+  "abstract": "A clearinghouse observes a market with n firms and n+1 workers and can choose any stable assignment. Both sides draw independent rate-one exponential utilities for every firm-worker pair. Changing partners costs log(n)/(6 sqrt(n)). Write δ = 1/400000. As n grows, with probability tending to one, every stable assignment gives the matched workers a mean partner rank greater than n^(1/2+δ) and a mean utility less than (1/2−δ) log(n). Rank one is best. Consequently, even a clearinghouse that chooses separately for each objective cannot deliver mean partner ranks at the square-root benchmark on both sides, or mean utilities at the half-log benchmark on both sides. A working paper on these results is forthcoming.",
+  "authors": [
+    "Bo Cowgill"
+  ],
+  "repository": "https://github.com/bocowgill/worker-compromise",
+  "commit": "2c377b62b66f79ae9bbf127af1ec5ab0b2ea5468",
+  "project_path": null,
+  "declarations": [
+    "WorkerCompromise.allStableWorkerBounds_tendsto_one",
+    "WorkerCompromise.optimalCompromises_tendsto_one"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "econ.TH",
+      "math.PR"
+    ],
+    "msc2020": [
+      "91B68",
+      "60C05"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T13:23:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2c377b62b66f79ae9bbf127af1ec5ab0b2ea5468",
+        "fork_repository": "PalomarArchive/bocowgill--worker-compromise--eaf91798b9a2",
+        "source_repository": "bocowgill/worker-compromise"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7a2b366e59b4585114a6fd0ca9181c6240e42a7a47eecee1e4a9fbab90404a6d"
+}

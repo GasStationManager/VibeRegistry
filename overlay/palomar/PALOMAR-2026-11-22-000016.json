@@ -1,0 +1,59 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000016",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000016",
+  "version": 1,
+  "title": "The Diophantine equation x⁴ ± y⁴ = iz² in Gaussian integers",
+  "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, of the results of F. Najman, \"The Diophantine equation x⁴ ± y⁴ = iz² in Gaussian integers\" (Amer. Math. Monthly 117 (2010)). In the Gaussian integers ℤ[i], the equation x⁴ − y⁴ = iz² has only trivial solutions (xyz = 0); the nontrivial solutions of x⁴ + y⁴ = iz² with gcd(x, y, z) = 1 are exactly those with x, y ∈ {±1, ±i} and z = ±i(1 + i), and all its nontrivial solutions are given by x ∈ {±y, ±iy}, z = ±i(1 + i)y²; and the equations x⁴ ± y⁴ = z² have only trivial solutions (a theorem of Hilbert, reproved in the paper). As the paper remarks, the same holds over ℚ(i). The proofs go through the elliptic curves y² = x³ + x and y² = x³ − x over ℚ(i), whose groups of ℚ(i)-points, the point at infinity included, are formalized as ℤ/2 × ℤ/2 and ℤ/2 × ℤ/4. Where the paper computes the ranks with a computer program, the formalization determines the ℚ(i)-points directly: the line through a point and its complex conjugate reduces them to rational points, which Fermat's descent determines. 9 theorems and 2 definitions, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Filip Najman"
+  ],
+  "repository": "https://github.com/F-Najman/formalization_papers",
+  "commit": "bfc9dfad545a4bc9bdb1580ed0a96ebf7d27003c",
+  "project_path": "gaussian-quartics",
+  "declarations": [
+    "GaussianQuartics.theorem1i",
+    "GaussianQuartics.theorem1ii",
+    "GaussianQuartics.theorem2_plus",
+    "GaussianQuartics.theorem2_minus",
+    "GaussianQuartics.gaussian_int_plus_i_iff",
+    "GaussianQuartics.rat_minus_i_trivial",
+    "GaussianQuartics.rat_plus_i_iff",
+    "GaussianQuartics.rat_hilbert_plus",
+    "GaussianQuartics.rat_hilbert_minus"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11D25",
+      "11G05",
+      "11R11",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T15:31:41Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "bfc9dfad545a4bc9bdb1580ed0a96ebf7d27003c",
+        "fork_repository": "PalomarArchive/F-Najman--formalization_papers--5a855fe1989c",
+        "source_repository": "F-Najman/formalization_papers"
+      }
+    ]
+  },
+  "statement_hash": "sha256:781327866fbc58ce50264b6fe22371a490a3fb67bd9043227fb94ef6b07401fc"
+}

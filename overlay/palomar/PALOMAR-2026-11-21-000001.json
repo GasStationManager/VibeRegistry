@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-21-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-21-000001",
+  "version": 1,
+  "title": "Even bases with exactly one four-digit Kaprekar cycle",
+  "abstract": "The four-digit Kaprekar map in base B sends an integer 0 <= x < B^4, written with four base-B digits (leading zeros allowed), to the descending arrangement of its digits minus the ascending arrangement. A cycle is a periodic orbit through an input whose digits are not all equal. Cycles are counted up to cyclic shift, including fixed points of least period one. This formalization uses only Lean 4 core and Std and proves that an even base B >= 2 has exactly one cycle if and only if B = 3*2^(2k+1) or B = 5*2^(2k+1) for some k >= 0, or B = 7*2^n with n >= 1 and n not divisible by 3. In these three families the unique cycle has length 6(k+1), 1 and 3, respectively; base ten is 5*2^1, with the fixed point 6174. This is Corollary 2 of R. Galyavin, \"Cycles of the four-digit Kaprekar map in even bases\" (2026). It proves the pattern that Chen, Ono, Schwartz and Thakur recorded from numerical evidence (J. Integer Seq. 29 (2026), Remark 28). The map is stated directly as digit sorting and subtraction on natural numbers. The underlying Lean development also proves the paper's Theorem 1, the classification of all cycles in every even base m*2^n; that classification is not part of the statement compared here.",
+  "authors": [
+    "Rustem Galyavin"
+  ],
+  "repository": "https://github.com/galyavin/kaprekar-cycles-lean",
+  "commit": "fd7c7adeeb25a5127104cb601d1caf0ddf29abfd",
+  "project_path": null,
+  "declarations": [
+    "PalomarKaprekar.unique_cycle_iff",
+    "PalomarKaprekar.unique_cycle_length"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.DS"
+    ],
+    "msc2020": [
+      "11A63",
+      "37P99"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-21T00:15:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fd7c7adeeb25a5127104cb601d1caf0ddf29abfd",
+        "fork_repository": "PalomarArchive/galyavin--kaprekar-cycles-lean--cd27c54d5598",
+        "source_repository": "galyavin/kaprekar-cycles-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:83dcd77c3bab818d2552e0a69f8b555a6b6f8dfb3d17267e4b0cb451c13df7d5"
+}

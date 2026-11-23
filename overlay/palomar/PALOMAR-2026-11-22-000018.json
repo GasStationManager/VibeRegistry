@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000018",
+  "version": 3,
+  "title": "Universal 81/29 Bound for Tuza's Triangle-Cover Conjecture",
+  "abstract": "Unconditional Lean 4 + Mathlib formalization proving 29 * tau(G) <= 81 * nu(G) (tau(G) <= (81 / 29) * nu(G) ~= 2.793103 * nu(G)) for every finite simple graph G, where nu(G) is the triangle packing number and tau(G) is the triangle transversal number, strictly improving Sichen Wang's 165/59 bound (arXiv:2609.13831). Main theorem: 1 of 1 in Lean (100%); companion 32-vertex gadget checked separately in exact rational Python. Extends Wang's MIT-licensed sichen-wang/tuza-lean library with helper-arborescence coupling, unmerged colored-family covers, and opposite-edge elimination, together with non-vacuity checks nu(K_4) = 1 and tau(K_4) = 2.",
+  "authors": [
+    "Tyler B. Hughes"
+  ],
+  "repository": "https://github.com/mathdiscoveries/tuza-triangle-cover",
+  "commit": "6b34fd8171036901c901e298d00a6df3b7333cbd",
+  "project_path": null,
+  "declarations": [
+    "TuzaChallenge.tuza_bound_81_29_nat",
+    "TuzaChallenge.tuza_bound_81_29",
+    "TuzaChallenge.exists_small_triangle_transversal_81_29",
+    "TuzaChallenge.nu_complete4",
+    "TuzaChallenge.tau_complete4"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35",
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T08:45:00Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6b34fd8171036901c901e298d00a6df3b7333cbd",
+        "fork_repository": "PalomarArchive/mathdiscoveries--tuza-triangle-cover--8d95833af7ef",
+        "source_repository": "mathdiscoveries/tuza-triangle-cover"
+      }
+    ]
+  },
+  "statement_hash": "sha256:70cb81290bf5a4b9bf4fd3c0116a1601e271d2705a6a84b7a075d496847d3530"
+}

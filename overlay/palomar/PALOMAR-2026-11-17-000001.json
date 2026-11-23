@@ -1,0 +1,57 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000001",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000001",
+  "version": 1,
+  "title": "OEIS A357559: Bala's divisibility conjectures for k^m-weighted Apéry sums (m = 2, 3)",
+  "abstract": "Let S_m(n) = Σ_{k=0}^n (−1)^(n+k) k^m C(n,k) C(n+k,k)²; S_3 is OEIS A357559 and S_0 is the Apéry sequence A005258. The package proves Peter Bala's 2022 Conjecture 1, n²(2n+1)² ∣ S_2(2n), and the conjecture in the entry's formula section, n²(2n+1)³ ∣ 3·S_3(2n), for every n ≥ 0. Both follow from stronger statements for every n: n²(n+1)² ∣ 2S_2(n), with n²(n+1)² ∣ S_2(n) for odd n, and n²(n+1)³ ∣ 6S_3(n). These give an extra factor 2 in both conjectures. The constants 2 and 6 cannot be lowered: 36 ∤ S_2(2) = 126, 8 ∤ 3S_3(1) = 12 and 576 ∤ 2S_3(3) = 16896. Bala's Conjectures 2 and 3, for m ≥ 4, are not treated. Divisibility theorems for binomial sums of this kind, including weighted sums of Apéry numbers, are a research topic: see Guo and Zeng (Int. J. Number Theory 2011 and 2012) and Guo's proof of a divisibility conjecture of Z.-W. Sun (Electron. J. Combin. 2013).",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+  "project_path": null,
+  "declarations": [
+    "OeisA357559.S_two_dvd",
+    "OeisA357559.S_two_dvd_of_odd",
+    "OeisA357559.S_three_dvd",
+    "OeisA357559.conjecture_one",
+    "OeisA357559.conjecture_one_two",
+    "OeisA357559.formula_conjecture",
+    "OeisA357559.formula_conjecture_two"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A10",
+      "11A07",
+      "11B65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T00:05:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:67cfcd8afc4a157333e4c5bec3123400f82a8f82dad1d76366a8ef51fba16a28"
+}

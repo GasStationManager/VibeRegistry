@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000033",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000033",
+  "version": 1,
+  "title": "Schauder bases in unitary orbits",
+  "abstract": "A Lean 4 formalization of the following theorem: a strongly continuous one-parameter group of unitary operators on a separable infinite-dimensional complex Hilbert space has simple continuous spectrum if and only if one of its orbits contains a Schauder basis, that is, there are a vector g and pairwise distinct real numbers t_n such that (U_{t_n} g) is a Schauder basis.",
+  "authors": [
+    "Lukas Liehr",
+    "Mitchell A. Taylor"
+  ],
+  "repository": "https://github.com/lukasliehr/Schauder-Basis-Orbits",
+  "commit": "544b12a51f31765e02f2030d4773e0d116366255",
+  "project_path": null,
+  "declarations": [
+    "MainResult"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA",
+      "math.SP"
+    ],
+    "msc2020": [
+      "46B15",
+      "47D03",
+      "47A10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T22:34:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "544b12a51f31765e02f2030d4773e0d116366255",
+        "fork_repository": "PalomarArchive/lukasliehr--Schauder-Basis-Orbits--025b86f71497",
+        "source_repository": "lukasliehr/Schauder-Basis-Orbits"
+      }
+    ]
+  },
+  "statement_hash": "sha256:79f6a2d7f832b7bd337ecc493dcdf6ad395517dd26dd5b736c4202a7a84c2b9e"
+}

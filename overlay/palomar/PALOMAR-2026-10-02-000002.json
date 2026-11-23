@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-10-02-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-10-02-000002",
+  "version": 2,
+  "title": "Optimal packings of one to eight unit squares in a disk",
+  "abstract": "For n = 1, …, 8: the least radius of a closed disk holding n unit squares with disjoint interiors, each placed and rotated freely, and every packing that attains it. The radii are √2/2, √5/2, 5√17/16, √2, √(5/2), √q₆ ≈ 1.68854, √13/2 and R₈ ≈ 1.97877, where q₆ is a quartic irrational and R₈ the least radius of a disk about the origin holding five corners with prescribed gaps between them. Up to rotation about the disk centre and relabelling, the optimal packing is unique for n ≤ 6: the square, the 2 × 1 rectangle, the T, the 2 × 2 block, the plus, and for six squares a central square with four neighbours, two of them pushed along its sides, and a sixth square turned by π/4 between those two. For n = 7 the optimal packings form a three-parameter family: two columns of two squares and, between them, a column of three whose heights vary independently, at least 1 apart and within √3 − 1/2 of the disk centre. For n = 8 they form a five-parameter family, with its reflections: five squares have a corner on the circle, two slide, and the central square moves and turns. The proofs for three to six squares bound the arcs the squares occupy on a small circle about the disk centre. For six squares this finds the square that contains the disk centre; five fixed points label the others, and a weighted sum of separating inequalities, with estimates uniform in the angles of the squares, forces the optimal radius. For seven squares, each square avoiding the disk centre gets a direction from it, and in the optimal disk two disjoint such squares get directions at least π/3 apart. For eight squares a central square is found, checked pair, affine and owner tables capture the frames of the seven exterior squares near the stationary configuration, and a completion of squares with the weights of the stationary packing forces the optimal radius. Lean verifies the table bounds and their coverage. The public radius and optimal family retain their geometric five-corner description, proved equivalent to the stationary description used by the tables. The table-free case analysis is deprecated and is absent from the active library. We found no earlier proof for five, six, seven or eight squares, and no exact one for three, where a computer-assisted enclosure of the radius and the optimal arrangements was known. Four squares, uniqueness included, were settled by hand in 2026, by the same idea as here.",
+  "authors": [
+    "The-Anh Vu-Le"
+  ],
+  "repository": "https://github.com/vltanh/lean4-squares-in-circles",
+  "commit": "d330fa3256eaf0dd6149917b71b9d5561d7ca9c0",
+  "project_path": null,
+  "declarations": [
+    "SquaresInCircles.optimal_radius",
+    "SquaresInCircles.optimal_packings"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T12:27:14Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "d330fa3256eaf0dd6149917b71b9d5561d7ca9c0",
+        "fork_repository": "PalomarArchive/vltanh--lean4-squares-in-circles--0ba28607e811",
+        "source_repository": "vltanh/lean4-squares-in-circles"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3dae640dcd86d96925a2ef39fb6b277d5db93cd01fc1a7da772cc658d6a416e8"
+}

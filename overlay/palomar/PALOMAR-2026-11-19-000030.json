@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000030",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000030",
+  "version": 1,
+  "title": "Read's theorem: a bounded operator on l1 with no nontrivial closed invariant subspace",
+  "abstract": "A machine-checked proof that there is a bounded operator on l1(N, C) with no closed invariant subspace other than 0 and the whole space. This is Read's 1985 counterexample to the invariant subspace problem on l1, following Wieslaw Sliwa's explicit version of Read's operator (Rocky Mountain J. Math. 40, 2010), which replaces \"sufficiently rapidly increasing\" sequences by concrete growth conditions and proves every lemma. Its audience is operator theory and the geometry of Banach spaces. It is the statement Invariant_subspace_problem_l1 of Formal Conjectures (InvariantSubspaceProblem.lean), which marks it research solved. The result is classical and no priority is claimed. The operator is multiplication by x in a basis of the polynomials built from a fast-growing integer sequence; the proof shows that the vector 1 can be approximated by p(T)e for every nonzero e, so no nonzero closed invariant subspace can be proper. The open case of a separable Hilbert space is not addressed.",
+  "authors": [
+    "Zayn Blore"
+  ],
+  "repository": "https://github.com/zblore/fc-read-l1",
+  "commit": "e8f632e26409119168b0b57c3e20ab0510c1a914",
+  "project_path": null,
+  "declarations": [
+    "InvariantSubspaceProblem.Invariant_subspace_problem_l1"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.FA"
+    ],
+    "msc2020": [
+      "47A15",
+      "47B37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T18:31:32Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e8f632e26409119168b0b57c3e20ab0510c1a914",
+        "fork_repository": "PalomarArchive/zblore--fc-read-l1--3c0bf53181ed",
+        "source_repository": "zblore/fc-read-l1"
+      }
+    ]
+  },
+  "statement_hash": "sha256:09262be1c844b3d9ccf7e93bcad497ee77815c1a7857721b0b0b010568c11dae"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000004",
+  "version": 1,
+  "title": "Erdős Problem 626: Erdős's upper bound g_k(n) <= 2 log n / log(k−2) + 1",
+  "abstract": "For k >= 4 and all sufficiently large n, g_k(n) <= 2 log n / log(k−2) + 1, where g_k(n) is the largest m such that some graph on n vertices with chromatic number k has no cycle of length <= m. This is Erdős's upper bound (Mathematika 1962, Theorem 1) in the form his printed proof gives. Erdős's g_k(n) is the largest girth, one more than the g_k(n) used here, so the formal bound is one weaker than Theorem 1 as printed. With Erdős's lower bound of order log n, it shows that g_k(n) has order log n. Whether g_k(n)/log n converges is the open Erdős Problem 626.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "2d98cec293e789475e9cf9372472c600ecb2c64b",
+  "project_path": null,
+  "declarations": [
+    "Erdos626.erdos_626.variants.erdos_upper"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T02:14:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "2d98cec293e789475e9cf9372472c600ecb2c64b",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cd6b62710dedaeb217638fb3e09e6d6715af0078c7086487513e98dd62131ec0"
+}

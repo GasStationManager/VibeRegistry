@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000002",
+  "version": 1,
+  "title": "Erdős 1172: GCH ordinal partition relations on ω₂ and ω₃ and huge-cardinal consistency of ω₂ → (ω₁ + ω)²₂",
+  "abstract": "Lean 4 formalization of Parts (ii), (iii), and (iv) of Erdős Problem 1172. Parts (ii) and (iii) are new mathematical results proved in ZFC + GCH (Cardinal.GCH): ω₃ → (ω₂ + ω₁, ω₂ + ω)² and ω₂ → (ω₁^(ω + 2) + 2, ω₁ + 2)², matching Baumgartner, Hajnal, and Todorčević (1993, p. 2) and the 1999 Budapest problem booklet [Va99, 7.87] verbatim, both previously open in the set-theory literature. Part (iv) gives the first formalization of the known relative consistency result (Laver 1982; Foreman-Hajnal 2003) for the ω₁ + ω case posed by Erdős and Hajnal (1974, p. 272): relative to a huge cardinal κ with target θ (IsHugeWithTarget κ θ, Kanamori Theorem 24.8) and ground GCH at and above θ, the first-order theory ZFC + GCH + ω₂ → (ω₁ + ω, ω₁ + ω)² (gchPart4Theory) is syntactically consistent; the stronger simultaneous all-target question ∀ ξ < ω₂, ω₂ → (ξ)²₂ under GCH remains open and is not addressed. For Part (i), erdosproblems.com/1172's cropped-scan binary reconstruction is omitted, and the original un-cropped Baumgartner-Hajnal-Todorčević (1993, p. 2) countable-color question ω₃ → (ω₂ + 2)²_ω under GCH remains open and is not claimed (an unselected remark in Erdos1172/CountableNeighborhoodStep.lean notes that our countable-color neighborhood ideal on ω₃ recovers the known ω₂ + 1 case GCH → ω₃ → (ω₂ + 1)²_ω due to Erdős and Rado, [ErRa56]; [BHT93, Theorem 2.1]).",
+  "authors": [
+    "Tokengrinder"
+  ],
+  "repository": "https://github.com/tokengr1nder/Erdos1172",
+  "commit": "7f82f613ec0489ed3e73282f3bfe75edddb037aa",
+  "project_path": null,
+  "declarations": [
+    "Erdos1172.erdos_1172.parts.ii",
+    "Erdos1172.erdos_1172.parts.iii",
+    "Erdos1172.erdos_1172.parts.iv"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.CO"
+    ],
+    "msc2020": [
+      "03E02",
+      "03E35",
+      "03E55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T04:35:40Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7f82f613ec0489ed3e73282f3bfe75edddb037aa",
+        "fork_repository": "PalomarArchive/tokengr1nder--Erdos1172--37d4e9d0c320",
+        "source_repository": "tokengr1nder/Erdos1172"
+      }
+    ]
+  },
+  "statement_hash": "sha256:bde6e9b875584fee0e714a0c9c949d09bcc42e0aae70f2f14c533bc1c59c3223"
+}

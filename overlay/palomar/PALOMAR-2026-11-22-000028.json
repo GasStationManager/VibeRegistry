@@ -1,0 +1,58 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000028",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000028",
+  "version": 1,
+  "title": "Two infinite families of base-6 Lychrel numbers",
+  "abstract": "Unconditional Lean 4 formalization of two explicit, strictly increasing, pairwise disjoint infinite families x(m) and y(m) (m >= 0) of base-6 Lychrel numbers under repeated base-6 reverse-and-add T(n) = n + rev_6(n). Family 1 has 110 + 2m base-6 digits (smallest seed x(0) with 86 decimal digits) and Family 2 has 108 + 2m base-6 digits (smallest seed y(0) with 84 decimal digits), with middle blocks linked by base-6 digit complement d |-> 5 - d. Both satisfy the exact period-12 self-similar recurrence T^[12](x(m)) = x(m + 3) and T^[12](y(m)) = y(m + 3) while avoiding all base-6 palindromes, proving unconditionally that infinitely many base-6 Lychrel numbers exist.",
+  "authors": [
+    "Tyler B. Hughes"
+  ],
+  "repository": "https://github.com/mathdiscoveries/lychrel-base6",
+  "commit": "ab6878fe03baae8b2cc9516bcfbbf034e04dbcf8",
+  "project_path": null,
+  "declarations": [
+    "LychrelBase6.infinite_lychrel6",
+    "LychrelBase6.xValue_lychrel",
+    "LychrelBase6.xValue_step12",
+    "LychrelBase6.xValue_strictMono",
+    "LychrelBase6.xValue_zero_eq",
+    "LychrelBase6.yValue_lychrel",
+    "LychrelBase6.yValue_step12",
+    "LychrelBase6.yValue_strictMono",
+    "LychrelBase6.yValue_zero_eq",
+    "LychrelBase6.xValue_disjoint_yValue"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11A63",
+      "11B37"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T20:54:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ab6878fe03baae8b2cc9516bcfbbf034e04dbcf8",
+        "fork_repository": "PalomarArchive/mathdiscoveries--lychrel-base6--df9a6b794a34",
+        "source_repository": "mathdiscoveries/lychrel-base6"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0754ad561bb0b147ef62e7505709ea741d7db722bb34770a661b16b516441447"
+}

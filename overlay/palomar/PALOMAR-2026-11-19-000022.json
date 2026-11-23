@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000022",
+  "version": 1,
+  "title": "Keevash, The existence of designs II: Lemma kahn+ with equal weights, and the nibble matching for [0,1]-valued tests",
+  "abstract": "A Lean 4 / Mathlib formalization of the equal-weight case of Lemma kahn+ of P. Keevash, \"The existence of designs II\" (arXiv:1802.05900), deduced from the theorem of Ehard, Glock and Joos on pseudorandom hypergraph matchings, and of the form in which it is applied in the proof of Lemma 3.9 (nibble). (1) DesignsII.kahn_plus_equal_weights: for 0 < δ < 1 and k ≥ 2 there is Δ₀ such that, for every real Δ ≥ Δ₀, every finite hypergraph H whose edges have at most k vertices, whose degrees are at most Δ and whose codegrees of distinct vertices are at most Δ^(1−δ), with |H| ≤ exp(Δ^((δ/(50k²))²)), and every family of at most exp(Δ^((δ/(50k²))²)) nonnegative test functions p_j on V(H), there is a matching M ⊆ H such that for every j satisfying the spread condition (every edge sum ∑_{v∈e} p_j(v), multiplied by Δ^(1+δ), is at most the total ∑_{e∈H} ∑_{v∈e} p_j(v)), the covered mass ∑_{v∈⋃M} p_j(v) differs from ∑_{e∈H} ∑_{v∈e} p_j(v)/Δ by at most Δ^(−δ/(50k²)) times the latter. (2) DesignsII.nibble_matching_tests: under the same hypotheses, for every η with 0 ≤ η < 1 and test functions with values in [0,1], the matching can be chosen so that for every j whose support (the vertices with p_j(v) ≠ 0) has degrees at least (1−η)Δ, the mass of p_j on the vertices not covered by M is at most max((η + Δ^(−δ/(50k²)))·∑_v p_j(v), k·Δ^δ/(1−η)). Both statements quantify over all Δ ≥ Δ₀ with Δ₀ depending only on δ and k; Δ₀ is not made explicit. Mathlib does not contain these results.",
+  "authors": [
+    "Juan Pablo Traverso Gianini"
+  ],
+  "repository": "https://github.com/jtraverso/keevash-designs-ii-kahn",
+  "commit": "e27207ee346c481e0cbfc9c236b941c64a8647e8",
+  "project_path": null,
+  "declarations": [
+    "DesignsII.kahn_plus_equal_weights",
+    "DesignsII.nibble_matching_tests"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.PR"
+    ],
+    "msc2020": [
+      "05C65",
+      "05C70"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T15:11:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e27207ee346c481e0cbfc9c236b941c64a8647e8",
+        "fork_repository": "PalomarArchive/jtraverso--keevash-designs-ii-kahn--21ba90c2a1ee",
+        "source_repository": "jtraverso/keevash-designs-ii-kahn"
+      }
+    ]
+  },
+  "statement_hash": "sha256:def74578f53b4a6564f05237105cef3b69fe240b7cde183deb8dc63a0ec53b69"
+}

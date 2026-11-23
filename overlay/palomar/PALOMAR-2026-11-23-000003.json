@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000003",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000003",
+  "version": 1,
+  "title": "Schur decomposition with logarithmic precision in cubic time up to squared logarithmic factors",
+  "abstract": "A finite randomised floating-point program computes an approximate complex Schur decomposition for every input of spectral norm at most one. For tolerance delta and requested failure probability p in (0,1/2), the joint residual and orthogonality errors are at most delta with probability at least 1-p. The program uses logarithmically many significand and natural control-word bits, and cubic work times a squared logarithm. Exact triangular storage and the work bound hold on every execution.",
+  "authors": [
+    "Matthew J. Colbrook"
+  ],
+  "repository": "https://github.com/MColbrook/logarithmic-precision-schur",
+  "commit": "6035fb72968d7a5d4cf8e86c92aa3c49d330f9a7",
+  "project_path": null,
+  "declarations": [
+    "SchurFormal.main_result"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NA"
+    ],
+    "msc2020": [
+      "65F15",
+      "65G50",
+      "68W20",
+      "15A16"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T01:28:07Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "6035fb72968d7a5d4cf8e86c92aa3c49d330f9a7",
+        "fork_repository": "PalomarArchive/MColbrook--logarithmic-precision-schur--14dc9be278cb",
+        "source_repository": "MColbrook/logarithmic-precision-schur"
+      }
+    ]
+  },
+  "statement_hash": "sha256:d6640da5fbf6b11ff3b31974d6979743179cb745d6384c2a43a0ee934a329d9d"
+}

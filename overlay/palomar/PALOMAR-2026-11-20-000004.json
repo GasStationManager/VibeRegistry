@@ -1,0 +1,66 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000004",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000004",
+  "version": 1,
+  "title": "Compatibility and realization of coordinate projection areas",
+  "abstract": "The principal results and substantive corollaries of the included paper on coordinate projection areas: rank-three nonapproximation despite realizable four-coordinate restrictions, compatibility of boundary quartets, escape-cone and closure identities, strict realization by centrally symmetric polytopes with the actual vertex bound, weighted obstructions, open nonrealizable families, and the nonnegative rank-at-most-three classification.",
+  "authors": [
+    "Caius Folkerts"
+  ],
+  "repository": "https://github.com/caiusdfolkerts/research",
+  "commit": "e325c4e4b1b4e75f269bb3ff000affd374287c8d",
+  "project_path": "projection_areas_status",
+  "declarations": [
+    "PalomarProjectionAreas.positive_rank_three_obstruction",
+    "PalomarProjectionAreas.positive_rank_le_three_not_realizable",
+    "PalomarProjectionAreas.escapeCone_eq_divergingDiameterLimits",
+    "PalomarProjectionAreas.closure_realizationLocus_eq_union_escapeCone",
+    "PalomarProjectionAreas.mem_escapeCone_iff_exists_full_dimensional_symmetric_sequence",
+    "PalomarProjectionAreas.escapeCone_isClosed",
+    "PalomarProjectionAreas.strict_weighted_realization_with_vertex_bound",
+    "PalomarProjectionAreas.strict_nonnegative_weighted_realization_with_vertex_bound",
+    "PalomarProjectionAreas.boundary_quartets_bound_sharp",
+    "PalomarProjectionAreas.boundary_quartets_unique_extension",
+    "PalomarProjectionAreas.selected_boundary_quartets_card_le_three",
+    "PalomarProjectionAreas.selected_boundary_quartets_unique_extension",
+    "PalomarProjectionAreas.exists_open_nonrealizable_strict_quartets",
+    "PalomarProjectionAreas.weighted_triangles_obstruction",
+    "PalomarProjectionAreas.rank_at_most_three_classification",
+    "PalomarProjectionAreas.NumericProofs.twoNeZero",
+    "PalomarProjectionAreas.NumericProofs.twoAtLeastTwo",
+    "PalomarProjectionAreas.NumericProofs.fourNeZero"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.MG"
+    ],
+    "msc2020": [
+      "52A20",
+      "52A38"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T04:35:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e325c4e4b1b4e75f269bb3ff000affd374287c8d",
+        "fork_repository": "PalomarArchive/caiusdfolkerts--research--cbb88952250b",
+        "source_repository": "caiusdfolkerts/research"
+      }
+    ]
+  },
+  "statement_hash": "sha256:469651d6a1a32c656ad73f0a3f2f658aef2f01a9921604fdb090736b5e717be3"
+}

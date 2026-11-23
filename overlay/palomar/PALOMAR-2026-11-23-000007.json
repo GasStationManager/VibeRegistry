@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000007",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000007",
+  "version": 1,
+  "title": "Short effective intervals containing primes",
+  "abstract": "A Lean 4 proof of conditional forms of Theorem 1.1 and Corollary 1.2 of H. Kadiri and A. Lumley, Short effective intervals containing primes, Integers 14, 2014, A61, arXiv 1407.7902. Theorem 1.1 says that for each row of Table 2, with threshold x0 and denominator Delta, every real x > x0 has a prime p with 1 - 1/Delta times x < p < x. The three main compared results are conditional, and every cited input is an explicit hypothesis, never an axiom. The main result, corollary57_of_inputs, says that every odd n with 5 < n < 1886389443 * 4 * 10^18 is a sum of three primes, from five inputs: 1, even Goldbach up to 4 * 10^18, the verification of Oliveira e Silva, Herzog and Pardi 2014; 2, Theorem 2 of Montgomery and Vaughan 1973, the Brun Titchmarsh inequality; 3, Dusart 2010 Theorem 5.2 at eta = 0.05, the bound |theta t - t| < 0.05 t / log^2 t for t >= 122568683, from which the Costa Pereira bound that the paper cites as Lemma 2.1 is proved; 4 and 5, the paper's own numerical display 2.64, in a slightly strengthened form, at the Table 2 rows log 4 * 10^18 and 57, taken as hypotheses. The range is the row 57 range, about 4 percent below the range 1966196911 * 4 * 10^18 printed in Corollary 1.2, which uses row 60. Ternary Goldbach itself is known unconditionally by Helfgott's work, so the interest of the corollary here is the method; binary Goldbach is open. The entry also proves kl45_of_inputs, Table 2 row 45 of Theorem 1.1 in a natural number form, from inputs 2, 3 and display 2.64 at row 45, and row_of_inputs, any row of Table 2 from the Costa Pereira bound, input 2 and display 2.64 at that row. Responding to review, the entry also proves zeroError_hasSum and row_zeroError_hasSum: the weighted series over the nontrivial zeros of zeta inside zeroError is summable, with zeroError its sum, for all positive m, delta, u and X, and so at every Table 2 row at the X where display 2.64 is asked. The zero contribution in each display 2.64 hypothesis is therefore the true sum, with no summability assumption needed. AI agents, Claude by Anthropic and Codex by OpenAI, wrote the Lean code, with ported PrimeNumberTheoremAnd files credited to their authors in PORTING.md; it is offered for human audit.",
+  "authors": [
+    "Steve Hubbard"
+  ],
+  "repository": "https://github.com/sthubbar/goldbach-lean",
+  "commit": "016cb630df376e158b83eb02935337b57537d269",
+  "project_path": "entries/kadirilumley2014",
+  "declarations": [
+    "LeanLab.KadiriLumley2014.PalomarEntry57.corollary57_of_inputs",
+    "LeanLab.KadiriLumley2014.PalomarKL45.kl45_of_inputs",
+    "LeanLab.KadiriLumley2014.PalomarEntry.row_of_inputs",
+    "LeanLab.KadiriLumley2014.PalomarSummable.zeroError_hasSum",
+    "LeanLab.KadiriLumley2014.PalomarSummable.row_zeroError_hasSum"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N05",
+      "11P32"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-23T05:32:51Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "016cb630df376e158b83eb02935337b57537d269",
+        "fork_repository": "PalomarArchive/sthubbar--goldbach-lean--98d36766e5ae",
+        "source_repository": "sthubbar/goldbach-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0125aaa401da4314956887213d72cc2436583bb4cb40ca3d47e99f8173b12b1c"
+}

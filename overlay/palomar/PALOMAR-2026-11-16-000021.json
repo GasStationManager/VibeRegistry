@@ -1,0 +1,48 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000021",
+  "version": 1,
+  "title": "Two fixed cubic coefficients distinguish a cyclic four-point square fibre",
+  "abstract": "For a four-point support in Z/nZ with n positive and its full labelled ordered square supplied, at most two fixed labelled coefficients of the ordered cube separate the complete four-point square fibre. Coefficient responses are exact integer values embedded in the reals; they are not binary answers. No query lower bound or runtime claim is asserted.",
+  "authors": [
+    "Alexandre Couret"
+  ],
+  "repository": "https://github.com/alexcour/couret-finite-verifications",
+  "commit": "eb5b9e28541146314aad53e7a55458ed28ffb65a",
+  "project_path": null,
+  "declarations": [
+    "Couret.PalomarCubic.two_cubic_coordinates"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T16:20:42Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "eb5b9e28541146314aad53e7a55458ed28ffb65a",
+        "fork_repository": "PalomarArchive/alexcour--couret-finite-verifications--331d9268956b",
+        "source_repository": "alexcour/couret-finite-verifications"
+      }
+    ]
+  },
+  "statement_hash": "sha256:7e84c8a4a94cb20b54870dd0d47aea9b46883eaaaccef3fe58e72a22c0354147"
+}

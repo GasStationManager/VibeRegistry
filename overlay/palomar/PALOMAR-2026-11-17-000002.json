@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000002",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000002",
+  "version": 1,
+  "title": "OEIS A002439: Bala's conjectures for sin 2x / (2 cos 3x)",
+  "abstract": "Let a(n) = (2n+1)! [x^(2n+1)] sin 2x / (2 cos 3x) (OEIS A002439, Glaisher's T numbers: 1, 23, 1681, 257543, …; Glaisher, 1899). Up to a sign and a factor 1/2, a(n) is the value at −2n − 1 of the Dirichlet L-function of the real character χ₁₂ modulo 12, so these are congruences for values of Dirichlet L-functions. In 2021 Peter Bala conjectured six families of congruences for a(n) and stated the formula a(n) ≡ 23^n (mod 1152). The package proves his power congruences 3)–5): a(mn) ≡ a(m)^n modulo 2^(2v₂(m)+7) and modulo 3^(2v₃(m)+2); a(2mn) ≡ a(n)^(2m) and a((2m+1)n) ≡ a(n)^(2m+1) modulo 2^(v₂(m)+7); a(3mn) ≡ a(n)^(3m) and a((3m+1)n) ≡ a(n)^(3m+1) modulo 3^(v₃(m)+2), and even modulo 3^(v₃(m)+3); and a((3m+2)n) ≡ a(n)^(3m+2) modulo 9. It proves the formula a(n) ≡ 23^n (mod 1152). It refutes conjecture 6) and determines exactly when it holds: for a prime p ≥ 5, h = (p − 1)/2 and m, n ≥ 1, a(hnm) ≡ a(hn)^m (mod p^(v_p(m−1)+1)) holds if and only if v_p(m − 1) ≤ (p − 1)n. For example, at p = 5, n = 1 and m = 3126 = 1 + 5^5, a(6252) ≡ (1 + 5^5)·a(2) (mod 5^6), so a(6252) − a(2)^3126 has 5-adic valuation exactly 5 instead of 6; this is proved by hand, without computing a(6252). Behind this is the congruence a(n + h·p^(e−1)) ≡ (−1)^h (1 − χ₁₂(p)·p^(2n+1)) a(n) (mod p^e) for every prime p ≥ 5, e ≥ 1 and every n, which the package proves from an elementary alternating-sum formula. It is the classical Kummer congruence for these L-values, from the theory of p-adic measures attached to Dirichlet characters that Blanco Gómez's Remark 5 names, and 1 − χ₁₂(p)p^(2n+1) is its Euler factor. When 2n + 1 ≥ e it reduces to the antiperiod a(n + h·p^(e−1)) ≡ (−1)^h a(n) (mod p^e), a case of Blanco Gómez's Theorem 1 on the values b^r E_r(a/b) of the Euler polynomials (Zenodo 23407292), and the \"if\" direction for 6) is a short corollary of it. At p = 3 the package proves a(n + 3^(e−1)) ≡ −a(n) (mod 3^e) for every n. No earlier treatment of the power congruences 3)–5), of the formula modulo 1152, or of the failure of 6) and its exact range was found. The power congruences carry the main new argument; the exact range of 6) is a short consequence of the classical congruence above. Bala's congruence conjectures for exponential generating functions are recent targets in the study of congruences for Euler-type numbers and for values of Dirichlet L-functions: Kallat proved Bala's conjectures for A158690 (arXiv:2609.07238). Conjectures 1) and 2) for A002439 follow from Kallat's Theorem 2.6 and Bala's hypergeometric e.g.f., which comes from Zagier's strange identity; they are not part of this package.",
+  "authors": [
+    "Wentao Li"
+  ],
+  "repository": "https://github.com/VictorLiwentao/fc-palomar-proofs",
+  "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+  "project_path": null,
+  "declarations": [
+    "OeisA002439.conjecture3_two",
+    "OeisA002439.conjecture3_three",
+    "OeisA002439.conjecture4",
+    "OeisA002439.conjecture5",
+    "OeisA002439.conjecture5_iii",
+    "OeisA002439.a_mod_1152",
+    "OeisA002439.not_conjecture6",
+    "OeisA002439.conjecture6_counterexample",
+    "OeisA002439.antiperiod_odd_prime_pow",
+    "OeisA002439.conjecture6_of_le",
+    "OeisA002439.antiperiod_euler",
+    "OeisA002439.conjecture6_iff",
+    "OeisA002439.antiperiod_three",
+    "OeisA002439.conjecture5_strong"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "math.CO"
+    ],
+    "msc2020": [
+      "11A07",
+      "11B68"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T00:13:01Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "91184b57cd62e2c45671e19c855e112127da2991",
+        "fork_repository": "PalomarArchive/VictorLiwentao--fc-palomar-proofs--a9817d9f1552",
+        "source_repository": "VictorLiwentao/fc-palomar-proofs"
+      }
+    ]
+  },
+  "statement_hash": "sha256:cd3d9202a7174adede6ee717057d435b2d29386e62b43e5d541bad44ea907393"
+}

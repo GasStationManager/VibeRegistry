@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000031",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000031",
+  "version": 1,
+  "title": "Non-Sperner Intervals and Exact Deficiency Family in the Permutation Pattern Poset",
+  "abstract": "Unconditional Lean 4 + Mathlib formalization refuting McNamara and Steingrimsson's Question 9.5 (2015) via an explicit 19-element closed interval [213, 2574613] of largest rank size 7 and width 8, and proving that for every k >= 1 there exists a principal downset [empty, tau_k] whose width exceeds its largest rank size by exactly k. Companion write-up and dated prior-work searches (arXiv, CORE 2026-11-20, Google Scholar 2026-11-22, Zenodo, DataCite, HAL, OSF, and Elizalde-McNamara 2015 / Vatter 2026) are published at https://mathdiscoveries.org/results/pattern-poset-not-sperner; no prior non-Sperner interval of the classical pattern poset was found in those logged searches, while Pouzet-Rosenberg (1986), Burosch et al. (1990, 1996), and print monographs remain unread/unsearched.",
+  "authors": [
+    "Tyler B. Hughes"
+  ],
+  "repository": "https://github.com/mathdiscoveries/pattern-poset-not-sperner",
+  "commit": "c5ce49d30d4b1d1608747f3ac44ff4a67e5c8b28",
+  "project_path": null,
+  "declarations": [
+    "PatternPosetChallenge.mcnamara_steingrimsson_Q9_5_false",
+    "PatternPosetChallenge.downset_exact_deficiency"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05A05",
+      "06A07"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T22:14:04Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c5ce49d30d4b1d1608747f3ac44ff4a67e5c8b28",
+        "fork_repository": "PalomarArchive/mathdiscoveries--pattern-poset-not-sperner--d18252bef273",
+        "source_repository": "mathdiscoveries/pattern-poset-not-sperner"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b378c176a80ae4117792e5fca21d2175a9d698f4a398647217ff0a5d7ae0bd8c"
+}

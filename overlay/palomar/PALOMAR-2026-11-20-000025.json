@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000025",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000025",
+  "version": 1,
+  "title": "An upper bound for log c in the abc conjecture with exponent 2/9",
+  "abstract": "For every positive real epsilon, there is a positive constant C such that log c is at most C times rad(abc) to the power 2/9 + epsilon whenever a and b are positive coprime integers and a + b = c. The radical is the product of the distinct prime factors. This is an upper bound for log c. The abc conjecture itself remains open.",
+  "authors": [
+    "Ruiyi Zhang"
+  ],
+  "repository": "https://github.com/ryzfsu/abc-log-bound-two-ninths",
+  "commit": "e10c67b33dda8d5c97d6f275d9644a3be7438ee2",
+  "project_path": null,
+  "declarations": [
+    "AbcTwoNinths.twoNinths"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11D75",
+      "11J86"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T21:24:09Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e10c67b33dda8d5c97d6f275d9644a3be7438ee2",
+        "fork_repository": "PalomarArchive/ryzfsu--abc-log-bound-two-ninths--9a7b4635abc7",
+        "source_repository": "ryzfsu/abc-log-bound-two-ninths"
+      }
+    ]
+  },
+  "statement_hash": "sha256:c154bed45cf70816e4d0b693818881669892a4f106c9e44905934968a82dba19"
+}

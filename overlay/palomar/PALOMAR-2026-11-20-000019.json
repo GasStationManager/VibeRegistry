@@ -1,0 +1,69 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000019",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000019",
+  "version": 1,
+  "title": "Finite-comb and finite-hole classification for relatively separated carriers",
+  "abstract": "Let Λ be a locally finite subset of the real line with a uniform bound on the number of points in each integer unit cell. The whole complex Meyer space of tempered distributions T with value-only atomic physical and Fourier records on Λ has finite dimension. Its dimension equals the attained maximum of nullities over finite unions L of translated positive-step full lattices for which L ∖ Λ is finite. For each L, the original physical and Fourier coefficients must both vanish at every missing site. In finite lattice residue coordinates, subtracting the joint rank of these rows from the sum of the cyclotomic block nullities gives the envelope nullity. One such envelope realizes the whole space. With separate relatively separated carriers both members of the Fourier pair are finite sums of translated and modulated lattice Dirac combs. The separately stated one-record H6 theorem only bounds the physical carrier. The active spectral module is finitely generated, and a single nonzero exponential polynomial with frequencies in that module annihilates every member of the fixed-carrier space.",
+  "authors": [
+    "Jamie Martin"
+  ],
+  "repository": "https://github.com/balancedscorpion/meyer-fourier-pair-classification",
+  "commit": "7fd45c10dd33cd6d08e75139c8768321ea5ae393",
+  "project_path": null,
+  "declarations": [
+    "MeyerGeneralProblem.boundedCount_commonSpace_holeClassification",
+    "MeyerGeneralProblem.FiniteHoleEnvelope.exists_latticeResidueMatrixCoordinates",
+    "MeyerGeneralProblem.finiteModulatedDiracCombSum_pair_of_two_unitCellBounds",
+    "MeyerGeneralProblem.spectralModule_fg_and_exists_common_finiteExponentialAnnihilator_of_unitCellBound",
+    "MeyerGeneralProblem.finiteDimensional_distributionalMeyerPairSpace_of_unitCellBound",
+    "MeyerGeneralProblem.LocallyFiniteCarrier.isolationSchwartz_apply_subtype",
+    "MeyerGeneralProblem.modulatedAffineDiracComb_apply",
+    "MeyerGeneralProblem.finiteExponentialMultiplication_on_tests",
+    "MeyerGeneralProblem.exists_latticeOrbitResidueRows_cyclotomic_finrank",
+    "MeyerGeneralProblem.mem_affineLatticeUnionCarrier",
+    "MeyerGeneralProblem.mem_atomicSupportUnion_iff",
+    "MeyerGeneralProblem.temperedFourierLinearMap_apply",
+    "MeyerGeneralProblem.mem_distributionalMeyerPairSpace_iff",
+    "MeyerGeneralProblem.atomicCoefficientLinearMap_on_tests",
+    "MeyerGeneralProblem.commonCarrierHoleRows_apply_pair",
+    "MeyerGeneralProblem.FiniteHoleEnvelope.nullity_eq_dimension_sub_rank",
+    "MeyerGeneralProblem.mem_finiteHoleEnvelopeSpace",
+    "MeyerGeneralProblem.mem_latticeDirectionClass",
+    "MeyerGeneralProblem.latticeOrbitSynthesis_apply",
+    "MeyerGeneralProblem.latticeOrbitResidueRows_apply_entry"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.FA"
+    ],
+    "msc2020": [
+      "42A38",
+      "46F12"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T19:09:57Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7fd45c10dd33cd6d08e75139c8768321ea5ae393",
+        "fork_repository": "PalomarArchive/balancedscorpion--meyer-fourier-pair-classification--091af37f6af2",
+        "source_repository": "balancedscorpion/meyer-fourier-pair-classification"
+      }
+    ]
+  },
+  "statement_hash": "sha256:4d2845b2327620b28ceb2156fbf662f02c0dcc30ee0f3bf203cdb65c72f940e7"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-16-000018",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-16-000018",
+  "version": 1,
+  "title": "Erdős Problem 593: classification of obligatory triple systems",
+  "abstract": "A Lean 4 formalization of the finite classification of obligatory triple systems. For every finite edge-indexed simple 3-uniform hypergraph F, the compared theorem proves that F is obligatory if and only if its isolated-point reduction is linear, every hyperedge-node of its Levi graph is incident with a bridge, and every Berge cycle has even length.",
+  "authors": [
+    "Samuil Petkov"
+  ],
+  "repository": "https://github.com/SamPetkov/Erdos593-formalization",
+  "commit": "ea81bf26158876b457845f7998277fe47aa0fd02",
+  "project_path": null,
+  "declarations": [
+    "Erdos593.TripleSystem.isolatedReduction_inc",
+    "Erdos593.TripleSystem.isObligatory_iff_isolatedReduction_intrinsic"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C63",
+      "05C65"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-16T14:05:21Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "ea81bf26158876b457845f7998277fe47aa0fd02",
+        "fork_repository": "PalomarArchive/SamPetkov--Erdos593-formalization--280dcdf3e45f",
+        "source_repository": "SamPetkov/Erdos593-formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:e1ce84ebb7dd6c94a1a5c91e40c9b391ec310311ff42d6deb7f11674008d563a"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000020",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000020",
+  "version": 1,
+  "title": "The six exponentials theorem",
+  "abstract": "A Lean 4 and Mathlib proof of the six exponentials theorem of Lang and Ramachandra: if x₁, x₂ are complex numbers linearly independent over ℚ and y₁, y₂, y₃ are complex numbers linearly independent over ℚ, then at least one of the six numbers exp(xᵢyⱼ) is transcendental. The proof is Schneider's method in the form of Lang and Ramachandra, relativised to a number field K: Siegel's lemma gives an exponential polynomial with integer coefficients, not all zero, that vanishes on a box of lattice points ∑ mⱼyⱼ; a Cauchy estimate with zeros, played against Liouville's inequality in K, extends the vanishing from each box to the next; and an exponential polynomial vanishing on the whole lattice has zero coefficients, by Dedekind's independence of characters. The library proves the number-field form for d numbers x and l numbers y with d + l < dl, and the theorem is its case d = 2, l = 3. This repository is a self-contained extract of the theorem from the library github.com/carlok/diaz-modulus-lean, which is the canonical home of the proof.",
+  "authors": [
+    "Carlo Perassi"
+  ],
+  "repository": "https://github.com/carlok/six-exponentials-lean",
+  "commit": "b42d65be65fc4e4a7cea3ba965aabea8f1df8028",
+  "project_path": null,
+  "declarations": [
+    "SixExponentials.six_exponentials_theorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "11J81",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T17:36:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b42d65be65fc4e4a7cea3ba965aabea8f1df8028",
+        "fork_repository": "PalomarArchive/carlok--six-exponentials-lean--2becb2e8f75e",
+        "source_repository": "carlok/six-exponentials-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:28a570bc49ffb84ef21468e9ae405cf3145df25cd9c74010c60e139bc183431c"
+}

@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-23-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-23-000013",
+  "version": 1,
+  "title": "Derivatives of Theta Functions and a Problem of Lyubarskii and Nes",
+  "abstract": "Lean 4 formalization of the main result of the paper \"Derivatives of Theta Functions and a Problem of Lyubarskii and Nes\" by L. Liehr, I. Shafkulovska and M. A. Taylor (arXiv:2609.27846): if Λ = Mℤ² ⊂ ℝ² is a lattice of density D(Λ) = q/p, where p and q are coprime positive integers with q ≥ p + 2, then the Gabor system of the first Hermite function h₁(t) = t·exp(−πt²) along Λ is a frame for L²(ℝ).",
+  "authors": [
+    "Lukas Liehr",
+    "Irina Shafkulovska",
+    "Mitchell A. Taylor"
+  ],
+  "repository": "https://github.com/lukasliehr/h1_frames",
+  "commit": "c1a0c423feeae08a3ce684a7bef7169bb7f0d6e4",
+  "project_path": null,
+  "declarations": [
+    "h1Atom_memL2",
+    "MainResult",
+    "coefficients_summable"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA",
+      "math.FA"
+    ],
+    "msc2020": []
+  },
+  "license": "",
+  "published_at": "2026-11-23T09:14:33Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "c1a0c423feeae08a3ce684a7bef7169bb7f0d6e4",
+        "fork_repository": "PalomarArchive/lukasliehr--h1_frames--df3775d28233",
+        "source_repository": "lukasliehr/h1_frames"
+      }
+    ]
+  },
+  "statement_hash": "sha256:3968ca69527adcbb42b87174d3e96175e4bfc1e2ca9734cb5eac0dd77296a390"
+}

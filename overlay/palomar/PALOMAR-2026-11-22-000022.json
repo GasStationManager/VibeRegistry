@@ -1,0 +1,63 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000022",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000022",
+  "version": 1,
+  "title": "A subexponential bound for induced degree repetition",
+  "abstract": "Every sufficiently large N-vertex graph contains an induced subgraph of order between r and 2r−1 with a degree class of proportion at least 1−η, where r is the ceiling of K log N, for every K>0 and 0<η<1. Consequently log g(k)=o(k) for the least Caro–Yuster repetition threshold.",
+  "authors": [
+    "Arthur Freitas Ramos",
+    "David Barros Hulak",
+    "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "repository": "https://github.com/Arthur742Ramos/induced-degree-repetition",
+  "commit": "a43e5bdda27bc5f44ad2fd5fe435576b80b78054",
+  "project_path": null,
+  "declarations": [
+    "InducedDegreeRepetition.logScale_repetition",
+    "InducedDegreeRepetition.subexponential_threshold",
+    "InducedDegreeRepetition.coset_concentration",
+    "InducedDegreeRepetition.conditional_range",
+    "InducedDegreeRepetition.integer_totals",
+    "InducedDegreeRepetition.logScale_ramsey_range",
+    "InducedDegreeRepetition.subexponential_of_logScale",
+    "InducedDegreeRepetition.OpenProblems.density_reduction",
+    "InducedDegreeRepetition.OpenProblems.biased_rectangle",
+    "InducedDegreeRepetition.OpenProblems.adjacency_approximation",
+    "InducedDegreeRepetition.OpenProblems.random_restrictions",
+    "InducedDegreeRepetition.OpenProblems.conditional_residues",
+    "InducedDegreeRepetition.OpenProblems.simultaneous_adjustment"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35",
+      "05C55"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T17:52:59Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "a43e5bdda27bc5f44ad2fd5fe435576b80b78054",
+        "fork_repository": "PalomarArchive/Arthur742Ramos--induced-degree-repetition--56d5a95fd87b",
+        "source_repository": "Arthur742Ramos/induced-degree-repetition"
+      }
+    ]
+  },
+  "statement_hash": "sha256:857045c5178a4b28501f44a600e0df3014db1de6f64ac5bef6360368d482a355"
+}

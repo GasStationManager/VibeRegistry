@@ -1,0 +1,51 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000011",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000011",
+  "version": 1,
+  "title": "The Combinatorial Four Color Theorem in Lean 4",
+  "abstract": "A self-contained, zero-Mathlib Lean 4 formalization of the Combinatorial Four Color Theorem: every finite, complete, Euler-planar, bridgeless orientable combinatorial map (involutive hypermap, `e^2 = id`, `e ∘ n ∘ f = id`) admits a proper 4-coloring of its faces (`Solution.four_color_theorem`). Follows the published mathematics of Robertson, Sanders, Seymour, and Thomas (1996/1997) and Gonthier's hypermap framework (2008), verifying all 633 unavoidable configurations (249 D-reducible and 384 C-reducible) and all 5 cartwheel discharging trees directly inside the Lean kernel without `native_decide`.",
+  "authors": [
+    "Harry Wang"
+  ],
+  "repository": "https://github.com/Harry-Tech-Guide/Lean-4-Four-Color-Theorem-Formalization",
+  "commit": "5827daedcf71c0f9992a29fda7ecb4c588d3a6b2",
+  "project_path": null,
+  "declarations": [
+    "four_color_theorem"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "cs.LO"
+    ],
+    "msc2020": [
+      "05C15",
+      "05C10",
+      "68V15"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T11:37:13Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "5827daedcf71c0f9992a29fda7ecb4c588d3a6b2",
+        "fork_repository": "PalomarArchive/Harry-Tech-Guide--Lean-4-Four-Color-Theorem-Formalization--4648e6306059",
+        "source_repository": "Harry-Tech-Guide/Lean-4-Four-Color-Theorem-Formalization"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0f19590ef9dfad077cfd983c646c4eac378d6fbbb0458fd816f38af1fb76140a"
+}

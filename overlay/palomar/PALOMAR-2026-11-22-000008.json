@@ -1,0 +1,52 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000008",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000008",
+  "version": 1,
+  "title": "Lower bounds for four small Erdős-Rado numbers: k(7,3) ≥ 39, k(8,3) ≥ 47, k(6,4) ≥ 78, k(3,6) ≥ 71 (Erdős Problem #112)",
+  "abstract": "Lean 4 proofs of four lower bounds for Erdős-Rado numbers: k(7,3) ≥ 39, k(8,3) ≥ 47, k(6,4) ≥ 78 and k(3,6) ≥ 71. Here k(n,m) is the least k such that every oriented graph on k vertices has n vertices with no arc between any two of them, or a transitive tournament on m vertices (Erdős Problem #112). Each bound is one explicit oriented graph that avoids both structures: bicirculants on 38 and 46 vertices for k(7,3) and k(8,3), and circulants on 77 and 70 vertices for k(6,4) and k(3,6). Every property of each graph is checked by computations inside Lean's kernel (decide +kernel), with no native_decide, and the proofs use only the axioms propext, Quot.sound and Classical.choice. The previous best public lower bounds were k(7,3) ≥ 37, k(8,3) ≥ 46, k(6,4) ≥ 65 and k(3,6) ≥ 68, from circulants in an unrefereed, AI-generated GitHub repository (rsvaultpudgy-create/erdos-112-lower-bounds, 11 November 2026). The four new graphs were first made public in the author's Zenodo record of 20 November 2026 (doi:10.5281/zenodo.24390891), which this project formalizes; to the author's knowledge no other proof of these bounds exists, so these are the first Lean proofs of them. Earlier computational work on the problem includes D. Kirtchakov's certified value k(3,4) = 21 and bound k(6,3) ≥ 29 (Zenodo, August 2026). The known upper bounds k(7,3) ≤ 45 and k(8,3) ≤ 59 (Ihringer, Rajendraprasad and Weinert, 2021) are not improved. The results are lower bounds only: none of the four values is determined, and Erdős Problem #112 remains open.",
+  "authors": [
+    "Tyler Satchel Orden"
+  ],
+  "repository": "https://github.com/Tyorden/erdos-112-small-bounds-lean",
+  "commit": "1fcdbe50607e4cb858cffd5559f07afcb98e0611",
+  "project_path": null,
+  "declarations": [
+    "Erdos112.k73_ge_39",
+    "Erdos112.k83_ge_47",
+    "Erdos112.km64_ge_78",
+    "Erdos112.km36_ge_71"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C55",
+      "05C20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T06:42:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "1fcdbe50607e4cb858cffd5559f07afcb98e0611",
+        "fork_repository": "PalomarArchive/Tyorden--erdos-112-small-bounds-lean--2ae240d90829",
+        "source_repository": "Tyorden/erdos-112-small-bounds-lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:b9fc01151a8eeda3fa746d2deb89694bb2e70de78b7ea26dd515ada11775db84"
+}

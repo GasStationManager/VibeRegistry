@@ -1,0 +1,55 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000015",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000015",
+  "version": 2,
+  "title": "Maximum Unit Cubes Cut by a Plane in [0, n]^3 (Cheese-Cutting Theorem M)",
+  "abstract": "Unconditional Lean 4 + Mathlib formalization over R of the exact maximum number m(n) of open unit cubes of the n x n x n cube [0, n]^3 met by a single plane, proving m(n) = floor((9n^2 + 4n - 17)/4) for all 3 <= n <= 32 (in particular m(10) = 230, settling the open case stated by Barany and Frankl, 2021) and for all n >= 700, refuting Barany and Frankl's Section 5 \"+2\" remark for all n >= 700, and proving the universal upper bound m(n) <= floor((9n^2 + 6n - 20)/4) for every n >= 2. The finite intermediate window 33 <= n <= 699 is not discharged inside Lean and is certified separately by exact-integer programs documented in the accompanying paper.",
+  "authors": [
+    "Tyler B. Hughes"
+  ],
+  "repository": "https://github.com/mathdiscoveries/cheese-cut",
+  "commit": "fc6e6952d97cbb596b1ca5e25a6e2d3edf63ee39",
+  "project_path": null,
+  "declarations": [
+    "CheeseCutM.maxCutCount_eq_F_ge_700",
+    "CheeseCutM.barany_frankl_plus_two_refuted_ge_700",
+    "CheeseCutM.maxCutCount_eq_F_3_to_32",
+    "CheeseCutM.maxCutCount_ten",
+    "CheeseCutM.theoremU_bound_all_ge_2",
+    "CheeseCutM.barany_frankl_lower_bound"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CO",
+      "math.MG"
+    ],
+    "msc2020": [
+      "52C07",
+      "52C35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T22:41:49Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "fc6e6952d97cbb596b1ca5e25a6e2d3edf63ee39",
+        "fork_repository": "PalomarArchive/mathdiscoveries--cheese-cut--76b3f7da7359",
+        "source_repository": "mathdiscoveries/cheese-cut"
+      }
+    ]
+  },
+  "statement_hash": "sha256:9b1f14ade03ed521fe38bd11ee785e98b3f0ba57d6d04aae8787544ffcfe07bd"
+}

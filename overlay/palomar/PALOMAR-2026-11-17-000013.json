@@ -1,0 +1,54 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-17-000013",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-17-000013",
+  "version": 1,
+  "title": "A fast dynamo with zero topological entropy",
+  "abstract": "A Lean 4 formalisation, built on mathlib, of L. Niebel, \"A fast dynamo with zero topological entropy\" (arXiv:2608.02586v3), an arXiv preprint. The fast-dynamo question, going back to Vainshtein and Zel'dovich, asks whether the exponential growth rate of the magnetic field in the kinematic induction equation survives the limit of vanishing magnetic diffusivity; for autonomous velocities on the flat three-torus it is the conjecture recorded as Problem 1994-28 in Arnold's Problems (Conjecture 1.1 of the paper), which asks for a smooth velocity. For sufficiently smooth velocities the absence of exponential particle stretching excludes fast dynamo action (Vishik; Friedlander and Vishik), and the entropy bound of Klapper and Young excludes a C^infinity fast dynamo with zero topological entropy; the paper shows that at Lipschitz regularity fast dynamo action is compatible with zero topological entropy and zero ideal exponential growth. The theorem concerns Lipschitz velocities and does not address the smooth conjecture, which, as Remark 1.3 of the paper records, has been resolved (Coti Zelati, Sorella and Villringer, arXiv:2609.04153). The compared theorem is Theorem 1.2 of the paper: there are an autonomous, divergence-free, Lipschitz velocity field u on the flat torus T^3 = R^3/Z^3 and constants eps0, gamma0 > 0 such that for every magnetic diffusivity 0 < eps <= eps0 the kinematic induction equation dB/dt = curl(u x B) + eps Laplacian(B), div B = 0, has an induction semigroup on the divergence-free fields L^2_sigma whose operator norm is at least exp(gamma0 t) for all t >= 0 (u is a fast dynamo), with an eigenmode exp(2 pi i K x3) b(y) of eigenvalue of real part at least gamma0 and a real solution of exact growth exp(t Re lambda); while every time map of the particle flow of u is continuous and has topological entropy zero, and the ideal (eps = 0) induction equation has exactly one solution group, whose operator norm grows subexponentially. The statement in Challenge.lean uses only mathlib notions and fourteen documented definitions. The repository formalises, in its own terms and with every deviation recorded in DEVIATIONS.md, all statements of the paper except Conjecture 1.1 and Remarks 1.3, 7.5 and 8.4, in about 129,000 lines of Lean in 411 library modules; every audited declaration depends only on the standard axioms propext, Classical.choice and Quot.sound, and there is no sorry outside the deliberate one in Challenge.lean.",
+  "authors": [
+    "Lukas Niebel"
+  ],
+  "repository": "https://github.com/lukasniebel/fast_dynamo_lean",
+  "commit": "f2e17cdd0f814af1bd9c0a6ce10320b216ed4fe0",
+  "project_path": null,
+  "declarations": [
+    "FastDynamoChallenge.fast_dynamo_zero_entropy"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.AP",
+      "math-ph",
+      "math.SP"
+    ],
+    "msc2020": [
+      "76W05",
+      "35P05",
+      "47A10",
+      "35B25",
+      "37B40"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-17T15:33:48Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "f2e17cdd0f814af1bd9c0a6ce10320b216ed4fe0",
+        "fork_repository": "PalomarArchive/lukasniebel--fast_dynamo_lean--f9d6ed624b44",
+        "source_repository": "lukasniebel/fast_dynamo_lean"
+      }
+    ]
+  },
+  "statement_hash": "sha256:475af686159b4059b0c72e2187ae1ab878eeb61ea2c0f72412121f7cccb91318"
+}

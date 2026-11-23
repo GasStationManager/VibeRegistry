@@ -1,0 +1,53 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000009",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000009",
+  "version": 3,
+  "title": "Logical consequence and essential incompleteness in recursion categories",
+  "abstract": "We realize Di Paola and Heller’s objective to give an algebraic account of generalized incompleteness theorems in recursion categories. From two disjoint domains of partial morphisms on the same object in a recursion category we construct a first-order theory internal to that category. Its nonlogical axioms assert the nullary predicates indexed by the first domain and the negations of those indexed by the second. If the generated theory is consistent, the two domains are inseparable if and only if every consistent closed internal extension of the theory in the same language is incomplete.\nOn pairs generating consistent theories, this construction is left adjoint to the functor that takes a consistent theory to its theorem and refutation subobjects. A second construction associates to a consistent theory the Turing category of partial maps in the slice over its theorem object. With deduction in parameter slices and a chosen global logical theorem, passage to the constant family in this category preserves and reflects essential incompleteness.\nIn the completed syntactic recursion category for Peano arithmetic (PA), one total morphism, interpreted on the natural numbers, takes an index for any computably enumerable axiomatization of a consistent extension of PA to the code of a sentence independent of that extension. For a Miller sequence, we expand the theory of real closed ordered fields by constants naming its terms and axioms giving their strict rational bounds. Every consistent extension is incomplete if one oracle program semidecides its axioms from every binary representation of the sequence. A cosheaf on a three-point space yields a propositional theory at each endpoint with no complete consistent extension in the same language having computably enumerable axioms.\nThe three statements selected for this entry are the inseparability criterion for the generated theory, the construction of a complete consistent extension from a Boolean assignment, and the existence of an inseparable pair whose generated theory is essentially incomplete.",
+  "authors": [
+    "Florian Lengyel"
+  ],
+  "repository": "https://github.com/flengyel/CategoricalEssentialIncompleteness",
+  "commit": "efda31344ec6420142468ab28af9d96deab571e7",
+  "project_path": "Lean",
+  "declarations": [
+    "CEIPalomar.essential_incomplete_iff_inseparable",
+    "CEIPalomar.boolean_assignment",
+    "CEIPalomar.exists_inseparable_example"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.LO",
+      "math.CT"
+    ],
+    "msc2020": [
+      "03F40",
+      "03D75",
+      "03G30"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T15:13:30Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "efda31344ec6420142468ab28af9d96deab571e7",
+        "fork_repository": "PalomarArchive/flengyel--CategoricalEssentialIncompleteness--ec03dec4ce63",
+        "source_repository": "flengyel/CategoricalEssentialIncompleteness"
+      }
+    ]
+  },
+  "statement_hash": "sha256:db43e472c5ba3d2c81e565f45d0ed6ac9a83ec5340b3e8594a84d8fcab4b29fa"
+}

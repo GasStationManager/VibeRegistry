@@ -1,0 +1,72 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-22-000021",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-22-000021",
+  "version": 1,
+  "title": "Products of three factorials (partial)",
+  "abstract": "Formal statements and proofs, in Lean 4 with Mathlib, of parts of A. Dujella, F. Najman, N. Saradha, T. N. Shorey, \"Products of three factorials\" (Publ. Math. Debrecen 85 (2014)), on the equation a₁!(a₁ − 3)!a₃! = y². Proved unconditionally: Theorem 1.1 for a₃ = 26 (the only solutions are a₁ = 324 and a₁ = 2738), by reducing to squarefree Pell systems, excluding all but two of them with congruences, fundamental units and an elementary argument for the quartic case, and solving the last two with simultaneous Padé approximations; that the seven pairs listed in Theorem 1.1 are solutions; Theorem 1.2(a); Theorem 1.2(b) in two forms with changed hypotheses, because the proof of the printed part (b) has a gap; and Theorem 1.2(c) for a₃ ≥ 101. The completeness of Theorem 1.1 for a₃ ≤ 100 is not proved; it appears only as an explicit premise, as do the completeness of a Magma computation of integral points and a consequence of a theorem of Bennett, in alternative derivations. 21 theorems, no sorry, only the axioms propext, Classical.choice and Quot.sound.",
+  "authors": [
+    "Filip Najman"
+  ],
+  "repository": "https://github.com/F-Najman/formalization_papers",
+  "commit": "e321a89ee8e39a4675892179c099027a0ce59cd8",
+  "project_path": "three-factorials",
+  "declarations": [
+    "ThreeFactorials.solution_iff_squarefree",
+    "ThreeFactorials.solution324_26",
+    "ThreeFactorials.solution2738_26",
+    "ThreeFactorials.integralPoints26_sound",
+    "ThreeFactorials.case26_iff_of_integral_points",
+    "ThreeFactorials.quartic104006_no_solution",
+    "ThreeFactorials.solution26_remaining",
+    "ThreeFactorials.case26_iff_of_bennett",
+    "ThreeFactorials.unique_first_system",
+    "ThreeFactorials.unique_second_system",
+    "ThreeFactorials.case26_iff",
+    "ThreeFactorials.solutionsUpTo100_sound",
+    "ThreeFactorials.theorem11_iff_of_completeness",
+    "ThreeFactorials.prime_support_counterexample",
+    "ThreeFactorials.auxiliary_quartic_six",
+    "ThreeFactorials.theorem12a",
+    "ThreeFactorials.theorem12b_fraction",
+    "ThreeFactorials.theorem12b_odd",
+    "ThreeFactorials.interval_card_ge_eleven",
+    "ThreeFactorials.theorem12c_large",
+    "ThreeFactorials.theorem12c_of_classification"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11D09",
+      "11B65",
+      "11J68",
+      "11D25",
+      "68V20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-22T17:44:26Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "e321a89ee8e39a4675892179c099027a0ce59cd8",
+        "fork_repository": "PalomarArchive/F-Najman--formalization_papers--5a855fe1989c",
+        "source_repository": "F-Najman/formalization_papers"
+      }
+    ]
+  },
+  "statement_hash": "sha256:ac63c0d28234d9bc7852188f61d5e0dd9c3d78e2c8aebf3702ed16d78298a14e"
+}

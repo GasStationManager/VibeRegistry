@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000026",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000026",
+  "version": 1,
+  "title": "Sharp logarithmic endpoint restriction estimates for the sphere and paraboloid",
+  "abstract": "We refine OpenAI's local smoothing argument to obtain sharp endpoint restriction estimates for the unit sphere and for a compact patch of the paraboloid. Let E denote the Fourier extension operator, let n ≥ 2 be the ambient dimension, and put p = 2n/(n−1). For R ≥ 2, we prove the Lᵖ norm of Ef on Ωᵣ is at most Cₙ times (log R)^(1/p) times the Lᵖ norm of f, where Ωᵣ is the ball of radius R for the sphere and the cylinder |x| ≤ R, |t| ≤ R for the paraboloid. For the paraboloid, we work at a fixed frequency in one auxiliary variable and recover a logarithm in the Dirichlet energy estimate. For the sphere, we use both branches of the wave representation to bound the Lᵖ integral directly by the nonnegative term in OpenAI's propagation identity. The estimate is sharp, as can be seen by applying stationary phase to surface measure on the sphere and to a smooth localization of surface measure on the paraboloid. The upper and lower bounds are formalized in Lean.",
+  "authors": [
+    "Mark Lewko"
+  ],
+  "repository": "https://github.com/mrklwk/endpoint-restriction",
+  "commit": "b88c6f33651a22caef835de03abe0b8812adab81",
+  "project_path": null,
+  "declarations": [
+    "RegistryEndpointRestriction.sphere_exact",
+    "RegistryEndpointRestriction.paraboloid_exact"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.CA"
+    ],
+    "msc2020": [
+      "42B10"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T17:24:31Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "b88c6f33651a22caef835de03abe0b8812adab81",
+        "fork_repository": "PalomarArchive/mrklwk--endpoint-restriction--3378da4cb233",
+        "source_repository": "mrklwk/endpoint-restriction"
+      }
+    ]
+  },
+  "statement_hash": "sha256:fefdec76a85cce43a0ea95552362514eb32ecacc8939ff53c13493233b984938"
+}

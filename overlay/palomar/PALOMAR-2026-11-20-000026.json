@@ -1,0 +1,50 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-20-000026",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-20-000026",
+  "version": 1,
+  "title": "A subexponential upper bound for log c in the abc conjecture",
+  "abstract": "For every positive real epsilon, there is a positive constant C such that log c is at most C times rad(abc) to the power epsilon whenever a and b are positive coprime integers and a + b = c. The radical is the product of the distinct prime factors. This is an upper bound for log c. The abc conjecture itself remains open.",
+  "authors": [
+    "Ruiyi Zhang"
+  ],
+  "repository": "https://github.com/ryzfsu/abc-log-bound-subexponential",
+  "commit": "7629a771c6f35598f1c56d32a5f13fb521e2ede0",
+  "project_path": null,
+  "declarations": [
+    "AbcSubexp.subexp"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11D75",
+      "11J86",
+      "11L20"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-20T23:31:54Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "7629a771c6f35598f1c56d32a5f13fb521e2ede0",
+        "fork_repository": "PalomarArchive/ryzfsu--abc-log-bound-subexponential--798bce1a4658",
+        "source_repository": "ryzfsu/abc-log-bound-subexponential"
+      }
+    ]
+  },
+  "statement_hash": "sha256:82970309887f67092b6917b0c70e16d0a598744a1bca4f0da1faaebec74fd9bf"
+}

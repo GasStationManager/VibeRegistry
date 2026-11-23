@@ -1,0 +1,49 @@
+{
+  "source": "palomar",
+  "upstream_id": "PALOMAR-2026-11-19-000034",
+  "upstream_url": "https://palomar-registry.org/PALOMAR-2026-11-19-000034",
+  "version": 1,
+  "title": "An asymptotic equivalent for the harmonic sum in Erdős Problem 878(v)",
+  "abstract": "Let f(n) be the sum over prime divisors p of n of the greatest power of p at most n. The weighted sum of f(n)/n over 1 ≤ n < x is asymptotic to an explicit sum over primes p ≤ (log x)^2. Each prime contributes a term depending on the remainder of log x modulo log p. The proof combines a finite harmonic-sum estimate with a uniform short-interval prime bound.",
+  "authors": [
+    "Rivka Lipkovitz"
+  ],
+  "repository": "https://github.com/rivkalipko/erdos-878-asymptotics",
+  "commit": "4c47e6de8732037482450e83c71869aad107c1f4",
+  "project_path": null,
+  "declarations": [
+    "Erdos878.erdos_878.parts.v"
+  ],
+  "informal": {},
+  "classification": {
+    "arxiv": [
+      "math.NT"
+    ],
+    "msc2020": [
+      "11N37",
+      "11N35"
+    ]
+  },
+  "license": "",
+  "published_at": "2026-11-19T21:10:19Z",
+  "status": "registered",
+  "upstream_checks": {
+    "comparator": true,
+    "kernels": [
+      "lean",
+      "nanoda"
+    ],
+    "human_signoff": false,
+    "llm_review": true
+  },
+  "preservation": {
+    "repositories": [
+      {
+        "commit": "4c47e6de8732037482450e83c71869aad107c1f4",
+        "fork_repository": "PalomarArchive/rivkalipko--erdos-878-asymptotics--0fe3b84f49d3",
+        "source_repository": "rivkalipko/erdos-878-asymptotics"
+      }
+    ]
+  },
+  "statement_hash": "sha256:0123220bcda235360607de8d638705b206489774148c001250320fe427060d1e"
+}
