@@ -1,0 +1,31 @@
+[project]
+id = "lean-schrodinger-remainder"
+name = "Conditional Schrödinger kinetic-energy remainder"
+description = "Exact positive-branch relativistic kinetic decomposition with an explicit quartic correction bound"
+url = "https://github.com/gpartin/LeanSchrodingerDerivation"
+commit = "16c1f61538b824f006ed4a7c9496b4e1c48021b5"
+branch = "main"
+
+[lean]
+toolchain = "leanprover/lean4:v4.33.1"
+mathlib_tag = "v4.33.1"
+
+[[theorems]]
+spec_module = "Registry.LeanSchrodingerRemainder.SchrodingerRemainder"
+impl_module = "SchrodingerFormal.Core.Schrodinger006SchrodingerRemainder"
+names = [
+  "SchrodingerFormal.rest_phase_removed_energy_eq_schrodinger_plus_remainder",
+  "SchrodingerFormal.schrodinger_remainder_bound",
+]
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+
+[checks]
+comparator = true
+nanoda = true
+definitions = false
+safe_verify = false
+lean4checker = false
+
+[build]
+strategy = "copy"
+targets = "SchrodingerFormal Registry"
