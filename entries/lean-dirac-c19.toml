@@ -1,10 +1,10 @@
 [project]
 id = "lean-dirac-c19"
-name = "Native-vacuum C19 Dirac bridge and two-sector classification"
-description = "A native zero-vacuum action tangent, cubical first-order square root, and exhaustive preserved two-sector split"
+name = "V3.1-pinned native-vacuum C19 Dirac bridge and two-sector classification"
+description = "The V3.1 release pinned at an immutable commit, certifying its native zero-vacuum action tangent, cubical first-order square root, and exhaustive preserved two-sector split"
 url = "https://github.com/gpartin/LeanDiracDerivation"
-commit = "1869d1706b95f1f18c3a04b3cb14b177b6bd3295"
-branch = "submission/palomar-v2-free-dirac"
+commit = "61a4798b8b3ebfcffd24065079dc4db9d7b43f75"
+branch = "main"
 
 [lean]
 toolchain = "leanprover/lean4:v4.33.1"
